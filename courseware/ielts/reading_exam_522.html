@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Iceman  - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题522/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 The Iceman </h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>strong migratory behaviour. Thus the lesser black-backed gull is more migratory than the
+herring gull and more often reaches ‘home’. Great migrants such as the swift have the
+highest percentage of returns. In one case, seven out of nine alpine swifts were recaptured
+at their nests after being displaced some 1400 kilometres; one made the journey in three
+days.
+ 
+G What part does heredity play in all this? Two research studies suggest that instinctive,
+i.e. genetically inherited, behaviour patterns play a part in navigation. The first was carried
+out by Ernst Schuz and it is highly significant. Schuz caught first year European storks and
+released them later, after the departure of the adult storks at a time when they normally
+make their south-west autumn migration to Africa. The recaptures showed that, in spite of
+thefact that there were no adults to guide them, the birds unanimously headed south-west.
+This was a most striking finding, for it showed that the birds had an innate and unlearned
+attraction for the African wintering area that they have occupied for thousands of years.
+H The case of starlings is a little different. These birds have a great aptitude for homing, but
+this behaviour differs in the different age groups. Birds that were shifted to the south-east of
+their normal migration route split into two lots. The adults, in full possession of their gift for
+orientation, found their wintering area by modifying their direction by 90 degrees, whereas
+the juveniles sought their winter quarters to the south-east of their real position.
+ 2</p>
+<p>Questions 1-5
+Complete the summery below.
+Choose NO MORE THAN TWO WORDS from the passage for each answer.
+Write your answers in boxes 1-5 on your answer sheet.
+Types of homing behaviour
+First type:
+Birds rely on their sophisticated 1...................... However, they are generally most
+successful if they are released within their feeding territory.
+Second type:
+Birds select their accustomed 2....................., no matter where they are released. As a
+result, they may miss their 3.....................
+Third type:
+Birds orientate correctly, even when they are released in an unfamiliar place and have no
+4.....................  to  make use of. One bird with this type of skill is the5.....................
+Questions 7-9
+Reading Passage has eight paragraphs, A-H
+Which paragraph contains the following information?
+Write the correct letter, A-H, in boxes 7-9 on your answer sheet.
+NB You may use any letter more than once.
+6..................... the effects of distance on some birds’ ability to find their nests
+7..................... a methodology for testing the general ability of birds to find their nests
+8..................... one aspect of physical ability in humans and birds
+9..................... how some birds’ migration was delayed for experimental purposes
+Questions 10-13
+Look at the following types of birds (Questions 10-13) and the list of points which the author
+wishes to illustrate below.
+Match each bird with the point which it illustrates, A-G.
+Write the correct letter, A-G, in boxes 10-13 on your answer sheet.
+10..................... domestic pigeon
+11..................... alpine swift
+ 3</p>
+<p>12..................... European stork
+13..................... starling
+List of points which the author wishes to illustrate
+A an ability to orientate without previous training
+B the speed at which birds can fly
+C the ability to remember things seen previously
+D the effect of age on homing ability
+E the strength required to fly a great distance
+F a high success rate in finding nests
+G the importance of seasonal cues for migrating birds
+ 4</p>
+<p>Solution:
+ 
+1. visual memory
+2. migration direction
+3. destination
+4. landmarks
+5. (laysan) albatross
+6. C
+7.
+8. C
+9. G
+10. C
+11. F
+12. A
+13. D</p>
+<p>Reading Practice
+ Origin of Species & Continent Formation</p>
+<p>THE FACT THAT there was once a Pangean supercontinent, a Panthalassa Ocean, and a
+Tethys Ocean, has profound implications for the evolution of multicellular life on Earth.
+These considerations were unknown to the scientists of the 19th century – making their
+scientific deductions even more remarkable. Quite independently of each other, Charles
+Darwin and his young contemporary Alfred Russel Wallace reached the conclusion that life
+had evolved by natural selection. Wallace later wrote in My Life of his own inspiration:</p>
+<p>Why do some species die and some life? The answer was clearly that on the whole the
+best fitted lived. From the effects of disease the most healthy escaped; from enemies the
+strongest, the swiftest or the most cunning from famine the best hunters – then it suddenly
+flashed on me that this self-acting process would improve the race, because in every
+generation the inferior would inevitably be killed off and the superior would remain, that is,
+the fittest would survive.</p>
+<p>Both Darwin’s and Wallace’s ideas about natural selection had been influenced by the
+essays of Thomas Malthus in his Principles of Population. Their conclusion, however, had
+been the direct result of their personal observation of animals and plants in widely
+separated geographic locations: Darwin from his experiences during the voyage of
+the Beagle, and particularly during the ship’s visit to the Galapagos Islands in the East
+Pacific in 1835; Wallace during his years of travel in the Amazon Basin and in the
+Indonesia-Australian Archipelago in the 1850s.</p>
+<p>Darwin had been documenting his ideas on natural selection for many years when he
+received a paper on this selfsame subject from Wallace, who asked for Darwin’s opinion
+and help in getting it published. In July 1858, Charles Lyell and J. D Hooker, close friends
+of Darwin, pressed Darwin to present his conclusions so that he would not lose priority to
+an unknown naturalist. Presiding over the hastily called but now historic meeting of the
+Linnean Society in London, Lyell and Hooker explained to the distinguished members how
+“these two gentlemen” (who were absent: Wallace was abroad and Darwin chose not to
+attend), had “independently and unknown to one another, conceived the same very
+ingenious theory,”</p>
+<p>Both Darwin and Wallace had realized that the anomalous distribution of species in
+particular regions had profound evolutionary significance. Subsequently, Darwin spent the
+rest of his days in almost total seclusion thinking and writing mainly about the origin of
+species. In contrast, Wallace applied himself to the science of biogeography, the study of
+the pattern and distribution of species, and its significance, resulting in the publication of a
+massive two-volume work the Geographical Distribution of Animals in 1876.
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

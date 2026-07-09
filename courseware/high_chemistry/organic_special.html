@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>有机化学专项突破</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.hero {background:linear-gradient(135deg,#16a34a,#15803d);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px}
+.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.q-num {display:inline-block;background:#16a34a;color:#fff;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;font-weight:700;margin-right:10px}
+.q-title {display:inline-block;font-weight:600;color:#1e293b;font-size:1.05rem}
+.q-score {float:right;color:#64748b;font-size:0.9rem}
+.q-content {margin-top:16px;line-height:1.8;color:#374151}
+.answer-btn {margin-top:16px;padding:10px 20px;background:#16a34a;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.95rem}
+.answer {display:none;margin-top:16px;padding:16px;background:#dcfce7;border-radius:8px;border-left:3px solid #16a34a}
+.answer.show {display:block}
+.answer-value {font-weight:600;color:#166534;margin-bottom:8px}
+.answer-solution {color:#14532d;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 高中化学</a>&nbsp;|&nbsp;<a href="../exam_bank.html">← 题库中心</a></div>
+<div class="hero"><h1>🔗 有机化学专项突破</h1><p>官能团性质 · 反应类型 · 同分异构体 · 有机合成推断 · 共 50 道精选</p></div>
+<div class="question"><span class="q-num">1</span><span class="q-title">有机物官能团</span><span class="q-score">（14分）</span><div class="q-content">
+<p>已知某有机物结构简式为 CH₂=CH-CH₂-CHO，请回答：</p>
+<p>(1) 该有机物中含有的官能团名称是 __________、__________；（4 分）</p>
+<p>(2) 该有机物不能发生的反应是 __________（填序号）；（4 分）</p>
+<p style="padding-left:20px">① 加成反应 ② 酯化反应 ③ 氧化反应 ④ 还原反应 ⑤ 水解反应</p>
+<p>(3) 写出该有机物与足量 H₂ 反应的化学方程式 __________。（6 分）</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案与解析</button>
+<div class="answer" id="answer-1"><div class="answer-value">答案：</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) 碳碳双键、醛基<br><br>(2) 不能发生的是：② 酯化反应（无羟基或羧基）、⑤ 水解反应（无酯基、卤原子等）<br><br>(3) CH₂=CH-CH₂-CHO + 2H₂ 催化剂 CH₃CH₂CH₂CH₂OH<br>（碳碳双键和醛基都能与 H₂ 加成）</div></div></div>
+<div class="question"><span class="q-num">2</span><span class="q-title">同分异构体</span><span class="q-score">（14分）</span><div class="q-content">
+<p>分子式为 C₅H₁₀O₂ 的有机物，能与 NaHCO₃ 溶液反应产生气体。请回答：</p>
+<p>(1) 写出该有机物可能的结构简式（任写两种）；（8 分）</p>
+<p>(2) 该类有机物共有 __________ 种同分异构体（不考虑立体异构）。（6 分）</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案与解析</button>
+<div class="answer" id="answer-2"><div class="answer-value">答案：</div>
+<div class="answer-solution"><strong>解析：</strong><br>能与 NaHCO₃ 反应说明含有羧基（-COOH），即 C₄H₉-COOH，实际是丁基的同分异构体数目。<br><br>(1) CH₃CH₂CH₂CH₂COOH（正戊酸）、(CH₃)₂CHCH₂COOH（3-甲基丁酸）等<br><br>(2) 丁基共有 4 种：正丁基、异丁基、仲丁基、叔丁基，故共有 4 种羧酸。</div></div></div>
+<div style="text-align:center;padding:20px;color:#64748b;background:#fff;border-radius:10px">
+<strong>更多题目整理中...</strong><br>完整 50 道有机化学题正在陆续添加
+</div>
+</div></body></html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>高中物理 · 人教版课件</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.phy-hero { background:linear-gradient(135deg,#2563eb,#7c3aed); color:#fff; border-radius:20px; padding:40px 24px; margin-bottom:28px; }
+.phy-hero h1 { font-size:1.8rem; margin-bottom:8px; }
+.ch-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px; margin-bottom:32px; }
+.ch-card { background:#fff; border-radius:14px; padding:20px; text-decoration:none; box-shadow:0 2px 8px rgba(0,0,0,.06); border-left:4px solid #2563eb; transition:transform .2s; display:block; color:var(--text); }
+.ch-card:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,.1); }
+.ch-card h3 { font-size:1.1rem; margin-bottom:10px; color:#2563eb; }
+.ch-card .sections { font-size:.85rem; color:#64748b; line-height:1.6; }
+.exam-btn { display:inline-block; padding:10px 24px; background:var(--warning); color:#fff; border-radius:8px; text-decoration:none; font-weight:600; margin:0 8px 20px 0; }
+.year-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin:24px 0; }
+.year-btn { text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text); transition:all .2s; }
+.year-btn:hover { border-color:#2563eb; background:#eff6ff; }
+.year-btn.current { background:#eff6ff; border:2px solid #2563eb; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+<h3>⚛️ 高中物理</h3>
+<ul class="chapter-list">
+<li><a href="#mechanics"><span class="ch-num">💪</span>力学</a></li>
+<li><a href="#elec"><span class="ch-num">⚡</span>电磁学</a></li>
+<li><a href="#thermal"><span class="ch-num">🌡️</span>热学</a></li>
+<li><a href="#optics"><span class="ch-num">🔬</span>光学</a></li>
+<li><a href="#modern"><span class="ch-num">⚛️</span>近代物理</a></li>
+</ul>
+<div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+
+<main class="main">
+<div class="phy-hero">
+<h1>⚛️ 人教版高中物理</h1>
+<p>必修第一、二、三册 + 选择性必修 · 含知识讲解、动画演示、高考真题</p>
+</div>
+
+        <div style="margin-bottom:24px;">
+            <a href="exam_collection.html" class="exam-btn">📝 上海高考物理真题汇编 →</a>
+            <a href="../physics_competition/index.html" class="exam-btn" style="background:linear-gradient(135deg,#7c3aed,#5b21b6);">🏆 全国中学生物理竞赛 →</a>
+        </div>
+
+<h2 id="mechanics" style="margin-bottom:16px;">💪 力学（必修1+必修2）</h2>
+<div class="ch-grid">
+<a href="p01_kinematics.html" class="ch-card">
+<h3>第一章 运动的描述</h3>
+<div class="sections">质点、参考系、坐标系 · 时间与位移 · 速度与加速度 · 匀变速直线运动</div>
+</a>
+<a href="p02_force.html" class="ch-card">
+<h3>第二章 相互作用</h3>
+<div class="sections">重力与弹力 · 摩擦力 · 力的合成与分解 · 共点力平衡条件</div>
+</a>
+<a href="p03_newton.html" class="ch-card">
+<h3>第三章 牛顿运动定律</h3>
+<div class="sections">牛顿三大定律 · 超重与失重 · 连接体问题 · 临界极值问题</div>
+</a>
+<a href="p04_curve.html" class="ch-card">
+<h3>第四章 曲线运动</h3>
+<div class="sections">平抛运动 · 圆周运动 · 向心力与向心加速度 · 万有引力定律</div>
+</a>
+<a href="p05_energy.html" class="ch-card">
+<h3>第五章 机械能</h3>
+<div class="sections">功与功率 · 动能定理 · 机械能守恒定律 · 能量守恒定律</div>
+</a>
+<a href="p06_momentum.html" class="ch-card">
+<h3>第六章 动量</h3>
+<div class="sections">动量定理 · 动量守恒定律 · 碰撞问题 · 反冲运动</div>
+</a>
+</div>
+
+<h2 id="elec" style="margin:32px 0 16px;">⚡ 电磁学（选修3-1+3-2）</h2>
+<div class="ch-grid">
+<a href="p11_electric.html" class="ch-card">
+<h3>第七章 静电场</h3>
+<div class="sections">库仑定律 · 电场强度 · 电势与电势能 · 电容器 · 带电粒子在电场中运动</div>
+</a>
+<a href="p12_circuit.html" class="ch-card">
+<h3>第八章 恒定电流</h3>
+<div class="sections">欧姆定律 · 串并联电路 · 闭合电路欧姆定律 · 电功率与焦耳定律</div>
+</a>
+<a href="p13_magnetic.html" class="ch-card">
+<h3>第九章 磁场</h3>
+<div class="sections">磁感应强度 · 安培力 · 洛伦兹力 · 带电粒子在磁场中运动</div>
+</a>
+<a href="p14_induction.html" class="ch-card">
+<h3>第十章 电磁感应</h3>
+<div class="sections">楞次定律 · 法拉第电磁感应定律 · 自感与互感 · 涡流</div>
+</a>
+<a href="p15_ac.html" class="ch-card">
+<h3>第十一章 交流电</h3>
+<div class="sections">正弦交流电的产生与描述 · 变压器 · 远距离输电</div>
+</a>
+</div>
+
+<h2 id="thermal" style="margin:32px 0 16px;">🌡️ 热学 · 🔬 光学 · ⚛️ 近代物理</h2>
+<div class="ch-grid">
+<a href="p21_thermal.html" class="ch-card">
+<h3>热学</h3>
+<div class="sections">分子动理论 · 气体实验定律 · 热力学第一、第二定律 · 能量守恒</div>
+</a>
+<a href="p22_optics.html" class="ch-card">
+<h3>光学</h3>
+<div class="sections">光的折射与全反射 · 光的干涉与衍射 · 光的偏振 · 电磁波谱</div>
+</a>
+<a href="p23_modern.html" class="ch-card">
+<h3>近代物理</h3>
+<div class="sections">波粒二象性 · 原子结构 · 原子核 · 核反应与核能</div>
+</a>
+</div>
+
+<h2 style="margin:32px 0 16px;">📝 高考真题（按年份）</h2>
+<div class="year-grid">
+<a href="exam_2017.html" class="year-btn">2017年</a>
+<a href="exam_2018.html" class="year-btn">2018年</a>
+<a href="exam_2019.html" class="year-btn">2019年</a>
+<a href="exam_2020.html" class="year-btn">2020年</a>
+<a href="exam_2021.html" class="year-btn">2021年</a>
+<a href="exam_2022.html" class="year-btn">2022年</a>
+<a href="exam_2023.html" class="year-btn">2023年</a>
+<a href="exam_2024.html" class="year-btn current">⭐ 2024年</a>
+<a href="exam_2025.html" class="year-btn">2025年</a>
+<a href="exam_2026.html" class="year-btn">2026年</a>
+</div>
+
+</main>
+</div>
+</body>
+</html>

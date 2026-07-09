@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Scientific Method - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题572/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 The Scientific Method</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>and Dr Margaret Rule its Archaeological Director. The decision whether or not to salvage
+the wreck was not an easy one, although an excavation in 1978 had shown that it might be
+possible to raise the hull. While the original aim was to raise the hull if at all feasible, the
+operation was not given the go-ahead until January 1982, when all the necessary
+information was available.</p>
+<p>An important factor in trying to salvage the Mary Rose was that the remaining hull was an
+open shell. This led to an important decision being taken: namely to carry out the lifting
+operation in three very distinct stages. The hull was attached to a lifting frame via a network
+of bolts and lifting wires. The problem of the hull being sucked back downwards into the
+mud was overcome by using 12 hydraulic jacks. These raised it a few centimetres over
+a period of several days, as the lifting frame rose slowly up its four legs. It was only when
+the hull was hanging freely from the lifting frame, clear of the seabed and the suction effect
+of the surrounding mud, that the salvage operation progressed to the second stage. In this
+stage, the lifting frame was fixed to a hook attached to a crane, and the hull was lifted
+completely clear of the seabed and transferred underwater into the lifting cradle.
+This required precise positioning to locate the legs into the stabbing guides’ of the
+lifting cradle. The lifting cradle was designed to fit the hull jusing archaeological
+survey drawings, and was fitted with air bags to provide additional cushioning for the
+hull’s delicate timber framework. The third and final stage was to lift the entire structure into
+the air, by which time the hull was also supported from below. Finally, on 11 October 1982,
+millions of people around the world held their breath as the timber skeleton of the Mary
+Rose was lifted clear of the water, ready to be returned home to Portsmouth.
+ 2</p>
+<p>Questions 1-4
+Do the following statements agree with the information given in Reading Passage? In
+boxes 1-4 on your answer sheet, write</p>
+<p>TRUE    if the statement agrees with the information
+FALSE if the statement contradicts the information
+NOT GIVEN if there is no information on this
+1.....................    There is some doubt about what caused the Mary Rose to sink.
+2.....................    The Mary Rose was the only ship to sink in the battle of 19 July 1545.
+3.....................    Most of one side of the Mary Rose lay undamaged under the sea.
+4.....................    Alexander McKee knew that the wreck would contain many
+valuable historical objects.
+Questions 5-8
+Look at the following statements (Questions 5-8) and the list of dates below.
+Match each statement with the correct date, A-G.
+Write the correct letter, A-G, in boxes 5-8 on your answer sheet.
+List of Dates
+A1836     E 1971
+   
+B1840
+C1965</p>
+<p>5.....................    A search for the Mary Rose was launched.
+6.....................    One person’s exploration of the Mary Rose site stopped.
+7.....................    It was agreed that the hull of the Mary Rose should be raised.
+8.....................    The site of the Mary Rose was found by chance.
+Questions 9-13
+Label the diagram below.
+Choose NO MORE THAN TWO WORDS from the passage for each answer.
+ 3</p>
+<p>Write your answers in boxes 9-13 on your answer sheet.</p>
+<p>Raising the hull of the Mary Rose: Stages one and two
+-9..................... attached to hull by wires
+-10..................... to prevent hull being sucked into mud
+-legs are placed into 11.....................
+-hull is lowered into 12.....................
+-13..................... used as extra protection for the hull  
+ 4</p>
+<p>Solution:
+ 
+1. TRUE
+2. NOT GIVEN
+3. TRUE
+4. FALSE
+5. C
+6. B
+7.
+8. A
+9. (lifting) frame
+10. hydraulic jacks
+11. stabbing guides
+12. (lifting) cradle
+13. air bags</p>
+<p>Reading in a whole new way
+  
+As technology improves, how does the act of reading change?</p>
+<p>Reading and writing, like all technologies, are constantly changing. In ancient times,
+authors often dictated their books. Dictation sounded like an uninterrupted series of words,
+so scribes wrote these down in one long continuous string, justastheyoccurinspeech. For
+this reason, text was written without spaces between words until the 11th century.
+ 
+This continuous script made books hard to read, so only a few people were accomplished
+at reading them aloud to others. Being able to read silently to yourself was considered an
+amazing talent; writing was an even rarer skill. In fact, in 15th-century Europe, only one in
+20 adult males could write.
+ 
+After Gutenberg’s invention of the printing press in about 1440, mass-produced books
+changed the way people read and wrote. The technology of printing increased the number
+of words available, and more types of media, such as newspapers and magazines,
+broadened what was written about. Authors no longer had to produce scholarly works, as
+was common until then, but could write, for example, inexpensive, heart-rending love
+stories or publish autobiographies, even if they were unknown.
+  
+In time, the power of the written word gave birth to the idea of authority and expertise. Laws
+were compiled into official documents, contracts were written down and nothing was valid
+unless it was in this form. Painting, music, architecture, dance were all important, but the
+heartbeat of many cultures was the turning pages of a book. By the early 19th century,
+public libraries had been built in many cities.
+  
+Today, words are migrating from paper to computers, phones, laptops and game consoles.
+Some 4.5 billion digital screens illuminate our lives. Letters are no longer fixed in black ink
+on paper, but flitter on a glass surface in a rainbow of colors as fast as our eyes can blink.
+Screens fill our pockets, briefcases, cars, living-room walls and the sides of buildings. They
+sit in front of us when we work - regardless of what we do. And of course, these newly
+ubiquitous screens have changed how we read and write.
+The first screens that overtook culture, several decades ago - the big, fat, warm tubes of
+television - reduced the time we spent reading to such an extent that it seemed as if
+reading and writing were over. Educators and parents worried deeply that the TV
+generation would be unable to write. But the interconnected, cool, thin displays of computer
+screens launched an epidemic of writing that continues to swell. As a consequence, the
+amount of time people spend reading has almost tripled since 1980. By 2008, the World
+Wide Web contained more than a trillion pages, and that total grows rapidly every day.
+But it is not book reading or newspaper reading, it is screen reading. Screens are always
+on, and, unlike books, we never stop staring at them. This new platform is very visual, and
+it is gradually merging words with moving images. You might think of this new medium as
+books we watch, or television we read. We also use screens to present data, and this
+encourages numeracy: visualising data and reading charts, looking at pictures and symbols
+are all part of this new literacy.
+Screens engage our bodies, too. The most we may do while reading a book is to flip the
+pages or turn over a corner, but when we use a screen, we interact with what we see. In
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

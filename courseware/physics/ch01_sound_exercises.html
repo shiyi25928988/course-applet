@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>声学专项练习 - 初中物理沪教版</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>.fill input{width:120px;padding:6px 10px;border:2px solid var(--border);border-radius:6px;font-size:.95rem;}.fill input.correct{border-color:var(--success);background:#dcfce7;}.fill input.wrong{border-color:var(--danger);background:#fef2f2;}
+.progress-bar{background:var(--border);height:8px;border-radius:4px;margin-bottom:24px;overflow:hidden;}.progress-bar .fill-bar{height:100%;background:linear-gradient(90deg,var(--primary),#7c3aed);border-radius:4px;transition:width .4s;}
+</style></head>
+<body>
+<div class="layout">
+<aside class="sidebar"><h3>📝 专项练习</h3><ul class="chapter-list">
+<li><a href="#q1">第1题</a></li><li><a href="#q6">第6题</a></li><li><a href="#q11">第11题</a></li>
+<li style="margin-top:20px;"><a href="ch01_sound.html">← 返回声学课件</a></li></ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div class="page-title">🔊 声学专项练习</div>
+<p style="color:var(--text-secondary);margin-bottom:20px;">共15题 · 覆盖声波产生传播、声音三要素、噪声控制、超声波次声波 · 点击"查看答案"检查对错</p>
+
+<!-- Q1 -->
+<div class="exercise" id="q1"><div class="question"><span class="q-num">1</span>声音是由物体的____产生的。</div>
+<div class="options"><label><input type="radio" name="q1" value="A">A. 运动</label><label><input type="radio" name="q1" value="B">B. 振动</label><label><input type="radio" name="q1" value="C">C. 碰撞</label><label><input type="radio" name="q1" value="D">D. 摩擦</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="B">✅ B。声音由物体振动产生。振动停止，发声停止。正在发声的物体叫声源。</div></div>
+
+<!-- Q2 -->
+<div class="exercise"><div class="question"><span class="q-num">2</span>下列关于声音传播的说法，正确的是____。</div>
+<div class="options"><label><input type="radio" name="q2" value="A">A. 声音只能在空气中传播</label><label><input type="radio" name="q2" value="B">B. 声音在真空中传播最快</label><label><input type="radio" name="q2" value="C">C. 声音传播需要介质</label><label><input type="radio" name="q2" value="D">D. 声音在固体中传播最慢</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="C">✅ C。声音传播需要介质（固/液/气），真空不能传声。一般v固>v液>v气。</div></div>
+
+<!-- Q3 -->
+<div class="exercise"><div class="question"><span class="q-num">3</span>15℃时声音在空气中的传播速度约为____。</div>
+<div class="options"><label><input type="radio" name="q3" value="A">A. 3×10⁸ m/s</label><label><input type="radio" name="q3" value="B">B. 1500 m/s</label><label><input type="radio" name="q3" value="C">C. 340 m/s</label><label><input type="radio" name="q3" value="D">D. 34 m/s</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="C">✅ C。15℃时空气中声速约340m/s。水中约1500m/s。</div></div>
+
+<!-- Q4 -->
+<div class="exercise"><div class="question"><span class="q-num">4</span>"不敢高声语，恐惊天上人"中的"高"是指声音的____。</div>
+<div class="options"><label><input type="radio" name="q4" value="A">A. 音调高</label><label><input type="radio" name="q4" value="B">B. 响度大</label><label><input type="radio" name="q4" value="C">C. 音色好</label><label><input type="radio" name="q4" value="D">D. 频率高</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="B">✅ B。"高声"指声音大，属于响度大。响度由振幅和距离决定。</div></div>
+
+<!-- Q5 -->
+<div class="exercise"><div class="question"><span class="q-num">5</span>男低音与女高音的主要区别是____不同。</div>
+<div class="options"><label><input type="radio" name="q5" value="A">A. 音调</label><label><input type="radio" name="q5" value="B">B. 响度</label><label><input type="radio" name="q5" value="C">C. 音色</label><label><input type="radio" name="q5" value="D">D. 声速</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="A">✅ A。男低音频率低、音调低；女高音频率高、音调高。音调由频率决定。</div></div>
+
+<!-- Q6 -->
+<div class="exercise" id="q6"><div class="question"><span class="q-num">6</span>我们能分辨不同乐器演奏同一首乐曲，是因为它们的____不同。</div>
+<div class="options"><label><input type="radio" name="q6" value="A">A. 音调</label><label><input type="radio" name="q6" value="B">B. 响度</label><label><input type="radio" name="q6" value="C">C. 音色</label><label><input type="radio" name="q6" value="D">D. 频率</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="C">✅ C。音色（音品）由发声体的材料和结构决定，是区分不同发声体的依据。</div></div>
+
+<!-- Q7 -->
+<div class="exercise"><div class="question"><span class="q-num">7</span>人耳能听到的声音频率范围是____。</div>
+<div class="options"><label><input type="radio" name="q7" value="A">A. 0~20 Hz</label><label><input type="radio" name="q7" value="B">B. 20~20000 Hz</label><label><input type="radio" name="q7" value="C">C. 20000~100000 Hz</label><label><input type="radio" name="q7" value="D">D. 任意频率</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="B">✅ B。人耳听觉范围20~20000Hz。低于20Hz为次声波，高于20000Hz为超声波。</div></div>
+
+<!-- Q8 -->
+<div class="exercise"><div class="question"><span class="q-num">8</span>下列应用中，利用超声波的是____。</div>
+<div class="options"><label><input type="radio" name="q8" value="A">A. 预报地震</label><label><input type="radio" name="q8" value="B">B. B超检查</label><label><input type="radio" name="q8" value="C">C. 预报台风</label><label><input type="radio" name="q8" value="D">D. 探测核爆</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="B">✅ B。B超利用超声波。地震/台风/核爆产生次声波，用次声波监测。</div></div>
+
+<!-- Q9 -->
+<div class="exercise"><div class="question"><span class="q-num">9</span>控制噪声有三种途径。在摩托车上安装消音器属于____。</div>
+<div class="options"><label><input type="radio" name="q9" value="A">A. 在声源处减弱</label><label><input type="radio" name="q9" value="B">B. 在传播过程中减弱</label><label><input type="radio" name="q9" value="C">C. 在人耳处减弱</label><label><input type="radio" name="q9" value="D">D. 以上都不是</label></div>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+<div class="answer" id="answer-9" data-correct="A">✅ A。消音器在声源处减弱。植树/隔音墙在传播过程中减弱；耳塞在人耳处减弱。</div></div>
+
+<!-- Q10 -->
+<div class="exercise"><div class="question"><span class="q-num">10</span>声音在下列介质中传播最快的是____。</div>
+<div class="options"><label><input type="radio" name="q10" value="A">A. 空气</label><label><input type="radio" name="q10" value="B">B. 水</label><label><input type="radio" name="q10" value="C">C. 钢铁</label><label><input type="radio" name="q10" value="D">D. 真空</label></div>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+<div class="answer" id="answer-10" data-correct="C">✅ C。一般v固>v液>v气。钢铁是固体，传播最快。真空不能传声。</div></div>
+
+<!-- Q11 填空 -->
+<div class="exercise" id="q11"><div class="question"><span class="q-num">11</span>【填空题】响度的大小由发声体振动的____决定，还跟距离声源的远近有关。</div>
+<div class="fill"><input type="text" id="fill11" placeholder="请填写答案"><button class="answer-btn" onclick="checkFill(11,'振幅')">检查</button></div>
+<div class="answer" id="answer-11">✅ 振幅。振幅越大，响度越大。响度单位：分贝（dB）。</div></div>
+
+<!-- Q12 填空 -->
+<div class="exercise"><div class="question"><span class="q-num">12</span>【填空题】声音以____的形式在介质中传播。声音在介质中传播遇到障碍物会被____回来，形成回声。</div>
+<div class="fill"><input type="text" id="fill12a" placeholder="第一空"><input type="text" id="fill12b" placeholder="第二空" style="margin-left:8px;"><button class="answer-btn" onclick="checkFill2(12,'声波','反射')">检查</button></div>
+<div class="answer" id="answer-12">✅ 声波、反射。人耳区分原声和回声至少需要0.1s间隔，对应距离约17m。</div></div>
+
+<!-- Q13 计算 -->
+<div class="exercise"><div class="question"><span class="q-num">13</span>【计算】某人对着山崖喊话，2秒后听到回声，此时声音在空气中速度为340m/s，则人与山崖的距离是____。</div>
+<div class="options"><label><input type="radio" name="q13" value="A">A. 170 m</label><label><input type="radio" name="q13" value="B">B. 340 m</label><label><input type="radio" name="q13" value="C">C. 680 m</label><label><input type="radio" name="q13" value="D">D. 1360 m</label></div>
+<button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+<div class="answer" id="answer-13" data-correct="B">✅ B。s=vt/2=340×2/2=340m。注意声音走了一个来回，距离要除以2。</div></div>
+
+<!-- Q14 -->
+<div class="exercise"><div class="question"><span class="q-num">14</span>下列关于乐音和噪声的说法，正确的是____。</div>
+<div class="options"><label><input type="radio" name="q14" value="A">A. 乐音一定不是噪声</label><label><input type="radio" name="q14" value="B">B. 噪声一定是由无规则振动产生的</label><label><input type="radio" name="q14" value="C">C. 从环保角度看，一切影响人们正常学习休息的声音都是噪声</label><label><input type="radio" name="q14" value="D">D. 噪声无法控制</label></div>
+<button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+<div class="answer" id="answer-14" data-correct="C">✅ C。从环保角度，凡是妨碍人们正常休息、学习和工作的声音都属于噪声。乐音也可能成为噪声。</div></div>
+
+<!-- Q15 -->
+<div class="exercise"><div class="question"><span class="q-num">15</span>用力敲鼓，鼓声的____变大。</div>
+<div class="options"><label><input type="radio" name="q15" value="A">A. 音调</label><label><input type="radio" name="q15" value="B">B. 响度</label><label><input type="radio" name="q15" value="C">C. 音色</label><label><input type="radio" name="q15" value="D">D. 频率</label></div>
+<button class="answer-btn" onclick="showAnswer(15)">查看答案</button>
+<div class="answer" id="answer-15" data-correct="B">✅ B。用力敲鼓→振幅增大→响度变大。音调由频率决定，与用力大小无关。</div></div>
+
+</main></div>
+<script src="../assets/js/common.js"></script>
+<script>
+function checkFill(n,answer){
+  const el=document.getElementById('fill'+n);if(!el)return;
+  const ans=document.getElementById('answer-'+n);
+  if(el.value.trim()===answer){el.classList.add('correct');el.classList.remove('wrong');ans.classList.add('show','correct');ans.classList.remove('wrong');}
+  else{el.classList.add('wrong');el.classList.remove('correct');ans.classList.add('show','wrong');ans.classList.remove('correct');}
+}
+function checkFill2(n,a1,a2){
+  const e1=document.getElementById('fill'+n+'a'),e2=document.getElementById('fill'+n+'b');
+  const ans=document.getElementById('answer-'+n);
+  if(e1.value.trim()===a1&&e2.value.trim()===a2){
+    e1.classList.add('correct');e2.classList.add('correct');ans.classList.add('show','correct');
+  }else{e1.classList.add('wrong');e2.classList.add('wrong');ans.classList.add('show','wrong');}
+}
+</script>
+</body>
+</html>

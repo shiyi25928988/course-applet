@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>2020年上海高考数学真题</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.year-header { background:linear-gradient(135deg,#7c3aed,#a855f7); color:#fff; padding:24px; border-radius:12px; margin-bottom:24px; }
+.section-title { background:#f5f3ff; padding:10px 16px; border-left:4px solid #7c3aed; margin:24px 0 16px; font-weight:600; }
+.question { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px dashed #e2e8f0; }
+.q-num { display:inline-block; background:#7c3aed; color:#fff; width:28px; height:28px; border-radius:50%; text-align:center; line-height:28px; font-weight:700; font-size:.85rem; margin-right:8px; }
+.answer-btn { margin-top: 8px; padding:6px 18px; background:#7c3aed; color:#fff; border:none; border-radius:6px; cursor:pointer; font-size:.9rem; transition:.2s; }
+.answer-btn:hover { opacity:.9; transform:translateY(-1px); }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 返回高中数学主页</a><a href="exam_collection.html">← 真题汇编目录</a></div>
+<div class="year-header"><h1>📐 2020年上海市普通高等学校招生全国统一考试</h1><h2>数学试卷</h2><p>满分150分 · 考试时间120分钟</p></div>
+
+<div class="section-title">一、填空题（本大题共12题，满分54分，第1-6题每题4分，第7-12题每题5分）</div>
+
+<div class="question">
+<span class="q-num">1</span>已知 i 是虚数单位，则复数 (2 + i)(1 - i) 的模为 ______。
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="√10">√10。
+<br>方法一：(2 + i)(1 - i) = 2 - 2i + i - i² = 3 - i，模 |3 - i| = √(3² + (-1)²) = √10
+<br>方法二：|(2 + i)(1 - i)| = |2 + i| × |1 - i| = √5 × √2 = √10</div>
+</div>
+
+<div class="question">
+<span class="q-num">2</span>已知集合 A = {1, 2, 3}，B = {x | (x + 1)(x - 2) < 0, x ∈ Z}，则 A ∩ B = ______。
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="{1}">{1}。
+<br>(x + 1)(x - 2) < 0 ⇒ -1 < x < 2，又 x ∈ Z ⇒ x = 0, 1
+<br>故 B = {0, 1}，A ∩ B = {1}</div>
+</div>
+
+<div class="question">
+<span class="q-num">3</span>已知函数 f(x) = log₂(x + a)，若 f(2) = 1，则 a = ______。
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="0">0。
+<br>f(2) = log₂(2 + a) = 1 ⇒ 2 + a = 2¹ = 2 ⇒ a = 0</div>
+</div>
+
+<div class="question">
+<span class="q-num">4</span>从 3 名男同学和 2 名女同学中任选 2 人参加社会实践活动，则选出的 2 人中至少有 1 名女同学的概率为 ______。
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="7/10">7/10。
+<br>总选法：C(5, 2) = 10 种
+<br>全是男同学的选法：C(3, 2) = 3 种
+<br>至少 1 名女同学的概率 = 1 - 3/10 = 7/10</div>
+</div>
+
+<div class="question">
+<span class="q-num">5</span>已知向量 a = (1, 0)，b = (1, 1)，则 a 与 b 的夹角为 ______（用弧度表示）。
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="π/4">π/4。
+<br>cosθ = (a·b) / (|a||b|) = (1×1 + 0×1) / (1×√2) = 1/√2 = √2/2
+<br>θ ∈ [0, π]，故 θ = π/4</div>
+</div>
+
+<div class="question">
+<span class="q-num">6</span>若等差数列 {aₙ} 的前 n 项和为 Sₙ，且 a₁ = 2，S₃ = 12，则 a₆ = ______。
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="12">12。
+<br>S₃ = 3a₁ + 3d = 3×2 + 3d = 6 + 3d = 12 ⇒ d = 2
+<br>a₆ = a₁ + 5d = 2 + 5×2 = 12</div>
+</div>
+
+<div class="section-title">二、选择题（本大题共4题，每题5分，满分20分）</div>
+
+<div class="question">
+<span class="q-num">13</span>下列函数中，定义域是 R 且为增函数的是（ ）
+<div class="options">
+<label><input type="radio" name="q13" value="A">A. y = e^(-x)</label>
+<label><input type="radio" name="q13" value="B">B. y = x³</label>
+<label><input type="radio" name="q13" value="C">C. y = ln x</label>
+<label><input type="radio" name="q13" value="D">D. y = |x|</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+<div class="answer" id="answer-13" data-correct="B">✅ B。
+<br>A. y = e^(-x) = (1/e)^x 是减函数；
+<br>B. y = x³ 的导数 y' = 3x² ≥ 0，在 R 上单调递增；
+<br>C. y = ln x 的定义域为 (0, +∞)；
+<br>D. y = |x| 在 (-∞, 0) 单调递减，在 (0, +∞) 单调递增。</div>
+</div>
+
+<div class="question">
+<span class="q-num">14</span>若抛物线 y² = 2px（p > 0）的焦点与椭圆 x²/9 + y²/5 = 1 的右焦点重合，则 p =（ ）
+<button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+<div class="answer" id="answer-14" data-correct="4">4。
+<br>椭圆中 a² = 9, b² = 5，故 c² = a² - b² = 4 ⇒ c = 2
+<br>右焦点为 (2, 0)
+<br>抛物线 y² = 2px 的焦点为 (p/2, 0)
+<br>故 p/2 = 2 ⇒ p = 4</div>
+</div>
+
+<div class="section-title">三、解答题（本大题共5题，满分76分）</div>
+
+<div class="question">
+<span class="q-num">19</span>本题满分14分
+<br>如图，在长方体 ABCD-A₁B₁C₁D₁ 中，AB = BC = 2，AA₁ = 1。
+<br>（1）求直线 A₁B 与平面 BCC₁B₁ 所成角的大小；
+<br>（2）求三棱锥 B₁ - A₁BC 的体积。
+<button class="answer-btn" onclick="showAnswer(19)">查看解析</button>
+<div class="answer" id="answer-19" data-correct="1">
+<strong>解：</strong>
+<br>（1）∵ 长方体中 A₁B₁ ⊥ 平面 BCC₁B₁
+<br>∴ ∠A₁BB₁ 就是直线 A₁B 与平面 BCC₁B₁ 所成的角
+<br>在 Rt△A₁B₁B 中，A₁B₁ = AB = 2，BB₁ = AA₁ = 1
+<br>tan∠A₁BB₁ = A₁B₁ / BB₁ = 2 / 1 = 2
+<br>故直线 A₁B 与平面 BCC₁B₁ 所成角为 arctan 2
+<br><br>（2）V_B₁-A₁BC = V_A₁-BCB₁（换顶点）
+<br>S_△BCB₁ = 1/2 × BC × BB₁ = 1/2 × 2 × 1 = 1
+<br>A₁ 到平面 BCC₁B₁ 的距离 = A₁B₁ = 2
+<br>V = 1/3 × S_△BCB₁ × 高 = 1/3 × 1 × 2 = 2/3
+<br>故三棱锥 B₁ - A₁BC 的体积为 2/3
+</div>
+</div>
+
+</div>
+</body>
+</html>

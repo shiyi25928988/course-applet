@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雅思真题模考 - 学习助手</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .page-hero p {
+            opacity: 0.95;
+            margin: 0;
+            font-size: 1.05rem;
+        }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #4f46e5;
+            font-size: 1.2rem;
+        }
+        .tip-box {
+            background: #eef2ff;
+            border-left: 4px solid #6366f1;
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+        }
+        .tip-box h4 {
+            margin: 0 0 8px 0;
+            color: #4338ca;
+        }
+        .tip-box p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #374151;
+        }
+        .exam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .exam-card {
+            background: #eef2ff;
+            border-radius: 8px;
+            padding: 16px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+        .exam-card:hover {
+            border-color: #6366f1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+        }
+        .exam-card h4 {
+            margin: 0 0 8px 0;
+            color: #4f46e5;
+        }
+        .exam-card p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+        .score-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            font-size: 0.9rem;
+        }
+        .score-table th, .score-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e7ff;
+        }
+        .score-table th {
+            background: #eef2ff;
+            color: #4338ca;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📋 真题模考</h3>
+            <ul class="chapter-list">
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+                <li><a href="tips.html"><span class="ch-num">💡</span>备考技巧</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+        </aside>
+
+        <main class="main">
+            <div class="page-hero">
+                <h1>📋 真题模考</h1>
+                <p>剑桥雅思 10-19 真题 · 完整套题 · 答案与详细解析</p>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 真题使用建议</h4>
+                <p>剑桥雅思 10-19 是最宝贵的备考材料，至少做 2 遍。第一遍分题型训练，第二遍完整模考，严格计时。做完一定要认真分析错题，找出错误原因。剑 15-19 留到最后模考用，不要太早做完。</p>
+            </div>
+
+            <h2 style="margin:24px 0 16px;color:#1e293b;">📚 剑桥雅思真题系列</h2>
+
+            <div class="content-section">
+                <h3>📘 最新真题（留作模考）</h3>
+                <div class="exam-grid">
+                    <div class="exam-card">
+                        <h4>Cambridge IELTS 19</h4>
+                        <p>⭐ 最新发布 · 2024年 · 必做！</p>
+                    </div>
+                    <div class="exam-card">
+                        <h4>Cambridge IELTS 18</h4>
+                        <p>2023年 · 模考首选</p>
+                    </div>
+                    <div class="exam-card">
+                        <h4>Cambridge IELTS 17</h4>
+                        <p>2022年 · 难度适中</p>
+                    </div>
+                    <div class="exam-card">
+                        <h4>Cambridge IELTS 16</h4>
+                        <p>2021年 · 经典必做</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>📓 经典真题（分题型训练）</h3>
+                <div class="exam-grid">
+                    <div class="exam-card">
+                        <h4>Cambridge IELTS 15</h4>
+                        <p>2020年 · 阅读较难</p>
+                    </div>
+                    <div class="exam-card">
+                        <h4>Cambridge IELTS 14</h4>
+                        <p>2019年 · 听力经典</p>
+                    </div>
+                    <div class="exam-card">
+                        <h4>Cambridge IELTS 13</h4>
+                        <p>2018年 · 写作参考</p>
+                    </div>
+                    <div class="exam-card">
+                        <h4>Cambridge IELTS 12</h4>
+                        <p>2017年 · 基础训练</p>
+                    </div>
+                    <div class="exam-card">
+                        <h4>Cambridge IELTS 11</h4>
+                        <p>2016年 · 入门练习</p>
+                    </div>
+                    <div class="exam-card">
+                        <h4>Cambridge IELTS 10</h4>
+                        <p>2015年 · 参考即可</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="margin:24px 0 16px;color:#1e293b;">⏱️ 完整模考流程</h2>
+            <div class="content-section">
+                <ul style="margin:0;padding-left:20px;line-height:2;">
+                    <li><strong>时间</strong>：上午 9:00 开始（与真实考试时间一致）</li>
+                    <li><strong>听力</strong>：30 分钟（放录音）+ 10 分钟（誊写答案）</li>
+                    <li><strong>阅读</strong>：60 分钟（三篇文章，限时！）</li>
+                    <li><strong>写作</strong>：60 分钟（先写大作文 40 分钟，再写小作文 20 分钟）</li>
+                    <li><strong>口语</strong>：单独安排，找外教或语伴模拟</li>
+                    <li><strong>中间不要休息！</strong>真实考试是连续进行的，要培养耐力</li>
+                    <li><strong>手机关机</strong>，不要查字典，完全模拟真实环境</li>
+                </ul>
+            </div>
+
+            <h2 style="margin:24px 0 16px;color:#1e293b;">📊 分数对照表</h2>
+            <div class="content-section">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+                    <div>
+                        <h4 style="margin:0 0 12px 0;color:#4f46e5;">👂 听力</h4>
+                        <table class="score-table">
+                            <tr><th>正确数</th><th>分数</th></tr>
+                            <tr><td>39-40</td><td>9.0</td></tr>
+                            <tr><td>37-38</td><td>8.5</td></tr>
+                            <tr><td>35-36</td><td>8.0</td></tr>
+                            <tr><td>33-34</td><td>7.5</td></tr>
+                            <tr><td>30-32</td><td>7.0</td></tr>
+                            <tr><td>27-29</td><td>6.5</td></tr>
+                            <tr><td>23-26</td><td>6.0</td></tr>
+                        </table>
+                    </div>
+                    <div>
+                        <h4 style="margin:0 0 12px 0;color:#4f46e5;">📖 阅读（学术类）</h4>
+                        <table class="score-table">
+                            <tr><th>正确数</th><th>分数</th></tr>
+                            <tr><td>39-40</td><td>9.0</td></tr>
+                            <tr><td>37-38</td><td>8.5</td></tr>
+                            <tr><td>35-36</td><td>8.0</td></tr>
+                            <tr><td>33-34</td><td>7.5</td></tr>
+                            <tr><td>30-32</td><td>7.0</td></tr>
+                            <tr><td>27-29</td><td>6.5</td></tr>
+                            <tr><td>23-26</td><td>6.0</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <div style="margin-top:16px;font-size:0.9rem;color:#64748b;">
+                    <p>💡 <strong>写作和口语</strong>：主观性较强，建议找老师批改，或对照范文自评。</p>
+                    <p>💡 <strong>总分</strong>：四项平均分，四舍五入到最近的 0.5 分。</p>
+                </div>
+            </div>
+
+            <h2 style="margin:24px 0 16px;color:#1e293b;">📝 错题分析方法</h2>
+            <div class="content-section">
+                <ul style="margin:0;padding-left:20px;line-height:2;">
+                    <li><strong>建立错题本</strong>：把每一道错题记录下来</li>
+                    <li><strong>分析错误原因</strong>：是词汇问题？语法问题？粗心？还是没理解？</li>
+                    <li><strong>找出定位句</strong>：阅读和听力要找到答案在原文中的位置</li>
+                    <li><strong>积累同义替换</strong>：把题目和原文的同义表达记下来</li>
+                    <li><strong>定期复习</strong>：每周复习一次错题，确保不会再错</li>
+                    <li><strong>统计错误类型</strong>：哪种题错得最多，重点突破</li>
+                </ul>
+            </div>
+
+            <h2 style="margin:24px 0 16px;color:#1e293b;">🎯 目标分数对照表</h2>
+            <div class="content-section">
+                <table class="score-table">
+                    <tr>
+                        <th>目标院校</th>
+                        <th>本科要求</th>
+                        <th>研究生要求</th>
+                    </tr>
+                    <tr>
+                        <td>牛津 / 剑桥</td>
+                        <td>7.5 (单项 7.0)</td>
+                        <td>7.5 (单项 7.0)</td>
+                    </tr>
+                    <tr>
+                        <td>G5 超级精英大学</td>
+                        <td>7.0 (单项 6.5)</td>
+                        <td>7.0-7.5 (单项 6.5-7.0)</td>
+                    </tr>
+                    <tr>
+                        <td>英国 TOP 10</td>
+                        <td>6.5-7.0 (单项 6.0)</td>
+                        <td>6.5-7.0 (单项 6.0-6.5)</td>
+                    </tr>
+                    <tr>
+                        <td>澳洲八大</td>
+                        <td>6.0-6.5 (单项 6.0)</td>
+                        <td>6.5-7.0 (单项 6.0-6.5)</td>
+                    </tr>
+                    <tr>
+                        <td>加拿大 TOP 10</td>
+                        <td>6.5 (单项 6.0)</td>
+                        <td>6.5-7.0 (单项 6.0-6.5)</td>
+                    </tr>
+                    <tr>
+                        <td>新西兰 / 中国香港</td>
+                        <td>6.0-6.5</td>
+                        <td>6.5</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

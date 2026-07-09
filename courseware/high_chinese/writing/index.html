@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>高考作文指导</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.module-hero {
+    background: linear-gradient(135deg, #db2777, #be185d);
+    color: #fff;
+    padding: 28px 24px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+.module-hero h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid #db2777;
+}
+.card h3 {
+    color: #be185d;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+}
+.structure-box {
+    background: #fdf2f8;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #db2777;
+    margin: 12px 0;
+}
+.structure-box h4 {
+    color: #be185d;
+    margin-bottom: 12px;
+}
+.structure-item {
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+}
+.structure-item .step {
+    width: 28px;
+    height: 28px;
+    background: #db2777;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+.structure-item .content {
+    color: #831843;
+    line-height: 1.6;
+}
+.material-item {
+    background: #fdf2f8;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.material-item h4 {
+    color: #be185d;
+    margin-bottom: 8px;
+}
+.material-item p {
+    color: #831843;
+    line-height: 1.7;
+    font-size: 0.9rem;
+    margin: 0;
+}
+.method-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.method-item {
+    background: #fef3c7;
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 3px solid #f59e0b;
+}
+.method-item h4 {
+    color: #d97706;
+    margin-bottom: 8px;
+}
+.method-item p {
+    color: #78350f;
+    line-height: 1.6;
+    font-size: 0.85rem;
+    margin: 0;
+}
+.example-box {
+    background: #f0fdf4;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #10b981;
+    margin-top: 12px;
+}
+.example-box h4 {
+    color: #065f46;
+    margin-bottom: 12px;
+}
+.example-box p {
+    color: #047857;
+    line-height: 1.8;
+    font-size: 0.9rem;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .method-box {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links">
+    <a href="../index.html">返回高中语文主页</a>
+    <a href="../../index.html">返回首页</a>
+</div>
+
+<div class="module-hero">
+    <h1>✍️ 高考作文指导（60分）</h1>
+    <p>评分标准解读 + 审题方法 + 黄金结构 + 热点素材 + 满分范文赏析</p>
+</div>
+
+<div class="card">
+    <h3>📊 高考作文评分标准（基础等级40分 + 发展等级20分）</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div style="background:#fef3c7;padding:20px;border-radius:8px;">
+            <h4 style="color:#d97706;margin-bottom:12px;">⭐ 基础等级（40分）</h4>
+            <p style="color:#78350f;line-height:2;font-size:0.9rem;margin:0;">
+                <strong>一等（34-40）：</strong>符合题意，中心突出，内容充实，感情真挚，结构严谨，语言流畅，字体工整<br>
+                <strong>二等（28-33）：</strong>符合题意，中心明确，内容较充实，感情真实，结构完整，语言通顺，字体较工整<br>
+                <strong>三等（21-27）：</strong>基本符合题意，中心基本明确，内容单薄，感情基本真实，结构基本完整，语言基本通顺<br>
+                <strong>四等（0-20）：</strong>偏离题意，中心不明确，内容不当，感情虚假，结构混乱，语言不通顺，字迹潦草难辨
+            </p>
+        </div>
+        <div style="background:#f3e8ff;padding:20px;border-radius:8px;">
+            <h4 style="color:#7c3aed;margin-bottom:12px;">✨ 发展等级（20分）</h4>
+            <p style="color:#6b21a8;line-height:2;font-size:0.9rem;margin:0;">
+                <strong>深刻：</strong>透过现象看本质，揭示事物内在的因果关系，观点具有启发性<br>
+                <strong>丰富：</strong>材料丰富，论据充实，形象丰满，意境深远<br>
+                <strong>有文采：</strong>用词贴切，句式灵活，善于运用修辞手法，文句有表现力<br>
+                <strong>有创意：</strong>见解新颖，材料新鲜，构思新巧，推理想象有独到之处，有个性色彩
+            </p>
+        </div>
+    </div>
+    <div style="margin-top:16px;padding:16px;background:#fee2e2;border-radius:8px;">
+        <h4 style="color:#dc2626;margin-bottom:8px;">⚠️ 扣分说明</h4>
+        <p style="color:#7f1d1d;line-height:1.7;font-size:0.9rem;margin:0;">
+            ① 缺标题扣2分；② 字数不足，每少50字扣1分；③ 错别字每1个扣1分，重复不计，最多扣5分；
+            ④ 标点错误多的，酌情扣分；⑤ 抄袭的文章，"基础等级"在四等之内评分，"发展等级"不给分。
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <h3>🎯 八大审题方法（任务驱动型/材料作文通用）</h3>
+    <div class="method-box">
+        <div class="method-item">
+            <h4>1. 抓关键词句法</h4>
+            <p>材料中反复出现的词语、关键句往往就是立意的核心。例如材料中多次出现"创新"，就应围绕"创新"立意。</p>
+        </div>
+        <div class="method-item">
+            <h4>2. 由果溯因法</h4>
+            <p>任何事物的产生、变化和发展，都有其内在或外在的原因。分析材料的因果联系，从原因切入立意。</p>
+        </div>
+        <div class="method-item">
+            <h4>3. 辨明关系法</h4>
+            <p>任何事物都是相互联系的。辨明材料中事物间的关系（依存、主次、取舍、条件等），就能准确立意。</p>
+        </div>
+        <div class="method-item">
+            <h4>4. 寓意揭示法</h4>
+            <p>对于寓言、漫画、诗歌等材料，先揭示其寓意，再联系现实生活确定立意。如"蝴蝶破茧"→"磨难成就人生"。</p>
+        </div>
+        <div class="method-item">
+            <h4>5. 多向辐射法</h4>
+            <p>有些材料涉及多个对象，从不同对象的角度切入，可以得出不同的立意角度，选择最佳角度写作。</p>
+        </div>
+        <div class="method-item">
+            <h4>6. 求同存异法</h4>
+            <p>多则材料作文，分析材料的共同点和不同点，找到材料间的结合点，确定最佳立意。</p>
+        </div>
+        <div class="method-item">
+            <h4>7. 明确任务法</h4>
+            <p>任务驱动型作文首先明确写作任务：写作对象、文体要求、应用场景、身份设定等，按要求完成写作。</p>
+        </div>
+        <div class="method-item">
+            <h4>8. 虚实转化法</h4>
+            <p>具体的事物上升到抽象的品质，抽象的道理落实到具体的事例。如"路"→"人生之路""创新之路"。</p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h3>📐 议论文黄金结构——五段三分式</h3>
+    <div class="structure-box">
+        <h4>第一段：引论（引材料 + 提论点，约100-150字）</h4>
+        <div class="structure-item">
+            <div class="step">1</div>
+            <div class="content"><strong>引材料：</strong>简要概括或引用材料，不要照抄全文，截取与论点相关的部分</div>
+        </div>
+        <div class="structure-item">
+            <div class="step">2</div>
+            <div class="content"><strong>提论点：</strong>开门见山，明确提出中心论点，最好是一个凝练的判断句</div>
+        </div>
+    </div>
+    
+    <div class="structure-box" style="border-left-color:#f59e0b;background:#fef3c7;">
+        <h4>第二~四段：本论（三个分论点，每段约200-250字）</h4>
+        <div class="structure-item">
+            <div class="step">3</div>
+            <div class="content"><strong>分论点一 + 事例 + 分析：</strong>从"是什么"角度设立分论点，解释概念内涵</div>
+        </div>
+        <div class="structure-item">
+            <div class="step">4</div>
+            <div class="content"><strong>分论点二 + 事例 + 分析：</strong>从"为什么"角度设立分论点，分析原因、意义、作用</div>
+        </div>
+        <div class="structure-item">
+            <div class="step">5</div>
+            <div class="content"><strong>分论点三 + 事例 + 分析：</strong>从"怎么做"角度设立分论点，提出方法、途径、措施</div>
+        </div>
+        <div style="margin-top:12px;padding:12px;background:#fff;border-radius:6px;font-size:0.85rem;color:#92400e;">
+            💡 <strong>注意：</strong>三个分论点最好构成并列或递进关系，每段都要有"分论点 + 典型论据 + 道理论证"，
+            做到"观点明确、论据充分、论证有力"。
+        </div>
+    </div>
+    
+    <div class="structure-box" style="border-left-color:#10b981;background:#f0fdf4;">
+        <h4>第五段：结论（总结全文 + 升华主旨，约100字）</h4>
+        <div class="structure-item">
+            <div class="step">6</div>
+            <div class="content"><strong>总结全文：</strong>重申中心论点，呼应开头，使文章结构完整</div>
+        </div>
+        <div class="structure-item">
+            <div class="step">7</div>
+            <div class="content"><strong>升华主旨：</strong>联系现实，放眼未来，发出号召，使文章立意更高远</div>
+        </div>
+    </div>
+    
+    <div class="example-box">
+        <h4>📝 结构示例（以"创新"为主题）</h4>
+        <p>
+            <strong>引论：</strong>列举当今时代创新的重要性 → 提出论点：创新是推动社会进步的核心力量<br>
+            <strong>本论一：</strong>创新是个人突破自我的阶梯（是什么）+ 钱学森回国开创航天事业<br>
+            <strong>本论二：</strong>创新是企业赢得竞争的法宝（为什么）+ 华为自主研发芯片打破垄断<br>
+            <strong>本论三：</strong>创新是国家民族复兴的动力（怎么做）+ 我国科技自立自强战略<br>
+            <strong>结论：</strong>总结创新的重要意义 → 号召青年学子培养创新精神，勇担时代使命
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <h3>📚 高考作文热点素材分类积累</h3>
+    
+    <div class="material-item">
+        <h4>🇨🇳 家国情怀类</h4>
+        <p>
+            <strong>人物素材：</strong>钱学森（五年归国路，十年两弹成）、邓稼先（两弹元勋，隐姓埋名28年）、
+            袁隆平（禾下乘凉梦，一生系苍生）、钟南山（抗疫逆行，国士无双）、
+            张桂梅（燃灯校长，改变山区女孩命运）、樊锦诗（敦煌女儿，守护文化遗产）<br><br>
+            <strong>名言金句：</strong>"天下兴亡，匹夫有责""苟利国家生死以，岂因祸福避趋之"
+            "为什么我的眼里常含泪水？因为我对这土地爱得深沉""我将无我，不负人民"
+        </p>
+    </div>
+    
+    <div class="material-item">
+        <h4>💡 科技创新类</h4>
+        <p>
+            <strong>人物/事件：</strong>华为"鸿蒙"系统（自主研发，打破垄断）、北斗三号全球组网（自主可控）、
+            "祝融号"登陆火星、"嫦娥"探月、"奋斗者号"深潜万米、
+            杨振宁（物理学巨擘，推动中美科技交流）、屠呦呦（诺贝尔奖得主，发现青蒿素）<br><br>
+            <strong>名言金句：</strong>"科技是国家强盛之基，创新是民族进步之魂"
+            "核心技术是国之重器""创新是引领发展的第一动力""科学技术是第一生产力"
+        </p>
+    </div>
+    
+    <div class="material-item">
+        <h4>🎭 文化传承类</h4>
+        <p>
+            <strong>人物/事件：</strong>《中国诗词大会》（传统文化热）、河南卫视"唐宫夜宴"（传统文化创新表达）、
+            故宫文创（让文物"活"起来）、三星堆考古（文明探源）、
+            李子柒（用视频传播中国农耕文化）、叶嘉莹（传续诗词文脉的先生）<br><br>
+            <strong>名言金句：</strong>"文化兴则国运兴，文化强则民族强""不忘本来才能开辟未来，善于继承才能更好创新"
+            "文化是民族的精神命脉，文艺是时代的号角"
+        </p>
+    </div>
+    
+    <div class="material-item">
+        <h4>🌱 青春奋斗类</h4>
+        <p>
+            <strong>人物/事件：</strong>王亚平（太空教师，逐梦航天）、苏炳添（亚洲飞人，突破极限）、
+            清华"紫荆"战队（自主研发自动驾驶）、"90后"抗疫医护人员（青春担当）、
+            黄文秀（扶贫路上的青春之歌）、曹原（少年天才，石墨烯研究突破）<br><br>
+            <strong>名言金句：</strong>"无奋斗，不青春""青春由磨砺而出彩，人生因奋斗而升华"
+            "现在，青春是用来奋斗的；将来，青春是用来回忆的""志不求易者成，事不避难者进"
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <h3>✏️ 高考作文常用名言金句（按主题分类）</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="background:#faf5ff;padding:16px;border-radius:8px;">
+            <h4 style="color:#7c3aed;margin-bottom:10px;">🌏 家国天下</h4>
+            <p style="color:#6b21a8;line-height:1.9;font-size:0.85rem;margin:0;">
+                • 先天下之忧而忧，后天下之乐而乐 —— 范仲淹<br>
+                • 为天地立心，为生民立命 —— 张载<br>
+                • 安得广厦千万间，大庇天下寒士俱欢颜 —— 杜甫<br>
+                • 寄意寒星荃不察，我以我血荐轩辕 —— 鲁迅
+            </p>
+        </div>
+        <div style="background:#ecfdf5;padding:16px;border-radius:8px;">
+            <h4 style="color:#059669;margin-bottom:10px;">📈 奋斗进取</h4>
+            <p style="color:#047857;line-height:1.9;font-size:0.85rem;margin:0;">
+                • 天行健，君子以自强不息 —— 《周易》<br>
+                • 路漫漫其修远兮，吾将上下而求索 —— 屈原<br>
+                • 宝剑锋从磨砺出，梅花香自苦寒来 —— 《警世贤文》<br>
+                • 古之立大事者，不惟有超世之才，亦必有坚忍不拔之志 —— 苏轼
+            </p>
+        </div>
+        <div style="background:#fef3c7;padding:16px;border-radius:8px;">
+            <h4 style="color:#d97706;margin-bottom:10px;">💝 道德修养</h4>
+            <p style="color:#92400e;line-height:1.9;font-size:0.85rem;margin:0;">
+                • 己所不欲，勿施于人 —— 孔子<br>
+                • 非淡泊无以明志，非宁静无以致远 —— 诸葛亮<br>
+                • 从善如登，从恶如崩 —— 《国语》<br>
+                • 见贤思齐焉，见不贤而内自省也 —— 《论语》
+            </p>
+        </div>
+        <div style="background:#dbeafe;padding:16px;border-radius:8px;">
+            <h4 style="color:#2563eb;margin-bottom:10px;">📖 读书治学</h4>
+            <p style="color:#1d4ed8;line-height:1.9;font-size:0.85rem;margin:0;">
+                • 书山有路勤为径，学海无涯苦作舟 —— 韩愈<br>
+                • 读书破万卷，下笔如有神 —— 杜甫<br>
+                • 学而不思则罔，思而不学则殆 —— 孔子<br>
+                • 问渠那得清如许，为有源头活水来 —— 朱熹
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h3>📝 考场作文注意事项</h3>
+    <div style="background:#fee2e2;padding:20px;border-radius:8px;">
+        <h4 style="color:#dc2626;margin-bottom:12px;">⚠️ 考前必记十条</h4>
+        <ol style="margin:0;padding-left:24px;line-height:2;color:#7f1d1d;">
+            <li>认真审题，看清所有写作要求，不偏题、不跑题</li>
+            <li>动笔前列好提纲，明确中心论点和三个分论点，确保思路清晰</li>
+            <li>开头一定要点题，结尾一定要扣题，首尾呼应很重要</li>
+            <li>每段开头最好是分论点句，让阅卷老师一目了然</li>
+            <li>事例素材要典型新颖，不要通篇用古人例子，适当结合当下</li>
+            <li>论据之后一定要有分析，不能"论点+论据"了事，要有"论证"过程</li>
+            <li>语言要通顺流畅，适当运用排比、比喻、引用等修辞手法增添文采</li>
+            <li>书写工整，字迹清晰，卷面整洁，印象分很重要</li>
+            <li>字数要够，最好写到800-1000字，不要太短也不要过长</li>
+            <li>留5分钟检查，避免明显的错别字和病句，标点使用要规范</li>
+        </ol>
+    </div>
+</div>
+
+<div style="text-align:center;padding:20px;color:#64748b;">
+    <strong>💪 作文非一日之功，贵在平时积累，多读多写多练，考场方能下笔如有神！</strong>
+</div>
+
+</div>
+</body>
+</html>

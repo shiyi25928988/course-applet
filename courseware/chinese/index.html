@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>初中语文</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.chinese-hero {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: #fff;
+    padding: 32px 24px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+.chinese-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+.grade-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+.grade-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid #8b5cf6;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+}
+.grade-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.grade-card h3 {
+    color: #8b5cf6;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+.grade-card ul {
+    list-style: none;
+    padding: 0;
+}
+.grade-card li {
+    padding: 6px 0;
+    color: #475569;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+.grade-card li:last-child {
+    border-bottom: none;
+}
+.module-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+.module-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid #8b5cf6;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+}
+.module-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.module-card h3 {
+    color: #8b5cf6;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+.module-card p {
+    color: #64748b;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.module-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+}
+.module-card li {
+    padding: 4px 0;
+    color: #475569;
+    font-size: 0.85rem;
+}
+.poem-card {
+    background: linear-gradient(135deg, #faf5ff, #ede9fe);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-left: 4px solid #8b5cf6;
+}
+.poem-card h3 {
+    color: #7c3aed;
+    margin-bottom: 8px;
+}
+.poem-card .author {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+.poem-card .content {
+    font-family: "楷体", "KaiTi", serif;
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #1e293b;
+}
+@media (max-width: 768px) {
+    .grade-cards {
+        grid-template-columns: 1fr;
+    }
+    .module-cards {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <h3>📖 初中语文</h3>
+        <ul class="chapter-list">
+            <li><a href="index.html" class="active"><span class="ch-num">🏠</span>主页</a></li>
+            <li><a href="#grades"><span class="ch-num">📚</span>按年级学习</a></li>
+            <li><a href="grade7/index.html"><span class="ch-num">7️</span>七年级</a></li>
+            <li><a href="grade8/index.html"><span class="ch-num">8️</span>八年级</a></li>
+            <li><a href="grade9/index.html"><span class="ch-num">9️</span>九年级</a></li>
+            <li style="margin-top:16px;border-top:1px solid #e2e8f0;padding-top:16px;">
+                <strong style="padding:0 20px;font-size:.8rem;color:#64748b;">专项训练</strong>
+            </li>
+            <li><a href="reading/index.html"><span class="ch-num">📖</span>现代文阅读</a></li>
+            <li><a href="classical/index.html"><span class="ch-num">📜</span>文言文</a></li>
+            <li><a href="poetry/index.html"><span class="ch-num">🎋</span>古诗词</a></li>
+            <li><a href="writing/index.html"><span class="ch-num">✍️</span>作文指导</a></li>
+        </ul>
+        <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+    </aside>
+
+    <main class="main">
+        <div class="chinese-hero">
+            <h1>📖 初中语文</h1>
+            <p>六年级 ~ 九年级 · 按年级学习 + 专项训练 · 课文详解 + 知识点 + 真题演练</p>
+        </div>
+
+        <div id="grades">
+            <h2 style="margin-bottom: 16px; color: #475569;">📚 按年级学习</h2>
+            <div class="grade-cards">
+                <a href="grade7/index.html" class="grade-card">
+                    <h3>🎒 七年级</h3>
+                    <ul>
+                        <li>📕 七年级上册：春、济南的冬天、论语十二章</li>
+                        <li>📗 七年级下册：邓稼先、说和做、木兰诗</li>
+                        <li>📝 重点：记叙文阅读、基础文言实词</li>
+                        <li>✍️ 作文：记事写人、细节描写</li>
+                    </ul>
+                </a>
+                <a href="grade8/index.html" class="grade-card">
+                    <h3>📚 八年级</h3>
+                    <ul>
+                        <li>📕 八年级上册：消息二则、藤野先生、三峡</li>
+                        <li>📗 八年级下册：社戏、回延安、桃花源记</li>
+                        <li>📝 重点：说明文阅读、文言文虚词</li>
+                        <li>✍️ 作文：说明文写作、议论文入门</li>
+                    </ul>
+                </a>
+                <a href="grade9/index.html" class="grade-card">
+                    <h3>🎯 九年级</h3>
+                    <ul>
+                        <li>📕 九年级上册：沁园春·雪、岳阳楼记、醉翁亭记</li>
+                        <li>📗 九年级下册：孔乙己、变色龙、出师表</li>
+                        <li>📝 重点：议论文阅读、中考文言文真题</li>
+                        <li>✍️ 作文：议论文写作、中考作文冲刺</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+
+        <h2 style="margin-bottom: 16px; color: #475569;">🎯 专项训练模块</h2>
+        <div class="module-cards">
+            <a href="reading/index.html" class="module-card">
+                <h3>📖 现代文阅读</h3>
+                <p>记叙文、说明文、议论文阅读技巧与方法</p>
+                <ul>
+                    <li>• 记叙文：六要素、线索、表达方式、修辞手法</li>
+                    <li>• 说明文：说明方法、说明顺序、语言特点</li>
+                    <li>• 议论文：论点、论据、论证方法、论证思路</li>
+                    <li>• 中考阅读真题解析 + 答题模板</li>
+                </ul>
+            </a>
+            <a href="classical/index.html" class="module-card">
+                <h3>📜 文言文阅读</h3>
+                <p>常见文言实词、虚词、特殊句式详解</p>
+                <ul>
+                    <li>• 120个常见文言实词（按考频排序）</li>
+                    <li>• 15个核心文言虚词（之、其、而、以...）</li>
+                    <li>• 判断句、被动句、倒装句、省略句</li>
+                    <li>• 文言文翻译"信达雅"三步法</li>
+                </ul>
+            </a>
+            <a href="poetry/index.html" class="module-card">
+                <h3>🎋 古诗词鉴赏</h3>
+                <p>必背古诗词 + 鉴赏方法 + 常见意象</p>
+                <ul>
+                    <li>• 课标必背 61 篇古诗词（带拼音+注释）</li>
+                    <li>• 诗歌鉴赏五大考点逐一突破</li>
+                    <li>• 30个常见意象与情感总结</li>
+                    <li>• 表现手法与修辞手法归纳</li>
+                </ul>
+            </a>
+            <a href="writing/index.html" class="module-card">
+                <h3>✍️ 作文指导</h3>
+                <p>审题立意、结构布局、素材积累、范文赏析</p>
+                <ul>
+                    <li>• 命题作文、材料作文、话题作文审题</li>
+                    <li>• 议论文三段式结构 + 五段式写法</li>
+                    <li>• 记叙文高分技巧：悬念、细节、升华</li>
+                    <li>• 中考满分作文素材 + 万能模板</li>
+                </ul>
+            </a>
+        </div>
+
+        <div style="margin-top: 32px;">
+            <h2 style="margin-bottom: 16px; color: #475569;">🎋 今日必背古诗词</h2>
+            <div class="poem-card">
+                <h3>观沧海</h3>
+                <div class="author">曹操 · 东汉 | 七年级上册</div>
+                <div class="content">
+东临碣石，以观沧海。<br>
+水何澹澹，山岛竦峙。<br>
+树木丛生，百草丰茂。<br>
+秋风萧瑟，洪波涌起。<br>
+日月之行，若出其中；<br>
+星汉灿烂，若出其里。<br>
+幸甚至哉，歌以咏志。
+                </div>
+                <div style="margin-top:16px;padding-top:16px;border-top:1px dashed #d8b4fe;">
+                    <strong style="color:#7c3aed;">💡 赏析：</strong>
+                    <span style="color:#475569;font-size:.9rem;">这是一首写景抒情诗，诗人借大海吞吐日月、包蕴万千的壮丽景象，表现了开阔的胸襟和统一中原、建功立业的抱负。</span>
+                </div>
+            </div>
+
+            <div class="poem-card">
+                <h3>水调歌头·明月几时有</h3>
+                <div class="author">苏轼 · 北宋 | 九年级下册</div>
+                <div class="content">
+明月几时有？把酒问青天。<br>
+不知天上宫阙，今夕是何年。<br>
+我欲乘风归去，又恐琼楼玉宇，高处不胜寒。<br>
+起舞弄清影，何似在人间。<br><br>
+转朱阁，低绮户，照无眠。<br>
+不应有恨，何事长向别时圆？<br>
+人有悲欢离合，月有阴晴圆缺，此事古难全。<br>
+但愿人长久，千里共婵娟。
+                </div>
+                <div style="margin-top:16px;padding-top:16px;border-top:1px dashed #d8b4fe;">
+                    <strong style="color:#7c3aed;">💡 赏析：</strong>
+                    <span style="color:#475569;font-size:.9rem;">此词是中秋望月怀人之作，表达了对胞弟苏辙的无限思念。词人运用形象描绘手法，勾勒出一种皓月当空、亲人千里、孤高旷远的境界氛围。</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

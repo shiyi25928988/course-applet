@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雅思阅读 Reading - 学习助手</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .page-hero p {
+            opacity: 0.95;
+            margin: 0;
+            font-size: 1.05rem;
+        }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+        }
+        .tip-box {
+            background: #dbeafe;
+            border-left: 4px solid #2563eb;
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+        }
+        .tip-box h4 {
+            margin: 0 0 8px 0;
+            color: #1e40af;
+        }
+        .tip-box p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #374151;
+        }
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .tag {
+            background: #f1f5f9;
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 0.85rem;
+            color: #475569;
+        }
+        .type-card {
+            background: #eff6ff;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+            border-left: 3px solid #3b82f6;
+        }
+        .type-card h4 {
+            margin: 0 0 8px 0;
+            color: #1e40af;
+        }
+        .type-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #374151;
+        }
+        .score-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+        .score-table th, .score-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .score-table th {
+            background: #dbeafe;
+            color: #1e40af;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📖 阅读 Reading</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题50篇</a></li>
+                <li><a href="reading_real_test.html"><span class="ch-num">📄</span>真题详解</a></li>
+                <li><a href="listening.html"><span class="ch-num">👂</span>听力 Listening</a></li>
+                <li><a href="writing.html"><span class="ch-num">✍️</span>写作 Writing</a></li>
+                <li><a href="speaking.html"><span class="ch-num">🎤</span>口语 Speaking</a></li>
+                <li><a href="vocabulary.html"><span class="ch-num">📝</span>核心词汇</a></li>
+                <li><a href="grammar.html"><span class="ch-num">📐</span>语法精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+        </aside>
+
+        <main class="main">
+            <div class="page-hero">
+                <h1>📖 阅读 Reading</h1>
+                <p>3篇文章 · 40题 · 60分钟（含誊写答案时间）</p>
+            </div>
+
+            <div class="content-section">
+                <h3>📋 阅读结构说明</h3>
+                <ul style="margin:0;padding-left:20px;line-height:2;">
+                    <li><strong>Passage 1</strong>：说明文（较易）- 约 800-900词</li>
+                    <li><strong>Passage 2</strong>：说明文/议论文（中等）- 约 900-1000词</li>
+                    <li><strong>Passage 3</strong>：议论文（较难）- 约 1000-1200词</li>
+                    <li><strong>总词数</strong>：约 2,700-3,000词</li>
+                </ul>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 阅读高分技巧</h4>
+                <p>1. 先看题再读文章 → 2. 划定位词 → 3. 扫读+精读结合 → 4. 注意同义替换 → 5. 严格控制时间（每题不超过1.5分钟）→ 6. 不确定的题目先标记跳过</p>
+            </div>
+
+            <h2 style="margin:24px 0 16px;color:#1e293b;">🎯 常见文章主题</h2>
+            
+            <div class="content-section">
+                <h3>🔬 科普类</h3>
+                <div class="tag-list">
+                    <span class="tag">动植物</span>
+                    <span class="tag">自然现象</span>
+                    <span class="tag">科学实验</span>
+                    <span class="tag">环境保护</span>
+                    <span class="tag">科技创新</span>
+                    <span class="tag">考古发现</span>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>🏛️ 人文历史类</h3>
+                <div class="tag-list">
+                    <span class="tag">人物传记</span>
+                    <span class="tag">历史事件</span>
+                    <span class="tag">文化习俗</span>
+                    <span class="tag">语言演变</span>
+                    <span class="tag">建筑艺术</span>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>🏢 社会科学类</h3>
+                <div class="tag-list">
+                    <span class="tag">教育</span>
+                    <span class="tag">心理学</span>
+                    <span class="tag">社会学</span>
+                    <span class="tag">管理学</span>
+                    <span class="tag">经济</span>
+                    <span class="tag">交通</span>
+                </div>
+            </div>
+
+            <div style="text-align:center;margin:20px 0;">
+                <a href="reading_real_test.html" style="display:inline-block;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:white;padding:12px 30px;border-radius:8px;text-decoration:none;font-weight:500;">
+                    📄 查看完整真题详解（剑桥16 Test1）
+                </a>
+            </div>
+
+            <h2 style="margin:24px 0 16px;color:#1e293b;">📝 题型详解 + 解题技巧</h2>
+
+            <div class="type-card">
+                <h4>✅ TRUE / FALSE / NOT GIVEN（判断题）</h4>
+                <p>难度：⭐⭐⭐⭐ · 题量：约 12题 · 失分重灾区！</p>
+                
+                <h5 style="margin:12px 0 8px 0;color:#1e40af;">🔍 三步解题法</h5>
+                <ol style="margin:0 0 16px 0;padding-left:20px;line-height:1.8;">
+                    <li><strong>划关键词</strong>：找出题目中的定位词（名词、数字、大写）和判断词（形容词、副词、比较级）</li>
+                    <li><strong>回文定位</strong>：根据定位词找到原文对应句子</li>
+                    <li><strong>对比判断</strong>：仔细对比题目和原文，注意同义替换</li>
+                </ol>
+
+                <h5 style="margin:12px 0 8px 0;color:#1e40af;">⚠️ FALSE 常见陷阱</h5>
+                <ul style="margin:0 0 12px 0;padding-left:20px;line-height:1.6;font-size:0.9rem;">
+                    <li><strong>反义词</strong>：题目用了与原文相反的词（如原文"increase" vs 题目"decrease"）</li>
+                    <li><strong>绝对化词</strong>：题目用了原文没有的绝对化表达（all, only, never, always, most）</li>
+                    <li><strong>关系错误</strong>：原文是并列关系，题目变成因果/转折关系</li>
+                    <li><strong>范围变化</strong>：原文是部分，题目变成全部</li>
+                </ul>
+
+                <h5 style="margin:12px 0 8px 0;color:#1e40af;">⚠️ NOT GIVEN 常见陷阱</h5>
+                <ul style="margin:0;padding-left:20px;line-height:1.6;font-size:0.9rem;">
+                    <li><strong>无中生有</strong>：题目内容在原文完全没有提到</li>
+                    <li><strong>不存在的比较</strong>：原文只说了A，题目拿A和B比较</li>
+                    <li><strong>主观臆断</strong>：看起来合理但原文没有证据支持</li>
+                    <li><strong>细节缺失</strong>：题目信息是原文某概念的具体化，但原文没说</li>
+                </ul>
+            </div>
+
+            <div class="type-card">
+                <h4>🔤 Matching（匹配题）- 四大分类详解</h4>
+                <p>难度：⭐⭐⭐⭐ · 题量：约 12题 · 最耗时题型！</p>
+                
+                <h5 style="margin:12px 0 8px 0;color:#1e40af;">1️⃣ 人名-观点匹配（最常考）</h5>
+                <ul style="margin:0 0 12px 0;padding-left:20px;line-height:1.6;font-size:0.9rem;">
+                    <li><strong>特点：</strong>人名作为定位词，观点是同义替换</li>
+                    <li><strong>技巧：</strong>先把所有人名在原文中圈出来，再读观点</li>
+                    <li><strong>注意：</strong>一个人可能有多个观点，可能会被选多次</li>
+                </ul>
+
+                <h5 style="margin:12px 0 8px 0;color:#1e40af;">2️⃣ 段落信息匹配（最难）</h5>
+                <ul style="margin:0 0 12px 0;padding-left:20px;line-height:1.6;font-size:0.9rem;">
+                    <li><strong>特点：</strong>"Which paragraph contains the following information?"</li>
+                    <li><strong>技巧：</strong>最后做！先做其他题，对文章有印象后再做这个</li>
+                    <li><strong>注意：</strong>一个段落可能被选多次</li>
+                </ul>
+
+                <h5 style="margin:12px 0 8px 0;color:#1e40af;">3️⃣ 分类匹配</h5>
+                <ul style="margin:0 0 12px 0;padding-left:20px;line-height:1.6;font-size:0.9rem;">
+                    <li><strong>特点：</strong>把信息归类到不同类别下（如时间、地点、人群）</li>
+                    <li><strong>技巧：</strong>类别作为定位词，在原文中扫描</li>
+                </ul>
+
+                <h5 style="margin:12px 0 8px 0;color:#1e40af;">4️⃣ 标题匹配 List of Headings</h5>
+                <ul style="margin:0;padding-left:20px;line-height:1.6;font-size:0.9rem;">
+                    <li><strong>特点：</strong>给每个段落选最合适的标题</li>
+                    <li><strong>技巧：</strong>看首句+尾句+转折句，找主题句</li>
+                    <li><strong>陷阱：</strong>不要只看段落中的细节词，要看整体大意</li>
+                </ul>
+            </div>
+
+            <div class="type-card">
+                <h4>✏️ Gap Filling（填空题）- 保分题！</h4>
+                <p>难度：⭐⭐⭐ · 题量：约 10题 · 必须拿分！</p>
+                
+                <h5 style="margin:12px 0 8px 0;color:#1e40af;">📋 四大类型</h5>
+                <ul style="margin:0 0 12px 0;padding-left:20px;line-height:1.6;font-size:0.9rem;">
+                    <li><strong>摘要填空 Summary</strong>：最难的填空，可能考整篇或几段的总结</li>
+                    <li><strong>句子填空 Sentence Completion</strong>：按顺序出题</li>
+                    <li><strong>表格/流程/图填空</strong>：最简单，找信息就行</li>
+                    <li><strong>简答题 Short Answer</strong>：What/Where/When/Who 提问</li>
+                </ul>
+
+                <h5 style="margin:12px 0 8px 0;color:#1e40af;">💡 填空黄金法则</h5>
+                <ul style="margin:0;padding-left:20px;line-height:1.6;font-size:0.9rem;">
+                    <li>✅ <strong>字数要求</strong>：严格遵守！NO MORE THAN TWO WORDS 就绝对不能写3个词</li>
+                    <li>✅ <strong>原词重现</strong>：99%是原文原词，不需要自己改词性</li>
+                    <li>✅ <strong>顺序原则</strong>：题目顺序和原文顺序一致</li>
+                    <li>✅ <strong>语法预判</strong>：先判断填什么词性（名词/动词/形容词），缩小范围</li>
+                    <li>✅ <strong>前后定位</strong>：空格前后的词是最好的定位词</li>
+                </ul>
+            </div>
+
+            <div class="type-card">
+                <h4>🔘 Multiple Choice（选择题）</h4>
+                <p>难度：⭐⭐⭐⭐ · 题量：约 6题 · 最容易纠结！</p>
+                
+                <h5 style="margin:12px 0 8px 0;color:#1e40af;">🎯 单选题解题技巧（四选一）</h5>
+                <ul style="margin:0 0 12px 0;padding-left:20px;line-height:1.6;font-size:0.9rem;">
+                    <li><strong>先读题干，不读选项</strong>：避免被错误选项干扰</li>
+                    <li><strong>回文定位</strong>：找到题干在原文中的位置</li>
+                    <li><strong>理解原句</strong>：读懂原文句子，再去看选项</li>
+                    <li><strong>排除法</strong>：先排除明显错误的，再比较剩下的</li>
+                </ul>
+
+                <h5 style="margin:12px 0 8px 0;color:#1e40af;">🚫 干扰选项特征</h5>
+                <ul style="margin:0 0 12px 0;padding-left:20px;line-height:1.6;font-size:0.9rem;">
+                    <li>❌ <strong>偷换概念</strong>：看起来很像，但某个词被换掉了</li>
+                    <li>❌ <strong>无中生有</strong>：看起来合理但原文没说</li>
+                    <li>❌ <strong>范围扩大/缩小</strong>：原文是"some"，选项是"all"</li>
+                    <li>❌ <strong>答非所问</strong>：选项本身正确，但不是题目问的</li>
+                </ul>
+
+                <h5 style="margin:12px 0 8px 0;color:#1e40af;">📌 多选题解题技巧（五选二）</h5>
+                <ul style="margin:0;padding-left:20px;line-height:1.6;font-size:0.9rem;">
+                    <li>两个答案通常在原文中相距不远</li>
+                    <li>注意原文中的并列结构（and, also, furthermore...）</li>
+                    <li>两个选项通常是同义表达，表达相似意思</li>
+                </ul>
+            </div>
+
+            <h2 style="margin:24px 0 16px;color:#1e293b;">📚 雅思阅读长难句分析</h2>
+            <div class="content-section">
+                <p style="margin:0 0 16px 0;color:#64748b;">长难句是阅读的一大障碍！学会分析句子主干，复杂句也能秒懂。</p>
+                
+                <div class="type-card">
+                    <h4>例句1（定语从句+插入语）</h4>
+                    <p style="font-family:Georgia;font-style:italic;background:#f8fafc;padding:10px;border-radius:6px;">
+                        "The value of play, which has been studied by researchers for decades, is increasingly recognised as being essential to a child's cognitive, physical and emotional development."
+                    </p>
+                    <p><strong>✅ 句子分析：</strong></p>
+                    <ul style="margin:8px 0 0 0;padding-left:20px;line-height:1.8;">
+                        <li><strong>主干：</strong>The value of play is increasingly recognised as being essential.（玩耍的价值越来越被认可为必不可少的）</li>
+                        <li><strong>定语从句：</strong>which has been studied by researchers for decades（被研究者研究了几十年）→ 修饰 play</li>
+                        <li><strong>并列宾语：</strong>cognitive, physical and emotional development（认知、身体和情感发展）</li>
+                    </ul>
+                </div>
+
+                <div class="type-card">
+                    <h4>例句2（让步状语从句+宾语从句）</h4>
+                    <p style="font-family:Georgia;font-style:italic;background:#f8fafc;padding:10px;border-radius:6px;">
+                        "While the importance of play is widely acknowledged by educators, many parents still believe that structured activities are more beneficial for their children's future success."
+                    </p>
+                    <p><strong>✅ 句子分析：</strong></p>
+                    <ul style="margin:8px 0 0 0;padding-left:20px;line-height:1.8;">
+                        <li><strong>让步状语从句：</strong>While the importance of play is widely acknowledged by educators（虽然玩耍的重要性被教育者广泛认可）</li>
+                        <li><strong>主句：</strong>many parents still believe that...（许多家长仍然相信...）</li>
+                        <li><strong>宾语从句：</strong>that structured activities are more beneficial for their children's future success（结构化活动对孩子未来成功更有益）</li>
+                    </ul>
+                </div>
+
+                <div class="type-card">
+                    <h4>💡 长难句破解技巧</h4>
+                    <ol style="margin:8px 0 0 0;padding-left:20px;line-height:1.8;">
+                        <li><strong>划掉插入语</strong>：两个逗号之间的内容通常是插入语，先划掉不看</li>
+                        <li><strong>找主谓宾</strong>：找到句子最核心的主语、谓语动词、宾语</li>
+                        <li><strong>识别从句</strong>：that/which/who/where/when 等开始的是从句</li>
+                        <li><strong>连词拆分</strong>：and/but/or 等连词把长句拆成短句理解</li>
+                        <li><strong>跳过生词</strong>：不影响理解的专业术语、专有名词可以跳过</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h2 style="margin:24px 0 16px;color:#1e293b;">🔄 高频同义替换表（必背！）</h2>
+            <div class="content-section">
+                <p style="margin:0 0 16px 0;color:#64748b;">同义替换是雅思阅读的灵魂！80%的题目都在考这个！</p>
+                
+                <table class="score-table">
+                    <tr><th>原文表达</th><th>题目同义替换</th></tr>
+                    <tr><td>recognise / acknowledge</td><td>accept / admit / agree that</td></tr>
+                    <tr><td>essential / crucial / vital</td><td>important / necessary / key</td></tr>
+                    <tr><td>contribute to / lead to</td><td>cause / result in / bring about</td></tr>
+                    <tr><td>due to / because of</td><td>owing to / as a result of</td></tr>
+                    <tr><td>increase / rise / grow</td><td>climb / go up / soar</td></tr>
+                    <tr><td>decrease / fall / drop</td><td>decline / reduce / plunge</td></tr>
+                    <tr><td>significant / considerable</td><td>remarkable / noticeable / major</td></tr>
+                    <tr><td>approximately / about</td><td>roughly / around / nearly</td></tr>
+                    <tr><td>tend to / seem to</td><td>appear to / are likely to</td></tr>
+                    <tr><td>rather than / instead of</td><td>in preference to / not</td></tr>
+                    <tr><td>enable / allow</td><td>make it possible / permit</td></tr>
+                    <tr><td>focus on / concentrate on</td><td>emphasize / centre on</td></tr>
+                    <tr><td>advantage / benefit</td><td>merit / positive aspect</td></tr>
+                    <tr><td>disadvantage / drawback</td><td>negative aspect / downside</td></tr>
+                    <tr><td>however / but</td><td>nevertheless / yet / although</td></tr>
+                </table>
+            </div>
+
+            <h2 style="margin:24px 0 16px;color:#1e293b;">⚠️ 常见失分点</h2>
+            <div class="content-section">
+                <ul style="margin:0;padding-left:20px;line-height:2;">
+                    <li>❌ FALSE vs NOT GIVEN 混淆（FALSE是明确矛盾，NOT GIVEN是没说）</li>
+                    <li>❌ 定位词找错（优先找特殊词：数字、大写、专有名词）</li>
+                    <li>❌ 同义替换识别失败（这是雅思阅读的核心！背上面的替换表！）</li>
+                    <li>❌ 时间分配不当（建议 P1:15min, P2:20min, P3:25min）</li>
+                    <li>❌ 过度推断（答案一定在原文中，不要自己脑补）</li>
+                    <li>❌ 单词量不足（核心词汇至少 5,000+）</li>
+                    <li>❌ 长难句读不懂（学会分析句子主干：主谓宾）</li>
+                    <li>❌ 选择题纠结两个选项（选最直接的答案，不要想太复杂）</li>
+                    <li>❌ 标题匹配只看细节词（要看整个段落的主旨）</li>
+                </ul>
+            </div>
+
+            <h2 style="margin:24px 0 16px;color:#1e293b;">📊 分数对照表</h2>
+            <div class="content-section">
+                <table class="score-table">
+                    <tr>
+                        <th>答对题数</th>
+                        <th>分数（学术类）</th>
+                    </tr>
+                    <tr><td>39-40</td><td>9.0</td></tr>
+                    <tr><td>37-38</td><td>8.5</td></tr>
+                    <tr><td>35-36</td><td>8.0</td></tr>
+                    <tr><td>33-34</td><td>7.5</td></tr>
+                    <tr><td>30-32</td><td>7.0</td></tr>
+                    <tr><td>27-29</td><td>6.5</td></tr>
+                    <tr><td>23-26</td><td>6.0</td></tr>
+                </table>
+            </div>
+
+            <h2 style="margin:24px 0 16px;color:#1e293b;">📚 推荐阅读材料</h2>
+            <div class="content-section">
+                <ul style="margin:0;padding-left:20px;line-height:2;">
+                    <li><strong>报刊杂志</strong>：The Economist, National Geographic, Scientific American, New Scientist</li>
+                    <li><strong>官方真题</strong>：剑桥雅思真题 10-19（必做！）</li>
+                    <li><strong>词汇书</strong>：《雅思词以类记》、《阅读真经5》</li>
+                    <li><strong>长难句</strong>：《雅思阅读长难句分析》</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

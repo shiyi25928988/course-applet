@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beautiful Game - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题459/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 The Beautiful Game</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>loss and aging through brain imaging technology, neurochemical experiments, and
+cognitive and psychological tests. One thing, however, is already fairly clear–many aspects
+of memory are not a function of age at all but of education. Memory exists in more than one
+form. What we call knowledge–facts-is what psychologists such as Harry P. Bahrick, Ph.D.,
+of Ohio Wesleyan University calls semantic memory. Events, conversations, and
+occurrences in time and space, on the other hand, make up episodic or event memory,
+which is triggered by cues from the context. If you were around in 1963 you don’t need to
+be reminded of the circumstances surrounding the moment you heard that JFK had been
+assassinated. That event is etched into your episodic memory.
+{F} When you forget a less vivid item, like buying a roll of paper towels at the supermarket,
+you may blame it on your aging memory. It’s true that episodic memory begins to decline
+when most people are in their 50s, but it’s never perfect at any age. “Every memory begins
+as an event,” says Bahrick. “Through repetition, certain events leave behind a residue of
+knowledge, or semantic memory. On a specific day in the past, somebody taught you that
+two and two are four, but you’ve been over that information so often you don’t remember
+where you learned it. What started as an episodic memory has become a permanent part
+of your knowledge base.” You remember the content, not the context. Our language
+knowledge, our knowledge of the world and of people, is largely that permanent or
+semipermanent residue.
+{G} Probing the longevity of knowledge, Bahrick tested 1,000 high school graduates to see
+how well they recalled their algebra. Some had completed the course as recently as a
+month before, others as long as 50 years earlier. He also determined how long each
+person had studied algebra, the grade received, and how much the skill was used over the
+course of adulthood. Surprisingly, a person’s grasp of algebra at the time of testing did not
+depend on how long ago he’d taken the course–the determining factor was the duration of
+instruction. Those who had spent only a few months learning algebra forgot most of it
+within two or three years.
+{H} In another study, Bahrick discovered that people who had taken several courses in
+Spanish, spread out over a couple of years, could recall, decades later, 60 percent or more
+of the vocabulary they learned. Those who took just one course retained only a trace after
+three years. “This long-term residue of knowledge remains stable over the decades,
+independent of the age of the person and the age of the memory. No serious deficit
+appears until people get to their 50s and 60s, probably due to the degenerative processes
+of aging rather than a cognitive loss.”
+{I} “You could say metamemory is a byproduct of going to school,” says psychologist
+Robert Kail, Ph.D., of Purdue University, who studies children from birth to 20 years, the
+time of life when mental development is most rapid. “The question-and-answer process,
+especially exam-taking, helps children learn–and also teaches them how their memory
+works This may be one reason why, according to a broad range of studies in people over
+60, the better educated a person is, the more likely they are to perform better in life and on
+psychological tests. A group of adult novice chess players were compared with a group of
+child experts at the game. In tests of their ability to remember a random series of numbers,
+the adults, as expected, outscored the children. But when asked to remember the patterns
+of chess pieces arranged on a board, the children won. “Because they’d played a lot of
+chess, their knowledge of chess was better organized than that of the adults, and their
+existing knowledge of chess served as a framework for new memory,” explains Kail.
+ 2</p>
+<p>{J} Specialized knowledge is a mental resource that only improves with time. Crystallized
+intelligence about one’s occupation apparently does not decline at all until at least age 75,
+and if there is no disease or dementia, may remain even longer.  Special knowledge is
+often organized by a process called “chunking.” If procedure A and procedure B are always
+done together, for example, the mind may merge them into a single command. When you
+apply yourself to a specific interest–say, cooking–you build increasingly elaborate
+knowledge structures that let you do more and do it better. This ability, which is tied to
+experience, is the essence of expertise. Vocabulary is one such specialized form of
+accrued knowledge. Research clearly shows that vocabulary improves with time. Retired
+professionals, especially teachers and journalists, consistently score higher on tests of
+vocabulary and general information than college students, who are supposed to be in their
+mental prime.
+ 3</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

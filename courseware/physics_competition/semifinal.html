@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>物理竞赛复赛 - 历年真题</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.cpho-header {
+    background: linear-gradient(135deg, #d97706, #b45309);
+    color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+.year-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin: 24px 0;
+}
+.year-btn {
+    text-align: center;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #1e293b;
+    transition: all 0.2s;
+}
+.year-btn:hover {
+    border-color: #d97706;
+    background: #fffbeb;
+    transform: translateY(-2px);
+}
+.year-btn .year {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.year-btn .info {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+.info-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.info-card h3 {
+    color: #d97706;
+    margin-bottom: 16px;
+}
+.exam-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+.exam-card {
+    padding: 20px;
+    background: #fffbeb;
+    border-radius: 10px;
+    border-left: 4px solid #d97706;
+}
+.exam-card h4 {
+    color: #92400e;
+    margin-bottom: 12px;
+}
+.exam-card ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #4b5563;
+}
+.exam-card li {
+    margin: 6px 0;
+    font-size: 0.9rem;
+}
+.syllabus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.syllabus-item {
+    padding: 16px;
+    background: #fffbeb;
+    border-radius: 8px;
+    border-left: 3px solid #d97706;
+}
+.syllabus-item strong {
+    display: block;
+    color: #92400e;
+    margin-bottom: 8px;
+}
+.syllabus-item ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #374151;
+}
+.syllabus-item li {
+    margin: 4px 0;
+    font-size: 0.9rem;
+}
+</style>
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <h3>🏆 物理竞赛</h3>
+        <ul class="chapter-list">
+            <li><a href="index.html"><span class="ch-num">🏠</span>竞赛主页</a></li>
+            <li><a href="preliminary.html"><span class="ch-num">📗</span>预赛</a></li>
+            <li><a href="semifinal.html" class="active"><span class="ch-num">📙</span>复赛</a></li>
+            <li><a href="final.html"><span class="ch-num">📕</span>决赛</a></li>
+            <li><a href="knowledge.html"><span class="ch-num">📚</span>竞赛知识点</a></li>
+        </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+
+    <main class="main">
+        <div class="cpho-header">
+            <h1>📙 物理竞赛复赛</h1>
+            <p>省级赛区 · 理论考试(160分) + 实验考试(40分) · 总分 200 分</p>
+        </div>
+
+        <div class="info-card">
+            <h3>📋 复赛考试说明</h3>
+            <div style="color: #374151; line-height: 1.8;">
+                <p><strong>考试性质：</strong>复赛是物理竞赛最重要的一轮，省级一等奖获得者有机会获得强基计划破格资格，省队成员参加全国决赛。</p>
+                <p><strong>试题特点：</strong>题目难度显著高于预赛，接近普通物理水平，强调物理思维和数学建模能力。</p>
+                <p><strong>选拔比例：</strong>每省约 40-60 个省级一等奖名额，约 10-15 人进入省队参加决赛。</p>
+            </div>
+        </div>
+
+        <h2 style="margin: 32px 0 16px;">📝 考试结构</h2>
+        <div class="exam-section">
+            <div class="exam-card">
+                <h4>📐 理论考试</h4>
+                <ul>
+                    <li><strong>分值：</strong>160 分</li>
+                    <li><strong>时间：</strong>3 小时</li>
+                    <li><strong>题型：</strong>8 道计算题</li>
+                    <li><strong>特点：</strong>综合性强，计算量大，需要完整的解题过程</li>
+                    <li><strong>判分：</strong>按步骤给分，思路清晰很重要</li>
+                </ul>
+            </div>
+            <div class="exam-card">
+                <h4>🔬 实验考试</h4>
+                <ul>
+                    <li><strong>分值：</strong>40 分</li>
+                    <li><strong>时间：</strong>3 小时</li>
+                    <li><strong>题型：</strong>2 个实验题</li>
+                    <li><strong>特点：</strong>包含力学、电磁学、光学实验</li>
+                    <li><strong>要求：</strong>操作规范，数据处理准确，误差分析合理</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 style="margin: 32px 0 16px;">📅 历年真题</h2>
+        <div class="year-grid">
+            <a href="exam_semifinal_2024.html" class="year-btn">
+                <span class="year">2024</span>
+                <span class="info">第 41 届</span>
+            </a>
+            <a href="exam_semifinal_2023.html" class="year-btn">
+                <span class="year">2023</span>
+                <span class="info">第 40 届</span>
+            </a>
+            <a href="exam_semifinal_2022.html" class="year-btn">
+                <span class="year">2022</span>
+                <span class="info">第 39 届</span>
+            </a>
+            <a href="exam_semifinal_2021.html" class="year-btn">
+                <span class="year">2021</span>
+                <span class="info">第 38 届</span>
+            </a>
+            <a href="exam_semifinal_2020.html" class="year-btn">
+                <span class="year">2020</span>
+                <span class="info">第 37 届</span>
+            </a>
+            <a href="exam_semifinal_2019.html" class="year-btn">
+                <span class="year">2019</span>
+                <span class="info">第 36 届</span>
+            </a>
+            <a href="exam_semifinal_2018.html" class="year-btn">
+                <span class="year">2018</span>
+                <span class="info">第 35 届</span>
+            </a>
+            <a href="exam_semifinal_2017.html" class="year-btn">
+                <span class="year">2017</span>
+                <span class="info">第 34 届</span>
+            </a>
+            <a href="exam_semifinal_2016.html" class="year-btn">
+                <span class="year">2016</span>
+                <span class="info">第 33 届</span>
+            </a>
+            <a href="exam_semifinal_2015.html" class="year-btn">
+                <span class="year">2015</span>
+                <span class="info">第 32 届</span>
+            </a>
+        </div>
+
+        <h2 style="margin: 32px 0 16px;">📚 复赛知识范围（竞赛大纲）</h2>
+        <div class="syllabus-grid">
+            <div class="syllabus-item">
+                <strong>📐 理论力学</strong>
+                <ul>
+                    <li>质心系、非惯性系惯性力</li>
+                    <li>刚体平面平行运动</li>
+                    <li>有心力与开普勒定律</li>
+                    <li>洛希极限、潮汐</li>
+                    <li>简正模、耦合振动</li>
+                    <li>多普勒效应、冲击波</li>
+                </ul>
+            </div>
+            <div class="syllabus-item">
+                <strong>⚡ 电磁学</strong>
+                <ul>
+                    <li>静电场唯一性定理</li>
+                    <li>电像法、介质分界面</li>
+                    <li>复杂电路、暂态过程</li>
+                    <li>磁介质、磁路定律</li>
+                    <li>互感、自感、磁场能量</li>
+                    <li>位移电流、麦克斯韦方程组</li>
+                </ul>
+            </div>
+            <div class="syllabus-item">
+                <strong>🌡️ 热学与热力学</strong>
+                <ul>
+                    <li>热力学第一定律应用</li>
+                    <li>卡诺循环、热机效率</li>
+                    <li>熵与热力学第二定律</li>
+                    <li>麦克斯韦速度分布律</li>
+                    <li>玻尔兹曼分布、平均自由程</li>
+                    <li>相变、克拉佩龙方程</li>
+                </ul>
+            </div>
+            <div class="syllabus-item">
+                <strong>🔬 光学与近代物理</strong>
+                <ul>
+                    <li>费马原理、变折射率光学</li>
+                    <li>多光束干涉、法布里-珀罗干涉</li>
+                    <li>夫琅禾费衍射、光栅</li>
+                    <li>偏振光、双折射、波片</li>
+                    <li>洛伦兹变换、相对论动力学</li>
+                    <li>量子力学初步、薛定谔方程</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

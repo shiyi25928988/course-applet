@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>光学专项练习 - 初中物理沪教版</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"><h3>📝 专项练习</h3><ul class="chapter-list">
+<li><a href="#q1">1-6题</a></li><li><a href="#q7">7-12题</a></li><li><a href="#q13">13-18题</a></li>
+<li style="margin-top:20px;"><a href="ch02_light.html">← 返回光学课件</a></li></ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div class="page-title">🔦 光学专项练习</div>
+<p style="color:var(--text-secondary);margin-bottom:20px;">共18题 · 覆盖光的直线传播、反射、折射、透镜成像、色散</p>
+
+<div class="exercise" id="q1"><div class="question"><span class="q-num">1</span>光在同种均匀介质中沿____传播。</div>
+<div class="options"><label><input type="radio" name="q1" value="A">A. 曲线</label><label><input type="radio" name="q1" value="B">B. 直线</label><label><input type="radio" name="q1" value="C">C. 折线</label><label><input type="radio" name="q1" value="D">D. 任意方向</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="B">✅ B。光在同种均匀介质中沿直线传播。实例：小孔成像、影子、日食月食。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>光在真空中的传播速度是____。</div>
+<div class="options"><label><input type="radio" name="q2" value="A">A. 340 m/s</label><label><input type="radio" name="q2" value="B">B. 3×10⁶ m/s</label><label><input type="radio" name="q2" value="C">C. 3×10⁸ m/s</label><label><input type="radio" name="q2" value="D">D. 3×10¹⁰ m/s</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="C">✅ C。真空中光速c=3×10⁸m/s，光在其他介质中速度小于c。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>光的反射定律中，反射角____入射角。</div>
+<div class="options"><label><input type="radio" name="q3" value="A">A. 大于</label><label><input type="radio" name="q3" value="B">B. 等于</label><label><input type="radio" name="q3" value="C">C. 小于</label><label><input type="radio" name="q3" value="D">D. 可能大于也可能小于</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="B">✅ B。反射定律：三线共面、两线分居、反射角等于入射角。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>雨后的夜晚，迎着月光走，地面上____处是水坑。</div>
+<div class="options"><label><input type="radio" name="q4" value="A">A. 较亮</label><label><input type="radio" name="q4" value="B">B. 较暗</label><label><input type="radio" name="q4" value="C">C. 一样亮</label><label><input type="radio" name="q4" value="D">D. 无法判断</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="A">✅ A。水面发生镜面反射，迎着月光时反射光进入人眼更多→较亮。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>光从空气斜射入水中时，折射角____入射角。</div>
+<div class="options"><label><input type="radio" name="q5" value="A">A. 大于</label><label><input type="radio" name="q5" value="B">B. 等于</label><label><input type="radio" name="q5" value="C">C. 小于</label><label><input type="radio" name="q5" value="D">D. 无法比较</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="C">✅ C。光从空气→水（或玻璃），折射角<入射角，光线向法线偏折。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>下列现象中属于光的折射的是____。</div>
+<div class="options"><label><input type="radio" name="q6" value="A">A. 水中倒影</label><label><input type="radio" name="q6" value="B">B. 小孔成像</label><label><input type="radio" name="q6" value="C">C. 筷子在水中"折断"</label><label><input type="radio" name="q6" value="D">D. 镜中花</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="C">✅ C。筷子"弯折"是折射。A、D是反射，B是直线传播。</div></div>
+
+<div class="exercise" id="q7"><div class="question"><span class="q-num">7</span>凸透镜对光有____作用。</div>
+<div class="options"><label><input type="radio" name="q7" value="A">A. 发散</label><label><input type="radio" name="q7" value="B">B. 会聚</label><label><input type="radio" name="q7" value="C">C. 既不会聚也不发散</label><label><input type="radio" name="q7" value="D">D. 部分会聚部分发散</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="B">✅ B。凸透镜对光有会聚作用（会聚透镜）。凹透镜对光有发散作用。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>物体放在凸透镜的2倍焦距处（u=2f），所成的像是____。</div>
+<div class="options"><label><input type="radio" name="q8" value="A">A. 倒立放大实像</label><label><input type="radio" name="q8" value="B">B. 倒立等大实像</label><label><input type="radio" name="q8" value="C">C. 正立放大虚像</label><label><input type="radio" name="q8" value="D">D. 不成像</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="B">✅ B。u=2f时成倒立、等大、实像，像距v=2f。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">9</span>照相机的镜头相当于一个____镜。</div>
+<div class="options"><label><input type="radio" name="q9" value="A">A. 凸透镜</label><label><input type="radio" name="q9" value="B">B. 凹透镜</label><label><input type="radio" name="q9" value="C">C. 平面镜</label><label><input type="radio" name="q9" value="D">D. 凸面镜</label></div>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+<div class="answer" id="answer-9" data-correct="A">✅ A。照相机：u>2f，成倒立缩小实像。投影仪：f<u<2f，成倒立放大实像。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">10</span>近视眼需要佩戴____镜矫正。</div>
+<div class="options"><label><input type="radio" name="q10" value="A">A. 凸透镜</label><label><input type="radio" name="q10" value="B">B. 凹透镜</label><label><input type="radio" name="q10" value="C">C. 平面镜</label><label><input type="radio" name="q10" value="D">D. 凸面镜</label></div>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+<div class="answer" id="answer-10" data-correct="B">✅ B。近视眼：像落在视网膜前，用凹透镜发散光线矫正。远视眼用凸透镜。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">11</span>光的三原色是____。</div>
+<div class="options"><label><input type="radio" name="q11" value="A">A. 红、黄、蓝</label><label><input type="radio" name="q11" value="B">B. 红、绿、蓝</label><label><input type="radio" name="q11" value="C">C. 青、品红、黄</label><label><input type="radio" name="q11" value="D">D. 红、橙、紫</label></div>
+<button class="answer-btn" onclick="showAnswer(11)">查看答案</button>
+<div class="answer" id="answer-11" data-correct="B">✅ B。光的三原色：红(R)、绿(G)、蓝(B)。颜料三原色是青、品红、黄。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">12</span>白光通过三棱镜后分解为七色光，这现象叫____。</div>
+<div class="options"><label><input type="radio" name="q12" value="A">A. 光的反射</label><label><input type="radio" name="q12" value="B">B. 光的折射</label><label><input type="radio" name="q12" value="C">C. 光的色散</label><label><input type="radio" name="q12" value="D">D. 光的干涉</label></div>
+<button class="answer-btn" onclick="showAnswer(12)">查看答案</button>
+<div class="answer" id="answer-12" data-correct="C">✅ C。光的色散说明白光是由各种色光混合而成的复色光。七色光：红橙黄绿蓝靛紫。</div></div>
+
+<div class="exercise" id="q13"><div class="question"><span class="q-num">13</span>【填空题】凸透镜的三条特殊光线：平行于主光轴的光线经凸透镜后过____；过光心的光线方向____；过焦点的光线经凸透镜后____于主光轴射出。</div>
+<div class="answer" id="answer-13">✅ 焦点、不变、平行。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">14</span>物体放在凸透镜焦点以内（u&lt;f）时，成____的____像，应用是____。</div>
+<div class="options"><label><input type="radio" name="q14" value="A">A. 倒立缩小实像 照相机</label><label><input type="radio" name="q14" value="B">B. 倒立放大实像 投影仪</label><label><input type="radio" name="q14" value="C">C. 正立放大虚像 放大镜</label><label><input type="radio" name="q14" value="D">D. 倒立等大实像 测焦距</label></div>
+<button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+<div class="answer" id="answer-14" data-correct="C">✅ C。u<f：正立、放大、虚像，应用放大镜。虚像不能用光屏承接。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">15</span>一束光线垂直射到平面镜上，入射角为____，反射角为____。</div>
+<div class="options"><label><input type="radio" name="q15" value="A">A. 90°, 90°</label><label><input type="radio" name="q15" value="B">B. 0°, 0°</label><label><input type="radio" name="q15" value="C">C. 45°, 45°</label><label><input type="radio" name="q15" value="D">D. 0°, 180°</label></div>
+<button class="answer-btn" onclick="showAnswer(15)">查看答案</button>
+<div class="answer" id="answer-15" data-correct="B">✅ B。垂直入射时，入射光线与法线重合，入射角=0°，反射角=0°，光沿原路返回。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">16</span>某人站在平面镜前2m处，镜中的像离他____m。</div>
+<div class="options"><label><input type="radio" name="q16" value="A">A. 1</label><label><input type="radio" name="q16" value="B">B. 2</label><label><input type="radio" name="q16" value="C">C. 4</label><label><input type="radio" name="q16" value="D">D. 8</label></div>
+<button class="answer-btn" onclick="showAnswer(16)">查看答案</button>
+<div class="answer" id="answer-16" data-correct="C">✅ C。像距=物距=2m，像与人的距离=2+2=4m。平面镜成像：等大、等距、正立、虚像。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">17</span>池水看起来比实际____，这是由于光的____造成的。</div>
+<div class="options"><label><input type="radio" name="q17" value="A">A. 深 折射</label><label><input type="radio" name="q17" value="B">B. 浅 折射</label><label><input type="radio" name="q17" value="C">C. 深 反射</label><label><input type="radio" name="q17" value="D">D. 浅 反射</label></div>
+<button class="answer-btn" onclick="showAnswer(17)">查看答案</button>
+<div class="answer" id="answer-17" data-correct="B">✅ B。池水看起来变浅是光的折射现象（虚像在实际位置上方）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">18</span>下列光学器材中，利用凸透镜成像原理的是____。①放大镜 ②近视镜 ③投影仪 ④潜望镜</div>
+<div class="options"><label><input type="radio" name="q18" value="A">A. ①②</label><label><input type="radio" name="q18" value="B">B. ①③</label><label><input type="radio" name="q18" value="C">C. ②④</label><label><input type="radio" name="q18" value="D">D. ③④</label></div>
+<button class="answer-btn" onclick="showAnswer(18)">查看答案</button>
+<div class="answer" id="answer-18" data-correct="B">✅ B。放大镜和投影仪用凸透镜。近视镜用凹透镜。潜望镜用平面镜。</div></div>
+
+</main></div>
+<script src="../assets/js/common.js"></script>
+</body>
+</html>

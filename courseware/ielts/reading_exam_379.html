@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulling Strings To Build Pyramids - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题379/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Pulling Strings To Build Pyramids</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>Whether all this is any more than a modern-day version of phrenology, the Victorian
+obsession with linking lumps and bumps in the skull to personality traits, is unclear. There
+have been no large-scale studies, so scans of a handful of subjects may not be a reliable
+guide to consumer behaviour in general. Of course, focus groups and surveys are flawed
+too: strong personalities can steer the outcomes of focus groups, and people do not always
+tell opinion pollsters the truth. And even honest people cannot always explain their
+preferences.</p>
+<p>That is perhaps where neuromarketing has the most potential. When asked about cola
+drinks, most people claim to have a favourite brand, but cannot say why they prefer that
+brand’s taste. An unpublished study of attitudes towards two well- known cola drinks. Brand
+A and Brand 13. carried out last year in a college of medicine in the US found that most
+subjects preferred Brand B in a blind tasting fMRI scanning showed that drinking Brand B lit
+up a region called the ventral putamen, which is one of the brain s ‘reward centres’, far
+more brightly than Brand A. But when told which drink was which, most subjects said they
+preferred Brand A, which suggests that its stronger brand outweighs the more pleasant
+taste of the other drink.</p>
+<p>“People form many unconscious attitudes that are obviously beyond traditional methods
+that utilise introspection,” says Steven Quartz, a neuroscientist at Caltech who is
+collaborating with Lieberman Research. With over $100 billion spent each year on
+marketing in America alone, any firm that can more accurately analyse how customers
+respond to products, brands and advertising could make a fortune.</p>
+<p>Consumer advocates are wary. Gary Ruskin of Commercial Alert, a lobby group, thinks
+existing marketing techniques are powerful enough. “Already, marketing is deeply
+implicated in many serious pathologies,” he says. “That is especially true of children, who
+are suffering from an epidemic of marketing- related diseases, including obesity and type-2
+diabetes. Neuromarketing is a tool to amplify these trends.”</p>
+<p>Dr Quartz counters that neuromarketing techniques could equally be used for benign
+purposes. “There are ways to utilise these technologies to create more responsible
+advertising,” he says. Brain-scanning could, for example, be used to determine when
+people are capable of making free choices, to ensure that advertising falls within those
+bounds.</p>
+<p>Another worry is that brain-scanning is an invasion of privacy and that information on the
+preferences of specific individuals will be misused. But neuromarketing studies rely on
+small numbers of volunteer subjects, so that seems implausible. Critics also object to the
+use of medical equipment for frivolous rather than medical purposes. But as Tim Ambler, a
+neuromarketing researcher at the London Business School, says: ‘A tool is a tool, and if the
+owner of the tool gets a decent rent for hiring it out, then that subsidises the cost of the
+equipment, and everybody wins.’ Perhaps more brain-scanning will some day explain why
+ 2</p>
+<p>some people like the idea of neuromarketing, but others do not.
+ 3</p>
+<p>Questions 1-6
+Reading Passage 2 has ten paragraphs A-J
+Choose the correct heading for Paragraphs B-G from the list of headings below.
+Write the correct number (i-x) in boxes 1-6 on your answer sheet.
+ 
+List of headings
+i         A description of the procedure
+ii        An international research project
+iii       An experiment to investigate consumer responses
+iv       Marketing an alternative name
+v        A misleading name
+vi       A potentially profitable line of research
+vii      Medical dangers of the technique
+viii     Drawbacks to marketing tools
+ix       Broadening applications
+x        What is neuromarketing?
+ Example:
+Paragr
+aph A</p>
+<p>x
+     
+1.....................
+2.....................
+3.....................
+4.....................
+5.....................
+ 
+Paragraph B
+Paragraph C
+Paragraph D
+Paragraph E
+Paragraph F
+6.....................     ParagraphG
+Questions 7-9
+Look at the following people (Questions 20-22) and the list of opinions below.
+ 4</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

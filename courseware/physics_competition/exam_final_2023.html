@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全国中学生物理竞赛真题</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.cpho-header {
+    background: linear-gradient(135deg, #059669, #0d9488);
+    color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+.section-title {
+    background: #ecfdf5;
+    padding: 12px 20px;
+    border-left: 4px solid #059669;
+    margin: 24px 0 16px;
+    font-weight: 600;
+    color: #065f46;
+    font-size: 1.1rem;
+}
+.question {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.q-num {
+    display: inline-block;
+    background: #059669;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.q-title {
+    display: inline-block;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 1.05rem;
+}
+.q-score {
+    float: right;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+.q-content {
+    margin-top: 16px;
+    line-height: 1.8;
+    color: #374151;
+}
+.answer-btn {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background: #059669;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+.answer-btn:hover {
+    background: #047857;
+}
+.answer {
+    display: none;
+    margin-top: 16px;
+    padding: 16px;
+    background: #f0fdf4;
+    border-radius: 8px;
+    border-left: 3px solid #059669;
+}
+.answer.show {
+    display: block;
+}
+.answer-value {
+    font-weight: 600;
+    color: #065f46;
+    margin-bottom: 8px;
+}
+.answer-solution {
+    color: #065f46;
+    line-height: 1.7;
+}
+.formula {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+.notice-box {
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+.notice-box h4 {
+    color: #b45309;
+    margin-bottom: 8px;
+}
+.notice-box p {
+    color: #78350f;
+    margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="back-links">
+        <a href="index.html">← 返回竞赛主页</a>
+    </div>
+
+    <div class="cpho-header">
+        <h1>🏆 全国中学生物理竞赛真题</h1>
+        <p>预赛 · 复赛 · 决赛 · 历年真题与详细解析</p>
+    </div>
+
+    <div class="notice-box">
+        <h4>📢 内容正在完善中</h4>
+        <p>完整的历年真题与详细解析正在陆续整理上传，敬请期待！<br>下面是部分典型题目示例</p>
+    </div>
+
+    <div class="section-title">📐 典型例题展示（预赛难度）</div>
+
+    <div class="question">
+        <span class="q-num">1</span>
+        <span class="q-title">运动学问题</span>
+        <span class="q-score">（10分）</span>
+        <div class="q-content">
+            <p>一质点从静止开始做直线运动，第一秒内加速度为 a，第二秒内加速度为 -a，第三秒内加速度为 a，第四秒内加速度为 -a，如此反复。求 100 秒末质点的速度和位移。</p>
+        </div>
+        <button class="answer-btn" onclick="showAnswer(1)">查看答案与解析</button>
+        <div class="answer" id="answer-1">
+            <div class="answer-value">答案：速度 v = 0；位移 s = 50a</div>
+            <div class="answer-solution">
+                <strong>解析：</strong><br>
+                每两秒为一个周期：<br>
+                - 第1秒末速度：v₁ = a×1 = a<br>
+                - 第2秒末速度：v₂ = a - a×1 = 0<br>
+                - 一个周期（2秒）内的位移：s = ½a×1² + (a×1 - ½a×1²) = ½a + ½a = a<br><br>
+                100秒共有 50 个周期，所以：<br>
+                速度：v = 0（每个周期末速度都回到0）<br>
+                位移：s = 50a
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <span class="q-num">2</span>
+        <span class="q-title">能量守恒问题</span>
+        <span class="q-score">（10分）</span>
+        <div class="q-content">
+            <p>质量为 m 的小球从高度 h 处由静止释放，落入沙坑，进入深度为 d 后停止。求沙坑对小球的平均阻力。（忽略空气阻力）</p>
+        </div>
+        <button class="answer-btn" onclick="showAnswer(2)">查看答案与解析</button>
+        <div class="answer" id="answer-2">
+            <div class="answer-value">答案：f = mg(h+d)/d</div>
+            <div class="answer-solution">
+                <strong>解析：</strong><br>
+                对整个过程用动能定理：<br>
+                mg(h+d) - f d = 0 - 0<br>
+                （重力做功 mg(h+d)，阻力做功 -f d，初末动能都为0）<br><br>
+                解得：f = mg(h+d)/d
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">💡 备考建议</div>
+    <div class="question">
+        <div class="q-content">
+            <ul style="margin: 0; padding-left: 20px; color: #374151; line-height: 2;">
+                <li><strong>基础阶段：</strong>系统学习高中物理全部内容，熟练掌握基本概念和公式</li>
+                <li><strong>进阶阶段：</strong>学习普通物理（力学、电磁学、热学、光学、近代物理），重点掌握微积分在物理中的应用</li>
+                <li><strong>真题训练：</strong>至少完成近10年的预赛、复赛真题，熟悉题型和难度</li>
+                <li><strong>实验准备：</strong>复赛有实验考试，需要专门的实验训练，掌握基本实验技能和数据处理方法</li>
+                <li><strong>数学工具：</strong>熟练掌握微积分、线性代数、矢量分析等数学工具</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Nature - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题413/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Second Nature</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>Questions 1-6
+Use the information in the passage to match the options (listed A-C) with activities or
+features of ants below.
+Write the appropriate letters A-C in boxes 1-6 on your answer sheet
+NB you may use any letter more than once</p>
+<p>A Leaf-cutting ants
+B Lower attines
+C Both leaft-cutting ants and lower attine ants</p>
+<p>1..................... can use toxic leaves to feed fungus
+2..................... build small nests and live with different foreign fungus
+3..................... use dead vegetation to feed fungus
+4..................... raise a single fungus which do not live with other variety of foreigners
+5..................... normally keep a highly dangerous parasite under control
+6..................... use special strategies to fight against Escovopsis</p>
+<p>Questions 7-11
+The reading Passage has ten paragraphs A-J.
+Which paragraph contains the following information?
+Write the correct letter A-J, in boxes 7-11 on your answer sheet.
+7..................... Dangerous outcome of Escovopsis.
+8..................... Risk of growing single fungus.
+9..................... Comparison of features of two different nests for feeding gardens.
+10..................... Discovery of significant achievements made by ants earlier than
+human.
+11..................... Advantage of growing new breed of fungus in the ant farm.
+Questions 12-13
+Choose the correct letter, A, B, C or D.
+Write your answers in boxes 12-13 on your answer sheet.
+ 3</p>
+<p>12.  How does author think of Currie’s opinion on the saying “ants keep their
+gardens free of parasites”?
+A his viewpoint was verified later.
+B his earlier study has sufficient evidence immediately.
+C there is no details mentioned in the article.
+D his opinion was proved to be wrong later on.
+13.  What did scientists find on the skin of ants under microscope?
+A some white cloud mold embed in their skin
+B that wax is all over their skin
+C a substance which is useful to humans
+D a substance which suppresses growth of fungus.
+ 4</p>
+<p>Solution:
+ 
+1. A
+2. B
+3. B
+4. A
+5. A
+6. C
+7.
+8. D
+9. C
+10. H
+11. F
+12. A
+13. C</p>
+<p>Learning by Examples
+ 
+A Learning Theory is rooted in the work of Ivan Pavlov, the famous scientist who
+discovered and documented the principles governing how animals (humans included) learn
+in the 1900s. Two basic kinds of learning or conditioning occur, one of which is famously
+known as the classical conditioning. Classical conditioning happens when an animal learns
+to associate a neutral stimulus (signal) with a stimulus that has intrinsic meaning based on
+how closely in time the two stimuli are presented. The classic example of classical
+conditioning is a dog's ability to associate the sound of a bell (something that originally has
+no meaning to the dog) with the presentation of food (something that has a lot of meaning
+to the dog) a few moments later. Dogs are able to learn the association between bell and
+food, and will salivate immediately after hearing the bell once this connection has been
+made. Years of learning research have led to the creation of a highly precise learning
+theory that can be used to understand and predict how and under what circumstances
+most any animal will learn, including human beings, and eventually help people figure out
+how to change their behaviours.
+ 
+B Role models are a popular notion for guiding child development, but in recent years very
+interesting research has been done on learning by examples in other animals. If the subject
+of animal learning is taught very much in terms of classical or operant conditioning, it
+places too much emphasis on how we allow animals to learn and not enough on how they
+are equipped to learn. To teach a course of mine, I have been dipping profitably into a very
+interesting and accessible compilation of papers on social learning in mammals, including
+chimps and human children, edited by Heyes and Galef (1996).
+ 
+C The research reported in one paper started with a school field trip to Israel to a pine
+forest where many pine cones were discovered, stripped to the central core. So the
+investigation started with no weighty theoretical intent, but was directed at finding out what
+was eating the nutritious pine seeds and how they managed to get them out of the cones.
+The culprit proved to be the versatile and athletic black rat,(Rattus rattus), and the
+technique was to bite each cone scale off at its base, in sequence from base to tip following
+the spiral growth pattern of the cone.
+ 
+D Urban black rats were found to lack the skill and were unable to learn it even if housed
+with experienced cone strippers. However, infants of urban mothers cross-fostered by
+stripper mothers acquired the skill, whereas infants of stripper mothers fostered by an
+urban mother could not. Clearly the skill had to be learned from the mother. Further elegant
+experiments showed that naive adults could develop the skill if they were provided with
+cones from which the first complete spiral of scales had been removed; rather like our new
+photocopier which you can work out how to use once someone has shown you how to
+switch it on. In the case of rats, the youngsters take cones away from the mother when she
+is still feeding on them, allowing them to acquire the complete stripping skill.
+ 
+E A good example of adaptive bearing we might conclude, but let’s see the economies.
+This was determined by measuring oxygen uptake of a rat stripping a cone in a metabolic
+chamber to calculate energetic cost and comparing it with the benefit of the pine seeds
+measured by calorimeter. The cost proved to be less than 10% of the energetic value of the
+cone. An acceptable profit margin.
+F A paper in 1996, Animal Behaviour by Bednekoff and Baida, provides a different view of
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

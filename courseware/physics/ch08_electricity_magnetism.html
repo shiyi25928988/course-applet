@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第八章 电能与磁 - 初中物理沪教版</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📚 初中物理</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_sound.html"><span class="ch-num">1</span>声</a></li><li><a href="ch02_light.html"><span class="ch-num">2</span>光</a></li>
+    <li><a href="ch03_motion_force.html"><span class="ch-num">3</span>运动和力</a></li>
+    <li><a href="ch04_work_machines.html"><span class="ch-num">4</span>机械和功</a></li>
+    <li><a href="ch05_heat_energy.html"><span class="ch-num">5</span>热与能</a></li>
+    <li><a href="ch06_pressure.html"><span class="ch-num">6</span>压力与压强</a></li>
+    <li><a href="ch07_circuits.html"><span class="ch-num">7</span>电路</a></li>
+    <li><a href="ch08_electricity_magnetism.html" class="active"><span class="ch-num">8</span>电能与磁</a>
+      <div class="subsections">
+        <a href="#sec8-1">8.1 电功率</a><a href="#sec8-2">8.2 电流的磁场</a>
+        <a href="#sec8-3">8.3 电能的获得和输送</a><a href="#sec8-4">8.4 无线电波</a>
+        <a href="#exercises">练习题</a>
+      </div>
+    </li>
+    
+  </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-subject">📂 物理目录</a>
+    </div>="page-title">第八章 电能与磁</div>
+<div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
+<ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+<li>掌握电功和电功率的概念及计算</li><li>理解焦耳定律（电流的热效应）</li>
+<li>了解电流的磁效应（奥斯特实验）</li>
+<li>了解电磁感应现象和发电机原理</li>
+<li>了解电能的输送和无线电通信</li></ul></div>
+
+<h2 id="sec8-1">8.1 电功率</h2>
+<div class="keypoints-grid">
+<div class="kp"><h3>电功</h3>
+<p>电流做的功叫做<strong>电功</strong>。电流做功的过程是将电能转化为其他形式能的过程。</p>
+<span class="formula">W = UIt</span>
+<p>单位：<strong>焦耳（J）</strong>。常用单位：千瓦时（kW·h，度）。</p>
+<p>1 kW·h = 3.6×10⁶ J。</p></div>
+<div class="kp"><h3>电功率</h3>
+<p><strong>电功率</strong>：电流在单位时间内所做的功，表示电流做功的快慢。</p>
+<span class="formula">P = W/t = UI</span>
+<p>单位：<strong>瓦特（W）</strong>，常用 kW。</p>
+<p>推导公式（纯电阻电路）：P = I²R = U²/R</p>
+<p><strong>额定功率</strong>：用电器在额定电压下工作时的功率。</p>
+<p><strong>实际功率</strong>：用电器在实际电压下工作时的功率。</p></div>
+<div class="kp"><h3>焦耳定律</h3>
+<p>电流通过导体产生的热量跟电流的<strong>平方</strong>成正比，跟导体的<strong>电阻</strong>成正比，跟<strong>通电时间</strong>成正比。</p>
+<span class="formula">Q = I²Rt</span>
+<p>应用：电热水器、电饭锅、电烙铁等。</p></div>
+</div>
+
+<h2 id="sec8-2">8.2 电流的磁场</h2>
+<div class="kp"><h3>电流的磁效应</h3>
+<p><strong>奥斯特实验</strong>：通电导线周围存在磁场，磁场方向与电流方向有关。这证明了<strong>电可以生磁</strong>。</p>
+<p><strong>通电螺线管</strong>的磁场与条形磁铁的磁场相似。右手螺旋定则（安培定则）：右手握住螺线管，四指弯曲方向为电流方向，拇指所指即为螺线管N极。</p>
+<p><strong>电磁铁</strong>：内部带有铁芯的通电螺线管。优点：磁性有无可控（通断电）、磁性强弱可调（改变电流）、极性可换（改变电流方向）。</p>
+<p><strong>电磁继电器</strong>：用低电压、弱电流控制高电压、强电流的自动开关。</p></div>
+
+<div class="anim-container"><h3 style="margin-bottom:12px;">🧲 通电螺线管磁场</h3>
+<svg viewBox="0 0 680 200" style="width:100%;max-width:680px;">
+  <rect width="680" height="200" fill="#0f172a" rx="12"/>
+  <!-- Coil -->
+  <ellipse cx="280" cy="100" rx="30" ry="60" fill="none" stroke="#f97316" stroke-width="3"/>
+  <ellipse cx="380" cy="100" rx="30" ry="60" fill="none" stroke="#f97316" stroke-width="3"/>
+  <line x1="280" y1="40" x2="380" y2="40" stroke="#f97316" stroke-width="2.5"/>
+  <line x1="280" y1="160" x2="380" y2="160" stroke="#f97316" stroke-width="2.5"/>
+  <!-- Field lines -->
+  <path d="M430,100 Q500,60 550,100 Q500,140 430,100" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.7"/>
+  <path d="M420,70 Q500,20 560,80" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.5"/>
+  <path d="M420,130 Q500,170 560,120" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.5"/>
+  <!-- N/S poles -->
+  <text x="380" y="30" fill="#ef4444" font-size="24" font-weight="bold">N</text>
+  <text x="380" y="185" fill="#3b82f6" font-size="24" font-weight="bold">S</text>
+  <!-- Labels -->
+  <text x="240" y="25" fill="#fff" font-size="11">通电螺线管</text>
+  <text x="470" y="45" fill="#60a5fa" font-size="10">磁感线</text>
+</svg></div>
+
+<h2 id="sec8-3">8.3 电能的获得和输送</h2>
+<div class="kp"><h3>电磁感应</h3>
+<p><strong>电磁感应</strong>：闭合电路的一部分导体在磁场中做<strong>切割磁感线</strong>运动时，导体中产生电流的现象。产生的电流叫<strong>感应电流</strong>。这是<strong>磁生电</strong>的现象。</p>
+<p>感应电流方向与<strong>导体运动方向</strong>和<strong>磁场方向</strong>有关。</p>
+<p><strong>发电机</strong>原理：<strong>电磁感应</strong>（机械能→电能）。</p>
+<p><strong>电动机</strong>原理：<strong>通电导体在磁场中受力</strong>（电能→机械能）。</p>
+<p><strong>交流电</strong>：方向和大小做周期性变化的电流。我国交流电频率为<strong>50 Hz</strong>，周期0.02秒。</p></div>
+
+<div class="kp"><h3>电能的输送</h3>
+<p>采用<strong>高压输电</strong>可以减少电能在输电线上的损失。</p>
+<p>原理：P = UI，输送功率一定时，电压越高，电流越小。输电线上损失功率 P<sub>损</sub> = I²R，电流越小，损失越小。</p>
+<p><strong>变压器</strong>：用于改变交流电的电压。升压变压器用于输电端，降压变压器用于用户端。</p></div>
+
+<h2 id="sec8-4">8.4 无线电波和无线电通信</h2>
+<div class="kp"><h3>电磁波</h3>
+<p><strong>电磁波</strong>可以在真空中传播，传播速度等于光速 c = 3×10⁸ m/s。</p>
+<p>波长λ、频率f、波速c的关系：<span class="formula">c = λf</span></p>
+<p>电磁波谱（按频率从低到高）：无线电波、微波、红外线、可见光、紫外线、X射线、γ射线。</p>
+<p>应用：广播、电视、手机通信、Wi-Fi、雷达、微波炉。</p></div>
+
+<h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+<div class="exercise"><div class="question"><span class="q-num">1</span>电功率的计算公式是____。</div>
+<div class="options">
+<label><input type="radio" name="q1" value="A">A. P=Wt</label><label><input type="radio" name="q1" value="B">B. P=UI</label>
+<label><input type="radio" name="q1" value="C">C. P=U/t</label><label><input type="radio" name="q1" value="D">D. P=I/t</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="B">✅ B。P=W/t=UI，电功率等于电压乘以电流。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>焦耳定律的表达式是____。</div>
+<div class="options">
+<label><input type="radio" name="q2" value="A">A. Q=IRt</label><label><input type="radio" name="q2" value="B">B. Q=I²Rt</label>
+<label><input type="radio" name="q2" value="C">C. Q=UIt</label><label><input type="radio" name="q2" value="D">D. Q=Pt</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="B">✅ B。焦耳定律Q=I²Rt，电流通过导体产生的热量与电流平方成正比。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>发电机的工作原理是____。</div>
+<div class="options">
+<label><input type="radio" name="q3" value="A">A. 电流的磁效应</label><label><input type="radio" name="q3" value="B">B. 电磁感应</label>
+<label><input type="radio" name="q3" value="C">C. 通电导体在磁场中受力</label><label><input type="radio" name="q3" value="D">D. 焦耳定律</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="B">✅ B。发电机原理是电磁感应（磁生电）。电动机原理是通电导体在磁场中受力（电生力）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>1千瓦时（度）等于____焦耳。</div>
+<div class="options">
+<label><input type="radio" name="q4" value="A">A. 3.6×10³ J</label><label><input type="radio" name="q4" value="B">B. 3.6×10⁶ J</label>
+<label><input type="radio" name="q4" value="C">C. 3.6×10⁹ J</label><label><input type="radio" name="q4" value="D">D. 1000 J</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="B">✅ B。1kW·h=1000W×3600s=3.6×10⁶J。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>电磁波在真空中的传播速度是____。</div>
+<div class="options">
+<label><input type="radio" name="q5" value="A">A. 340 m/s</label><label><input type="radio" name="q5" value="B">B. 3×10⁶ m/s</label>
+<label><input type="radio" name="q5" value="C">C. 3×10⁸ m/s</label><label><input type="radio" name="q5" value="D">D. 3×10¹⁰ m/s</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="C">✅ C。电磁波在真空中传播速度等于光速c=3×10⁸m/s。</div></div>
+</main></div>
+<script src="../assets/js/common.js"></script>
+</body>
+</html>

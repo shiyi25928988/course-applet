@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>高中化学 · 人教版课件</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.chem-hero { background:linear-gradient(135deg,#059669,#0d9488); color:#fff; border-radius:20px; padding:40px 24px; margin-bottom:28px; }
+.chem-hero h1 { font-size:1.8rem; margin-bottom:8px; }
+.ch-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px; margin-bottom:32px; }
+.ch-card { background:#fff; border-radius:14px; padding:20px; text-decoration:none; box-shadow:0 2px 8px rgba(0,0,0,.06); border-left:4px solid #059669; transition:transform .2s; display:block; color:var(--text); }
+.ch-card:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,.1); }
+.ch-card h3 { font-size:1.1rem; margin-bottom:10px; color:#059669; }
+.ch-card .sections { font-size:.85rem; color:#64748b; line-height:1.6; }
+.exam-btn { display:inline-block; padding:10px 24px; background:var(--warning); color:#fff; border-radius:8px; text-decoration:none; font-weight:600; margin:0 8px 20px 0; }
+.year-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin:24px 0; }
+.year-btn { text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text); transition:all .2s; }
+.year-btn:hover { border-color:#059669; background:#f0fdf4; }
+.year-btn.current { background:#f0fdf4; border:2px solid #059669; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+<h3>🧪 高中化学</h3>
+<ul class="chapter-list">
+<li><a href="#basic"><span class="ch-num">⚛️</span>物质结构基础</a></li>
+<li><a href="#reaction"><span class="ch-num">⚡</span>化学反应原理</a></li>
+<li><a href="#organic"><span class="ch-num">🔬</span>有机化学</a></li>
+<li><a href="#experiment"><span class="ch-num">🧪</span>化学实验</a></li>
+</ul>
+<div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+
+<main class="main">
+<div class="chem-hero">
+<h1>🧪 人教版高中化学</h1>
+<p>必修第一、二册 + 选择性必修 · 含知识讲解、实验动画、高考真题</p>
+</div>
+
+<div style="margin-bottom:24px;">
+<a href="exam_collection.html" class="exam-btn">📝 上海高考化学真题汇编 →</a>
+</div>
+
+<h2 id="basic" style="margin-bottom:16px;">⚛️ 物质结构基础（必修1+选修2）</h2>
+<div class="ch-grid">
+<a href="c01_matter.html" class="ch-card">
+<h3>第一章 物质及其变化</h3>
+<div class="sections">物质的分类 · 离子反应 · 氧化还原反应 · 化学反应中的能量变化</div>
+</a>
+<a href="c02_elements.html" class="ch-card">
+<h3>第二章 常见元素及其化合物</h3>
+<div class="sections">金属元素（Na、Al、Fe、Cu）· 非金属元素（Cl、S、N、Si）</div>
+</a>
+<a href="c03_structure.html" class="ch-card">
+<h3>第三章 物质结构与性质</h3>
+<div class="sections">原子结构 · 化学键 · 分子间作用力 · 晶体结构与性质</div>
+</a>
+</div>
+
+<h2 id="reaction" style="margin:32px 0 16px;">⚡ 化学反应原理（选修4）</h2>
+<div class="ch-grid">
+<a href="c11_thermo.html" class="ch-card">
+<h3>第四章 化学反应与能量</h3>
+<div class="sections">化学反应热效应 · 盖斯定律 · 能源的充分利用</div>
+</a>
+<a href="c12_rate.html" class="ch-card">
+<h3>第五章 化学反应速率与平衡</h3>
+<div class="sections">化学反应速率 · 化学平衡 · 化学平衡移动 · 化学平衡常数</div>
+</a>
+<a href="c13_electro.html" class="ch-card">
+<h3>第六章 电化学基础</h3>
+<div class="sections">原电池 · 电解池 · 金属的电化学腐蚀与防护</div>
+</a>
+<a href="c14_solution.html" class="ch-card">
+<h3>第七章 水溶液中的离子平衡</h3>
+<div class="sections">弱电解质电离 · 水的电离和溶液pH · 盐类水解 · 沉淀溶解平衡</div>
+</a>
+</div>
+
+<h2 id="organic" style="margin:32px 0 16px;">🔬 有机化学基础（选修5）</h2>
+<div class="ch-grid">
+<a href="c21_organic_basic.html" class="ch-card">
+<h3>第八章 有机化合物基础</h3>
+<div class="sections">认识有机化合物 · 烃和卤代烃 · 烃的含氧衍生物</div>
+</a>
+<a href="c22_organic_adv.html" class="ch-card">
+<h3>第九章 有机合成与推断</h3>
+<div class="sections">有机合成方法 · 高分子化合物 · 有机推断题解题策略</div>
+</a>
+</div>
+
+<h2 id="experiment" style="margin:32px 0 16px;">🧪 化学实验</h2>
+<div class="ch-grid">
+<a href="c31_experiment.html" class="ch-card">
+<h3>第十章 化学实验基础</h3>
+<div class="sections">常见仪器使用 · 物质的分离提纯 · 物质的检验与鉴别 · 实验方案设计</div>
+</a>
+</div>
+
+<h2 style="margin:32px 0 16px;">📝 高考真题（按年份）</h2>
+<div class="year-grid">
+<a href="exam_2017.html" class="year-btn">2017年</a>
+<a href="exam_2018.html" class="year-btn">2018年</a>
+<a href="exam_2019.html" class="year-btn">2019年</a>
+<a href="exam_2020.html" class="year-btn">2020年</a>
+<a href="exam_2021.html" class="year-btn">2021年</a>
+<a href="exam_2022.html" class="year-btn">2022年</a>
+<a href="exam_2023.html" class="year-btn">2023年</a>
+<a href="exam_2024.html" class="year-btn current">⭐ 2024年</a>
+<a href="exam_2025.html" class="year-btn">2025年</a>
+<a href="exam_2026.html" class="year-btn">2026年</a>
+</div>
+
+</main>
+</div>
+</body>
+</html>

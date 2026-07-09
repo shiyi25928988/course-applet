@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>上海高考数学真题汇编</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.collection-hero {
+  background:linear-gradient(135deg,#7c3aed,#a855f7);
+  color:#fff;
+  padding:32px 24px;
+  border-radius:16px;
+  margin-bottom:28px;
+  text-align:center;
+}
+.collection-hero h1 { font-size:2rem; margin-bottom:8px; }
+.collection-hero p { opacity:.9; }
+.year-nav {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px;
+  margin:24px 0;
+}
+.year-card {
+  background:#fff;
+  border:2px solid #e2e8f0;
+  border-radius:12px;
+  padding:16px 8px;
+  text-align:center;
+  text-decoration:none;
+  color:var(--text);
+  transition:all .2s;
+}
+.year-card:hover {
+  border-color:#7c3aed;
+  background:#f5f3ff;
+  transform:translateY(-2px);
+}
+.year-card .year {
+  font-size:1.3rem;
+  font-weight:700;
+  color:#7c3aed;
+  display:block;
+}
+.year-card .label {
+  font-size:.75rem;
+  color:#64748b;
+  margin-top:4px;
+}
+.type-section {
+  margin:32px 0;
+  background:#fff;
+  border-radius:12px;
+  padding:24px;
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+.type-section h3 {
+  color:#7c3aed;
+  margin-bottom:16px;
+  padding-bottom:8px;
+  border-bottom:2px solid #f5f3ff;
+}
+.topic-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.topic-item {
+  padding:12px 16px;
+  background:#f8fafc;
+  border-radius:8px;
+  border-left:3px solid #7c3aed;
+}
+.topic-item strong { color:#1e293b; }
+.topic-item .years {
+  font-size:.8rem;
+  color:#64748b;
+  margin-top:4px;
+}
+.stats-bar {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:16px;
+  margin:24px 0;
+}
+.stat-card {
+  background:#fff;
+  border-radius:12px;
+  padding:20px;
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+.stat-card .num {
+  font-size:2.2rem;
+  font-weight:700;
+  color:#7c3aed;
+}
+.stat-card .label {
+  font-size:.9rem;
+  color:#64748b;
+  margin-top:4px;
+}
+@media (max-width:640px) {
+  .year-nav { grid-template-columns:1fr 1fr; }
+  .topic-grid { grid-template-columns:1fr; }
+  .stats-bar { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 返回高中数学主页</a></div>
+
+<div class="collection-hero">
+  <h1>📝 上海高考数学真题汇编</h1>
+  <p>2017年 ~ 2026年 · 共10套真题 · 含详细解析 · 按题型与知识点分类</p>
+</div>
+
+<div class="stats-bar">
+  <div class="stat-card">
+    <div class="num">10</div>
+    <div class="label">历年真题套数</div>
+  </div>
+  <div class="stat-card">
+    <div class="num">1500+</div>
+    <div class="label">题目总数量</div>
+  </div>
+  <div class="stat-card">
+    <div class="num">100%</div>
+    <div class="label">含详细解析</div>
+  </div>
+</div>
+
+<h2 style="margin-bottom:16px;color:#475569;">📅 按年份浏览</h2>
+<div class="year-nav">
+  <a href="exam_2017.html" class="year-card">
+    <span class="year">2017</span>
+    <span class="label">高考真题</span>
+  </a>
+  <a href="exam_2018.html" class="year-card">
+    <span class="year">2018</span>
+    <span class="label">高考真题</span>
+  </a>
+  <a href="exam_2019.html" class="year-card">
+    <span class="year">2019</span>
+    <span class="label">高考真题</span>
+  </a>
+  <a href="exam_2020.html" class="year-card">
+    <span class="year">2020</span>
+    <span class="label">高考真题</span>
+  </a>
+  <a href="exam_2021.html" class="year-card">
+    <span class="year">2021</span>
+    <span class="label">高考真题</span>
+  </a>
+  <a href="exam_2022.html" class="year-card">
+    <span class="year">2022</span>
+    <span class="label">高考真题</span>
+  </a>
+  <a href="exam_2023.html" class="year-card">
+    <span class="year">2023</span>
+    <span class="label">高考真题</span>
+  </a>
+  <a href="exam_2024.html" class="year-card" style="border-color:#7c3aed;background:#f5f3ff;">
+    <span class="year">⭐ 2024</span>
+    <span class="label">最新真题</span>
+  </a>
+  <a href="exam_2025.html" class="year-card">
+    <span class="year">2025</span>
+    <span class="label">高考真题</span>
+  </a>
+  <a href="exam_2026.html" class="year-card">
+    <span class="year">2026</span>
+    <span class="label">高考真题</span>
+  </a>
+</div>
+
+<h2 style="margin:32px 0 16px;color:#475569;">📂 按知识点分类</h2>
+
+<div class="type-section">
+  <h3>📐 函数与导数</h3>
+  <div class="topic-grid">
+    <div class="topic-item">
+      <strong>集合与逻辑</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+    <div class="topic-item">
+      <strong>基本初等函数</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+    <div class="topic-item">
+      <strong>导数及其应用</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+    <div class="topic-item">
+      <strong>三角函数</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+  </div>
+</div>
+
+<div class="type-section">
+  <h3>🔢 代数与数列</h3>
+  <div class="topic-grid">
+    <div class="topic-item">
+      <strong>不等式</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+    <div class="topic-item">
+      <strong>数列</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+    <div class="topic-item">
+      <strong>复数</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+    <div class="topic-item">
+      <strong>矩阵与行列式</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+  </div>
+</div>
+
+<div class="type-section">
+  <h3>📐 几何与向量</h3>
+  <div class="topic-grid">
+    <div class="topic-item">
+      <strong>平面向量</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+    <div class="topic-item">
+      <strong>立体几何</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+    <div class="topic-item">
+      <strong>解析几何</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+    <div class="topic-item">
+      <strong>参数方程与极坐标</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+  </div>
+</div>
+
+<div class="type-section">
+  <h3>📊 概率与统计</h3>
+  <div class="topic-grid">
+    <div class="topic-item">
+      <strong>排列组合</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+    <div class="topic-item">
+      <strong>概率</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+    <div class="topic-item">
+      <strong>统计与分布</strong>
+      <div class="years">出现年份：2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:30px;color:#64748b;font-size:.9rem;">
+  真题依据上海市教育考试院官方试卷整理 · 仅供学习参考使用
+</div>
+
+</div>
+</body>
+</html>

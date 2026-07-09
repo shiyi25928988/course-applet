@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>高中数学 · 统计</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.section-card { background:#fff; border-radius:12px; padding:24px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,.06); }
+.section-card h3 { color:#059669; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid #e2e8f0; }
+.formula-box { background:#f0fdf4; padding:16px; border-radius:8px; margin:12px 0; border-left:4px solid #059669; font-family:monospace; }
+.tip-box { background:#fef3c7; padding:12px 16px; border-radius:8px; margin:12px 0; border-left:4px solid #d97706; }
+.table-box { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; margin:12px 0; }
+th, td { padding:10px 12px; text-align:left; border:1px solid #e2e8f0; }
+th { background:#f0fdf4; color:#059669; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+<h3>📈 统计</h3>
+<ul class="chapter-list">
+<li><a href="index.html"><span class="ch-num">📊</span>概率统计首页</a></li>
+<li><a href="#sample"><span class="ch-num">1</span>随机抽样</a></li>
+<li><a href="#estimate"><span class="ch-num">2</span>用样本估计总体</a></li>
+<li><a href="#corr"><span class="ch-num">3</span>变量的相关性</a></li>
+<li><a href="#indep_test"><span class="ch-num">4</span>独立性检验</a></li>
+<li><a href="../index.html"><span class="ch-num">🏠</span>返回高中数学</a></li>
+</ul>
+<div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+  <a href="../../index.html" class="back-home">🏠 返回首页</a>
+</div>
+</aside>
+
+<main class="main">
+<h1 style="margin-bottom:24px; color:#059669;">📈 统计</h1>
+
+<div class="section-card" id="sample">
+<h3>1. 随机抽样</h3>
+<p><strong>三种基本抽样方法：</strong></p>
+<div class="table-box">
+<table>
+<thead>
+<tr><th>抽样方法</th><th>特点</th><th>适用范围</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>简单随机抽样</strong></td><td>从总体中逐个抽取，每个个体被抽到的概率相等</td><td>总体个数较少</td></tr>
+<tr><td><strong>系统抽样</strong></td><td>将总体分成均衡的几部分，按预先制定的规则抽取</td><td>总体个数较多</td></tr>
+<tr><td><strong>分层抽样</strong></td><td>将总体分成互不交叉的层，按比例从各层抽取</td><td>总体由差异明显的几部分组成</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="tip-box">
+💡 <strong>共同点：</strong>三种抽样都是等概率抽样，每个个体被抽到的概率都是 n/N，其中 n 是样本容量，N 是总体容量
+</div>
+</div>
+
+<div class="section-card" id="estimate">
+<h3>2. 用样本估计总体</h3>
+<p><strong>(1) 频率分布直方图：</strong></p>
+<ul style="margin:12px 0 12px 24px; line-height:1.8;">
+<li>求极差：最大值 - 最小值</li>
+<li>决定组距与组数</li>
+<li>将数据分组</li>
+<li>列频率分布表</li>
+<li>画频率分布直方图</li>
+</ul>
+
+<div class="formula-box">
+频率 = 频数 / 样本容量<br>
+频率分布直方图中，各小长方形的面积 = 频率<br>
+各小长方形面积之和 = 1
+</div>
+
+<p><strong>(2) 数字特征：</strong></p>
+<div class="formula-box">
+平均数：x̄ = (x₁ + x₂ + ... + xₙ) / n<br><br>
+中位数：将数据按大小排列，位于中间位置的数<br><br>
+方差：s² = [(x₁-x̄)² + (x₂-x̄)² + ... + (xₙ-x̄)²] / n<br><br>
+标准差：s = √s²
+</div>
+
+<div class="tip-box">
+💡 <strong>方差的意义：</strong>方差（标准差）越大，数据的离散程度越大，越不稳定；方差越小，数据越集中，越稳定。
+</div>
+</div>
+
+<div class="section-card" id="corr">
+<h3>3. 变量的相关性</h3>
+<p><strong>(1) 散点图：</strong>表示两个变量之间关系的图形，可以直观判断两个变量是否相关。</p>
+
+<p><strong>(2) 正相关与负相关：</strong></p>
+<ul style="margin:12px 0 12px 24px; line-height:1.8;">
+<li><strong>正相关：</strong>点散布在从左下角到右上角的区域</li>
+<li><strong>负相关：</strong>点散布在从左上角到右下角的区域</li>
+</ul>
+
+<p><strong>(3) 线性回归方程：</strong></p>
+<div class="formula-box">
+ŷ = bx + a<br><br>
+其中：<br>
+b = [Σ(xᵢ - x̄)(yᵢ - ȳ)] / Σ(xᵢ - x̄)²<br>
+a = ȳ - b x̄
+</div>
+
+<div class="tip-box">
+💡 <strong>重要性质：</strong>回归直线必过样本中心点 (x̄, ȳ)
+</div>
+
+<p><strong>(4) 相关系数 r：</strong></p>
+<ul style="margin:12px 0 12px 24px; line-height:1.8;">
+<li>r > 0 表示正相关，r < 0 表示负相关</li>
+<li>|r| 越接近 1，线性相关程度越强</li>
+<li>|r| 越接近 0，线性相关程度越弱</li>
+</ul>
+</div>
+
+<div class="section-card" id="indep_test">
+<h3>4. 独立性检验</h3>
+<p>利用随机变量 K²（卡方）来判断"两个分类变量有关系"的方法称为独立性检验。</p>
+
+<p><strong>2×2 列联表：</strong></p>
+<div class="table-box">
+<table>
+<thead><tr><th></th><th>y₁</th><th>y₂</th><th>总计</th></tr></thead>
+<tbody>
+<tr><td>x₁</td><td>a</td><td>b</td><td>a + b</td></tr>
+<tr><td>x₂</td><td>c</td><td>d</td><td>c + d</td></tr>
+<tr><td>总计</td><td>a + c</td><td>b + d</td><td>n = a+b+c+d</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="formula-box">
+K² = n(ad - bc)² / [(a+b)(c+d)(a+c)(b+d)]
+</div>
+
+<p><strong>临界值表（常用）：</strong></p>
+<div class="table-box">
+<table>
+<thead><tr><th>P(K² ≥ k)</th><th>0.050</th><th>0.025</th><th>0.010</th><th>0.001</th></tr></thead>
+<tbody><tr><td>k</td><td>3.841</td><td>5.024</td><td>6.635</td><td>10.828</td></tr></tbody>
+</table>
+</div>
+
+<div class="tip-box">
+💡 <strong>判断规则：</strong><br>
+若 K² ≥ 3.841，则有 95% 的把握认为"两个变量有关系"<br>
+若 K² ≥ 6.635，则有 99% 的把握认为"两个变量有关系"
+</div>
+</div>
+
+<div style="margin-top:32px; text-align:center;">
+<a href="s01_prob.html" style="display:inline-block; padding:12px 24px; background:#e2e8f0; color:#475569; border-radius:8px; text-decoration:none; font-weight:600; margin-right:16px;">← 上一章：概率</a>
+<a href="s03_dist.html" style="display:inline-block; padding:12px 32px; background:#059669; color:#fff; border-radius:8px; text-decoration:none; font-weight:600;">下一章：统计分布 →</a>
+</div>
+
+</main>
+</div>
+</body>
+</html>

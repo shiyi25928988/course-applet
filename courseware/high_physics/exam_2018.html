@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>2018年上海高考物理真题</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.year-header { background:linear-gradient(135deg,#2563eb,#7c3aed); color:#fff; padding:24px; border-radius:12px; margin-bottom:24px; }
+.section-title { background:#eff6ff; padding:10px 16px; border-left:4px solid #2563eb; margin:24px 0 16px; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 返回高中物理主页</a><a href="exam_collection.html">← 真题汇编目录</a></div>
+<div class="year-header"><h1>⚛️ 2018年上海市普通高等学校招生全国统一考试</h1><h2>物理试卷</h2><p>满分100分 · 考试时间60分钟</p></div>
+
+<div class="section-title">一、选择题（本大题共12题，每题3分，满分36分）</div>
+
+<div class="question">
+<span class="q-num">1</span>关于惯性，下列说法正确的是（ ）
+<div class="options">
+<label><input type="radio" name="q1" value="A">A. 速度越大，惯性越大</label>
+<label><input type="radio" name="q1" value="B">B. 质量越大，惯性越大</label>
+<label><input type="radio" name="q1" value="C">C. 受力越大，惯性越大</label>
+<label><input type="radio" name="q1" value="D">D. 运动状态改变时才有惯性</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="B">
+  <div class="answer-value"><strong>答案：</strong>B</div>
+  <div class="answer-solution"><strong>解析：</strong>惯性是物体的固有属性，只与质量有关，质量越大，惯性越大。与速度、受力、运动状态均无关。</div>
+</div>
+</div>
+
+<div class="question">
+<span class="q-num">2</span>两个点电荷相距 r，相互作用力为 F。若将距离增大到 2r，则相互作用力变为（ ）
+<div class="options">
+<label><input type="radio" name="q2" value="A">A. F/4</label>
+<label><input type="radio" name="q2" value="B">B. F/2</label>
+<label><input type="radio" name="q2" value="C">C. 2F</label>
+<label><input type="radio" name="q2" value="D">D. 4F</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="A">
+  <div class="answer-value"><strong>答案：</strong>A</div>
+  <div class="answer-solution">
+    <strong>解析：</strong>
+    <br>库仑定律：F = kQ₁Q₂/r²
+    <br>距离增大到2r时：F' = kQ₁Q₂/(2r)² = F/4
+  </div>
+</div>
+</div>
+
+<div class="section-title">二、填空题（本大题共5题，每题4分，满分20分）</div>
+
+<div class="question">
+<span class="q-num">13</span>某放射性元素经过 2 次 α 衰变和 3 次 β 衰变后，原子核的中子数减少了 ______ 个。
+<button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+<div class="answer" id="answer-13" data-correct="7">
+  <div class="answer-value"><strong>答案：</strong>7</div>
+  <div class="answer-solution">
+    <strong>解析：</strong>
+    <br>每次 α 衰变：中子数减少 2 个（质量数减4，电荷数减2）
+    <br>每次 β 衰变：中子数减少 1 个（中子→质子）
+    <br>总共减少：2×2 + 3×1 = 7 个
+  </div>
+</div>
+</div>
+
+<div class="section-title">三、计算题（本大题共3题，满分44分）</div>
+
+<div class="question">
+<span class="q-num">19</span>本题满分12分
+<br>一个质量 m = 0.5 kg 的小球从 h = 5 m 高处自由下落，与地面碰撞后反弹高度 h' = 3.2 m，碰撞时间 Δt = 0.1 s。
+<br>求：（1）落地瞬间的速度大小；
+<br>（2）碰撞过程中地面对小球的平均作用力大小。
+<button class="answer-btn" onclick="showAnswer(19)">查看解析</button>
+<div class="answer" id="answer-19" data-correct="1">
+  <div class="answer-value"><strong>答案：</strong>(1) 10 m/s；(2) 95 N</div>
+  <div class="answer-solution">
+    <strong>解析：</strong>
+    <br><br>（1）由 v² = 2gh 得：
+    <br>v = √(2×10×5) = 10 m/s（向下）
+    <br>反弹后初速度 v' = √(2×10×3.2) = 8 m/s（向上）
+    <br><br>（2）取向上为正方向，由动量定理：
+    <br>(F - mg)Δt = mv' - m(-v)
+    <br>(F - 5)×0.1 = 0.5×(8 + 10)
+    <br>0.1F - 0.5 = 9
+    <br>F = 95 N
+  </div>
+</div>
+</div>
+
+</div>
+</body>
+</html>

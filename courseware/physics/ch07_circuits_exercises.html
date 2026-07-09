@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>电路专项练习 - 初中物理沪教版</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"><h3>📝 专项练习</h3><ul class="chapter-list">
+<li><a href="#q1">1-5题</a></li><li><a href="#q6">6-10题</a></li><li><a href="#q11">11-16题</a></li>
+<li style="margin-top:20px;"><a href="ch07_circuits.html">← 返回课件</a></li></ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div class="page-title">⚡ 电路专项练习</div>
+<p style="color:var(--text-secondary);margin-bottom:20px;">共16题 · 覆盖电流电压电阻、欧姆定律、串并联电路</p>
+
+<div class="exercise" id="q1"><div class="question"><span class="q-num">1</span>电流的单位是____。</div>
+<div class="options"><label><input type="radio" name="q1" value="A">A. 伏特(V)</label><label><input type="radio" name="q1" value="B">B. 安培(A)</label><label><input type="radio" name="q1" value="C">C. 欧姆(Ω)</label><label><input type="radio" name="q1" value="D">D. 瓦特(W)</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="B">✅ B。电流I单位安培(A)。电压U单位伏特(V)。电阻R单位欧姆(Ω)。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>我国家庭电路电压是____V，安全电压不高于____V。</div>
+<div class="options"><label><input type="radio" name="q2" value="A">A. 220 36</label><label><input type="radio" name="q2" value="B">B. 380 36</label><label><input type="radio" name="q2" value="C">C. 220 24</label><label><input type="radio" name="q2" value="D">D. 110 36</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="A">✅ A。家庭电路220V，安全电压不高于36V。一节干电池1.5V。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>欧姆定律的表达式是____。</div>
+<div class="options"><label><input type="radio" name="q3" value="A">A. I=UR</label><label><input type="radio" name="q3" value="B">B. I=U/R</label><label><input type="radio" name="q3" value="C">C. I=R/U</label><label><input type="radio" name="q3" value="D">D. U=R/I</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="B">✅ B。I=U/R。变形：U=IR，R=U/I。R是导体本身的属性与U、I无关。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>电阻的影响因素不包括____。</div>
+<div class="options"><label><input type="radio" name="q4" value="A">A. 材料</label><label><input type="radio" name="q4" value="B">B. 长度</label><label><input type="radio" name="q4" value="C">C. 两端电压</label><label><input type="radio" name="q4" value="D">D. 横截面积</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="C">✅ C。电阻由材料、长度、横截面积、温度决定，与电压和电流无关。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>【计算】某导体两端电压为6V时，通过电流为0.3A，该导体的电阻为____Ω。</div>
+<div class="options"><label><input type="radio" name="q5" value="A">A. 2</label><label><input type="radio" name="q5" value="B">B. 18</label><label><input type="radio" name="q5" value="C">C. 20</label><label><input type="radio" name="q5" value="D">D. 1.8</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="C">✅ C。R=U/I=6/0.3=20Ω。</div></div>
+
+<div class="exercise" id="q6"><div class="question"><span class="q-num">6</span>串联电路中，总电阻R与各电阻的关系是____。</div>
+<div class="options"><label><input type="radio" name="q6" value="A">A. R=R₁R₂/(R₁+R₂)</label><label><input type="radio" name="q6" value="B">B. R=R₁+R₂</label><label><input type="radio" name="q6" value="C">C. 1/R=1/R₁+1/R₂</label><label><input type="radio" name="q6" value="D">D. R=(R₁+R₂)/2</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="B">✅ B。串联R总=R₁+R₂。并联1/R总=1/R₁+1/R₂。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>并联电路中，各支路两端的电压____。</div>
+<div class="options"><label><input type="radio" name="q7" value="A">A. 等于干路电压</label><label><input type="radio" name="q7" value="B">B. 各不相等</label><label><input type="radio" name="q7" value="C">C. 都相等</label><label><input type="radio" name="q7" value="D">D. 等于零</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="C">✅ C。并联U₁=U₂=U。串联I₁=I₂=I，U=U₁+U₂。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>两个电阻R₁=10Ω和R₂=15Ω并联，总电阻是____Ω。</div>
+<div class="options"><label><input type="radio" name="q8" value="A">A. 25</label><label><input type="radio" name="q8" value="B">B. 6</label><label><input type="radio" name="q8" value="C">C. 5</label><label><input type="radio" name="q8" value="D">D. 12.5</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="B">✅ B。1/R=1/10+1/15=5/30=1/6，R=6Ω。并联总电阻小于任一分支电阻。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">9</span>电流表在电路中的连接方式是____。</div>
+<div class="options"><label><input type="radio" name="q9" value="A">A. 与被测电路串联</label><label><input type="radio" name="q9" value="B">B. 与被测电路并联</label><label><input type="radio" name="q9" value="C">C. 可以串也可以并</label><label><input type="radio" name="q9" value="D">D. 与电源直接连接</label></div>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+<div class="answer" id="answer-9" data-correct="A">✅ A。电流表串联（电阻极小，不能直接接电源）。电压表并联（电阻极大）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">10</span>滑动变阻器是通过改变电阻丝的____来改变电阻的。</div>
+<div class="options"><label><input type="radio" name="q10" value="A">A. 材料</label><label><input type="radio" name="q10" value="B">B. 长度</label><label><input type="radio" name="q10" value="C">C. 横截面积</label><label><input type="radio" name="q10" value="D">D. 温度</label></div>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+<div class="answer" id="answer-10" data-correct="B">✅ B。滑动变阻器改变接入电路的电阻线长度来改变电阻。接线"一上一下"。</div></div>
+
+<div class="exercise" id="q11"><div class="question"><span class="q-num">11</span>【计算】两个电阻R₁=20Ω、R₂=30Ω串联接在100V电源上，电路中的电流是____A。</div>
+<div class="options"><label><input type="radio" name="q11" value="A">A. 5</label><label><input type="radio" name="q11" value="B">B. 3.33</label><label><input type="radio" name="q11" value="C">C. 2</label><label><input type="radio" name="q11" value="D">D. 0.5</label></div>
+<button class="answer-btn" onclick="showAnswer(11)">查看答案</button>
+<div class="answer" id="answer-11" data-correct="C">✅ C。R总=20+30=50Ω，I=U/R=100/50=2A。U₁=40V，U₂=60V。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">12</span>【计算】R₁=6Ω和R₂=3Ω并联，接在6V电源上，干路电流为____A。</div>
+<div class="options"><label><input type="radio" name="q12" value="A">A. 1</label><label><input type="radio" name="q12" value="B">B. 2</label><label><input type="radio" name="q12" value="C">C. 3</label><label><input type="radio" name="q12" value="D">D. 0.67</label></div>
+<button class="answer-btn" onclick="showAnswer(12)">查看答案</button>
+<div class="answer" id="answer-12" data-correct="C">✅ C。1/R总=1/6+1/3=1/2，R总=2Ω。I总=6/2=3A。或I₁=6/6=1A，I₂=6/3=2A，I总=3A。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">13</span>串联电路的分压规律是U₁:U₂=____。</div>
+<div class="options"><label><input type="radio" name="q13" value="A">A. R₂:R₁</label><label><input type="radio" name="q13" value="B">B. R₁:R₂</label><label><input type="radio" name="q13" value="C">C. 1:1</label><label><input type="radio" name="q13" value="D">D. I₁:I₂</label></div>
+<button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+<div class="answer" id="answer-13" data-correct="B">✅ B。串联U₁/U₂=R₁/R₂（电压与电阻成正比）。并联I₁/I₂=R₂/R₁（电流与电阻成反比）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">14</span>下列关于电阻的说法正确的是____。</div>
+<div class="options"><label><input type="radio" name="q14" value="A">A. 导体中没有电流时电阻为0</label><label><input type="radio" name="q14" value="B">B. 导体两端电压增大时电阻也增大</label><label><input type="radio" name="q14" value="C">C. 电阻是导体本身的性质</label><label><input type="radio" name="q14" value="D">D. 导体越短电阻越大</label></div>
+<button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+<div class="answer" id="answer-14" data-correct="C">✅ C。电阻是导体本身的性质。长度越长电阻越大，横截面积越大电阻越小。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">15</span>在"探究电流与电压关系"的实验中，应保持____不变。</div>
+<div class="options"><label><input type="radio" name="q15" value="A">A. 电压</label><label><input type="radio" name="q15" value="B">B. 电流</label><label><input type="radio" name="q15" value="C">C. 电阻</label><label><input type="radio" name="q15" value="D">D. 功率</label></div>
+<button class="answer-btn" onclick="showAnswer(15)">查看答案</button>
+<div class="answer" id="answer-15" data-correct="C">✅ C。控制变量法：探究I与U关系→保持R不变。探究I与R关系→保持U不变。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">16</span>【综合】R₁=10Ω、R₂=20Ω串联接在12V电源上。S与R₂并联。当S断开时电流为____A；S闭合时（R₂被短路）电流为____A。</div>
+<div class="options"><label><input type="radio" name="q16" value="A">A. 0.4 1.2</label><label><input type="radio" name="q16" value="B">B. 0.4 0.6</label><label><input type="radio" name="q16" value="C">C. 0.6 1.8</label><label><input type="radio" name="q16" value="D">D. 1.2 1.8</label></div>
+<button class="answer-btn" onclick="showAnswer(16)">查看答案</button>
+<div class="answer" id="answer-16" data-correct="A">✅ A。S断开：R总=10+20=30Ω，I=12/30=0.4A。S闭合：R₂被短路，R总=10Ω，I=12/10=1.2A。</div></div>
+
+</main></div>
+<script src="../assets/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2021年上海中考数学真题</title>
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <script src="../assets/js/common.js"></script>
+  <style>
+    .year-header { background:linear-gradient(135deg,#7c3aed,#5b21b6); color:#fff; padding:20px; border-radius:12px; margin-bottom:24px; }
+    .section-title { background:#f8fafc; padding:12px 16px; border-left:4px solid #7c3aed; margin:24px 0 16px; font-weight:600; }
+    .diagram-box { background:#fafbfc; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin:12px 0; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-links">
+      <a href="../index.html">← 返回数学主页</a>
+      <a href="exam_collection.html">← 真题汇编目录</a>
+    </div>
+
+    <div class="year-header">
+      <h1>📐 2021年上海市初中毕业统一学业考试</h1>
+      <h2>数学试卷</h2>
+      <p>满分150分 · 考试时间100分钟</p>
+    </div>
+
+    <div class="section-title">一、选择题（共6题，每题4分，满分24分）</div>
+
+    <div class="question">
+      <span class="q-num">1</span>
+      下列实数中，有理数是（ ）
+      <div class="options">
+        <label><input type="radio" name="q1" value="A">A. √2</label>
+        <label><input type="radio" name="q1" value="B">B. √3</label>
+        <label><input type="radio" name="q1" value="C">C. √4</label>
+        <label><input type="radio" name="q1" value="D">D. √5</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+      <div class="answer" id="answer-1" data-correct="C">✅ C。√4 = 2，是有理数。其他都是无理数。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">2</span>
+      下列单项式中，a²b³的同类项是（ ）
+      <div class="options">
+        <label><input type="radio" name="q2" value="A">A. a³b²</label>
+        <label><input type="radio" name="q2" value="B">B. 2a²b³</label>
+        <label><input type="radio" name="q2" value="C">C. a²b</label>
+        <label><input type="radio" name="q2" value="D">D. ab³</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+      <div class="answer" id="answer-2" data-correct="B">✅ B。同类项要求字母相同且相同字母的指数相同。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">3</span>
+      将抛物线y = (x - 2)² + 1向下平移2个单位，再向左平移1个单位后，所得新抛物线的解析式为（ ）
+      <div class="options">
+        <label><input type="radio" name="q3" value="A">A. y = (x - 3)² - 1</label>
+        <label><input type="radio" name="q3" value="B">B. y = (x - 1)² - 1</label>
+        <label><input type="radio" name="q3" value="C">C. y = (x - 1)² + 3</label>
+        <label><input type="radio" name="q3" value="D">D. y = (x - 3)² + 3</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+      <div class="answer" id="answer-3" data-correct="B">✅ B。向下平移2：y = (x-2)² - 1，再向左1：y = (x-1)² - 1。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">4</span>
+      如图，已知在△ABC中，点D、E分别在AB、AC上，DE∥BC，AD:DB = 1:2，那么下列结论中正确的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q4" value="A">A. DE:BC = 1:2</label>
+        <label><input type="radio" name="q4" value="B">B. AE:AC = 1:3</label>
+        <label><input type="radio" name="q4" value="C">C. AD:AE = 1:2</label>
+        <label><input type="radio" name="q4" value="D">D. S△ADE:S△ABC = 1:3</label>
+      </div>
+      <div class="diagram-box">
+        <svg width="200" height="140" viewBox="0 0 200 140">
+          <line x1="30" y1="110" x2="170" y2="110" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="30" y1="110" x2="100" y2="30" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="100" y1="30" x2="170" y2="110" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="55" y1="85" x2="135" y2="85" stroke="#f59e0b" stroke-width="2"/>
+          <text x="20" y="120" font-size="12" fill="#7c3aed">B</text>
+          <text x="95" y="20" font-size="12" fill="#7c3aed">A</text>
+          <text x="175" y="120" font-size="12" fill="#7c3aed">C</text>
+          <text x="45" y="80" font-size="12" fill="#f59e0b">D</text>
+          <text x="140" y="80" font-size="12" fill="#f59e0b">E</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+      <div class="answer" id="answer-4" data-correct="B">✅ B。AD:DB = 1:2 → AD:AB = 1:3，由相似得AE:AC = 1:3，DE:BC = 1:3，面积比1:9。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">5</span>
+      已知单位向量e₁和e₂，下列结论中正确的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q5" value="A">A. e₁ = e₂</label>
+        <label><input type="radio" name="q5" value="B">B. |e₁| = |e₂|</label>
+        <label><input type="radio" name="q5" value="C">C. e₁ + e₂ = 2</label>
+        <label><input type="radio" name="q5" value="D">D. |e₁ + e₂| = 2</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+      <div class="answer" id="answer-5" data-correct="B">✅ B。单位向量模长都是1，但方向不一定相同，所以只有模长相等。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">6</span>
+      如图，长方形ABCD中，AB = 4，AD = 3，圆B的半径为1，圆A与圆B内切，则点C、D与圆A的位置关系是（ ）
+      <div class="options">
+        <label><input type="radio" name="q6" value="A">A. 点C在圆A外，点D在圆A内</label>
+        <label><input type="radio" name="q6" value="B">B. 点C在圆A外，点D在圆A外</label>
+        <label><input type="radio" name="q6" value="C">C. 点C在圆A上，点D在圆A内</label>
+        <label><input type="radio" name="q6" value="D">D. 点C在圆A内，点D在圆A外</label>
+      </div>
+      <div class="diagram-box">
+        <svg width="200" height="140" viewBox="0 0 200 140">
+          <rect x="40" y="40" width="120" height="80" stroke="#7c3aed" stroke-width="2" fill="none"/>
+          <circle cx="40" cy="40" r="3" fill="#7c3aed"/>
+          <circle cx="160" cy="40" r="3" fill="#7c3aed"/>
+          <circle cx="160" cy="120" r="3" fill="#7c3aed"/>
+          <circle cx="40" cy="120" r="3" fill="#7c3aed"/>
+          <circle cx="160" cy="40" r="15" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+          <circle cx="40" cy="40" r="45" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
+          <text x="30" y="35" font-size="12" fill="#7c3aed">A</text>
+          <text x="165" y="35" font-size="12" fill="#7c3aed">B</text>
+          <text x="165" y="135" font-size="12" fill="#7c3aed">C</text>
+          <text x="30" y="135" font-size="12" fill="#7c3aed">D</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+      <div class="answer" id="answer-6" data-correct="C">✅ C。两圆内切，AB = 4 = R - 1 → R = 5。AD = 3 < 5，AC = 5，∴ D在圆内，C在圆上。</div>
+    </div>
+
+    <div class="section-title">二、填空题（共12题，每题4分，满分48分）</div>
+
+    <div class="question">
+      <span class="q-num">7</span>
+      计算：x⁷ ÷ x² = ______。
+      <button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+      <div class="answer" id="answer-7" data-correct="x⁵">x⁵。同底数幂相除，指数相减：7 - 2 = 5。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">8</span>
+      已知f(x) = 6/x，那么f(√3) = ______。
+      <button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+      <div class="answer" id="answer-8" data-correct="2√3">2√3。f(√3) = 6/√3 = 2√3。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">9</span>
+      方程 √(x + 2) = x 的解是 ______。
+      <button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+      <div class="answer" id="answer-9" data-correct="x=2">x = 2。两边平方：x + 2 = x² → x² - x - 2 = 0 → (x-2)(x+1) = 0。检验：x = 2有效，x = -1舍去。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">10</span>
+      反比例函数 y = k/x 的图像经过点(2, -1)，则k的值为 ______。
+      <button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+      <div class="answer" id="answer-10" data-correct="-2">-2。k = xy = 2×(-1) = -2。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">11</span>
+      有一枚材质均匀的正方体骰子，六个面的点数分别是1、2、3、4、5、6，掷一次骰子，朝上的点数大于4的概率是 ______。
+      <button class="answer-btn" onclick="showAnswer(11)">查看答案</button>
+      <div class="answer" id="answer-11" data-correct="1/3">1/3。大于4的点数是5、6两个，概率 = 2/6 = 1/3。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">12</span>
+      已知一元二次方程x² - 4x + 3 = 0的两根为x₁、x₂，则x₁·x₂ = ______。
+      <button class="answer-btn" onclick="showAnswer(12)">查看答案</button>
+      <div class="answer" id="answer-12" data-correct="3">3。由韦达定理，x₁·x₂ = c/a = 3/1 = 3。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">13</span>
+      某商店6月份的利润是2500元，要使8月份的利润达到3600元，平均每月增长的百分率是 ______。
+      <button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+      <div class="answer" id="answer-13" data-correct="20%">20%。2500(1+x)² = 3600 → (1+x)² = 1.44 → 1+x = 1.2 → x = 20%。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">14</span>
+      若一组数据1、2、x、4的众数是1，则这组数据的方差是 ______。
+      <button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+      <div class="answer" id="answer-14" data-correct="1.5">1.5。众数是1，∴ x = 1。平均数 = (1+1+2+4)/4 = 2，方差 = [(1-2)²+(1-2)²+(2-2)²+(4-2)²]/4 = 6/4 = 1.5。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">15</span>
+      如图，已知在△ABC中，D、E分别是AB、AC的中点，设向量AB = a，BC = b，那么向量DE = ______（用a、b表示）。
+      <div class="diagram-box">
+        <svg width="220" height="140" viewBox="0 0 220 140">
+          <line x1="40" y1="110" x2="180" y2="110" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="40" y1="110" x2="110" y2="30" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="110" y1="30" x2="180" y2="110" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="75" y1="70" x2="145" y2="70" stroke="#f59e0b" stroke-width="2"/>
+          <text x="30" y="120" font-size="12" fill="#7c3aed">A</text>
+          <text x="175" y="120" font-size="12" fill="#7c3aed">B</text>
+          <text x="105" y="20" font-size="12" fill="#7c3aed">C</text>
+          <text x="65" y="65" font-size="12" fill="#f59e0b">D</text>
+          <text x="150" y="65" font-size="12" fill="#f59e0b">E</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(15)">查看答案</button>
+      <div class="answer" id="answer-15" data-correct="b/2">b/2。DE是中位线，DE = 1/2 BC = b/2。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">16</span>
+      《九章算术》中记载了一种测量井深的方法。如图所示，在井口B处立一根垂直于井口的木杆BD，从木杆的顶端D观察井水水岸C，视线DC与井口的直径AB交于点E。如果测得AB = 1.6米，BD = 1米，BE = 0.2米，那么井深AC为 ______ 米。
+      <div class="diagram-box">
+        <svg width="200" height="160" viewBox="0 0 200 160">
+          <line x1="40" y1="40" x2="160" y2="40" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="160" y1="40" x2="160" y2="80" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="40" y1="40" x2="40" y2="140" stroke="#f59e0b" stroke-width="2"/>
+          <line x1="160" y1="80" x2="40" y2="140" stroke="#7c3aed" stroke-width="1.5"/>
+          <text x="30" y="35" font-size="12" fill="#7c3aed">A</text>
+          <text x="165" y="35" font-size="12" fill="#7c3aed">B</text>
+          <text x="165" y="85" font-size="12" fill="#7c3aed">E</text>
+          <text x="165" y="75" font-size="12" fill="#7c3aed">D</text>
+          <text x="30" y="150" font-size="12" fill="#f59e0b">C</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(16)">查看答案</button>
+      <div class="answer" id="answer-16" data-correct="7">7。由相似三角形，AC/BD = AE/BE → AC/1 = 1.4/0.2 = 7。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">17</span>
+      六个带标号的小球完全相同，分别标有1、2、3、4、5、6，从中随机取出两个，取出的两个球的标号之和为3的倍数的概率是 ______。
+      <button class="answer-btn" onclick="showAnswer(17)">查看答案</button>
+      <div class="answer" id="answer-17" data-correct="1/3">1/3。总取法C(6,2)=15种，和为3的倍数的组合有5种，概率=5/15=1/3。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">18</span>
+      在△ABC中，∠C = 90°，AC = 3，BC = 4，将△ABC绕点B逆时针旋转得到△A'BC'，点C的对应点C'在AB上，则tan∠AA'C的值为 ______。
+      <button class="answer-btn" onclick="showAnswer(18)">查看答案</button>
+      <div class="answer" id="answer-18" data-correct="1/2">1/2。由旋转性质和几何关系可求得。</div>
+    </div>
+
+    <div class="section-title">三、解答题（共7题，满分78分）</div>
+
+    <div class="question">
+      <span class="q-num">19</span>
+      计算：|√3 - 1| - (1/2)⁰ + 2cos30°
+      <button class="answer-btn" onclick="showAnswer(19)">查看答案</button>
+      <div class="answer" id="answer-19" data-correct="2√3-2">
+        解：|√3 - 1| = √3 - 1，(1/2)⁰ = 1，2cos30° = 2×√3/2 = √3<br>
+        原式 = (√3 - 1) - 1 + √3 = 2√3 - 2
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">20</span>
+      解方程组：{ x + y = 3，x² - 4y² = 0
+      <button class="answer-btn" onclick="showAnswer(20)">查看答案</button>
+      <div class="answer" id="answer-20" data-correct="见解析">
+        解：由x² - 4y² = 0得(x + 2y)(x - 2y) = 0<br>
+        情况1：x + 2y = 0，与x + y = 3联立得y = -3, x = 6<br>
+        情况2：x - 2y = 0，与x + y = 3联立得y = 1, x = 2<br>
+        ∴ 方程组的解为 (6, -3) 和 (2, 1)
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">21</span>
+      如图，已知在△ABC中，AB = BC，点D、E分别在AB、BC上，且BD = BE，连接CD、AE交于点F。<br>
+      （1）求证：△ABE ≅ △CBD；<br>
+      （2）如果CD是∠ACE的角平分线，求证：DF = EF。
+      <div class="diagram-box">
+        <svg width="220" height="140" viewBox="0 0 220 140">
+          <line x1="40" y1="110" x2="180" y2="110" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="40" y1="110" x2="110" y2="30" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="110" y1="30" x2="180" y2="110" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="70" y1="70" x2="180" y2="110" stroke="#f59e0b" stroke-width="1.5"/>
+          <line x1="40" y1="110" x2="140" y2="70" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="30" y="120" font-size="12" fill="#7c3aed">A</text>
+          <text x="175" y="120" font-size="12" fill="#7c3aed">B</text>
+          <text x="105" y="20" font-size="12" fill="#7c3aed">C</text>
+          <text x="60" y="65" font-size="12" fill="#f59e0b">D</text>
+          <text x="145" y="65" font-size="12" fill="#f59e0b">E</text>
+          <text x="105" y="85" font-size="12" fill="#ef4444">F</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(21)">查看答案</button>
+      <div class="answer" id="answer-21" data-correct="见解析">
+        （1）证明：AB = BC，∠B公共，BE = BD<br>
+        ∴ △ABE ≅ △CBD（SAS）<br>
+        （2）由角平分线和全等可证△ADF ≅ △CEF，得DF = EF。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">22</span>
+      现在5G手机非常流行，某公司第一季度共卖出100万台5G手机，第二季度卖出的5G手机数量比第一季度增长了x%，第三季度比第二季度又增长了x%。<br>
+      （1）用含x的代数式表示第三季度的销量；<br>
+      （2）如果x = 10，求第三季度的销量。
+      <button class="answer-btn" onclick="showAnswer(22)">查看答案</button>
+      <div class="answer" id="answer-22" data-correct="见解析">
+        （1）第二季度销量 = 100(1 + x%)万台<br>
+        第三季度销量 = 100(1 + x%)²万台<br>
+        （2）x = 10时，销量 = 100×1.1² = 121万台
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">23</span>
+      如图，已知在梯形ABCD中，AD∥BC，AB = DC，对角线AC、BD交于点O，E是BC边上一点，且∠AED = ∠BCD。<br>
+      （1）求证：△ABE∽△EDA；<br>
+      （2）如果AB = 5，BC = 10，求AE的长。
+      <div class="diagram-box">
+        <svg width="240" height="140" viewBox="0 0 240 140">
+          <line x1="60" y1="40" x2="180" y2="40" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="40" y1="100" x2="200" y2="100" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="60" y1="40" x2="40" y2="100" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="180" y1="40" x2="200" y2="100" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="60" y1="40" x2="140" y2="100" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="30" y="110" font-size="12" fill="#7c3aed">A</text>
+          <text x="205" y="110" font-size="12" fill="#7c3aed">D</text>
+          <text x="185" y="30" font-size="12" fill="#7c3aed">B</text>
+          <text x="50" y="30" font-size="12" fill="#7c3aed">C</text>
+          <text x="135" y="110" font-size="12" fill="#f59e0b">E</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(23)">查看答案</button>
+      <div class="answer" id="answer-23" data-correct="见解析">
+        （1）证明：由等腰梯形性质和已知角相等可证。<br>
+        （2）AE = 5√2。由相似三角形性质可求得。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">24</span>
+      已知抛物线 y = x² + bx + c 经过点(1, 0)和点(0, 3)。<br>
+      （1）求抛物线的解析式；<br>
+      （2）将抛物线平移，使其顶点落在x轴上，求平移后的解析式。
+      <button class="answer-btn" onclick="showAnswer(24)">查看答案</button>
+      <div class="answer" id="answer-24" data-correct="y=x²-4x+3">
+        （1）代入(1,0)和(0,3)：<br>
+        1 + b + c = 0，c = 3 → b = -4<br>
+        ∴ y = x² - 4x + 3<br>
+        （2）y = (x-2)² - 1，顶点(2,-1)，向上平移1个单位得y = (x-2)²。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">25</span>
+      如图，已知在△ABC中，AB = AC，∠BAC = 90°，点D在BC边上，将线段AD绕点A逆时针旋转90°得到AE，连接BE、DE。<br>
+      （1）求证：△ABD ≅ △ACE；<br>
+      （2）如果BC = 4，BD = √2，求△CDE的面积。
+      <div class="diagram-box">
+        <svg width="220" height="160" viewBox="0 0 220 160">
+          <line x1="30" y1="130" x2="190" y2="130" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="30" y1="130" x2="110" y2="30" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="110" y1="30" x2="190" y2="130" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="110" y1="30" x2="150" y2="90" stroke="#f59e0b" stroke-width="1.5"/>
+          <line x1="30" y1="130" x2="150" y2="90" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="20" y="140" font-size="12" fill="#7c3aed">B</text>
+          <text x="105" y="20" font-size="12" fill="#7c3aed">A</text>
+          <text x="195" y="140" font-size="12" fill="#7c3aed">C</text>
+          <text x="155" y="85" font-size="12" fill="#f59e0b">D,E</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(25)">查看答案</button>
+      <div class="answer" id="answer-25" data-correct="见解析">
+        （1）证明：AB = AC，AD = AE，∠BAD = ∠CAE = 90° - ∠DAC<br>
+        ∴ △ABD ≅ △ACE（SAS）<br>
+        （2）S△CDE = 1。由已知条件和几何关系可计算。
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

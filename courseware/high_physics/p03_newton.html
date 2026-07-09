@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>牛顿运动定律 - 高中物理</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.anim-box { background:#f8fafc; border-radius:12px; padding:20px; margin:20px 0; text-align:center; }
+canvas { max-width:100%; border-radius:8px; background:#fff; }
+.formula-box { background:#eff6ff; border-left:4px solid #2563eb; padding:16px; border-radius:0 8px 8px 0; margin:16px 0; font-family:monospace; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 返回高中物理主页</a></div>
+<h1>💪 第三章 牛顿运动定律</h1>
+<div class="formula-box">
+<h3>🎯 核心定律</h3>
+<p><strong>牛顿第一定律：</strong>F合 = 0 时，物体静止或匀速直线运动（惯性定律）</p>
+<p><strong>牛顿第二定律：</strong>F合 = ma（矢量式，a与F合同方向）</p>
+<p><strong>牛顿第三定律：</strong>F = -F'（作用力与反作用力，同时产生同时消失）</p>
+</div>
+<h2 style="margin:24px 0 12px;">🔍 受力分析动画演示</h2>
+<div class="anim-box">
+<canvas id="newtonCanvas" width="500" height="250"></canvas>
+<div style="margin-top:12px;">
+<button onclick="addForce(1)" style="padding:8px 16px;margin:0 4px;background:#2563eb;color:#fff;border:none;border-radius:6px;cursor:pointer;">→ 向右加力</button>
+<button onclick="addForce(-1)" style="padding:8px 16px;margin:0 4px;background:#2563eb;color:#fff;border:none;border-radius:6px;cursor:pointer;">← 向左加力</button>
+<button onclick="resetForce()" style="padding:8px 16px;margin:0 4px;background:#64748b;color:#fff;border:none;border-radius:6px;cursor:pointer;">重置</button>
+</div>
+<p style="margin-top:8px;font-size:.9rem;color:#64748b;">合力: <span id="netForce" style="font-weight:bold;color:#2563eb;">0</span> N &nbsp;&nbsp; 加速度: <span id="accel" style="font-weight:bold;color:#2563eb;">0</span> m/s²</p>
+</div>
+<h2 style="margin:24px 0 12px;">✏️ 典型例题</h2>
+<div class="question">
+<span class="q-num">例1</span>质量为2kg的物体在水平拉力F=6N作用下，由静止开始运动，摩擦因数μ=0.2，求2s末速度和位移。
+<button class="answer-btn" onclick="showAnswer('ex1')">查看解析</button>
+<div class="answer" id="answer-ex1" data-correct="1">
+<strong>解：</strong>摩擦力 f = μmg = 0.2×2×10 = 4N<br>
+合力 F合 = 6 - 4 = 2N &nbsp; 加速度 a = F合/m = 1 m/s²<br>
+2s末速度 v = at = 2 m/s &nbsp; 位移 x = ½at² = 2 m
+</div>
+</div>
+</div>
+<script>
+const c=document.getElementById('newtonCanvas').getContext('2d');
+let force=0; function drawScene(){c.clearRect(0,0,500,250);c.fillStyle='#e2e8f0';c.fillRect(0,200,500,50);c.fillStyle='#7c3aed';c.fillRect(210+force*20,160,80,40);c.fillStyle='#ef4444';c.font='bold 24px sans-serif';c.fillText(force>0?'→':force<0?'←':'',force>0?295+force*20:200+force*20,185);}
+function addForce(dir){force+=dir;drawScene();document.getElementById('netForce').textContent=force;document.getElementById('accel').textContent=(force/2).toFixed(1);}
+function resetForce(){force=0;drawScene();document.getElementById('netForce').textContent='0';document.getElementById('accel').textContent='0';}
+drawScene();
+</script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflecting On The Mirror - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题394/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Reflecting On The Mirror</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>Questions 11-14
+Choose the correct letter, A, B, C or D.
+Write your answers in boxes 11-14 on your answer sheet
+11. Why does the author mention “the ice is a slow mover” in the geological arctic, to
+demonstrate the idea
+A   of the difficulties Franklin conquered
+B   that Franklin had a dream since his childhood
+C   of fascination with the Arctic exploration
+D   that explorer like Franklin should possess the quality of being patient
+ 
+12. When Franklin was on board with sailors, how did he speak to his follow sailors
+A   he spoke in a way mocking his followers
+B   he spoke a bric-a-brac language to show his languish attitude
+C   he spoke in the words and phrases he previously memorized 
+D   he spoke in a rhythmical tune to save chatting time
+ 
+13. His effort to overcome his slowness in marine time life had finally won the
+A   understanding of his personality better
+B   capacity for coping with boredom
+C   respect for him as he insisted to overcome his difficulties
+D   valuable time he can use to finish a report
+14. Why is the book The Discovery of Slowness sold more than a million copies
+A   it contains aspects of the life people would like to enjoy
+B   it contains the information for the flag language applied in ships
+C   it induces a debate about speed limits German
+D   it contains the technique for symposia German churches
+ 4</p>
+<p>Solution:
+1. A
+2. D
+3. H
+4. C
+5. B
+6. H
+7. C
+8. J
+9. H
+10. F
+11. D
+12. C
+13. C
+14. A
+ 5</p>
+<p>Reading Practice
+Johnson's Dictionary
+For the century before Johnson's Dictionary was published in 1775. there had been
+concern about the state of the English language.There was no standard way of speaking or
+writing and no agreement as to the best way of bringing some order to the chaos' of
+English spelling. Dr Johnson provided the solution.
+There had, of course, been dictionaries in the past, the first of these being a little book of
+some 120 pages, compiled by a certain Robert Cawdray, published in 1604 under the title
+A Table Alphabetical! ‘of hard usual English wordes'. Like the various dictionaries that
+came after it during the seventeenth century, Cawdray's tended to concentrate on
+'scholarly' words; one function of the dictionary was to enable its student to convey an
+impression of fine learning.
+Beyond the practical need to make order out of chaos, the rise of dictionaries is associated
+with the rise of the English middle class, who were anxious to define and circumscribe the
+various worlds to conquer - lexical as well as social and commercial. It is highly appropriate
+that Dr Samuel Johnson, the very model of an eighteenth-century literary man, as famous
+in his own time as in ours, should have published his dictionary at the very beginning of the
+heyday of the middle class.
+Johnson was a poet and critic who raised common sense to the heights of genius. His
+approach to the problems that had worried writers throughout the late seventeenth and
+early eighteenth centuries was intensely practical. Up until his time, the task of producing a
+dictionary on such a large scale had seemed impossible without the establishment of an
+academy to make decisions about right and wrong usage Johnson decided he did not need
+an academy to settle arguments about language; he would write a dictionary himself; and
+he would do it single-handed. Johnson signed the contract for the Dictionary with the
+bookseller Robert Dosley at a breakfast held at the Golden Anchor Inn near Holbom Bar on
+18 June 1764. He was to be paid £ 1.575 in instalments, and from this he took money to
+rent 17 Gough Square, in which he set up his 'dictionary workshop'.
+James Boswell, his biographer described the garret where Johnson worked as ‘fitted up
+like a counting house' with a long desk running down the middle at which the copying
+clerks would work standing up. Johnson himself was stationed on a rickety chair at an 'old
+crazy deal table' surrounded by a chaos of borrowed books. He was also helped by six
+assistants, two of whom died whilst the Dictionary was still in preparation.
+The work was immense; filling about eighty large notebooks (and without a library to hand).
+Johnson wrote the definitions of over 40,000 words, and illustrated their many meanings
+with some I 14.000 quotations drawn from English writing on every subject, from the
+Elizabethans to his own time. He did not expect to achieve complete originality. Working to
+a deadline, he had to draw on the best of all previous dictionaries, and to make his work
+one of heroic synthesis. In fact it was very much more. Unlike his predecessors.Johnson
+treated English very practically, as a living language, with many different shades of
+meaning. He adopted his definitions on the principle of English common law - according to
+precedent. After its publication, his Dictionary was not seriously rivalled for over a century.
+After many vicissitudes the Dictionary was finally published on 15 April 1775. It was
+instantly recognised as a landmark throughout Europe. This very noble work.’ wrote the
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>整式与因式分解 - 初中代数沪教版</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"><h3>📊 代数</h3><ul class="chapter-list">
+<li><a href="a02_polynomials.html" class="active"><span class="ch-num">2</span>整式与因式分解</a><div class="subsections"><a href="#sec1">2.1 整式运算</a><a href="#sec2">2.2 乘法公式</a><a href="#sec3">2.3 因式分解</a><a href="#exercises">练习题</a></div></li>
+</ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div c</ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-subject">📂 代数目录</a>
+    </div>"page-title">第2章 整式与因式分解</div>
+<div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
+<ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+<li>掌握整式的加减乘除运算法则</li><li>熟练运用平方差和完全平方公式</li><li>掌握因式分解的四种方法</li></ul></div>
+
+<h2 id="sec1">2.1 整式的运算</h2>
+<div class="kp"><h3>基本概念</h3>
+<p><strong>单项式</strong>：数与字母的积。如 3x²，-5ab。</p>
+<p><strong>多项式</strong>：几个单项式的和。如 x²+2x+1。</p>
+<p><strong>同类项</strong>：所含字母相同且相同字母的指数也相同的项。</p>
+<p>合并同类项：系数相加，字母部分不变。</p></div>
+<div class="kp"><h3>运算法则</h3>
+<p><strong>加减</strong>：去括号→合并同类项</p>
+<p><strong>单项式×多项式</strong>：用单项式乘以多项式的每一项</p>
+<span class="formula">m(a + b + c) = ma + mb + mc</span>
+<p><strong>多项式×多项式</strong>：每一项分别相乘再合并</p>
+<span class="formula">(a + b)(m + n) = am + an + bm + bn</span></div>
+
+<h2 id="sec2">2.2 乘法公式</h2>
+<div class="keypoints-grid">
+<div class="kp"><h3>平方差公式</h3>
+<span class="formula">(a + b)(a - b) = a² - b²</span>
+<p>例：(x+3)(x-3)=x²-9；(2a+b)(2a-b)=4a²-b²</p></div>
+<div class="kp"><h3>完全平方公式</h3>
+<span class="formula">(a + b)² = a² + 2ab + b²</span>
+<span class="formula">(a - b)² = a² - 2ab + b²</span>
+<p>例：(x+5)²=x²+10x+25；(3x-2)²=9x²-12x+4</p></div>
+</div>
+
+<h2 id="sec3">2.3 因式分解</h2>
+<div class="kp"><h3>四种方法</h3>
+<table style="width:100%;border-collapse:collapse;font-size:.9rem;">
+<tr style="background:var(--bg);"><th style="padding:8px;">方法</th><th style="padding:8px;">要点</th><th style="padding:8px;">示例</th></tr>
+<tr><td style="padding:8px;"><strong>①提公因式法</strong></td><td style="padding:8px;">找出各项公因式</td><td style="padding:8px;">ma+mb=m(a+b)</td></tr>
+<tr><td style="padding:8px;"><strong>②公式法</strong></td><td style="padding:8px;">平方差或完全平方</td><td style="padding:8px;">x²-9=(x+3)(x-3)</td></tr>
+<tr><td style="padding:8px;"><strong>③十字相乘法</strong></td><td style="padding:8px;">x²+(p+q)x+pq=(x+p)(x+q)</td><td style="padding:8px;">x²+5x+6=(x+2)(x+3)</td></tr>
+<tr><td style="padding:8px;"><strong>④分组分解法</strong></td><td style="padding:8px;">分组后提取公因式</td><td style="padding:8px;">ax+ay+bx+by=(a+b)(x+y)</td></tr>
+</table></div>
+<div class="kp"><h3>因式分解步骤</h3>
+<p><strong>一提</strong>（提公因式）→<strong>二套</strong>（套公式）→<strong>三交叉</strong>（十字相乘）→<strong>四分组</strong>→<strong>检查</strong>（是否分解彻底）</p></div>
+
+<h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+<div class="exercise"><div class="question"><span class="q-num">1</span>计算：(2x+3)(x-1) = ____。</div>
+<div class="options"><label><input type="radio" name="q1" value="A">A. 2x²+x-3</label><label><input type="radio" name="q1" value="B">B. 2x²-2x+3</label><label><input type="radio" name="q1" value="C">C. 2x²+5x-3</label><label><input type="radio" name="q1" value="D">D. 2x²+x+3</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button><div class="answer" id="answer-1" data-correct="A">✅ A。=2x²-2x+3x-3=2x²+x-3。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>完全平方公式(a-b)²展开为____。</div>
+<div class="options"><label><input type="radio" name="q2" value="A">A. a²-b²</label><label><input type="radio" name="q2" value="B">B. a²+2ab+b²</label><label><input type="radio" name="q2" value="C">C. a²-2ab+b²</label><label><input type="radio" name="q2" value="D">D. a²+2ab-b²</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button><div class="answer" id="answer-2" data-correct="C">✅ C。(a-b)²=a²-2ab+b²。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>分解因式：x²-4y² = ____。</div>
+<div class="options"><label><input type="radio" name="q3" value="A">A. (x+2y)(x-2y)</label><label><input type="radio" name="q3" value="B">B. (x+4y)(x-y)</label><label><input type="radio" name="q3" value="C">C. (x-2y)²</label><label><input type="radio" name="q3" value="D">D. 不能分解</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button><div class="answer" id="answer-3" data-correct="A">✅ A。平方差公式：x²-(2y)²=(x+2y)(x-2y)。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>分解因式：x²+7x+12 = ____。</div>
+<div class="options"><label><input type="radio" name="q4" value="A">A. (x+3)(x+4)</label><label><input type="radio" name="q4" value="B">B. (x+2)(x+6)</label><label><input type="radio" name="q4" value="C">C. (x+1)(x+12)</label><label><input type="radio" name="q4" value="D">D. (x-3)(x-4)</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button><div class="answer" id="answer-4" data-correct="A">✅ A。十字相乘：3+4=7，3×4=12→(x+3)(x+4)。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>计算：2024² - 2023² = ____。</div>
+<div class="options"><label><input type="radio" name="q5" value="A">A. 1</label><label><input type="radio" name="q5" value="B">B. 4047</label><label><input type="radio" name="q5" value="C">C. 4048</label><label><input type="radio" name="q5" value="D">D. 2023</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button><div class="answer" id="answer-5" data-correct="B">✅ B。平方差：=(2024+2023)(2024-2023)=4047×1=4047。</div></div>
+
+</main></div>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

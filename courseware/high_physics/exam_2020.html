@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>2020年上海高考物理真题</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.year-header { background:linear-gradient(135deg,#2563eb,#7c3aed); color:#fff; padding:24px; border-radius:12px; margin-bottom:24px; }
+.section-title { background:#eff6ff; padding:10px 16px; border-left:4px solid #2563eb; margin:24px 0 16px; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 返回高中物理主页</a><a href="exam_collection.html">← 真题汇编目录</a></div>
+<div class="year-header"><h1>⚛️ 2020年上海市普通高等学校招生全国统一考试</h1><h2>物理试卷</h2><p>满分100分 · 考试时间60分钟</p></div>
+
+<div class="section-title">一、选择题（本大题共12题，每题3分，满分36分）</div>
+
+<div class="question">
+<span class="q-num">1</span>下列现象中，属于光的干涉现象的是（ ）
+<div class="options">
+<label><input type="radio" name="q1" value="A">A. 雨后彩虹</label>
+<label><input type="radio" name="q1" value="B">B. 肥皂泡上的彩色条纹</label>
+<label><input type="radio" name="q1" value="C">C. 通过狭缝看到的彩色灯光</label>
+<label><input type="radio" name="q1" value="D">D. 水中的筷子看起来变弯</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="B">
+  <div class="answer-value"><strong>答案：</strong>B</div>
+  <div class="answer-solution"><strong>解析：</strong>雨后彩虹是光的色散；肥皂泡上的彩色条纹是薄膜干涉；通过狭缝看到彩色是衍射；水中筷子变弯是折射。</div>
+</div>
+</div>
+<div class="question">
+<span class="q-num">2</span>关于简谐运动，下列说法正确的是（ ）
+<div class="options">
+<label><input type="radio" name="q2" value="A">A. 振幅越大，周期越大</label>
+<label><input type="radio" name="q2" value="B">B. 回复力总是与位移成正比且反向</label>
+<label><input type="radio" name="q2" value="C">C. 速度方向总是与位移方向相反</label>
+<label><input type="radio" name="q2" value="D">D. 加速度最大时速度也最大</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="B">
+  <div class="answer-value"><strong>答案：</strong>B</div>
+  <div class="answer-solution"><strong>解析：</strong>简谐运动的周期与振幅无关；回复力 F = -kx，与位移成正比反向；速度方向可与位移同向或反向；加速度最大时在最大位移处，速度为零。</div>
+</div>
+</div>
+<div class="section-title">二、填空题（本大题共5题，每题4分，满分20分）</div>
+
+<div class="question">
+<span class="q-num">13</span>一个变压器原线圈匝数为 1000 匝，副线圈匝数为 200 匝。若原线圈输入电压为 220 V，则副线圈输出电压为 ______ V。
+<button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+<div class="answer" id="answer-13" data-correct="44">
+  <div class="answer-value"><strong>答案：</strong>44</div>
+  <div class="answer-solution"><strong>解析：</strong>变压器电压比等于匝数比：U₁/U₂ = n₁/n₂，U₂ = U₁×n₂/n₁ = 220×200/1000 = 44 V</div>
+</div>
+</div>
+<div class="section-title">三、计算题（本大题共3题，满分44分）</div>
+
+<div class="question">
+<span class="q-num">19</span>本题满分12分
+<br>一辆汽车质量 m = 1000 kg，在水平路面上以 v = 10 m/s 的速度匀速行驶，此时发动机功率 P = 20 kW。
+求：（1）汽车受到的阻力大小；
+（2）若汽车保持功率不变，当速度为 5 m/s 时的加速度大小。
+<button class="answer-btn" onclick="showAnswer(19)">查看解析</button>
+<div class="answer" id="answer-19" data-correct="1">
+  <div class="answer-value"><strong>答案：</strong>(1) 2000 N；(2) 2 m/s²</div>
+  <div class="answer-solution">
+    <strong>解析：</strong>
+<br><br>（1）匀速行驶时，牵引力等于阻力，P = Fv = fv
+<br>f = P/v = 20000/10 = 2000 N
+<br><br>（2）当 v' = 5 m/s 时，牵引力 F' = P/v' = 20000/5 = 4000 N
+<br>由牛顿第二定律：F' - f = ma
+<br>a = (4000 - 2000)/1000 = 2 m/s²
+
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>

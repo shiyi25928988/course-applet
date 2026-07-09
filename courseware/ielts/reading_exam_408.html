@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Technology - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题408/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Satellite Technology</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>Questions 1-6
+Do the following statements agree with the views of the writer in Reading Passage 3?
+Write
+YES           if the statement agrees with the claims of the writer
+NO             if the statement contradicts the claims of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+     1.....................</p>
+<p>In the final decades of the twentieth century, a single theory of language</p>
+<p>learning was dominant.
+2.....................    The majority of UG rules proposed by linguists do apply to all human
+languages.
+3.....................    There is disagreement amongst linguists about an aspect of Straits Salish
+grammar.
+4.....................     The search for new universal language rules has largely ended.
+5.....................     If Evans and Levinson are right, people develop in the same way no
+matter what language they speak.
+6.....................     The loss of any single language might have implications for the human
+race.
+   
+Questions 7-11
+Choose the correct letter, A, B, C or D.
+7 Which of the following views about language are held by Evans and Levinson?</p>
+<p>A Each of the world’s languages develops independently.
+B The differences between languages outweigh the similarities.
+C Only a few language features are universal.
+D Each language is influenced by the characteristics of other languages.
+8 According to Evans and Levinson, apparent similarities between languages could be
+due to
+A close social contact.
+B faulty analysis.
+C shared modes of perception.
+D narrow descriptive systems.
+9 In the eighth paragraph, what does the reference to a middle-ear infection serve as?
+ 3</p>
+<p>A A justification for something.
+B A contrast with something.
+C The possible cause of something.
+D The likely result of something.
+10 What does the writer suggest about Evans’ and Levinson’s theory of language
+development?
+A It had not been previously considered.
+B It is presented in a convincing way.
+C It has been largely rejected by other linguists.
+D It is not supported by the evidence.
+11 Which of the following best describes the writer’s purpose?</p>
+<p>A To describe progress in the field of cognitive science.
+B To defend a long-held view of language learning.
+C To identify the similarities between particular languages.
+D To outline opposing views concerning the nature of language.</p>
+<p>Questions 12-14
+Complete each sentence with the correct ending, A-E, below.
+Write the correct letter, A-E.
+12..................... The Arrernte language breaks a ‘rule’ concerning
+13.....................    The Lao language has been identified as lacking
+14.....................    It has now been suggested that Amazonia Piraha does not have
+ 
+A words of a certain grammatical type.
+B a sequence of sounds predicted by UG.
+C words which can have more than one meaning.
+D the language feature regarded as the most basic.
+E sentences beyond a specified length.
+ 4</p>
+<p>Solution:
+ 
+1. YES
+2. NO
+3. YES
+4. NOT GIVEN
+5. NO
+6. YES
+7. A
+8. C
+9. C
+10. B
+11. D
+12. B
+13. A
+14. D
+ 5</p>
+<p>Reading Practice
+Language Strategy in Multinational Company
+A. The importance of language management in multinational companies has never been
+greater than today. Multinationals are becoming ever more conscious of the importance of
+global coordination as a source of competitive advantage and language remains the
+ultimate barrier to aspirations of international harmonization. Before attempting to consider
+language management strategies, companies will have to evaluate the magnitude of the
+language barrier confronting them and in doing so they will need to examine it in three
+dimensions: the Language Diversity, the Language Penetration and the
+Language Sophistication. Companies next need to turn their attention to how they should
+best manage language. There is a range of options from which MNCs can formulate their
+language strategy.
+B. Lingua Franca: The simplest answer, though realistic only for English speaking
+companies, is to rely on ones native tongue. As recently as 1991 a survey of British
+exporting companies found that over a third used English exclusively in dealings with
+foreign customers. This attitude that —one language fits alll has also been carried through
+into the Internet age. A survey of the web sites of top American companies confirmed that
+over half made no provision for foreign language access, and another found that less than
+10% of leading companies were able to respond adequately to emails other than in
+the company‘s language. Widespread though it is however, reliance on a single language
+is a strategy that is fatally flawed. It makes no allowance for the growing trend in Linguistic
+Nationalism whereby buyers in Asia, South America and the Middle East in particular are
+asserting their right to —work in the language of the customer!. It also fails to recognize the
+increasing vitality of languages such as Spanish, Arabic and Chinese that overtime are
+likely to challenge the dominance of English as a lingua franca. In the IT arena it ignores
+the rapid globalization of the Internet where the number of English-language ecommerce
+transactions, emails and web sites, is rapidly diminishing as a percentage of the total.
+Finally, the total reliance on a single language puts the English speaker at risk in
+negotiations. Contracts, rules and legislation are invariably written in the local language,
+and a company unable to operate in that language is vulnerable.
+C. Functional Multilingualism: Another improvised approach to Language is to rely on what
+has been termed —Functional Multilingualism!. Essentially what this means is to muddle
+through, relying on a mix of languages, pidgins and gestures to communicate by whatever
+means the parties have at their disposal. In a social context such a shared effort to make
+one another understand might be considered an aid to the bonding process with the
+frustration of communication being regularly punctuated by moments of absurdity and
+humor. However, as the basis for business negotiations it appears very hit-and-nuts. And
+yet Hagen‘s recent study suggests that 16% of international business transaction; are
+conducted in a —cocktail of languages.! Functional Multilingualism shares the same
+defects as reliance on a lingua franca and increases the probability of cognitive divergence
+between the parties engaged in the communication.
+D. External Language Resources: A more rational and obvious response to the language
+barrier is to employ external resources such as translators and interpreters, and certainly
+there are many excellent companies specialized in these fields. However, such a response
+is by no means an end to the language barrier. For a start these services can be very
+expensive with a top Simultaneous Interpreter, commanding daily rates as high as a
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

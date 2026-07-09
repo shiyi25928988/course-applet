@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>二次方程与函数 - 代数沪教版</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+</head>
+<body><div class="layout"><aside class="sidebar"><h3>📊 代数</h3><ul class="chapter-list">
+<li><a href="a05_quadratic.html" class="active"><span class="ch-num">5</span>二次方程</a><div class="subsections"><a href="#sec1">解法</a><a href="#sec2">判别式</a><a href="#sec3">韦达定理</a><a href="#exercises">练习</a></div></li>
+</ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div c</ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-subject">📂 代数目录</a>
+    </div>"page-title">第5章 一元二次方程</div>
+
+<h2 id="sec1">5.1 解法</h2>
+<div class="keypoints-grid">
+<div class="kp"><h3>①直接开平方法</h3><p>(x+m)²=n (n≥0) → x=-m±√n</p><p>例：(x-3)²=4 → x=3±2 → x₁=5, x₂=1</p></div>
+<div class="kp"><h3>②配方法</h3><p>ax²+bx+c=0 → 配方为(x+p)²=q</p><p>例：x²+6x+5=0 → (x+3)²=4 → x=-3±2</p></div>
+<div class="kp"><h3>③公式法（万能）</h3><span class="formula">x = (-b ± √(b²-4ac)) / (2a)</span><p>（Δ=b²-4ac，详见判别式）</p></div>
+<div class="kp"><h3>④因式分解法</h3><p>化为(x+m)(x+n)=0 → x₁=-m, x₂=-n</p><p>例：x²-5x+6=0 → (x-2)(x-3)=0→x=2或3</p></div>
+</div>
+
+<h2 id="sec2">5.2 根的判别式</h2>
+<div class="kp"><h3>Δ = b² - 4ac</h3>
+<table style="width:100%;border-collapse:collapse;font-size:.9rem;">
+<tr style="background:var(--bg);"><th style="padding:8px;">Δ的值</th><th style="padding:8px;">根的情况</th></tr>
+<tr><td style="padding:8px;color:#16a34a;">Δ > 0</td><td style="padding:8px;">两个<strong>不相等</strong>的实数根</td></tr>
+<tr><td style="padding:8px;color:#2563eb;">Δ = 0</td><td style="padding:8px;">两个<strong>相等</strong>的实数根（x₁=x₂=-b/2a）</td></tr>
+<tr><td style="padding:8px;color:#dc2626;">Δ < 0</td><td style="padding:8px;"><strong>没有</strong>实数根</td></tr>
+</table>
+<p style="margin-top:12px;">例：x²-4x+k=0有实根⇔Δ=16-4k≥0⇔k≤4</p></div>
+
+<h2 id="sec3">5.3 韦达定理（根与系数的关系）</h2>
+<div class="kp"><h3>若 x₁, x₂ 是 ax²+bx+c=0 的两根，则：</h3>
+<span class="formula">x₁ + x₂ = -b/a</span><br>
+<span class="formula">x₁ · x₂ = c/a</span>
+<p>应用：①已知一根求另一根 ②求对称式（x₁²+x₂²=(x₁+x₂)²-2x₁x₂）③构造方程</p></div>
+
+<h2 id="exercises" style="margin:28px 0 16px;">📝 练习题</h2>
+<div class="exercise"><div class="question"><span class="q-num">1</span>用公式法解 x²-3x-4=0，解为____。</div>
+<div class="options"><label><input type="radio" name="q1" value="A">A. x=4或x=-1</label><label><input type="radio" name="q1" value="B">B. x=1或x=-4</label><label><input type="radio" name="q1" value="C">C. x=4或x=1</label><label><input type="radio" name="q1" value="D">D. x=2或x=-2</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button><div class="answer" id="answer-1" data-correct="A">✅ A。Δ=9+16=25。x=(3±5)/2→x₁=4,x₂=-1。也可因式分解：(x-4)(x+1)=0。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>方程 2x²-x+k=0 有两个不相等实根，则k____。</div>
+<div class="options"><label><input type="radio" name="q2" value="A">A. k<1/8</label><label><input type="radio" name="q2" value="B">B. k>1/8</label><label><input type="radio" name="q2" value="C">C. k=1/8</label><label><input type="radio" name="q2" value="D">D. k任意</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button><div class="answer" id="answer-2" data-correct="A">✅ A。Δ=1-8k>0→k<1/8。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>若x₁+x₂=3，x₁x₂=-4，则以x₁,x₂为根的方程为____。</div>
+<div class="options"><label><input type="radio" name="q3" value="A">A. x²-3x-4=0</label><label><input type="radio" name="q3" value="B">B. x²+3x-4=0</label><label><input type="radio" name="q3" value="C">C. x²-3x+4=0</label><label><input type="radio" name="q3" value="D">D. x²+3x+4=0</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button><div class="answer" id="answer-3" data-correct="A">✅ A。x²-(x₁+x₂)x+x₁x₂=0→x²-3x-4=0。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>【中考】x₁,x₂是x²-5x+3=0的两根，求x₁²+x₂²=____。</div>
+<div class="options"><label><input type="radio" name="q4" value="A">A. 25</label><label><input type="radio" name="q4" value="B">B. 19</label><label><input type="radio" name="q4" value="C">C. 31</label><label><input type="radio" name="q4" value="D">D. 22</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button><div class="answer" id="answer-4" data-correct="B">✅ B。x₁²+x₂²=(x₁+x₂)²-2x₁x₂=25-6=19。</div></div>
+
+</main></div>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

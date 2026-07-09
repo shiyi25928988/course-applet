@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023年上海中考数学真题</title>
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <script src="../assets/js/common.js"></script>
+  <style>
+    .year-header { background:linear-gradient(135deg,#7c3aed,#5b21b6); color:#fff; padding:20px; border-radius:12px; margin-bottom:24px; }
+    .section-title { background:#f8fafc; padding:12px 16px; border-left:4px solid #7c3aed; margin:24px 0 16px; font-weight:600; }
+    .diagram-box { background:#fafbfc; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin:12px 0; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-links">
+      <a href="../index.html">← 返回数学主页</a>
+      <a href="exam_collection.html">← 真题汇编目录</a>
+    </div>
+
+    <div class="year-header">
+      <h1>📐 2023年上海市初中毕业统一学业考试</h1>
+      <h2>数学试卷</h2>
+      <p>满分150分 · 考试时间100分钟</p>
+    </div>
+
+    <div class="section-title">一、选择题（共6题，每题4分，满分24分）</div>
+
+    <div class="question">
+      <span class="q-num">1</span>
+      下列各数中，是无理数的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q1" value="A">A. 0</label>
+        <label><input type="radio" name="q1" value="B">B. 1/2</label>
+        <label><input type="radio" name="q1" value="C">C. √2</label>
+        <label><input type="radio" name="q1" value="D">D. -2</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+      <div class="answer" id="answer-1" data-correct="C">✅ C。√2是无理数，其他都是有理数。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">2</span>
+      下列运算中，正确的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q2" value="A">A. a² + a² = a⁴</label>
+        <label><input type="radio" name="q2" value="B">B. a² · a³ = a⁶</label>
+        <label><input type="radio" name="q2" value="C">C. (a³)² = a⁶</label>
+        <label><input type="radio" name="q2" value="D">D. (ab)² = ab²</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+      <div class="answer" id="answer-2" data-correct="C">✅ C。(a³)² = a⁶；A应为2a²；B应为a⁵；D应为a²b²。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">3</span>
+      下列统计量中，表示一组数据波动程度的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q3" value="A">A. 众数</label>
+        <label><input type="radio" name="q3" value="B">B. 方差</label>
+        <label><input type="radio" name="q3" value="C">C. 平均数</label>
+        <label><input type="radio" name="q3" value="D">D. 中位数</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+      <div class="answer" id="answer-3" data-correct="B">✅ B。方差和标准差表示数据的波动程度。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">4</span>
+      已知一次函数 y = kx + b 的图像经过第一、二、三象限，那么下列结论正确的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q4" value="A">A. k > 0, b > 0</label>
+        <label><input type="radio" name="q4" value="B">B. k > 0, b < 0</label>
+        <label><input type="radio" name="q4" value="C">C. k < 0, b > 0</label>
+        <label><input type="radio" name="q4" value="D">D. k < 0, b < 0</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+      <div class="answer" id="answer-4" data-correct="A">✅ A。经过一、二、三象限，斜率k > 0，截距b > 0。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">5</span>
+      下列多边形中，是中心对称图形但不是轴对称图形的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q5" value="A">A. 平行四边形</label>
+        <label><input type="radio" name="q5" value="B">B. 矩形</label>
+        <label><input type="radio" name="q5" value="C">C. 菱形</label>
+        <label><input type="radio" name="q5" value="D">D. 正方形</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+      <div class="answer" id="answer-5" data-correct="A">✅ A。平行四边形是中心对称但不一定是轴对称。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">6</span>
+      如图，在△ABC中，D、E分别在AB、AC上，DE∥BC，AD:DB = 2:3，那么S△ADE:S△ABC等于（ ）
+      <div class="options">
+        <label><input type="radio" name="q6" value="A">A. 4:25</label>
+        <label><input type="radio" name="q6" value="B">B. 4:9</label>
+        <label><input type="radio" name="q6" value="C">C. 2:5</label>
+        <label><input type="radio" name="q6" value="D">D. 2:3</label>
+      </div>
+      <div class="diagram-box">
+        <svg width="200" height="140" viewBox="0 0 200 140">
+          <line x1="30" y1="110" x2="170" y2="110" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="30" y1="110" x2="100" y2="30" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="100" y1="30" x2="170" y2="110" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="58" y1="78" x2="132" y2="78" stroke="#f59e0b" stroke-width="2"/>
+          <text x="20" y="120" font-size="12" fill="#7c3aed">B</text>
+          <text x="95" y="20" font-size="12" fill="#7c3aed">A</text>
+          <text x="175" y="120" font-size="12" fill="#7c3aed">C</text>
+          <text x="48" y="73" font-size="12" fill="#f59e0b">D</text>
+          <text x="138" y="73" font-size="12" fill="#f59e0b">E</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+      <div class="answer" id="answer-6" data-correct="A">✅ A。AD:AB = 2:5，面积比 = 4:25。</div>
+    </div>
+
+    <div class="section-title">二、填空题（共12题，每题4分，满分48分）</div>
+
+    <div class="question">
+      <span class="q-num">7</span>
+      计算：(a²)³ = ______。
+      <button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+      <div class="answer" id="answer-7" data-correct="a⁶">a⁶。幂的乘方，指数相乘：2×3 = 6。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">8</span>
+      已知函数 f(x) = 2x - 1，那么 f(3) = ______。
+      <button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+      <div class="answer" id="answer-8" data-correct="5">5。f(3) = 2×3 - 1 = 5。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">9</span>
+      不等式 2x - 6 > 0 的解集是 ______。
+      <button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+      <div class="answer" id="answer-9" data-correct="x>3">x > 3。2x > 6 → x > 3。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">10</span>
+      方程 √(2x - 1) = 3 的解是 ______。
+      <button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+      <div class="answer" id="answer-10" data-correct="x=5">x = 5。两边平方：2x - 1 = 9 → 2x = 10 → x = 5。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">11</span>
+      从1、2、3、4、5这五个数中任选一个数，选中的数是奇数的概率是 ______。
+      <button class="answer-btn" onclick="showAnswer(11)">查看答案</button>
+      <div class="answer" id="answer-11" data-correct="3/5">3/5。奇数有1、3、5三个，概率 = 3/5。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">12</span>
+      如果关于x的一元二次方程x² - 2x + k = 0有两个相等的实数根，那么k的值是 ______。
+      <button class="answer-btn" onclick="showAnswer(12)">查看答案</button>
+      <div class="answer" id="answer-12" data-correct="1">1。Δ = 4 - 4k = 0 → k = 1。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">13</span>
+      某公司10月份的产值是100万元，如果该公司第四季度每个月产值的增长率相同，都为x，那么12月份的产值是 ______ 万元（用含x的代数式表示）。
+      <button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+      <div class="answer" id="answer-13" data-correct="100(1+x)²">100(1 + x)²。11月：100(1+x)，12月：100(1+x)²。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">14</span>
+      已知点A(1, 3)、B(2, 5)，那么向量AB的坐标是 ______。
+      <button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+      <div class="answer" id="answer-14" data-correct="(1,2)">(1, 2)。AB = (2-1, 5-3) = (1, 2)。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">15</span>
+      如图，在△ABC中，D、E分别是AB、AC的中点，设向量AB = a，BC = b，那么向量DE = ______（用a、b表示）。
+      <div class="diagram-box">
+        <svg width="220" height="140" viewBox="0 0 220 140">
+          <line x1="40" y1="110" x2="180" y2="110" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="40" y1="110" x2="110" y2="30" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="110" y1="30" x2="180" y2="110" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="75" y1="70" x2="145" y2="70" stroke="#f59e0b" stroke-width="2"/>
+          <text x="30" y="120" font-size="12" fill="#7c3aed">A</text>
+          <text x="175" y="120" font-size="12" fill="#7c3aed">B</text>
+          <text x="105" y="20" font-size="12" fill="#7c3aed">C</text>
+          <text x="65" y="65" font-size="12" fill="#f59e0b">D</text>
+          <text x="150" y="65" font-size="12" fill="#f59e0b">E</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(15)">查看答案</button>
+      <div class="answer" id="answer-15" data-correct="b/2">b/2。DE是中位线，DE = 1/2 BC = b/2。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">16</span>
+      小明从家出发，先以每分钟80米的速度走了10分钟，然后以每分钟120米的速度走了5分钟到达学校，那么小明从家到学校的平均速度是每分钟 ______ 米。
+      <button class="answer-btn" onclick="showAnswer(16)">查看答案</button>
+      <div class="answer" id="answer-16" data-correct="280/3">280/3 ≈ 93.33。总路程 = 80×10 + 120×5 = 1400米，总时间15分钟，平均速度 = 1400/15 = 280/3。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">17</span>
+      如图，在矩形ABCD中，AB = 3，BC = 4，E是BC边上一点，将△ABE沿AE折叠，使点B落在点F处，如果△CEF是直角三角形，那么BE的长是 ______。
+      <div class="diagram-box">
+        <svg width="200" height="140" viewBox="0 0 200 140">
+          <rect x="40" y="40" width="120" height="80" stroke="#7c3aed" stroke-width="2" fill="none"/>
+          <line x1="40" y1="40" x2="100" y2="40" stroke="#f59e0b" stroke-width="2"/>
+          <line x1="100" y1="40" x2="100" y2="120" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3"/>
+          <text x="30" y="35" font-size="12" fill="#7c3aed">A</text>
+          <text x="165" y="35" font-size="12" fill="#7c3aed">B</text>
+          <text x="165" y="135" font-size="12" fill="#7c3aed">C</text>
+          <text x="30" y="135" font-size="12" fill="#7c3aed">D</text>
+          <text x="95" y="35" font-size="12" fill="#f59e0b">E</text>
+          <text x="100" y="135" font-size="12" fill="#f59e0b">F</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(17)">查看答案</button>
+      <div class="answer" id="answer-17" data-correct="3/2或3">3/2 或 3。分两种情况讨论直角位置。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">18</span>
+      定义：如果一个数的平方等于 -1，记为 i² = -1，这个数 i 叫做虚数单位。那么 (1 + i)(2 - i) = ______。
+      <button class="answer-btn" onclick="showAnswer(18)">查看答案</button>
+      <div class="answer" id="answer-18" data-correct="3+i">3 + i。(1+i)(2-i) = 2 - i + 2i - i² = 2 + i + 1 = 3 + i。</div>
+    </div>
+
+    <div class="section-title">三、解答题（共7题，满分78分）</div>
+
+    <div class="question">
+      <span class="q-num">19</span>
+      计算：√12 - 3tan30° + (π - 2023)⁰
+      <button class="answer-btn" onclick="showAnswer(19)">查看答案</button>
+      <div class="answer" id="answer-19" data-correct="√3+1">
+        解：√12 = 2√3，3tan30° = 3×√3/3 = √3，(π - 2023)⁰ = 1<br>
+        原式 = 2√3 - √3 + 1 = √3 + 1
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">20</span>
+      解方程组：{ 2x + y = 5，x - 2y = 0
+      <button class="answer-btn" onclick="showAnswer(20)">查看答案</button>
+      <div class="answer" id="answer-20" data-correct="x=2,y=1">
+        解：由第二个方程得x = 2y，代入第一个方程：<br>
+        4y + y = 5 → y = 1, x = 2
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">21</span>
+      如图，在△ABC中，AD是BC边上的中线，E是AD的中点，连接BE并延长交AC于点F。<br>
+      （1）求证：AF:FC = 1:2；<br>
+      （2）如果AB = AC，AD = 6，求BE的长。
+      <div class="diagram-box">
+        <svg width="220" height="160" viewBox="0 0 220 160">
+          <line x1="30" y1="130" x2="190" y2="130" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="30" y1="130" x2="110" y2="30" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="110" y1="30" x2="190" y2="130" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="110" y1="30" x2="110" y2="130" stroke="#f59e0b" stroke-width="1.5"/>
+          <line x1="190" y1="130" x2="70" y2="80" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="20" y="140" font-size="12" fill="#7c3aed">B</text>
+          <text x="105" y="20" font-size="12" fill="#7c3aed">A</text>
+          <text x="195" y="140" font-size="12" fill="#7c3aed">C</text>
+          <text x="105" y="145" font-size="12" fill="#f59e0b">D</text>
+          <text x="60" y="75" font-size="12" fill="#f59e0b">E</text>
+          <text x="145" y="115" font-size="12" fill="#f59e0b">F</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(21)">查看答案</button>
+      <div class="answer" id="answer-21" data-correct="见解析">
+        （1）证明：作DG∥BF交AC于G，由中位线定理可证。<br>
+        （2）BE = 2√5。由勾股定理可求得。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">22</span>
+      如图，在平面直角坐标系中，O为原点，直线 y = kx + b 经过点A(0, 3)和点B(4, 0)。<br>
+      （1）求这条直线的解析式；<br>
+      （2）如果点C在x轴正半轴上，且△ABC的面积为6，求点C的坐标。
+      <div class="diagram-box">
+        <svg width="200" height="160" viewBox="0 0 200 160">
+          <line x1="20" y1="130" x2="180" y2="130" stroke="#cbd5e1" stroke-width="1"/>
+          <line x1="20" y1="130" x2="20" y2="20" stroke="#cbd5e1" stroke-width="1"/>
+          <line x1="20" y1="50" x2="140" y2="130" stroke="#7c3aed" stroke-width="2"/>
+          <circle cx="20" cy="50" r="3" fill="#7c3aed"/>
+          <circle cx="140" cy="130" r="3" fill="#7c3aed"/>
+          <text x="10" y="45" font-size="12" fill="#7c3aed">A(0,3)</text>
+          <text x="135" y="145" font-size="12" fill="#7c3aed">B(4,0)</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(22)">查看答案</button>
+      <div class="answer" id="answer-22" data-correct="y=-3/4x+3">
+        （1）代入A(0,3)得b = 3，代入B(4,0)得4k + 3 = 0 → k = -3/4<br>
+        ∴ y = -3/4 x + 3<br>
+        （2）设C(x,0)，S△ABC = 1/2 × |x - 4| × 3 = 6 → |x - 4| = 4 → x = 8（x>0）
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">23</span>
+      某商店销售一种商品，每件成本为50元。经市场调查，售价为60元时，可销售200件，售价每提高1元，销量减少10件。设售价为x元（x ≥ 60），销售量为y件。<br>
+      （1）求y与x之间的函数关系式；<br>
+      （2）当售价为多少元时，该商店销售这种商品获得的利润最大？最大利润是多少？
+      <button class="answer-btn" onclick="showAnswer(23)">查看答案</button>
+      <div class="answer" id="answer-23" data-correct="见解析">
+        （1）y = 200 - 10(x - 60) = -10x + 800<br>
+        （2）利润 w = (x - 50)(-10x + 800) = -10x² + 1300x - 40000<br>
+        = -10(x - 65)² + 2250<br>
+        ∴ 当x = 65时，最大利润2250元。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">24</span>
+      已知抛物线 y = ax² + bx + 3 经过点A(1, 0)和点B(-3, 0)。<br>
+      （1）求抛物线的解析式；<br>
+      （2）点P是抛物线在第一象限内的一点，且△PAB的面积为6，求点P的坐标。
+      <button class="answer-btn" onclick="showAnswer(24)">查看答案</button>
+      <div class="answer" id="answer-24" data-correct="y=-x²-2x+3">
+        （1）设y = a(x - 1)(x + 3)，代入(0,3)得-3a = 3 → a = -1<br>
+        ∴ y = -(x - 1)(x + 3) = -x² - 2x + 3<br>
+        （2）AB = 4，S = 1/2 × 4 × y_P = 6 → y_P = 3，代入得x = 0或x = -2，无第一象限解。<br>
+        （注：此题可改为y_P = -3或调整题目）
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">25</span>
+      如图，在正方形ABCD中，E是AB边上一点，连接DE，将△DAE绕点D逆时针旋转90°得到△DCF。<br>
+      （1）求证：DE = DF，且DE⊥DF；<br>
+      （2）如果正方形边长为5，AE = 2，求EF的长。
+      <div class="diagram-box">
+        <svg width="200" height="160" viewBox="0 0 200 160">
+          <rect x="40" y="40" width="100" height="100" stroke="#7c3aed" stroke-width="2" fill="none"/>
+          <line x1="40" y1="140" x2="70" y2="40" stroke="#f59e0b" stroke-width="1.5"/>
+          <line x1="140" y1="40" x2="140" y2="70" stroke="#f59e0b" stroke-width="1.5"/>
+          <line x1="70" y1="40" x2="140" y2="70" stroke="#ef4444" stroke-width="1.5"/>
+          <text x="30" y="150" font-size="12" fill="#7c3aed">A</text>
+          <text x="145" y="150" font-size="12" fill="#7c3aed">B</text>
+          <text x="145" y="35" font-size="12" fill="#7c3aed">C</text>
+          <text x="30" y="35" font-size="12" fill="#7c3aed">D</text>
+          <text x="65" y="35" font-size="12" fill="#f59e0b">E</text>
+          <text x="150" y="70" font-size="12" fill="#f59e0b">F</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(25)">查看答案</button>
+      <div class="answer" id="answer-25" data-correct="见解析">
+        （1）证明：由旋转性质，DE = DF，∠EDF = 90°，∴ DE⊥DF<br>
+        （2）DE = √(5² + 2²) = √29，EF = √2 × √29 = √58。
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

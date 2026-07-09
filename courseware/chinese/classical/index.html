@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>初中文言文学习</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.module-hero {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: #fff;
+    padding: 28px 24px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+.module-hero h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid #8b5cf6;
+}
+.card h3 {
+    color: #7c3aed;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+}
+.card ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.card li {
+    padding: 10px 12px;
+    background: #faf5ff;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+.card li a {
+    color: #7c3aed;
+    text-decoration: none;
+}
+.card li a:hover {
+    text-decoration: underline;
+}
+.table-box {
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+th {
+    background: #faf5ff;
+    color: #7c3aed;
+    font-weight: 600;
+}
+tr:hover {
+    background: #faf5ff;
+}
+.word-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.word-item {
+    background: #faf5ff;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 3px solid #8b5cf6;
+}
+.word-item .word {
+    color: #7c3aed;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+.word-item .meaning {
+    color: #64748b;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .card ul {
+        grid-template-columns: 1fr 1fr;
+    }
+    .word-box {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links">
+    <a href="../index.html">返回初中语文主页</a>
+    <a href="../../index.html">返回首页</a>
+</div>
+
+<div class="module-hero">
+    <h1>📜 初中文言文学习</h1>
+    <p>文言实词 + 虚词 + 句式 + 翻译技巧 + 中考真题训练</p>
+</div>
+
+<div class="card">
+    <h3>📚 必背文言篇目（按年级）</h3>
+    <ul>
+        <li><a href="../grade7/lunyu.html">《论语》十二章</a></li>
+        <li><a href="#">《诫子书》诸葛亮</a></li>
+        <li><a href="#">《狼》蒲松龄</a></li>
+        <li><a href="#">《三峡》郦道元</a></li>
+        <li><a href="#">《答谢中书书》陶弘景</a></li>
+        <li><a href="#">《记承天寺夜游》苏轼</a></li>
+        <li><a href="#">《马说》韩愈</a></li>
+        <li><a href="#">《陋室铭》刘禹锡</a></li>
+        <li><a href="#">《爱莲说》周敦颐</a></li>
+        <li><a href="#">《出师表》诸葛亮</a></li>
+        <li><a href="#">《桃花源记》陶渊明</a></li>
+        <li><a href="#">《小石潭记》柳宗元</a></li>
+        <li><a href="#">《岳阳楼记》范仲淹</a></li>
+        <li><a href="#">《醉翁亭记》欧阳修</a></li>
+        <li><a href="#">《送东阳马生序》宋濂</a></li>
+        <li><a href="#">《曹刿论战》《左传》</a></li>
+        <li><a href="#">《邹忌讽齐王纳谏》《战国策》</a></li>
+    </ul>
+</div>
+
+<div class="card">
+    <h3>🔤 120个常见文言实词（高频前20）</h3>
+    <div class="word-box">
+        <div class="word-item">
+            <div class="word">安</div>
+            <div class="meaning">①怎么 ②安逸 ③哪里 ④安置</div>
+        </div>
+        <div class="word-item">
+            <div class="word">兵</div>
+            <div class="meaning">①兵器 ②士兵 ③军队 ④战争</div>
+        </div>
+        <div class="word-item">
+            <div class="word">病</div>
+            <div class="meaning">①疾病 ②生病 ③疲劳 ④担心</div>
+        </div>
+        <div class="word-item">
+            <div class="word">朝</div>
+            <div class="meaning">①早晨 ②朝廷 ③朝见 ④朝代</div>
+        </div>
+        <div class="word-item">
+            <div class="word">诚</div>
+            <div class="meaning">①真心 ②确实 ③如果</div>
+        </div>
+        <div class="word-item">
+            <div class="word">乘</div>
+            <div class="meaning">①驾车 ②趁着 ③辆 ④四</div>
+        </div>
+        <div class="word-item">
+            <div class="word">从</div>
+            <div class="meaning">①跟随 ②听从 ③由 ④堂房亲属</div>
+        </div>
+        <div class="word-item">
+            <div class="word">道</div>
+            <div class="meaning">①道路 ②道理 ③说 ④方法</div>
+        </div>
+        <div class="word-item">
+            <div class="word">得</div>
+            <div class="meaning">①得到 ②能够 ③收获 ④合适</div>
+        </div>
+        <div class="word-item">
+            <div class="word">度</div>
+            <div class="meaning">①量 ②估计 ③限度 ④制度</div>
+        </div>
+        <div class="word-item">
+            <div class="word">故</div>
+            <div class="meaning">①旧的 ②原因 ③所以 ④故意</div>
+        </div>
+        <div class="word-item">
+            <div class="word">顾</div>
+            <div class="meaning">①回头看 ②看 ③拜访 ④反而</div>
+        </div>
+        <div class="word-item">
+            <div class="word">固</div>
+            <div class="meaning">①本来 ②坚固 ③巩固 ④固执</div>
+        </div>
+        <div class="word-item">
+            <div class="word">归</div>
+            <div class="meaning">①返回 ②归还 ③归附 ④归宿</div>
+        </div>
+        <div class="word-item">
+            <div class="word">国</div>
+            <div class="meaning">①国家 ②诸侯国 ③国都 ④国事</div>
+        </div>
+        <div class="word-item">
+            <div class="word">过</div>
+            <div class="meaning">①经过 ②超过 ③过失 ④拜访</div>
+        </div>
+        <div class="word-item">
+            <div class="word">何</div>
+            <div class="meaning">①什么 ②怎么 ③多么 ④哪里</div>
+        </div>
+        <div class="word-item">
+            <div class="word">患</div>
+            <div class="meaning">①忧虑 ②祸患 ③疾病 ④担心</div>
+        </div>
+        <div class="word-item">
+            <div class="word">或</div>
+            <div class="meaning">①有的 ②或许 ③有时 ④有人</div>
+        </div>
+        <div class="word-item">
+            <div class="word">疾</div>
+            <div class="meaning">①疾病 ②痛恨 ③快 ④妒忌</div>
+        </div>
+    </div>
+    <div style="text-align:center;margin-top:16px;color:#7c3aed;font-weight:500;">
+        点击查看完整120个文言实词列表 →
+    </div>
+</div>
+
+<div class="card">
+    <h3>🔍 15个核心文言虚词（中考必考）</h3>
+    <div class="table-box">
+        <table>
+            <thead>
+                <tr>
+                    <th>虚词</th>
+                    <th>主要用法</th>
+                    <th>例句</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">之</td>
+                    <td>①代词 ②助词"的" ③取消句子独立性 ④宾语前置标志</td>
+                    <td>学而时习之；山川之美；予独爱莲之出淤泥而不染</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">其</td>
+                    <td>①代词（他的/那） ②表示反问 ③表示推测</td>
+                    <td>择其善者而从之；其真无马邪；其真不知马也</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">而</td>
+                    <td>①表并列 ②表承接 ③表转折 ④表修饰</td>
+                    <td>博学而笃志；温故而知新；人不知而不愠</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">以</td>
+                    <td>①用 ②因为 ③来 ④认为 ⑤凭借</td>
+                    <td>以刀劈狼首；不以物喜；以光先帝遗德</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">于</td>
+                    <td>①在 ②到 ③从 ④比 ⑤对于 ⑥被</td>
+                    <td>公与之乘，战于长勺；皆以美于徐公；受制于人</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">为</td>
+                    <td>①做 ②是 ③被 ④替 ⑤为了</td>
+                    <td>可以为师矣；宫中府中，俱为一体；不足为外人道也</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">乃</td>
+                    <td>①于是 ②才 ③竟然 ④是</td>
+                    <td>乃重修岳阳楼；乃不知有汉；当立者乃公子扶苏</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">则</td>
+                    <td>①就 ②那么 ③如果 ④却</td>
+                    <td>学而不思则罔；则汉室之隆；余则缊袍敝衣处其间</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">者</td>
+                    <td>①……的人 ②……的事物 ③判断句标志 ④……的原因</td>
+                    <td>择其善者而从之；然而不胜者；诸葛孔明者，卧龙也</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">也</td>
+                    <td>①表判断 ②表陈述 ③表疑问 ④表感叹</td>
+                    <td>浙江之潮，天下之伟观也；余闻也久；若为佣耕，何富贵也</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">焉</td>
+                    <td>①于此 ②怎么 ③语气词 ④……的样子</td>
+                    <td>三人行，必有我师焉；且焉置土石；可远观而不可亵玩焉</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">乎</td>
+                    <td>①吗 ②呢 ③于 ④……的样子</td>
+                    <td>不亦乐乎；览物之情，得无异乎；颓然乎其间者</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">虽</td>
+                    <td>①虽然 ②即使</td>
+                    <td>故余虽愚，卒获有所闻；虽乘奔御风，不以疾也</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">然</td>
+                    <td>①这样 ②……的样子 ③但是 ④对的</td>
+                    <td>然后知生于忧患；满目萧然；然侍卫之臣不懈于内</td>
+                </tr>
+                <tr>
+                    <td style="color:#7c3aed;font-weight:600;">与</td>
+                    <td>①和 ②参与 ③通"欤"，语气词 ④给</td>
+                    <td>吾与汝毕力平险；选贤与能；所识穷乏者得我与</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="card">
+    <h3>📐 文言文特殊句式</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div style="background:#f8fafc;padding:16px;border-radius:8px;">
+            <h4 style="color:#7c3aed;margin-bottom:12px;">判断句</h4>
+            <p style="color:#475569;line-height:1.8;font-size:0.9rem;">
+                ①……者，……也：陈胜者，阳城人也<br>
+                ②……，……也：浙江之潮，天下之伟观也<br>
+                ③……者也：牡丹，花之富贵者也<br>
+                ④用"乃、即、则、皆、是"表判断：当立者乃公子扶苏
+            </p>
+        </div>
+        <div style="background:#f8fafc;padding:16px;border-radius:8px;">
+            <h4 style="color:#7c3aed;margin-bottom:12px;">被动句</h4>
+            <p style="color:#475569;line-height:1.8;font-size:0.9rem;">
+                ①"为"字句：岂能为暴涨携之去<br>
+                ②"为……所……"：其印为予群从所得<br>
+                ③"见"字句：秦城恐不可得，徒见欺<br>
+                ④"被"字句：同舍生皆被绮绣
+            </p>
+        </div>
+        <div style="background:#f8fafc;padding:16px;border-radius:8px;">
+            <h4 style="color:#7c3aed;margin-bottom:12px;">倒装句</h4>
+            <p style="color:#475569;line-height:1.8;font-size:0.9rem;">
+                ①宾语前置：何陋之有？ / 沛公安在？<br>
+                ②状语后置：战于长勺 / 告之于帝<br>
+                ③定语后置：马之千里者 / 居庙堂之高<br>
+                ④谓语前置：甚矣，汝之不惠！
+            </p>
+        </div>
+        <div style="background:#f8fafc;padding:16px;border-radius:8px;">
+            <h4 style="color:#7c3aed;margin-bottom:12px;">省略句</h4>
+            <p style="color:#475569;line-height:1.8;font-size:0.9rem;">
+                ①省略主语：（桃花源人）见渔人，乃大惊<br>
+                ②省略谓语：一鼓作气，再（鼓）而衰<br>
+                ③省略宾语：可以（之）一战<br>
+                ④省略介词：坐（于）潭上
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h3>✍️ 文言文翻译"信达雅"三步法</h3>
+    <div style="background:#fef3c7;padding:20px;border-radius:8px;border-left:4px solid #f59e0b;">
+        <h4 style="color:#d97706;margin-bottom:12px;">第一步：留——保留原文中的专有名词</h4>
+        <p style="color:#78350f;line-height:1.6;margin-bottom:16px;">
+            人名、地名、官职名、年号、器物名、书名等直接保留，不翻译。<br>
+            例："庆历四年春，滕子京谪守巴陵郡" → 庆历四年的春天，滕子京被贬到巴陵郡做太守。
+        </p>
+        
+        <h4 style="color:#d97706;margin-bottom:12px;">第二步：补——补出省略的成分</h4>
+        <p style="color:#78350f;line-height:1.6;margin-bottom:16px;">
+            补出省略的主语、谓语、宾语、介词等，使句子完整通顺。<br>
+            例："见渔人，乃大惊" → （桃花源中人）看见渔人，竟然非常吃惊。
+        </p>
+        
+        <h4 style="color:#d97706;margin-bottom:12px;">第三步：调——调整倒装句的语序</h4>
+        <p style="color:#78350f;line-height:1.6;">
+            将宾语前置、状语后置、定语后置等倒装句式调整为现代汉语语序。<br>
+            例："何陋之有？" → 有什么简陋的呢？
+        </p>
+    </div>
+</div>
+
+</div>
+</body>
+</html>

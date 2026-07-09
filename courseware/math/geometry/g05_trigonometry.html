@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>锐角三角比 - 几何沪教版</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+</head>
+<body><div class="layout"><aside class="sidebar"><h3>📐 几何</h3><ul class="chapter-list">
+<li><a href="g05_trigonometry.html" class="active"><span class="ch-num">5</span>锐角三角比</a><div class="subsections"><a href="#sec1">定义</a><a href="#sec2">特殊角</a><a href="#sec3">解直角三角形</a><a href="#exercises">练习</a></div></li>
+</ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div c</ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-subject">📂 几何目录</a>
+    </div>"page-title">第5章 锐角三角比</div>
+
+<h2 id="sec1">5.1 定义</h2>
+<div class="kp"><h3>在Rt△ABC中，∠C=90°</h3>
+<span class="formula">sin A = a/c（对边/斜边）</span>
+<span class="formula">cos A = b/c（邻边/斜边）</span>
+<span class="formula">tan A = a/b（对边/邻边）</span>
+<span class="formula">cot A = b/a（邻边/对边）</span>
+<p>0 < sin A < 1, 0 < cos A < 1, tan A > 0, cot A > 0</p></div>
+
+<h2 id="sec2">5.2 特殊角三角比</h2>
+<table style="width:100%;border-collapse:collapse;font-size:.9rem;text-align:center;">
+<tr style="background:var(--bg);"><th style="padding:10px;">角α</th><th style="padding:10px;">sinα</th><th style="padding:10px;">cosα</th><th style="padding:10px;">tanα</th><th style="padding:10px;">cotα</th></tr>
+<tr><td style="padding:10px;">30°</td><td style="padding:10px;">1/2</td><td style="padding:10px;">√3/2</td><td style="padding:10px;">√3/3</td><td style="padding:10px;">√3</td></tr>
+<tr><td style="padding:10px;">45°</td><td style="padding:10px;">√2/2</td><td style="padding:10px;">√2/2</td><td style="padding:10px;">1</td><td style="padding:10px;">1</td></tr>
+<tr><td style="padding:10px;">60°</td><td style="padding:10px;">√3/2</td><td style="padding:10px;">1/2</td><td style="padding:10px;">√3</td><td style="padding:10px;">√3/3</td></tr>
+</table>
+<div class="kp" style="margin-top:12px;"><h3>重要关系</h3>
+<p>sin²α + cos²α = <strong>1</strong></p><p>tanα = sinα/cosα</p><p>sin(90°-α) = cosα（互余角关系）</p></div>
+
+<h2 id="sec3">5.3 解直角三角形</h2>
+<div class="kp"><h3>常见应用</h3>
+<p><strong>仰角与俯角</strong>：视线与水平线的夹角。仰角在上，俯角在下。</p>
+<p><strong>坡度</strong>：i = h/l = tanα（垂直高度/水平宽度）</p>
+<p><strong>方位角</strong>：从正北方向顺时针旋转的角度。</p>
+<p>解直角三角形：已知一边一角或两边→求其他边和角。</p></div>
+
+<h2 id="exercises" style="margin:28px 0 16px;">📝 练习题</h2>
+<div class="exercise"><div class="question"><span class="q-num">1</span>sin30°+cos60°=____。</div>
+<div class="options"><label><input type="radio" name="q1" value="A">A. 1/2</label><label><input type="radio" name="q1" value="B">B. 1</label><label><input type="radio" name="q1" value="C">C. √3/2</label><label><input type="radio" name="q1" value="D">D. √2</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button><div class="answer" id="answer-1" data-correct="B">✅ B。1/2+1/2=1。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>在Rt△中，∠C=90°，AB=10，∠A=30°，则BC=____。</div>
+<div class="options"><label><input type="radio" name="q2" value="A">A. 5</label><label><input type="radio" name="q2" value="B">B. 5√3</label><label><input type="radio" name="q2" value="C">C. 10</label><label><input type="radio" name="q2" value="D">D. 20</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button><div class="answer" id="answer-2" data-correct="A">✅ A。BC=AB·sin30°=10×1/2=5。或30°所对直角边=斜边一半。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>【中考】已知sinα=3/5，α为锐角，则cosα=____。</div>
+<div class="options"><label><input type="radio" name="q3" value="A">A. 3/5</label><label><input type="radio" name="q3" value="B">B. 4/5</label><label><input type="radio" name="q3" value="C">C. 5/4</label><label><input type="radio" name="q3" value="D">D. 5/3</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button><div class="answer" id="answer-3" data-correct="B">✅ B。sin²α+cos²α=1→cosα=√(1-9/25)=4/5。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>计算：tan45°-sin60°·cos30°=____。</div>
+<div class="options"><label><input type="radio" name="q4" value="A">A. 0</label><label><input type="radio" name="q4" value="B">B. 1/4</label><label><input type="radio" name="q4" value="C">C. 1</label><label><input type="radio" name="q4" value="D">D. 3/4</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button><div class="answer" id="answer-4" data-correct="B">✅ B。1-(√3/2)×(√3/2)=1-3/4=1/4。</div></div>
+
+</main></div>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

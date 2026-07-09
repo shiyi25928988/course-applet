@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>工业流程专项突破</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.hero {background:linear-gradient(135deg,#16a34a,#15803d);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px}
+.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.q-num {display:inline-block;background:#16a34a;color:#fff;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;font-weight:700;margin-right:10px}
+.q-title {display:inline-block;font-weight:600;color:#1e293b;font-size:1.05rem}
+.q-score {float:right;color:#64748b;font-size:0.9rem}
+.q-content {margin-top:16px;line-height:1.8;color:#374151}
+.answer-btn {margin-top:16px;padding:10px 20px;background:#16a34a;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.95rem}
+.answer {display:none;margin-top:16px;padding:16px;background:#dcfce7;border-radius:8px;border-left:3px solid #16a34a}
+.answer.show {display:block}
+.answer-value {font-weight:600;color:#166534;margin-bottom:8px}
+.answer-solution {color:#14532d;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 高中化学</a>&nbsp;|&nbsp;<a href="../exam_bank.html">← 题库中心</a></div>
+<div class="hero"><h1>🏭 工业流程专项突破</h1><p>原料预处理 · 核心反应 · 分离提纯 · 条件控制 · 计算 · 共 30 道精选</p></div>
+<div class="question"><span class="q-num">1</span><span class="q-title">以黄铁矿为原料制硫酸</span><span class="q-score">（14分）</span><div class="q-content">
+<p>工业上以黄铁矿（主要成分 FeS₂）为原料生产硫酸，请回答下列问题：</p>
+<p>(1) 写出煅烧黄铁矿的化学方程式 __________；（3 分）</p>
+<p>(2) 接触室中 SO₂ 催化氧化的适宜条件是：温度 __________，压强 __________，催化剂 __________；（6 分）</p>
+<p>(3) 吸收塔中用 98.3% 的浓硫酸吸收 SO₃ 而不用水的原因是 __________。（5 分）</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案与解析</button>
+<div class="answer" id="answer-1"><div class="answer-value">答案：</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) 4FeS₂ + 11O₂ 高温 2Fe₂O₃ + 8SO₂<br><br>(2) 温度：400~500℃（催化剂活性最高）；压强：常压（常压下转化率已很高）；催化剂：V₂O₅（五氧化二钒）<br><br>(3) 用水或稀硫酸吸收会形成酸雾，吸收速率慢；用浓硫酸吸收不会形成酸雾，吸收效率高。</div></div></div>
+<div class="question"><span class="q-num">2</span><span class="q-title">纯碱工业</span><span class="q-score">（14分）</span><div class="q-content">
+<p>侯氏制碱法以 NaCl、NH₃、CO₂ 等为原料制备纯碱。请回答：</p>
+<p>(1) 向饱和食盐水中应先通入 __________（填"NH₃"或"CO₂"），原因是 __________；（6 分）</p>
+<p>(2) 写出该过程的总反应化学方程式 __________；（4 分）</p>
+<p>(3) 母液中主要含有的溶质是 __________，可循环使用。（4 分）</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案与解析</button>
+<div class="answer" id="answer-2"><div class="answer-value">答案：</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) 先通入 NH₃；NH₃ 极易溶于水且使溶液呈碱性，增大 CO₂ 的溶解度，便于生成更多 NaHCO₃ 沉淀。<br><br>(2) NaCl + NH₃ + CO₂ + H₂O = NaHCO₃↓ + NH₄Cl<br>2NaHCO₃ △ Na₂CO₃ + CO₂↑ + H₂O<br><br>(3) NH₄Cl（氯化铵），可作氮肥使用。</div></div></div>
+<div style="text-align:center;padding:20px;color:#64748b;background:#fff;border-radius:10px">
+<strong>更多题目整理中...</strong><br>完整 30 道工业流程题正在陆续添加
+</div>
+</div></body></html>

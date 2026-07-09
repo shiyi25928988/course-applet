@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雅思 IELTS 专区 - 学习助手</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+        .ielts-hero {
+            background: linear-gradient(135deg, #0891b2, #0e7490);
+            color: #fff;
+            padding: 40px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .ielts-hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+        }
+        .ielts-hero p {
+            opacity: 0.95;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .score-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .score-card {
+            background: #fff;
+            padding: 20px 16px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .score-card .score-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0891b2;
+            margin-bottom: 4px;
+        }
+        .score-card .score-label {
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+        .band-box {
+            background: linear-gradient(135deg, #ecfeff, #cffafe);
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 32px;
+        }
+        .band-box h3 {
+            margin: 0 0 12px 0;
+            color: #0e7490;
+            font-size: 1.1rem;
+        }
+        .band-box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .band-box li {
+            margin-bottom: 6px;
+            color: #374151;
+        }
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        .module-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            text-decoration: none;
+            display: block;
+            transition: all 0.2s;
+            border-top: 4px solid;
+        }
+        .module-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .module-card .icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        .module-card h4 {
+            margin: 0 0 8px 0;
+            font-size: 1.15rem;
+            color: #1e293b;
+        }
+        .module-card p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #64748b;
+            line-height: 1.5;
+        }
+        .plan-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-left: 4px solid;
+        }
+        .plan-section h3 {
+            margin: 0 0 16px 0;
+            font-size: 1.2rem;
+            color: #1e293b;
+        }
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            background: #f1f5f9;
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .info-footer {
+            background: #f8fafc;
+            padding: 24px;
+            border-radius: 12px;
+            margin-top: 32px;
+        }
+        .info-footer h4 {
+            margin: 0 0 12px 0;
+            color: #1e293b;
+        }
+        .info-footer p {
+            margin: 0 0 12px 0;
+            color: #64748b;
+            line-height: 1.6;
+        }
+        .info-footer ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #374151;
+        }
+        .info-footer li {
+            margin-bottom: 6px;
+        }
+        @media (max-width: 768px) {
+            .score-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .module-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>🌍 雅思 IELTS</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>雅思阅读1000篇</a></li>
+                <li><a href="listening.html"><span class="ch-num">👂</span>听力 Listening</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读 Reading</a></li>
+                <li><a href="writing.html"><span class="ch-num">✍️</span>写作 Writing</a></li>
+                <li><a href="speaking.html"><span class="ch-num">🎤</span>口语 Speaking</a></li>
+                <li><a href="vocabulary.html"><span class="ch-num">📝</span>核心词汇</a></li>
+                <li><a href="grammar.html"><span class="ch-num">📐</span>语法精讲</a></li>
+                <li><a href="tips.html"><span class="ch-num">💡</span>备考技巧</a></li>
+                <li><a href="exam_collection.html"><span class="ch-num">📋</span>真题模考</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+        </aside>
+
+        <main class="main">
+            <div class="ielts-hero">
+                <h1>🌍 雅思 IELTS 备考专区</h1>
+                <p>International English Language Testing System · 听力 · 阅读 · 写作 · 口语 · 词汇 · 语法 · 真题模考</p>
+            </div>
+
+            <h2 style="margin-bottom:20px;color:#1e293b;">📊 雅思分数说明</h2>
+            <div class="score-grid">
+                <div class="score-card">
+                    <div class="score-number">9.0</div>
+                    <div class="score-label">专家级 Expert</div>
+                </div>
+                <div class="score-card">
+                    <div class="score-number">8.0</div>
+                    <div class="score-label">优秀 Very Good</div>
+                </div>
+                <div class="score-card">
+                    <div class="score-number">7.0</div>
+                    <div class="score-label">良好 Good</div>
+                </div>
+                <div class="score-card">
+                    <div class="score-number">6.0</div>
+                    <div class="score-label">合格 Competent</div>
+                </div>
+            </div>
+
+            <div class="band-box">
+                <h3>📌 雅思 7.0 能力要求</h3>
+                <ul>
+                    <li>能有效运用英语，虽然偶尔出现不准确、不适当和误解</li>
+                    <li>大致可将复杂的英语掌握得不错，也能理解全部内容</li>
+                    <li>大部分海外大学研究生入学要求为 IELTS 6.5-7.0</li>
+                </ul>
+            </div>
+
+            <h2 style="margin:32px 0 20px;color:#1e293b;">📚 四大专项模块</h2>
+            <div class="module-grid">
+                <a href="listening.html" class="module-card" style="border-color:#10b981;">
+                    <div class="icon">👂</div>
+                    <h4>听力 Listening</h4>
+                    <p>40题 · 30分钟 · Section 1-4 场景词汇 + 真题训练</p>
+                </a>
+                <a href="reading.html" class="module-card" style="border-color:#3b82f6;">
+                    <div class="icon">📖</div>
+                    <h4>阅读 Reading</h4>
+                    <p>题型详解 + 长难句分析 + <strong>完整真题解析</strong></p>
+                </a>
+                <a href="writing.html" class="module-card" style="border-color:#8b5cf6;">
+                    <div class="icon">✍️</div>
+                    <h4>写作 Writing</h4>
+                    <p>Task 1 图表 + Task 2 大作文 · 高分范文 + 常用句型</p>
+                </a>
+                <a href="speaking.html" class="module-card" style="border-color:#f59e0b;">
+                    <div class="icon">🎤</div>
+                    <h4>口语 Speaking</h4>
+                    <p>Part 1-3 · 高频话题 · 地道表达 · 评分标准解析</p>
+                </a>
+            </div>
+
+            <!-- 真题推荐横幅 -->
+            <div style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);border-radius:12px;padding:20px;margin:20px 0;">
+                <div style="display:flex;align-items:center;gap:16px;">
+                    <div style="font-size:48px;">📄</div>
+                    <div style="flex:1;">
+                        <h3 style="margin:0 0 8px 0;color:#1e40af;">🔥 新增：剑桥雅思16 阅读真题完整详解</h3>
+                        <p style="margin:0;color:#374151;">Test 1 Passage 1 逐题解析 + 定位技巧 + 同义替换分析 · TRUE/FALSE/NOT GIVEN 判断题深度讲解</p>
+                    </div>
+                    <a href="reading_real_test.html" style="background:#3b82f6;color:white;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:500;">立即查看 →</a>
+                </div>
+            </div>
+
+            <h2 style="margin:32px 0 20px;color:#1e293b;">🛠️ 基础能力提升</h2>
+            <div class="module-grid">
+                <a href="vocabulary.html" class="module-card" style="border-color:#ec4899;">
+                    <div class="icon">📝</div>
+                    <h4>核心词汇</h4>
+                    <p>听力场景词 · 阅读高频词 · 写作话题词 · 口语地道词</p>
+                </a>
+                <a href="grammar.html" class="module-card" style="border-color:#06b6d4;">
+                    <div class="icon">📐</div>
+                    <h4>语法精讲</h4>
+                    <p>时态语态 · 从句 · 虚拟语气 · 倒装 · 非谓语动词</p>
+                </a>
+                <a href="tips.html" class="module-card" style="border-color:#84cc16;">
+                    <div class="icon">💡</div>
+                    <h4>备考技巧</h4>
+                    <p>时间分配 · 答题策略 · 蒙题技巧 · 高分经验分享</p>
+                </a>
+                <a href="exam_collection.html" class="module-card" style="border-color:#6366f1;">
+                    <div class="icon">📋</div>
+                    <h4>真题模考</h4>
+                    <p>剑雅 10-19 真题 · 完整套题 · 答案与详细解析</p>
+                </a>
+            </div>
+
+            <h2 style="margin:32px 0 20px;color:#1e293b;">📅 备考计划建议</h2>
+            <div class="plan-section" style="border-left-color:#0891b2;">
+                <h3>🎯 目标分 7.0 · 3个月备考计划</h3>
+                <div class="tag-list">
+                    <span class="tag">第1-4周：基础夯实（词汇+语法）</span>
+                    <span class="tag">第5-8周：专项突破（听说读写分项训练）</span>
+                    <span class="tag">第9-12周：模考冲刺（整套真题+查漏补缺）</span>
+                </div>
+            </div>
+
+            <div class="plan-section" style="border-left-color:#10b981;">
+                <h3>⏰ 每日学习时间表</h3>
+                <div class="tag-list">
+                    <span class="tag">听力：30-45分钟</span>
+                    <span class="tag">阅读：45-60分钟</span>
+                    <span class="tag">写作：30-60分钟</span>
+                    <span class="tag">口语：20-30分钟</span>
+                    <span class="tag">词汇：20-30分钟</span>
+                </div>
+            </div>
+
+            <div class="info-footer">
+                <h4>📌 雅思考试介绍</h4>
+                <p>雅思（IELTS - International English Language Testing System）是国际英语语言测试系统，分为学术类（Academic）和培训类（General Training）两种。</p>
+                <ul>
+                    <li><strong>考试费用</strong>：约 2,200 元人民币</li>
+                    <li><strong>考试时长</strong>：约 2小时45分钟</li>
+                    <li><strong>成绩有效期</strong>：2年</li>
+                    <li><strong>考试形式</strong>：纸笔考试 / 机考</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

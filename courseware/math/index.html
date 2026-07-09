@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>初中数学 · 沪教版课件</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.math-hero{background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;border-radius:20px;padding:40px 24px;margin-bottom:28px;}
+.math-hero h1{font-size:1.8rem;margin-bottom:8px;}
+.subject-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:40px;}
+.sub-card{background:#fff;border-radius:16px;padding:28px 22px;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,.08);transition:transform .3s;display:block;color:var(--text);}
+.sub-card:hover{transform:translateY(-3px);}
+.sub-card.algebra{border-top:4px solid #7c3aed;}
+.sub-card.geometry{border-top:4px solid #f59e0b;}
+.sub-card h2{font-size:1.3rem;margin-bottom:8px;}
+.sub-card .icon{font-size:2.5rem;display:block;margin-bottom:12px;}
+.sub-card p{color:var(--text-secondary);font-size:.9rem;margin-bottom:12px;}
+.sub-card ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px;}
+.sub-card li{font-size:.75rem;padding:3px 10px;border-radius:12px;background:var(--bg);}
+.sub-card.algebra li{background:#ede9fe;color:#7c3aed;}
+.sub-card.geometry li{background:#fef3c7;color:#d97706;}
+.exam-btn{display:inline-block;padding:10px 24px;background:var(--warning);color:#fff;border-radius:8px;text-decoration:none;font-weight:600;margin:0 8px 20px 0;}
+@media(max-width:640px){.subject-cards{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<main class="main" style="max-width:800px;">
+<div class="math-hero"><h1>📐 沪教版初中数学</h1><p>上海教育出版社 · 五四制 · 六年级~九年级 · 代数 + 几何 · 含例题动画、中考真题</p></div>
+
+<div style="margin-bottom:24px;">
+<a href="exam_collection.html" class="exam-btn">📝 上海中考数学真题汇编 →</a>
+<a href="../index.html" style="color:var(--primary);font-size:.9rem;">返回首页</a>
+</div>
+
+<div class="subject-cards">
+<a href="algebra/index.html" class="sub-card algebra">
+<span class="icon">📊</span><h2>代数部分</h2>
+<p>8章 · 从有理数到二次函数 · 核心计算能力</p>
+<ul><li>有理数与实数</li><li>整式与因式分解</li><li>分式</li><li>一次方程与不等式</li><li>二次方程</li><li>一次函数</li><li>二次函数</li><li>代数综合</li></ul>
+</a>
+<a href="geometry/index.html" class="sub-card geometry">
+<span class="icon">📐</span><h2>几何部分</h2>
+<p>7章 · 从线与角到圆 · 空间想象与证明</p>
+<ul><li>线段与角</li><li>相交线与平行线</li><li>三角形与全等</li><li>四边形</li><li>相似三角形</li><li>锐角三角比</li><li>圆</li></ul>
+</a>
+</div>
+
+<h2 style="margin:24px 0 16px;">📋 章节分布（对应年级）</h2>
+<table style="width:100%;border-collapse:collapse;font-size:.9rem;">
+<tr style="background:var(--bg);"><th style="padding:10px;text-align:left;">年级</th><th style="padding:10px;text-align:left;">代数章节</th><th style="padding:10px;text-align:left;">几何章节</th></tr>
+<tr><td style="padding:10px;font-weight:600;">六年级上</td><td style="padding:10px;">数的整除、分数、比和比例</td><td style="padding:10px;">圆和扇形</td></tr>
+<tr><td style="padding:10px;font-weight:600;">六年级下</td><td style="padding:10px;">有理数、一次方程(组)</td><td style="padding:10px;">线段与角</td></tr>
+<tr><td style="padding:10px;font-weight:600;">七年级上</td><td style="padding:10px;">整式、因式分解、分式、实数</td><td style="padding:10px;">图形运动、相交线平行线、三角形</td></tr>
+<tr><td style="padding:10px;font-weight:600;">七年级下</td><td style="padding:10px;">一次不等式(组)、方程组</td><td style="padding:10px;">四边形</td></tr>
+<tr><td style="padding:10px;font-weight:600;">八年级上</td><td style="padding:10px;">二次根式、一元二次方程、函数</td><td style="padding:10px;">几何证明</td></tr>
+<tr><td style="padding:10px;font-weight:600;">八年级下</td><td style="padding:10px;">一次函数、代数方程</td><td style="padding:10px;">中位线</td></tr>
+<tr><td style="padding:10px;font-weight:600;">九年级上</td><td style="padding:10px;">二次函数</td><td style="padding:10px;">相似三角形、锐角三角比、圆</td></tr>
+</table>
+
+<h2 style="margin:32px 0 16px;">📝 中考真题（按年份）</h2>
+<div style="display:grid; grid-template-columns:repeat(5,1fr); gap:12px;">
+  <a href="exam_2017.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2017年</a>
+  <a href="exam_2018.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2018年</a>
+  <a href="exam_2019.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2019年</a>
+  <a href="exam_2020.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2020年</a>
+  <a href="exam_2021.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2021年</a>
+  <a href="exam_2022.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2022年</a>
+  <a href="exam_2023.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2023年</a>
+  <a href="exam_2024.html" style="text-align:center; padding:12px; background:#fef3c7; border:2px solid #f59e0b; border-radius:8px; text-decoration:none; color:var(--text); font-weight:600;">⭐ 2024年</a>
+  <a href="exam_2025.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2025年</a>
+  <a href="exam_2026.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2026年</a>
+</div>
+
+</main>
+</body>
+</html>

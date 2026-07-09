@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading The Screen - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题388/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Reading The Screen</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>Solution:
+ 
+1. D
+2. G
+3. B
+4. E
+5. C
+6. B
+7. B
+8. D
+9. B
+10. D
+11. social history
+12. tag
+13. protective equipment
+14. water
+ 5</p>
+<p>Reading Practice
+ Issues Affecting the Southern Resident Orcas</p>
+<p>Orcas, also known as killer whales, are opportunistic feeders, which means they will take a
+variety of different prey species. J, K, and L pods (specific groups of orcas found in the
+region) are almost exclusively fish eaters. Some studies show that up to 90 percent of their
+diet is salmon, with Chinook salmon being far and away their favorite. During the last 50
+years, hundreds of wild runs of salmon have become extinct due to habitat loss and
+overfishing of wild stocks. Many of the extinct salmon stocks are the winter runs of chinook
+and coho. Although the surviving stocks have probably been sufficient to sustain the
+resident pods, many of the runs that have been lost were undoubtedly traditional resources
+favored by the resident orcas. This may be affecting the whales’ nutrition in the winter and
+may require them to change their patterns of movement in order to search for food.
+Other studies with tagged whales have shown that they regularly dive up to 800 feet in this
+area.
+Researchers tend to think that during these deep dives the whales may be feeding on
+bottomfish. Bottomfish species in this area would include halibut, rockfish, lingcod, and
+greenling. Scientists estimate that today’s lingcod population in northern Puget Sound and
+the Strait of Georgia is only 2 percent of what it was in 1950. The average size of rockfish
+in the recreational catch has also declined by several inches since the 1970s, which is
+indicative of overfishing. In some locations, certain rockfish species have disappeared
+entirely. So even if bottomfish are not a major food resource for the whales, the present low
+numbers of available fish increases the pressure on orcas and all marine animals to find
+food. (For more information on bottomfish see the San Juan County Bottomfish Recovery
+Program.)</p>
+<p>Toxic substances accumulate in higher concentrations as they move up the food chain.
+Because orcas t are the top predator in the ocean and are at the top of several different
+food chains in the environment, they tend to be more affected by pollutants than other sea
+creatures. Examinations of stranded killer whales have shown some extremely high levels
+of lead, mercury, and polychlorinated hydrocarbons. Abandoned marine toxic waste dumps
+and present levels of industrial and human refuse pollution of the inland waters probably
+presents the most serious threat to the continued existence of this orca population.
+Unfortunately, the total remedy to this huge problem would be broad societal changes on
+many fronts. But because of the fact that orcas are so popular, they may be the best
+species to use as a focal point in bringing about the many changes that need to be made in
+order to protect the marine environment as a whole from further toxic poisoning.'</p>
+<p>The waters around the San Juan Islands are extremely busy due to international
+commercial shipping, fishing, whale watching, and pleasure boating. On a busy weekend
+day in the summer, it is not uncommon to see numerous boats in the vicinity of the whales
+as they travel through the area. The potential impacts from all this vessel traffic with regard
+to the whales and other marine animals in the area could be tremendous.
+ 1</p>
+<p>The surfacing and breathing space of marine birds and mammals is a critical aspect of their
+habitat, which the animals must consciously deal with on a moment-to-moment basis
+throughout their lifetimes. With all the boating activity in the vicinity, there are three ways in
+which surface impacts are most likely to affect marine animals: (a) collision, (b) collision
+avoidance, and (c) exhaust emissions in breathing pockets.
+The first two impacts are very obvious and don’t just apply to vessels with motors.
+Kayakers even present a problem here because they’re so quiet. Marine animals, busy
+hunting and feeding under the surface of the water, may not be aware that there is a kayak
+above them and actually hit the bottom of it as they surface to breathe.
+The third impact is one most people don’t even think of. When there are numerous boats in
+the area, especially idling boats, there are a lot of exhaust fumes being spewed out on the
+surface of the water. When the whale comes up to take a nice big breath of “fresh" air, it
+instead gets a nice big breath of exhaust fumes. It’s hard to say how greatly this affects the
+animals, but think how breathing polluted air affects us (i.e., smog in large cities like Los
+Angeles, breathing the foul air while sitting in traffic jams, etc)._</p>
+<p>Similar to surface impacts, a primary source of acoustic pollution for this population of
+orcas would also be derived from the cumulative underwater noise of vessel traffic. For
+cetaceans, the underwater sound environment is perhaps the most critical component of
+their sensory and behavioral lives. Orcas communicate with each other over short and long
+distances with a variety of clicks, chirps, squeaks, and whistles, along with using
+echolocation to locate prey and to navigate. They may also rely on passive listening as a
+primary sensory source. The long-term impacts from noise pollution would not likely show
+up as noticeable behavioral changes in habitat use, but rather as sensory damage or
+gradual reduction in population health. A new study at The Whale Museum called the
+SeaSound Remote Sensing Network has begun studying underwater acoustics and its
+relationship to orca communication.
+ 2</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

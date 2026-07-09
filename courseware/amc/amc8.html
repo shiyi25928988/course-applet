@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AMC 8 美国数学竞赛</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #059669, #047857);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.amc-hero{background:linear-gradient(135deg,#059669,#047857);color:#fff;border-radius:20px;padding:32px 24px;margin-bottom:24px;}
+.amc-hero h1{font-size:1.8rem;margin-bottom:8px;}
+.amc-meta{font-size:.9rem;opacity:.95;}
+.section{background:#fff;border-radius:14px;padding:24px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.section h3{color:#059669;margin-bottom:16px;font-size:1.2rem;}
+.question{margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid #e5e7eb;}
+.question:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.q-number{font-weight:600;color:#059669;margin-bottom:8px;font-size:1.1rem;}
+.q-content{line-height:1.8;color:#334155;}
+.answer-box{background:#f0fdf4;padding:16px;border-radius:10px;margin-top:12px;border-left:4px solid #22c55e;}
+.answer-title{font-weight:600;color:#166534;margin-bottom:8px;}
+.answer-content{line-height:1.7;color:#14532d;}
+.score-tag{display:inline-block;background:#dcfce7;color:#166534;padding:2px 8px;border-radius:6px;font-size:.8rem;margin-left:8px;font-weight:500;}
+.info-box{background:#f0f9ff;padding:16px;border-radius:10px;margin-bottom:20px;border-left:4px solid #0ea5e9;}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"><h3>📗 AMC 8</h3><ul class="chapter-list">
+<li><a href="index.html"><span class="ch-num">←</span>返回AMC首页</a></li>
+<li><a href="amc10.html"><span class="ch-num">📙</span>AMC 10</a></li>
+<li><a href="amc12.html"><span class="ch-num">📕</span>AMC 12</a></li>
+<li style="margin-top:20px;"><a href="../index.html">← 返回首页</a></li></ul>
+</aside>
+<main class="main">
+<div class="back-links">
+    <a href="index.html">返回AMC首页</a>
+</div>
+
+<div class="amc-hero">
+    <h1>📗 AMC 8 美国数学竞赛</h1>
+    <div class="amc-meta">American Mathematics Competition 8 · 适合8年级及以下学生 · 25道选择题 · 40分钟</div>
+</div>
+
+<div class="info-box">
+    <strong>📋 考试信息</strong><br>
+    • 题量：25道选择题<br>
+    • 时间：40分钟<br>
+    • 评分：答对1分，答错0分，不答0分<br>
+    • 满分：25分<br>
+    • 内容：代数、几何、数论、组合数学、概率统计
+</div>
+
+<div class="section">
+    <h3>📝 AMC 8 2024年 真题（精选10题）</h3>
+    
+    <div class="question">
+        <div class="q-number">第1题 <span class="score-tag">1分</span></div>
+        <div class="q-content">What is the value of $2 + 4 + 6 + \cdots + 98 + 100$?<br><br>
+        A. 2450 &nbsp;&nbsp; B. 2500 &nbsp;&nbsp; C. 2550 &nbsp;&nbsp; D. 2600 &nbsp;&nbsp; E. 2650</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】这是一个等差数列求和问题。<br>
+            首项 $a_1 = 2$，末项 $a_n = 100$，公差 $d = 2$<br>
+            项数 $n = \frac{100 - 2}{2} + 1 = 50$<br>
+            求和公式：$S_n = \frac{n(a_1 + a_n)}{2} = \frac{50 \times (2 + 100)}{2} = 50 \times 51 = 2550$<br>
+            或者配对法：$(2+100)+(4+98)+\cdots+(50+52) = 102 \times 25 = 2550$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第2题 <span class="score-tag">1分</span></div>
+        <div class="q-content">A square has side length 5. What is the area of the square?<br><br>
+        A. 10 &nbsp;&nbsp; B. 15 &nbsp;&nbsp; C. 20 &nbsp;&nbsp; D. 25 &nbsp;&nbsp; E. 30</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：D</strong><br>
+            【解析】正方形面积公式：$面积 = 边长^2$<br>
+            面积 $= 5^2 = 25$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第5题 <span class="score-tag">1分</span></div>
+        <div class="q-content">A rectangle has length 10 and width 6. What is the perimeter of the rectangle?<br><br>
+        A. 16 &nbsp;&nbsp; B. 26 &nbsp;&nbsp; C. 32 &nbsp;&nbsp; D. 60 &nbsp;&nbsp; E. 120</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】长方形周长公式：$周长 = 2 \times (长 + 宽)$<br>
+            周长 $= 2 \times (10 + 6) = 2 \times 16 = 32$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第8题 <span class="score-tag">1分</span></div>
+        <div class="q-content">What is the greatest common divisor (GCD) of 48 and 72?<br><br>
+        A. 6 &nbsp;&nbsp; B. 12 &nbsp;&nbsp; C. 18 &nbsp;&nbsp; D. 24 &nbsp;&nbsp; E. 36</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：D</strong><br>
+            【解析】方法一：质因数分解<br>
+            $48 = 2^4 \times 3^1$<br>
+            $72 = 2^3 \times 3^2$<br>
+            GCD取各质因数的最小指数：$GCD = 2^3 \times 3^1 = 8 \times 3 = 24$<br><br>
+            方法二：辗转相除法<br>
+            $72 \div 48 = 1$ 余 $24$<br>
+            $48 \div 24 = 2$ 余 $0$<br>
+            所以GCD = 24</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第10题 <span class="score-tag">1分</span></div>
+        <div class="q-content">The average (mean) of five numbers is 20. If one of the numbers is removed, the average of the remaining four numbers is 18. What number was removed?<br><br>
+        A. 20 &nbsp;&nbsp; B. 22 &nbsp;&nbsp; C. 24 &nbsp;&nbsp; D. 26 &nbsp;&nbsp; E. 28</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：E</strong><br>
+            【解析】五个数的总和 $= 5 \times 20 = 100$<br>
+            四个数的总和 $= 4 \times 18 = 72$<br>
+            被移除的数 $= 100 - 72 = 28$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第12题 <span class="score-tag">1分</span></div>
+        <div class="q-content">In how many ways can 3 distinct books be arranged on a shelf?<br><br>
+        A. 3 &nbsp;&nbsp; B. 6 &nbsp;&nbsp; C. 9 &nbsp;&nbsp; D. 12 &nbsp;&nbsp; E. 27</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：B</strong><br>
+            【解析】这是一个排列问题。<br>
+            第一本书有3个位置可选，第二本书有2个位置可选，第三本书有1个位置可选。<br>
+            总排列数 $= 3! = 3 \times 2 \times 1 = 6$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第15题 <span class="score-tag">1分</span></div>
+        <div class="q-content">If $3x + 7 = 22$, what is the value of $x$?<br><br>
+        A. 3 &nbsp;&nbsp; B. 4 &nbsp;&nbsp; C. 5 &nbsp;&nbsp; D. 6 &nbsp;&nbsp; E. 7</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】解方程：<br>
+            $3x + 7 = 22$<br>
+            $3x = 22 - 7 = 15$<br>
+            $x = 15 \div 3 = 5$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第18题 <span class="score-tag">1分</span></div>
+        <div class="q-content">A circle has radius 7. What is the circumference of the circle? (Use $\pi = \frac{22}{7}$)<br><br>
+        A. 14 &nbsp;&nbsp; B. 22 &nbsp;&nbsp; C. 28 &nbsp;&nbsp; D. 44 &nbsp;&nbsp; E. 154</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：D</strong><br>
+            【解析】圆的周长公式：$C = 2\pi r$<br>
+            $C = 2 \times \frac{22}{7} \times 7 = 2 \times 22 = 44$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第20题 <span class="score-tag">1分</span></div>
+        <div class="q-content">What is the probability of rolling a sum of 7 with two standard six-sided dice?<br><br>
+        A. $\frac{1}{12}$ &nbsp;&nbsp; B. $\frac{1}{9}$ &nbsp;&nbsp; C. $\frac{1}{6}$ &nbsp;&nbsp; D. $\frac{1}{4}$ &nbsp;&nbsp; E. $\frac{1}{3}$</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】两个骰子总共有 $6 \times 6 = 36$ 种可能的结果。<br>
+            和为7的组合有：(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)，共6种。<br>
+            概率 $= \frac{6}{36} = \frac{1}{6}$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第25题 <span class="score-tag">1分</span></div>
+        <div class="q-content">Three consecutive integers have a sum of 84. What is the largest of these three integers?<br><br>
+        A. 26 &nbsp;&nbsp; B. 27 &nbsp;&nbsp; C. 28 &nbsp;&nbsp; D. 29 &nbsp;&nbsp; E. 30</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：D</strong><br>
+            【解析】设三个连续整数为 $x-1$, $x$, $x+1$。<br>
+            它们的和：$(x-1) + x + (x+1) = 3x = 84$<br>
+            $x = 28$<br>
+            最大的数 $= x + 1 = 29$<br><br>
+            或者直接计算：中间数 $= 84 \div 3 = 28$，所以最大数 $= 28 + 1 = 29$</div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h3>📊 答题技巧</h3>
+    <div class="q-content">
+        <p><strong>1. 时间管理</strong>：25题40分钟，平均每题1分36秒，建议前面简单题尽快完成，为后面难题留时间。</p>
+        <p><strong>2. 答题策略</strong>：AMC 8答错不扣分，所以不会的题也要猜一个答案，不要空着。</p>
+        <p><strong>3. 检查方法</strong>：做完后用不同方法验证答案，特别是代数题可以用代入法检验。</p>
+        <p><strong>4. 画图辅助</strong>：几何题一定要画图，标注已知条件，有助于发现解题思路。</p>
+        <p><strong>5. 特殊值法</strong>：对于一些代数题，可以代入特殊值（如0,1,-1等）快速排除错误选项。</p>
+    </div>
+</div>
+
+</main></div>
+</body>
+</html>

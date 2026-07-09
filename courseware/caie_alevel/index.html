@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CAIE A-LEVEL 真题与解析</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(14, 165, 233, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.caie-hero {
+    background: linear-gradient(135deg, #1e3a8a, #3730a3);
+    color: #fff;
+    padding: 40px 24px;
+    border-radius: 16px;
+    margin-bottom: 32px;
+}
+.caie-hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+.caie-hero p {
+    opacity: 0.95;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.subject-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+.subject-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    border-top: 4px solid #1e40af;
+}
+.subject-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.subject-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+.subject-card .subject-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+.subject-card .desc {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+.subject-card .meta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.subject-card .meta span {
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+.info-section {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.info-section h3 {
+    color: #1e40af;
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.info-item {
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+.info-item strong {
+    display: block;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+.info-item span {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <h3>📚 CAIE A-LEVEL</h3>
+        <ul class="chapter-list">
+            <li><a href="math/index.html"><span class="ch-num">📐</span>数学</a></li>
+            <li><a href="physics/index.html"><span class="ch-num">⚛️</span>物理</a></li>
+            <li><a href="chemistry/index.html"><span class="ch-num">🧪</span>化学</a></li>
+            <li><a href="biology/index.html"><span class="ch-num">🧬</span>生物</a></li>
+            <li><a href="economics/index.html"><span class="ch-num">📊</span>经济</a></li>
+        </ul>
+        <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+            <a href="../index.html" class="back-home">🏠 返回首页</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <div class="caie-hero">
+            <h1>🎓 CAIE A-LEVEL 真题与解析</h1>
+            <p>Cambridge Assessment International Education · 2022-2026年真题 · 含详细解析与评分标准</p>
+        </div>
+
+        <h2 style="margin-bottom: 20px; color: #1e293b;">📚 学科分类</h2>
+        <div class="subject-cards">
+            <a href="math/index.html" class="subject-card">
+                <div class="subject-icon">📐</div>
+                <h2>数学 (9709)</h2>
+                <div class="desc">纯数学P1-P4、力学M1-M2、统计S1-S2 · Paper 1-4 全套真题与详细解答</div>
+                <div class="meta">
+                    <span>2022-2026 真题</span>
+                    <span>详细解答</span>
+                    <span>评分标准</span>
+                </div>
+            </a>
+
+            <a href="physics/index.html" class="subject-card">
+                <div class="subject-icon">⚛️</div>
+                <h2>物理 (9702)</h2>
+                <div class="desc">力学、热学、电磁学、光学、近代物理 · Paper 1-5 全套真题与实验解析</div>
+                <div class="meta">
+                    <span>2022-2026 真题</span>
+                    <span>详细解答</span>
+                    <span>评分标准</span>
+                </div>
+            </a>
+
+            <a href="chemistry/index.html" class="subject-card">
+                <div class="subject-icon">🧪</div>
+                <h2>化学 (9701)</h2>
+                <div class="desc">物理化学、无机化学、有机化学、分析化学 · Paper 1-5 全套真题与详细解析</div>
+                <div class="meta">
+                    <span>2022-2026 真题</span>
+                    <span>详细解答</span>
+                    <span>评分标准</span>
+                </div>
+            </a>
+
+            <a href="biology/index.html" class="subject-card">
+                <div class="subject-icon">🧬</div>
+                <h2>生物 (9700)</h2>
+                <div class="desc">细胞生物学、分子生物学、生理学、遗传学、生态学 · Paper 1-5 全套真题解析</div>
+                <div class="meta">
+                    <span>2022-2026 真题</span>
+                    <span>详细解答</span>
+                    <span>评分标准</span>
+                </div>
+            </a>
+
+            <a href="economics/index.html" class="subject-card">
+                <div class="subject-icon">📊</div>
+                <h2>经济 (9708)</h2>
+                <div class="desc">微观经济学、宏观经济学、国际经济学、发展经济学 · Paper 1-4 全套真题与范文</div>
+                <div class="meta">
+                    <span>2022-2026 真题</span>
+                    <span>详细解答</span>
+                    <span>评分标准</span>
+                </div>
+            </a>
+        </div>
+
+        <h2 style="margin-bottom: 20px; color: #1e293b;">ℹ️ 考试信息</h2>
+        <div class="info-section">
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>📅 考试时间</strong>
+                    <span>每年 5-6 月（夏季）<br>每年 10-11 月（冬季）</span>
+                </div>
+                <div class="info-item">
+                    <strong>📊 评分标准</strong>
+                    <span>A* (90-100) · A (80-89)<br>B (70-79) · C (60-69) · D (50-59) · E (40-49)</span>
+                </div>
+                <div class="info-item">
+                    <strong>📝 试卷结构</strong>
+                    <span>Paper 1: 选择题<br>Paper 2/3: 结构化问题<br>Paper 4/5: 论述/实验</span>
+                </div>
+                <div class="info-item">
+                    <strong>🌍 认可度</strong>
+                    <span>全球顶尖大学认可<br>英国、美国、加拿大、澳大利亚、新加坡等</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>💡 使用建议</h3>
+            <div style="color: #475569; line-height: 1.8;">
+                <p style="margin-bottom: 12px;"><strong>1. 按年份刷题</strong>：从2022年开始，逐步刷到最新的2026年真题，熟悉考试趋势。</p>
+                <p style="margin-bottom: 12px;"><strong>2. 限时训练</strong>：按照考试规定时间完成试卷，培养时间管理能力。</p>
+                <p style="margin-bottom: 12px;"><strong>3. 对照评分标准</strong>：完成后仔细对照评分标准，了解得分点和扣分点。</p>
+                <p style="margin-bottom: 12px;"><strong>4. 错题整理</strong>：建立错题本，定期复习，避免重复犯错。</p>
+                <p><strong>5. 专项突破</strong>：针对薄弱环节，进行专题训练，集中突破。</p>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

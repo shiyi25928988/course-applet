@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第二章 光 - 初中物理沪教版</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.ray-diagram { width:100%; height:300px; }
+.lens-demo { display:flex; gap:20px; flex-wrap:wrap; }
+.lens-demo .lens-box { flex:1; min-width:280px; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📚 初中物理</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_sound.html"><span class="ch-num">1</span>声</a></li>
+    <li><a href="ch02_light.html" class="active"><span class="ch-num">2</span>光</a>
+      <div class="subsections">
+        <a href="#sec2-1">2.1 光的反射</a>
+        <a href="#sec2-2">2.2 光的折射</a>
+        <a href="#sec2-3">2.3 透镜成像</a>
+        <a href="#sec2-4">2.4 光的色散</a>
+        <a href="#exercises">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch03_motion_force.html"><span class="ch-num">3</span>运动和力</a></li>
+    
+  </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-subject">📂 物理目录</a>
+    </div>="page-title">第二章 光</div>
+<div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
+<ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+<li>理解光的直线传播规律及其应用</li>
+<li>掌握光的反射定律，能画出反射光路图</li>
+<li>理解光的折射规律，了解折射现象</li>
+<li>掌握凸透镜成像规律及其应用</li>
+<li>知道光的色散现象，了解可见光谱</li>
+</ul></div>
+
+<h2 id="sec2-1" style="margin:28px 0 16px;">2.1 光的反射</h2>
+<div class="kp"><h3>光的直线传播</h3>
+<p>光在<strong>同种均匀介质</strong>中沿<strong>直线</strong>传播。光在真空中传播速度最快：<strong>c = 3×10⁸ m/s</strong>。</p>
+<p>实例：小孔成像、日食月食、影子的形成。</p>
+<span class="formula">光速 c = 3×10⁸ m/s（真空中）</span></div>
+
+<div class="kp"><h3>光的反射定律</h3>
+<p>光射到物体表面时，一部分光被物体表面反射回去的现象叫做<strong>光的反射</strong>。</p>
+<p><strong>反射定律：</strong></p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li>反射光线、入射光线和法线在<strong>同一平面内</strong>（三线共面）</li>
+<li>反射光线和入射光线分居<strong>法线两侧</strong>（两线分居）</li>
+<li>反射角<strong>等于</strong>入射角：<strong>∠r = ∠i</strong>（两角相等）</li>
+</ul>
+<p><strong>镜面反射</strong>与<strong>漫反射</strong>：都遵循反射定律。漫反射使我们能从不同方向看到物体。</p></div>
+
+<div class="anim-container"><h3 style="margin-bottom:16px;">🔦 光的反射演示</h3>
+<svg id="reflectSvg" viewBox="0 0 680 280" style="width:100%;max-width:680px;">
+  <defs><marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#2563eb"/></marker></defs>
+  <line x1="40" y1="240" x2="680" y2="240" stroke="#475569" stroke-width="3"/><text x="660" y="270" fill="#64748b" font-size="12">镜面</text>
+  <line x1="340" y1="40" x2="340" y2="240" stroke="#94a3b8" stroke-width="1" stroke-dasharray="6,4"/><text x="345" y="55" fill="#94a3b8" font-size="12">法线</text>
+  <line x1="100" y1="80" x2="340" y2="240" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrowBlue)"/><text x="50" y="75" fill="#f59e0b" font-size="13">入射光线</text>
+  <line x1="340" y1="240" x2="580" y2="80" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowBlue)"/><text x="520" y="75" fill="#2563eb" font-size="13">反射光线</text>
+  <path d="M310,220 A30,30 0 0,1 370,220" fill="none" stroke="#f59e0b" stroke-width="1.5"/><text x="305" y="210" fill="#f59e0b" font-size="11">i</text>
+  <path d="M310,220 A30,30 0 0,0 370,220" fill="none" stroke="#2563eb" stroke-width="1.5"/><text x="370" y="210" fill="#2563eb" font-size="11">r</text>
+  <text x="310" y="265" fill="#475569" font-size="13">∠r = ∠i</text>
+</svg></div>
+
+<h2 id="sec2-2" style="margin:28px 0 16px;">2.2 光的折射</h2>
+<div class="kp"><h3>光的折射规律</h3>
+<p>光从一种介质<strong>斜射</strong>入另一种介质时，传播方向发生改变的现象叫做<strong>光的折射</strong>。</p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li>折射光线、入射光线和法线在同一平面内</li>
+<li>光从空气斜射入水（或玻璃）中时：折射角 <strong>&lt;</strong> 入射角（向法线偏折）</li>
+<li>光从水（或玻璃）斜射入空气中时：折射角 <strong>&gt;</strong> 入射角（远离法线偏折）</li>
+<li>垂直入射时：传播方向<strong>不变</strong></li>
+</ul>
+<p>实例：筷子在水中"弯折"、池水看起来变浅、海市蜃楼。</p></div>
+
+<h2 id="sec2-3" style="margin:28px 0 16px;">2.3 透镜成像</h2>
+<div class="keypoints-grid">
+<div class="kp"><h3>凸透镜</h3>
+<p>中间厚、边缘薄的透镜。对光线有<strong>会聚</strong>作用（会聚透镜）。</p>
+<p><strong>三条特殊光线：</strong></p>
+<ul style="padding-left:16px;font-size:.9rem;color:var(--text-secondary);line-height:1.8;">
+<li>平行于主光轴 → 过焦点</li>
+<li>过光心 → 方向不变</li>
+<li>过焦点 → 平行射出</li>
+</ul>
+<span class="formula">1/f = 1/u + 1/v</span>
+<p style="font-size:.85rem;margin-top:4px;">f=焦距 u=物距 v=像距</p></div>
+<div class="kp"><h3>凸透镜成像规律</h3>
+<table style="width:100%;font-size:.82rem;border-collapse:collapse;">
+<tr style="background:var(--bg);"><th style="padding:6px 8px;text-align:left;">物距 u</th><th style="padding:6px 8px;text-align:left;">像的性质</th><th style="padding:6px 8px;text-align:left;">应用</th></tr>
+<tr><td style="padding:6px 8px;">u &gt; 2f</td><td style="padding:6px 8px;">倒立、缩小、实像</td><td style="padding:6px 8px;">照相机</td></tr>
+<tr><td style="padding:6px 8px;">u = 2f</td><td style="padding:6px 8px;">倒立、等大、实像</td><td style="padding:6px 8px;">—</td></tr>
+<tr><td style="padding:6px 8px;">f &lt; u &lt; 2f</td><td style="padding:6px 8px;">倒立、放大、实像</td><td style="padding:6px 8px;">投影仪</td></tr>
+<tr><td style="padding:6px 8px;">u = f</td><td style="padding:6px 8px;">不成像</td><td style="padding:6px 8px;">平行光源</td></tr>
+<tr><td style="padding:6px 8px;">u &lt; f</td><td style="padding:6px 8px;">正立、放大、虚像</td><td style="padding:6px 8px;">放大镜</td></tr>
+</table></div>
+<div class="kp"><h3>凹透镜</h3>
+<p>中间薄、边缘厚的透镜。对光线有<strong>发散</strong>作用（发散透镜）。</p>
+<p>应用：近视眼镜片。</p></div>
+</div>
+
+<div class="anim-container"><h3 style="margin-bottom:16px;">🔍 凸透镜成像模拟</h3>
+<canvas id="lensCanvas" style="width:100%;max-width:680px;height:300px;"></canvas>
+<div class="anim-controls">
+  <button onclick="setObjectPos(0.4)" style="background:#f59e0b;">u&lt;f（放大镜）</button>
+  <button onclick="setObjectPos(1.3)">f&lt;u&lt;2f（投影仪）</button>
+  <button onclick="setObjectPos(2.0)">u=2f（等大）</button>
+  <button onclick="setObjectPos(2.8)">u&gt;2f（照相机）</button>
+</div></div>
+
+<h2 id="sec2-4" style="margin:28px 0 16px;">2.4 光的色散</h2>
+<div class="kp">
+<p>白光（太阳光）通过三棱镜后分解为<strong>红、橙、黄、绿、蓝、靛、紫</strong>七种色光的现象叫做<strong>光的色散</strong>。</p>
+<p>这说明白光是由<strong>各种色光混合</strong>而成的复色光。</p>
+<p><strong>光的三原色</strong>：红、绿、蓝（RGB）。三种颜色的光按不同比例混合可以得到各种颜色的光。</p>
+<p>应用：彩色电视机屏幕、电脑显示器。</p>
+</div>
+
+<div class="anim-container"><h3 style="margin-bottom:16px;">🌈 光的色散示意</h3>
+<svg viewBox="0 0 680 200" style="width:100%;max-width:680px;">
+  <polygon points="300,30 340,170 260,170" fill="none" stroke="#64748b" stroke-width="2"/><text x="310" y="195" fill="#64748b" font-size="12">三棱镜</text>
+  <line x1="40" y1="100" x2="280" y2="100" stroke="#fff" stroke-width="6"/>
+  <line x1="280" y1="100" x2="500" y2="30" stroke="#ef4444" stroke-width="4" opacity=".7"/>
+  <line x1="280" y1="100" x2="520" y2="45" stroke="#f97316" stroke-width="4" opacity=".7"/>
+  <line x1="280" y1="100" x2="540" y2="60" stroke="#eab308" stroke-width="4" opacity=".7"/>
+  <line x1="280" y1="100" x2="560" y2="75" stroke="#22c55e" stroke-width="4" opacity=".7"/>
+  <line x1="280" y1="100" x2="580" y2="90" stroke="#3b82f6" stroke-width="4" opacity=".7"/>
+  <line x1="280" y1="100" x2="600" y2="105" stroke="#4f46e5" stroke-width="4" opacity=".7"/>
+  <line x1="280" y1="100" x2="620" y2="120" stroke="#8b5cf6" stroke-width="4" opacity=".7"/>
+  <text x="40" y="120" fill="#fff" font-size="12">白光</text>
+  <text x="630" y="20" fill="#ef4444" font-size="10">红</text>
+  <text x="640" y="45" fill="#f97316" font-size="10">橙</text>
+  <text x="640" y="62" fill="#eab308" font-size="10">黄</text>
+  <text x="640" y="78" fill="#22c55e" font-size="10">绿</text>
+  <text x="640" y="92" fill="#3b82f6" font-size="10">蓝</text>
+  <text x="640" y="108" fill="#4f46e5" font-size="10">靛</text>
+  <text x="640" y="124" fill="#8b5cf6" font-size="10">紫</text>
+</svg></div>
+
+<h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+<div class="exercise"><div class="question"><span class="q-num">1</span>光在真空中的传播速度是____。</div>
+<div class="options">
+<label><input type="radio" name="q1" value="A">A. 340 m/s</label>
+<label><input type="radio" name="q1" value="B">B. 3×10⁶ m/s</label>
+<label><input type="radio" name="q1" value="C">C. 3×10⁸ m/s</label>
+<label><input type="radio" name="q1" value="D">D. 无限大</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="C">✅ C。光在真空中的速度为3×10⁸ m/s。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>光的反射定律中，反射角____入射角。</div>
+<div class="options">
+<label><input type="radio" name="q2" value="A">A. 大于</label>
+<label><input type="radio" name="q2" value="B">B. 小于</label>
+<label><input type="radio" name="q2" value="C">C. 等于</label>
+<label><input type="radio" name="q2" value="D">D. 可能大于也可能小于</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="C">✅ C。反射角等于入射角，这是反射定律的核心内容。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>当物体放在凸透镜的焦点以内（u&lt;f）时，所成的像是____。</div>
+<div class="options">
+<label><input type="radio" name="q3" value="A">A. 倒立缩小的实像</label>
+<label><input type="radio" name="q3" value="B">B. 倒立放大的实像</label>
+<label><input type="radio" name="q3" value="C">C. 正立放大的虚像</label>
+<label><input type="radio" name="q3" value="D">D. 正立缩小的虚像</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="C">✅ C。u&lt;f时成正立、放大、虚像，应用为放大镜。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>下列现象中，属于光的折射的是____。</div>
+<div class="options">
+<label><input type="radio" name="q4" value="A">A. 水中倒影</label>
+<label><input type="radio" name="q4" value="B">B. 筷子在水中"弯折"</label>
+<label><input type="radio" name="q4" value="C">C. 小孔成像</label>
+<label><input type="radio" name="q4" value="D">D. 平面镜成像</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="B">✅ B。筷子在水中"弯折"是光的折射现象。水中倒影和平面镜成像是反射，小孔成像是直线传播。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>光的三原色是____。</div>
+<div class="options">
+<label><input type="radio" name="q5" value="A">A. 红、黄、蓝</label>
+<label><input type="radio" name="q5" value="B">B. 红、绿、蓝</label>
+<label><input type="radio" name="q5" value="C">C. 红、橙、黄</label>
+<label><input type="radio" name="q5" value="D">D. 青、品红、黄</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="B">✅ B。光的三原色是红(R)、绿(G)、蓝(B)。注意颜料三原色是青、品红、黄，两者不同。</div></div>
+</main></div>
+<script src="../assets/js/common.js"></script>
+<script>
+// 凸透镜成像模拟
+(function(){
+  const canvas=document.getElementById('lensCanvas');
+  if(!canvas) return;
+  const ctx=canvas.getContext('2d');
+  const W=680,H=300,f=80,center=W/2;
+  let objPos=1.3*f; // default: between f and 2f
+
+  function draw(){
+    canvas.width=W; canvas.height=H;
+    ctx.fillStyle='#1e293b'; ctx.fillRect(0,0,W,H);
+
+    // Optical axis
+    ctx.strokeStyle='#475569'; ctx.lineWidth=1; ctx.setLineDash([8,4]);
+    ctx.beginPath(); ctx.moveTo(0,H/2); ctx.lineTo(W,H/2); ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Lens
+    ctx.strokeStyle='#60a5fa'; ctx.lineWidth=4;
+    ctx.beginPath(); ctx.moveTo(center,H*0.15); ctx.quadraticCurveTo(center+20,H/2,center,H*0.85); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(center,H*0.15); ctx.quadraticCurveTo(center-20,H/2,center,H*0.85); ctx.stroke();
+
+    // Focal points
+    ctx.fillStyle='#fbbf24';
+    [center-f,center+f].forEach(x=>{ctx.beginPath();ctx.arc(x,H/2,4,0,Math.PI*2);ctx.fill();});
+    ctx.fillStyle='#fbbf24'; ctx.font='12px sans-serif';
+    ctx.fillText('F',center-f-10,H/2-8); ctx.fillText("F'",center+f-10,H/2-8);
+    ctx.fillText('2F',center-2*f-14,H/2-8); ctx.fillText("2F'",center+2*f-14,H/2-8);
+    [center-2*f,center+2*f].forEach(x=>{ctx.beginPath();ctx.arc(x,H/2,3,0,Math.PI*2);ctx.fill();});
+
+    // Object
+    const ox=center-objPos,oh=50;
+    ctx.strokeStyle='#ef4444'; ctx.lineWidth=3;
+    ctx.beginPath(); ctx.moveTo(ox,H/2-oh); ctx.lineTo(ox,H/2); ctx.stroke();
+    ctx.fillStyle='#ef4444';
+    ctx.beginPath(); ctx.arc(ox,H/2-oh,3,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle='#fff'; ctx.font='13px sans-serif';
+    ctx.fillText('物体',ox-18,H/2-oh-8);
+
+    // Image calculation: 1/f = 1/u + 1/v => v = uf/(u-f)
+    const u=objPos;
+    if(Math.abs(u-f)<2){ctx.fillStyle='#94a3b8';ctx.font='14px sans-serif';ctx.fillText('不成像（u≈f）',center+30,H*0.6);}
+    else {
+      const v=(u*f)/(u-f);
+      const ix=center+v, m=-v/u;
+      const ih=Math.abs(oh*m);
+      if(v>0){ // real image
+        const iy=v>0?(ih>120?H/2-120:H/2-ih):H/2;
+        ctx.strokeStyle='#22c55e'; ctx.lineWidth=3;
+        ctx.beginPath();
+        if(m<0){ctx.moveTo(ix,iy+ih);ctx.lineTo(ix,iy);}
+        else{ctx.moveTo(ix,iy);ctx.lineTo(ix,iy+ih);}
+        ctx.stroke();
+        const arrowY=m<0?iy:iy+ih;
+        ctx.fillStyle='#22c55e';
+        ctx.beginPath(); ctx.arc(ix,arrowY,3,0,Math.PI*2); ctx.fill();
+        ctx.fillStyle='#fff'; ctx.fillText('实像',ix-18,arrowY-8);
+      } else { // virtual image
+        const iy=H/2-ih;
+        ctx.strokeStyle='#22c55e'; ctx.lineWidth=3; ctx.setLineDash([5,3]);
+        ctx.beginPath(); ctx.moveTo(ix,H/2-ih); ctx.lineTo(ix,H/2); ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle='#22c55e';
+        ctx.beginPath();ctx.arc(ix,H/2-ih,3,0,Math.PI*2);ctx.fill();
+        ctx.fillStyle='#fff'; ctx.fillText('虚像',ix-18,H/2-ih-8);
+      }
+    }
+    ctx.fillStyle='#94a3b8'; ctx.font='13px sans-serif';
+    ctx.fillText('u='+u.toFixed(0)+' px  f='+f+' px',20,H-20);
+  }
+
+  window.setObjectPos=function(uTimesF){
+    objPos=uTimesF*f;
+    draw();
+  };
+  draw();
+})();
+</script>
+</body>
+</html>

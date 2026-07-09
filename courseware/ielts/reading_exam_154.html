@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Your Neighbor - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题154/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Copy Your Neighbor</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>Reading Practice
+ Bramley College International Scholarships
+There are seven types of scholarship offered by Bramley College to enrolled international
+students to assist with the costs of their courses. With the exception of applications for
+scholarship category E, all newly-enrolled international students are automatically
+considered for these scholarships. The scholarship is awarded in the student's first year as
+a credit to second semester course fees. In all subsequent years, the scholarship is
+awarded as a credit to first semester course fees. The scholarships are awarded once per
+year unless otherwise stated.
+The scholarship categories are:</p>
+<p>One scholarship of A$2000 for the most outstanding students entering the Foundation Studies Program from
+each of the following countries: Singapore, Malaysia and Thailand. An additional six scholarships are
+available for students from other countries. These scholarships are offered on two dates, to students in the
+March and June intakes of the program. Scholarships are awarded on the basis of first semester results.</p>
+<p>Three scholarships providing 25% of course fees for the duration of the course to the three most outstanding
+State Certificate of Education (SCE) students entering a Diploma or Certificate program. Scholarships are
+awarded on the basis of the previous year's SCE results.</p>
+<p>Seventeen scholarships providing 25% of course fees for the duration of the course to outstanding Diploma
+or Certificate students entering each Bramley College School: three each in the Schools of Business and
+Engineering; two in the School of Applied Science; two in the School of Environmental Design and
+Construction; two in the School of Art and Design; two in the School of Social Sciences and
+Communications; one in the School of Biomedical and Health Science; one in the School of Education and
+one in the School of Nursing. Scholarships are awarded on the basis of first semester results.</p>
+<p>One scholarship of A$4000 per annum for the duration of the course to the most outstanding student
+entering the Diploma in Communication. Scholarships are awarded on the basis of first semester results.</p>
+<p>Nine scholarships of A$3000 per annum for the duration of the course to the most outstanding students
+commencing any Advanced Certificate course. Scholarships are awarded on the basis of Basic Certificate
+results (not SCE results). Note that applicants need to apply for this scholarship on the Bramley College
+International Scholarship Application Form.</p>
+<p>One full-fee scholarship to the most outstanding student commencing a Diploma in Art and Design
+(Photography) course. This scholarship is offered every second year, and is awarded on the basis of results
+obtained in the Certificate in Design course.
+G Four half-fee scholarships to outstanding students of Bramley College's Singapore campus for the final year
+of the two-year Certificate in Business Studies to be completed in Melbourne, Australia. Scholarships are
+awarded on the basis of first year results.
+ 1</p>
+<p>Questions 1-7
+Reading Passage has six sections, A-G.
+Which paragraph contains the following information?
+Write the correct letter A-G in boxes 1-7 on your answer sheet.
+NB You may use any letter more than once
+1..................... It is awarded on results obtained in the SCE exam.
+2..................... It is only available to students from the College's overseas branch.
+3..................... It is not offered every year.
+4..................... Students need to apply for it.
+5..................... It is offered twice each year.
+6..................... It pays 100% of the student's tuition fees.
+7..................... It provides 50% of one year's fees.
+ 2</p>
+<p>Solution:
+ 
+1. B
+2. G
+3. F
+4.
+5. A
+6. F
+7. G</p>
+<p>Reading Practice
+ Bring back the big cats
+It's time to start returning vanished native animals to Britain, says John Vesty There is a
+poem, written around 598 AD, which describes hunting a mystery animal called a llewyn.
+But what was it? Nothing seemed to fit, until 2006, when an animal bone, dating from
+around the same period, was found in the Kinsey Cave in northern England. Until this
+discovery, the lynx - a large spotted cat with tassel led ears - was presumed to have died
+out in Britain at least 6,000 years ago, before the inhabitants of these islands took up
+farming. But the 2006 find, together with three others in Yorkshire and Scotland, is
+compelling evidence that the lynx and the mysterious llewyn were in fact one and the same
+animal. If this is so, it would bring forward the tassel-eared cat's estimated extinction date
+by roughly 5,000 years.
+However, this is not quite the last glimpse of the animal in British culture. A 9th- century
+stone cross from the Isle of Eigg shows, alongside the deer, boar and aurochs pursued by
+a mounted hunter, a speckled cat with tasselled ears. Were it not for the animal's backside
+having worn away with time, we could have been certain, as the lynx's stubby tail is
+unmistakable. But even without this key feature, it's hard to see what else the creature
+could have been. The lynx is now becoming the totemic animal of a movement that is
+transforming British environmentalism: rewilding.
+Rewilding means the mass restoration of damaged ecosystems. It involves letting trees
+return to places that have been denuded, allowing parts of the seabed to recover from
+trawling and dredging, permitting rivers to flow freely again. Above all, it means bringing
+back missing species. One of the most striking findings of modern ecology is that
+ecosystems without large predators behave in completely different ways from those that
+retain them Some of them drive dynamic processes that resonate through the whole food
+chain, creating niches for hundreds of species that might otherwise struggle to survive. The
+killers turn out to be bringers of life.
+Such findings present a big challenge to British conservation, which has often selected
+arbitrary assemblages of plants and animals and sought, at great effort and expense, to
+prevent them from changing. It has tried to preserve the living world as if it were a jar of
+pickles, letting nothing in and nothing out, keeping nature in a state of arrested
+development. But ecosystems are not merely collections of species; they are also the
+dynamic and ever-shifting relationships between them. And this dynamism often depends
+on large predators.
+At sea the potential is even greater: by protecting large areas from commercial fishing, we
+could once more see what 18th-century literature describes: vast shoals of fish being
+chased by fin and sperm whales, within sight of the English shore. This policy would also
+greatly boost catches in the surrounding seas; the fishing industry's insistence on scouring
+every inch of seabed, leaving no breeding reserves, could not be more damaging to its own
+interests.
+Rewilding is a rare example of an environmental movement in which campaigners
+articulate what they are for rather than only what they are against. One of the reasons why
+the enthusiasm for rewilding is spreading so quickly in Britain is that it helps to create a
+more inspiring vision than the green movement's usual promise of 'Follow us and the world
+will be slightly less awful than it would otherwise have been.
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

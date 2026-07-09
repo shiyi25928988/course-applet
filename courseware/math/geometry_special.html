@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>初中数学几何综合专项</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.hero {background:linear-gradient(135deg,#8b5cf6,#7c3aed);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px}
+.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.q-num {display:inline-block;background:#7c3aed;color:#fff;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;font-weight:700;margin-right:10px}
+.q-title {display:inline-block;font-weight:600;color:#1e293b;font-size:1.05rem}
+.q-content {margin-top:16px;line-height:1.8;color:#374151}
+.answer-btn {margin-top:16px;padding:10px 20px;background:#7c3aed;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.95rem}
+.answer {display:none;margin-top:16px;padding:16px;background:#ede9fe;border-radius:8px;border-left:3px solid #7c3aed}
+.answer.show {display:block}
+.answer-value {font-weight:600;color:#6d28d9;margin-bottom:8px}
+.answer-solution {color:#4c1d95;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 初中数学</a>&nbsp;|&nbsp;<a href="../exam_bank.html">← 题库中心</a></div>
+<div class="hero"><h1>📐 初中数学几何综合专项</h1><p>三角形全等 · 相似 · 圆 · 四边形证明 · 几何辅助线技巧 · 共 40 道精选题目</p></div>
+<div class="question"><span class="q-num">1</span><span class="q-title">三角形全等证明</span><div class="q-content">
+<p>已知：在△ABC 中，AB = AC，AD 是 BC 边上的中线。求证：(1) △ABD ≌ △ACD；(2) AD ⊥ BC。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案与解析</button>
+<div class="answer" id="answer-1"><div class="answer-value">答案：见解析</div>
+<div class="answer-solution"><strong>证明：</strong><br>(1) 在△ABD 和 △ACD 中：<br>AB = AC（已知）<br>AD = AD（公共边）<br>BD = CD（AD 是中线）<br>∴ △ABD ≌ △ACD（SSS）<br><br>(2) 由△ABD ≌ △ACD 得 ∠ADB = ∠ADC<br>又 ∵ ∠ADB + ∠ADC = 180°<br>∴ ∠ADB = ∠ADC = 90°<br>∴ AD ⊥ BC</div></div></div>
+<div class="question"><span class="q-num">2</span><span class="q-title">圆的切线证明</span><div class="q-content">
+<p>已知 AB 是⊙O 的直径，点 C 在⊙O 上，过点 C 作 CD ⊥ AB 于 D，且 BC 平分∠ACD。求证：CD 是⊙O 的切线。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案与解析</button>
+<div class="answer" id="answer-2"><div class="answer-value">答案：见解析</div>
+<div class="answer-solution"><strong>证明：</strong><br>连接 OC<br>∵ OB = OC，∴ ∠OCB = ∠OBC<br>∵ BC 平分∠ACD，∴ ∠ACB = ∠BCD<br>∵ AB 是直径，∴ ∠ACB = 90°<br>∴ ∠OCD = ∠OCB + ∠BCD = ∠OBC + ∠ACB = 90°<br>∴ OC ⊥ CD<br>又 ∵ OC 是半径，∴ CD 是⊙O 的切线</div></div></div>
+<div style="text-align:center;padding:20px;color:#64748b;background:#fff;border-radius:10px">
+<strong>更多题目整理中...</strong><br>完整 40 道几何综合题正在陆续添加
+</div>
+</div></body></html>

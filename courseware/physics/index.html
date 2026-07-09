@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>初中物理 · 沪教版课件</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.phy-hero {
+  background:linear-gradient(135deg,#2563eb,#7c3aed);
+  color:#fff; border-radius:20px; padding:40px 24px; margin-bottom:28px;
+}
+.phy-hero h1 { font-size:1.8rem; margin-bottom:8px; }
+.phy-hero p { opacity:.9; }
+.ch-grid {
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:16px; margin-bottom:32px;
+}
+.ch-card {
+  background:#fff; border-radius:14px; padding:20px; text-decoration:none;
+  box-shadow:0 2px 8px rgba(0,0,0,.06); border-left:4px solid var(--physics);
+  transition:transform .2s,box-shadow .2s; display:block; color:var(--text);
+}
+.ch-card:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,.1); }
+.ch-card .grade { font-size:.75rem; color:var(--physics); font-weight:600; margin-bottom:4px; }
+.ch-card h3 { font-size:1.05rem; margin-bottom:6px; }
+.ch-card .sections { font-size:.8rem; color:var(--text-secondary); line-height:1.5; }
+.ch-card .sub-count {
+  display:inline-block; margin-top:8px; font-size:.75rem;
+  padding:3px 8px; background:var(--physics-light); color:var(--physics); border-radius:10px;
+}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h3>📚 初中物理</h3>
+    <ul class="chapter-list">
+      <li><a href="ch01_sound.html" class="active"><span class="ch-num">1</span>声</a></li>
+      <li><a href="ch02_light.html"><span class="ch-num">2</span>光</a></li>
+      <li><a href="ch03_motion_force.html"><span class="ch-num">3</span>运动和力</a></li>
+      <li><a href="ch04_work_machines.html"><span class="ch-num">4</span>机械和功</a></li>
+      <li><a href="ch05_heat_energy.html"><span class="ch-num">5</span>热与能</a></li>
+      <li><a href="ch06_pressure.html"><span class="ch-num">6</span>压力与压强</a></li>
+      <li><a href="ch07_circuits.html"><span class="ch-num">7</span>电路</a></li>
+      <li><a href="ch08_electricity_magnetism.html"><span class="ch-num">8</span>电能与磁</a></li>
+      <li><a href="ch09_atom_universe.html"><span class="ch-num">9</span>从原子到星系</a></li>
+    </ul>
+    <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="phy-hero">
+      <h1>⚛️ 沪教版初中物理</h1>
+      <p>上海教育出版社 · 八年级~九年级 · 4册9章 · 含知识讲解、动画演示、交互练习</p>
+    </div>
+    <div style="margin-bottom:20px;">
+      <a href="exam_collection.html" style="display:inline-block;padding:10px 24px;background:var(--warning);color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">📝 上海中考物理真题汇编 →</a>
+    </div>
+
+    <h2 style="margin-bottom:16px;">八年级第一学期</h2>
+    <div class="ch-grid">
+      <a href="ch01_sound.html" class="ch-card">
+        <div class="grade">八年级上</div>
+        <h3>第一章 声</h3>
+        <div class="sections">1.1 声波的产生和传播 · 1.2 声音的特征</div>
+        <div class="sub-count">2节 · 含声波动画</div>
+      </a>
+      <a href="ch02_light.html" class="ch-card">
+        <div class="grade">八年级上</div>
+        <h3>第二章 光</h3>
+        <div class="sections">光的反射 · 折射 · 透镜成像 · 色散</div>
+        <div class="sub-count">4节 · 含光路动画</div>
+      </a>
+      <a href="ch03_motion_force.html" class="ch-card">
+        <div class="grade">八年级上</div>
+        <h3>第三章 运动和力</h3>
+        <div class="sections">机械运动 · 匀速/变速直线运动 · 力 · 二力平衡 · 牛顿第一定律</div>
+        <div class="sub-count">6节 · 含运动动画</div>
+      </a>
+    </div>
+
+    <h2 style="margin:24px 0 16px;">八年级第二学期</h2>
+    <div class="ch-grid">
+      <a href="ch04_work_machines.html" class="ch-card">
+        <div class="grade">八年级下</div>
+        <h3>第四章 机械和功</h3>
+        <div class="sections">机械能 · 机械功 · 简单机械 · 功的原理</div>
+        <div class="sub-count">4节 · 含杠杆动画</div>
+      </a>
+      <a href="ch05_heat_energy.html" class="ch-card">
+        <div class="grade">八年级下</div>
+        <h3>第五章 热与能</h3>
+        <div class="sections">温度与温标 · 热量 · 内能 · 热机</div>
+        <div class="sub-count">4节 · 含热机动画</div>
+      </a>
+    </div>
+
+    <h2 style="margin:24px 0 16px;">九年级第一学期</h2>
+    <div class="ch-grid">
+      <a href="ch06_pressure.html" class="ch-card">
+        <div class="grade">九年级上</div>
+        <h3>第六章 压力与压强</h3>
+        <div class="sections">密度 · 阿基米德原理 · 压强 · 液体压强 · 大气压强</div>
+        <div class="sub-count">6节 · 含浮力动画</div>
+      </a>
+      <a href="ch07_circuits.html" class="ch-card">
+        <div class="grade">九年级上</div>
+        <h3>第七章 电路</h3>
+        <div class="sections">电流电压 · 欧姆定律 · 串联电路 · 并联电路</div>
+        <div class="sub-count">4节 · 含电路模拟</div>
+      </a>
+    </div>
+
+    <h2 style="margin:24px 0 16px;">九年级第二学期</h2>
+    <div class="ch-grid">
+      <a href="ch08_electricity_magnetism.html" class="ch-card">
+        <div class="grade">九年级下</div>
+        <h3>第八章 电能与磁</h3>
+        <div class="sections">电功率 · 电流的磁场 · 电能输送 · 无线电波</div>
+        <div class="sub-count">4节 · 含电磁动画</div>
+      </a>
+      <a href="ch09_atom_universe.html" class="ch-card">
+        <div class="grade">九年级下</div>
+        <h3>第九章 从原子到星系</h3>
+        <div class="sections">原子 · 太阳系 · 宇宙 · 能量守恒</div>
+        <div class="sub-count">4节 · 含太阳系动画</div>
+      </a>
+    </div>
+
+    <h2 style="margin:32px 0 16px;">📝 中考真题（按年份）</h2>
+    <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin-bottom:24px;">
+      <a href="exam_2017.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2017年</a>
+      <a href="exam_2018.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2018年</a>
+      <a href="exam_2019.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2019年</a>
+      <a href="exam_2020.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2020年</a>
+      <a href="exam_2021.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2021年</a>
+      <a href="exam_2022.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2022年</a>
+      <a href="exam_2023.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2023年</a>
+      <a href="exam_2024.html" style="text-align:center; padding:12px; background:#f0f9ff; border:2px solid #0ea5e9; border-radius:8px; text-decoration:none; color:var(--text); font-weight:600;">⭐ 2024年</a>
+      <a href="exam_2025.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2025年</a>
+      <a href="exam_2026.html" style="text-align:center; padding:12px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; text-decoration:none; color:var(--text);">2026年</a>
+    </div>
+
+  </main>
+</div>
+</body>
+</html>

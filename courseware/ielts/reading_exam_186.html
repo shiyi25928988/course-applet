@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects Of Noise - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题186/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Effects Of Noise</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>5..................... The study of children’s literature at higher education institutions is restricted
+to one subject area.
+ 
+6..................... Exploring children’s perceptions of reading will assist parents to choose
+suitable books for children.
+ 
+7..................... Adults may appreciate the appeal of illustrated stories better, if they have
+more information on how children read.
+ 
+8..................... Children should be asked what features they would like digital games to
+include.
+QUESTIONS 9-13
+Complete each sentence with the correct ending, A-H, below. easily
+Write the correct letter, A-H, in boxes 9-13 on your answer sheet.</p>
+<p>List of endings
+ 
+A       accepting that literature exists in a variety of forms today
+B       verbalising the words in their heads
+C       discovering the reading techniques used by others
+D       the style of written stories changing over time
+E       the lack of some specific abilities
+F       a deeper knowledge of the intricacies of reading
+G       children teaching adults to play computer games
+H       creating a variety of images in their minds.
+9..................... Young people’s accounts of how they read lead to
+ 
+10..................... The risk of solipsism is reduced by
+ 
+11..................... Strong visualisers judge books on the basis that they are
+ 4</p>
+<p>12..................... Children’s insights are important in
+13..................... When adults read a book more easily than they play a digital game it
+simply suggests
+QUESTION 14
+Choose the correct letter A, B, C or D.
+Write the correct letter in box 14 on your answer sheet.
+What was the writer’s main purpose in writing this article?
+A to evaluate how the process of reading fits into children’s literature studies
+B to discuss the impact of the increasing commercial influence on children’s literature
+studies
+C to review the challenges in the field of children’s literature studies and suggest how to
+proceed
+D to provide arguments in favor of including computerized forms of me children’s literature
+studies
+ 5</p>
+<p>Solution:
+ 
+1. A
+2. C
+3. B
+4. NOT GIVEN
+5. NO
+6. NOT GIVEN
+7. YES
+8. NOT GIVEN
+9. F
+10. C
+11. H
+12. A
+13. E
+14. C
+ 6</p>
+<p>Reading Practice
+ Children's thinking
+One of the most eminent of psychologists, Clark Hull, claimed that the essence of
+reasoning lies in the putting together of two 'behaviour segments' in some novel way, never
+actually performed before, so as to reach a goal.
+Two followers of Clark Hull, Howard and Tracey Kendler, devised a test for children that
+was explicitly based on Clark Hull's principles. The children were given the task of learning
+to operate a machine so as to get a toy. In order to succeed they had to go through a twostage sequence. The children were trained on each stage separately. The stages consisted
+merely of pressing the correct one of two buttons to get a marble; and of inserting the
+marble into a small hole to release the toy.
+The Kendlers found that the children could learn the separate bits readily enough. Given
+the task of getting a marble by pressing the button they could get the marble; given the task
+of getting a toy when a marble was handed to them, they could use the marble. (All they
+had to do was put it in a hole.) But they did not for the most part 'integrate', to use the
+Kendlers' terminology. They did not press the button to get the marble and then proceed
+without further help to use the marble to get the toy. So the Kendlers concluded that they
+were incapable of deductive reasoning.
+The mystery at first appears to deepen when we learn, from another psychologist, Michael
+Cole, and his colleagues, that adults in an African culture apparently cannot do the
+Kendlers' task either. But it lessens, on the other hand, when we learn that a task was
+devised which was strictly analogous to the Kendlers' one but much easier for the African
+males to handle.
+Instead of the button-pressing machine, Cole used a locked box and two differently
+coloured match-boxes, one of which contained a key that would open the box. Notice that
+there are still two behaviour segments — 'open the right match-box to get the key' and 'use
+the key to open the box' - so the task seems formally to be the same. But psychologically it
+is quite different. Now the subject is dealing not with a strange machine but with familiar
+meaningful objects; and it is clear to him what he is meant to do. It then turns out that the
+difficulty of 'integration' is greatly reduced.
+Recent work by Simon Hewson is of great interest here for it shows that, for young
+children, too, the difficulty lies not in the inferential processes which the task demands, but
+in certain perplexing features of the apparatus and the procedure. When these are
+changed in ways which do not at all affect the inferential nature of the problem, then fiveyear-old children solve the problem as well as college students did in the Kendlers' own
+experiments.
+Hewson made two crucial changes. First, he replaced the button-pressing mechanism in
+the side panels by drawers in these panels which the child could open and shut. This took
+away the mystery from the first stage of training. Then he helped the child to understand
+that there was no 'magic' about the specific marble which, during the second stage of
+training, the experimenter handed to him so that he could pop it in the hole and get the
+reward.
+A child understands nothing, after all, about how a marble put into a hole can open a little
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

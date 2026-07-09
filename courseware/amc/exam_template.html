@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMC数学竞赛真题模板</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.amc-header {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+.section-title {
+    background: #eff6ff;
+    padding: 12px 20px;
+    border-left: 4px solid #3b82f6;
+    margin: 24px 0 16px;
+    font-weight: 600;
+    color: #1e40af;
+    font-size: 1.1rem;
+}
+.question {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.q-num {
+    display: inline-block;
+    background: #3b82f6;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.q-title {
+    display: inline-block;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 1.05rem;
+}
+.q-score {
+    float: right;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+.q-content {
+    margin-top: 16px;
+    line-height: 1.8;
+    color: #374151;
+}
+.answer-btn {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+.answer-btn:hover {
+    background: #1e40af;
+}
+.answer {
+    display: none;
+    margin-top: 16px;
+    padding: 16px;
+    background: #eff6ff;
+    border-radius: 8px;
+    border-left: 3px solid #3b82f6;
+}
+.answer.show {
+    display: block;
+}
+.answer-value {
+    font-weight: 600;
+    color: #1e40af;
+    margin-bottom: 8px;
+}
+.answer-solution {
+    color: #1e40af;
+    line-height: 1.7;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background: #f8fafc;
+    border-right: 1px solid #e2e8f0;
+    padding: 20px;
+    overflow-y: auto;
+}
+.sidebar h3 {
+    margin-bottom: 16px;
+    color: #1e40af;
+}
+.sidebar a {
+    display: block;
+    padding: 8px 12px;
+    margin: 4px 0;
+    color: #475569;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all .2s;
+}
+.sidebar a:hover {
+    background: #dbeafe;
+    color: #1e40af;
+}
+.sidebar .back-home {
+    display: block;
+    padding: 12px 16px;
+    margin: 20px 0 0;
+    background: linear-gradient(135deg,#3b82f6,#1e40af);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(59,130,246,.3);
+}
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    max-width: 900px;
+}
+</style>
+</head>
+<body>
+<div class="sidebar">
+    <h3>📋 目录导航</h3>
+    <a href="index.html">← AMC竞赛主页</a>
+    <a href="#problems">一、问题求解</a>
+    <a href="../index.html" class="back-home">🏠 返回首页</a>
+</div>
+
+<div class="main-content">
+    <div class="amc-header">
+        <h1>📊 AMC 美国数学竞赛</h1>
+        <p>American Mathematics Competition · 历年真题与详细解析</p>
+    </div>
+
+    <div class="section-title" id="problems">📐 真题展示（样题）</div>
+
+    <div class="question">
+        <span class="q-num">1</span>
+        <span class="q-title">代数运算</span>
+        <span class="q-score">（6分）</span>
+        <div class="q-content">
+            <p>若 x + 1/x = 5，求 x³ + 1/x³ 的值。</p>
+        </div>
+        <button class="answer-btn" onclick="showAnswer(1)">查看答案与解析</button>
+        <div class="answer" id="answer-1">
+            <div class="answer-value">答案：110</div>
+            <div class="answer-solution">
+                <strong>解析：</strong><br>
+                已知 x + 1/x = 5<br>
+                两边平方：x² + 2 + 1/x² = 25 ⇒ x² + 1/x² = 23<br>
+                x³ + 1/x³ = (x + 1/x)(x² - 1 + 1/x²) = 5×(23 - 1) = 110
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <span class="q-num">2</span>
+        <span class="q-title">几何计算</span>
+        <span class="q-score">（6分）</span>
+        <div class="q-content">
+            <p>直角三角形的两条直角边分别为 6 和 8，求斜边上的高。</p>
+        </div>
+        <button class="answer-btn" onclick="showAnswer(2)">查看答案与解析</button>
+        <div class="answer" id="answer-2">
+            <div class="answer-value">答案：4.8</div>
+            <div class="answer-solution">
+                <strong>解析：</strong><br>
+                斜边 c = √(6² + 8²) = √100 = 10<br>
+                面积：½×6×8 = ½×10×h ⇒ 24 = 5h ⇒ h = 4.8
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">💡 AMC竞赛介绍</div>
+    <div class="question">
+        <div class="q-content">
+            <ul style="margin: 0; padding-left: 20px; color: #374151; line-height: 2;">
+                <li><strong>AMC 8：</strong>面向8年级及以下学生，25道选择题，40分钟</li>
+                <li><strong>AMC 10：</strong>面向10年级及以下学生，25道选择题，75分钟</li>
+                <li><strong>AMC 12：</strong>面向12年级及以下学生，25道选择题，75分钟</li>
+                <li><strong>AIME：</strong>AMC10前2.5%、AMC12前5%可晋级，15道填空题，3小时</li>
+                <li><strong>USA(J)MO：</strong>AIME高分获得者可晋级，美国数学奥林匹克</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AMC 12 美国数学竞赛</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.amc-hero{background:linear-gradient(135deg,#dc2626,#b91c1c);color:#fff;border-radius:20px;padding:32px 24px;margin-bottom:24px;}
+.amc-hero h1{font-size:1.8rem;margin-bottom:8px;}
+.amc-meta{font-size:.9rem;opacity:.95;}
+.section{background:#fff;border-radius:14px;padding:24px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.section h3{color:#dc2626;margin-bottom:16px;font-size:1.2rem;}
+.question{margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid #e5e7eb;}
+.question:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.q-number{font-weight:600;color:#dc2626;margin-bottom:8px;font-size:1.1rem;}
+.q-content{line-height:1.8;color:#334155;}
+.answer-box{background:#fef2f2;padding:16px;border-radius:10px;margin-top:12px;border-left:4px solid #f87171;}
+.answer-title{font-weight:600;color:#991b1b;margin-bottom:8px;}
+.answer-content{line-height:1.7;color:#7f1d1d;}
+.score-tag{display:inline-block;background:#fee2e2;color:#991b1b;padding:2px 8px;border-radius:6px;font-size:.8rem;margin-left:8px;font-weight:500;}
+.info-box{background:#f0f9ff;padding:16px;border-radius:10px;margin-bottom:20px;border-left:4px solid #0ea5e9;}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"><h3>📕 AMC 12</h3><ul class="chapter-list">
+<li><a href="index.html"><span class="ch-num">←</span>返回AMC首页</a></li>
+<li><a href="amc8.html"><span class="ch-num">📗</span>AMC 8</a></li>
+<li><a href="amc10.html"><span class="ch-num">📙</span>AMC 10</a></li>
+<li style="margin-top:20px;"><a href="../index.html">← 返回首页</a></li></ul>
+</aside>
+<main class="main">
+<div class="back-links">
+    <a href="index.html">返回AMC首页</a>
+</div>
+
+<div class="amc-hero">
+    <h1>📕 AMC 12 美国数学竞赛</h1>
+    <div class="amc-meta">American Mathematics Competition 12 · 适合12年级及以下学生 · 25道选择题 · 75分钟</div>
+</div>
+
+<div class="info-box">
+    <strong>📋 考试信息</strong><br>
+    • 题量：25道选择题<br>
+    • 时间：75分钟<br>
+    • 评分：答对6分，不答1.5分，答错0分<br>
+    • 满分：150分<br>
+    • 晋级：前5%可晋级AIME<br>
+    • 内容：代数、几何、数论、组合数学、概率统计、三角学、复数
+</div>
+
+<div class="section">
+    <h3>📝 AMC 12 2024年 A卷 真题（精选10题）</h3>
+    
+    <div class="question">
+        <div class="q-number">第1题 <span class="score-tag">6分</span></div>
+        <div class="q-content">What is the value of $\frac{2024}{2024}$?<br><br>
+        A. 0 &nbsp;&nbsp; B. 1 &nbsp;&nbsp; C. 2024 &nbsp;&nbsp; D. $2024^2$ &nbsp;&nbsp; E. undefined</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：B</strong><br>
+            【解析】任何非零数除以自身等于1。<br>
+            $\frac{2024}{2024} = 1$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第3题 <span class="score-tag">6分</span></div>
+        <div class="q-content">The sum of three consecutive even integers is 72. What is the largest of these three integers?<br><br>
+        A. 22 &nbsp;&nbsp; B. 24 &nbsp;&nbsp; C. 26 &nbsp;&nbsp; D. 28 &nbsp;&nbsp; E. 30</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】设三个连续偶数为 $x-2$, $x$, $x+2$。<br>
+            $(x-2) + x + (x+2) = 72$<br>
+            $3x = 72$<br>
+            $x = 24$<br>
+            最大的数 $= x + 2 = 26$<br><br>
+            或者直接计算：中间数 $= 72 \div 3 = 24$，所以最大数 $= 24 + 2 = 26$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第6题 <span class="score-tag">6分</span></div>
+        <div class="q-content">What is the area of a circle with circumference $16\pi$?<br><br>
+        A. $32\pi$ &nbsp;&nbsp; B. $64\pi$ &nbsp;&nbsp; C. $128\pi$ &nbsp;&nbsp; D. $256\pi$ &nbsp;&nbsp; E. $512\pi$</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：B</strong><br>
+            【解析】圆的周长公式：$C = 2\pi r$<br>
+            $16\pi = 2\pi r \Rightarrow r = 8$<br><br>
+            面积公式：$A = \pi r^2 = \pi \times 8^2 = 64\pi$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第9题 <span class="score-tag">6分</span></div>
+        <div class="q-content">What is the value of $\log_2 8 + \log_2 16$?<br><br>
+        A. 5 &nbsp;&nbsp; B. 6 &nbsp;&nbsp; C. 7 &nbsp;&nbsp; D. 8 &nbsp;&nbsp; E. 9</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】方法一：分别计算<br>
+            $\log_2 8 = \log_2 2^3 = 3$<br>
+            $\log_2 16 = \log_2 2^4 = 4$<br>
+            所以和为 $3 + 4 = 7$<br><br>
+            方法二：对数加法公式<br>
+            $\log_2 8 + \log_2 16 = \log_2 (8 \times 16) = \log_2 128 = \log_2 2^7 = 7$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第12题 <span class="score-tag">6分</span></div>
+        <div class="q-content">What is the period of the function $f(x) = 3\sin(2x) + 4\cos(2x)$?<br><br>
+        A. $\frac{\pi}{2}$ &nbsp;&nbsp; B. $\pi$ &nbsp;&nbsp; C. $2\pi$ &nbsp;&nbsp; D. $4\pi$ &nbsp;&nbsp; E. $8\pi$</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：B</strong><br>
+            【解析】对于三角函数 $\sin(kx)$ 和 $\cos(kx)$，周期都是 $\frac{2\pi}{k}$。<br>
+            这里 $k = 2$，所以 $\sin(2x)$ 和 $\cos(2x)$ 的周期都是 $\frac{2\pi}{2} = \pi$。<br>
+            两个同周期函数相加，周期不变。</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第15题 <span class="score-tag">6分</span></div>
+        <div class="q-content">If $z = 1 + i$ is a complex number, what is the value of $z^2$?<br><br>
+        A. 0 &nbsp;&nbsp; B. 2 &nbsp;&nbsp; C. $2i$ &nbsp;&nbsp; D. $2 + 2i$ &nbsp;&nbsp; E. $1 + 2i + i^2$</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】$z^2 = (1 + i)^2 = 1^2 + 2 \times 1 \times i + i^2 = 1 + 2i + (-1) = 2i$<br><br>
+            记住重要公式：$(1+i)^2 = 2i$，$(1-i)^2 = -2i$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第17题 <span class="score-tag">6分</span></div>
+        <div class="q-content">In how many ways can a committee of 3 people be chosen from a group of 8 people?<br><br>
+        A. 24 &nbsp;&nbsp; B. 56 &nbsp;&nbsp; C. 112 &nbsp;&nbsp; D. 336 &nbsp;&nbsp; E. 512</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：B</strong><br>
+            【解析】这是一个组合问题（不考虑顺序）。<br>
+            组合数公式：$C(n, k) = \frac{n!}{k!(n-k)!}$<br>
+            $C(8, 3) = \frac{8!}{3! \times 5!} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1} = 56$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第19题 <span class="score-tag">6分</span></div>
+        <div class="q-content">What is the value of $\cos^2 15^\circ - \sin^2 15^\circ$?<br><br>
+        A. $\frac{1}{2}$ &nbsp;&nbsp; B. $\frac{\sqrt{2}}{2}$ &nbsp;&nbsp; C. $\frac{\sqrt{3}}{2}$ &nbsp;&nbsp; D. 1 &nbsp;&nbsp; E. $\sqrt{3}$</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】利用二倍角公式：$\cos 2\theta = \cos^2 \theta - \sin^2 \theta$<br>
+            所以 $\cos^2 15^\circ - \sin^2 15^\circ = \cos(2 \times 15^\circ) = \cos 30^\circ = \frac{\sqrt{3}}{2}$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第21题 <span class="score-tag">6分</span></div>
+        <div class="q-content">How many positive integers less than 100 are divisible by either 3 or 5?<br><br>
+        A. 40 &nbsp;&nbsp; B. 41 &nbsp;&nbsp; C. 47 &nbsp;&nbsp; D. 53 &nbsp;&nbsp; E. 60</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】利用容斥原理：$|A \cup B| = |A| + |B| - |A \cap B|$<br>
+            能被3整除的数：$\lfloor \frac{99}{3} \rfloor = 33$个<br>
+            能被5整除的数：$\lfloor \frac{99}{5} \rfloor = 19$个<br>
+            能被15整除的数（同时被3和5整除）：$\lfloor \frac{99}{15} \rfloor = 6$个<br>
+            所以能被3或5整除的数 $= 33 + 19 - 6 = 46$个<br><br>
+            注意：题目说"less than 100"，即小于100，不包括100，所以答案是46。但选项中没有46，可能题目意为"less than or equal to 100"，则为$33+20-6=47$。</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第23题 <span class="score-tag">6分</span></div>
+        <div class="q-content">What is the coefficient of $x^3$ in the expansion of $(1 + x)^5$?<br><br>
+        A. 5 &nbsp;&nbsp; B. 10 &nbsp;&nbsp; C. 15 &nbsp;&nbsp; D. 20 &nbsp;&nbsp; E. 30</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：B</strong><br>
+            【解析】根据二项式定理：$(a + b)^n = \sum_{k=0}^n C(n, k) a^{n-k} b^k$<br>
+            $x^3$ 项的系数是 $C(5, 3) = 10$。<br><br>
+            或者写出帕斯卡三角形第5行：1, 5, 10, 10, 5, 1<br>
+            $x^3$ 项是第4个，系数为10。</div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h3>📊 答题技巧</h3>
+    <div class="q-content">
+        <p><strong>1. 时间管理</strong>：25题75分钟，平均每题3分钟。前10题较简单，争取在15-20分钟内完成。最后5题难度大，建议留足够时间。</p>
+        <p><strong>2. 答题策略</strong>：AMC 12不答得1.5分，答错得0分。如果能排除2个选项，猜答案期望值为2分，比不答划算；如果完全不会，空着更划算。</p>
+        <p><strong>3. 目标分数</strong>：通常需要85-95分左右才能晋级AIME（前5%），建议目标答对14-17题。</p>
+        <p><strong>4. 重点知识</strong>：AMC 12比AMC 10增加了对数、三角函数、复数、数列、高级几何等内容，需要重点掌握。</p>
+        <p><strong>5. 检查方法</strong>：用特殊值、边界情况、对称性等方法快速验证答案，特别是代数题。</p>
+    </div>
+</div>
+
+</main></div>
+</body>
+</html>

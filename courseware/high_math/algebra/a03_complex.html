@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>复数 · 高中数学</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.content-card { background:#fff; border-radius:14px; padding:28px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,.06); }
+.section-title { color:#7c3aed; font-size:1.3rem; margin-bottom:16px; padding-bottom:12px; border-bottom:2px solid #f5f3ff; }
+.knowledge-box { background:#faf5ff; border-left:4px solid #7c3aed; padding:16px 20px; margin:16px 0; border-radius:0 8px 8px 0; }
+.formula { background:#1e293b; color:#e2e8f0; padding:12px 20px; border-radius:8px; font-family:monospace; font-size:1.1rem; text-align:center; margin:12px 0; }
+.back-btn { display:inline-block; padding:8px 20px; background:#e2e8f0; color:#475569; border-radius:8px; text-decoration:none; margin-bottom:20px; }
+.back-btn:hover { background:#cbd5e1; }
+</style>
+</head>
+<body>
+<div class="layout" style="max-width:900px; margin:0 auto; padding:20px;">
+<a href="../index.html" class="back-btn">← 返回高中数学</a>
+
+<div class="content-card">
+<h1 style="color:#7c3aed; margin-bottom:20px;">复数</h1>
+
+<h3 class="section-title">复数的概念</h3>
+<div class="formula">z = a + bi （a, b ∈ R）</div>
+<div class="knowledge-box">
+<strong>各部分名称：</strong>
+<br>a = Re(z)：实部
+<br>b = Im(z)：虚部
+<br>i：虚数单位，满足i² = -1
+</div>
+<div class="knowledge-box">
+<strong>分类：</strong>
+<br>实数：b = 0
+<br>虚数：b ≠ 0
+<br>纯虚数：a = 0 且 b ≠ 0
+</div>
+<div class="knowledge-box">
+<strong>复数相等：</strong>a + bi = c + di ⇔ a = c 且 b = d
+<br><strong>共轭复数：</strong>z = a + bi 的共轭复数为 z̄ = a - bi
+</div>
+
+<h3 class="section-title">复数的四则运算</h3>
+<div class="formula">
+加法：(a + bi) + (c + di) = (a + c) + (b + d)i
+<br>减法：(a + bi) - (c + di) = (a - c) + (b - d)i
+<br>乘法：(a + bi)(c + di) = (ac - bd) + (ad + bc)i
+<br>除法：(a + bi)/(c + di) = [(a + bi)(c - di)]/(c² + d²)
+</div>
+
+<h3 class="section-title">复数的几何意义</h3>
+<div class="knowledge-box">
+<strong>复平面：</strong>
+<br>x轴（实轴）：表示实数
+<br>y轴（虚轴）：表示纯虚数（除原点）
+<br>点Z(a, b) 一一对应 复数z = a + bi
+</div>
+<div class="formula">
+复数的模：|z| = |a + bi| = √(a² + b²)
+</div>
+<div class="knowledge-box">
+<strong>模的性质：</strong>
+<br>|z| = |z̄|
+<br>|z₁ · z₂| = |z₁| · |z₂|
+<br>|zⁿ| = |z|ⁿ
+<br>| |z₁| - |z₂| | ≤ |z₁ + z₂| ≤ |z₁| + |z₂|
+</div>
+
+<h3 class="section-title">常用结论</h3>
+<div class="knowledge-box">
+i的幂次周期性：
+<br>i⁴ⁿ = 1，i⁴ⁿ⁺¹ = i，i⁴ⁿ⁺² = -1，i⁴ⁿ⁺³ = -i
+<br>i⁴ⁿ + i⁴ⁿ⁺¹ + i⁴ⁿ⁺² + i⁴ⁿ⁺³ = 0
+</div>
+<div class="knowledge-box">
+(1 + i)² = 2i，(1 - i)² = -2i
+<br>1/(1 + i) = (1 - i)/2，1/(1 - i) = (1 + i)/2
+<br>-b + ai = i(a + bi)
+</div>
+</div>
+</div>
+</body>
+</html>

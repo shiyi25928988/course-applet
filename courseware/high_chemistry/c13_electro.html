@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>电化学基础 - 高中化学</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.anim-box { background:#f8fafc; border-radius:12px; padding:20px; margin:20px 0; text-align:center; }
+svg { max-width:100%; }
+.formula-box { background:#f0fdf4; border-left:4px solid #059669; padding:16px; border-radius:0 8px 8px 0; margin:16px 0; font-family:monospace; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 返回高中化学主页</a></div>
+<h1>⚡ 第六章 电化学基础</h1>
+<div class="formula-box">
+<h3>🎯 核心原理</h3>
+<p><strong>原电池：</strong>负极氧化反应，正极还原反应，电子由负极→外电路→正极</p>
+<p><strong>电解池：</strong>阳极氧化反应，阴极还原反应，由外接电源驱动</p>
+<p><strong>金属防护：</strong>牺牲阳极法、外加电流阴极保护法</p>
+</div>
+<h2 style="margin:24px 0 12px;">🔬 铜锌原电池装置图</h2>
+<div class="anim-box">
+<svg width="500" height="280" viewBox="0 0 500 280">
+<rect x="40" y="100" width="140" height="120" fill="#dbeafe" stroke="#334155" stroke-width="2"/>
+<rect x="320" y="100" width="140" height="120" fill="#fef3c7" stroke="#334155" stroke-width="2"/>
+<rect x="80" y="70" width="20" height="80" fill="#f59e0b"/>
+<rect x="380" y="70" width="20" height="80" fill="#94a3b8"/>
+<line x1="90" y1="70" x2="390" y2="70" stroke="#334155" stroke-width="3"/>
+<circle cx="240" cy="50" r="20" fill="none" stroke="#ef4444" stroke-width="2"/>
+<text x="235" y="55" font-size="14" fill="#ef4444">⚡</text>
+<path d="M180 160 L180 140 L320 140 L320 160" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="55" y="240" font-size="12" fill="#dc2626">Zn 负极</text>
+<text x="365" y="240" font-size="12" fill="#16a34a">Cu 正极</text>
+<text x="80" y="160" font-size="10">H₂SO₄</text>
+<text x="360" y="160" font-size="10">CuSO₄</text>
+<text x="220" y="155" font-size="10">盐桥</text>
+<text x="140" y="45" font-size="10" fill="#ef4444">e⁻ →</text>
+</svg>
+</div>
+<h2 style="margin:24px 0 12px;">✏️ 典型例题</h2>
+<div class="question">
+<span class="q-num">例1</span>铜锌原电池工作时，下列叙述正确的是（ ）
+<div class="options"><label><input type="radio" name="q1" value="A">A. 正极反应为 Zn - 2e⁻ = Zn²⁺</label><label><input type="radio" name="q1" value="B">B. 电池反应为 Zn + Cu²⁺ = Zn²⁺ + Cu</label><label><input type="radio" name="q1" value="C">C. 在外电路中，电子从铜极流向锌极</label><label><input type="radio" name="q1" value="D">D. 盐桥中的 K⁺ 移向 ZnSO₄ 溶液</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看解析</button>
+<div class="answer" id="answer-1" data-correct="B">✅ B。A是负极反应；C电子从Zn→Cu；DK⁺移向正极区CuSO₄溶液。</div>
+</div>
+</div>
+</body>
+</html>

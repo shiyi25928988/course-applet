@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Childrens Thinking - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题140/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Childrens Thinking</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>1. a hundred years/100 years 8. ix
+ 
+2. mentally confused/behind
+monolingual children
+3. (well-developed) language
+4. ii
+5. vi
+6. iv
+7.
+9. v
+10. FALSE
+11. FALSE
+12. NOT
+GIVEN
+13. TRUE
+i
+ 5</p>
+<p>Reading Practice
+ Bingham Regional College
+International Students' Orientation Programme
+What is it?
+It is a course which will introduce you to the College and to Bingham. It takes place in the
+week before term starts, from 24th - 28th September inclusive, but you should plan to
+arrive in Bingham on the 22nd or 23rd September.
+Why do we think it is important?
+We want you to have the best possible start to your studies and you need to find out about
+all the opportunities that college life offers. This programme aims to help you do just that. It
+will enable you to get to know the College, its facilities and services. You will also have the
+chance to meet staff and students.
+How much will it cost?
+International students (non-European Union students)
+For those students who do not come from European Union (EU) countries, and who are not
+used to European culture and customs, the programme is very important and you are
+strongly advised to attend. Because of this, the cost of the programme, exclusive of
+accommodation, is built into your tuition fees.
+EU students
+EU students are welcome to take part in this programme for a fee of £195, exclusive of
+accommodation. Fees are not refundable.
+Accommodation costs (international and EU students)
+If you have booked accommodation for the year ahead (41 weeks) through the College in
+one of the College residences (Cambourne House, Hanley House, the Student Village or a
+College shared house), you do not have to pay extra for accommodation during the
+Orientation programme. If you have not booked accommodation in the College residences,
+you can ask us to pre-book accommodation for you for one week only (Orientation
+Programme week) in a hotel with other international students. The cost of accommodation
+for one week is approximately £165. Alternatively, you can arrange your own
+accommodation for that week in a flat, with friends or a local family.
+What is included during the programme?
+Meals: lunch and an evening meal are provided as part of the programme, beginning with
+supper on Sunday 23rd September and finishing with lunch at midday on Friday 28th
+September. Please note that breakfast is not available.
+Information sessions: including such topics as accommodation, health, religious matters,
+welfare, immigration, study skills, careers and other 'essential information'.
+Social activities: including a welcome buffet and a half-day excursion round Bingham.
+Transport: between your accommodation and the main College campus, where activities
+will take place.
+ 1</p>
+<p>Questions 1-6
+Do the following statements agree with the information given in the reading passage.</p>
+<p>In boxes 1-6 on your answer sheet, write
+TRUE
+FALSE
+ 
+if the statement agrees with the information
+if the statement contradicts the information
+ 
+NOT GIVENiif there is no information on this
+1..................... Participants are advised to arrive one or two days early.  
+2..................... The cost of the programme for European Union students, excluding
+accommodation, is £195.
+3..................... The number of places available is strictly limited.  
+4..................... Some students are not charged extra for accommodation during the
+programme.  
+5..................... The College will arrange accommodation with local families.  
+6..................... You can obtain breakfast at the College for an extra charge.
+ 2</p>
+<p>1. TRUE
+2. TRUE
+ 
+4. TRUE
+5. FALSE
+6.3. NOT GIVEN FALSE
+ 3</p>
+<p>Reading Practice
+ Biodiversity</p>
+<p>It seems biodiversity has become a buzzword beloved of politicians, conservationists,
+protesters and scientists alike. But what exactly is it? The Convention on Biological
+Diversity, an international agreement to conserve and share the planet’s biological riches,
+provides a good working definition: biodiversity comprises every form of life, from the
+smallest microbe to the largest animal or plant, the genes that give them their specific
+characteristics and the ecosystems of which they are apart.</p>
+<p>In October, the World Conservation Union (also known as the IUCN) published its updated
+Red List of Threatened Species, a roll call of 11,167 creatures facing extinction – 121 more
+than when the list was last published in 2000. But the new figures almost certainly
+underestimate the crisis. Some 1.2 million species of animal and 270,000 species of plant
+have been classified, but the well-being of only a fraction has been assessed. The
+resources are simply not available. The IUCN reports that 5714 plants are threatened, for
+example, but admits that only 4 per cent of known plants has been assessed. And, of
+course, there are thousands of species that we have yet to discover. Many of these could
+also be facing extinction.</p>
+<p>It is important to develop a picture of the diversity of life on Earth now so that comparisons
+can be made in the future and trends identified. But it isn’t necessary to observe every
+single type of organism in an area to get a snapshot of the health of the ecosystem. In
+many habitats, there are species that are particularly susceptible to shifting conditions, and
+these can be used as indicator species.</p>
+<p>In the media, it is usually large, charismatic animals such as pandas, elephants, tigers and
+whales that get all the attention when a loss of biodiversity is discussed. However, animals
+or plants far lower down the food chain are often the ones vital for preserving habitats – in
+the process saving the skins of those more glamorous species. There are known as
+keystone species.</p>
+<p>By studying the complex feeding relationships within habitats, species can be identified that
+have a particularly important impact on the environment. For example, the members of the
+fig family are the staple food for hundreds of different species in many different countries,
+so important that scientists sometimes call figs “jungle burgers”. A whole range of animals,
+from tiny insects to birds and large mammals, feed on everything from the tree’s bark and
+leaves to its flowers and fruits. Many fig species have very specific pollinators. There are
+several dozen species of the fig tree in Costa Rica, and a different type of wasp has
+evolved to pollinate each one. Chris Lyle of the Natural History Museum in London – who is
+also involved in the Global Taxonomy Initiative of the Convention on Biological Diversity –
+points out that if fig trees are affected by global warming, pollution, disease or any other
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>初中物理力学综合专项</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.hero {background:linear-gradient(135deg,#0ea5e9,#0284c7);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px}
+.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.q-num {display:inline-block;background:#0ea5e9;color:#fff;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;font-weight:700;margin-right:10px}
+.q-title {display:inline-block;font-weight:600;color:#1e293b;font-size:1.05rem}
+.q-content {margin-top:16px;line-height:1.8;color:#374151}
+.answer-btn {margin-top:16px;padding:10px 20px;background:#0ea5e9;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.95rem}
+.answer {display:none;margin-top:16px;padding:16px;background:#e0f2fe;border-radius:8px;border-left:3px solid #0ea5e9}
+.answer.show {display:block}
+.answer-value {font-weight:600;color:#0369a1;margin-bottom:8px}
+.answer-solution {color:#0c4a6e;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 初中物理</a>&nbsp;|&nbsp;<a href="../exam_bank.html">← 题库中心</a></div>
+<div class="hero"><h1>🏋️ 初中物理力学综合专项</h1><p>受力分析 · 浮力 · 压强 · 机械功与功率 · 简单机械综合 · 共 50 道精选题目</p></div>
+<div class="question"><span class="q-num">1</span><span class="q-title">压强计算</span><div class="q-content">
+<p>一个质量为 50kg 的人站立在水平地面上，双脚与地面的接触面积为 400cm²。求：</p>
+<p>(1) 人受到的重力；</p>
+<p>(2) 人对地面的压强。（g = 10N/kg）</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案与解析</button>
+<div class="answer" id="answer-1"><div class="answer-value">答案：(1) 500N；(2) 1.25×10⁴Pa</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) G = mg = 50kg × 10N/kg = 500N<br>(2) F = G = 500N，S = 400cm² = 0.04m²<br>p = F/S = 500N / 0.04m² = 1.25×10⁴Pa</div></div></div>
+<div class="question"><span class="q-num">2</span><span class="q-title">浮力计算</span><div class="q-content">
+<p>一个体积为 1000cm³ 的木块浸没在水中，求：</p>
+<p>(1) 木块受到的浮力；</p>
+<p>(2) 若木块漂浮时有 2/5 体积露出水面，求木块密度。（ρ水 = 1.0×10³kg/m³，g = 10N/kg）</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案与解析</button>
+<div class="answer" id="answer-2"><div class="answer-value">答案：(1) 10N；(2) 0.6×10³kg/m³</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) 浸没时 V排 = V木 = 1×10⁻³m³<br>F浮 = ρ水gV排 = 1×10³×10×1×10⁻³ = 10N<br>(2) 漂浮时 F浮 = G木，ρ水gV排 = ρ木gV木<br>V排 = (3/5)V木，∴ ρ木 = (3/5)ρ水 = 0.6×10³kg/m³</div></div></div>
+<div style="text-align:center;padding:20px;color:#64748b;background:#fff;border-radius:10px">
+<strong>更多题目整理中...</strong><br>完整 50 道力学综合题正在陆续添加
+</div>
+</div></body></html>

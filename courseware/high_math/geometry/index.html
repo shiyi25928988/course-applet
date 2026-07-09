@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>几何与向量 · 高中数学</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.geo-hero { background:linear-gradient(135deg,#d97706,#b45309); color:#fff; border-radius:20px; padding:32px 24px; margin-bottom:24px; }
+.geo-hero h1 { font-size:1.6rem; }
+.ch-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:28px; }
+.ch-card { background:#fff; border-radius:14px; padding:24px; text-decoration:none; box-shadow:0 2px 8px rgba(0,0,0,.06); border-left:4px solid #d97706; transition:transform .2s; display:block; color:var(--text); }
+.ch-card:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,.1); }
+.ch-card h3 { font-size:1.1rem; margin-bottom:8px; color:#d97706; }
+.ch-card .desc { font-size:.85rem; color:var(--text-secondary); line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+<h3>📐 几何与向量</h3>
+<ul class="chapter-list">
+<li><a href="g01_trigo.html"><span class="ch-num">1</span>三角函数</a></li>
+<li><a href="g02_vector.html"><span class="ch-num">2</span>平面与空间向量</a></li>
+<li><a href="g03_solid.html"><span class="ch-num">3</span>立体几何</a></li>
+</ul>
+<div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+  <a href="../index.html" class="back-home">🏠 返回高中数学</a>
+</div>
+</aside>
+<main class="main">
+<div class="geo-hero">
+<h1>📐 高中几何与向量</h1>
+<p>三角函数 · 向量 · 立体几何 · 含知识讲解、公式速查、高考真题</p>
+</div>
+<div class="ch-grid">
+<a href="g01_trigo.html" class="ch-card">
+<h3>第一章 三角函数</h3>
+<div class="desc">任意角与弧度制 · 三角函数定义与图像 · 三角恒等变换 · 解三角形</div>
+</a>
+<a href="g02_vector.html" class="ch-card">
+<h3>第二章 平面向量与空间向量</h3>
+<div class="desc">平面向量的线性运算 · 数量积 · 空间向量及其应用 · 向量法解立体几何</div>
+</a>
+<a href="g03_solid.html" class="ch-card">
+<h3>第三章 立体几何</h3>
+<div class="desc">空间几何体 · 点线面位置关系 · 平行与垂直证明 · 空间角与距离计算</div>
+</a>
+</div>
+</main>
+</div>
+</body>
+</html>

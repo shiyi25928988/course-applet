@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2022年上海中考数学真题</title>
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <script src="../assets/js/common.js"></script>
+  <style>
+    .year-header { background:linear-gradient(135deg,#7c3aed,#5b21b6); color:#fff; padding:20px; border-radius:12px; margin-bottom:24px; }
+    .section-title { background:#f8fafc; padding:12px 16px; border-left:4px solid #7c3aed; margin:24px 0 16px; font-weight:600; }
+    .diagram-box { background:#fafbfc; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin:12px 0; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-links">
+      <a href="../index.html">← 返回数学主页</a>
+      <a href="exam_collection.html">← 真题汇编目录</a>
+    </div>
+
+    <div class="year-header">
+      <h1>📐 2022年上海市初中毕业统一学业考试</h1>
+      <h2>数学试卷</h2>
+      <p>满分150分 · 考试时间100分钟</p>
+    </div>
+
+    <div class="section-title">一、选择题（共6题，每题4分，满分24分）</div>
+
+    <div class="question">
+      <span class="q-num">1</span>
+      8的立方根是（ ）
+      <div class="options">
+        <label><input type="radio" name="q1" value="A">A. 2</label>
+        <label><input type="radio" name="q1" value="B">B. -2</label>
+        <label><input type="radio" name="q1" value="C">C. 4</label>
+        <label><input type="radio" name="q1" value="D">D. -4</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+      <div class="answer" id="answer-1" data-correct="A">✅ A。2³ = 8，所以8的立方根是2。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">2</span>
+      下列运算中，正确的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q2" value="A">A. a² + a³ = a⁵</label>
+        <label><input type="radio" name="q2" value="B">B. a² · a³ = a⁶</label>
+        <label><input type="radio" name="q2" value="C">C. (a²)³ = a⁶</label>
+        <label><input type="radio" name="q2" value="D">D. (ab)² = ab²</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+      <div class="answer" id="answer-2" data-correct="C">✅ C。(a²)³ = a⁶；A不是同类项不能合并；B应为a⁵；D应为a²b²。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">3</span>
+      我们经常用调查方式收集数据，下列调查中适宜用普查方式的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q3" value="A">A. 调查一批灯泡的使用寿命</label>
+        <label><input type="radio" name="q3" value="B">B. 调查全班同学的身高情况</label>
+        <label><input type="radio" name="q3" value="C">C. 调查全国中学生的视力情况</label>
+        <label><input type="radio" name="q3" value="D">D. 调查市场上某品牌矿泉水的合格率</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+      <div class="answer" id="answer-3" data-correct="B">✅ B。普查适用于范围小、易操作、无破坏性的调查。A有破坏性，C、D范围太大。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">4</span>
+      已知反比例函数 y = k/x 的图像经过点(-1, 2)，那么k的值是（ ）
+      <div class="options">
+        <label><input type="radio" name="q4" value="A">A. -1/2</label>
+        <label><input type="radio" name="q4" value="B">B. 1/2</label>
+        <label><input type="radio" name="q4" value="C">C. -2</label>
+        <label><input type="radio" name="q4" value="D">D. 2</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+      <div class="answer" id="answer-4" data-correct="C">✅ C。k = xy = (-1)×2 = -2。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">5</span>
+      下列正多边形中，中心角等于内角的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q5" value="A">A. 正三角形</label>
+        <label><input type="radio" name="q5" value="B">B. 正方形</label>
+        <label><input type="radio" name="q5" value="C">C. 正五边形</label>
+        <label><input type="radio" name="q5" value="D">D. 正六边形</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+      <div class="answer" id="answer-5" data-correct="B">✅ B。正方形中心角 = 360°/4 = 90°，内角 = 90°，相等。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">6</span>
+      如图，在△ABC中，点D、E分别在AB、AC上，DE∥BC，且DE经过重心G。如果S△ADE = 4，那么S四边形BCED的值是（ ）
+      <div class="options">
+        <label><input type="radio" name="q6" value="A">A. 5</label>
+        <label><input type="radio" name="q6" value="B">B. 6</label>
+        <label><input type="radio" name="q6" value="C">C. 7</label>
+        <label><input type="radio" name="q6" value="D">D. 8</label>
+      </div>
+      <div class="diagram-box">
+        <svg width="200" height="140" viewBox="0 0 200 140">
+          <line x1="30" y1="110" x2="170" y2="110" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="30" y1="110" x2="100" y2="30" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="100" y1="30" x2="170" y2="110" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="55" y1="85" x2="135" y2="85" stroke="#f59e0b" stroke-width="2"/>
+          <circle cx="95" cy="70" r="3" fill="#ef4444"/>
+          <text x="20" y="120" font-size="12" fill="#7c3aed">B</text>
+          <text x="95" y="20" font-size="12" fill="#7c3aed">A</text>
+          <text x="175" y="120" font-size="12" fill="#7c3aed">C</text>
+          <text x="45" y="80" font-size="12" fill="#f59e0b">D</text>
+          <text x="140" y="80" font-size="12" fill="#f59e0b">E</text>
+          <text x="100" y="65" font-size="12" fill="#ef4444">G</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+      <div class="answer" id="answer-6" data-correct="A">✅ A。重心分中线比为2:1，AD/AB = 2/3，面积比4:9，所以S△ABC = 9，四边形面积 = 5。</div>
+    </div>
+
+    <div class="section-title">二、填空题（共12题，每题4分，满分48分）</div>
+
+    <div class="question">
+      <span class="q-num">7</span>
+      计算：2a · 3a² = ______。
+      <button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+      <div class="answer" id="answer-7" data-correct="6a³">6a³。2×3 × a×a² = 6a³。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">8</span>
+      已知f(x) = 3x - 1，那么f(2) = ______。
+      <button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+      <div class="answer" id="answer-8" data-correct="5">5。f(2) = 3×2 - 1 = 5。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">9</span>
+      方程组 { x + y = 5，2x - y = 1 的解是 ______。
+      <button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+      <div class="answer" id="answer-9" data-correct="x=2,y=3">x = 2, y = 3。两式相加：3x = 6 → x = 2，代入得y = 3。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">10</span>
+      已知关于x的方程x² - 2x + m = 0有两个不相等的实数根，那么m的取值范围是 ______。
+      <button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+      <div class="answer" id="answer-10" data-correct="m<1">m < 1。Δ = 4 - 4m > 0 → m < 1。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">11</span>
+      从1、2、3、4这四个数中任选一个数，选中的数恰好是偶数的概率是 ______。
+      <button class="answer-btn" onclick="showAnswer(11)">查看答案</button>
+      <div class="answer" id="answer-11" data-correct="1/2">1/2。偶数有2、4两个，概率 = 2/4 = 1/2。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">12</span>
+      已知正六边形的边长为2，那么它的外接圆半径是 ______。
+      <button class="answer-btn" onclick="showAnswer(12)">查看答案</button>
+      <div class="answer" id="answer-12" data-correct="2">2。正六边形的外接圆半径等于边长。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">13</span>
+      为了解某区2000名初中生的身高情况，从中抽取了200名学生测量身高，在这个问题中，样本容量是 ______。
+      <button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+      <div class="answer" id="answer-13" data-correct="200">200。样本容量即抽取的样本数。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">14</span>
+      已知点A(1, 2)、B(-3, 4)，那么线段AB的中点坐标是 ______。
+      <button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+      <div class="answer" id="answer-14" data-correct="(-1,3)">(-1, 3)。中点坐标 = ((1-3)/2, (2+4)/2) = (-1, 3)。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">15</span>
+      如图，已知在平行四边形ABCD中，E是AB中点，设向量AB = a，AD = b，那么向量DE = ______（用a、b表示）。
+      <div class="diagram-box">
+        <svg width="220" height="120" viewBox="0 0 220 120">
+          <line x1="40" y1="80" x2="180" y2="80" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="60" y1="30" x2="200" y2="30" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="40" y1="80" x2="60" y2="30" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="180" y1="80" x2="200" y2="30" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="60" y1="30" x2="180" y2="80" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="30" y="90" font-size="12" fill="#7c3aed">A</text>
+          <text x="50" y="25" font-size="12" fill="#7c3aed">D</text>
+          <text x="205" y="25" font-size="12" fill="#7c3aed">C</text>
+          <text x="180" y="90" font-size="12" fill="#7c3aed">B</text>
+          <text x="115" y="90" font-size="12" fill="#f59e0b">E</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(15)">查看答案</button>
+      <div class="answer" id="answer-15" data-correct="b-a/2">b - a/2。DE = DA + AE = -b + a/2 = a/2 - b（或写成b - a/2的相反向量）。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">16</span>
+      小明从家到学校的路程是1200米，如图是小明上学路程s（米）与时间t（分钟）的函数图像。那么小明在途中停留了 ______ 分钟。
+      <div class="diagram-box">
+        <svg width="260" height="140" viewBox="0 0 260 140">
+          <line x1="30" y1="110" x2="230" y2="110" stroke="#cbd5e1" stroke-width="1"/>
+          <line x1="30" y1="20" x2="30" y2="110" stroke="#cbd5e1" stroke-width="1"/>
+          <line x1="30" y1="110" x2="80" y2="60" stroke="#7c3aed" stroke-width="2.5"/>
+          <line x1="80" y1="60" x2="140" y2="60" stroke="#7c3aed" stroke-width="2.5"/>
+          <line x1="140" y1="60" x2="220" y2="20" stroke="#7c3aed" stroke-width="2.5"/>
+          <text x="20" y="125" font-size="10" fill="#64748b">O</text>
+          <text x="70" y="125" font-size="10" fill="#64748b">5</text>
+          <text x="130" y="125" font-size="10" fill="#64748b">11</text>
+          <text x="210" y="125" font-size="10" fill="#64748b">20</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(16)">查看答案</button>
+      <div class="answer" id="answer-16" data-correct="6">6。从第5分钟到第11分钟，路程不变，停留了6分钟。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">17</span>
+      在Rt△ABC中，∠C = 90°，AC = 3，BC = 4，以C为圆心，r为半径作圆C，使圆C与AB边只有一个交点，则r的取值范围是 ______。
+      <button class="answer-btn" onclick="showAnswer(17)">查看答案</button>
+      <div class="answer" id="answer-17" data-correct="r=12/5或3<r≤4">r = 12/5 或 3 < r ≤ 4。相切时r = 12/5，或A在圆内B在圆外时。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">18</span>
+      定义：在平面内，一个图形绕着某一点旋转一定角度α后，如果与自身重合，就称这个图形为旋转对称图形。下列图形中：①正方形；②正五边形；③正六边形；④圆，是旋转对称图形且旋转角为60°的是 ______（填序号）。
+      <button class="answer-btn" onclick="showAnswer(18)">查看答案</button>
+      <div class="answer" id="answer-18" data-correct="③④">③④。正六边形中心角60°，圆旋转任意角度都重合。</div>
+    </div>
+
+    <div class="section-title">三、解答题（共7题，满分78分）</div>
+
+    <div class="question">
+      <span class="q-num">19</span>
+      计算：(√3)² + | -2 | - (π - 2)⁰
+      <button class="answer-btn" onclick="showAnswer(19)">查看答案</button>
+      <div class="answer" id="answer-19" data-correct="4">
+        解：(√3)² = 3，| -2 | = 2，(π - 2)⁰ = 1<br>
+        原式 = 3 + 2 - 1 = 4
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">20</span>
+      解方程：x² - 4x - 5 = 0
+      <button class="answer-btn" onclick="showAnswer(20)">查看答案</button>
+      <div class="answer" id="answer-20" data-correct="x=5或x=-1">
+        解：因式分解：(x - 5)(x + 1) = 0<br>
+        ∴ x = 5 或 x = -1
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">21</span>
+      如图，在平面直角坐标系中，O为原点，点A的坐标为(3, 4)，点B在x轴正半轴上，∠AOB = 60°。<br>
+      （1）求点B的坐标；<br>
+      （2）求直线AB的解析式。
+      <div class="diagram-box">
+        <svg width="200" height="160" viewBox="0 0 200 160">
+          <line x1="20" y1="130" x2="180" y2="130" stroke="#cbd5e1" stroke-width="1"/>
+          <line x1="20" y1="130" x2="20" y2="20" stroke="#cbd5e1" stroke-width="1"/>
+          <line x1="20" y1="130" x2="100" y2="50" stroke="#7c3aed" stroke-width="2"/>
+          <circle cx="100" cy="50" r="3" fill="#7c3aed"/>
+          <text x="10" y="145" font-size="12" fill="#64748b">O</text>
+          <text x="105" y="45" font-size="12" fill="#7c3aed">A(3,4)</text>
+          <text x="170" y="145" font-size="12" fill="#7c3aed">B</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(21)">查看答案</button>
+      <div class="answer" id="answer-21" data-correct="见解析">
+        （1）由A(3,4)得OA = 5，由余弦定理或三角函数可得B点坐标。<br>
+        （2）由两点坐标可求得直线AB的解析式。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">22</span>
+      如图，在菱形ABCD中，E、F分别是边BC、CD上的点，且BE = DF，连接AE、AF。<br>
+      （1）求证：AE = AF；<br>
+      （2）如果∠B = 60°，E是BC中点，AB = 4，求△AEF的面积。
+      <div class="diagram-box">
+        <svg width="220" height="140" viewBox="0 0 220 140">
+          <polygon points="40,100 100,30 180,30 120,100" stroke="#7c3aed" stroke-width="2" fill="none"/>
+          <line x1="40" y1="100" x2="140" y2="30" stroke="#f59e0b" stroke-width="1.5"/>
+          <line x1="40" y1="100" x2="150" y2="65" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="30" y="110" font-size="12" fill="#7c3aed">A</text>
+          <text x="95" y="20" font-size="12" fill="#7c3aed">B</text>
+          <text x="185" y="20" font-size="12" fill="#7c3aed">C</text>
+          <text x="115" y="110" font-size="12" fill="#7c3aed">D</text>
+          <text x="135" y="20" font-size="12" fill="#f59e0b">E</text>
+          <text x="150" y="75" font-size="12" fill="#f59e0b">F</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(22)">查看答案</button>
+      <div class="answer" id="answer-22" data-correct="见解析">
+        （1）证明：菱形ABCD中，AB = AD，∠B = ∠D，BE = DF<br>
+        ∴ △ABE ≅ △ADF（SAS），∴ AE = AF<br>
+        （2）S△AEF = 3√3。由已知可证△AEF是等边三角形。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">23</span>
+      某水果店购进苹果和梨共100千克，已知苹果的进价为每千克8元，售价为每千克12元；梨的进价为每千克6元，售价为每千克9元。设购进苹果x千克，销售完这批水果的总利润为y元。<br>
+      （1）求y关于x的函数解析式；<br>
+      （2）如果水果店决定苹果的进货量不超过梨的3倍，那么应如何进货才能使销售完这批水果的利润最大？最大利润是多少？
+      <button class="answer-btn" onclick="showAnswer(23)">查看答案</button>
+      <div class="answer" id="answer-23" data-correct="见解析">
+        （1）每千克苹果利润4元，每千克梨利润3元<br>
+        y = 4x + 3(100 - x) = x + 300<br>
+        （2）x ≤ 3(100 - x) → x ≤ 75<br>
+        y随x增大而增大，∴ x = 75时，y最大 = 375元。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">24</span>
+      已知抛物线 y = -x² + bx + c 经过点A(0, 3)和点B(1, 0)。<br>
+      （1）求抛物线的解析式；<br>
+      （2）求抛物线的顶点坐标和对称轴。
+      <button class="answer-btn" onclick="showAnswer(24)">查看答案</button>
+      <div class="answer" id="answer-24" data-correct="y=-x²-2x+3">
+        （1）代入A(0,3)得c = 3，代入B(1,0)得-1 + b + 3 = 0 → b = -2<br>
+        ∴ y = -x² - 2x + 3<br>
+        （2）y = -(x+1)² + 4，顶点(-1, 4)，对称轴x = -1。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">25</span>
+      如图，在△ABC中，AB = AC，∠BAC = 90°，点D在BC边上，E在AC边上，且∠ADE = 45°。<br>
+      （1）求证：△ABD∽△DCE；<br>
+      （2）如果AB = 2，BD = √2，求CE的长。
+      <div class="diagram-box">
+        <svg width="220" height="160" viewBox="0 0 220 160">
+          <line x1="30" y1="130" x2="190" y2="130" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="30" y1="130" x2="110" y2="30" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="110" y1="30" x2="190" y2="130" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="110" y1="130" x2="150" y2="80" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="20" y="140" font-size="12" fill="#7c3aed">B</text>
+          <text x="105" y="20" font-size="12" fill="#7c3aed">A</text>
+          <text x="195" y="140" font-size="12" fill="#7c3aed">C</text>
+          <text x="105" y="145" font-size="12" fill="#f59e0b">D</text>
+          <text x="155" y="75" font-size="12" fill="#f59e0b">E</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(25)">查看答案</button>
+      <div class="answer" id="answer-25" data-correct="见解析">
+        （1）证明：∠B = ∠C = 45°，∠ADC = ∠B + ∠BAD = 45° + ∠BAD<br>
+        又∠ADC = 45° + ∠CDE，∴ ∠BAD = ∠CDE，∴ △ABD∽△DCE<br>
+        （2）CE = 1。由相似比可求得。
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

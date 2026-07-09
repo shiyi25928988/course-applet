@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>初中化学分章节练习题 - 题库中心</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.chapter-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid #16a34a;
+}
+.chapter-title {
+    color: #15803d;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.question {
+    padding: 16px;
+    background: #fafafa;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #e5e7eb;
+}
+.q-num {
+    font-weight: 600;
+    color: #15803d;
+    margin-right: 8px;
+}
+.q-content {
+    line-height: 1.8;
+    color: #1e293b;
+}
+.options {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+.option {
+    padding: 8px 12px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+.answer-btn {
+    margin-top: 12px;
+    padding: 6px 16px;
+    background: #16a34a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+.answer-btn:hover {
+    background: #15803d;
+}
+.answer {
+    display: none;
+    margin-top: 12px;
+    padding: 12px;
+    background: #dcfce7;
+    border-radius: 6px;
+    border-left: 3px solid #16a34a;
+}
+.answer.show {
+    display: block;
+}
+.answer .correct {
+    color: #166534;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.answer .analysis {
+    color: #475569;
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+.difficulty {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin-left: 10px;
+}
+.easy { background: #dcfce7; color: #166534; }
+.medium { background: #fef3c7; color: #92400e; }
+.hard { background: #fee2e2; color: #991b1b; }
+.fill-blank {
+    display: inline-block;
+    width: 80px;
+    border-bottom: 1px solid #94a3b8;
+    text-align: center;
+}
+.formula {
+    background: #f0fdf4;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: 'Times New Roman', serif;
+    margin: 8px 0;
+}
+.chemical-eq {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links">
+    <a href="../exam_bank.html">← 返回题库中心</a>
+    <a href="index.html" style="margin-left:16px;">← 返回初中化学</a>
+</div>
+
+<div class="hero" style="background: linear-gradient(135deg, #16a34a, #15803d); color: #fff; padding: 28px 24px; border-radius: 16px; margin-bottom: 24px;">
+    <h1 style="font-size: 1.8rem; margin-bottom: 8px;">🧪 初中化学分章节练习题</h1>
+    <p>基础概念 + 元素化合物 + 化学方程式 + 实验 + 计算 · 系统训练</p>
+</div>
+
+<!-- 第二章：我们周围的空气 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>🌬️</span>
+        第二章 我们周围的空气
+        <span class="difficulty easy">基础</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共12题</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">1.</span>
+            空气中体积分数约为21%的气体是（　　）
+            <div class="options">
+                <div class="option">A. 氮气</div>
+                <div class="option">B. 氧气</div>
+                <div class="option">C. 二氧化碳</div>
+                <div class="option">D. 稀有气体</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('a1')">查看答案与解析</button>
+        <div class="answer" id="answer-a1">
+            <div class="correct">【答案】B</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                空气的成分按体积计算：<br>
+                • 氮气（N₂）：约78%<br>
+                • 氧气（O₂）：约21%<br>
+                • 稀有气体：约0.94%<br>
+                • 二氧化碳（CO₂）：约0.03%<br>
+                • 其他气体和杂质：约0.03%<br><br>
+                <strong>【记忆口诀】</strong>氮七八，氧二一，零点九四是稀气，还有两个零点零三，是二氧化碳和杂气。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">5.</span>
+            下列物质中，属于纯净物的是（　　）
+            <div class="options">
+                <div class="option">A. 洁净的空气</div>
+                <div class="option">B. 液态氧气</div>
+                <div class="option">C. 食醋</div>
+                <div class="option">D. 水泥砂浆</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('a5')">查看答案与解析</button>
+        <div class="answer" id="answer-a5">
+            <div class="correct">【答案】B</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                <strong>纯净物：</strong>由一种物质组成，可以用化学式表示。<br>
+                <strong>混合物：</strong>由两种或两种以上的物质组成，各成分保持各自的性质。<br><br>
+                A. 洁净的空气：含有氮气、氧气等多种气体，属于混合物 ❌<br>
+                B. 液态氧气：只含有O₂一种物质，属于纯净物 ✅<br>
+                C. 食醋：含有醋酸、水等物质，属于混合物 ❌<br>
+                D. 水泥砂浆：含有水泥、沙子、水等，属于混合物 ❌<br><br>
+                <strong>【注意】</strong>"洁净"不是"纯净"！洁净的空气仍然是混合物。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">12.</span>
+            实验室用高锰酸钾制取氧气，实验结束后，发现水槽中的水变成了紫红色，可能的原因是什么？收集满氧气后，应该如何操作？
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('a12')">查看答案与解析</button>
+        <div class="answer" id="answer-a12">
+            <div class="correct">【答案】试管口未放棉花；先撤导管，后熄灭酒精灯</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                <strong>(1) 水变成紫红色的原因：</strong><br>
+                试管口没有放一团棉花。<br>
+                加热高锰酸钾时，高锰酸钾粉末会随气流进入导气管，进而进入水槽，使水变成紫红色。<br><br>
+                <strong>(2) 实验结束后的正确操作：</strong><br>
+                <strong>先将导管从水槽中移出，再熄灭酒精灯。</strong><br><br>
+                如果顺序颠倒，先熄灭酒精灯，试管内温度降低，气压减小，水槽中的水会倒吸入热的试管，导致试管炸裂。<br><br>
+                <strong>【考点】</strong>高锰酸钾制取氧气的实验操作注意事项
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第五章：化学方程式 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>⚗️</span>
+        第五章 化学方程式
+        <span class="difficulty medium">中档</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共10题 · 核心章节</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">1.</span>
+            化学反应前后，肯定没有变化的是（　　）<br>
+            ① 原子数目  ② 分子数目  ③ 元素种类  ④ 物质种类  ⑤ 原子种类  ⑥ 物质总质量
+            <div class="options">
+                <div class="option">A. ①③⑤⑥</div>
+                <div class="option">B. ①②③⑤</div>
+                <div class="option">C. ①②⑥</div>
+                <div class="option">D. ②③⑤</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('eq1')">查看答案与解析</button>
+        <div class="answer" id="answer-eq1">
+            <div class="correct">【答案】A</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                <strong>质量守恒定律的微观解释：</strong><br>
+                化学反应的实质是分子分裂成原子，原子重新组合成新分子。<br><br>
+                <strong>六个"不变"：</strong><br>
+                宏观：① 物质总质量不变；② 元素种类不变；③ 各元素质量不变<br>
+                微观：④ 原子种类不变；⑤ 原子数目不变；⑥ 原子质量不变<br><br>
+                <strong>两个"一定变"：</strong><br>
+                宏观：物质种类一定变<br>
+                微观：分子种类一定变<br><br>
+                <strong>两个"可能变"：</strong><br>
+                分子数目可能变，元素化合价可能变<br><br>
+                所以①③⑤⑥肯定没有变化，选A。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">6.</span>
+            配平下列化学方程式（在横线上填入化学计量数）：<br><br>
+            ___ FeS₂ + ___ O₂ <sup>高温</sup>═══ ___ Fe₂O₃ + ___ SO₂
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('eq6')">查看答案与解析</button>
+        <div class="answer" id="answer-eq6">
+            <div class="correct">【答案】4、11、2、8</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                用<strong>定一法</strong>配平，选择化学式最复杂的Fe₂O₃，定其系数为1：<br><br>
+                第一步：定Fe₂O₃系数为1，Fe原子有2个，所以FeS₂系数为2：<br>
+                <div class="chemical-eq">2 FeS₂ + O₂ <sup>高温</sup>═══ 1 Fe₂O₃ + SO₂</div><br>
+                第二步：FeS₂系数为2，S原子有4个，所以SO₂系数为4：<br>
+                <div class="chemical-eq">2 FeS₂ + O₂ <sup>高温</sup>═══ 1 Fe₂O₃ + 4 SO₂</div><br>
+                第三步：算O原子总数：Fe₂O₃有3个O，4个SO₂有8个O，共11个O，所以O₂系数为11/2：<br>
+                <div class="chemical-eq">2 FeS₂ + 11/2 O₂ <sup>高温</sup>═══ 1 Fe₂O₃ + 4 SO₂</div><br>
+                第四步：两边同乘2去分母，得到整数系数：<br>
+                <div class="chemical-eq"><strong>4 FeS₂ + 11 O₂ <sup>高温</sup>═══ 2 Fe₂O₃ + 8 SO₂</strong></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第十章：酸和碱 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>🧪</span>
+        第十章 酸和碱
+        <span class="difficulty hard">提高</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共15题 · 重点难点</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">1.</span>
+            下列物质露置在空气中，质量会减小的是（　　）
+            <div class="options">
+                <div class="option">A. 浓硫酸</div>
+                <div class="option">B. 浓盐酸</div>
+                <div class="option">C. 氢氧化钠固体</div>
+                <div class="option">D. 氯化钠</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('ab1')">查看答案与解析</button>
+        <div class="answer" id="answer-ab1">
+            <div class="correct">【答案】B</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                A. 浓硫酸：具有吸水性，吸收空气中的水蒸气，质量增大 ❌<br>
+                B. 浓盐酸：具有挥发性，挥发出氯化氢气体，质量减小 ✅<br>
+                C. 氢氧化钠固体：① 吸收空气中的水分潮解；② 与CO₂反应变质，总质量增大 ❌<br>
+                D. 氯化钠：在空气中质量基本不变 ❌<br><br>
+                <strong>【考点】</strong>常见酸碱的物理性质<br>
+                <strong>【扩展】</strong>浓硫酸的吸水性是物理性质，可作干燥剂（不能干燥NH₃等碱性气体）。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">5.</span>
+            一些食物的近似pH如下：<br>
+            苹果汁：2.9~3.3 &nbsp;&nbsp; 葡萄汁：3.5~4.5 &nbsp;&nbsp; 牛奶：6.3~6.6 &nbsp;&nbsp; 鸡蛋清：7.6~8.0<br>
+            下列说法正确的是（　　）
+            <div class="options">
+                <div class="option">A. 鸡蛋清显碱性</div>
+                <div class="option">B. 苹果汁的酸性比葡萄汁弱</div>
+                <div class="option">C. 胃酸过多的人应多吃苹果</div>
+                <div class="option">D. 以上都不对</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('ab5')">查看答案与解析</button>
+        <div class="answer" id="answer-ab5">
+            <div class="correct">【答案】A</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                pH和酸碱性的关系：<br>
+                • pH < 7，酸性，pH越小，酸性越强<br>
+                • pH = 7，中性<br>
+                • pH > 7，碱性，pH越大，碱性越强<br><br>
+                A. 鸡蛋清pH = 7.6~8.0 > 7，显碱性 ✅<br>
+                B. 苹果汁pH(2.9~3.3) < 葡萄汁pH(3.5~4.5)，所以苹果汁酸性更强 ❌<br>
+                C. 胃酸过多的人应少吃酸性食物，苹果汁酸性强，不宜多吃 ❌<br><br>
+                <strong>【考点】</strong>pH与酸碱性的关系
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">15.</span>
+            某同学用稀盐酸和氢氧化钠溶液做中和反应实验，反应一段时间后，忘记滴加指示剂。为了确定反应进行的程度，他取少量反应后的溶液于试管中，滴加几滴无色酚酞溶液，观察到酚酞溶液不变色。于是他得出"两种物质恰好完全反应"的结论。<br><br>
+            (1) 该同学的结论是否正确？为什么？<br>
+            (2) 请你设计一个实验，探究上述烧杯中的溶液是否恰好完全中和。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('ab15')">查看答案与解析</button>
+        <div class="answer" id="answer-ab15">
+            <div class="correct">【答案】(1) 不正确；(2) 加紫色石蕊或活泼金属等</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                <strong>(1) 该同学的结论不正确。</strong><br>
+                因为无色酚酞溶液在中性和酸性溶液中都不变色。<br>
+                酚酞不变色有两种可能：<br>
+                ① 恰好完全反应，溶液呈中性；<br>
+                ② 盐酸过量，溶液呈酸性。<br>
+                所以不能得出"恰好完全反应"的结论。<br><br>
+                <strong>(2) 实验方案（任选其一即可）：</strong><br><br>
+                <strong>方案一：加紫色石蕊溶液</strong><br>
+                取少量反应后的溶液，滴加紫色石蕊溶液。<br>
+                • 若溶液变紫色 → 恰好完全中和<br>
+                • 若溶液变红色 → 盐酸过量<br><br>
+                <strong>方案二：加活泼金属（如锌粒）</strong><br>
+                取少量反应后的溶液，加入锌粒。<br>
+                • 若有气泡产生 → 盐酸过量<br>
+                • 若无气泡产生 → 恰好完全中和<br><br>
+                <strong>方案三：加碳酸钠粉末</strong><br>
+                取少量反应后的溶液，加入碳酸钠粉末。<br>
+                • 若有气泡产生 → 盐酸过量<br>
+                • 若无气泡产生 → 恰好完全中和<br><br>
+                <strong>【考点】</strong>中和反应的探究，是中考化学实验探究题的热点。
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第十一章：盐 化肥 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>🧂</span>
+        第十一章 盐 化肥
+        <span class="difficulty hard">提高</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共12题 · 推断题重点</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">8.</span>
+            有一包白色粉末，可能含有CuSO₄、Na₂CO₃、BaCl₂、NaCl中的一种或几种。为了确定其成分，进行如下实验：<br><br>
+            ① 取少量白色粉末，加足量水，充分搅拌后过滤，得到白色沉淀和无色滤液；<br>
+            ② 向沉淀中加入足量稀硝酸，沉淀全部溶解，并产生无色气体；<br>
+            ③ 向滤液中加入AgNO₃溶液和稀硝酸，有白色沉淀产生。<br><br>
+            下列判断正确的是（　　）
+            <div class="options">
+                <div class="option">A. 原粉末中一定含有CuSO₄</div>
+                <div class="option">B. 原粉末中一定含有Na₂CO₃、BaCl₂、NaCl</div>
+                <div class="option">C. 原粉末中可能含有NaCl</div>
+                <div class="option">D. 无法确定</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('salt8')">查看答案与解析</button>
+        <div class="answer" id="answer-salt8">
+            <div class="correct">【答案】C</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                一步步分析：<br><br>
+                <strong>由①：</strong>"无色滤液"说明一定不含CuSO₄（因为CuSO₄溶液是蓝色的）。<br>
+                "白色沉淀"说明可能有Na₂CO₃和BaCl₂反应生成的BaCO₃沉淀。<br><br>
+                <strong>由②：</strong>"沉淀全部溶解，产生无色气体"说明沉淀是BaCO₃（BaCO₃ + 2HNO₃ = Ba(NO₃)₂ + H₂O + CO₂↑）。<br>
+                所以原粉末中一定含有Na₂CO₃和BaCl₂。<br><br>
+                <strong>由③：</strong>"加入AgNO₃和稀硝酸产生白色沉淀"说明滤液中含有Cl⁻。<br>
+                但是！因为BaCl₂中本身就含有Cl⁻，所以无法确定原粉末中是否含有NaCl。<br><br>
+                结论：<br>
+                • 一定含有：Na₂CO₃、BaCl₂<br>
+                • 一定不含：CuSO₄<br>
+                • 可能含有：NaCl<br><br>
+                所以选C。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">12.</span>
+            用 100 g 溶质质量分数为 8% 的氢氧化钠溶液中和一定量的稀盐酸。求：<br>
+            (1) 氢氧化钠溶液中溶质的质量；<br>
+            (2) 恰好完全反应时，消耗HCl的质量是多少？
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('salt12')">查看答案与解析</button>
+        <div class="answer" id="answer-salt12">
+            <div class="correct">【答案】(1) 8 g；(2) 7.3 g</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                <strong>(1) 氢氧化钠溶液中溶质的质量：</strong><br>
+                <div class="formula">m(NaOH) = 溶液质量 × 溶质质量分数 = 100 g × 8% = 8 g</div><br>
+                <strong>(2) 设消耗HCl的质量为x。</strong><br><br>
+                首先写出化学方程式：<br>
+                <div class="chemical-eq">NaOH + HCl = NaCl + H₂O</div><br>
+                找相对分子质量：<br>
+                NaOH：23 + 16 + 1 = 40<br>
+                HCl：1 + 35.5 = 36.5<br><br>
+                列比例式：<br>
+                <div class="formula">
+                NaOH + HCl = NaCl + H₂O<br>
+                &nbsp;&nbsp;40 &nbsp;&nbsp;&nbsp;&nbsp;36.5<br>
+                &nbsp;&nbsp;8 g &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x
+                </div><br>
+                <div class="formula">40/36.5 = 8 g / x</div>
+                <div class="formula">x = (8 × 36.5) / 40 = 7.3 g</div><br>
+                答：(1) 氢氧化钠溶质质量为8 g；(2) 恰好完全反应消耗HCl 7.3 g。<br><br>
+                <strong>【考点】</strong>根据化学方程式的计算，中考化学必考题。
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script>
+function toggleAnswer(id) {
+    const answer = document.getElementById('answer-' + id);
+    answer.classList.toggle('show');
+}
+</script>
+</body>
+</html>

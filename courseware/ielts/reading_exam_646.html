@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel Of Fortune - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题646/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Wheel Of Fortune</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>A second professional growth area for this group of graduates is associated with
+community health. The increasing demand for government expenditure within health
+budgets is reaching the stage where most governments are simply unable to function in a
+manner that is satisfying their constituents. One of the primary reasons for this problem is
+the unhelpful emphasis on treatment in medical care programmes. Governments have
+traditionally given their senior health official the title of ‘Minister for Health’, when in fact this
+officer has functioned as ‘Minister for Sickness and the Construction of Hospitals’.
+Government focus simply has to change. If the change is not brought about for
+philosophical reasons, it will occur naturally, because insufficient funding will be available to
+address the ever-increasing costs of medical support.
+Graduates of human movement, exercise science and sport science have the potential to
+become major players in this shift in policy focus. It is these graduates who already have
+the skills, knowledge and understanding to initiate community health education
+programmes to reduce cardio-vascular disease, to reduce medical dependency upon
+diabetes, to improve workplace health leading to increased productivity, to initiate and
+promote programmes of activity for the elderly that reduce medical dependency, and to
+maintain an active lifestyle for the unemployed and disadvantaged groups in society. This
+is the graduate that governments will be calling upon to shift the community focus from
+medical dependency to healthy lifestyles in the decades ahead.
+The career paths of these graduates are developing at a pace that is not evident in other
+professions. The contribution that these graduates can make to society, and the recognition
+of this contribution is at an unprecedented high, and all indications are that it will continue
+to grow.
+ 2</p>
+<p>Questions 1-5
+Complete the flow chart below.
+Choose NO MORE THAN TWO WORDS from the passage for each answer.</p>
+<p>The history of sports and physical science in Australia</p>
+<p>A lot of people identified as being 1.....................
+Introduction of PE to 2.....................
+Special training programmes for 3.....................
+4..................... of PE graduates
+Identification of alternative 5..................... 
+Diversification of course delivery 
+Questions 6-13
+Do the following statements agree with the information given in Reading Passage 1 ? Write
+           TRUE
+ 
+if the statement agrees with the information</p>
+<p>FALSE         if the statement contradicts the information
+NOT GIVEN if there is no information on this</p>
+<p>Sport is generally regarded as a profitable area for investment.
+Rupert Murdoch has a personal as well as a business interest in sport.
+The range of career opportunities available to sport graduates is
+     
+6.....................
+7.....................
+8.....................
+increasing.
+9.....................
+10.....................
+medicine.
+The interests of business and the interests of universities are linked.
+Governments have been focusing too much attention on preventative
+11.....................
+    
+It is inevitable that government priorities for health spending will change.
+12..................... Existing degree courses are unsuitable for careers in community health. 
+13.....................    Funding for sport science and related degrees has been increased
+considerably. 
+ 3</p>
+<p>8. TRUE
+9. TRUE
+10.
+FALSE
+11.
+TRUE
+12.
+FALSE
+13. NOT
+3. PE teachers
+GIVEN
+4. surplus
+5. employment
+opportunities/careers/routes
+6. TRUE
+7. NOT GIVEN
+ 4</p>
+<p>Reading Practice
+ Stadium Australia
+A You might ask, why be concerned about the architecture of a stadium? Surely, as Long
+as die action is entertaining and the building is safe and reasonably comfortable, why
+should the aesthetics matter’ This one question has dominated my professional life, and its
+answer is one 1 find myself continually rehearsing. If one accepts that sporting endeavour
+is as important an outlet for human expression as, say, the theatre or cinema, fine art or
+music, why shouldn’t the buildings in which we celebrate this outlet he as grand and as
+inspirational as those we would expect, and demand, in those other areas of cultural life?
+Indeed, one could argue that because stadiums are, in many instances, far more popular
+than theatres or art galleries, we should actually devote more, and nor less, attention to
+their form. Stadiums have frequently been referred to as ‘cathedrals’. Football has often
+been dubbed ‘the opera of the people’. What better way, therefore, to raise the general
+public’s awareness and appreciation of quality design than to offer them the very’ best
+buildings in the one area of life that seems to touch them most? Could it even be drat better
+stadiums might just make tor better citizens?
+B But then maybe, as my detractors have labelled me in the past, 1 am a snob. Maybe I
+should just accept that sport, and its associated accoutrements and products, is an
+essentially tacky and ephemeral business, while stadium design is all too often driven by
+pragmatists and penny-pinchers. Certainly, when 1 first started writing about stadium
+architecture, one of the first and most uncomfortable truths 1 had to confront was that some
+of the mast popular stadiums in the world were also amongst the the least attractive or
+innovative in architectural terms. ‘Worthy and predictable’ has usually won more votes than
+’daring and different’. Old Trafford football ground in Manchester, the Yankee Stadium in
+New York, Ellis Park in Johannesburg. The list is long and is not intended to suggest that
+these are necessarily poor buildings. Rather, that each has derived its reputation more
+from the events that it has staged, from its associations, than from the actual form it takes.
+Equally, those stadiums whose forms have been revered – such as the Maracana in Rio, oi
+the San Siro in Milan – have turned out to be rather poorly designed in several respects,
+once one analyses them not as icons but as functioning ‘public assembly facilities’ (to use
+the current jargon). Finding the balance between beauty and practicality has never been
+easy.
+C Homebush Bay was the site of rhe main Olympic Games complex for the Sydney
+Olympics of 2000. To put it politely, 1 am no great admirer of the Olympics as an event, or,
+rather, of the insane pressures its past bidding procedures have placed upon candidate
+cities. Nor, as a spectator, do 1 much enjoy the bloated Games programme and the
+consequent demands this places upon the designers of stadiums. Yet in my calmer
+moments ir would be churlish to deny that, if approached sensibly and imaginatively, the
+opportunity to stage the Games can yield enormous benefits in the long term (as well they
+should, considering the expenditure involved), if not (or sport then at least for the cause of
+urban regeneration. Following in Barcelona’s footsteps, Sydney undoubtedly set about its
+urban regeneration in a wholly impressive way. To an outsider, the 760-hectare sire at
+Homebush Bay, once the home of an abattoir, a racecourse, a brickworks and light
+industrial units, seemed miles from anywhere – it was actually fifteen kilometres from the
+centre of Sydney and pretty much in the heart of the city’s extensive conurbation. Some
+£1.3 billion worth of construction and reclamation was commissioned, all of it, crucially, with
+an eye to post- Olympic usage- Strict guidelines, studiously monitore by Greenpeace,
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高中数学分章节练习题 - 题库中心</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.chapter-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid #8b5cf6;
+}
+.chapter-title {
+    color: #7c3aed;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.question {
+    padding: 16px;
+    background: #fafafa;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #e5e7eb;
+}
+.q-num {
+    font-weight: 600;
+    color: #7c3aed;
+    margin-right: 8px;
+}
+.q-content {
+    line-height: 1.8;
+    color: #1e293b;
+}
+.options {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+.option {
+    padding: 8px 12px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+.answer-btn {
+    margin-top: 12px;
+    padding: 6px 16px;
+    background: #7c3aed;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+.answer-btn:hover {
+    background: #6d28d9;
+}
+.answer {
+    display: none;
+    margin-top: 12px;
+    padding: 12px;
+    background: #ede9fe;
+    border-radius: 6px;
+    border-left: 3px solid #7c3aed;
+}
+.answer.show {
+    display: block;
+}
+.answer .correct {
+    color: #166534;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.answer .analysis {
+    color: #475569;
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+.difficulty {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin-left: 10px;
+}
+.easy { background: #dcfce7; color: #166534; }
+.medium { background: #fef3c7; color: #92400e; }
+.hard { background: #fee2e2; color: #991b1b; }
+.fill-blank {
+    display: inline-block;
+    width: 80px;
+    border-bottom: 1px solid #94a3b8;
+    text-align: center;
+}
+.formula {
+    background: #f5f3ff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    margin: 8px 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links">
+    <a href="../exam_bank.html">← 返回题库中心</a>
+    <a href="index.html" style="margin-left:16px;">← 返回高中数学</a>
+</div>
+
+<div class="hero" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9); color: #fff; padding: 28px 24px; border-radius: 16px; margin-bottom: 24px;">
+    <h1 style="font-size: 1.8rem; margin-bottom: 8px;">📐 高中数学分章节练习题</h1>
+    <p>高考考点全覆盖 · 单选 + 多选 + 填空 + 解答题 · 含详细解析</p>
+</div>
+
+<!-- 第一章：集合与常用逻辑用语 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>📚</span>
+        第一章 集合与常用逻辑用语
+        <span class="difficulty easy">基础</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共10题</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">1.</span>
+            已知集合 A = {x | 0 < x < 3}，B = {x | 1 ≤ x ≤ 4}，则 A ∩ B =（　　）
+            <div class="options">
+                <div class="option">A. (0, 1)</div>
+                <div class="option">B. (1, 3)</div>
+                <div class="option">C. [1, 3)</div>
+                <div class="option">D. (0, 4]</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('set1')">查看答案与解析</button>
+        <div class="answer" id="answer-set1">
+            <div class="correct">【答案】C</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                集合的交集是两个集合的公共元素组成的集合。<br><br>
+                A = (0, 3)，B = [1, 4]<br>
+                画数轴可知，两集合的公共部分是从1（含）到3（不含）。<br><br>
+                所以 A ∩ B = [1, 3)，选C。<br><br>
+                <strong>【考点】</strong>集合的交集运算<br>
+                <strong>【注意】</strong>区间端点：开区间不包含端点，闭区间包含端点。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">5.</span>
+            设集合 A = {1, 2, 3}，B = {x | x² - 4x + 3 = 0}，则 A ∪ B = <span class="fill-blank">&nbsp;</span>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('set5')">查看答案与解析</button>
+        <div class="answer" id="answer-set5">
+            <div class="correct">【答案】{1, 2, 3}</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                首先解方程求集合B：<br>
+                x² - 4x + 3 = 0<br>
+                (x - 1)(x - 3) = 0<br>
+                所以 x = 1 或 x = 3<br><br>
+                因此 B = {1, 3}<br><br>
+                集合的并集是两个集合所有元素组成的集合（重复元素只写一次）：<br>
+                A ∪ B = {1, 2, 3} ∪ {1, 3} = {1, 2, 3}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第四章：指数函数与对数函数 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>📈</span>
+        第四章 指数函数与对数函数
+        <span class="difficulty medium">中档</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共12题 · 函数重点</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">3.</span>
+            已知 a = 2<sup>0.3</sup>，b = 0.3<sup>2</sup>，c = log<sub>2</sub>0.3，则 a, b, c 的大小关系是（　　）
+            <div class="options">
+                <div class="option">A. a < b < c</div>
+                <div class="option">B. c < b < a</div>
+                <div class="option">C. c < a < b</div>
+                <div class="option">D. b < c < a</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('exp3')">查看答案与解析</button>
+        <div class="answer" id="answer-exp3">
+            <div class="correct">【答案】B</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                利用中间值0和1比较大小：<br><br>
+                对于 a = 2<sup>0.3</sup>：<br>
+                因为指数函数 y = 2<sup>x</sup> 是增函数，0.3 > 0，所以 2<sup>0.3</sup> > 2<sup>0</sup> = 1<br>
+                即 a > 1<br><br>
+                对于 b = 0.3<sup>2</sup>：<br>
+                0.3<sup>2</sup> = 0.09，所以 0 < b < 1<br><br>
+                对于 c = log<sub>2</sub>0.3：<br>
+                因为对数函数 y = log<sub>2</sub>x 是增函数，0.3 < 1，所以 log<sub>2</sub>0.3 < log<sub>2</sub>1 = 0<br>
+                即 c < 0<br><br>
+                综上：c < 0 < b < 1 < a，即 c < b < a，选B。<br><br>
+                <strong>【考点】</strong>指数函数、对数函数的单调性，比较大小问题。
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第五章：三角函数 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>📐</span>
+        第五章 三角函数
+        <span class="difficulty medium">中档</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共15题 · 高考重点</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">1.</span>
+            sin 15° + cos 15° 的值为（　　）
+            <div class="options">
+                <div class="option">A. √6/2</div>
+                <div class="option">B. √6/2</div>
+                <div class="option">C. √2/2</div>
+                <div class="option">D. √3/2</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('tri1')">查看答案与解析</button>
+        <div class="answer" id="answer-tri1">
+            <div class="correct">【答案】A（√6/2）</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                <strong>方法一：和角公式</strong><br>
+                sin 15° + cos 15° = √2 (√2/2 sin15° + √2/2 cos15°)<br>
+                = √2 (sin15°cos45° + cos15°sin45°)<br>
+                = √2 sin(15°+45°) = √2 sin60°<br>
+                = √2 × (√3/2) = √6/2<br><br>
+                <strong>方法二：先平方再开方</strong><br>
+                (sin15° + cos15°)² = sin²15° + 2sin15°cos15° + cos²15°<br>
+                = 1 + sin30° = 1 + 1/2 = 3/2<br>
+                因为 sin15° + cos15° > 0，所以开方得 √(3/2) = √6/2<br><br>
+                <strong>【考点】</strong>三角恒等变换，辅助角公式。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">10.</span>
+            函数 f(x) = 2 sin(2x + π/3) 的最小正周期为 <span class="fill-blank">&nbsp;</span>，
+            当 x ∈ [0, π/2] 时，f(x) 的最大值为 <span class="fill-blank">&nbsp;</span>。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('tri10')">查看答案与解析</button>
+        <div class="answer" id="answer-tri10">
+            <div class="correct">【答案】π；2</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                <strong>(1) 最小正周期：</strong><br>
+                对于 y = A sin(ωx + φ)，最小正周期 T = 2π/|ω|<br>
+                这里 ω = 2，所以 T = 2π/2 = π<br><br>
+                <strong>(2) 求最大值：</strong><br>
+                当 x ∈ [0, π/2] 时：<br>
+                2x ∈ [0, π]<br>
+                2x + π/3 ∈ [π/3, 4π/3]<br><br>
+                令 t = 2x + π/3，则 t ∈ [π/3, 4π/3]<br>
+                求 f(t) = 2 sin t 在 t ∈ [π/3, 4π/3] 上的最大值。<br><br>
+                sin t 在 [π/3, π/2] 上递增，在 [π/2, 4π/3] 上递减，<br>
+                所以当 t = π/2 时，sin t 取得最大值 1。<br><br>
+                因此 f(x) 的最大值为 2 × 1 = 2。<br><br>
+                <strong>【考点】</strong>三角函数的周期性和最值，是高考高频考点。
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第六章：平面向量 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>➡️</span>
+        第六章 平面向量
+        <span class="difficulty medium">中档</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共10题</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">5.</span>
+            已知向量 a = (1, 2)，b = (m, -1)，若 a ⊥ b，则实数 m 的值为（　　）
+            <div class="options">
+                <div class="option">A. -2</div>
+                <div class="option">B. 2</div>
+                <div class="option">C. -1/2</div>
+                <div class="option">D. 1/2</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('vec5')">查看答案与解析</button>
+        <div class="answer" id="answer-vec5">
+            <div class="correct">【答案】B</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                两个向量垂直的充要条件是它们的数量积为0：<br>
+                <div class="formula">a ⊥ b ⇔ a · b = 0</div>
+                已知 a = (x₁, y₁)，b = (x₂, y₂)，则：<br>
+                <div class="formula">a · b = x₁x₂ + y₁y₂ = 0</div>
+                代入 a = (1, 2)，b = (m, -1)：<br>
+                1 × m + 2 × (-1) = 0<br>
+                m - 2 = 0<br>
+                m = 2<br><br>
+                <strong>【考点】</strong>向量垂直的坐标表示，数量积的运算。
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第八章：立体几何 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>📦</span>
+        第八章 立体几何初步
+        <span class="difficulty hard">提高</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共12题 · 空间想象</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">8.</span>
+            已知正方体 ABCD-A₁B₁C₁D₁ 的棱长为 2，E 为 CC₁ 的中点，则三棱锥 E-ABD 的体积为 <span class="fill-blank">&nbsp;</span>。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('geo8')">查看答案与解析</button>
+        <div class="answer" id="answer-geo8">
+            <div class="correct">【答案】2/3</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                三棱锥体积公式：V = (1/3) × 底面积 × 高<br><br>
+                选择 △ABD 为底面：<br>
+                S△ABD = (1/2) × AB × AD = (1/2) × 2 × 2 = 2<br><br>
+                点 E 到平面 ABD 的距离就是 E 到底面 ABCD 的距离，即 EC = 1<br><br>
+                所以体积：<br>
+                <div class="formula">V = (1/3) × S△ABD × 高 = (1/3) × 2 × 1 = 2/3</div><br>
+                <strong>【考点】</strong>空间几何体的体积计算，换顶点法是常用技巧。
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 导数压轴 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>📉</span>
+        第五章 一元函数的导数及其应用
+        <span class="difficulty hard">提高</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">压轴题专项</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">12.</span>
+            已知函数 f(x) = x³ - 3x，求：<br>
+            (1) 函数 f(x) 的单调区间；<br>
+            (2) 函数 f(x) 在区间 [-2, 2] 上的最大值和最小值。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('der12')">查看答案与解析</button>
+        <div class="answer" id="answer-der12">
+            <div class="correct">【答案】(1) 递增(-∞,-1),(1,+∞)，递减(-1,1)；(2) 最大值2，最小值-2</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                函数 f(x) 的定义域为 R。<br><br>
+                <strong>(1) 求单调区间：</strong><br>
+                先求导数：f'(x) = 3x² - 3 = 3(x² - 1) = 3(x + 1)(x - 1)<br><br>
+                令 f'(x) > 0，即 3(x + 1)(x - 1) > 0，解得 x < -1 或 x > 1<br>
+                所以 f(x) 的单调递增区间为 (-∞, -1) 和 (1, +∞)<br><br>
+                令 f'(x) < 0，即 3(x + 1)(x - 1) < 0，解得 -1 < x < 1<br>
+                所以 f(x) 的单调递减区间为 (-1, 1)<br><br>
+                <strong>(2) 求在[-2, 2]上的最值：</strong><br>
+                先求极值点和端点的函数值：<br>
+                f(-2) = (-2)³ - 3×(-2) = -8 + 6 = -2<br>
+                f(-1) = (-1)³ - 3×(-1) = -1 + 3 = 2（极大值）<br>
+                f(1) = 1³ - 3×1 = 1 - 3 = -2（极小值）<br>
+                f(2) = 2³ - 3×2 = 8 - 6 = 2<br><br>
+                比较得：最大值为 2，最小值为 -2。<br><br>
+                <strong>【考点】</strong>利用导数研究函数单调性和最值，是高考导数大题的基础题型。
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script>
+function toggleAnswer(id) {
+    const answer = document.getElementById('answer-' + id);
+    answer.classList.toggle('show');
+}
+</script>
+</body>
+</html>

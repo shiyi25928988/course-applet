@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mammoth Kill - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题308/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Mammoth Kill</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>experience, especially for the highly competent. There are quite a number of new methods
+which can help, such as child- initiated learning, ability-peer tutoring, etc. Such practices
+have been found to be particularly useful for bright children from deprived areas.
+ 
+E  But scientific progress is not all theoretical, knowledge is a so vital to outstanding
+performance: individuals who know a great deal about a specific domain will achieve at a
+higher level than those who do not (Elshout, 1995). Research with creative scientists by
+Simonton (1988) brought him to the conclusion that above a certain high level,
+characteristics such as independence seemed to contribute more to reaching the highest
+levels of expertise than intellectual skills, due to the great demands of effort and time
+needed for learning and practice. Creativity in all forms can be seen as expertise se mixed
+with a high level of motivation (Weisberg, 1993).
+F To sum up, learning is affected by emotions of both the individual and significant others.
+Positive emotions facilitate the creative aspects of earning and negative emotions inhibit it.
+Fear, for example, can limit the development of curiosity, which is a strong force in
+scientific advance, because it motivates problem-solving behaviour. In Boekaerts’ (1991)
+review of emotion the learning of very high IQ and highly achieving children, she found
+emotional forces in harness. They were not only curious, but often had a strong desire to
+control their environment, improve their learning efficiency and increase their own learning
+resources.
+ 2</p>
+<p>Questions 1-4
+Reading Passage has six paragraphs, A-F.
+Which paragraph contains the following information?
+Write the correct letter, A-F, in boxes 1-4 on your answer sheet
+NB You may use any letter more than once.
+1..................... a reference to the influence of the domestic background on the gifted child.
+2..................... reference to what can be lost if learners are given too much guidance.
+3..................... a reference to the damaging effects of anxiety. 
+4..................... examples of classroom techniques which favour socially-disadvantaged
+children.
+Questions 5-9
+Look at the following statements (Questions 5-9) and the list of people below.
+Match each statement with the correct person or people, A-E.
+Write the correct letter, A-E, in boxes 5-9 on your answer sheet.
+5..................... Less time can be spent on exercises with gifted pupils who produce
+accurate work.
+6..................... Self-reliance is a valuable tool that helps gifted students reach their goals.
+7..................... Gifted children know how to channel their feelings to assist their learning.
+8..................... The very gifted child benefits from appropriate support from close relatives.
+9..................... Really successful students have learnt a considerable amount about their
+subject.</p>
+<p>List of People
+ 
+    AFreeman
+    B  Shore and Kanevsky
+    C Elshout
+    DSimonton
+    E Boekaerts
+ 3</p>
+<p>Questions 10-13
+Complete the sentences below.
+Choose NO MORE THAN THREE WORDSfrom the passage for each answer.
+Write your answers in boxes 10-13 on your answer sheet
+10. One study found a strong connection between children’s IQ and the availability of
+10..................... at home. 
+11. Children of average ability seem to need more direction from teachers because they do
+not have 11...................... 
+12. Meta-cognition involves children understanding their own learning strategies, as well as
+developing 12...................... 
+13. Teachers who rely on what is known as 13..................... often produce sets of
+impressive grades in class tests. 
+ 4</p>
+<p>Solution:
+1. A 8. A
+ 2.</p>
+<p>9. C
+3. F 10. books and activities
+ 4.</p>
+<p>11. internal regulation/self-regulation
+ 
+5. B 12. emotional awareness
+6.</p>
+<p>Reading Practice
+ Glaciers</p>
+<p>Besides the earth’s oceans, glacier ice is the largest source of water on earth. A glacier is a
+massive stream or sheet of ice that moves underneath itself under the influence of gravity.
+Some glaciers travel down mountains or valleys, while others spread across a large
+expanse of land. Heavily glaciated regions such as Greenland and Antarctica are called
+continental glaciers. These two ice sheets encompass more than 95 percent of the earth’s
+glacial ice. The Greenland ice sheet is almost 10,000 feet thick in some areas, and the
+weight of this glacier is so heavy that much of the region has been depressed below sea
+level. Smaller glaciers that occur at higher elevations are called alpine or valley glaciers.
+Another way of classifying glaciers is in terms of their internal temperature. In temperate
+glaciers, the ice within the glacier is near its melting point. Polar glaciers, in contrast,
+always maintain temperatures far below melting.</p>
+<p>The majority of the earth’s glaciers are located near the poles, though glaciers exist on all
+continents, including Africa and Oceania. The reason glaciers are generally formed in high
+alpine regions is that they require cold temperatures throughout the year. In these areas
+where there is little opportunity for summer ablation (loss of mass), snow changes to
+compacted fim and then crystallized ice. During periods in which melting and evaporation
+exceed the amount of snowfall, glaciers will retreat rather than progress. While glaciers rely
+heavily on snowfall, other climactic conditions including freezing rain, avalanches, and
+wind, contribute to their growth. One year of below average precipitation can stunt the
+growth of a glacier tremendously. With the rare exception of surging glaciers, a common
+glacier flows about 10 inches per day in the summer and 5 inches per day in the winter.
+The fastest glacial surge on record occurred in 1953, when the Kutiah Glacier in Pakistan
+grew more than 12 kilometers in three months.</p>
+<p>The weight and pressure of ice accumulation causes glacier movement. Glaciers move out
+from under themselves, via plastic deformation and basal slippage. First, the internal flow
+of ice crystals begins to spread outward and downward from the thickened snow pack also
+known as the zone of accumulation. Next, the ice along the ground surface begins to slip in
+the same direction. Seasonal thawing at the base of the glacier helps to facilitate this
+slippage. The middle of a glacier moves faster than the sides and bottom because there is
+no rock to cause friction. The upper part of a glacier rides on the ice below. As a glacier
+moves it carves out a U-shaped valley similar to a riverbed, but with much steeper walls
+and a flatter bottom.</p>
+<p>Besides the extraordinary rivers of ice, glacial erosion creates other unique physical
+features in the landscape such as horns, fjords, hanging valleys, and cirques. Most of these
+landforms do not become visible until after a glacier has receded. Many are created by
+moraines, which occur at the sides and front of a glacier. Moraines are formed when
+material is picked up along the way and deposited in a new location. When many alpine
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

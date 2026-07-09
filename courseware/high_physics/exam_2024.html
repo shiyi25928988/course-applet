@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>2024年上海高考物理真题</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.year-header { background:linear-gradient(135deg,#2563eb,#7c3aed); color:#fff; padding:24px; border-radius:12px; margin-bottom:24px; }
+.section-title { background:#eff6ff; padding:10px 16px; border-left:4px solid #2563eb; margin:24px 0 16px; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 返回高中物理主页</a><a href="exam_collection.html">← 真题汇编目录</a></div>
+<div class="year-header"><h1>⚛️ 2024年上海市普通高等学校招生全国统一考试</h1><h2>物理试卷</h2><p>满分100分 · 考试时间60分钟</p></div>
+
+<div class="section-title">一、选择题（本大题共12题，每题3分，满分36分）</div>
+
+<div class="question">
+<span class="q-num">1</span>下列物理量中属于矢量的是（ ）
+<div class="options">
+<label><input type="radio" name="q1" value="A">A. 质量</label>
+<label><input type="radio" name="q1" value="B">B. 速度</label>
+<label><input type="radio" name="q1" value="C">C. 时间</label>
+<label><input type="radio" name="q1" value="D">D. 温度</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="B">
+  <div class="answer-value"><strong>答案：</strong>B</div>
+  <div class="answer-solution"><strong>解析：</strong>速度既有大小又有方向，是矢量；质量、时间、温度只有大小没有方向，是标量。</div>
+</div>
+</div>
+
+<div class="question">
+<span class="q-num">2</span>做匀加速直线运动的物体，初速度为 2 m/s，加速度为 1 m/s²，则 3 s 末的速度为（ ）
+<div class="options">
+<label><input type="radio" name="q2" value="A">A. 2 m/s</label>
+<label><input type="radio" name="q2" value="B">B. 3 m/s</label>
+<label><input type="radio" name="q2" value="C">C. 4 m/s</label>
+<label><input type="radio" name="q2" value="D">D. 5 m/s</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="D">
+  <div class="answer-value"><strong>答案：</strong>D</div>
+  <div class="answer-solution">
+    <strong>解析：</strong>
+    <br>匀变速直线运动速度公式：v = v₀ + at
+    <br>代入数据：v = 2 + 1×3 = 5 m/s
+  </div>
+</div>
+</div>
+
+<div class="question">
+<span class="q-num">3</span>关于牛顿第一定律，下列说法正确的是（ ）
+<div class="options">
+<label><input type="radio" name="q3" value="A">A. 物体不受力时一定静止</label>
+<label><input type="radio" name="q3" value="B">B. 物体不受力时一定做匀速直线运动</label>
+<label><input type="radio" name="q3" value="C">C. 力是维持物体运动的原因</label>
+<label><input type="radio" name="q3" value="D">D. 力是改变物体运动状态的原因</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="D">
+  <div class="answer-value"><strong>答案：</strong>D</div>
+  <div class="answer-solution">
+    <strong>解析：</strong>
+    <br>牛顿第一定律表明：物体不受力时保持静止或匀速直线运动状态；
+    <br>力不是维持物体运动的原因，而是改变物体运动状态的原因。
+  </div>
+</div>
+</div>
+
+<div class="section-title">二、填空题（本大题共5题，每题4分，满分20分）</div>
+
+<div class="question">
+<span class="q-num">13</span>地球表面的重力加速度约为 ______ m/s²（保留1位小数）。
+<button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+<div class="answer" id="answer-13" data-correct="9.8">
+  <div class="answer-value"><strong>答案：</strong>9.8</div>
+  <div class="answer-solution">
+    <strong>解析：</strong>
+    <br>地球表面的重力加速度标准值为 9.8 m/s²，随纬度升高略有增大。
+  </div>
+</div>
+</div>
+
+<div class="question">
+<span class="q-num">14</span>一个阻值为 10 Ω 的电阻，两端电压为 5 V，则通过该电阻的电流为 ______ A。
+<button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+<div class="answer" id="answer-14" data-correct="0.5">
+  <div class="answer-value"><strong>答案：</strong>0.5</div>
+  <div class="answer-solution">
+    <strong>解析：</strong>
+    <br>由欧姆定律 I = U/R = 5 V / 10 Ω = 0.5 A
+  </div>
+</div>
+</div>
+
+<div class="section-title">三、计算题（本大题共3题，满分44分）</div>
+
+<div class="question">
+<span class="q-num">19</span>本题满分12分
+<br>质量为 2 kg 的物体从 20 m 高处自由落下，不计空气阻力，求：
+<br>(1) 下落时间；
+<br>(2) 落地时的动能。
+<button class="answer-btn" onclick="showAnswer(19)">查看解析</button>
+<div class="answer" id="answer-19" data-correct="1">
+  <div class="answer-value"><strong>答案：</strong>(1) 2 s；(2) 400 J</div>
+  <div class="answer-solution">
+    <strong>解析：</strong>
+    <br><br>(1) 由自由落体公式 h = ½gt²
+    <br>t = √(2h/g) = √(2×20/10) = √4 = 2 s
+    <br><br>(2) 落地速度 v = gt = 10×2 = 20 m/s
+    <br>动能 E<sub>k</sub> = ½mv² = 0.5×2×20² = 400 J
+  </div>
+</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雅思阅读真题详解 - 学习助手</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .page-hero p {
+            opacity: 0.95;
+            margin: 0;
+            font-size: 1.05rem;
+        }
+        .content-section {
+                background: #fff;
+                border-radius: 12px;
+                padding: 24px;
+                margin-bottom: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            }
+            .content-section h3 {
+                margin: 0 0 16px 0;
+                color: #1d4ed8;
+                font-size: 1.2rem;
+            }
+            .passage-box {
+                background: #f8fafc;
+                padding: 20px;
+                border-radius: 8px;
+                border-left: 4px solid #3b82f6;
+                font-size: 0.95rem;
+                line-height: 1.8;
+            }
+            .question-card {
+                background: #eff6ff;
+                border-radius: 8px;
+                padding: 16px;
+                margin-bottom: 12px;
+                border-left: 3px solid #3b82f6;
+            }
+            .question-card h4 {
+                margin: 0 0 12px 0;
+                color: #1e40af;
+            }
+            .answer-box {
+                background: #ecfdf5;
+                border-left: 4px solid #10b981;
+                padding: 16px;
+                border-radius: 0 8px 8px 0;
+                margin-top: 12px;
+            }
+            .answer-box h5 {
+                margin: 0 0 8px 0;
+                color: #047857;
+            }
+            .answer-box p {
+                margin: 4px 0;
+                font-size: 0.9rem;
+            }
+            .keyword {
+                background: #fef9c3;
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-weight: 500;
+            }
+            .synonym {
+                color: #7c3aed;
+                font-weight: 500;
+            }
+            .tab-nav {
+                display: flex;
+                gap: 8px;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+            }
+            .tab-btn {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 8px;
+                background: #f1f5f9;
+                cursor: pointer;
+                font-size: 0.9rem;
+                transition: all 0.2s;
+            }
+            .tab-btn.active {
+                background: #3b82f6;
+                color: white;
+            }
+            .tab-content {
+                display: none;
+            }
+            .tab-content.active {
+                display: block;
+            }
+            .difficulty {
+                display: inline-block;
+                padding: 3px 10px;
+                border-radius: 12px;
+                font-size: 0.8rem;
+                margin-left: 10px;
+            }
+            .diff-easy { background: #dcfce7; color: #166534; }
+            .diff-medium { background: #fef3c7; color: #92400e; }
+            .diff-hard { background: #fee2e2; color: #991b1b; }
+        </style>
+    </head>
+    <body>
+        <div class="layout">
+            <aside class="sidebar">
+                <h3>📖 阅读真题详解</h3>
+                <ul class="chapter-list">
+                    <li><a href="reading.html"><span class="ch-num">←</span>返回阅读精讲</a></li>
+                    <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+                </ul>
+                <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+            </aside>
+
+            <main class="main">
+                <div class="page-hero">
+                    <h1>📖 雅思阅读真题详解</h1>
+                    <p>Cambridge IELTS 16 · Test 1 · Reading Passage 1 · 完整逐题解析</p>
+                </div>
+
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
+                    <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
+                    <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
+                </div>
+
+                <!-- 原文文章 -->
+                <div id="passage" class="tab-content active">
+                    <div class="content-section">
+                        <h3>📄 Passage 1: The Importance of Children's Play</h3>
+                        <div class="difficulty diff-easy">难度：★★☆☆☆ 简单</div>
+                        <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：说明文 · 话题：教育 · 建议时间：15-17分钟</p>
+                        <div class="passage-box">
+                            <p><strong>A</strong><br>
+                            The value of play is increasingly recognised by researchers as being essential to a child's development. In fact, the latest figures suggest that play enhances a child's cognitive, physical, social and emotional well-being. Researchers are discovering that play helps to build the foundation for a child's future success, including academic achievement, behaviour, health and life skills. While the importance of play is widely acknowledged, a growing number of children are not getting enough of it, according to a report published by the American Academy of Pediatrics (AAP).</p>
+                            
+                            <p><strong>B</strong><br>
+                            The decline in play is attributed to several factors. One major factor is the increased emphasis on academic achievement and the growing number of structured activities, such as music lessons and sports practice, that fill a child's day. Additionally, many parents perceive play as unproductive or a waste of time, and so they prefer to focus on activities that they believe will prepare their child for success in school and beyond. Another contributing factor is the limited access to safe places to play, particularly in urban areas where green spaces are scarce.</p>
+                            
+                            <p><strong>C</strong><br>
+                            Play has numerous benefits for children. For instance, it helps to develop problem-solving skills, creativity and imagination. Through play, children learn how to interact with their peers, resolve conflicts and practice self-control. Play also provides an opportunity for children to make decisions, pursue their interests and discover what they enjoy doing. Moreover, active play helps children develop motor skills, balance and coordination, as well as promoting physical health and reducing the risk of obesity.</p>
+                            
+                            <p><strong>D</strong><br>
+                            Different types of play contribute to different aspects of a child's development. Physical play, such as running, jumping and climbing, helps develop gross motor skills and coordination. Constructive play, which involves building and creating things with objects, helps develop fine motor skills, spatial awareness and problem-solving abilities. Pretend play, where children act out scenarios and take on different roles, helps develop language and social skills, as well as creativity and emotional intelligence. Games with rules teach children about fairness, taking turns and following instructions.</p>
+                            
+                            <p><strong>E</strong><br>
+                            The role of parents in supporting their children's play is crucial. Parents can encourage play by providing a safe and stimulating environment, as well as age-appropriate toys and materials. They can also participate in their children's play, which not only strengthens the parent-child bond but also models positive play behaviour. It is important for parents to allow their children to lead the play and make their own choices, rather than directing the play themselves. This helps children develop independence and self-confidence.</p>
+                            
+                            <p><strong>F</strong><br>
+                            Schools also have an important part to play in promoting play. Many schools are reducing recess time in favour of more academic instruction, but research shows that this may be counterproductive. Studies have found that children who have regular breaks for play are more focused, attentive and better behaved in the classroom. Play also helps to reduce stress and improve children's overall well-being. Some schools are now incorporating more play-based learning into their curriculum, which has been shown to improve academic outcomes as well as social skills.</p>
+                            
+                            <p><strong>G</strong><br>
+                            In conclusion, play is an essential part of childhood that should not be overlooked. It is important for parents, schools and policymakers to recognise the value of play and take steps to ensure that all children have sufficient opportunities to play. By doing so, we can help to ensure that our children grow up to be healthy, happy and successful adults.</p>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3>📝 文章结构分析</h3>
+                        <table class="score-table">
+                            <tr><th>段落</th><th>主要内容</th><th>核心关键词</th></tr>
+                            <tr><td>A</td><td>引入话题：玩耍对儿童发展的重要性被广泛认可，但玩耍时间正在减少</td><td>value, play, child's development, AAP report</td></tr>
+                            <tr><td>B</td><td>分析玩耍时间减少的三个原因</td><td>decline, factors, academic emphasis, parents' perception, safe places</td></tr>
+                            <tr><td>C</td><td>玩耍的多种好处</td><td>benefits, problem-solving, creativity, social skills, motor skills</td></tr>
+                            <tr><td>D</td><td>不同类型的玩耍及其不同作用</td><td>types of play, physical, constructive, pretend, games with rules</td></tr>
+                            <tr><td>E</td><td>父母在支持孩子玩耍中的关键作用</td><td>parents' role, safe environment, participate, lead play</td></tr>
+                            <tr><td>F</td><td>学校在促进玩耍中的作用</td><td>schools, recess, play-based learning, academic outcomes</td></tr>
+                            <tr><td>G</td><td>总结：玩耍是童年必不可少的部分</td><td>conclusion, essential, parents, schools, policymakers</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 题目 -->
+                <div id="questions" class="tab-content">
+                    <div class="content-section">
+                        <h3>❓ Questions 1-7: TRUE / FALSE / NOT GIVEN</h3>
+                        <p style="margin:0 0 16px 0;color:#64748b;">Do the following statements agree with the information given in the Reading Passage?</p>
+                        
+                        <div class="question-card">
+                            <h4>Question 1</h4>
+                            <p>The AAP report suggests that children should spend more time on academic activities.</p>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 2</h4>
+                            <p>Parents consider play to be less important than structured activities.</p>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 3</h4>
+                            <p>There are fewer places to play in cities than in rural areas.</p>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 4</h4>
+                            <p>Play helps children learn how to deal with disagreements.</p>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 5</h4>
+                            <p>Active play is the most effective way to prevent obesity in children.</p>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 6</h4>
+                            <p>All types of play develop the same set of skills.</p>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 7</h4>
+                            <p>Parents should direct their children's play to ensure it is productive.</p>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3>❓ Questions 8-13: Matching Headings</h3>
+                        <p style="margin:0 0 16px 0;color:#64748b;">Choose the correct heading for each paragraph from the list of headings below.</p>
+                        
+                        <div style="background:#f8fafc;padding:16px;border-radius:8px;margin-bottom:20px;">
+                            <p style="margin:0 0 8px 0;font-weight:500;">List of Headings</p>
+                            <p style="margin:4px 0;">i. The importance of play in schools</p>
+                            <p style="margin:4px 0;">ii. Different types of play and their benefits</p>
+                            <p style="margin:4px 0;">iii. Why play is decreasing</p>
+                            <p style="margin:4px 0;">iv. How parents can support play</p>
+                            <p style="margin:4px 0;">v. The wide-ranging advantages of play</p>
+                            <p style="margin:4px 0;">vi. An overview of the importance of play</p>
+                            <p style="margin:4px 0;">vii. The need for government action</p>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 8: Paragraph A</h4>
+                        </div>
+                        <div class="question-card">
+                            <h4>Question 9: Paragraph B</h4>
+                        </div>
+                        <div class="question-card">
+                            <h4>Question 10: Paragraph C</h4>
+                        </div>
+                        <div class="question-card">
+                            <h4>Question 11: Paragraph D</h4>
+                        </div>
+                        <div class="question-card">
+                            <h4>Question 12: Paragraph E</h4>
+                        </div>
+                        <div class="question-card">
+                            <h4>Question 13: Paragraph F</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 答案与解析 -->
+                <div id="answers" class="tab-content">
+                    <div class="content-section">
+                        <h3>✅ Questions 1-7: TRUE / FALSE / NOT GIVEN 答案详解</h3>
+                        
+                        <div class="question-card">
+                            <h4>Question 1: FALSE</h4>
+                            <div class="answer-box">
+                                <h5>🔍 定位：Paragraph A</h5>
+                                <p><strong>原文：</strong>"While the importance of play is widely acknowledged, a <span class="keyword">growing number of children are not getting enough of it</span>, according to a report published by the <span class="keyword">American Academy of Pediatrics (AAP)</span>."</p>
+                                <p><strong>解析：</strong>原文说AAP报告指出越来越多的孩子没有得到足够的玩耍时间，暗示报告认为孩子需要<span class="synonym">更多玩耍时间</span>，而题目说报告建议孩子应该花更多时间在学术活动上。与原文信息<span class="synonym">矛盾</span>，因此是 FALSE。</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 2: TRUE</h4>
+                            <div class="answer-box">
+                                <h5>🔍 定位：Paragraph B</h5>
+                                <p><strong>原文：</strong>"many parents <span class="keyword">perceive play as unproductive or a waste of time</span>, and so they <span class="keyword">prefer to focus on activities that they believe will prepare their child for success</span> in school and beyond."</p>
+                                <p><strong>解析：</strong>原文说父母认为玩耍没用，更专注于他们认为能让孩子成功的活动（即结构化活动如音乐课、体育训练等）。题目说"父母认为玩耍不如结构化活动重要"与原文信息<span class="synonym">一致</span>，因此是 TRUE。</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 3: NOT GIVEN</h4>
+                            <div class="answer-box">
+                                <h5>🔍 定位：Paragraph B</h5>
+                                <p><strong>原文：</strong>"Another contributing factor is the limited access to safe places to play, particularly in <span class="keyword">urban areas</span> where green spaces are scarce."</p>
+                                <p><strong>解析：</strong>原文只说城市地区缺少安全的玩耍场所，但<span class="synonym">完全没有提到农村地区</span>，也没有进行城市和农村的比较。题目中的比较在原文中<span class="synonym">没有依据</span>，因此是 NOT GIVEN。</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 4: TRUE</h4>
+                            <div class="answer-box">
+                                <h5>🔍 定位：Paragraph C</h5>
+                                <p><strong>原文：</strong>"Through play, children learn how to interact with their peers, <span class="keyword">resolve conflicts</span> and practice self-control."</p>
+                                <p><strong>解析：</strong><span class="synonym">resolve conflicts = deal with disagreements</span>（解决冲突 = 处理分歧）。原文说玩耍帮助孩子学习解决冲突，与题目意思完全一致，因此是 TRUE。</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 5: NOT GIVEN</h4>
+                            <div class="answer-box">
+                                <h5>🔍 定位：Paragraph C</h5>
+                                <p><strong>原文：</strong>"active play helps children develop motor skills... as well as promoting physical health and <span class="keyword">reducing the risk of obesity</span>."</p>
+                                <p><strong>解析：</strong>原文说积极玩耍能降低肥胖风险，但<span class="synonym">没有说这是"最有效的"方法</span>。题目中的 <span class="keyword">"most effective"</span> 是原文没有提到的绝对化表达，因此是 NOT GIVEN。</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 6: FALSE</h4>
+                            <div class="answer-box">
+                                <h5>🔍 定位：Paragraph D</h5>
+                                <p><strong>原文：</strong>"<span class="keyword">Different types of play contribute to different aspects</span> of a child's development."</p>
+                                <p><strong>解析：</strong>原文明确说<span class="synonym">不同类型的玩耍促进孩子发展的不同方面</span>，而题目说"所有类型的玩耍都培养相同的技能"，与原文信息<span class="synonym">完全相反</span>，因此是 FALSE。</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 7: FALSE</h4>
+                            <div class="answer-box">
+                                <h5>🔍 定位：Paragraph E</h5>
+                                <p><strong>原文：</strong>"It is important for parents to allow their children to lead the play and make their own choices, <span class="keyword">rather than directing the play themselves</span>."</p>
+                                <p><strong>解析：</strong>原文说父母应该让孩子主导玩耍，<span class="synonym">而不是自己去指导</span>。题目说"父母应该指导孩子的玩耍"与原文信息<span class="synonym">矛盾</span>，因此是 FALSE。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3>✅ Questions 8-13: Matching Headings 答案详解</h3>
+                        
+                        <div class="question-card">
+                            <h4>Question 8 (Paragraph A): vi. An overview of the importance of play</h4>
+                            <div class="answer-box">
+                                <h5>🔍 解析</h5>
+                                <p><strong>段落主题句：</strong>"The value of play is increasingly recognised by researchers as being essential to a child's development."</p>
+                                <p>段落A介绍了玩耍的价值被广泛认可，同时提到AAP报告指出玩耍时间在减少。这是对玩耍重要性的<span class="synonym">总体介绍</span>，因此选 vi。</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 9 (Paragraph B): iii. Why play is decreasing</h4>
+                            <div class="answer-box">
+                                <h5>🔍 解析</h5>
+                                <p><strong>段落主题句：</strong>"The decline in play is attributed to several factors."</p>
+                                <p>段落B分析了玩耍减少的三个原因：对学术成就的重视、父母的观念、缺少安全场所。因此选 iii。</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 10 (Paragraph C): v. The wide-ranging advantages of play</h4>
+                            <div class="answer-box">
+                                <h5>🔍 解析</h5>
+                                <p><strong>段落主题句：</strong>"Play has numerous benefits for children."</p>
+                                <p>段落C列举了玩耍的多种好处：解决问题能力、创造力、社交技能、运动技能、身体健康等。<span class="synonym">numerous benefits = wide-ranging advantages</span>，因此选 v。</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 11 (Paragraph D): ii. Different types of play and their benefits</h4>
+                            <div class="answer-box">
+                                <h5>🔍 解析</h5>
+                                <p><strong>段落主题句：</strong>"Different types of play contribute to different aspects of a child's development."</p>
+                                <p>段落D分别介绍了身体玩耍、建构性玩耍、假装玩耍、规则游戏四种类型及其好处，因此选 ii。</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 12 (Paragraph E): iv. How parents can support play</h4>
+                            <div class="answer-box">
+                                <h5>🔍 解析</h5>
+                                <p><strong>段落主题句：</strong>"The role of parents in supporting their children's play is crucial."</p>
+                                <p>段落E介绍了父母如何支持孩子玩耍：提供安全环境、参与玩耍、让孩子主导等，因此选 iv。</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <h4>Question 13 (Paragraph F): i. The importance of play in schools</h4>
+                            <div class="answer-box">
+                                <h5>🔍 解析</h5>
+                                <p><strong>段落主题句：</strong>"Schools also have an important part to play in promoting play."</p>
+                                <p>段落F讨论了学校在促进玩耍中的作用，包括课间休息和游戏化学习，因此选 i。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script>
+            function showTab(tabId) {
+                // Hide all tab contents
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                // Remove active class from all buttons
+                document.querySelectorAll('.tab-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                // Show selected tab
+                document.getElementById(tabId).classList.add('active');
+                // Add active class to clicked button
+                event.target.classList.add('active');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,279 @@
+/* === 沪教版初中物理化学课件 - 公共样式 === */
+:root {
+  --primary: #1a73e8;
+  --primary-light: #e8f0fe;
+  --physics: #2563eb;
+  --physics-light: #dbeafe;
+  --chemistry: #059669;
+  --chemistry-light: #d1fae5;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text: #1e293b;
+  --text-secondary: #64748b;
+  --border: #e2e8f0;
+  --success: #16a34a;
+  --warning: #d97706;
+  --danger: #dc2626;
+  --shadow: 0 1px 3px rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 6px rgba(0,0,0,.07),0 2px 4px rgba(0,0,0,.06);
+  --radius: 12px;
+  --transition: .25s cubic-bezier(.4,0,.2,1);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; font-size:16px; }
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background: var(--bg); color: var(--text); line-height:1.7;
+  min-height:100vh;
+}
+
+/* Navigation Top Bar */
+.topbar {
+  position:sticky; top:0; z-index:1000;
+  background:rgba(255,255,255,.92); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border); padding:0 20px;
+  display:flex; align-items:center; gap:16px; height:56px;
+}
+.topbar .logo {
+  font-size:1.1rem; font-weight:700; color:var(--primary);
+  text-decoration:none; white-space:nowrap;
+}
+.topbar .breadcrumb {
+  display:flex; align-items:center; gap:6px;
+  font-size:.85rem; color:var(--text-secondary); overflow:hidden;
+}
+.topbar .breadcrumb a { color:var(--primary); text-decoration:none; }
+.topbar .breadcrumb a:hover { text-decoration:underline; }
+.topbar .breadcrumb span { white-space:nowrap; }
+.topbar .spacer { flex:1; }
+.topbar .subject-switch {
+  display:flex; background:var(--border); border-radius:8px; padding:3px;
+}
+.topbar .subject-switch a {
+  padding:5px 14px; border-radius:6px; text-decoration:none;
+  font-size:.85rem; font-weight:500; color:var(--text-secondary);
+  transition:var(--transition);
+}
+.topbar .subject-switch a.active {
+  background:#fff; color:var(--primary); box-shadow:var(--shadow);
+}
+
+/* Sidebar */
+.layout { display:flex; min-height:calc(100vh - 56px); }
+.sidebar {
+  width:280px; min-width:280px; background:var(--card-bg);
+  border-right:1px solid var(--border); padding:16px 0;
+  overflow-y:auto; position:sticky; top:56px; height:calc(100vh - 56px);
+}
+.sidebar h3 {
+  padding:0 20px 12px; font-size:.9rem; color:var(--text-secondary);
+  text-transform:uppercase; letter-spacing:.5px;
+}
+.sidebar .chapter-list { list-style:none; }
+.sidebar .chapter-list li a {
+  display:flex; align-items:center; gap:10px;
+  padding:10px 20px; text-decoration:none; color:var(--text);
+  font-size:.9rem; border-left:3px solid transparent;
+  transition:var(--transition);
+}
+.sidebar .chapter-list li a:hover,
+.sidebar .chapter-list li a.active {
+  background:var(--primary-light); color:var(--primary);
+  border-left-color:var(--primary);
+}
+.sidebar .chapter-list li a .ch-num {
+  width:26px; height:26px; border-radius:50%;
+  background:var(--primary-light); color:var(--primary);
+  display:flex; align-items:center; justify-content:center;
+  font-size:.75rem; font-weight:700; flex-shrink:0;
+}
+.sidebar .subsections { padding-left:36px; font-size:.82rem; }
+.sidebar .subsections a {
+  display:block; padding:4px 12px; color:var(--text-secondary);
+  text-decoration:none; border-radius:4px; margin:2px 0;
+}
+.sidebar .subsections a:hover { background:var(--border); color:var(--text); }
+
+/* 返回首页按钮 - 醒目样式 */
+.sidebar .back-home {
+  display:block;
+  padding:12px 20px;
+  margin:0 16px;
+  background:linear-gradient(135deg,var(--primary),#7c3aed);
+  color:#fff !important;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:600;
+  text-align:center;
+  transition:all .3s ease;
+  box-shadow:0 4px 12px rgba(37,99,235,.3);
+  position:relative;
+  overflow:hidden;
+}
+.sidebar .back-home:hover {
+  transform:translateY(-2px);
+  box-shadow:0 6px 20px rgba(37,99,235,.4);
+  background:linear-gradient(135deg,#1d4ed8,#6d28d9);
+}
+.sidebar .back-home::before {
+  content:'';
+  position:absolute;
+  top:0; left:-100%;
+  width:100%; height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);
+  transition:left .5s ease;
+}
+.sidebar .back-home:hover::before {
+  left:100%;
+}
+
+/* 学科目录返回按钮样式 */
+.sidebar .back-subject {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 20px;
+  margin:8px 16px 0;
+  background:var(--primary-light);
+  color:var(--primary);
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:600;
+  font-size:.9rem;
+  transition:all .2s ease;
+  border:1px solid rgba(37,99,235,.2);
+}
+.sidebar .back-subject:hover {
+  background:var(--primary);
+  color:#fff;
+  transform:translateX(2px);
+}
+
+/* Main Content */
+.main {
+  flex:1; padding:24px 32px; max-width:960px; margin:0 auto;
+}
+
+/* Cards */
+.card {
+  background:var(--card-bg); border-radius:var(--radius);
+  box-shadow:var(--shadow); padding:24px; margin-bottom:20px;
+}
+.card-title {
+  font-size:1.25rem; font-weight:700; margin-bottom:16px;
+  display:flex; align-items:center; gap:10px;
+}
+.card-title .icon { font-size:1.4rem; }
+
+/* Knowledge Point */
+.kp {
+  background:var(--card-bg); border-radius:var(--radius);
+  box-shadow:var(--shadow); padding:20px 24px; margin-bottom:16px;
+  border-left:4px solid var(--primary);
+}
+.kp h3 { font-size:1.1rem; margin-bottom:12px; color:var(--primary); }
+.kp p { margin-bottom:10px; color:var(--text-secondary); }
+.kp .formula {
+  display:inline-block; background:var(--primary-light);
+  padding:6px 14px; border-radius:6px; font-family:"Courier New",monospace;
+  font-size:1.05rem; font-weight:600; color:var(--primary); margin:6px 0;
+}
+.kp.chemistry { border-left-color:var(--chemistry); }
+.kp.chemistry h3 { color:var(--chemistry); }
+.kp.chemistry .formula { background:var(--chemistry-light); color:var(--chemistry); }
+
+/* Exercise */
+.exercise {
+  background:var(--card-bg); border-radius:var(--radius);
+  box-shadow:var(--shadow); padding:20px 24px; margin-bottom:16px;
+}
+.exercise .q-num {
+  display:inline-block; background:var(--primary); color:#fff;
+  width:28px; height:28px; border-radius:50%; text-align:center;
+  line-height:28px; font-weight:700; font-size:.85rem; margin-right:8px;
+}
+.exercise .question { font-weight:600; margin-bottom:12px; }
+.exercise .options { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+.exercise .options label {
+  display:flex; align-items:center; gap:6px;
+  padding:8px 14px; background:var(--bg); border-radius:8px;
+  cursor:pointer; transition:var(--transition); border:2px solid transparent;
+}
+.exercise .options label:hover { border-color:var(--primary); background:var(--primary-light); }
+.exercise .options input[type=radio] { accent-color:var(--primary); }
+.exercise .answer-btn {
+  padding:6px 18px; background:var(--primary); color:#fff;
+  border:none; border-radius:6px; cursor:pointer; font-size:.9rem;
+  transition:var(--transition);
+}
+.exercise .answer-btn:hover { opacity:.9; transform:translateY(-1px); }
+.answer, .exercise .answer {
+  display:none; margin-top:12px; padding:12px 16px;
+  background:var(--primary-light); border-radius:8px; font-size:.9rem;
+}
+.answer.show, .exercise .answer.show { display:block; }
+.answer .answer-value {
+  font-weight: 600;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(124, 58, 237, 0.3);
+}
+.answer .answer-solution {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #475569;
+  margin-top: 8px;
+}
+.answer .answer-solution strong {
+  color: #7c3aed;
+}
+.exercise .answer.correct { background:#dcfce7; border:1px solid var(--success); }
+.exercise .answer.wrong { background:#fef2f2; border:1px solid var(--danger); }
+
+/* Animation Container */
+.anim-container {
+  background:var(--card-bg); border-radius:var(--radius);
+  box-shadow:var(--shadow); padding:24px; margin-bottom:20px;
+  text-align:center; position:relative; overflow:hidden;
+}
+.anim-container canvas,
+.anim-container svg { max-width:100%; height:auto; }
+.anim-controls {
+  display:flex; justify-content:center; gap:10px; margin-top:14px;
+}
+.anim-controls button {
+  padding:8px 20px; background:var(--primary); color:#fff;
+  border:none; border-radius:6px; cursor:pointer; font-size:.9rem;
+  transition:var(--transition);
+}
+.anim-controls button:hover { opacity:.9; }
+.anim-controls button.reset { background:var(--text-secondary); }
+
+/* Page Title */
+.page-title {
+  font-size:1.6rem; font-weight:800; margin-bottom:24px;
+  background:linear-gradient(135deg,var(--primary),#7c3aed);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+}
+
+/* Tabs */
+.tabs { display:flex; gap:4px; margin-bottom:20px; flex-wrap:wrap; }
+.tabs button {
+  padding:8px 18px; background:var(--bg); border:1px solid var(--border);
+  border-radius:8px; cursor:pointer; font-size:.9rem; transition:var(--transition);
+}
+.tabs button.active { background:var(--primary); color:#fff; border-color:var(--primary); }
+
+/* Key Points Grid */
+.keypoints-grid {
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:16px; margin-bottom:20px;
+}
+
+/* Responsive */
+@media (max-width:768px) {
+  .layout { flex-direction:column; }
+  .sidebar { width:100%; min-width:100%; height:auto; position:static; }
+  .main { padding:16px; }
+}

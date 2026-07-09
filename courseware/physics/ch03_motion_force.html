@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第三章 运动和力 - 初中物理沪教版</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📚 初中物理</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_sound.html"><span class="ch-num">1</span>声</a></li>
+    <li><a href="ch02_light.html"><span class="ch-num">2</span>光</a></li>
+    <li><a href="ch03_motion_force.html" class="active"><span class="ch-num">3</span>运动和力</a>
+      <div class="subsections">
+        <a href="#sec3-1">3.1 机械运动</a><a href="#sec3-2">3.2 匀速直线运动</a>
+        <a href="#sec3-3">3.3 变速直线运动</a><a href="#sec3-4">3.4 力</a>
+        <a href="#sec3-5">3.5 二力平衡</a><a href="#sec3-6">3.6 牛顿第一定律</a>
+        <a href="#exercises">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch04_work_machines.html"><span class="ch-num">4</span>机械和功</a></li>
+    
+  </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-subject">📂 物理目录</a>
+    </div>="page-title">第三章 运动和力</div>
+<div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
+<ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+<li>理解参照物的概念，知道运动和静止的相对性</li>
+<li>掌握速度公式，能进行匀速直线运动的计算</li>
+<li>理解力的概念，会用力的图示表示力</li>
+<li>掌握二力平衡条件</li>
+<li>理解牛顿第一定律和惯性</li></ul></div>
+
+<h2 id="sec3-1">3.1 机械运动</h2>
+<div class="kp"><h3>参照物与运动的相对性</h3>
+<p><strong>机械运动</strong>：一个物体相对于另一个物体<strong>位置的变化</strong>叫做机械运动，简称运动。</p>
+<p><strong>参照物</strong>：研究物体运动时，被选作<strong>标准</strong>的物体叫做参照物。同一物体选择不同参照物，运动状态可能不同——这就是<strong>运动和静止的相对性</strong>。</p>
+<p>实例：坐在行驶的汽车里，以地面为参照物是运动的，以汽车座椅为参照物是静止的。</p></div>
+
+<h2 id="sec3-2">3.2 匀速直线运动</h2>
+<div class="kp"><h3>速度</h3>
+<p><strong>匀速直线运动</strong>：物体沿直线运动，在相等时间内通过的路程相等。</p>
+<p><strong>速度</strong>：表示物体运动快慢的物理量。物体在单位时间内通过的路程。</p>
+<span class="formula">v = s / t （速度 = 路程 / 时间）</span>
+<p>单位：米/秒（m/s），常用单位 千米/时（km/h）。</p>
+<p>换算：<strong>1 m/s = 3.6 km/h</strong></p></div>
+
+<div class="anim-container"><h3 style="margin-bottom:12px;">🏃 匀速直线运动 s-t / v-t 图</h3>
+<canvas id="stCanvas" style="width:100%;max-width:660px;height:250px;"></canvas></div>
+
+<h2 id="sec3-3">3.3 变速直线运动</h2>
+<div class="kp"><h3>平均速度</h3>
+<p><strong>变速直线运动</strong>：物体沿直线运动，在相等时间内通过的路程<strong>不相等</strong>。</p>
+<p><strong>平均速度</strong>：表示物体在某段路程（或某段时间）内运动的平均快慢程度。</p>
+<span class="formula">v<sub>平均</sub> = s<sub>总</sub> / t<sub>总</sub></span>
+<p>注意：平均速度不等于速度的平均值！必须用总路程除以总时间。</p></div>
+
+<h2 id="sec3-4">3.4 力 力的图示</h2>
+<div class="keypoints-grid">
+<div class="kp"><h3>力的概念</h3>
+<p><strong>力</strong>是物体对物体的<strong>作用</strong>。力不能脱离物体而存在。</p>
+<p>力的作用效果：</p>
+<ul style="padding-left:16px;line-height:2;font-size:.9rem;color:var(--text-secondary);">
+<li><strong>改变物体的形状</strong>（形变）</li>
+<li><strong>改变物体的运动状态</strong>（速度大小或方向改变）</li>
+</ul>
+<p>力的单位：<strong>牛顿（N）</strong>。</p>
+<p>力的三要素：<strong>大小、方向、作用点</strong>。</p></div>
+<div class="kp"><h3>力的图示与示意图</h3>
+<p><strong>力的图示</strong>：用一根带箭头的线段表示力——线段的起点表示作用点，长度表示力的大小，箭头表示方向。</p>
+<p>必须标明<strong>标度</strong>（单位长度表示多少牛）。</p>
+<p><strong>力的示意图</strong>：只需表示力的方向和作用点，不严格要求标度。</p></div>
+<div class="kp"><h3>重力</h3>
+<p>由于地球的吸引而使物体受到的力叫做<strong>重力</strong>，方向<strong>竖直向下</strong>。</p>
+<span class="formula">G = mg</span>
+<p>g ≈ 9.8 N/kg（粗略计算可取 10 N/kg）</p>
+<p>重力在物体上的作用点叫<strong>重心</strong>。</p></div>
+</div>
+
+<div class="kp"><h3>合力与分力</h3>
+<p>如果一个力产生的效果跟几个力共同作用的效果相同，这个力就叫那几个力的<strong>合力</strong>。</p>
+<p><strong>同一直线上二力的合成：</strong></p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li>同向：F<sub>合</sub> = F₁ + F₂，方向与两个力相同</li>
+<li>反向：F<sub>合</sub> = |F₁ - F₂|，方向与较大的力相同</li>
+</ul></div>
+
+<h2 id="sec3-5">3.5 二力平衡</h2>
+<div class="kp"><h3>二力平衡条件</h3>
+<p>物体在几个力作用下保持<strong>静止</strong>或<strong>匀速直线运动</strong>状态，就说这几个力平衡。</p>
+<p><strong>二力平衡的条件：</strong></p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li>作用在<strong>同一物体</strong>上</li>
+<li>大小<strong>相等</strong></li>
+<li>方向<strong>相反</strong></li>
+<li>作用在<strong>同一直线上</strong></li>
+</ul>
+<p>概括为：同体、等大、反向、共线。</p></div>
+
+<h2 id="sec3-6">3.6 惯性 牛顿第一定律</h2>
+<div class="kp"><h3>牛顿第一定律（惯性定律）</h3>
+<p><strong>一切物体在没有受到外力作用的时候，总保持静止状态或匀速直线运动状态。</strong></p>
+<p>注意：牛顿第一定律是在实验基础上通过推理得出的，不能直接用实验验证（因为找不到完全不受力的物体）。</p></div>
+
+<div class="kp"><h3>惯性</h3>
+<p><strong>惯性</strong>：物体保持原来运动状态<strong>不变</strong>的性质。</p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li><strong>一切物体在任何情况下都有惯性</strong></li>
+<li>惯性大小只与物体的<strong>质量</strong>有关：质量越大，惯性越大</li>
+<li>惯性不是力，不能说"受到惯性"或"惯性力"</li>
+</ul>
+<p>实例：刹车时乘客前倾、抖落衣服上的灰尘、跳远前助跑。</p></div>
+
+<h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+<div class="exercise"><div class="question"><span class="q-num">1</span>速度是表示物体____的物理量。</div>
+<div class="options">
+<label><input type="radio" name="q1" value="A">A. 运动快慢</label>
+<label><input type="radio" name="q1" value="B">B. 运动方向</label>
+<label><input type="radio" name="q1" value="C">C. 位置变化</label>
+<label><input type="radio" name="q1" value="D">D. 路程大小</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="A">✅ A。速度表示物体运动的快慢，v=s/t。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>1 m/s 等于____ km/h。</div>
+<div class="options">
+<label><input type="radio" name="q2" value="A">A. 1</label>
+<label><input type="radio" name="q2" value="B">B. 3.6</label>
+<label><input type="radio" name="q2" value="C">C. 36</label>
+<label><input type="radio" name="q2" value="D">D. 0.28</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="B">✅ B。1m/s=3.6km/h。换算：1m/s=(1/1000km)/(1/3600h)=3.6km/h。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>关于惯性，下列说法正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q3" value="A">A. 只有运动的物体才有惯性</label>
+<label><input type="radio" name="q3" value="B">B. 速度大的物体惯性大</label>
+<label><input type="radio" name="q3" value="C">C. 一切物体在任何情况下都有惯性</label>
+<label><input type="radio" name="q3" value="D">D. 物体不受力时惯性消失</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="C">✅ C。一切物体在任何状态下都有惯性，惯性大小只与质量有关。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>二力平衡的条件中，两个力必须____。</div>
+<div class="options">
+<label><input type="radio" name="q4" value="A">A. 作用在不同物体上</label>
+<label><input type="radio" name="q4" value="B">B. 大小相等、方向相同</label>
+<label><input type="radio" name="q4" value="C">C. 同体、等大、反向、共线</label>
+<label><input type="radio" name="q4" value="D">D. 作用点可以不同</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="C">✅ C。二力平衡四条件：同体、等大、反向、共线。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>重力的大小G=mg中，g的数值约为____。</div>
+<div class="options">
+<label><input type="radio" name="q5" value="A">A. 10 m/s</label>
+<label><input type="radio" name="q5" value="B">B. 10 m/s²</label>
+<label><input type="radio" name="q5" value="C">C. 9.8 N/kg</label>
+<label><input type="radio" name="q5" value="D">D. 9.8 kg/N</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="C">✅ C。g≈9.8N/kg，粗略计算可取10N/kg。注意单位是N/kg，数值上等于重力加速度。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>牛顿第一定律的内容是：一切物体在没有受到外力作用的时候，总保持____。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 静止状态</label>
+<label><input type="radio" name="q6" value="B">B. 匀速直线运动状态</label>
+<label><input type="radio" name="q6" value="C">C. 静止状态或匀速直线运动状态</label>
+<label><input type="radio" name="q6" value="D">D. 加速运动状态</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="C">✅ C。不受外力时物体保持静止或匀速直线运动状态，即保持原来的运动状态不变。</div></div>
+</main></div>
+<script src="../assets/js/common.js"></script>
+<script>
+// s-t图和v-t图
+(function(){
+  const c=document.getElementById('stCanvas');
+  if(!c) return;
+  const ctx=c.getContext('2d');
+  c.width=c.parentElement.clientWidth-20; c.height=250;
+  const W=c.width,H=c.height;
+  ctx.fillStyle='#1e293b'; ctx.fillRect(0,0,W,H);
+
+  // Grid
+  ctx.strokeStyle='#334155'; ctx.lineWidth=.5;
+  for(let x=60;x<W;x+=40){ctx.beginPath();ctx.moveTo(x,20);ctx.lineTo(x,H-30);ctx.stroke();}
+  for(let y=20;y<H;y+=30){ctx.beginPath();ctx.moveTo(60,y);ctx.lineTo(W-20,y);ctx.stroke();}
+
+  // Axes
+  ctx.strokeStyle='#94a3b8'; ctx.lineWidth=2;
+  ctx.beginPath();ctx.moveTo(60,20);ctx.lineTo(60,H-30);ctx.lineTo(W-20,H-30); ctx.stroke();
+  ctx.fillStyle='#94a3b8'; ctx.font='12px sans-serif';
+  ctx.fillText('s-t图（左）',W/4-30,H-10);
+  ctx.fillText('v-t图（右）',W*3/4-30,H-10);
+
+  // Divider
+  ctx.strokeStyle='#475569'; ctx.lineWidth=1; ctx.setLineDash([4,4]);
+  ctx.beginPath();ctx.moveTo(W/2,20);ctx.lineTo(W/2,H-30);ctx.stroke();
+  ctx.setLineDash([]);
+
+  // s-t: linear
+  ctx.strokeStyle='#22c55e'; ctx.lineWidth=3;
+  ctx.beginPath();
+  const sx0=80,sy0=H-50;
+  for(let t=0;t<=10;t++){
+    const x=sx0+t*((W/2-80-20)/10);
+    const y=sy0-t*((H-50-40)/10);
+    t===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+  }
+  ctx.stroke();
+
+  // v-t: horizontal
+  ctx.strokeStyle='#3b82f6'; ctx.lineWidth=3;
+  ctx.beginPath();
+  const vx0=W/2+40,vy0=H-110;
+  ctx.moveTo(vx0,vy0); ctx.lineTo(W-40,vy0);
+  ctx.stroke();
+
+  ctx.fillStyle='#fff'; ctx.font='12px sans-serif';
+  ctx.fillText('v=常量',W-100,H-120);
+  ctx.fillText('s=vt',W/2-80,H/2-20);
+})();
+</script>
+</body>
+</html>

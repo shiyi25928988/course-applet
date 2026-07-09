@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第三章 导数及其应用 · 高中数学</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.content-card { background:#fff; border-radius:14px; padding:28px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,.06); }
+.section-title { color:#7c3aed; font-size:1.3rem; margin-bottom:16px; padding-bottom:12px; border-bottom:2px solid #f5f3ff; }
+.knowledge-box { background:#faf5ff; border-left:4px solid #7c3aed; padding:16px 20px; margin:16px 0; border-radius:0 8px 8px 0; }
+.formula { background:#1e293b; color:#e2e8f0; padding:12px 20px; border-radius:8px; font-family:monospace; font-size:1.1rem; text-align:center; margin:12px 0; }
+.back-btn { display:inline-block; padding:8px 20px; background:#e2e8f0; color:#475569; border-radius:8px; text-decoration:none; margin-bottom:20px; }
+.back-btn:hover { background:#cbd5e1; }
+</style>
+</head>
+<body>
+<div class="layout" style="max-width:900px; margin:0 auto; padding:20px;">
+<a href="../index.html" class="back-btn">← 返回高中数学</a>
+
+<div class="content-card">
+<h1 style="color:#7c3aed; margin-bottom:20px;">第三章 导数及其应用</h1>
+
+<h3 class="section-title">3.1 导数的概念与几何意义</h3>
+<div class="formula">
+f'(x₀) = lim<sub>Δx→0</sub> Δy/Δx = lim<sub>Δx→0</sub> [f(x₀+Δx) - f(x₀)]/Δx
+</div>
+<div class="knowledge-box">
+<strong>导数的几何意义：</strong>函数y=f(x)在x=x₀处的导数f'(x₀)是曲线y=f(x)在点P(x₀, f(x₀))处的切线的斜率。
+<br><br>切线方程：y - f(x₀) = f'(x₀)(x - x₀)
+</div>
+
+<h3 class="section-title">3.2 导数的运算</h3>
+<div class="formula">
+基本初等函数的导数公式：
+<br>C' = 0（C为常数）
+<br>(xⁿ)' = nxⁿ⁻¹
+<br>(sin x)' = cos x
+<br>(cos x)' = -sin x
+<br>(eˣ)' = eˣ
+<br>(aˣ)' = aˣ ln a
+<br>(ln x)' = 1/x
+<br>(log<sub>a</sub>x)' = 1/(x ln a)
+</div>
+<div class="formula">
+导数运算法则：
+<br>[f(x) ± g(x)]' = f'(x) ± g'(x)
+<br>[f(x)·g(x)]' = f'(x)g(x) + f(x)g'(x)
+<br>[f(x)/g(x)]' = [f'(x)g(x) - f(x)g'(x)]/[g(x)]² （g(x)≠0）
+</div>
+<div class="formula">
+复合函数求导：y'ₓ' = y'ᵤ · u'ₓ
+</div>
+
+<h3 class="section-title">3.3 导数在研究函数中的应用</h3>
+<div class="knowledge-box">
+<strong>函数的单调性：</strong>
+<br>在区间(a,b)内，f'(x) > 0 ⇒ f(x)单调递增
+<br>在区间(a,b)内，f'(x) < 0 ⇒ f(x)单调递减
+</div>
+<div class="knowledge-box">
+<strong>函数的极值：</strong>
+<br>f'(x₀) = 0，且x₀左侧f'(x) > 0，右侧f'(x) < 0 ⇒ f(x₀)是极大值
+<br>f'(x₀) = 0，且x₀左侧f'(x) < 0，右侧f'(x) > 0 ⇒ f(x₀)是极小值
+</div>
+<div class="knowledge-box">
+<strong>函数的最值：</strong>
+<br>求f(x)在[a,b]上的最值：
+<br>① 求f(x)在(a,b)内的极值
+<br>② 将极值与端点函数值f(a), f(b)比较
+<br>③ 最大的是最大值，最小的是最小值
+</div>
+
+<h3 class="section-title">3.4 定积分与微积分基本定理</h3>
+<div class="formula">
+微积分基本定理：∫<sub>a</sub><sup>b</sup> f(x)dx = F(b) - F(a)，其中F'(x) = f(x)
+</div>
+</div>
+</div>
+</body>
+</html>

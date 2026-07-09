@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>2017年上海高考数学真题</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.year-header { background:linear-gradient(135deg,#7c3aed,#a855f7); color:#fff; padding:24px; border-radius:12px; margin-bottom:24px; }
+.section-title { background:#f5f3ff; padding:10px 16px; border-left:4px solid #7c3aed; margin:24px 0 16px; font-weight:600; }
+.question { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px dashed #e2e8f0; }
+.q-num { display:inline-block; background:#7c3aed; color:#fff; width:28px; height:28px; border-radius:50%; text-align:center; line-height:28px; font-weight:700; font-size:.85rem; margin-right:8px; }
+.answer-btn { margin-top: 8px; padding:6px 18px; background:#7c3aed; color:#fff; border:none; border-radius:6px; cursor:pointer; font-size:.9rem; transition:.2s; }
+.answer-btn:hover { opacity:.9; transform:translateY(-1px); }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 返回高中数学主页</a><a href="exam_collection.html">← 真题汇编目录</a></div>
+<div class="year-header"><h1>📐 2017年上海市普通高等学校招生全国统一考试</h1><h2>数学试卷</h2><p>满分150分 · 考试时间120分钟</p></div>
+
+<div class="section-title">一、填空题（本大题共12题，满分54分，第1-6题每题4分，第7-12题每题5分）</div>
+
+<div class="question">
+<span class="q-num">1</span>已知集合 A = {x | x < 2}，B = {x | x > -1}，则 A ∩ B = ______。
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="(-1,2)">(-1, 2) 或 {x | -1 < x < 2}</div>
+</div>
+
+<div class="question">
+<span class="q-num">2</span>若复数 z 满足 z(1 + i) = 1 - i（i 为虚数单位），则 z = ______。
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="-i">-i。z = (1 - i)/(1 + i) = [(1 - i)²]/[(1 + i)(1 - i)] = (-2i)/2 = -i</div>
+</div>
+
+<div class="question">
+<span class="q-num">3</span>函数 f(x) = lg(x - 1) 的定义域是 ______。
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="(1,+∞)">(1, +∞)。x - 1 > 0 ⇒ x > 1</div>
+</div>
+
+<div class="question">
+<span class="q-num">4</span>若函数 f(x) = 2sin(ωx + π/4)（ω > 0）的最小正周期为 2π/3，则 ω = ______。
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="3">3。T = 2π/ω = 2π/3 ⇒ ω = 3</div>
+</div>
+
+<div class="question">
+<span class="q-num">5</span>已知球的体积为 36π，则该球的表面积为 ______。
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="36π">36π。V = 4πr³/3 = 36π ⇒ r³ = 27 ⇒ r = 3，S = 4πr² = 36π</div>
+</div>
+
+<div class="question">
+<span class="q-num">6</span>等差数列 {aₙ} 中，a₁ = 1，a₃ = 5，则公差 d = ______。
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="2">2。a₃ = a₁ + 2d ⇒ 5 = 1 + 2d ⇒ d = 2</div>
+</div>
+
+<div class="section-title">二、选择题（本大题共4题，每题5分，满分20分）</div>
+
+<div class="question">
+<span class="q-num">13</span>若 a > 0，b > 0，则 "a + b ≤ 4" 是 "ab ≤ 4" 的（ ）
+<div class="options">
+<label><input type="radio" name="q13" value="A">A. 充分不必要条件</label>
+<label><input type="radio" name="q13" value="B">B. 必要不充分条件</label>
+<label><input type="radio" name="q13" value="C">C. 充要条件</label>
+<label><input type="radio" name="q13" value="D">D. 既不充分也不必要条件</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+<div class="answer" id="answer-13" data-correct="A">✅ A。由基本不等式，a + b ≤ 4 ⇒ 2√(ab) ≤ a + b ≤ 4 ⇒ √(ab) ≤ 2 ⇒ ab ≤ 4；
+<br>反之，ab ≤ 4 时，取 a = 4，b = 1，则 a + b = 5 > 4，故必要性不成立。</div>
+</div>
+
+<div class="question">
+<span class="q-num">14</span>下列函数中，既是偶函数又在 (0, +∞) 上单调递增的是（ ）
+<div class="options">
+<label><input type="radio" name="q14" value="A">A. y = x³</label>
+<label><input type="radio" name="q14" value="B">B. y = |x| + 1</label>
+<label><input type="radio" name="q14" value="C">C. y = -x² + 1</label>
+<label><input type="radio" name="q14" value="D">D. y = 2^(-|x|)</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+<div class="answer" id="answer-14" data-correct="B">✅ B。
+<br>A. y = x³ 是奇函数；
+<br>B. y = |x| + 1 是偶函数，x > 0 时 y = x + 1 单调递增；
+<br>C. y = -x² + 1 在 (0, +∞) 单调递减；
+<br>D. y = 2^(-|x|) = (1/2)^|x| 在 (0, +∞) 单调递减。</div>
+</div>
+
+<div class="section-title">三、解答题（本大题共5题，满分76分）</div>
+
+<div class="question">
+<span class="q-num">19</span>本题满分14分
+<br>已知 △ABC 中，角 A, B, C 的对边分别为 a, b, c，且 a = 2，b = √2，∠A = 45°。
+<br>（1）求 ∠B 的大小；
+<br>（2）求边长 c。
+<button class="answer-btn" onclick="showAnswer(19)">查看解析</button>
+<div class="answer" id="answer-19" data-correct="1">
+<strong>解：</strong>
+<br>（1）由正弦定理 a/sinA = b/sinB
+<br>sinB = b·sinA/a = √2 × sin45° / 2 = √2 × (√2/2) / 2 = 1/2
+<br>∵ b < a，∴ ∠B < ∠A = 45°，∴ ∠B = 30°
+<br><br>（2）∠C = 180° - 45° - 30° = 105°
+<br>sin105° = sin(60° + 45°) = sin60°cos45° + cos60°sin45° = (√6 + √2)/4
+<br>由正弦定理 c/sinC = a/sinA
+<br>c = a·sinC/sinA = 2 × [(√6 + √2)/4] / (√2/2) = 2 × (√6 + √2)/(2√2) = √3 + 1
+</div>
+</div>
+
+</div>
+</body>
+</html>

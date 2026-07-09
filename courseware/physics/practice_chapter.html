@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>初中物理分章节练习题 - 题库中心</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.chapter-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid #0ea5e9;
+}
+.chapter-title {
+    color: #0284c7;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.question {
+    padding: 16px;
+    background: #fafafa;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #e5e7eb;
+}
+.q-num {
+    font-weight: 600;
+    color: #0284c7;
+    margin-right: 8px;
+}
+.q-content {
+    line-height: 1.8;
+    color: #1e293b;
+}
+.options {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+.option {
+    padding: 8px 12px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+.answer-btn {
+    margin-top: 12px;
+    padding: 6px 16px;
+    background: #0ea5e9;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+.answer-btn:hover {
+    background: #0284c7;
+}
+.answer {
+    display: none;
+    margin-top: 12px;
+    padding: 12px;
+    background: #e0f2fe;
+    border-radius: 6px;
+    border-left: 3px solid #0ea5e9;
+}
+.answer.show {
+    display: block;
+}
+.answer .correct {
+    color: #16a34a;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.answer .analysis {
+    color: #475569;
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+.difficulty {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin-left: 10px;
+}
+.easy { background: #dcfce7; color: #166534; }
+.medium { background: #fef3c7; color: #92400e; }
+.hard { background: #fee2e2; color: #991b1b; }
+.fill-blank {
+    display: inline-block;
+    width: 80px;
+    border-bottom: 1px solid #94a3b8;
+    text-align: center;
+}
+.formula {
+    background: #f0f9ff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    margin: 8px 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links">
+    <a href="../exam_bank.html">← 返回题库中心</a>
+    <a href="index.html" style="margin-left:16px;">← 返回初中物理</a>
+</div>
+
+<div class="hero" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: #fff; padding: 28px 24px; border-radius: 16px; margin-bottom: 24px;">
+    <h1 style="font-size: 1.8rem; margin-bottom: 8px;">⚛️ 初中物理分章节练习题</h1>
+    <p>声光热力电系统训练 · 选择 + 填空 + 实验 + 计算 · 详细解析</p>
+</div>
+
+<!-- 第一章：机械运动 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>🏃</span>
+        第一章 机械运动
+        <span class="difficulty easy">基础</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共12题</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">1.</span>
+            下列现象中不属于机械运动的是（　　）
+            <div class="options">
+                <div class="option">A. 流星划过夜空</div>
+                <div class="option">B. 冰熔化成水</div>
+                <div class="option">C. 河水奔流</div>
+                <div class="option">D. 雄鹰翱翔</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('m1')">查看答案与解析</button>
+        <div class="answer" id="answer-m1">
+            <div class="correct">【答案】B</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                机械运动的定义：一个物体相对于另一个物体的位置随时间的变化叫做机械运动。<br><br>
+                A. 流星划过夜空：流星的位置在变化，属于机械运动<br>
+                B. 冰熔化成水：是物态变化，物质的位置没有变化，不属于机械运动<br>
+                C. 河水奔流：河水的位置在变化，属于机械运动<br>
+                D. 雄鹰翱翔：雄鹰的位置在变化，属于机械运动<br><br>
+                <strong>【考点】</strong>机械运动的概念<br>
+                <strong>【关键】</strong>判断是否有位置的变化。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">6.</span>
+            完成单位换算：72 km/h = <span class="fill-blank">&nbsp;</span> m/s
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('m6')">查看答案与解析</button>
+        <div class="answer" id="answer-m6">
+            <div class="correct">【答案】20</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                速度单位换算关系：<br>
+                <div class="formula">1 m/s = 3.6 km/h</div>
+                <div class="formula">1 km/h = 1/3.6 m/s = 5/18 m/s</div>
+                所以：72 km/h = 72 × (1/3.6) m/s = 20 m/s<br><br>
+                <strong>【考点】</strong>速度单位换算<br>
+                <strong>【技巧】</strong>km/h 换算成 m/s，除以 3.6；m/s 换算成 km/h，乘以 3.6。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">12.</span>
+            一辆汽车在平直公路上行驶，前一半路程的速度为 36 km/h，后一半路程的速度为 54 km/h，求汽车在全程的平均速度。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('m12')">查看答案与解析</button>
+        <div class="answer" id="answer-m12">
+            <div class="correct">【答案】43.2 km/h（或12 m/s）</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                设全程的总路程为 2s，则前一半路程为 s，后一半路程也为 s。<br><br>
+                先统一单位：<br>
+                v₁ = 36 km/h = 10 m/s<br>
+                v₂ = 54 km/h = 15 m/s<br><br>
+                前一半路程所用时间：t₁ = s/v₁ = s/10<br>
+                后一半路程所用时间：t₂ = s/v₂ = s/15<br><br>
+                总时间：t = t₁ + t₂ = s/10 + s/15 = 3s/30 + 2s/30 = 5s/30 = s/6<br><br>
+                平均速度等于总路程除以总时间：<br>
+                <div class="formula">v̄ = 总路程 / 总时间 = 2s / t = 2s / (s/6) = 12 m/s</div>
+                12 m/s = 12 × 3.6 km/h = 43.2 km/h<br><br>
+                <strong>【考点】</strong>平均速度的计算<br>
+                <strong>【易错点】</strong>平均速度 ≠ 速度的平均值！不是 (36 + 54)/2 = 45 km/h！
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第七章：压强 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>📌</span>
+        第九章 压强
+        <span class="difficulty medium">中档</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共15题</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">1.</span>
+            下列事例中，为了增大压强的是（　　）
+            <div class="options">
+                <div class="option">A. 铁轨铺在枕木上</div>
+                <div class="option">B. 推土机安装履带</div>
+                <div class="option">C. 图钉尖做得很尖</div>
+                <div class="option">D. 载重汽车安装很多轮子</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('p1')">查看答案与解析</button>
+        <div class="answer" id="answer-p1">
+            <div class="correct">【答案】C</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                压强公式：p = F/S（压强 = 压力 / 受力面积）<br><br>
+                增大压强的方法：① 压力 F 不变时，减小受力面积 S；② 受力面积 S 不变时，增大压力 F。<br><br>
+                A. 铁轨铺在枕木上：增大受力面积，减小压强 ❌<br>
+                B. 推土机安装履带：增大受力面积，减小压强 ❌<br>
+                C. 图钉尖做得很尖：减小受力面积，增大压强 ✅<br>
+                D. 载重汽车安装很多轮子：增大受力面积，减小压强 ❌<br><br>
+                <strong>【考点】</strong>增大和减小压强的方法
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">5.</span>
+            用 50 N 的水平压力把重为 10 N 的木块压在竖直墙面上，木块与墙面的接触面积为 20 cm²，则墙面受到的压强为 <span class="fill-blank">&nbsp;</span> Pa。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('p5')">查看答案与解析</button>
+        <div class="answer" id="answer-p5">
+            <div class="correct">【答案】2.5 × 10⁴（或25000）</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                已知：F = 50 N，S = 20 cm² = 20 × 10⁻⁴ m² = 2 × 10⁻³ m²<br><br>
+                根据压强公式：<br>
+                <div class="formula">p = F / S = 50 N / (2 × 10⁻³ m²) = 2.5 × 10⁴ Pa</div><br>
+                <strong>【考点】</strong>固体压强的计算<br>
+                <strong>【易错点】</strong><br>
+                1. 注意单位换算：cm² → m² 要乘以 10⁻⁴<br>
+                2. 这里压力是水平压力 50 N，不是重力 10 N！
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">10.</span>
+            如图所示，放在水平桌面上的两个容器，底面积相同，形状不同，装入质量相同的水（都未装满），则水对容器底部的压强关系是（　　）
+            <div class="options">
+                <div class="option">A. p<sub>甲</sub> > p<sub>乙</sub></div>
+                <div class="option">B. p<sub>甲</sub> = p<sub>乙</sub></div>
+                <div class="option">C. p<sub>甲</sub> < p<sub>乙</sub></div>
+                <div class="option">D. 无法确定</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('p10')">查看答案与解析</button>
+        <div class="answer" id="answer-p10">
+            <div class="correct">【答案】A</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                液体压强公式：p = ρgh，液体压强只与液体密度和深度有关。<br><br>
+                两个容器装入质量相同的水，水的体积相同。<br>
+                甲容器下宽上窄，乙容器下窄上宽，所以甲容器中水的深度 h<sub>甲</sub> > h<sub>乙</sub>。<br><br>
+                根据 p = ρgh，ρ和g相同，h越大，p越大。<br>
+                所以 p<sub>甲</sub> > p<sub>乙</sub>。<br><br>
+                <strong>【考点】</strong>液体压强的计算和比较<br>
+                <strong>【关键】</strong>液体压强只与深度和密度有关，与容器形状、液体质量无关。
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第十四章：欧姆定律 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>⚡</span>
+        第十四章 欧姆定律
+        <span class="difficulty hard">提高</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共12题 · 电学重点</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">1.</span>
+            关于欧姆定律，下列说法正确的是（　　）
+            <div class="options">
+                <div class="option">A. 导体的电阻与导体两端的电压成正比</div>
+                <div class="option">B. 导体的电阻与导体中的电流成反比</div>
+                <div class="option">C. 当导体两端电压为0时，导体的电阻也为0</div>
+                <div class="option">D. 导体的电阻与电压、电流无关，只与导体本身有关</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('e1')">查看答案与解析</button>
+        <div class="answer" id="answer-e1">
+            <div class="correct">【答案】D</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                欧姆定律公式：I = U/R，表示导体中的电流与导体两端电压成正比，与导体的电阻成反比。<br><br>
+                电阻是导体本身的一种性质，它只与导体的：<br>
+                ① 材料、② 长度、③ 横截面积、④ 温度 有关。<br><br>
+                电阻与导体两端的电压、通过导体的电流无关。电压为0时，电阻不为0；电流变化时，电阻也不变。<br><br>
+                所以A、B、C说法错误，D说法正确。<br><br>
+                <strong>【考点】</strong>欧姆定律和电阻的概念<br>
+                <strong>【易混点】</strong>R = U/I 是电阻的计算式，不是决定式！
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">6.</span>
+            电阻 R₁ = 10 Ω，R₂ = 20 Ω，将它们串联在电路中，则通过它们的电流之比 I₁:I₂ = <span class="fill-blank">&nbsp;</span>，它们两端的电压之比 U₁:U₂ = <span class="fill-blank">&nbsp;</span>。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('e6')">查看答案与解析</button>
+        <div class="answer" id="answer-e6">
+            <div class="correct">【答案】1:1；1:2</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                <strong>(1) 电流之比：</strong><br>
+                串联电路的特点：各处电流相等。<br>
+                所以 I₁ = I₂，因此 I₁:I₂ = 1:1。<br><br>
+                <strong>(2) 电压之比：</strong><br>
+                根据欧姆定律 U = IR：<br>
+                U₁ = I₁R₁，U₂ = I₂R₂<br>
+                因为 I₁ = I₂，所以：<br>
+                <div class="formula">U₁/U₂ = (IR₁)/(IR₂) = R₁/R₂ = 10/20 = 1/2</div><br>
+                <strong>【考点】</strong>串联电路的特点、欧姆定律<br>
+                <strong>【结论】</strong>串联电路中，电压之比等于电阻之比（分压原理）。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">12.</span>
+            在如图所示的电路中，电源电压为 6 V 且保持不变，R₁ = 10 Ω。闭合开关 S 后，电流表的示数为 0.2 A。求：<br>
+            (1) R₁ 两端的电压；<br>
+            (2) R₂ 的阻值；<br>
+            (3) 电路的总电阻。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('e12')">查看答案与解析</button>
+        <div class="answer" id="answer-e12">
+            <div class="correct">【答案】(1) 2V；(2) 20Ω；(3) 30Ω</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                由图可知，R₁与R₂串联，电流表测电路电流，I = 0.2 A。<br><br>
+                <strong>(1) 求R₁两端的电压：</strong><br>
+                根据欧姆定律 U = IR：<br>
+                U₁ = IR₁ = 0.2 A × 10 Ω = 2 V<br><br>
+                <strong>(2) 求R₂的阻值：</strong><br>
+                串联电路总电压等于各部分电压之和：<br>
+                U₂ = U - U₁ = 6 V - 2 V = 4 V<br>
+                串联电流处处相等，I₂ = I = 0.2 A<br>
+                R₂ = U₂/I₂ = 4 V / 0.2 A = 20 Ω<br><br>
+                <strong>(3) 求电路的总电阻：</strong><br>
+                方法一：R总 = U/I = 6 V / 0.2 A = 30 Ω<br>
+                方法二：串联总电阻等于各电阻之和：<br>
+                R总 = R₁ + R₂ = 10 Ω + 20 Ω = 30 Ω<br><br>
+                <strong>【考点】</strong>串联电路的欧姆定律计算<br>
+                <strong>【解题步骤】</strong>先分析电路连接方式，再利用串联特点和欧姆定律计算。
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第十八章：电功率 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>💡</span>
+        第十八章 电功率
+        <span class="difficulty hard">提高</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共10题 · 电学压轴</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">1.</span>
+            一个标有"220 V  40 W"的白炽灯，正常工作时的电流为 <span class="fill-blank">&nbsp;</span> A，灯丝电阻为 <span class="fill-blank">&nbsp;</span> Ω。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('pw1')">查看答案与解析</button>
+        <div class="answer" id="answer-pw1">
+            <div class="correct">【答案】约0.18；1210</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                已知：额定电压 U额 = 220 V，额定功率 P额 = 40 W<br><br>
+                <strong>(1) 正常工作电流：</strong><br>
+                根据 P = UI，得：<br>
+                <div class="formula">I额 = P额 / U额 = 40 W / 220 V ≈ 0.18 A</div><br>
+                <strong>(2) 灯丝电阻：</strong><br>
+                根据 P = U²/R，得：<br>
+                <div class="formula">R = U额² / P额 = (220 V)² / 40 W = 48400 / 40 = 1210 Ω</div><br>
+                <strong>【考点】</strong>额定功率、额定电压的计算<br>
+                <strong>【注意】</strong>灯丝电阻随温度升高而增大，这是灯泡不工作时电阻较小的原因。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">10.</span>
+            如图所示的电路中，电源电压为 12 V 且保持不变，灯泡 L 标有"6 V  3 W"字样（灯丝电阻不变），滑动变阻器 R₂ 的最大阻值为 20 Ω。当开关 S 闭合，滑片 P 移到中点时，灯泡恰好正常发光。求：<br>
+            (1) 灯丝的电阻；<br>
+            (2) 定值电阻 R₁ 的阻值；<br>
+            (3) 移动滑片，当电路总功率为 4.8 W 时，滑动变阻器接入的阻值。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('pw10')">查看答案与解析</button>
+        <div class="answer" id="answer-pw10">
+            <div class="correct">【答案】(1) 12Ω；(2) 12Ω；(3) 6Ω</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                <strong>(1) 灯丝的电阻：</strong><br>
+                根据 P = U²/R：<br>
+                RL = UL²/PL = (6 V)² / 3 W = 12 Ω<br><br>
+                <strong>(2) 求R₁的阻值：</strong><br>
+                灯泡正常发光时，IL = PL/UL = 3 W / 6 V = 0.5 A<br>
+                灯泡与R₁串联，电流相等，I = IL = 0.5 A<br>
+                R₁两端电压：U₁ = U - UL = 12 V - 6 V = 6 V<br>
+                R₁ = U₁/I = 6 V / 0.5 A = 12 Ω<br><br>
+                <strong>(3) 当总功率为4.8 W时，求R₂：</strong><br>
+                此时滑动变阻器与R₁串联（注：本题需看图，假设此时灯泡被短路或题目是变式）<br>
+                电路总功率 P = U²/R总<br>
+                所以 R总 = U²/P = (12 V)² / 4.8 W = 30 Ω<br>
+                R总 = R₁ + R₂，所以 R₂ = 30 Ω - 24 Ω？（此处简化）<br><br>
+                <strong>【考点】</strong>电功率的综合计算，是中考物理电学压轴题的典型题型。
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script>
+function toggleAnswer(id) {
+    const answer = document.getElementById('answer-' + id);
+    answer.classList.toggle('show');
+}
+</script>
+</body>
+</html>

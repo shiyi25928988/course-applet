@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Or Nurture - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题337/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Nature Or Nurture</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>sale is that global helium prices are so artificially deflated that few can be bothered
+recycling the substance or using it judiciously. Deflated values also mean that natural
+gas extractors see no reason to capture helium. Much is lost in the process of extraction.
+As Sobotka notes: "[t]he government had the good vision to store helium, and the
+question now is: Will the corporations have the vision to capture it when extracting
+natural gas, and consumers the wisdom to recycle? This takes long-term vision because
+present market forces are not sufficient to compel prudent practice”. For Nobel-prize
+laureate Robert Richardson, the U.S. government must be prevailed upon to repeal its
+privatisation policy as the country supplies over 80 per cent of global helium, mostly from
+the National Helium Reserve. For Richardson, a twenty- to fifty-fold increase in prices
+would provide incentives to recycle.
+F A number of steps need to be taken in order to avert a costly predicament in the
+coming decades. Firstly, all existing supplies of helium ought to be conserved and
+released only by permit, with medical uses receiving precedence over other commercial
+or recreational demands. Secondly, conservation should be obligatory and enforced by a
+regulatory agency. At the moment some users, such as hospitals, tend to recycle
+diligently while others, such as NASA, squander massive amounts of helium. Lastly,
+research into alternatives to helium must begin in earnest.
+ 2</p>
+<p>Questions 1-5
+Reading Passage 3 has six paragraphs, A-F.
+Which paragraph contains the following information?
+Write the correct letter, A-F, in boxes 1-5 on your answer sheet.
+1.....................    a use for helium which makes an activity safer
+2.....................    the possibility of creating an alternative to helium
+3.....................    a term which describes the process of how helium is taken out of the
+ground
+4.....................    a reason why users of helium do not make efforts to conserve it
+5.....................    a contrast between helium’s chemical properties and how non-scientists
+think
+about it
+Questions 6-9
+Do the following statements agree with the claims of the writer in Reading Passage 3?
+In boxes 6-9 on your answer sheet, write
+YES    if the statement agrees with the claims of the writer
+NO    if the statement contradicts the claims of the writer
+NOT GIVEN    if it is impossible to say what the writer thinks about this
+6.....................    Helium chooses to be on its own.
+7.....................    Helium is a very cold substance.
+8.....................    High-tech industries in Asia use more helium than laboratories and
+manufacturers
+in other parts of the world.
+9.....................    The US Congress understood the possible consequences of the HPA.
+Questions 10-14
+Complete the summary below.
+Choose NO MORE THAN TWO WORDS from the passage for each answer.
+Write your answers in boxes 10-14 on your answer sheet.
+Sobotka argues that big business and users of helium need to help look after helium
+stocks because 10..................... will not be encouraged through buying and selling
+ 3</p>
+<p>alone. Richardson believes that the 11..................... needs to be withdrawn, as the
+U.S. provides most of the world’s helium. He argues that higher costs would mean
+people have
+12..................... to use the resource many times over.
+People should need a 13..................... to access helium that we still have.
+Furthermore, a 14..................... should ensure that helium is used carefully.
+1 Triune = three-in-one
+2 Lobotomy = surgical cutting of brain nerves
+ 4</p>
+<p>Solution:
+ 
+1. A
+2. A
+3. A
+4. A
+5. A
+6. A
+7. A
+8. A
+9. A
+10. A
+11. A
+12. A
+13. A
+14. A
+ 5</p>
+<p>Reading Practice
+ Here today, gone tomorrow
+The Arctic and Antarctica are now within reach of the modern tourist, with many going to
+see these icy wildernesses before it's too late. Christian Amodeo reports on the growth of
+polar tourism.
+Travel at the North and South Poles has become an expensive leisure activity, suitable for
+tourists of all ages. The poles may be inhospitable places, but they are seeing increasing
+numbers of visitors.
+Annual figures for the Arctic, where tourism has existed since the 19th century, have
+increased from about a million in the early 1990s to more than 1.5 million today. This is
+partly because of the lengthening summer season brought about by climate change.
+Most visitors arrive by ship. In 2007, 370,000 cruise passengers visited Norway, twice the
+number that arrived in 2000. Iceland, a country where tourism is the second-largest
+industry, has enjoyed an annual growth rate of nine percent since 1990. Meanwhile, Alaska
+received some 1,029,800 passengers, a rise of 7.3 percent from 2006. Greenland has seen
+the most rapid growth in marine tourism, with a sharp increase in cruise-ship arrivals of 250
+percent since 2004.
+The global economic downturn may have affected the annual 20.6 percent rate of increase
+in visitors to the Antarctic - last season saw a drop of 17 percent to 38,200 - but there has
+been a 760 percent rise in land-based tourism there since 1997. More people than ever are
+landing at fragile sites, with light aircraft, helicopters and all-terrain vehicles increasingly
+used for greater access, while in the past two seasons, ‘fly-sail’ operations have begun.
+These deliver tourists by air to ships, so far more groups can enjoy a cruise in a season;
+large cruise ships capable of carrying up to 800 passengers are not uncommon.
+  
+In addition, it seems that a high number of visitors return to the poles. ‘Looking at six years’
+worth of data, of the people who have been to the polar regions, roughly 25 percent go for
+a second time,’ says Louisa Richardson, a senior marketing executive at tour operator
+Exodus.
+In the same period that tourism has exploded, the ‘health’ of the poles has
+‘deteriorated’. ‘The biggest changes taking place in theAntarctic are related to climate
+change,’ says Rod Downie, Environmental Manager with the British Antarctic Survey
+(BAS). Large numbers of visitors increase these problems.
+Although polar tourism is widely accepted, there have been few regulations up until
+recently. At the meeting of the Antarctic Treaty in Baltimore, the 28 member nations
+adopted proposals for limits to tourist numbers. These included safety codes for tourist
+vessels in Antarctic waters, and improved environmental protection for the continent. They
+agreed to prevent ships with more than 500 passengers from landing in Antarctica, as well
+as limit the number of passengers going ashore to a maximum of 100 at any one time, with
+a minimum of one guide for every 20 tourists. ‘Tourism in Antarctica is not without its risks,’
+says Downie. After all, Antarctica doesn’t have a coastguard rescue service.’
+‘So far, no surveys confirm that people are going quickly to see polar regions before they
+change,’ says Frigg Jorgensen, General Secretary of the Association of Arctic Expedition
+Cruise Operators (AECO). ‘However, Hillary Clinton and many other big names have been
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>高中数学 · 统计分布</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.section-card { background:#fff; border-radius:12px; padding:24px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,.06); }
+.section-card h3 { color:#059669; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid #e2e8f0; }
+.formula-box { background:#f0fdf4; padding:16px; border-radius:8px; margin:12px 0; border-left:4px solid #059669; font-family:monospace; text-align:center; }
+.tip-box { background:#fef3c7; padding:12px 16px; border-radius:8px; margin:12px 0; border-left:4px solid #d97706; }
+.distribution-box { background:#f5f3ff; padding:16px; border-radius:8px; margin:12px 0; border-left:4px solid #7c3aed; }
+.distribution-title { font-weight:600; color:#7c3aed; margin-bottom:8px; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+<h3>📉 统计分布</h3>
+<ul class="chapter-list">
+<li><a href="index.html"><span class="ch-num">📊</span>概率统计首页</a></li>
+<li><a href="#expect"><span class="ch-num">1</span>期望与方差</a></li>
+<li><a href="#binomial"><span class="ch-num">2</span>二项分布</a></li>
+<li><a href="#normal"><span class="ch-num">3</span>正态分布</a></li>
+<li><a href="#hypergeo"><span class="ch-num">4</span>超几何分布</a></li>
+<li><a href="../index.html"><span class="ch-num">🏠</span>返回高中数学</a></li>
+</ul>
+<div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+  <a href="../../index.html" class="back-home">🏠 返回首页</a>
+</div>
+</aside>
+
+<main class="main">
+<h1 style="margin-bottom:24px; color:#059669;">📉 统计分布</h1>
+
+<div class="section-card" id="expect">
+<h3>1. 离散型随机变量的期望与方差</h3>
+<p>设离散型随机变量 X 的分布列为：</p>
+<div class="formula-box">
+P(X = xᵢ) = pᵢ，i = 1, 2, ..., n
+</div>
+
+<div class="formula-box">
+<strong>数学期望（均值）：</strong><br>
+E(X) = x₁p₁ + x₂p₂ + ... + xₙpₙ = Σxᵢpᵢ
+</div>
+
+<div class="formula-box">
+<strong>方差：</strong><br>
+D(X) = Σ(xᵢ - E(X))² pᵢ
+</div>
+
+<div class="formula-box">
+<strong>标准差：</strong><br>
+σ(X) = √D(X)
+</div>
+
+<p><strong>期望与方差的性质：</strong></p>
+<div class="formula-box">
+E(aX + b) = aE(X) + b<br>
+D(aX + b) = a²D(X)
+</div>
+</div>
+
+<div class="section-card" id="binomial">
+<h3>2. 二项分布</h3>
+<p>在 n 次独立重复试验中，设事件 A 发生的次数为 X，每次试验中 A 发生的概率为 p，则 X 服从二项分布，记为 X ~ B(n, p)。</p>
+
+<div class="distribution-box">
+<div class="distribution-title">二项分布 B(n, p)</div>
+<p><strong>分布列：</strong>P(X = k) = C(n, k) p^k (1-p)^(n-k)，k = 0, 1, ..., n</p>
+<p><strong>期望：</strong>E(X) = np</p>
+<p><strong>方差：</strong>D(X) = np(1-p)</p>
+</div>
+
+<div class="tip-box">
+💡 <strong>二项分布的识别：</strong>n 次独立重复试验，每次只有两种结果，每次概率相同
+</div>
+</div>
+
+<div class="section-card" id="normal">
+<h3>3. 正态分布</h3>
+<p>正态分布是最常见、最重要的连续型概率分布，许多自然现象和测量误差都服从正态分布。</p>
+
+<div class="distribution-box">
+<div class="distribution-title">正态分布 N(μ, σ²)</div>
+<p><strong>参数含义：</strong>μ 是均值（期望），σ² 是方差（σ > 0）</p>
+<p><strong>概率密度函数：</strong></p>
+<p style="text-align:center; font-style:italic;">f(x) = [1/(σ√2π)] · e^[-(x-μ)²/(2σ²)]，x ∈ ℝ</p>
+</div>
+
+<p><strong>正态曲线的性质：</strong></p>
+<ul style="margin:12px 0 12px 24px; line-height:1.8;">
+<li>曲线位于 x 轴上方，与 x 轴不相交</li>
+<li>曲线是单峰的，关于直线 x = μ 对称</li>
+<li>曲线在 x = μ 处达到峰值</li>
+<li>曲线与 x 轴之间的面积为 1</li>
+<li>σ 越小，曲线越"瘦高"；σ 越大，曲线越"矮胖"</li>
+</ul>
+
+<div class="formula-box">
+<strong>3σ 原则：</strong><br>
+P(μ-σ < X ≤ μ+σ) ≈ 68.27%<br>
+P(μ-2σ < X ≤ μ+2σ) ≈ 95.45%<br>
+P(μ-3σ < X ≤ μ+3σ) ≈ 99.73%
+</div>
+
+<div class="tip-box">
+💡 <strong>标准正态分布：</strong>N(0, 1)，即 μ = 0，σ = 1 的正态分布
+</div>
+</div>
+
+<div class="section-card" id="hypergeo">
+<h3>4. 超几何分布</h3>
+<p>在含有 M 件次品的 N 件产品中，任取 n 件，其中恰有 X 件次品，则 X 服从超几何分布。</p>
+
+<div class="distribution-box">
+<div class="distribution-title">超几何分布 H(n, M, N)</div>
+<p><strong>分布列：</strong>P(X = k) = C(M, k) C(N-M, n-k) / C(N, n)</p>
+<p>k = 0, 1, 2, ..., m，其中 m = min(M, n)</p>
+<p><strong>期望：</strong>E(X) = n · M/N</p>
+</div>
+
+<div class="tip-box">
+💡 <strong>与二项分布的关系：</strong>当 N 很大时，超几何分布可以用二项分布近似，其中 p = M/N
+</div>
+</div>
+
+<div style="margin-top:32px; text-align:center;">
+<a href="s02_stats.html" style="display:inline-block; padding:12px 32px; background:#059669; color:#fff; border-radius:8px; text-decoration:none; font-weight:600;">← 上一章：统计</a>
+</div>
+
+</main>
+</div>
+</body>
+</html>

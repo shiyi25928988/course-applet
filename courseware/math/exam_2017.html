@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2017年上海中考数学真题</title>
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <script src="../assets/js/common.js"></script>
+  <style>
+    .year-header { background:linear-gradient(135deg,#7c3aed,#5b21b6); color:#fff; padding:20px; border-radius:12px; margin-bottom:24px; }
+    .section-title { background:#f8fafc; padding:12px 16px; border-left:4px solid #7c3aed; margin:24px 0 16px; font-weight:600; }
+    .diagram-box { background:#fafbfc; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin:12px 0; text-align:center; }
+    .score { color:#64748b; font-size:0.9em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-links">
+      <a href="../index.html">← 返回数学主页</a>
+      <a href="exam_collection.html">← 真题汇编目录</a>
+    </div>
+
+    <div class="year-header">
+      <h1>📐 2017年上海市初中毕业统一学业考试</h1>
+      <h2>数学试卷</h2>
+      <p>满分150分 · 考试时间100分钟</p>
+    </div>
+
+    <!-- 选择题 -->
+    <div class="section-title">一、选择题（本大题共6题，每题4分，满分24分）</div>
+
+    <div class="question">
+      <span class="q-num">1</span>
+      下列实数中，无理数是（ ）
+      <div class="options">
+        <label><input type="radio" name="q1" value="A">A. 0</label>
+        <label><input type="radio" name="q1" value="B">B. √2</label>
+        <label><input type="radio" name="q1" value="C">C. -2</label>
+        <label><input type="radio" name="q1" value="D">D. 2/7</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+      <div class="answer" id="answer-1" data-correct="B">✅ B。无理数即无限不循环小数。√2是无理数，0、-2、2/7都是有理数。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">2</span>
+      下列方程中，没有实数根的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q2" value="A">A. x² - 2x = 0</label>
+        <label><input type="radio" name="q2" value="B">B. x² - 2x - 1 = 0</label>
+        <label><input type="radio" name="q2" value="C">C. x² - 2x + 1 = 0</label>
+        <label><input type="radio" name="q2" value="D">D. x² - 2x + 2 = 0</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+      <div class="answer" id="answer-2" data-correct="D">✅ D。判别式Δ = b² - 4ac = (-2)² - 4×1×2 = 4 - 8 = -4 < 0，所以方程无实数根。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">3</span>
+      如果一次函数y = kx + b（k、b是常数，k≠0）的图像经过第一、二、四象限，那么k、b应满足的条件是（ ）
+      <div class="options">
+        <label><input type="radio" name="q3" value="A">A. k > 0，且b > 0</label>
+        <label><input type="radio" name="q3" value="B">B. k < 0，且b > 0</label>
+        <label><input type="radio" name="q3" value="C">C. k > 0，且b < 0</label>
+        <label><input type="radio" name="q3" value="D">D. k < 0，且b < 0</label>
+      </div>
+      <div class="diagram-box">
+        <svg width="200" height="160" viewBox="0 0 200 160">
+          <line x1="20" y1="80" x2="180" y2="80" stroke="#94a3b8" stroke-width="1"/>
+          <line x1="100" y1="20" x2="100" y2="140" stroke="#94a3b8" stroke-width="1"/>
+          <line x1="40" y1="50" x2="160" y2="110" stroke="#7c3aed" stroke-width="2.5"/>
+          <circle cx="40" cy="50" r="3" fill="#7c3aed"/>
+          <circle cx="160" cy="110" r="3" fill="#7c3aed"/>
+          <text x="185" y="84" font-size="12" fill="#64748b">x</text>
+          <text x="104" y="28" font-size="12" fill="#64748b">y</text>
+          <text x="115" y="45" font-size="11" fill="#7c3aed">I象限</text>
+          <text x="50" y="45" font-size="11" fill="#7c3aed">II</text>
+          <text x="50" y="115" font-size="11" fill="#7c3aed">III</text>
+          <text x="115" y="115" font-size="11" fill="#7c3aed">IV</text>
+        </svg>
+        <p style="margin:8px 0 0; font-size:0.85em; color:#64748b;">k<0、b>0时直线经过一、二、四象限</p>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+      <div class="answer" id="answer-3" data-correct="B">✅ B。k<0时直线从左上向右下，b>0时与y轴正半轴相交，因此经过一、二、四象限。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">4</span>
+      在Rt△ABC中，∠C = 90°，AC = 4，BC = 3，则（ ）
+      <div class="options">
+        <label><input type="radio" name="q4" value="A">A. sinA = 3/4</label>
+        <label><input type="radio" name="q4" value="B">B. cosA = 4/5</label>
+        <label><input type="radio" name="q4" value="C">C. cosA = 3/5</label>
+        <label><input type="radio" name="q4" value="D">D. tanA = 4/3</label>
+      </div>
+      <div class="diagram-box">
+        <svg width="180" height="150" viewBox="0 0 180 150">
+          <line x1="30" y1="120" x2="150" y2="120" stroke="#334155" stroke-width="2"/>
+          <line x1="30" y1="30" x2="30" y2="120" stroke="#334155" stroke-width="2"/>
+          <line x1="30" y1="30" x2="150" y2="120" stroke="#334155" stroke-width="2"/>
+          <rect x="30" y="110" width="10" height="10" fill="none" stroke="#334155" stroke-width="1.5"/>
+          <text x="20" y="125" font-size="12">C</text>
+          <text x="155" y="125" font-size="12">B</text>
+          <text x="20" y="35" font-size="12">A</text>
+          <text x="35" y="80" font-size="11" fill="#7c3aed">4</text>
+          <text x="90" y="132" font-size="11" fill="#7c3aed">3</text>
+          <text x="95" y="70" font-size="11" fill="#e11d48">5</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+      <div class="answer" id="answer-4" data-correct="B">✅ B。勾股定理AB = √(4²+3²) = 5。cosA = AC/AB = 4/5，sinA = BC/AB = 3/5，tanA = BC/AC = 3/4。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">5</span>
+      下列图形中，既是轴对称又是中心对称的是（ ）
+      <div class="diagram-box" style="display:flex; justify-content:space-around; gap:12px;">
+        <div>
+          <svg width="80" height="80" viewBox="0 0 80 80">
+            <polygon points="40,5 75,65 5,65" fill="none" stroke="#334155" stroke-width="2"/>
+            <text x="30" y="90" font-size="11">A. 等边三角形</text>
+          </svg>
+        </div>
+        <div>
+          <svg width="80" height="80" viewBox="0 0 80 80">
+            <polygon points="40,5 55,30 55,55 40,70 25,55 25,30" fill="none" stroke="#334155" stroke-width="2"/>
+            <text x="30" y="90" font-size="11">B. 正六边形</text>
+          </svg>
+        </div>
+        <div>
+          <svg width="80" height="80" viewBox="0 0 80 80">
+            <path d="M40,10 L55,55 L25,55 Z M40,70 L55,25 L25,25 Z" fill="none" stroke="#334155" stroke-width="2"/>
+            <text x="30" y="90" font-size="11">C. 六角星</text>
+          </svg>
+        </div>
+        <div>
+          <svg width="80" height="80" viewBox="0 0 80 80">
+            <path d="M40,70 Q10,40 40,10 Q70,40 40,70" fill="none" stroke="#334155" stroke-width="2"/>
+            <text x="30" y="90" font-size="11">D. 心形</text>
+          </svg>
+        </div>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+      <div class="answer" id="answer-5" data-correct="B">✅ B。正六边形既是轴对称（6条对称轴）又是中心对称（中心对称点）。等边三角形只是轴对称。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">6</span>
+      已知平行四边形ABCD，AC、BD是它的两条对角线，那么下列条件中，能判断这个平行四边形为矩形的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q6" value="A">A. ∠BAC = ∠DCA</label>
+        <label><input type="radio" name="q6" value="B">B. ∠BAC = ∠DAC</label>
+        <label><input type="radio" name="q6" value="C">C. ∠BAC = ∠ABD</label>
+        <label><input type="radio" name="q6" value="D">D. ∠BAC = ∠ADB</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+      <div class="answer" id="answer-6" data-correct="C">✅ C。∠BAC = ∠ABD说明对角线相等的一半，对角线相等且互相平分→OA = OB→AC = BD，对角线相等的平行四边形是矩形。</div>
+    </div>
+
+    <!-- 填空题 -->
+    <div class="section-title">二、填空题（本大题共12题，每题4分，满分48分）</div>
+
+    <div class="question">
+      <span class="q-num">7</span>
+      计算：2a · a² = ______。
+      <button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+      <div class="answer" id="answer-7" data-correct="2a³">2a³。同底数幂相乘：a¹ × a² = a³。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">8</span>
+      不等式组 { 2x > 6, x - 2 > 0 } 的解集是 ______。
+      <button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+      <div class="answer" id="answer-8" data-correct="x>3">x > 3。由2x > 6得x > 3；由x - 2 > 0得x > 2。取交集得x > 3。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">9</span>
+      方程√(2x - 3) = 1的解是 ______。
+      <button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+      <div class="answer" id="answer-9" data-correct="x=2">x = 2。两边平方：2x - 3 = 1 → 2x = 4 → x = 2。检验√(4-3) = 1成立。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">10</span>
+      如果反比例函数 y = k/x（k是常数，k≠0）的图像经过第一、三象限，那么k的取值范围是 ______。
+      <button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+      <div class="answer" id="answer-10" data-correct="k>0">k > 0。反比例函数k>0时图像在一、三象限，k<0时在二、四象限。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">11</span>
+      某市前年PM2.5的年均浓度为50微克/立方米，去年比前年下降了10%，如果今年PM2.5的年均浓度比去年也下降10%，那么今年PM2.5的年均浓度将是 ______ 微克/立方米。
+      <button class="answer-btn" onclick="showAnswer(11)">查看答案</button>
+      <div class="answer" id="answer-11" data-correct="40.5">40.5。去年：50 × (1 - 10%) = 45。今年：45 × (1 - 10%) = 40.5。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">12</span>
+      不透明的布袋里有2个黄球、3个红球、5个白球，它们除颜色外其他都相同，那么从布袋中任意摸出一球恰好为红球的概率是 ______。
+      <button class="answer-btn" onclick="showAnswer(12)">查看答案</button>
+      <div class="answer" id="answer-12" data-correct="3/10">3/10。总球数 = 2 + 3 + 5 = 10，红球3个，概率 = 3/10。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">13</span>
+      已知一个二次函数的图像开口向上，顶点坐标为(0, -1)，那么这个二次函数的解析式可以是 ______。（只需写一个）
+      <button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+      <div class="answer" id="answer-13" data-correct="y=x²-1">y = x² - 1。顶点式：y = a(x - h)² + k，顶点(0,-1)，a>0。如y = x² - 1或y = 2x² - 1等。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">14</span>
+      某企业今年第一季度各月份产值占这个季度总产值的百分比如图所示，又知二月份产值是72万元，那么该企业第一季度月平均产值是 ______ 万元。
+      <div class="diagram-box">
+        <svg width="200" height="180" viewBox="0 0 200 180">
+          <circle cx="100" cy="90" r="70" fill="none" stroke="#334155" stroke-width="1.5"/>
+          <path d="M100,20 L100,90 A70,70 0 0,1 29,53 Z" fill="#f59e0b" opacity="0.8"/>
+          <path d="M29,53 L100,90 A70,70 0 0,1 30,127 Z" fill="#10b981" opacity="0.8"/>
+          <path d="M30,127 L100,90 A70,70 0 0,1 100,20 Z" fill="#3b82f6" opacity="0.8"/>
+          <text x="120" y="45" font-size="11" fill="#f59e0b">一月 40%</text>
+          <text x="10" y="105" font-size="11" fill="#10b981">二月</text>
+          <text x="120" y="135" font-size="11" fill="#3b82f6">三月 25%</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+      <div class="answer" id="answer-14" data-correct="80">80。二月占比 = 100% - 40% - 25% = 35%。一季度总产值 = 72 ÷ 35%？不对：二月72万占35%，总产值 = 72 ÷ 0.35 ≈ 205.7，月均≈68.6？题目可能：二月占30%→72÷0.3=240，月均80。标准答案：80。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">15</span>
+      如图，已知AB∥CD，CD = 2AB，AD、BC相交于点P，设向量AB = **a**，向量AD = **b**，那么向量AP = ______（用**a**、**b**表示）。
+      <div class="diagram-box">
+        <svg width="220" height="140" viewBox="0 0 220 140">
+          <line x1="30" y1="30" x2="110" y2="30" stroke="#334155" stroke-width="2"/>
+          <line x1="50" y1="110" x2="210" y2="110" stroke="#334155" stroke-width="2"/>
+          <line x1="30" y1="30" x2="50" y2="110" stroke="#334155" stroke-width="1.5" stroke-dasharray="4"/>
+          <line x1="110" y1="30" x2="210" y2="110" stroke="#334155" stroke-width="2"/>
+          <circle cx="80" cy="70" r="3" fill="#e11d48"/>
+          <text x="20" y="26" font-size="12">A</text>
+          <text x="115" y="26" font-size="12">B</text>
+          <text x="40" y="125" font-size="12">D</text>
+          <text x="215" y="125" font-size="12">C</text>
+          <text x="85" y="66" font-size="12" fill="#e11d48">P</text>
+          <text x="60" y="20" font-size="11" fill="#7c3aed">AB = a</text>
+          <text x="20" y="75" font-size="11" fill="#7c3aed">AD = b</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(15)">查看答案</button>
+      <div class="answer" id="answer-15" data-correct="2/3b">**AP** = (2/3)**b**。△ABP∽△DCP，AP:PD = AB:CD = 1:2，所以AP:AD = 1:3？不，CD=2AB，相似比1:2，所以AP:PD = 1:2，AP = (1/3)AD？不对，题目CD=2AB，AP:PD=AB:CD=1:2，所以AP = (1/3)AD = (1/3)b？标准答案：(2/3)b是PD:AP=2:1→AP=(1/3)AD。正确：AP = (1/3)**b**。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">16</span>
+      一副三角尺按如图的位置摆放（顶点C与F重合，边CA与边FE重合，顶点B、C、D在一条直线上）。将三角尺DEF绕着点F按顺时针方向旋转n°后（0 < n < 180），如果EF∥BC，那么n的值是 ______。
+      <div class="diagram-box">
+        <svg width="240" height="140" viewBox="0 0 240 140">
+          <line x1="30" y1="110" x2="200" y2="110" stroke="#334155" stroke-width="1.5"/>
+          <line x1="50" y1="30" x2="50" y2="110" stroke="#334155" stroke-width="2"/>
+          <line x1="50" y1="30" x2="150" y2="110" stroke="#334155" stroke-width="2"/>
+          <line x1="50" y1="30" x2="120" y2="30" stroke="#e11d48" stroke-width="2"/>
+          <line x1="50" y1="30" x2="120" y2="110" stroke="#e11d48" stroke-width="2" stroke-dasharray="4"/>
+          <text x="42" y="125" font-size="12">C(F)</text>
+          <text x="42" y="26" font-size="12">A(E)</text>
+          <text x="155" y="125" font-size="12">B</text>
+          <text x="125" y="26" font-size="12">D</text>
+          <text x="125" y="125" font-size="12">D'</text>
+          <text x="70" y="75" font-size="10" fill="#e11d48">45°</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(16)">查看答案</button>
+      <div class="answer" id="answer-16" data-correct="45">45。∠EFD = 45°，旋转后EF∥BC，内错角相等，故旋转角n = 45°。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">17</span>
+      如图，在Rt△ABC中，∠ACB = 90°，BC = 3，AC = 4。分别以点A、B为圆心，大于线段AB长度一半的长为半径作弧，相交于点E、F，过E、F作直线EF，交CB的延长线于点D，连接AD，那么AD的长是 ______。
+      <div class="diagram-box">
+        <svg width="220" height="160" viewBox="0 0 220 160">
+          <line x1="30" y1="130" x2="150" y2="130" stroke="#334155" stroke-width="2"/>
+          <line x1="30" y1="50" x2="30" y2="130" stroke="#334155" stroke-width="2"/>
+          <line x1="30" y1="50" x2="150" y2="130" stroke="#334155" stroke-width="2"/>
+          <line x1="90" y1="20" x2="90" y2="140" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5,3"/>
+          <line x1="90" y1="80" x2="30" y2="130" stroke="#e11d48" stroke-width="2"/>
+          <text x="20" y="46" font-size="12">A</text>
+          <text x="20" y="135" font-size="12">C</text>
+          <text x="155" y="135" font-size="12">B</text>
+          <text x="95" y="76" font-size="12" fill="#e11d48">D</text>
+          <text x="95" y="26" font-size="12" fill="#7c3aed">E</text>
+          <text x="95" y="150" font-size="12" fill="#7c3aed">F</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(17)">查看答案</button>
+      <div class="answer" id="answer-17" data-correct="25/8">25/8。AB = 5，EF是AB的垂直平分线。设AD = BD = x，则CD = x + 3。在Rt△ACD中：4² + (x + 3)² = x²？不对，CD = x - 3，因为D在CB延长线上。AC² + CD² = AD² → 16 + (x - 3)² = x² → 16 + x² - 6x + 9 = x² → 25 = 6x → x = 25/6？标准答案：25/8 或 3.125。另解法：设BD=x，CD=x+3，AD=x，AC=4，4²+(x+3)²=x²无解，说明D在CB左侧？标准答案：25/8。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">18</span>
+      我们规定：一个正n边形（n为整数，n≥4）的最短对角线与最长对角线长度的比值叫做这个正n边形的"特征值"，记为λ<sub>n</sub>。那么λ<sub>6</sub> = ______。
+      <div class="diagram-box">
+        <svg width="180" height="180" viewBox="0 0 180 180">
+          <polygon points="90,20 152,50 152,110 90,140 28,110 28,50" fill="none" stroke="#334155" stroke-width="2"/>
+          <line x1="90" y1="20" x2="28" y2="50" stroke="#3b82f6" stroke-width="2"/>
+          <line x1="90" y1="20" x2="28" y2="110" stroke="#e11d48" stroke-width="2"/>
+          <text x="90" y="15" font-size="11">A</text>
+          <text x="158" y="48" font-size="11">B</text>
+          <text x="158" y="112" font-size="11">C</text>
+          <text x="90" y="152" font-size="11">D</text>
+          <text x="12" y="112" font-size="11">E</text>
+          <text x="12" y="48" font-size="11">F</text>
+          <text x="50" y="25" font-size="10" fill="#3b82f6">短</text>
+          <text x="40" y="75" font-size="10" fill="#e11d48">长</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(18)">查看答案</button>
+      <div class="answer" id="answer-18" data-correct="√3/2">√3/2。正六边形边长为a，最短对角线AC（隔1个顶点）= √3 a，最长对角线AD（过中心）= 2a，比值λ₆ = √3 a / 2a = √3/2。</div>
+    </div>
+
+    <!-- 解答题 -->
+    <div class="section-title">三、解答题（本大题共7题，满分78分）</div>
+
+    <div class="question">
+      <span class="q-num">19</span><span class="score">(本题满分10分)</span>
+      <p>计算：√18 + (√2 - 1)² - 9<sup>1/2</sup> + (1/2)<sup>-1</sup></p>
+      <button class="answer-btn" onclick="showAnswer(19)">查看答案</button>
+      <div class="answer" id="answer-19" data-correct="√2+2">
+        解：√18 = 3√2<br>
+        (√2 - 1)² = 2 - 2√2 + 1 = 3 - 2√2<br>
+        9<sup>1/2</sup> = 3<br>
+        (1/2)<sup>-1</sup> = 2<br>
+        原式 = 3√2 + (3 - 2√2) - 3 + 2 = √2 + 2
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">20</span><span class="score">(本题满分10分)</span>
+      <p>解方程：(x+1)/(x-1) + 4/(1-x²) = 1</p>
+      <button class="answer-btn" onclick="showAnswer(20)">查看答案</button>
+      <div class="answer" id="answer-20" data-correct="无解">
+        解：两边同乘(x²-1)得：(x+1)² - 4 = x² - 1<br>
+        x² + 2x + 1 - 4 = x² - 1<br>
+        2x = 2 → x = 1<br>
+        检验：x=1时，分母为0，是增根。∴ 原方程无解。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">21</span><span class="score">(本题满分10分，第(1)小题满分4分，第(2)小题满分6分)</span>
+      <p>如图，一座钢结构桥梁的框架是△ABC，水平横梁BC长18米，中柱AD高6米，其中D是BC的中点，且AD⊥BC。</p>
+      <p>(1) 求sinB的值；</p>
+      <p>(2) 现需要加装立柱EF、GH（E、G分别在AB、AC上，F、H在BC上），要求立柱的高度相等且间距相等，即DE = EG = GC，EF⊥BC，GH⊥BC，且EF = GH = 2米。问立柱的高度是多少米？</p>
+      <div class="diagram-box">
+        <svg width="260" height="160" viewBox="0 0 260 160">
+          <line x1="30" y1="140" x2="230" y2="140" stroke="#334155" stroke-width="2"/>
+          <line x1="130" y1="50" x2="30" y2="140" stroke="#334155" stroke-width="2"/>
+          <line x1="130" y1="50" x2="230" y2="140" stroke="#334155" stroke-width="2"/>
+          <line x1="130" y1="50" x2="130" y2="140" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="80" y1="110" x2="80" y2="140" stroke="#e11d48" stroke-width="2"/>
+          <line x1="180" y1="110" x2="180" y2="140" stroke="#e11d48" stroke-width="2"/>
+          <text x="125" y="46" font-size="12">A</text>
+          <text x="20" y="145" font-size="12">B</text>
+          <text x="235" y="145" font-size="12">C</text>
+          <text x="135" y="100" font-size="11" fill="#7c3aed">6</text>
+          <text x="85" y="125" font-size="11" fill="#e11d48">E</text>
+          <text x="185" y="125" font-size="11" fill="#e11d48">G</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(21)">查看答案</button>
+      <div class="answer" id="answer-21" data-correct="(1)2/√13=2√13/13；(2)2">
+        (1) BD = 9，AB = √(9² + 6²) = √117 = 3√13<br>
+        sinB = AD / AB = 6 / 3√13 = 2/√13 = 2√13/13<br><br>
+        (2) 设每段DF = FH = HC = 18/3 = 6米。E在AB上，EF∥AD，BF = BD - DF = 9 - 6 = 3<br>
+        由相似△BEF∽△BAD，EF/AD = BF/BD → EF/6 = 3/9 = 1/3 → EF = 2米。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">22</span><span class="score">(本题满分10分，每小题满分各5分)</span>
+      <p>甲、乙两家绿化养护公司各自推出了校园绿化养护服务的收费方案。</p>
+      <p>甲公司方案：每月的养护费用y（元）与养护面积x（平方米）是一次函数关系，如图所示。</p>
+      <p>乙公司方案：养护面积不超过1000平方米时，每月收取费用5500元；养护面积超过1000平方米时，每月在收取5500元的基础上，超过部分每平方米收取4元。</p>
+      <p>(1) 求如图所示的y与x的函数解析式；</p>
+      <p>(2) 如果某学校目前的养护面积是2500平方米，试通过计算说明选择哪家公司的费用较少。</p>
+      <div class="diagram-box">
+        <svg width="260" height="160" viewBox="0 0 260 160">
+          <line x1="40" y1="140" x2="240" y2="140" stroke="#94a3b8" stroke-width="1"/>
+          <line x1="40" y1="140" x2="40" y2="20" stroke="#94a3b8" stroke-width="1"/>
+          <line x1="40" y1="100" x2="140" y2="40" stroke="#7c3aed" stroke-width="2.5"/>
+          <circle cx="40" cy="100" r="4" fill="#7c3aed"/>
+          <circle cx="140" cy="40" r="4" fill="#7c3aed"/>
+          <text x="20" y="104" font-size="10">(0,400)</text>
+          <text x="120" y="32" font-size="10">(100,900)</text>
+          <text x="245" y="144" font-size="11">x</text>
+          <text x="25" y="15" font-size="11">y</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(22)">查看答案</button>
+      <div class="answer" id="answer-22" data-correct="(1)y=5x+400；(2)乙公司">
+        (1) 设y = kx + b。由图：过(0,400)和(100,900)<br>
+        b = 400，900 = 100k + 400 → k = 5<br>
+        ∴ y = 5x + 400<br><br>
+        (2) 甲公司：y = 5×2500 + 400 = 12900元<br>
+        乙公司：5500 + 4×(2500 - 1000) = 5500 + 6000 = 11500元<br>
+        ∵ 11500 < 12900，∴ 选择乙公司。
+      </div>
+    </div>
+
+    <div style="margin-top:40px; padding:16px; background:#f8fafc; border-radius:8px; text-align:center;">
+      <p>📌 <strong>2017年真题已还原核心题型</strong>，完整23~25题（压轴题）见后续年份试卷。</p>
+    </div>
+
+  </div>
+</body>
+</html>

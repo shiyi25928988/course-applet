@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>三角形与全等 · 四边形 · 相似 - 几何沪教版</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+</head>
+<body><div class="layout"><aside class="sidebar"><h3>📐 几何</h3><ul class="chapter-list">
+<li><a href="g02_triangles.html" class="active"><span class="ch-num">2</span>三角形与全等</a><div class="subsections"><a href="#sec1">三角形基础</a><a href="#sec2">全等判定</a><a href="#sec3">特殊三角形</a><a href="#exercises">练习</a></div></li>
+</ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div c</ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-subject">📂 几何目录</a>
+    </div>"page-title">第2章 三角形与全等</div>
+
+<h2 id="sec1">2.1 三角形基础</h2>
+<div class="kp"><h3>基本性质</h3>
+<p><strong>内角和定理</strong>：∠A+∠B+∠C = <strong>180°</strong></p>
+<p><strong>外角定理</strong>：三角形的一个外角 = 不相邻两个内角之和</p>
+<p><strong>三边关系</strong>：两边之和 > 第三边，两边之差 < 第三边</p>
+<p><strong>中线、高线、角平分线</strong>：三条中线交于<strong>重心</strong>；重心分中线 2:1</p></div>
+
+<h2 id="sec2">2.2 全等三角形的判定</h2>
+<div class="keypoints-grid">
+<div class="kp"><h3>SSS（边边边）</h3><p>三边分别相等的两个三角形全等。</p></div>
+<div class="kp"><h3>SAS（边角边）</h3><p>两边及其夹角分别相等的两个三角形全等。</p></div>
+<div class="kp"><h3>ASA / AAS</h3><p>两角及其夹边/对边分别相等的两个三角形全等。</p></div>
+<div class="kp"><h3>HL（斜边直角边）</h3><p>直角三角形中斜边和一条直角边分别相等→全等。</p></div>
+</div>
+
+<h2 id="sec3">2.3 特殊三角形</h2>
+<div class="kp"><h3>等腰三角形</h3>
+<p><strong>等边对等角</strong>：两腰相等→两底角相等。</p>
+<p><strong>三线合一</strong>：顶角平分线、底边中线、底边高线三线合一。</p></div>
+<div class="kp"><h3>直角三角形</h3>
+<p><strong>勾股定理</strong>：<span class="formula">a² + b² = c²</span></p>
+<p>30°角所对直角边 = 斜边的一半。</p>
+<p>斜边中线 = 斜边的一半。</p></div>
+
+<h2 id="exercises" style="margin:28px 0 16px;">📝 练习题</h2>
+<div class="exercise"><div class="question"><span class="q-num">1</span>三角形三个内角的度数比为2:3:4，则最小角的度数为____。</div>
+<div class="options"><label><input type="radio" name="q1" value="A">A. 20°</label><label><input type="radio" name="q1" value="B">B. 40°</label><label><input type="radio" name="q1" value="C">C. 60°</label><label><input type="radio" name="q1" value="D">D. 80°</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button><div class="answer" id="answer-1" data-correct="B">✅ B。2x+3x+4x=180°→9x=180°→x=20°→最小角=40°。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>以下各组线段能构成三角形的是____。</div>
+<div class="options"><label><input type="radio" name="q2" value="A">A. 1cm,2cm,4cm</label><label><input type="radio" name="q2" value="B">B. 3cm,4cm,7cm</label><label><input type="radio" name="q2" value="C">C. 5cm,6cm,11cm</label><label><input type="radio" name="q2" value="D">D. 3cm,4cm,5cm</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button><div class="answer" id="answer-2" data-correct="D">✅ D。A:1+2<4✗ B:3+4=7✗ C:5+6=11✗ D:3+4>5✓。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>【中考】在Rt△ABC中，∠C=90°，AC=3，BC=4，斜边AB=____。</div>
+<div class="options"><label><input type="radio" name="q3" value="A">A. 5</label><label><input type="radio" name="q3" value="B">B. 7</label><label><input type="radio" name="q3" value="C">C. 12</label><label><input type="radio" name="q3" value="D">D. 25</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button><div class="answer" id="answer-3" data-correct="A">✅ A。AB=√(3²+4²)=√25=5。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>等腰三角形的一个底角为50°，则顶角为____。</div>
+<div class="options"><label><input type="radio" name="q4" value="A">A. 50°</label><label><input type="radio" name="q4" value="B">B. 80°</label><label><input type="radio" name="q4" value="C">C. 130°</label><label><input type="radio" name="q4" value="D">D. 65°</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button><div class="answer" id="answer-4" data-correct="B">✅ B。顶角=180°-2×50°=80°。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>下列条件中不能判定两个三角形全等的是____。</div>
+<div class="options"><label><input type="radio" name="q5" value="A">A. SSS</label><label><input type="radio" name="q5" value="B">B. SSA</label><label><input type="radio" name="q5" value="C">C. AAS</label><label><input type="radio" name="q5" value="D">D. HL</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button><div class="answer" id="answer-5" data-correct="B">✅ B。SSA不能判定全等（两边及其中一边的对角）。SAS才行。</div></div>
+
+</main></div>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Phillip College - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题86/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Arthur Phillip College</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>rejected the necessity to learn complicated new skills.
+ 
+F So why should historians make this change? clearly, films or videos of events and people
+can be used as solid evidence of the past, linked to the words of the narrator (whether a
+television presenter/historian or a university teacher giving a lecture) but carrying
+information in their own right. Film has reintroduced the oral form as a mode of research
+and communication for documenting historical events. Now, with moving images, people
+are reminded that oral communication is not limited to words: it also includes body
+language, expression and tone, and is embedded in a context. Little of this is evident in a
+written transcript. A further effect of video and film is that the narrator gives up some control
+and has less need to give explanations, while the viewer becomes involved in the process
+of interpreting and understanding history.
+G Film or videotape can also aid historians by simplifying the work of the interviewer.
+Instead of trying to carry on an interview while simultaneously making notes about setting
+and other unspoken data, this new kind of historian can concentrate on the interview itself,
+and study the film later. The many benefits of using moving images as historical evidence
+easily outweigh worries about cost, technical skills, or the effect of a camera on a person
+telling his or her story. Moving images enhance the quality of historical research, and
+suggest new directions for historians to explore.
+ 2</p>
+<p>Questions 1-9
+Reading Passage has seven paragraphs, A-G.
+Which paragraph contains the following information?
+Write the correct letter, A-G, in boxes 1-9 on your answer sheet.</p>
+<p>NB You may use any letter more than once.
+1.....................  an overview of the range of methods that have been used over time to
+document history
+2.....................   the main reason why many historians are unwilling to use films in
+their work
+3..................... a reference to some differences between oral and written
+communication
+4..................... how most citizens today gain an understanding of history
+5..................... how current student events are sometimes captured for future
+audiences
+6..................... mention of the fact that the advantages of film are greater than the
+disadvantages
+7..................... the claim that there is no official title for film-based historical work
+8..................... reference to the active role the audience plays when watching films
+9..................... a list of requirements that historians see as obstacles to their use of
+film to record history
+ 
+Questions 10-14
+Do the following statements agree with the claims of the writer in Reading Passage?
+In boxes 10-14 on your answer sheet, write
+YES – if the statement reflects the claims of the writer
+NO – if the statement contradicts the claims of the writer
+NOT GIVEN – if it is impossible to say what the writer thinks about this
+10..................... The needs of students in school have led to improvements in the
+teaching of history.
+11..................... Academic and popular historians have different attitudes towards the
+ 3</p>
+<p>value of innovations in communication.
+12.....................   It is common for historians to play a major role in creating historical
+documentaries for television.
+13.....................  Articles in American History Review have explored aspects of
+modern history through popular films.
+14..................... Developments in technology are influencing a range of academic
+subjects.
+ 4</p>
+<p>Solution:
+ 
+1. C
+2. E
+3. F
+4. A
+5. B
+6. G
+7. C
+8. F
+9. E
+10. NOT GIVEN
+11. YES
+12. NO
+13. YES
+14. NOT GIVEN
+ 5</p>
+<p>Reading Practice
+ A New Voyage Round the World</p>
+<p>A very old travel hook that holds an unusual place in English literature</p>
+<p>Part travelogue, part historical record of the Caribbean pirates, part scientific treatise, A
+New Voyage Round the World was William Dampier’s account of his twelve-year series of
+journeys around the globe from 1679 to 1691.
+The wealth and novelty of Dampier’s descriptions, combined with the highly counts of his
+comrades’, escapades, proved so popular with a public hungry for tales of discovery and
+adventure that A New Voyage went into its third reprint within a year of publication. So
+groundbreaking was Dampier’s account that the writers Swift and Defoe were inspired to
+create two of the most famous books in the English language, Gulliver’s Travels and
+Robinson Crusoe.
+Dampier’s commentators have portrayed him as an unusual, not to say peculiar, man.
+Notwithstanding his undoubted qualities as an observer, he has been variously
+characterised as aloof, arrogant, hot-tempered and a weak leader of men. When he arrived
+on the western coast of Australia, he promptly elected to leave and head north out of dislike
+for the cold of more southerly latitudes. This physical sensitivity has often been seized on
+by his detractors, who point out that, as a result, Dampier missed out on becoming the
+name forever associated with the European discovery of Australia, that honour instead
+going to Captain James Cook some 80 years later. Yet it should be remembered that he
+was able to endure a never-ending plague of discomforts and ailments in the tropics. And
+once, wrecked off Ascension Island in the South Atlantic Ocean, he managed with his crew
+to survive for five weeks without help, living entirely on turtles and goats.
+What of his early life, then? Dampier was born in 1651 in Somerset, England, the son of a
+tenant farmer, George, and his wife Ann. His birthplace, Hymerford House, stands to this
+day. His parents died before he reached seniority and his guardians apprenticed the young
+William to a ship’s captain, the boy having shown very early inclinations to see the world’.
+There was nothing in his childhood to set Dampier apart from the numerous other young
+boys who were sent to sea at this time.
+  
+Having made brief passages to France and Newfoundland, he completed a more extended
+voyage to Java, where he began to learn the art of navigation. Returning briefly to
+Somerset, a neighbour offered Dampier a position overseeing his plantation in Jamaica,
+which he took up for a time, but he soon returned to sea on a trading voyage among the
+Caribbean islands. From the viewpoint of posterity, the most significant aspect of this time
+was that, as plantation manager, Dampier first started to keep a journal.
+Although Dampier wrote several books, A New Voyage Round the World is the most
+important and it is worth considering just why this text met with such success. Certainly, the
+book would not have done so well purely on the merits of Dampier’s findings regarding
+meteorology and natural history, even though they broke new ground at the time. What
+appealed more to book buyers of this era was his narrative of life among the pirates of the
+Caribbean islands, whom he joined for several years after leaving Jamaica. These tales of
+adventure among rogues and villains who had no regard for the law sparked widespread
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

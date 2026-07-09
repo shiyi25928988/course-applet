@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第一章 声 - 初中物理沪教版</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.wave-anim { width:100%; height:200px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.wave-canvas { width:100%; height:100%; }
+.freq-demo { display:flex; gap:16px; flex-wrap:wrap; }
+.freq-demo .freq-box { flex:1; min-width:180px; padding:16px; background:var(--bg); border-radius:10px; text-align:center; }
+.freq-demo canvas { width:100%; height:120px; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📚 初中物理</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_sound.html" class="active" data-section="s1"><span class="ch-num">1</span>声</a>
+      <div class="subsections">
+        <a href="#sec1-1" data-section="s1">1.1 声波的产生和传播</a>
+        <a href="#sec1-2" data-section="s2">1.2 声音的特征</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch02_light.html"><span class="ch-num">2</span>光</a></li>
+    <li><a href="ch03_motion_force.html"><span class="ch-num">3</span>运动和力</a></li>
+    <li><a href="ch04_work_machines.html"><span class="ch-num">4</span>机械和功</a></li>
+    <li><a href="ch05_heat_energy.html"><span class="ch-num">5</span>热与能</a></li>
+    
+  </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+  <div class="page-title">第一章 声</div>
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>知道声音是由物体振动产生的</li>
+      <li>理解声音传播需要介质，知道声音在不同介质中传播速度不同</li>
+      <li>理解乐音的三要素：音调、响度和音色</li>
+      <li>知道噪声的危害和控制方法</li>
+      <li>了解超声波和次声波的特点及应用</li>
+    </ul>
+  </div>
+
+  <!-- 1.1 -->
+  <h2 data-section="s1" id="sec1-1" style="margin:28px 0 16px;">1.1 声波的产生和传播</h2>
+
+  <div class="kp">
+    <h3>声音的产生</h3>
+    <p>声音是由物体的<strong>振动</strong>产生的。一切正在发声的物体都在振动，振动停止，发声也停止。正在发声的物体叫做<strong>声源</strong>。</p>
+    <p>例如：人说话时声带振动；敲鼓时鼓面振动；弹琴时琴弦振动。</p>
+  </div>
+
+  <div class="kp">
+    <h3>声音的传播</h3>
+    <p>声音的传播需要<strong>介质</strong>。固体、液体、气体都可以传播声音。<strong>真空不能传声</strong>。</p>
+    <p>声音在介质中以<strong>声波</strong>的形式传播。声波是一种<strong>纵波</strong>，介质中质点的振动方向与波的传播方向相同。</p>
+    <p>声速：声音在不同介质中的传播速度不同。一般情况下，<strong>v<sub>固</sub> > v<sub>液</sub> > v<sub>气</sub></strong>。15℃时空气中的声速约为 <strong>340 m/s</strong>。</p>
+    <span class="formula">v = s / t （声速 = 路程 / 时间）</span>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">🔊 声波传播动画</h3>
+    <div class="wave-anim">
+      <canvas id="waveCanvas" class="wave-canvas"></canvas>
+    </div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      声源振动引起周围空气分子疏密相间地向外传播——形成声波（纵波）
+    </p>
+  </div>
+
+  <!-- 1.2 -->
+  <h2 data-section="s2" id="sec1-2" style="margin:28px 0 16px;">1.2 声音的特征</h2>
+
+  <div class="kp">
+    <h3>乐音的三要素</h3>
+    <p>乐音的三个特征：<strong>音调、响度、音色</strong>。它们分别由不同的物理因素决定。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>🔺 音调</h3>
+      <p>音调指声音的<strong>高低</strong>。</p>
+      <p>决定因素：发声体振动的<strong>频率</strong>（每秒振动次数，单位：赫兹 Hz）。</p>
+      <p>频率越高，音调越高；频率越低，音调越低。</p>
+      <p>人耳能听到的频率范围：<strong>20 Hz ~ 20000 Hz</strong>。</p>
+      <p>超声波：频率 &gt; 20000 Hz；次声波：频率 &lt; 20 Hz。</p>
+    </div>
+    <div class="kp">
+      <h3>📢 响度</h3>
+      <p>响度指声音的<strong>强弱</strong>（大小）。</p>
+      <p>决定因素：发声体振动的<strong>振幅</strong>（偏离平衡位置的最大距离）。</p>
+      <p>振幅越大，响度越大。</p>
+      <p>响度还与<strong>距离声源的远近</strong>有关：距离越远，响度越小。</p>
+      <p>响度单位：<strong>分贝（dB）</strong>。</p>
+    </div>
+    <div class="kp">
+      <h3>🎵 音色</h3>
+      <p>音色指声音的<strong>品质</strong>（特色）。</p>
+      <p>决定因素：发声体的<strong>材料、结构</strong>以及振动的<strong>波形</strong>。</p>
+      <p>不同乐器演奏同一音调，我们仍能分辨出来——就是因为音色不同。</p>
+      <p>应用：语音识别、乐器鉴定。</p>
+    </div>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">📊 音调与频率对比</h3>
+    <div class="freq-demo">
+      <div class="freq-box">
+        <canvas id="freqLow"></canvas>
+        <p style="font-weight:600;margin-top:6px;">低频率 → 低音调</p>
+      </div>
+      <div class="freq-box">
+        <canvas id="freqMid"></canvas>
+        <p style="font-weight:600;margin-top:6px;">中频率 → 中音调</p>
+      </div>
+      <div class="freq-box">
+        <canvas id="freqHigh"></canvas>
+        <p style="font-weight:600;margin-top:6px;">高频率 → 高音调</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>噪声与控制</h3>
+    <p>噪声：从物理学角度，噪声是发声体做<strong>无规则振动</strong>时发出的声音。从环保角度，凡是<strong>妨碍人们正常休息、学习和工作</strong>的声音都属于噪声。</p>
+    <p>控制噪声的三种途径：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li><strong>在声源处减弱</strong>——如禁鸣喇叭、消音器</li>
+      <li><strong>在传播过程中减弱</strong>——如植树造林、隔音墙</li>
+      <li><strong>在人耳处减弱</strong>——如戴耳塞、防噪耳罩</li>
+    </ul>
+  </div>
+
+  <!-- 练习题 -->
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>声音是由物体的____产生的。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 振动</label>
+      <label><input type="radio" name="q1" value="B">B. 运动</label>
+      <label><input type="radio" name="q1" value="C">C. 碰撞</label>
+      <label><input type="radio" name="q1" value="D">D. 摩擦</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="A">✅ 正确答案：A。声音是由物体的振动产生的，一切发声体都在振动。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>15℃时，声音在空气中的传播速度约为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 3×10⁸ m/s</label>
+      <label><input type="radio" name="q2" value="B">B. 340 m/s</label>
+      <label><input type="radio" name="q2" value="C">C. 1500 m/s</label>
+      <label><input type="radio" name="q2" value="D">D. 34 m/s</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="B">✅ 正确答案：B。15℃时声音在空气中的传播速度约为340m/s。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>关于声音的传播，下列说法正确的是____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 声音只能在空气中传播</label>
+      <label><input type="radio" name="q3" value="B">B. 声音在真空中传播最快</label>
+      <label><input type="radio" name="q3" value="C">C. 声音传播需要介质，真空不能传声</label>
+      <label><input type="radio" name="q3" value="D">D. 声音在固体中传播最慢</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="C">✅ 正确答案：C。声音传播需要介质，真空不能传声。一般v固>v液>v气。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>男低音歌唱家发出的声音，其____较低。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. 响度</label>
+      <label><input type="radio" name="q4" value="B">B. 音调</label>
+      <label><input type="radio" name="q4" value="C">C. 音色</label>
+      <label><input type="radio" name="q4" value="D">D. 速度</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="B">✅ 正确答案：B。音调由振动频率决定，男低音频率低，音调低。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>人耳能听到的声音频率范围是____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. 0~20 Hz</label>
+      <label><input type="radio" name="q5" value="B">B. 20~20000 Hz</label>
+      <label><input type="radio" name="q5" value="C">C. 20000~100000 Hz</label>
+      <label><input type="radio" name="q5" value="D">D. 任意频率</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="B">✅ 正确答案：B。人耳听觉范围20Hz~20000Hz。低于20Hz为次声波，高于20000Hz为超声波。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>下列措施中，属于在声源处控制噪声的是____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. 在马路两旁植树</label>
+      <label><input type="radio" name="q6" value="B">B. 给摩托车安装消音器</label>
+      <label><input type="radio" name="q6" value="C">C. 戴防噪声耳塞</label>
+      <label><input type="radio" name="q6" value="D">D. 安装隔音玻璃</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="B">✅ 正确答案：B。消音器在声源处减弱噪声。植树属于传播过程中减弱，耳塞属于人耳处减弱。</div>
+  </div>
+</main>
+</div>
+<script src="../assets/js/common.js"></script>
+<script>
+// 声波动画
+(function(){
+  const canvas = document.getElementById('waveCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  resize();
+  window.addEventListener('resize',resize);
+
+  const particles = [];
+  const cols = 40, rows = 3;
+  for(let i=0;i<cols;i++){
+    for(let j=0;j<rows;j++){
+      particles.push({x:i*(canvas.width/cols),baseY:40+j*60,offset:0});
+    }
+  }
+  let t=0;
+  function animate(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    // Source
+    ctx.fillStyle='#fbbf24'; ctx.beginPath();
+    ctx.arc(30,canvas.height/2,16,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle='#fff'; ctx.font='10px sans-serif';
+    ctx.fillText('声源',12,canvas.height/2+30);
+    // Particles
+    ctx.fillStyle='#60a5fa';
+    particles.forEach((p,i)=>{
+      const dist = (p.x-30);
+      const wave = Math.sin(dist*0.04 - t*0.12)*20;
+      const x = p.x + wave;
+      const y = p.baseY;
+      ctx.beginPath(); ctx.arc(x,y,4,0,Math.PI*2); ctx.fill();
+    });
+    t++;
+    requestAnimationFrame(animate);
+  }
+  animate();
+})();
+
+// 频率对比波形
+function drawFreq(canvasId,freq,color){
+  const c=document.getElementById(canvasId);
+  if(!c) return;
+  const ctx=c.getContext('2d');
+  c.width=c.parentElement.clientWidth; c.height=120;
+  ctx.strokeStyle=color; ctx.lineWidth=2;
+  ctx.beginPath();
+  for(let x=0;x<c.width;x++){
+    const y=60+Math.sin(x*freq*0.04)*40;
+    x===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+  }
+  ctx.stroke();
+  ctx.fillStyle='#64748b'; ctx.font='11px sans-serif';
+  ctx.fillText(freq+' Hz',8,16);
+}
+setTimeout(()=>{
+  drawFreq('freqLow',2,'#2563eb');
+  drawFreq('freqMid',5,'#2563eb');
+  drawFreq('freqHigh',10,'#2563eb');
+},100);
+</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>2025年上海高考数学真题</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.year-header { background:linear-gradient(135deg,#7c3aed,#a855f7); color:#fff; padding:24px; border-radius:12px; margin-bottom:24px; }
+.section-title { background:#f5f3ff; padding:10px 16px; border-left:4px solid #7c3aed; margin:24px 0 16px; font-weight:600; }
+.question { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px dashed #e2e8f0; }
+.q-num { display:inline-block; background:#7c3aed; color:#fff; width:28px; height:28px; border-radius:50%; text-align:center; line-height:28px; font-weight:700; font-size:.85rem; margin-right:8px; }
+.answer-btn { margin-top: 8px; padding:6px 18px; background:#7c3aed; color:#fff; border:none; border-radius:6px; cursor:pointer; font-size:.9rem; transition:.2s; }
+.answer-btn:hover { opacity:.9; transform:translateY(-1px); }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 返回高中数学主页</a><a href="exam_collection.html">← 真题汇编目录</a></div>
+<div class="year-header"><h1>📐 2025年上海市普通高等学校招生全国统一考试</h1><h2>数学试卷</h2><p>满分150分 · 考试时间120分钟</p></div>
+
+<div class="section-title">一、填空题（本大题共12题，满分54分，第1-6题每题4分，第7-12题每题5分）</div>
+
+<div class="question">
+<span class="q-num">1</span>已知集合 A = {-1, 0, 1}，B = {x | x² - x = 0}，则 A ∩ B = ______。
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="{0,1}">{0, 1}。
+<br>x² - x = 0 ⇒ x(x - 1) = 0 ⇒ x = 0 或 x = 1 ⇒ B = {0, 1}
+<br>A ∩ B = {0, 1}</div>
+</div>
+
+<div class="question">
+<span class="q-num">2</span>复数 z 满足 |z| = 1，且 z ≠ ±i，则 z + 1/z = ______（实数/虚数）。
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="实数">实数。
+<br>设 z = cosθ + i sinθ，则 1/z = cosθ - i sinθ
+<br>z + 1/z = 2cosθ ∈ R</div>
+</div>
+
+<div class="question">
+<span class="q-num">3</span>函数 f(x) = √(4 - x²) + ln(x + 1) 的定义域为 ______。
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="(-1,2)">(-1, 2]。
+<br>4 - x² ≥ 0 ⇒ -2 ≤ x ≤ 2
+<br>x + 1 > 0 ⇒ x > -1
+<br>定义域：(-1, 2]</div>
+</div>
+
+<div class="question">
+<span class="q-num">4</span>从编号为 1, 2, 3, 4 的 4 张卡片中随机抽取 2 张，则取出的 2 张卡片编号之和为奇数的概率是 ______。
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="2/3">2/3。
+<br>总取法：C(4, 2) = 6 种
+<br>和为奇数 ⇒ 一奇一偶：C(2, 1) × C(2, 1) = 4 种
+<br>概率 = 4/6 = 2/3</div>
+</div>
+
+<div class="question">
+<span class="q-num">5</span>已知向量 a = (2, 1)，b = (1, -1)，若 a - kb 与 a 垂直，则 k = ______。
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="5">5。
+<br>a - kb = (2 - k, 1 + k)
+<br>与 a 垂直 ⇒ (a - kb)·a = 0
+<br>2(2 - k) + 1(1 + k) = 0 ⇒ 4 - 2k + 1 + k = 0 ⇒ 5 - k = 0 ⇒ k = 5</div>
+</div>
+
+<div class="question">
+<span class="q-num">6</span>等差数列 {aₙ} 中，a₁ + a₅ = 10，a₄ = 7，则公差 d = ______。
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="2">2。
+<br>a₁ + a₅ = 2a₃ = 10 ⇒ a₃ = 5
+<br>d = a₄ - a₃ = 7 - 5 = 2</div>
+</div>
+
+<div class="section-title">二、选择题（本大题共4题，每题5分，满分20分）</div>
+
+<div class="question">
+<span class="q-num">13</span>若 f(x) 是 R 上的增函数，则下列不等式一定成立的是（ ）
+<div class="options">
+<label><input type="radio" name="q13" value="A">A. f(0) > f(1)</label>
+<label><input type="radio" name="q13" value="B">B. f(a²) > f(a)</label>
+<label><input type="radio" name="q13" value="C">C. 若 f(a) > f(b)，则 a > b</label>
+<label><input type="radio" name="q13" value="D">D. f(a) + f(-a) > 0</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+<div class="answer" id="answer-13" data-correct="C">✅ C。
+<br>增函数定义：x₁ > x₂ ⇔ f(x₁) > f(x₂)，故 C 正确；
+<br>A. 应为 f(0) < f(1)；
+<br>B. a = 0 时 f(0) = f(0)，不满足 >；
+<br>D. 取 f(x) = x，则 f(a) + f(-a) = 0，不满足 >。</div>
+</div>
+
+<div class="question">
+<span class="q-num">14</span>双曲线 x²/4 - y²/5 = 1 的渐近线方程为（ ）
+<div class="options">
+<label><input type="radio" name="q14" value="A">A. y = ±(√5/2)x</label>
+<label><input type="radio" name="q14" value="B">B. y = ±(2√5/5)x</label>
+<label><input type="radio" name="q14" value="C">C. y = ±(4/5)x</label>
+<label><input type="radio" name="q14" value="D">D. y = ±(5/4)x</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+<div class="answer" id="answer-14" data-correct="A">✅ A。
+<br>双曲线 x²/a² - y²/b² = 1 的渐近线为 y = ±(b/a)x
+<br>此处 a² = 4, b² = 5 ⇒ a = 2, b = √5
+<br>渐近线：y = ±(√5/2)x</div>
+</div>
+
+<div class="section-title">三、解答题（本大题共5题，满分76分）</div>
+
+<div class="question">
+<span class="q-num">19</span>本题满分14分
+<br>已知正四棱锥 P - ABCD 的底面边长为 2，侧棱长为 √5。
+<br>（1）求该四棱锥的高；
+<br>（2）求该四棱锥的表面积。
+<button class="answer-btn" onclick="showAnswer(19)">查看解析</button>
+<div class="answer" id="answer-19" data-correct="1">
+<strong>解：</strong>
+<br>（1）连接 AC, BD 交于 O，连接 PO，则 PO ⊥ 底面 ABCD，PO 就是高
+<br>底面正方形边长为 2 ⇒ 对角线 AC = 2√2 ⇒ AO = √2
+<br>在 Rt△POA 中，PA = √5，AO = √2
+<br>PO = √(PA² - AO²) = √(5 - 2) = √3
+<br>故四棱锥的高为 √3
+<br><br>（2）侧面是 4 个全等的等腰三角形
+<br>取 AB 中点 E，连接 PE，则 PE ⊥ AB，PE 是斜高
+<br>在 Rt△PAE 中，PA = √5，AE = 1
+<br>PE = √(PA² - AE²) = √(5 - 1) = 2
+<br>每个侧面面积 = 1/2 × 2 × 2 = 2
+<br>侧面积 = 4 × 2 = 8
+<br>底面积 = 2 × 2 = 4
+<br>表面积 = 8 + 4 = 12
+</div>
+</div>
+
+</div>
+</body>
+</html>

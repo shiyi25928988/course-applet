@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>初高数理化课件 + AMC竞赛</title>
+<link rel="stylesheet" href="assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.hero {
+  text-align:center; padding:60px 20px 40px;
+  background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+  color:#fff; border-radius:20px; margin-bottom:32px;
+}
+.hero h1 { font-size:2.2rem; margin-bottom:10px; }
+.hero p { font-size:1.1rem; opacity:.9; max-width:600px; margin:0 auto; }
+.subject-cards {
+  display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:40px;
+}
+@media (max-width:768px) {
+  .subject-cards { grid-template-columns:1fr; }
+}
+.subject-card {
+  background:#fff; border-radius:16px; padding:32px 24px;
+  box-shadow:0 4px 20px rgba(0,0,0,.08); text-decoration:none;
+  transition:transform .3s,box-shadow .3s; position:relative; overflow:hidden;
+}
+.subject-card:hover { transform:translateY(-4px); box-shadow:0 8px 30px rgba(0,0,0,.12); }
+.subject-card.physics { border-top:4px solid var(--physics); }
+.subject-card.chemistry { border-top:4px solid var(--chemistry); }
+.subject-card .icon {
+  font-size:3rem; margin-bottom:16px; display:block;
+}
+.subject-card h2 { font-size:1.5rem; margin-bottom:8px; color:var(--text); }
+.subject-card p { color:var(--text-secondary); font-size:.95rem; margin-bottom:16px; }
+.subject-card .meta {
+  display:flex; gap:16px; flex-wrap:wrap;
+}
+.subject-card .meta span {
+  font-size:.8rem; padding:4px 10px; border-radius:20px;
+  background:var(--bg); color:var(--text-secondary);
+}
+.subject-card.physics .meta span { background:var(--physics-light); color:var(--physics); }
+.subject-card.chemistry .meta span { background:var(--chemistry-light); color:var(--chemistry); }
+.chapter-preview { margin-top:16px; }
+.chapter-preview h4 { font-size:.85rem; color:var(--text-secondary); margin-bottom:8px; }
+.chapter-preview ul { list-style:none; display:flex; flex-wrap:wrap; gap:6px; }
+.chapter-preview li {
+  font-size:.78rem; padding:3px 10px; border-radius:12px;
+  background:var(--bg); color:var(--text-secondary);
+}
+footer {
+  text-align:center; padding:30px; color:var(--text-secondary);
+  font-size:.85rem; border-top:1px solid var(--border); margin-top:40px;
+}
+@media (max-width:640px) {
+  .subject-cards { grid-template-columns:1fr; }
+  .hero h1 { font-size:1.6rem; }
+}
+</style>
+</head>
+<body>
+<div class="main" style="max-width:800px;">
+  <div class="hero">
+    <h1>📚 初·高中数理化课件 + 竞赛专区</h1>
+    <p>上海教育出版社教材 + AMC 美国数学竞赛 · 知识点讲解 + 历年真题 + 详细解析</p>
+  </div>
+
+  <h2 style="margin-bottom:16px;color:#475569;">📘 初中阶段</h2>
+  <div class="subject-cards">
+    <!-- 语文 -->
+    <a href="chinese/index.html" class="subject-card" style="border-top:4px solid #8b5cf6;">
+      <span class="icon">📖</span>
+      <h2>初中语文</h2>
+      <p>六年级 ~ 九年级 · 现代文 + 文言文 + 古诗词 + 作文</p>
+      <div class="meta">
+        <span style="background:#ede9fe;color:#7c3aed;">现代文阅读：记叙·说明·议论</span>
+        <span style="background:#f5f3ff;color:#8b5cf6;">文言文：实词·虚词·句式</span>
+        <span style="background:#faf5ff;color:#a855f7;">古诗词 + 作文指导</span>
+      </div>
+    </a>
+
+    <!-- 物理 -->
+    <a href="physics/index.html" class="subject-card physics">
+      <span class="icon">⚛️</span>
+      <h2>初中物理</h2>
+      <p>八年级 ~ 九年级 · 4册 · 9章</p>
+      <div class="meta">
+        <span>八年级上：声·光·运动和力</span>
+        <span>八年级下：机械和功·热与能</span>
+        <span>九年级上：压强·电路</span>
+        <span>九年级下：电能与磁·宇宙</span>
+      </div>
+    </a>
+
+    <!-- 化学 -->
+    <a href="chemistry/index.html" class="subject-card chemistry">
+      <span class="icon">🧪</span>
+      <h2>初中化学</h2>
+      <p>九年级 · 2册 · 9章 + 8个基础实验</p>
+      <div class="meta">
+        <span>上册：开启化学之门~金属</span>
+        <span>下册：溶解~化学与社会</span>
+        <span>8个基础实验</span>
+      </div>
+    </a>
+
+    <!-- 数学 -->
+    <a href="math/index.html" class="subject-card" style="border-top:4px solid #7c3aed;">
+      <span class="icon">📐</span>
+      <h2>初中数学</h2>
+      <p>六年级 ~ 九年级 · 代数8章 + 几何7章</p>
+      <div class="meta">
+        <span style="background:#ede9fe;color:#7c3aed;">代数：有理数~二次函数</span>
+        <span style="background:#fef3c7;color:#d97706;">几何：线与角~圆</span>
+      </div>
+    </a>
+  </div>
+
+  <h2 style="margin:32px 0 16px;color:#475569;">📗 高中阶段</h2>
+  <div class="subject-cards">
+    <!-- 高中语文 -->
+    <a href="high_chinese/index.html" class="subject-card" style="border-top:4px solid #db2777;">
+      <span class="icon">📚</span>
+      <h2>高中语文</h2>
+      <p>必修 + 选修 · 现代文 + 文言文 + 诗歌 + 高考作文</p>
+      <div class="meta">
+        <span style="background:#fce7f3;color:#db2777;">现代文：论述·实用·文学</span>
+        <span style="background:#fbcfe8;color:#be185d;">文言文72篇必背</span>
+        <span style="background:#f9a8d4;color:#9d174d;">高考作文指导</span>
+      </div>
+    </a>
+
+    <!-- 高中数学 -->
+    <a href="high_math/index.html" class="subject-card" style="border-top:4px solid #8b5cf6;">
+      <span class="icon">📈</span>
+      <h2>高中数学</h2>
+      <p>必修 + 选择性必修 · 函数·几何·代数</p>
+      <div class="meta">
+        <span style="background:#f5f3ff;color:#8b5cf6;">函数：初等函数+导数</span>
+        <span style="background:#ede9fe;color:#7c3aed;">代数：数列·复数·不等式</span>
+        <span style="background:#fef3c7;color:#d97706;">几何：立体几何·解析几何</span>
+      </div>
+    </a>
+
+    <!-- 高中物理 -->
+    <a href="high_physics/index.html" class="subject-card" style="border-top:4px solid #3b82f6;">
+      <span class="icon">⚛️</span>
+      <h2>高中物理</h2>
+      <p>必修 + 选修 · 力学·电磁学·热光原</p>
+      <div class="meta">
+        <span style="background:#eff6ff;color:#3b82f6;">力学：运动学·牛顿定律·能量动量</span>
+        <span style="background:#dbeafe;color:#2563eb;">电磁学：电场·电路·磁场·电磁感应</span>
+        <span style="background:#bfdbfe;color:#1d4ed8;">热光原：热学·光学·近代物理</span>
+      </div>
+    </a>
+
+    <!-- 高中化学 -->
+    <a href="high_chemistry/index.html" class="subject-card" style="border-top:4px solid #10b981;">
+      <span class="icon">🧪</span>
+      <h2>高中化学</h2>
+      <p>必修 + 选修 · 物质结构·反应原理·有机</p>
+      <div class="meta">
+        <span style="background:#f0fdf4;color:#10b981;">物质结构：元素周期律·化学键</span>
+        <span style="background:#dcfce7;color:#059669;">反应原理：热化学·速率平衡·电化学</span>
+        <span style="background:#bbf7d0;color:#047857;">有机：烃·烃的衍生物·合成</span>
+      </div>
+    </a>
+  </div>
+
+  <h2 style="margin:32px 0 16px;color:#475569;">🏆 竞赛专区</h2>
+  <div class="subject-cards">
+    <!-- AMC 竞赛 -->
+    <a href="amc/index.html" class="subject-card" style="border-top:4px solid #1e40af;">
+      <span class="icon">🏆</span>
+      <h2>AMC 美国数学竞赛</h2>
+      <p>AMC 8 / AMC 10 / AMC 12 · 历年真题 + 详细解析</p>
+      <div class="meta">
+        <span style="background:#dbeafe;color:#1e40af;">AMC 8: 8年级及以下</span>
+        <span style="background:#bfdbfe;color:#3b82f6;">AMC 10: 10年级及以下</span>
+        <span style="background:#eff6ff;color:#60a5fa;">AMC 12: 12年级及以下</span>
+      </div>
+      <div class="chapter-preview">
+        <h4>📁 内容包括</h4>
+        <ul>
+          <li>2020-2024 年真题</li>
+          <li>详细答案解析</li>
+          <li>知识范围说明</li>
+          <li>备考技巧指导</li>
+        </ul>
+      </div>
+    </a>
+
+    <!-- 物理竞赛 -->
+    <a href="physics_competition/index.html" class="subject-card" style="border-top:4px solid #059669;">
+      <span class="icon">⚛️</span>
+      <h2>全国中学生物理竞赛</h2>
+      <p>CPhO · 预赛 + 复赛 + 决赛 · 历年真题 + 知识点总结</p>
+      <div class="meta">
+        <span style="background:#dcfce7;color:#059669;">预赛: 全国统一笔试</span>
+        <span style="background:#bbf7d0;color:#047857;">复赛: 理论 + 实验</span>
+        <span style="background:#a7f3d0;color:#065f46;">决赛: 全国总决赛</span>
+      </div>
+      <div class="chapter-preview">
+        <h4>📁 内容包括</h4>
+        <ul>
+          <li>2015-2024 年真题</li>
+          <li>详细答案与解析</li>
+          <li>竞赛知识点汇总</li>
+          <li>推荐参考书目</li>
+        </ul>
+      </div>
+    </a>
+
+    <!-- 雅思专区 -->
+    <a href="ielts/index.html" class="subject-card" style="border-top:4px solid #0891b2;">
+      <span class="icon">🌍</span>
+      <h2>雅思 IELTS 备考专区</h2>
+      <p>听力 · 阅读 · 写作 · 口语 · 词汇 · 语法 · 真题模考</p>
+      <div class="meta">
+        <span style="background:#cffafe;color:#0e7490;">听力: 场景词汇</span>
+        <span style="background:#a5f3fc;color:#0891b2;">阅读: 题型技巧</span>
+        <span style="background:#67e8f9;color:#0e7490;">写作: 高分句型</span>
+        <span style="background:#22d3ee;color:#155e75;">口语: 地道表达</span>
+      </div>
+      <div class="chapter-preview">
+        <h4>📁 内容包括</h4>
+        <ul>
+          <li>四大专项模块精讲</li>
+          <li>核心词汇分类记忆</li>
+          <li>语法重点难点突破</li>
+          <li>备考计划与应试技巧</li>
+        </ul>
+      </div>
+    </a>
+
+    <!-- CAIE A-LEVEL -->
+    <a href="caie_alevel/index.html" class="subject-card" style="border-top:4px solid #1e3a8a;">
+      <span class="icon">🎓</span>
+      <h2>CAIE A-LEVEL 国际课程</h2>
+      <p>数学 · 物理 · 化学 · 生物 · 经济 · 2022-2026年真题 + 详细解析</p>
+      <div class="meta">
+        <span style="background:#dbeafe;color:#1e40af;">数学 9709</span>
+        <span style="background:#eff6ff;color:#3b82f6;">物理 9702</span>
+        <span style="background:#f5f3ff;color:#8b5cf6;">化学 9701</span>
+        <span style="background:#f0fdf4;color:#059669;">生物 9700</span>
+        <span style="background:#fffbeb;color:#d97706;">经济 9708</span>
+      </div>
+      <div class="chapter-preview">
+        <h4>📁 内容包括</h4>
+        <ul>
+          <li>2022-2026 年真题（每年夏季+冬季）</li>
+          <li>详细答案与解析</li>
+          <li>评分标准说明</li>
+          <li>试卷结构介绍</li>
+        </ul>
+      </div>
+    </a>
+
+    <!-- 题库中心 -->
+    <a href="exam_bank.html" class="subject-card" style="border-top:4px solid #7c3aed;">
+      <span class="icon">📝</span>
+      <h2>题库中心</h2>
+      <p>初中 + 高中 · 数理化各科 · 分章节练习题 + 真题 + 模拟考试</p>
+      <div class="meta">
+        <span style="background:#ede9fe;color:#7c3aed;">初中：数/理/化</span>
+        <span style="background:#f5f3ff;color:#8b5cf6;">高中：数/理/化</span>
+        <span style="background:#faf5ff;color:#a855f7;">含详细解析</span>
+      </div>
+      <div class="chapter-preview">
+        <h4>📁 内容包括</h4>
+        <ul>
+          <li>分章节同步练习题（基础+提高）</li>
+          <li>历年真题汇编（中考+高考）</li>
+          <li>模拟考试卷（标准卷+拔高卷）</li>
+          <li>重难点专项突破训练</li>
+        </ul>
+      </div>
+    </a>
+  </div>
+</div>
+<footer>
+  课件内容依据上海教育出版社教材编写 · 涵盖初中数理化 + 高中数理化 · 仅供参考学习
+</footer>
+</body>
+</html>

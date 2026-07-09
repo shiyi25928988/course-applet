@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第六章 压力与压强 - 初中物理沪教版</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📚 初中物理</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_sound.html"><span class="ch-num">1</span>声</a></li><li><a href="ch02_light.html"><span class="ch-num">2</span>光</a></li>
+    <li><a href="ch03_motion_force.html"><span class="ch-num">3</span>运动和力</a></li>
+    <li><a href="ch04_work_machines.html"><span class="ch-num">4</span>机械和功</a></li>
+    <li><a href="ch05_heat_energy.html"><span class="ch-num">5</span>热与能</a></li>
+    <li><a href="ch06_pressure.html" class="active"><span class="ch-num">6</span>压力与压强</a>
+      <div class="subsections">
+        <a href="#sec6-1">6.1 密度</a><a href="#sec6-2">6.2 阿基米德原理</a>
+        <a href="#sec6-3">6.3 压强</a><a href="#sec6-4">6.4 液体压强</a>
+        <a href="#sec6-5">6.5 大气压强</a><a href="#exercises">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch07_circuits.html"><span class="ch-num">7</span>电路</a></li>
+    
+  </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-subject">📂 物理目录</a>
+    </div>="page-title">第六章 压力与压强</div>
+<div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
+<ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+<li>理解密度的概念，能用ρ=m/V进行计算</li><li>掌握阿基米德原理，理解浮力的产生原因</li>
+<li>理解压强的概念，掌握p=F/S</li><li>掌握液体内部压强规律，p=ρgh</li><li>了解大气压强的存在和测量</li></ul></div>
+
+<h2 id="sec6-1">6.1 密度</h2>
+<div class="kp"><h3>密度</h3>
+<p><strong>密度</strong>：某种物质单位体积的质量。密度是物质的一种<strong>特性</strong>，与质量和体积无关。</p>
+<span class="formula">ρ = m / V</span>
+<p>单位：kg/m³（国际单位），g/cm³（常用单位）。换算：<strong>1 g/cm³ = 1000 kg/m³</strong>。</p>
+<p>ρ<sub>水</sub> = 1.0×10³ kg/m³ = 1.0 g/cm³。</p>
+<p>密度的应用：鉴别物质、计算物体质量或体积、判断物体是否空心。</p></div>
+
+<h2 id="sec6-2">6.2 阿基米德原理</h2>
+<div class="kp"><h3>浮力</h3>
+<p>浸在液体（或气体）中的物体受到<strong>竖直向上</strong>的托力叫做<strong>浮力</strong>。</p>
+<p>浮力产生的原因：液体对物体向上的压力大于向下的压力，产生压力差。</p>
+<p><strong>阿基米德原理：</strong>浸在液体中的物体受到的浮力等于物体<strong>排开</strong>的液体所受的<strong>重力</strong>。</p>
+<span class="formula">F<sub>浮</sub> = G<sub>排</sub> = ρ<sub>液</sub>gV<sub>排</sub></span>
+<p>物体的浮沉条件（浸没时）：</p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li>F<sub>浮</sub> &gt; G → 上浮（ρ<sub>液</sub> &gt; ρ<sub>物</sub>）</li>
+<li>F<sub>浮</sub> = G → 悬浮（ρ<sub>液</sub> = ρ<sub>物</sub>）</li>
+<li>F<sub>浮</sub> &lt; G → 下沉（ρ<sub>液</sub> &lt; ρ<sub>物</sub>）</li></ul></div>
+
+<div class="anim-container"><h3 style="margin-bottom:12px;">🛟 浮力演示</h3>
+<canvas id="buoyancyCanvas" style="width:100%;max-width:680px;height:250px;"></canvas>
+<div class="anim-controls">
+  <button onclick="updateBuoyancy(0.6)" style="background:#22c55e;">ρ物&lt;ρ液 上浮</button>
+  <button onclick="updateBuoyancy(1.0)" style="background:#f59e0b;">ρ物=ρ液 悬浮</button>
+  <button onclick="updateBuoyancy(1.5)" style="background:#ef4444;">ρ物&gt;ρ液 下沉</button>
+</div></div>
+
+<h2 id="sec6-3">6.3 压强</h2>
+<div class="kp"><h3>压强</h3>
+<p><strong>压强</strong>：物体单位面积上受到的压力。压强表示<strong>压力的作用效果</strong>。</p>
+<span class="formula">p = F / S</span>
+<p>单位：<strong>帕斯卡（Pa）</strong>，1Pa = 1N/m²。</p>
+<p><strong>增大压强</strong>的方法：增大压力或减小受力面积（刀刃、图钉尖）。</p>
+<p><strong>减小压强</strong>的方法：减小压力或增大受力面积（书包宽带、履带）。</p></div>
+
+<h2 id="sec6-4">6.4 液体内部的压强</h2>
+<div class="kp"><h3>液体压强</h3>
+<p>液体内部向<strong>各个方向</strong>都有压强，同一深度各方向压强相等。</p>
+<p>液体压强随<strong>深度</strong>增加而增大，还与液体<strong>密度</strong>有关。</p>
+<span class="formula">p = ρgh</span>
+<p><strong>连通器</strong>：上端开口、底部连通的容器。连通器中装同种液体且不流动时，各容器液面<strong>保持相平</strong>。</p>
+<p>应用：茶壶、锅炉水位计、船闸。</p>
+<p><strong>帕斯卡定律</strong>：加在密闭液体上的压强，能够大小不变地由液体向各个方向传递。应用：液压机。</p></div>
+
+<h2 id="sec6-5">6.5 大气压强</h2>
+<div class="kp"><h3>大气压强</h3>
+<p>大气对浸在其中的物体产生的压强叫<strong>大气压强</strong>，简称大气压。</p>
+<p><strong>马德堡半球实验</strong>证明了大气压的存在且很大。</p>
+<p><strong>托里拆利实验</strong>测出了大气压的值：标准大气压 p₀ = 1.013×10⁵ Pa ≈ 760 mmHg。</p>
+<p>大气压随<strong>高度</strong>增加而减小。液体的沸点随气压减小而<strong>降低</strong>（高原煮饭不易熟）。</p>
+<p>应用：吸盘、吸管喝饮料、活塞式抽水机。</p></div>
+
+<h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+<div class="exercise"><div class="question"><span class="q-num">1</span>密度的计算公式是____。</div>
+<div class="options">
+<label><input type="radio" name="q1" value="A">A. ρ = V/m</label><label><input type="radio" name="q1" value="B">B. ρ = m/V</label>
+<label><input type="radio" name="q1" value="C">C. ρ = m·V</label><label><input type="radio" name="q1" value="D">D. ρ = F/S</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="B">✅ B。ρ=m/V，密度等于质量除以体积。1g/cm³=1000kg/m³。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>阿基米德原理的表达式是____。</div>
+<div class="options">
+<label><input type="radio" name="q2" value="A">A. F浮=ρ物gV物</label><label><input type="radio" name="q2" value="B">B. F浮=ρ液gV排</label>
+<label><input type="radio" name="q2" value="C">C. F浮=mg</label><label><input type="radio" name="q2" value="D">D. F浮=ρghS</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="B">✅ B。F浮=ρ液gV排=G排，浮力等于排开液体的重力。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>液体内部压强的计算公式是____。</div>
+<div class="options">
+<label><input type="radio" name="q3" value="A">A. p = F/S</label><label><input type="radio" name="q3" value="B">B. p = ρgh</label>
+<label><input type="radio" name="q3" value="C">C. p = mg</label><label><input type="radio" name="q3" value="D">D. p = ρgV</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="B">✅ B。液体压强p=ρgh，与液体密度和深度有关，与容器形状无关。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>标准大气压的值约为____。</div>
+<div class="options">
+<label><input type="radio" name="q4" value="A">A. 1.013×10³ Pa</label><label><input type="radio" name="q4" value="B">B. 1.013×10⁵ Pa</label>
+<label><input type="radio" name="q4" value="C">C. 1.013×10⁷ Pa</label><label><input type="radio" name="q4" value="D">D. 760 Pa</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="B">✅ B。标准大气压p₀≈1.013×10⁵Pa=760mmHg。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>当物体浸没在液体中，若ρ物&lt;ρ液，物体将____。</div>
+<div class="options">
+<label><input type="radio" name="q5" value="A">A. 下沉</label><label><input type="radio" name="q5" value="B">B. 悬浮</label>
+<label><input type="radio" name="q5" value="C">C. 上浮</label><label><input type="radio" name="q5" value="D">D. 无法判断</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="C">✅ C。ρ物&lt;ρ液时，F浮&gt;G，物体上浮直至漂浮。</div></div>
+</main></div>
+<script src="../assets/js/common.js"></script>
+<script>
+(function(){
+  const c=document.getElementById('buoyancyCanvas');if(!c)return;
+  const ctx=c.getContext('2d');c.width=680;c.height=250;
+  const W=680,H=250;let densityRatio=0.6;
+  window.updateBuoyancy=function(r){densityRatio=r;draw();};
+
+  function draw(){
+    ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+    // Water
+    ctx.fillStyle='rgba(59,130,246,.25)';ctx.fillRect(60,120,W-120,H-120);
+    ctx.fillStyle='#3b82f6';ctx.fillRect(60,118,W-120,3);
+    ctx.fillStyle='#fff';ctx.font='12px sans-serif';ctx.fillText('液体 ρ液',W-80,135);
+
+    // Object
+    const objY = densityRatio<1 ? 50 : densityRatio===1 ? 80 : 145;
+    ctx.fillStyle=densityRatio<1?'#22c55e':densityRatio===1?'#f59e0b':'#ef4444';
+    ctx.globalAlpha=0.8;ctx.fillRect(W/2-35,objY,70,70);ctx.globalAlpha=1;
+    ctx.strokeStyle='#fff';ctx.lineWidth=2;ctx.strokeRect(W/2-35,objY,70,70);
+
+    // Arrows
+    const arrows=[
+      {y:objY,x:W/2,dy:-3,label:'F浮',color:'#22c55e'},
+      {y:objY+70,x:W/2,dy:3,label:'G',color:'#ef4444'}
+    ];
+    arrows.forEach(a=>{
+      ctx.strokeStyle=a.color;ctx.lineWidth=2;
+      ctx.beginPath();ctx.moveTo(a.x,a.y+35);ctx.lineTo(a.x,a.y+35+a.dy*15);ctx.stroke();
+      ctx.fillStyle=a.color;ctx.font='13px sans-serif';
+      ctx.fillText(a.label,a.x+10,a.y+35+a.dy*8);
+    });
+
+    const status=densityRatio<1?'上浮（F浮>G）':densityRatio===1?'悬浮（F浮=G）':'下沉（F浮<G）';
+    ctx.fillStyle='#fff';ctx.font='14px sans-serif';ctx.fillText(status,W/2-50,H-20);
+  }
+  draw();
+})();
+</script>
+</body>
+</html>

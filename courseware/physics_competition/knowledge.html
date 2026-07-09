@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>物理竞赛知识点总结</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.knowledge-header {
+    background: linear-gradient(135deg, #7c3aed, #5b21b6);
+    color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+.section-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.section-card h3 {
+    color: #7c3aed;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e9d5ff;
+}
+.topics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.topic-item {
+    padding: 16px;
+    background: #faf5ff;
+    border-radius: 8px;
+    border-left: 3px solid #7c3aed;
+}
+.topic-item h4 {
+    color: #5b21b6;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.topic-item ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #4b5563;
+}
+.topic-item li {
+    margin: 4px 0;
+    font-size: 0.88rem;
+}
+.formula-box {
+    background: #f0f9ff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 12px 0;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #0369a1;
+}
+.book-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+}
+.book-item {
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+.book-item h4 {
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+.book-item p {
+    color: #64748b;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .topics-grid {
+        grid-template-columns: 1fr;
+    }
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <h3>🏆 物理竞赛</h3>
+        <ul class="chapter-list">
+            <li><a href="index.html"><span class="ch-num">🏠</span>竞赛主页</a></li>
+            <li><a href="preliminary.html"><span class="ch-num">📗</span>预赛</a></li>
+            <li><a href="semifinal.html"><span class="ch-num">📙</span>复赛</a></li>
+            <li><a href="final.html"><span class="ch-num">📕</span>决赛</a></li>
+            <li><a href="knowledge.html" class="active"><span class="ch-num">📚</span>竞赛知识点</a></li>
+        </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+
+    <main class="main">
+        <div class="knowledge-header">
+            <h1>📚 物理竞赛知识点总结</h1>
+            <p>竞赛核心知识点、重要公式、推荐书目全面梳理</p>
+        </div>
+
+        <div class="section-card">
+            <h3>📐 力学</h3>
+            <div class="topics-grid">
+                <div class="topic-item">
+                    <h4>1. 运动学</h4>
+                    <ul>
+                        <li>质点运动的描述（位矢、速度、加速度）</li>
+                        <li>相对运动、牵连运动</li>
+                        <li>平面极坐标系、自然坐标系</li>
+                        <li>抛体运动、圆周运动</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>2. 牛顿运动定律</h4>
+                    <ul>
+                        <li>惯性系与非惯性系</li>
+                        <li>惯性力（离心力、科里奥利力）</li>
+                        <li>连接体问题、约束条件</li>
+                        <li>临界问题分析</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>3. 动量与能量</h4>
+                    <ul>
+                        <li>动量定理、动量守恒定律</li>
+                        <li>动能定理、机械能守恒</li>
+                        <li>功能原理、能量守恒</li>
+                        <li>碰撞问题（弹性、非弹性、完全非弹性）</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>4. 角动量</h4>
+                    <ul>
+                        <li>角动量定理、角动量守恒</li>
+                        <li>有心力场、开普勒定律</li>
+                        <li>天体运动、宇宙速度</li>
+                        <li>二体问题、约化质量</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>5. 刚体力学</h4>
+                    <ul>
+                        <li>转动惯量计算（平行轴、垂直轴定理）</li>
+                        <li>定轴转动定律</li>
+                        <li>刚体的平面平行运动</li>
+                        <li>纯滚动、进动</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>6. 振动与波</h4>
+                    <ul>
+                        <li>简谐运动（微分方程、能量）</li>
+                        <li>阻尼振动、受迫振动、共振</li>
+                        <li>简正模、耦合振动</li>
+                        <li>机械波、多普勒效应、冲击波</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="formula-box">
+                刚体转动惯量：I = Σmᵢrᵢ² &nbsp;&nbsp; 平行轴定理：I = I_c + md² &nbsp;&nbsp; 角动量：L = r × p
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h3>⚡ 电磁学</h3>
+            <div class="topics-grid">
+                <div class="topic-item">
+                    <h4>1. 静电场</h4>
+                    <ul>
+                        <li>库仑定律、电场强度</li>
+                        <li>高斯定理及其应用</li>
+                        <li>电势、电势能、电势差</li>
+                        <li>电像法、静电场唯一性定理</li>
+                        <li>电介质、极化强度、电位移矢量</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>2. 稳恒电流</h4>
+                    <ul>
+                        <li>欧姆定律、电阻的串并联</li>
+                        <li>基尔霍夫定律</li>
+                        <li>复杂直流电路（节点电压、回路电流）</li>
+                        <li>戴维南定理、诺顿定理</li>
+                        <li>Δ-Y变换</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>3. 稳恒磁场</h4>
+                    <ul>
+                        <li>毕奥-萨伐尔定律</li>
+                        <li>安培环路定理</li>
+                        <li>安培力、洛伦兹力</li>
+                        <li>带电粒子在磁场中运动</li>
+                        <li>磁介质、磁化强度、H矢量</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>4. 电磁感应</h4>
+                    <ul>
+                        <li>法拉第电磁感应定律</li>
+                        <li>楞次定律、动生电动势、感生电动势</li>
+                        <li>自感、互感、磁场能量</li>
+                        <li>暂态过程（RC、RL、RLC电路）</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>5. 交流电</h4>
+                    <ul>
+                        <li>正弦交流电的描述</li>
+                        <li>交流电路的阻抗、相位</li>
+                        <li>交流电功率、功率因数</li>
+                        <li>变压器原理、三相交流电</li>
+                        <li>谐振电路（串联、并联谐振）</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>6. 电磁波</h4>
+                    <ul>
+                        <li>位移电流</li>
+                        <li>麦克斯韦方程组</li>
+                        <li>电磁波的产生与传播</li>
+                        <li>电磁波的能量和动量</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="formula-box">
+                麦克斯韦方程组：∮E·dS = q/ε₀ &nbsp;&nbsp; ∮B·dS = 0 &nbsp;&nbsp; ∮E·dl = -dΦ/dt &nbsp;&nbsp; ∮B·dl = μ₀(I + ε₀dΦ_E/dt)
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h3>🌡️ 热学</h3>
+            <div class="topics-grid">
+                <div class="topic-item">
+                    <h4>1. 分子动理论</h4>
+                    <ul>
+                        <li>理想气体状态方程</li>
+                        <li>压强的微观解释</li>
+                        <li>麦克斯韦速度分布律</li>
+                        <li>玻尔兹曼分布</li>
+                        <li>能量按自由度均分定理</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>2. 热力学第一定律</h4>
+                    <ul>
+                        <li>功、热量、内能</li>
+                        <li>热力学第一定律表达式</li>
+                        <li>准静态过程（等容、等压、等温、绝热）</li>
+                        <li>多方过程</li>
+                        <li>热机、制冷机</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>3. 热力学第二定律</h4>
+                    <ul>
+                        <li>两种表述（开尔文、克劳修斯）</li>
+                        <li>卡诺循环、卡诺定理</li>
+                        <li>熵的定义、熵增加原理</li>
+                        <li>热力学概率、玻尔兹曼熵公式</li>
+                        <li>自由能、热力学势</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>4. 气体与相变</h4>
+                    <ul>
+                        <li>真实气体、范德瓦尔斯方程</li>
+                        <li>平均自由程、输运过程</li>
+                        <li>气液相变、克拉佩龙方程</li>
+                        <li>相变潜热、蒸气凝结</li>
+                        <li>热传递：传导、对流、辐射</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="formula-box">
+                理想气体状态方程：PV = νRT &nbsp;&nbsp; 卡诺效率：η = 1 - T₂/T₁ &nbsp;&nbsp; 玻尔兹曼熵：S = k lnΩ
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h3>🔬 光学</h3>
+            <div class="topics-grid">
+                <div class="topic-item">
+                    <h4>1. 几何光学</h4>
+                    <ul>
+                        <li>费马原理</li>
+                        <li>反射定律、折射定律</li>
+                        <li>球面镜成像、薄透镜成像</li>
+                        <li>透镜组、光具组</li>
+                        <li>光学仪器（望远镜、显微镜）</li>
+                        <li>变折射率光学</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>2. 波动光学</h4>
+                    <ul>
+                        <li>光波的叠加原理</li>
+                        <li>双缝干涉、薄膜干涉</li>
+                        <li>劈尖、牛顿环、迈克尔逊干涉仪</li>
+                        <li>法布里-珀罗干涉</li>
+                        <li>单缝衍射、圆孔衍射</li>
+                        <li>光栅衍射、X射线衍射</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>3. 偏振光学</h4>
+                    <ul>
+                        <li>自然光与偏振光</li>
+                        <li>马吕斯定律</li>
+                        <li>布儒斯特定律</li>
+                        <li>双折射现象（o光、e光）</li>
+                        <li>波片、偏振光干涉</li>
+                        <li>旋光性</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="formula-box">
+                透镜成像公式：1/u + 1/v = 1/f &nbsp;&nbsp; 双缝干涉：Δx = λD/d &nbsp;&nbsp; 光栅方程：d sinθ = kλ
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h3>⚛️ 近代物理</h3>
+            <div class="topics-grid">
+                <div class="topic-item">
+                    <h4>1. 狭义相对论</h4>
+                    <ul>
+                        <li>伽利略变换、经典时空观</li>
+                        <li>狭义相对论基本假设</li>
+                        <li>洛伦兹变换</li>
+                        <li>相对论运动学（长度收缩、时间膨胀）</li>
+                        <li>相对论动力学（质速关系、质能关系）</li>
+                        <li>相对论能量动量关系</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>2. 原子物理</h4>
+                    <ul>
+                        <li>氢原子光谱、玻尔模型</li>
+                        <li>能级跃迁、选择定则</li>
+                        <li>夫兰克-赫兹实验</li>
+                        <li>电子自旋、泡利不相容原理</li>
+                        <li>原子的壳层结构</li>
+                        <li>X射线、康普顿散射</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>3. 原子核物理</h4>
+                    <ul>
+                        <li>原子核的组成与性质</li>
+                        <li>放射性衰变（α、β、γ衰变）</li>
+                        <li>衰变规律、半衰期</li>
+                        <li>核反应、核裂变、核聚变</li>
+                        <li>结合能、质量亏损</li>
+                    </ul>
+                </div>
+                <div class="topic-item">
+                    <h4>4. 量子力学初步</h4>
+                    <ul>
+                        <li>波粒二象性、德布罗意波</li>
+                        <li>不确定关系</li>
+                        <li>波函数、薛定谔方程</li>
+                        <li>一维定态问题（无限深势阱、势垒穿透）</li>
+                        <li>隧道效应</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="formula-box">
+                洛伦兹变换：x' = γ(x-vt) &nbsp;&nbsp; 质能方程：E = mc² &nbsp;&nbsp; 德布罗意波长：λ = h/p
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h3>📖 推荐参考书目</h3>
+            <div class="book-grid">
+                <div class="book-item">
+                    <h4>入门阶段</h4>
+                    <p>《高中物理学》（沈克琦）<br>《物理竞赛教程》（张大同）<br>《新编高中物理奥赛指导》（范小辉）</p>
+                </div>
+                <div class="book-item">
+                    <h4>进阶阶段</h4>
+                    <p>《中学奥林匹克竞赛物理教程》（程稼夫 力学篇、电磁学篇）<br>《高中物理竞赛培优教程》（舒幼生）</p>
+                </div>
+                <div class="book-item">
+                    <h4>决赛阶段</h4>
+                    <p>《力学》（舒幼生）<br>《电磁学》（赵凯华）<br>《热学》（李椿）<br>《光学》（赵凯华）<br>《原子物理》（杨福家）</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

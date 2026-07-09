@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AMC 美国数学竞赛</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.amc-hero {
+    background: linear-gradient(135deg, #1e40af, #7c3aed);
+    color: #fff;
+    padding: 40px 24px;
+    border-radius: 16px;
+    margin-bottom: 32px;
+}
+.amc-hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+.amc-hero p {
+    opacity: 0.95;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.level-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+.level-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    border-top: 4px solid #1e40af;
+}
+.level-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.level-card.amc8 { border-color: #059669; }
+.level-card.amc10 { border-color: #d97706; }
+.level-card.amc12 { border-color: #dc2626; }
+.level-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+.level-card.amc8 h2 { color: #059669; }
+.level-card.amc10 h2 { color: #d97706; }
+.level-card.amc12 h2 { color: #dc2626; }
+.level-card .subtitle {
+    color: #64748b;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+.level-card .desc {
+    color: #475569;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+.level-card ul {
+    margin-top: 16px;
+    padding-left: 20px;
+    color: #475569;
+}
+.level-card li {
+    margin: 6px 0;
+    font-size: 0.9rem;
+}
+.info-section {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.info-section h3 {
+    color: #1e40af;
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.info-item {
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+.info-item strong {
+    display: block;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+.info-item span {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    .level-cards {
+        grid-template-columns: 1fr;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <h3>🎯 AMC 竞赛</h3>
+        <ul class="chapter-list">
+            <li><a href="amc8.html"><span class="ch-num">📗</span>AMC 8</a></li>
+            <li><a href="amc10.html"><span class="ch-num">📙</span>AMC 10</a></li>
+            <li><a href="amc12.html"><span class="ch-num">📕</span>AMC 12</a></li>
+        </ul>
+        <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+    </aside>
+
+    <main class="main">
+        <div class="amc-hero">
+            <h1>🏆 美国数学竞赛 (AMC)</h1>
+            <p>American Mathematics Competition · 全球最具影响力的青少年数学竞赛</p>
+        </div>
+
+        <h2 style="margin-bottom: 20px; color: #1e293b;">📚 竞赛等级</h2>
+        <div class="level-cards">
+            <a href="amc8.html" class="level-card amc8">
+                <h2>AMC 8</h2>
+                <div class="subtitle">适合 8 年级及以下学生</div>
+                <div class="desc">
+                    初中级别的竞赛，涵盖代数、几何、数论、概率等基础内容。
+                </div>
+                <ul>
+                    <li>25 道选择题</li>
+                    <li>40 分钟</li>
+                    <li>满分 25 分</li>
+                    <li>适合年龄：14 岁及以下</li>
+                </ul>
+            </a>
+
+            <a href="amc10.html" class="level-card amc10">
+                <h2>AMC 10</h2>
+                <div class="subtitle">适合 10 年级及以下学生</div>
+                <div class="desc">
+                    高中初级竞赛，内容涵盖高中课程及竞赛专题，优秀者可晋级 AIME。
+                </div>
+                <ul>
+                    <li>25 道选择题</li>
+                    <li>75 分钟</li>
+                    <li>满分 150 分</li>
+                    <li>适合年龄：17.5 岁及以下</li>
+                </ul>
+            </a>
+
+            <a href="amc12.html" class="level-card amc12">
+                <h2>AMC 12</h2>
+                <div class="subtitle">适合 12 年级及以下学生</div>
+                <div class="desc">
+                    高中高级竞赛，涵盖完整高中数学内容及高级竞赛专题，优秀者可晋级 AIME。
+                </div>
+                <ul>
+                    <li>25 道选择题</li>
+                    <li>75 分钟</li>
+                    <li>满分 150 分</li>
+                    <li>适合年龄：19.5 岁及以下</li>
+                </ul>
+            </a>
+        </div>
+
+        <h2 style="margin-bottom: 20px; color: #1e293b;">ℹ️ 竞赛信息</h2>
+        <div class="info-section">
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>📅 考试时间</strong>
+                    <span>AMC 8: 每年 1 月<br>AMC 10/12: 每年 11 月（A卷/B卷）</span>
+                </div>
+                <div class="info-item">
+                    <strong>📊 评分标准</strong>
+                    <span>AMC 10/12: 答对 6 分，不答 1.5 分，答错 0 分<br>AMC 8: 答对 1 分，答错不扣分</span>
+                </div>
+                <div class="info-item">
+                    <strong>🎖️ 晋级标准</strong>
+                    <span>AMC 10: 前 2.5% 晋级 AIME<br>AMC 12: 前 5% 晋级 AIME</span>
+                </div>
+                <div class="info-item">
+                    <strong>📖 知识范围</strong>
+                    <span>代数、几何、数论、组合数学<br>概率统计、逻辑推理等</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>💡 备考建议</h3>
+            <div style="color: #475569; line-height: 1.8;">
+                <p style="margin-bottom: 12px;"><strong>1. 夯实基础</strong>：熟练掌握课内数学知识，特别是代数和几何部分。</p>
+                <p style="margin-bottom: 12px;"><strong>2. 专题训练</strong>：针对竞赛特有的数论、组合数学等内容进行专项训练。</p>
+                <p style="margin-bottom: 12px;"><strong>3. 真题演练</strong>：完成近 5-10 年的真题，熟悉题型和难度分布。</p>
+                <p style="margin-bottom: 12px;"><strong>4. 时间管理</strong>：竞赛时间紧张，平时练习注意计时，提高解题速度。</p>
+                <p><strong>5. 错题整理</strong>：建立错题本，定期复习，避免重复犯错。</p>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

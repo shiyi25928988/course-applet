@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>题库中心 - 数理化练习题 & 模拟考试</title>
+<link rel="stylesheet" href="./assets/css/common.css">
+<style>
+.hero {
+    background: linear-gradient(135deg, #7c3aed, #2563eb);
+    color: #fff;
+    padding: 32px 24px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+.subject-section {
+    margin-bottom: 36px;
+}
+.subject-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+}
+.subject-title h2 {
+    color: #1e293b;
+    margin: 0;
+}
+.subject-title .icon {
+    font-size: 1.8rem;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+}
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.card h3 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+.card p {
+    color: #64748b;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.card .meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.card .meta span {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.math { border-color: #8b5cf6; }
+.math h3 { color: #7c3aed; }
+.math .meta span { background: #ede9fe; color: #6d28d9; }
+.physics { border-color: #0ea5e9; }
+.physics h3 { color: #0284c7; }
+.physics .meta span { background: #e0f2fe; color: #0369a1; }
+.chemistry { border-color: #16a34a; }
+.chemistry h3 { color: #15803d; }
+.chemistry .meta span { background: #dcfce7; color: #166534; }
+.stats-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+.stat-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.stat-card .num {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #7c3aed;
+}
+.stat-card .label {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+@media (max-width: 768px) {
+    .card-grid { grid-template-columns: 1fr; }
+    .stats-bar { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links">
+    <a href="index.html">← 返回首页</a>
+</div>
+
+<div class="hero">
+    <h1>📝 题库中心</h1>
+    <p>初中 + 高中 · 数学 · 物理 · 化学 · 章节练习 + 真题 + 模拟考试</p>
+</div>
+
+<div class="stats-bar">
+    <div class="stat-card">
+        <div class="num">1200+</div>
+        <div class="label">练习题总数</div>
+    </div>
+    <div class="stat-card">
+        <div class="num">50+</div>
+        <div class="label">真题套卷</div>
+    </div>
+    <div class="stat-card">
+        <div class="num">36</div>
+        <div class="label">章节练习</div>
+    </div>
+    <div class="stat-card">
+        <div class="num">100%</div>
+        <div class="label">含答案解析</div>
+    </div>
+</div>
+
+<!-- 初中数学 -->
+<div class="subject-section">
+    <div class="subject-title">
+        <span class="icon">📐</span>
+        <h2>初中数学</h2>
+    </div>
+    <div class="card-grid">
+        <a href="math/exam_collection.html" class="card math">
+            <h3>📚 历年真题汇编</h3>
+            <p>2017-2026年十年中考数学真题，每套题含选择题、填空题、解答题及详细解析</p>
+            <div class="meta">
+                <span>10套真题</span>
+                <span>中考真题</span>
+                <span>含答案</span>
+            </div>
+        </a>
+        <a href="math/practice_chapter.html" class="card math">
+            <h3>📖 分章节练习题</h3>
+            <p>按教材章节分类练习：有理数、代数式、方程、不等式、函数、几何、统计概率等</p>
+            <div class="meta">
+                <span>12章节</span>
+                <span>同步练习</span>
+                <span>基础+提高</span>
+            </div>
+        </a>
+        <a href="math/mock_exam1.html" class="card math">
+            <h3>🎯 中考模拟试卷（一）</h3>
+            <p>严格按照中考题型和分值分布命制，含易中难题比例，适合考前模拟自测</p>
+            <div class="meta">
+                <span>150分制</span>
+                <span>120分钟</span>
+                <span>含评分标准</span>
+            </div>
+        </a>
+        <a href="math/mock_exam2.html" class="card math">
+            <h3>🎯 中考模拟试卷（二）</h3>
+            <p>重点难点突破卷，针对压轴题专项训练，适合第二轮复习使用，拔高提分</p>
+            <div class="meta">
+                <span>150分制</span>
+                <span>拔高卷</span>
+                <span>压轴题专项</span>
+            </div>
+        </a>
+        <a href="math/function_special.html" class="card math">
+            <h3>📈 函数专项突破</h3>
+            <p>一次函数、反比例函数、二次函数综合题，中考压轴题高频考点专项训练</p>
+            <div class="meta">
+                <span>50道题</span>
+                <span>压轴题</span>
+                <span>含详细解析</span>
+            </div>
+        </a>
+        <a href="math/geometry_special.html" class="card math">
+            <h3>📐 几何综合专项</h3>
+            <p>三角形全等、相似、圆、四边形证明题，几何辅助线技巧专项训练</p>
+            <div class="meta">
+                <span>40道题</span>
+                <span>证明题</span>
+                <span>辅助线技巧</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- 初中物理 -->
+<div class="subject-section">
+    <div class="subject-title">
+        <span class="icon">⚛️</span>
+        <h2>初中物理</h2>
+    </div>
+    <div class="card-grid">
+        <a href="physics/exam_collection.html" class="card physics">
+            <h3>📚 历年真题汇编</h3>
+            <p>2017-2026年十年中考物理真题，覆盖声光热力电所有知识点，含详细解析</p>
+            <div class="meta">
+                <span>10套真题</span>
+                <span>中考真题</span>
+                <span>含答案</span>
+            </div>
+        </a>
+        <a href="physics/practice_chapter.html" class="card physics">
+            <h3>📖 分章节练习题</h3>
+            <p>声学、光学、力学、热学、电学、电磁感应各章节同步练习，基础巩固</p>
+            <div class="meta">
+                <span>9章</span>
+                <span>同步练习</span>
+                <span>基础巩固</span>
+            </div>
+        </a>
+        <a href="physics/test_paper1.html" class="card physics">
+            <h3>🎯 中考模拟试卷（一）</h3>
+            <p>标准中考物理模拟卷，选择+填空+实验+计算四大题型，全面检测学习效果</p>
+            <div class="meta">
+                <span>100分制</span>
+                <span>90分钟</span>
+                <span>标准卷</span>
+            </div>
+        </a>
+        <a href="physics/test_paper2.html" class="card physics">
+            <h3>🎯 中考模拟试卷（二）</h3>
+            <p>实验探究专项卷，重点考察实验设计、数据分析、科学探究能力</p>
+            <div class="meta">
+                <span>100分制</span>
+                <span>实验专项</span>
+                <span>探究题</span>
+            </div>
+        </a>
+        <a href="physics/electricity_special.html" class="card physics">
+            <h3>⚡ 电学专项突破</h3>
+            <p>欧姆定律、电功率、焦耳定律、串并联电路计算，电学压轴题专项训练</p>
+            <div class="meta">
+                <span>60道题</span>
+                <span>电学计算</span>
+                <span>压轴题</span>
+            </div>
+        </a>
+        <a href="physics/mechanics_special.html" class="card physics">
+            <h3>🏋️ 力学综合专项</h3>
+            <p>受力分析、浮力、压强、机械功与功率、简单机械综合题专项训练</p>
+            <div class="meta">
+                <span>50道题</span>
+                <span>力学综合</span>
+                <span>计算题</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- 初中化学 -->
+<div class="subject-section">
+    <div class="subject-title">
+        <span class="icon">🧪</span>
+        <h2>初中化学</h2>
+    </div>
+    <div class="card-grid">
+        <a href="chemistry/exam_collection.html" class="card chemistry">
+            <h3>📚 历年真题汇编</h3>
+            <p>2017-2026年十年中考化学真题，物质性质、化学方程式、实验、计算全覆盖</p>
+            <div class="meta">
+                <span>10套真题</span>
+                <span>中考真题</span>
+                <span>含答案</span>
+            </div>
+        </a>
+        <a href="chemistry/practice_chapter.html" class="card chemistry">
+            <h3>📖 分章节练习题</h3>
+            <p>物质构成、空气氧气、碳和碳的氧化物、金属、溶液、酸碱盐、有机化学</p>
+            <div class="meta">
+                <span>9章</span>
+                <span>同步练习</span>
+                <span>基础巩固</span>
+            </div>
+        </a>
+        <a href="chemistry/test_paper1.html" class="card chemistry">
+            <h3>🎯 中考模拟试卷（一）</h3>
+            <p>标准中考化学模拟卷，选择+填空+实验+计算，全面覆盖知识点</p>
+            <div class="meta">
+                <span>100分制</span>
+                <span>60分钟</span>
+                <span>标准卷</span>
+            </div>
+        </a>
+        <a href="chemistry/test_paper2.html" class="card chemistry">
+            <h3>🎯 中考模拟试卷（二）</h3>
+            <p>实验探究与推断题专项卷，训练化学思维和解题技巧，适合拔高训练</p>
+            <div class="meta">
+                <span>100分制</span>
+                <span>实验专项</span>
+                <span>推断题</span>
+            </div>
+        </a>
+        <a href="chemistry/equation_special.html" class="card chemistry">
+            <h3>📝 化学方程式专项</h3>
+            <p>必考化学方程式汇总+配平训练+根据化学方程式计算专项训练</p>
+            <div class="meta">
+                <span>100个方程式</span>
+                <span>配平训练</span>
+                <span>计算专项</span>
+            </div>
+        </a>
+        <a href="chemistry/acid_base_special.html" class="card chemistry">
+            <h3>🧪 酸碱盐综合专项</h3>
+            <p>复分解反应、离子共存、物质鉴别、除杂、推断题专项训练，中考重点难点</p>
+            <div class="meta">
+                <span>80道题</span>
+                <span>酸碱盐</span>
+                <span>推断鉴别</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- 高中数学 -->
+<div class="subject-section">
+    <div class="subject-title">
+        <span class="icon">📐</span>
+        <h2>高中数学</h2>
+    </div>
+    <div class="card-grid">
+        <a href="high_math/exam_collection.html" class="card math">
+            <h3>📚 历年高考真题</h3>
+            <p>2017-2026年高考数学真题汇编，新高考题型，含单选、多选、填空、解答题</p>
+            <div class="meta">
+                <span>10套真题</span>
+                <span>新高考</span>
+                <span>含解析</span>
+            </div>
+        </a>
+        <a href="high_math/practice_chapter.html" class="card math">
+            <h3>📖 分章节练习题</h3>
+            <p>集合、函数、导数、三角函数、数列、立体几何、解析几何、概率统计</p>
+            <div class="meta">
+                <span>15章</span>
+                <span>同步练习</span>
+                <span>高考考点</span>
+            </div>
+        </a>
+        <a href="high_math/mock_exam1.html" class="card math">
+            <h3>🎯 高考模拟试卷（一）</h3>
+            <p>新高考Ⅰ卷模式，150分制，120分钟，严格按照高考命题规律命制</p>
+            <div class="meta">
+                <span>150分制</span>
+                <span>新高考</span>
+                <span>难度适中</span>
+            </div>
+        </a>
+        <a href="high_math/derivative_special.html" class="card math">
+            <h3>📈 导数压轴题专项</h3>
+            <p>导数单调性、极值最值、恒成立问题、零点问题、不等式证明压轴题专项</p>
+            <div class="meta">
+                <span>40道题</span>
+                <span>压轴题</span>
+                <span>含解析</span>
+            </div>
+        </a>
+        <a href="high_math/conic_special.html" class="card math">
+            <h3>⭕ 圆锥曲线专项</h3>
+            <p>椭圆、双曲线、抛物线定义性质，直线与圆锥曲线综合，定点定值问题</p>
+            <div class="meta">
+                <span>40道题</span>
+                <span>解析几何</span>
+                <span>压轴题</span>
+            </div>
+        </a>
+        <a href="high_math/sequence_special.html" class="card math">
+            <h3>🔢 数列专项突破</h3>
+            <p>等差等比数列、递推数列求通项、数列求和、数列不等式证明专项训练</p>
+            <div class="meta">
+                <span>50道题</span>
+                <span>数列综合</span>
+                <span>大题专项</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- 高中物理 -->
+<div class="subject-section">
+    <div class="subject-title">
+        <span class="icon">⚛️</span>
+        <h2>高中物理</h2>
+    </div>
+    <div class="card-grid">
+        <a href="high_physics/exam_collection.html" class="card physics">
+            <h3>📚 历年高考真题</h3>
+            <p>2017-2026年高考物理真题汇编，新高考题型，单选+多选+实验+计算</p>
+            <div class="meta">
+                <span>10套真题</span>
+                <span>新高考</span>
+                <span>含解析</span>
+            </div>
+        </a>
+        <a href="high_physics/practice_chapter.html" class="card physics">
+            <h3>📖 分章节练习题</h3>
+            <p>运动学、力学、牛顿定律、曲线运动、机械能、电场、磁场、电磁感应、热光原</p>
+            <div class="meta">
+                <span>12章</span>
+                <span>同步练习</span>
+                <span>高考考点</span>
+            </div>
+        </a>
+        <a href="high_physics/mock_exam1.html" class="card physics">
+            <h3>🎯 高考模拟试卷（一）</h3>
+            <p>新高考物理模拟卷，100分制，75分钟，严格按照高考命题要求命制</p>
+            <div class="meta">
+                <span>100分制</span>
+                <span>新高考</span>
+                <span>标准难度</span>
+            </div>
+        </a>
+        <a href="high_physics/electromagnetism_special.html" class="card physics">
+            <h3>⚡ 电磁学综合专项</h3>
+            <p>电场强度电势、带电粒子运动、安培力洛伦兹力、电磁感应综合大题专项</p>
+            <div class="meta">
+                <span>50道题</span>
+                <span>电磁学</span>
+                <span>压轴题</span>
+            </div>
+        </a>
+        <a href="high_physics/mechanics_special.html" class="card physics">
+            <h3>🏋️ 力学综合专项</h3>
+            <p>牛顿运动定律、动能定理动量守恒、圆周运动万有引力、机械能综合训练</p>
+            <div class="meta">
+                <span>60道题</span>
+                <span>力学综合</span>
+                <span>计算题</span>
+            </div>
+        </a>
+        <a href="high_physics/experiment_special.html" class="card physics">
+            <h3>🔬 实验专项突破</h3>
+            <p>力学实验+电学实验+光学热学实验，读数、数据处理、误差分析全攻略</p>
+            <div class="meta">
+                <span>30个实验</span>
+                <span>实验题</span>
+                <span>15分必考</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- 高中化学 -->
+<div class="subject-section">
+    <div class="subject-title">
+        <span class="icon">🧪</span>
+        <h2>高中化学</h2>
+    </div>
+    <div class="card-grid">
+        <a href="high_chemistry/exam_collection.html" class="card chemistry">
+            <h3>📚 历年高考真题</h3>
+            <p>2017-2026年高考化学真题汇编，新高考题型，单选+多选+工业流程+反应原理+有机</p>
+            <div class="meta">
+                <span>10套真题</span>
+                <span>新高考</span>
+                <span>含解析</span>
+            </div>
+        </a>
+        <a href="high_chemistry/practice_chapter.html" class="card chemistry">
+            <h3>📖 分章节练习题</h3>
+            <p>物质分类、离子反应、氧化还原、元素化合物、反应原理、有机化学、结构化学</p>
+            <div class="meta">
+                <span>12章</span>
+                <span>同步练习</span>
+                <span>高考考点</span>
+            </div>
+        </a>
+        <a href="high_chemistry/mock_exam1.html" class="card chemistry">
+            <h3>🎯 高考模拟试卷（一）</h3>
+            <p>新高考化学模拟卷，100分制，75分钟，涵盖选择题+四大主观题</p>
+            <div class="meta">
+                <span>100分制</span>
+                <span>新高考</span>
+                <span>标准难度</span>
+            </div>
+        </a>
+        <a href="high_chemistry/industrial_special.html" class="card chemistry">
+            <h3>🏭 工业流程专项</h3>
+            <p>原料预处理、核心反应、分离提纯、条件控制、计算，工业流程题满分攻略</p>
+            <div class="meta">
+                <span>30道题</span>
+                <span>工业流程</span>
+                <span>14分大题</span>
+            </div>
+        </a>
+        <a href="high_chemistry/reaction_principle_special.html" class="card chemistry">
+            <h3>⚗️ 反应原理综合专项</h3>
+            <p>热化学、化学平衡、反应速率、水溶液离子平衡、电化学综合大题训练</p>
+            <div class="meta">
+                <span>40道题</span>
+                <span>反应原理</span>
+                <span>14分大题</span>
+            </div>
+        </a>
+        <a href="high_chemistry/organic_special.html" class="card chemistry">
+            <h3>🔗 有机化学专项</h3>
+            <p>官能团性质、反应类型、同分异构体、有机合成推断、有机实验专项训练</p>
+            <div class="meta">
+                <span>50道题</span>
+                <span>有机推断</span>
+                <span>14分大题</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+</div>
+</body>
+</html>

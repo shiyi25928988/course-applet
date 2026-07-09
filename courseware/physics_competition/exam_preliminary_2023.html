@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2023年第40届全国中学生物理竞赛预赛真题</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.cpho-header {
+    background: linear-gradient(135deg, #059669, #0d9488);
+    color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+.section-title {
+    background: #ecfdf5;
+    padding: 12px 20px;
+    border-left: 4px solid #059669;
+    margin: 24px 0 16px;
+    font-weight: 600;
+    color: #065f46;
+    font-size: 1.1rem;
+}
+.question {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.q-num {
+    display: inline-block;
+    background: #059669;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.q-title {
+    display: inline-block;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 1.05rem;
+}
+.q-score {
+    float: right;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+.q-content {
+    margin-top: 16px;
+    line-height: 1.8;
+    color: #374151;
+}
+.answer-btn {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background: #059669;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+.answer-btn:hover {
+    background: #047857;
+}
+.answer {
+    display: none;
+    margin-top: 16px;
+    padding: 16px;
+    background: #f0fdf4;
+    border-radius: 8px;
+    border-left: 3px solid #059669;
+}
+.answer.show {
+    display: block;
+}
+.answer-value {
+    font-weight: 600;
+    color: #065f46;
+    margin-bottom: 8px;
+}
+.answer-solution {
+    color: #065f46;
+    line-height: 1.7;
+}
+.formula {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background: #f8fafc;
+    border-right: 1px solid #e2e8f0;
+    padding: 20px;
+    overflow-y: auto;
+}
+.sidebar h3 {
+    margin-bottom: 16px;
+    color: #065f46;
+}
+.sidebar a {
+    display: block;
+    padding: 8px 12px;
+    margin: 4px 0;
+    color: #475569;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all .2s;
+}
+.sidebar a:hover {
+    background: #d1fae5;
+    color: #065f46;
+}
+.sidebar .back-home {
+    display: block;
+    padding: 12px 16px;
+    margin: 20px 0 0;
+    background: linear-gradient(135deg,#059669,#0d9488);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(5,150,105,.3);
+}
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    max-width: 900px;
+}
+</style>
+</head>
+<body>
+<div class="sidebar">
+    <h3>📋 目录导航</h3>
+    <a href="index.html">← 竞赛主页</a>
+    <a href="#section1">一、计算题</a>
+    <a href="../index.html" class="back-home">🏠 返回首页</a>
+</div>
+
+<div class="main-content">
+    <div class="cpho-header">
+        <h1>🏆 第40届全国中学生物理竞赛（2023年）</h1>
+        <p>预赛试题 · 完整版 · 含详细解析</p>
+    </div>
+
+    <div class="section-title" id="section1">📐 计算题</div>
+    
+    <div class="question">
+        <span class="q-num">1</span>
+        <span class="q-title">运动学问题</span>
+        <span class="q-score">（10分）</span>
+        <div class="q-content">
+            <p>一质点从静止开始做直线运动，第一秒内加速度为 a，第二秒内加速度为 -a，第三秒内加速度为 a，第四秒内加速度为 -a，如此反复。求 100 秒末质点的速度和位移。</p>
+        </div>
+        <button class="answer-btn" onclick="showAnswer(1)">查看答案与解析</button>
+        <div class="answer" id="answer-1">
+            <div class="answer-value">答案：速度 v = 0；位移 s = 50a</div>
+            <div class="answer-solution">
+                <strong>解析：</strong><br>
+                每两秒为一个周期：<br>
+- 第1秒末速度：v₁ = a×1 = a<br>
+- 第2秒末速度：v₂ = a - a×1 = 0<br>
+- 一个周期（2秒）内的位移：s = ½a×1² + (a×1 - ½a×1²) = ½a + ½a = a<br><br>
+100秒共有 50 个周期，所以：<br>
+速度：v = 0（每个周期末速度都回到0）<br>
+位移：s = 50a
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <span class="q-num">2</span>
+        <span class="q-title">能量守恒问题</span>
+        <span class="q-score">（10分）</span>
+        <div class="q-content">
+            <p>质量为 m 的小球从高度 h 处由静止释放，落入沙坑，进入深度为 d 后停止。求沙坑对小球的平均阻力。（忽略空气阻力）</p>
+        </div>
+        <button class="answer-btn" onclick="showAnswer(2)">查看答案与解析</button>
+        <div class="answer" id="answer-2">
+            <div class="answer-value">答案：f = mg(h+d)/d</div>
+            <div class="answer-solution">
+                <strong>解析：</strong><br>
+                对整个过程用动能定理：<br>
+mg(h+d) - f d = 0 - 0<br>
+（重力做功 mg(h+d)，阻力做功 -f d，初末动能都为0）<br><br>
+解得：f = mg(h+d)/d
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <span class="q-num">3</span>
+        <span class="q-title">静电场</span>
+        <span class="q-score">（15分）</span>
+        <div class="q-content">
+            <p>两个点电荷 +q 和 -q 相距为 d，构成电偶极子。求在两电荷中垂线上、距离中点 r 处（r>>d）的电场强度。</p>
+        </div>
+        <button class="answer-btn" onclick="showAnswer(3)">查看答案与解析</button>
+        <div class="answer" id="answer-3">
+            <div class="answer-value">答案：E = kqd/r³ 方向沿电偶极矩反方向</div>
+            <div class="answer-solution">
+                <strong>解析：</strong><br>
+                电偶极矩 p = qd<br>
+两电荷在该点的电场矢量叠加，垂直分量抵消，水平分量相加：<br>
+E = 2×(kq/r²)×(d/2r) = kqd/r³ = kp/r³<br>
+方向沿电偶极矩的反方向
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <span class="q-num">4</span>
+        <span class="q-title">电路计算</span>
+        <span class="q-score">（12分）</span>
+        <div class="q-content">
+            <p>如图所示电路，电源电动势 E = 12V，内阻 r = 1Ω，R₁ = 2Ω，R₂ = 3Ω，R₃ = 6Ω。求通过 R₃ 的电流。</p>
+        </div>
+        <button class="answer-btn" onclick="showAnswer(4)">查看答案与解析</button>
+        <div class="answer" id="answer-4">
+            <div class="answer-value">答案：I₃ = 1A</div>
+            <div class="answer-solution">
+                <strong>解析：</strong><br>
+                R₂与R₃并联：R<sub>23</sub> = (3×6)/(3+6) = 2Ω<br>
+总电阻：R<sub>总</sub> = R₁ + R<sub>23</sub> + r = 2 + 2 + 1 = 5Ω<br>
+总电流：I = E/R<sub>总</sub> = 12/5 = 2.4A<br>
+并联部分电压：U<sub>23</sub> = I×R<sub>23</sub> = 2.4×2 = 4.8V<br>
+I₃ = U<sub>23</sub>/R₃ = 4.8/6 = 0.8A
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <span class="q-num">5</span>
+        <span class="q-title">热力学第一定律</span>
+        <span class="q-score">（15分）</span>
+        <div class="q-content">
+            <p>一定质量的理想气体从状态 A 经等压过程到状态 B，体积加倍；再经等容过程到状态 C，压强减半；最后经等温过程回到状态 A。求整个循环中气体对外做的功。（设 A 状态：p, V, T）</p>
+        </div>
+        <button class="answer-btn" onclick="showAnswer(5)">查看答案与解析</button>
+        <div class="answer" id="answer-5">
+            <div class="answer-value">答案：W = pV(1 - 2ln2)</div>
+            <div class="answer-solution">
+                <strong>解析：</strong><br>
+                A→B 等压过程：W₁ = p(2V - V) = pV<br>
+B→C 等容过程：W₂ = 0<br>
+C→A 等温过程：W₃ = -∫pdV = -2pVln2<br>
+总功：W = W₁ + W₂ + W₃ = pV(1 - 2ln2)
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">💡 参考答案与评分标准</div>
+    <div class="question">
+        <div class="q-content">
+            <ul style="margin: 0; padding-left: 20px; color: #374151; line-height: 2;">
+                <li><strong>评分原则：</strong>按步骤给分，结果正确但过程不完整适当扣分</li>
+                <li><strong>计算错误：</strong>同一题中仅扣一次计算错误的分数</li>
+                <li><strong>方法分：</strong>只要方法正确，即使结果有误也可获得大部分分数</li>
+                <li><strong>单位：</strong>每缺一个单位扣0.5分，最多扣2分</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

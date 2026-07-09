@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>力学综合专项</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.hero {background:linear-gradient(135deg,#0ea5e9,#0284c7);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px}
+.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.q-num {display:inline-block;background:#0ea5e9;color:#fff;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;font-weight:700;margin-right:10px}
+.q-title {display:inline-block;font-weight:600;color:#1e293b;font-size:1.05rem}
+.q-score {float:right;color:#64748b;font-size:0.9rem}
+.q-content {margin-top:16px;line-height:1.8;color:#374151}
+.answer-btn {margin-top:16px;padding:10px 20px;background:#0ea5e9;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.95rem}
+.answer {display:none;margin-top:16px;padding:16px;background:#e0f2fe;border-radius:8px;border-left:3px solid #0ea5e9}
+.answer.show {display:block}
+.answer-value {font-weight:600;color:#0369a1;margin-bottom:8px}
+.answer-solution {color:#0c4a6e;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 高中物理</a>&nbsp;|&nbsp;<a href="../exam_bank.html">← 题库中心</a></div>
+<div class="hero"><h1>🏋️ 高中物理力学综合专项</h1><p>牛顿运动定律 · 动能定理动量守恒 · 圆周运动万有引力 · 机械能综合 · 共 60 道精选</p></div>
+<div class="question"><span class="q-num">1</span><span class="q-title">牛顿第二定律应用</span><span class="q-score">（12分）</span><div class="q-content">
+<p>质量为 2kg 的物体放在水平面上，在水平拉力 F = 10N 的作用下由静止开始运动，物体与地面间的动摩擦因数 μ = 0.3。求：</p>
+<p>(1) 物体的加速度；</p>
+<p>(2) 2s 末物体的速度和位移。（g = 10m/s²）</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案与解析</button>
+<div class="answer" id="answer-1"><div class="answer-value">答案：(1) 2m/s²；(2) v = 4m/s，x = 4m</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) 摩擦力 f = μmg = 0.3×2×10 = 6N<br>由牛顿第二定律：F - f = ma ⇒ a = (10 - 6)/2 = 2m/s²<br><br>(2) v = at = 2×2 = 4m/s<br>x = ½at² = ½×2×4 = 4m</div></div></div>
+<div class="question"><span class="q-num">2</span><span class="q-title">动量守恒定律</span><span class="q-score">（12分）</span><div class="q-content">
+<p>质量为 m₁ = 2kg 的小球以 v₁ = 5m/s 的速度向右运动，与质量为 m₂ = 3kg 的静止小球发生弹性正碰。求碰撞后两球的速度。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案与解析</button>
+<div class="answer" id="answer-2"><div class="answer-value">答案：v₁' = -1m/s（向左），v₂' = 4m/s（向右）</div>
+<div class="answer-solution"><strong>解析：</strong><br>弹性碰撞满足动量守恒和动能守恒：<br>m₁v₁ = m₁v₁' + m₂v₂'<br>½m₁v₁² = ½m₁v₁'² + ½m₂v₂'²<br><br>解得：v₁' = (m₁-m₂)v₁/(m₁+m₂) = (-1)×5/5 = -1m/s<br>v₂' = 2m₁v₁/(m₁+m₂) = 4×5/5 = 4m/s</div></div></div>
+<div style="text-align:center;padding:20px;color:#64748b;background:#fff;border-radius:10px">
+<strong>更多题目整理中...</strong><br>完整 60 道力学综合题正在陆续添加
+</div>
+</div></body></html>

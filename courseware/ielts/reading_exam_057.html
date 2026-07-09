@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures In Mathematical Reasoning - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题57/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Adventures In Mathematical Reasoning</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>Solution:
+ 
+1. A
+2. B
+3. C
+4. D
+5. NOT GIVEN
+6. TRUE
+ 
+8. FALSE
+9. C
+10. B
+11. C
+12. A
+13. B
+7. NOT GIVEN
+ 5</p>
+<p>Reading Practice
+ A decibel Hell (The Effects of Living in a Noisy World)
+Section A decibel Hell:
+It’s not difficult for a person to encounter sound at levels that can cause adverse health
+effects. During a single day, people living in a typical urban environment can experience a
+wide range of sounds in many locations, even once-quiet locales have become polluted
+with noise. In fact, it’s difficult today to escape sound completely. In its 1999 Guidelines for
+Community Noise, the World Health Organization (WHO) declared, “Worldwide, noiseinduced hearing impairment is the most prevalent irreversible occupational hazard, and it is
+estimated that 120 million people worldwide have disabling hearing difficulties.” Growing
+evidence also points to many other health effects of too much volume.
+Mark Stephenson, a Cincinnati, Ohio-based senior research audiologist at the National
+Institute for Occupational Safety and Health (NIOSH), says his agency’s definition of
+hazardous noise is sound that exceeds the time-weighted average of 85 dBA, meaning the
+average noise exposure measured over a typical eight-hour workday. Other measures and
+definitions are used for other purposes.
+Section B Growing Volume
+In the United States, about 30 million workers are exposed to hazardous sound levels on
+the job, according to NIOSH. Industries having a high number of workers exposed to loud
+sounds include construction, agriculture, mining, manufacturing, utilities, transportation,
+and the military.
+Noise in U.S. industry is an extremely difficult problem to monitor, acknowledges Craig
+Moulton, a senior industrial hygienist for the Occupational Safety and Health Administration
+(OSHA). “Still,” he says, “OSHA does require that any employer with workers overexposed
+to noise provide protection for those employees against the harmful effects of noise.
+Additionally, employers must implement a continuing, effective hearing conservation
+program as outlined in OSHA’s Noise Standard.”
+Section C Scary Sound Effects
+Numerous scientific studies over the years have confirmed that exposure to certain levels
+of sound can damage hearing. Prolonged exposure can actually change the structure of
+the hair cells in the inner ear, resulting in hearing loss. It can also cause tinnitus, a ringing,
+roaring, buzzing, or clicking on the ears.
+ 
+NIOSH studies from the mid to late 1990s show that 90% of coal miners have hearing
+impairment by age 52 – compared to 9% of the general population – and 70% of male
+metal/nonmetal miners will experience hearing impairment by age 60 (Stephenson notes
+that from adolescence onward, females tend to have better hearing than males). Neitzel
+says nearly half of all construction workers have some degree of hearing loss. “NIOSH
+research also reveals that by age twenty-five, the average carpenter’s hearing is equivalent
+to an otherwise healthy fifty-year-old male who hasn’t been exposed to noise,” he says.
+William Luxford, medical director of the House Ear Clinic of St. Vincent Medical Center in
+Los Angeles, points out one piece of good news: “It’s true that continuous noise exposure
+ 1</p>
+<p>will lead to the continuation of hearing loss, but as soon as the exposure is stopped, the
+hearing loss stops. So a change in environment can improve a person’s hearing health.”
+Research is catching up with this anecdotal evidence. In the July 2001 issue of Pediatrics,
+researchers from the Centers for Disease Control and Prevention reported that, based on
+audiometric testing of 5,249 children as part of the Third National Health and Nutrition,
+Examination Survey, an estimated 12.5% of American children have noise-induced hearing
+threshold shifts – or dulled hearing – in one or both ears. Most children with noise-induced
+hearing threshold shifts have only limited hearing damage, but continued exposure to
+excessive noise can lead to difficulties with high-frequency sound discrimination. The report
+listed stereos, music concerts, toys (such as toy telephones and certain rattles),
+lawnmowers, and fireworks as producing potentially harmful sounds.
+Section D Beyond the Ears
+The effects of sound don’t stop with the ears. Nonauditory effects of noise exposure are
+those effects that don’t cause hearing loss but still can be measured, such as elevated
+blood pressure, loss of sleep, increased heart rate, cardiovascular constriction, labored
+breathing, and changes in brain chemistry.
+ 
+The nonauditory effects of noise were noted as early as 1930 in a study published by E.L.
+Smith and D.L. Laird in volume 2 of the Journal of the Acoustical Society of America. The
+results showed that exposure to noise caused stomach contractions in healthy human
+beings. Reports on noise’s nonauditory effects published since that pioneering study have
+been both contradictory and controversial in some areas.
+Bronzaft and the school principal persuaded the school board to have acoustical tile
+installed in the classrooms adjacent to the tracks. The Transit Authority also treated the
+tracks near the school to make them less noisy. A follow-up study published in the
+September 1981 issue of the Journal of Environmental Psychology found that children’s
+reading scores improved after these interventions were put in place.
+Section E Fighting for Quiet
+Anti-noise activists say that Europe and several countries in Asia are more advanced than
+the United States in terms of combating noise. “Population pressure has prompted Europe
+to move more quickly on the noise issue that the United States has,” Hume says. In the
+European Union, countries with cities of at least 250,000 people are creating noise maps of
+those cities to help leaders determine noise pollution policies. Paris has already prepared
+its first noise maps. The map data, which must be finished by 2007, will be fed into
+computer models that will help test the sound impact of street designs or new buildings
+before construction begins.
+Activists in other countries say they too want the United States to play a more leading role
+on the noise issue. But as in other areas of environmental health, merely having a more
+powerful government agency in place that can set more regulations is not the ultimate
+answer, according to other experts. Bronzaft stresses that governments worldwide need to
+increase funding for noise research and do a better job coordinating their noise pollution
+efforts so they can establish health and environmental policies based on solid scientific
+research. “Governments have a responsibility to protect their citizens by curbing noise
+pollution,” she says.
+ 2</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AMC 10 美国数学竞赛</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #d97706, #b45309);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(217, 119, 6, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.amc-hero{background:linear-gradient(135deg,#d97706,#b45309);color:#fff;border-radius:20px;padding:32px 24px;margin-bottom:24px;}
+.amc-hero h1{font-size:1.8rem;margin-bottom:8px;}
+.amc-meta{font-size:.9rem;opacity:.95;}
+.section{background:#fff;border-radius:14px;padding:24px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.section h3{color:#d97706;margin-bottom:16px;font-size:1.2rem;}
+.question{margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid #e5e7eb;}
+.question:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.q-number{font-weight:600;color:#d97706;margin-bottom:8px;font-size:1.1rem;}
+.q-content{line-height:1.8;color:#334155;}
+.answer-box{background:#fffbeb;padding:16px;border-radius:10px;margin-top:12px;border-left:4px solid #f59e0b;}
+.answer-title{font-weight:600;color:#92400e;margin-bottom:8px;}
+.answer-content{line-height:1.7;color:#78350f;}
+.score-tag{display:inline-block;background:#fef3c7;color:#92400e;padding:2px 8px;border-radius:6px;font-size:.8rem;margin-left:8px;font-weight:500;}
+.info-box{background:#f0f9ff;padding:16px;border-radius:10px;margin-bottom:20px;border-left:4px solid #0ea5e9;}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"><h3>📙 AMC 10</h3><ul class="chapter-list">
+<li><a href="index.html"><span class="ch-num">←</span>返回AMC首页</a></li>
+<li><a href="amc8.html"><span class="ch-num">📗</span>AMC 8</a></li>
+<li><a href="amc12.html"><span class="ch-num">📕</span>AMC 12</a></li>
+<li style="margin-top:20px;"><a href="../index.html">← 返回首页</a></li></ul>
+</aside>
+<main class="main">
+<div class="back-links">
+    <a href="index.html">返回AMC首页</a>
+</div>
+
+<div class="amc-hero">
+    <h1>📙 AMC 10 美国数学竞赛</h1>
+    <div class="amc-meta">American Mathematics Competition 10 · 适合10年级及以下学生 · 25道选择题 · 75分钟</div>
+</div>
+
+<div class="info-box">
+    <strong>📋 考试信息</strong><br>
+    • 题量：25道选择题<br>
+    • 时间：75分钟<br>
+    • 评分：答对6分，不答1.5分，答错0分<br>
+    • 满分：150分<br>
+    • 晋级：前2.5%可晋级AIME<br>
+    • 内容：代数、几何、数论、组合数学、概率统计
+</div>
+
+<div class="section">
+    <h3>📝 AMC 10 2024年 A卷 真题（精选10题）</h3>
+    
+    <div class="question">
+        <div class="q-number">第1题 <span class="score-tag">6分</span></div>
+        <div class="q-content">What is the value of $2^3 + 2^3 + 2^3 + 2^3 + 2^3 + 2^3 + 2^3 + 2^3$?<br><br>
+        A. 64 &nbsp;&nbsp; B. 128 &nbsp;&nbsp; C. 256 &nbsp;&nbsp; D. 512 &nbsp;&nbsp; E. 1024</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：A</strong><br>
+            【解析】题目中有8个$2^3$相加。<br>
+            $8 \times 2^3 = 2^3 \times 2^3 = 2^6 = 64$<br>
+            或者直接计算：$2^3 = 8$，$8 \times 8 = 64$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第3题 <span class="score-tag">6分</span></div>
+        <div class="q-content">The sum of two consecutive odd integers is 96. What is the product of these two integers?<br><br>
+        A. 2295 &nbsp;&nbsp; B. 2300 &nbsp;&nbsp; C. 2303 &nbsp;&nbsp; D. 2304 &nbsp;&nbsp; E. 2307</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】设两个连续奇数为 $x$ 和 $x+2$。<br>
+            $x + (x + 2) = 96$<br>
+            $2x + 2 = 96$<br>
+            $2x = 94$<br>
+            $x = 47$<br>
+            所以两个数是47和49。<br>
+            乘积 $= 47 \times 49 = 47 \times (50 - 1) = 2350 - 47 = 2303$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第5题 <span class="score-tag">6分</span></div>
+        <div class="q-content">What is the least common multiple (LCM) of 12, 18, and 24?<br><br>
+        A. 36 &nbsp;&nbsp; B. 48 &nbsp;&nbsp; C. 72 &nbsp;&nbsp; D. 144 &nbsp;&nbsp; E. 288</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】质因数分解：<br>
+            $12 = 2^2 \times 3^1$<br>
+            $18 = 2^1 \times 3^2$<br>
+            $24 = 2^3 \times 3^1$<br>
+            LCM取各质因数的最大指数：<br>
+            $LCM = 2^3 \times 3^2 = 8 \times 9 = 72$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第8题 <span class="score-tag">6分</span></div>
+        <div class="q-content">In the coordinate plane, what is the distance between the points $(2, 3)$ and $(6, 8)$?<br><br>
+        A. $\sqrt{41}$ &nbsp;&nbsp; B. $\sqrt{43}$ &nbsp;&nbsp; C. $\sqrt{45}$ &nbsp;&nbsp; D. $\sqrt{47}$ &nbsp;&nbsp; E. $\sqrt{49}$</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：A</strong><br>
+            【解析】距离公式：$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$<br>
+            $d = \sqrt{(6 - 2)^2 + (8 - 3)^2} = \sqrt{4^2 + 5^2} = \sqrt{16 + 25} = \sqrt{41}$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第10题 <span class="score-tag">6分</span></div>
+        <div class="q-content">How many diagonals are there in a convex hexagon?<br><br>
+        A. 6 &nbsp;&nbsp; B. 9 &nbsp;&nbsp; C. 12 &nbsp;&nbsp; D. 15 &nbsp;&nbsp; E. 18</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：B</strong><br>
+            【解析】n边形的对角线条数公式：$\frac{n(n-3)}{2}$<br>
+            六边形（n=6）：$\frac{6 \times (6-3)}{2} = \frac{6 \times 3}{2} = 9$<br><br>
+            推导：每个顶点可以和除了自身及相邻两个点外的 $n-3$ 个点连对角线，$n$ 个顶点共 $n(n-3)$ 条，每条对角线被两个顶点各算一次，所以除以2。</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第12题 <span class="score-tag">6分</span></div>
+        <div class="q-content">If $x + y = 10$ and $x - y = 4$, what is the value of $x^2 - y^2$?<br><br>
+        A. 16 &nbsp;&nbsp; B. 36 &nbsp;&nbsp; C. 40 &nbsp;&nbsp; D. 60 &nbsp;&nbsp; E. 100</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】方法一：平方差公式<br>
+            $x^2 - y^2 = (x + y)(x - y) = 10 \times 4 = 40$<br><br>
+            方法二：先解方程组<br>
+            $x + y = 10$<br>
+            $x - y = 4$<br>
+            相加得：$2x = 14 \Rightarrow x = 7$，则 $y = 3$<br>
+            $x^2 - y^2 = 49 - 9 = 40$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第15题 <span class="score-tag">6分</span></div>
+        <div class="q-content">A right triangle has legs of length 5 and 12. What is the length of the altitude to the hypotenuse?<br><br>
+        A. $\frac{60}{13}$ &nbsp;&nbsp; B. $\frac{30}{13}$ &nbsp;&nbsp; C. $\frac{25}{12}$ &nbsp;&nbsp; D. $\frac{60}{12}$ &nbsp;&nbsp; E. $\frac{120}{13}$</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：A</strong><br>
+            【解析】首先由勾股定理求斜边：<br>
+            斜边 $= \sqrt{5^2 + 12^2} = \sqrt{25 + 144} = \sqrt{169} = 13$<br><br>
+            三角形面积 $= \frac{1}{2} \times 5 \times 12 = 30$<br><br>
+            设斜边上的高为 $h$，则面积也可以表示为 $\frac{1}{2} \times 13 \times h$。<br>
+            $\frac{1}{2} \times 13 \times h = 30$<br>
+            $13h = 60$<br>
+            $h = \frac{60}{13}$</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第18题 <span class="score-tag">6分</span></div>
+        <div class="q-content">What is the remainder when $2^{2024}$ is divided by 10?<br><br>
+        A. 0 &nbsp;&nbsp; B. 2 &nbsp;&nbsp; C. 4 &nbsp;&nbsp; D. 6 &nbsp;&nbsp; E. 8</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：D</strong><br>
+            【解析】求$2^{2024}$除以10的余数，就是求个位数。<br>
+            观察2的幂的个位数规律：<br>
+            $2^1 = 2$ → 个位2<br>
+            $2^2 = 4$ → 个位4<br>
+            $2^3 = 8$ → 个位8<br>
+            $2^4 = 16$ → 个位6<br>
+            $2^5 = 32$ → 个位2<br>
+            周期为4：2, 4, 8, 6, 2, 4, 8, 6, ...<br><br>
+            $2024 \div 4 = 506$，余数为0，对应周期的最后一个数6。<br>
+            所以$2^{2024}$的个位是6。</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第20题 <span class="score-tag">6分</span></div>
+        <div class="q-content">In how many ways can 4 people be seated in a row of 4 seats if two of the people refuse to sit next to each other?<br><br>
+        A. 6 &nbsp;&nbsp; B. 8 &nbsp;&nbsp; C. 12 &nbsp;&nbsp; D. 16 &nbsp;&nbsp; E. 24</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】方法一：总排列数减去两人相邻的情况。<br>
+            总排列数 $= 4! = 24$<br>
+            两人相邻的情况：把两人看作一个整体，有$3! \times 2 = 12$种（两人内部可以互换）<br>
+            所以不相邻的排列数 $= 24 - 12 = 12$<br><br>
+            方法二：直接计算。<br>
+            先排另外两人，有$2! = 2$种，形成3个空位，选两个放这两个人：$P(3,2) = 3 \times 2 = 6$<br>
+            共 $2 \times 6 = 12$ 种。</div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-number">第22题 <span class="score-tag">6分</span></div>
+        <div class="q-content">What is the sum of all the integers between 100 and 200 that are divisible by 7?<br><br>
+        A. 2079 &nbsp;&nbsp; B. 2100 &nbsp;&nbsp; C. 2107 &nbsp;&nbsp; D. 2114 &nbsp;&nbsp; E. 2121</div>
+        <div class="answer-box">
+            <div class="answer-title">参考答案与解析</div>
+            <div class="answer-content"><strong>答案：C</strong><br>
+            【解析】首先找范围内第一个和最后一个7的倍数。<br>
+            第一个：$100 \div 7 = 14.28...$，所以第一个是 $15 \times 7 = 105$<br>
+            最后一个：$200 \div 7 = 28.57...$，所以最后一个是 $28 \times 7 = 196$<br><br>
+            这是一个等差数列：首项105，末项196，公差7。<br>
+            项数 $n = 28 - 15 + 1 = 14$<br>
+            求和：$S_n = \frac{n(a_1 + a_n)}{2} = \frac{14 \times (105 + 196)}{2} = 7 \times 301 = 2107$</div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h3>📊 答题技巧</h3>
+    <div class="q-content">
+        <p><strong>1. 时间管理</strong>：25题75分钟，平均每题3分钟。前10题较简单，争取在20分钟内完成。</p>
+        <p><strong>2. 答题策略</strong>：AMC 10不答得1.5分，答错得0分。如果能排除2个选项，猜答案是划算的；如果完全不会，空着更划算。</p>
+        <p><strong>3. 目标分数</strong>：通常需要100-110分左右才能晋级AIME（前2.5%），建议目标答对15-18题。</p>
+        <p><strong>4. 检查方法</strong>：用不同方法验证答案，特别是代数题可以用代入法检验。</p>
+        <p><strong>5. 数论技巧</strong>：数论是AMC 10的重点，熟练掌握整除、同余、质数、因数分解等知识。</p>
+    </div>
+</div>
+
+</main></div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>高中数学 · 概率与统计</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.hero { background:linear-gradient(135deg,#059669,#0d9488); color:#fff; border-radius:20px; padding:40px 24px; margin-bottom:28px; }
+.hero h1 { font-size:1.8rem; margin-bottom:8px; }
+.ch-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:32px; }
+.ch-card { background:#fff; border-radius:14px; padding:24px; text-decoration:none; box-shadow:0 2px 8px rgba(0,0,0,.06); border-left:4px solid #059669; display:block; color:var(--text); transition:all .2s; }
+.ch-card:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,.1); }
+.ch-card h2 { font-size:1.3rem; margin-bottom:12px; color:#059669; }
+.ch-card ul { list-style:none; padding:0; }
+.ch-card li { padding:6px 0; font-size:0.9rem; color:#64748b; border-bottom:1px solid #f1f5f9; }
+.ch-card li:last-child { border-bottom:none; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+<h3>📊 概率与统计</h3>
+<ul class="chapter-list">
+<li><a href="s01_prob.html"><span class="ch-num">🎲</span>概率</a></li>
+<li><a href="s02_stats.html"><span class="ch-num">📈</span>统计</a></li>
+<li><a href="s03_dist.html"><span class="ch-num">📉</span>统计分布</a></li>
+<li><a href="../index.html"><span class="ch-num">🏠</span>返回高中数学</a></li>
+</ul>
+<div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+  <a href="../../index.html" class="back-home">🏠 返回首页</a>
+</div>
+</aside>
+
+<main class="main">
+<div class="hero">
+<h1>📊 高中数学 · 概率与统计</h1>
+<p>高考数学核心模块 · 概率统计占 22 分左右 · 含知识讲解与真题演练</p>
+</div>
+
+<div class="ch-grid">
+<a href="s01_prob.html" class="ch-card">
+<h2>🎲 概率</h2>
+<ul>
+<li>随机事件的概率</li>
+<li>古典概型与几何概型</li>
+<li>互斥事件与对立事件</li>
+<li>条件概率与独立性</li>
+<li>离散型随机变量及其分布</li>
+<li>二项分布与超几何分布</li>
+<li>正态分布</li>
+</ul>
+</a>
+
+<a href="s02_stats.html" class="ch-card">
+<h2>📈 统计</h2>
+<ul>
+<li>随机抽样（简单随机、分层、系统）</li>
+<li>用样本估计总体</li>
+<li>频率分布直方图与茎叶图</li>
+<li>数字特征：平均数、中位数、众数</li>
+<li>方差与标准差</li>
+<li>变量的相关性与散点图</li>
+<li>线性回归方程</li>
+<li>独立性检验</li>
+</ul>
+</a>
+
+<a href="s03_dist.html" class="ch-card">
+<h2>📉 统计分布</h2>
+<ul>
+<li>期望与方差的计算</li>
+<li>二项分布的期望与方差</li>
+<li>正态分布的性质与应用</li>
+<li>常见分布的识别与应用</li>
+<li>统计案例分析</li>
+<li>高考真题解析</li>
+</ul>
+</a>
+</div>
+
+<h2 style="margin-bottom:16px;">💡 学习建议</h2>
+<div style="background:#f0fdf4; padding:20px; border-radius:12px; border-left:4px solid #059669;">
+  <p style="margin-bottom:8px;"><strong>重点关注：</strong></p>
+  <ul style="margin-left:20px; color:#475569; line-height:1.8;">
+    <li>古典概型的计算，注意枚举法和排列组合的应用</li>
+    <li>条件概率与独立性的判断，理解 P(A|B) 的含义</li>
+    <li>二项分布的识别与期望方差计算（E(X)=np, D(X)=np(1-p)）</li>
+    <li>正态分布的 3σ 原则和对称性应用</li>
+    <li>线性回归方程必过样本中心点 (x̄, ȳ)</li>
+    <li>独立性检验的卡方公式和临界值表</li>
+  </ul>
+</div>
+
+</main>
+</div>
+</body>
+</html>

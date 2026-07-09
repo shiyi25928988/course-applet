@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第四章 机械和功 - 初中物理沪教版</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📚 初中物理</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_sound.html"><span class="ch-num">1</span>声</a></li>
+    <li><a href="ch02_light.html"><span class="ch-num">2</span>光</a></li>
+    <li><a href="ch03_motion_force.html"><span class="ch-num">3</span>运动和力</a></li>
+    <li><a href="ch04_work_machines.html" class="active"><span class="ch-num">4</span>机械和功</a>
+      <div class="subsections">
+        <a href="#sec4-1">4.1 机械能</a><a href="#sec4-2">4.2 机械功</a>
+        <a href="#sec4-3">4.3 简单机械</a><a href="#sec4-4">4.4 功的原理</a>
+        <a href="#exercises">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch05_heat_energy.html"><span class="ch-num">5</span>热与能</a></li>
+    
+  </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-subject">📂 物理目录</a>
+    </div>="page-title">第四章 机械和功</div>
+<div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
+<ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+<li>理解动能和势能的概念及其转化</li><li>掌握功的计算公式 W=Fs</li>
+<li>理解功率的概念</li><li>掌握杠杆、滑轮等简单机械的原理</li>
+<li>理解功的原理：使用任何机械都不省功</li></ul></div>
+
+<h2 id="sec4-1">4.1 机械能</h2>
+<div class="keypoints-grid">
+<div class="kp"><h3>动能</h3>
+<p>物体由于<strong>运动</strong>而具有的能叫做<strong>动能</strong>。</p>
+<p>影响动能大小的因素：<strong>质量</strong>和<strong>速度</strong>。质量越大、速度越大，动能越大。</p>
+<span class="formula">E<sub>k</sub> = ½mv²</span></div>
+<div class="kp"><h3>势能</h3>
+<p><strong>重力势能</strong>：物体由于被<strong>举高</strong>而具有的能。影响因素：质量和高度。</p>
+<p><strong>弹性势能</strong>：物体由于发生<strong>弹性形变</strong>而具有的能。影响因素：形变程度。</p>
+<span class="formula">E<sub>p</sub> = mgh</span></div>
+</div>
+<div class="kp"><h3>机械能守恒</h3>
+<p><strong>动能和势能统称为机械能。在只有动能和势能相互转化的过程中，机械能的总量保持不变。</strong></p>
+<p>实例：滚摆、单摆、自由落体（忽略空气阻力）。</p></div>
+
+<div class="anim-container"><h3 style="margin-bottom:12px;">🎢 动能与势能转化示意</h3>
+<canvas id="energyCanvas" style="width:100%;max-width:680px;height:220px;"></canvas></div>
+
+<h2 id="sec4-2">4.2 机械功</h2>
+<div class="kp"><h3>功</h3>
+<p>如果一个力作用在物体上，物体在这个力的方向上移动了一段距离，就说这个力对物体做了<strong>功</strong>。</p>
+<p><strong>做功的两个必要因素：</strong></p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li>作用在物体上的<strong>力</strong></li><li>物体在力的方向上移动的<strong>距离</strong></li></ul>
+<span class="formula">W = Fs</span>
+<p>单位：<strong>焦耳（J）</strong>，1J = 1N·m。</p></div>
+
+<div class="kp"><h3>功率</h3>
+<p><strong>功率</strong>：表示做功快慢的物理量。单位时间内所做的功。</p>
+<span class="formula">P = W / t</span>
+<p>单位：<strong>瓦特（W）</strong>，1W = 1J/s。常用单位：千瓦（kW）、兆瓦（MW）。</p>
+<p>推导公式：<strong>P = Fv</strong>（当力与运动方向相同时）。</p></div>
+
+<h2 id="sec4-3">4.3 简单机械</h2>
+<div class="keypoints-grid">
+<div class="kp"><h3>杠杆</h3>
+<p>在力的作用下能绕固定点转动的硬棒。</p>
+<p>五要素：<strong>支点、动力、阻力、动力臂、阻力臂</strong>。</p>
+<span class="formula">F₁L₁ = F₂L₂（杠杆平衡条件）</span>
+<p><strong>省力杠杆</strong>：L₁&gt;L₂，省力费距离（撬棒）</p>
+<p><strong>费力杠杆</strong>：L₁&lt;L₂，费力省距离（镊子）</p>
+<p><strong>等臂杠杆</strong>：L₁=L₂，不省不费（天平）</p></div>
+<div class="kp"><h3>滑轮</h3>
+<p><strong>定滑轮</strong>：轴固定不动。不省力，改变力的方向。F=G。</p>
+<p><strong>动滑轮</strong>：轴随物体移动。省一半力，不改变方向。F=G/2（不计摩擦和滑轮重）。</p>
+<p><strong>滑轮组</strong>：定滑轮和动滑轮组合。既可省力又可改变方向。</p>
+<span class="formula">F = G/n （n为承担物重的绳子段数）</span></div>
+</div>
+
+<div class="anim-container"><h3 style="margin-bottom:12px;">⚖️ 杠杆演示</h3>
+<canvas id="leverCanvas" style="width:100%;max-width:680px;height:200px;"></canvas>
+<div class="anim-controls">
+  <button onclick="updateLever(1.5)" style="background:#22c55e;">省力杠杆 L₁&gt;L₂</button>
+  <button onclick="updateLever(1.0)" style="background:#f59e0b;">等臂杠杆 L₁=L₂</button>
+  <button onclick="updateLever(0.6)" style="background:#ef4444;">费力杠杆 L₁&lt;L₂</button>
+</div></div>
+
+<h2 id="sec4-4">4.4 功的原理</h2>
+<div class="kp"><h3>功的原理</h3>
+<p><strong>使用任何机械都不省功。</strong>即使用机械时，人们所做的功，都不会少于直接用手所做的功。</p>
+<p>虽然不省功，但机械可以省力、省距离或改变力的方向，给人们带来方便。</p>
+<p><strong>机械效率：</strong></p>
+<span class="formula">η = W<sub>有用</sub> / W<sub>总</sub> × 100%</span>
+<p>由于额外功的存在，机械效率总小于 1（总小于 100%）。</p></div>
+
+<h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+<div class="exercise"><div class="question"><span class="q-num">1</span>做功的两个必要因素是____。</div>
+<div class="options">
+<label><input type="radio" name="q1" value="A">A. 力和速度</label>
+<label><input type="radio" name="q1" value="B">B. 力和在力的方向上移动的距离</label>
+<label><input type="radio" name="q1" value="C">C. 力和时间</label>
+<label><input type="radio" name="q1" value="D">D. 功率和时间</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="B">✅ B。做功两个必要因素：作用在物体上的力，和物体在力的方向上移动的距离。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>功率是表示____的物理量。</div>
+<div class="options">
+<label><input type="radio" name="q2" value="A">A. 做功多少</label>
+<label><input type="radio" name="q2" value="B">B. 做功快慢</label>
+<label><input type="radio" name="q2" value="C">C. 能量大小</label>
+<label><input type="radio" name="q2" value="D">D. 力的作用效果</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="B">✅ B。功率表示做功快慢，P=W/t。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>杠杆平衡条件是____。</div>
+<div class="options">
+<label><input type="radio" name="q3" value="A">A. F₁=F₂</label>
+<label><input type="radio" name="q3" value="B">B. F₁L₁=F₂L₂</label>
+<label><input type="radio" name="q3" value="C">C. F₁/L₁=F₂/L₂</label>
+<label><input type="radio" name="q3" value="D">D. F₁+L₁=F₂+L₂</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="B">✅ B。杠杆平衡条件（杠杆原理）：动力×动力臂=阻力×阻力臂。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>关于功的原理，正确的说法是____。</div>
+<div class="options">
+<label><input type="radio" name="q4" value="A">A. 使用机械可以省功</label>
+<label><input type="radio" name="q4" value="B">B. 使用任何机械都不省功</label>
+<label><input type="radio" name="q4" value="C">C. 省力的机械一定省功</label>
+<label><input type="radio" name="q4" value="D">D. 机械效率可以大于100%</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="B">✅ B。使用任何机械都不省功。机械效率总小于100%。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>机械能包括____。</div>
+<div class="options">
+<label><input type="radio" name="q5" value="A">A. 动能和内能</label>
+<label><input type="radio" name="q5" value="B">B. 动能和势能</label>
+<label><input type="radio" name="q5" value="C">C. 内能和势能</label>
+<label><input type="radio" name="q5" value="D">D. 电能和动能</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="B">✅ B。机械能包括动能和势能（重力势能和弹性势能）。</div></div>
+</main></div>
+<script src="../assets/js/common.js"></script>
+<script>
+// Energy conversion demo
+(function(){
+  const c=document.getElementById('energyCanvas');
+  if(!c) return;
+  const ctx=c.getContext('2d');
+  c.width=680;c.height=220;
+  const W=680,H=220;
+  let t=0;
+  function draw(){
+    ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+    // Track (parabola)
+    ctx.strokeStyle='#475569';ctx.lineWidth=3;
+    ctx.beginPath();
+    for(let x=50;x<W-50;x++){
+      const y=H*0.7+Math.sin((x-50)/(W-100)*Math.PI)*100;
+      x===50?ctx.moveTo(x,y):ctx.lineTo(x,y);
+    }
+    ctx.stroke();
+    // Ball
+    const phase=(t%200)/200;
+    const bx=50+phase*(W-100);
+    const by=H*0.7+Math.sin(phase*Math.PI)*100;
+    const radius=12+Math.cos(phase*Math.PI)*4;
+
+    ctx.fillStyle='#fbbf24';
+    ctx.beginPath();ctx.arc(bx,by,14,0,Math.PI*2);ctx.fill();
+
+    // Labels
+    ctx.fillStyle='#fff';ctx.font='13px sans-serif';
+    if(phase<0.3){ctx.fillText('势能最大',bx-30,by-25);}
+    else if(phase>0.7){ctx.fillText('势能最大',bx-30,by-25);}
+    else{ctx.fillText('动能最大',bx-25,by-25);}
+
+    ctx.fillStyle='#94a3b8';ctx.font='12px sans-serif';
+    ctx.fillText('势能→动能→势能',W/2-40,H-20);
+    t++;requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// Lever demo
+(function(){
+  const c=document.getElementById('leverCanvas');
+  if(!c) return;
+  const ctx=c.getContext('2d');
+  c.width=680;c.height=200;
+  const W=680,H=200;
+  let l1=200,l2=200;
+  window.updateLever=function(ratio){
+    l1=ratio*200;l2=200;
+    drawLever();
+  };
+  function drawLever(){
+    ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+    const cx=W/2,cy=H-60;
+    // Fulcrum
+    ctx.fillStyle='#64748b';
+    ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(cx-15,cy+25);ctx.lineTo(cx+15,cy+25);ctx.closePath();ctx.fill();
+    // Beam
+    ctx.strokeStyle='#94a3b8';ctx.lineWidth=6;ctx.lineCap='round';
+    ctx.beginPath();ctx.moveTo(cx-l1,cy-5);ctx.lineTo(cx+l2,cy-5);ctx.stroke();
+    // Weights
+    ctx.fillStyle='#ef4444';
+    ctx.fillRect(cx-l1-15,cy-45,30,35);
+    ctx.fillText('F₁',cx-l1-8,cy-50);
+    ctx.fillStyle='#3b82f6';
+    ctx.fillRect(cx+l2-15,cy-45,30,35);
+    ctx.fillText('F₂',cx+l2-8,cy-50);
+    // Arms
+    ctx.strokeStyle='#fbbf24';ctx.lineWidth=1;ctx.setLineDash([4,3]);
+    ctx.beginPath();ctx.moveTo(cx,cy-10);ctx.lineTo(cx-l1,cy-10);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(cx,cy-10);ctx.lineTo(cx+l2,cy-10);ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle='#fbbf24';ctx.font='12px sans-serif';
+    ctx.fillText('L₁='+(l1/10).toFixed(0),cx-l1/2-12,cy-16);
+    ctx.fillText('L₂='+(l2/10).toFixed(0),cx+l2/2-8,cy-16);
+    ctx.fillStyle='#fff';ctx.font='11px sans-serif';
+    ctx.fillText('F₁L₁ = F₂L₂  ⇔  '+(l1/10).toFixed(0)+'×F₁ = '+(l2/10).toFixed(0)+'×F₂',W/2-100,H-12);
+  }
+  drawLever();
+})();
+</script>
+</body>
+</html>

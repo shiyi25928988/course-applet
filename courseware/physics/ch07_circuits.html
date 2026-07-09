@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第七章 电路 - 初中物理沪教版</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.circuit-demo{display:flex;gap:20px;flex-wrap:wrap;}
+.circuit-demo .circuit-box{flex:1;min-width:300px;background:var(--bg);border-radius:10px;padding:16px;}
+.circuit-box canvas{width:100%;height:200px;}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📚 初中物理</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_sound.html"><span class="ch-num">1</span>声</a></li><li><a href="ch02_light.html"><span class="ch-num">2</span>光</a></li>
+    <li><a href="ch03_motion_force.html"><span class="ch-num">3</span>运动和力</a></li>
+    <li><a href="ch04_work_machines.html"><span class="ch-num">4</span>机械和功</a></li>
+    <li><a href="ch05_heat_energy.html"><span class="ch-num">5</span>热与能</a></li>
+    <li><a href="ch06_pressure.html"><span class="ch-num">6</span>压力与压强</a></li>
+    <li><a href="ch07_circuits.html" class="active"><span class="ch-num">7</span>电路</a>
+      <div class="subsections">
+        <a href="#sec7-1">7.1 电流 电压</a><a href="#sec7-2">7.2 欧姆定律</a>
+        <a href="#sec7-3">7.3 串联电路</a><a href="#sec7-4">7.4 并联电路</a>
+        <a href="#exercises">练习题</a>
+      </div>
+    </li>
+    
+  </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+</aside>
+<main class="main">
+<div </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-subject">📂 物理目录</a>
+    </div>="page-title">第七章 电路</div>
+<div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
+<ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+<li>理解电流、电压的概念及单位</li><li>掌握欧姆定律 I=U/R 及其应用</li>
+<li>掌握串联电路和并联电路的特点</li>
+<li>会用电流表和电压表测量</li>
+<li>了解电阻的影响因素：材料、长度、横截面积、温度</li></ul></div>
+
+<h2 id="sec7-1">7.1 电流 电压</h2>
+<div class="keypoints-grid">
+<div class="kp"><h3>电流（I）</h3>
+<p><strong>电流</strong>：电荷的定向移动形成电流。方向规定为<strong>正电荷定向移动的方向</strong>。</p>
+<p>单位：<strong>安培（A）</strong>，常用 mA、μA。</p>
+<p>1A = 1000 mA，1mA = 1000 μA。</p>
+<p>测量工具：<strong>电流表</strong>（串联在电路中，正进负出）。</p>
+<p>形成持续电流的条件：有<strong>电源</strong>、电路<strong>闭合</strong>。</p></div>
+<div class="kp"><h3>电压（U）</h3>
+<p><strong>电压</strong>是形成电流的原因。电源是提供电压的装置。</p>
+<p>单位：<strong>伏特（V）</strong>，常用 kV、mV。</p>
+<p>1kV=1000V，1V=1000mV。</p>
+<p>测量工具：<strong>电压表</strong>（并联在电路中，正进负出）。</p>
+<p>常见电压：干电池1.5V、家庭电路220V、安全电压不高于36V。</p></div>
+<div class="kp"><h3>电阻（R）</h3>
+<p><strong>电阻</strong>：导体对电流的阻碍作用。</p>
+<p>单位：<strong>欧姆（Ω）</strong>，常用kΩ、MΩ。</p>
+<p>影响因素：<strong>材料、长度、横截面积、温度</strong>。</p>
+<p>（长度越长电阻越大，横截面积越大电阻越小）</p>
+<p><strong>滑动变阻器</strong>：通过改变接入电路中电阻线的长度来改变电阻。</p></div>
+</div>
+
+<h2 id="sec7-2">7.2 欧姆定律 电阻</h2>
+<div class="kp"><h3>欧姆定律</h3>
+<p>导体中的电流，跟导体两端的电压成<strong>正比</strong>，跟导体的电阻成<strong>反比</strong>。这是电学最基本的定律。</p>
+<span class="formula">I = U / R</span>
+<p>变形：U = IR，R = U/I（R是导体本身的性质，与U和I无关）。</p></div>
+
+<h2 id="sec7-3">7.3 串联电路</h2>
+<div class="kp"><h3>串联电路特点</h3>
+<p>串联电路——各元件<strong>逐个顺次</strong>连接。</p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li><strong>电流</strong>：I = I₁ = I₂（各处电流相等）</li>
+<li><strong>电压</strong>：U = U₁ + U₂（总电压等于各部分电压之和）</li>
+<li><strong>电阻</strong>：R = R₁ + R₂（总电阻等于各电阻之和）</li>
+<li>电压分配：U₁/U₂ = R₁/R₂（分压原理）</li></ul></div>
+
+<h2 id="sec7-4">7.4 并联电路</h2>
+<div class="kp"><h3>并联电路特点</h3>
+<p>并联电路——各元件<strong>并列</strong>连接在电路中。</p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li><strong>电流</strong>：I = I₁ + I₂（干路电流等于各支路电流之和）</li>
+<li><strong>电压</strong>：U = U₁ = U₂（各支路电压相等，等于电源电压）</li>
+<li><strong>电阻</strong>：1/R = 1/R₁ + 1/R₂（总电阻的倒数等于各电阻倒数之和）</li>
+<li>电流分配：I₁/I₂ = R₂/R₁（分流原理）</li></ul></div>
+
+<div class="anim-container"><h3 style="margin-bottom:12px;">⚡ 串联与并联电路对比</h3>
+<div class="circuit-demo">
+<div class="circuit-box"><h4 style="margin-bottom:8px;color:var(--primary);">串联电路</h4>
+<canvas id="seriesCanvas"></canvas>
+<p style="font-size:.8rem;color:var(--text-secondary);">R总=R₁+R₂, I处处相等, U=U₁+U₂</p></div>
+<div class="circuit-box"><h4 style="margin-bottom:8px;color:var(--success);">并联电路</h4>
+<canvas id="parallelCanvas"></canvas>
+<p style="font-size:.8rem;color:var(--text-secondary);">1/R总=1/R₁+1/R₂, U处处相等, I=I₁+I₂</p></div>
+</div></div>
+
+<h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+<div class="exercise"><div class="question"><span class="q-num">1</span>欧姆定律的表达式是____。</div>
+<div class="options">
+<label><input type="radio" name="q1" value="A">A. U = IR</label><label><input type="radio" name="q1" value="B">B. I = U/R</label>
+<label><input type="radio" name="q1" value="C">C. R = U/I</label><label><input type="radio" name="q1" value="D">D. P = UI</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="B">✅ B。欧姆定律基本表达式为I=U/R，变形得U=IR和R=U/I。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>在串联电路中，总电阻R与各电阻R₁、R₂的关系是____。</div>
+<div class="options">
+<label><input type="radio" name="q2" value="A">A. R=R₁·R₂</label><label><input type="radio" name="q2" value="B">B. R=R₁+R₂</label>
+<label><input type="radio" name="q2" value="C">C. 1/R=1/R₁+1/R₂</label><label><input type="radio" name="q2" value="D">D. R=R₁-R₂</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="B">✅ B。串联总电阻R=R₁+R₂，并联则是1/R=1/R₁+1/R₂。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>我国家庭电路的电压是____。</div>
+<div class="options">
+<label><input type="radio" name="q3" value="A">A. 1.5V</label><label><input type="radio" name="q3" value="B">B. 36V</label>
+<label><input type="radio" name="q3" value="C">C. 220V</label><label><input type="radio" name="q3" value="D">D. 380V</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="C">✅ C。我国家庭电路电压为220V。安全电压不高于36V。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>并联电路中，各支路两端的电压____。</div>
+<div class="options">
+<label><input type="radio" name="q4" value="A">A. 等于零</label><label><input type="radio" name="q4" value="B">B. 不相等</label>
+<label><input type="radio" name="q4" value="C">C. 都相等</label><label><input type="radio" name="q4" value="D">D. 等于干路电压的一半</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="C">✅ C。并联电路各支路电压相等U=U₁=U₂，干路电流I=I₁+I₂。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>一节新干电池的电压约为____。</div>
+<div class="options">
+<label><input type="radio" name="q5" value="A">A. 1.5V</label><label><input type="radio" name="q5" value="B">B. 2V</label>
+<label><input type="radio" name="q5" value="C">C. 3.7V</label><label><input type="radio" name="q5" value="D">D. 12V</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="A">✅ A。一节新干电池电压为1.5V，铅蓄电池为2V，锂电池3.7V。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>导体的电阻与下列哪个因素无关？</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 材料</label><label><input type="radio" name="q6" value="B">B. 长度</label>
+<label><input type="radio" name="q6" value="C">C. 横截面积</label><label><input type="radio" name="q6" value="D">D. 两端电压</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="D">✅ D。电阻是导体本身的性质，与材料、长度、横截面积和温度有关，与电压和电流无关。</div></div>
+</main></div>
+<script src="../assets/js/common.js"></script>
+<script>
+function drawCircuit(canvasId,isSeries){
+  const c=document.getElementById(canvasId);if(!c)return;
+  const ctx=c.getContext('2d');
+  c.width=c.parentElement.clientWidth-20;c.height=200;
+  const W=c.width,H=c.height;
+  ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+  ctx.strokeStyle='#60a5fa';ctx.lineWidth=2;ctx.lineCap='round';
+
+  if(isSeries){
+    // Series circuit
+    ctx.beginPath();ctx.moveTo(30,H/2);ctx.lineTo(60,H/2); // left wire
+    // Battery
+    ctx.moveTo(60,H/2-15);ctx.lineTo(60,H/2+15);
+    ctx.moveTo(70,H/2-10);ctx.lineTo(70,H/2+10);
+    ctx.stroke();ctx.fillStyle='#fff';ctx.font='10px sans-serif';ctx.fillText('电源',63,H/2+30);
+    ctx.beginPath();ctx.strokeStyle='#60a5fa';
+    ctx.moveTo(70,H/2);ctx.lineTo(120,H/2);
+    // R1
+    ctx.moveTo(120,H/2-30);ctx.lineTo(120,H/2+30);
+    ctx.fillStyle='#fff';ctx.font='10px sans-serif';ctx.fillText('R₁',115,H/2-35);
+    ctx.beginPath();ctx.strokeStyle='#60a5fa';
+    for(let i=0;i<3;i++){ctx.moveTo(120-15,H/2-20+i*20);ctx.lineTo(120+15,H/2-20+i*20);}
+    ctx.stroke();
+    ctx.beginPath();ctx.strokeStyle='#60a5fa';ctx.moveTo(135,H/2);ctx.lineTo(170,H/2);
+    // R2
+    ctx.moveTo(170,H/2-30);ctx.lineTo(170,H/2+30);
+    for(let i=0;i<3;i++){ctx.moveTo(170-15,H/2-20+i*20);ctx.lineTo(170+15,H/2-20+i*20);}
+    ctx.stroke();ctx.fillStyle='#fff';ctx.font='10px sans-serif';ctx.fillText('R₂',165,H/2-35);
+    // Bulb
+    ctx.beginPath();ctx.strokeStyle='#60a5fa';ctx.moveTo(185,H/2);ctx.lineTo(210,H/2);
+    ctx.strokeStyle='#fbbf24';ctx.beginPath();ctx.arc(225,H/2,15,0,Math.PI*2);ctx.stroke();
+    ctx.moveTo(225,H/2-15);ctx.lineTo(225,H/2+15);ctx.moveTo(210,H/2);ctx.lineTo(240,H/2);ctx.stroke();
+    ctx.beginPath();ctx.strokeStyle='#60a5fa';ctx.moveTo(240,H/2);ctx.lineTo(270,H/2);
+    // Switch
+    ctx.moveTo(270,H/2-5);ctx.lineTo(285,H/2-5);ctx.lineTo(285,H/2+20);ctx.stroke();
+    ctx.moveTo(300,H/2-5);ctx.lineTo(300,H/2+15);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(300,H/2);ctx.lineTo(W-30,H/2);ctx.stroke();
+  } else {
+    // Parallel circuit
+    ctx.beginPath();ctx.moveTo(30,H/2);ctx.lineTo(60,H/2);
+    // Battery
+    ctx.moveTo(60,H/2-15);ctx.lineTo(60,H/2+15);ctx.moveTo(70,H/2-10);ctx.lineTo(70,H/2+10);
+    ctx.stroke();ctx.fillStyle='#fff';ctx.font='10px sans-serif';ctx.fillText('电源',63,H/2+30);
+    // Main line
+    ctx.beginPath();ctx.strokeStyle='#60a5fa';ctx.moveTo(70,H/2);ctx.lineTo(110,H/2);
+    ctx.moveTo(110,H/2);ctx.lineTo(110,H/2-50);ctx.lineTo(130,H/2-50);// branch 1 start
+    // R1 branch
+    ctx.moveTo(130,H/2-80);ctx.lineTo(130,H/2-20);
+    for(let i=0;i<3;i++){ctx.moveTo(115,H/2-70+i*20);ctx.lineTo(145,H/2-70+i*20);}
+    ctx.stroke();ctx.fillStyle='#fff';ctx.font='10px sans-serif';ctx.fillText('R₁',125,H/2-95);
+    ctx.beginPath();ctx.strokeStyle='#60a5fa';ctx.moveTo(130,H/2-50);ctx.lineTo(170,H/2-50);
+    ctx.moveTo(110,H/2);ctx.lineTo(110,H/2+50);ctx.lineTo(130,H/2+50); // branch 2 start
+    // R2 branch
+    ctx.moveTo(130,H/2+20);ctx.lineTo(130,H/2+80);
+    for(let i=0;i<3;i++){ctx.moveTo(115,H/2+30+i*20);ctx.lineTo(145,H/2+30+i*20);}
+    ctx.stroke();ctx.fillStyle='#fff';ctx.font='10px sans-serif';ctx.fillText('R₂',125,H/2+95);
+    // Merge
+    ctx.beginPath();ctx.strokeStyle='#60a5fa';ctx.moveTo(130,H/2+50);ctx.lineTo(170,H/2+50);
+    ctx.moveTo(170,H/2-50);ctx.lineTo(170,H/2+50);ctx.moveTo(170,H/2);ctx.lineTo(210,H/2);
+    // Bulb
+    ctx.strokeStyle='#fbbf24';ctx.beginPath();ctx.arc(225,H/2,15,0,Math.PI*2);ctx.stroke();
+    ctx.moveTo(225,H/2-15);ctx.lineTo(225,H/2+15);ctx.moveTo(210,H/2);ctx.lineTo(240,H/2);ctx.stroke();
+    // Switch
+    ctx.beginPath();ctx.strokeStyle='#60a5fa';ctx.moveTo(240,H/2);ctx.lineTo(270,H/2);
+    ctx.moveTo(270,H/2-5);ctx.lineTo(285,H/2-5);ctx.lineTo(285,H/2+20);ctx.stroke();
+    ctx.moveTo(300,H/2-5);ctx.lineTo(300,H/2+15);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(300,H/2);ctx.lineTo(W-30,H/2);ctx.stroke();
+  }
+  // Current direction arrows
+  ctx.fillStyle='#22c55e';ctx.font='12px sans-serif';
+  ctx.fillText(isSeries?'串联：I₁=I₂=I':'并联：I=I₁+I₂',W-160,H-15);
+}
+setTimeout(()=>{drawCircuit('seriesCanvas',true);drawCircuit('parallelCanvas',false);},100);
+</script>
+</body>
+</html>

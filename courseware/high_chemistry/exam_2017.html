@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>2017年上海高考化学真题</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #059669, #0d9488);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.year-header { background:linear-gradient(135deg,#059669,#0d9488); color:#fff; padding:24px; border-radius:12px; margin-bottom:24px; }
+.section-title { background:#f0fdf4; padding:10px 16px; border-left:4px solid #059669; margin:24px 0 16px; font-weight:600; }
+.question { padding: 0 16px 16px 16px; }
+.options { padding-left: 32px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">返回高中化学主页</a><a href="exam_collection.html">真题汇编目录</a></div>
+<div class="year-header"><h1>🧪 2017年上海市普通高等学校招生全国统一考试</h1><h2>化学试卷</h2><p>满分100分 · 考试时间60分钟</p></div>
+
+<div class="section-title">一、选择题（本大题共20题，每题2分，满分40分）</div>
+
+<div class="question">
+<span class="q-num">1</span>下列物质中，属于电解质的是（ ）
+<div class="options">
+<label><input type="radio" name="q1" value="A">A. 铜</label>
+<label><input type="radio" name="q1" value="B">B. 蔗糖</label>
+<label><input type="radio" name="q1" value="C">C. 氯化钠</label>
+<label><input type="radio" name="q1" value="D">D. 酒精</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="C">
+  <div class="answer-value"><strong>答案：</strong>C</div>
+  <div class="answer-solution"><strong>解析：</strong>电解质是在水溶液或熔融状态下能导电的化合物。铜是单质，蔗糖、酒精是非电解质，氯化钠是电解质。</div>
+</div>
+</div>
+<div class="question">
+<span class="q-num">2</span>下列气体中，不能用浓硫酸干燥的是（ ）
+<div class="options">
+<label><input type="radio" name="q2" value="A">A. H₂</label>
+<label><input type="radio" name="q2" value="B">B. CO₂</label>
+<label><input type="radio" name="q2" value="C">C. NH₃</label>
+<label><input type="radio" name="q2" value="D">D. O₂</label>
+</div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="C">
+  <div class="answer-value"><strong>答案：</strong>C</div>
+  <div class="answer-solution"><strong>解析：</strong>浓硫酸具有强氧化性和酸性，不能干燥碱性气体（如 NH₃）和还原性气体（如 H₂S）。</div>
+</div>
+</div>
+<div class="section-title">二、综合题（本大题共4题，满分60分）</div>
+
+<div class="question">
+<span class="q-num">13</span>0.5 mol H₂O 中含有 ______ 个水分子。
+<button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+<div class="answer" id="answer-13" data-correct="3.01×10²³">
+  <div class="answer-value"><strong>答案：</strong>3.01×10²³（或 0.5Nₐ）</div>
+  <div class="answer-solution"><strong>解析：</strong>N = n·Nₐ = 0.5 × 6.02×10²³ = 3.01×10²³</div>
+</div>
+</div>
+<div class="question">
+<span class="q-num">21</span>本题满分15分
+<br>将 5.6 g 铁粉投入到 100 mL 2 mol/L 的稀硫酸中充分反应。
+求：（1）铁粉的物质的量；
+（2）生成氢气的体积（标准状况下）。
+<button class="answer-btn" onclick="showAnswer(21)">查看解析</button>
+<div class="answer" id="answer-21" data-correct="1">
+  <div class="answer-value"><strong>答案：</strong>(1) 0.1 mol；(2) 2.24 L</div>
+  <div class="answer-solution">
+    <strong>解析：</strong>
+<br><br>（1）n(Fe) = m/M = 5.6 g / 56 g/mol = 0.1 mol
+<br><br>（2）Fe + H₂SO₄ = FeSO₄ + H₂↑
+<br>n(H₂SO₄) = 0.1 L × 2 mol/L = 0.2 mol，硫酸过量
+<br>n(H₂) = n(Fe) = 0.1 mol
+<br>V(H₂) = 0.1 mol × 22.4 L/mol = 2.24 L
+
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2018年上海中考数学真题</title>
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <script src="../assets/js/common.js"></script>
+  <style>
+    .year-header { background:linear-gradient(135deg,#7c3aed,#5b21b6); color:#fff; padding:20px; border-radius:12px; margin-bottom:24px; }
+    .section-title { background:#f8fafc; padding:12px 16px; border-left:4px solid #7c3aed; margin:24px 0 16px; font-weight:600; }
+    .diagram-box { background:#fafbfc; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin:12px 0; text-align:center; }
+    .score { color:#64748b; font-size:0.9em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-links">
+      <a href="../index.html">← 返回数学主页</a>
+      <a href="exam_collection.html">← 真题汇编目录</a>
+    </div>
+
+    <div class="year-header">
+      <h1>📐 2018年上海市初中毕业统一学业考试</h1>
+      <h2>数学试卷</h2>
+      <p>满分150分 · 考试时间100分钟</p>
+    </div>
+
+    <div class="section-title">一、选择题（本大题共6题，每题4分，满分24分）</div>
+
+    <div class="question">
+      <span class="q-num">1</span>
+      计算√18 - 2√(1/2)的结果是（ ）
+      <div class="options">
+        <label><input type="radio" name="q1" value="A">A. 4</label>
+        <label><input type="radio" name="q1" value="B">B. 3√2</label>
+        <label><input type="radio" name="q1" value="C">C. 2√2</label>
+        <label><input type="radio" name="q1" value="D">D. √2</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+      <div class="answer" id="answer-1" data-correct="C">✅ C。√18 = 3√2，2√(1/2) = √2，所以3√2 - √2 = 2√2。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">2</span>
+      下列对一元二次方程x² + x - 3 = 0根的情况的判断，正确的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q2" value="A">A. 有两个不相等的实数根</label>
+        <label><input type="radio" name="q2" value="B">B. 有两个相等的实数根</label>
+        <label><input type="radio" name="q2" value="C">C. 有且只有一个实数根</label>
+        <label><input type="radio" name="q2" value="D">D. 没有实数根</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+      <div class="answer" id="answer-2" data-correct="A">✅ A。Δ = 1² - 4×1×(-3) = 1 + 12 = 13 > 0，所以有两个不相等的实数根。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">3</span>
+      下列图形中的一次函数y = -x - 2的图像大致是（ ）
+      <div class="diagram-box" style="display:flex; justify-content:space-around; gap:8px;">
+        <div>
+          <svg width="90" height="80" viewBox="0 0 90 80">
+            <line x1="10" y1="40" x2="80" y2="40" stroke="#94a3b8"/>
+            <line x1="45" y1="10" x2="45" y2="70" stroke="#94a3b8"/>
+            <line x1="15" y1="15" x2="75" y2="65" stroke="#7c3aed" stroke-width="2"/>
+            <text x="30" y="88" font-size="10">A</text>
+          </svg>
+        </div>
+        <div>
+          <svg width="90" height="80" viewBox="0 0 90 80">
+            <line x1="10" y1="40" x2="80" y2="40" stroke="#94a3b8"/>
+            <line x1="45" y1="10" x2="45" y2="70" stroke="#94a3b8"/>
+            <line x1="15" y1="65" x2="75" y2="15" stroke="#7c3aed" stroke-width="2"/>
+            <text x="30" y="88" font-size="10">B</text>
+          </svg>
+        </div>
+        <div>
+          <svg width="90" height="80" viewBox="0 0 90 80">
+            <line x1="10" y1="40" x2="80" y2="40" stroke="#94a3b8"/>
+            <line x1="45" y1="10" x2="45" y2="70" stroke="#94a3b8"/>
+            <line x1="15" y1="65" x2="75" y2="55" stroke="#7c3aed" stroke-width="2"/>
+            <text x="30" y="88" font-size="10">C</text>
+          </svg>
+        </div>
+        <div>
+          <svg width="90" height="80" viewBox="0 0 90 80">
+            <line x1="10" y1="40" x2="80" y2="40" stroke="#94a3b8"/>
+            <line x1="45" y1="10" x2="45" y2="70" stroke="#94a3b8"/>
+            <line x1="25" y1="15" x2="75" y2="65" stroke="#7c3aed" stroke-width="2"/>
+            <text x="30" y="88" font-size="10">D</text>
+          </svg>
+        </div>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+      <div class="answer" id="answer-3" data-correct="B">✅ B。k = -1 < 0，b = -2 < 0，直线从左上向右下，与y轴负半轴相交，经过二、三、四象限。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">4</span>
+      某校男生、女生以及教师人数的扇形统计图如图所示，若该校男生、女生以及教师的总人数为1200人，则根据图中信息，可知该校教师共有（ ）
+      <div class="diagram-box">
+        <svg width="180" height="150" viewBox="0 0 180 150">
+          <circle cx="90" cy="75" r="60" fill="none" stroke="#334155" stroke-width="1.5"/>
+          <path d="M90,15 L90,75 A60,60 0 0,1 33,33 Z" fill="#3b82f6" opacity="0.8"/>
+          <path d="M33,33 L90,75 A60,60 0 0,1 48,129 Z" fill="#10b981" opacity="0.8"/>
+          <path d="M48,129 L90,75 A60,60 0 0,1 90,15 Z" fill="#f59e0b" opacity="0.8"/>
+          <text x="110" y="30" font-size="11" fill="#3b82f6">男生 46%</text>
+          <text x="15" y="100" font-size="11" fill="#10b981">女生 45%</text>
+          <text x="100" y="115" font-size="11" fill="#f59e0b">教师</text>
+        </svg>
+      </div>
+      <div class="options">
+        <label><input type="radio" name="q4" value="A">A. 108人</label>
+        <label><input type="radio" name="q4" value="B">B. 106人</label>
+        <label><input type="radio" name="q4" value="C">C. 104人</label>
+        <label><input type="radio" name="q4" value="D">D. 102人</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+      <div class="answer" id="answer-4" data-correct="A">✅ A。教师占比 = 100% - 46% - 45% = 9%。教师人数 = 1200 × 9% = 108人。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">5</span>
+      已知平行四边形ABCD，下列条件中，不能判定这个平行四边形为矩形的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q5" value="A">A. ∠A = ∠B</label>
+        <label><input type="radio" name="q5" value="B">B. ∠A = ∠C</label>
+        <label><input type="radio" name="q5" value="C">C. AC = BD</label>
+        <label><input type="radio" name="q5" value="D">D. AB⊥BC</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+      <div class="answer" id="answer-5" data-correct="B">✅ B。∠A = ∠C是平行四边形的基本性质，不能判定为矩形。A：∠A+∠B=180°且∠A=∠B→∠A=90°；C：对角线相等的平行四边形是矩形；D：有一个直角→矩形。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">6</span>
+      如图，已知∠POQ = 30°，点A、B在射线OQ上（点A在点O、B之间），半径长为2的⊙A与直线OP相切，半径长为3的⊙B与⊙A相交，那么OB的取值范围是（ ）
+      <div class="diagram-box">
+        <svg width="220" height="140" viewBox="0 0 220 140">
+          <line x1="30" y1="110" x2="200" y2="110" stroke="#334155" stroke-width="2"/>
+          <line x1="30" y1="110" x2="190" y2="50" stroke="#334155" stroke-width="2"/>
+          <circle cx="80" cy="110" r="20" fill="none" stroke="#7c3aed" stroke-width="2"/>
+          <circle cx="140" cy="110" r="30" fill="none" stroke="#e11d48" stroke-width="2"/>
+          <text x="20" y="118" font-size="12">O</text>
+          <text x="75" y="125" font-size="12" fill="#7c3aed">A</text>
+          <text x="135" y="125" font-size="12" fill="#e11d48">B</text>
+          <text x="195" y="48" font-size="12">P</text>
+          <text x="205" y="118" font-size="12">Q</text>
+          <text x="50" y="95" font-size="10">30°</text>
+        </svg>
+      </div>
+      <div class="options">
+        <label><input type="radio" name="q6" value="A">A. 5 < OB < 9</label>
+        <label><input type="radio" name="q6" value="B">B. 4 < OB < 9</label>
+        <label><input type="radio" name="q6" value="C">C. 3 < OB < 7</label>
+        <label><input type="radio" name="q6" value="D">D. 2 < OB < 7</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+      <div class="answer" id="answer-6" data-correct="A">✅ A。⊙A与OP相切→OA = 2r = 4（30°对边是半径2，斜边OA = 2×2 = 4）。两圆相交：|3 - 2| < AB < 3 + 2 → 1 < AB < 5。OB = OA + AB = 4 + AB，所以5 < OB < 9。</div>
+    </div>
+
+    <div class="section-title">二、填空题（本大题共12题，每题4分，满分48分）</div>
+
+    <div class="question">
+      <span class="q-num">7</span>
+      -8的立方根是 ______。
+      <button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+      <div class="answer" id="answer-7" data-correct="-2">-2。因为(-2)³ = -8。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">8</span>
+      计算：(a + 1)² - a² = ______。
+      <button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+      <div class="answer" id="answer-8" data-correct="2a+1">2a + 1。(a+1)² - a² = a² + 2a + 1 - a² = 2a + 1。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">9</span>
+      方程组 { x + y = 1, 2x - y = 5 } 的解是 ______。
+      <button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+      <div class="answer" id="answer-9" data-correct="x=2,y=-1">{x=2, y=-1}。两式相加：3x = 6 → x = 2，代入得y = -1。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">10</span>
+      某商品原价为a元，如果按原价的八折销售，那么售价是 ______ 元。（用含a的代数式表示）
+      <button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+      <div class="answer" id="answer-10" data-correct="0.8a">0.8a。八折即原价的80%。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">11</span>
+      已知反比例函数y = (k - 1)/x（k是常数，k≠1）的图像有一支在第二象限，那么k的取值范围是 ______。
+      <button class="answer-btn" onclick="showAnswer(11)">查看答案</button>
+      <div class="answer" id="answer-11" data-correct="k<1">k < 1。反比例函数有一支在第二象限→k - 1 < 0→k < 1。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">12</span>
+      某校学生自主建立了一个学习用品义卖平台，已知九年级200名学生义卖所得金额的频数分布直方图如图所示，那么20-30元这个小组的组频率是 ______。
+      <div class="diagram-box">
+        <svg width="240" height="140" viewBox="0 0 240 140">
+          <line x1="30" y1="120" x2="220" y2="120" stroke="#94a3b8"/>
+          <line x1="30" y1="120" x2="30" y2="20" stroke="#94a3b8"/>
+          <rect x="30" y="70" width="45" height="50" fill="#7c3aed" opacity="0.8"/>
+          <rect x="75" y="50" width="45" height="70" fill="#7c3aed" opacity="0.8"/>
+          <rect x="120" y="80" width="45" height="40" fill="#7c3aed" opacity="0.8"/>
+          <rect x="165" y="100" width="45" height="20" fill="#7c3aed" opacity="0.8"/>
+          <text x="40" y="135" font-size="10">0-10</text>
+          <text x="85" y="135" font-size="10">10-20</text>
+          <text x="130" y="135" font-size="10">20-30</text>
+          <text x="175" y="135" font-size="10">30-40</text>
+          <text x="12" y="75" font-size="10">50</text>
+          <text x="12" y="55" font-size="10">70</text>
+          <text x="12" y="85" font-size="10">40</text>
+          <text x="12" y="105" font-size="10">20</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(12)">查看答案</button>
+      <div class="answer" id="answer-12" data-correct="0.25">0.25。20-30元的频数是50人，总人数200，频率 = 50/200 = 0.25。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">13</span>
+      从 2/7，π，√3 这三个数中选一个数，选出的这个数是无理数的概率为 ______。
+      <button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+      <div class="answer" id="answer-13" data-correct="2/3">2/3。三个数中π和√3是无理数，概率 = 2/3。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">14</span>
+      如果一次函数y = kx + 3（k是常数，k≠0）的图像经过点(1, 0)，那么y的值随x的增大而 ______。（填"增大"或"减小"）
+      <button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+      <div class="answer" id="answer-14" data-correct="减小">减小。代入(1,0)：0 = k + 3→k = -3 < 0，所以y随x增大而减小。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">15</span>
+      如图，已知平行四边形ABCD，E是边BC的中点，联结DE并延长，与AB的延长线交于点F。设向量DA = **a**，向量DC = **b**，那么向量DF = ______（用**a**、**b**表示）。
+      <div class="diagram-box">
+        <svg width="220" height="130" viewBox="0 0 220 130">
+          <line x1="50" y1="30" x2="150" y2="30" stroke="#334155" stroke-width="2"/>
+          <line x1="30" y1="90" x2="130" y2="90" stroke="#334155" stroke-width="2"/>
+          <line x1="50" y1="30" x2="30" y2="90" stroke="#334155" stroke-width="2"/>
+          <line x1="150" y1="30" x2="130" y2="90" stroke="#334155" stroke-width="2"/>
+          <line x1="90" y1="90" x2="190" y2="30" stroke="#e11d48" stroke-width="2"/>
+          <line x1="150" y1="30" x2="190" y2="30" stroke="#334155" stroke-width="1.5" stroke-dasharray="4"/>
+          <text x="42" y="26" font-size="12">A</text>
+          <text x="155" y="26" font-size="12">B</text>
+          <text x="195" y="26" font-size="12">F</text>
+          <text x="22" y="95" font-size="12">D</text>
+          <text x="135" y="95" font-size="12">C</text>
+          <text x="85" y="95" font-size="12">E</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(15)">查看答案</button>
+      <div class="answer" id="answer-15" data-correct="2a+b">**DF** = 2**a** + **b**。△DCE≌△FBE，所以BF = DC = b。DF = DA + AF = a + 2b？或DF = 2DA + DC = 2a + b。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">16</span>
+      通过画出多边形的对角线，可以把多边形内角和问题转化为三角形内角和问题。如果从某个多边形的一个顶点出发的对角线共有2条，那么该多边形的内角和是 ______ 度。
+      <button class="answer-btn" onclick="showAnswer(16)">查看答案</button>
+      <div class="answer" id="answer-16" data-correct="540">540。从一个顶点出发有2条对角线，说明该多边形是5边形。内角和 = (5 - 2)×180° = 540°。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">17</span>
+      如图，在正方形ABCD中，E是边AD的中点。把△ABE沿直线BE翻折，点A落在点F处，联结DF，那么∠EDF的正切值是 ______。
+      <div class="diagram-box">
+        <svg width="180" height="150" viewBox="0 0 180 150">
+          <rect x="30" y="30" width="120" height="100" fill="none" stroke="#334155" stroke-width="2"/>
+          <line x1="90" y1="30" x2="150" y2="80" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="90" y1="30" x2="150" y2="80" stroke="#e11d48" stroke-width="1.5" stroke-dasharray="4"/>
+          <circle cx="90" cy="30" r="3" fill="#e11d48"/>
+          <text x="20" y="26" font-size="12">A</text>
+          <text x="155" y="26" font-size="12">B</text>
+          <text x="155" y="135" font-size="12">C</text>
+          <text x="20" y="135" font-size="12">D</text>
+          <text x="85" y="20" font-size="12" fill="#7c3aed">E</text>
+          <text x="95" y="85" font-size="12" fill="#e11d48">F</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(17)">查看答案</button>
+      <div class="answer" id="answer-17" data-correct="2">2。设正方形边长为2，AE = ED = 1，EF = 1。由折叠性质，∠AEB = ∠FEB。AE = EF = ED，所以△EDF是等腰三角形。∠EDF = ∠EFD，∠AEF = ∠EDF + ∠EFD = 2∠EDF。又∠AEB = ∠EDF，tan∠AEB = AB/AE = 2。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">18</span>
+      对于一个位置确定的图形，如果它的所有点都在一个水平放置的矩形内部或边上，且该图形与矩形的每条边都至少有一个公共点，那么这个矩形水平方向的边长称为该图形的宽，铅垂方向的边长称为该矩形的高。如图，菱形ABCD的边长为1，边AB水平放置。如果该菱形的高是宽的2/3，那么它的宽的值是 ______。
+      <button class="answer-btn" onclick="showAnswer(18)">查看答案</button>
+      <div class="answer" id="answer-18" data-correct="18/13">18/13。设菱形的高为h，宽为w，h = (2/3)w。设菱形对角线水平分量为a，垂直分量为b。由题意：a² + b² = 1，a = w - 1，b = h = (2/3)w。解得：(w - 1)² + (4w²/9) = 1 → w² - 2w + 1 + 4w²/9 = 1 → 13w²/9 - 2w = 0 → w(13w - 18) = 0 → w = 18/13。</div>
+    </div>
+
+    <div style="margin-top:40px; padding:16px; background:#f8fafc; border-radius:8px; text-align:center;">
+      <p>📌 <strong>2018年真题已完成</strong>，后续年份完整试卷请见各年份单独HTML文件。</p>
+    </div>
+
+  </div>
+</body>
+</html>

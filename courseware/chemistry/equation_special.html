@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>初中化学方程式专项</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.hero {background:linear-gradient(135deg,#16a34a,#15803d);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px}
+.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.q-num {display:inline-block;background:#16a34a;color:#fff;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;font-weight:700;margin-right:10px}
+.q-title {display:inline-block;font-weight:600;color:#1e293b;font-size:1.05rem}
+.q-content {margin-top:16px;line-height:1.8;color:#374151}
+.answer-btn {margin-top:16px;padding:10px 20px;background:#16a34a;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.95rem}
+.answer {display:none;margin-top:16px;padding:16px;background:#dcfce7;border-radius:8px;border-left:3px solid #16a34a}
+.answer.show {display:block}
+.answer-value {font-weight:600;color:#166534;margin-bottom:8px}
+.answer-solution {color:#14532d;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 初中化学</a>&nbsp;|&nbsp;<a href="../exam_bank.html">← 题库中心</a></div>
+<div class="hero"><h1>📝 初中化学方程式专项</h1><p>必考化学方程式汇总 · 配平训练 · 根据化学方程式计算 · 共 100 个方程式</p></div>
+<div class="question"><span class="q-num">1</span><span class="q-title">氧气制取氧气</span><div class="q-content">
+<p>写出实验室用高锰酸钾制取氧气的化学方程式：</p>
+<textarea style="width:100%;padding:12px;border:1px solid #d1d5db;border-radius:6px;font-size:1rem;margin-top:10px" rows="2" placeholder="请写出化学方程式..."></textarea>
+</div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1"><div class="answer-value">答案：2KMnO₄ △ K₂MnO₄ + MnO₂ + O₂↑</div>
+<div class="answer-solution"><strong>配平思路：</strong><br>先配平 K 原子，然后配平 Mn 原子，最后配平 O 原子。注意加热条件为加热（△），氧气要标气体符号（↑）。</div></div></div>
+<div class="question"><span class="q-num">2</span><span class="q-title">中和反应</span><div class="q-content">
+<p>写出盐酸与氢氧化钠反应的化学方程式：</p>
+<textarea style="width:100%;padding:12px;border:1px solid #d1d5db;border-radius:6px;font-size:1rem;margin-top:10px" rows="2" placeholder="请写出化学方程式..."></textarea>
+</div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2"><div class="answer-value">答案：HCl + NaOH = NaCl + H₂O</div>
+<div class="answer-solution"><strong>反应类型：</strong>这是典型的中和反应，属于复分解反应。酸中的 H⁺ 与碱中的 OH⁻ 结合生成水，酸根离子与金属离子结合生成盐。</div></div></div>
+<div style="text-align:center;padding:20px;color:#64748b;background:#fff;border-radius:10px">
+<strong>更多方程式正在整理中...</strong><br>完整 100 个化学方程式正在陆续添加
+</div>
+</div></body></html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>代数与数列 · 高中数学</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.back-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.back-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+    transition: all 0.3s ease;
+}
+.back-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+    text-decoration: none !important;
+}
+.back-links a::before {
+    content: "←";
+    margin-right: 6px;
+    font-weight: bold;
+}
+.al-hero { background:linear-gradient(135deg,#7c3aed,#a855f7); color:#fff; border-radius:20px; padding:32px 24px; margin-bottom:24px; }
+.al-hero h1 { font-size:1.6rem; }
+.ch-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:28px; }
+.ch-card { background:#fff; border-radius:14px; padding:24px; text-decoration:none; box-shadow:0 2px 8px rgba(0,0,0,.06); border-left:4px solid #7c3aed; transition:transform .2s; display:block; color:var(--text); }
+.ch-card:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,.1); }
+.ch-card h3 { font-size:1.1rem; margin-bottom:8px; color:#7c3aed; }
+.ch-card .desc { font-size:.85rem; color:var(--text-secondary); line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+<h3>🔢 代数与数列</h3>
+<ul class="chapter-list">
+<li><a href="a01_ineq.html"><span class="ch-num">1</span>不等式</a></li>
+<li><a href="a02_sequence.html"><span class="ch-num">2</span>数列</a></li>
+<li><a href="a03_complex.html"><span class="ch-num">3</span>复数</a></li>
+</ul>
+<div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+  <a href="../index.html" class="back-home">🏠 返回高中数学</a>
+</div>
+</aside>
+<main class="main">
+<div class="al-hero">
+<h1>🔢 高中代数与数列</h1>
+<p>不等式 · 数列 · 复数 · 含知识讲解、公式速查、高考真题</p>
+</div>
+<div class="ch-grid">
+<a href="a01_ineq.html" class="ch-card">
+<h3>第一章 不等式</h3>
+<div class="desc">不等式的性质 · 一元二次不等式 · 基本不等式 · 线性规划 · 绝对值不等式</div>
+</a>
+<a href="a02_sequence.html" class="ch-card">
+<h3>第二章 数列</h3>
+<div class="desc">等差数列 · 等比数列 · 数列求和方法 · 递推数列 · 数列综合应用</div>
+</a>
+<a href="a03_complex.html" class="ch-card">
+<h3>第三章 复数</h3>
+<div class="desc">复数的概念 · 复数的四则运算 · 复数的几何意义 · 复平面 · 模与辐角</div>
+</a>
+</div>
+</main>
+</div>
+</body>
+</html>

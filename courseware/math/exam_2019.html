@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2019年上海中考数学真题</title>
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <script src="../assets/js/common.js"></script>
+  <style>
+    .year-header { background:linear-gradient(135deg,#7c3aed,#5b21b6); color:#fff; padding:20px; border-radius:12px; margin-bottom:24px; }
+    .section-title { background:#f8fafc; padding:12px 16px; border-left:4px solid #7c3aed; margin:24px 0 16px; font-weight:600; }
+    .diagram-box { background:#fafbfc; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin:12px 0; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-links">
+      <a href="../index.html">← 返回数学主页</a>
+      <a href="exam_collection.html">← 真题汇编目录</a>
+    </div>
+
+    <div class="year-header">
+      <h1>📐 2019年上海市初中毕业统一学业考试</h1>
+      <h2>数学试卷</h2>
+      <p>满分150分 · 考试时间100分钟</p>
+    </div>
+
+    <div class="section-title">一、选择题（共6题，每题4分，满分24分）</div>
+
+    <div class="question">
+      <span class="q-num">1</span>
+      下列计算中，正确的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q1" value="A">A. a² + a³ = a⁵</label>
+        <label><input type="radio" name="q1" value="B">B. (-a²)³ = -a⁵</label>
+        <label><input type="radio" name="q1" value="C">C. a⁶ ÷ a² = a³</label>
+        <label><input type="radio" name="q1" value="D">D. (-2a³)² = 4a⁶</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+      <div class="answer" id="answer-1" data-correct="D">✅ D。D：(-2a³)² = 4a⁶；A：a²与a³不是同类项；B：(-a²)³ = -a⁶；C：a⁶ ÷ a² = a⁴。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">2</span>
+      如果m > n，那么下列结论错误的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q2" value="A">A. m + 2 > n + 2</label>
+        <label><input type="radio" name="q2" value="B">B. m - 2 > n - 2</label>
+        <label><input type="radio" name="q2" value="C">C. 2m > 2n</label>
+        <label><input type="radio" name="q2" value="D">D. -2m > -2n</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+      <div class="answer" id="answer-2" data-correct="D">✅ D。不等式两边乘负数，不等号方向改变。-2m < -2n。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">3</span>
+      下列函数中，函数值y随自变量x的值增大而增大的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q3" value="A">A. y = x/3</label>
+        <label><input type="radio" name="q3" value="B">B. y = -x/3</label>
+        <label><input type="radio" name="q3" value="C">C. y = 3/x</label>
+        <label><input type="radio" name="q3" value="D">D. y = -3/x</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+      <div class="answer" id="answer-3" data-correct="A">✅ A。A是正比例函数k=1/3>0，y随x增大而增大。B的k<0；C、D是反比例，需指定象限。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">4</span>
+      甲、乙两名同学本学期五次引体向上的测试成绩如图所示，下列判断正确的是（ ）
+      <div class="options">
+        <label><input type="radio" name="q4" value="A">A. 甲的成绩比乙稳定</label>
+        <label><input type="radio" name="q4" value="B">B. 乙的成绩比甲稳定</label>
+        <label><input type="radio" name="q4" value="C">C. 甲的平均成绩比乙高</label>
+        <label><input type="radio" name="q4" value="D">D. 乙的中位数与平均数相等</label>
+      </div>
+      <div class="diagram-box">
+        <svg width="300" height="180" viewBox="0 0 300 180">
+          <line x1="40" y1="150" x2="280" y2="150" stroke="#cbd5e1" stroke-width="1"/>
+          <line x1="40" y1="30" x2="40" y2="150" stroke="#cbd5e1" stroke-width="1"/>
+          <text x="25" y="154" font-size="10" fill="#64748b">0</text>
+          <text x="25" y="114" font-size="10" fill="#64748b">5</text>
+          <text x="25" y="74" font-size="10" fill="#64748b">10</text>
+          <line x1="35" y1="110" x2="40" y2="110" stroke="#cbd5e1" stroke-width="1"/>
+          <line x1="35" y1="70" x2="40" y2="70" stroke="#cbd5e1" stroke-width="1"/>
+          <!--甲：7,8,8,8,9-->
+          <polyline points="70,90 110,70 150,70 190,70 230,50" stroke="#7c3aed" stroke-width="2.5" fill="none"/>
+          <circle cx="70" cy="90" r="4" fill="#7c3aed"/>
+          <circle cx="110" cy="70" r="4" fill="#7c3aed"/>
+          <circle cx="150" cy="70" r="4" fill="#7c3aed"/>
+          <circle cx="190" cy="70" r="4" fill="#7c3aed"/>
+          <circle cx="230" cy="50" r="4" fill="#7c3aed"/>
+          <!--乙：6,7,8,9,10-->
+          <polyline points="70,130 110,110 150,70 190,30 230,10" stroke="#f59e0b" stroke-width="2.5" fill="none"/>
+          <circle cx="70" cy="130" r="4" fill="#f59e0b"/>
+          <circle cx="110" cy="110" r="4" fill="#f59e0b"/>
+          <circle cx="150" cy="70" r="4" fill="#f59e0b"/>
+          <circle cx="190" cy="30" r="4" fill="#f59e0b"/>
+          <circle cx="230" cy="10" r="4" fill="#f59e0b"/>
+          <text x="55" y="170" font-size="11" fill="#64748b">1</text>
+          <text x="95" y="170" font-size="11" fill="#64748b">2</text>
+          <text x="135" y="170" font-size="11" fill="#64748b">3</text>
+          <text x="175" y="170" font-size="11" fill="#64748b">4</text>
+          <text x="215" y="170" font-size="11" fill="#64748b">5</text>
+          <text x="65" y="12" font-size="11" fill="#7c3aed">● 甲</text>
+          <text x="165" y="12" font-size="11" fill="#f59e0b">● 乙</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+      <div class="answer" id="answer-4" data-correct="A">✅ A。甲的成绩波动小（7,8,8,8,9），乙波动大（6,7,8,9,10），所以甲更稳定。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">5</span>
+      下列命题中，假命题是（ ）
+      <div class="options">
+        <label><input type="radio" name="q5" value="A">A. 矩形的对角线相等</label>
+        <label><input type="radio" name="q5" value="B">B. 矩形对角线交点到四个顶点距离相等</label>
+        <label><input type="radio" name="q5" value="C">C. 矩形的对角线互相垂直</label>
+        <label><input type="radio" name="q5" value="D">D. 矩形是轴对称图形</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+      <div class="answer" id="answer-5" data-correct="C">✅ C。矩形对角线相等且互相平分，但不一定垂直（只有正方形才垂直）。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">6</span>
+      已知⊙A与⊙B外切，⊙C与⊙A、⊙B都内切，且AB = 5，AC = 6，BC = 7，那么⊙C的半径长是（ ）
+      <div class="options">
+        <label><input type="radio" name="q6" value="A">A. 11</label>
+        <label><input type="radio" name="q6" value="B">B. 10</label>
+        <label><input type="radio" name="q6" value="C">C. 9</label>
+        <label><input type="radio" name="q6" value="D">D. 8</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+      <div class="answer" id="answer-6" data-correct="C">✅ C。设⊙A半径r₁，⊙B半径r₂，⊙C半径r₃。外切：r₁ + r₂ = 5；内切：r₃ - r₁ = 6，r₃ - r₂ = 7。三式相加：2r₃ = 18 → r₃ = 9。</div>
+    </div>
+
+    <div class="section-title">二、填空题（共12题，每题4分，满分48分）</div>
+
+    <div class="question">
+      <span class="q-num">7</span>
+      计算：(2a²)² = ______。
+      <button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+      <div class="answer" id="answer-7" data-correct="4a⁴">4a⁴。幂的乘方：(2a²)² = 2² × (a²)² = 4a⁴。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">8</span>
+      已知f(x) = 6/x，那么f(√3) = ______。
+      <button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+      <div class="answer" id="answer-8" data-correct="2√3">2√3。f(√3) = 6/√3 = 6√3/3 = 2√3。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">9</span>
+      如果关于x的方程x² - 2x + k = 0（k为常数）有两个不相等的实数根，那么k的取值范围是 ______。
+      <button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+      <div class="answer" id="answer-9" data-correct="k<1">k < 1。Δ = b² - 4ac = 4 - 4k > 0 → k < 1。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">10</span>
+      不透明的布袋中装有8个白球和若干个黑球，它们除颜色外完全相同，从中任意摸出一个球是白球的概率是1/3，则黑球有 ______ 个。
+      <button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+      <div class="answer" id="answer-10" data-correct="16">16。设黑球x个，8/(8+x) = 1/3 → 24 = 8 + x → x = 16。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">11</span>
+      一枚质地均匀的正方体骰子，六个面上的数字分别是1、2、3、4、5、6，掷两次骰子，第一次朝上一面的数字记为m，第二次朝上一面的数字记为n，则mn为偶数的概率是 ______。
+      <button class="answer-btn" onclick="showAnswer(11)">查看答案</button>
+      <div class="answer" id="answer-11" data-correct="3/4">3/4。mn为奇数的情况：m、n都为奇数，概率1/2 × 1/2 = 1/4。∴ 偶数概率1 - 1/4 = 3/4。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">12</span>
+      如图，已知直线l₁∥l₂，含30°角的三角板的直角顶点C在l₁上，30°角的顶点A在l₂上，边BC与l₂交于点D，如果∠1 = 135°，那么∠2 = ______度。
+      <div class="diagram-box">
+        <svg width="280" height="180" viewBox="0 0 280 180">
+          <line x1="20" y1="60" x2="260" y2="60" stroke="#64748b" stroke-width="2"/>
+          <line x1="20" y1="130" x2="260" y2="130" stroke="#64748b" stroke-width="2"/>
+          <text x="265" y="56" font-size="12" fill="#64748b">l₁</text>
+          <text x="265" y="136" font-size="12" fill="#64748b">l₂</text>
+          <line x1="100" y1="60" x2="100" y2="130" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="100" y1="130" x2="200" y2="130" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="100" y1="60" x2="200" y2="130" stroke="#7c3aed" stroke-width="2"/>
+          <text x="90" y="55" font-size="12" fill="#7c3aed">C</text>
+          <text x="195" y="145" font-size="12" fill="#7c3aed">A</text>
+          <text x="90" y="145" font-size="12" fill="#7c3aed">D</text>
+          <text x="75" y="95" font-size="11" fill="#f59e0b">∠1=135°</text>
+          <text x="165" y="115" font-size="11" fill="#f59e0b">∠2</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(12)">查看答案</button>
+      <div class="answer" id="answer-12" data-correct="45">45°。∠1的补角是45°，由平行线和三角形外角性质，∠2 = 45°。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">13</span>
+      某品牌旗舰店平日将某商品按进价提高40%后标价，在某次电商购物节中，为促销该商品，按标价8折销售，售价2240元，则该商品的进价是 ______ 元。
+      <button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+      <div class="answer" id="answer-13" data-correct="2000">2000。设进价x元：x × 1.4 × 0.8 = 2240 → 1.12x = 2240 → x = 2000。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">14</span>
+      已知∠A = 60°，则tanA = ______。
+      <button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+      <div class="answer" id="answer-14" data-correct="√3">√3。tan60° = √3。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">15</span>
+      如图，在正多边形ABCDEF中，设向量AB = a，AF = b，那么向量AC可以表示为 ______（用a、b表示）。
+      <div class="diagram-box">
+        <svg width="200" height="180" viewBox="0 0 200 180">
+          <polygon points="100,20 160,55 160,125 100,160 40,125 40,55" stroke="#7c3aed" stroke-width="2" fill="none"/>
+          <text x="95" y="15" font-size="12" fill="#7c3aed">A</text>
+          <text x="165" y="50" font-size="12" fill="#7c3aed">B</text>
+          <text x="165" y="130" font-size="12" fill="#7c3aed">C</text>
+          <text x="95" y="170" font-size="12" fill="#7c3aed">D</text>
+          <text x="30" y="130" font-size="12" fill="#7c3aed">E</text>
+          <text x="30" y="50" font-size="12" fill="#7c3aed">F</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(15)">查看答案</button>
+      <div class="answer" id="answer-15" data-correct="2a+b">2a + b。正六边形中，FC平行且等于2AB，∴ AC = AF + FC = AF + 2AB = 2a + b。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">16</span>
+      在△ABC和△A₁B₁C₁中，已知∠C = ∠C₁ = 90°，AC = A₁C₁ = 3，BC = 4，B₁C₁ = 2，点D、D₁分别在AB、A₁B₁上，且△ACD ≅ △C₁A₁D₁，则AD的长是 ______。
+      <button class="answer-btn" onclick="showAnswer(16)">查看答案</button>
+      <div class="answer" id="answer-16" data-correct="5/3">5/3。由相似和全等对应关系，AD = 5/3。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">17</span>
+      如图，在平面直角坐标系xOy中，已知点A(2,3)，将线段OA绕原点O顺时针旋转90°得到线段OA₁，则点A₁的坐标是 ______。
+      <div class="diagram-box">
+        <svg width="200" height="200" viewBox="0 0 200 200">
+          <line x1="20" y1="100" x2="180" y2="100" stroke="#cbd5e1" stroke-width="1"/>
+          <line x1="100" y1="20" x2="100" y2="180" stroke="#cbd5e1" stroke-width="1"/>
+          <line x1="100" y1="100" x2="140" y2="40" stroke="#7c3aed" stroke-width="2.5"/>
+          <circle cx="140" cy="40" r="4" fill="#7c3aed"/>
+          <text x="145" y="35" font-size="12" fill="#7c3aed">A(2,3)</text>
+          <path d="M120,70 A40,40 0 0,1 160,80" stroke="#f59e0b" stroke-width="2" fill="none"/>
+          <text x="165" y="85" font-size="11" fill="#f59e0b">90°</text>
+          <line x1="100" y1="100" x2="160" y2="60" stroke="#10b981" stroke-width="2.5" stroke-dasharray="5,3"/>
+          <circle cx="160" cy="60" r="4" fill="#10b981"/>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(17)">查看答案</button>
+      <div class="answer" id="answer-17" data-correct="(3,-2)">(3, -2)。顺时针旋转90°坐标变换：(x, y) → (y, -x)。</div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">18</span>
+      在△ABC中，AB = AC = 5，BC = 8，将△ABC绕着点C旋转得到△A₁B₁C，点A、B的对应点分别是A₁、B₁，如果点B₁恰好落在线段BA的延长线上，那么AA₁的长是 ______。
+      <button class="answer-btn" onclick="showAnswer(18)">查看答案</button>
+      <div class="answer" id="answer-18" data-correct="8√5/5">8√5/5。由余弦定理和旋转性质可求得。</div>
+    </div>
+
+    <div class="section-title">三、解答题（共7题，满分78分）</div>
+
+    <div class="question">
+      <span class="q-num">19</span>
+      计算：|√3 - 1| - 2sin60° + (1/3)⁻¹ + √(-2)²
+      <button class="answer-btn" onclick="showAnswer(19)">查看答案</button>
+      <div class="answer" id="answer-19" data-correct="4">
+        解：|√3 - 1| = √3 - 1<br>
+        2sin60° = 2 × √3/2 = √3<br>
+        (1/3)⁻¹ = 3，√(-2)² = 2<br>
+        原式 = (√3 - 1) - √3 + 3 + 2 = 4
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">20</span>
+      解方程：3/(x-1) - 2/x = 0
+      <button class="answer-btn" onclick="showAnswer(20)">查看答案</button>
+      <div class="answer" id="answer-20" data-correct="x=-2">
+        解：去分母：3x - 2(x - 1) = 0 → 3x - 2x + 2 = 0 → x = -2<br>
+        检验：x = -2时，x(x-1) ≠ 0，∴ x = -2是原方程的解。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">21</span>
+      在平面直角坐标系xOy中，已知一次函数图像经过点A(1,0)，B(2,3)。<br>
+      （1）求这个一次函数的解析式；<br>
+      （2）如果点P是该一次函数图像上一点，且△POA的面积为3，求点P的坐标。
+      <button class="answer-btn" onclick="showAnswer(21)">查看答案</button>
+      <div class="answer" id="answer-21" data-correct="y=3x-3, P(3,6)或P(-1,-6)">
+        （1）设y = kx + b，代入A(1,0)、B(2,3)：<br>
+        k + b = 0，2k + b = 3 → k = 3，b = -3 → y = 3x - 3<br>
+        （2）S△POA = 1/2 × OA × |y_P| = 1/2 × 1 × |y_P| = 3 → |y_P| = 6<br>
+        y_P = 6时，x = 3；y_P = -6时，x = -1<br>
+        ∴ P(3, 6) 或 P(-1, -6)
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">22</span>
+      如图，在梯形ABCD中，AD∥BC，AB = DC，AC、BD交于点O，AC⊥BC，M是AC中点。<br>
+      （1）求证：四边形ABMD是平行四边形；<br>
+      （2）如果AD = 2，BC = 6，求AC的长。
+      <div class="diagram-box">
+        <svg width="280" height="160" viewBox="0 0 280 160">
+          <line x1="60" y1="40" x2="220" y2="40" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="40" y1="120" x2="240" y2="120" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="60" y1="40" x2="40" y2="120" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="220" y1="40" x2="240" y2="120" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="60" y1="40" x2="240" y2="120" stroke="#7c3aed" stroke-width="1.5"/>
+          <line x1="40" y1="120" x2="220" y2="40" stroke="#7c3aed" stroke-width="1.5"/>
+          <text x="30" y="130" font-size="12" fill="#7c3aed">A</text>
+          <text x="245" y="130" font-size="12" fill="#7c3aed">B</text>
+          <text x="225" y="35" font-size="12" fill="#7c3aed">C</text>
+          <text x="50" y="35" font-size="12" fill="#7c3aed">D</text>
+          <circle cx="140" cy="80" r="3" fill="#f59e0b"/>
+          <text x="145" y="75" font-size="11" fill="#f59e0b">O</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(22)">查看答案</button>
+      <div class="answer" id="answer-22" data-correct="见解析">
+        （1）证明：M是AC中点，在等腰梯形中，可证DM∥AB且DM = AB，∴ ABMD是平行四边形。<br>
+        （2）AC = 4√3。由勾股定理可求得。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">23</span>
+      奉贤区开展"垃圾分类"活动，某中学在预备年级6个班中，每班随机抽取10名学生进行垃圾分类知识测试，将测试成绩整理后绘制成如下统计图：<br>
+      （1）求这60名学生测试成绩的平均数、中位数和众数；<br>
+      （2）如果该校预备年级共有300名学生，估计这次测试中成绩达到90分及以上的学生人数。
+      <div class="diagram-box">
+        <svg width="350" height="180" viewBox="0 0 350 180">
+          <rect x="50" y="130" width="40" height="20" fill="#7c3aed"/>
+          <rect x="100" y="110" width="40" height="40" fill="#7c3aed"/>
+          <rect x="150" y="80" width="40" height="70" fill="#7c3aed"/>
+          <rect x="200" y="50" width="40" height="100" fill="#7c3aed"/>
+          <rect x="250" y="30" width="40" height="120" fill="#7c3aed"/>
+          <text x="55" y="158" font-size="10" fill="#64748b">70</text>
+          <text x="105" y="158" font-size="10" fill="#64748b">80</text>
+          <text x="155" y="158" font-size="10" fill="#64748b">85</text>
+          <text x="205" y="158" font-size="10" fill="#64748b">90</text>
+          <text x="255" y="158" font-size="10" fill="#64748b">95</text>
+          <text x="58" y="125" font-size="9" fill="#fff">4</text>
+          <text x="108" y="105" font-size="9" fill="#fff">8</text>
+          <text x="158" y="75" font-size="9" fill="#fff">14</text>
+          <text x="208" y="45" font-size="9" fill="#fff">18</text>
+          <text x="258" y="25" font-size="9" fill="#fff">16</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(23)">查看答案</button>
+      <div class="answer" id="answer-23" data-correct="见解析">
+        （1）平均数 = (70×4 + 80×8 + 85×14 + 90×18 + 95×16)/60 = 88<br>
+        中位数 = 90，众数 = 90<br>
+        （2）90分及以上人数：18 + 16 = 34人，300 × 34/60 = 170人。
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">24</span>
+      已知抛物线y = ax² + bx经过点A(-1, 3)和点B(-4, 0)。<br>
+      （1）求这条抛物线的解析式；<br>
+      （2）将这条抛物线沿x轴平移，使其经过点O，求平移后抛物线的表达式。
+      <button class="answer-btn" onclick="showAnswer(24)">查看答案</button>
+      <div class="answer" id="answer-24" data-correct="y=x²+4x">
+        （1）代入A(-1,3)、B(-4,0)：<br>
+        a - b = 3，16a - 4b = 0 → 4a - b = 0<br>
+        解得a = 1，b = 4 → y = x² + 4x<br>
+        （2）y = x² + 4x = (x+2)² - 4，顶点(-2,-4)<br>
+        向右平移2个单位：y = x² - 4<br>
+        或向左平移6个单位：y = (x+8)² - 4
+      </div>
+    </div>
+
+    <div class="question">
+      <span class="q-num">25</span>
+      如图，在△ABC中，AB = AC，∠BAC = 90°，D是BC边上一点，将线段AD绕点A逆时针旋转90°得到AE，连接BE。<br>
+      （1）求证：△ABD ≅ △ACE；<br>
+      （2）若BD = 2，DC = 4，求DE的长。
+      <div class="diagram-box">
+        <svg width="240" height="200" viewBox="0 0 240 200">
+          <line x1="40" y1="160" x2="200" y2="160" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="40" y1="160" x2="120" y2="40" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="120" y1="40" x2="200" y2="160" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="120" y1="40" x2="180" y2="100" stroke="#f59e0b" stroke-width="2"/>
+          <line x1="40" y1="160" x2="180" y2="100" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="30" y="170" font-size="12" fill="#7c3aed">B</text>
+          <text x="115" y="30" font-size="12" fill="#7c3aed">A</text>
+          <text x="205" y="170" font-size="12" fill="#7c3aed">C</text>
+          <text x="130" y="170" font-size="12" fill="#f59e0b">D</text>
+          <text x="185" y="90" font-size="12" fill="#f59e0b">E</text>
+        </svg>
+      </div>
+      <button class="answer-btn" onclick="showAnswer(25)">查看答案</button>
+      <div class="answer" id="answer-25" data-correct="2√5">
+        （1）证明：AB = AC，AD = AE，∠BAD = ∠CAE（都等于90°-∠DAC）<br>
+        ∴ △ABD ≅ △ACE（SAS）<br>
+        （2）DE = 2√5。由勾股定理可求得。
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

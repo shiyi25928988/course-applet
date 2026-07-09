@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcel Bich - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题311/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Marcel Bich</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>The jury’s  still out as for as I am concerned!
+ 2</p>
+<p>Questions 1-5
+1) The author …
+A  believes that man is causing global warming
+B  believes that global warming is a natural process
+C is sure what the causes of global warming are
+D does not say what he believes the causes of global warming are
+ 
+2) As to the cause of global warming, the author believes that …
+A    occasionally the fact depend on who you are talking to
+B   the facts always depend on who you are talking to
+C    often the fact depend on which expert you listen to
+D  you should not speak to experts
+3) More than 80% of the top meteorologists in the United States are of the opinion
+that.. .           
+A    global warming should make us lose sleep
+B    global warming is not the result oil natural cyclical changes, but man-made
+C    the consequences of global warming will be deviating
+D   global warming is not man-made, but the result of natural cyclical changes
+4) Our understanding of weather…
+A leads to reliable predictions
+B Is variable
+C cannot be denied
+D is not very developed yet
+5) Currently, Dr. James Hansen’s beliefs include the fact that …
+A It is nearly Impossible to predict weather change using artificial models
+B the consequences of global  warming would be disastrous for in mankind
+C there Is a significant link between the climate now, mid man’s changing of the
+atmosphere
+D Earth is getting colder
+ 3</p>
+<p>Questions 6-11
+Do the statements below agree with the information in Reading Passage? In Boxes
+6-11, write:
+Yes                if the statement agrees with the information in the passage
+No                 if the statement contradicts the information in the passage
+Not Given    if there ls no information about the statement in the passage
+Example: Computer-based weather models have become more sophisticated.
+Answer: Yes.
+6..................... At the same time that computer-based weather models have become
+more sophisticated, weather forecasters have become more expert.
+7..................... Most of the increase In global temperature happened in the second
+half of the twentieth century.
+8..................... The media wants us to blame ourselves for global warming.
+9..................... The media encourages the public to use environmentally friendly
+vehicles, such as electric cars to combat global warming.
+10..................... Environmentalists are very effective at persuading people to be kind
+to the environment.
+11..................... Many big businesses are on the side of the skeptics as regards the
+cause of global warming.</p>
+<p>Questions 12 and 13
+Complete the sentences below. Use NO MORE THAN THREE WORDS from the
+passage for each blank space. Write your answers in Boxes 12 and 13 on your
+answer sheet.
+12) As well as planting trees and not driving, the environmentalist would like us to
+choose products that are wrapped 12..................... and  can be used more than once.
+13) Big businesses would have us believe that we are making too much fuss about global
+warming, because they have 13.....................
+Question 14
+ 4</p>
+<p>Choose the appropriate letter A-D and write it in Box 14 on your answer sheet
+14) Which of these is the best title for this text?
+A      Global Warming is for real
+B      Global warming – media hype or a genuine threat?
+C   Weather changes over the last 100 years
+D      Global Warming – the greatest threat to mankind
+ 5</p>
+<p>Solution:
+ 
+1. D
+2. C
+3. D
+4. D
+5. A
+6. NOT GIVEN
+7. NO
+8. YES
+9. NOT GIVEN
+10. NOT GIVEN
+11. YES
+12. in recycled paper
+13. most to lose
+14. B
+ 6</p>
+<p>Reading Practice
+ Global Warming in New Zealand
+For many environmentalists, the world seems to be getting warmer. As the nearest country
+of South Polar Region, New Zealand has maintained an upward trend in its average
+temperature in the past few years. However, the temperature in New Zealand will go up
+4oC in the next century while the polar region will go up more than 6oC. The different
+pictures of temperature stem from its surrounding ocean which acts like the air conditioner.
+Thus New Zealand is comparatively fortunate.
+Scientifically speaking, this temperature phenomenon in New Zealand originated from what
+researchers call “SAM” (Southern Annular Mode), which refers to the wind belt that circles
+the Southern Oceans including New Zealand and Antarctica. Yet recent work has revealed
+that changes in SAM in New Zealand have resulted in a weakening of moisture during the
+summer, and more rainfall in other seasons. A bigger problem may turn out to be heavier
+droughts for agricultural activities because of more water loss from soil, resulting in poorer
+harvest before winter when the rainfall arrive too late to rescue.
+Among all the calamities posed be drought, moisture deficit ranks the first. Moisture deficit
+is the gap between the water plants need during the growing season and the water the
+earth can offer. Measures of moisture deficit were at their highest since the 1970s in New
+Zealand. Meanwhile, ecological analyses clearly show moisture deficit is imposed at
+different growth stage of crops. If moisture deficit occurs around a crucial growth stage, it
+will cause about 22% reduction in grain yield as opposed to moisture deficit at vegetative
+phase.
+Global warming is not only affecting agriculture production. When scientists say the
+country’s snow pack and glaciers are melting at an alarming rate due to global warming,
+the climate is putting another strain on the local places. For example, when the
+development of global warming is accompanied by the falling snow line, the local skiing
+industry comes into a crisis. The snow line may move up as the temperature goes up, and
+then the snow at the bottom will melt earlier. Fortunately, it is going to be favorable for the
+local skiing industry to tide over tough periods since the quantities of snowfall in some
+areas are more likely to increase.
+What is the reaction of glacier region? The climate change can be reflected in the glacier
+region in southern New Zealand or land covered by ice and snow. The reaction of a glacier
+to a climatic change involves a complex chain of processes. Over time periods of years to
+several decades, cumulative changes in mass balance cause volume and thickness
+changes, which will affect the flow of ice via altered internal deformation and basal sliding.
+This dynamic reaction finally leads to glacier length changes, the advance or retreat of
+glacier tongues. Undoubtedly, glacier mass balance is a more direct signal of annual
+atmospheric conditions.
+The latest research result of National Institute of Water and Atmospheric (NIWA) Research
+shows that glaciers line keeps moving up because of the impacts of global warming.
+Further losses of ice can be reflected in Mt. Cook Region. By 1996, a 14 km long sector of
+the glacier had melted down forming a melt lake (Hooker Lake) with a volume. Melting of
+the glacier front at a rate of 40 m/yr will cause the glacier to retreat at a rather uniform rate.
+Therefore, the lake will continue to grow until it reaches the glacier bed.
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

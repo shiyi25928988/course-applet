@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote For Women - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题627/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Vote For Women</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>Reading Practice
+ Sir Francis Ronalds and Telegraph
+A. RONALDS, Sir FRANCIS (1788-1873), inventor of the electric telegraph and
+meteorologist, son of Francis Ronalds, a London merchant, and of his wife, Jane,
+daughter of William Field, was born in London on 21 Feb. 1788. Ronalds was
+educated at a private school at Cheshunt by the Rev. E. Cogan. At an early age he
+displayed a taste for experiment, and he acquired great skill later in practical
+mechanics and draughtsman ship. Under the influence of Jean Andre de Luc (17271817), whose acquaintance he made in 1814, he began to devote himself to practical
+electricity. In 1814 and 1815 he published several papers on electricity in Tilloch’s
+'Philosophical Magazine,' one of which records an ingenious use of De Luc's 'electric
+column' as a motive power for a clock.
+B. Ronalds's name is chiefly remembered as the inventor of an electric telegraph. Since
+1753, when the first proposal for an electric telegraph worked by statical electricity
+was made by a writer signing 'C. ' (said to be Charles Morrison) in the 'Scots
+Magazine', successive advances had been made abroad by Volta, Le Sage, Lomond,
+Cavallo, Salva, and others; but much was needed to perfect the invention.
+C. In 1816 Francis Ronalds, then living at Upper Mall, Hammersmith, built in his back
+garden two frames to accommodate eight miles of wire for his new invention of an
+electrostatic telegraph. It used clockwork-driven rotating dials, engraved with letters
+of the alphabet and numbers, synchronized with each other, at both ends of the
+circuit. For the past three or four years, encouraged by the octogenarian Swiss
+meteorologist, Jean Andre De Luc, Ronalds had been enthusiastically experimenting
+with electrostatic clockwork devices. When someone desired to send a message he
+earthed the wire at his end at the moment when the dial indicated the desired letter.
+At the receiving end the pith balls would fall together when earthed and the recipient
+noted the letter showing on his dial at that moment. The system was slow and
+depended on the two dials staying in step, but Ronalds successfully transmitted and
+received letters over 150 meters of wire ; later he succeeded in sending messages
+through eight miles of iron wire suspended above his garden in London.
+D. After sending messages along his wires on the frame, he developed another version
+in which the wires were enclosed in glass tubes buried in the ground. At each end of
+the line a clockwork mechanism turned synchronously revolving discs with letters on
+them. A frictional-electricity machine kept the wire continuously charged, while at
+each end two pith balls hung from the wire on silk threads, and since they were
+similarly charged from the wire they stayed apart. Ronalds 'S instrument was of real
+practical use, and the brilliant idea of using synchronously rotating discs, now
+employed in the Hughes printing apparatus, was entirely his own. The only defect in
+his invention was the comparative slowness with which a succession of symbols
+could be transmitted.
+E.
+telegraph would work over distances of 800km. In the same year, Ronalds wrote to
+offer his invention to the Admiralty. In fact, in 1806, Ralph Wedgwood submitted a
+With communications between London and Portsmouth in mind, he believed his
+ 1</p>
+<p>telegraph based on frictional electricity to the Admiralty, but was told that the
+semaphore was sufficient for the country. In a pamphlet he suggested the
+establishment of a telegraph system with public offices in different centers. Francis
+Ronalds, in 1816, brought a similar telegraph of his invention to the notice of the
+Admiralty, and was politely informed that 'telegraphs of any kind are now wholly
+unnecessary.' John Barrow, Secretary to the Admiralty, replied that "Telegraphs of
+any kind are now wholly unnecessary; and no other than the one now in use will be
+adopted." (The one in use was a semaphore system. Only a year after the end of the
+Napoleonic Wars, the Admiralty saw no need for improved communications, even
+though the semaphore was usable only in daylight and good weather.
+F. After this disappointment, Ronalds set off for the continent. He travelled throughout
+Europe and the Eastern Mediterranean, taking notes, sketching and collecting
+scientific books between 1816 and 1823. He had begun collecting his large library of
+works on electricity and kindred subjects. The last activity formed the beginnings of
+the Ronalds Library, left in trust to the IEE (now the IET) after his death. In a small
+pamphlet published in 1823, Ronalds described his invention and listed some of its
+possible uses, "Why should not government govern at Portsmouth almost as promptly
+as in Downing Street? Why should our defaulters escape by default of our foggy
+climate? Let US have Electrical Conversazione offices communicating with each
+other all over the kingdom if we can." In 1825 he invented and patented a perspective
+tracing instrument, intended to facilitate drawing from nature, which he improved
+about 1828, and described in a work called 'Mechanical Perspective.' These
+instruments seem to be the only ones for which he took out patents.
+G. However, Ronalds never patented his invention in electric telegraph. Ronalds seems
+to have made few or no practical contributions to science. In the meanwhile, one
+person did benefit from this work-Charles Wheatstone who saw the telegraph as a
+boy. When Charles Wheatstone was quite a child, his father had seen the Ronalds
+telegraph at work. Later, the invention of an electric telegraph had been marvelously
+developed by Wheatstone, who had seen many of the Hammersmith experiments, in
+conjunction with Mr. William Fothergill Cooke, and these two men together devised
+and patented in 1837 the first electric telegraph used publicly and commercially in
+England. When, in 1855, a controversy arose between Wheatstone and Cooke with
+regard to their respective shares in the invention, Wheatstone at once acknowledged
+his direct debt to Ronalds, and Cooke, though less fully, acknowledged the priority of
+Ronalds's work; Until 1855 Ronalds's share in the invention had been forgotten by
+the public.
+H.
+Meteorological Observatory, which was then established at Kew by the British
+Association for the Advancement of Science. He began work on a system for
+registering meteorological data using photography and this time was awarded a grant
+to continue his work. A similar system was developed independently by Charles
+Brooke, aided like Ronalds by grants from the Royal Society, had invented
+independently about this time. But the British Association confirmed Ronalds's
+priority. This was the beginning of automatic, accurate recording of meteorological
+data and remained in use for some years after Ronalds's death.
+Early in 1843 Ronalds was made honorary director and superintendent of the
+ 2</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

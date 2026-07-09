@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning To Walk - 雅思阅读真题详解</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="../assets/js/common.js"></script>
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
+        .content-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .content-section h3 {
+            margin: 0 0 16px 0;
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
+            margin: 0 0 12px 0;
+            color: #92400e;
+            font-size: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>📚 阅读真题287/1000</h3>
+            <ul class="chapter-list">
+                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
+                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
+                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
+            </ul>
+            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <div class="page-hero">
+                <h1>📄 Learning To Walk</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
+            </div>
+
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>The finches of Santa Cruz demonstrate a subtle process in which human meddling can
+stop evolution in its tracks, ending the formation of new species. In a time when global
+biodiversity continues its downhill slide, Darwin’s finches have yet another unexpected
+lesson to teach. ‘If we hope to regain some of the diversity that’s already been lost/ Hendry
+says, ‘we need to protect not just existing creatures, but also the processes that drive the
+origin of new species.
+ 3</p>
+<p>Questions 1-4
+Complete the table now.
+Choose NO MORE THAN TWO WORDS from Reading Passage 1 for each answer.
+Write your answers in boxes 1-4 on your answer sheet.
+Year</p>
+<p>Climate
+1.....................
+Finch’s condition
+small-beak birds failing to survive, without the
+power to open 2.....................
+1985 3..................... broughtbig-beak birds dying out, with 4
+by El Nino
+..................... as
+the main food resource
+ 
+Questions 5-8
+Complete the following summary of the paragraphs of Reading Passage 1
+Using NO MORE THAN TWO WORDS from the Reading Passage for each answer.
+Write your answers in boxes 5-8 on your answer sheet.
+On the remote island of Santa Cruz, Andrew Hendry and Jeffrey Podos conducted a study
+on reversal 5..................... due to human activity. In the early 1960s medium ground
+finches were found to have a larger or smaller beak. But in the late 1960s and early 70s,
+finches with 6..................... flourished. The study speculates that it is due to the
+growing 7..................... who brought in alien plants with intermediate-size seeds into the
+area and the birds ate 8..................... sometimes.
+ 
+Questions 9-13
+Do the following statements agree with the claims of the writer in Reading Passage1?
+In boxes 9-13 on your answer sheet, write
+TRUE               if the statement is true
+FALSE              if the statement is false
+NOT GIVEN    if the information is not given in the passage
+9.....................   Grants’ discovery has questioned Darwin’s theory.
+10.....................   The cactus finches are less affected by food than the medium ground
+finch.
+11.....................   In 2002 and 2003, all the birds were affected by the drought.
+12.....................   The discovery of Andrew Hendry and Jeffrey Podos was the same as that
+ 4</p>
+<p>of the previous studies.
+13.....................   It is shown that the revolution in finches on Santa Cruz is likely a
+response to human intervention.
+ 5</p>
+<p>Solution:
+ 
+1. drought
+2. large seeds
+3. heavy rains
+4. small seeds
+5. finch evolution
+6. medium-sized bills
+ 
+8. rice
+9. FALSE
+10. NOT
+GIVEN
+11. TRUE
+12. FALSE
+13. TRUE
+7. human population
+ 6</p>
+<p>Reading Practice
+ Finding our way
+A. “Drive 200 yards, and then turn right,” says the car’s computer voice. You relax in the
+driver’s seat, follow the directions and reach your destination without error. It’s certainly
+nice to have the Global Positioning System (GPS) to direct you to within a few yards of
+your goal. Yet if the satellite service’s digital maps become even slightly outdated, you can
+become lost. Then you have to rely on the ancient human skill of navigating in threedimensional space. Luckily, your biological finder has an important advantage over GPS: it
+does not go awry if only one part of the guidance system goes wrong, because it works in
+various ways. You can ask questions of people on the sidewalk. Or follow a street that
+looks familiar. Or rely on a navigational rubric: “If I keep the East River on my left, I will
+eventually cross 34th Street.” The human positioning system is flexible and capable of
+learning. Anyone who knows the way from point A to point B—and from A to C—can
+probably figure out how to get from B to c, too.
+ 
+B. But how does this complex cognitive system really work? Researchers are looking at
+several strategies people use to orient themselves in space: guidance, path integration and
+route following. We may use all three or combinations thereof. And as experts learn more
+about these navigational skills, they are making the case that our abilities may underlie our
+powers of memory and logical thinking. Grand Central, Please Imagine that you have
+arrived in a place you have never visited-New York City. You get off the train at Grand
+Central Terminal in midtown Manhattan. You have a few hours to explore before you must
+return for your ride home. You head uptown to see popular spots you have been told about:
+Rockefeller Center, Central Park, the Metropolitan Museum of Art. You meander in and out
+of shops along the way. Suddenly, it is time to get back to the station. But how?
+C. If you ask passersby for help, most likely you will receive information in many different
+forms. A person who orients herself by a prominent landmark would gesture southward:
+“Look down there. See the tall, broad MetLife Building? Head for that “the station is right
+below it.” Neurologists call this navigational approach “guidance,” meaning that a landmark
+visible from a distance serves as the marker for one’s destination.
+D. Another city dweller might say: “What places do you remember passing? … Okay. Go
+toward the end of Central Park, then walk down to St. Patrick’s Cathedral. A few more
+blocks, and Grand Central will be off to your left.” In this case, you are pointed toward the
+most recent place you recall, and you aim for it. Once there you head for the next notable
+place and so on, retracing your path. Your brain is adding together the individual legs of
+your trek into a cumulative progress report. Researchers call this strategy “path
+integration.” Many animals rely primarily on path integration to get around, including
+insects, spiders, crabs and rodents. The desert ants of the genus Cataglyphis employ this
+method to return from foraging as far as 100 yards away. They note the general direction
+they came from and retrace then steps, using the polarization of sunlight to orient
+themselves even under overcast skies. On their way back they are faithful to this inner
+homing vector. Even when a scientist picks up an ant and puts it in a totally different spot,
+the insect stubbornly proceeds in the originally determined direction until it has gone “back”
+all of the distance it wandered from its nest. Only then does the ant realize it has not
+succeeded, and it begins to walk in successively larger loops to find its way home.
+ 1</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
+                </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
+            </div>
+
+            <div class="nav-links">
+                <a href="reading_exam_index.html">← 返回真题索引</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

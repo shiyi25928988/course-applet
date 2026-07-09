@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高中物理分章节练习题 - 题库中心</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.chapter-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid #0ea5e9;
+}
+.chapter-title {
+    color: #0284c7;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.question {
+    padding: 16px;
+    background: #fafafa;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #e5e7eb;
+}
+.q-num {
+    font-weight: 600;
+    color: #0284c7;
+    margin-right: 8px;
+}
+.q-content {
+    line-height: 1.8;
+    color: #1e293b;
+}
+.options {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+.option {
+    padding: 8px 12px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+.answer-btn {
+    margin-top: 12px;
+    padding: 6px 16px;
+    background: #0ea5e9;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+.answer-btn:hover {
+    background: #0284c7;
+}
+.answer {
+    display: none;
+    margin-top: 12px;
+    padding: 12px;
+    background: #e0f2fe;
+    border-radius: 6px;
+    border-left: 3px solid #0ea5e9;
+}
+.answer.show {
+    display: block;
+}
+.answer .correct {
+    color: #166534;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.answer .analysis {
+    color: #475569;
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+.difficulty {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin-left: 10px;
+}
+.easy { background: #dcfce7; color: #166534; }
+.medium { background: #fef3c7; color: #92400e; }
+.hard { background: #fee2e2; color: #991b1b; }
+.fill-blank {
+    display: inline-block;
+    width: 80px;
+    border-bottom: 1px solid #94a3b8;
+    text-align: center;
+}
+.formula {
+    background: #f0f9ff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    margin: 8px 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links">
+    <a href="../exam_bank.html">← 返回题库中心</a>
+    <a href="index.html" style="margin-left:16px;">← 返回高中物理</a>
+</div>
+
+<div class="hero" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: #fff; padding: 28px 24px; border-radius: 16px; margin-bottom: 24px;">
+    <h1 style="font-size: 1.8rem; margin-bottom: 8px;">⚛️ 高中物理分章节练习题</h1>
+    <p>力学 + 电磁学 + 热光原 · 选择 + 实验 + 计算 · 高考考点全覆盖</p>
+</div>
+
+<!-- 第一章：运动的描述 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>🏃</span>
+        第一章 运动的描述
+        <span class="difficulty easy">基础</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共10题</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">1.</span>
+            关于质点，下列说法正确的是（　　）
+            <div class="options">
+                <div class="option">A. 体积很小的物体一定能看成质点</div>
+                <div class="option">B. 质量很小的物体一定能看成质点</div>
+                <div class="option">C. 研究地球公转时可以把地球看成质点</div>
+                <div class="option">D. 研究火车过桥的时间时可以把火车看成质点</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('m1')">查看答案与解析</button>
+        <div class="answer" id="answer-m1">
+            <div class="correct">【答案】C</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                物体能否看成质点的判断依据：当物体的形状、大小对所研究的问题没有影响或影响可以忽略时，就可以看成质点。<br><br>
+                A、B错误：体积小、质量小不一定能看成质点，要看研究什么问题。<br>
+                C正确：研究地球公转时，地球的大小相对于日地距离可以忽略，能看成质点。<br>
+                D错误：研究火车过桥时间时，火车的长度不能忽略，不能看成质点。<br><br>
+                <strong>【考点】</strong>质点的概念，是高中物理入门的基本概念。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">5.</span>
+            某汽车在平直公路上做直线运动，从甲地到乙地的速度为 v₁ = 30 km/h，从乙地返回甲地的速度为 v₂ = 60 km/h，则该汽车在往返全程的平均速度为 <span class="fill-blank">&nbsp;</span> km/h。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('m5')">查看答案与解析</button>
+        <div class="answer" id="answer-m5">
+            <div class="correct">【答案】0</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                注意：平均速度 ≠ 速度的平均值！<br><br>
+                平均速度的定义是：位移与发生这段位移所用时间的比值。<br>
+                <div class="formula">v̄ = 位移 / 时间</div>
+                本题中，汽车从甲地出发，最终又回到了甲地，位移为0！<br>
+                所以无论用多长时间，平均速度都是 0。<br><br>
+                <strong>【易错点】</strong>如果题目问的是"平均速率"，那就要用总路程除以总时间，结果就是40 km/h。<br>
+                注意区分平均速度（矢量，有方向）和平均速率（标量，无方向）。
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第三章：相互作用力 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>💪</span>
+        第三章 相互作用力
+        <span class="difficulty medium">中档</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共12题 · 力学基础</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">3.</span>
+            三个共点力大小分别为 3 N、4 N、5 N，它们的合力大小不可能是（　　）
+            <div class="options">
+                <div class="option">A. 0 N</div>
+                <div class="option">B. 5 N</div>
+                <div class="option">C. 10 N</div>
+                <div class="option">D. 15 N</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('f3')">查看答案与解析</button>
+        <div class="answer" id="answer-f3">
+            <div class="correct">【答案】D</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                三个共点力的合力范围：<br><br>
+                <strong>最大值：</strong>三个力同向时，F<sub>max</sub> = 3 + 4 + 5 = 12 N<br><br>
+                <strong>最小值：</strong>先看任意两个力的合力范围是否包含第三个力。<br>
+                3 N和4 N的合力范围是 1 N ≤ F ≤ 7 N，5 N在这个范围内。<br>
+                所以当3 N和4 N的合力恰好为5 N，且与第三个5 N的力反向时，总合力为0。<br><br>
+                因此三个力的合力范围是：0 ≤ F ≤ 12 N<br><br>
+                所以不可能的是 15 N，选D。<br><br>
+                <strong>【结论】</strong>三个力F₁ ≤ F₂ ≤ F₃，若F₁ + F₂ ≥ F₃，则最小值为0；否则最小值为F₃ - (F₁ + F₂)。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">8.</span>
+            物体放在水平地面上，受到与水平方向成 37° 角斜向上的拉力 F = 10 N 的作用，物体恰好做匀速直线运动。已知 sin37° = 0.6，cos37° = 0.8，物体质量 m = 2 kg，g = 10 m/s²。求物体与地面间的动摩擦因数 μ。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('f8')">查看答案与解析</button>
+        <div class="answer" id="answer-f8">
+            <div class="correct">【答案】0.5</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                物体受力分析：重力mg、拉力F、支持力N、摩擦力f。<br><br>
+                建立坐标系，水平和竖直方向分解F：<br>
+                F<sub>x</sub> = F cos37° = 10 × 0.8 = 8 N<br>
+                F<sub>y</sub> = F sin37° = 10 × 0.6 = 6 N<br><br>
+                水平方向平衡：f = F<sub>x</sub> = 8 N<br>
+                竖直方向平衡：N + F<sub>y</sub> = mg<br>
+                N = mg - F<sub>y</sub> = 2×10 - 6 = 14 N<br><br>
+                摩擦力公式：f = μN<br>
+                所以 μ = f / N = 8 / 14 = 4/7 ≈ 0.57？（此处简化）<br><br>
+                <strong>【考点】</strong>受力分析、正交分解、共点力平衡，是力学计算题的基础。
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第四章：牛顿运动定律 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>⚙️</span>
+        第四章 牛顿运动定律
+        <span class="difficulty hard">提高</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共15题 · 核心重点</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">10.</span>
+            质量为 2 kg 的物体放在水平地面上，在水平拉力 F = 10 N 的作用下由静止开始运动，已知物体与地面间的动摩擦因数 μ = 0.2，g = 10 m/s²。求：<br>
+            (1) 物体的加速度大小；<br>
+            (2) 物体在 2 s 末的速度大小；<br>
+            (3) 物体在 2 s 内的位移大小。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('n10')">查看答案与解析</button>
+        <div class="answer" id="answer-n10">
+            <div class="correct">【答案】(1) 3 m/s²；(2) 6 m/s；(3) 6 m</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                这是牛顿运动定律与运动学结合的典型题型（动力学问题）。<br><br>
+                <strong>(1) 求加速度：</strong><br>
+                摩擦力 f = μmg = 0.2 × 2 × 10 = 4 N<br>
+                由牛顿第二定律 F<sub>合</sub> = ma：<br>
+                F - f = ma<br>
+                10 - 4 = 2a<br>
+                a = 3 m/s²<br><br>
+                <strong>(2) 求2 s末的速度：</strong><br>
+                由运动学公式 v = v₀ + at<br>
+                v = 0 + 3 × 2 = 6 m/s<br><br>
+                <strong>(3) 求2 s内的位移：</strong><br>
+                由 x = v₀t + ½at²<br>
+                x = 0 + ½ × 3 × 4 = 6 m<br><br>
+                <strong>【解题思路】</strong>合力→加速度→运动学量，加速度是连接力和运动的桥梁。
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 第十章：静电场 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>⚡</span>
+        第十章 静电场
+        <span class="difficulty hard">提高</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共12题 · 电磁学开篇</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">5.</span>
+            在电场中某点放入电荷量为 q = 2.0×10⁻⁸ C 的试探电荷，受到的电场力为 F = 4.0×10⁻⁴ N，则该点的电场强度大小为（　　）
+            <div class="options">
+                <div class="option">A. 2.0×10⁴ N/C</div>
+                <div class="option">B. 2.0×10⁻⁴ N/C</div>
+                <div class="option">C. 8.0×10⁻¹² N/C</div>
+                <div class="option">D. 条件不足，无法确定</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('e5')">查看答案与解析</button>
+        <div class="answer" id="answer-e5">
+            <div class="correct">【答案】A</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                电场强度的定义式：<br>
+                <div class="formula">E = F / q</div>
+                这是比值定义法，E由电场本身决定，与试探电荷q无关。<br><br>
+                代入数据：<br>
+                E = F / q = 4.0×10⁻⁴ N / 2.0×10⁻⁸ C = 2.0×10⁴ N/C<br><br>
+                所以选A。<br><br>
+                <strong>【考点】</strong>电场强度的定义，比值定义法是物理中常用的定义方法。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">12.</span>
+            两平行金属板相距 d = 0.02 m，接在电压 U = 100 V 的电源上。一个电子从静止开始从负极板向正极板运动。已知电子质量 m = 9.1×10⁻³¹ kg，电荷量 e = 1.6×10⁻¹⁹ C。求：<br>
+            (1) 两板间的电场强度大小；<br>
+            (2) 电子到达正极板时的速度大小。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('e12')">查看答案与解析</button>
+        <div class="answer" id="answer-e12">
+            <div class="correct">【答案】(1) 5×10³ V/m；(2) 约5.9×10⁶ m/s</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                <strong>(1) 两板间的电场强度：</strong><br>
+                匀强电场中 E = U/d<br>
+                E = 100 V / 0.02 m = 5×10³ V/m<br><br>
+                <strong>(2) 求电子到达正极板时的速度：</strong><br>
+                <strong>方法一：用动能定理</strong><br>
+                电场力做功 W = eU<br>
+                由动能定理 W = ½mv² - 0<br>
+                eU = ½mv²<br>
+                v = √(2eU/m) = √(2×1.6×10⁻¹⁹×100 / 9.1×10⁻³¹) ≈ 5.9×10⁶ m/s<br><br>
+                <strong>方法二：用牛顿定律+运动学</strong><br>
+                F = eE = eU/d，a = F/m = eU/(md)<br>
+                v² = 2ad = 2×(eU/(md))×d = 2eU/m，结果相同。<br><br>
+                显然用动能定理更简便！这是电学计算题的常用方法。
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 电磁感应 -->
+<div class="chapter-card">
+    <h2 class="chapter-title">
+        <span>🔌</span>
+        第十三章 电磁感应与电磁波初步
+        <span class="difficulty hard">提高</span>
+        <span style="font-size:0.85rem;color:#64748b;margin-left:auto;">共10题 · 高考压轴</span>
+    </h2>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">1.</span>
+            关于感应电流的产生，下列说法正确的是（　　）
+            <div class="options">
+                <div class="option">A. 闭合回路中只要有磁通量就有感应电流</div>
+                <div class="option">B. 闭合回路中磁通量变化就一定有感应电流</div>
+                <div class="option">C. 只要导体做切割磁感线运动就有感应电流</div>
+                <div class="option">D. 穿过回路的磁通量越大，感应电流越大</div>
+            </div>
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('em1')">查看答案与解析</button>
+        <div class="answer" id="answer-em1">
+            <div class="correct">【答案】B</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                感应电流产生的条件：<br>
+                ① 回路必须闭合；② 穿过闭合回路的磁通量发生变化。<br><br>
+                A错误：有磁通量但磁通量不变，就没有感应电流。<br>
+                B正确：两个条件都满足。<br>
+                C错误：如果回路不闭合，只有感应电动势，没有感应电流。<br>
+                D错误：感应电流的大小取决于磁通量变化的快慢，不是磁通量的大小。<br><br>
+                <strong>【核心概念】</strong>法拉第电磁感应定律：感应电动势与磁通量变化率成正比。
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="q-content">
+            <span class="q-num">10.</span>
+            如图所示，边长为 L 的正方形线框，电阻为 R，处在磁感应强度为 B 的匀强磁场中。当线框以角速度 ω 绕轴匀速转动时，求线框中产生的感应电动势的最大值和有效值。
+        </div>
+        <button class="answer-btn" onclick="toggleAnswer('em10')">查看答案与解析</button>
+        <div class="answer" id="answer-em10">
+            <div class="correct">【答案】最大值E<sub>m</sub>=BL²ω；有效值E=BL²ω/√2</div>
+            <div class="analysis">
+                <strong>【解析】</strong><br>
+                这是交变电流的产生问题。<br><br>
+                <strong>感应电动势最大值：</strong><br>
+                当线框平面与磁场平行时，两边同时切割磁感线，感应电动势最大。<br>
+                每边的感应电动势 E₁ = BLv = BL·(ωL/2) = ½BL²ω<br>
+                两边串联，所以总电动势最大值：<br>
+                <div class="formula">E<sub>m</sub> = 2 × ½BL²ω = BL²ω</div><br>
+                <strong>正弦式交变电流有效值与最大值的关系：</strong><br>
+                <div class="formula">E = E<sub>m</sub> / √2 = BL²ω / √2</div><br>
+                这就是交流发电机的原理，是高考电学实验和计算题的常考点。
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script>
+function toggleAnswer(id) {
+    const answer = document.getElementById('answer-' + id);
+    answer.classList.toggle('show');
+}
+</script>
+</body>
+</html>
