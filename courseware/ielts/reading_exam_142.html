@@ -1,363 +1,188 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Environmental Management - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>How Do We Find Our Way - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题193/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Environmental Management</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>clothing. Provisions available in local shops have to be flown into Nunavut on one of the
-most costly air networks in the world, or brought by supply ship during the few ice-free
-weeks of summer. It would cost a family around £7,000 a year to replace meat they
-obtained themselves through hunting with imported meat. Economic opportunities are
-scarce, and for many people state benefits are their only income.</p>
-<p>While the Inuit may not actually starve if hunting and trapping are curtailed by climate
-change, there has certainly been an impact on people's health. Obesity, heart disease and
-diabetes are beginning to appear in a people for whom these have never before been
-problems. There has been a crisis of identity as the traditional skills of hunting, trapping
-and preparing skins have begun to disappear. In Nunavut's 'igloo and email' society, where
-adults who were born in igloos have children who may never have been out on the land,
-there's a high incidence of depression.</p>
-<p>With so much at stake, the Inuit are determined to play a key role in teasing out the
-mysteries of climate change in the Arctic. Having survived there for centuries, they believe
-their wealth of traditional knowledge is vital to the task. And Western scientists are starting
-to draw on this wisdom, increasingly referred to as 'Inuit Qaujimajatuqangit', or IQ. 'In the
-early days scientists ignored us when they came up here to study anything. They just
-figured these people don't know very much so we won't ask them,' says John Amagoalik,
-an Inuit leader and politician. 'But in recent years IQ has had much more credibility and
-weight.' In fact it is now a requirement for anyone hoping to get permission to do research
-that they consult the communities, who are helping to set the research agenda to reflect
-their most important concerns. They can turn down applications from scientists they believe
-will work against their interests, or research projects that will impinge too much on their
-daily lives and traditional activities.</p>
-<p>Some scientists doubt the value of traditional knowledge because the occupation of the
-Arctic doesn't go back far enough. Others, however, point out that the first weather stations
-in the far north date back just 50 years. There are still huge gaps in our environmental
-knowledge, and despite the scientific onslaught, many predictions are no more than best
-guesses. IQ could help to bridge the gap and resolve the tremendous uncertainty about
-how much of what we're seeing is natural capriciousness and how much is the
-consequence of human activity.
- 2</p>
-<p>Questions 1-6
-Reading Passage has seven paragraphs, A-G.
-Choose the correct heading for paragraphs B-G from the list of headings below.
-Write the correct number, i-ix, in boxes 1-6 on your answer sheet.
-List of Headings
-i       The reaction of the limit community to climate change
-ii      Understanding of climate change remains limited 
-iii      Alternative sources of essential supplies
-¡v      Respect for limit opinion grows
-v       A healthier choice of food  
-vi      A difficult landscape
-vii    Negative effects on well-being
-viii    Alarm caused by unprecedented events in the Arctic
-ix      The benefits of an easier existence
-Example Answer</p>
-<p>1    Paragraph B 1.....................
-2    Paragraph C 2.....................
-3    Paragraph D 3.....................
-4    Paragraph E 4.....................
-5    Paragraph F 5.....................
-6    Paragraph G 6.....................
-Questions 7-14
-Complete the summary of paragraphs C and D below.
-Choose NO MORE THAN TWO WORDS from paragraphs C and D for each answer.
-Write your answers in boxes 7-14 on your answer sheet.
- 3</p>
-<p>If you visit the Canadian Arctic, you immediately appreciate the problems faced by
-people for whom this is home.
-It would clearly be impossible for the people to engage in 7..................... as a means of
-supporting themselves.
-For thousands of years they have had to rely on catching 8..................... and
-9..................... as a means of sustenance.
-The harsh surroundings saw many who tried to settle there pushed to their limits,
-although some were successful.
-The 10..................... people were an example of the latter and for them the environment
-did not prove unmanageable. For the present inhabitants, life continues to be a struggle.
-The territory of Nunavut consists of little more than ice, rock and a few 11.....................
-In recent years, many of them have been obliged to give up their 12.....................
-lifestyle, but they continue to depend mainly on 13..................... for their food and
-clothes.
-14..................... produce is particularly expensive.
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>How Do We Find Our Way</h1>
+<p>雅思阅读真题 · 第142篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>How do we find our way?
+A. Most modern navigation, such as the Global Positioning System (GPS), relies primarily
+on positions determined electronically by receivers collecting information from satellites.
+Yet if the satellite service’s digital maps become even slightly outdated, we can become
+lost. Then we have to rely on the ancient human skill of navigating in three dimensional
+space. Luckily, our biological finder has an important advantage over GPS: we can ask
+questions of people on the sidewalk, or follow a street that looks familiar, or rely on a
+navigational rubric. The human positioning system is flexible and capable of learning.
+Anyone who knows the way from point A to point B-and from A to C-can probably figure out
+how to get from B to C, too.
+ B. But how does this complex cognitive system really work? Researchers are looking at
+several strategies people use to orient themselves in space: guidance, path integration and
+route following. We may use all three or combinations thereof, and as experts learn more
+about these navigational skills, they are making the case that our abilities may underlie our
+powers of memory and logical thinking. For example, you come to New York City for the
+first time and you get off the train at Grand Central Terminal in midtown Manhattan. You
+have a few hours to see popular spots you have been told about: Rockefeller Center,
+Central Park, and the Metropolitan Museum of Art. You meander in and out of shops along
+the way. Suddenly, it is time to get back to the station. But how?
+C. If you ask passersby for help, most likely you will receive information in many different
+forms. A person who orients herself by a prominent landmark would gesture southward:
+“Look down there. See the tall, broad MetLife Building? Head for that- the station is right
+below it.” Neurologists call this navigational approach “guidance”, meaning that a landmark
+visible from a distance serves as the marker for one’s destination.
+ D. Another city dweller might say: “What places do you remember passing? … Okay. Go
+toward the end of Central Park, then walk down to St. Patrick’s Cathedral. A few more
+blocks, and Grand Central will be off to your left.” In this case, you are pointed toward the
+most recent place you recall, and you aim for it. Once there you head for the next notable
+place and so on, retracing your path. Your brain is adding together the individual legs of
+your trek into a cumulative progress report. Researchers call this strategy “path
+integration.” Many animals rely primarily on path integration to get around, including
+insects, spiders, crabs and rodents. The desert ants of the genus Cataglyphis employ this
+method to return from foraging as far as 100 yards away. They note the general direction
+they came from and retrace their steps, using the polarization of sunlight to orient
+themselves even under overcast skies. On their way back they are faithful to this inner
+homing vector. Even when a scientist picks up an ant and puts it in a totally different spot,
+the insect stubbornly proceeds in the originally determined direction until it has gone “back”
+all of the distance it wandered from its nest. Only then does the ant realize it has not
+succeeded, and it begins to walk in successively larger loops to find its way home.
+E. Whether it is trying to get back to the anthill or the train station, any animal using path
+integration must keep track of its own movements so it knows, while returning, which
+ 1
+segments it has already completed. As you move, your brain gathers data from your
+environment-sights, sounds, smells, lighting, muscle contractions, a sense of time passing-
+to determine which way your body has gone. The church spire, the sizzling sausages on
+that vendor’s grill, the open courtyard, and the train station-all represent snapshots of
+memorable junctures during your journey.
+ F. In addition to guidance and path integration, we use a third method for finding our way.
+An office worker you approach for help on a Manhattan street comer might say: “Walk
+straight down Fifth, turn left on 47th, turn right on Park, go through the walkway under the
+Helmsley Building, then cross the street to the MetLife Building into Grand Central.” This
+strategy, called route following, uses landmarks such as buildings and street names, plus
+directions straight, turn, go through—for reaching intermediate points. Route following is
+more precise than guidance or path integration, but if you forget the details and take a
+wrong turn, the only way to recover is to backtrack until you reach a familiar spot, because
+you do not know the general direction or have a reference landmark for your goal. The
+route following navigation strategy truly challenges the brain. We have to keep all the
+landmarks and intermediate directions in our head. It is the most detailed and therefore
+most reliable method, but it can be undone by routine memory lapses. With path
+integration, our cognitive memory is less burdened; it has to deal with only a few general
+instructions and the homing vector. Path integration works because it relies most
+fundamentally on our knowledge of our body’s general direction of movement, and we
+always have access to these inputs. Nevertheless, people often choose to give route-
+following directions, in part because saying “Go straight that way!” just does not work in our
+complex, man made surroundings.
+G. Road Map or Metaphor? On your next visit to Manhattan you will rely on your memory to
+get present geographic information for convenient visual obviously seductive: maps
+around. Most likely you will use guidance, path integration and route following in various
+combinations. But how exactly do these constructs deliver concrete directions? Do we
+humans have, as an image of the real world, a kind of road map in our heads?
+Neurobiologists and cognitive psychologists do call the portion of our memory that controls
+navigation a “cognitive map”. The map metaphor is are the easiest way to inspection. Yet
+the notion of a literal map in our heads may be misleading; a growing body of research
+implies that the cognitive map is mostly a metaphor. It may be more like a hierarchical
+structure of relationships.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Use the information in the passage to match the category of each navigation method (listed
+A-C) with correct statement.
+Write the appropriate letters A-C in boxes  1-5 on your answer sheet.
+NB You may use any letter more than once.
+A. guidance method
+B. path integration method
+C. route following method
+1..................... Split the route up into several smaller parts.
+2..................... When mistakes are made, a person needs to go back.
+3..................... Find a building that can be seen from far away.
+4..................... Recall all the details along the way.
+5..................... Memorize the buildings that you have passed by.
+Questions 6-8
+Choose the correct letter, A, B, C or D.
+Write your answers in boxes 6-8 on your answer sheet.
+6. According to the passage, how does the Cataglyphis ant respond if it is taken to a
+different location?
+A changes its orientation sensors to adapt
+B releases biological scent for help from others
+C continues to move according to the original orientation
+D gets completely lost once disturbed
+7. What did the author say about the route following method?
+A dependent on directions to move on
+B dependent on memory and reasoning
+C dependent on man-made settings
+D dependent on the homing vector
+8. Which of the following is true about the “cognitive map” in this passage?
+A There is no obvious difference between it and a real map.
+B It exists in our heads and is always correct.
+C It only exists in some cultures.
+D It is managed by a portion of our memory.
+Questions 9-13
+Do the following statements agree with the information given in Reading Passage?
+In boxes 9-13 on your answer sheet, write
+TRUE
+FALSE
+NOT GIVENif the statement agrees with the information
+if the statement contradicts the information
+if there is no information on this
+9..................... Biological navigation is flexible.
+ 3
+10..................... Insects have many ways to navigate that are in common with many other
+animals.
+11..................... When someone follows a route, he or she collects comprehensive
+perceptual information in the mind along the way.
+12..................... The path integration method has a higher requirement of memory
+compared with the route following method.
+13..................... When people find their way, they have an exact map in their mind.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.B
+2.C
+3.A
+4.C
+5.B
+6.C
+7.8.D
+9.TRUE
+10.NOT GIVEN
+11.TRUE
+12.FALSE
+13.FALSE
+B
+ 5</div>
+</div>
+</div>
 </body>
 </html>

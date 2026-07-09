@@ -1,390 +1,190 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Future Of Fish - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Rufous Hare Wallaby - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题502/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Future Of Fish</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Write the correct letter in box 14 on your answer sheet.
-14. What would be the most appropriate subtitle for the article?
-A Some scientific insights into how the brain responds to abstract art
-B Recent studies focusing on the neural activity of abstract artists 
-C A comparison of the neurological bases of abstract and representational art 
-D How brain research has altered public opinion about abstract art
- 5</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Rufous Hare Wallaby</h1>
+<p>雅思阅读真题 · 第375篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Rufous Hare-Wallaby
+The Rufous Hare-Wallaby is a species of Australian kangaroo, usually known by its
+Aboriginal name, ‘mala’. At one time, there may have been as many as ten million of these
+little animals across the arid and semi-arid landscape of Australia, but their populations, like
+those of so many other small endemic species, were devastated when cats and foxes were
+introduced - indeed, during the 1950s it was thought that the mala was extinct. But in 1964,
+a small colony was found 450 miles northwest of Alice Springs in the Tanami Desert. And
+12 years later, a second small colony was found nearby. Very extensive surveys were
+made throughout historical mala range - but no other traces were found.
+Throughout the 1970s and 1980s, scientists from the Parks and Wildlife Commission of the
+Northern Territory monitored these two populations. At first it seemed that they were
+holding their own. Then in late 1987, every one of the individuals of the second and smaller
+of the wild colonies was killed. From examination of the tracks in the sand, it seemed that
+just one single fox had been responsible. And then, in October 1991, a wild-fire destroyed
+the entire area occupied by the remaining colony. Thus the mala was finally pronounced
+extinct in the wild.
+Fortunately, ten years earlier, seven individuals had been captured, and had become the
+founders of a captive breeding programme at the Arid Zone Research Institute in Alice
+Springs; and that group had thrived. Part of this success is due to the fact that the female
+can breed when she is just five months old and can produce up to three young a year. Like
+other kangaroo species, the mother carries her young - known as a joey - in her pouch for
+about 15 weeks, and she can have more than one joey at the same time.
+In the early 1980s, there were enough mala in the captive population to make it feasible to
+start a reintroduction programme. But first it was necessary to discuss this with the leaders
+of the Yapa people. Traditionally, the mala had been an important animal in their culture,
+with strong medicinal powers for old people. It had also been an important food source, and
+there were concerns that any mala returned to the wild would be killed for the pot. And so,
+in 1980, a group of key Yapa men was invited to visit the proposed reintroduction area. The
+skills and knowledge of the Yapa would play a significant and enduring role in this and all
+other mala projects.
+With the help of the local Yapa, an electric fence was erected around 250 acres of suitable
+habitat, about 300 miles'northwest of Alice Springs so that the mala could adapt while
+protected from predators. By 1992, there were about 150 mala in their enclosure, which
+became known as the Mala Paddock. However, all attempts to reintroduce mala from the
+paddocks into the unfenced wild were unsuccessful, so in the end the reintroduction
+programme was abandoned. The team now faced a situation where mala could be bred,
+but not released into the wild again.
+Thus, in 1993, a Mala Recovery Team was established to boost mala numbers, and goals
+for a new programme were set: the team concentrated on finding suitable predator-free or
+predator-controlled conservation sites within the mala’s known range. Finally, in March
+1999, twelve adult females, eight adult males, and eight joeys were transferred from the
+Mala Paddock to Dryandra Woodland in Western Australia. Then, a few months later, a
+second group was transferred to Trimouille, an island off the coast of western Australia.
+First, it had been necessary to rid the island of rats and cats - a task that had taken two
+ 1
+years of hard work.
+Six weeks after their release into this conservation site, a team returned to the island to find
+out how things were going. Each of the malas had been fitted with a radio collar that
+transmits for about 14 months, after which it falls off. The team was able to locate 29 out of
+the 30 transmitters - only one came from the collar of a mala that had died of unknown
+causes. So far the recovery programme had gone even better than expected.
+Today, there are many signs suggesting that the mala population on the island is
+continuing to do well.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Complete the flow chart below.
+ChooseNO MORE THAN THREE WORDS AND/OR A NUMBER from the passage for
+each answer.
  
-1. C
-2. D
-3. B
-4. A
-5. C
-6. B
-7. H
-8. NOT GIVEN
-9. YES
-10. NO
-11. NO
-12. YES
-13. NOT GIVEN
-14. A
- 6</p>
-<p>Reading Practice
- New Agriculture in Oregon, US</p>
-<p>Onion growers in eastern Oregon are adopting a system that saves water and keeps
-topsoil in place while producing the highest quality “super-colossal” onions. Pear growers in
-southern Oregon have reduced their use of some of the most toxic pesticides by up to twothirds, and are still producing top-quality pear. Range managers throughout the state have
-controlled the poisonous weed tansy ragwort with insect predators and saved the Oregon
-livestock industry up to $4.8 million a year.</p>
-<p>These are some of the results Oregon growers have achieved in collaboration with Oregon
-State University (OSU) researchers as they test new farming methods including integrated
-pest management (IPM). Nationwide, however, IPM has not delivered results comparable
-to those in Oregon. A recent U.S General Accounting Office (GAO) report indicates that
-while integrated pest management can result in dramatically reduced pesticide use, the
-federal government has been lacking in effectively promoting that goal and implementing
-IPM. Farmers also blame the government for not making the new options of pest
-management attractive. “Wholesale changes in the way that farmers control the pests on
-their farms is an expensive business.” Tony Brown, of the National Farmers Association,
-says. “If the farmers are given tax breaks to offset the expenditure, then they would willingly
-accept the new practices.” The report goes on to note that even though the use of the
-riskiest pesticides has declined nationwide, they still make up more than 40 percent of all
-pesticides used today; and national pesticide use has risen by 40 million kilograms since
-1992. “Our food supply remains the safest and highest quality on Earth but we continue to
-overdose our farmland with powerful and toxic pesticides and to under-use the safe and
-effective alternatives,” charged Patrick Leahy, who commissioned the report. Green action
-groups disagree about the safety issue. “There is no way that habitual consumption of
-foodstuffs grown using toxic chemical of the nature found on today’s farms can be healthy
-for consumers,” noted Bill Bowler, spokesman for Green Action, one of many lobbyists
-interested in this issue.</p>
-<p>The GAO report singles out Oregon’s apple and pear producers who have used the new
-IPM techniques with growing success. Although Oregon is clearly ahead of the nation,
-scientists at OSU are taking the Government Accounting Office criticisms seriously. “We
-must continue to develop effective alternative practices that will reduce environmental
-hazards and produce high-quality products,” said Paul Jepson, a professor of entomology
-at OSU and new director of</p>
-<p>OSU’s Integrated Plant Protection Centre (IPPC). The IPPC brings together scientists from
-OSU’s Agricultural Experiment Station, OSU Extension service, the U.S. Department of
-Agriculture and Oregon farmers to help develop agricultural systems that will save water
-and soil, and reduce pesticides. In response to the GAO report, the Centre is putting even
-more emphasis on integrating research and farming practices to improve Oregon
- 1</p>
-<p>agriculture environmentally and economically.</p>
-<p>“The GAO report criticizes agencies for not clearly communicating the goals of IPM,” said
-Jepson. “Our challenge is to greatly improve the communication to and from growers, to
-learn what works and what doesn’t. the work coming from OSU researchers must be
-adopted in the field and not simply languish in scientific journals.”</p>
-<p>In Oregon, growers and scientists are working together to instigate new practices. For
-example, a few years ago scientists at OSU’s Malheur Experiment Station began testing a
-new drip irrigation system to replace old ditches that wasted water and washed soil and
-fertilizer into streams. The new system cut water and fertilizer use by half kept topsoil in
-place and protected water quality.</p>
-<p>In addition, the new system produced crops of very large onions, rated “super-colossal”
-and highly valued by the restaurant industry and food processors. Art Pimms, one of the
-researchers at Malheur comments: “Growers are finding that when they adopt more
-environmentally benign practices, they can have excellent results. The new practices
-benefit the environment and give the growers their success.”</p>
-<p>OSU researcher in Malheur next tested straw mulch and found that it successfully held soil
-in place and kept the ground moist with less irrigation. In addition, and unexpectedly, the
-scientists found that the mulched soil created a home for beneficial beetles and spiders that
-prey on onion thrips – a notorious pest in commercial onion fields – a discovery that could
-reduce the need for pesticides. “I would never have believed that we could replace the
-artificial pest controls that we had before and still keep our good results,” commented Steve
-Black, a commercial onion farmer in Oregon, “but instead we have actually surpassed
-expectations.”</p>
-<p>OSU researchers throughout the state have been working to reduce dependence on broadspectrum chemical spays that are toxic to many kinds of organisms, including humans.
-“Consumers are rightly putting more and more pressure on the industry to change its
-reliance on chemical pesticides, but they still want a picture-perfect product,” said Rick
-Hilton, an entomologist at OSU’s Southern Oregon Research and Extension Centre, where
-researches help pear growers reduce the need for highly toxic pesticides. Picture perfect
-pears are an important product in Oregon and traditionally they have required lots of
-chemicals. In recent years, the industry has faced stiff competition from overseas
-producers, so any new methods that growers adopt must make sense economically as well
-as environmentally. Hilton is testing a growth regulator that interferes with the molting of
-codling moth larvae. Another study used pheromone dispensers to disrupt codling moth
-mating. These and other methods of integrated pest management have allowed pear
-growers to reduce their use of organophosphates by two-thirds and reduce all other
-synthetic pesticides by even more and still produce top-quality pears. These and other
-studies around the state are part of the effort of the IPPC to find alternative farming
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ The Wild Australian mala
+ Distant past: total population of up to
+1..................... in desert and semi-
+desert regions.
+Populations of malas were destroyed
+by2.....................
+1964/1976: two surviving colonies
+were discovered.
+Scientists 3..................... the
+colonies.
+1987: one of the colonies was
+completely destroyed.
+1991: the other colony was
+destroyed by 4.....................
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The wild mala was declared
+5.....................
+Questions 6-9
+Answer the questions below.
+ 3
+  
+        
+        ChooseNO MORE THAN THREE WORDS AND/OR A NUMBER from the passage for
+each answer.
+      6
+7
+8At what age can female malas start breeding? 6.....................
+For about how long do young malas stay inside their mother’s pouch? 7.....................
+Apart from being a food source, what value did malas have for the Yapa people?
+8.....................
+      9What was the Yapa’s lasting contribution to the mala reintroduction programme?
+9.....................
+Questions 10-13
+Do the following statements agree with the information given in Reading Passage 1?
+Write
+          TRUE
+ 
+       
+       
+    
+  
+  if the statement agrees with the information
+FALSE         if the statement contradicts the information
+NOT GIVEN if there is no information on this
+10..................... Natural defences were sufficient to protect the area called Mala
+Paddock.
+11..................... Scientists eventually gave up their efforts to release captive mala into
+the unprotected wild.
+12..................... The mala population which was transferred to Dryandra Woodland
+quicklyincreased in size.
+13.....................    Scientists were satisfied with the initial results of the recovery
+programme.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 
+  
+  
+  
+  
+  
+ 8.(strong)
+medicinal powers
+9.skills and
+knowledge
+10.FALSE
+11.TRUE
+12.NOT GIVEN
+13.1.10/ten million
+TRUE2.cats and foxes/
+foxes and cats
+3.monitored
+4.fire
+5.extinct
+6.5/five months
+7.15/fifteen weeks
+ 5</div>
+</div>
+</div>
 </body>
 </html>

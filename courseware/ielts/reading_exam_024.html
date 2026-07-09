@@ -1,271 +1,166 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Development of the Automobile - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-        }
-        .passage-box {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
-        .question-card {
-            background: #eff6ff;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
-        }
-        .question-card h4 {
-            margin: 0 0 12px 0;
-            color: #1e40af;
-        }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
-            display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
-            text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>A New Stage In The Study And Teaching Of History - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📖 阅读真题 45/50</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
-        </aside>
-
-        <main class="main">
-            <div class="page-hero">
-                <h1>📖 The Development of the Automobile</h1>
-                <p>剑桥12 Test2 Passage2 · 题型：Matching · 填空 · 完整逐题解析</p>
-            </div>
-
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 45: The Development of the Automobile</h3>
-                    <div class="difficulty diff-medium">难度：★★★☆☆ 中等</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：说明文/议论文 · 话题：交通 · 科技 · 建议时间：18-20分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>The Development of the Automobile is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of the automobile has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>B</strong></p>
-                        <p>The Development of the Automobile is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of the automobile has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>C</strong></p>
-                        <p>The Development of the Automobile is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of the automobile has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>D</strong></p>
-                        <p>The Development of the Automobile is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of the automobile has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>E</strong></p>
-                        <p>The Development of the Automobile is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of the automobile has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>F</strong></p>
-                        <p>The Development of the Automobile is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of the automobile has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>G</strong></p>
-                        <p>The Development of the Automobile is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of the automobile has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>H</strong></p>
-                        <p>The Development of the Automobile is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of the automobile has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-8: Complete the Summary</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
-                        <p style="line-height:2.2;">
-                            The Step Pyramid was designed by the architect <input type="text" class="blank-input" placeholder="...">. It was built during the <input type="text" class="blank-input" placeholder="..."> century BCE for Pharaoh Djoser. Unlike previous tombs made of <input type="text" class="blank-input" placeholder="...">, this pyramid was constructed from <input type="text" class="blank-input" placeholder="...">. The complex includes various <input type="text" class="blank-input" placeholder="..."> and temples, surrounded by a high <input type="text" class="blank-input" placeholder="...">. Underground, there are over 5 kilometers of <input type="text" class="blank-input" placeholder="..."> and chambers.
-                        </p>
-                    </div>
-                    <div class="question-card">
-                        <h4>Questions 9-12: Matching Information</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Which paragraph contains the following information?</p>
-                        <p style="margin:8px 0;"><strong>9.</strong> The underground structures beneath the pyramid</p>
-                        <p style="margin:8px 0;"><strong>10.</strong> The influence on later Egyptian architecture</p>
-                        <p style="margin:8px 0;"><strong>11.</strong> The buildings within the pyramid complex</p>
-                        <p style="margin:8px 0;"><strong>12.</strong> The revolutionary nature of stone construction</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> Imhotep</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> 27th</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> mud brick</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> limestone</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> courtyards</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> wall</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> tunnels</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>8.</strong> E</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>9.</strong> G</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>10.</strong> C</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>11.</strong> D</td></tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 8: Imhotep</h5>
-                        <p><strong>定位：</strong>Paragraph B 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Designed by the brilliant architect Imhotep"</span></p>
-                        <p><strong>解析：</strong>原文原词，注意大写。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 9: 27th</h5>
-                        <p><strong>定位：</strong>Paragraph A 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Built during the 27th century BCE"</span></p>
-                        <p><strong>解析：</strong>数字信息，直接提取。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 14: E</h5>
-                        <p><strong>定位：</strong>Paragraph E 第1句</p>
-                        <p><strong>原文：</strong><span class="keyword">"The underground galleries beneath the Step Pyramid are equally impressive."</span></p>
-                        <p><strong>解析：</strong>"underground galleries"对应题目中的"underground structures"。</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>A New Stage In The Study And Teaching Of History</h1>
+<p>雅思阅读真题 · 第24篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>A new stage in the study and teaching of history
+ For hundreds of years, historians have relied on written or printed documents to provide the
+bulk of their source materials, and they have largely communicated with students and the
+wider public by writing books and journal articles. Today, however, the printed word is
+being superseded by a diversity of forms of communication, above all moving images on
+video or film
+ AThe development of this new form of communication is leading to a growing gap between
+the practice of professional historians based in academia, and the practice of those aiming
+to popularise the study of history among the general public, and to encourage people to
+create their own records for the future. On the one hand, there are mainstream academics
+who continue to use only the written word as they examine more and more fields with an
+ever- increasing number of sophisticated methodologies. On the other hand, film and video,
+especially as broadcast on television, are probably the major influence on the public's
+consciousness of history, as they see film of events of fifty or a hundred years ago, events
+they had previously only read about.
+ BIn a related development, a great many people now document local and family events in
+the form of videos; many schools, too, produce video yearbooks. All these visual records
+may well prove to be invaluable sources of information for future historians. The glaring
+contradiction is that the two approaches-the academic and what we might term the popular
+- have intersected very little: with a few notable exceptions, professional historians have
+tended to avoid involvement in television programmes about history, and have even less
+impact on what is being captured and preserved on video. And the potential of moving
+images has wielded negligible influence on the academic study of history.
+ 
+  CThis gulf can be seen as resulting from the willingness or otherwise of individual
+historians to accept the validity of new forms of communication in the study of history. This
+is not the first time that the question has arisen. The study of history, as conceived of
+today, began with the transition from oral to literate culture, leading to the earliest written
+records and the earliest historical studies. The next great shift came with the advent of
+printing, which transformed everything. Today, as the printed word loses its dominance,
+historians are faced with a variety of forms of communication, ranging from simple
+audiotape to the promising complexities of videodiscs linked with computers. As yet,
+however, the use of moving images to record current events for the benefit of future
+historians does not even have a commonly agreed name.
+ DThis does not mean that mainstream historians have totally rejected the use of moving
+images as sources: the majority seem intrigued by the idea, and valuable research has
+been carried out into the history and analysis of films with a broad circulation, using them
+as a source of information on the social and intellectual history of the twentieth century.
+Journals such as American History Review have played a significant role in this field.
+EYet the number of historians using moving images in their research or teaching is very
+small. The barrier seems to be that the profession is structured around the medium of the
+written word, and is somewhat insulated in its academic setting. The use of moving images
+presents a substantial challenge to this setting and its assumptions. As a result, historians
+have rejected the training, the institutions, the motivations and the professional structures
+that would be needed in order to use moving images effectively. Above all, they have
+ 1
+ rejected the necessity to learn complicated new skills.
+ FSo why should historians make this change? clearly, films or videos of events and people
+can be used as solid evidence of the past, linked to the words of the narrator (whether a
+television presenter/historian or a university teacher giving a lecture) but carrying
+information in their own right. Film has reintroduced the oral form as a mode of research
+and communication for documenting historical events. Now, with moving images, people
+are reminded that oral communication is not limited to words: it also includes body
+language, expression and tone, and is embedded in a context. Little of this is evident in a
+written transcript. A further effect of video and film is that the narrator gives up some control
+and has less need to give explanations, while the viewer becomes involved in the process
+of interpreting and understanding history.
+GFilm or videotape can also aid historians by simplifying the work of the interviewer.
+Instead of trying to carry on an interview while simultaneously making notes about setting
+and other unspoken data, this new kind of historian can concentrate on the interview itself,
+and study the film later. The many benefits of using moving images as historical evidence
+easily outweigh worries about cost, technical skills, or the effect of a camera on a person
+telling his or her story. Moving images enhance the quality of historical research, and
+suggest new directions for historians to explore.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-9
+Reading Passage has seven paragraphs, A-G.
+Which paragraph contains the following information?
+Write the correct letter, A-G, in boxes 1-9 on your answer sheet.
+ 
+ NBYou may use any letter more than once.
+1.....................  an overview of the range of methods that have been used over time to
+document history
+2.....................   the main reason why many historians are unwilling to use films in
+their work
+3..................... a reference to some differences between oral and written
+communication
+4..................... how most citizens today gain an understanding of history
+5..................... how current student events are sometimes captured for future
+audiences
+6..................... mention of the fact that the advantages of film are greater than the
+disadvantages
+7..................... the claim that there is no official title for film-based historical work
+8..................... reference to the active role the audience plays when watching films
+9..................... a list of requirements that historians see as obstacles to their use of
+film to record history
+ Questions 10-14
+Do the following statements agree with the claims of the writer in Reading Passage?
+In boxes 10-14 on your answer sheet, write
+YES – if the statement reflects the claims of the writer
+NO – if the statement contradicts the claims of the writer
+NOT GIVEN – if it is impossible to say what the writer thinks about this
+10..................... The needs of students in school have led to improvements in the
+teaching of history.
+11..................... Academic and popular historians have different attitudes towards the
+ 3
+value of innovations in communication.
+12.....................   It is common for historians to play a major role in creating historical
+documentaries for television.
+13.....................  Articles in American History Review have explored aspects of
+modern history through popular films.
+14..................... Developments in technology are influencing a range of academic
+subjects.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.C
+2.E
+3.F
+4.A
+5.B
+6.G
+7.C8.F
+9.E
+10.NOT GIVEN
+11.YES
+12.NO
+13.YES
+14.NOT GIVEN
+ 5</div>
+</div>
+</div>
 </body>
 </html>

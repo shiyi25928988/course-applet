@@ -1,372 +1,186 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Return Of Artificial Intelligence - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>What Are You Laughing At - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题563/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Return Of Artificial Intelligence</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
- 
-1. vii
-2. iv
-3. vi
-4. v
-5. viii
-6. iii
-  
-8. silent
-9. battery
-10. portable
-computers
-11. FALSE
-12. NOT GIVEN
-13. TRUE
-7. combustion engine 14. TRUE
- 5</p>
-<p>Reading Practice
- Quiet roads ahead
-The roar of passing vehicles could soon be a thing of the past
-A. The noise produced by busy roads is a growing problem. While vehicle designers have
-worked hard to quieten engines, they have been less successful elsewhere. The sound
-created by the tyres on the surface of the road now accounts for more than half the noise
-that vehicles create, and as road building and car sales continue to boom - particularly in
-Asia and the US - this is turning into a global issue.
-B. According to the World Health Organization, exposure to noise from road traffic over
-long periods can lead to stress-related health problems. And where traffic noise exceeds a
-certain threshold, road builders have to spend money erecting sound barriers and installing
-double glazing in blighted homes. Houses become harder to sell where environmental
-noise is high, and people are not as efficient or productive at work.
-C. Already, researchers in the Netherlands - one of the most densely populated countries
-in the world - are working to develop techniques for silencing the roads. In the next five
-years the Dutch government aims to have reduced noise levels from the country's road
-surfaces by six decibels overall. Dutch mechanical engineer Ard Kuijpers has come up with
-one of the most promising, and radical, ideas. He set out to tackle the three most important
-factors: surface texture, hardness and ability to absorb sound.
-D. The rougher the surface, the more likely it is that a tyre will vibrate and create noise.
-Road builders usually eliminate bumps on freshly laid asphalt with heavy rollers, but
-Kuijpers has developed a method of road building that he thinks can create the ultimate
-quiet road. His secret is a special mould 3 metres wide and 50 metres long. Hot asphalt,
-mixed with small stones, is spread into the mould by a railmounted machine which flattens
-the asphalt mix with a roller. When it sets, the 10-millimetre-thick sheet has a surface
-smoother than anything that can be achieved by conventional methods.
-E. To optimise the performance of his road surface - to make it hard wearing yet soft
-enough to snuff out vibrations - he then adds another layer below the asphalt. This consists
-of a 30-millimetre-thick layer of rubber, mixed with stones which are larger than those in the
-layer above. 'It's like a giant mouse mat, making the road softer,' says Kuijpers.
-F. The size of the stones used in the two layers is important, since they create pores of a
-specific size in the road surface. Those used in the top layer are just 4 or 5 millimetres
-across, while the ones below are approximately twice that size - about 9 millimetres.
-Kuijpers says the surface can absorb any air that is passing through a tyre's tread (the
-indentations or ridges on the surface of a tyre), damping oscillations that would otherwise
-create noise. And in addition they make it easier for the water to drain away, which can
-make the road safer in wet weather.
-G. Compared with the complex manufacturing process, laying the surface is quite simple. It
-emerges from the factory rolled, like a carpet, onto a drum 1.5 metres in diameter. On site,
-it is unrolled and stuck onto its foundation with bitumen. Even the white lines are applied in
-the factory.
-H. The foundation itself uses an even more sophisticated technique to reduce noise further.
- 1</p>
-<p>It consists of a sound-absorbing concrete base containing flask-shaped slots up to 10
-millimetres wide and 30 millimetres deep that are open at the top and sealed at the lower
-end. These cavities act like Helmholtz resonators - when sound waves of specific
-frequencies enter the top of a flask, they set up resonances inside and the energy of the
-sound dissipates into the concrete as heat. The cavities play another important role: they
-help to drain water that seeps through from the upper surface. This flow will help flush out
-waste material and keep the pores in the outer layers clear.
-I. Kuijpers can even control the sounds that his resonators absorb, simply by altering their
-dimensions. This could prove especially useful since different vehicles produce noise at
-different frequencies. Car tyres peak at around 1000 hertz, for example, but trucks
-generate lower-frequency noise at around 600 hertz. By varying the size of the Kuijpers
-resonators, it is possible to control which frequencies the concrete absorbs. On large
-highways, trucks tend to use the inside lane, so resonators here could be tuned to absorb
-sounds at around 600 hertz while those in other lanes could deal with higher frequency
-noise from cars.
-J. Kuijpers believes he can cut noise by five decibels compared to the quietest of today's
-roads. He has already tested a l00-metre-long section of his road on a motorway near
-Apeldoorn, and Dutch construction company Heijmans is discussing the location of the next
-roll-out road with the country's government. The success of Kuijpers' design will depend on
-how much it eventually costs. But for those affected by traffic noise there is hope of quieter
-times ahead.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>What Are You Laughing At</h1>
+<p>雅思阅读真题 · 第422篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>What are you laughing at?
+A
+We like to think that laughing is the height of human sophistication. Our big brains let us
+see the humour in a strategically positioned pun, an unexpected plot twist or a clever piece
+of wordplay. But while joking and wit are uniquely human inventions, laughter certainly is
+not. Other creatures, including chimpanzees, gorillas and even rats, chuckle. Obviously,
+they don’t crack up at Homer Simpson or titter at the boss’s dreadful jokes, but the fact that
+they laugh in the first place suggests that sniggers and chortles have been around for a lot
+longer than we have. It points the way to the origins of laughter, suggesting a much more
+practical purpose than you might think.
+B
+There is no doubt that laughing typical involves groups of people. ‘Laughter evolved as a
+signal to others – it almost disappears when we are alone,’ says Robert Provine, a
+neuroscientist at the University of Maryland. Provine found that most laughter comes as a
+polite reaction to everyday remarks such as ‘see you later’, rather than anything particularly
+funny. And the way we laugh depends on the company we’re keeping. Men tend to laugh
+longer and harder when they are with other men, perhaps as a way of bonding. Women
+tend to laugh more and at a higher pitch when men are present, possibly indicating flirtation
+or even submission.
+C
+To find the origins of laughter, Provine believes we need to look at the play. He points out
+that the masters of laughing are children, and nowhere is their talent more obvious than in
+the boisterous antics, and the original context plays,’ he says. Well-known primate
+watchers, including Dian Fossey and Jane Goodall, have long argued that chimps laugh
+while at play. The sound they produce is known as a panting laugh. It seems obvious when
+you watch their behavior – they even have the same ticklish spots as we do. But remove
+the context, and the parallel between human laughter and a chimp’s characteristic pant
+laugh is not so clear. When Provine played a tape of the pant laughs to 119 of his students,
+for example, only two guessed correctly what it was.
+D
+These findings underline how chimp and human laughter vary. When we laugh the sound is
+usually produced by chopping up a single exhalation into a series of shorter with one sound
+produced on each inward and outward breath. The question is: does this pant laughter
+have the same source as our own laughter? New research lends weight to the idea that it
+does. The findings come from Elke Zimmerman, head of the Institute for Zoology in
+Germany, who compared the sounds made by babies and chimpanzees in response to
+tickling during the first year of their life. Using sound spectrographs to reveal the pitch and
+intensity of vocalizations, she discovered that chimp and human baby laughter follow
+broadly the same pattern. Zimmerman believes the closeness of baby laughter to chimp
+laughter supports the idea that laughter was around long before humans arrived on the
+scene. What started simply as a modification of breathing associated with enjoyable and
+playful interactions has acquired a symbolic meaning as an indicator of pleasure.
+ 1
+E
+Pinpointing when laughter developed is another matter. Humans and chimps share a
+common ancestor that lived perhaps 8 million years ago, but animals might have been
+laughing long before that. More distantly related primates, including gorillas, laugh, and
+anecdotal evidence suggests that other social mammals nay do too. Scientists are
+currently testing such stories with a comparative analysis of just how common laughter is
+among animals. So far, though, the most compelling evidence for laughter beyond primates
+comes from research done by Jaak Panksepp from Bowling Green State University, Ohio,
+into the ultrasonic chirps produced by rats during play and in response to tickling.
+F
+All this still doesn’t answer the question of why we laugh at all. One idea is that laughter
+and tickling originated as a way of sealing the relationship between mother and child.
+Another is that the reflex response to tickling is protective, alerting us to the presence of
+crawling creatures that might harm us or compelling us to defend the parts of our bodies
+that are most vulnerable in hand-to-hand combat. But the idea that has gained most
+popularity in recent years is that laughter in response to tickling is a way for two individuals
+to signal and test their trust in one another. This hypothesis starts from the observation that
+although a little tickle can be enjoyable if it goes on too long it can be torture. By engaging
+in a bout of tickling, we put ourselves at the mercy of another individual, and laughing is a
+signal that we laughter is what makes it a reliable signal of trust according to Tom Flamson,
+a laughter researcher at the University of California, Los Angels. ‘Even in rats, laughter,
+tickle, play and trust are linked. Rats chirp a lot when they play,’ says Flamson. ‘These
+chirps can be aroused by tickling. And they get bonded to us as a result, which certainly
+seems like a show of trust.’
+G
+We’ll never know which animal laughed the first laugh, or why. But we can be sure it wasn’t
+in response to a prehistoric joke. The funny thing is that while the origins of laughter are
+probably quite serious, we owe human laughter and our language-based humor to the
+same unique skill. While other animals pant, we alone can control our breath well enough
+to produce the sound of laughter. Without that control, there would also be no speech –
+and no jokes to endure.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Look at the following research findings (questions  1-6) and the list of people below.
+Match each finding with the correct person  A, B, C or D.
+Write the correct letter,  A, B, C or D, in boxes  1-6 on your answer sheet.
+NBYou may use any letter more than once.
+A          Tom Flamson
+B          Elke Zimmerman
+C          Robert Provine
+D          Jaak Panksepp
+ 1.....................   Babies and chimps produce similar sounds of laughter.
+ 2.....................   Primates are not the only animals who produce laughter Pan.
+3.....................   Laughter also suggests that we feel safe and easy with others.
+4.....................   Laughter is a response to a polite situation instead of humour.
+5.....................   Animal laughter evolved before human laughter
+6.....................   Laughter is a social activity.
+Questions 7-10
+Complete the summary using the list of words,  A-K, below.
+Write the correct letter,  A-K, in boxes  7-10 on your answer sheet.
+Some researchers believe that laughter first evolved out of  7...................... The
+investigation has revealed that human and chimp laughter may have the
+same 8...................... Besides, scientists have been aware that  9..................... laugh,
+however, it now seems that laughter might be more widespread than once we thought.
+Although the reasons why humans started to laugh are still unknown, it seems that laughter
+may result from the  10..................... we feel with another person.
+A   evolution
+E   confidence
+ID   voice
+H   response
+   playB   chirps
+F   rats
+J   children  C   origins
+G   primates
+K   tickling
+Questions 11-13
+Do the following statements agree with the information given in Reading Passage 1?
+In boxes 11-13 on your answer sheet, write
+ 3
+ 
+ 
+ TRUE               if the statement is true
+FALSE              if the statement is false
+NOT GIVEN      if the information is not given in the passage
+11.....................   Both men and women laugh more when they are with members of the
+same sex.
+12.....................   Primates lack sufficient breath control to be able to produce laughs the
+way humans do.
+13.....................   Chimpanzees produce laughter in a wider range of situations than rats
+do.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.B
+2.D
+3.A
+4.C
+5.B
+6.C
+7.8.C
+9.G
+10.E
+11.NOT GIVEN
+12.TRUE
+13.NOT GIVEN
+I
+ 5</div>
+</div>
+</div>
 </body>
 </html>

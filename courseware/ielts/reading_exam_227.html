@@ -1,363 +1,196 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Makete Integrated Rural Transport Project - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Obtaining Linguistic Data - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题302/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Makete Integrated Rural Transport Project</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-6
-Read the passage and complete the flow chart below.
-Using NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each
-answer.
-Freya Stark
-Born in Paris in 1893
-First formal education at 1.....................
-Worked as a 2..................... in Italy
- 
-Studied at School of Oriental Studies
- Travelled to the Lebanon, where she learned
-3.....................
- Made a journey to the Syrian mountains on a
-4.....................
- In 1934, won a 5..................... for a book
-Spent a further 6..................... in the Middle East
- 
-Access  for more practices 2</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Obtaining Linguistic Data</h1>
+<p>雅思阅读真题 · 第227篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Obtaining Linguistic Data
+A
+Many procedures are available for obtaining data about a language. They range from a
+carefully planned, intensive field investigation in a foreign country to a casual introspection
+about one's mother tongue carried out in an armchair at home.
+B
+In all cases, someone has to act as a source of language data - an informant Informants
+are (ideally) native speakers of a language, who provide utterances for analysis and other
+kinds of information about the language (e.g. translations, comments about correctness, or
+judgements on usage). Often, when studying their mother tongue, linguists act as their own
+informants, judging the ambiguity, acceptability, or other properties of utterances against
+their own intuitions. The convenience of this approach makes it widely used, and it is
+considered the norm in the generative approach to linguistics. But a linguist's personal
+judgements are often uncertain, or disagree with the judgements of other linguists, at which
+point recourse is needed to more objective methods of enquiry, using non-linguists as
+informants.
+The latter procedure is unavoidable when working on foreign languages, or child speech.
+C
+Many factors must be considered when selecting informants - whether one is working with
+single speakers (a common situation when languages have not been described before),
+two people interacting, small groups or large-scale samples. Age, sex, social background
+and other aspects of identity are important, as these factors are known to influence the kind
+of language used. The topic of conversation and the characteristics of the social setting
+(e.g. the level of formality) are also highly relevant, as are the personal qualities of the
+informants (e.g. their fluency and consistency). For larger studies, scrupulous attention has
+been paid to the sampling theory employed, and in all cases, decisions have to be made
+about the best investigative techniques to use.
+D 
+Today, researchers often tape-record informants. This enables the linguist's claims about
+the language to be checked, and provides a way of making those claims more accurate
+('difficult' pieces of speech can be listened to repeatedly). But obtaining naturalistic, good-
+quality data is never easy. People talk abnormally when they know they are being
+recorded, and sound quality can be poor. A variety of tape-recording procedures have thus
+been devised to minimise the 'observer's paradox' (how to observe the way people behave
+when they are not being observed). Some recordings are made without the speakers being
+aware of the fact - a procedure that obtains very natural data, though ethical objections
+must be anticipated. Alternatively, attempts can be made to make the speaker forget about
+the recording, such as keeping the tape recorder out of sight, or using radio microphones.
+A useful technique G is to introduce a topic that quickly involves the speaker, and
+stimulates a natural language style (e.g. asking older informants about how times have
+changed in their locality).
+ 1
+E
+An audio tape recording does not solve all the linguist's problems, however. Speech is
+often unclear and ambiguous. Where possible, therefore, the recording has to be
+supplemented by the observer's written comments on the non-verbal behaviour of the
+participants, and about the context in general, A facial expression, for example, can
+dramatically alter the meaning of what is said. Video recordings avoid these problems to a
+large extent, but even they have limitations (the camera cannot be everywhere), and
+transcriptions always benefit from any additional commentary provided by an observer.
+F
+Linguists also make great use of structured sessions, in which they systematically ask their
+informants for utterances that describe certain actions, objects or behaviours. With a
+bilingual informant, or through use of an interpreter, it is possible to use translation
+techniques (‘How do you say table in your language?'). A large number of points can be
+covered in a short time, using interview worksheets and questionnaires. Often, the
+researcher wishes to obtain information about just a single variable, in which case a
+restricted set of questions may be used: a particular feature of pronunciation, for example,
+can be elicited by asking the informant to say a restricted set of words. There are also
+several direct methods of elicitation, such as asking informants to fill in the blanks in a
+substitution frame (e.g. I_see a car), or feeding them the wrong stimulus for correction ('Is it
+possible to say / no can see?').
+G
+A representative sample of language, compiled for the purpose of linguistic analysis, is
+known as a corpus. A corpus enables the linguist to make unbiased statements about
+frequency of usage, and it provides accessible data for the use of different researchers. Its
+range and size are variable. Some corpora attempt to cover the language as a whole,
+taking extracts from many kinds of text; others are extremely selective, providing a
+collection of material that deals only with a particular linguistic feature. The size of the
+corpus depends on practical factors, such as the time available to collect, process and
+store the data: it can take up to several hours to provide an accurate transcription of a few
+minutes of speech. Sometimes a small sample of data will be enough to decide a linguistic
+hypothesis; by contrast, corpora in major research projects can total millions of words. An
+important principle is that all corpora, whatever their size, are inevitably limited in their
+coverage, and always need to be supplemented by data derived from the intuitions of
+native speakers of the language, through either introspection or experimentation.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Reading Passage has seven paragraphs labelled A-G.
+Which paragraph contains the following information?
+Write the correct letter A-Gin boxes1-5 on your answer sheet.
+NBYou may use any letter more than once .
+ 1..................... the effect of recording on the way people talk
+2..................... the importance of taking notes on body language
+3..................... the fact that language is influenced by social situation
+4..................... how informants can be helped to be less self-conscious
+5..................... various methods that can be used to generate specific data
+Questions 6-10
+Complete the table below.
+ChooseNO MORE THAN THREE WORDS from the passage for each answer.
+Write your answers in boxes 6-10 on your answer sheet.
+METHODS OF OBTAINING LINGUISTIC
+DATAADVANTAGES DISADVANTAGES
+6..................... as informant
+ method of enquiry not objective
+convenientenough
+necessary with 7.....................
+non-linguist as informant
+and child speechthe number of factors to be
+considered
+allows linguists’ claims to berecording an informantchecked
+ 8..................... of sound
+  allows speakers’ 9.....................
+videoing an informant
+to be observed10..................... might miss
+certain things
+Questions 11-14
+Complete the summary of paragraph G below.
+ 3
+  
  
-1. London University
-2. nurse
-3. Arabic
-4. donkey
-5. Gold Medal
-6. 12 years
- 3</p>
-<p>Reading Practice
- FUELING THE FUTURE
-The world’s 750 million motor vehicles emit well over 900 million metric tonnes of carbon
-dioxide each year. Traffic-related air pollution has been responsible for 6% of deaths per
-year and is associated with certain forms of leukaemia, inflammatory lung diseases,
-increased cardio-vascular disease, low birth-weight babies and male infertility. It stands to
-reason that tackling traffic- related air pollution should be high on any government’s list of
-priorities. Thus, in an attempt to minimise this situation many governments around the
-world have been looking at ways to implement alternative fuel sources. The most widely
-accepted way of doing this is to replace the crude oil that our vehicles currently run on with
-renewable, ‘environmentally friendly’ One serious contender put forward as a solution to
-the pollution problem is ethanol.
-Ethanol is a type of alcohol made by fermenting plant material. Water and organic matter
-from the plants including com, sorghum, sugar cane and wood are mixed together and
-fermented to make ethanol. After fermentation there are three layers remaining. The first is
-water and small particles of grain and alcohol. It takes on a syrup consistency. The second
-layer is the remaining grain, which is 17 per cent dry matter. The third layer is the actual
-ethanol – a colourless, volatile, flammable liquid. It is the only layer sold and accounts for
-exactly one-third of the total dry matter used for its production. There are three primary
-ways that it is used as a fuel for transportation: as a blend of 10 per cent ethanol with 90%
-unleaded fuel (E10); as a component of reformulated gasoline and; as a primary fuel with
-85 parts of ethanol blended with 15 parts of unleaded fuel (E-85). In the 1800s in the USA,
-it was first used as lamp fuel. Later on, due to skyrocketing oil prices in the 1970s, E10 was
-produced as a type of ‘fuel-extender’ for vehicles with E-85 being produced in the 1990s.
-Brazil has also used ethanol-blended fuels. Like America, the high prices in the 1970s
-prompted a government mandate to produce vehicles which could be fuelled by pure
-ethanol Today there are more than 4,2 million ethanol- powered vehicles in Brazil (40 per
-cent passenger carrying) which consume 4 billion gallons of ethanol annually. Today, Brazil
-is the largest transportation ethanol fuel market in the world.
-Given that Ethanol is made from a variety of plant substances when it is used in fuel
-production, it increases the monetary value of feed grains grown by farmers. In fact, in the
-USA, the largest ethanol consuming nation in the world, ethanol production adds £4.5
-billion to the farm economy every year. According to the United States Department of
-Agriculture, ethanol production adds 30 cents to the value of a bushel of corn. Another of
-its benefits, according to Brian Keating, deputy chief of Australia’s Commonwealth
-Scientific and Industrial Research Organisation (CSIRO) is that a 10% ethanol blend (E10)
-would reduce greenhouse gas emissions by 2 to 5% over the full lifecycle of ethanol
-production and consumption. Said Keating, “The precise benefits depend on specific
-factors in the production cycle. An important component of which is the energy source used
-by the ethanol factory. If it’s being powered by coal or oil, there are obviously associated
-greenhouse gas emissions.” In America, The Clean Air Act of 1990 and the National
-Energy Policy Act of 1992 have both created new market opportunities for cleaner, more
-efficient fuels with many state governments in America’s Mid-west purchasing fleet vehicles
-capable of running on E-85 fuels.
-Although it makes a good fuel, some drawbacks have been documented. The economics of
-ethanol production are improving as the technology improves but ethanol has two
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ 
+ 
+ 
+ ChooseNO MORE THAN THREE WORDS from the passage for each answer.
+Write your answers in boxes 11-14 on your answer sheet.
+A linguist can use a corpus to comment objectively on 11...................... Some corpora
+include a wide range of language while others are used to focus on a 12......................
+The length of time the process takes will affect the 13..................... of the corpus. No
+corpus can ever cover the whole language and so linguists often find themselves relying
+on the additional information that can be gained from the 14..................... of those who
+speak the language concerned.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 
+ 8.quality// the quality//1.Dthe poor quality
+ 
+ 9.non-verbal
+behaviour// non-verbal 2.E
+behavior
+ 
+ 10.camera// video
+camera// recording// 3.C
+video recording
+ 
+ 11.frequency of
+usage// usage 4.D
+frequency
+ 
+ 12.particular linguistic5.Ffeature
+ 6.(the) linguist
+(acts)// (the)
+linguists (act)
+ 13.size
+ 7.foreign
+languages14.intuitions
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,391 +1,142 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ant And The Mandarin - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The History Of Jeans - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题456/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Ant And The Mandarin</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>8. B OR D IN
-EITHER ORDER
-9. A OR E IN
-EITHER ORDER
-10. A OR E IN
-EITHER ORDER
-11. Astrakhan
-12. houses
-13.
-2. v
-fire
-3. i
-4. vii
-5. iv
-6. viii
-7. B OR D IN
-EITHER ORDER
- 5</p>
-<p>Reading Practice
- Measuring Organisational Performance
-There is clear-cut evidence that, for a period of at least one year, supervision which
-increases the direct pressure for productivity can achieve significant increases in
-production. However, such short-term increases are obtained only at a substantial and
-serious cost to the organisation.
-To what extent can a manager make an impressive earnings record over a short period of
-one to three years by exploiting the company’s investment in the human organisation in his
-plant or division? To what extent will the quality of his organisation suffer if he does so?
-The following is a description of an important study conducted by the Institute for Social
-Research designed to answer these questions.
-The study covered 500 clerical employees in four parallel divisions. Each division was
-organised in exactly the same way, used the same technology, did exactly the same kind of
-work, and had employees of comparable aptitudes.
-Productivity in all four of the divisions depended on the number of clerks involved. The
-work entailed the processing of accounts and generating of invoices. Although the volume
-of work was considerable, the nature of the business was such that it could only be
-processed as it came along. Consequently, the only way in which productivity could be
-increased was to change the size of the workgroup.
-The four divisions were assigned to two experimental programmes on a random basis.
-Each programme was assigned at random a division that had been historically high in
-productivity and a division that had been below average in productivity. No attempt was
-made to place a division in the programme that would best fit its habitual methods of
-supervision used by the manager, assistant managers, supervisors and assistant
-supervisors.
-The experiment at the clerical level lasted for one year. Beforehand, several months were
-devoted to planning, and there was also a training period of approximately six months.
-Productivity was measured continuously and computed weekly throughout the year. The
-attitudes of employees and supervisory staff towards their work were measured just before
-and after the period.
-Turning now to the heart of the study, in two divisions an attempt was made to change the
-supervision so that the decision levels were pushed down and detailed supervision of the
-workers reduced. More general supervision of the clerks and their supervisors was
-introduced. In addition, the managers, assistant managers, supervisors and assistant
-supervisors of these two divisions were trained in group methods of leadership, which they
-endeavoured to use as much as their skill would permit during the experimental year. For
-easy reference, the experimental changes in these two divisions will be labelled the
-‘participative programme!
-In the other two divisions, by contrast, the programme called for modifying the supervision
-so as to increase the closeness of supervision and move the decision levels upwards. This
-will be labelled the ‘hierarchically controlled programme’. These changes were
-accomplished by a further extension of the scientific management approach. For example,
-one of the major changes made was to have the jobs timed and to have standard times
- 1</p>
-<p>computed. This showed that these divisions were overstaffed by about 30%. The general
-manager then ordered the managers of these two divisions to cut staff by 25%. This was
-done by transfers without replacing the persons who left; no one was to be dismissed.
-Results of the Experiment
-Changes in Productivity 
-Figure 1 shows the changes in salary costs per unit of work, which reflect the change in
-productivity that occurred in the divisions. As will be observed, the hierarchically controlled
-programmes increased productivity by about 25%. This was a result of the direct orders
-from the general manager to reduce staff by that amount. Direct pressure produced a
-substantial increase in production.
-A significant increase in productivity of 2O% was also achieved in the participative
-programme, but this was not as great an increase as in the hierarchically controlled
-programme. To bring about this improvement, the clerks themselves participated in the
-decision to reduce the size of the work group. (They were aware of course that productivity
-increases were sought by management in conducting these experiments.) Obviously,
-deciding to reduce the size of a work group by eliminating some of its members is probably
-one of the most difficult decisions for a work group to make. Yet the clerks made it. In fact,
-one division in the participative programme increased its productivity by about the same
-amount as each of the two divisions in the hierarchically controlled programme. The other
-participative division, which historically had been the poorest of all the divisions, did not do
-so well and increased productivity by only 15%.
-Changes in Attitudes
-Although both programmes had similar effects on productivity, they had significantly
-different results in other respects. The productivity increases in the hierarchically controlled
-programme were accompanied by shifts in an adverse direction in such factors as loyalty,
-attitudes, interest, and involvement in the work. But just the opposite was true in the
-participative programme.
-For example, Figure 2 shows that when more general supervision and increased
-participation were provided, the employees’ feeling of responsibility to see that the work got
-done increased. Again, when the supervisor was away, they kept on working. In the
-hierarchically controlled programme, however, the feeling of responsibility decreased, and
-when the supervisor was absent, work tended to stop.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The History Of Jeans</h1>
+<p>雅思阅读真题 · 第338篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The history of jeans
+The first people to wear jeans were sailors in the 16th century. Sailors were gone for a long
+time. They had to do hard work outside in bad weather. Often their clothes had holes in
+them, got thinner or lost color. They needed something strong against wear and tear. Their
+clothes had to last longer and stay in good condition. They found this type of cloth during
+their trip to India. It was made of thick cotton and was called dungaree. It was dyed indigo.
+Indians use the indigo plant to color this type of cloth in factories. Sailors bought dungaree
+cloth in outside markets, cut it and wore it on their trips home.
+The first jeans were made in Genoa. Genoa is a city in Italy. In the 16th century, Genoa
+was very powerful. Its sailors traveled all around the world. The Genoa city decided to
+make better pants for their sailors. They used the dungaree cloth because it was sturdy
+and strong. The new pants were called 'geanos' or 'jeanos'. Sailors could use it in both wet
+and dry weather. They could roll up the pants when cleaning the ship. To clean the pants,
+they put them inside a net, threw it in the ocean and dragged the net behind the ship. This
+is when they realized their color changes to white. This is how bleached jeans were
+invented.
+Later French workers in Nimes also made jeans. They used a different type of cloth called
+denim. But it was also sturdy and dyed blue, like the jeanos. In 1872, there was a small
+cloth merchant in Germany. His name was Levi Strauss. He bought and sold denim from
+France but Levi Strauss got into trouble and had to go away to America. In New York Levi
+learned how to sew. When he moved to San Francisco, he met many gold diggers. These
+men went to find gold in rivers. The weather was often bad and the men were only thin
+pants. Levi started to cut pants out of denim. He sold these jeans to the gold diggers, and
+they loved them. Soon all factory workers and farmers were wearing jeans too. They were
+comfortable and easy to take care of and cheap.
+In 1950, popular movie and music stars like Elvis Presley and James Dean started wearing
+jeans. Those jeans were really tight and parents didn't like them. But they caught on with
+teenagers. Jeans became so popular because they meant freedom. Teenagers wanted to
+be independent and to make their own rules. In 1960 they started to decorate their jeans
+with flowers and colorful designs, or to tear and rip the jeans.
+But in 1980 jeans became very expensive. Famous fashion designers like Calvin Klein
+began making designer jeans. They put their name on these jeans. Young people wanted
+to wear certain brands to show their style. There was a lot of pressure to keep up with the
+trend. Everybody wanted to be fashionable. Jeans were considered the uniform of youth.
+You had to wear jeans to be in style.
+ 1</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+     1. What is the main idea of paragraph 1?
+      A
+B
+C
+D  Sailors made jeans out of dungaree.
+Sailors needed stronger clothing and found dungarees.
+Sailors are the first people to wear jeans.
+Sailors bought their jeans in India.
+2.Which or the following is NOT true?
+     A
  
-As Figure 3 shows, the employees in the participative programme at the end of the year felt
-that their manager and assistant manager were ‘closer to them’ than at the beginning of the
-year. The opposite was true in the hierarchical programme. Moreover, as Figure 4 shows,
-employees in the participative programme felt that their supervisors were more likely to
-‘pull’ for them, or for the company and them, and not be solely interested in the company,
-while in the hierarchically controlled programme, the opposite trend occurred.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
+ 
+ 
     
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+   
+ There were many sailors in Genoa.
+B     Sailors thought jeans were useful.
+C     Sailors did not know how to clean the jeans.
+D     Sailors made bleached jeans by accident.
+3.What was the difference between French and Italian jeans?
+A     The color
+B     The material
+C     The style
+D     The sturdiness
+4.What can be inferred about jeans in paragraph 1?
+A      The jeans were intended for practical use.
+B      The jeans got worn out easily.
+C      Most Indeans were skillful tailors. 
+D      Dungaree was the first jeans. 
+5.Why does the author say "parents didn’tlike them" inparagraph 4?
+A     To say that jeans fitted too close on the body
+B     To say that too many stars were wearing jeans
+C     To emphasize that jeans were too expensive
+D     To demonstrate that teenagers sometimes ripped their jeans
+6.What does Jeans were considered "the uniform of youth” in paragraph 5 means?
+A      You can wear jeans in school.
+B      Allteenagers wear jeans.
+ 2
+ 
+ C      Jeans are for young people only.
+D      Young people must wear jeans to be fashionable.
+Questions 7
+Why gold diggers loved jeans? 
+A Jeans were thin.
+B Jeans did not have to be washed.
+C Jeans were easy to wear.
+D Jeans were sold everywhere.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.B
+2.C
+3.B
+4.5.A
+6.D
+7.C
+A
+ 4</div>
+</div>
+</div>
 </body>
 </html>

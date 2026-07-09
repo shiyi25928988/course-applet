@@ -1,355 +1,168 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Advertisements - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Birds Of London - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题400/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Restaurant Advertisements</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Reading Practice
- Keep taking the tablets
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Birds Of London</h1>
+<p>雅思阅读真题 · 第299篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The birds of London
+There are more than two hundred different species and sub-species of birds in the London
+area, ranging from the magpie to the greenfinch, but perhaps the most ubiquitous is the
+pigeon. It has been suggested that the swarms of feral pigeons are all descended from
+birds which escaped from dovecotes in the early medieval period; they found a natural
+habitat in the crannies and ledges of buildings as did their ancestors, the rock doves, amid
+the sea-girt cliffs. ‘They nest in small colonies,’ one observer has written, ‘usually high up
+and inaccessible’ above the streets of London as if the streets were indeed a sea. A man
+fell from the belfry of St Stephens Walbrook in 1277 while in quest of a pigeon’s nest, while
+the Bishop of London complained in 1385 of ‘malignant persons’ who threw stones at the
+pigeons resting in the city churches. So pigeons were already a familiar presence, even if
+they were not treated with the same indulgence as their more recent successors. A
+modicum of kindness to these creatures seems to have been first shown in the late
+nineteenth century, when they were fed oats rather than the customary stale bread.
+From the end of the nineteenth century, wood pigeons also migrated into the city; they
+were quickly urbanised, increasing both in numbers and in tameness. ‘We have frequently
+seen them on die roofs of houses,’ wrote the author of Bird Life in London in 1893,
+apparently as much at home as any dovecote pigeon.’ Those who look up today may
+notice their ‘fly-lines’ in the sky. from Lincoln’s Inn Fields over Kingsway and Trafalgar
+Square to Battersea, with other lines to Victoria Park and to Kenwood. The air of London is
+filled with such ‘fly-lines’, and to trace the paths of the birds would be to envisage the city in
+an entirely different form; then it would seem linked and unified by thousands of
+thoroughfares and small paths of energy, each with its own history of use.
+The sparrows move quickly in public places, and they arc now so much part of London
+that they have been adopted by the native population as the sparred; a friend was known to
+Cockneys as a ‘cocksparrer’ in tribute to a bird which is sweet and yet watchful, blessed
+with a dusky plumage similar to that of the London dust, a plucky little bird darting in and
+out of the city’s endless uproar. They are small birds which can lose body heat very quickly,
+so they are perfectly adapted to the ‘heat island’ of London. They will live in any small
+cranny or cavity, behind drainpipes or ventilation shafts, or in public statues, or holes in
+buildings; in that sense diet are perfectly suited to a London topography. An ornithologist
+who described the sparrow as peculiarly attached to man’ said it never now breeds at any
+distance from an occupied building’. This sociability, bred upon the fondness of the
+Londoner, is manifest in many ways. One naturalist, W.H. Hudson, has described how any
+stranger in a green space or public garden will soon find that ‘several sparrows are keeping
+him company … watching his every movement, and if he sits down on a chair or a bench
+several of them will come close to him, and hop this way and that before him, uttering a
+little plaintive note of interrogation — Have you got nothing for us? They have also been
+described as die urchins of the streets — ‘thievish, self-assertive and pugnacious’ — a
+condition which again may merit the attention and admiration of native Londoners.
+Remarkably attached to their surroundings, they rarely create ‘fly-lines’ across the city;
+where they are born, like other Londoners, they stay.
+There are some birds, such as the robin and the chaffinch, which are less approachable
+and trustful in the city than in the country. Other species, such as the mallard, grow
+increasingly shyer as they leave London. There has been a severe diminution of the
+ 1
+number of sparrows, while blackbirds are more plentiful. Swans and ducks have also
+increased in number. Some species, however, have all but vanished. The rooks of London
+are, perhaps, the most notable of the disappeared, their rookeries destroyed by building
+work or by tree-felling. Areas of London were continuously inhabited by rooks for many
+hundreds of years. The burial ground of St Deinstalls in the East and the college garden of
+the Ecclesiastical Court in Doctors’ Commons, the turrets of the Tower of London and the
+gardens of Grays Inn, were once such localities. There was a rookery in the Inner Temple
+dating from at least 1666, mentioned by Oliver Goldsmith in 1774. Rooks nested on Bow
+Church and on St Olave’s. They were venerable London birds, preferring to cluster around
+ancient churches and the like as if they were their local guardians. Yet, in the words of the
+nineteenth-century song, ‘Now the old rooks have lost their places’. There was a grove in
+Kensington Gardens devoted to the rooks; it contained some seven hundred trees forming
+a piece of wild nature, a matter of delight and astonishment to those who walked among
+them and listened to the endless cawing that blotted out the city’s noise. But the trees were
+torn down in 1880. The rooks have never returned.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Answer the questions below using NO MORE THAN THREE WORDS for each answer.
+Write your answers in boxes 1-4on your answer sheet.
+1 What kind of birds are the London pigeons descended from? 1.....................
+2 What were pigeons given to eat before attitudes towards them changed?  2.....................
+3 What are the routes taken by wood pigeons known as?  3.....................
+4 What TWO activities have contributed to the drastic reduction in the number of rooks ? 
+4.....................
+Questions 5-9
+Complete the notes below.
+ChooseNO MORE THAN THREE WORDS from the passage for each answer.
+Write your answers in boxes 5-9on your answer sheet.
  
-The history of aspirin is a product of a rollercoaster ride through time, of accidental
-discoveries, intuitive reasoning and intense corporate rivalry.
-In the opening pages of Aspirin: The Remarkable Story of a Wonder Drug, Diarmuid
-Jeffreys describes this little white pill as ‘one of the most amazing creations in medical
-history, a drug so astonishingly versatile that it can relieve headache, ease your aching
-limbs, lower your temperature and treat some of the deadliest human diseases’.
-Its properties have been known for thousands of years. Ancient Egyptian physicians used
-extracts from the willow tree as an analgesic, or pain killer. Centuries later the Greek
-physician Hippocrates recommended the bark of the willow tree as a remedy for the pains
-of childbirth and as a fever reducer. But it wasn't until the eighteenth and nineteenth
-centuries that salicylates the chemical found in the willow tree became the subject of
-serious scientific investigation. The race was on to identify the active ingredient and to
-replicate it synthetically. At the end of the nineteenth century a German company, Friedrich
-Bayer & Co. succeeded in creating a relatively safe and very effective chemical compound,
-acetylsalicylic acid, which was renamed aspirin.
-The late nineteenth century was a fertile period for experimentation, partly because of the
-hunger among scientists to answer some of the great scientific questions, but also because
-those questions were within their means to answer. One scientist in a laboratory with some
-chemicals and a test tube could make significant breakthroughs whereas today, in order to
-map the human genome for instance, one needs ‘an army of researchers, a bank of
-computers and millions and millions of dollars’.
-But an understanding of the nature of science and scientific inquiry is not enough on its
-own to explain how society innovates. In the nineteenth century, scientific advance was
-closely linked to the industrial revolution. This was a period when people frequently had the
-means, motive and determination to take an idea and turn it into reality. In the case of
-aspirin that happened piecemeal - a series of minor, often unrelated advances, fertilised by
-the century’s broader economic, medical and scientific developments, that led to one big
-final breakthrough.
-The link between big money and pharmaceutical innovation is also a significant one.
-Aspirin s continued shelf life was ensured because for the first 70 years of its life, huge
-amounts of money were put into promoting it as an ordinary everyday analgesic. In the
-1070s other analgesics, such as ibuprofen and paracetamol, were entering the market, and
-the pharmaceutical companies then focused on publicising these new drugs. But just at the
-same time, discoveries were made regarding the beneficial role of aspirin in preventing
-heart attacks, strokes and other afflictions. Had it not been for these findings, this
-pharmaceutical marvel may well have disappeared.
-So the relationship between big money and drugs is an odd one. Commercial markets are
-necessary for developing new products and ensuring that they remain around long enough
-for scientists to carry out research on them. Rut the commercial markets are just as likely to
-kill off' certain products when something more attractive comes along. In the case of
-aspirin, a potential ‘wonder drug* was around for over 70 years without anybody
-investigating the way in which it achieved its effects, because they were making more than
- 1</p>
-<p>enough money out of it as it was. If ibuprofen or paracetamol had entered the market just a
-decade earlier, aspirin might then not be here today. It would be just another forgotten drug
-that people hadn't bothered to explore.
-None of the recent discoveries of aspirin's benefits were made by the big pharmaceutical
-companies; they were made by scientists working in the public sector. 'The reason for that
-is very simple and straightforward,' Jeffreys says in his book. 'Drug companies will only
-pursue research that is going to deliver financial benefits. There's no profit in aspirin any
-more. It is incredibly inexpensive with tiny profit margins and it has no patent any more, so
-anyone can produce it.' In fact, there's almost a disincentive for drug companies to further
-boost the drug, he argues, as it could possibly put them out of business by stopping them
-from selling their more expensive brands.
-So what is the solution to a lack of commercial interest in further exploring the therapeutic
-benefits of aspirin? More public money going into clinical trials, says Jeffreys. ‘If I were the
-Department of Health. I would say “this is a very inexpensive drug. There may be a lot of
-other things we could do with it." We should put a lot more money into trying to find out.'
+ 
+ 
+ SPARROWS 
  
-Jeffreys' book which not only tells the tale of a 'wonder drug' but also explores the nature of
-innovation and the role of big business, public money and regulation reminds us why such
-research is so important.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ 
+ 
+ 
+ 
+    Word meaning 5..................... is derived from the bird’s name suited to atmosphere of
+London because of tendency to rapidly 6..................... always likely to reproduce close to
+7..................... characteristic noted: 8..................... because of attitude of people in
+London make a sound that seems to he a kind of 9.....................
+Question 10-13
+Classify the following as being stated of
+Apigeons
+Bwood pigeons
+Csparrows
+Dchaffinches
+Eblackbirds
+Frooks
+Write the correct letter A-Fin boxes10-13on your answer sheet. 
+10.....................   They are happier with people when they are in rural areas. 
+11.....................  They rapidly became comfortable being with people.
+12.....................  They used to congregate particularly at old buildings.
+ 3
+ 13.....................  They used to be attacked by people.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+  8.sociability
+9.interrogation
+10.D
+  
+  11.B
+ 1.rockdoves
+2.stale bread
+3.fly(-)lines
+4.building work;
+tree(-)felling
+5.friend
+6.lose body heat
+7.(an) occupied12.F
+13.A
+building
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,363 +1,157 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Endless Harvest - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Here Today Gone Tomorrow - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题189/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Endless Harvest</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>who are developing normally.
-Autistic spectrum disorders often result in major difficulties in comprehending verbal
-information and speech processing. Those experiencing these disorders often find
-sounds such as crowd noise and the noise generated by machinery painful and distressing.
-This is difficult to scientifically quantify as such extra-sensory stimuli vary greatly from one
-autistic individual to another. But a child who finds any type of noise in their classroom or
-learning space intrusive is likely to be adversely affected in their ability to process
-information.</p>
-<p>The attention deficit disorders are indicative of neurological and genetic disorders and are
-characterised by difficulties with sustaining attention, effort and persistence,
-organisation skills and disinhibition. Children experiencing these disorders find it difficult to
-screen out unimportant information, and focus on everything in the environment rather than
-attending to a single activity. Background noise in the classroom becomes a major
-distraction, which can affect their ability to concentrate.</p>
-<p>Children experiencing an auditory function deficit can often find speech and communication
-very difficult to isolate and process when set against high levels of background noise.
-These levels come from outside activities that penetrate the classroom structure, from
-teaching activities, and other noise generated inside, which can be exacerbated by
-room reverberation. Strategies are needed to obtain the optimum classroom construction
-and perhaps a change in classroom culture and methods of teaching. In particular, the
-effects of noisy classrooms and activities on those experiencing disabilities in the form of
-auditory function deficit need thorough investigation. It is probable that many undiagnosed
-children exist in the education system with 'invisible' disabilities. Their needs are less likely
-to be met than those of children with known disabilities.</p>
-<p>The New Zealand Government has developed a New Zealand Disability Strategy and has
-embarked on a wide-ranging consultation process. The strategy recognises that
-people experiencing disability face significant barriers in achieving a full quality of life in
-areas such as attitude, education, employment and access to services. Objective 3 of the
-New Zealand Disability Strategy is to 'Provide the Best Education for Disabled People' by
-improving education so that all children, youth learners and adult learners will have equal
-opportunities to learn and develop within their already existing local school. For a
-successful education, the learning environment is vitally significant, so any effort to improve
-this is likely to be of great benefit to all children, but especially to those with auditory
-function disabilities.</p>
-<p>A number of countries are already in the process of formulating their own standards for the
-control and reduction of classroom noise. New Zealand will probably follow their example.
-The literature to date on noise in school rooms appears to focus on the effects
-on schoolchildren in general, their teachers and the hearing impaired. Only limited
-attention appears to have been given to those students experiencing the other disabilities
- 2</p>
-<p>involving auditory function deficit. It is imperative that the needs of these children are taken
-into account in the setting of appropriate international standards to be promulgated in
-future.
- 3</p>
-<p>Questions 1-6
-Reading Passage has nine sections, A-I.
-Which section contains the following information?
-Write the correct letter, A-I, in boxes 1-6 on your answer sheet.
-1.....................    an account of a national policy initiative
-2.....................    a description of a global team effort
-3.....................    a hypothesis as to one reason behind the growth in classroom noise
-4.....................    a demand for suitable worldwide regulations
-5.....................    a list of medical conditions which place some children more at risk from
-noise than others
-6.....................    the estimated proportion of children in New Zealand with auditory
-problems</p>
-<p>Questions 7-10
-Answer the questions below.
-Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Here Today Gone Tomorrow</h1>
+<p>雅思阅读真题 · 第139篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Here today, gone tomorrow
+The Arctic and Antarctica are now within reach of the modern tourist, with many going to
+see these icy wildernesses before it's too late. Christian Amodeo reports on the growth of
+polar tourism.
+Travel at the North and South Poles has become an expensive leisure activity, suitable for
+tourists of all ages. The poles may be inhospitable places, but they are seeing increasing
+numbers of visitors.
+Annual figures for the Arctic, where tourism has existed since the 19th century, have
+increased from about a million in the early 1990s to more than 1.5 million today. This is
+partly because of the lengthening summer season brought about by climate change.
+Most visitors arrive by ship. In 2007, 370,000 cruise passengers visited Norway, twice the
+number that arrived in 2000. Iceland, a country where tourism is the second-largest
+industry, has enjoyed an annual growth rate of nine percent since 1990. Meanwhile, Alaska
+received some 1,029,800 passengers, a rise of 7.3 percent from 2006. Greenland has seen
+the most rapid growth in marine tourism, with a sharp increase in cruise-ship arrivals of 250
+percent since 2004.
+The global economic downturn may have affected the annual 20.6 percent rate of increase
+in visitors to the Antarctic - last season saw a drop of 17 percent to 38,200 - but there has
+been a 760 percent rise in land-based tourism there since 1997. More people than ever are
+landing at fragile sites, with light aircraft, helicopters and all-terrain vehicles increasingly
+used for greater access, while in the past two seasons, ‘fly-sail’ operations have begun.
+These deliver tourists by air to ships, so far more groups can enjoy a cruise in a season;
+large cruise ships capable of carrying up to 800 passengers are not uncommon.
+  In addition, it seems that a high number of visitors return to the poles. ‘Looking at six years’
+worth of data, of the people who have been to the polar regions, roughly 25 percent go for
+a second time,’ says Louisa Richardson, a senior marketing executive at tour operator
+Exodus.
+In the same period that tourism has exploded, the ‘health’ of the poles has
+‘deteriorated’. ‘The biggest changes taking place in the Antarcticare related to climate
+change,’ says Rod Downie, Environmental Manager with the British Antarctic Survey
+(BAS). Large numbers of visitors increase these problems.
+Although polar tourism is widely accepted, there have been few regulations up until
+recently. At the meeting of the Antarctic Treaty in Baltimore, the 28 member nations
+adopted proposals for limits to tourist numbers. These included safety codes for tourist
+vessels in Antarctic waters, and improved environmental protection for the continent. They
+agreed to prevent ships with more than 500 passengers from landing in Antarctica, as well
+as limit the number of passengers going ashore to a maximum of 100 at any one time, with
+a minimum of one guide for every 20 tourists. ‘Tourism in Antarctica is not without its risks,’
+says Downie. After all, Antarctica doesn’t have a coastguard rescue service.’
+‘So far, no surveys confirm that people are going quickly to see polar regions before they
+change,’ says Frigg Jorgensen, General Secretary of the Association of Arctic Expedition
+Cruise Operators (AECO). ‘However, Hillary Clinton and many other big names have been
+ 1
+to Svalbard in the northernmost part of Norway to see the effects of climate change. The
+associated media coverage could influence others to do the same.’
+These days, rarely a week passes without a negative headline in the newspapers. The
+suffering polar bear has become a symbol of a warming world, its plight a warning that the
+clock is ticking. It would seem that this ticking clock is a small but growing factor for some
+tourists. ‘There’s an element of “do it now”,’ acknowledges Prisca Campbell, Marketing
+director of Quark Expeditions, which takes 7,000 People to the poles annually. Leaving the
+trip until later, it seems, may mean leaving it too late.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Complete the summary below.
+ChooseNO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each
 answer.
-Write your answers in boxes 7-10 on your answer sheet.</p>
-<p>7    For what period of time has hearing loss in schoolchildren been studied in
-New Zealand?7.....................
-8    In addition to machinery noise, what other type of noise can upset children with autism?
-8.....................
-9    What term is used to describe the hearing problems of schoolchildren which have not
-been diagnosed? 9.....................
-10  What part of the New Zealand Disability Strategy aims to give schoolchildren
-equal opportunity?10.....................
-Questions 11-12
-Choose TWO letters, A-F.
-Write the correct letters in boxes 11-12 on your answer sheet.
-The list below includes factors contributing to classroom noise.
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+  
+ 
+  
+ Polar tourism - the figures
+ 
+ 
+  
+   
+ 
+ 
+ 
+ Tourism in the Arctic began in the 1..................... and visitor numbers have risen since that
+time.
+These days, over 2..................... people travel there, mostly by ship.
+The country with the greatest increase in visitors is 3......................
+Tourism has expanded in the Arctic because the  4..................... lasts longer than it used to.
+Travel to the Antarctic has fallen by  5..................... over the past year.
+However, many more people are using small planes and 6..................... to land on the ice.
+Aircraft are also taking visitors to huge ships that hold as many as 7..................... tourists.
+ 
+ 
+ 
+ Questions 8-12
+Look at the following statements and the list of people below.
+Match each statement with the correct person, A-D.
+NBYou may use any letter more than once.
+8..................... Some tourists believe they should not delay their trip to the poles.
+9.....................   There are some dangers to travelling in Antarctica.
+10.....................   Some famous people have travelled to polar regions to look at the
+impacts of global warming.
+11.....................   Some tourists make more than one trip to the poles.
+12.....................   There is no evidence that visitors are hurrying to the poles.
+List of People
+ALouisa Richardson
+BRod Downie
+CFrigg Jorgensen
+DPrisca Campbell
+ 3
+ 
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.19th century
+2.1.5 million
+3.Greenland
+4.summer
+5.17 percent
+6.helicopters7.800
+8.D
+9.B
+10.C
+11.A
+12.C
+ 5</div>
+</div>
+</div>
 </body>
 </html>

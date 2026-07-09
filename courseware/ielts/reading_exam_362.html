@@ -1,376 +1,187 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Discovery Of Uranus - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Politics Of Pessimism - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题486/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Discovery Of Uranus</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>C the similar nature of the paintings and the lack of great works.
-D the inappropriate nature of the individual works selected for exhibition.
-9. The writer says that unlike other forms of art, a painting does not
- 
-A involve direct contact with an audience.
-B require a specific location for a performance.
-C need the involvement of other professionals.
-D have a specific beginning or end.</p>
-<p>Questions 10-14
-Do the following statements agree with the views of the writer in Reading Passage?
-In boxes 10-14 on your answer sheet, write
- 
-YES if the statement agrees with the views of the writer
-NO if the statement contradicts the views of the writer
-NOT GIVEN if the is impossible to say what the writer thinks about this
-10..................... Art history should focus on discovering the meaning of art using a range of
-media.
-11..................... The approach of art historians conflicts with that of art museums.
-12..................... People should be encouraged to give their opinions openly on works of art.
-13..................... Reproductions of fine art should only be sold to the public if they are of
-high quality.
-14..................... In the future, those with power are likely to encourage more people to
-enjoy art.
- 4</p>
-<p>Solution:
- 
-1. B
-2. H
-3. L
-4. G
-5. D
-6. C
-7. D
-8. A
-9. D
-10. NOT GIVEN
-11. NO
-12. YES
-13. NOT GIVEN
-14. NO
- 5</p>
-<p>Reading Practice
- Music and the emotions
-Neuroscientist Jonah Lehrer considers the emotional power of music
-Why does music make us feel? On the one hand, music is a purely abstract art form,
-devoid of language or explicit ideas. And yet, even though music says little, it still manages
-to touch us deeply. When listening to our favourite songs, our body betrays all the
-symptoms of emotional arousal. The pupils in our eyes dilate, our pulse and blood pressure
-rise, the electrical conductance of our skin is lowered, and the cerebellum, a brain region
-associated with bodily movement, becomes strangely active. Blood is even re-directed to
-the muscles in our legs. In other words, sound stirs us at our biological roots.
-A recent paper in Neuroscience by a research team in Montreal, Canada, marks an
-important step in repealing the precise underpinnings of ‘the potent pleasurable stimulus’
-that is music. Although the study involves plenty of fancy technology, including functional
-magnetic resonance imaging (fMRI) and ligand-based positron emission tomography (PET)
-scanning, the experiment itself was rather straightforward. After screening 217 individuals
-who responded to advertisements requesting people who experience ‘chills’ to instrumental
-music, the scientists narrowed down the subject pool to ten. They then asked the subjects
-to bring in their playlist of favourite songs - virtually every genre was represented, from
-techno to tango - and played them the music while their brain activity was monitored.
-Because the scientists were combining methodologies (PET and fMRI), they were able to
-obtain an impressively exact and detailed portrait of music in the brain. The first thing they
-discovered is that music triggers the production of dopamine - a chemical with a key role in
-setting people’s moods - by the neurons (nerve cells) in both the dorsal and ventral regions
-of the brain. As these two regions have long been linked with the experience of pleasure,
-this finding isn’t particularly surprising.
-What is rather more significant is the finding that the dopamine neurons in the caudate - a
-region of the brain involved in learning stimulus-response associations, and in anticipating
-food and other ‘reward’ stimuli - were at their most active around 15 seconds before the
-participants’ favourite moments in the music. The researchers call this the ‘anticipatory
-phase’ and argue that the purpose of this activity is to help us predict the arrival of our
-favourite part. The question, of course, is what all these dopamine neurons are up to. Why
-are they so active in the period preceding the acoustic climax? After all, we typically
-associate surges of dopamine with pleasure, with the processing of actual rewards. And
-yet, this cluster of cells is most active when the ‘chills’ have yet to arrive, when the melodic
-pattern is still unresolved.
-One way to answer the question is to look at the music and not the neurons. While music
-can often seem (at least to the outsider) like a labyrinth of intricate patterns, it turns out that
-the most important part of every song or symphony is when the patterns break down, when
-the sound becomes unpredictable. If the music is too obvious, it is annoyingly boring, like
-an alarm clock. Numerous studies, after all, have demonstrated that dopamine neurons
-quickly adapt to predictable rewards. If we know what’s going to happen next, then we
-don’t get excited. This is why composers often introduce a key note in the beginning of a
-song, spend most of the rest of the piece in the studious avoidance of the pattern, and then
-finally repeat it only at the end. The longer we are denied the pattern we expect, the greater
-the emotional release when the pattern returns, safe and sound.
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Politics Of Pessimism</h1>
+<p>雅思阅读真题 · 第362篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The politics of pessimism
+Newspaper headlines and TV or radio news bulletins would have us believe erroneously
+that a new age has come upon us, the Age of Cassandra. People are being assailed not
+just with contemporary doom, or past gloom, but with prophecies of disasters about to
+befall. The dawn of the new millennium has now passed; the earth is still intact, and the fin
+de siècle Jeremiahs have now gone off to configure a new date for the apocalypse.
+It can, I believe, be said with some certainty that the doom-mongers will never run out of
+business. Human nature has an inclination for pessimism and anxiety, with each age
+having its demagogues, foretelling doom or dragging it in their wake. But what makes the
+modern age so different is that the catastrophes are more “in your face”, Their assault on
+our senses is relentless. Whether it be sub-conscious or not, this is a situation not lost on
+politicians. They play upon people’s propensity for unease, turning it into a very effective
+political tool.
+Deluding the general public
+All too often, when politicians want to change the status quo, they take advantage of
+people’s fears of the unknown and their uncertainties about the future. For example, details
+about a new policy may be leaked to the press. Of course, tbe worst case scenario is
+presented in all its depressing detail. When the general public reacts in horror, the
+government appears to cave in. And then accepting some of the suggestions from their
+critics, ministers water down their proposals. This allows the government to get what It
+wants, while at the same time fooling the public into believing that they have got one over
+on the government. Or even that they have some say in the making of policy.,
+There are several principles at play here. And both are rather simple: unsettle people and
+then play on their fears; and second, people must be given an opportunity to make a
+contribution, howevser insignificant, in a given situation; otherwise, they become
+dissatisfied, not fearful or anxious.
+A similar ruse, at a local level, will further illustrate how easily people’s base fears are
+exploited. A common practice is to give people a number of options, say in a housing
+development, ranging from no change to radical transformation of an area. The aim is to
+persuade people to agree significant modifications, which may involve disruption to their
+lives, and possibly extra expenditure. The individuals, fearful of the worst possible
+outcome, plump for the middle course. And this, incidentally, Is Invariably the option
+favoured by the authorities. Everything is achieved under the guise of market research, But
+It is obviously a blatant exercise in the manipulation of people’s fears.
+Fear and survival
+Fear and anxieties about the future affect us till. People are wracked with self-doubt and
+low self-esteem. In the struggle to exist and advance in life, a seemingly endless string, of
+obstacles is encountered, so ninny, in fact, that any accomplishment seems surprising.
+Even when people do succeed they are still nagged by uncertainty,
+Not surprisingly, feelings like doubt, fear, anxiety and pessimism are usually associated
+with failure. Yet, if properly harnessed, they are the driving force behind success, the very
+engines of genius.
+ 1
+If things turn out well for a long time, there is a further anxiety: that of constantly waiting for
+something to go wrong. People then find themselves propitiating the gods: not walking on
+lines on the pavements, performing rituals before public performances, wearing particular
+clothes and colours so that they can blame the ritual not themselves when things go wrong,
+But surely the real terror cornea when success continues uninterrupted for such a long
+period of time that we forget what failure is like I
+We crave for and are fed a daily diet of anxiety, Horror films and disaster movies have an
+increasing appeal. Nostradamus pops his head up now and again, And other would-be
+prophets make a brief appearance, predicting the demise of human kind. Perhaps h this is
+all just a vestige of the hardships of early man – our attempt to recreate the struggles of a
+past age, as life becomes mure and more comfortable.
+Mankind cannot live by con tent meni alone. And so, a world awash with anxieties and
+pessimism has been created. Being optimistic is a struggle. But survival dictates that
+mankind remain ever sanguine.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Choose one phrase ( A-K) from the List of phrases to complete each Key point below. Write
+the appropriate letters ( A-K) in Boxes  1-5 on your answer sheet.
+The information in the completed sentences should be an accurate summary of the points
+made by the writer.
+NB. There are more phrases ( A-K) than sentences, so you wilt not need to use them all.
+You may use each phrase once only.
+Key points
+1. Newspaper headlines and TV or radio news bulletins 1.....................
+2.Doom-mongers are popular, because people 2.....................
+3.Today, catastrophes 3.....................
+4.To politicians, people’s Inclination for fear  4.....................
+5.The government  5.....................
+List of phrases
     
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ A are not as threatening as In the past
+B tell the truth
+C blame them
+D try to make us believe mistakenly that we are In a new era
+E calm people down
+F are uncertain about the future 
+G are less comfortable
+H are natural pessimists and worriers
+I are more Immediate
+J get what they want by deceiving the public
+K is something they can make use of
+Questions 6-9
+Choose the appropriate letters A-Dand write them in boxes 6-9on your answer sheet.
+6.The housing development example shows that people …
+A are not that easily deceived
+B like market research
+ 3
+ 
+ C lead their fears
+D are easy to delude 
+7.Which one of the following statements is true, according to the passage?
+ A Market research uses people’s fears for their own good
+B People are scared by market research techniques
+C Market research techniques are used as a means of taking advantage of people’s
+fears
+D Market research makes people happy 
+8.The engines of genius are …
+A properly harnessed
+B the driving force behind success
+C driven by feelings like fear
+D usually associated with failure 
+9.Continual success …
+ A makes people arrogant
+B worries people
+C does not have any negative effects on people
+D increases people’s self-esteem 
+Questions 10-13
+Do the statements below agree with the information in Reading Passage 1?
+In Boxes10-13, write:
+YES      if the statement agrees with the information in the passage
+NO       if the statement contradicts the information in the passage
+NOT GIVEN if there is no information about the statement in the passage  
+Example: Politicians pretend things are worse than they are.
+Answer: YES.
+10..................... The complex relationship between failure and success needs to be  
+addressed carefully.
+11.....................  People perform certain rituals to try to avoid failure.
+12.....................  Anxiety in daily life is what we want.
+ 4
+13.....................  The writer believes that Nostradamus and certain other prophets are right
+about their predictions for the end of the human race.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.D
+2.H
+3.I
+4.K
+5.J
+6.A
+7.8.C
+9.B
+10.NOT GIVEN
+11.YES
+12.YES
+13.NOT GIVEN
+C
+ 6</div>
+</div>
+</div>
 </body>
 </html>

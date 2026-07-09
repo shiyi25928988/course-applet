@@ -1,385 +1,184 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Secret Of The Yawn - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>White Mountain Green Tourism - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题575/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Secret Of The Yawn</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-5
-The passage has seven paragraphs, A-G.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>White Mountain Green Tourism</h1>
+<p>雅思阅读真题 · 第432篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>White mountain, green tourism
+  The French Alpine town of Chamonix has been a magnet for tourists since the 18th
+century. But today, tourism and climate change are putting pressure on the surrounding
+environment. Marc Grainger reports.
+A
+The town of Chamonix-Mont-Blanc sits in a valley at 1,035 metres above sea level in the
+Haute-Savoie department in south-eastern France. To the northwest are the red peaks of
+the Aiguilles Rouges massif;to the south-east are the permanently white peaks of Mont
+Blanc, which at 4,810 metres is the highest mountain in the Alps. It’s a typical Alpine
+environment, but one that is under increasing strain from the hustle and bustle of human
+activity.
+B
+Tourism is Chamonix’s lifeblood. Visitors have been encouraged to visit the valley ever
+since it was discovered by explorers in 1741. Over 40 years later, in 1786,
+Mont Blanc’s summit was finally reached by a French doctor and his guide, and this gave
+birth to the sport of alpinism, with Chamonix at its centre. In 1924, it hosted the first Winter
+Olympics, and the cable cars and lifts that were built in the years that followed gave
+everyone access to the ski slopes.
+C
+Today, Chamonix is a modern town, connected to the outside world via the Mont Blanc
+Road Tunnel and a busy highway network. It receives up to 60,000 visitors at a time during
+the ski season, and climbers, hikers and extreme-sports enthusiasts swarm there in the
+summer in even greater numbers, swelling the town’s population to 100,000. It is the third
+most visited natural site in the world, according to Chamonix’s Tourism Office and, last
+year, it had 5.2 million visitor bed nights - all this in a town with fewer than 10,000
+permanent inhabitants.
+D
+This influx of tourists has put the local environment under severe pressure, and the
+authorities in the valley have decided to take action. Educating visitors is vital. Tourists are
+warned not to drop rubbish, and there are now recycling points dotted all around the valley,
+from the town centre to halfway up the mountains. An internet blog reports environmental
+news in the town, and the ‘green’ message is delivered with all the tourist office’s activities.
+E
+Low-carbon initiatives are also important for the region. France is committed to reducing its
+carbon emissions by a factor of four by 2050. Central to achieving this aim is a strategy that
+encourages communities to identify their carbon emissions on a local level and make plans
+to reduce them. Studies have identified that accommodation accounts for half of all
+carbon emissions in the Chamonix valley. Hotels are known to be inefficient operations, but
+those around Chamonix are now cleaning up their act. Some are using low-energy lighting,
+ 1
+restricting water use and making recycling bins available for guests; others have invested
+in huge projects such as furnishing and decorating using locally sourced materials, using
+geothermal energy for heating and installing solar panels.
+F
+Chamonix’s council is encouraging the use of renewable energy in private properties too,
+by making funds available for green renovations and new constructions. At the same time,
+public- sector buildings have also undergone improvements to make them more energy
+efficient and less wasteful. For example, the local ice rink has reduced its annual water
+consumption from 140,000 cubic metres to 10,000 cubic metres in the space of three
+years.
+G
+Improving public transport is another feature of the new policy, as 80 percent of
+carbon emissions from transport used to come from private vehicles. While the Mont Blanc
+Express is an ideal way to travel within the valley - and see some incredible scenery along
+the route - it is much more difficult to arrive in Chamonix from outside by rail. There is no
+direct line from the closest airport in Geneva, so tourists arriving by air normally transfer by
+car or bus. However, at a cost of 3.3 million euros a year, Chamonix has introduced a free
+shuttle service in order to get people out of their cars and into buses fitted with particle
+filters.
+H
+If the valley’s visitors and residents want to know why they need to reduce their
+environmental impact, they just have to look up; the effects of climate change are there for
+everyone to see in the melting glaciers that cling to the mountains. The fragility of the
+Alpine environment has long been a concern among local people. Today, 70 percent of the
+805 square kilometres that comprise Chamonix-Mont-Blanc is protected in some way. But
+now, the impact of tourism has led the authorities to recognise that more must be done if
+the valley is to remain prosperous: that they must not only protect the natural environment
+better, but also manage the numbers of visitors better, so that its residents can happily
+remain there.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Reading Passage 2 has eight paragraphs, A-H.
 Which paragraph contains the following information?
-Write the correct letter in boxes 1-5 on your Answer Sheet
-1.....................    the position of the British government towards the potato famine
-2.....................    a description of the system of land ownership in Ireland
-3.....................    early European attitudes toward the potato
-4.....................    explanation of the lack of legal protection for Irish peasants
-5.....................    the importance of the potato in Irish society</p>
-<p>Questions 6-13
-Complete each sentence with the correct ending, A-L from the box at the top of the next
-page.
-Write the correct letter in boxes 6-13 on your Answer Sheet.
-There are more endings than sentences, so you won't use them all.
-Sentence Endings
-A    because they couldn’t pay the rent on their farms.
-B    because railroad trains caused air pollution.
-C    because potatoes were their main source of food.
-D    because Charles Trevelyan took over relief efforts.
-E    because they needed the profits to pay the rent.
-F    because they weren’t well-managed.
-C    because there wasn’t enough land for the increasing population.
-H    because his efforts to help the Irish were unpopular among the British.
-I    because they believed that potatoes were poisonous.
-J    because the British instituted penal laws.
-K    because it was discovered that potatoes are full of nutrients.
-L    because Marie Antoinette used potato blossoms as decoration.
-6.....................    At first Europeans didn't eat potatoes
- 3</p>
-<p>7.....................    European monarchs encouraged potato growing
-8.....................    The potato blight was devastating to the Irish
-9.....................    Farmers who grew oats, wheat, and barley didn’t eat these crops
-10.....................    Many Irish farmers lived on infertile plots
-11.....................    Many Irish farmers were arrested
-12.....................    Sir Robert Peel lost his position as prime minister
-13.....................    Soup kitchens and workhouses didn’t relieve the suffering
- 4</p>
-<p>Solution:
+You may use any letter more than once .
+1..................... a list of the type of people who enjoy going to Chamonix
+2..................... reference to a system that is changing the way visitors reach Chamonix
+3..................... the geographical location of Chamonix
+4..................... mention of the need to control the large tourist population in Chamonix
+5..................... reference to a national environmental target
+   
+  Questions 6-7
+ChooseTWOletters,A-E.
+The writer mentions several ways that the authorities aim to educate tourists in Chamonix.
+WhichTWOof the following ways are mentioned?
+A giving instructions about litter
+B imposing fines on people who drop litter
+C handing out leaflets in the town
+D operating a web-based information service
+E having a paper-free tourist office
+Questions 8-9
+ChooseTWOletters,A-E.
+The writer mentions several ways that hotels are reducing their carbon emissions.
+WhichTWOof the following ways are mentioned?
+A using natural cleaning materials
+B recycling water
+C limiting guest numbers
+D providing places for rubbish
+E harnessing energy from the sun
+ 3
+  
+       
+       Questions 10-13
+Complete the sentences below.
+ChooseNO MORE THAN TWO WORDS from the passage for each answer.
+       10
+11
+12
+  The first people to discover the Chamonix valley were 10.....................
+Chamonix’s busiest tourist season is the 11.....................
+Public areas, such as the 12..................... in Chamonix, are using fewer resources.
+13     The 13..................... on the mountains around Chamonix provide visual evidence of
+global warming.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
  
-1. F
-2. D
-3. B
-4. E
-5. C
-6. I
-7.
-8. C
-9. E
-10. G
-11. A
-12. H
-13. F</p>
-<p>Reading Practice
- READING THE SCREEN
-Are the electronic media exacerbating illiteracy and making our children stupid? On the
-contrary, says Colin McCabe, they have the potential to make us truly literate.
-The debate surrounding literacy is one of the most charged in education. On the one hand
-there is an army of people convinced that traditional skills of reading and writing are
-declining. On the other, a host of progressives protest that literacy is much more
-complicated than a simple technical mastery of reading and writing. This second position is
-supported by most of the relevant academic work over the past 20 years. These studies
-argue that literacy can only be understood in its social and technical context. In
-Renaissance England, for example, many more people could read than could write, and
-within reading there was a distinction between those who could read print and those who
-could manage the more difficult task of reading manuscript. An understanding of these
-earlier periods helps us understand today’s ‘crisis in literacy’ debate.
-There does seem to be evidence that there has been an overall decline in some aspects of
-reading and writing - you only need to compare the tabloid newspapers of today with those
-of 50 years ago to see a clear decrease in vocabulary and simplification of syntax. But the
-picture is not uniform and doesn’t readily demonstrate the simple distinction between
-literate and illiterate which had been considered adequate since the middle of the 19th
-century.
-While reading a certain amount of writing is as crucial as it has ever been in industrial
-societies, it is doubtful whether a fully extended grasp of either is as necessary as it was 30
-or 40 years ago. While print retains much of its authority as a source of topical information,
-television has increasingly usurped this role. The ability to write fluent letters has been
-undermined by the telephone and research suggests that for many people the only use for
-writing, outside formal education, is the compilation of shopping lists.
-The decision of some car manufacturers to issue their instructions to mechanics as a video
-pack rather than as a handbook might be taken to spell the end of any automatic link
-between industrialisation and literacy. On the other hand, it is also the case that everincreasing numbers of people make their living out of writing, which is better rewarded than
-ever before. Schools are generally seen as institutions where the book rules - film,
-television and recorded sound have almost no place; but it is not clear that this opposition
-is appropriate. While you may not need to read and write to watch television, you certainly
-need to be able to read and write in order to make programmes.
-Those who work in the new media are anything but illiterate. The traditional oppositions
-between old and new media are inadequate for understanding the world which a young
-child now encounters. The computer has re-established a central place for the written word
-on the screen, which used to be entirely devoted to the image. There is even anecdotal
-evidence that children are mastering reading and writing in order to get on to the Internet.
-There is no reason why the new and old media cannot be integrated in schools to provide
-the skills to become economically productive and politically enfranchised.
-Nevertheless, there is a crisis in literacy and it would be foolish to ignore it. To understand
-that literacy may be declining because it is less central to some aspects of everyday life is
-not the same as acquiescing in this state of affairs. The production of school work with the
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+  
+  
+  
+  
+  
+ 8.D OR E IN
+EITHER ORDER
+9.D OR E IN
+EITHER ORDER
+10.explorers
+11.summer
+12.. ice rink
+13.1.C
+glaciers2.G
+3.A
+4.H
+5.E
+6.A OR D IN
+EITHER ORDER
+7.A OR D IN
+EITHER ORDER
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,390 +1,191 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assessing The Risk - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Build A Medieval Castle - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题92/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Assessing The Risk</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-6
-Look at the following issues (Questions 1-6) and the list of people and organisations below.
-Match each issue with the correct person or organization, A-F.
-Write the correct letter, A-F, in boxes 1-6 on your answer sheet.
-NB You may use any letter more than once.
-1.....................                The cost implications of fitting plants with the necessary
-equipment.
-2.....................                The effects of sequestration could have on sea creatures.
-3.....................                The reasons why products such as oil and gas continue to be
-popular energy sources.
-4.....................                The need for industrialised countries to give aid to less wealthy
-countries.
-5.....................                The significant increase in carbon dioxide concentrations in the air
-over the last 100 years.
-6.....................                The potential for sequestration to harm human life.
-List of People and organisations
-A      Scott Klara
-B        Intergovernmental Panel on Climate Change
-C       International Energy Agency
-D      Klaus Lackner
-E       David Hawkins
-F       World Wide Fund for   Nature Australia
-Questions 7- 9
-Reading Passage has ten paragraphs, A-J.
-Which paragraph contains the following information?
-Write the correct letter, A-J, in boxes 7-9 on your answer sheet.
-7..................... Examples of sequestration already in use in several parts of the world
-8..................... An example of putting carbon dioxide emissions to use in the food and
-beverage industry
-9..................... Current examples of the environmental harm attributed to carbon
-dioxide in the air
- 3</p>
-<p>Questions 10-13
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Build A Medieval Castle</h1>
+<p>雅思阅读真题 · 第62篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Build a Medieval Castle
+A.Michel Guyot, owner and restorer of Saint Fargeau castle in France, first had the
+idea of building a 13th-century style fortress following the discovery that the 15th-
+century red bricks of his castle obscured the stone walls of a much older
+stronghold. His dream was to build a castle just as it would have been in the Middle
+Ages, an http://www.bo.com/iclti9 idea which some found mildly amusing and others
+dismissed as outright folly.
+ However, Maryline Martin – project director – was inspired by the exciting potential for the
+venture to regenerate the region. It took several months to bring together and mobilise all
+the various different partners: architects, archaeologists and financial backers. A site in the
+heart of Guédelon forest was found: a site which offered not only all the resources required
+for building a castle – a stone quarry, an oak forest and a water supply – but in sufficient
+quantities to satisfy the demands of this gigantic site. The first team started work and on
+June 20th 1997 the first stone was laid.
+B. Unlike any other present-day building site, Michel Guyot’s purpose is clear, he warmly
+welcomes members of the public to participate. The workers’ role is to demonstrate and
+explain, to a wide audience, the skills of our forefathers. Stone quarrying, the building of
+vaulted ceilings, the blacksmith’s work and the raising of roof timbers are just some of the
+activities which visitors can witness during a visit to Guédelon. The workers are always on
+hand to talk about their craft and the progress of the castle.
+ Each year 60,000 children visit Guédelon with their schools. The site is an excellent
+educational resource, bringing to life the history of the Middle Ages. Guided tours are
+tailored to the school curriculum and according to age groups: activity trails for primary
+school children and interactive guided tours for secondary school children. Pupils of all
+ages have the opportunity to follow in the footsteps of medieval stonemasons by taking part
+in a stonecarving workshop or discover the secrets of the medieval master-builders at the
+geometry workshop.
+C. Workers in the Burgundy region of France are building a 13th century castle. They’re not
+restoring an old castle. They’re actually building a new old castle. See the builders are
+constructing it from scratch. The craftsmen have been working for nearly ten years now but
+they’re not even halfway done yet. That’s because they’re using only medieval tools and
+techniques. The World’s Gerry Hadden takes US to the site of what will be the Guedelon
+Castle. Another reason said by Jean Francois, a member of Guedelon stone cutter’s guild,
+for eight hours a day he bangs on a 13th century chisel with a 13th century iron mallet.
+D. The progress of construction has to give way to tourists side for their visits. The visitors
+from 2010, however unsightly they may be, are vital to the project. The initial funding came
+not from pillaging the local peasantry but from regional councils, the European Union and
+large companies. For the last 10 years, Guédelon, 100 miles southeast of Paris, has
+funded itself from its entrance fees. Last year it had a record 300,000 visitors, who paid
+almost €2.5m, making it the second most-visited site in Burgundy. The most visited site
+ 1
+ was the Hospice de Beaune, a beautiful 15th-century almshouse built 600 years before, or,
+if you prefer, 200 years “after”, Guédelon.
+E. limestone is found in the construction of various local buildings, from the great and
+prestigious edifice of Ratilly castle to the more modest poyaudines houses. This stone
+contains 30-40% iron oxide; this can make it extremely hard to extract and dress. Having
+studied the block in order to determine and anticipate the natural fault lines of the stone,
+the quarrymen first carve a series of rectilinear holes into the block. Iron wedges are then
+hammered into this line of holes. The shockwaves produced by the quarrymen’s
+sledgehammers cause the stone to split along a straight line.
+ 
+ The highest quality blocks are dressed to produce lintels, voussoirs, corbels, ashlars etc.
+The medium quality blocks are roughly shaped by the stonecutters and used on the
+uncoursed curtain walls, and as facing stones on the castle’s inner walls. There are water-
+filled clay pits in the forest. Clay is taken from these pits, cleaned and pugged. It is then
+shaped in wooden moulds to form bricks. After the bricks have been left to air-dry, they are
+fired in a woodfired kiln for about 12 hours, at roughly 1000°c.
+F.The mortar is the “glue” used to bind the castle’s stones. It is made up of precise
+doses of lime, sand and water. The people working there wear the tunics, skirts and
+headgear that they might have worn then, but they wear these over jeans and shoes
+with reinforced toes. They mix their mortar primarily as they would have done then,
+using sand they dig themselves, but they are not allowed to use the extremely
+effective hot lime from medieval days, because of its toxicity, and so they add a
+modem chemical ingredient instead, to achieve the same effect.
+ Workers in the Mid Age obviously were unaware of it and some died earlier by inhaling
+toxic gas. And so, we met many wonderful people who do not pretend to be anything but
+modem human beings practicing an old technique and finding out what it would have felt
+like, as much as possible, to do it with only the resources of an older time.
+G. We also learned that even if there is a straight lintel across a doorway, you will usually
+find an arch of stones built into the wall differently. Because of the physics of an arch,
+which channels the weight above it down into whatever is supporting it at each side instead
+of pressing down in the middle, this helps to take a lot of the weight off of the lintel itself,
+whether it is free standing or buried in the wall against the impact of warfare. The arch is
+the strongest element for spanning space in stone architecture. This is why, in ancient
+ruins, you will often find the entire wall missing, and the arched windows and doorways still
+standing, in beautiful patterns against the sky
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
 Do the following statements agree with the information given in Reading Passage?
-In boxes 10-13 on your answer sheet, write
-          
-TRUE
-FALSE
-if the statement agrees with the information
-if the statement contradicts the information</p>
-<p>NOT GIVEN    if there is no information on this
-10..................... Both developing and developed nations have decided to investigate
-carbon dioxide sequestration.
-11.....................  A growing economy will use more power.
-12.....................  Capturing carbon dioxide has become financially attractive.
-13..................... More forests need to be planted to improve the atmosphere.
- 4</p>
-<p>Solution:
+In boxes 1-4 on your answer sheet, write
+TRUE if the Statement is true
+FALSE if the statement is false
+NOT GIVEN if the information is not given in the passage
+1..................... The French people would not abandon his idea in favor of realistic one.
+2..................... One aim of the castle is to show the ancestral achievement to public.
+3..................... Short lifespan of workers was due to overdue heating.
+4..................... stones were laid not in a straight line arrangement to avoid damaging or
+collapsing.
+ Questions 5-10
+Complete the following summary of the paragraphs of Reading Passage, using A-Lfrom
+the following options for each answer.
+Write your answers in boxes 5-10on your answer sheet.
+Limestone Processing
+When 5..................... found suitable block, they began to cut lines of  6..................... into it.
+7..................... were used and knocked into and generated shockwaves to make stone
+8...................... Different qualities of blocks would be used in different place of castle. On
+the other hand, 9..................... were shaped from clay in a mould and went through a
+process of 10..................... for about 12 hours.
+A metal vedge
+B hammer handle
+C lift
+D Masons
+E patterns
+F heating
+G bricks
+H wood
+I experts
+ 3
  
-1. D
-2. E
-3. D
-4. E
-5. A
-6. F
-7.
-8. F
-9. C
-10. TRUE
-11. TRUE
-12. FALSE
-13. NOT GIVEN</p>
-<p>Reading Practice
- Antarctic Research</p>
-<p>A little over a century ago, men of the ilk of Scott, Shackleton and Mawson battled against
-Antarctica’s blizzards, cold and deprivation. In the name of Empire and in an age of heroic
-deeds they created an image of Antarctica that was to last well into the 20th century – an
-image of remoteness, hardship, bleakness and isolation that was the province of only the
-most courageous of men. The image was one of a place removed from everyday reality, of
-a place with no apparent value to anyone.</p>
-<p>As we enter the 21st century, our perception of Antarctica has changed. Although
-physically Antarctica is no closer and probably no warmer, and to spend time there still
-demands a dedication not seen in ordinary life, the continent and its surrounding ocean are
-increasingly seen to an integral part of Planet Earth, and a key component in the Earth
-System. Is this because the world seems a little smaller these days, shrunk by TV and
-tourism, or is it because Antarctica really does occupy a central spot on Earth’s mantle?
-Scientific research during the past half-century has revealed – and continues to reveal –
-that Antarctica’s great mass and low temperature exert a major influence on climate and
-ocean circulation, factors which influence the lives of millions of people all over the globe.</p>
-<p>Antarctica was not always cold. The slow break-up of the super-continent Gondwana with
-the northward movements of Africa, South America, India and Australia eventually created
-enough space around Antarctica for the development of an Antarctic Circumpolar Current
-(ACC), that flowed from west to east under the influence of the prevailing westerly winds.
-Antarctica cooled, its vegetation perished, glaciation began and the continent took on its
-present-day appearance. Today the ice that overlies the bedrock is up to 4km thick, and
-surface temperatures as low as – 89.2deg C have been recorded. The icy blast that howls
-over the ice cap and out to sea – the so-called katabatic wind – can reach 300 km/hr,
-creating fearsome wind-chill effects.</p>
-<p>Out of this extreme environment come some powerful forces that reverberate around the
-world. The Earth’s rotation, coupled to the generation of cells of low pressure off the
-Antarctic coast, would allow Astronauts a view of Antarctica that is as beautiful as it is
-awesome. Spinning away to the northeast, the cells grow and deepen, whipping up the
-Southern Ocean into the mountainous seas so respected by mariners. Recent work is
-showing that the temperature of the ocean may be a better predictor of rainfall in Australia
-than is the pressure difference between Darwin and Tahiti – the Southern Oscillation Index.
-By receiving more accurate predictions, graziers in northern Queensland are able to avoid
-overstocking in years when rainfall will be poor. Not only does this limit their losses but it
-prevents serious pasture degradation that may take decades to repair. CSIRO is
-developing this as a prototype forecasting system, but we can confidently predict that as
-we know more about the Antarctic and the Southern Ocean we will be able to enhance and
-extend our predictive ability.</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+  J split
+K walls
+L holes
+Questions 11-13
+Choose three correct letters, A-G.
+Write your answers in boxes 11-13on your answer sheet.
+Why does the castle building project last 10 years for just half progress?
+A They lack of enough funds
+B Guedelon castle needs a time-consuming design
+C Workers obeyed modem working hours
+D Their progress were delayed by unpredictable weather
+E Guedelon castle need to receive valuable visitors
+F They used old techniques and skills
+G Stone processing need more labour and time
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 
+ 1.NOT
+GIVEN
+2.TRUE
+3.FALSE
+4.TRUE
+ 
+  
+ 8.J
+9.G
+10.F
+11.C OR E OR F IN
+EITHER ORDER
+12.C OR E OR F IN
+EITHER ORDER
+13.C OR E OR F IN5.D
+EITHER ORDER6.L
+7.A
+ 5</div>
+</div>
+</div>
 </body>
 </html>

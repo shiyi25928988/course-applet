@@ -1,384 +1,157 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ancient Storytelling - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Attitudes To Language - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题70/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Ancient Storytelling</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Attitudes To Language</h1>
+<p>雅思阅读真题 · 第42篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Attitudes to language
+It is not easy to be systematic and objective about language study. Popular linguistic
+debate regularly deteriorates into invective and polemic. Language belongs to everyone, so
+most people feel they have a right to hold an opinion about it. And when opinions differ,
+emotions can run high. Arguments can start as easily over minor points of usage as over
+major policies of linguistic education. 
+Language, moreover, is a very public behaviour, so it is easy for different usages to be
+noted and criticised. No part of society or social behaviour is exempt: linguistic factors
+influence how we judge personality, intelligence, social status, educational standards, job
+aptitude, and many other areas of identity and social survival. As a result, it is easy to hurt,
+and to be hurt, when language use is unfeelingly attacked.
+In its most general sense, prescriptivism is the view that one variety of language has an
+inherently higher value than others, and that this ought to be imposed on the whole of the
+speech community. The view is propounded especially in relation to grammar
+and vocabulary, and frequently with reference to pronunciation. The variety which is
+favoured, in this account, is usually a version of the 'standard' written language, especially
+as encountered in literature, or in the formal spoken language which most closely reflects
+this style. Adherents to this variety are said to speak or write 'correctly'; deviations from it
+are said to be 'incorrect!
+All the main languages have been studied prescriptively, especially in the 18th century
+approach to the writing of grammars and dictionaries. The aims of these early
+grammarians were threefold: (a) they wanted to codify the principles of their languages, to
+show that there was a system beneath the apparent chaos of usage, (b) they wanted a
+means of settling disputes over usage, and (c) they wanted to point out what they felt to be
+common errors, in order to 'improve' the language. The authoritarian nature of the
+approach is best characterised by its reliance on ‘rules' of grammar. Some usages are
+'prescribed,' to be learnt and followed accurately; others are 'proscribed,' to be avoided. In
+this early period, there were no half-measures: usage was either right or wrong, and it was
+the task of the grammarian not simply to record alternatives, but to pronounce judgement
+upon them.
+These attitudes are still with us, and they motivate a widespread concern that linguistic
+standards should be maintained. Nevertheless, there is an alternative point of view that is
+concerned less with standards than with the facts of linguistic usage. This approach
+is summarised in the statement that it is the task of the grammarian to describe, not
+prescribe to record the facts of linguistic diversity, and not to attempt the impossible tasks
+of evaluating language variation or halting language change. In the second half of the
+18th century, we already find advocates of this view, such as Joseph Priestiey, whose
+Rudiments of English Grammar (1761) insists that 'the custom of speaking is the original
+and only just standard of any language! Linguistic issues, it is argued, cannot be solved by
+logic and legislation. And this view has become the tenet of the modern linguistic approach
+to grammatical analysis.
+In our own time, the opposition between 'descriptivists' and 'prescriptivists' has often
+become extreme, with both sides painting unreal pictures of the other.
+Descriptive grammarians have been presented as people who do not care about
+ 1
+standards, because of the way they see all forms of usage as equally valid. Prescriptive
+grammarians have been presented as blind adherents to a historical tradition. The
+opposition has even been presented in quasi-political terms - of radical liberalism vs elitist
+conservatism.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-8
+Do the following statements agree with the claims of the writer In Reading Passage?
+In boxes1-8on your answer sheet, write
+ YES    if the statement agrees with the claims of the writer
+NO    if the statement contradicts the claims of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
  
-1. ii
-2. iii
-3. v
-4. iv
-5. viii
-6. vii
-7.
-8. FALSE
-9. NOT GIVEN
-10. TRUE
-11. TRUE
-12. FALSE
-13. TRUE
-FALSE
- 5</p>
-<p>Reading Practice
- Alfred Nobel: The man behind the Nobel Prize</p>
-<p>Since 1901, the Nobel Prize has been honoring men and women from all corners of the
-globe for outstanding achievements in physics, chemistry, medicine, literature, and for work
-in peace. The foundations for the prize were laid in 1895 when Alfred Nobel wrote his last
-will, leaving much of his wealth to the establishment of the Nobel Prize.</p>
-<p>Alfred Nobel was born in Stockholm on October 21, 1833. His father Immanuel Nobel was
-an engineer and inventor who built bridges and buildings in Stockholm. In connection with
-his construction work, Immanuel Nobel also experimented with different techniques for
-blasting rocks. Successful in his industrial and business ventures, Immanuel Nobel was
-able, in 1842, to bring his family to St. Petersburg. There, his sons were given a first-class
-education by private teachers. The training included natural sciences, languages and
-literature. By the age of 17, Alfred Nobel was fluent in Swedish, Russian, French, English
-and German. His primary interests were in English literature and poetry as well as in
-chemistry and physics. Alfred’s father, who wanted his sons to join his enterprise as
-engineers, disliked Alfred’s interest in poetry and found his son rather introverted.</p>
-<p>In order to widen Alfred’s horizons, his father sent him abroad for further training in
-chemical engineering. During a two year period, Alfred Nobel visited Sweden, Germany,
-France and the United States. In Paris, the city he came to like best, he worked in the
-private laboratory of Professor T. J. Pclouze, a famous chemist. There he met the young
-Italian chemist Ascanio Sobrero who, three years earlier, had invented nitroglycerine, a
-highly explosive liquid. But it was considered too dangerous to be of any practical use.
-Although its explosive power greatly exceeded that of gunpowder, the liquid would explode
-in a very unpredictable manner if subjected to heat and pressure. Alfred Nobel became
-very interested in nitroglycerine and how it could be put to practical use in construction
-work. He also realized that the safety problems had to be solved and a method had to be
-developed for the controlled detonation of nitroglycerine.</p>
-<p>After his return to Sweden in 1863, Alfred Nobel concentrated on developing nitroglycerine
-as an explosive. Several explosions, including one (1864) in which his brother Emil and
-several other persons were killed, convinced the authorities that nitroglycerine production
-was exceedingly dangerous. They forbade further experimentation with nitroglycerine
-within the Stockholm city limits and Alfred Nobel had to move his experimentation to a
-barge anchored on Lake Malaren. Alfred was not discouraged and in 1864 he was able to
-start mass production of nitroglycerine. To make the handling of nitroglycerine safer Alfred
-Nobel experimented with different additives. He soon found that mixing nitroglycerine with
-kieselguhr would turn the liquid into a paste which could be shaped into rods of a size and
-form suitable for insertion into drilling holes. In 1867 he patented this material under the
-name of dynamite. To be able to detonate the dynamite rods he also invented a detonator
-(blasting cap) which could be ignited by lighting a fuse. These inventions were made at the
- 1</p>
-<p>same time as the pneumatic drill came into general use. Together these inventions
-drastically reduced the cost of blasting rock, drilling tunnels, building canals and many
-other forms of construction work.</p>
-<p>The market for dynamite and detonating caps grew very rapidly and Alfred Nobel also
-proved himself to be a very skillful entrepreneur and businessman. Over the years he
-founded factories and laboratories in some 90 different places in more than 20 countries.
-Although he lived in Paris much of his life he was constantly traveling. When he was not
-traveling or engaging in business activities Nobel himself worked intensively in his various
-laboratories, first in Stockholm and later in other places. He focused on the development of
-explosives technology as well as other chemical inventions including such materials as
-synthetic rubber and leather, artificial silk, etc. By the time of his death in 18%, he had 355
-patents.</p>
-<p>Intensive work and travel did not leave much time for private life. At the age of 43, he was
-feeling like an old man. At this time he advertised in a newspaper “Wealthy, highlyeducated elderly gentleman seeks the lady of mature age, versed in languages, as
-secretary and supervisor of household.” The most qualified applicant turned out to be an
-Austrian woman, Countess Bertha Kinsky. After working a very short time for Nobel she
-decided to return to Austria to marry Count Arthur von Suttner. In spite of this Alfred Nobel
-and Bertha von Suttner remained friends and kept writing letters to each other for decades.
-Over the years Bertha von Suttner became increasingly critical of the arms race. She wrote
-a famous book, Lay Down Your Arms and became a prominent figure in the peace
-movement. No doubt this influenced Alfred Nobel when he wrote his final will which was to
-include a Prize for persons or organizations who promoted peace. Several years after the
-death of Alfred Nobel, the Norwegian Storting (Parliament) decided to award the 1905
-Nobel Peace Prize to Bertha von Suttner.</p>
-<p>Alfred Nobel died in San Remo, Italy, on December 10, 1896. When his will was opened it
-came as a surprise that his fortune was to be used for Prizes in Physics, Chemistry,
-Physiology or Medicine, Literature and Peace. The executors of his will were two young
-engineers, Ragnar Sohlman and Rudolf Lilljequist. They set about forming the Nobel
-Foundation as an organization to take care of the financial assets left by Nobel for this
-purpose and to coordinate the work of the Prize-Awarding Institutions. This was not without
-its difficulties since the will was contested by relatives and questioned by authorities in
-various countries.</p>
-<p>Alfred Nobel’s greatness lay in his ability to combine the penetrating mind of the scientist
-and inventor with the forward-looking dynamism of the industrialist. Nobel was very
-interested in social and peace-related issues and held what were considered radical views
-in his era. He had a great interest in literature and wrote his own poetry and dramatic
-works. The Nobel Prizes became an extension and a fulfillment of his lifetime interests.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+   1.....................    There are understandable reasons why arguments occur about language.
+2.....................    People feel more strongly about language education than about small
+differences in language usage.
+3.....................    Our assessment of a person’s intelligence is affected by the way he or she
+uses language.
+4.....................    Prescriptive grammar books cost a lot of money to buy in the 18th century.
+5.....................    Prescriptivism still exists today.
+6.....................    According to descriptivists it is pointless to try to stop language change.
+7.....................    Descriptivism only appeared after the 18th century.
+8.....................    Both descriptivists and prescriptivists have been misrepresented.
+Questions 9-12
+Complete the summary using the list of words, A-I, below.
+Write the correct letter, A-I, in boxes 9-12on your answer sheet.
+ 
+ 
+ 
+ The language debate
+ 
+ According to 9....................., there is only one correct form of language. Linguists who
+take this approach to language place great importance on grammatical 10......................
+Conversely, the view of 11....................., such as Joseph Priestley, is that grammar
+should be based on 12......................
+Adescriptivists B  language experts Cpopular speech
+Dformal language E  evaluation Frules
+ 3
+Gmodern linguists Hprescriptivists
+ 
+  I change
+Questions 13
+Choose the correct letter, A, B, C or D.
+Write the correct letter in box 13on your answer sheet.
+What is the writer’s purpose in Reading Passage?
+A    to argue in favour of a particular approach to writing dictionaries and grammar
+books
+B    to present a historical account of differing views of language
+C    to describe the differences between spoken and written language
+D    to show how a certain view of language has been discredited
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.YES
+2.NO
+3.YES
+4.NOT GIVEN
+5.YES
+6.YES
+7.8.YES
+9.H
+10.F
+11.A
+12.C
+13.B
+NO
+ 5</div>
+</div>
+</div>
 </body>
 </html>

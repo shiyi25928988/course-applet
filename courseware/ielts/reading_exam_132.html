@@ -1,372 +1,179 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Early Childhood Education - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Gold Dusters - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题180/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Early Childhood Education</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
- 
-1. C
-2. D
-3. G
-4. D
-5. E
-6. B
-7.
-8. C
-9. F
-10. scene
-11. separators
-12. host-selling
-13. funnier</p>
-<p>Children’s literature
-A I am sometimes asked why anyone who is not a teacher or a librarian or the parent
-of little kids should concern herself with children's books and folklore. I know the
-standard answers: that many famous writers have written for children, and that the
-great children's books are also great literature; that these books and tales are
-an important source of archetype and symbol, and that they can help us to
-understand the structure and functions of the novel.
- 
-B All this is true. But I think we should also take children's literature seriously because it
-is sometimes subversive: because its values are not always those of the conventional adult
-world. Of course, in a sense much great literature is subversive, since its very existence
-implies that what matters is art, imagination and truth. In what we call the real world, what
-usually counts is money, power and public success.
- 
-C The great subversive works of children's literature suggest that there are other
-views of human life besides those of the shopping mall and the corporation. They
-mock current assumptions and express the imaginative, unconventional,
-noncommercial view of the world in its simplest and purest form. They appeal to the
-imaginative, questioning, rebellious child within all of us, renew our instinctive
-energy, and act as a force for change. This is why such literature is worthy of
-our attention and will endure long after more conventional tales have been forgotten.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Gold Dusters</h1>
+<p>雅思阅读真题 · 第132篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Gold dusters
+ ARow upon row, tomato plants stand in formation inside a greenhouse. To reproduce,
+most flowering plants depend on a third party to transfer pollen between their male and
+female parts. Some require extra encouragement to give up that golden dust. The tomato
+flower, for example, needs a violent shake, a vibration roughly equivalent to 30 times the
+pull of Earth’s gravity, explains Arizona entomologist Stephen Buchmann. Growers have
+tried numerous ways to rattle pollen from tomato blossoms. They have used shaking
+tables, air blowers and blasts of sound. But natural means seem to work better.
+ BIt is no surprise that nature’s design works best. What’s astonishing is the array of
+workers that do it: more than 200,000 individual animal species, by varying strategies, help
+the world's 240,000 species of flowering plants make more flowers. Flies and beetles are
+the original pollinators, going back to when flowering plants first appeared 130 million years
+ago. As for bees, scientists have identified some 20,000 distinct species so far.
+Hummingbirds, butterflies, moths, wasps and ants are also up to the job. Even non-flying
+mammals do their part: sugar-loving opossums, some rainforest monkeys, and lemurs in
+Madagascar, all with nimble hands that tear open flower stalks and furry coats to which
+pollen sticks. Most surprising, some lizards, such as geckos, lap up nectar and pollen and
+then transport the stuff on their faces and feet as they forage onward.
+CAll that messy diversity, unfortunately, is not well suited to the monocrops and mega-
+yields of modern commercial farmers Before farms got so big, says conservation biologist
+Claire Kremen of the University of California, Berkeley, ‘we didn’t have to manage
+pollinators. They were all around because of the diverse landscapes. Now you need to
+bring in an army to get pollination done. The European honeybee was first imported to the
+US some 400 years ago.
+ Now at least a hundred commercial crops rely almost entirely on managed honeybees,
+which beekeepers raise and rent out to tend to big farms. And although other species of
+bees are five to ten times more efficient, on a per-bee basis, at pollinating certain fruits,
+honeybees have bigger colonies, cover longer distances, and tolerate management and
+movement better than most insects. They're not picky - they’ll spend their time on almost
+any crop. It’s tricky to calculate what their work is truly worth; some economists put it at
+more than $200 billion globally a year.
+DIndustrial-scale farming, however, may be wearing down the system. Honeybees have
+suffered diseases and parasite infestations for as long as they've been managed, but in
+2006 came an extreme blow.
+Around the world, bees began to disappear over the winter in massive numbers.
+Beekeepers would lift the lid of a hive and be amazed to find only the queen and a few
+stragglers, the worker bees gone.
+ In the US, a third to half of all hives crashed; some beekeepers reported colony losses near
+90 percent. The mysterious culprit was named colony collapse disorder (CCD) and it
+remains an annual menace - and an enigma.
+EWhen it first hit, many people, from agronomists to the public, assumed that our
+slathering of chemicals on agricultural fields was to blame for the mystery. Indeed, says
+ 1
+ Jeff Pettis of the USDA Bee Research Laboratory, ‘we do find more disease in bees that
+have been exposed to pesticides, even at low levels.’ But it is likely that CCD involves
+multiple stressors. Poor nutrition and chemical exposure, for instance, might wear down a
+bee's immunities before a virus finishes the insect off. It’s hard to tease apart factors and
+outcomes, Pettis says. New studies reveal that fungicides - not previously thought toxic to
+bees - can interfere with microbes that break down pollen in the insects’ guts, affecting
+nutrient absorption and thus long-term health and longevity. Some findings pointed to viral
+and fungal pathogens working together. ‘I only wish we had a single agent causing all the
+declines,’ Pettis says, ’that would make our work much easier!
+ FHowever, habitat loss and alteration, he says, are even more of a menace to pollinators
+than pathogens. Claire Kremen encourages farmers to cultivate the flora surrounding
+farmland to help solve habitat problems. ‘You can't move the farm,’ she says, ‘but you can
+diversify what grows in its vicinity: along roads, even in tractor yards.’ Planting hedgerows
+and patches of native flowers that bloom at different times and seeding fields with multiple
+plant species rather than monocrops 'not only is better for native pollinators, but it’s just
+better agriculture,’ she says. Pesticide-free wildflower havens, adds Buchmann, would also
+bolster populations of useful insects. Fortunately, too, ‘there are far more generalist plants
+than specialist plants, so there's a lot of redundancy in pollination,’ Buchmann says. ‘Even
+if one pollinator drops out, there are often pretty good surrogates left to do the job. The key
+to keeping our gardens growing strong, he says, is letting that diversity thrive. 
+GTake away that variety, and we'll lose more than honey. ‘We wouldn't starve,’ says
+Kremen. ‘But what we eat, and even what we wear pollinators, after all, give us some of our
+cotton and flax - would be limited to crops whose pollen travels by other means. ‘In a
+sense,’ she says, ‘our lives would be dictated by the wind. It’s vital that we give pollinators
+more of what they need and less of what they don't, and ease the burden on managed
+bees by letting native animals do their part, say scientists.
+Adapted from National Geograptiic Magazine.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+The reading passage has seven sections, A-G.
+Choose the correct heading for each section from the list of headings below.
  
-D An interesting question is what - besides intention - makes a particular story a
-'children's book'? With the exception of picture books for toddlers, these works are
-not necessarily shorter or simpler than so-called adult fiction, and they are surely
-not less well written. The heroes and heroines of these tales, it is true, are
-often children: but then so are the protagonists of Henry James's What Maisie
-Knew and Toni Morrison's The Bluest Eye. Yet the barrier between children's books and
-adult fiction remains; editors, critics and readers seem to have little trouble in assigning a
-given work to one category or the other.
-E In classic children's fiction a pastoral convention is maintained. It is assumed that the
-world of childhood is simpler and more natural than that of adults, and that children, though
-they may have faults, are essentially good or at least capable of becoming so. The
-transformation of selfish, whiny, disagreeable Mary and hysterical, demanding Colin in
-Frances Hodgson Burnett's The Secret Garden is a paradigm. Of course, there are often
-unpleasant minor juvenile characters who give the protagonist a lot of trouble and are
-defeated or evaded rather than reeducated. But on occasion even the angry bully and the
-lying sneak can be reformed and forgiven. Richard Hughes's A High Wind
-in Jamaica, though most of its characters are children, never appears on lists of
-recommended juvenile fiction; not so much because of the elaborations of its diction (which
-is no more complex than that of, say, Treasure Island), but because in it children are
-irretrievably damaged and corrupted.
-F Adults in most children's books, on the other hand, are usually stuck with their characters
-and incapable of alteration or growth. If they are really unpleasant, the only thing that can
-rescue them is the natural goodness of a child. Here again, Mrs. Burnett provides the
-classic example, in Little Lord Fauntleroy. (Scrooge's somewhat similar change of heart in
-Dickens's A Christmas Carol, however, is due mainly to regret for his past and terror of the
- 1</p>
-<p>future. This is one of the things that makes the book a family rather than a juvenile
-romance; another is the helpless passivity of the principal child character, Tiny Tim.).
-G Of the three principal preoccupations of adult fiction - sex, money and death - the
-first is absent from classic children's literature and the other two either absent or much
-muted. Money is a motive in children's literature, in the sense that many stories deal with a
-search for treasure of some sort. These quests, unlike real-life ones, are almost always
-successful, though occasionally what is found in the end is some form of family happiness,
-which is declared by the author and the characters to be a 'real treasure'. Simple economic
-survival, however, is almost never the problem; what is sought, rather, is a magical
-(sometimes literally magical) surplus of wealth. Death, which was a common theme
-in nineteenth-century fiction for children, was almost banished during the first half of
-the twentieth century. Since then it has begun to reappear; the breakthrough book was
-E.B. White's Charlotte's Web. Today not only animals but people die, notably in the sort of
-books that get awards and are recommended by librarians and psychologists for children
-who have lost a relative. But even today the characters who die tend to be of another
-generation; the protagonist and his or her friends survive. Though there are some
-interesting exceptions, even the most subversive of contemporary children's books usually
-follow these conventions. They portray an ideal world of perfectible beings, free of
-the necessity for survival.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ List of Headings
+i       Looking for clues
+ii      Blaming the beekeepers
+iii     Solutions to a more troublesome issue
+iv     Discovering a new bee species
+v       An impossible task for any human
+vi     The preferred pollinator
+vii     Plant features designed to suit the pollinator
+viii    Some obvious and less obvious pollen carriers
+ix      The undesirable alternative
+x       An unexpected setback
+  
+ 
+  
+ 1       Section A  1.....................
+2       Section B 2.....................
+3       Section C  3.....................
+4       Section D  4.....................
+5       Section E  5.....................
+6       Section F  6.....................
+7       Section G  7.....................
+Questions 8-11
+Complete the sentences below.
+ChooseNO MOKE THAN THREE WORDS from the passage for each answer.
+8      Both8..................... were the first creatures to pollinate the world's plants.
+9     Monkeys transport pollen on their 9.....................
+10     Honeybees are favoured pollinators among bee species partly because they travel
+ 3
+  
+   
+  10.....................
+11     A feature of CCD is often the loss of all the 11.....................
+Questions 12-13
+ChooseTWOletters,A-E.
+WhichTWOmethods of combating the problems caused by CCD and habitat loss are
+mentioned in the article?
+A using more imported pest controllers
+B removing microbes from bees’ stomachs
+C cultivating a wide range of flowering plants
+D increasing the size of many farms
+E placing less reliance on honeybees
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.v
+2.viii
+3.vi
+4.x
+5.i
+6.iii
+7.8.flies and beetles
+9.furry coats
+10.longer distances
+11.worker bees
+12.C OR E IN EITHER ORDER
+13.C OR E IN EITHER ORDER
+ix
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,358 +1,204 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decision Making And Happiness - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Father Of Modern Management - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题162/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Decision Making And Happiness</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>to buy anything!
-Some people question if “Buy Nothing Day” can really change culture. It is only one day.
-And telling people not to do something often does not work! Other people say that
-consumers should not just buy less, but they should buy better. These people encourage
-consumers to buy things that are made in ways that do not hurt people or the environment.
-But “Buy Nothing Day” does get people thinking about the negative effects of buying too
-much. A lot of people have had deep learning experiences when they tried celebrating “Buy
-Nothing Day”. It was like giving up an addiction to drugs.</p>
-<p>Buying more and more things can be like an addiction. Often, the more people buy things,
-the more things they want. People are happier and more satisfied when they spend money
-on experiences instead of things. Satisfaction over purchases decreases over time. A new
-car does not stay new for very long. But a satisfying experience often becomes more
-positive over time as we remember it.
- 2</p>
-<p>Questions 1-5
-Write NO MORE THAN TWO WORDS from the passage for each answer.</p>
-<p>“Buy Nothing Day” started in the 1990s in 1....................., Canada. It is held on the
-2..................... Friday of every November. It is the biggest buying day of the year.
-Advertisers call this day 3......................
-It is the day after the country’s 4..................... holiday. Buy Nothing Day is a simple idea
-that fights5..................... culture by asking us to stop buying for a day. 
- 3</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Father Of Modern Management</h1>
+<p>雅思阅读真题 · 第117篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Father of modern management
+A
+Peter Drucker was one of the most important management thinkers of the past hundred
+years. He wrote about 40 book and thousands of articles and he never rested in his
+mission to persuade the world that management matters. “Management is an organ of
+institutions … the organ that converts a mob into an organisation, and human efforts into
+performance.” Did he succeed? The range of his influence was extraordinary. Wherever
+people grapple with tricky management problems, from big organizations to small ones,
+from the public sector to the private, and increasingly in the voluntary sector, you can find
+Drucker’s fingerprints.
+B
+His first two books –  The End of Economic Man  (1939) and  The Future of Industrial
+Man (1942) – had their admirers, including Winston Churchill, but they annoyed academic
+critics by ranging so widely over so many different subjects. Still, the second of these books
+attracted attention with its passionate insistence that companies had a social dimension as
+well as an economic purpose. His third book,  The Concept of the Corporation , became an
+instant bestseller and has remained in print ever since.
+C
+The two most interesting arguments in  The Concept of the Corporation  actually had little to
+do with the decentralization fad. They were to dominate his work. The first had to do with
+“empowering” workers. Drucker believed in treating workers as resources rather than just
+as costs. He was a harsh critic of the assembly-line system of production that then
+dominated the manufacturing sector – partly because assembly lines moved at the speed
+of the slowest and partly because they failed to engage the creativity of individual workers.
+The second argument had to do with the rise of knowledge workers. Drucker argued that
+the world is moving from an “economy of goods” to an economy of “knowledge” – and from
+a society dominated by an industrial proletariat to one dominated by brain workers. He
+insisted that this had profound implications for both managers and politicians. Managers
+had to stop treating workers like cogs in a huge inhuman machine and start treating them
+as brain workers. In turn, politicians had to realise that knowledge, and hence education,
+was the single most important resource for any advanced society. Yet Drucker also thought
+that this economy had implications for knowledge workers themselves. They had to come
+to terms with the fact that they were neither “bosses” nor “workers”, but something in
+between: entrepreneurs who had responsibility for developing their most important
+resource, brainpower, and who also needed to take more control of their own careers,
+including their pension plans.
+D
+However, there was also a hard side to his work. Drucker was responsible for inventing one
+of the rational school of management’s most successful products – “management by
+objectives”. In one of his most substantial works, The Practice of Management (1954), he
+emphasised the importance of managers and corporations setting clear long-term
+objectives and then translating those long-term objectives into more immediate goals. He
+ 1
+argued that firms should have an elite corps of general managers, who set these long-term
+objectives, and then a group of more specialised managers. For his critics, this was a
+retreat from his earlier emphasis on the soft side of management. For Drucker it was all
+perfectly consistent: if you rely too much on empowerment you risk anarchy, whereas if you
+rely too much on command-and-control you sacrifice creativity. The trick is for managers to
+set long-term goals, but then allow their employees to work out ways of achieving those
+goals. If Drucker helped make management a global industry, he also helped push it
+beyond its business base. He was emphatically a management thinker, not just a business
+one. He believed that management is “the defining organ of all modern institutions”, not just
+corporations.
+E
+There are three persistent criticisms of Drucker’s work. The first is that he focused on big
+organisations rather than small ones.  The Concept of the Corporation  was in many ways a
+fanfare to big organisations. As Drucker said, “We know today that in modern industrial
+production, particularly in modern mass production, the small unit is not only inefficient, it
+cannot produce at all.” The book helped to launch the “big organisation boom” that
+dominated business thinking for the next 20 years. The second criticism is that Drucker’s
+enthusiasm for management by objectives helped to lead the business down a dead end.
+They prefer to allow ideas, including ideas for long-term strategies, to bubble up from the
+bottom and middle of the organisations rather than being imposed from on high. Thirdly,
+Drucker is criticised for being a maverick who has increasingly been left behind by the
+increasing rigour of his chosen field. There is no single area of academic management
+theory that he made his own.
+F
+There is some truth in the first two arguments. Drucker never wrote anything as good
+as The Concept of the Corporation  on entrepreneurial start-ups. Drucker’s work on
+management by objectives sits uneasily with his earlier and later writings on the importance
+of knowledge workers and self-directed teams. But the third argument is short-sighted and
+unfair because it ignores Drucker’s pioneering role in creating the modern profession of
+management. He produced one of the first systematic studies of a big company. He
+pioneered the idea that ideas can help galvanise companies. The biggest problem with
+evaluating Drucker’s influence is that so many of his ideas have passed into conventional
+wisdom. In other words, he is the victim of his own success. His writings on the importance
+of knowledge workers and empowerment may sound a little banal today. But they certainly
+weren’t banal when he first dreamed them up in the 1940s, or when they were first put in to
+practice in the Anglo-Saxon world in the 1980s. Moreover, Drucker continued to produce
+new ideas up until his 90s. His work on the management of voluntary organisations
+remained at the cutting edge.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Reading Passage has six paragraphs,  A-F
+Choose the correct heading for each paragraph from the list below.
+Write the correct number,  i-ix, in boxes 1-6 on your answer sheet.
+List of Headings
+i           The popularity and impact of Drucker’s work
+ii          Finding fault with Drucker
+iii         The impact of economic globalisation
+iv         Government regulation of business
+v          Early publications of Drucker’s
+vi         Drucker’s view of balanced management
+vii        Drucker’s rejection of big business
+viii       An appreciation of the pros and cons of Drucker’s work
+ix         The changing role of the employee
+1.....................   Paragraph A
+2.....................   Paragraph B
+3.....................   Paragraph C
+4.....................   Paragraph D
+5.....................   Paragraph E
+6.....................   Paragraph F
+ Questions 7-10
+Do the following statements agree with the information given in Reading Passage 2?
+In boxes 7-10 on your answer sheet, write
+YES                  if the statement agrees with what is stated in the passage
+NO                   if the statement counters to what is stated in the passage 
+NOT GIVEN     if there is no relevant information given in the passage
+7.....................   Drucker believed the employees should enjoy the same status as the
+ 3
+employers in a company
+8.....................   Drucker argued the managers and politicians will dominate the economy
+during a social transition
+9.....................   Drucker support that workers are not simply put themselves just in the
+employment relationship and should develop their resources of intelligence voluntarily
+10.....................   Drucker’s work on the management is out of date in moderns days
+Questions 11-12
+Choose TWO letters from  A-E.
+Write your answers in boxes  12 and 13 on your answer sheet.
+Which TWO of the following are true of Drucker’s views?
+A   High-rank executives and workers should be put in balanced positions in management
+practice
+B   Young executives should be given chances to start from low-level jobs
+C   More emphasis should be laid on fostering the development of the union.
+D   Management should facilitate workers with tools of self-appraisal instead of controlling
+them from the outside force
+E   Leaders should go beyond the scope of management details and strategically establish
+goals 
+Questions 13-14
+Choose TWO letters from  A-E.
+Write your answers in boxes  13 and 14 on your answer sheet.
+Which TWO of the following are mentioned in the passage as criticisms to Drucker and his
+views?
+A   His lectures focus too much on big organisations and ignore the small ones.
+B   His lectures are too broad and lack of being precise and accurate about the facts.
+C   He put a source of objectives more on corporate executives but not on average
+workers.
+D   He acted much like a maverick and did not set up his own management groups
+E   He was overstating the case for knowledge workers when warning business to get
+prepared.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
  
-1. Vancouver
-2. fourth
- 
-4. Thanksgiving
-5. consumer
-3. Black Friday
- 4</p>
-<p>Reading Practice
- California’s age of Megafires</p>
-<p>There’s a reason fire squads now battling more than a dozen blazes in southern California
-are having such difficulty containing the flames, despite better preparedness than ever and
-decades of experience fighting fires fanned by the notorious Santa Ana winds. The wildfires
-themselves, experts say, generally are hotter, move faster, and spread more erratically
-than in the past.</p>
-<p>The short-term explanation is that the region, which usually has dry summers, has had nine
-inches less rain than normal this year. Longer-term, climate change across the West is
-leading to hotter days on average and longer fire seasons. Experts say this is likely to yield
-more megafires like the conflagrations that this week forced evacuations of at least
-300,000 resident in California’s southland and led President Bush to declare a disaster
-emergency in seven counties on Tuesday.</p>
-<p>Megafires, also called “siege fires,” are the increasingly frequent blazes that burn 500,000
-acres or more – 10 times the size of the average forest fire of 20 years ago. One of the
-current wildfires is the sixth biggest in California ever, in terms of acreage burned,
-according to state figures and news reports. The trend to more superhot fires, experts say,
-has been driven by a century-long policy of the US Forest Service to stop wildfires as
-quickly as possible. The unintentional consequence was to halt the natural eradication of
-underbrush, now the primary fuel for megafires. Three other factors contribute to the trend,
-they add. First is climate change marked by a 1-degree F. rise in average yearly
-temperature across the West. Second is a fire season that on average is 78 days longer
-than in the late 1980s. The third is the increased building of homes and other structures in
-wooded areas.</p>
-<p>“We are increasingly building our homes … in fire-prone ecosystems,” says Dominik
-Kulakowski, adjunct professor of biology at Clark University Graduate School of Geography
-in Worcester, Mass. Doing that “in many of the forests of the Western US … is like building
-homes on the side of an active volcano.” In California, where population growth has
-averaged more than 600,000 a year for at least a decade, housing has pushed into such
-areas. “What once was open space is now residential homes providing fuel to make fires
-burn with greater intensity,” says Terry McHale of the California Department of Forestry
-firefighters union. “With so much dryness, so many communities to catch fire, so many
-fronts to fight, it becomes an almost incredible job.”</p>
-<p>That said, many experts give California high marks for making progress on preparedness
-since 2003, when the largest fires in state history scorched 750,000 acres, burned 3,640
-homes, and killed 22 people. Stung then by criticism of bungling that allowed fires to
-spread when they might have been contained, personnel are meeting the peculiar
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 1.i
+2.v
+3.ix
+4.vi
+5.ii
+6.viii
+ 8.NOT GIVEN
+9.YES
+10.NO
+11.A
+12.E
+13.A
+14. 7.NOT GIVEN C
+ 5</div>
+</div>
+</div>
 </body>
 </html>

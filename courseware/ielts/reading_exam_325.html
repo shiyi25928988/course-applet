@@ -1,371 +1,170 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stadium Australia - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Future Never Dies - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题434/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Stadium Australia</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>1. isolation
-2. economic globalisation//
-globalization// socio-economic
-pressures
-3.
-9. B
-cultural identity
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Future Never Dies</h1>
+<p>雅思阅读真题 · 第325篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The future never dies?
+The prospects for humanity and for the world as a whole are somewhere between glorious
+and dire. It is hard to be much more precise.
+A
+By ‘glorious’, I mean that our descendants – all who are born on to this Earth – could live
+very comfortably and securely, and could continue to do so for as long as the Earth can
+support life, which should be for a very long time indeed. We should at least be thinking in
+terms of the next million years. Furthermore, our descendants could continue to enjoy the
+company of other species – establishing a much better relationship with them than we have
+now. Other animals need not live in constant fear of us. Many of those fellow species now
+seem bound to become extinct, but a significant proportion could and should continue to
+live alongside us. Such a future may seem ideal, and so it is. Yet I do not believe it is
+fanciful. There is nothing in the physical fabric of the Earth or in our own biology to suggest
+that this is not possible. 
+B
+‘Dire’ means that we human beings could be in deep trouble within the next few centuries,
+living but also dying in large numbers in political terror and from starvation, while huge
+numbers of our fellow creatures would simply disappear, leaving only the ones that we find
+convenient – chickens, cattle – or that we can’t shake off, like flies and mice. I’m taking it to
+be self-evident that glory is preferable. 
+C
+Our future is not entirely in our own hands because the Earth has its own rules, is part of
+the solar system and is neither stable nor innately safe. Other planets in the solar system
+are quite beyond habitation, because their temperature is far too high or too low to be
+endured, and ours, too, in principle could tip either way. Even relatively unspectacular
+changes in the atmosphere could do the trick. The core of the Earth is hot, which in many
+ways is good for living creatures, but every now and again, the molten rock bursts through
+volcanoes on the surface. Among the biggest volcanic eruptions in recent memory was
+Mount St Helens, in the USA, which threw out a cubic kilometre of ash – fortunately, in an
+area where very few people live. In 1815, Tambora (in present-day Indonesia) expelled so
+much ash into the upper atmosphere that climatic effects seriously harmed food production
+around the world for the season after season. Entire civilisations have been destroyed by
+volcanoes. 
+D
+Yet nothing we have so far experienced shows what volcanoes can really do. Yellowstone
+National Park in the USA occupies the caldera (the crater formed when a volcano
+collapses) of an exceedingly ancient volcano of extraordinary magnitude. Modem surveys
+show that its centre is now rising. Sometime in the next 200 million years, Yellowstone
+could erupt again, and when it does, the whole world will be transformed. Yellowstone
+could erupt tomorrow. But there’s a very good chance that it will give us another million
+years, and that surely is enough to be going on with. It seems sensible to assume that this
+will be the case.
+ 1
+E
+The universe at large is dangerous, too: in particular, we share the sky with vast numbers
+of asteroids, and now and again, the come into our planet’s atmosphere. An asteroid the
+size of a small island, hitting the Earth at 15,000 kilometres an hour (a relatively modest
+speed by the standards of heavenly bodies), would strike the ocean bed like a rock in a
+puddle, send a tidal wave around the world as high as a small mountain and as fast as a
+jumbo jet, and propel us into an ice age that could last for centuries. There are plans to
+head off such disasters (including rockets to push approaching asteroids into new
+trajectories), but in truth, it’s down to luck. 
+F
+On the other hand, the archaeological and the fossil evidence shows that no truly
+devastating asteroid has struck since the one that seems to have accounted for the
+extinction of the dinosaurs 65 million years ago. So again, there seems no immediate
+reason for despair. The Earth is indeed an uncertain place, in an uncertain universe, but
+with average luck, it should do us well enough. If the world does become inhospitable in the
+next few thousand or million years, then it will probably be our own fault. In short, despite
+the underlying uncertainty, our own future and that of our fellow creatures are very much in
+our own hands.
+G
+Given average luck on the geological and the cosmic scale, the difference between glory
+and disaster will be made and is being made, by politics. Certain kinds of political systems
+and strategies would  predispose  us to long-term survival (and indeed to comfort and
+security and pleasure of being alive), while others would take us more and
+more frenetically  towards collapse. The broad point is, though, that we need to look at
+ourselves – humanity – and at the world in general in a quite new light. Our material
+problems are fundamentally those of biology. We need to think, and we need our politicians
+to think, biologically. Do that, and take the ideas seriously, and we are in with a chance.
+Ignore biology and we and our fellow creatures haven’t a hope.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Do the following statements reflect the claims of the writer in Reading Passage? 
+In boxes1-6 on your answer sheet write 
+YES                  if the statement is true 
+NO                   if the statement is false 
+NOT GIVEN     if the information is not given in the passage 
+1.....................   It seems predictable that some species will disappear.
+2.....................   The nature of the Earth and human biology make it impossible for human
+beings to survive another million years.
+3.....................   An eruption by Yellowstone is likely to be more destructive than previous
+volcanic eruptions.
+4.....................   There is a greater chance of the Earth being hit by small asteroids than
+large ones.
+5.....................   If the world becomes uninhabitable, it is most likely to be as a result of a
+natural disaster.
+6.....................   Politicians currently in power seem unlikely to change their way of thinking.
+ Question 7-12
+Complete the summary below. 
+Choose NO MORE THAN TWO WORDS  from the passage for each answer. 
+Write your answers in boxes  7-12 on your answer sheet. 
+The Earth could become uninhabitable, like other planets, through a major change in
+the 7...................... Volcanic eruptions of  8..................... can lead to shortages
+of 9..................... in a wide area. An asteroid hitting the Earth could create
+a 10..................... that would result in a new  11...................... Plans are being made to
+use 12..................... to deflect asteroids heading for the Earth.
+Question 13
+Choose the correct letter  A, B, C or D. 
+Write your answer in box  26 on your answer sheet. 
+26   What is the writer’s purpose in Reading Passage 2?   
+A  to propose a new theory about the causes of natural disasters 
+B  to prove that generally held beliefs about the future are all mistaken 
+C  to present a range of opinions currently held by scientists 
+ 3
+D  to argue the need for a general change in behavior  
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
  
-4. traditional skill
- 
-5. E
- 
-10. NO
-11.
-YES
-12.
-NOT
-GIVEN
-13.6. B YES
-7. D
- 5</p>
-<p>Reading Practice
- Magnetic Therapy</p>
-<p>Magnetic therapy, which is a $5-billion market worldwide, is a form of alternative medicine
-which claims that magnetic fields have healing powers. Magnetic devices that are claimed
-to be therapeutic include magnetic bracelets, insoles, wrist and knee bands, back and neck
-braces, and even pillows and mattresses. Their annual sales are estimated at $300 million
-in the United States and more than a billion dollars globally. They have been advertised to
-cure a vast array of ills, particularly pain.</p>
-<p>The therapy works on the principle of balancing electrical energy in the body by pulsating
-magnetic waves through different parts of the body. The electrical currents generated by
-magnets increase the blood flow and oxygen which helps to heal many of the ailments. The
-natural effects of the Earth’s magnetic field are considered to play an essential role in the
-health of humans and animals. It is generally accepted that our body draws some benefit
-from the Earth’s magnetic field. To restore the balance within our body allows us to function
-at our optimum level. For example, when the first astronauts returned to earth sick, NASA
-concluded that their illness resulted from the lack of a planetary magnetic field in outer
-space. To resolve the problem, NASA placed magnets in the astronauts’ space suits and
-space travel vehicles, and astronauts have returned to Earth healthy ever since.</p>
-<p>Historically it is reported that magnets have been around for an extremely long time. The
-therapeutic power of magnets was known to physicians in ancient Greece, Egypt and
-China over 4000 years ago, who used naturally magnetic rock – lodestone – to treat a
-variety of physical and psychological ailments. Cleopatra the beautiful Egyptian queen was
-probably the first celebrity to use magnets. It is documented that in order to prevent from
-aging, she slept on a Lodestone to keep her skin youthful. Ancient Romans also used
-magnet therapy to treat eye disease.</p>
-<p>The popularity of magnet therapy in the United States began to rise during the 1800s and
-soared in the post-Civil War era. Sears-Roebuck advertised magnetic jewelry in its catalog
-for the healing of virtually any ailment. An Austrian psychoanalyst by the name of Wilhelm
-Reich immigrated to the United States in 1939 and researched the effects of
-electromagnetism on humans. Today, Germany, Japan, Israel, Russia and at least 45 other
-countries consider magnetic therapy to be an official medical procedure for the treatment of
-numerous ailments, including various inflammatory and neurological problems.</p>
-<p>For those who practice magnetic therapy, strongly believe that certain ailments can be
- 1</p>
-<p>treated if the patient is exposed to magnetic fields while at the same time there is a strong
-resentment from the medical establishment and critics claim that most magnets don’t have
-the strength to affect the various organs and tissues within the body and it is a product of
-Pseudoscience and is not based on proper research and analysis. There are few reported
-complications of magnetic therapy and the World Health Organization says a low level of
-magnetic energy is not harmful. Documented side effects are not life-threatening and
-include pain, nausea and dizziness that disappeared when the magnets were removed. If
-considering magnet therapy, as with any medical treatment, it is always advisable to
-consult one’s regular physician first. Magnet therapy is gaining popularity; however,
-scientific evidence to support the success of this therapy is lacking. More scientifically
-sound studies are needed in order to fully understand the effects that magnets can have on
-the body and the possible benefits or dangers that could result from their use.</p>
-<p>Researchers at Baylor University Medical Center recently conducted a double-blind study
-on the use of concentric-circle magnets to relieve chronic pain in 50 post-polio patients. A
-static magnetic device or a placebo device was applied to the patient’s skin for 45 minutes.
-The patients were asked to rate how much pain they experienced when a “trigger point was
-touched.” The researchers reported that the 29 patients exposed to the magnetic device
-achieved lower pain scores than did the 21 who were exposed to the placebo device.
-However, this study had significant flaws in their design. Although the groups were said to
-be selected randomly, the ratio of women to men in the experimental group was twice that
-of the control group; the age of the placebo group was four years higher than that of the
-control group; there were just one brief exposure and no systematic follow-up of patients.</p>
-<p>Magnet therapy is gaining popularity; however, scientific evidence to support the success
-of this therapy is lacking. More scientifically sound studies are needed in order to fully
-understand the effects that magnets can have on the body and the possible benefits or
-dangers that could result from their use.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 8.(molten) rock /
+ash
+9.food
+10.tidal wave
+11.ice age
+12.rockets
+13.1.YES
+2.NO
+3.YES
+4.NOT GIVEN
+5.NO
+6.NOT GIVEN D
+7.temperature
+ 5</div>
+</div>
+</div>
 </body>
 </html>

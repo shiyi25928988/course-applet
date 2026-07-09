@@ -1,419 +1,189 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The History Of The Tortoise - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>This Marvellous Invention - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题521/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The History Of The Tortoise</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>skin of agricultural workers. Toasting bread creates carcinogens. As one research expert
-says: ‘People think that the more natural something is, the better it is for them. That is
-simply not the case. In fact, it is the opposite that is true: the closer a plant is to its natural
-state, the more likely it is that it wiil poison you. Naturally, many plants do not want to be
-eaten, so we have spent 10,000 years developing agriculture and breeding out harmful
-traits from crops.'</p>
-<p>Yet educated Europeans are more scared of eating traces of a few, strictly regulated, manmade chemicals than they are of eating the ones that nature created directly. Surrounded
-by plentiful food, it’s not nature they worry about, but technology. Our obsessions with the
-ethics and safety of what we eat - concerns about antibiotics in animals, additives in food,
-GM crops and so on - are symptomatic of a highly technological society that has little faith
-in its ability to use this technology wisely. In this context, the less something is touched by
-the human hand, the healthier people assume it must be.</p>
-<p>Ultimately, the organic farming movement is an expensive luxury for shoppers in wellmanicured Europe. For developing parts of the world, it is irrelevant. To European
-environmentalists, the fact that organic methods require more labour and land than
-conventional ones to get the same yields is a good thing; to a farmer in rural Africa, it is a
-disaster. Here, land tends to be so starved and crop yields so low that there simply is not
-enough organic matter to put back into the soil. Perhaps the focus should be on helping
-these countries to gain access to the most advanced farming techniques, rather than going
-back to basics.
- 2</p>
-<p>Questions 1-6
-The reading passage has seven paragraphs, A-G.
-Choose the correct heading for paragraphs B-G from the list of headings below.
-Example: Paragraph A: viii 
-1..................... Paragraph B
-2..................... Paragraph C
-3..................... Paragraph D
-4..................... Paragraph E
-5..................... Paragraph F
-6..................... Paragraph G</p>
-<p>List of Headings
-i       Research into whether organic food is better for us
-ii      Adding up the cost of organic food
-iii     The factors that can affect food quality
-iv     The rich and poor see things differently
-v      A description of organic farming
-vi     Testing the taste of organic food
-vii    Fear of science has created the organic trend
-viii   The main reason for the popularity of organic food
-ix     The need to remove hidden dangers from food
-Questions 7-8
-Choose TWO letters, A-E Questions 7-8
-Which TWO of the following points does the writer mention in connection with organic
-farming?
-A the occasional use of pesticides
-B using the same field for different crops
-C testing soil quality
-D reducing the number of farm workers
- 3</p>
-<p>E the production of greenhouse gases</p>
-<p>Questions 9-10
-According to the writer, which TWO factors affect the nutritional content of food?
-A who prepares the food
-B the weather conditions during growth
-C where the food has been stored
-D when the plants were removed from the earth
-E the type of farm the food was grown on
-Questions 11-12
-Which TWO negative aspects of organic farming does the writer mention?
-A Consumers complain about the extra cost.
-B Organic food may make people ill.
-C Farm workers have to be specially trained.
-D It requires too much technological expertise.
-E It is not possible in some countries.
- 4</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>This Marvellous Invention</h1>
+<p>雅思阅读真题 · 第393篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>This Marvellous Invention
+A
+Of all mankinds manifold creations, language must take pride of place. Other inventions -
+the wheel, agriculture, sliced bread - may have transformed our material existence, but the
+advent of language is what made us human. Compared to language, all other inventions
+pale in significance, since everything we have ever achieved depends on language and
+originates from it. Without language, we could never have embarked on our ascent to
+unparalleled power over all other animals, and even over nature itself.
+B
+But language is foremost not just because it came first. In its own right it is a tool
+of extraordinary sophistication, yet based on an idea of ingenious simplicity: ‘this
+marvellous invention of composing out of twenty-five or thirty sounds that infinite variety
+of expressions which, whilst having in themselves no likeness to what is in our mind,
+allow us to disclose to others its whole secret, and to make known to those who cannot
+penetrate it all that we imagine, and all the various stirrings of our soul’ This was how, in
+1660, the renowned French grammarians of the Port-Royal abbey near Versailles distilled
+the essence of language, and no one since has celebrated more eloquently the magnitude
+of its achievement. Even so, there is just one flaw in all these hymns of praise, for the
+homage to languages unique accomplishment conceals a simple yet critical incongruity.
+Language is mankind s greatest invention - except, of course, that it was never invented.
+This apparent paradox is at the core of our fascination with language, and it holds many of
+its secrets.
+C
+Language often seems so skillfully drafted that one can hardly imagine it as anything other
+than the perfected handiwork of a master craftsman. How else could this instrument make
+so much out of barely three dozen measly morsels of sound? In themselves,
+these configurations of mouth p,f,b,v,t,d,k,g,sh,a,e  and so on - amount to nothing more
+than a few haphazard spits and splutters, random noises with no meaning, no ability to
+express, no power to explain. But run them through the cogs and wheels of the language
+machine, let it arrange them in some very special orders, and there is nothing that these
+meaningless streams of air cannot do: from sighing the interminable boredom of existence
+to unravelling the fundamental order of the universe.
+D
+the most extraordinary thing about language, however, is that one doesn’t have to be
+a genius to set its wheels in motion. The language machine allows just about everybody
+from pre-modern foragers in the subtropical savannah, to post-modern philosophers in
+the suburban sprawl - to tie these meaningless sounds together into an infinite variety of
+subtle senses, and all apparently without the slightest exertion. Yet it is precisely this
+deceptive ease which makes language a victim of its own success, since in everyday life its
+triumphs are usually taken for granted. The wheels of language run so smoothly that one
+rarely bothers to stop and think about all the resourcefulness and expertise that must have
+gone into making it tick. Language conceals art.
+ 1
+E
+Often, it is only the estrangement of foreign tongues, with their many exotic and
+outlandish features, that brings home the wonder of languages design. One of the showiest
+stunts that some languages can pull off is an ability to build up words of breath-breaking
+length, and thus express in one word what English takes a whole sentence to say. The
+Turkish word çehirliliçtiremediklerimizdensiniz, to take one example, means nothing less
+than ‘you are one of those whom we can’t turn into a town-dweller’. (In case you were
+wondering, this monstrosity really is one word, not merely many different words squashed
+together - most ol its components cannot even stand up on their own.)
+F
+And if that sounds like some one-off freak, then consider Sumerian, the language
+spoken on the banks of the Euphrates some 5,000 years ago by the people who invented
+writing and thus enabled the documentation of history. A Sumerian word like munintuma'a
+(‘when he had made it suitable for her’) might seem rather trim compared to the Turkish
+colossus above. What is so impressive about it, however, is not its lengthiness but rather
+the reverse - the thrifty compactness of its construction. The word is made up of different
+slots, each corresponding to a particular portion of meaning. This sleek design allows
+single sounds to convey useful information, and in fact even the absence of a sound has
+been enlisted to express something specific. If you were to ask which bit in the Sumerian
+word corresponds to the pronoun ‘it’ in the English translation ‘when he had made it
+suitable for her’, then the answer would have to be nothing. Mind you, a very particular kind
+of nothing: the nothing that stands in the empty slot in the middle. The technology is so
+fine-tuned then that even a non-sound, when carefully placed in a particular position, has
+been invested with a specific function. Who could possibly have come up with such a nifty
+contraption?
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Reading Passage has six paragraphs, A-F.
+Choose the correct heading for paragraphs A-Ffrom the list of headings below.
+Write the correct number, i-vii,in boxes1-6on your answer sheet.
  
-1. v
-2. i
-3. iii
-4. ix
-5. vii
-6. iv
-7. B OR E IN EITHER ORDER
-8. B OR E IN EITHER ORDER
-9. B OR D IN EITHER ORDER
-10. B OR D IN EITHER ORDER
-11. B OR E IN EITHER ORDER
-12. B OR E IN EITHER ORDER
- 5</p>
-<p>Orientation of birds
+   List of Headings
+i    Differences between languages highlight their impressiveness
+ii    The way in which a few sounds are organised to convey a huge range of meaning
+iii    Why the sounds used in different languages are not identical
+iv    Apparently incompatible characteristics of language
+v    Even silence can be meaningful
+vi    Why language is the most important invention of all
+vii    The universal ability to use language
+1    Paragraph A 1.....................
+2    Paragraph B 2.....................
+3    Paragraph C 3.....................
+4    Paragraph D 4.....................
+5    Paragraph E 5.....................
+6    Paragraph F 6.....................
+Questions 9-10
+Complete the summary using the list of words, A-G, below.
+Write the correct letter, A-G, in boxes 9-10on your answer sheet.
  
-A For many of US, the way birds are able to orientate is both astounding and difficult to
-appreciate fully. For instance, the annual migration of tire golden plover of the Pacific takes
-it from Alaska to Hawaii on a flight of well over 3000 kilometres, and if it were to deviate by
-only one degree, it would miss the island on which it nests.
  
-B The first systematic studies on orientation in birds were made possible by the ‘homing
-instinct’ exhibited by so many species. Birds are caught at a time when they show an
-attachment to their territory, especially during the nesting season. They are taken to some
-spot, released, and the percentage of returns is recorded. The distance can be varied, and
-the direction, as well as the method of transporting them, and then the influence of climatic
-and other factors on their ability to find their way home can be studied. These experiments
-have shown a wide variation in ability to home, and three types of homing behaviour have
-been identified.
  
-C In the first type, birds methodically explore the area in which they are released until they
-pick up some familiar feature, and then they quickly find their way back to the nest. Such
-birds possess a highly developed visual memory, as experiments with pigeons have
-shown. Domestic pigeons have been trained to peck at a certain point on an aerial
-photograph, with a system of rewards, and four years later the birds were still able to
-respond to this training when placed on the aerial photograph. Birds’ eyes have a power of
-resolution two to three times greater than ours, enabling them to pick up very fine details. If
-a bird uses only this type of homing behaviour, however, it can only succeed if the point of
-release is not too far away. If the birds are transported 800 kilometres from their nest, it is
-only by good fortune that they find their way back as a result of long exploratory flights.
-Usually, the area known to a bird is its feeding territory. Released within this area, the birds
-soon make their return; release them outside it and far fewer return. However, if a bird is
-released for a second time in the same place, its visual memory comes into play, and the
-bird, no longer requiring tedious exploratory flights, will return much more quickly.
+ The importance of language
+The wheel is one invention that has had a major impact on 7..................... aspects of life,
+but no impact has been as 8..................... as that of language.
+Language is very  9..................... , yet composed of just a small number of sounds.
+Language appears to be 10..................... to use. However, its sophistication is
+often overlooked.
+Adifficult
+ 3
  
-D The second type of homing behaviour is shown by birds that are capable of choosing
-their flight direction and holding to it for the rest of their journey. How do they decide what
-direction to take? They appear to choose their normal migration direction even if they are
-released in a different place from their usual stalling point. If, for example, birds which
-normally fly to the north-east to reach latitude 45 degrees north are released at that
-latitude, they will immediately start flying north-east anyway. So if they’re released further
-to the west, they’ll maintain the correct direction, but fly west of their destination, and so fail
-to arrive.
  
-E The third type of homing behaviour shows the highest degree of orientation. Released at
-one point, the birds immediately take stock of it, compare its position with that of the nest,
-decide on the direction and fly off. This happens even if the birds are in a country right off
-their migration routes, where they have never been before. In one example, a laysan
-albatross returned to its nesting area on Midway Island in the middle of the Pacific, having
-flown over 5000 kilometres from the west coastal of the USA in just over ten days. This is a
-perfect example of the third type of homing, for the albatross clearly couldn’t rely on any
-landmarks over the vast expanse of the Pacific Ocean.
-F The percentage of successful birds varies greatly, being highest in those species with a
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ 
+ 
+ Bcomplex
+Coriginal
+Dadmired
+Ematerial
+Feasy
+Gfundamental
+ Questions 11-14
+Do the following statements agree with the views of the writer in Reading Passage?
+In boxes11-14 on your answer sheet, write
+YES    if the statement agrees with the views of the writer
+NO    if the statement contradicts the views of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+11.....................    Human beings might have achieved their present position without
+language.
+12.....................    The Port-Royal grammarians did justice to the nature of language.
+13.....................    A complex idea can be explained more clearly in a sentence than in a
+single word.
+14.....................    The Sumerians were responsible for starting the recording of events.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.vi
+2.iv
+3.ii
+4.vii
+5.i
+6.v
+7.E8.G
+9.B
+10.F
+11.NO
+12.YES
+13.NOT GIVEN
+14.YES
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,370 +1,201 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ants Could Teach Ants - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Being Left Handed In A Right Handed World - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题81/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Ants Could Teach Ants</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Being Left Handed In A Right Handed World</h1>
+<p>雅思阅读真题 · 第51篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Being Left-handed in a Right-handed World
+ The world is designed for right-handed people. Why does a tenth of the population
+prefer the left?
+ AThe probability that two right-handed people would have a left-handed child is only about
+9.5 percent. The chance rises to 19.5 percent if one parent is a lefty and 26 percent if both
+parents are left-handed. The preference, however, could also stem from an infant’s
+imitation of his parents. To test genetic influence, starting in the 1970s British biologist
+Marian Annett of the University of Leicester hypothesized that no single gene determines
+handedness. Rather, during fetal development, a certain molecular factor helps to
+strengthen the brain’s left hemisphere, which increases the probability that the right hand
+will be dominant, because the left side of the brain controls the right side of the body, and
+vice versa. Among the minority of people who lack this factor, handedness develops
+entirely by chance. Research conducted on twins complicates the theory, however. One in
+fivesets of identical twins involves one right-handed and one left-handed person, despite
+the fact that their genetic material is the same. Genes, therefore, are not solely responsible
+for handedness.
+ BGenetic theory is also undermined by results from Peter Hepper and his team at Queen’s
+University in Belfast, Ireland. In 2004 the psychologists used ultrasound to show that by the
+15th week of pregnancy, fetuses already have a preference as to which thumb they suck.
+In most cases, the preference continued after birth. At 15 weeks, though, the brain does
+not yet have control over the body’s limbs. Hepper speculates that fetuses tend to prefer
+whichever side of the body is developing quicker and that their movements, in turn,
+influence the brain’s development. Whether this early preference is temporary or holds up
+throughout development and infancy is unknown. Genetic predetermination is also
+contradicted by the widespread observation that children do not settle on either their right
+or left hand until they are two or three years old.
+ CBut even if these correlations were true, they did not explain what actually causes left-
+handedness. Furthermore, specialization on either side of the body is common among
+animals. Cats will favor one paw over another when fishing toys out from under the couch.
+Horses stomp more frequently with one hoof than the other. Certain crabs motion
+predominantly with the left or right claw. In evolutionary terms, focusing power and dexterity
+in one limb is more efficient than having to train two, four or even eight limbs equally. Yet
+for most animals, the preference for one side or the other is seemingly random. The
+overwhelming dominance of the right hand is associated only with humans. That fact
+directs attention toward the brain’s two hemispheres and perhaps toward language.
+DInterest in hemispheres dates back to at least 1836. That year, at a medical conference,
+French physician Marc Dax reported on an unusual commonality among his patients.
+During his many years as a country doctor, Dax had encountered more than 40 men and
+women for whom speech was difficult, the result of some kind of brain damage. What was
+unique was that every individual suffered damage to the left side of the brain. At the
+ 1
+conference, Dax elaborated on his theory, stating that each half of the brain was
+responsible for certain functions and that the left hemisphere controlled speech. Other
+experts showed little interest in the Frenchman’s ideas. Over time, however, scientists
+found more and more evidence of peopleexperiencing speech difficulties following injury to
+the left brain. Patients with damage to the right hemisphere most often displayed
+disruptions in perception or concentration. Major advancements in understanding the
+brain’s asymmetry were made in the 1960s as a result of so-called split-brain surgery,
+developed to help patients with epilepsy. During this operation, doctors severed the corpus
+callosum—the nerve bundle that connects the two hemispheres. The surgical cut also
+stopped almost all normal communication between the two hemispheres, which offered
+researchers the opportunity to investigate each side’s activity.
+ E  In 1949 neurosurgeon Juhn Wada devised the first test to provide access to the brain’s
+functional organization of language. By injecting an anesthetic into the right or left carotid
+artery, Wada temporarily paralyzed one side of a healthy brain, enabling him to more
+closely study the other side’s capabilities. Based on this approach, Brenda Milner and the
+late Theodore Rasmussen of the Montreal Neurological Institute published a major study in
+1975 that confirmed the theory that country doctor Dax had formulated nearly 140 years
+earlier: in 96 percent of right-handed people, language is processed much more intensely
+in the left hemisphere. The correlation is not as clear in lefties, however. For two thirds of
+them, the left hemisphere is still the most active language processor. But for the remaining
+third, either the right side is dominant or both sides work equally, controlling different
+language functions. That last statistic has slowed acceptance of the notion that the
+predominance of right-handedness is driven by left-hemisphere dominance in language
+processing. It is not at all clear why language control should somehow have dragged the
+control of body movement with it. Some experts think one reason the left hemisphere
+reigns over language is because the organs of speech processing—the larynx and
+tongue—are positioned on the body’s symmetry axis. Because these structures were
+centered, it may have been unclear, in evolutionary terms, which side of the brain should
+control them, and it seems unlikely that shared operation would result in smooth motor
+activity. Language and handedness could have developed preferentially for very different 
+reasons  as  well.  For  example,  some  researchers,  including evolutionary psychologist
+Michael C. Corballis of the University of Auckland in New Zealand, think that the origin of
+human speech lies in gestures. Gestures predated words and helped language emerge. If
+the left hemisphere began to dominate speech, it would have dominated gestures, too, and
+because the left brain controls the right side of the body, the right hand developed more
+strongly.
+F Perhaps we will know more soon. In the meantime, we can revel in what, if any,
+differences handedness brings to our human talents. Popular wisdom says right-handed,
+left-brained people excel at logical, analytical thinking. Lefthanded, right-brained individuals
+are thought to possess more creative skills and may be better at combining the functional
+features emergent in both sides of the brain. Yet some neuroscientists see such claims as
+pure speculation. Fewer scientists are  ready to claim that left-handedness means greater
+creative potential. Yet lefties are prevalent among artists, composers and the generally
+acknowledged great political thinkers. Possibly if these individuals are among the lefties
+whose language abilities are evenly distributed between hemispheres, the intense interplay
+required could lead to unusual mental capabilities.
+ 2
+ GOr perhaps some lefties become highly creative simply because they must be more
+clever to get by in our right-handed world. This battle, which begins during the very early
+stages of childhood, may lay the groundwork for exceptional achievements.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Reading Passage has seven sections A-G.
+Which section contains the following information?
+Write the correct letter A-Gin boxes1-5 on your answer sheet.
+1..................... Preference of using one side of the body in animal species.
+2..................... How likely one-handedness is born.
+3..................... The age when the preference of using one hand is settled.
+4..................... Occupations usually found in left-handed population.
+5..................... A reference to an early discovery of each hemisphere’s function.
  
-1. E
-2. G
-3. A
-4. B
-5. H
-6. B
-7.
-8. C
-9. A
-10. Poetics
-11. tragedy
-12. landmarks
-13. flaw</p>
-<p>Reading Practice
- Anesthesiology
-Since the beginning of time, man has sought natural remedies for pain. Between 40 and 60
-A.D., Greet? physician, Dioscorides traveled with the Roman armies, studying the
-medicinal properties of plants and minerals. His book, De materia medica, written in five
-volumes and translated into at least seven languages, was the primary reference source for
-physicians for over sixteen centuries. The field of anesthesiology1, which was once nothing
-more than a list of medicinal plants and makeshift remedies, has grown into one of the
-most important fields in medicine.
+   Questions 6-9
  
-Many of the early pain relievers were based on myth and did little to relieve the suffering of
-an ill or injured person. The mandragora (now known as the mandrabe plant) was one of
-the first plants to be used as an anesthetic1. Due to the apparent screaming that the plant
-made as it was pulled from the ground, people in the Middle Ages believed that the person
-who removed the mandrabe from the earth would either die or go insane. This superstition
-may have resulted because the split root of the mandrabe resembled the human form. In
-order to pull the root from the ground, the plant collector would loosen it and tie the stem to
-an animal. It was believed that the safest time to uproot a mandrabe was in the moonlight,
-and the best animal to use was a black dog. In his manual, Dioscorides suggested boiling
-the root with wine and having a man drinb the potion to remove sensation before cutting his
-flesh or burning his skin. Opium and Indian hemp were later used to induce sleep before a
-painful procedure or to relieve the pain of an illness. Other remedies such as cocaine did
-more harm to the patient than good as people died from their addictions. President Ulysses
-S. Grant became addicted to cocaine before he died of throat cancer in 1885.
+  
  
-The modern field of anesthetics dates to the incident when nitrous oxide (more commonly
-known as laughing gas) was accidentally discovered. Humphrey Davy, the inventor of the
-miner’s lamp, discovered that inhaling the toxic compound caused a strange euphoria,
-followed by fits of laughter, tears, and sometimes unconsciousness. U.S. dentist, Horace
-Wells, was the first on record to experiment with laughing gas, which he used in 1844 to
-relieve pain during a tooth extraction. Two years later. Dr. William Morton created the first
-anesthetic machine. This apparatus was a simple glass globe containing an ether-soaked
-sponge. Morton considered ether a good alternative to nitrous oxide because the numbing
-effect lasted considerably longer. His apparatus allowed the patient to inhale vapors1
-whenever the pain became unbearable. In 1846, during a trial experiment in Boston, a
-tumor2 was successfully removed from a man's jaw area while he was anesthetized with
-Morton’s machine.
-The first use of anesthesia in the obstetric field occurred in Scotland by Dr. James
-Simpson. Instead of ether, which he considered irritating to the eyes, Simpson
-administered chloroform to reduce the pain of childbirth. Simpson sprinkled chloroform on a
-handkerchief and allowed laboring3women to inhale the fumes at their own discretion. In
-1853, Queen Victoria agreed to use chloroform during the birth of her eighth child. Soon
-the use of chloroform during childbirth was both acceptable and fashionable. However, as
-chloroform became a more popular anesthetic, knowledge of its toxicity surfaced, and it
-was soon obsolete.
-After World War II, numerous developments were made in the field of anesthetics. Surgical
-procedures that had been unthinkable were being performed with little or no pain felt by the
- 1</p>
-<p>patient. Rather than physicians or nurses who administered pain relief as part of their
-profession, anesthesiologists became specialists in suppressing consciousness and
-alleviating pain. Anesthesiologists today are classified as perioperative physicians,
-meaning they take care of a patient before, during, and after surgical procedures. It takes
-over eight years of schooling and four years of residency until an anesthesiologist is
-prepared to practice in the United States. These experts are trained to administer three
-different types of anesthetics: general, local, and regional. General anesthetic is used to
-put a patient into a temporary state of unconsciousness. Local anesthetic is used only at
-the affected site and causes a loss of sensation. Regional anesthetic is used to block the
-sensation and possibly the movement of a larger portion of the body. As u/ell as controlling
-the levels of pain for the patient before and throughout an operation, anesthesiologists are
-responsible for monitoring and controlling the patient's vital functions during the procedure
-and assessing the medical needs in the post-operative room.
-The number of anesthesiologists in the United States has more than doubled since the
-1970s, as has the improvement and success of operative care. In addition, complications
-from anesthesiology have declined dramatically. Over 40 million anesthetics are
-administered in the United States each year, with only 1 in 250,000 causing death.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>beverage</strong>
-            <p>n. 饮料</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consumption</strong>
-            <p>n. 消费，消耗</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>controversy</strong>
-            <p>n. 争论，争议</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>importation</strong>
-            <p>n. 进口，输入</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+  Look at the following researchers (Questions 6-9) and the list of findings below.
+Match each researcher with the correct finding.
+Write the correct letter A-Gin boxes6-9 on your answer sheet.
+ List of Findings
+ A  Early language evolution is correlated to body movement and thus affecting the
+preference of use of one hand.
+ BNo single biological component determines the handedness of a child.
+CEach hemisphere of the brain is in charge of different body functions.
+ DLanguage process is mainly centered in the left-hemisphere of the brain.
+ ESpeech difficulties are often caused by brain damage.
+ FThe rate of development of one side of the body has influence on hemisphere
+preference in fetus.
+GBrain function already matures by the end of the fetal stage.
+6..................... Marian Annett
+7..................... Peter Hepper
+8..................... Brenda Milner & Theodore Rasmussen
+9..................... Michael Corballis
+ Questions 10-13
+Do the following statements agree with the information given in Reading Passage?
+In boxes10-13 on your answer sheet write
+YES  if the sataement agrees with the information
+NO  if the statement contradicts the information
+NOT GIVEN  if there is no information on this
+10..................... The study of twins shows that genetic determinationis not the only factor
+ 4
+for left-handedness.
+11..................... Marc Dax’s report was widely accepted in his time.
+12..................... Juhn Wada based his findings on his research of people with language
+problems.
+13..................... There tend to be more men with left-handedness than women.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.C
+2.A
+3.B
+4.F
+5.D
+6.B
+7.8.D
+9.A
+10.YES
+11.NO
+12.NOT GIVEN
+13.NOT GIVEN
+F
+ 6</div>
+</div>
+</div>
 </body>
 </html>

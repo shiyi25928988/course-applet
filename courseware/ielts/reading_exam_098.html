@@ -1,405 +1,158 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Childrens Literature - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Dirty River But Clean Water - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题138/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Childrens Literature</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-5
-Complete the summary with the list of words A-L below
-Write the correct letter A-L in boxes 1-5 on your answer sheet.
-The question, arisen from Captain Cook’s expedition to Hawaii, and others derived from it,
-has fascinated researchers for a long time. However, a surprising archaeological find on
-Éfaté began to provide valuable information about the 1...................... On the excavating
-site, a 2...................... Containing 3..................... of Lapita was uncovered. Later on,
-various researches and tests have been done to study the ancient people – Lapita and
-their 4...................... How could they manage to spread themselves so far over the vast
-ocean? All that is certain is that they were good at canoeing. And perhaps they could take
-well advantage of the trade wind. But there is no 5..................... of it.
-A   bones
-E   inquiring minds
-I   pottery
-B   co-leader
-F   proof
-J   assumption
-C   descendents
-G   ancestors
-K   horizons
- 
-D   international team
-H   early seafarers
-L   grave
- 
-Questions 6-9
-Choose the correct letter, A, B, C or D.
-Write your answers in boxes 6-9 on your answer sheet.
- 
-6. The chemical tests indicate that
-A   the elements in one’s teeth varied from childhood to adulthood.
-B   the isotope signatures of the elements remain the same in different places.
-C   the result of the study is not fascinating.
-D   these chemicals can’t conceal one’s origin.
- 
-7. The isotope analysis from the Lapita
-A   exactly locates their birth island.
-B   reveals that the Lapita found the new place via straits.
-C   helps researchers to find out answers about the islanders.
-D   leaves more new questions for anthropologists to answer.
-8. According to paragraph F, the offspring of Lapita
- 4</p>
-<p>A   were capable of voyages to land that is not accessible to view.
-B   were able to have the farthest voyage of 230 miles.
-C   worked their way through the archipelagoes of the western Pacific.
-D   fully explored the horizons.
-9. Once out exploring the sea, the sailors
-A   always found the trade winds unsuitable for sailing.
-B   could return home with various clues.
-C   sometimes would overshoot their home port and sail off into eternity.
-D   would sail in one direction.
-Questions 10-14
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Dirty River But Clean Water</h1>
+<p>雅思阅读真题 · 第98篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Dirty River But Clean Water
+ Floods can occur in rivers when the flow rate exceeds the capacity of the river channel,
+particularly at bends or meanders in the waterway. Floods often cause damage to homes
+and businesses if they are in the natural flood plains of rivers. While riverine flood damage
+can be eliminated by moving away from rivers and other bodies of water, people
+have traditionally lived and worked by rivers because the land is usually flat and fertile and
+because rivers provide easy travel and access to commerce and industry.
+ A  Fire and flood are two of humanity’s worst nightmares. People have,therefore,always
+sought to control them. Forest fires are snuffed out quickly. The flow of rivers is regulated
+by weirs and dams. At least, that is how it used to be. But foresters have learned that
+forests need fires to clear out the brash and even to get seeds to germinate. And a similar
+revelation is now – dawning on hydrologists. Rivers – and the ecosystems they support –
+need floods. That is why a man-made torrent has been surging down the Grand Canyon.
+By Thursday March 6th it was running at full throttle, which was expected to be sustained
+for 60 hours.
+ B  Floods once raged through the canyon every year. Spring Snow from as far away as
+Wyoming would melt and swell the Colorado river to a flow that averaged around 1,500
+cubic metres (50,000 cubic feet) a second. Every eight years or so, that figure rose to
+almost 3,000 cubic metres. These floods infused the river with sediment, carved its
+beaches and built its sandbars.
+ C  However, in the four decades since the building of the Glen Canyon dam, just upstream
+of the Grand Canyon, the only sediment that it has collected has come from tiny,
+undammed tributaries. Even that has not been much use as those tributaries are not
+powerful enough to distribute the sediment in an ecologically valuable way.
+ D  This lack of flooding has harmed local wildlife. The humpback chub,for example, thrived
+in the rust-redwaters of the Colorado. Recently, though, its population has crashed. At first
+sight, it looked as if the reason was that the chub were being eaten by trout introduced for
+sport fishing in the mid-20th century. But trout and chub co-existed until the Glen Canyon
+dam was built, so something else is going on. Steve Gloss, of the United States’ Geological
+Survey (USGS), reckons that the chub’s decline is the result of their losing their most
+valuable natural defense, the Colorado’s rusty sediment. The chub were well adapted to
+the poor visibility created by the thick, red water which gave the river its name, and
+depended on it to hide from predators. Without the cloudy water the chub became
+vulnerable.
+E  And the chub are not alone. In the years since the Glen Canyon dam was built, several
+species have vanished  altogether. These include the Colorado pike-minnow, the razorback
+sucker and the round-tail chub. Meanwhile, aliens including fathead minnows, channel
+catfish and common carp, which would have been hard, put to survive in the savage waters
+of the undammed canyon, have move din.
+F  So flooding is the obvious answer. Unfortunately, it is easier said than done. Floods
+were sent down the Grand Canyon in 1996 and 2004 and the results were mixed. In 1996
+the flood was allowed to go on too long. To start with,all seemed well. The floodwaters built
+up sandbanks and infused the river with sediment. Eventually, however, the continued flow
+ 1
+ washed most of the sediment out of the canyon. This problem was avoided in 2004, but
+unfortunately, on that occasion, the volume of sand available behind the dam was too low
+to rebuild the sandbanks. This time, the USGS is convinced that things will be better. The
+amount of sediment available is three times greater than it was in 2004. So if a flood is
+going to do some good, this is the time to unleash one.
+G Even so, it may turn out to be an empty gesture. At less than 1,200 cubic metres a
+second, this flood is smaller than even an average spring flood, let alone one of the
+mightier deluges of the past. Those glorious inundations moved massive quantities of
+sediment through the Grand Canyon,wiping the slate dirty, and making a muddy mess of
+silt and muck that would make modern river rafters cringe.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
 Do the following statements agree with the information given in Reading Passage?
-In boxes 10-14 on your answer sheet, write
-TRUE               if the statement is true
-FALSE              if the statement is false
-NOT GIVEN    if the information is not given in the passage
-10.....................   The Lapita could canoe in the prevailing wind.
-11.....................   It was difficult for the sailors to find ways back, once they were out.
-12.....................   The reason why the Lapita stopped canoeing farther is still unknown.
-13.....................   The majority of the Lapita dwelled on Fiji.
-14.....................   The navigators could take advantage of El Nino during their forth voyages
- 5</p>
-<p>Solution:
+In boxes1-7on your answer sheet, write
+TRUE
+FALSE
+NOT GIVENif the statement agrees with the information
+if the statement contradicts the information
+if there is no information on this
+  
+  1.....................  Damage caused by fire is worse than that caused by flood.
+2.....................  The flood peaks at almost 1500 cubic meters every eight years.
+3.....................  Contribution of sediments delivered by tributaries has little impact.
+4.....................  Decreasing number of chubs is always caused by introducing of trout since
+mid 20th century.
+5.....................  It seemed that the artificial flood in 1996 had achieved success partly at the
+very beginning.
+6.....................  In fact, the yield of artificial flood water is smaller than an average natural
+flood at present.
+7.....................  Mighty floods drove fast moving flows with clean and high quality water.
+Questions 8-13
+Complete the summary below.
+ChooseNO MORE THAN TWO WORDS from the passage for each answer.
+Write your answers in boxes 8-13on your answer sheet.
  
-1. H
-2. L
-3. A
-4. C
-5. F
-6. D
-7. C
-8. A
-9. B
-10. TRUE
-11. FALSE
-12. TRUE
-13. FALSE
-14. NOT GIVEN
- 6</p>
-<p>Reading Practice
- Bilingualism in Children</p>
-<p>One misguided legacy of over a hundred years of writing on bilingualism1 is that children’s
-. intelligence will suffer if they are bilingual. Some of the earliest research into bilingualism
-examined whether bilingual children were ahead or behind monolingual2 children on IQ
-tests. From the 1920s through to the 1960s, the tendency was to find monolingual children
-ahead of bilinguals on IQ tests. The conclusion was that bilingual children were mentally
-confused. Having two languages in the brain, it was said, disrupted effective thinking. It
-was argued that having one well-developed language was superior to having two halfdeveloped languages.</p>
-<p>The idea that bilinguals may have a lower IQ still exists among many people, particularly
-monolinguals. However, we now know that this early research was misconceived and
-incorrect. First, such research often gave bilinguals an IQ test in their weaker language –
-usually English. Had bilinguals been tested in Welsh or Spanish or Hebrew, a different
-result may have been found. The testing of bilinguals was thus unfair. Second, like was not
-compared with like. Bilinguals tended to come from, for example, impoverished New York
-or rural Welsh backgrounds. The monolinguals tended to come from more middle class,
-urban families. Working class bilinguals were often compared with middle class
-monolinguals. So the results were more likely to be due to social class differences than
-language differences. The comparison of monolinguals and bilinguals was unfair.</p>
-<p>The most recent research from Canada, the United States and Wales suggests that
-bilinguals are, at least, equal to monolinguals on IQ tests. When bilinguals have two welldeveloped languages (in the research literature called balanced bilinguals), bilinguals tend
-to show a slight superiority in IQ tests compared with monolinguals. This is the received
-psychological wisdom of the moment and is good news for raising bilingual children. Take,
-for example, a child who can operate in either language in the curriculum in the school.
-That child is likely to be ahead on IQ tests compared with similar (same gender, social
-class and age) monolinguals. Far from making people mentally confused, bilingualism is
-now associated with a mild degree of intellectual superiority.</p>
-<p>One note of caution needs to be sounded. IQ tests probably do not measure intelligence.
-IQ tests measure a small sample of the broadest concept of intelligence. IQ tests are
-simply paper and pencil tests where only ’right and wrong ’answers are allowed. Is all
-intelligence summed up in such right and wrong, pencil and paper tests? Isn’t there a wider
-variety of intelligences that are important in everyday functioning and everyday life?</p>
-<p>Many questions need answering. Do wc only define an intelligent person as somebody who
-obtains a high score on an IQ test? Are the only intelligent people those who belong to high
-IQ organisations such as MENSA? Is there social intelligence, musical intelligence, military
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ 
+ The eco-impact of the Canyon Dam
+Floods are people’s nightmare. In the past, canyon was raged by flood every year. The
+snow from far Wyoming would melt in the season of 8..................... and caused a flood flow
+peak in Colorado river. In the four decades after people built the Glen Canyon dam, it only
+could gather 9..................... together from tiny, undammed tributaries.
+Humpback chub population on reduced, why?
+Then, several species disappeared including Colorado pike-minnow, 10..................... and
+the round-tail chub. Meanwhile, some moved in such as fathead minnows, channel catfish
+and11...................... The non-stopped flow leaded to the washing away of the sediment
+out of the canyon, which poses great threat to the chubs because it has
+poor 12..................... away from predators. In addition, the volume of 13.....................
+available behind the dam was too low to rebuild the bars and flooding became more
+serious.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.NOT GIVEN
+2.FALSE
+3.TRUE
+4.FALSE
+5.TRUE
+6.TRUE
+ 8.spring
+9.sediment
+10.razorback sucker
+11.common carp
+12.visibility
+13.sand
+7.NOT GIVEN
+ 4</div>
+</div>
+</div>
 </body>
 </html>

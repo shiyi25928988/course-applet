@@ -1,379 +1,156 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>So You Think Humans Are Unique - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Falkirk Wheel - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题427/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 So You Think Humans Are Unique</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
- 
-1. D
-2. A
-3. C
-4. A
-5. B
-6. A
-7.
-8. TRUE
-9. TRUE
-10. NOT GIVEN
-11. PERIPHERAL MEASURES
-12. A POLYGRAPH
-13. ENTREPRENEURS</p>
-<p>Reading Practice
- Light pollution
-{A} If humans were truly at home under the light of the moon and stars, we would go into
-darkness happily, the midnight world as visible to us as it is to the vast number of nocturnal
-species on this planet. Instead, we are diurnal creatures, with eyes adapted to living in the
-sun’s light. This is a basic evolutionary fact, even though most of us don’t think of ourselves
-as diurnal beings any more than we think of ourselves as primates or mammals, or
-Earthlings. Yet it’s the only way to explain what we’ve done to the night: We’ve engineered
-it to receive us by filling it with light.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Falkirk Wheel</h1>
+<p>雅思阅读真题 · 第321篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Falkirk Wheel
+A unique engineering achievement
+The Falkirk Wheel in Scotland is the world's first and only rotating boat lift. Opened in 2002,
+it is central to the ambitious £84.5m Millennium Link project to restore navigability across
+Scotland by reconnecting the historic waterways of the Forth & Clyde and Union Canals.
+The major challenge of the project lays in the fact that the Forth & Clyde Canal is situated
+35 metres below the level of the Union Canal. Historically, the two canals had been joined
+near the town of Falkirk by a sequence of 11 locks - enclosed sections of canal in which the
+water level could be raised or lowered - that stepped down across a distance of 1.5 km.
+This had been dismantled in 1933, thereby breaking the link. When the project was
+launched in 1994, the British Waterways authority were keen to create a dramatic twenty-
+first-century landmark which would not only be a fitting commemoration of the Millennium,
+but also a lasting symbol of the economic regeneration of the region.
+Numerous ideas were submitted for the project, including concepts ranging from rolling
+eggs to tilting tanks, from giant seesaws to overhead monorails. The eventual winner was a
+plan for the huge rotating steel boat lift which was to become The Falkirk Wheel. The
+unique shape of the structure is claimed to have been inspired by various sources, both
+manmade and natural, most notably a Celtic double headed axe, but also the vast turning
+propeller of a ship, the ribcage of a whale or the spine of a fish.
+The various parts of The Falkirk Wheel were all constructed and assembled, like one giant
+toy building set, at Butterley Engineering's Steelworks in Derbyshire, some 400 km from
+Falkirk. A team there carefully assembled the 1,200 tonnes of steel, painstakingly fitting the
+pieces together to an accuracy of just 10 mm to ensure a perfect final fit. In the summer of
+2001, the structure was then dismantled and transported on 35 lorries to Falkirk, before all
+being bolted back together again on the ground, and finally lifted into position in five large
+sections by crane. The Wheel would need to withstand immense and constantly changing
+stresses as it rotated, so to make the structure more robust, the steel sections were bolted
+rather than welded together. Over 45,000 bolt holes were matched with their bolts, and
+each bolt was hand-tightened.
+The Wheel consists of two sets of opposing axe-shaped arms, attached about 25 metres
+apart to a fixed central spine.
+Two diametrically opposed water-filled 'gondolas', each with a capacity of 360,000 litres,
+are fitted between the ends of the arms. These gondolas always weigh the same, whether
+or not they are carrying boats. This is because, according to Archimedes' principle of
+displacement, floating objects displace their own weight in water. So when a boat enters a
+gondola, the amount of water leaving the gondola weighs exactly the same as the boat.
+This keeps the Wheel balanced and so, despite its enormous mass, it rotates through 180°
+in five and a half minutes while using very little power. It takes just 1.5 kilowatt-hours (5.4
+MJ) of energy to rotate the Wheel -roughly the same as boiling eight small domestic kettles
+of water.
+Boats needing to be lifted up enter the canal basin at the level of the Forth & Clyde Canal
+and then enter the lower gondola of the Wheel. Two hydraulic steel gates are raised, so as
+ 1
+to seal the gondola off from the water in the canal basin. The water between the gates is
+then pumped out. A hydraulic clamp, which prevents the arms of the Wheel moving while
+the gondola is docked, is removed, allowing the Wheel to turn. In the central machine room
+an array of ten hydraulic motors then begins to rotate the central axle. The axle connects to
+the outer arms of the Wheel, which begin to rotate at a speed of 1/8 of a revolution per
+minute. As the wheel rotates, the gondolas are kept in the upright position by a simple
+gearing system. Two eight-metre-wide cogs orbit a fixed inner cog of the same width,
+connected by two smaller cogs travelling in the opposite direction to the outer cogs - so
+ensuring that the gondolas always remain level. When the gondola reaches the top, the
+boat passes straight onto the aqueduct situated 24 metres above the canal basin.
+The remaining 11 metres of lift needed to reach the Union Canal is achieved by means of a
+pair of locks. The Wheel could not be constructed to elevate boats over the full 35-metre
+difference between the two canals, owing to the presence of the historically important
+Antonine Wall, which was built by the Romans in the second century AD. Boats travel
+under this wall via a tunnel, then through the locks, and finally on to the Union Canal.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Do the following statements agree with the information given in Reading Passage?
+in boxes1-6on your answer sheet, write
+  
+ TRUE    if the statement agrees with the information
+FALSE    if the statement contradicts the information
+NOT GIVEN if there is no information on this
+1.....................    The Falkirk Wheel has linked the Forth & Clyde Canal with the Union
+Canal for the first time in their history.
+2.....................    There was some opposition to the design of the Falkirk Wheel at first.
+3.....................    The Falkirk Wheel was initially put together at the location where its
+components were manufactured.
+4.....................    The Falkirk Wheel is the only boat lift in the world which has steel sections
+bolted together by hand.
+5.....................    The weight of the gondolas varies according to the size of boat being
+carried.
+6.....................    The construction of the Falkirk Wheel site took into account the presence
+of a nearby ancient monument.
+Questions 7-13
+Label the diagram below.
+ChooseONE WORD from the passage for each answer.
+Write your answers in boxes 7-13 on your answer sheet.
+ 3
+  
  
-{B} This kind of engineering is no different than damming a river. Its benefits come with
-consequences—called light pollution—whose effects scientists are only now beginning to
-study. Light pollution is largely the result of bad lighting design, which allows artificial light
-to shine outward and upward into the sky, where it’s not wanted, instead of focusing it
-downward, where it is. Ill-designed lighting washes out the darkness of night and radically
-alters the light levels and light rhythms—to which many forms of life, including ourselves,
-have adapted.
-{C} Now most of humanity lives under intersecting domes of reflected, refracted light, of
-scattering rays from overlit cities and suburbs, from light-flooded highways and factories.
-Nearly all of nighttime Europe is a nebula of light, as is most of the United States and all of
-Japan. In the south Atlantic the glow from a single fishing fleet squid fishermen during their
-prey with metal halide lamps—can be seen from space, burning brighter, in fact, than
-Buenos Aires or Rio de Janeiro.
-{D} We’ve lit up the night as if it were an unoccupied country when nothing could be further
-from the truth. Among mammals alone, the number of nocturnal species is astonishing.
-Light is a powerful biological force, and in many species, it acts as a magnet, a process
-being studied by researchers such as Travis Longcore and Catherine Rich, co-founders of
-the Los Angeles-based Urban Wildlands Group. The effect is so powerful that scientists
-speak of songbirds and seabirds being “captured” by searchlights on land or by the light
-from gas flares on marine oil platforms, circling and circling in the thousands until they
-drop. Migrating at night, birds are apt to collide with brightly lit tall buildings; immature birds
-on their first journey suffer disproportionately.
  
-{E} Insects, of course, cluster around streetlights, and feeding at those insect clusters is
-now ingrained in the lives of many bat species. In some Swiss valleys, the European lesser
-horseshoe bat began to vanish after streetlights were installed, perhaps because those
-valleys were suddenly filled with light-feeding pipistrelle bats. Other nocturnal
-mammals—including desert rodents, fruit bats, opossums, and badgers-forage more
-cautiously under the permanent full moon of light pollution because they’ve become easier
-targets for predators.
-{F} Some birds—blackbirds and nightingales, among others—sing at unnatural hours in the
-presence of artificial light. Scientists have determined that long artificial days— and
-artificially short nights induce early breeding in a wide range of birds. And because a longer
-day allows for longer feeding, it can also affect migration schedules. One population of
- 1</p>
-<p>Bewick’s swans wintering in England put on fat more rapidly than usual, priming them to
-begin their Siberian migration early. The problem, of course, is that migration, like most
-other aspects of bird behaviour, is a precisely timed biological behaviour. Leaving early
-may mean arriving too soon for nesting conditions to be right
-{G} Nesting sea turtles, which show a natural predisposition for dark beaches, find fewer
-and fewer of them to nest on. Their hatchlings, which gravitate toward the brighter, more
-reflective sea horizon, find themselves confused by artificial lighting behind the beach. In
-Florida alone, hatchling losses number in the hundreds of thousands every year. Frogs and
-toads living near brightly lit highways suffer nocturnal light levels that are as much as a
-million times brighter than normal, throwing nearly every aspect of their behaviour out of
-joint, including their nighttime breeding choruses.
- 
-{H} Of all the pollution we face, light pollution is perhaps the most easily remedied. Simple
-changes in lighting design and installation yield immediate changes in the amount of light
-spilt into the atmosphere and, often, immediate energy savings.
-{I} It was once thought that light pollution only affected astronomers, who need to see the
-night sky in all its glorious clarity. And, in fact, some of the earliest civic efforts to control
-light pollution—in Flagstaff, Arizona, half a century ago—were made to protect the view
-from Lowell Observatory, which sits high above that city. Flagstaff has tightened its
-regulations since then, and in 2001 it was declared the first International Dark Sky City. By
-now the effort to control light pollution has spread around the globe. More and more cities
-and even entire countries, such as the Czech Republic, have committed themselves to
-reducing unwanted glare.
-{J} Unlike astronomers, most of us may not need an undiminished view of the night sky for
-our work, but like most other creatures we do need darkness. Darkness is as essential to
-our biological welfare, to our internal clockwork, as light itself. The regular oscillation of
-waking and sleep in our lives, one of our circadian rhythms—is nothing less than a
-biological expression of the regular oscillation of light on Earth. So fundamental are these
-rhythms to our being that altering them is like altering gravity.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+  
+ 7.....................
+8.....................
+9.....................
+1011.....................
+12.....................
+13.....................
+.....................
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.FALSE
+2.NOT GIVEN
+3.TRUE
+4.NOT GIVEN
+5.FALSE
+6.TRUE
+7.8.clamp
+9.axle
+10.cogs
+11.aqueduct
+12.wall
+13.locks
+gates
+ 5</div>
+</div>
+</div>
 </body>
 </html>

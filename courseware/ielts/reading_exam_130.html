@@ -1,397 +1,181 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do Literate Women Make Better Mothers - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Global Warming Prevent Poles From Melting - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题178/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Do Literate Women Make Better Mothers</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-3
-Choose THREE letters A-H.
-NB Your answers may be given in any order.
-Which THREE of the following statements are true of NICE, according to the text?
-   
-A It feels that people with bad health habits should not receive treatment.
-B It is an agency that offers advice to the NHS.
-C Some of the reports they produce discriminate against the elderly.
-D It insists its decision should only be applicable in certain situations.
-E It is an agency that controls all NHS policy regarding treatments.
-F Its powers are not as extensive as those of the NHS.
-G Many PCTs base their decisions concerning funding on ones made by NICE. H It
-has made a statement that overweight people will not receive new joints. 
-Questions 4-6
-Choose the correct letter, A, B, C or D.
-4  NICE argues that
-A rich people should not be given special consideration over the poor.
-B only patients from certain classes should be considered for treatmen
-C social roles should be considered when deciding treatment.
-D cost of treatment would depend on patients’ income. 
-5  What recommendations has NICE made?
-A to provide older women with IVF treatments
-B to make flu drugs accessible to women under 40
-C to give people between 23-39 flu drugs
-D to allow certain women to have 1 VF treatments 
-6  NICE admits that 
-A some drugs used by the NHS were not clinically effective.
-B their advice is sometimes ignored by the NHS.
-C it is often hard to determine if a patient has caused his or her condition.
-D they are more concerned about cost effectiveness than patients. 
- 3</p>
-<p>Questions 7-13
-Look at the following statements (Questions 7-13) and the list of people below.
-Match each statement with the correct person A-C.
-7.....................   This person was happy that-NICE realised age discrimination needed
-dealing with.
-8.....................  This person holds a very high position in the NICE agency.
-9.....................  This person is a member of a political party.
-10.....................  This person says their policy regarding age is precise and easy to
-understand.
-11.....................  This person does not agree with the position taken by NICE.
-12.....................  This person feels the NHS must further improve its relations with the
-elderly.
-13.....................  This person says that NICE does not discriminate on the grounds of age.
-A Michael Rawlins
-B Steve Webb
-C Jonathan Ellis
- 4</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Global Warming Prevent Poles From Melting</h1>
+<p>雅思阅读真题 · 第130篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Global warming: Prevent poles from melting
+A. Such is our dependence on fossil fuels, and such the volume of carbon dioxide we have
+already released into the atmosphere, that most climate scientists agree that significant
+global warming is now inevitable – the best we can hope to do is keep it at a reasonable
+level, and even that going to be an uphill task.
+ At present, the only serious option on the table for doing this is cutting back on our carbon
+emissions, but a few countries are making major strides in this regard, the majority are
+having great difficulty even stemming the rate of increase, let alone reversing
+Consequently, an increasing number of scientists are beginning to explore the alternatives.
+They under the banner of geoengineering generally defined as the intentional large-scale
+manipulation of the environment.
+B. Geoengineering has been shown to work, at least on a small, localised scale, for
+decades. May Day parades in Moscow have taken place under clear blue skies, aircraft
+having deposited dry ice, silver iodide (m $1) and cement powder to disperse clouds. Many
+of the schemes now suggested look to do the opposite, and reduce the amount of sunlight
+reaching the planet.
+One scheme focuses on achieving a general cooling of the Earth and involves the concept
+of releasing aerosol sprays into the stratosphere above the Arctic to create clouds of
+sulphur dioxide, which would, in turn, lead to a global dimming. The idea is modelled on
+historical volcanic explosions, such as that of Mount Pinatubo in the Philippines in 1991;
+which led to a short-term cooling of global temperatures by 0.5°c. The aerosols could be
+delivered by artillery, high-flying aircraft or balloons.
+C. Instead of concentrating on global cooling, other schemes look specifically at reversing
+the melting at the poles. One idea is to bolster an ice cap by spraying it with water. Using
+pumps to carry water from below the sea ice the spray would come out as snow or ice
+particles, producing thicker sea ice with a higher albedo (the ratio of sunlight reflected from
+a surface) to reflect summer radiation. Scientists have also scrutinised whether it is
+possible to block iceflow in Greenland with cables which have been reinforced, preventing
+icebergs from moving into the sea.
+ Veil Albert Kallio, a Finnish scientist, says that such an idea is impractical, because the
+force of the ice would ultimately snap the cables and rapidly release a large quantity of
+frozen ice into the sea. However, Kallio believes that the sort of cables used in suspension
+bridges could potentially be used to divert, rather than halt, the southward movement of ice
+from Spitsbergen. It would stop the ice moving south, and local currents would see them
+float northwards’ he says.
+D. A number of geoengineering ideas are currently being examined in the Russian Arctic.
+These include planting millions of birch trees: the thinking, according to Kallio, is that their
+white bark would increase the amount of reflected sunlight. The loss of their leaves in
+ 1
+winter would also enable the snow to reflect radiation. In contrast, the native evergreen
+pines tend to shade the snow and absorb radiation.
+Using ice-breaking vessels to deliberately break up and scatter coastal sea ice in both
+Arctic and Antarctic waters in their respective autumns, and diverting Russian rivers to
+increase cold-water flow to ice-forming areas, could also be used to slow down warming,
+Kallio says. 1 You would need the wind to blow the right way, but in the right conditions, by
+letting ice float free and head north, you would enhance ice growth.’
+E. But will such ideas ever be implemented? The major counter-arguments to
+geoengineering schemes are, first, that they are a ‘cop-out’ that allow US to continue living
+the way we do, rather than reducing carbon emissions; and, second, even if they do work,
+would the side-effects outweigh the advantages? Then there’s the daunting prospect of
+upkeep and repair of any scheme as well as the consequences of a technical failure. ‘I
+think all of US agree that if we were to end geoengineering on a given day, then the planet
+would return to its pre-engineered condition very rapidly, and probably within 10 to 20
+years’ says Dr Phil Rasch, chief scientist for climate change at the US-based Pacific
+Northwest National Laboratory.
+ That’s certainly something to worry about. I would consider geoengineering as a strategy to
+employ only we manage the conversion to a non-fossil- fuel economy. ‘The risk with
+geoengineering projects is that you can “overshoot”,’ says Dr Dan hunt, from the University
+of Bristol. ‘You may bring global temperatures back to pre-industrial levels, but the risk is
+that the poles will still be warmer than they should be and the tropics be cooler than before
+industrialization.’
+F. The main reason why geoengineering is countenanced by the mainstream scientific
+community is that most researchers have little faith in the of politicians to agree – and then
+bring in the necessary carbon cuts. Even leading conservation organisations believe the
+subject worth exploring. As Dr Martin Sommerkorn, a climate change advisor says.’
+But human-induced climate change has brought humanity to a position where it important
+not to exclude thinking thoroughly about this topic and its possibilities despite the potential
+drawbacks. If, over the coming years, the science US about an ever-increased climate
+sensitivity of the planet and this isn’t unrealistic – then we may be best served by not
+having to start our thinking from scratch.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 14-18
+Reading Passage has six paragraphs, A-F
+Which paragraph contains the following information?
+Write the correct letter, A-F, in boxes  14-18 on your answer sheet You may use any letter
+more than once.
+14..................... the existence of geoengineering projects distracting from the real task of
+changing the way we live
+15..................... circumstances in which geoengineering has demonstrated success
+16..................... Frustrating maintenance problems associated with geoengineering
+projects
+17..................... support for geoengineering being due to a lack of confidence in
+governments
+18..................... more success in fighting climate change in some parts of the world than
+others
+Questions 19-23
+Complete the summary below.
+Choose NO MORE THAN TWO WORDS  from the passage for each answer.
+Write your answers in boxes  19-23 on your answer sheet.
  
-1. B
-2. D
-3. G
-4. A
-5. D
-6. C
-7.
-8. A
-9. B
-10. A
-11. B
-12. C
-13. A</p>
-<p>Reading Practice
- Children's comprehension
-A In 1874, long before the advent of television, the English Parliament passed a law to
-protect children ‘from their own lack of experience and from the wiles of pushing tradesmen
-and moneylenders’ (James, 1965). The act is one of the earliest governmental policies to
-address children’s vulnerability to commercial exploitation and was produced before major
-corporations earned huge profits by marketing products directly to children. Yet the issues
-underlying this 19th-century policy remain much the same in the 21st century.
-B Television has long been the predominant medium that advertisers have chosen for
-marketing products to children. It is estimated that the average child sees more than
-40.000 television commercials a year, most of which are 15 to 30 seconds in length
-(Kunkel, 2001). According to another estimate, children aged 14 years and under make
-$24 billion in direct, purchases and influence $190 billion in family purchases, underscoring
-the high stakes involved (McNeal, 1987).
-C A number of factors have contributed to an unprecedented growth in both the amount
-and type of advertising directed at children. First and foremost among these are changes in
-the media environment. In decades past, television programming targeted at children was
-limited and relegated to time slots unpopular with their parents, such as Saturday
-mornings of television advertising
-(Turow, 1981). Today, the number of channels received in the average US home has
-escalated with the diffusion of cable television and satellite technologies. In this new multichannel era, there are numerous national program services devoted exclusively to children.
-Naturally, these channels deliver significant amounts of child- oriented marketing
-messages. Although parent may be pleased that their youngsters can now watch children’s
-programming at any hour of the day, they may not recognize that such viewing
-opportunities entail much greater exposure to advertising than any previous generation of
-youth has experienced.
-D Approximately 80% of all advertising targeted at children falls within four product
-categories: toys, cereals, candies, and fast-food restaurants (Kunkel et al, 1992).
-Commercials are highly effective at employing specific features designed to attract
-children’s attention. For example, they use the strategy of introducing unique sound effects
-and rapidly moving images (Greer et al, 1982). The other most common persuasive
-strategy employed in advertising to children is to associate the product with playfulness and
-happiness, rather than to provide any actual product-related information (Kunkel et al,
-1992). For example, a commercial featuring Ronald McDonald dancing, singing, and
-smiling in McDonald’s restaurants without any mention of the actual food products available
-reflects a playful or happy theme. This strategy is also found frequently with cereal ads,
-which often include cartoon characters to help children identify the product. In contrast,
-most commercials fail to mention even the major grain used in each cereal.
-E Another common feature of advertising to children is the use of product disclosures such
-as 'batteries not included’ or 'each part sold separately'. Studies make clear that young
-children do not comprehend the intended meaning of these disclaimers. For example,
-fewer than one in four kindergarten through second grade children could grasp the
-meaning of 'some assembly required' in a commercial. In contrast, the use of child-friendly
-language such as 'you have to put it together' more than doubled the proportion of children
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ Geoengineering projects
+A range of geoengineering ideas has been put forward, which aim either to prevent the
+melting of the ice caps or to stop the general rise in global temperatures. One scheme to
+discourage the melting of ice and snow involves introducing 19..................... to the Arctic
+because of their colour. The build-up of ice could be encouraged by dispersing ice along
+the coasts using special ships and changing the direction of some 20..................... but this
+scheme is dependent on certain weather conditions. Another way of increasing the amount
+of ice involves using 21..................... to bring water to the surface. A scheme to stop ice
+moving would apply 22......................but this method is more likely to be successful in
+preventing the ice from travelling in one direction rather than stopping it altogether. A
+suggestion for cooling global temperatures is based on what has happened in the past after
+23..................... and it involves creating clouds of gas.
+Questions 24-26
+Look at the following people ( Questions 24-26 ) and the list of opinions below.
+Match each person with the correct opinion, A-E.
+Write the correct letter, A-E, in boxes  24-26 on your answer sheet.
+24..................... Phil Rasch
+25..................... DanLunt
+26..................... Martin Sommerkorn
+ 3
+List of opinions
+A. The problems of geoengineering shouldn’t mean that ideas are not seriously considered.
+B. Some geoengineering projects are more likely to succeed than others,
+C. Geoengineering only offers a short-term relief.
+D. A positive outcome of geoengineering may have a negative consequence elsewhere.
+E. Most geoengineering projects aren’t clear in what they are aiming at.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.E
+2.B
+3.E
+4.F
+5.A
+6.birch trees
+ 8.pumps
+9.cables
+10.volcanic explosions
+11.C
+12.D
+13.A
+7.Russian rivers
+ 5</div>
+</div>
+</div>
 </body>
 </html>

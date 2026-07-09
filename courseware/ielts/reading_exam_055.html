@@ -1,403 +1,203 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Remarkable Beetle - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Biology Of Bitterness - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题85/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 A Remarkable Beetle</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-4
-Choose the correct letter A, B, C or D.
-Write your answers in boxes 1-4 on your answer sheet.
-1.   The writer uses paintings in the first paragraph to illustrate
-A possible future climate change.
-B climate change of the last two centuries.
-C the river doesn’t freeze in winter anymore.
-D how George Washington led his troops across the river.
-2.   Which of the following do scientists believe to be possible?
-A The temperature may drop over much of the Northern Hemisphere.
-B It will be colder than 12,000 years ago.
-C The entire Northern Hemisphere will be covered in ice.
-D Europe will look more like Lapland.
-3.    Why is it difficult for the poor to survive the next ice age?
-A People don’t live in tribes anymore.
-B Politics are changing too fast today.
-C Abrupt climate change causes people to live off their land.
-D Migration has become impossible because of closed borders.
-4.    Why is continental Europe much warmer than North America in winter?</p>
-<p>A Wind blows most of the heat of tropical currents to Europe.
-B Europe and North America are at different latitudes.
-C The Gulf Stream has stopped yielding heat to the air.
-D The Gulf Stream moves north along the east coast of North America.
-Questions 5-9
-Look at the following statements (Questions 5-9) and the list of people in the box below.
-Match each statement with the correct person A-D.
-Write the appropriate letter A-D in boxes 5-9 on your answer sheet.
-NB You may use any letter more than once.
-5.....................     Most Americans are not prepared for the next ice age.
- 3</p>
-<p>6.....................     The result of abrupt climate change is catastrophic.
-7.....................     The world is not as cold as it used to be.
-8.....................     Global warming is closely connected to the ice age.
-9.....................     Alerted people to the change of ocean water in a conference</p>
-<p>List of People
-A     William Curry
-B     Terrence Joyce
-C     Bob Dickson
-D     National Academy of Sciences
-Questions 10-13
-Complete the flow chart below.
-Choose NO MORE THAN THREE WORDS from the passage for each answer.
-Write your answers in boxes 10-13 on your answer sheet.
-10.....................
-11.....................
- 4</p>
-<p>12.....................
-13..................... 
- 5</p>
-<p>Solution:
- 
-1. B
-2. A
-3. D
-4. A
-5. B
-6. D
-7.
-8. B
-9. C
-10. heat
-11. denser
-12. Great Ocean Conveyor
-13. fresh water</p>
-<p>Reading Practice
- A new stage in the study and teaching of history
- 
-For hundreds of years, historians have relied on written or printed documents to provide the
-bulk of their source materials, and they have largely communicated with students and the
-wider public by writing books and journal articles. Today, however, the printed word is
-being superseded by a diversity of forms of communication, above all moving images on
-video or film
- 
-A The development of this new form of communication is leading to a growing gap between
-the practice of professional historians based in academia, and the practice of those aiming
-to popularise the study of history among the general public, and to encourage people to
-create their own records for the future. On the one hand, there are mainstream academics
-who continue to use only the written word as they examine more and more fields with an
-ever- increasing number of sophisticated methodologies. On the other hand, film and video,
-especially as broadcast on television, are probably the major influence on the public's
-consciousness of history, as they see film of events of fifty or a hundred years ago, events
-they had previously only read about.
- 
-B In a related development, a great many people now document local and family events in
-the form of videos; many schools, too, produce video yearbooks. All these visual records
-may well prove to be invaluable sources of information for future historians. The glaring
-contradiction is that the two approaches-the academic and what we might term the popular
-- have intersected very little: with a few notable exceptions, professional historians have
-tended to avoid involvement in television programmes about history, and have even less
-impact on what is being captured and preserved on video. And the potential of moving
-images has wielded negligible influence on the academic study of history.</p>
-<p>C This gulf can be seen as resulting from the willingness or otherwise of individual
-historians to accept the validity of new forms of communication in the study of history. This
-is not the first time that the question has arisen. The study of history, as conceived of
-today, began with the transition from oral to literate culture, leading to the earliest written
-records and the earliest historical studies. The next great shift came with the advent of
-printing, which transformed everything. Today, as the printed word loses its dominance,
-historians are faced with a variety of forms of communication, ranging from simple
-audiotape to the promising complexities of videodiscs linked with computers. As yet,
-however, the use of moving images to record current events for the benefit of future
-historians does not even have a commonly agreed name.
- 
-D This does not mean that mainstream historians have totally rejected the use of moving
-images as sources: the majority seem intrigued by the idea, and valuable research has
-been carried out into the history and analysis of films with a broad circulation, using them
-as a source of information on the social and intellectual history of the twentieth century.
-Journals such as American History Review have played a significant role in this field.
-E Yet the number of historians using moving images in their research or teaching is very
-small. The barrier seems to be that the profession is structured around the medium of the
-written word, and is somewhat insulated in its academic setting. The use of moving images
-presents a substantial challenge to this setting and its assumptions. As a result, historians
-have rejected the training, the institutions, the motivations and the professional structures
-that would be needed in order to use moving images effectively. Above all, they have
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Biology Of Bitterness</h1>
+<p>雅思阅读真题 · 第55篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Biology of Bitterness
+To many people, grapefruit is palatable only when doused in sugar. Bitter Blockers like
+adenosine monophosphate could change that.
+A.
+There is a reason why grapefruit juice is served in little glasses: most people don’t want to
+drink more than a few ounces at a time.  aringin, a natural chemical compound found in
+grapefruit, tastes bitter. Some people like that bitterness in small doses and believe it
+enhances the general flavor, but others would rather avoid it altogether. So juice packagers
+often select grapefruit with low naringin though the compound has antioxidant properties
+that some nutritionists contend may help prevent cancer and arteriosclerosis.
+B.
+It is possible, however, to get the goodness of grapefruit juice without the bitter taste. I
+found that out by participating in a test conducted at the Linguagen Corporation, a
+biotechnology company in Cranbury, New Jersey. Sets of two miniature white paper cups,
+labeled 304and 305, were placed before five people seated around a conference table.
+Each of us drank from one cup and then the other, cleansing our palates between tastes
+with water and a soda cracker. Even the smallest sip of 304 had grapefruit ‘s unmistakable
+bitter bite. But 305 was smoother; there was the sour taste of citrus but none of the
+bitterness of naringin. This juice had been treated with adenosine monophosphate, or
+AMP, a compound that blocks the bitterness in foods without making them less nutritious.
+ 
+ C.
+Taste research is a booming business these days, with scientists delving into all five
+basics-sweet, bitter, sour, salty, and umami, the savory taste of protein. Bitterness is of
+special interest to industry because of its untapped potential in food. There are thousands
+of bitter -tasting compounds in nature. They defend plants by warning animals away and
+protect animals by letting them know when a plant may be poisonous. But the system isn’t
+foolproof. Grapefruit and cruciferous vegetable like Brussels sprouts and kale are nutritious
+despite-and sometimes because of-their bitter-tasting components. Over time, many
+people have learned to love them, at least in small doses. “Humans are the only species
+that enjoys bitter taste,” says Charles Zuker, a neuroscientist at the University of  California
+School of Medicine at San Diego. “Every other species is averse to bitter because it means
+bad news. But we have learned to enjoy it. We drink coffee, which is bitter, and quinine [in
+tonic water] too. We enjoy having that spice in our lives.” Because bitterness can be
+pleasing in small quantities but repellent when intense, bitter blockers like AMP could make
+a whole range of foods, drinks, and medicines more palatable-and therefore more
+profitable.
+D.
+People have varying capacities for tasting bitterness, and the differences appear to be
+genetic. About 75 percent of people are sensitive to the taste of the bitter compounds
+phenylthiocarbamide and 6-n-propylthiouracil. and 25 percent are insensitive. Those who
+are sensitive to phenylthiocarbamide seem to be less likely than others to eat cruciferous
+ 1
+vegetables, according to Stephen Wooding, a geneticist at the University of Utah. Some
+people, known as supertasters, are especially sensitive to 6-n-propylthiouraci because they
+have an unusually high number of taste buds. Supertasters tend to shun all kinds of bitter-
+tasting things, including vegetable, coffee, and dark chocolate. Perhaps as a result, they
+tend to be thin. They’re also less fond of alcoholic drinks, which are often slightly bitter.
+Dewar’s scotch, for instance, tastes somewhat sweet to most people. ” But a supertaster
+tastes no sweetness at all, only bitterness,” says Valerie Duffy, an associate professor of
+dietetics at the University of Connecticut at Storrs.
+E.
+In one recent study, Duffy found that supertasters consume alcoholic beverages, on
+average, only two to three times a week, compared with five or six times for the average
+nontasters. Each taste bud, which looks like an onion, consists of 50 to 100 elongated cells
+running from the top of the bud to the bottom. At the top is a little clump of receptors that
+capture the taste molecules, known as tastants, in food and drink. The receptors function
+much like those for sight and smell. Once a bitter signal has been received, it is relayed via
+proteins known as G proteins. The G protein involved in the perception of bitterness,
+sweetness, and umami was identified in the early 1990s by Linguagen’s founder, Robert
+Margolskee, at Mount Sinai School of Medicine in New York City. Known as gustducin, the
+protein triggers a cascade of chemical reactions that lead to changes in ion concentrations
+within the cell. Ultimately, this delivers a signal to the brain that
+registers as bitter. “The signaling system is like a bucket brigade,” Margolskee says. “It
+goes from the G protein to other proteins.”
+F.
+In 2000 Zuker and others found some 30 different kinds of genes that code for bitter-taste
+receptors. “We knew the number would have to be large because there is such a large
+universe of bitter tastants,” Zuker says. Yet no matter which tastant enters the mouth or
+which receptor it attaches to, bitter always tastes the same to us. The only variation derives
+from its intensity and the ways in which it can be flavored by the sense of smell. “Taste
+cells are like a light switch,” Zuker says. “They are either on or off.”
+ G.
+Once they figured put the taste mechanism, scientists began to think of ways to interfere
+with it. They tried AMP, an organic compound found in breast milk and other substances,
+which is created as cells break down food. Amp has no bitterness of its own, but when put
+it in foods, Margolskee and his colleagues discovered, it attaches to bitter-taste receptors.
+As effective as it is, AMP may not be able to dampen every type pf bitter taste, because it
+probably doesn’t attach to all 30 bitter-taste receptors. So Linguagen has scaled up the
+hunt for other bitter blockers with a technology called high-throughput screening.
+Researchers start by coaxing cells in culture to activate bitter-taste receptors. Then
+candidate substances, culled from chemical compound libraries, are dropped onto the
+receptors, and scientists look for evidence of a reaction.
+H.
+Tin time, some taste researchers believe, compounds like AMP will help make processed
+foods less unhealthy. Consider, for example, that a single cup of Campbell’s chicken
+noodle soup contains 850 milligrams of sodium chloride, or table salt-more than a third of
+the recommended daily allowance. The salt masks the bitterness created by the high
+ 2
+temperatures used in the canning process, which cause sugars and amino acids to react.
+Part of the salt could be replaced by another salt, potassium chloride, which tends to be
+scarce in some people’s diets. Potassium chloride has a bitter aftertaste, but that could be
+eliminated with a dose of AMP. Bitter blockers could also be used in place of cherry or
+grape flavoring to take the harshness out of children’s cough syrup, and they could dampen
+the bitterness of antihistamines, antibiotics, certain HIV drugs, and other medications.
+I.
+A number of foodmakers have already begun to experiment with AMP in their products,
+and other bitter blockers are being developed by rival firms such as Senomyx in La Jolla,
+California. In a few years, perhaps, after food companies have taken the bitterness from
+canned soup and TV dinners, they can set their sights on something more useful: a bitter
+blocker in a bottle that any of us can sprinkle on our brussels sprouts or stir into our
+grapefruit juice.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-8
+The reading Passage has seven paragraphs A-I.
+Which paragraph contains the following information?
+Write the correct letter A-I, in boxes 1-8 on your answer sheet.
+1..................... Experiment on bitterness conducted
+2..................... Look into the future application
+3..................... Bitterness means different information for human and animals
+4..................... Spread process of bitterness inside of body
+5..................... How AMP blocks bitterness
+6..................... Some bitterness blocker may help lower unhealthy impact
+7..................... Bitterness introduced from a fruit
+8..................... Genetic feature determines sensitivity
+Question 9-12
+Summary
+Complete the following summary of the paragraphs of Reading Passage, using no more
+than two words from the Reading Passage for each answer. Write your answers in boxes
+9-12 on your answer sheet.
+The reason why grapefruit tastes bitter is because a substance called 9.....................
+contained in it. However, bitterness plays a significant role for plants. It gives a signal that
+certain plant is 10...................... For human beings, different person carries various genetic
+abilities of tasting bitterness. According to a scientist at the University of Utah,
+11..................... have exceptionally plenty of 12....................., which allows them to
+perceive bitter compounds.
+Questions 13-14
+Choose the correct letter, A, B, C or D.
+Write your answers in boxes 13-14 on your answer sheet.
+13 What is the main feature of AMP according to this passage?
+A offset bitter flavour in food
+B only exist in 304 cup
+C tastes like citrus
+D chemical reaction when meets biscuit
+14 What is the main function of G protein?
+ 4
+A collecting taste molecule
+B identifying different flavors elements
+C resolving large molecules
+D transmitting bitter signals to the brain
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.B
+2.I
+3.C
+4.E
+5.G
+6.H
+7.A8.D
+9.NARINGIN
+10.POISONOUS
+11.SUPERTASTERS
+12.TASTEBUDS
+13.A
+14.D
+ 6</div>
+</div>
+</div>
 </body>
 </html>

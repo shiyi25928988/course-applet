@@ -1,382 +1,186 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How Should Reading Be Taught - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Learning To Walk - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题244/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 How Should Reading Be Taught</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-6
-Do the following statements agree with the information in Reading Passage?
-Write
-TRUE                   if the statement agrees with the information
-FALSE                   if the statement contradicts the information
-NOT GIVEN       if there is no information on this
-1.....................       Xu Xing went to the Gobi Desert to check fossil evidence of the
-existence of Gigantoraptor erlianensis.
-2.....................       The announcement made by the National Geographic Society in 1999
-was based on false evidence.
-3.....................       Like Gigantoraptor, Yanomis martini was first discovered in China.
-4.....................       The bones originally discovered by Robert Liscomb changed the attitude
-of palaeontologists towards north Alaska.
-5.....................       According to Fiorillo. the name Troodon means ‘wounding tooth’.
-6.....................       Guillermo Heredia had suspected that his find was a dinosaur fossil.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Learning To Walk</h1>
+<p>雅思阅读真题 · 第178篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Learning to Walk
+These days the feet of a typical city dweller rarely encounter terrain any more uneven than
+a crack in the pavement. While that may not seem like a problem, it turns out that by
+flattening our urban environment we have put ourselves at risk of a surprising number of
+chronic illnesses and disabilities. Fortunately, the commercial market has come to the
+rescue with a choice of products. Research into the idea that flat floors could be detrimental
+to our health was pioneered back in the late 1960s in Long Beach, California. Podiatrist
+Charles Brantingham and physiologist Bruce Beekman were concerned with the growing
+epidemic of high blood pressure, varicose veins and deep-vein thromboses and reckoned
+they might be linked to the uniformity of the surfaces that we tend to stand and walk on.
+The trouble, they believed, was that walking continuously on flat floors, sidewalks and
+streets concentrates forces on just a few areas of the foot. As a result, these surfaces are
+likely to be far more conducive to chronic stress syndromes than natural surfaces, where
+the foot meets the ground in a wide variety of orientations. They understood that the
+anatomy of the foot parallels that of the human hand - each having 26 bones, 33 joints and
+more than 100 muscles, tendons and ligaments - and that modern lifestyles waste all this
+potential flexibility.
+Brantingham and Beekman became convinced that the damage could be rectified by
+making people wobble. To test their ideas, they got 65 factory workers to try standing on a
+variable terrain floor - spongy mats with varying degrees of resistance across the surface.
+This modest irregularity allowed the soles of the volunteers' feet to deviate slightly from the
+horizontal each time they shifted position. As the researchers hoped, this simple
+intervention made a huge difference, within a few weeks. Even if people were wobbling
+slightly, it activated a host of muscles in their legs, which in turn helped pump blood back to
+their hearts. The muscle action prevented the pooling of blood in their feet and legs,
+reducing the stress on the heart and circulation. Yet decades later, the flooring of the
+world's largest workplaces remains relentlessly smooth. Earlier this year, however, the idea
+was revived when other researchers in the US announced findings from a similar
+experiment with people over 60. John Fisher and colleagues at the Oregon Research
+Institute in Eugene designed a mat intended to replicate the effect of walking on
+cobblestones*.
+In tests funded by the National Institute of Aging, they got some 50 adults to walk on the
+toots in their bare feet for less than an hour, three times a week. After 16 weeks, these
+people showed marked improvements in mobility, and even a significant reduction in blood
+pressure. People in a control group who walked on ordinary floors also improved but not as
+dramatically. The mats are now available for purchase and production is being scaled up.
+Even so, demand could exceed supply if this footstimulating activity really is a 'useful
+nonpharmacological approach for preventing or controlling hypertension of older adults, as
+the researchers believe. They are not alone in recognising the benefits of cobblestones.
+Reflexologists have long advocated walking on textured surfaces to stimulate so-called
+'acupoints' on the soles of the feet. They believe that pressure applied to particular spots
+on the foot connects directly to particular organs of the body and somehow enhances their
+function. In China, spas, apartment blocks and even factories promote their cobblestone
+paths as healthful amenities. Fisher admits he got the concept from regular visits to the
+country. Here, city dwellers take daily walks along cobbled paths for five or ten minutes,
+ 1
+perhaps several times a day, to improve their health. The idea is now taking off in Europe
+too.
+People in Germany, Austria and Switzerland can now visit 'barefoot parks' and walk
+along 'paths of the senses - with mud, logs, stone and moss underfoot. And it is not difficult
+to construct your own path with simple everyday objects such as stones or bamboo poles.
+But if none of these solutions appeal, there is another option. A new shoe on the market
+claims to transform flat, hard, artificial surfaces into something like uneven ground. 'These
+shoes have an unbelievable effect,' says Benno Nigg, an exercise scientist at Calgary
+University in Canada.
+Known as the Masai Barefoot Technology, the shoes have rounded soles that cause you to
+rock slightly when you stand still, exercising the small muscles around the ankle that are
+responsible for stability. Forces in the joint are reduced, putting less strain on the
+system, Nigg claims.
+Some of these options may not appeal to all consumers and there is a far simpler
+alternative.
+If the urban environment is detrimental to our health, then it is obvious where we should
+turn. A weekend or even a few hours spent in the countryside could help alleviate a
+sufferer's aches and pains, and would require only the spending of time.
+However, for many modern citizens, the countryside is not as accessible as it once was
+and is in fact a dwindling resource. Our concrete cities are growing at a terrifying rate -
+perhaps at the same rate as our health problems.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Do the following statements agree with the information given in Reading Passage?
+In boxes 1-5 on your answer sheet, write
+TRUE if the statement agrees with the information
+FALSE if the statement contradicts the information
+NOT GIVEN  if there is no information on this
+1..................... Brantingham and Beekman were the first researchers to investigate
+the relationship between health problems and flat floors.
+2..................... The subjects in Fisher's control group experienced a decline in their
+physical condition.
+3..................... The manufacturers are increasing the number of cobblestone mats
+they are making.
+4..................... Fisher based his ideas on what he saw during an overseas trip.
+5..................... The Masai Barefoot Technology shoes are made to fit people of all
+ages.
+ Questions 6-8
+Choose the correct letter, A, B, C or D.
+Write the correct letter in boxes 6-8 on your answer sheet.
+6. The writer suggests that Brantingham and Beekman's findings were
+A ignored by big companies.
+B doubted by other researchers.
+C applicable to a narrow range of people. 
+D surprising to them.
+ 7. What claim is made by the designers of the cobblestone mats"?
+A  They need to be used continuously in order to have a lasting effect.
+B They would be as beneficial to younger people as to older people.
+C They could be an effective alternative to medical intervention.
+D Their effects may vary depending on individual users.
+ 3
   
-Questions 7-13
-Complete the labels on the diagrams below.
-Choose NO MORE THAN TWO WORDS and/or A NUMBER from the passage for each
-answer.
-7.....................
-8.....................
-9.....................
-10.....................
-11.....................
-12.....................
-13.....................
- 3</p>
-<p>Solution:
  
-1. FALSE
-2. TRUE
-  
-8. bird-like beak
-9. curved claws
+ 8. Which of the following points does the writer make in the final paragraph?
+A People should question new theories that scientists put forward.
+B High prices do not necessarily equate to a quality product.
+C People are setting up home in the country for health reasons.
+D The natural environment is fast disappearing.
+ 
  
-3. NOT GIVEN 10. asymmetrical vanes
- 4. TRUE
-  
-11. dusk
-  
-5. NOT GIVEN 12. warmer
  
-6. FALSE
-7. three
-13. food chain
-metres
- 4</p>
-<p>Reading Practice
- Dinosaurs and the secrets they still hold
-Dinosaur expert Dr Steve Brusatte continues to investigate the mysteries surrounding
-these fascinating prehistoric creatures
-I was recently part of a team of palaeontologists that discovered a new dinosaur. Living in
-what is now China, the species would have resembled a strange bird. It was about the size
-of a sheep and covered in feathers, with a sharp beak that it probably used to crack open
-shellfish. It was given the formal scientific name Tongtianlong, but we called it ‘Mud
-Dragon’ because its skeleton was discovered in rock that had hardened from ancient mud.
-It seems that the creature got trapped in the mud and died. Then its fossil remains were
-found a few months ago when workmen were excavating a site in order to build a school.
-It is every dinosaur-obsessed child’s dearest wish to discover and name a completely new
-species. In fact what my colleagues and I did wasn’t that unusual. New dinosaurs are
-appearing everywhere these days – about 50 each year. And this pace shows no signs of
-slowing, as different areas continue to open up to fossil hunters and a fresh generation of
-scientists comes of age. Because of this plentiful supply of new fossils, we now know more
-about dinosaurs than we do about many modern animals. But there are still many unsolved
-mysteries.
-Dinosaurs didn’t start out as huge monsters like Tyrannosaurus Rex. Instead they evolved
-from a group of angular, cat-sized reptiles called dinosauromorphs. These creatures
-remained small and rare for millions of years until they developed into dinosaurs. The
-boundary between dinosauromorphs and dinosaurs is becoming less and less distinct with
-each new discovery that’s made, but what’s becoming clear is that it took millions of years
-for these first dinosaurs to spread around the world, grow to huge sizes and become truly
-dominant.
-Some discoveries in the 1970s, like the agile and strangely bird-like Deinonychus, proved
-that dinosaurs were far more dynamic and intelligent than previously thought. Some
-palaeontologists even proposed that they were warm-blooded creatures like modern birds
-with a constant high body temperature that they controlled internally, rather than from
-warming themselves by lying in the sun. A few decades later opinions are still mixed. The
-problem is that dinosaurs can’t be observed. Palaeontologists must rely on studying fossils.
-Some results are convincing: we know from studying their bones that dinosaurs had rapid
-growth rates, just like modern, warm-blooded animals. Other palaeontologists, however,
-use the same fossils to suggest that dinosaurs were somewhere between cold-blooded
-reptiles and warm-blooded birds. More studies are needed to provide more clarity.
-The discovery of Deinonychus with its long arms, skinny legs, arched neck and big claws
-on its feet, helped to strengthen the theory that birds evolved from dinosaurs. In the late
-1990s, the discovery of thousands of feather- covered dinosaurs closed the argument.
-But the fossils raised another question: why did feathers first develop in dinosaurs? They
-probably originated as simple, hair-like strands — a necessary means of keeping warm.
-Many dinosaurs retained this basic fluffy coat, but in one group the strands modified. They
-grew bigger, started to branch out and changed into feathers like those on modern birds.
-They lined the arms, and sometimes the legs, forming wings. These feathers were probably
-for display: to attract mates or scare off rivals. They appeared in species such as the
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ Questions 9-14
+Complete the summary below.
+ChooseONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 9-14 on your answer sheet.
+In their research, Brantingham and Beekman looked at the complex physical
+9..................... of the foot and noted that the surfaces of modem environments restrict its
+movement. They invented a mat which they tried out on factory workers. Whenever the
+workers walked on it, the different levels of 10..................... in the mat would encourage
+greater muscle action. In turn, this lessened the effect of 11..................... on the
+cardiovascular system.
+Similar research was undertaken by John Fisher and colleagues in Oregon. As a result of
+their findings, they decided to market cobblestone mats to the elderly as a means of
+dealing with 12...................... Reflexologists claim that by manipulating specific parts of the
+feet, the performance of certain 13..................... will also improve. Finally, Benno Nigg at
+Calgary University believes that specially shaped 14..................... on shoes should give
+health benefits.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.TRUE
+2.FALSE
+3.TRUE
+4.TRUE
+  8.D
+9.anatomy
+10.resistance
+11.stress
+  
+ 5.NOT GIVEN 12.hypertension
+ 6.A
+7.C13.organs
+14.soles
+ 5</div>
+</div>
+</div>
 </body>
 </html>

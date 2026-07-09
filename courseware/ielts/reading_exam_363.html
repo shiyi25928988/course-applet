@@ -1,367 +1,187 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Dollar A Year Man - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Pompidou Centre - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题487/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Dollar A Year Man</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>To demonstrate this psychological principle, the musicologist Leonard Meyer, in his classic
-book Emotion and Meaning in Music (1956), analysed the 5th movement of Beethoven’s
-String Quartet in C-sharp minor, Op. 131. Meyer wanted to show how music is defined by
-its flirtation with - but not submission to - our expectations of order. Meyer dissected 50
-measures (bars) of the masterpiece, showing how Beethoven begins with the clear
-statement of a rhythmic and harmonic pattern and then, in an ingenious tonal dance,
-carefully holds off repeating it. What Beethoven does instead is suggest variations of the
-pattern. Me wants to preserve an element of uncertainty in his music, making our brains
-beg for the one chord he refuses to give us. Beethoven saves that chord for the end.
- 
-According to Meyer, it is the suspenseful tension of music, arising out of our unfulfilled
-expectations, that is the source of the music’s feeling. While earlier theories of music
-focused on the way a sound can refer to the real world of images and experiences - its
-‘connotative’ meaning - Meyer argued that the emotions we find in music come from the
-unfolding events of the music itself. This ‘embodied meaning’ arises from the patterns the
-symphony invokes and then ignores. It is this uncertainty that triggers the surge of
-dopamine in the caudate, as we struggle to figure out what will happen next. We can
-predict some of the notes, but we can’t predict them all, and that is what keeps us listening,
-waiting expectantly for our reward, for the pattern to be completed.
- 2</p>
-<p>Questions 1-5
-Complete the summary below.
-Choose NO MORE THAN TWO WORDS from the passage for each answer.
-Write your answers in boxes 1-5 on your answer sheet.
-The Montreal Study
-Participants, who were recruited for the study through advertisements, had their brain
-activity monitored while listening to their favourite music. It was noted that the music
-stimulated the brain’s neurons to release a substance called 1..................... in two of the
-parts of the brain which are associated with feeling 2......................
-Researchers also observed that the neurons in the area of the brain called the
-3..................... were particularly active just before the participants’ favourite moments in
-the music - the period known as the 4...................... Activity in this part of the brain is
-associated with the expectation of ‘reward’ stimuli such as 5......................
- 
-Questions 6-10
-Choose the correct letter, A, B, C or D.
-Write the correct letter in boxes 6-10 on your answer sheet
-6    What point does the writer emphasise in the first paragraph?
-A how dramatically our reactions to music can vary
-B how intense our physical responses to music can be
-C how little we know about the way that music affects us
-D how much music can tell us about how our brains operate
- 
-7    What view of the Montreal study does the writer express in the second paragraph?
-A Its aims were innovative.
-B The approach was too simplistic.
-C It produced some remarkably precise data.
-D The technology used was unnecessarily complex.
-8    What does the writer find interesting about the results of the Montreal study?
- 3</p>
-<p>A the timing of participants’ neural responses to the music
-B the impact of the music on participants’ emotional state
-C the section of participants’ brains which was activated by the music
-D the type of music which had the strongest effect on participants’ brains
-9    Why does the writer refer to Meyer’s work on music and emotion?
- 
-A to propose an original theory about the subject
-B to offer support for the findings of the Montreal study
-C to recommend the need for further research into the subject
-D to present a view which opposes that of the Montreal researchers
-10  According to Leonard Meyer, what causes the listener’s emotional response to music?</p>
-<p>A the way that the music evokes poignant memories in the listener
-B the association of certain musical chords with certain feelings
-C the listener’s sympathy with the composer’s intentions
-D the internal structure of the musical composition
-Questions 11-14
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Pompidou Centre</h1>
+<p>雅思阅读真题 · 第363篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Pompidou Centre
+More than three decades after it was built, the Pompidou Centre in Paris has survived its
+moment at the edge of architectural fashion and proved itself to be one of the most
+remarkable buildings of the 20th century.
+It was the most outstanding now building constructed in Paris for two generations. It looked
+like an explosion of brightly coloured service pipes in the calm of the city centre. However,
+when in 1977 the architects Richard Rogers and Renzo Piano stood among a large crowd
+of 5,000 at the opening of the Centre Culturel d'Art Georges Pompidou (known as the
+Pompidou), no one was really aware of the significance of this unusual building.
+Rogers was only 38 when he and Piano won the competition to design a new cultural
+centre for Paris in the old market site. Young, unknown architects, they had been chosen
+from a field of nearly 700 to design one of the most prestigious buildings of its day. After six
+difficult years, with 25,000 drawings, seven lawsuits, battles over budgets, and a desperate
+last-minute scramble to finish the building, it had finally been done.
+Yet the opening was a downbeat moment. The Pompidou Centre had been rubbished by
+the critics while it was being built, there was no more work in prospect for the architects,
+and their partnership had effectively broken down. But this was just a passing crisis. The
+Centre, which combined the national museum of modern art, exhibition space, a public
+library and a centre for modern music, proved an enormous success. It attracted six million
+visitors in its first year, and with its success, the critics swiftly changed their tune.
+The architects had been driven by the desire for ultimate flexibility, for a building that would
+not limit the movement of its users. All the different parts were approached through the
+same enormous entrance hall and served by the same escalator, which was free to anyone
+to ride, whether they wanted to visit an exhibition or just admire the view. With all the
+services at one end of the building, escalators and lifts at the other, and the floors hung on
+giant steel beams providing uninterrupted space the size of two football pitches, their
+dream had become a reality.
+The image of the Pompidou pervaded popular culture in the 1970s, making appearances
+everywhere - on record-album covers and a table lamp, and even acting as the set for a
+James Bond 1 film. This did much to overcome the secretive nature of the architectural
+culture of its time, as it enabled wider audience to appreciate the style and content of the
+building and so moved away from the strictly professional view.
+The following year, Rogers was commissioned to design a new headquarters for Lloyd's
+Bank in London and went on to create one of Britain's most dynamic architectural
+practices. Piano is now among the world's most respected architects. But what of their
+shared creation?
+It was certainly like no previous museum, with its plans for a flexible interior that not only
+had movable walls but floors that could also be adjusted up or down. This second feature
+did not in the end survive when the competition drawings were turned into a real building.
+In other ways, however, the finished building demonstrated a remarkable degree of
+refinement - of craftsmanship even - in the way the original diagram was transformed into a
+superbly detailed structure. It was this quality which, according to some critics, suggested
+ 1
+that the Pompidou should be seen as closer to the 19th-century engineering tradition than
+the space age.
+Nevertheless, as a model for urban planning, it has proved immensely influential. The
+Guggenheim in Bilbao* and the many other major landmark projects that were built in the
+belief that innovatively designed cultural buildings can bring about urban renewal are all
+following the lead of the Pompidou Centre.
+Other buildings may now challenge it for the title of Europe s most outlandish work of
+architecture. However, more than a quarter of a century later, this construction - it is hard to
+call it a building when there is no façade, just a lattice of steel beams and pipes and a long
+external escalator snaking up the outside - still seems extreme.
+ Today, the Pompidou Centre itself still looks much as it did when it opened. The shock
+value of its colour-coded plumbing and its structure has not faded with the years. But while
+traditionalists regarded it as an ugly attack on Paris when it was built, they now see it for
+what it is - an enormous achievement, technically and conceptually.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Choose the correct letter, A, B, CorD.
+1What does the writer sav in thefirst paragraph about the openingof the Pompidou
+Centre?
+ 
+    A The elderly did not like it.
+B The architects were not present.
+C The atmosphere was very noisy.
+DThe people did not realise its importance.
+2What does the writer say in the second paragraph about the construction of the
+Pompidou?
+ 
+    A There was a hurry to complete it.
+B It cost less than expected.
+C Other experts helped draw the plans.
+DThe market location was criticised.
+3What is the writer’s main purpose in the third paragraph?
+ A to explain the multi-functional role of the centre
+B to praise the architects for their design ideas
+C to say why some people’s opinions quickly altered
+Dto show how the media benefited from its success
+4What was the architects’ ‘dream’, referred to in the fourth paragraph?
+ A to become famous
+B to provide entertainment
+C to allow visitors to use it freely
+Dto build the biggest museum in the world
+     
+     Questions 5-8
 Complete each sentence with the correct ending, A-F, below.
-Write the correct letter, A-F, in boxes 11-14 on your answer sheet.
-11.....................    The Montreal researchers discovered that
-12.....................    Many studies have demonstrated that
-13.....................    Meyer’s analysis of Beethoven’s music shows that
-14.....................    Earlier theories of music suggested that
-A our response to music depends on our initial emotional state.
-B neuron activity decreases if outcomes become predictable.</p>
-<p>emotive music can bring to mind actual pictures and events.
-D experiences on our past can influence our emotional reaction to music.
-E emotive music delays giving listeners what they expect to hear.
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+     5.....................
+6.....................
+7.....................The escalators and lifts inside the Pompidou
+In the 1970s, pictures of the Pompidou
+The original plans for the floors of the Pompidou
+ 3
+      8.....................
+ 
+ 
+ 
+ 
+ 
+ The detailed structure of the finished building
+ 
+ Areminded some people of past building styles.
+Bwere used to decorate everyday objects.
+Cfitted in well with the external surroundings.
+Dwere situated on one side of the building.
+Eshowed people which area to visit.
+Fwere changed during the construction process.
+                Questions 9-14
+Complete each sentence with the correct ending, A-F, below.
+Do the following statements agree with the views of the writer in the reading passage?
+Write
+                 YES
+NO
+ if the statement agrees with the views of the writer
+if the statement contradicts the views of the writer
+NOT GIVEN     if it is impossible to say what the writer thinks about this
+      9..................... The Pompidou has influenced the way cities are designed.
+10.....................        The Guggenheim has been more popular than the Pompidou.
+11.....................        The word building fits the Pompidou better than the word construction.
+12.....................        The Pompidou’s appearance has changed considerably since it
+opened.
+13.....................        Nowadays, the design of the Pompidou fails to shock people.
+14.....................       The traditionalist view of the Pompidou has changed over the
+years.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.D
+2.A
+3.C
+4.C
+5.D
+6.B
+7.F8.A
+9.YES
+10.NOT GIVEN
+11.NO
+12.NO
+13.NO
+14.YES
+ 5</div>
+</div>
+</div>
 </body>
 </html>

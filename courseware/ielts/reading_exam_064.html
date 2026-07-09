@@ -1,380 +1,199 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Theory Of Shopping - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Californias Age Of Megafires - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题94/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 A Theory Of Shopping</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
- 
-1. D
-2. F
-3. E
-4. C
-5. A
-6. D
-7.
-8. C
-9. C
-10. A
-11. C
-12. C
-13. C</p>
-<p>Reading Practice
- Ant Intelligence
-When we think of intelligent members of the animal kingdom, the creatures that spring
-immediately to mind are apes and monkeys. But in fact the social lives of some members
-of the insect kingdom are sufficiently complex to suggest more than a hint of intelligence.
-Among these, the world of the ant has come in for considerable scrutiny lately, and the idea
-that ants demonstrate sparks of cognition has certainly not been rejected by those involved
-in these investigations.
-Ants store food, repel attackers and use chemical signals to contact one another in case of
-attack. Such chemical communication can be compared to the human use of visual and
-auditory channels (as in religious chants, advertising images and jingles, political slogans
-and martial music) to arouse and propagate moods and attitudes. The biologist Lewis
-Thomas wrote, Ants are so much like human beings as to be an embarrassment. They
-farm fungi, raise aphids* as livestock, launch armies to war, use chemical sprays to alarm
-and confuse enemies, capture slaves, engage in child labour, exchange information
-ceaselessly. They do everything but watch television.'
-However, in ants there is no cultural transmission -everything must be encoded in the
-genes - whereas in humans the opposite is true. Only basic instincts are carried in the
-genes of a newborn baby, other skills being learned from others in the community as the
-child grows up. It may seem that this cultural continuity gives us a huge advantage
-over ants. They have never mastered fire nor progressed. Their fungus farming and
-aphid herding crafts are sophisticated when compared to the agricultural skills of humans
-five thousand years ago but have been totally overtaken by modem human agribusiness.
-Or have they? The farming methods of ants are at least sustainable. They do not
-ruin environments or use enormous amounts of energy. Moreover, recent evidence
-suggests that the crop farming of ants may be more sophisticated and adaptable than
-was thought.
-Ants were farmers fifty million years before humans were. Ants can't digest the cellulose in
-leaves - but some fungi can. The ants therefore cultivate these fungi in their nests, bringing
-them leaves to feed on, and then use them as a source of food. Farmer ants secrete
-antibiotics to control other fungi that might act as 'weeds’, and spread waste to fertilise the
-crop.
-It was once thought that the fungus that ants cultivate was a single type that they had
-propagated, essentially unchanged from the distant past. Not so. Ulrich Mueller
-of Maryland and his colleagues genetically screened 862 different types of fungi taken from
-ants' nests. These turned out to be highly diverse: it seems that ants are continually
-domesticating new species. Even more impressively, DNA analysis of the fungi suggests
-that the ants improve or modify the fungi by regularly swapping and sharing strains with
-neighbouring ant colonies.
-Whereas prehistoric man had no exposure to urban lifestyles - the forcing house
-of intelligence - the evidence suggests that ants have lived in urban settings for close on a
-hundred million years, developing and maintaining underground cities of specialised
-chambers and tunnels.
- 1</p>
-<p>When we survey Mexico City, Tokyo, Los Angeles, we are amazed at what has
-been accomplished by humans. Yet Hoelldobler and Wilson’s magnificent work for ant
-lovers, The Ants, describes a supercolony of the ant Formica yessensis on the Ishikari
-Coast of Hokkaido. This ‘megalopolis’ was reported to be composed of 360 million workers
-and a million queens living in 4,500 interconnected nests across a territory of 2.7 square
-kilometres.
-Such enduring and intricately meshed levels of technical achievement outstrip by
-far anything achieved by our distant ancestors. We hail as masterpieces the cave
-paintings in southern France and elsewhere, dating back some 20,000 years. Ant societies
-existed in something like their present form more than seventy million years ago.
-Beside this, prehistoric man looks technologically primitive. Is this then some kind
-of intelligence, albeit of a different kind?
-Research conducted at Oxford, Sussex and Zurich Universities has shown that
-when desert ants return from a foraging trip, they navigate by integrating bearings
-and distances, which they continuously update in their heads. They combine the evidence
-of visual landmarks with a mental library of local directions, all within a framework which is
-consulted and updated. So ants can learn too.
-And in a twelve-year programme of work, Ryabko and Reznikova have found evidence that
-ants can transmit very complex messages. Scouts who had located food in a maze
-returned to mobilise their foraging teams. They engaged in contact sessions, at the end of
-which the scout was removed in order to observe what her team might do. Often the
-foragers proceeded to the exact spot in the maze where the food had been. Elaborate
-precautions were taken to prevent the foraging team using odour clues. Discussion now
-centres on whether the route through the maze is communicated as a 'left-right' sequence
-of turns or as a ‘compass bearing and distance’ message.
-During the course of this exhaustive study, Reznikova has grown so attached to
-her laboratory ants that she feels she knows them as individuals - even without the
-paint spots used to mark them. It’s no surprise that Edward Wilson, in his essay, ‘In
-the company of ants’, advises readers who ask what to do with the ants in their kitchen
-to: ‘Watch where you step. Be careful of little lives.'
-* aphids: small insects of a different species from ants
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Californias Age Of Megafires</h1>
+<p>雅思阅读真题 · 第64篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>California’s age of Megafires
+A
+ There’s a reason fire squads now battling more than a dozen blazes in southern California
+are having such difficulty containing the flames, despite better preparedness than ever and
+decades of experience fighting fires fanned by the notorious Santa Ana winds. The wildfires
+themselves, experts say, generally are hotter, move faster, and spread more erratically
+than in the past.
+B
+The short-term explanation is that the region, which usually has dry summers, has had nine
+inches less rain than normal this year. Longer-term, climate change across the West is
+leading to hotter days on average and longer fire seasons. Experts say this is likely to yield
+more megafires like the conflagrations that this week forced evacuations of at least
+300,000 resident in California’s southland and led President Bush to declare a disaster
+emergency in seven counties on Tuesday.
+C
+Megafires, also called “siege fires,” are the increasingly frequent blazes that burn 500,000
+acres or more – 10 times the size of the average forest fire of 20 years ago. One of the
+current wildfires is the sixth biggest in California ever, in terms of acreage burned,
+according to state figures and news reports. The trend to more superhot fires, experts say,
+has been driven by a century-long policy of the US Forest Service to stop wildfires as
+quickly as possible. The unintentional consequence was to halt the natural eradication of
+underbrush, now the primary fuel for megafires. Three other factors contribute to the trend,
+they add. First is climate change marked by a 1-degree F. rise in average yearly
+temperature across the West. Second is a fire season that on average is 78 days longer
+than in the late 1980s. The third is the increased building of homes and other structures in
+wooded areas.
+D
+“We are increasingly building our homes … in fire-prone ecosystems,” says Dominik
+Kulakowski, adjunct professor of biology at Clark University Graduate School of Geography
+in Worcester, Mass. Doing that “in many of the forests of the Western US … is like building
+homes on the side of an active volcano.” In California, where population growth has
+averaged more than 600,000 a year for at least a decade, housing has pushed into such
+areas. “What once was open space is now residential homes providing fuel to make fires
+burn with greater intensity,” says Terry McHale of the California Department of Forestry
+firefighters union. “With so much dryness, so many communities to catch fire, so many
+fronts to fight, it becomes an almost incredible job.”
+E
+That said, many experts give California high marks for making progress on preparedness
+since 2003, when the largest fires in state history scorched 750,000 acres, burned 3,640
+homes, and killed 22 people. Stung then by criticism of bungling that allowed fires to
+spread when they might have been contained, personnel are meeting the peculiar
+ 1
+challenges of a neighborhood – and canyon-hopping fires better than in recent years,
+observers say.
+F
+State promises to provide newer engines, planes, and helicopters have been fulfilled.
+Firefighters unions that then complained of dilapidated equipment, old fire engines and
+insufficient blueprints for fire safety are now praising the state’s commitment, noting that
+funding for firefighting has increased despite huge cuts in many other programs. “We are
+pleased that the Schwarzenegger administration has been very proactive in its support of
+us and come through with budgetary support of the infrastructure needs we have long
+sought,” says Mr McHale with the firefighters union.
+G
+Besides providing money to upgrade the fire engines that must traverse the mammoth
+state and wind along serpentine canyon roads, the state has invested in better command-
+and-control facilities as well as the strategies to run them. “In the fire sieges of earlier
+years, we found out that we had the willingness of mutual-aid help from other jurisdictions
+and states, but we were not able to communicate adequately with them,” says Kim Zagaris,
+chief of the state’s Office of Emergency Services, fire and rescue branch. After a 2004
+blue-ribbon commission examined and revamped those procedures, the statewide
+response “has become far more professional and responsive,” he says.
+H
+Besides ordering the California National Guard on Monday to make 1,500 guardsmen
+available for firefighting efforts, Gov. Arnold Schwarzenegger asked the Pentagon to send
+all available Modular Airborne Fighting Systems to the area. The military Lockheed C-130
+cargo/utility aircraft carry a pressurized 3,000-gallon tank that can eject fire retardant or
+water in fewer than five seconds through two tubes at the rear of the plane. This load can
+cover an area 1/4-mile long and 60 feet wide to create a fire barrier. Governor
+Schwarzenegger also directed 2,300 inmate firefighters and 170 custody staff from the
+California Department of Corrections and Rehabilitation to work for hand in hand with state
+and local firefighters.
+I
+Residents and government officials alike are noting the improvements with gratitude, even
+amid the loss of homes, churches, businesses, and farms. By Tuesday morning, the fires
+had burned 1,200 homes and businesses and set 245,957 acres – 384 square miles –
+ablaze. Despite such losses, there is a sense that the speed, dedication, and coordination
+of firefighters from several states and jurisdictions are resulting in greater efficiency than in
+past “siege fire” situations.
+J
+“I am extraordinarily impressed by the improvements we have witnessed between the last
+big fire and this,” says Ross Simmons, a San Diego-based lawyer who had to evacuate
+both his home and business on Monday, taking up residence at a Hampton Inn 30 miles
+south of his home in Rancho Bernardo. After fires consumed 172,000 acres there in 2003,
+the San Diego region turned communitywide soul-searching into improved building codes,
+evacuation procedures, and procurement of new technology. Mr Simmons and neighbors
+ 2
+began receiving automated phone calls at 3:30 a.m. Monday morning telling them to
+evacuate. “Notwithstanding all the damage that will be caused by this, we will not come
+close to the loss of life because of what we have … put in place since then,” he says.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Complete the following summary of the paragraphs of Reading Passage
+Using NO MORE THAN TWO WORDS  from the Reading Passage for each answer.
+ Write your answers in boxes  1-6 on your answer sheet.
+Experts point out that blazes in California are having more heat, faster speed and
+they 1..................... more unpredictably compared with former ones. One explanation is
+that California’s summer is dry,  2..................... is below the average point. Another long
+term explanation is that hotter and longer potential days occur due
+to 3...................... Nowadays, Megafires burn  4..................... the size of forest area caused
+by an ordinary fire of 20 years ago. The serious trend is mainly caused by well-grown
+underbrush, which provides  5..................... for the siege fires. Other contributors are
+climate change and extended  6......................
+ Questions 7-9
+Choose the correct letter,  A, B, C or D.
+Write your answers in boxes  7-9 on your answer sheet.
+ 7   What is the expert’s attitude towards California’s performance after 2003 megafire?
+A   They could have done better
+B   Blamed them on casualties
+C   Improvement made on preparation
+D   Serious criticism
+ 8   According to Governor Schwarzenegger, which one is  CORRECT  about his effort for
+firefighting?
+A   Schwarzenegger requested successfully for military weapons
+ B   Schwarzenegger led many prison management staff to work together with local
+firefighters
+C   Schwarzenegger acted negatively in recent megafire in California
+D   Schwarzenegger ordered 1,500 office clerk to join firefighting scene.
+ 4
+9   What happened to Ross Simmon on the day of megafire breakout?
+A   He was sleeping till morning
+B   He was doing business at Hampton Inn
+C   He suffered employee death on that morning
+D   He was alarmed by machine calls
+ Questions 10-13
+Do the following statements agree with the information given in Reading Passage 1?
+In boxes 10-13 on your answer sheet, write
+TRUE               if the statement is true
+FALSE              if the statement is false
+NOT GIVEN      if the information is not given in the passage
+ 10.....................   The area of open space in California has declined during the past
+decade.
+11.....................   Fire squad wants to recruit more firefighters this year.
+12.....................   Firefighters union declared that firefighters have had the more improved
+and supportive facility by the local government.
+13.....................   Before the year of 2004, well coordination and communication between
+California and other states already existed in fire siege.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.spread
+2.rainfall
+3.climate change
+4.10 times
+5.primary fuel
+6.fire season
+7.8.B
+9.D
+10.TRUE
+11.NOT GIVEN
+12.TRUE
+13.FALSE
+C
+ 6</div>
+</div>
+</div>
 </body>
 </html>

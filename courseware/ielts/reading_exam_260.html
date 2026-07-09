@@ -1,396 +1,176 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neuroaesthetics - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Roller Coaster - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题341/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Neuroaesthetics</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-4
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Roller Coaster</h1>
+<p>雅思阅读真题 · 第260篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Roller coaster
+ A    600 years ago, roller coaster pioneers never would have imagined the advancements
+that have been made to create the roller coasters of today. The tallest and fastest roller
+coaster in the world is the Kingda Ka, a coaster in New Jersey that launches its passengers
+from zero to 128 miles per hour in 3.5 seconds (most sports cars take over four seconds to
+get to just 60 miles per hour). It then heaves its riders skyward at a 90-degree angle
+(straight up) until it reaches a height of 456 feet, over one and a half football fields, above
+the ground, before dropping another 418 feet (Coaster Grotto “Kingda Ka”). With that said,
+roller coasters are about more than just speed and height, they are about the creativity of
+the designers that build them, each coaster having its own unique way of producing intense
+thrills at a lesser risk than the average car ride. Roller coasters have evolved drastically
+over the years, from their primitive beginnings as Russian ice slides, to the metal monsters
+of today. Their combination of creativity and structural elements make them one of the
+purest forms of architecture.
+ B    At first glance, a roller coaster is something like a passenger train. It consists of a
+series of connected cars that move on tracks. But unlike a passenger train, a roller coaster
+has no engine or power source of its own. For most of the ride, the train is moved by
+gravity and momentum. To build up this momentum, you need to get the train to the top of
+the first hill or give it a powerful launch. The traditional lifting mechanism is a long length of
+chain running up the hill under the track. The chain is fastened in a loop, which is wound
+around a gear at the top of the hill and another one at the bottom of the hill. The gear at the
+bottom of the hill is turned by a simple motor. This turns the chain loop so that it continually
+moves up the hill like a long conveyer belt. The coaster cars grip onto the chain with
+several chain dogs, sturdy hinged hooks. When the train rolls to the bottom of the hill, the
+dogs catches onto the chain links. Once the chain dog is hooked, the chain simply pulls the
+train to the top of the hill. At the summit, the chain dog is released and the train starts its
+descent down the hill.
+ C   Roller coasters have a long, fascinating history. The direct ancestors of roller coasters
+were monumental ice slides – long, steep wooden-slides covered in ice, some as high as
+70 feet – that were popular in Russia in the 16th and 17th centuries. Riders shot down the
+slope in sleds made out of wood or blocks of ice, crash-landing in a sand pile. Coaster
+historians diverge on the exact evolution of these ice slides into actual rolling carts. The
+most widespread account is that a few entrepreneurial Frenchmen imported the ice slide
+idea to France. The warmer climate of France tended to melt the ice, so the French started
+building waxed slides instead, eventually adding wheels to the sleds. In 1817, the Russes a
+Belleville (Russian Mountains of Belleville) became the first roller coaster where the train
+was attached to the track (in this case, the train axle fit into a carved groove). The French
+continued to expand on this idea, coming up with more complex track layouts, with multiple
+cars and all sorts of twists and turns.
+D    In comparison to the world’s first roller coaster, there is perhaps an even greater
+debate over what was America’s first true coaster. Many will say that it is Pennsylvania’s
+own Maunch Chunk-Summit Hill and Switch  Back  Railroad.  The  Maunch   Chunk-
+Summit  Hill  and  Switch  Back  Railroad  was   originally America’s second railroad, and
+considered my many to be the greatest coaster of all time. Located in the Lehigh valley, it
+was originally used to transport coal from the top of Mount Pisgah to the bottom of Mount
+ 1
+ Jefferson, until Josiah White, a mining entrepreneur, had the idea of turning it into a part-
+time thrill ride. Because of its immediate popularity, it soon became strictly a passenger
+train. A steam engine would haul passengers to the top of the mountain, before letting them
+coast back down, with speeds rumored to reach 100 miles per hour! The reason that it was
+called a switch back railroad, a switch back track was located at the top – where the steam
+engine would let the riders coast back down. This type of track featured a dead end where
+the steam engine would detach its cars, allowing riders to coast down backwards. The
+railway went through a couple of minor track changes and name changes over the years,
+but managed to last from 1829 to 1937, over 100 years.
+ E    The coaster craze in America was just starting to build. The creation of the Switch
+Back Railway, by La Marcus Thompson, gave roller coasters national attention. Originally
+built at New York’s Coney Island in 1884, Switch Back Railways began popping up all over
+the country. The popularity of these rides may puzzle the modern-day thrill seeker, due to
+the mild ride they gave in comparison to the modern-day roller coaster. Guests would pay a
+nickel to wait in line up to five hours just to go down a pair of side-by-side tracks with
+gradual hills that vehicles coasted down at a top speed around six miles per hour.
+Regardless, Switchback Railways were very popular, and sparked many people, including
+Thompson, to design coasters that were bigger and better.
+F    The 1910s and 1920s were probably the best decade that the roller coaster has ever
+seen. The new wave of technology, such as the “unstop wheels”, an arrangement that kept
+a coaster’s wheels to its tracks by resisted high gravitational forces, showed coasters a
+realm of possibilities that has never been seen before. In 1919, North America alone had
+about 1,500 roller coasters, a number that was rising rampantly. Then, the Great
+Depression gave a crushing blow to amusement parks all over America. As bad as it was,
+amusement parks had an optimistic look on the future in the late 1930s. But, in 1942 roller
+coasters could already feel the effects of World War Two, as they were forced into a
+shadow of neglect. Most, nearly all of America’s roller coasters were shut down. To this
+very day, the number of roller coaster in America is just a very tiny fraction of the amount of
+roller coasters in the 1920s.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Answer the questions below.
+A diagram that explains the mechanism and working principles of roller coaster.
+Choose NO MORE THAN TWO WORDS AND/OR A NUMBER  from the passage for each
+answer.
+Traditional lifting mechanism
+1.....................
+2.....................
+3.....................
+4.....................
+ 
+  Questions 5-10
+ Complete the following summary of the paragraphs of Reading Passage, using  NO MORE
+THAN TWO WORDS from the Reading Passage for each answer.
+Write your answers in boxes 5-10on your answer sheet.
+ The first roller coaster was perhaps originated from Russia which is wrapped up by
+5....................., which was introduced into France, and it was modified to  6.....................,
+because temperature there would  7..................... the ice. This time 8..................... were
+installed on the board.
+In America, the first roller coaster was said to appear in Pennsylvania, it was actually a
+railroad which was designed to send  9..................... between two mountains. Josiah
+White turned it into a thrill ride, it was also called switch back track and
+a 10..................... there allowed riders to slide downward back again.
+ 3
+  Questions 11-14
 Do the following statements agree with the information given in Reading Passage?
-In boxes 1-4 on your answer sheet, write
-YES                  if the statement is true
-NO                   if the statement is false
-NOT GIVEN    if the information is not given in the passage
- 
-1.....................   Timekeeper’s exact date of origin was not clear today.
-2.....................   People use candles and oil lamps for recording time to do things in the
-early days.
- 
-3.....................   Oil lamps are used for religious beliefs in 4000 BCE.
-  
-4.....................   The sundials have always been inaccurate to record time in ancient Egypt.
- 
-Questions 5-10
-Write the correct letter A-D, in boxes 5-10 on your answer sheet
-NB You may use any letter more than once.
-A     Wooden shadow clock
-B     Clepsydra
-C     Sandglasses
-D     lamp oil candle
-5.....................   It is used the container tag position recording time
-6.....................   It is used to measure a particular time
-7.....................   It is used only in the sunny day
-8.....................   It is used oil cistern to measure the passage of time
-9.....................   It isn’t only used to tell the time
-10.....................   It is more accurate than candles and oil lamps
-Questions 11-13
- 3</p>
-<p>Choose the correct letter, A, B, C or D.
-Write your answers in boxes 11-13 on your answer.
-11   Which picture shows the working principle of clepsydra?</p>
-<p>B 
-C 
-D  
-12   Which picture best describes the wooden shadow?</p>
-<p>B 
-C 
-D  
-13   The picture below illustrates the oil lamp clock’s working</p>
-<p>Solution:
- 
-1. YES
-2. YES
-3. YES
-4. NOT GIVEN
-5. B
-6. A
-7.
-8. C
-9. A
-10. B
-11. C
-12. A
-13. D</p>
-<p>Reading Practice
- Honey bees in trouble
- 
-Can native pollinators fill the gap?
- 
-A Recently, ominous headlines have described a mysterious ailment, colony collapse
-disorder(CCD)that is wiping out the honeybees that pollinate many crops. Without
-honeybees, the story goes, fields will be sterile, economies will collapse, and food will be
-scarce.
- 
-B But what few accounts acknowledge is that what’s at risk is not itself a natural state of
-affairs. For one thing, in the United States, where CCD was first reported and has had its
-greatest impacts, honeybees are not a native species. Pollination in modem agriculture
-isn’t alchemy, it’s industry. The total number of hives involved in the U.S. pollination
-industry has been somewhere between 2.5 million and 3 million in recent years.
-Meanwhile, American farmers began using large quantities of organophosphate
-insecticides, planted large-scale crop monocultures, and adopted “clean farming” practices
-that scrubbed native vegetation from field margins and roadsides. These practices killed
-many native bees outright—they’re as vulnerable to insecticides as any agricultural
-pest—and made the agricultural landscape inhospitable to those that remained. Concern
-about these practices and their effects on pollinators isn’t new—in her 1962 ecological
-alarm cry Silent Spring, Rachel Carson warned of a ‘Fruitless Fall’ that could result from the
-disappearance of insect pollinators.
- 
-C If that ‘Fruitless Fall, has not—yet—occurred, it may be largely thanks to the honeybee,
-which farmers turned to as the ability of wild pollinators to service crops declined. The
-honeybee has been semi-domesticated since the time of the ancient Egyptians, but it
-wasn’t just familiarity that determined this choice: the bees’ biology is in many ways suited
-to the kind of agricultural system that was emerging. For example, honeybee hives can be
-closed up and moved out of the way when pesticides are applied to a field. The bees are
-generalist pollinators, so they can be used to pollinate many different crops. And although
-they are not the most efficient pollinator of every crop, honeybees have strength in
-numbers, with 20,000 to 100,000 bees living in a single hive. “Without a doubt, if there was
-one bee you wanted for agriculture, it would be the honeybee, “says Jim Cane, of the U.S.
-Department of Agriculture. The honeybee, in other words, has become a crucial cog in the
-modem system of industrial agriculture. That system delivers more food, and more kinds of
-it, to more places, more cheaply than ever before. But that system is also vulnerable,
-because making a farm field into the photosynthetic equivalent of a factory floor, and
-pollination into a series of continent-long assembly lines, also leaches out some of the
-resilience characteristic of natural ecosystems.
- 
-D Breno Freitas, an agronomist, pointed out that in nature such a high degree of
-specialization usually is a very dangerous game: it works well while all the rest is in
-equilibrium, but runs quickly to extinction at the least disbalance. In effect, by developing an
-agricultural system that is heavily reliant on a single pollinator species, we humans have
-become riskily overspecialized. And when the human-honeybee relationship is disrupted,
-as it has been by colony collapse disorder, the vulnerability of that agricultural system
-begins to become clear.
-E In fact, a few wild bees are already being successfully managed for crop pollination. “The
-problem is trying to provide native bees in adequate numbers on a reliable basis in a fairly
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+In boxes11-14on your answer sheet, write
+YES                          if the statement agrees with the view of the writer
+NO                            if the statement contradicts the view of the writer
+NOT GIVEN          if it is impossible to say what the writer thinks about this
+11.....................    The most exiting roller coaster in the world is in New Jersey.
+12.....................    French added more innovation on Russian ice slide including both cars
+and tracks.
+13.....................    Switch Back Railways began to gain popularity since its first construction
+in New York.
+14.....................     The Great Depression affected amusement parks yet did not shake the
+significant role of US roller coasters in the world.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.chain
+2.loop
+3.gear
+4.(simple) motor
+5.ice
+6.waxed slides
+7.melt8.wheels
+9.coal
+10.steam engine
+11.NOT GIVEN
+12.YES
+13.YES
+14.NO
+ 5</div>
+</div>
+</div>
 </body>
 </html>

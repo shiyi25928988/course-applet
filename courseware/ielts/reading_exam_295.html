@@ -1,357 +1,181 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reducing The Effects Of Climate Change - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Beautiful Game - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题393/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Reducing The Effects Of Climate Change</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Scots call ‘tholing’, the uncomplaining endurance of suffering.</p>
-<p>These were all qualities which the historical Franklin possessed in abundance, and so
-Nadolny’s concentration and exaggeration of them isn’t unreasonable. Even as an adult,
-his slowness of thought means that he is unable to speak fluently, so he memorises ‘entire
-fleets of words and batteries of response’, and speaks a languid, bric-a-brac language. In
-the Navy, his method of thinking first and acting later initially provokes mockery from his
-fellow sailors. But Franklin persists in doing things his way. and gradually earns the respect
-of those around him. To a commodore who tells him to speed up his report of an
-engagement, he replies: ‘When I tell something, sir. I use my own rhythm.’ A lieutenant
-says approvingly of him: ’Because Franklin is so slow, he never loses time.’</p>
-<p>Since it was first published in Germany in 1983. The Discovery of Slowness has sold more
-than a million copies and been translated into 13 languages. It has been named as one of
-German literature’s twenty ‘contemporary classics’, and it has been as a manual and by
-European pressure groups and institutions representing causes as diverse as sustainable
-development, the Protestant Church, management science, motoring policy and pacifism.</p>
-<p>The various groups that have taken the novel up have one thing in common: a dislike of the
-high-speed culture of Postmodernity. Nadolny’s Franklin appeals to them because he is
-immune to ‘the compulsion to be constantly occupied’, and to the idea that ‘someone was
-better if he could do the same thing fast.’ Several German churches have used him in their
-symposia and focus groups as an example of peacefulness, piety and self-confidence. A
-centre scheme (a ‘march of slowness’ or ‘of the slow’), inspired by the novel. Nadolny has
-appeared as a guest speaker for RIO, a Lucerne-based organisation which aims to
-reconcile management principles with ideas of environmental sustainability. The novel has
-even become involved in the debate about speed limits on German roads. Drive down an
-autobahn today, and you will see large road-side signs proclaiming ‘unhurriedness’ a
-slogan which deliberately plays off the title of the novel.</p>
-<p>A management journal in the US described The Discovery of Slowness is a ‘major event
-not only for connoisseurs of fine historical fiction but also for those of us who concern
-themselves with leadership, communication and systems-thinking, issues’. It’s easy to see
-where the attraction lies for the management crowd. The novel is crammed with quotations
-about time-efficiency, punctiliousness and profitability: ‘As a rule, there are always three
-points in time: the right one. the lost one and the premature one’. ‘What did too late mean?
-They hadn’t waited for it long enough, that’s what it meant.’
- 2</p>
-<p>Questions 1-6
-Reading Passage 3 has seven paragraphs A-H.
-Which paragraph contains the following information?
-Write the correct letter A-H, in boxes 1-6 on your answer sheet.
-NB You may use any letter more than once.
- 
-1.....................   What was Sir John Franklin’s occupation before he went on a career of the
-arctic exploration?
-2.....................   A story John Franklin reacted strangely when he met bullies by other
-children. 
-3.....................   Reason of popularity for the book The Discovery of Slowness.
-4.....................   A depiction that Sten Nadolny’s biography on John Franklin is not much
-based on facts.
-5.....................   The particular career Sir John Franklin took after his expedition unmatched
-before.
-6.....................   what is the central scheme and environment conveyed by the book The
-Discovery of Slowness.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Beautiful Game</h1>
+<p>雅思阅读真题 · 第295篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>THE ‘BEAUTIFUL’ GAME
+A
+Every nation has a sport to represent it. In the U.S., there is baseball; in New Zealand,
+rugby. In the UK, football is the national sporting obsession. While many UK teams have
+gained international recognition, Manchester United is among those most well-known on a
+global scale. Yet while most people, regardless of the sporting preference or nationality,
+have some passing knowledge of Manchester United, fewer can claim knowledge of the
+origins of the team. Manchester United came into being in 1902 as a result of bankruptcy of
+the team formerly known as Newton Heath. Newton Heath began life as Newton Heath
+LYR (Lancashire and Yorkshire Railway) club and as the name suggests, the original team
+was comprised of railway workers. Despite turning professional in 1885 and becoming the
+founding member of the Football Lions in 1889, Newton Heath – nicknamed the ‘Heathens’
+– was constantly troubled by financial difficulties.
+B
+Salvation came in the form of local brewer, John Henry Davis, who agreed to invest in the
+team on condition of being given some interest in running it. After consideration of the
+alternatives titles of Manchester Central and Manchester Celtic, the club was christened
+Manchester United in April 1902. United’s first manager, though officially titled Secretary,
+was Ernest Mangnall, who was appointed in September 1903, but it was not until the
+season of 1905/1906, that United experienced its first taste of success. His side reached
+the quarterfinals of the F.A, Cup and were runners up in the second division.
+C
+In 1907, United claimed the championship for the first time and won the first ever Charity
+Shield trophy in 1908. In the following year, United claimed the F.A. Cup trophy after
+beating Bristol City. Manchester United moved to its new stadium, Old Trafford, in early
+1910. The move to the stadium, owned by the John Henry Davis brewery (a Manchester
+beer-making company), was proven to be fortunate as on the 17th of February, 1910, two
+days before the team’s first scheduled game, the previous stadium Banks Street was
+destroyed in a fire. The new stadium had a capacity for a crowd of 80,000 spectators and
+despite losing to their first visiting team Liverpool, Manchester United were once again
+league champions at the end of the first full season playing from Old Trafford.
+D
+The following years were to be less of a success. From 1912 to the onset of the First World
+War, no significant victories were achieved. During the war the football league was
+suspended and only regional competitions took place. 1919 saw the return of Manchester
+United to league football with only two of the original members in the team.
+E
+Although Britain has a long and proud history of football adoration, contemporary football
+supporters from the UK have gained a negative reputation for outbursts of violence against
+rival supporters, earning the label ‘football hooligan’. The football hooliganism phenomenon
+has attracted the attention of a number of researchers and psychologists who have offered
+ 1
+theories relating to its causes. It is generally agreed that a combination of factors may
+initiate this type of anti-social behaviour and that it is unrealistic to contend that all such
+behaviour stems from a particular psychological make-up or belongs to a specific age or
+class. Experts do however believe that rampaging hooligan behaviour can instil a sense of
+belonging and ‘community’ in participants who feel that they can strongly identify with their
+group, regardless of the fact that the group’s behaviour is negative.
+F
+Analysts also argue that the motivations for outbursts of violence experienced in an
+international setting are even more complex. Whilst alcohol and xenophobia no doubt play
+a part they say, some psychologists hold that policing tactics, to a large degree, dictate the
+level of disturbance likely to occur. Evidence supports the view that confrontational policing
+is much more likely to escalate than calm any incidences of trouble. The media’s actions
+have also been criticised due to the belief by some that messages given in newspaper
+reporting may also exacerbate the existing problem of football hooliganism.
+G
+Critics say that certain headlines used by tabloid newspapers may glorify acts of violence
+and at least, the prolific news reports which are published in the UK about this issue cause
+perpetrators to receive undue attention and acknowledgement for their actions. Whilst few
+disagree that football hooliganism is a significant social problem, many researchers hold
+that sensationalist media reporting may also be creating undue panic since the problem is
+often presented as much more widespread than is the reality. Extreme cases of
+hooliganism from British fans has reduced significantly over recent years, and while it may
+take some considerable time for the negative reputation they have earned to subside, it is
+also true that a large proportion of supporters have no involvement in violence and simply
+share a love of the game.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-3
+Choose THREE letters A-H.
+Write your answers in boxes 1-3on your answer sheet.
+NB Your answers may be given in any order
+Which THREEof the following statements are true of Newton Heath?
+A         Newton Heath football club was established in 1902.
+B         It was the only Lancashire-based club at the time.
+C         It developed from a club with a similar name.
+D         It ceased being an amateur team in 1885.
+E          It was the most famous British football club of the period.
+F         The club experienced economic hitches.
  
-Questions 7-10
-Complete the Summary paragraph described below.
-In boxes 7-10 on your answer sheet
-Write the correct answer with ONE WORD chosen from the box below
-In his personal correspondence to and in his published memoirs by Sten Nadolny, John
-Franklin was depicted as a man dedicated to the exploration, and the word of “slowness”
-was used to define his 7..................... when Franklin was in his childhood, his
-determination to the 8..................... of the schoolboys was too slow for him to fall into step.
-And Franklin was said to be a boy dreaming finding in a place he could enjoy
-the 9..................... in the Arctic. Later in 20th, His biography of the discovery of slowness
-has been adopted as a 10..................... as for the movement such as sustainable
-development, or management science, motoring policy.
-A   exploration            B   blandness   C   personality           D   policy
-E   pressure                 F   guidebook   G   management
-H   timelessness          I   sports           J   bully                        K   evidence
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
+ 
+ 
+ 
+ G        Its name changed one more time before becoming Manchester United.
+Questions 4-7
+Complete the summary with the list of words  A-K below.
+Write the correct letter  A-K in boxes  4-7 on your answer sheet.
+According to expert opinion, there is little 4..................... that football hooliganism occurs
+as a result of a number of issues and does not necessarily correlate with age,
+psychological profile or 5..................... . External triggers such as newspaper reports
+and antagonistic 6..................... can be attributed to escalation of the problem in certain
+situations. Some psychologists believe that such behaviour and membership of trouble-
+making groups can give certain individuals a sense of 7..................... that may otherwise
+be missing in their lives.
+      
+     
     
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ Aisolation       Bpolicing        Canger         Doccupation
+Ebelief            Fproof            Gclass          Hintelligence
+Iexcitement    Junity              Kdoubt
+Questions 8-12
+ 3
+ 
+ Reading Passage has 7 paragraphs A-G.
+Which paragraph contains the following information?
+Write the correct letter  A-G in boxes 8-12 on your answer sheet
+NB Each paragraph may be used more than once
+8.details about stipulations made to offer financial assistance to the club
+9.reasons for disruption of national competitions
+10.
+by the general public to be larger than it is.information about why the problem of violence at football matches may be perceived
+ 
+ 11.deliberations about the Manchester United name
+12.a reference to a new competition
+8.....................
+9.....................
+10.....................
+11.....................
+12.....................
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.C
+2.D
+3.F
+4.K
+5.G
+6.B7.J
+8.B
+9.D
+10.G
+11.B
+12.C
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,398 +1,212 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skyscraper Farming - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Dugong Sea Cow - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题420/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Skyscraper Farming</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>promotes violence and the current study by Dr. Robinson supports that conclusion. The
-Turnoff did not specifically target violent television, nor did the following allowance period.
-Reducing television in general reduces aggressive behavior. Even television that is not
-“violent” is more violent than real life and may lead viewers to believe that violence is funny,
-inconsequential, and a viable solution to problems. Also, watching television of any content
-robs us of the time to interact with real people. Watching too much TV may inhibit the skills
-and patience we need to get along with others without resorting to aggression. TV, as a
-medium, promotes aggression and violence. The best solution is to turn it off.
- 2</p>
-<p>Questions 1-7
-Complete the summary using words from the box below. Write your answers in boxes 17 on your Answer Sheet
-A study that was published in January 2001 found that when children 1..................... less,
-they behaved less2......................
-Students in a California elementary school participated in the study, which lasted
-3......................
-By the end of the study, the children’s behavior had changed.
-For example, the children’s 4..................... reported that the children were acting less
-violently than before.
-During the study, the children kept a record of the5..................... they watched TV. Then,
-for ten days, they 6......................
-Near the end of the study, the students began to suggest watching 7......................
-parents eighteen days
-teachers classmates
-six months nonviolent programs
-violently time of day
-watched TV number of hours
-scared avoided TV
-less TV</p>
-<p>favorite programs
-Questions 8-11
-Do the following statements agree with the information in Reading Passage 2? in boxes 811 write
-TRUE if the statement is true according to the passage.
-FALSE if the statement contradicts the passage.
-NOT GIVEN if there is no information about this in the passage.
-8.....................    Only one study has found a connection between TV and violent behavior.
-9.....................    There were more murders in Canada after people began watching TV.
-10.....................    The United States has more violence on TV than other countries.
-11.....................    TV was introduced in South Africa in the 1940s.
- 3</p>
-<p>Questions 12-13
-For each question, choose the correct letter A-D and write it in boxes 12 and13 on your
-Answer Sheet
-12    According to the passage,
-A only children are affected by violence on TV.
-B only violent TV programs cause violent behavior.
-C children who watch too much TV get poor grades in school..
-D watching a lot of TV may beep us from learning important social shills.
-13    The authors of this passage believe that
-A some violent TV programs are funny.
-B the best plan is to stop watching TV completely.
-C it’s better to watch TV with other people than on your own.
-D seven hours a week of TV watching is acceptable.
- 4</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Dugong Sea Cow</h1>
+<p>雅思阅读真题 · 第316篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The dugong: sea cow
+ 
+ Dugongs are herbivorous mammals that spend their entire lives in the sea. Their close
+relatives the manatees also venture into or live in freshwater. Together dugongs and
+manatees make up the order Sirenia or sea cows, so-named because dugongs and
+manatees are thought to have given rise to the myth of the mermaids or sirens of the sea.
+A
+The dugong, which is a large marine mammal which, together with the manatees, looks
+rather like a cross between a rotund dolphin and a walrus. Its body, flippers and fluke
+resemble those of a dolphin but it has no dorsal fin. Its head looks somewhat like that of a
+walrus without the long tusks.
+B
+Dugongs, along with other Sirenians whose diet consists mainly of sea-grass; and the
+distribution of dugongs very closely follows that of these marine flowering plants. As
+seagrasses grow rooted in the sediment, they are limited by the availability of light.
+Consequently they are found predominantly in shallow coastal waters, and so too are
+dugongs. But, this is not the whole story. Dugongs do not eat all species of seagrass,
+preferring seagrass of higher nitrogen and lower fibre content.
+C
+Due to their poor eyesight, dugongs often use smell to locate edible plants. They also have
+a strong tactile sense, and feel their surroundings with their long sensitive bristles. They will
+dig up an entire plant and then shake it to remove the sand before eating it. They have
+been known to collect a pile of plants in one area before eating them. The flexible and
+muscular upper lip is used to dig out the plants. When eating they ingest the whole plant,
+including the roots, although when this is impossible they will feed on just the leaves. A
+wide variety of seagrass has been found in dugong stomach contents, and evidence exists
+they will eat algae when seagrass is scarce. Although almost completely herbivorous, they
+will occasionally eat invertebrates such as jellyfish, sea squirts, and shellfish.
+D
+A heavily grazed seagrass bed looks like a lawn mown by a drunk. Dugongs graze
+apparently at random within a seagrass bed, their trails meandering in all directions across
+the bottom. This is rather an inefficient means of removing seagrass that results in
+numerous small tufts remaining. And this is where the dugongs derive some advantage
+from their inefficiency. The species that recover most quickly from this disturbance,
+spreading out vegetatively from the remaining tufts, are those that dugongs like to eat. In
+addition, the new growth found in these areas tends to be exactly what hungry dugongs
+like.
+E
+Dugongs are semi-nomadic, often travelling long distances in search of food, but staying
+ 1
+within a certain range their entire life. Large numbers often move together from one area to
+another. It is thought that these movements are caused by changes in seagrass availability.
+Their memory allows them to return to specific points after long travels. Dugong
+movements mostly occur within a localised area of seagrass beds, and animals in the
+same region show individualistic patterns of movement.
+F
+Recorded numbers of dugongs are generally believed to be lower than actual numbers,
+due to a lack of accurate surveys. Despite this, the dugong population is thought to be
+shrinking, with a worldwide decline of 20 per cent in the last 90 years. They have
+disappeared from the waters of Hong Kong, Mauritius, and Taiwan, as well as parts of
+Cambodia, Japan, the Philippines and Vietnam. Further disappearances are likely. (In the
+late 1960s, herds of up to 500 dugongs were observed off the coast of East Africa and
+nearby islands. However, current populations in this area are extremely small, numbering
+50 and below, and it is thought likely they will become extinct. The eastern side of the Red
+Sea is the home of large populations numbering in the hundreds, and similar populations
+are thought to exist on the western side. In the 1980s, it was estimated there could be as
+many as 4,000 dugongs in the Red Sea. The Persian Gulf has the second-largest dugong
+population in the world, inhabiting most of the southern coast, and the current population is
+believed to be around 7,500. Australia is home to the largest population, stretching from
+Shark Bay in Western Australia to Moreton Bay in Queensland. The population of Shark
+Bay is thought to be stable with over 10,000 dugongs.)
+G
+Experience from various parts of northern Australia suggests that Extreme weather such as
+cyclones and floods can destroy hundreds of square kilometres of seagrass meadows, as
+well as washing dugongs ashore. The recovery of seagrass meadows and the spread of
+seagrass into new areas, or areas where it has been destroyed, can take over a decade.
+For example, about 900 km2 of seagrass was lost in Hervey Bay in 1992, probably
+because of murky water from flooding of local rivers, and run-off turbulence from a cyclone
+three weeks later. Such events can cause extensive damage to seagrass communities
+through severe wave action, shifting sand and reduction in saltiness and light levels. Prior
+to the 1992 floods, the extensive seagrasses in Hervey Bay supported an estimated 1750
+dugongs. Eight months after the floods the affected area was estimated to support only
+about 70 dugongs. Most animals presumably survived by moving to neighbouring areas.
+However, many died attempting to move to greener pastures, with emaciated carcasses
+washing up on beaches up to 900km away.
+H
+If dugongs do not get enough to eat they may calve later and produce fewer young. Food
+shortages can be caused by many factors, such as a loss of habitat, death and decline in
+quality of seagrass, and a disturbance of feeding caused by human activity. Sewage,
+detergents, heavy metal, hypersaline water, herbicides, and other waste products all
+negatively affect seagrass meadows. Human activity such as mining, trawling, dredging,
+land-reclamation, and boat propeller scarring also cause an increase in sedimentation
+which smothers seagrass and prevents light from reaching it. This is the most significant
+negative factor affecting seagrass. One of the dugong’s preferred species of seagrass,
+Halophila ovalis, declines rapidly due to lack of light, dying completely after 30 days.
+ 2
+I
+Despite being legally protected in many countries, the main causes of population decline
+remain anthropogenic and include hunting, habitat degradation, and fishing-related
+fatalities. Entanglement in fishing nets has caused many deaths, although there are no
+precise statistics. Most issues with industrial fishing occur in deeper waters where dugong
+populations are low, with local fishing being the main risk in shallower waters. As dugongs
+cannot stay As dugongs cannot stay underwater for a very long period, they are highly
+prone to deaths due to entanglement. The use of shark nets has historically caused large
+numbers of deaths, and they have been eliminated in most areas and replaced with baited
+hooks. Hunting has historically been a problem too, although in most areas they are no
+longer hunted, with the exception of certain indigenous communities. In areas such as
+northern Australia, hunting remains the greatest impact on the dugong population
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Summary
+Complete the following summary of the paragraphs of Reading Passage, using  NO MORE
+THAN TWO WORDS  from the Reading Passage for each answer.
+Write your answers in boxes  1-4 on your answer sheet.
+ Dugongs are herbivorous mammals that spend their entire lives in the sea. Yet Dugongs
+are picky on their feeding Seagrass, and only chose seagrass with higher  1.....................
+and lower fibre. To compensate for their poor eyesight, they use their  2..................... to feel
+their surroundings.
+It is like Dugongs are “farming” seagrass. They often leave  3..................... randomly in all
+directions across the sea bed. Dugongs prefer eating the newly grew seagrass recovering
+from the tiny  4.....................  left behind by the grazing dugongs.
+ Questions 5-9
+Do the following statements agree with the information given in Reading Passage?
+In boxes 5-9 on your answer sheet, write
+TRUE               if the statement is True
+FALSE              if the statement is false
+NOTGIVEN    If the information is not given in the passage
+5.....................   The dugong will keep eating up the plant completely when they begin to
+feed.
+6.....................   It takes more than ten years for the re-growth of seagrass where it has
+been grazed by Dugongs.
+7.....................   Even in facing food shortages, the strong individuals will not compete with
+the weak small ones for food.
+8.....................   It is thought that the dugong rarely returns to the old habitats when they
+finished the plant.
+9.....................   Coastal industrial fishing poses the greatest danger to dugongs which are
+prone to be killed due to entanglement.
+Questions 10-13
+Answer the questions below.
+ 4
+ 
  
-1. watched tv/television
-2. violently
-3. 6/six months
-4. parents
-5. number of hours
-6. avoided tv/television
-7.
-8. FALSE
-9. TRUE
-10. NOT GIVEN
-11. NOT GIVEN
-12. D
-13. B
-less tv/television
- 5</p>
-<p>Reading Practice
- Let's Go Bats</p>
-<p>Bats have a problem: how to find their way around in the dark.They hunt at night, and
-cannot use light to help them find prey and avoid obstacles. You might say that this is a
-problem of their own making, one that they could avoid simply by changing their habits and
-hunting by day. But the daytime economy is already heavily exploited by other creatures
-such as birds. Given that there is a living to be made at night, and given that alternative
-daytime trades are thoroughly occupied, natural selection has favoured bats that make a
-go of the night-hunting trade. It is probable that the nocturnal trades go way back in the
-ancestry of all mammals. In the time when the dinosaurs dominated the daytime economy,
-our mammalian ancestors probably only managed to survive at all because they found
-ways of scraping a living at night. Only after the mysterious mass extinction of the
-dinosaurs about 65 million years ago were our ancestors able to emerge into the daylight in
-any substantial numbers.</p>
-<p>Bats have an engineering problem: how to find their way and find their prey in the absence
-of light. Bats are not the only creatures to face this difficulty today. Obviously the nightflying insects that they prey on must find their way about somehow. Deep-sea fish and
-whales have little or no light by day or by night. Fish and dolphins that live in extremely
-muddy water cannot see because, although there is light, it is obstructed and scattered by
-the dirt in the water Plenty of other modern animals make their living in conditions where
-seeing is difficult or impossible.</p>
-<p>Given the questions of how to manoeuvre in the dark, what solutions might an engineer
-consider? The first one that might occur to him is to manufacture light, to use a lantern or
-a searchlight. Fireflies and some fish (usually with the help of bacteria) have the power
-to manufacture their own light, but the process seems to consume a large amount of
-energy. Fireflies use their light for attracting mates.This doesn't require a prohibitive
-amount of energy: a male’s tiny pinprick of light can be seen by a female from some
-distance on a dark night, since her eyes are exposed directly to the light source itself.
-However using light to find one's own way around requires vastly more energy, since the
-eyes have to detect the tiny fraction of the light that bounces off each part of the scene.
-The light source must therefore be immensely brighter if it is to be used as a headlight to
-illuminate the path, than if it is to be used as a signal to others. In any event, whether or not
-the reason is the energy expense, it seems to be the case that, with the possible exception
-of some weird deep-sea fish, no animal apart from man uses manufactured light to find its
-way about.</p>
-<p>What else might the engineer think of? Well, blind humans sometimes seem to have an
-uncanny sense of obstacles in their path. It has been given the name 'facial vision’,
-because blind people have reported that it feels a bit like the sense of touch, on the face.
-One report tells of a totally blind boy who could ride his tricycle at good speed round the
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ Choose NO MORE THAN TWO WORDS AND/OR A NUMBER  from the passage for each
+answer.
+10   What is Dugong in resemblance to yet as people can easily tell them apart from the
+manatees by its tail? 10.....................
+11   What is the major reason Dugongs traveled long distances in herds from one place to
+another? 11.....................
+12   What number, has estimated to be, of dugong’s population before the 1992 floods in
+Hervey Bay took place? 12.....................
+13   What is thought to be the lethal danger when dugongs were often trapped in?
+13.....................
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.nitrogen 8.FALSE
+2.
+  
+ sensitive
+bristles
+3.9.NOT GIVEN
+trails
+ 
+  
+  
+ 10.dolphin
+11.Sea grass availability /
+Food shortage / seagrass
+shortage
+12.1750
+13.4.tufts
+Fishing net5.TRUE
+6.FALSE
+7.NOT
+GIVEN
+ 6</div>
+</div>
+</div>
 </body>
 </html>

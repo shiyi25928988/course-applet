@@ -1,406 +1,191 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The History Of Tea - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Water Crisis - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题517/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The History Of Tea</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>QUESTIONS 1-4
-Choose the correct letters A, B, C or D.
-Write the correct letters in boxes 28 – 31 on your answer sheet.
-1. According to the text, which of the following does NOT affect the individual features of
-olive oils from different regions?
-A Olive varieties
-B Access to water
-C The date of the picking
-D Picking techniques28##qa
-2. According to the text, which of the following is NOT part of olive tree management?
-A Feeding
-B Careful watering
-C Replanting
-D Killing parasites
-3. According to the text, what is the main danger of frost?
-A The olives produced will be small in size
-B It kills the olive trees
-C The fruit won’t mature
-D Not enough fruit will be produced
-4. According to the text, which of the following does NOT affect the “extra virgin” olive oil
-certification?
-A Using water in the extraction process
-B Which pressing the oil is taken from
-C The time gap between tree and bottle
-D The temperature of the extraction process
-QUESTIONS 5-7
-Do the following statements agree with the information given in Reading Passage?
-In boxes 5-7 on your answer sheet, write
-TRUE                  if the statement agrees with the information
- 3</p>
-<p>FALSE                if the statement contradicts the information
-NOT GIVEN       if there is no information on this
-5..................... Olive trees don’t need a regular supply of water to survive.
- 
-6.....................  No other cooking oils apart from olive oil contain polyphenols.
-7.....................  Damage to olives before they are pressed can affect the taste of the oil.
-QUESTIONS 8-13
-Complete the flow chart below.
-Write your answers in boxes 8-13 on your answer sheet.
-Use NO MORE THAN THREE WORDS from Passage for each answer.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Water Crisis</h1>
+<p>雅思阅读真题 · 第389篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The water crisis
+Greater efficiency in water use is needed to meet the growing demands of a changing
+world
+A
+Per capita water usage has been on an upward trend for many years. As countries
+industrialise and their citizens become more prosperous, their individual water usage
+increases rapidly. Annual per capita water withdrawals in the USA, for example, are about
+1,700 cubic metres, four times the level in China and fifty times the level in Ethiopia. In the
+21st century, the world's limited supply of renewable fresh water is having to meet
+demands of both larger total population and increased per capita consumption. The only
+practicable ways to resolve this problem in the longer term are economic pricing in
+conjunction with conservation measures.
+B
+Agriculture consumes about 70% of the world's fresh water, so improvements in irrigation
+can make the greatest impact. At present, average efficiency in the use of irrigated water in
+agriculture may be as low as 50%. Simple changes could improve the rate substantially,
+though it is unrealistic to expect very high levels of water-use efficiency in many developing
+countries, faced as they are with a chronic lack of capital and a largely untrained rural
+workforce. After agriculture, industry is the second biggest user of water and, in terms of
+value added per litre used, is sixty times more productive than agriculture. However, some
+industrial processes use vast amounts of water. For example, production of 1 kg of
+aluminium might require 1,500 litres of water. Paper production too is often very water-
+intensive. Though new processes have greatly reduced consumption, there is still plenty of
+room for big savings in industrial uses of water.
+C
+In rich countries, water consumption has gradually been slowed down by price increases
+and the use of modern technology and recycling. In the USA, industrial production has
+risen fourfold since 1950, while water consumption has fallen by more than a third. Japan
+and Germany have similarly improved their use of water in manufacturing processes.
+Japanese industry, for example, now recycles more than 75% of process water. However,
+industrial water consumption is continuing to increase sharply in developing countries. With
+domestic and agricultural demands also increasing, the capacity of water supply systems is
+under growing strain.
+D
+Many experts believe that the best way to counter this trend is to impose water charges
+based on the real cost of supplies. This would provide a powerful incentive for consumers
+to introduce water-saving processes and recycling. Few governments charge realistic
+prices for water, especially to farmers. Even in rich California, farmers get water for less
+than a tenth of the cost of supply. In many developing countries there is virtually no charge
+for irrigation water, while energy prices are heavily subsidised too (which means that
+farmers can afford to run water pumps day and night). Water, which was once regarded as
+a free gift from heaven, is becoming a commodity which must be bought and sold on the
+open market just like oil. In the oil industry, the price increases which hit the market in the
+1970s, coupled with concerns that supplies were running low, led to new energy
+ 1
+conservation measures all over the world. It was realised that investing in new sources was
+a far more costly option than improving efficiency of use. A similar emphasis on
+conservation will be the best and cheapest option for bridging the gap between water
+supply and demand.
+E
+One way to cut back on water consumption is simply to prevent leaks. It is estimated that in
+some of the biggest cities of the Third World, more than half of the water entering the
+system is lost through leaks in pipes, dripping taps and broken installations. Even in the
+UK, losses were estimated at 25% in the early 1990s because of the failure to maintain the
+antiquated water supply infrastructure. In addition, huge quantities of water are consumed
+because used water from sewage pipes, storm drains and factories is merely flushed away
+and discharged into rivers or the sea. The modern approach, however, is to see used water
+as a resource which can be put to good use - either in irrigation or, after careful treatment,
+as recycled domestic water. Israel, for instance, has spent heavily on used water treatment.
+Soon, treated, recycled water will account for most farm irrigation there. There are other
+examples in cities such as St Petersburg, Florida, where all municipal water is recycled
+back into domestic systems.
+F
+Another way of conserving water resources involves better management of the
+environment generally. Interference with the ecosystem can have a severe effect on both
+local rainfall patterns and water run-off. Forest clearings associated with India's Kabini dam
+project reduced local rainfall by 25%, a phenomenon observed in various other parts of the
+world where large-scale deforestation has taken place. Grass and other vegetation acts as
+a sponge which absorbs rainfall both in the plants and in the ground. Removal of the
+vegetation means that rainfall runs off the top of the land, accelerating erosion instead of
+being gradually fed into the soil to renew ground water.
+G
+Global warming is bound to affect rainfall patterns, though there is considerable
+disagreement about its precise effects. But it is likely that, as sea levels rise, countries in
+low-lying coastal areas will be hit by seawater penetration of ground water. Other countries
+will experience changes in rainfall which could have a major impact on agricultural yield -
+either for better or for worse. In broad terms, it is thought that rainfall zones will shift
+northwards, adding to the water deficit in Africa, the Middle East and the Mediterranean - a
+grim prospect indeed.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Reading Passage has seven paragraphs, A-G.
+  Choose the correct heading for each paragraphs from the list of headings below..
+Write the correct number i-x, in boxes 1-7 on your answer sheet.
+ List of Headings
+i     American water withdrawal
+ii    Economic pricing
+iii   What the future holds
+iv   Successful measures taken by some
+v    The role of research
+vi   The thirsty sectors
+vii  Ways of reducing waste
+viii  Interdependence of natural resources
+ix   The demands of development
+x    The consequences for agriculture
+1..................... Paragraph A
+2..................... Paragraph B
+3..................... Paragraph C
+4..................... Paragraph D
+5..................... Paragraph E
+6..................... Paragraph F
+7..................... Paragraph G
+Questions 8-13
+  Complete the summary below.
+ ChooseNO MORE THAN TWO WORDS from the text for each answer.
  
-                                 The Olive Oil Production Process
  
--Stage 1: Olive trees should be planted in8..................... earth with good drainage in a
-year round warm climate.</p>
-<p>-Stage 2: Trees must be carefully irrigated and fertilized and9..................... must be</p>
-<p>controlled
--if you want to get 10..................... that will make you profit.
--Stage 3: Olives are crushed to form a11.....................
--Stage 4: The paste is put on round mats inside a12...................... Water is blended in
-with the paste as it’s pressed and a water/oil mixture escapes.
--Stage 5: Water is removed by a13..................... process. The Oil is then bottled and
-distributed.
- 4</p>
-<p>Solution:
+ Write your answers in boxes 8-13 on your answer sheet.
+Individual water usage is rising dramatically as people living in industrialised countries
+become increasingly 8..................... . As well as increased consumption per capita, the
+growing demand for fresh water is due to a bigger global 9..................... than in the past.
+The only way to control this increase in demand is to charge high prices for water while
+also promoting conservation measures. Improvements in irrigation systems and
+industrial processes could dramatically increase the efficiency of water use. There are
+examples of industries in some rich countries that have reduced their consumption rates
+through price increases, the application of 10..................... and recycling. But in
+agricultural and domestic sectors, the price of water is still subsidised so it is not
+regarded as a commodity that people need to pay a realistic price for.
+Other ways of protecting supplies are to reduce water loss resulting from
+ 3
  
-1. D
-2. D
-3. A
-4. D
-5. TRUE
-6. TRUE
  
-8. clay loam soil
-9. pests
-10. good economic
-yield
-11. paste
-12. hydraulic press
-13. centrifuge
-7. NOT GIVEN
- 5</p>
-<p>Reading Practice
- Optimism and Health
-Mindset is all. How you start the year will set the template for the rest, and two
-scientifically backed character traits hold the key: optimism and resilience (if the
-prospect leaves you feeling pessimistically spineless, the good news is that you can
-significantly boost both of these qualities).
-Faced with 12 months of plummeting economics and rising human distress, staunchly
-maintaining a rosy view might seem deludedly Pollyannaish. But here we encounter the
-optimism paradox. As Brice Pitt, an emeritus professor of the psychiatry of old age at
-Imperial College, London, told me: “Optimists are unrealistic. Depressive people see things
-as they really are, but that is a disadvantage from an evolutionary point of view. Optimism
-is a piece of evolutionary equipment that carried us through millennia of setbacks.”
-Optimists have plenty to be happy about. In other words, if you can convince yourself that
-things will get better, the odds of it happening will improve - because you keep on playing
-the game. In this light, optimism “is a habitual way of explaining your setbacks to yourself”,
-reports Martin Seligman, the psychology professor and author of Learned Optimism. The
-research shows that when times get tough, optimists do better than pessimists - they
-succeed better at work, respond better to stress, suffer fewer depressive episodes, and
-achieve more personal goals.
-Studies also show that belief can help with the financial pinch. Chad Wallens, a social
-forecaster at the Henley Centre who surveyed middle-class Britons’ beliefs about income,
-has found that “the people who feel wealthiest, and those who feel poorest, actually have
-almost the same amount of money at their disposal. Their attitudes and behaviour patterns,
-however, are different from one another.”
-Optimists have something else to be cheerful about - in general, they are more robust. For
-example, a study of 660 volunteers by the Yale University psychologist Dr. Becca Levy
-found that thinking positively adds an average of seven years to your life. Other American
-research claims to have identified a physical mechanism behind this. A Harvard Medical
-School study of 670 men found that the optimists have significantly better lung function.
-The lead author, Dr. Rosalind Wright, believes that attitude somehow strengthens the
-immune system. “Preliminary studies on heart patients suggest that, by changing a
-person’s outlook, you can improve their mortality risk,” she says.
-Few studies have tried to ascertain the proportion of optimists in the world. But a 1995
-nationwide survey conducted by the American magazine Adweek found that about half the
-population counted themselves as optimists, with women slightly more apt than men (53
-per cent versus 48 per cent) to see the sunny side.
-Of course, there is no guarantee that optimism will insulate you from the crunch’s worst
-effects, but the best strategy is still to keep smiling and thank your lucky stars. Because (as
-every good sports coach knows) adversity is character-forming - so long as you practise
-the skills of resilience. Research among tycoons and business leaders shows that the path
-to success is often littered with failure: a record of sackings, bankruptcies and blistering
-castigation. But instead of curling into a foetal ball beneath the coffee table, they resiliently
-pick themselves up, learn from their pratfalls and march boldly towards the next
-opportunity.
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>beverage</strong>
-            <p>n. 饮料</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consumption</strong>
-            <p>n. 消费，消耗</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>controversy</strong>
-            <p>n. 争论，争议</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>importation</strong>
-            <p>n. 进口，输入</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 11..................... in the supply systems and to find ways of utilising used water.
+Longer term measures, such as improved environmental 12..................... would protect
+the ecosystem and ensure the replenishment of ground water for future generations.
+Without such measures, future supplies are uncertain, especially when global warming
+is expected to interfere with rainfall patterns and to worsen the 13..................... already
+suffered by many countries today.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.ix
+2.vi
+3.iv
+4.ii
+5.vii
+6.viii
+7.8.prosperous
+9.population
+10.technology
+11.leaks
+12.management
+13.water deficit
+iii
+ 5</div>
+</div>
+</div>
 </body>
 </html>

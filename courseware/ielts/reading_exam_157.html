@@ -1,362 +1,192 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geothermal Power For Britain - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Insect Decision Making - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题214/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Geothermal Power For Britain</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>were made up of oils and aromatic scents. Sometimes the oil in these creams was
-extracted from olives, almonds, gourds, sesame, or from trees and plants; but, for those of
-limited means, scented animal and fish fats were commonly used.</p>
-<p>Women in the ancient past commonly put colors around their eyes. Besides beautification,
-its purpose was also medicinal as covering the sensitive skin of the lids with colored
-ointments that prevented dryness and eye diseases: the eye-paint repelled the little flies
-that transmitted eye inflammations. Egyptian women colored the upper eyelid black and the
-lower one green and painted the space between the upper lid and the eyebrow gray and
-blue. The women of Mesopotamia favored yellows and reds. The use of kohl for painting
-the eyes is mentioned three times in the Bible, always with disapproval by the sages (2
-Kings, 9:30; Jeremiah 4:30; Ezekiel 23:40). In contrast, Job named one of his daughters
-“Keren Happukh”- “horn of eye paint” (Job 42:14)</p>
-<p>Great importance was attached to the care for hair in ancient times. Long hair was always
-considered a symbol of beauty, and kings, nobles and dignitaries grew their hair long and
-kept it well-groomed and cared for. Women devoted much time to the style of the hair;
-while no cutting, they would apply much care to it by arranging it skillfully in plaits and
-“building it up” sometimes with the help of wigs. Egyptian women generally wore their hair
-flowing down to their shoulders or even longer. In Mesopotamia, women cherished long
-hair as a part of their beauty, and hair flowing down their backs in a thick plait and tied with
-a ribbon is seen in art. Assyrian women wore their hair shorter, braiding and binding it in a
-bun at the back. In Ancient Israel, brides would wear their hair long on the wedding day as
-a sign of their virginity. Ordinary people and slaves, however, usually wore their hair short,
-mainly for hygienic reasons, since they could not afford to invest in the kind of treatment
-that long hair required.</p>
-<p>From the Bible and Egyptian and Assyrian sources, as well as the words of classical
-authors, it appears that the centers of the trade-in aromatic resins and incense were
-located in the kingdoms of southern Arabia, and even as far as India, where some of these
-precious aromatic plants were grown. “Dealers from Sheba and Rammah dealt with you,
-offering the choicest spices…” (Ezekiel 27:22). The Nabateans functioned as the important
-middlemen in this trade; Palestine also served as a very important component, as the trade
-routes crisscrossed the country. It is known that the Egyptian Queen Hatsheput (15th
-century BC) sent a royal expedition to the Land of Punt (Somalia) in order to bring back
-myrrh seedlings to plant in her temple. In Assyrian records of tribute and spoils of war,
-perfumes and resins are mentioned; the text from the time of Tukulti-Ninurta II (890-884
-BC) refers to balls of myrrh as a part of the tribute brought to the Assyrian king by the
-Aramaean kings. The trade-in spices and perfumes are also mentioned in the Bible as
-written in Genesis (37:25-26), “Camels carrying gum tragacanth and balm and myrrh”.
- 2</p>
-<p>Questions 15-21
-Reading Passage  has 7 paragraphs A-G
-Which paragraph contains the following information?
-Write your answers in boxes 1-7 on your answer sheet. 
-1.....................   recipes to conceal facial defects caused by aging
-2.....................   perfumes were presented to conquerors in war
-3.....................   long hair of girls had special meanings in marriage
-4.....................   evidence exists in abundance showing cosmetics use in ancient times
-5.....................   protecting eyes from fly-transmitted diseases
-6.....................   from witchcraft to beautification
-7.....................   more expensive than gold
- 
-Question 8-13
-Do the following statements agree with the information given in Reading Passage?
-In boxes 8-13 on your answer sheet, write
-TRUE                if the statement is true
-FALSE               if the statement is false
-NOT GIVEN     if the information is not given in the passage 
-8.....................   The written record for cosmetics and perfumes dates back to the third
-millennium BC.
-9.....................   Since perfumes and spices were luxury products, their use was exclusive
-to the noble and the wealthy.
-10.....................   In the ancient Far East, fish fats were used as a cream by a woman from
-poor households.
-11.....................   The teachings in the Bible were repeatedly against the use of kohl for
-painting the eyes.
-12.....................   Long hair as a symbol of beauty was worn solely by women of ancient
-cultures
-13.....................   The Egyptian Queen Hatsheput sent a royal expedition to Punt to
-establish a trade route for myrrh
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-    <div class="question-block">
-        <p style="margin:0;line-height:1.8;color:#44403c;">Question 8-13</p>
-    </div>
-    
-
-    <div class="question-block">
-        <p style="margin:0;line-height:1.8;color:#44403c;">Do the following statements agree with the information given in Reading Passage?<br>In boxes 8-13 on your answer sheet, write<br>TRUE                if the statement is true<br>FALSE               if the statement is false<br>NOT GIVEN     if the information is not given in the passage<br>8.....................   The written record for cosmetics and perfumes dates back to the third<br>millennium BC.<br>9.....................   Since perfumes and spices were luxury products, their use was exclusive<br>to the noble and the wealthy.<br>10.....................   In the ancient Far East, fish fats were used as a cream by a woman from<br>poor households.<br>11.....................   The teachings in the Bible were repeatedly against the use of kohl for<br>painting the eyes.<br>12.....................   Long hair as a symbol of beauty was worn solely by women of ancient<br>cultures<br>13.....................   The Egyptian Queen Hatsheput sent a royal expedition to Punt to<br>establish a trade route for myrrh<br>3</p>
-    </div>
-    
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Insect Decision Making</h1>
+<p>雅思阅读真题 · 第157篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Insect decision-making
+It has long been held that decision made collectively by large groups of people are more
+likely to turn out to be accurate than decisions made by individuals. The idea goes back to
+the 'jury theorem’ of Nicolas de Condorcet, an 18th-century French philosopher who was
+one of the first to apply mathematics to the social sciences. Condorcet’s theory describes
+collective decisions, outlining how democratic decisions tend to outperform dictatorial ones.
+If, for example, each member of a jury has only partial information ,the majority decision is
+more likely to be correct than a decision arrived at by a single juror. Moreover, the
+probability of a correct decision increases with the size of the jury.
+Now it is becoming clear that group decisions are also extremely valuable for the success
+of social animals, such as ants ,bees .birds and dolphins .Bees make collective decisions
+,and they do it rather well, according to Christian List of the London School of Economics
+,who has studied group decision-making in humans and animals. Researchers led by Dr
+List looked at colonies once the original colony reaches a certain size. The queen goes off
+with about two-thirds of the worker bees to live in a new home or nest, leaving a daughter
+queen in the old nest with the remaining workers. Among the bees that depart are some
+that have searched for and found some new nest sites, and reported back using a
+characteristic body movement known as a 'waggle dance' to indicate to the other bees the
+suitable places they have located. The longer the dance, the better the site. After a while,
+other bees start to visit the sites signaled by their companions to see for themselves and,
+on their return, also perform more waggle dances. The process eventually leads to a
+consensus on the best site and the breakaway swarm migrates. The decision is remarkably
+reliable ,with the bees choosing the best site even when there are only small difference
+between alternative sites.
+But exactly how do bees reach such a robust consensus? To find out ,Dr List and his
+colleagues used a computer generated model of the decision-making process. By
+experimenting with it they found that, when bees in the model were very good at finding
+nesting sites but did not share their information, this dramatically slowed down the
+migration .leaving the swarm homelss and vulnerable .Conversely .bees in the model
+blindly following the waggle dances of others without first checking. The researchers
+concluded that the ability of bees to identify successfully and quickly the best site depends
+on both the bees ‘interdependence in communicating the whereabouts of the bees site, and
+their independence in confirming this information for themselves.
+Another situation in which collective decisions are taken occurs when animals are either
+isolated from crucial sources of information or dominated by other members of the group.
+José Halloy of the Free University of Brussels in Belgium used robotic cockroaches to
+subvert the behaviour of living cockroaches and control their decision-making process. In
+his experiment, the artificial bugs were introduced to the live ones and soon became
+sufficiently socially integrated that they were perceived by the real cockroaches as equals.
+By manipulating the robots, which were in the minority, Halloy was able to persuade the
+living cockroaches to choose an inappropriate shelter-even one which they had rejected
+before being infiltrated by the robots.
+The way insects put into effect collective decisions can be complex and as important as the
+decisions themselves .At the University of Bristol, in the UK, Nigel Franks and his
+ 1
+colleagues studied how a species of ant establishes a new nest. Franks and his associates
+reported how the insects reduce the problems associated with making a necessarily swift
+choice. If the ants’ existing nest become suddenly threatened, the insects choose certain
+ants to act as scouts to find a new nest.
+ 
+ How quickly they accomplish the transfer to a new home depends not only on how soon
+the best available site is found, but also on how quickly the migration there can be
+achieved.
+Once the suitable new nest is identified , the chosen ants begin to lead others , which have
+made it to the new site or which may simply be in the vicinity, back to the original
+threatened nest. In this way, those ants which are familiar with the route can help transport
+,for example ,the queen and young ants to the new site, and simultaneously show the way
+to those ants which have been left behind to guard the old nest. In this way moving
+processes are accomplished faster and more efficiently. Thus the dynamics of collective
+decision-making are closely related to the efficient implementation of those decisions .How
+this might apply to choices that humans make is , as yet,unclear. But it does suggest, even
+for humans ,the importance of recruiting dynamic leaders to a cause,because the most
+important thing about collective decision-making ,as shown by these insect experiments, is
+toget others to follow.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Reading Passage has six paragraphs, A-F
+Choose the correct heading for each paragraph from the list of headings below.
+Write the correct number,  i-vii, in boxes -16 on your answer sheet.
+List of Headings
+                                      i
+ii
+iii
+iv
+ The effect of man-made imitations on insects
+The need to instruct additional insect guides
+Signals used by certain insects to indicate a discovery
+How urgency can affect the process of finding a new home
+                                      
+                                    v                                    The use of trained insects in testing scientific theories
+ 
+ 
+ 
+    vi
+vii
+1..................... Paragraph A
+2..................... Paragraph B
+3..................... Paragraph C
+4..................... Paragraph D
+5..................... Paragraph E
+6The use of virtual scenarios in the study of insect behaviour
+How the number of decision-makers affects the decision
+..................... Paragraph F
+                      Questions 7-10
+Look at the following findings (Questions 7-10) and the list of academics below.
+Match each finding with the correct academic, A-D
+Write the correct letter, A-D, in boxes 7-10 on your answer sheet.
+NByoumay use any letter more than once.
+                     Certainmembers can influence the rest of the group to alter a
+ 
+                        Individual verification of a proposed choice is important for
+                      7.....................
+previous decision.
+8.....................
+successful decision outcome.
+9.....................
+decision will be.Themore individuals taking part in adecision, the better the
+10..................... Thedecision-making process of certain insects produces
+ 3
+  
+ excellent results even when fine distinctions are required.
+  
+    
+ List of Academics
+ANicolas de Condorcet
+BChristian List and colleagues
+CJosé Halloy
+DNigel Franks and colleagues
+Questions 11-13
+Complete the summary below.
+ChooseONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 11-13 on your answer sheet.
+A study of insect decision-making
+A Bristol University study looked at how insects make decisions when their home has been
+11...................... The ants in the experiment relied on the use of individuals called
+12..................... new nest and efficiently direct the others to go there. The study concluded
+that the effective implementation of the ants' decision meant that the insects could change
+homes quickly. The study emphasized the necessity, for people well as insects,of having
+active13..................... in  order to execute decisions successfully.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.vii
+2.iii
+3.vi
+4.i
+5.iv
+6.ii
+7.8.B
+9.A
+10.B
+11.threatened
+12.scouts
+13.leaders
+C
+ 5</div>
+</div>
+</div>
 </body>
 </html>

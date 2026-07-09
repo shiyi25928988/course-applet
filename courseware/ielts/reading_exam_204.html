@@ -1,367 +1,195 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knowledge In Medicine - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Mental Gymnastics - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题277/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Knowledge In Medicine</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>number one was that if a trial were managed correctly, a medication would perform as well
-or badly in a Phoenix hospital as in a Bangalore dinic. Potter discovered, however, that
-geographic location alone could determine the outcome. By the late 1990s, for example,
-the anti-anxiety drug Diazepam was still beating placebo in France and Belgium But when
-the drug was tested
-in the U.S. it was likely to fail. Conversely, a similar drug. Prozac, performed better in
-America than it did in western Europe and South Africa. It was an unsettling prospect FDA
-approval could hinge on where the company chose to conduct a trial.
-Mistaken assumption number two was that the standard tests used to gauge volunteers'
-improvement in trials yielded consistent results. Potter and his colleagues discovered that
-ratings by trial observers varied significantly from one testing site to another. It was like
-finding out that the judges in a tight race each had a different idea about the placement of
-the finish line.
-After some coercion by Potter and others, the National Institute of Health (NIH) focused on
-the issue in 2000, hosting a three-day conference in Washington, and this conference
-launched a new wave of placebo research in academic laboratories in the U.S. and Italy
-that would make significant progress toward solving the mystery of what was happening in
-clinical trials.
-In one study last year. Harvard Medical School researcher Ted Kaptchuk devised a clever
-strategy for testing his volunteers’ response to varying levels of therapeutic ritual The study
-focused on a common but painful medical condition that costs more than $40 billion a year
-worldwide to treat. First, the volunteers were placed randomly in one of three groups. One
-group was simply put on a waiting list; researchers know that some patients get better just
-because they sign up for a trial. Another group received placebo treatment from a clinician
-who declined to engage in small talk. Volunteers in the third group got the same fake
-treatment from a clinician who asked them questions about symptoms, outlined the causes
-of the illness, and displayed optimism about their condition.
-Not surprisingly, the health of those in the third group improved most. In fact, just by
-participating in the trial, volunteers in this high-interaction group got as much relief as did
-people taking the two leading prescription drugs for the condition. And the benefits of their
-“bogus” treatment persisted for weeks afterward, contrary to the belief—widespread in the
-pharmaceutical industry- that the placebo response is short-lived.
-Studies like this open the door to hybrid treatment strategies that exploit the placebo effect
-to make real drugs safer and more effective As Potter says. “To really do the best foi your
-patients, you want the best placebo response plus the best drug response'' adapted from
-Wired Magazine
-* The Food and Drugs Administration (an agency in the United States responsible for
-protecting public health by assunng the safety of human drugs)
- 2</p>
-<p>Questions 1-5
-Do the following statements agree with the claims of the writer?
-Write
- 
-YES                   if the statement agrees with the claims of the writer
-NO                    if the statement contradicts the claims of the writer
- 
-NOT GIVEN       if it is impossible to say what the writer thinks about this
-  
-1.....................    Merck’s experience with MK-869 was unique.
-2.....................    These days, a small number of unsuccessful test results can ruin a wellestablished drugs company.
-3.....................    Some medical conditions are more easily treated by a placebo than
-others.
-4.....................    It was to be expected that the third group in Kaptchuk’s trial would do
-better than the other two groups.
-5.....................    Kaptchuk’s research highlights the fact that combined drug and placebo
-treatments should be avoided.</p>
-<p>Questions 6-10
-Complete the summary using the list of words A-l below.</p>
-<p>iMerck and MK-869
-As a result of concerns about increasing 6..................... in the drugs industry,
-the pharmaceutical company Merck decided to increase its7..................... in the antidepressant
-market. The development of the drug MK-869 was seen as the way forward.
-Initially, MK-869 had some 8....................., but later trials revealed a different picture.
-Although key 9..................... could be treated with the drug, a sugar pill was proving
-equally effective. In the end, the 10..................... indicated that it was pointless
-continuing with the development of the drug.
- 
-A activity
-B prices
-C success  
-D patients
-E tests
-F diseases
- 
-G symptoms
-H competition
-I criticism
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Mental Gymnastics</h1>
+<p>雅思阅读真题 · 第204篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Mental Gymnastics
+A. THE working day has just started at the head office of Barclays Bank in London.
+Seventeen staff are helping themselves to a buffet breakfast as young psychologist
+Sebastian Bailey enters the room to begin the morning’s framing session. But this is no
+ordinary training session. He’s not here to sharpen their finance or management skills. He’s
+here to exercise their brains.
+ B. Today’s workout, organised by a company called the Mind Gym in London, is entitled
+“having presence”. What follows is an intense 90-minute session in which this rather
+abstract concept is gradually broken down into a concrete set of feelings, mental tricks and
+behaviours. At one point the bankers are instructed to shut then eyes and visualise
+themselves filling the room and then the building. They finish up by walking around the
+room acting out various levels of presence, from low-key to over the top.
+C. It’s easy to poke fun. Yet similar mental workouts are happening in corporate seminar
+rooms around the globe. The Mind Gym alone offers some 70 different sessions, including
+ones on mental stamina, creativity for logical thinkers and “zoom learning”. Other outfits
+draw more directly on the exercise analogy, offering “neurobics” courses with names like
+“brain sets” and “cerebral fitness”. Then there are books with titles like Pumping Ions, full of
+brainteasers that claim to “flex your mind”, and software packages offering memory and
+spatial- awareness games.
+ D. But whatever the style, the companies’ sales pitch is invariably the same— follow our
+routines to shape and sculpt your brain or mind, just as you might tone and train your body.
+And, of course, they nearly all claim that their mental workouts draw on serious scientific
+research and thinking into how the brain works.
+E. One outfit, Brainergy of Cambridge, Massachusetts (motto: “Because your grey matter
+matters”) puts it like this: “Studies have shown that mental exercise can cause changes in
+brain anatomy and brain chemistry which promote increased mental efficiency and clarity.
+The neuroscience is cutting-edge.” And on its website, Mind Gym trades on a quote from
+Susan Greenfield, one of Britain’s best known neuroscientists: “It’s a bit like going to the
+gym, if you exercise your brain it will grow.”
+ F. Indeed, die Mind Gym originally planned to hold its sessions in a local health club, until
+its founders realised where the real money was to be made. Modem companies need
+flexible, bright thinkers and will seize on anything that claims to create them, especially if it
+looks like a quick fix backed by science. But are neurobic workouts really backed by
+science? And do we need them?
+G. Nor is there anything remotely high-tech about what Lawrence Katz, co- author of Keep
+Your Brain Alive, recommends. Katz, a neurobiologist at Duke University Medical School in
+North Carolina, argues that just as many of US fail to get enough physical exercise, so we
+also lack sufficient mental stimulation to keep our brain in trim. Sine we are busy with jobs,
+family and housework. But most of this activity is repetitive routine. And any leisure time is
+ 1
+spent slumped in front of the TV.
+ H. So, read a book upside down. Write or brush your teeth with your wrong hand. Feel your
+way around the room with your eyes shut. Sniff vanilla essence while listening intently to
+orchestral music. Anything, says Katz, to break your normal mental routine. It will help
+invigorate your brain, encouraging its cells to make new connections and pump out
+neuroteophins, substances that feed and sustain brain circuits.
+I. Well, up to a point it will. “What I’m really talking about is brain maintenance rather than
+bulking up your IQ,” Katz adds. Neurobics, in other words, is about letting your brain fulfill
+its potential. It cannot create super-brains. Can it achieve even that much, though?
+Certainly the brain is an organ that can adapt to the demands placed on it. Tests on animal
+brain tissue, for example, have repeatedly shown that electrically stimulating the synapses
+that connect nerve cells thought to be crucial to learning and reasoning, makes them
+stronger and more responsive. Brain scans suggest we use a lot more of our grey matter
+when carrying out new or strange tasks than when we’re doing well-rehearsed ones. Rats
+raised in bright cages with toys sprout more neural connections than rats raised in bare
+cages— suggesting perhaps that novelty and variety could be crucial to a developing brain.
+Katz, And neurologists have proved time and again that people who lose brain cells
+suddenly during a stroke often sprout new connections to compensate for the
+loss—especially if they undergo extensive therapy to overcome any paralysis.
+J. Guy Claxton, an educational psychologist at the University of Bristol, dismisses most of
+the neurological approaches as “neuro-babble”. Nevertheless, there are specific mental
+skills we can learn, he contends. Desirable attributes such as creativity, mental flexibility,
+and even motivation, are not the fixed faculties that most of US think. They are thought
+habits that can be learned. The problem, says Claxton, is that most of US never get proper
+training in these skills. We develop our own private set of mental strategies for tackling
+tasks and never learn anything explicitly. Worse still, because any learned skill— even
+driving a car or brushing our teeth-quickly sinks out of consciousness, we can no longer
+see the very thought habits we’re relying upon. Our mental tools become invisible to US.
+ K. Claxton is the academic adviser to the Mind Gym. So not surprisingly, the company
+espouses his solution-that we must return our thought patterns to a conscious level,
+becoming aware of the details of how we usually think. Only then can we start to practise
+better thought patterns, until eventually these become our new habits. Switching
+metaphors, picture not gym classes, but tennis or football coaching.
+L. In practice, the training can seem quite mundane. For example, in one of the eight
+different creativity workouts offered by the Mind Gym—entitled “creativity for logical
+thinkers” one of the mental strategies taught is to make a sensible suggestion, then
+immediately pose its opposite. So, asked to spend five minutes inventing a new pizza, a
+group soon comes up with no topping, sweet topping, cold topping, price based on time of
+day, flat-rate prices and so on.
+M. Bailey agrees that the trick is simple. But it is surprising how few such tricks people
+have to call upon when they are suddenly asked to be creative: “They tend to just label
+themselves as uncreative, not realising that there are techniques that every creative person
+employs.” Bailey says the aim is to introduce people to half a dozen or so such strategies in
+ 2
+a session so that what at first seems like a dauntingly abstract mental task becomes a set
+of concrete, learnable behaviours. He admits this is not a short cut to genius.
+Neurologically, some people do start with quicker circuits or greater handling capacity.
+However, with the right kind of training he thinks we can dramatically increase how
+efficiently we use it.
+N. It is hard to prove that the training itself is effective. How do you measure a change in an
+employee’s creativity levels, or memory skills? But staff certainly report feeling that such
+classes have opened their eyes. So, neurological boosting or psychological training? At the
+moment you can pay your money and take your choice. Claxton for one believes there is
+no reason why schools and universities shouldn’t spend more time teaching basic thinking
+skills, rather than trying to stuff heads with facts and hoping that effective thought habits
+are somehow absorbed by osmosis.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Do the following statements agree with the information given in  Reading Passage 1  In
+boxes 1-5 on your answer sheet, write
+YES if the statement is true
+NO if the statement is false
+NOT GIVEN if the information is not given in the passage
+1..................... Mind Gym coach instructed employees to imagine that they are the
+building
+2..................... Mind Gym uses the similar marketing theory that is used all round
+3..................... Susan Greenfield is the founder of Mind Gym
+4.....................  All business and industries are using Mind Gym’s session globally
+5.....................  According to Mind Gym, extensive scientific background supports
+their mental training sessions
+ Questions 6-13
+Use the information in the passage to match the people (listed  A-D) with opinions or deeds
+below. Write the appropriate letters A-D in boxes  6-13 on your answer sheet.
+A. Guy Claxton
+B. Sebastian Bailey
+C. Susan Greenfield
+D. Lawrence Katz
+NB: You may use any letter more than once 
+6..................... inspiration to keep our brain fit##q We do not have enough
+7..................... The more you exercise your brain like exercise in the gym, the more
+brain will grow
+8.....................  Exercise can keep your brain health instead of improving someone’s
+IQ
+9.....................  It is valuable for schools to teach students about creative skills
+besides basic known knowledge
+10..................... We can develop new neuron connections when we lose old
+connections via certain treatment
+11..................... People usually mark themselves as not creative before figuring out
+there are approaches for each person
+12.....................  An instructor in Mind Gym who guided the employees to exercise
+ 4
+13.....................  Majority of people don’t have appropriate skills-training for brain
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.NO
+2.YES
+3.NO
+4.NO
+5.NOT GIVEN
+6.D
+7.8.D
+9.A
+10.D
+11.B
+12.B
+13.A
+C
+ 6</div>
+</div>
+</div>
 </body>
 </html>

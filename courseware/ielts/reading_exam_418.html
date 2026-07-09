@@ -1,385 +1,164 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Problem Of Scarce Resources - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Water Filter - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题558/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Problem Of Scarce Resources</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Water Filter</h1>
+<p>雅思阅读真题 · 第418篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Water Filter
+ A. An ingenious invention is set to bring clean water to the third world, and while the
+science may be cutting edge, the materials are extremely down to earth. A handful of clay
+yesterday’s coffee grounds and some cow manure are the ingredients that could bring
+clean, safe drinking water to much of the third world.
+B. The simple new technology, developed by ANU materials scientist Mr. Tony Flynn,
+allows water filters to be made from commonly available materials and fired on the ground
+using cow manure as the source of heat, without the need for a kiln. The filters have been
+tested and shown to remove common pathogens (disease-producing organisms) including
+E-coli. Unlike other water filtering devices, the filters are simple and inexpensive to make.
+“They are very simple to explain and demonstrate and can be made by anyone, anywhere,”
+says Mr. Flynn. “They don’t require any western technology. All you need is terracotta clay,
+a compliant cow and a match.”
+C. The production of the filters is extremely simple. Take a handful of dry, crushed clay, mix
+it with a handful of organic material, such as used tea leaves, coffee grounds or rice  hulls,
+add enough water to make a stiff biscuit-like mixture and form a cylindrical pot that has one
+end closed, then dry it in the sun. According to Mr. Flynn, used coffee grounds have given
+the best results to date. Next, surround the pots with straw; put them in a mound of cow
+manure, light the straw and then top up the burning manure as required. In less than 60
+minutes the filters are finished. The walls of the finished pot should be about as thick as an
+adult’s index. The properties of cow manure are vital as the fuel can reach a temperature of
+700 degrees in half an hour and will be up to 950 degrees after another 20 to 30 minutes.
+The manure makes a good fuel because it is very high in organic material that bums readily
+and quickly; the manure has to be dry and is best used exactly as found in the field, there is
+no need to break it up or process it any further.
+D. “A potter’s din is an expensive item and can could take up to four or five hours to get
+upto 800 degrees. It needs expensive or scarce fuel, such as gas or wood to heat it and
+experience to run it. With no technology, no insulation and nothing other than a pile of cow
+manure and a match, none of these restrictions apply,” Mr. Flynn says.
+E. It is also helpful that, like terracotta clay and organic material, cow dung is freely
+available across the developing world. “A cow is a natural fuel factory. My understanding is
+that cow dung as a fuel would be pretty much the same wherever you would find it.” Just as
+using manure as a fuel for domestic uses is not a new idea, the porosity of clay is
+something that potters have known about for years, and something that as a former
+ceramics lecturer in the ANU School of Art, Mr. Flynn is well aware of. The difference is
+that rather than viewing the porous nature of the material as a problem — after all not many
+people want a pot that won’t hold water — his filters capitalize on this property.
+F. Other commercial ceramic filters do exist, but, even if available, with prices starting at
+US$5 each, they are often outside the budgets of most people in the developing world. The
+filtration process is simple, but effective. The basic principle is that there are passages
+through the filter that are wide enough for water droplets to pass through, but too narrow for
+ 1
+ pathogens. Tests with the deadly E-coli bacterium have seen the filters remove 96.4 to
+99.8 per cent of the pathogen — well within safe levels. Using only one filter it takes two
+hours to filter a litre of water. The use of organic material, which burns away after firing,
+helps produce the structure in which pathogens will become trapped. It overcomes the
+potential problems of finer clays that may not let water through and also means that cracks
+are soon halted. And like clay and cow dung, it is universally available.
+G. The invention was born out of a World Vision project involving the Manatuto community
+in East Timor The charity wanted to help set up a small industry manufacturing water filters,
+but initial research found the local clay to be too fine — a problem solved by the addition of
+organic material. While the AF problems of producing a working ceramic filter in East Timor
+were overcome, the solution was kiln-based and particular to that community’s materials
+and couldn’t be applied elsewhere. Manure firing, with no requirement for a kiln, has made
+this zero technology approach available anywhere it is needed. With all the components
+being widely available, Mr. Flynn says there is no reason the technology couldn’t be
+applied throughout the developing world, and with no plans to patent his idea, there will be
+no legal obstacles to it being adopted in any community that needs it. “Everyone has a right
+to clean water, these filters have the potential to enable anyone in the world to drink water
+safely,” says Mr. Flynn.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Complete the flow chart, using  NO MORE THAN TWO WORDS  from the Reading Passage
+for each answer.
+Write your answers in boxes  1-6 on your answer sheet.
+Guide to Making Water Filters 
+Step one: combination of 1..................... and organic material, with sufficient 2.....................
+to create a thick mixture sun dried.
+Step two: pack 3..................... around the cylinders place them in 4..................... which is
+as burning fuel for firing (maximum temperature: 5.....................) filter being baked in under
+6.....................
+ Questions 7-10
+Do the following statements agree with the information given in  Reading Passage ?
+In boxes 7-10 on your answer sheet, write
+TRUE if the statement is true
+FALSE if the statement is false
+NOT GIVEN if the information is not given in the passage
  
-1. vi
-2. ix
-3. iii
-4. vii
-5. ii
-6. viii
-7.
-8. C D E
-9. YES
-10. NOT GIVEN
-11. YES
-12. YES
-13. NO
-v
- 5</p>
-<p>Reading Practice
- Psychology of new product adoption</p>
-<p>In today’s hypercompetitive marketplace, companies that successfully introduce new
-products are more likely to flourish than those that don’t. businesses spend billions of
-dollars making better “mousetraps” only to find consumers roundly rejecting them. Studies
-show that new products fail at the stunning rate of between 40% and 90%, depending on
-the category, and the odds haven’t changed much in the past 25 years. In the U.S.
-packaged goods industry, for instance, companies introduce 30,000 products every year,
-but 70% to 90% of them don’t stay on store shelves for more than 12 months. Most
-innovative products – those that create new product categories or revolutionize old ones –
-are also unsuccessful. According to one study, 47% of first movers have failed, meaning
-that approximately half the companies that pioneered new product categories later pulled
-out of those businesses.</p>
-<p>After the fact, experts and novices alike tend to dismiss unsuccessful innovations as bad
-ideas that were destined to fail. Why do consumers fail to buy innovative products even
-when they offer distinct improvements over existing ones? Why do companies invariably
-have more faith in new products than is warranted? Few would question the objective
-advantages of many innovations over existing alternatives, but that’s often not enough for
-them to succeed. To understand why new products fail to live up to companies’
-expectations, we must delve into the psychology of behavior change.</p>
-<p>New products often require consumers to change their behavior. As companies know,
-those behavior changes entail costs. Consumers costs, such as the activation fees they
-have to pay when they switch from one cellular service provider to another. They also bear
-learning costs, such as when they shift from manual to automatic automobile
-transmissions. People sustain obsolescence costs, too. For example, when they switch
-from VCRs to DVD players, their videotape collections become useless. All of these are
-economic switching costs that most companies routinely anticipate.</p>
-<p>What businesses don’t take into account, however, are the psychological costs associated
-with behavior change. Many products fail because of a universal, but largely ignored,
-psychological bias: People irrationally overvalue benefits they currently possess relative to
-those they don’t. The bias leads consumers to value the advantages of products they own
-more than the benefits of new ones. It also leads executives to value the benefits of
-innovations they’ve developed over the advantages of incumbent products.</p>
-<p>Companies have long assumed that people will adopt new products that deliver more value
-or utility than existing ones. Thus, businesses need only to develop innovations that are
-objectively superior to incumbent products, and consumers will have sufficient incentive to
-purchase them. In the 1960s, communications scholar Everett Rogers called the concept
- 1</p>
-<p>“relative advantage” and identified it as the most critical driver of new-product adoption.
-This argument assumes that companies make unbiased assessments of innovations and of
-consumers, likelihood of adopting them. Although compelling, the theory has one major
-flaw: It fails to capture the psychological biases that affect decision making.</p>
-<p>In 2002, psychologist Daniel Kahneman won the Nobel Prize in economics for a body of
-work that explores why and when individuals deviate from rational economic behavior. One
-of the cornerstones of that research, developed with psychologist Amos Tversky, is how
-individuals value prospects, or choices, in the marketplace. Kahneman and Tversky
-showed, and others have confirmed, that human beings’ responses to the alternatives
-before they have four distinct characteristics.</p>
-<p>First, people evaluate the attractiveness of an alternative based not on its objective, or
-actual, value but on its subjective, or perceived value. Second, consumers evaluate new
-products or investments relative to a reference point, usually the products they already own
-or consume. Third, people view any improvements relative to this reference point as gains
-and treat all shortcomings as losses. Fourth, and most important, losses have a far greater
-impact on people than similarly sized gains, a phenomenon that Kahneman and Tversky
-called “loss aversion.” For instance, studies show that most people will not accept a bet in
-which there is a 50% chance of winning $100 and a 50% chance of losing $100. The gains
-from the wager must outweigh the losses by a factor of between two and three before most
-people find such a bet attractive. Similarly, a survey of 1,500 customers of Pacific Gas and
-Electric revealed that consumers demand three to four times more compensation to endure
-a power outage – and suffer a loss – than they are willing to pay to avoid the problem, a
-potential gain. As Kahneman and Tversky wrote, “losses loom larger than gains.”</p>
-<p>Loss aversion leads people to value products that they already possess – those that are
-part of their endowment – more than those they don’t have. According to behavioral
-economist Richard Thaler, consumers value what they own, but many have to give up,
-much more than they value what they don’t own but could obtain. Thaler called that bias
-the “endowment effect.”</p>
-<p>In a 1990 paper, Thaler and his colleagues describe a series of experiments they
-conducted to measure the magnitude of the endowment effect. In one such experiment,
-they gave coffee mugs to a group of people, the Sellers, and asked at what price point –
-from 25 cents to $9.25 – the Sellers would be willing to part with those mugs. They asked
-another group – the Choosers – to whom they didn’t give coffee mugs, to indicate whether
-they would choose the mug or the money at each price point. In objective terms, all the
-Sellers and Choosers were in the same situation: They were choosing between a mug and
-a sum of money. In one trial of this experiment, the Sellers priced the mug at $7.12, on
-average, but the Choosers were willing to pay only $3.12. In another trial, the Sellers and
-the Choosers valued the mug at $7.00 and $3.50, respectively. Overall, the Sellers always
-demanded at least twice as much to give up the mugs as the Choosers would pay to obtain
-them.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 7.....................  It takes half an hour for the manure to reach 950 degrees
+8.....................  Clay was initially found to be unsuitable for pot making
+9.....................  Coffee grounds are twice as effective as other materials
+10..................... E-coli is the most difficult bacteria to combat
+Questions 11-13
+Choose the correct letter,  A, B, C or D.
+Write your answers in boxes 11-13 on your answer sheet.
+11. When making the pot, the thickness of the wall 
+A is large enough to let the pathogens to pass.
+B varied according to the temperature of the fuel,
+C should be the same as an adult’s forefinger.
+D is not mentioned by Mr. Flynn.
+12. What is true about the charity, it 
+ 3
+A failed in searching the appropriate materials.
+B successfully manufacture a kiln based ceramic filter to be sold worldwide
+C found that the local clay are good enough.
+D intended to help build a local filter production factory.
+13. Mr. Flynn’s design is purposely not being patented 
+A because he hopes it can be freely used around the world
+B because he doesn’t think the technology is perfect enough,
+C because there are some legal obstacles.
+D because the design has already been applied thoroughly.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.clay
+2.water
+3.straw
+4.cow manure
+5.950 degrees
+6.60 minutes
+7.8.TRUE
+9.NOT GIVEN
+10.NOT GIVEN
+11.C
+12.D
+13.A
+FALSE
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,398 +1,168 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews Of Books - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Burden Of Thirst - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题401/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Reviews Of Books</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-6
-Complete each sentence with the correct ending A-H from the box below.
-Write the correct letter A-H in boxes 1-6 on your answer sheet.
-1..................... Ancient Egyptian and Greek doctors were aware of
-2.....................    Frederick Bayer & Co were able to reproduce
-3.....................    The development of aspirin was partly due to the effects of
-4.....................    The creation of a market for aspirin as a painkiller was achieved through
-5.....................    Aspirin might have become unavailable without
-6.....................    The way in which aspirin actually worked was not investigated by</p>
-<p>A the discovery of new medical applications.
-B the negative effects of publicity.
-C the large pharmaceutical companies.
-D the industrial revolution.
-E the medical uses of a particular tree
-F the limited availability of new drugs.
-G the chemical found in the willow tree.
-H commercial advertising campaigns.
-             
-Questions 7-11
-Do the following statements agree with the views of the writer in Reading Passage 3?
-In boxes 7-11 on your answer sheet write
-               
-YES
-NO
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Burden Of Thirst</h1>
+<p>雅思阅读真题 · 第300篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The burden of thirst
+Millions of women carry water long distances. If they had a tap by their door, whole
+societies would be transformed.
+A
+Aylito Binayo’s feet know the mountain. Even at four in the morning, she can run down the
+rocks to the river by starlight alone and climb the steep mountain back up to her village with
+a container of water on her back. She has made this journey three times a day since she
+was a small child.
+So has every other woman in her village of Foro, in the Konso district of south-western
+Ethiopia in Africa. Binayo left school when she was eight years old, in part because she
+had to help her mother fetch water from the Toiro River. The water is unsafe to drink; every
+year that the drought continues, the river carries less water, and its flow is reduced. But it is
+the only water Foro has ever had.
+B
+In developed parts of the world, people turn on a tap and out pours abundant, clean water.
+Yet nearly 900 million people in the world have no access to clean water. Furthermore, 2.5
+billion people have no safe way to get rid of human waste. Polluted water and lack of
+proper hygiene cause disease and kill 3.3 million people around the world annually, most of
+them children. In southern Ethiopia and in northern Kenya, a lack of rain over the past few
+years has made even dirty water hard to find. But soon, for the first time, things are going
+to change.
+C
+Bringing clean water close to villagers’ homes is the key to the problem. Communities
+where clean water becomes accessible and plentiful are transformed. All the hours
+previously spent hauling water can be used to cultivate more crops, raise more animals or
+even start a business. Families spend less time sick or caring for family members who are
+unwell. Most important, not having to collect water means girls can go to school and get
+jobs. The need to fetch water for the family, or to take care of younger siblings while their
+mother goes, usually prevents them ever having this experience.
+D
+But the challenges of bringing water to remote villages like those in Konso are
+overwhelming. Locating water underground and then reaching it by means of deep wells
+requires geological expertise and expensive, heavy machines. Abandoned wells and water
+projects litter the villages of Konso. In similar villages around the developing world, the
+biggest problem with water schemes is that about half of them break down soon after the
+groups that built them move on. Sometimes technology is used that can’t be repaired
+locally, or spare parts are available only in the capital.
+E
+Today, a UK-based international non-profit organisation called WaterAid is tackling the job
+ 1
+of bringing water to the most remote villages of Konso. Their approach combines
+technologies proven to last - such as building a sand dam to capture and filter rainwater
+that would otherwise drain away. But the real innovation is that WaterAid believes
+technology is only part of the solution. Just as important is involving the local community in
+designing, building and maintaining new water projects. Before beginning any project,
+WaterAid asks the community to create a WASH (water, sanitation, hygiene) committee of
+seven people. The committee works with WaterAid to plan projects and involve the village
+in construction. Then it maintains and runs the project.
+F
+The people of Konso, who grow their crops on terraces they have dug into the sides of
+mountains, are famous for hard work. In the village of Orbesho, residents even constructed
+a road themselves so that drilling machinery could come in. Last summer, their pump,
+installed by the river, was being motorised to push its water to a newly built reservoir on top
+of a nearby mountain. From there, gravity will carry it down in pipes to villages on the other
+side of the mountain. Residents of those villages have each given some money to help
+fund the project. They have made concrete and collected stones for the structures. Now
+they are digging trenches to lay pipes. If all goes well, Aylito Binayo will have a tap with
+safe water just a three-minute walk from her front door.
+adapted from National Geographic magazine
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+The reading passage has six paragraphs, A-F.
+Choose the correct heading for each paragraph from the list of headings below.
+1.....................      Paragraph  A
+2.....................      Paragraph  B
+3.....................     Paragraph  C
+4.....................      Paragraph  D
+5.....................     Paragraph  E
+6.....................      Paragraph  F
+ List of Headings
+iWhy some plans have failed
+iiA rural and urban problem
+iiiA possible success
+ivExplaining a new management style
+vSome relevant statistics
+viA regular trip for some people
+viiTreating people for disease
+viii
+  How water can change people’s lives
+        Questions 7-11
+Complete the sentences below.
+ChooseNO MORE THAN ONE WORD AND/OR A NUMBER from the passage for each
+answer.
+      7
+8The water levels in the Toiro River are falling because of 7.....................
+Globally, the number of people who die each year as a result of using dirty water is
+        8.....................
+         
+       9
+10When families have clean water, they can spend more time growing 9.....................
+11Specialist knowledge and equipment are needed to dig 10.....................
+WaterAid uses a dam made of  11..................... to capture rainwater.
+Questions 12-13
+ 3
+   
+  
+ ChooseTWOletters,A-E.
+WhichTWOof these activities were performed by the villagers of Orbesho?
+A building a transport route
+B digging a reservoir
+C gathering building materials
+Dmaking pipes
+E fitting taps
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
  
-if the statement agrees with the views of the writer
-if the statement contradicts the views of the writer
-NOT GIVEN if it is impossible to say what the writer thinks about this
-     7..................... For nineteenth-century scientists, small-scale research was enough to
-make important discoveries.
-8.....................     The nineteenth-century industrial revolution caused a change in the focus
-of scientific research.
-9.....................     The development of aspirin in the nineteenth century followed a
- 3</p>
-<p>structured pattern of development.
-10.....................     In the 1970s sales of new analgesic drugs overtook sales of asprin.
-11.....................     Commercial companies may have both good and bad effects on
-the availability of pharmaceutical products.</p>
-<p>Questions 12-14
-Complete the summary below using the list of words A-l below.
-Write the correct letter A-l in boxes 12-14 on your answer sheet</p>
-<p>Research into aspirin
-Jeffreys argues that the reason why 12..................... did not find out about new uses of
-aspirin is that aspirin is no longer a 13..................... drug. He therefore suggests that there
-should be 14..................... support for further research into the possible applications of the
-drug. 
- 
-A useful
-B cheap
-C state
-D international
-E major drug companies
-F profitable
-G commercial
-H public sector scientists
-I health officials
- 4</p>
-<p>Solution:
- 
-1. E
-2. G
-3. D
-4. H
-5. A
-6. C
-7. YES
-8. NOT GIVEN
-9. NO
-10. NOT GIVEN
-11. YES
-12. E
-13. F
-14. C
- 5</p>
-<p>Reading Practice
- Knowledge in medicine</p>
-<p>What counts as knowledge? What do we mean when we say that we know something?
-What is the status of different kinds of knowledge? In order to explore these questions, we
-are going to focus on one particular area of knowledge – medicine.</p>
-<p>How do you know when you are ill? This may seem to be an absurd question. You know
-you are ill because you feel ill; your body tells you that you are ill. You may know that you
-feel pain or discomfort but knowing you are ill is a bit more complex. At times, people
-experience the symptoms of illness, but in fact, they are simply tired or over-worked or they
-may just have a hangover. At other times, people may be suffering from a disease and fail
-to be aware of the illness until it has reached a late stage in its development. So how do we
-know we are ill, and what counts as knowledge?</p>
-<p>Think about this example. You feel unwell. You have a bad cough and always seem to be
-tired. Perhaps it could be stress at work, or maybe you should give up smoking. You feel
-worse. You visit the doctor who listens to your chest and heart, takes your temperature and
-blood pressure, and then finally prescribes antibiotics for your cough.</p>
-<p>Things do not improve but you struggle on thinking you should pull yourself together,
-perhaps things will ease off at work soon. A return visit to your doctor shocks you. This time
-the doctor, drawing on years of training and experience, diagnoses pneumonia. This
-means that you will need bed rest and a considerable time off work. The scenario is
-transformed. Although you still have the same symptoms, you no longer think that these
-are caused by pressure at work. You know have proof that you are ill. This is the result of
-the combination of your own subjective experience and the diagnosis of someone who has
-the status of a medical expert. You have a medically authenticated diagnosis and it
-appears that you are seriously ill; you know you are ill and have the evidence upon which
-to base this knowledge.</p>
-<p>This scenario shows many different sources of knowledge. For example, you decide to
-consult the doctor in the first place because you feel unwell – this is personal knowledge
-about your own body. However, the doctor’s expert diagnosis is based on experience and
-training, with sources of knowledge as diverse as other experts, laboratory reports, medical
-textbooks and years of experience.</p>
-<p>One source of knowledge is the experience of our own bodies; the personal knowledge we
-have of changes that might be significant, as well as the subjective experiences are
-mediated by other forms of knowledge such as the words we have available to describe our
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+  1.vi
+2.v
+3.viii
+4.i
+5.iv
+ 8.3.3 million
+9.crops
+10.wells
+11.sand
+12.A OR C IN EITHER
+ORDER
+13.A OR C IN EITHER
+ORDER6.iii
+7.drought
+ 5</div>
+</div>
+</div>
 </body>
 </html>

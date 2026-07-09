@@ -1,382 +1,196 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life In An International Orchestra - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Nature Works For Nature Work Pla - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题293/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Life In An International Orchestra</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Nature Works For Nature Work Pla</h1>
+<p>雅思阅读真题 · 第219篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Nature works for Nature Work PLA
+A
+A dozen years ago, scientists at Cargill got the idea of converting lactic acid made from
+corn into plastic while examining possible new uses for materials produced from corn wet
+milling processes. In the past, several efforts had been made to develop plastics from lactic
+acid, but with limited success. Achieving this technological breakthrough didn’t come easily,
+but in time the efforts did succeed. A fermentation and distillation process using com was
+designed to create a polymer suitable for a broad variety of applications.
+B
+As an agricultural based firm, Cargill had taken this product as far as it could by 1997. The
+company needed a partner with access to plastics markets and polymerization capabilities,
+and began discussions with The Dow Chemical Company. The next step was the formation
+of the joint venture that created Cargill Dow LLC. Cargill Dow’s product is the world’s first
+commercially available plastic made from annually renewable resources such as com:
+-Nature Works™ PLA is a family of packaging polymers (carbon-based molecules)
+made from non-petroleum based resources.
+-Ingeo is a family of polymers for fibers made in a similar manner.
+C
+By applying their unique technology to the processing of natural plant sugars, Cargill Dow
+has created a more environmentally friendly material that reaches the consumer in clothes,
+cups, packaging and other products. While Cargill Dow is a stand-alone business, it
+continues to leverage the agricultural processing, manufacturing and polymer expertise of
+the two parent companies in order to bring the best possible products to market.
+D
+The basic raw materials for PLA are carbon dioxide and water. Growing plants, like com,
+take these building blocks from the atmosphere and the soil. They are combined in the
+plant to make carbohydrates (sucrose and starch) through a process driven by
+photosynthesis. The process for making Nature Works PLA begins when a renewable
+resource such as corn is milled, separating starch from the raw material. Unrefined
+dextrose, in turn, is processed from the starch.
+E
+Cargill Dow turns the unrefined dextrose into lactic acid using a fermentation process
+similar to that used by beer and wine producers. This is the same lactic acid that is used as
+a food additive and is found in muscle tissue in the human body. Through a special
+condensation process, a lactide is formed. This lactide is purified through vacuum
+distillation and becomes a polymer (the base for NatureWorks PLA) that is ready for use
+through a solvent-free melt process. Development of this new technology allows the
+company to “harvest” the carbon that living plants remove from the air through
+photosynthesis. Carbon is stored in plant starches, which can be broken down into natural
+plant sugars. The carbon and other elements in these natural sugars are then used to
+ 1
+make NatureWorks PLA.
+F
+Nature Works PLA fits all disposal systems and is fully compostable in commercial
+composting facilities. With the proper infrastructure, products made from this polymer can
+be recycled back to a monomer and re-used as a polymer. Thus, at the end of its life cycle,
+a product made from Nature Works PLA can be broken down into its simplest parts so that
+no sign of it remains.
+G
+PLA is now actively competing with traditional materials in packaging and fiber applications
+throughout the world; based on the technology’s success and promise, Cargill Dow is
+quickly becoming a premier player in the polymers market. This new polymer now
+competes head-on with petroleum-based materials like polyester. A wide range of products
+that vary in molecular weight and crystallinity can be produced, and the blend of physical
+properties of PLA makes it suited for a broad range of fiber and packaging applications.
+Fiber and non-woven applications include clothing, fiberfill, blankets and wipes. Packaging
+applications include packaging films and food and beverage containers.
+H
+As Nature Works PLA polymers are more oil- and grease-resistant and provide a better
+flavor and aroma barrier than existing petroleum-based polymers, grocery retailers are
+increasingly using this packaging for their fresh foods. As companies begin to explore this
+family of polymers, more potential applications are being identified. For example, PLA
+possess two properties that are particularly useful for drape fabrics and window furnishings.
+Their resistance to ultraviolet light is particularly appealing as this reduces the amount of
+fading in such fabrics, and their refractive index is low, which means fabrics constructed
+from these polymers can be made with deep colors without requiring large amounts of dye.
+In addition, sportswear makers have been drawn to the product as it has an inherent ability
+to take moisture away from the skin and when blended with cotton and wool, the result is
+garments that are lighter and better at absorbing moisture.
+I
+PLA combines inexpensive large-scale fermentation with chemical processing to produce a
+value-added polymer product that improves the environment as well. The source material
+for PLA is a natural sugar found in plants such as com and using such renewable feedstock
+presents several environmental benefits. As an alternative to traditional petroleum-based
+polymers, the production of PLA uses 20%-50% less fossil fuel and releases a lower
+amount of greenhouse gasses than comparable petroleum-based plastic; carbon dioxide in
+the atmosphere is removed when the feedstock is grown and is returned to the earth when
+the polymer is degraded. Because the company is using raw materials that can be
+regenerated year after year, it is both cost-competitive and environmentally responsible.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Write the letters  A-F in boxes  1-4 on your answer sheet.
+1.....................   scientists manage to
+2.....................   Cargill needs to have contacts with
+3.....................   Nature work is used for
+4.....................   Ingeo is used to
+A     make things like clothes
+B     produce plastic from plant
+C     selling plastic in market
+D     fermentation process
+E     drape fabrics
+F     wrapping products
+Questions 5-8
+Complete the following summary of the paragraphs of Reading Passage.
+Using NO MORE THAN TWO WORDS  from the Reading Passage for each answer.
+Write your answers in boxes  5-8 on your answer sheet.
+ 3
+Process: the production of PLA
+5.....................
+6.....................
+7.....................
+ 4
+8.....................
+ Questions 9-10
+Choose the correct letter,  A, B, C or D.
+Write your answers in boxes  9-10 on your answer sheet.
+ 9. Why did choose the PLA as material for food packaging?
+A   It smells good
+B   It can save food freshness
+C   It can be used on other materials
+D   Some other things need to be revised about it.
+ 
+ 10. What is PLA packaging is used for?
+A   absorbing moisture
+B   composting facilities
+C   Packaging fresh food
+D   manufacturing
+Questions 11-12
+Which two features of PLA are correct?
+A   It is made of renewable raw materials
+B   It involves the removal of carbon dioxide
+C   It is no use of fossil fuel product
+D   It uses renewable raw resources
+E   It is sustenance which can absorb the CO2 in the atmosphere
+Questions 13-14
+Which two features of PLA are correct?
+ 5
+A   It takes in moisture of skin
+B   It is waterproof
+C   comfortable sportswear
+D   It’s fading under the sun
+E   It is only made in deep color
+ 6</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
  
-1. G
-2. A
-3. H
-4. C
-5. F
-6. I
-7.
-8. K
-9. E
-10. L
-11. TRUE
-12. NOT GIVEN
-13. FALSE</p>
-<p>Reading Practice
- Flight from reality
-Mobiles are barred, but passengers can lap away on their laptops to their hearts’ content.
-Is one really safer than the other? In the US, a Congressional subcommittee grilled airline
-representatives and regulators about the issue last month. But the committee heard that
-using cellphones in planes may indeed pose a risk albeit a slight one. This would seem to
-vindicate the treatment of Manchester oil worker Neil Whitehouse, who was sentenced last
-summer to a year in jail by a British court for refusing to turn off his mobile phone on a flight
-home from Madrid. Although he was only typing a message to be sent on landing not
-actually making a call, the court decided that hems putting the flight at risk.</p>
-<p>The potential for problems is certainly there. Modern airliners are packed with electronic
-devices that control the plane and handle navigation and communications. Each has to
-meet stringent safeguards to make sure it doesn’t emit radiation that would interfere with
-other devices in the plane-standards that passengers’ personal electronic devices don’t
-necessarily meet. Emissions from inside the plane could also interfere with sensitive
-antennae on the fixed exterior.</p>
-<p>But despite running a number of studies, Boeing, Airbus and various government agencies
-haven’t been able to find clear evidence of problems caused by personal electronic
-devices, including mobile phones. “We’ve done our own studies. We’ve found cellphones
-actually have no impact on the navigation system,” says Maryanne Greczyn, a
-spokeswoman for Airbus Industries of North America in Herndon, Virginia, Not do they
-affect other critical systems, she says The only impact Airbus found? “Sometimes when a
-passenger is starting or finishing a phone call, the pilot hears a wry slight beep in the
-headset,” she says.</p>
-<p>The best evidence yet of a problem comes from a report released this year by Britain’s Civil
-Aviation Authority. Its researchers generated simulated cellphone transmissions inside two
-Boeing aircraft. They concluded that the transmissions could create signals at a power and
-frequency that would not affect the latest equipment, but exceeded the safety threshold
-established in 1984 and might, therefore, affect some of the older equipment on board.
-This doesn’t mean “mission critical” equipment such as the navigation system and flight
-controls. But the devices that could be affected, such as smoke detectors and fuel level
-indicators, could still create serious problems for the flight crew if they malfunction.
- D
-Many planes still use equipment certified to the older standards, says Dan Hawkes, head of
-avionics at the CAA’s Safely Regulation Croup. The CAA study doesn’t prove the
-equipment will actually fail when subjected to the signals but does show there’s a danger.
-“We’ve taken some of the uncertainty out of these beliefs,” he says Another study later this
-year will see if the cellphone signals actually cause devices to fail.</p>
-<p>In 1996, RTCA, a consultant hired by the Federal Aviation Administration in the US to
-conduct tests, determined that potential problems from personal electronic devices were
-“low”. Nevertheless, it recommended a ban on their use during “critical” periods of flight,
-such as take-off and landing. RTCA didn’t actually test cellphones, but nevertheless
-recommended their wholesale ban on flights, But if “better safe than sorry” is the current
-policy, it’s applied inconsistently, according to Marshall Cross, the chairman of Mega Wave
-Corporation, based in Boylston, Massachusetts. Why are cellphones outlawed when no
-one considers a ban on laptops? “It’s like most things in life. The reason is a little bit
-technical, a little bit economic and a little bit political,” says Cross.</p>
-<p>The company wrote a report for the FAA in 1998 saying it is possible to build an on-board
-system that can detect dangerous signals from electronic devices. But Cross’s personal
-conclusion is that mobile phones aren’t the real threat. “You’d have to stretch things pretty
-far to figure out how a cellphone could interfere with a plane’s systems,” he says.
-Cellphones transmit in ranges of around 400, 800 or 1800 megahertz. Since no important
-piece of aircraft equipment operates at those frequencies, the possibility of interference is
-very low, Cross says. The use of Computers and electronic game systems is much more
-worrying, lie says. They can generate very strong signals at frequencies that could interfere
-with plane electronics, especially if a mouse is attached {the wire operates as an antenna
-or if their built-in shielding is somehow damaged. Some airlines are even planning to put
-sockets for laptops in seatbacks.</p>
-<p>There’s fairly convincing anecdotal evidence that some personal electronic devices have
-interfered with systems. Aircrew on one flight found that the autopilot was being
-disconnected, and narrowed the problem down to a passenger’s portable computer. They
-could actually watch the autopilot disconnect when they switched the computer on. Boeing
-bought the computer, took it to the airline’s labs and even tested it on an empty flight. But
-as with every other reported instance of interference, technicians were unable to replicate
-the problem.</p>
-<p>Some engineers, however, such as Bruce Donham of Boeing, say that common sense
-suggests phones are more risky than laptops. “A device capable of producing a strong
-emission is not as safe as a device which does not have any intentional emission,” lie says.
-Nevertheless, many experts think it’s illogical that cellphones are prohibited when
-computers aren’t. Besides, the problem is more complicated than simply looking at power
-and frequency. In the air, the plane operates in a soup of electronic emissions, created by
-its own electronics and by ground-based radiation. Electronic devices in the cabinespecially those emitting a strong signal-can behave unpredictably, reinforcing other
-signals, for instance, or creating unforeseen harmonics that disrupt systems.</p>
-<p>Despite the Congressional subcommittee hearings last month, no one seems to be working
-seriously on a technical solution that would allow passengers to use their phones. That’s
-mostly because no one -besides cellphone users themselves-stands to gain a lot if the
-phones are allowed in the air. Even the cellphone companies don’t want it. They are
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 1.B
+2.C
+3.F
+4.A
+5.starch
+6.fermentation
+ 8.polymer
+9.B
+10.C
+11.A
+12.C
+13.A
+14. 7.condensation D
+ 7</div>
+</div>
+</div>
 </body>
 </html>

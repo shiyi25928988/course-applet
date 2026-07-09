@@ -1,391 +1,226 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moles Happy As Homes Go Underground - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Psychology Of New Product Adoption - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题324/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Moles Happy As Homes Go Underground</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>F Among those who have tested the glass already is Caroline Fitzpatrick of the civil
-and environmental engineering department of University College London. ‘We have
-looked at a number of batches and it appears to do the job.' she said. ‘Basically,
-sand is made of glass and Mr Dryden is turning bottles back into sand. It seems a
-straightforward idea and there is no reason we can think of why it would not work.
-Since glass from wine bottles and other beverages has no impurities and clearly did
-not leach any substances into the contents of the bottles, there was no reason to
-believe there would be a problem,’ Dr Fitzpatrick added.
-G Mr Dryden has set up a network of agents round the world to sell AFM. It is already
-in use in central America to filter water on banana plantations where the fruit has to
-he washed before being despatched to European markets. It is also in use in sewage
-works to filter water before it is returned to rivers, something which is becoming
-legally necessary across the European Union because of tighter regulations on
-sewage works. So there are a great number of applications involving cleaning up
-water. Currently, however, AFM costs $670 a tonne, about four times as much as
-good quality sand. ‘Hut that is because we haven't got large-scale production.
-Obviously, when we get going it will cost a lot less, and be competitive with sand in
-price as well.’ Mr Dryden said. ‘I believe it performs better and lasts longer than
-sand, so it is going to be better value too.'
-H If AFM takes off as a product it will be a big boost for the government agency
-which is charged with finding a market for recycled products. Crushed glass is
-already being used in road surfacing and in making tiles and bricks. Similarly. AFM
-could prove to have a widespread use and give green glass a cash value.</p>
-<p>Questions 1-10
-Reading Passage 1 has 8 paragraphs labelled A-H Which paragraph contains the following
-information?
-Write the correct letter A-H in boxes 1-10 on your answer sheet.
-NB You may use any letter more than once.
-1.....................      a description of plans to expand production of AFM
-2.....................      the identification of a potential danger in the raw material for AFM
-3.....................      an example of AFM use in the export market
-4.....................      a comparison of the value of green glass and other types of glass
-5.....................      a list of potential applications of AFM in the domestic market
-6.....................      the conclusions drawn from laboratory checks on the process of AFM
-production
-7.....................      identification of current funding for the production of green sand
-8.....................      an explanation of the chosen brand name for crushed green glass
-9.....................      a description of plans for exporting AFM
-10.....................    a description of what has to happen before AFM is accepted for
-general use
-Questions 11-14
-Complete the summary below.
-Choose NO MORE THAN TWO WORDS from the passage for each answer.
-Write your answers in boxes 11-14 on your answer sheet.
-Green sand
-The use of crushed green glass (AFM) may have two significant impacts: it may help
-to save a diminishing 11..................... while at the same time solving a major problem for
-the 12..................... in the UK. However, according to Howard Dryden, only glass from
-bottles that have been used for 13..................... can be used in the production process.
-AFM is more effective than 14..................... as a water filter, and also has other uses.</p>
-<p>Solution:
-1. D 8. C
-2. E 9. G
-3. G 10. E
-4. B 11. natural resource
-5. D 12. recycling industry
-6. F 13. drinkable liquids/ beverages
-7. A 14. (real) sand</p>
-<p>Reading Practice 
-Green Wave Washes Over Mainstream Shopping 
-Research in Britain has shown that green consumers' continue to flourish as a significant
-group amongst shoppers. This suggests that politicians who claim environmentalism is
-yesterday's issue may be seriously misjudging the public mood.
-A report from Mintel, the market research organisation, says that despite recession and
-financial pressures, more people than ever want to buy environmentally friendly products
-and a 'green wave' has swept through consumerism, taking in people previously untouched
-by environmental concerns. The recently published report also predicts that the process will
-repeat itself with 'ethical' concerns, involving issues such as fair trade with the Third World
-and the social record of businesses. Companies will have to be more honest and open in
-response to this mood.
-Mintel's survey, based on nearly 1,000 consumers, found that the proportion who look for
-green products and are prepared to pay more for them has climbed from 53 per cent in
-1990 to around 60 per cent in 1994. On average, they will pay 13 per cent more for such
-products, although this percentage is higher among women, managerial and professional
-groups and those aged 35 to 44.
-Between 1990 and 1994 the proportion of consumers claiming to be unaware of or
-unconcerned about green issues fell from 18 to 10 per cent but the number of green
-spenders among older people and manual workers has risen substantially. Regions such
-as Scotland have also caught up with the south of England in their environmental concerns.
-According to Mintel, the image of green consumerism as associated in the past with the
-more eccentric members of society has virtually disappeared. The consumer research
-manager for Mintel, Angela Hughes, said it had become firmly established as a mainstream
-market. She explained that as far as the average person is concerned environmentalism
-has not gone off the boil'. In fact, it has spread across a much wider range of consumer
-groups, ages and occupations.
-Mintel's 1994 survey found that 13 per cent of consumers are 'very dark green', nearly
-always buying environmentally friendly products, 28 per cent are 'dark green', trying 'as far
-as possible' to buy such products, and 21 per cent are 'pale green' - tending to buy green
-products if they see them. Another 26 per cent are 'armchair greens'; they said they care
-about environmental issues but their concern does not affect their spending habits. Only 10
-per cent say they do not care about green issues.
-Four in ten people are 'ethical spenders', buying goods which do not, for example, involve
-dealings with oppressive regimes. This figure is the same as in 1990, although the number
-of 'armchair ethicals' has risen from 28 to 35 per cent and only 22 per cent say they are
-unconcerned now, against 30 per cent in 1990. Hughes claims that in the twenty-first
-century, consumers will be encouraged to think more about the entire history of the
-products and services they buy, including the policies of the companies that provide them
-and that this will require a greater degree of honesty with consumers.
-Among green consumers, animal testing is the top issue - 48 per cent said they would be
-deterred from buying a product it if had been tested on animals - followed by concerns
-regarding irresponsible selling, the ozone layer, river and sea pollution, forest destruction,
-recycling and factory farming. However, concern for specific issues is lower than in 1990,</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Psychology Of New Product Adoption</h1>
+<p>雅思阅读真题 · 第245篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Psychology of new product adoption
+A
+In today’s hypercompetitive marketplace, companies that successfully introduce new
+products are more likely to flourish than those that don’t. businesses spend billions of
+dollars making better “mousetraps” only to find consumers roundly rejecting them. Studies
+show that new products fail at the stunning rate of between 40% and 90%, depending on
+the category, and the odds haven’t changed much in the past 25 years. In the U.S.
+packaged goods industry, for instance, companies introduce 30,000 products every year,
+but 70% to 90% of them don’t stay on store shelves for more than 12 months. Most
+innovative products – those that create new product categories or revolutionize old ones –
+are also unsuccessful. According to one study, 47% of first movers have failed, meaning
+that approximately half the companies that pioneered new product categories later pulled
+out of those businesses.
+B
+After the fact, experts and novices alike tend to dismiss unsuccessful innovations as bad
+ideas that were destined to fail. Why do consumers fail to buy innovative products even
+when they offer distinct improvements over existing ones? Why do companies invariably
+have more faith in new products than is warranted? Few would question the objective
+advantages of many innovations over existing alternatives, but that’s often not enough for
+them to succeed. To understand why new products fail to live up to companies’
+expectations, we must delve into the psychology of behavior change.
+C
+New products often require consumers to change their behavior. As companies know,
+those behavior changes entail costs. Consumers costs, such as the activation fees they
+have to pay when they switch from one cellular service provider to another. They also bear
+learning costs, such as when they shift from manual to automatic automobile
+transmissions. People sustain obsolescence costs, too. For example, when they switch
+from VCRs to DVD players, their videotape collections become useless. All of these are
+economic switching costs that most companies routinely anticipate.
+D
+What businesses don’t take into account, however, are the psychological costs associated
+with behavior change. Many products fail because of a universal, but largely ignored,
+psychological bias: People irrationally overvalue benefits they currently possess relative to
+those they don’t. The bias leads consumers to value the advantages of products they own
+more than the benefits of new ones. It also leads executives to value the benefits of
+innovations they’ve developed over the advantages of incumbent products.
+E
+Companies have long assumed that people will adopt new products that deliver more value
+or utility than existing ones. Thus, businesses need only to develop innovations that are
+objectively superior to incumbent products, and consumers will have sufficient incentive to
+purchase them. In the 1960s, communications scholar Everett Rogers called the concept
+ 1
+“relative advantage” and identified it as the most critical driver of new-product adoption.
+This argument assumes that companies make unbiased assessments of innovations and of
+consumers, likelihood of adopting them. Although compelling, the theory has one major
+flaw: It fails to capture the psychological biases that affect decision making.
+F
+In 2002, psychologist Daniel Kahneman won the Nobel Prize in economics for a body of
+work that explores why and when individuals deviate from rational economic behavior. One
+of the cornerstones of that research, developed with psychologist Amos Tversky, is how
+individuals value prospects, or choices, in the marketplace. Kahneman and Tversky
+showed, and others have confirmed, that human beings’ responses to the alternatives
+before they have four distinct characteristics.
+G
+First, people evaluate the attractiveness of an alternative based not on its objective, or
+actual, value but on its subjective, or perceived value. Second, consumers evaluate new
+products or investments relative to a reference point, usually the products they already own
+or consume. Third, people view any improvements relative to this reference point as gains
+and treat all shortcomings as losses. Fourth, and most important, losses have a far greater
+impact on people than similarly sized gains, a phenomenon that Kahneman and Tversky
+called “loss aversion.” For instance, studies show that most people will not accept a bet in
+which there is a 50% chance of winning $100 and a 50% chance of losing $100. The gains
+from the wager must outweigh the losses by a factor of between two and three before most
+people find such a bet attractive. Similarly, a survey of 1,500 customers of Pacific Gas and
+Electric revealed that consumers demand three to four times more compensation to endure
+a power outage – and suffer a loss – than they are willing to pay to avoid the problem, a
+potential gain. As Kahneman and Tversky wrote, “losses loom larger than gains.”
+H
+Loss aversion leads people to value products that they already possess – those that are
+part of their endowment – more than those they don’t have. According to behavioral
+economist Richard Thaler, consumers value what they own, but many have to give up,
+much more than they value what they don’t own but could obtain. Thaler called that bias
+the “endowment effect.”
+I
+In a 1990 paper, Thaler and his colleagues describe a series of experiments they
+conducted to measure the magnitude of the endowment effect. In one such experiment,
+they gave coffee mugs to a group of people, the Sellers, and asked at what price point –
+from 25 cents to $9.25 – the Sellers would be willing to part with those mugs. They asked
+another group – the Choosers – to whom they didn’t give coffee mugs, to indicate whether
+they would choose the mug or the money at each price point. In objective terms, all the
+Sellers and Choosers were in the same situation: They were choosing between a mug and
+a sum of money. In one trial of this experiment, the Sellers priced the mug at $7.12, on
+average, but the Choosers were willing to pay only $3.12. In another trial, the Sellers and
+the Choosers valued the mug at $7.00 and $3.50, respectively. Overall, the Sellers always
+demanded at least twice as much to give up the mugs as the Choosers would pay to obtain
+them.
+ 2
+J
+Kahneman and Tversky’s research also explains why people tend to stick with what they
+have even if a better alternative exists. In a 1989 paper, economist Jack Knetsch provided
+a compelling demonstration of what economists William Samuelson and Richard
+Zeckhauser called the “status quo bias.” Knetsch asked one group of students to choose
+between an attractive coffee mug and a large bar of Swiss chocolate. He gave a second
+group of students the coffee mugs but a short time later allowed each student to exchange
+his or her mug for a chocolate bar. Finally, Knetsch gave chocolate bars to a third group of
+students but much later allowed each student to exchange his or her bar for a mug. Of the
+students given a choice at the outset, 56% chose the mug, and 44% chose the chocolate
+bar, indicating a near even split in preferences between the two products. Logically,
+therefore, about half of the students to whom Knetsch gave the coffee mug should have
+traded for the chocolate bar and vice versa. That didn’t happen. Only 11% of the students
+who had been given the mugs and 10% of those who had been given the chocolate bars
+wanted to exchange their products. To approximately 90% of the students, giving up what
+they already had seemed like a painful loss and shrank their desire to trade.
+K
+Interestingly, most people seem oblivious to the existence of the behaviors implicit in the
+endowment effect and the status quo bias. In study after study, when researchers
+presented people with evidence that they had irrationally overvalued the status quo, they
+were shocked, skeptical, and more than a bit defensive. These behavioral tendencies are
+universal, but awareness of them is not.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Use the information in the passage to match the people (listed  A-C) with opinions or deeds
+below.
+Write the appropriate letters  A-C in boxes 1-4 on your answer sheet.
+A          Richard Thaler
+B          Everett Rogers
+C          Kahneman and Tversky
+1.....................   stated a theory which bears potential fault in the application
+2.....................   decided the consumers’ several behavior features when they face other
+options
+3.....................   generalised that customers value more of their possession they are going
+to abandon for a purpose than alternative they are going to swap in
+4.....................   answered the reason why people don’t replace existing products
+ Questions 5-9
+Do the following statements agree with the information given in Reading Passage?
+In boxes 5-9 on your answer sheet, write
+TRUE               if the statement is true
+FALSE              if the statement is false
+NOT GIVEN      if the information is not given in the passage
+5.....................   The products of innovations which beat existing alternatives can guarantee
+a successful market share.
+6.....................   The fact that most companies recognised the benefits of switching to new
+products guarantees a successful innovation
+7.....................   Gender affects the loss and gain outcome in the real market place.
+8.....................   Endowment-effect experiment showed there was a huge gap between the
+seller’s anticipation and the chooser’s offer.
+9.....................   Customers accept the fact peacefully when they are revealed the status
+quo bias.
+Questions 10-13
+ 4
+ Choose the correct letter,  A, B, C or D.
+Write your answers in boxes  10-13 on your answer sheet.
+ 10. What does  paragraph A  illustrated in the business creative venture?
+A   above 70% of products stored in the warehouse
+B   only US packaged goods industry affected
+C   roughly half of new product business failed
+D   new products have a long life span.
+ 11. What do specialists and freshers tend to think how a product sold well:
+A   as more products stored on a shelf
+B   being creative and innovative enough
+C   having more chain stores
+D   learning from a famous company like Webvan
+ 12. According to this passage, a number of products fail because of the following reason:
+A   they ignore the fact that people tend to overvalue the product they own.
+B   they are not confident with their products
+C   they are familiar with people’s psychology state
+D   they forget to mention the advantages of products
+13. What does the experiment of “ status quo bias ” suggest which conducted by Nobel prize
+winner Kahneman and Tversky:
+A   about half of them are willing to change
+B   student is always to welcome new items
+C   90% of both owners in a neutral position
+D   only 10% of chocolate bar owner is willing to swap
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.B
+2.C
+3.A
+4.C
+5.FALSE
+6.TRUE
+ 8.TRUE
+9.FALSE
+10.C
+11.B
+12.A
+13.D
+7.NOT GIVEN
+ 6</div>
+</div>
+</div>
 </body>
 </html>

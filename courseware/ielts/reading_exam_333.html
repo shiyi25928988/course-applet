@@ -1,378 +1,155 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tattoo On Tikopia - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The History Of Bicycles - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题448/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Tattoo On Tikopia</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-6
-Reading passage 1 has six paragraphs, A-F.
-Which paragraph contains the following information?
-Write the correct letter, A-F, in boxes 1-6 on your answer sheet.
-NB You may use any letter more than once
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The History Of Bicycles</h1>
+<p>雅思阅读真题 · 第333篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The History of Bicycles
+The bicycle was not invented by one individual or in one country. It took nearly 100 years
+and many individuals for the modern bicycle to be born. By the end of those 100 years,
+bicycles had revolutionized the way people travel from place to place.
+Bicycles first appeared in Scotland in the early 1800s, and were called velocipedes. These
+early bicycles had two wheels, but they had no pedals. The rider sat on a pillow and walked
+his feet along the ground to move his velocipede forward.
+Soon a French inventor added pedals to the front wheel. Instead of walking their vehicles,
+riders used their feet to run the pedals. However, pedaling was hard because velocipedes
+were very heavy. The framework was made of solid steel tubes and the wooden wheels
+were covered with steel. Even so, velocipedes were popular among rich young men, who
+raced them in Paris parks.
+Because of the velocipedes were so hard to ride, no one thought about using them for
+transportation. People didn’t ride velocipedes to the market or to their jobs. Instead, people
+thought velocipedes were just toys.
+Around 1870, American manufacturers saw that velocipedes were very popular overseas.
+They began building velocipedes, too, but with one difference. They made the frameworks
+from hollow steel tubes. This alteration made velocipedes much lighter, but riders still had
+to work hard to pedal just a short distance. In addition, roads were bumpy so steering was
+difficult. In fact, most riders preferred indoor tracks where they could rent a velocipede for a
+small fee and take riding lessons.
+Subsequent changes by British engineers altered the wheels to make pedaling more
+efficient. They saw that when a rider turned the pedals once, the front wheel turned once. If
+the front wheel was small, the bicycle traveled just a small distance with each turn. They
+reasoned that if the front wheel were larger, the bicycle would travel a greater distance. So
+they designed a bicycle with a giant front wheel. They made the rear wheel small. Its
+primary purpose was to help the rider balance. Balancing was hard because the rider had
+to sit high above the giant front wheel in order to reach the pedals.
+ This meant he was in danger of falling off the bicycle and injuring himself if he lost his
+balance. Despite this inherent danger, “high wheelers” became very popular in England.
+American manufacturers once again tried to design a better bicycle. Their goal was to
+make a safer bicycle. They substituted a small wheel for the giant front wheel and put the
+driving mechanism in a r larger rear to wheel. It would be impossible for a rider to pedal the
+rear wheel, so engineers designed a system of foot levers. By pressing first the right one
+and then the left, the rider moved a long metal bar up and down. This bar turned the rear
+axle1. This axle turned the rear wheel and the bicycle minimized the dangers inherent in
+bicycle riding, more and more people began using bicycles in their daily activities.
+The British altered the design one last time. They made the two wheels equal in size and
+created a mechanism that uses a chain to turn the rear wheel. With this final change, the
+modern bicycle was born.
+Subsequent improvements, such as brakes, rubber tires, and lights were added to make
+ 1
+bicycles more comfortable to ride. By 1900, bicycle riding had become very popular with
+men and women of all ages. Bicycles revolutionized the way people worldwide ride bicycles
+for transportation, enjoyment, sport, and exercise.
+'axle the center bar of a wheel
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
  
-1.....................   different ways of using robots
-2.....................   a robot whose body has the same proportion as that of an adult
-3.....................   the fact that human can be copied and replaced by robots
-4.....................   a comparison between ASIMO for Honda and other robots
-5.....................   the pros and cons of creating robots
-6.....................   a robot that has eyebrows
- 
-Questions 7-13
-Complete the following summary of the paragraphs of Reading Passage 1.
-Using NO MORE THAN TWO WORDS from the Reading Passage for each answer.
-Write your answers in boxes 7-13 on your answer sheet.
-In 2003, Massachusetts displayed a robot named ASIMO which was invented by Honda,
-after a period of 7..................... in the making. The operating information is stored in the
-computer in its 8..................... so that scientists can control ASIMO’s movement. While
-Japan is making great progress, MIT is developing robots that are human-like and
-can 9...................... Humans. What is special about Kismet is that it has
-different 10..................... which can be read by human interlocutors. 11..................... is
-another robot from MIT, whose body’s proportion is the same as an adult. By responding to
-the surroundings through 12....................., it could develop its 13.....................##a.
- 3</p>
-<p>Solution:
  
-1. E
-2. C
-3. F
-4. D
-5. F
-6. B
  
-8. backpack
-9. interact with
-10. facial expressions
-11. Cognition
-12. sensors
-13. intelligence
-7. 17 years
- 4</p>
-<p>Reading Practice
- Maori Fish Hooks
-A. Maori fish hooks, made from wood, bone, stone and flax, are intended to have the best
-possible design and function. The hooks are designed to target specific species with
-precision. In the industry of commercial long-line fishing, there are some Maori hook
-designs which are making a splash.
-B. When Polynesians first came New Zealand sometime within the years 1100-1300 AD,
-they didn’t have the technology necessary to heat and manipulate metal out of rocks.
-Meanwhile, fish was the settlers’ main food source at the time, so fishermen made their
-hooks and fishing gear out of wood, bone, stone and shells. Other plants native to the
-island of New Zealand, like as flax (harakeke), cabbage tree (ti) and astelia (kiekie) gave
-the necessary fibrous material to make fishing lines and nets of greater or equal strength to
-the jute, which was being used by the Europeans at the time. However, as a material,
-metal is more malleable, and can be changed into any shape, while natural materials are
-limited in the shapes they can take on. The Maori fish hooks needed to be more innovative
-in the ways that they dealt with these limitations.
-C. Early accounts of Europeans who settled and explored New Zealand claimed that Maori
-hooks, known as matau, were “odd”, “of doubtful efficacy”, “very clumsy affairs” or
-“impossible looking.” Archaeologists from more recent times have also mentioned the
-round hook appearing as odd, with comments such as, “shaped in a manner which makes
-it very difficult to imagine could ever be effective in catching a fish.” William Anderson, who
-was aboard the Resolution during Cook’s third voyage in 1777 as the ship’s surgeon,
-commented that the Maori “live chiefly by fishing, making use…of wooden fish hooks
-pointed with bone, but so oddly made that a stranger is at a loss to know how they can
-answer such a purpose.”
-D. The Museum of New Zealand Te Papa Tongarewa did their own recent study on Maori
-fish hooks two hundred and thirty years later, and were able to demonstrate that the unique
-hook design was a matter of function. The hook’s design allowed it to catch fish by spinning
-away from the direction of the point and catching their jaws, instead of poking a hole
-through the fish or by being used as a lever, which some archaeologists also suggested. It
-seems that the design of the Maori fish hook is, perhaps, the world’s most efficiently and
-masterfully designed fish hook, likely superior to any modern metal fish hook of today.
-E. To make larger hooks, Maori used shanks made of strong wood, with stout points made
-of bone or shell. They tied tree branches and saplings together to grow them into the ideal
-shapes for building, then harvested the plants when they grew to the appropriate size. They
-hardened wood by carefully drying it and burying underground with fires lit above it. Human
-bone was often used for bone points, which they lashed securely to a groove at the end of
-the shank with pre-made flax materials (muka). When they wanted to catch larger species
-like sharks, groper and ling, they used composite hook. However, average the traditional
-hook was usually not longer than a three finger breadth (128 mm length).
-F. To capture seabirds for food and feathers, like albatross, the islanders used slender
-hooks which can be differentiated from other hooks intended to catch fish by their lighter
-build and lack of an inturned point. Many of these hooks were collected by early explorers,
-suggesting that the taking of seabirds with hook and line was an important source of food
-and feathers for Maori. (105 mm length). Slender hooks with wide gapes were used to
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ Complete the sentences. Choose NO MORE THAN THREE WORDS from the passage for
+each answer.
+In the invention of the bicycle took part not only one individual or the country, but the world
+in general during the 1..................... years. This invention was firstly found in Scotland in
+the first decades of 1800, and was known as velocipedes. They were not resembled to
+today’s bicycles and had two wheels, but they had no 2...................... The rider sat on a
+pillow and walked his feet along the ground in order to move his velocipede forward. Soon,
+a French inventor added pedals to the front wheel. However, because of their difficulty in
+riding, nobody used them in a daily life, and they were accepted as 3...................... Around
+1870, manufacturers in America found that this invention is popular 4....................., but
+within the difference: frameworks were made from 5....................., what makes them much
+lighter. Soon, the British inventors found the method which can make pedaling more
+efficient- to turn pedals one by one. They designed a bicycle with a giant front
+wheel. However, as the rider had to sit high above the giant front wheel it was too difficult
+to keep the balance. The safer bicycle was invented by Americans. They designed the rear
+6....................., which minimized the danger of falling and injuring. At last, the British
+changed the design one last time and added two wheels equal in size and the mechanism
+that induce a chain to turn the rear wheel. By this there was invented the example of the
+modern bicycle.
+Questions 7-10
+Do the following statements agree with the information given in Reading Passage 1? Write
+TRUE    if the statement agrees with the information
+ FALSE    if the statement contradicts the information
+NOT GIVEN if there is no information on this
+7.....................    The bicycle was invited by Americans only
+8.....................    It was too hard to lead the velocipedes due to their heaviness
+9.....................    The alteration of velocipedes made the life of people much more easy
+10.....................    The changes by British inventors altered the wheels to make pedaling
+more efficient
+  Questions 11-13
+Complete the sentences. Choose NO MORE THAN TREE WORDS from the passage for
+each answer.
+11    The British inventors concluded that if the front wheel were large
+in 11....................., the bicycle would travel comparatively long distance.
+ 3
+ 12    American engineers designed a system of  12..................... which was driven by
+pressing first the right and then the left pedals.
+13    The last, but not least alteration in creating of the modern bicycle was a making the
+two wheels equal in size and using the 13..................... to spin the rear wheel.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.hundred
+2.pedals
+3.toys
+4.overseas
+5.hollow steel tubes
+6.axle
+7.8.TRUE
+9.NOT GIVEN
+10.TRUE
+11.size
+12.foot, levers
+13.chain
+FALSE
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,378 +1,200 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Impact Of The Potato - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Tickling And Laughter - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题524/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Impact Of The Potato</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>there are 11..................... in constant mobile states instead of what Suess described. Hot
-spot in biogeography is switched to concerns between two-terms: “12.....................” and
-“13.....................”
- 5</p>
-<p>Solution:
- 
-1. E
-2. A
-3. D
-4. B
-5. C
-6. B
-7.
-8. G
-9. migrated
-10. withering skin
-11. plates
-12. dispersalism
-13. vicarisanism</p>
-<p>Reading Practice
- Out of Africa: Saharan Solar Energy
-Vivienne Wait reports on how the Sahara Desert could offer a truly green solution to
-Europe’s energy problems</p>
-<p>For years, the Sahara has been regarded by many Europeans as a terra incognita* of little
-economic value or importance. But this idea may soon change completely. Politicians and
-scientists on both sides of the Mediterranean are beginning to focus on the Sahara’s
-potential to provide power for Europe in the future. They believe the desert’s true value
-comes from the fact that it is dry and empty. Some areas of the Sahara reach 45 degrees
-centigrade on many afternoons. It is, in other words, a gigantic natural storehouse of solar
-energy.</p>
-<p>A few years ago, scientists began to calculate just how much energy the Sahara holds.
-They were astonished at the answer. In theory, a 90,600 square kilometre chunk of the
-Sahara - smaller than Portugal and a little over 1% of its total area - could yield the same
-amount of electricity as all the world’s power plants combined. A smaller square of 15,500
-square kilometres - about the size of Connecticut - could provide electricity for Europe’s
-500 million people.
-'I admit I was sceptical until 1 did the calculations myself,’ says Michael Pawlyn, director of
-Exploration Architecture, one of three British environmental companies comprising the
-Sahara Forest Project, which is testing solar plants in Oman and the United Arab Emirates.
-Pawlyn calls the Sahara’s potential ’staggering’.</p>
-<p>At the moment, no one is proposing the creation of a solar power station the size of a small
-country. But a relatively well-developed technology exists, which proponents say could turn
-the Sahara’s heat and sunlight into a major source of electricity - Concentrating Solar
-Power [CSP], Unlike solar panels, which convert sunlight directly into electricity, CSP
-utilises mirrors which focus light on water pipes or boilers to produce very hot steam to
-operate the turbines of generators. Small CSP plants have produced power in California’s
-Mojave Desert since the 1980s. The Sahara Forest Project proposes building CSP plants
-in areas below sea level (the Sahara has several such depressions) so that sea water can
-flow into them. This water would then be purified and used for powering turbines and
-washing dust off the mirrors. Waste water would then supply irrigation to areas around the
-stations, creating lush oases - hence the ’forest’ in the group’s name.
-     D
-But producing Significant quantities of electricity means building huge arrays of mirrors and
-pipes across hundreds of miles of remote desert, which is expensive. Gerry Wolff, an
-engineer who heads DESERTEC, an international consortium of solar-power scientists,
-says they have estimated it will cost about $59 billion to begin transmitting power from the
-Sahara by 2020.
- 1</p>
-<p>Building plants is just part of the challenge. One of the drawbacks to CSP technology is
-that it works at maximum efficiency only in sunny, hot climates - and deserts tend to be
-distant from population centres. To supply Europe with 20% of its electricity needs, more
-than 19,300 kilometres of cables would need to be laid under the Mediterranean, says
-Gunnar Asplund, head of HVDC research at ABB Power Technologies in Ludvika, Sweden.
-Indeed, to use renewable sources of power, including solar, wind and tidal, Europe will
-need to build completely new electrical grids. That’s because existing infrastructures, built
-largely for the coal- fired plants that supply 80% of Europe’s power, would not be suitable
-for carrying the amount of electricity generated by the Sahara. Germany’s government-run
-Aerospace Centre, which researches energy, estimates that replacing those lines could
-raise the cost of building solar plants in the Sahara and sending significant amounts of
-power to Europe to about $485 billion over the next 40 years. Generous government
-subsidies will be needed. ‘Of course it costs a lot of money,’ says Asplund. ‘It’s a lot
-cheaper to burn coal than to make solar power in the Sahara.’</p>
-<p>Meanwhile, some companies are getting started. Seville engineering company Abengoa is
-building one solar- thermal plant in Algeria and another in Morocco, while a third is being
-built in Egypt by a Spanish-Japanese joint venture. The next step will be to get cables in
-place. Although the European Parliament has passed a law that aids investors who help
-the continent reach its goal of getting 20% of itg power from renewable energy by 2020, it
-could take years to create the necessary infrastructure.</p>
-<p>Nicholas Dunlop, secretary-general of the London-based NGO e-Parliament, thinks
-companies should begin transmitting small amounts of solar power as soon as the North
-African plants begin operating, by linking a few cable lines under the Med. 'I call it the Lego
-method,’ he says. ‘Build it piece by piece.’ If It can be shown that power from the Sahara
-can be produced profitably, he says, companies and governments will soon jump in. If they
-do, perhaps airplane passengers flying across the Sahara will one day count the mirrors
-and patches of green instead of staring at sand.
- 
-adapted from Time Magazine
-*terra incognita - Latin, meaning ‘an unknown land'
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Tickling And Laughter</h1>
+<p>雅思阅读真题 · 第396篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Tickling and Laughter
+A
+The fingers of an outstretched aim are nearing your body; you bend away folding your
+torso, bending your head to your shoulder in hopes that you don’t get tickled; but the
+inevitable occurs: yon arc tickled and in hysterics, you chuckle, titter, and burst into
+uncontrollable laughter. Why do we laugh when we are tickled?
+B
+ Tickling is caused by a light sensation across our skin. At times the light sensation can
+cause itching; however, most of the time it causes giggling. If a feather is gently moved
+across the surface of the skin, it can also cause tickling and giggling. Heavy laughter is
+caused by someone or something placing repeated pressure on a person and tickling a
+particular area. The spots tickled often are feet, toes, sides, underarms, and neck which
+cause a great deal of laughter. Yngve Zotterman from Karolinska Institute has found that
+tickling sensations involve signals from nerve fibers. These nerve fibers are associated with
+pain and touch. Also, Zotterman has discovered tickling sensations to be associated not
+only with nerve fibers but also with sense of touch because people who have lost pain
+sensations still laugh when tickled. But really, why do we laugh? Why are we not able to
+tickle ourselves? What part of the brain is responsible for laughter and humor? Why do we
+say some people have no sense of humor?
+C
+Research has shown that laughter is more than just a person’s voice and movement and
+that it requires the coordination of many muscles throughout the body. Laughter also
+increases blood pressure and heart rate, changes breathing, reduces levels of certain
+neurochemicals (catecholamines, hormones) and provides a boost to dying immune
+system. Can laughter improve health? It may be a good way for people to relax because
+muscle tension is reduced after laughing. Human tests have found some evidence that
+humorous videos and tapes can reduce feelings of pain, prevent negative stress reactions
+and boost the brain’s biological battle against infection.
+D
+Researchers believe we process humor and laughter through a complex pathway of brain
+activity that encompasses three main brain components. In one new study, researchers
+used imaging equipment to photograph die brain activity of healthy volunteers while they
+underwent a sidesplitting assignment of reading written jokes, viewing cartoons from The
+New Yorker magazine as well as “The Far Side” and listening to digital recordings of
+laughter. Preliminary results indicate that the humor-processing pathway includes parts of
+the frontal lobe brain area, important for cognitive processing the supplementary motor
+area, important for movement; and the nucleus accumbens, associated with pleasure.
+Investigations support the notion that parts of the frontal lobe are involved in humor.
+Subjects’ brains were imaged while they were listening to jokes. An area of the frontal lobe
+was activated only when they thought a joke was funny. In a study that compared healthy
+individuals with people who had damage to their frontal lobes, the subjects with damaged
+frontal lobes were more likely to choose wrong punch lines to written jokes and didn’t laugh
+ 1
+or smile as much at funny cartoons or jokes.
+E
+Even though we may know more about what parts of the brain are responsible for humor, it
+is still hard to explain why we don’t laugh or giggle when we tickle ourselves. Darwin
+theorized within “The Expressions of the Emotions in Man and Animals” that there was a
+link between tickling and laughter because of the anticipation of pleasure. Because we
+cannot tickle ourselves and have caused laughter, Darwin speculated surprise from
+another person touching a sensitive spot must have caused laughter. Some scientists
+believe that laughing caused by tickling is a built-in reflex even babies have. If we tickle
+ourselves in the same spot as our friend tickled us, we do not laugh as we did previously.
+The information sent to our spinal cord and brain should be exactly the same. Apparently,
+for tickling to work, the brain needs tension and surprise. When we tickle ourselves, we
+know exactly what will happen…there is no tension or surprise. How the brain uses this
+information about tension and surprise is still a mystery, but there is some evidence that
+the cerebellum may be involved. Because one part of the brain tells another: “It’s just you.
+Don’t get excited”. Investigations suggest that during self-tickling, the cerebellum tells an
+area called the somatosensory cortex what sensation to expect, and that dampens the
+tickling sensation. It looks as if the killjoy is found in the cerebellum. Further explorations to
+understand tickling and laughter were conducted by Christenfeld and Harris. Within ‘The
+Mystery of Ticklish Laughter and “Can a Machine Tickleyn they explained that people
+laughed equally whether tickled by a machine or by a person. The participants were not
+aware that who or what was tickling them. However, the laughter was equally resounded. It
+is suggested that tickling response is a reflex, which, like Darwin suggested earlier, is
+dependent on the element of surprise.
+F
+Damage to any one part of the brain may affect one’s overall ability to process humor.
+Peter Derks, a professor of psychology, conducted his research with a group of scientists
+at NASA-Langley in Hampton. Using a sophisticated electroencephalogram (EEG), they
+measured the brain activity of 10 people exposed to humorous stimuli. How quickly our
+brain recognizes the incongruity that deals with most humor and attaches an abstract
+meaning to it determines whether we laugh. However, different people find different jokes
+funny. That can be due to a number of factors, including differences in personality,
+intelligence, mental state and probably mood. But according to Derks, the majority of
+people recognize when a situation is meant to be humorous. In a series of experiments, he
+noticed that several patients recovering from brain injuries could not distinguish between
+something funny and something not.
+G
+Dr Shibata of the University of Rochester School of Medicine said our neurons get tickled
+when we hear a joke. The brain’s ‘Tunny bone” is located at the right frontal lobe just above
+the right eye and appears critical to our ability to recognize a joke. Dr Shibata gave his
+patients MRI scans to measure brain activity, trying to find out what part of the brain is
+particularly active while telling the punch line of a joke as opposed to the rest of the joke
+and funny cartoons in comparison to parts of the cartoons that are not funny. The jokes
+“tickled” the frontal lobes. The scans also showed activity in the nucleus accumbens, which
+is likely related to our feeling of mirth after hearing a good joke and our “addiction” to
+ 2
+humor. While his research was about humor, the results could help lead to answers and
+solutions to depression. Parts of the brain that are active during humor are actually
+abnormal in patients with depression. Eventually, brain scans might be used to assess
+patients with depression and other mood disorders. The research may also explain why
+some stroke victims lose their sense of humor or suffer from other personality changes.
+The same part of the brain is also associated with social and emotional judgment and
+planning.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+The Reading Passage has 7 paragraphs,  A-G.
+Which paragraph contains the following information?
+Write the appropriate letter,  A-G, in boxes  1-7 on your answer sheet.
+NBYou may use any letter more than once.
+1.....................   Location of a brain section essential to the recognition of jokes
+2.....................   Laughter enhances immunity
+3.....................   Individual differences and the appreciation of humour
+4.....................   Parts of the brain responsible for tickling reflex
+5.....................   Neuropsychological mechanisms by which humor and laughter work
+6.....................   The connection between tickling and nerve fibers
+7.....................  Patients with emotional disorders
+ Questions 8-11
+Look at the following researchers (listed  8-11) and findings (listed  A-F).
+Match each researcher with the correct finding(s).
+Write your answers in boxes  8-11 on your answer sheet.
+ NB There are more findings than researchers. You may choose more than one finding for
+any of the researchers.
+A   The surprise factor, combined with the anticipation of pleasure, cause laughter when
+tickled.
+B   Laughing caused by tickling is a built-in reflex even babies have.
+C   People also laugh when tickled by a machine if they are not aware of it.
+D   People have different tastes for jokes and humour.
+E   Jokes and funny cartoons activate the frontal lobes.
+F   Tickling sensations involve more than nerve fibers.
+8.....................   Darwin
+9.....................   Christenfeld and Harris
+ 4
+10.....................   Yngve Zotterman
+11.....................   Peter Derks
+ 
+ Questions 12-14
+Complete the summary below using  NO MORE THAN THREE WORDS  from the passage
+for each blank.
+Write your answers in boxes  12-14 on your answer sheet.
+Researchers believe three brain components to be involved in the processing of humor and
+laughter Results from one study using brain  12..................... indicate that parts of the brain
+responsible for  13..................... movement and pleasure are involved through a
+sophisticated pathway. Test subjects who suffered from frontal lobes damages had greater
+chances of picking 14..................... of jokes or did not respond to funny cartoons or jokes.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.G
+2.C
+3.F
+4.E
+5.D
+6.B
+7.G8.A
+9.C
+10.F
+11.D
+12.imaging equipment
+13.cognitive processing
+14.wrong punch lines
+ 6</div>
+</div>
+</div>
 </body>
 </html>

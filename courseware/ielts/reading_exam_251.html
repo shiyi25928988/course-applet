@@ -1,358 +1,237 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museum Blockbuster - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Reading The Screen - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题330/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Museum Blockbuster</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Viehmann, a widow who walked to town to sell produce from her garden. An innkeeper
-daughter, Viehmann had grown up listening to stories from travellers on the road to
-Frankfurt. Among her treasure was “Aschenputtel” -Cinderella. Marie Hassenpflug was a
-20-year-old friend of their sister, Charlotte, from a well-bred, French-speaking family.
-Marie’s wonderful stories blended motifs from the oral tradition and from Perrault’s
-influential 1697 book, Tales of My Mother Goose, which contained elaborate versions of
-“Little Red Riding Hood”, “Snow White”, and “Sleeping Beauty”, among others. Many of
-these had been adapted from earlier Italian tales.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Reading The Screen</h1>
+<p>雅思阅读真题 · 第251篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>READING THE SCREEN
+Are the electronic media exacerbating illiteracy and making our children stupid? On the
+contrary, says Colin McCabe, they have the potential to make us truly literate.
+The debate surrounding literacy is one of the most charged in education. On the one hand
+there is an army of people convinced that traditional skills of reading and writing are
+declining. On the other, a host of progressives protest that literacy is much more
+complicated than a simple technical mastery of reading and writing. This second position is
+supported by most of the relevant academic work over the past 20 years. These studies
+argue that literacy can only be understood in its social and technical context. In
+Renaissance England, for example, many more people could read than could write, and
+within reading there was a distinction between those who could read print and those who
+could manage the more difficult task of reading manuscript. An understanding of these
+earlier periods helps us understand today’s ‘crisis in literacy’ debate.
+There does seem to be evidence that there has been an overall decline in some aspects of
+reading and writing - you only need to compare the tabloid newspapers of today with those
+of 50 years ago to see a clear decrease in vocabulary and simplification of syntax. But the
+picture is not uniform and doesn’t readily demonstrate the simple distinction between
+literate and illiterate which had been considered adequate since the middle of the 19th
+century.
+While reading a certain amount of writing is as crucial as it has ever been in industrial
+societies, it is doubtful whether a fully extended grasp of either is as necessary as it was 30
+or 40 years ago. While print retains much of its authority as a source of topical information,
+television has increasingly usurped this role. The ability to write fluent letters has been
+undermined by the telephone and research suggests that for many people the only use for
+writing, outside formal education, is the compilation of shopping lists.
+The decision of some car manufacturers to issue their instructions to mechanics as a video
+pack rather than as a handbook might be taken to spell the end of any automatic link
+between industrialisation and literacy. On the other hand, it is also the case that ever-
+increasing numbers of people make their living out of writing, which is better rewarded than
+ever before. Schools are generally seen as institutions where the book rules - film,
+television and recorded sound have almost no place; but it is not clear that this opposition
+is appropriate. While you may not need to read and write to watch television, you certainly
+need to be able to read and write in order to make programmes.
+Those who work in the new media are anything but illiterate. The traditional oppositions
+between old and new media are inadequate for understanding the world which a young
+child now encounters. The computer has re-established a central place for the written word
+on the screen, which used to be entirely devoted to the image. There is even anecdotal
+evidence that children are mastering reading and writing in order to get on to the Internet.
+There is no reason why the new and old media cannot be integrated in schools to provide
+the skills to become economically productive and politically enfranchised.
+Nevertheless, there is a crisis in literacy and it would be foolish to ignore it. To understand
+that literacy may be declining because it is less central to some aspects of everyday life is
+not the same as acquiescing in this state of affairs. The production of school work with the
+ 1
+new technologies could be a significant stimulus to literacy. How should these new
+technologies be introduced into the schools? It isn’t enough to call for computers,
+camcorders and edit suites in every classroom; unless they are properly integrated into the
+educational culture, they will stand unused. Evidence suggests that this is the fate of most
+information technology used in the classroom. Similarly, although media studies are now
+part of the national curriculum, and more and more students are now clamouring to take
+these course, teachers remain uncertain about both methods and aims in this area.
+This is not the fault of the teachers. The entertainment and information industries must be
+drawn into a debate with the educational institutions to determine how best to blend these
+new technologies into the classroom.
+Many people in our era are drawn to the pessimistic view that the new media are
+destroying old skills and eroding critical judgement. It may be true that past generations
+were more literate but - taking the pre-19th century meaning of the term - this was true of
+only a small section of the population. The word literacy is a 19th-century coinage to
+describe the divorce of reading and writing from a full knowledge of literature. The
+education reforms of the 19th century produced reading and writing as skills separable
+from full participation in the cultural heritage.
+The new media now point not only to a futuristic cyber-economy, they also make our
+cultural past available to the whole nation. Most children’s access to these treasures is
+initially through television. It is doubtful whether our literary heritage has ever been
+available to or sought out by more than about 5 per cent of the population; it has certainly
+not been available to more than 10 per cent. But the new media joined to the old, through
+the public service tradition of British broadcasting, now makes our literary tradition available
+to all.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Choose the appropriate letters A-Dand write them in boxes 1-4on your answer sheet.
+1.When discussing the debate on literacy in education, the writer notes that
  
-Given that the origins of many of the Grimm fairy tales reach throughout Europe and into
-the Middle East and Orient, the question must be asked: How German are the Grimm
-tales? Very, says scholar Heinz Rolleke. Love of the underdog, rustic simplicity, creative
-energy—these are Teutonic traits. The coarse texture of life during medieval times in
-Germany, when many of the tales entered the oral tradition, also coloured the narratives.
-Throughout Europe, children were often neglected and abandoned, like Hansel and Gretel.
-Accused witches were burned at the stake, like the evil mother-in-law in “The Six Swans”.
-“The cruelty in the stories was not the Grimm’s fantasy”, Rolleke points out” It reflected the
-law-and-order system of the old times”.
-The editorial fingerprints left by the Grimms betray the specific values of 19th-century
-Christian, bourgeois German society. But that has not stopped the tales from being
-embraced by almost every culture and nationality in the world. What accounts for this
-widespread, enduring popularity? Bernhard Lauer points to the “universal style” of the
-writing, you have no concrete descriptions of the land, or the clothes, or the forest, or the
-castles. It makes the stories timeless and placeless,” The tales allow us to express ‘our
-utopian longings’,” says Jack Zipes of the University of Minnesota, whose 1987 translation
-of the complete fairy tales captures the rustic vigour of the original text. They show a
-striving for happiness that none of us knows but that we sense is possible. We can identify
-with the heroes of the tales and become in our mind the masters and mistresses of our own
-destinies.”
-Fairy tales provide a workout for the unconscious, psychoanalysts maintain. Bruno
-Bettelheim famously promoted the therapeutic of the Grimms’ stories, calling fairy tales the
-“great comforters. By confronting fears and phobias, symbolized by witches, heartless
-stepmothers, and hungry wolves, children find they can master their anxieties. Bettelheim’s
-theory continues to be hotly debated. But most young readers aren’t interested in
-exercising their unconsciousness. The Grimm tales, in fact, please in an infinite number of
-ways, something about them seems to mirror whatever moods or interests we bring to our
-reading of them. The flexibility of interpretation suits them for almost any time and any
-culture.
- 2</p>
-<p>Questions 1-6
-Do the following statements agree with the information given in Reading Passage?
-In boxes 1-6 on your answer sheet, write
-YES                   if the statement is true
-NO                    if the statement is false
-NOT GIVEN     if the information is not given in the passage
-1.....................   The Grimm brothers believed they would achieve international fame. 
-2.....................   The Grimm brothers were forced to work in secret.
-3.....................   Some parents today still think Grimm fairy tales are not suitable for
-children.
-4.....................   The first edition of Grimm’s fairy tales sold more widely in England than in
-Germany.
-5.....................   Adults like reading Grimm’s fairy tales for reasons different from those of
-children.
-6.....................   The Grimm brothers based the story “Cinderella” on the life of Dorothea
-Viehmann
+ A children cannot read and write as well as they used to.
+B academic work has improved over the last 20 years.
+C there is evidence that literacy is related to external factors.
+D there are opposing arguments that are equally convincing.
+2.In the 4th paragraph, the writer’s main point is that
  
-Questions 7-9
-Choose the correct letter, A, B, C or D.
-Write your answers in boxes 7-9 on your answer sheet.
-7. In paragraph 4, what changes happened at that time in Europe?
-A   Literacy levels of the population increased.
-B   The development of printing technology made it easier to publish.
-C   Schools were open to children.
-D   People were fond of collecting superb picture books.
-8. What changes did the Grimm Brothers make in later editions?
-A   They made the stories shorter.
-B   They used more oral language.
-C   The content of the tales became less violent.
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
+ A the printed word is both gaining and losing power.
+B all inventions bring disadvantages as well as benefits.
+C those who work in manual jobs no longer need to read.
+D the media offers the best careers for those who like writing.
+3.According to the writer, the main problem that schools face today is
+ 
+ A how best to teach the skills of reading and writing.
+B how best to incorporate technology into classroom teaching.
+C finding the means to purchase technological equipment.
+D managing the widely differing levels of literacy amongst pupils.
+4.At the end of the article, the writer is suggesting that
+    
+ 
+  A literature and culture cannot be divorced.
+B the term ‘literacy’ has not been very useful.
+C 10 per cent of the population never read literature.
+D our exposure to cultural information is likely to increase.
+------------------------------- 
+Tip 
+-The questions follow the orderof information in the passage.
+-
+statement so that it expresses an idea that is also givenin the passage.Read the first question and the four options A-D. One of these completes the
+ 3
     
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+   
+  
+ - Decide whether the question focuses on a detailin the passage or a mainidea.
+-Note thekey words in the question. These will help you locate the area of the passage
+where you will find the answer.
+-
+in options A-D also occurs in the passage but only one of the options will complete the
+sentence correctly. Read this part of the passage very carefully. You will find that some of the vocabulary
+              Questions 5-10
+Do the following statements agree with the views of the writer in Reading Passage 2?
+In boxes5-10 on your answer sheet write
+               YES
+NO
+ if the statement agrees with the writer
+if the statement contradicts the writer
+       
+       NOT GIVEN if it is impossible to say what the writer thinks about this
+       
+       
+       5.....................
+6.....................
+past.
+7.....................
+8.....................It is not as easy to analyse literacy levels as it used to be.
+Our literacy skills need to be as highly developed as they were in the
+9.....................Illiteracy is on the increase.
+Professional writers earn relatively more than they used to.
+A good literacy level is important for those who work in television.
+ 
+ 
+ 10.....................       Computers are having a negative impact on literacy in schools
+-------------------------------------------------------------------------------
+Tip 
+Questions 5-10 test your understanding of what the writer believes; i.e. his/her views or
+opinions. There are three choices: Yes - the writer believes this; No - the writer believes the
+opposite of this; Not Given - the writer doesn't give any views on this.
+   -The questions follow the order of information in the passage.
+-Start with the first question and note the key words.
+-
+his/her views on the topic or idea presented in the question. If you cannot find any
+information on this, the answer may be 'not given'. Check this carefully.Skim or scan the passage until you come to the part where the writer is discussing
+•If you do find some information, decide whether the writer's views are the same or the
+opposite of those given in the question.
+Questions 11-13
+Complete the sentences below with words taken from Reading Passage 2.
+ 4
+  
+  
+ 
+ Write your answers in boxes 11-13on your answer sheet.
+UseNO MORE THAN THREE WORDS for each answer.
+ In Renaissance England, the best readers were those able to read 11.....................
+The writer uses the example of 12..................... to illustrate the general fall in certain
+areas of literacy.
+It has been shown that after leaving school, the only things that a lot of people write are
+13...................../
+Tip 
+-The questions follow the order of information in the passage.
+-Check the instructions: you can use a maximum of three words for each answer and
+these words must be taken from the reading passage. If you use more than three words
+or words that are not in the passage, the answer will be marked wrong.
+-Read the sentences and underline the key words.
+-Read the words around each gap carefully. See if you can predict the answer or the
+kind of word(s) that you are looking for.
+-Scan or skim the passage until you come to the part that is relevant.
+-Re-read the sentence with the word you have chosen for the gap to check that it makes
+sense both grammatically and in terms of meaning.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 
+  
+  
+  
+  
+  1.14 C 15 A 168.B 17 DYES
+ 2.A
+3.B
+4.D
+5.YES
+6.NO
+7.9.YES
+10.NO
+11.manuscript
+12.(tabloid) newspapers
+13.shopping lists
+NOT GIVEN
+ 6</div>
+</div>
+</div>
 </body>
 </html>

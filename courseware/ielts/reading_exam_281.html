@@ -1,404 +1,177 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pollution In The Bay - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Stadium Australia - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题370/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Pollution In The Bay</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-6
-Choose the appropriate letters A-D and write them in boxes 1-6 on your answer sheet.
-1. In the first paragraph, the writer argues that pollution
-A has increased since the eighties.
-B is at its worst in industrialised countries.
-C results from poor relations between nations.
-D is caused by human self-interest.
-2. The Sydney Harbour oil spill was the result of a
- 
-A ship refuelling in the harbour.
-B tanker pumping oil into the sea.
-C collision between two oil tankers.
-D deliberate act of sabotage.
-3. In the 3rd paragraph the writer suggests that
- 
-A people should avoid working in cities.
-B Americans spend too little time outdoors.
-C hazardous gases are concentrated in industrial suburbs.
-D there are several ways to avoid city pollution.
-4. The Corsi research team hypothesised that
- 
-A toxic chemicals can pass from air to water.
-B pollution is caused by dishwashers and baths.
-C city water contains insufficient chlorine.
-D household appliances are poorly designed.
-5. Asa result of their experiments, Dr Corsi’s team found that
-A dishwashers are very efficient machines.
-B tap water is as polluted as bottled water.
-C indoor pollution rivals outdoor pollution.
-D gas masks are a useful protective device.
-6. Regarding the dangers of pollution, the writer believes that
-A there is a need for rational discussion.
- 3</p>
-<p>B indoor pollution is a recent phenomenon.
-C people should worry most about their work environment.
-D industrial pollution causes specific diseases.
-Questions 7-13
-Reading Passage 1 describes a number of cause and effect relationships.
-Match each Cause (Questions 7-13) in List A with its Effect (A-J) in List B.
-Write the appropriate letters (A-J) in boxes 7-13 on your answer sheet.</p>
-<p>List A: CAUSES
-7.....................        Industrialised nations use a lot of energy.
-8.....................        Oil spills into the sea.
-9.....................        The researchers publish their findings.
-10.....................      Water is brought to a high temperature.
-11.....................      People fear pollutants in tap water.
-12.....................      Air conditioning systems are inadequate.
-13.....................      Toxic chemicals are abundant in new cars.
-List B: EFFECTS
-A The focus of pollution moves to the home.
-B The levels of carbon monoxide rise.
-C The world’s natural resources are unequally shared.
-D People demand an explanation.
-E Environmentalists look elsewhere for an explanation.
-F Chemicals are effectively stripped from the water.
-G A clean odour is produced.
-H Sales of bottled water increase.
-I The levels of carbon dioxide rise.
- 4</p>
-<p>J The chlorine content of drinking water increased.
- 5</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Stadium Australia</h1>
+<p>雅思阅读真题 · 第281篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Stadium Australia
+A You might ask, why be concerned about the architecture of a stadium? Surely, as Long
+as die action is entertaining and the building is safe and reasonably comfortable, why
+should the aesthetics matter’ This one question has dominated my professional life, and its
+answer is one 1 find myself continually rehearsing. If one accepts that sporting endeavour
+is as important an outlet for human expression as, say, the theatre or cinema, fine art or
+music, why shouldn’t the buildings in which we celebrate this outlet he as grand and as
+inspirational as those we would expect, and demand, in those other areas of cultural life?
+Indeed, one could argue that because stadiums are, in many instances, far more popular
+than theatres or art galleries, we should actually devote more, and nor less, attention to
+their form. Stadiums have frequently been referred to as ‘cathedrals’. Football has often
+been dubbed ‘the opera of the people’. What better way, therefore, to raise the general
+public’s awareness and appreciation of quality design than to offer them the very’ best
+buildings in the one area of life that seems to touch them most? Could it even be drat better
+stadiums might just make tor better citizens?
+B But then maybe, as my detractors have labelled me in the past, 1 am a snob. Maybe I
+should just accept that sport, and its associated accoutrements and products, is an
+essentially tacky and ephemeral business, while stadium design is all too often driven by
+pragmatists and penny-pinchers. Certainly, when 1 first started writing about stadium
+architecture, one of the first and most uncomfortable truths 1 had to confront was that some
+of the mast popular stadiums in the world were also amongst the the least attractive or
+innovative in architectural terms. ‘Worthy and predictable’ has usually won more votes than
+’daring and different’. Old Trafford football ground in Manchester, the Yankee Stadium in
+New York, Ellis Park in Johannesburg. The list is long and is not intended to suggest that
+these are necessarily poor buildings. Rather, that each has derived its reputation more
+from the events that it has staged, from its associations, than from the actual form it takes.
+Equally, those stadiums whose forms have been revered – such as the Maracana in Rio, oi
+the San Siro in Milan – have turned out to be rather poorly designed in several respects,
+once one analyses them not as icons but as functioning ‘public assembly facilities’ (to use
+the current jargon). Finding the balance between beauty and practicality has never been
+easy.
+C Homebush Bay was the site of rhe main Olympic Games complex for the Sydney
+Olympics of 2000. To put it politely, 1 am no great admirer of the Olympics as an event, or,
+rather, of the insane pressures its past bidding procedures have placed upon candidate
+cities. Nor, as a spectator, do 1 much enjoy the bloated Games programme and the
+consequent demands this places upon the designers of stadiums. Yet in my calmer
+moments ir would be churlish to deny that, if approached sensibly and imaginatively, the
+opportunity to stage the Games can yield enormous benefits in the long term (as well they
+should, considering the expenditure involved), if not (or sport then at least for the cause of
+urban regeneration. Following in Barcelona’s footsteps, Sydney undoubtedly set about its
+urban regeneration in a wholly impressive way. To an outsider, the 760-hectare sire at
+Homebush Bay, once the home of an abattoir, a racecourse, a brickworks and light
+industrial units, seemed miles from anywhere – it was actually fifteen kilometres from the
+centre of Sydney and pretty much in the heart of the city’s extensive conurbation. Some
+£1.3 billion worth of construction and reclamation was commissioned, all of it, crucially, with
+an eye to post- Olympic usage- Strict guidelines, studiously monitore by Greenpeace,
+ 1
+ensured that the 2000 Games would be the most environmentally friendly ever. What’s
+more, much of the work was good-looking, distinctive and lively. ‘That’s a reflection of the
+Australian spirit,’ I was told.
+D At the centre of Homebush lay the main venue for the Olympics, Stadium Australia. It
+was funded by means of a BOOT (Budd, Own, Operate and Transfer) contract, which
+meant that the Stadium Australia consortium, led by rhe contractors Multiplex and the
+financiers Hambros, bore i he bulk of the construction costs, in return for which it was
+allowed to operate the facility for thirty years, and thus, it hopes, recoup its outlay, before
+handing the whole building over to the New South Wales government in the year 2030.
+E Stadium Australia was the most environmentally friendly Olympic stadium ever built.
+Every single product and material used had to meet strict guidelines, even if it turned our to
+he more expensive. All the timber was either recycled or derived from renewable sources.
+In order to reduce energy’ costs, the design allowed for natural lighting in as many public
+areas as possible, supplemented by solar-powered units. Rainwater collected from the roof
+ran off into storage- ranks, where it could be tapped for pitch irrigation. Stormwater run-off
+was collected for toilet flushing. Wherever possible, passive ventilation was used instead of
+mechanical air- conditioning. Even the steel and concrete from the two end stands due to
+be demolished at the end of the Olympics was to be recycled. Furthermore, no private cars
+were allowed on the Homebush site. Instead, every spectator was to arrive by public
+transport, and quite right too. If ever there was a stadium to persuade a sceptic like myself
+that the Olympic Games do, after all, have a useful function in at least setting design and
+planning trends, this was the one. 1 was, and still am, I freely confess, quite knocked out by
+Stadium Australia.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Choose the correct heading for each paragraph from the list oj headings below.
+Write the correct number i—xin boxes1-5 on your answer sheet.
+  List of Headings
+i A strange combination
+ii An overall requirement
+iii A controversial decision
+iv A strong contrast
+V A special set-up
+vi A promising beginning
+vii A shift in attitudes
+viii A strongly held belief
+ix A change of plan
+X A simple choice
+ 1.....................   Paragraph A
+2.....................  Paragraph B
+3.....................  Paragraph C
+4.....................  Paragraph D
+5.....................  Paragraph E
  
-1. D
-2. B
-3. D
-4. B
-5. C
-6. A
-7.
-8. D
-9. A
-10. F
-11. H
-12. I
-13. G</p>
-<p>Reading Practice
- Information theory - the big idea
-Information theory lies at the heart of everything - from DVD players and the genetic code
-of DNA to the physics of the universe at its most fundamental. It has been central to the
-development of the science of communication, which enables data to be sent electronically
-and has therefore had a major impact on our lives</p>
-<p>In April 2002 an event took place which demonstrated one of the many applications of
-information theory. The space probe, Voyager I, launched in 1977, had sent
-back spectacular images of Jupiter and Saturn and then soared out of the Solar System on
-a one-way mission to the stars. After 25 years of exposure to the freezing temperatures of
-deep space, the probe was beginning to show its age. Sensors and circuits were on the
-brink of failing and NASA experts realised that they had to do something or lose contact
-with their probe forever. The solution was to get a message to Voyager I to instruct it to use
-spares to change the failing parts. With the probe 12 billion kilometres from Earth, this was
-not an easy task. By means of a radio dish belonging to NASA’s Deep Space Network, the
-message was sent out into the depths of space. Even travelling at the speed of light, it took
-over 11 hours to reach its target, far beyond the orbit of Pluto. Yet, incredibly, the little
-probe managed to hear the faint call from its home planet, and successfully made the
-switchover.</p>
-<p>It was the longest-distance repair job in history, and a triumph for the NASA engineers. But
-it also highlighted the astonishing power of the techniques developed by American
-communications engineer Claude Shannon, who had died just a year earlier. Born in 1916
-in Petoskey, Michigan, Shannon showed an early talent for maths and for building gadgets,
-and made breakthroughs in the foundations of computer technology when still a student.
-While at Bell Laboratories, Shannon developed information theory, but shunned the
-resulting acclaim. In the 1940s, he single-handedly created an entire science of
-communication which has since inveigled its way into a host of applications, from DVDs to
-satellite communications to bar codes - any area, in short, where data has to be conveyed
-rapidly yet accurately.</p>
-<p>This all seems light years away from the down-to-earth uses Shannon originally had for his
-work, which began when he was a 22-year-old graduate engineering student at the
-prestigious Massachusetts Institute of Technology in 1939. He set out with an apparently
-simple aim: to pin down the precise meaning of the concept of ‘information’. The most basic
-form of information, Shannon argued, is whether something is true or false - which can be
-captured in the binary unit, or ‘bit’, of the form 1 or 0. Having identified this fundamental
-unit, Shannon set about defining otherwise vague ideas about information and how to
-transmit it from place to place. In the process he discovered something surprising: it is
-always possible to guarantee information will get through random interference - ‘noise’ -
-intact.</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ Questions 6-9
+In boxes6-9 on your answer sheet unite
+TRUE                    if the statement agrees with the information
+FALSE                   if the statement contradicts the information
+NOT GIVEN       if there is no information on this
+6.....................   The public have been demanding a better quality of stadium design.
+7.....................  It is possible that stadium design has an effect on people’s behaviour in life
+in general.
+8.....................  Some stadiums have come in for a lot more criticism than others.
+9.....................  Designers of previous Olympic stadiums could easily have produced far
+better designs.
+Question 10-13
+ 3
+  
+  Label the diagram below
+ChooseNO MORE THAN THREE WORDS from the reading passage for each answer.
+Write your answers in boxes 23-26on your answer sheet.
+10.....................
+11.....................
+12.....................
+13.....................
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.viii
+2.iv
+3.vi
+4.v
+5.ii
+6.NOT
+GIVEN
+7.8.NOT GIVEN
+9.FALSE
+10.natural lighting
+11.mechanical air-
+conditioning
+12.storm water
+13.pitch irrigation
+TRUE
+ 5</div>
+</div>
+</div>
 </body>
 </html>

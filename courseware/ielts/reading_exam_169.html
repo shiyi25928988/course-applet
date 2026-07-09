@@ -1,387 +1,167 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Have Teenagers Always Existed - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Knowledge In Medicine - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题231/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Have Teenagers Always Existed</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
- 
-1. iv
-2. vii
-3. x
-4. i
-5. vi
-6. ii
-7.
-8. PRIVACY
-9. MALE PRISON
-10. PERSONAL SPACE
-11. ATTRACTION
-12. HELP
-13. CONTROL
-viii
- 4</p>
-<p>Reading Practice
- Designed to Last
-Designed To Last
-Could better design cure our throwaway culture?
-A. Jonathan Chapman, a senior lecturer at the University of Brighton, UK, is one of a new
-breed of “sustainable designers’. Like many of us, they are concerned about the huge
-waste associated with Western consumer culture and the damage this does to the
-environment. Some, like Chapman, aim to create objects we will want to keep rather than
-discard. Others are working to create more efficient or durable consumer goods or goods
-designed with recycling in mind. The waste entailed in our fleeting relationships with
-consumer durables is colossal
-B. Domestic power tools, such as electric drills, are a typical example of such waste.
-However much DIY the purchaser plans to do, the truth is that these things are thrown
-away having been used, on average, for just ten minutes. Most will serve conscience time,
-gathering dust on a shelf in the garage; people are reluctant to admit that they have wasted
-their money. However, the end is inevitable for thousands of years in landfill waste sites. In
-its design, manufacture, packaging, transportation, and disposal, a power tool consumes
-many times its own weight in resources, all for a shorter active lifespan than that of the
-average small insect.
-C. To understand why we have become so wasteful, we should look to the underlying
-motivation of consumers. ‘People own things to give expression to who they are and to
-show what group of people they feel they belong to’ Chapman says. In a world of mass
-production, however, that symbolism has lost much of its potency. For most of human
-history, people had an intimate relationship with objects they used or treasured. Often they
-made the objects themselves, or family members passed them on. For more specialist
-objects, people relied on expert manufacturers living close by, whom they probably knew
-personally. Chapman points out that all these factors gave objects a history – a narrative –
-and an emotional connection that today’s mass production cannot match. Without these
-personal connections, consumerist culture instead of idolizes novelty. We know we can’t
-buy happiness, but the chance to remake ourselves with glossy, box-fresh products seems
-irresistible. When the novelty fades we simply renew the excitement by buying more new
-stuff: what John Thackara of Doors of Perception, a network for sharing ideas about the
-future of design, calls the “schlock of the new”.
-D. As a sustainable designer, Chapman’s solution is what he calls “emotionally durable
-design”. Think about your favourite old jeans. They just don’t have the right feel until they
-have been worn and washed a hundred times, do they? It is like they are sharing your life
-story. You can fake that look, but it isn’t the same. Chapman says the gradual unfolding of
-a relationship like this transforms our interactions with objects into something richer than
-simple utility. Swiss industrial analyst Walter Stahel, visiting professor at the University of
-Surrey, calls it the “teddy-bear factor”. No matter how ragged and worn a favourite teddy
-becomes, we don’t rush out and buy another one. As adults, our teddy bear connects us to
-our childhoods, and this protects it from obsolescence Stahel says this is what sustainable
-design needs to do.
-E. It is not simply about making durable items that people want to keep. Sustainable design
- 1</p>
-<p>is a matter of properly costing the whole process of production, energy use, and disposal.
-“It is about the design of systems, the design of culture,” says Tim Cooper from the Centre
-for Sustainable Consumption at Sheffield Hallam University in Britain. He thinks sustainable
-design has been “surprisingly slow to take off” but says looming environmental crises and
-resource depletion are pushing it to the top of the agenda.
-F. Thackara agrees. For him, the roots of impending environmental collapse can be
-summarized in two words: weight and speed. We are making more stuff than the planet
-can sustain and using vast amounts of energy moving more and more of it around ever
-faster. The Information Age was supposed to lighten our economies and reduce our impact
-on the environment, but the reverse seems to be happening. We have simply added
-information technology to the industrial era and hastened the developed world’s
-metabolism, Thackara argues.
-G. Once you grasp that, the cure is hardly rocket science: minimize waste and energy use,
-stop moving stuff around so much and use people more. EZIO MANZINI, Professor of
-industrial design at Politecnico di Milano University, Italy, describes the process of moving
-to a post-throwaway society as “changing the engine of an aircraft in mid-flight’ Even so, he
-believes it can be done, and he is not alone.
-H. Manzini says a crucial step would be to redesign our globalized world into what he calls
-the “multi-local society”. His vision is that every resource, from food to electricity
-generation, should as far as possible be sourced and distributed locally. These local hubs
-would then be connected to national and global networks to allow the most efficient use
-and flow of materials.
-I. So what will post-throwaway consumerism look like? For a start, we will increasingly buy
-sustainably designed products. This might be as simple as installing energy-saving light
-bulbs, more efficient washing machines, or choosing locally produced groceries with less
-packaging.
-J. We will spend less on material goods and more on services. Instead of buying a second
-car, for example, we might buy into a car-sharing network. We will also buy less and rent a
-whole lot more: why own things that you hardly use especially things that are likely to be
-updated all the time? Consumer durables will be sold with plans already in place for their
-disposal. Electronic goods will be designed to be recyclable, with the extra cost added to
-the retail price as prepayment. As consumers become increasingly concerned about the
-environment, many big businesses are eagerly adopting sustainable design and brushing
-up their green credentials to please their customers and stay one step ahead of the
-competition.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Knowledge In Medicine</h1>
+<p>雅思阅读真题 · 第169篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Knowledge in medicine
+A
+What counts as knowledge? What do we mean when we say that we know something?
+What is the status of different kinds of knowledge? In order to explore these questions, we
+are going to focus on one particular area of knowledge – medicine.
+B
+How do you know when you are ill? This may seem to be an absurd question. You know
+you are ill because you feel ill; your body tells you that you are ill. You may know that you
+feel pain or discomfort but knowing you are ill is a bit more complex. At times, people
+experience the symptoms of illness, but in fact, they are simply tired or over-worked or they
+may just have a hangover. At other times, people may be suffering from a disease and fail
+to be aware of the illness until it has reached a late stage in its development. So how do we
+know we are ill, and what counts as knowledge?
+C
+Think about this example. You feel unwell. You have a bad cough and always seem to be
+tired. Perhaps it could be stress at work, or maybe you should give up smoking. You feel
+worse. You visit the doctor who listens to your chest and heart, takes your temperature and
+blood pressure, and then finally prescribes antibiotics for your cough.
+D
+Things do not improve but you struggle on thinking you should pull yourself together,
+perhaps things will ease off at work soon. A return visit to your doctor shocks you. This time
+the doctor, drawing on years of training and experience, diagnoses pneumonia. This
+means that you will need bed rest and a considerable time off work. The scenario is
+transformed. Although you still have the same symptoms, you no longer think that these
+are caused by pressure at work. You know have proof that you are ill. This is the result of
+the combination of your own subjective experience and the diagnosis of someone who has
+the status of a medical expert. You have a medically authenticated diagnosis and it
+appears that you are seriously ill; you know you are ill and have the evidence upon which
+to base this knowledge.
+E
+This scenario shows many different sources of knowledge. For example, you decide to
+consult the doctor in the first place because you feel unwell – this is personal knowledge
+about your own body. However, the doctor’s expert diagnosis is based on experience and
+training, with sources of knowledge as diverse as other experts, laboratory reports, medical
+textbooks and years of experience.
+F
+One source of knowledge is the experience of our own bodies; the personal knowledge we
+have of changes that might be significant, as well as the subjective experiences are
+mediated by other forms of knowledge such as the words we have available to describe our
+ 1
+experience, and the common sense of our families and friends as well as that drawn from
+popular culture. Over the past decade, for example, Western culture has seen a significant
+emphasis on stress-related illness in the media. Reference to being ‘stressed out’ has
+become a common response in daily exchanges in the workplace and has become part of
+popular common-sense knowledge. It is thus not surprising that we might seek such an
+explanation of physical symptoms of discomfort.
+G
+We might also rely on the observations of others who know us. Comments from friends and
+family such as ‘you do look ill’ or ‘that’s a bad cough’ might be another source of
+knowledge. Complementary health practices, such as holistic medicine, produce their own
+sets of knowledge upon which we might also draw in deciding the nature and degree of our
+ill health and about possible treatments.
+H
+Perhaps the most influential and authoritative source of knowledge is the medical
+knowledge provided by the general practitioner. We expect the doctor to have access to
+expert knowledge. This is socially sanctioned. It would not be acceptable to notify our
+employer that we simply felt too unwell to turn up for work or that our faith healer,
+astrologer, therapist or even our priest thought it was not a good idea. We need an expert
+medical diagnosis in order to obtain the necessary certificate if we need to be off work for
+more than the statutory self-certification period. The knowledge of the medical sciences is
+privileged in this respect in contemporary Western culture. Medical practitioners are also
+seen as having the required expert knowledge that permits them legally to prescribe drugs
+and treatment to which patients would not otherwise have access. However, there is a
+range of different knowledge upon which we draw when making decisions about our own
+state of health.
+I
+However, there is more than existing knowledge in this little story; new knowledge is
+constructed within it. Given the doctor’s medical training and background, she may
+hypothesize ‘is this now pneumonia?’ and then proceed to look for evidence about it. She
+will use observations and instruments to assess the evidence and – critically – interpret it in
+light of her training and experience. This results in new knowledge and new experience
+both for you and for the doctor. This will then be added to the doctor’s medical knowledge
+and may help in the future diagnosis of pneumonia.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Complete the table
+Choose NO MORE THAN THREE WORDS  from the passage for each answer.
+Write your answers in boxes  1-6 on your answer sheet
+Source of knowledge
+Personal experienceExamples
+Symptoms of a  1..................... and tiredness
+Doctor’s measurement by taking  2..................... and
+temperature
+Common judgment from  3..................... around you
+Medical knowledge from the general  4......................
+e.g. doctor’s medical  5.....................
+Examine the medical hypothesis with the previous drill
+and 6Scientific evidence
+.....................
+ Questions 7-14
+The Reading Passage has nine paragraphs  A-I
+Which paragraph contains the following information?
+Write the correct letter  A-I, in boxes  7-14 on your answer sheet.
+7.....................   the contrast between the nature of personal judgment and the nature of
+doctor’s diagnosis
+8.....................   a reference of culture about pressure
+9.....................   sick leave will not be permitted without the professional diagnosis
+10.....................   how doctors’ opinions are regarded in society
+11.....................   the illness of patients can become part of new knowledge
+12.....................   a description of knowledge drawn from non-specialized sources other
+than personal knowledge
+13.....................   an example of collective judgment from personal experience and
+professional doctor
+14.....................   a reference that some people do not realize they are ill
+ 3</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.bad cough
+2.blood pressure
+3.families and friends
+4.Practitioner
+5.Diagnosis
+6.background
+7.E8.F
+9.H
+10.H
+11.I
+12.G
+13.D
+14.B
+ 4</div>
+</div>
+</div>
 </body>
 </html>

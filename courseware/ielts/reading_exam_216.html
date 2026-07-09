@@ -1,402 +1,204 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lets Go Bats - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Mystery In Easter Island - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题290/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Lets Go Bats</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>for cars. Streets may also be for social interaction, walking, cycling and playing. One of the
-most important aspects of these European streets, in terms of giving cities back to children,
-has been a range of “traffic calming” initiatives, aimed at reducing the volume and speed of
-traffic. These initiatives have had complex interactive effects, leading to a sense that
-children have been able to do this in safety. Recent research has demonstrated that
-children in many German cities have significantly higher levels of freedom to travel to
-places in their own neighborhood or city than children in other cities in the world.
-8.    Modifying cities in order to enhance children’s freedom will not only benefit children.
-Such cities will become more environmentally sustainable, as well as more sociable and
-more livable for all city residents. Perhaps, it will be our concern for our children’s welfare
-that convinces us that we need to challenge the dominance of the car in our cities.
- 2</p>
-<p>Questions 6-9
-In Paragraph 4 and 5 there are FOUR problems stated. These problems, numbered as
-questions 6-9. Find the correct cause for each of the problems and write the corresponding
-letter A-G. There are more causes than problems so you will not use all of them and you
-may use any cause more than once.
-Problems
-Example: low sense of community feeling    Answer: F
-6.....................    streets become less sociable
-7.....................    fewer chances for meeting friends
-8.....................    fears of danger for children
-9.....................    higher accident risk</p>
-<p>A few adults know local children
-B fewer people use the streets 
-C increased pollution 
-D streets are less friendly 
-E less traffic in school holidays 
-F reduced freedom for children 
-G more children driven to school</p>
-<p>Questions 10-14
-Complete the sentences.
-Choose the correct ending for each statement endings numbered i-x.
-Example: By driving children to school, parents help create... Answer: i</p>
-<p>10    Children should play 10.....................
-11    In some German towns, pedestrians have right of way 11.....................
-12    Streets should also be used for 12.....................
-i...a dangerous environment
-¡¡...modified
-iii...on residential streets
- 3</p>
-<p>iv
-13    Reducing the amount of traffic and the speed is 13.....................
-14    All people who live in the city will benefit if cities are 14.....................
-...modifying cities
-v...neighborhoods
-vi...socializing
-vii...in backyards
-viii...for cars
-ix...traffic calming</p>
-<p>Solution:
- 
-1. FALSE
-2. TRUE
-3. NOT GIVEN
-4. FALSE
-5. FALSE
-6. B
-7. F
-8. G
-9. D
-10. vii
-11. iii
-12. vi
-13. ix
-14. ii
- 5</p>
-<p>Fishbourne Roman Palace
-Fishbourne Roman Palace is in the village of Fishbourne in West Sussex, England. This
-large palace was built in the 1st century AD, around thirty years after the Roman conquest
-of Britain ,on the site of Roman army grain stores which had been established after the
-invasion, in the reign of the Roman Emperor Claudius in 43 AD. The rectangular palace
-was built around formal gardens, the northern half of which have been reconstructed.
-There were extensive alterations in the 2nd and 3rd centuries AD, with many of the original
-black and white mosaic floors being overlaid with more sophisticated coloured ones ,
-including a perfectly preserved mosaic of a dolphin in the north wing. More alterations were
-in progress when the palace burnt down in around 270AD,after which it was abandoned.
-Local people had long believed that a Roman palace once existed in the area .However, it
-was not until 1960 that the archaeologist Barry Cunliffe, of Oxford University, first
-systematically excavated the site, after workmen had accidentally uncovered a wall while
-they were laying a water main .The Roman villa excavated by Cunliffe's team was so grand
-that it became known as Fishbourne Roman Palace ,and a museum was erected to
-preserve some of the remains .This is administered by the Sussex Archaeological Society.
-In its day, the completed palace would have comprised four large wings with colonnaded
-fronts. The north and east wings consisted of suites of private rooms built around
-courtyards, with a monumental entrance in the middle of the east wing. In the north-east
-corner there was an assembly hall. The west wing contained state rooms, a large
-ceremonial reception room, and a gallery. The south wing contained the owner’s private
-apartments. The palace included as many as 50 mosaic floors, under-floor central heating
-and a bathhouse. In size, Fishbourne Palace would have been approximately equivalent to
-some of the great Roman palaces of Italy, and was by far the largest known Roman
-residence north of the European Alps, at about 500 feet (150m)square. A team of
-volunteers and professional archaeologists are involved in an ongoing archaeological
-excavation on the site of nearby, possibly military, buildings.
-The first buildings to be erected on the site were constructed in the early part of the
-conquest in 43 AD. Later, two timber buildings were constructed, one with clay and mortar
-floors and plaster walls, which appears to have been a house of some comfort. These
-buildings were demolished in the 60s AD and replaced by a substantial stone house, which
-included colonnades, and a bath suite. It has been suggested that the palaces itself,
-incorporating the previous house in its south-east corner, was constructed around 73-75
-AD. However, Dr Miles Russell, of Bournemouth University, reinterpreted the ground plan
-and the collection of objects found and has suggested that, given the extremely close
-parallels with the imperial palace of Domitian in Rome, its construction may more plausibly
-date to after 92 AD.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Mystery In Easter Island</h1>
+<p>雅思阅读真题 · 第216篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Mystery in Easter Island
+A
+One of the world’s most famous yet least visited archaeological sites, Easter Island is a
+small, hilly, now treeless island of volcanic origin. Located in the Pacific Ocean at 27
+degrees south of the equator and some 2200 miles (3600 kilometers) off the coast of Chile,
+it is considered to be the world’s most remote inhabited island. The island is, technically
+speaking, a single massive volcano rising over ten thousand feet from the Pacific Ocean
+floor. The island received its most well-known current name, Easter Island, from the Dutch
+sea captain Jacob Roggeveen who became the first European to visit Easter Sunday, April
+5, 1722.
+B
+In the early 1950s, the Norwegian explorer Thor Heyerdahl popularized the idea that the
+island had been originally settled by advanced societies of Indians from the coast of South
+America. Extensive archaeological, ethnographic and linguistic research has conclusively
+shown this hypothesis to be inaccurate. It is now recognized that the original inhabitants of
+Easter Island are of Polynesian stock (DNA extracts from skeletons have confirmed this),
+that they most probably came from the Marquesas or Society islands, and that they arrived
+as early as 318 AD (carbon dating of reeds from a grave confirms this). At the time of their
+arrival, much of the island was forested, was teeming with land birds, and was perhaps the
+most productive breeding site for seabirds in the Polynesia region. Because of the plentiful
+bird, fish and plant food sources, the human population grew and gave rise to a rich
+religious and artistic culture.
+C
+That culture’s most famous features are its enormous stone statues called moai, at least
+288 of which once stood upon massive stone platforms called  ahu. There are some 250 of
+these ahu platforms spaced approximately one-half mile apart and creating an almost
+unbroken line around the perimeter of the island. Another 600 moai statues, in various
+stages of completion, are scattered around the island, either in quarries or along ancient
+roads between the quarries and the coastal areas where the statues were most often
+erected. Nearly all the moai are carved from the tough stone of the  Rano Raraku  volcano.
+The average statue is 14 feet and 6 inches tall and weighs 14 tons. Some moai were as
+large as 33 feet and weighed more than 80 tons. Depending upon the size of the statues, it
+has been estimated that between 50 and 150 people were needed to drag them across the
+countryside on sledges and rollers made from the island’s trees.
+D
+Scholars are unable to definitively explain the function and use of the moai statues. It is
+assumed that their carving and erection derived from an idea rooted in similar practices
+found elsewhere in Polynesia but which evolved in a unique way on Easter Island.
+Archaeological and iconographic analysis indicates that the statue cult was based on an
+ideology of male, lineage-based authority incorporating anthropomorphic symbolism. The
+statues were thus symbols of authority and power, both religious and political. But they
+were not only symbols. To the people who erected and used them, they were actual
+ 1
+repositories of sacred spirit. Carved stone and wooden objects in ancient Polynesian
+religions, when properly fashioned and ritually prepared, were believed to be charged by a
+magical spiritual essence called  mana. The ahu platforms of Easter Island were the
+sanctuaries of the people, and the moai statues were the ritually charged sacred objects of
+those sanctuaries.
+E
+Besides its more well-known name, Easter Island is also known as  Te-Pito-O-Te-Henuab ,
+meaning ‘The Navel of the World’, and as  Mata-Ki-Te-Rani , meaning ‘Eyes Looking at
+Heaven’. These ancient name and a host of mythological details ignored by mainstream
+archaeologists point to the possibility that the remote island may once have been a
+geodetic marker and the site of an astronomical observatory of a long-forgotten civilization.
+In his book, Heaven’s Mirror, Graham Hancock suggests that Easter Island may once have
+been a significant scientific outpost of this antediluvian civilization and that its location had
+extreme importance in a planet-spanning, mathematically precise grid of sacred sites. Two
+other alternative scholars, Christopher Knight and Robert Lomas, have extensively studied
+the location and possible function of these geodetic markers. In their fascinating book,
+Uriel’s Machine, they suggest that one purpose of the geodetic markers was as part of a
+global network of sophisticated astronomical observatories dedicated to predicting and
+preparing for future commentary impacts and crystal displacement cataclysms.
+F
+In the latter years of the 20th century and the first years of the 21st century, various writers
+and scientists have advanced theories regarding the rapid decline of Easter Island’s
+magnificent civilization around the time of the first European contact. Principal among these
+theories, and now shown to be inaccurate, is that postulated by Jared Diamond in his
+book Collapse: How Societies Choose to Fail or Survive.  Basically, these theories state
+that a few centuries after Easter Island’s initial colonization the resource needs of the
+growing population had begun to outpace the island’s capacity to renew itself ecologically.
+By the 1400s the forests had been entirely cut, the rich ground cover had eroded away, the
+springs had dried up, and the vast flocks of birds coming to roost on the island had
+disappeared. With no logs to build canoes for offshore fishing, with depleted bird and
+wildlife food sources, and with declining crop yields because of the erosion of good soil, the
+nutritional intake of the people plummeted. First famine, then cannibalism, set in. Because
+the island could no longer feed the chiefs, bureaucrats and priests who kept the complex
+society running, the resulting chaos triggered a social and cultural collapse. By 1700 the
+population dropped to between one-quarter and one-tenth of its former number, and many
+of the statues were toppled during supposed “clan wars” of the 1600 and 1700s.
+G
+The faulty notions presented in these theories began with the racist assumptions of Thor
+Heyerdahl and have been perpetuated by writers, such as Jared Diamond, who do not
+have sufficient archaeological and historical understanding of the actual events which
+occurred on Easter Island. The real truth regarding the tremendous social devastation
+which occurred on Easter Island is that it was a direct consequence of the inhumane
+behavior of many of the first European visitors, particularly the slavers who raped and
+murdered the islanders, introduced smallpox and other diseases, and brutally removed the
+natives to mainland South America.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+The reading passage has seven paragraphs,  A-G
+Choose the correct heading for paragraphs  A-G from the list below.
+Write the correct number,  i-xi, in boxes  1-4 on your answer sheet.
+NBThere are more headings than paragraphs
+List of headings
+i           The famous moai
+ii          The status represented symbols of combined purposes
+iii         The ancient spots which indicate the scientific application
+iv         The story of the name
+v          Early immigrants, rise and prosperity
+vi         The geology of Easter Island
+vii        The begin of Thor Heyerdahl’s discovery
+viii       The countering explanation to the misconceptions politically manipulated
+ix         Symbols of authority and power
+x          The Navel of the World
+xi         The Norwegian Invaders’ legacy
+        Example: Paragraph  A            iv
+1.....................   Paragraph  B
+Example: Paragraph  C            i
+2.....................   Paragraph  D
+3.....................   Paragraph  E
+4.....................   Paragraph  G
+Questions 5-10
+Do the following statements agree with the information given in Reading Passage?
+In boxes 5-10 on your answer sheet write
+TRUE               if the statement is true
+FALSE              if the statement is false
+ 3
+NOT GIVEN     if the information is not given in the passage
+5.....................   The first inhabitants of Easter Island are Polynesian, from the Marquesas
+or Society islands.
+6.....................   Construction of some moai statues on the island was not finished.
+7.....................   The Moai can be found not only on Easter Island but also elsewhere in
+Polynesia.
+8.....................   Most archaeologists recognised the religious and astronomical functions
+for an ancient society.
+9.....................   The structures of Easter Island work as an astronomical outpost for
+extraterrestrial visitors.
+10.....................   the theory that depleted natural resources leading to the fail of Easter
+Island actual have a distorted perspective
+Questions 11-14
+Complete the following summary of the paragraphs of Reading Passage
+Using NO MORE THAN THREE WORDS  from the Reading Passage for each answer.
+Write your answers in boxes  11-14 on your answer sheet.
+Many theories speculated that Easter Island’s fall around the era of the initial European
+contact. Some say the resources are depleted by a  11.....................; The erroneous
+theories began with a root of the  12..................... advanced by some scholars. Early writers
+did not have adequate  13..................... understandings to comprehend the true nature of
+events on the island. The social devastation was, in fact, a direct result
+of 14..................... of the first European settlers.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.v
+2.ii
+3.iii
+4.viii
+  8.FALSE
+9.NOT GIVEN
+10.TRUE
+11.growing population
   
-With regard to who lived in Fishbourne Palace, there are a number of theories; for example
-,one proposed by Professor Cunliffe is that ,in its early phase, the palace was the
-residence of Tiberius
-Claudius Cogidubnus ,a local chieftain who supported the Romans ,and who may have
-been installed as king of a number of territories following the first stage of the conquest.
-Cogidubnus is known from a reference to his loyalty in Agricola, a work by the Roman
-writer Tacitus, and from an inscription commemorating a temple dedicated to the gods
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 5.NOT GIVEN 12.racist assumption
+ 13.archeological and
+historical
+14.6.TRUE
+7.FALSE inhuman behavior
+ 5</div>
+</div>
+</div>
 </body>
 </html>

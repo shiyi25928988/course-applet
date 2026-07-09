@@ -1,401 +1,204 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning To Walk - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Museum Blockbuster - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题287/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Learning To Walk</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>The finches of Santa Cruz demonstrate a subtle process in which human meddling can
-stop evolution in its tracks, ending the formation of new species. In a time when global
-biodiversity continues its downhill slide, Darwin’s finches have yet another unexpected
-lesson to teach. ‘If we hope to regain some of the diversity that’s already been lost/ Hendry
-says, ‘we need to protect not just existing creatures, but also the processes that drive the
-origin of new species.
- 3</p>
-<p>Questions 1-4
-Complete the table now.
-Choose NO MORE THAN TWO WORDS from Reading Passage 1 for each answer.
-Write your answers in boxes 1-4 on your answer sheet.
-Year</p>
-<p>Climate
-1.....................
-Finch’s condition
-small-beak birds failing to survive, without the
-power to open 2.....................
-1985 3..................... broughtbig-beak birds dying out, with 4
-by El Nino
-..................... as
-the main food resource
- 
-Questions 5-8
-Complete the following summary of the paragraphs of Reading Passage 1
-Using NO MORE THAN TWO WORDS from the Reading Passage for each answer.
-Write your answers in boxes 5-8 on your answer sheet.
-On the remote island of Santa Cruz, Andrew Hendry and Jeffrey Podos conducted a study
-on reversal 5..................... due to human activity. In the early 1960s medium ground
-finches were found to have a larger or smaller beak. But in the late 1960s and early 70s,
-finches with 6..................... flourished. The study speculates that it is due to the
-growing 7..................... who brought in alien plants with intermediate-size seeds into the
-area and the birds ate 8..................... sometimes.
- 
-Questions 9-13
-Do the following statements agree with the claims of the writer in Reading Passage1?
-In boxes 9-13 on your answer sheet, write
-TRUE               if the statement is true
-FALSE              if the statement is false
-NOT GIVEN    if the information is not given in the passage
-9.....................   Grants’ discovery has questioned Darwin’s theory.
-10.....................   The cactus finches are less affected by food than the medium ground
-finch.
-11.....................   In 2002 and 2003, all the birds were affected by the drought.
-12.....................   The discovery of Andrew Hendry and Jeffrey Podos was the same as that
- 4</p>
-<p>of the previous studies.
-13.....................   It is shown that the revolution in finches on Santa Cruz is likely a
-response to human intervention.
- 5</p>
-<p>Solution:
- 
-1. drought
-2. large seeds
-3. heavy rains
-4. small seeds
-5. finch evolution
-6. medium-sized bills
- 
-8. rice
-9. FALSE
-10. NOT
-GIVEN
-11. TRUE
-12. FALSE
-13. TRUE
-7. human population
- 6</p>
-<p>Reading Practice
- Finding our way
-A. “Drive 200 yards, and then turn right,” says the car’s computer voice. You relax in the
-driver’s seat, follow the directions and reach your destination without error. It’s certainly
-nice to have the Global Positioning System (GPS) to direct you to within a few yards of
-your goal. Yet if the satellite service’s digital maps become even slightly outdated, you can
-become lost. Then you have to rely on the ancient human skill of navigating in threedimensional space. Luckily, your biological finder has an important advantage over GPS: it
-does not go awry if only one part of the guidance system goes wrong, because it works in
-various ways. You can ask questions of people on the sidewalk. Or follow a street that
-looks familiar. Or rely on a navigational rubric: “If I keep the East River on my left, I will
-eventually cross 34th Street.” The human positioning system is flexible and capable of
-learning. Anyone who knows the way from point A to point B—and from A to C—can
-probably figure out how to get from B to c, too.
- 
-B. But how does this complex cognitive system really work? Researchers are looking at
-several strategies people use to orient themselves in space: guidance, path integration and
-route following. We may use all three or combinations thereof. And as experts learn more
-about these navigational skills, they are making the case that our abilities may underlie our
-powers of memory and logical thinking. Grand Central, Please Imagine that you have
-arrived in a place you have never visited-New York City. You get off the train at Grand
-Central Terminal in midtown Manhattan. You have a few hours to explore before you must
-return for your ride home. You head uptown to see popular spots you have been told about:
-Rockefeller Center, Central Park, the Metropolitan Museum of Art. You meander in and out
-of shops along the way. Suddenly, it is time to get back to the station. But how?
-C. If you ask passersby for help, most likely you will receive information in many different
-forms. A person who orients herself by a prominent landmark would gesture southward:
-“Look down there. See the tall, broad MetLife Building? Head for that “the station is right
-below it.” Neurologists call this navigational approach “guidance,” meaning that a landmark
-visible from a distance serves as the marker for one’s destination.
-D. Another city dweller might say: “What places do you remember passing? … Okay. Go
-toward the end of Central Park, then walk down to St. Patrick’s Cathedral. A few more
-blocks, and Grand Central will be off to your left.” In this case, you are pointed toward the
-most recent place you recall, and you aim for it. Once there you head for the next notable
-place and so on, retracing your path. Your brain is adding together the individual legs of
-your trek into a cumulative progress report. Researchers call this strategy “path
-integration.” Many animals rely primarily on path integration to get around, including
-insects, spiders, crabs and rodents. The desert ants of the genus Cataglyphis employ this
-method to return from foraging as far as 100 yards away. They note the general direction
-they came from and retrace then steps, using the polarization of sunlight to orient
-themselves even under overcast skies. On their way back they are faithful to this inner
-homing vector. Even when a scientist picks up an ant and puts it in a totally different spot,
-the insect stubbornly proceeds in the originally determined direction until it has gone “back”
-all of the distance it wandered from its nest. Only then does the ant realize it has not
-succeeded, and it begins to walk in successively larger loops to find its way home.
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Museum Blockbuster</h1>
+<p>雅思阅读真题 · 第213篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Museum Blockbuster
+A
+ Since the 1980s, the term “blockbuster” has become the fashionable word for the special
+spectacular museum, art gallery or science centre exhibitions. These exhibitions have the
+ability to attract large crowds and often large corporate sponsors. Here is one of some
+existing definitions of a blockbuster: Put by Elsen (1984), a blockbuster is a “… large scale
+loan exhibition that people who normally don’t go to museums will stand in line for hours to
+see …” James Rosenfield, writing in Direct Marketing in 1993, has described a successful
+blockbuster exhibition as a “… triumph of both curatorial and marketing skills …” My own
+definition for a blockbuster is “a popular, high profile exhibition on display for a limited
+period, that attracts the general public, who are prepared to both stand in line and pay a fee
+in order to partake in the exhibition.” What both Elsen and Rosenfield omit in their
+descriptions of a blockbuster, is that people are prepared to pay a fee to see a blockbuster
+and that the term blockbuster can just as easily apply to a movie or a museum exhibition.
+B
+Merely naming an exhibition or movie a blockbuster, however, does not make it a
+blockbuster. The term can only apply when the item in question has had an overwhelmingly
+successful response from the public. However, in literature from both the UK and USA the
+other words that also start to appear in descriptions of a blockbuster are “less scholarly”,
+“non-elitist” and “popularist”. Detractors argue that blockbusters are designed to appeal to
+the lowest common denominator, while others extol the virtues of encouraging scholars to
+cooperate on projects and to provide exhibitions that cater for a broad selection of the
+community rather than an elite sector.
+C
+Maintaining and increasing visitor levels is paramount in the new museology. This requires
+continued product development. Not only the creation or hiring of blockbuster exhibitions
+but regular exhibition changes and innovations. In addition, the visiting public has become
+customers rather than visitors, and the skills that are valued in museums, science centres
+and galleries to keep the new customers coming through the door have changed. High on
+the list of requirements are commercial, business, marketing and entrepreneurial skills.
+Curators are now administrators. Being a director of an art gallery no longer requires an
+Arts Degree. As succinctly summarised in the Economist in 1994 “business nous and
+public relation skills” were essential requirements for a director, and the ability to compete
+with other museums to stage travelling exhibitions which draw huge crowds.
+D
+The new museology has resulted in the convergence of museums, the heritage industry,
+and tourism, profit-making and pleasure-giving. This has given rise to much debate about
+the appropriateness of adopting the activities of institutions so that they more closely reflect
+the priorities of the market place and whether it is appropriate to see museums primarily as
+tourist attractions. At many institutions, you can now hold office functions in the display
+areas, or have dinner with the dinosaurs. Whatever commentators may think, managers of
+ 1
+museums, art galleries and science centres worldwide are looking for artful ways to blend
+culture and commerce, and blockbuster exhibitions are at the top of the list. But while
+blockbusters are all part of the new museology, there is proof that you don’t need a
+museum, science centre or art gallery to benefit from the drawing power of a blockbuster or
+to stage a blockbuster.
+E
+But do blockbusters held in public institutions really create a surplus to fund other
+activities? If the bottom line is profit, then according to the accounting records of many
+major museums and galleries, blockbusters do make money. For some museums
+overseas, it may be the money that they need to update parts of their collections or to
+repair buildings that are in need of attention. For others in Australia, it may be the
+opportunity to illustrate that they are attempting to pay their way, by recovering part of their
+operating costs or funding other operating activities with off-budget revenue. This makes
+the economic rationalists cheerful. However, not all exhibitions that are hailed to be
+blockbusters will be blockbusters, and some will not make money. It is also unlikely that the
+accounting systems of most institutions will recognise the real cost of either creating or
+hiring a blockbuster.
+F
+Blockbusters require large capital expenditure, and draw on resources across all branches
+of an organisation; however, the costs don’t end there. There is a Human Resource
+Management cost in addition to a measurable ‘real’ dollar cost. Receiving a touring
+exhibition involves large expenditure as well, and draws resources from across functional
+management structures in project management style. everyone from a general labourer to
+a building servicing unit, the front of the house, technical, promotion, education and
+administration staff, are required to perform additional tasks. Furthermore, as an increasing
+number of institutions in Australia try their hand at increasing visitor numbers, memberships
+(and therefore revenue), by staging blockbuster exhibitions, it may be less likely that
+blockbusters will continue to provide a surplus to subsidise other activities due to the
+competitive nature of the market. There are only so many consumer dollars to go around,
+and visitors will need to choose between blockbuster products.
+G
+Unfortunately, when the bottom-line is the most important objective to the mounting of
+blockbuster exhibitions, this same objective can be hard to maintain. Creating, mounting or
+hiring blockbusters is exhausting for staff, with the real costs throughout an institution
+difficult to calculate. Although the direct aims may be financial, creating or hiring a
+blockbuster has many positive spin-offs; by raising their profile through a popular
+blockbuster exhibition, a museum will be seen in a more favorable light at budget time.
+Blockbusters mean crowds, and crowds are good for the local economy, providing
+increased employment for shops, hotels, restaurants, the transport industry and retailers.
+Blockbusters expose staff to the vagaries and pressures of the market place and may lead
+to creative excellence. Either the success or failure of a blockbuster may highlight the need
+for managers and policymakers to rethink their strategies. However, the new museology
+and the apparent trend towards blockbusters make it likely that museums, art galleries and
+particularly science centres will be seen as part of the entertainment and tourism industry,
+rather than as cultural icons deserving of government and philanthropic support.
+ 2
+H
+Perhaps the best pathway to take is one that balances both blockbusters and regular
+exhibitions. However, this easy middle ground may only work if you have enough space,
+and have alternate sources of funding to continue to support the regular less exciting fare.
+Perhaps the advice should be to make sure that your regular activities and exhibitions are
+more enticing, and find out what your local community wants from you. The question
+(trend) now at most museums and science centres, is “What blockbusters can we tour to
+overseas venues and will it be cost-effective?”
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+The Reading Passage has seven paragraphs  A-H
+Which paragraphs contains the following information?
+Write the correct letter  A-H, in boxes  1-4 on your answer sheet.
+NBYou may use any letter more than once.
+ 1.....................   A reason for changing the exhibition programs.
+2.....................   The time people have to wait in a queue in order to enjoy exhibitions.
+3.....................   Terms people used when referring to the blockbuster
+4.....................   There was some controversy over confining target groups of a blockbuster.
+ Questions 5-8
+Complete the following summary of the paragraphs of Reading Passage
+Using NO MORE THAN THREE WORDS  from the Reading Passage for each answer.
+Write your answers in boxes  5-8 on your answer sheet.
+Instead of being visitors, people turned out to be  5....................., who require the creation
+or hiring of blockbuster exhibitions as well as regular exhibition changes and innovations.
+Business nous and  6..................... simply summarized in a magazine are not only important
+factors for directors but also an ability to attract a crowd of audiences.  7..................... has
+contributed to the linking of museums, the heritage industry, tourism, profit-making and
+pleasure-giving. There occurs some controversy over whether it is proper to consider
+museums mainly as  8.....................
+ Questions 9-10
+Choose TWO letters A-E.
+Write your answer in boxes  9-10 on your answer sheet.
+The list below gives some advantages of a blockbuster.
+ Which TWO advantages are mentioned by the writer of the text?
+A   To offer sufficient money to repair architectures.
+ 4
+B   To maintain and increase visitor levels.
+C   Presenting the mixture in the culture and commerce of art galleries and science centres
+worldwide.
+D   Being beneficial for the development of local business.
+E   Being beneficial for the directors.
+ Questions 11-13
+Choose THREE letters A-F.
+Write your answer in boxes  11-13 on your answer sheet.
+The list below gives some disadvantages of a blockbuster.
+Which THREE disadvantages are mentioned by the writer of the text?
+A   People left hesitated to choose exhibitions.
+B   Workers has become tired of workloads.
+C   The content has become more entertaining rather than cultural.
+D   General labourers are required to perform additional tasks
+E   Huge amounts of capital invested in specialists.
+F   Exposing staff to the fantasies and pressures of the market place.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.C
+2.A
+3.B
+4.B
+5.customers
+6.public relation
+skills
+7.8.tourist attractions
+9.A
+10.D
+11.B
+12.C
+13.E
+museology
+ 6</div>
+</div>
+</div>
 </body>
 </html>

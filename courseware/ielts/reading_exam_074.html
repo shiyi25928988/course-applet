@@ -1,383 +1,165 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Becoming An Expert - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Chinstrap Penguin Population In The Last 50 Years - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题106/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Becoming An Expert</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Complete the summary below.
-Choose NO MORE THAN TWO WORDS from the passage for each answer.</p>
-<p>Sinha’s Project
-Sinha's aim in the project is to come up with a specific number of what he terms
-11..................... that are key to identification purposes.
-He hopes these can be used to enable an 12..................... to identify faces more quickly
-and more accurately.
-In order to do this, his team must examine the most frequently 13..................... features in a
-large number of cartoon faces.
- 4</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Chinstrap Penguin Population In The Last 50 Years</h1>
+<p>雅思阅读真题 · 第74篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Chinstrap Penguin Population In The Last 50 Years
+A.The chinstrap penguin has a cap of black plumage, a white face, and a continuous
+band of black feathers extending from one side of the head to the other, the
+“chinstrap.” The northern part of the Antarctic Peninsula, several Antarctic and
+subantarctic islands, and the uninhabited Balleny Islands between Antarctica and
+New Zealand are the habitats of the species.
+B.Antarctic penguin colonies in some parts of the Antarctic have declined over the last
+50 years, mostly because of climate change, researchers say. The colonies of
+chinstrap penguins, also known as ringed or bearded penguins, have dramatically
+dropped since they were last surveyed almost 50 years ago, scientists discovered.
+The findings became surprising because, until now, the chinstraps have been
+deemed of “least concern” by the International Union for Conservation of Nature
+(IUCN). “We really didn’t know what to expect, and then we found this huge decline
+on Elephant Island,” Noah Strycker, an ornithologist and penguin researcher at Stony
+Brook University, told CNN from Greenpeace’s Esperanza ship in the Antarctic. “It’s a
+little bit worrying as it means that something is shifting in the ecosystem and the fall in
+penguin numbers is reflecting that shift.”
+C.Every colony of Elephant Island, which is a crucial penguin habitat northeast of the
+Antarctic Peninsula, when surveyed, experienced a population fall, as per the
+independent researchers who joined a Greenpeace expedition to the region.
+Elephant Island was last surveyed in 1971, and there were 122,550 pairs of penguins
+across all colonies. However, the recent count revealed just 52,786 pairs with a drop
+of almost 60%. On Elephant Island, the size of the population change varied from
+colony to colony, and the most significant decline was recorded at a colony known as
+Chinstrap Camp, which is 77%.
+D.Just the days after temperatures hit an all-time high in the Antarctic with 18.3 Celsius
+(64.94 Fahrenheit) recorded on February 6, the latest study is published. The
+previous high 17.5 C (63.5 F) was recorded in March 2015. Scientists recorded the
+temperature at Argentina’s Esperanza research station, according to the
+meteorological agency of the country.
+E.
+the main component of the penguins’ diet. “Climate change is probably the underlying
+factor, and the effects are rippling through the food chain,” Strycker said. “Penguins,
+seals, and whales all depend on krill, which depends on ice. So if climate change
+affects the ice, that impacts on everything else.” Heather J. Lynch, associate
+professor of ecology and evolution at New York’s Stony Brook University and one of
+the expedition’s research leads, said: “Such significant declines in penguin numbers
+suggest that the Southern Ocean’s ecosystem has fundamentally changed in the last
+50 years and that the impacts of this are rippling up the food web to species like
+chinstrap penguins.” She added that “while several factors may have a role to play, all
+the evidence we have pointed to climate change as being responsible for the
+changes we are seeing.”The reduced sea ice and warmer oceans due to climate change have led to less krill,
+ 1
+F.However, some good news was also there, as the researchers reported an increase
+in gentoo penguins population in neighbouring colonies, beyond Elephant Island. “It’s
+interesting, as a tale of two penguins on the Antarctic Peninsula,” said Strycker.
+“Gentoo is a species from further north and they appear to be colonizing the area and
+are actually increasing in numbers.”
+G.The Greenpeace ship Esperanza has been documenting the threat to the oceans
+worldwide and taking the scientists for travelling abroad. For the first time, the Low
+Island in the South Shetland Islands, north of the Antarctic Peninsula, has been
+surveyed properly. The manual and drone techniques are used by the researchers,
+from Stony Brook and Northeastern University in Boston, to survey a series of
+significant but relatively unknown colonies of chinstrap penguin here. The results are,
+however, not yet available. Greenpeace has been campaigning for the three Antarctic
+sanctuaries that it would establish to offer protection to many of the colonies
+surveyed. These would be off-limits to humans.
+H.
+an iconic species, but this new research shows how the climate emergency is
+decimating their numbers and having far-reaching impacts on wildlife in the most
+remote corners of Earth. This is a critical year for our oceans. “Governments must
+respond to the science and agree on a strong Global Ocean Treaty at the United
+Nations this spring that can create a network of ocean sanctuaries to protect marine
+life and help these creatures adapt to our rapidly changing climate.”Louisa Casson, Greenpeace Oceans Campaigner, said in a statement: “Penguins are
+ 2
+ Question 1 - 7
+The Reading Passage has 8 paragraphs labelled A-H.
+Which paragraph contains the following information?
+Write the correct letter A-H in boxes.
+NB You may use any letter more than once.
+1..................... the highest temperatures ever.
+2..................... the difference between current and past records on penguin
+population.
+3..................... places where people cannot go to.
+4..................... places where chinstrap penguins live.
+5..................... measures to protect ocean species.
+6..................... factors contributing to the decline in the amount of food available.
+7..................... description of a specific species.
+ Question 8-10
+Choose TRUE if the statement agrees with the information given in the text, 
+choose FALSE if the statement contradicts the information, 
+or choose NOT GIVEN if there is no information on this.
+  8..................... The IUCN showed little concern about the fall in penguin numbers.
+9..................... Climate change is a reason for the changes in the food chain of
+chinstrap penguins.
+10..................... Gentoo penguins are not affected by climate change.
  
-1. C
-2. G
-3. D
-4. B
-5. F
-6. D
-7.
-8. C
-9. B
-10. A
-11. Hirschfeld attributes
-12. automated system
-13. exaggerated</p>
-<p>Reading Practice
- A song on the brain
- 
-Some songs just won't leave you alone. But this may give us clues about how our
-brain works
- 
-A Everyone knows the situation where you can't get a song out of your head. You hear a
-pop song on the radio - or even just read the song's title and it haunts you for hours,
-playing over and over in your mind until you're heartily sick of it. The condition now even
-has a medical name 'song-in-head syndrome'.
- 
-But why does the mind annoy us like this? No one knows for sure, but it's probably
-because the brain is better at holding onto information than it is at knowing what
-information is important. Roger Chaffin, a psychologist at the University of Connecticut
-says, 'It's a manifestation of an aspect of memory which is normally an asset to us, but in
-this instance it can be a nuisance.'</p>
-<p>This eager acquisitiveness of the brain may have helped our ancestors remember
-important information in the past. Today, students use it to learn new material, and
-musicians rely on it to memorise complicated pieces. But when this useful function goes
-awry it can get you stuck on a tune. Unfortunately, superficial, repetitive pop tunes are, by
-their very nature, more likely to stick than something more inventive.
- 
-D The annoying playback probably originates in the auditory cortex. Located at the front of
-the brain, this region handles both listening and playback of music and other sounds.
-Neuroscientist Robert Zatorre of McGill University in Montreal proved this some years ago
-when he asked volunteers to replay the theme from the TV show Dallas in their heads.
-Brain imaging studies showed that this activated the same region of the auditory cortex as
-when the people actually heard the song.
- 
-E Not every stored musical memory emerges into consciousness, however. The frontal
-lobe of the brain gets to decide which thoughts become conscious and which ones are
-simply stored away. But it can become fatigued or depressed, which is when people most
-commonly suffer from song-in-head syndrome and other intrusive thoughts, says Susan
-Ball, a clinical psychologist at Indiana University School of Medicine in Indianapolis. And
-once the unwanted song surfaces, it's hard to stuff it back down into the subconscious.
-'The more you try to suppress a thought, the more you get it,' says Ball. 'We call this the
-pink elephant phenomenon. Tell the brain not to think about pink elephants, and it's
-guaranteed to do so,' she says.
- 
-F For those not severely afflicted, simply avoiding certain kinds of music can help. 'I know
-certain pieces that are kind of "sticky" to me, so I will not play them in the early morning for
-fear that they will run around in my head all day,' says Steven Brown, who trained as a
-classical pianist but is now a neuroscientist at the University of Texas Health Science
-Center at San Antonio. He says he always has a song in his head and, even more
-annoying, his mind never seems to make it all the way through. 'It tends to involve short
-fragments between, say, 5 or 15 seconds. They seem to get looped, for hours sometimes,'
-he says.
-G Brown's experience of repeated musical loops may represent a phenomenon called
-'chunking', in which people remember musical phrases as a single unit of memory, says
- 1</p>
-<p>Caroline Palmer, a psychologist at Ohio State University in Columbus. Most listeners have
-little choice about what chunks they remember. Particular chunks may be especially 'sticky'
-if you hear them often or if they follow certain predictable patterns, such as the chord
-progression of rock 'n' roll music. Palmer's research shows that the more a piece of music
-conforms to these patterns, the easier it is to remember. That's why you're more likely to be
-haunted by the tunes of pop music than by those of a classical composer such as J. S.
-Bach.
- 
-H But this ability can be used for good as well as annoyance. Teachers can tap into
-memory reinforcement by setting their lessons to music. For example, in one experiment
-students who heard a history text set as the lyrics to a catchy song remembered the words
-better than those who simply read them, says Sandra Calvert, a psychologist at
-Georgetown University in Washington DC.
-I This sort of memory enhancement may even explain the origin of music. Before the
-written word could be used to record history, people memorised it in songs, says Leon
-James, a psychologist at the University of Hawaii. And music may have had an even more
-important role. ‘All music has a message.' he says. ‘This message functions to unite society
-and to standardise the thought processes of people in society.’
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ Question 11 - 13
+Complete the note below.
+ChooseONLY ONE WORD from the passage for each answer.
+The Greenpeace ship has been used to:
+- record the 11..................... to marine life over the world.
+-carry the12..................... overseas.
+ 3
+ - Build13..................... to protect many surveyed colonies.
+ 4
+  
+  
+  
+  
+  
+  Solution:
+ 1.D
+2.C
+3.G
+4.A
+5.H
+6.E
+7.8.NOT GIVEN
+9.TRUE
+10.NOT GIVEN
+11.threat
+12.scientists
+13.sanctuaries
+A
+ 5</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions></div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution></div>
+</div>
+</div>
 </body>
 </html>

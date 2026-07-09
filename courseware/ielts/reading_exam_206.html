@@ -1,365 +1,193 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Land Of The Rising Sun - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Migratory Beekeeping - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题279/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Land Of The Rising Sun</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>{H} It is essential to remember that villages were created and have evolved because of
-particular combinations of geographical, commercial, economic and social factors. They
-expand, decline, move and fluctuate with the times. This article introduces some of the
-common forms of the village to be found in Britain.
-The Medieval Village
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Migratory Beekeeping</h1>
+<p>雅思阅读真题 · 第206篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Migratory Beekeeping
+Taking Wing
+To eke out a full-time living from their honeybees, about half the nation’s 2,000
+commercial beekeepers pull up stakes each spring, migrating north to find more
+flowers for their bees. Besides turning floral nectar into honey, these hardworking
+insects also pollinate crops for farmers -for a fee. As autumn approaches, the
+beekeepers pack up their hives and go south, scrambling for pollination contracts in
+hot spots like California’s fertile Central Valley.
+Of the 2,000 commercial beekeepers in the United States about half migrate This pays off
+in two ways Moving north in the summer and south in the winter lets bees work a longer
+blooming season, making more honey — and money — for their keepers. Second,
+beekeepers can carry their hives to farmers who need bees to pollinate their crops. Every
+spring a migratory beekeeper in California may move up to 160 million bees to flowering
+fields in Minnesota and every winter his family may haul the hives back to California, where
+farmers will rent the bees to pollinate almond and cherry trees.
+Migratory beekeeping is nothing new. The ancient Egyptians moved clay hives, probably
+on rafts, down the Nile to follow the bloom and nectar flow as it moved toward Cairo. In the
+1880s North American beekeepers experimented with the same idea, moving bees on
+barges along the Mississippi and on waterways in Florida, but their lighter, wooden hives
+kept falling into the water. Other keepers tried the railroad and horse- drawn wagons, but
+that didn’t prove practical. Not until the 1920s when cars and trucks became affordable and
+roads improved, did migratory beekeeping begin to catch on.
+For the Californian beekeeper, the pollination season begins in February. At this time, the
+beehives are in particular demand by farmers who have almond groves; they need two
+hives an acre. For the three-week long bloom, beekeepers can hire out their hives for $32
+each. It’s a bonanza for the bees too. Most people consider almond honey too bitter to eat
+so the bees get to keep it for themselves.
+By early March it is time to move the bees. It can take up to seven nights to pack the 4,000
+or so hives that a beekeeper may own. These are not moved in the middle of the day
+because too many of the bees would end up homeless. But at night, the hives are stacked
+onto wooden pallets, back-to-back in sets of four, and lifted onto a truck. It is not necessary
+to wear gloves or a beekeeper’s veil because the hives are not being opened and the bees
+should remain relatively quiet. Just in case some are still lively, bees can be pacified with a
+few puffs of smoke blown into each hive’s narrow entrance.
+In their new location, the beekeeper will pay the farmer to allow his bees to feed in such
+places as orange groves. The honey produced here is fragrant and sweet and can be sold
+by the beekeepers. To encourage the bees to produce as much honey as possible during
+this period, the beekeepers open the hives and stack extra boxes called supers on top.
+These temporary hive extensions contain frames of empty comb for the bees to fill with
+honey. In the brood chamber below, the bees will stash honey to eat later. To prevent the
+ 1
+queen from crawling up to the top and laying eggs, a screen can be inserted between the
+brood chamber and the supers. Three weeks later the honey can be gathered.
+Foul smelling chemicals are often used to irritate the bees and drive them down into the
+hive’s bottom boxes, leaving the honey- filled supers more or less bee free. These can then
+be pulled off the hive. They are heavy with honey and may weigh up to 90 pounds each.
+The supers are taken to a warehouse. In the extracting room, the frames are lilted out and
+lowered into an “uncapper” where rotating blades shave away the wax that covers each
+cell. The uncapped frames are put in a carousel that sits on the bottom of a large stainless
+steel drum. The carousel is filled to capacity with 72 frames. A switch is flipped and the
+frames begin to whirl at 300 revolutions per minute; centrifugal force throws the honey out
+of the combs. Finally the honey is poured into barrels for shipment.
+After this, approximately a quarter of the hives weakened by disease, mites, or an ageing
+or dead queen, will have to be replaced. To create new colonies, a healthy double hive,
+teeming with bees, can be separated into two boxes. One half will hold the queen and a
+young, already mated queen can be put in the other half, to make two hives from one. By
+the time the flowers bloom, the new queens will be laying eggs, filling each hive with young
+worker bees. The beekeeper’s family will then migrate with them to their summer location.
+Adapted from “America's Beekeepers: Hives for Hire” by Alan Mairson, National
+Geographic.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+The flow chart below outlines the movements of the migratory beekeeper as described in
+Reading Passage.
+Complete the flow chart.
+Choose your answers from the box at the right of the page and write your answers in boxes
+1-7on your answer sheet.
+BEEKEEPER MOVEMENTS
+ Example
+In February, Californian farmers hire bees to help  Answer:  polinate  almond
+ trees.
+ In March, beekeepers 1..................... for migration at night when the hives are
+2..................... and the bees are generally tranquil. A little 3..................... can
+ ensure that this is the case.
+They transport their hives to orange groves where farmers 4.....................
+ beekeepers for placing them on their land. Here the bees make honey.
+ After three weeks, the supers can be taken to a warehouse where 5.....................
+are used to remove the wax and extract the honey from the 6......................
+After the honey collection, the old hives are rejected. Good double hives are
+7..................... and re-queened and the beekeeper transports them to their
+summer base.List of Words/Phrases
+smoke
+barrels
+set off
+pollinate
+combs
+fullchemicals
+protection
+light
+machines
+screen
+emptypay
+charge
+split
+supers
+prepare
  
-{I} When we think of a British village we probably imagine a settlement of traditional
-cottages around a village green with a church and ancient manor house as a backdrop.
-This common form of the village has its roots in the medieval period when many villages
-started out as a cluster of agricultural dwellings
-{J} Today farmsteads tend to be scattered about the landscape, but back in the medieval
-period those working on the land tended to live in small nucleated settlements (villages)
-and worked ‘open-field’ agriculture where land wasn’t enclosed. In fact, over much of
-Britain in the period up to 1800, it would have been unusual to have seen a farm or cottage
-outside of a settlement boundary. 
-{K} By the time that the Domesday Book was written in 1086 most of the good agricultural
-land in Britain was already under cultivation, and England was a densely populated
-country. Two centuries later nucleated settlements were to be found over much of Britain,
-typically consisting of well-organised village settlements sitting within open fields.
- 
-{L} Over lowland Britain on good soil you would typically find a settlement every couple of
-miles, and the communities would use the open agricultural land around where they lived.
-The average village would have its church, manor house, and cottage tenements all
-clustered together, and the open land around would usually be divided into thin strips. In
-some villages, you can still see the remnants of medieval strip field systems around the
-periphery of the settlement. There would often be meadows, pasture and woodland held ‘in
-common, and only the lord of the manor would have his own, private land or ‘demesne’. In
-the medieval village, virtually everyone would have earned their living on the territory,
-hence the community had to be relatively self-sufficient.
-{M} ‘Green Villages’ were a common village form, where houses clustered around a central
-green of common land. They are often the remnants of planned settlements introduced
-after the Norman Conquest in the 19th century. It is suggested that this arrangement
-allowed for easier defence, especially compared to the village form most common before
-the Normans, which was simple clusters of farms. However there is also evidence of
-‘village’ greens in Anglo-Saxon settlements, and even at Romano-British sites.
-{N} The village green was soon adopted as the main social space within a village, as well
-as its focal point alongside the church or chapel. Village greens often take a triangular
-form, usually reflecting the fact that the village was at the meeting of three roads. The
-continuing importance of the village green to modern-day communities is reflected in the
-fact that this is usually where the war memorial is seen, as well as village notice boards,
-where local cricket matches are played, and where public benches are placed. The Open
-Spaces Society states that in 2005 there were about 3,650 registered greens in England
-and about 220 in Wales. 
- 2</p>
-<p>Questions 1-7
-Reading passage has seven paragraphs, A-G 
-Choose the correct heading for paragraphs A and C-G from the list below. 
-Write the correct number, i-x, in boxes 1-7 on your answer sheet.
-List of heading</p>
-<p>(i). Questions arise to be answered. 
-(ii). Contrast data between present and past.  
-(iii). Initial response of association on the village. 
-(iv). Origin of a certain ancient building. 
-(v). Inner structure of the building. 
-(vi). Layout of the village to persist in micro-environment. 
-(vii). Terms of the village explained. 
-(viii). Definition of village type. 
-(ix). Difference between village and town. 
-(X). Elements need to be considered in terms of the village.
-1..................... paragraph A
-2..................... paragraph B
-3..................... paragraph C
-4..................... paragraph D
-5..................... paragraph E
-6..................... paragraph F
-7..................... paragraph G</p>
-<p>Questions 9-13
-Complete the following summary of the paragraphs of Reading Passage, using No More
-than one word from the Reading Passage for each answer. Write your answers in boxes
-8-13 on your answer sheet.
-Village Green layout and Extending
-Impression of British Village usually takes forms of old-styled 8..................... with church and manor house.
-However, records in 9..................... indicated that England was already a cultivated and populated country in
-the 11th century. During medieval times, farmers literally could support themselves and the community,
-therefore, needed to be 10..................... in general. 
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+  
+ queens
+ Questions 8-11
+Label the diagram below.
+ChooseONE OR TWO WORDS from the Reading Passage for each answer.
+Write your answers in boxes 8-11 on your answer sheet.
+A BEEHIVE
+ 3
+  8.....................
+9.....................
+10.....................
+11.....................
+ Questions 12-15
+Do the following statements agree with the information given in Reading Passage? In
+boxes12-15write.
+ YES    if the statement agrees with the information given
+NO    if the statement contradicts the information given
+NOT GIVEN if there is no information about this
+12.....................    The Egyptians keep bees on the banks of the Nile.
+13.....................    First attempts at migratory beekeeping in America were unsuccessful.
+14.....................    Bees keep honey for themselves in the bottom of the hive.
+15.....................    The honey is spun to make it liquid.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 
+ 1.prepare
+ 
+ 2.full
+ 
+  
+  
+  
+  
+ 9.frames (of
+comb)
+10.screen
+11.brood
+chamber
+12.NOT GIVEN
+13.YES
+14.YES
+15.3.smoke
+NO4.charge
+5.machines
+6.combs
+7.split
+8.(hexagonal)
+cells//comb
+ 5</div>
+</div>
+</div>
 </body>
 </html>

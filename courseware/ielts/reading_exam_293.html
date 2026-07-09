@@ -1,405 +1,184 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recent Research On Humour - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Art Of Healing - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题389/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Recent Research On Humour</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-4
-Reading Passage 3 has four sections (A-D). Choose the most suitable heading for each
-section from the list of headings below.
-Write the appropriate numbers (i-vii) in boxes 1-4 on your Answer Sheet
-There are more headings than sections, so you will not use all of them.</p>
-<p>List of Headings
-i
-1.....................    Section A
-2.....................    Section B
-3.....................    Section C
-4.....................    Section D
-   Top Ocean Predators</p>
-<p>ii    Toxic Exposure
-iii    Declining Fish Populations
-iv    Pleasure Boating in the San Juan Islands
-v    Underwater Noise
-vi    Smog in Large Cities vii Impact of Boat Traffic
-vi  Impact of Boat Traffic 
- 
-Questions 5-6
-For each question, choose the appropriate letter A-D and write it in boxes 5 and6 on your
-Answer Sheet
-5    Killer whales (orcas) in the J, K, and L pods prefer to eat
-A halibut.
-B a type of salmon.
-C a variety of animals.
-D fish living at the bottom of the sea.
-6    Some groups of salmon have become extinct because
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Art Of Healing</h1>
+<p>雅思阅读真题 · 第293篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>THE ART OF HEALING
+As with so much, the medicine of the Tang dynasty left its European counterpart in
+the shade. It boasted its own ‘national health service’, and left behind the teachings
+of the incomparable Sun Simiao
+If no further evidence was available of the sophistication of China in the Tang era, then a
+look at Chinese medicine would be sufficient. At the Western end of the Eurasian continent
+the Roman empire had vanished, and there was nowhere new to claim the status of the
+cultural and political centre of the world. In fact, for a few centuries, this centre happened to
+be the capital of the Tang empire, and Chinese medicine under the Tang was far ahead of
+its European counterpart. The organisational context of health and healing was structured
+to a degree that had no precedence in Chinese history and found no parallel elsewhere.
+An Imperial Medical Office had been inherited from previous dynasties: it was immediately
+restructured and staffed with directors and deputy directors, chief and assistant medical
+directors, pharmacists and curators of medicinal herb gardens and further personnel.
+Within the first two decades after consolidating its rule, the Tang administration set up one
+central and several provincial medical colleges with professors, lecturers, clinical
+practitioners and pharmacists to train students in one or all of the four departments of
+medicine, acupuncture, physical therapy and exorcism.
+Physicians were given positions in governmental medical service only after passing
+qualifying examinations. They were remunerated in accordance with the number of cures
+they had effected during the past year.
+In 723 Emperor Xuanzong personally composed a general formulary of prescriptions
+recommended to him by one of his imperial pharmacists and sent it to all the provincial
+medical schools. An Arabic traveller, who visited China in 851, noted with surprise that
+prescriptions from the emperor’s formulary were publicised on notice boards at crossroads
+to enhance the welfare of the population.
+The government took care to protect the general populace from potentially harmful medical
+practice. The Tang legal code was the first in China to include laws concerned with harmful
+and heterodox medical practices. For example, to treat patients for money without adhering
+to standard procedures was defined as fraud combined with theft and had to be tried in
+accordance with the legal statutes on theft. If such therapies resulted in the death of a
+patient, the healer was to be banished for two and a half years. In case a physician
+purposely failed to practice according to the standards, he was to be tried in accordance
+with the statutes on premeditated homicide. Even if no harm resulted, he was to be
+sentenced to sixty strokes with a heavy cane.
+In fact, physicians practising during the Tang era had access to a wealth of pharmaceutical
+and medical texts, their contents ranging from purely pragmatic advice to highly
+sophisticated theoretical considerations. Concise descriptions of the position, morphology,
+and functions of the organs of the human body stood side by side in libraries with books
+enabling readers to calculate the daily, seasonal and annual climatic conditions of cycles of
+sixty years and to understand and predict their effects on health.
+Several Tang authors wrote large collections of prescriptions, continuing a literary tradition
+ 1
+  documented since the 2nd century BC. The two most outstanding works to be named here
+were those by Sun Simiao (581-682?) and Wang Tao (c.670-755). The latter was a
+librarian who copied more than six thousand formulas, categorised in 1,104 sections, from
+sixty-five older works and published them under the title Wciitai miyao. Twenty-four
+sections, for example, were devoted to ophthalmology. They reflect the Indian origin of
+much Chinese knowledge on ailments of the eye and, in particular, of cataract surgery.
+Sun Simiao was the most eminent physician and author not only of the Tang dynasty, but
+of the entire first millennium AD. He was a broadly educated intellectual and physician; his
+world view integrated notions of all three of the major currents competing at his time -
+Confucianism, Daoism and Buddhism. Sun Simiao gained fame during his lifetime as a
+clinician (he was summoned to the imperial court at least once) and as author of the
+Prescriptions Worth Thousands in Gold (Qianjinfang) and its sequel. In contrast to
+developments in the 12th century, physicians relied on prescriptions and single substances
+to treat their patients’ illnesses. The theories of systematic correspondences, characteristic
+of the acupuncture tradition, had not been extended to cover pharmacology yet.
+Sun Simiao rose to the pantheon of Chinese popular Buddhism in about the 13th century.
+He was revered as paramount Medicine God. He gained this extraordinary position in
+Chinese collective memory not only because he was an outstanding clinician and writer,
+but also for his ethical concerns. Sun Simiao was the first Chinese author known to
+compose an elaborate medical ethical code. Even though based on Buddhist and
+Confucian values, his deontology is comparable to the Hippocratic Oath. It initiated a
+debate on the task of medicine, its professional obligations, social position and moral
+justification that continued until the arrival of Western medicine in the 19th century.
+Despite or - more likely - because of its long- lasting affluence and political stability, the
+Tang dynasty did not add any significantly new ideas to the interpretation of illness, health
+and healing. Medical thought reflects human anxieties; changes in medical thought always
+occur in the context of new existential fears or of fundamentally changed social
+circumstances. Nevertheless, medicine was a most fascinating ingredient of Tang
+civilisation and it left a rich legacy to subsequent centuries.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-3
+Choose the appropriate letters A-Dand write them in boxes 1-3 on your answer sheet.
+1In the first paragraph, the writer draws particular attention to
+   A the lack of medical knowledge in China prior to the Tang era.
+B the Western interest in Chinese medicine during the Tang era.
+C the systematic approach taken to medical issues during the Tang era.
+D the rivalry between Chinese and Western cultures during the Tang era.
+2During the Tang era, a government doctor’s annual salary depended upon
+A the effectiveness of his treatment.
+B the extent of his medical experience.
+C the number of people he had successfully trained.
+D the breadth of his medical expertise.
+3Which of the following contravened the law during the Tang era?
+ A a qualified doctor’s refusal to practise
+B the use of unorthodox medical practices
+C a patient dying under medical treatment
+D the receipt of money for medical treatment
+              Questions 4-10
+Do the following statements agree with the information given in Reading Passage 3?
+In boxes4-10 on your answer sheet write
+               YES
+NO
+ if the statement agrees with the information
+if the statement contradicts the information
+        NOT GIVEN if there is no information on this in the passage
+4..................... Academic staff sometimes taught a range of medical subjects during
+the Tang era.
+5.....................         The medical knowledge available during the Tang era only benefited
+the wealthy.
+6.....................         Tang citizens were encouraged to lead a healthy lifestyle.
+7.....................         Doctors who behaved in a fraudulent manner were treated in the same
+way as ordinary criminals during the Tang era.
+ 3
+  
+ 8.....................         Medical reference books published during the Tang era covered
+practical and academic issues.
+9.....................         Waitai miyao contained medical data from the Tang era.
+10.....................         Chinese medical authors are known to have influenced Indian writing.
  
-A they have lost places to live.
-B whales have eaten them.
-C they don't get good nutrition.
-D the winters in the area are too cold.
-Questions 7-14
-Complete the chart below.
-Choose NO MORE THAN THREE WORDS for each answer.
- 3</p>
-<p>Write your answers in boxes 7-14 on your Answer Sheet.
-Cause Effect
-Scientists believe some whales feed 7..................... These whales dive very deep.
- Rockfish caught today is 8Scientists believe that the area is being over fished. ..................... than rockfish
-caught in the past.
-9Orcas are at the top of the ocean food chain. ..................... affects orcas more than it does other
  
-sea animals.
-Orcas are a 10..................... species. We can use orcas to make society aware of the
-problem of marine pollution.
-People enjoy boating, fishing, and whale watching in  On weekends there are 11
-the San Juan Islands.
-..................... near the
-whales.
-Kayaks are 12..................... Marine animals hit them when they come up for air.
-A lot of boats beep their motors running. Whales breathe 13.....................
-Boats are noisy. Whales have difficulty 14.....................
- 4</p>
-<p>4. v
- 
-8. less
-9. pollution
-10. popular
-11. numerous
-boats/vessels
-12. quiet
-13. exhaust fumes
-14. communicating (with
-5. B
-6. A
-7. (on)
-bottomfish others)
- 5</p>
-<p>Reading Practice
- Is Technology Harming our Children’s Health?
-Technology is moving at such a breakneck speed that it is enough to make your head spin.
-It can be difficult to keep up. However, with each new technological marvel come
-consequences. Much of the research conducted has shown the extent of the damage being
-done to our health by technology. It is a scary thought, and with teenagers and children
-being heavy consumers and users of these gadgets, they run the risk of being harmed the
-most.
-The digital revolution in music has enabled people to download, store and listen to songs
-on a tiny, portable device called an MP3 player. The process is quick and afterwards you
-can have access to a library of thousands of songs that can fit into your palm. But experts
-say that continuously listening to loud music on these small music players can permanently
-damage hair cells in the inner ear, resulting in hearing loss. Tor instance, old-fashioned
-headphones have been replaced with smaller ones that fit neatly into the ear, instead of
-over them, which intensifies the sound. In addition to that, digital music does not distort and
-keeps its crystal clear sound, even on loud settings, which encourages children to crank up
-the volume. Combine that with the fact that many children will spend hours listening to their
-iPods, and you have the recipe for hearing loss. Put into further perspective, most MP3
-players can reach levels of 120 decibels, which is louder than a chainsaw or lawnmower.
-When you consider 85 decibels is the maximum safe decibel level set by hearing experts
-over the course of a working day, and that children will listen to music at higher decibel
-levels than that for long periods of time, hearing will invariably suffer.
-Apart from hearing damage, there are other serious health risks. We are living in a wireless
-age. Calls can be made and received on mobiles from anywhere and the internet can be
-accessed without the need for cables.The advantages are enormous, bringing ease and
-convenience to our lives. It is clear that mobiles and wireless technology are here to stay
-but are we paying the price for new technology? Studies have shown that the rapid
-expansion in the use of wireless technology has brought with it a new form of radiation
-called ‘electropollution’.
-Compared to two generations ago, we are exposed to 100 million times more radiation.
-The human body consists of trillions of cells which use faint electromagnetic signals to
-communicate with each other, so that the necessary biological and physiological changes
-can happen. It is a delicate, natural balance. But this balance is being upset by the
-constant exposure to electromagnetic radiation (EMR) that we face in our daily lives and it
-is playing havoc with our bodies. EMR can disrupt and alter the way in which our cells
-communicate and this can result in abnormal cell behaviour. Some studies have shown
-that exposure to wireless technology can affect our enzyme production, immune systems,
-nervous system and even our moods and behaviour. The most dangerous part of the
-phone is around the antenna.This area emits extremely potent radiation which has been
-shown to cause genetic damage and an increase in the risk of cancer.
-Research shows that teenagers and young adults are the largest group of mobile phone
-users. According to a recent Eurobarometer survey, 70 per cent of Europeans aged 12-13
-own a mobile phone and the number of children five to nine years old owning mobiles has
-greatly increased over the years. Children are especially vulnerable because their brains
-and nervous systems are not as immune to attack as adults. Sir William Stewart, chairman
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ Questions 11-13
+Complete the sentences below with words taken from Reading Passage 3.
+UseNO MORE THAN THREE WORDS for each answer.
+Write your answers in boxes  11-13on your answer sheet.
+ The first known medical writing in China dates back to the 11......................
+During the Tang era, doctors depended most on 12..................... and single
+substances to treat their patients 13..................... is famous for producing a set of
+medical rules for Chinese physicians.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.C
+2.A
+3.B
+4.YES
+5.NO
+  
+ 8.YES
+9.NOT GIVEN
+10.NO
+11.2nd century
+12.prescriptions
+6.NOT GIVEN 13.Sun Simiao
+7.YES
+ 5</div>
+</div>
+</div>
 </body>
 </html>

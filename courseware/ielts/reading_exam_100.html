@@ -1,366 +1,172 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Children Tested To Destruction - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Doctoring Sales - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题141/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Children Tested To Destruction</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>catastrophe, the loss of biodiversity will be enormous.</p>
-<p>Similarly, sea otters play a major role in the survival of giant kelp forests along the coasts of
-California and Alaska. These “marine rainforests” provide a home for a wide range of other
-species. The kelp itself is the main food of purple and red sea urchins and in turn, the
-urchins are eaten by predators, particularly sea otters. They detach an urchin from the
-seabed then float to the surface and lie on their backs with the urchin shell on their tummy,
-smashing it open with a stone before eating the contents. Urchins that are not eaten tend to
-spend their time in rock crevices to avoid the predators. This allows the kelp to grow – and
-it can grow many centimetres in a day. As the forests form, bits of kelp break off and fall to
-the bottom to provide food for the urchins in their crevices. The sea otters thrive hunting for
-sea urchins in the kelp, and many other fish and invertebrates live among the fronds. The
-problems start when the sea otter population declines. As large predators they are
-vulnerable – their numbers are relatively small to disease or human hunters can wipe them
-out. The result is that the sea urchin population grows unchecked and they roam the
-seafloor eating young kelp fronds. This tends to keep the kelp very short and stops forests
-developing, which has a huge impact on biodiversity.</p>
-<p>Conversely, keystone species can also make dangerous alien species: they can wreak
-havoc if they end up in the wrong ecosystem. The cactus moth, whose caterpillar is a
-voracious eater of prickly pear was introduced to Australia to control the rampant cacti. It
-was so successful that someone thought it would be a good idea to introduce it to
-Caribbean islands that had the same problem. It solved the cactus menace, but
-unfortunately, some of the moths have now reached the US mainland – borne on winds
-and in tourists’ luggage – where they are devastating the native cactus populations of
-Florida.</p>
-<p>Organisations like the Convention on Biological Diversity work with groups such as the UN
-and with governments and scientists to raise awareness and fund research. A number of
-major international meetings – including the World Summit on Sustainable Development in
-Johannesburg this year – have set targets for governments around the world to slow the
-loss of biodiversity. And the CITES meeting in Santiago last month added several more
-names to its list of endangered species for which trade is controlled. Of course, these
-agreements will prove of limited value if some countries refuse to implement them.</p>
-<p>There is cause for optimism, however. There seems to be a growing understanding of the
-need for sustainable agriculture and sustainable tourism to conserve biodiversity. Problems
-such as illegal logging are being tackled through sustainable forestry programmes, with the
-emphasis on minimising the use of rainforest hardwoods in the developed world and on
-rigorous replanting of whatever trees are harvested. CITES is playing its part by controlling
-trade in wood from endangered tree species. In the same way, sustainable farming
-techniques that minimise environmental damage and avoid monoculture.</p>
-<p>Action at a national level often means investing in public education and awareness. Getting
-people like you and me involved can be very effective. Australia and many European
-countries are becoming increasingly efficient at recycling much of their domestic waste, for
-example, preserving natural resources and reducing the use of fossil fuels. This, in turn,
-has a direct effect on biodiversity by minimising pollution, and an indirect effect by reducing
-the number of greenhouse gases emitted from incinerators and landfill sites. Preserving
-ecosystems intact for future generations to enjoy is obviously important, but biodiversity is
-not some kind of optional extra. Variety may be “the spice of life”, but biological variety is
-also our life-support system.
- 3</p>
-<p>Questions 1-7
-Do the following statements agree with the information given in Reading Passage ?
-In boxes 1-7 on your answer sheet, write
-TRUE               if the statement is true
-FALSE              if the statement is false
-NOT GIVEN    if the information is not given in the passage
-1.....................   The term “biodiversity” consists of living creatures and the environment
-that they live in. 
-2.....................   There are species that have not been researched because it’s
-unnecessary to study all creatures.
-3.....................   It is not necessary to investigate all creatures in a certain place.
-4.....................   The press more often than not focuses on animals well-known.
-5.....................   There is a successful case that cactus moth plays a positive role in the US.
-6.....................   Usage of hardwoods is forbidden in some European countries.
-7.....................   Agriculture experts advise farmers to plant single crops in the field in terms
-of sustainable farming.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Doctoring Sales</h1>
+<p>雅思阅读真题 · 第100篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Doctoring sales
+Pharmaceuticals is one of the most profitable industries in North America. But do
+the drugs industry's sales and marketing strategies go too far?
+A
+A few months ago Kim Schaefer, sales representative of a major global pharmaceutical
+company, walked into a medical center in New York to bring information and free samples
+of her company's latest products. That day she was lucky - a doctor was available to see
+her. ‘The last rep offered me a trip to Florida. What do you have?' the physician asked. He
+was only half joking.
+B
+What was on offer that day was a pair of tickets for a New York musical. But on any given
+day, what Schaefer can offer is typical for today’s drugs rep - a car trunk full of promotional
+gifts and gadgets, a budget that could buy lunches and dinners for a small country,
+hundreds of free drug samples and the freedom to give a physician $200 to prescribe her
+new product to the next six patients who fit the drug's profile. And she also has a few $
+1,000 honoraria to offer in exchange for doctors' attendance at her company's next
+educational lecture.
+C
+Selling pharmaceuticals is a daily exercise in ethical judgement. Salespeople like Schaefer
+walk the line between the common practice of buying a prospect’s time with a free meal,
+and bribing doctors to prescribe their drugs. They work in an industry highly criticized for its
+sales and marketing practices, but find themselves in the middle of the age-old chlcken-or-
+egg question - businesses won’t use strategies that don't work, so are doctors to blame for
+the escalating extravagance of pharmaceutical marketing? Or is It the industry’s
+responsibility to decide the boundaries?
+D 
+The explosion in the sheer number of salespeople in the field - and the amount of funding
+used to promote their causes - forces close examination of the pressures, Influences and
+relationships between drug reps and doctors. Salespeople provide much-needed
+information and education to physicians. In many cases the glossy brochures, article
+reprints and prescriptions they deliver are primary sources of drug education for healthcare
+givers. With the huge investment the industry has placed in face-to-face selling,
+salespeople have essentially become specialists In one drug or group of drugs - a
+tremendous advantage In getting the attention of busy doctors in need of quick information.
+E
+But the sales push rarely stops in the office. The flashy brochures and pamphlets left by the
+sales reps are often followed up with meals at expensive restaurants, meetings in warm
+and sunny places, and an inundation of promotional gadgets. Rarely do patients watch a
+doctor write with a pen that Isn’t emblazoned with a drug’s name, or see a nurse use a
+tablet not bearing a pharmaceutical company’s logo. Millions of dollars are spent by
+ 1
+pharmaceutical companies on promotional products like coffee mugs, shirts, umbrellas,
+and golf balls. Money well spent? It’s hard to tell. ‘I’ve been the recipient of golf balls from
+one company and I use them, but it doesn’t make me prescribe their medicine,’ says one
+doctor. 'I tend to think I'm not influenced by what they give me.’ 
+F
+Free samples of new and expensive drugs might be the single most effective way of getting
+doctors and patients to become loyal to a product. Salespeople hand out hundreds of
+dollars’ worth of samples each week - $7.2 billion worth of them In one year. Though few
+comprehensive studies have been conducted, one by the University of Washington
+Investigated how drug sample availability affected what physicians prescribe. A total of 131
+doctors self-reported their prescribing patterns - the conclusion was that the availability of
+samples led them to dispense and prescribe drugs that differed from their preferred drug
+choice.
+G
+The bottom line Is that pharmaceutical companies as a whole Invest more In marketing
+than they do in research and development. And patients are the ones who pay - in the form
+of sky-rocketing prescription prices - for every pen that’s handed out, every free theatre
+ticket, and every steak dinner eaten. In the end the fact remains that pharmaceutical
+companies have every right to make a profit and will continue to find new ways to increase
+sales. But as the medical world continues to grapple with what’s acceptable and what’s not,
+It is clear that companies must continue to be heavily scrutinized for their sales and
+marketing strategies.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Reading Passage 1 has seven paragraphs, A-G.
+Choose the correct heading for each paragraph from the list of headings below.
+Write the correct number, i-x, in boxes 1-7 on your answer sheet.
+List of Headings
  
+ 
+ 
+ 
+ 
+ 
+ 
+ i    Not all doctors are persuaded
+ii    Choosing the best offers
+iii    Who is responsible for the increase in promotions?
+iv    Fighting the drug companies
+v    An example of what doctors expect from drug companies
+vi    Gifts include financial incentives
+vii    Research shows that promotion works
+viii    The high costs of research
+ix    The positive side of drugs promotion
+x    Who really pays for doctors’ free gifts?
+  1    Paragraph A 1.....................
+2    Paragraph B 2.....................
+3    Paragraph C 3.....................
+4    Paragraph D 4.....................
+5    Paragraph E 5.....................
+6    Paragraph F 6.....................
+7    Paragraph G 7.....................
 Questions 8-13
-Complete the following summary of the paragraphs of Reading Passage, using NO MORE
-THAN TWO WORDS from the Reading Passage for each answer.
-Write your answers in boxes 8-13 on your answer sheet. 
-Because of the ignorance brought by media, people tend to neglect significant creatures
-called 8...................... Every creature has diet connections with others, such
-as 9....................., which provide a majority of foods for other species. In some states of
-America, the  decline in a number of sea otters leads to the boom of 10...................... An
-impressing case is that imported 11..................... successfully tackles the plant cacti
-in 12...................... However, the operation is needed for the government to increase its
-financial support in 13......................
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+Do the following statements agree with the views of the writer in Reading Passage I?
+In boxes8-13on your answer sheet, write
+YES    if the statement agrees with the views of the writer
+NO    if the statement contradicts the views of the writer
+ 3
+ NOT GIVEN if it is impossible to say what the writer thinks about this
+8.....................    Sales representatives like Kim Schaefer work to a very limited budget.
+9.....................    Kim Schaefer’s marketing technique may be open to criticism on moral
+grounds.
+10.....................    The information provided by drug companies is of little use to doctors.
+11.....................    Evidence of drug promotion is clearly visible in the healthcare
+environment.
+12.....................    The drug companies may give free drug samples to patients without
+doctors’ prescriptions.
+13.....................    It is legitimate for drug companies to make money.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.v
+2.vi
+3.iii
+4.ix
+5.i
+6.vii
+7.8.NO
+9.YES
+10.NO
+11.YES
+12.NOT GIVEN
+13.YES
+x
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,392 +1,175 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Concept Of Role Theory - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Megafires Of California - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题474/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Concept Of Role Theory</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-5
-Reading Passage 2 contains six Key Points.
-Choose the correct heading for Key Points TWO to SIX from the list of headings below.
-Write the correct number, i-viii, in boxes 1-5 on your answer sheet.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Megafires Of California</h1>
+<p>雅思阅读真题 · 第353篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The megafires of California
+Drought, housing expansion, and oversupply of tinder make for bigger, hotter fires in the
+western United States
+Wildfires are becoming an increasing menace in the western United States, with Southern
+California being the hardest hit area. There's a reason fire squads battling more frequent
+blazes in Southern California are having such difficulty containing the flames, despite better
+preparedness than ever and decades of experience fighting fires fanned by the ‘Santa Ana
+Winds’. The wildfires themselves, experts say, are generally hotter, faster, and spread
+more erratically than in the past.
+Megafires, also called ‘siege fires’, are the increasingly frequent blazes that burn 500,000
+acres or more - 10 times the size of the average forest fire of 20 years ago. Some recent
+wildfires are among the biggest ever in California in terms of acreage burned, according to
+state figures and news reports.
+One explanation for the trend to more superhot fires is that the region, which usually has
+dry summers, has had significantly below normal precipitation in many recent years.
+Another reason, experts say, is related to the century- long policy of the US Forest Service
+to stop wildfires as quickly as possible.
+The unintentional consequence has been to halt the natural eradication of underbrush, now
+the primary fuel for megafires.
+Three other factors contribute to the trend, they add. First is climate change, marked by a
+1-degree Fahrenheit rise in average yearly temperature across the western states. Second
+is fire seasons that on average are 78 days longer than they were 20 years ago. Third is
+increased construction of homes in wooded areas.
+‘We are increasingly building our homes in fire-prone ecosystems,’ says Dominik
+Kulakowski, adjunct professor of biology at Clark University Graduate School of Geography
+in Worcester, Massachusetts. ‘Doing that in many of the forests of the western US is like
+building homes on the side of an active volcano.'
+In California, where population growth has averaged more than 600,000 a year for at least
+a decade, more residential housing is being built. ‘What once was open space is now
+residential homes providing fuel to make fires burn with greater intensity,’ says Terry
+McHale of the California Department of Forestry firefighters' union. ‘With so much dryness,
+so many communities to catch fire, so many fronts to fight, it becomes an almost incredible
+job.'
+That said, many experts give California high marks for making progress on preparedness in
+recent years, after some of the largest fires in state history scorched thousands of acres,
+burned thousands of homes, and killed numerous people. Stung in the past by criticism of
+bungling that allowed fires to spread when they might have been contained, personnel are
+meeting the peculiar challenges of neighborhood - and canyon- hopping fires better than
+previously, observers say.
+State promises to provide more up-to-date engines, planes, and helicopters to fight fires
+have been fulfilled. Firefighters’ unions that in the past complained of dilapidated
+ 1
+equipment, old fire engines, and insufficient blueprints for fire safety are now praising the
+state's commitment, noting that funding for firefighting has increased, despite huge cuts in
+many other programs. ‘We are pleased that the current state administration has been very
+proactive in its support of us, and [has] come through with budgetary support of the
+infrastructure needs we have long sought,' says Mr. McHale of the firefighters’ union.
+Besides providing money to upgrade the fire engines that must traverse the mammoth
+state and wind along serpentine canyon roads, the state has invested in better command-
+and-control facilities as well as in the strategies to run them. ‘In the fire sieges of earlier
+years, we found that other jurisdictions and states were willing to offer mutual-aid help, but
+we were not able to communicate adequately with them,’ says Kim Zagaris, chief of the
+state's Office of Emergency Services Fire and Rescue Branch.
+After a commission examined and revamped communications procedures, the statewide
+response ‘has become far more professional and responsive,’ he says. There is a sense
+among both government officials and residents that the speed, dedication, and coordination
+of firefighters from several states and jurisdictions are resulting in greater efficiency than in
+past ‘siege fire’ situations.
+In recent years, the Southern California region has improved building codes, evacuation
+procedures, and procurement of new technology. ‘I am extraordinarily impressed by the
+improvements we have witnessed,’ says Randy Jacobs, a Southern California- based
+lawyer who has had to evacuate both his home and business to escape wildfires.
+‘Notwithstanding all the damage that will continue to be caused by wildfires, we will no
+longer suffer the loss of life endured in the past because of the fire prevention and
+firefighting measures that have been put in place,’ he says.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Complete the notes below.
+ChooseONE WORD AND/OR A NUMBER from the passage for each answer.
+Write your answers in boxes 1-6on your answer sheet.
  
-List of Headings
-i    Ensure the reward system is fair
-ii    Match rewards to individuals
-iii   Ensure targets are realistic
-iv    Link rewards to achievement
-v    Encourage managers to take more responsibility
-vi    Recognise changes in employees’ performance over time
-vii    Establish targets and give feedback
-viii    Ensure employees arc suited to their jobs
-Example Answer</p>
-<p>viii
  
-1    Key Point Two 1.....................
-2    Key Point Three 2.....................
-3    Key Point Four 3.....................
-4    Key Point Five 4.....................
-5    Key Point Six 5.....................
-Questions 6-11
-Do the following statements agree with the views of the writer in Reading Passage 2?
-In boxes 6-11 on your answer sheet, write
-YES    if the statement agrees with the views of the writer
-NO    if the statement contradicts the views of the writer
- 3</p>
-<p>NOT GIVEN if it is impossible to say what the writer thinks about this
-6.....................    A shrinking organisation tends to lose its less skilled employees rather
-than its more skilled employees.
-7.....................    It is easier to manage a small business than a large business.
-8.....................    High achievers arc well suited to team work.
-9.....................    Some employees can feel manipulated when asked to participate in goalsetting.
-10.....................    The staff appraisal process should be designed by employees.
-11.....................    Employees’ earnings should be disclosed to everyone within the
-organisation.
-Questions 12-14
-Look at the following groups of workers ( Questions 12-14) and the list of descriptions
-below.
-Match each group with the correct description, A-E.
-Write the correct letter, A-E, in boxes 12-14 on your answer sheet.</p>
-<p>List of Descriptions
+ Wildfires
+ 
+ 
+ 
+ •Characteristics of wildfires and wildfire conditions today compared to the past:
+- occurrence: more frequent
+- temperature: hotter
+- speed: faster
+- movement: 1..................... more unpredictably
+- size of fires: 2..................... greater on average than two decades ago
  
-A They judge promotion to be important.
-B They have less need of external goals.
-C They think that the quality of their work is important. D They resist goals which arc
-imposed.
-E They have limited job options.
-12    high achievers 12.....................
-13    clerical workers 13.....................
-14    production workers 14.....................
- 4</p>
-<p>1. vii
-2. iii
-3. ii
-4. iv
-5. i
-6. NO
+ 
+  •Reasons wildfires cause more damage today compared to the past:
+- rainfall:3..................... average
+- more brush to act as 4.....................
+- increase in yearly temperature
+- extended fire 5.....................
+- more building of 6..................... in vulnerable places
  
-8. NO
-9. YES
-10. NOT GIVEN
-11. YES
-12. B
-13. C
-14.7. NOT GIVEN A
- 5</p>
-<p>Reading Practice
- Movie of Metropolis
-Movie of Metropolis
-…being the science-fiction film that is steadily becoming a fact</p>
-<p>When German director Fritz Lang visited the United States in 1924, his first glimpse of the
-country was a night-time view of the New York skyline from the deck of an ocean liner.
-This, he later recalled, was the direct inspiration for what is still probably the most
-innovative and influential science-fiction film ever made – Metropolis.</p>
-<p>Metropolis is a bleak vision of the early twenty-first century that is at once both chilling and
-exhilarating. This spectacular city of the future is a technological marvel of high-rise
-buildings connected by elevated railways and airships. It’s also a world of extreme
-inequality and social division. The workers live below ground and exist as machines
-working in an endless routine of mind-numbing 10-hour shifts while the city’s elite lead lives
-of luxury high above. Presiding over them all is the Master of Metropolis, John Fredersen,
-whose sole satisfaction seems to lie in the exercise of power.</p>
-<p>Lang’s graphic depiction of the future is conceived in almost totally abstract terms. The
-function of the individual machines is never defined. Instead, this mass of dials, levers and
-gauges symbolically stands for all machines and all industry, with the workers as slave-live
-extensions of the equipment they have to operate. Lang emphasizes this idea in the
-famous shift-change sequence at the start of the movie when the workers walk in zombielike geometric ranks, all dressed in the same dark overalls and all exhibiting the same
-bowed head and dead-eyed stare. An extraordinary fantasy sequence sees one machine
-transformed into a huge open-jawed statue which then literally swallows them up.</p>
-<p>On one level the machines and the exploited workers simply provide the wealth and
-services which allow the elite to live their lives of leisure, but on a more profound level, the
-purpose of all this demented industry is to serve itself. Power, control and the continuance
-of the system from one 10-hour shift to the next is all that counts. The city consumes
-people and their labour and in the process becomes a perverse parody of a living being.</p>
-<p>It is enlightening, I think, to relate the film to the modern global economy in which
-multinational corporations now routinely close their factories in one continent so that they
-can take advantage of cheap labour in another. Like the industry in Metropolis, these
-corporations’ goals of increased efficiency and profits have little to do with the welfare of
-the majority of their employees or that of the population at large. Instead, their aims are to
-sustain the momentum of their own growth and to increase the monetary rewards to a tiny
-elite – their executives and shareholders. Fredersen himself is the essence of the big
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ Questions 7-13
+Do the following statements agree with the information given in Reading Passage?
+In boxes7-13on your answer sheet, write
+TRUEif the statement agrees with the information
+FALSEif the statement contradicts the information
+NOT GIVEN if there is no information on this
+7..................... The amount of open space in California has diminished over the last
+ten years.
+8..................... Many experts believe California has made little progress in readying
+itself to fight fires.
+9..................... Personnel in the past have been criticised for mishandling fire
+containment.
+10..................... California has replaced a range of firefighting tools.
+ 3
+11..................... More firefighters have been hired to improve fire-fighting capacity.
+12..................... Citizens and government groups disapprove of the efforts of different
+states and agencies working together.
+13..................... Randy Jacobs believes that loss of life from fires will continue at the
+same levels, despite changes made.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.spread
+2.10/ten times
+3.below
+4.fuel
+5.seasons
+6.homes/housing
+7.8.FALSE
+9.TRUE
+10.TRUE
+11.NOT
+GIVEN
+12.FALSE
+13.FALSE
+TRUE
+ 5</div>
+</div>
+</div>
 </body>
 </html>

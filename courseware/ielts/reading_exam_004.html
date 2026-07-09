@@ -1,286 +1,156 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Dinosaurs Footprints - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-        }
-        .passage-box {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
-        .question-card {
-            background: #eff6ff;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
-        }
-        .question-card h4 {
-            margin: 0 0 12px 0;
-            color: #1e40af;
-        }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
-            display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
-            text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The History of Glass - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📖 阅读真题 5/50</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
-        </aside>
-
-        <main class="main">
-            <div class="page-hero">
-                <h1>📖 The Dinosaurs Footprints</h1>
-                <p>剑桥16 Test2 Passage2 · 题型：Matching · 填空 · 选择 · 完整逐题解析</p>
-            </div>
-
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 5: The Dinosaurs Footprints</h3>
-                    <div class="difficulty diff-medium">难度：★★★☆☆ 中等</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：说明文/议论文 · 话题：古生物 · 科学 · 建议时间：18-20分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>The Dinosaurs Footprints is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the dinosaurs footprints has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>B</strong></p>
-                        <p>The Dinosaurs Footprints is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the dinosaurs footprints has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>C</strong></p>
-                        <p>The Dinosaurs Footprints is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the dinosaurs footprints has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>D</strong></p>
-                        <p>The Dinosaurs Footprints is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the dinosaurs footprints has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>E</strong></p>
-                        <p>The Dinosaurs Footprints is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the dinosaurs footprints has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>F</strong></p>
-                        <p>The Dinosaurs Footprints is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the dinosaurs footprints has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>G</strong></p>
-                        <p>The Dinosaurs Footprints is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the dinosaurs footprints has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>H</strong></p>
-                        <p>The Dinosaurs Footprints is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the dinosaurs footprints has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-8: Complete the Summary</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
-                        <p style="line-height:2.2;">
-                            The Step Pyramid was designed by the architect <input type="text" class="blank-input" placeholder="...">. It was built during the <input type="text" class="blank-input" placeholder="..."> century BCE for Pharaoh Djoser. Unlike previous tombs made of <input type="text" class="blank-input" placeholder="...">, this pyramid was constructed from <input type="text" class="blank-input" placeholder="...">. The complex includes various <input type="text" class="blank-input" placeholder="..."> and temples, surrounded by a high <input type="text" class="blank-input" placeholder="...">. Underground, there are over 5 kilometers of <input type="text" class="blank-input" placeholder="..."> and chambers.
-                        </p>
-                    </div>
-                    <div class="question-card">
-                        <h4>Questions 9-12: Matching Information</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Which paragraph contains the following information?</p>
-                        <p style="margin:8px 0;"><strong>9.</strong> The underground structures beneath the pyramid</p>
-                        <p style="margin:8px 0;"><strong>10.</strong> The influence on later Egyptian architecture</p>
-                        <p style="margin:8px 0;"><strong>11.</strong> The buildings within the pyramid complex</p>
-                        <p style="margin:8px 0;"><strong>12.</strong> The revolutionary nature of stone construction</p>
-                    </div>
-                    <div class="question-card">
-                        <h4>Questions 13-16: Multiple Choice</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose the correct letter, A, B, C or D.</p>
-                        <p style="margin:12px 0;"><strong>13.</strong> The Step Pyramid was built approximately how many years ago?</p>
-                        <p style="margin:4px 0;">A. 2,600</p>
-                        <p style="margin:4px 0;">B. 3,600</p>
-                        <p style="margin:4px 0;">C. 4,600</p>
-                        <p style="margin:4px 0;">D. 5,600</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> Imhotep</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> 27th</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> mud brick</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> limestone</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> courtyards</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> wall</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> tunnels</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>8.</strong> E</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>9.</strong> G</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>10.</strong> C</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>11.</strong> D</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>12.</strong> C</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>13.</strong> A</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>14.</strong> B</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>15.</strong> D</td></tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 8: Imhotep</h5>
-                        <p><strong>定位：</strong>Paragraph B 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Designed by the brilliant architect Imhotep"</span></p>
-                        <p><strong>解析：</strong>原文原词，注意大写。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 9: 27th</h5>
-                        <p><strong>定位：</strong>Paragraph A 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Built during the 27th century BCE"</span></p>
-                        <p><strong>解析：</strong>数字信息，直接提取。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 14: E</h5>
-                        <p><strong>定位：</strong>Paragraph E 第1句</p>
-                        <p><strong>原文：</strong><span class="keyword">"The underground galleries beneath the Step Pyramid are equally impressive."</span></p>
-                        <p><strong>解析：</strong>"underground galleries"对应题目中的"underground structures"。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 18: C</h5>
-                        <p><strong>定位：</strong>Paragraph G 第2句</p>
-                        <p><strong>原文：</strong><span class="keyword">"it remains standing after more than 4,600 years"</span></p>
-                        <p><strong>解析：</strong>原文明确给出4,600年，对应选项C。</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The History of Glass</h1>
+<p>雅思阅读真题 · 第4篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The history of glass
+From our earliest origins, man has been making use of glass. Historians have discovered
+that a type of natural glass - obsidian - formed in places such as the mouth of a volcano as
+a result of the intense heat of an eruption melting sand - was first used as tips for spears.
+Archaeologists have even found evidence of man-made glass which dates back to 4000
+BC; this took the form of glazes used for coating stone beads. It was not until 1500 BC,
+however, that the first hollow glass container was made by covering a sand core with a
+layer of molten glass.
+Glass blowing became the most common way to make glass containers from the first
+century BC. The glass made during this time was highly coloured due to the impurities of
+the raw material. In the first century AD, methods of creating colourless glass were
+developed, which was then tinted by the addition of colouring materials. The secret of glass
+making was taken across Europe by the Romans during this century. However, they
+guarded the skills and technology required to make glass very closely, and it was not until
+their empire collapsed in 476 AD that glass-making knowledge became widespread
+throughout Europe and the Middle East. From the 10th century onwards, the Venetians
+gained a reputation for technical skill and artistic ability in the making of glass bottles, and
+many of the city’s craftsmen left Italy to set up glassworks throughout Europe.
+A major milestone in the history of glass occurred with the invention of lead crystal glass by
+the English glass manufacturer George Ravenscroft (1632 - 1683). He attempted to
+counter the effect of clouding that sometimes occurred in blown glass by introducing lead to
+the raw materials used in the process. The new glass he created was softer and easier to
+decorate, and had a higher refractive index, adding to its brilliance and beauty, and it
+proved invaluable to the optical industry. It is thanks to Ravenscroft’s invention that optical
+lenses, astronomical telescopes, microscopes and the like became possible.
+In Britain, the modem glass industry only really started to develop after the repeal of the
+Excise Act in 1845. Before that time, heavy taxes had been placed on the amount of glass
+melted in a glasshouse, and were levied continuously from 1745 to 1845. Joseph Paxton’s
+Crystal Palace at London’s Great Exhibition of 1851 marked the beginning of glass as a
+material used in the building industry. This revolutionary new building encouraged the use
+of glass in public, domestic and horticultural architecture. Glass manufacturing techniques
+also improved with the advancement of science and the development of better technology.
+From 1887 onwards, glass making developed from traditional mouth-blowing to a semi-
+automatic process, after factory- owner HM Ashley introduced a machine capable of
+producing 200 bottles per hour in Castleford, Yorkshire, England - more than three times
+quicker than any previous production method. Then in 1907, the first fully automated
+machine was developed in the USA by Michael Owens - founder of the Owens Bottle
+Machine Company (later the major manufacturers Owens- Illinois) - and installed in its
+factory. Owens’ invention could produce an impressive 2,500 bottles per hour Other
+developments followed rapidly, but it | was not until the First World War when Britain
+became cut off from essential glass suppliers, that glass became part of the scientific
+sector. Previous to this, glass had been seen as a craft rather than a precise science.
+Today, glass making is big business. It has become a modem, hi-tech industry operating in
+a fiercely competitive global market where quality, design and service levels are critical to
+ 1
+maintaining market share. Modem glass plants are capable of making millions of glass
+containers a day in many different colours, with green, brown and clear remaining the most
+popular. Few of us can imagine modem life without glass. It features in almost every aspect
+of our lives - in our homes, our cars and whenever we sit down to eat or drink. Glass
+packaging is used for many products, many beverages are sold in glass, as are numerous
+foodstuffs, as well as medicines and cosmetics.
+Glass is an ideal material for recycling, and with growing consumer concern for green
+issues, glass bottles and jars are becoming ever more popular. Glass recycling is good
+news for the environment. It saves used glass containers being sent to landfill. As less
+energy is needed to melt recycled glass than to melt down raw materials, this also saves
+fuel and production costs. Recycling also reduces the need for raw materials to be
+quarried, thus saving precious resources.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-8
+Complete the notes below.
+ChooseONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 1-8on your answer sheet
+ The History of Glass
+ •   Early humans used a material called 1..................... to make the sharp points of their
+2.....................
+ •   4000 BC: 3..................... made of stone were covered in a coating of man-made
+glass.
+•   First century BC: glass was coloured because of the 4..................... in the material.
+ 
+ •   Until 476 AD: Only the 5..................... knew how to make glass.
+ •   From 10th century: Venetians became famous for making bottles out of glass.
+ 
+  •   17th century: George Ravenscroft developed a process using 6..................... to avoid
+the occurrence of 7..................... in blown glass.
+ 
+ 
+ •   Mid-19th century: British glass production developed after changes to laws
+concerning 8.....................
+Questions 9-13
+In boxes9-13on your answer sheet, write
+TRUE   if the statement agrees with the information
+FALSEif the statement contradicts the information
+NOT GIVEN if there is no information on this
+9.....................      In 1887, HM Ashley had the fastest bottle-producing machine that
+existed at the time.
+10.....................    Michael Owens was hired by a large US company to design a fully-
+automated bottle manufacturing machine for them.
+11.....................    Nowadays, most glass is produced by large international manufacturers.
+12.....................    Concern for the environment is leading to an increased demand for glass
+containers.
+13.....................    It is more expensive to produce recycled glass than to manufacture new
+glass.
+ 3
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.obsidian
+2.spears
+3.beads
+4.impurities
+5.Romans
+6.lead
+ 8.taxes
+9.TRUE
+10.FALSE
+11.NOT GIVEN
+12.TRUE
+13.FALSE
+7.clouding
+ 5</div>
+</div>
+</div>
 </body>
 </html>

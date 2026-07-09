@@ -1,294 +1,197 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Future of Work - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-        }
-        .passage-box {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
-        .question-card {
-            background: #eff6ff;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
-        }
-        .question-card h4 {
-            margin: 0 0 12px 0;
-            color: #1e40af;
-        }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
-            display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
-            text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Benefits of Being Bilingual - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📖 阅读真题 3/50</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
-        </aside>
-
-        <main class="main">
-            <div class="page-hero">
-                <h1>📖 The Future of Work</h1>
-                <p>剑桥16 Test1 Passage3 · 题型：选择 · T/F/NG · 填空 · 完整逐题解析</p>
-            </div>
-
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 3: The Future of Work</h3>
-                    <div class="difficulty diff-hard">难度：★★★★★ 困难</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：议论文 · 话题：科技 · 社会 · 建议时间：20-25分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>The world of work is undergoing a transformation more profound than any since the Industrial Revolution. Technological advancements, demographic shifts, and changing attitudes toward work-life balance are reshaping how, where, and when we work. As we navigate the 21st century, understanding these changes and their implications has become essential for individuals, businesses, and policymakers alike.</p>
-                        <p><strong>B</strong></p>
-                        <p>Automation and artificial intelligence stand at the forefront of workplace transformation. Routine tasks that once required human labor are increasingly being performed by machines with greater speed, accuracy, and consistency. This transition affects not only manufacturing but also white-collar professions. Data entry, basic accounting, legal document review, and even some aspects of medical diagnosis can now be performed by AI systems. While this displacement creates anxiety about job losses, it also presents opportunities for workers to move into more creative, empathetic, and strategic roles that leverage uniquely human capabilities.</p>
-                        <p><strong>C</strong></p>
-                        <p>Remote work, accelerated by the COVID-19 pandemic, has become a permanent feature of the employment landscape. What began as a necessary adaptation has evolved into a preferred mode of work for millions. Digital collaboration tools enable teams to function effectively across different cities, countries, and even continents. This geographical flexibility has significant implications for urban planning, real estate markets, and work-life balance. Employees gain freedom from long commutes and greater control over their schedules, while employers can tap into global talent pools rather than being limited to local labor markets.</p>
-                        <p><strong>D</strong></p>
-                        <p>The rise of the gig economy represents another significant shift. More people are working as freelancers, consultants, or independent contractors rather than in traditional full-time positions. Platforms like Uber, Airbnb, and Upwork have created new ways for people to monetize their skills and assets. While this offers greater flexibility and autonomy, it also raises concerns about job security, access to benefits such as health insurance and retirement plans, and the erosion of traditional employment protections. The challenge for policymakers is to update labor laws to protect workers while preserving the flexibility that makes gig work attractive.</p>
-                        <p><strong>E</strong></p>
-                        <p>Changing demographics are also reshaping the workforce. In many developed countries, the population is aging, leading to later retirement ages and multi-generational workplaces where employees in their 20s work alongside colleagues in their 70s. This diversity brings both challenges and opportunities. Older workers bring experience, institutional knowledge, and often strong work ethics, while younger workers bring fresh perspectives, digital native skills, and innovative approaches. Managing this diversity effectively requires new approaches to leadership, communication, and human resource management.</p>
-                        <p><strong>F</strong></p>
-                        <p>The concept of work-life balance itself is evolving. Younger generations entering the workforce increasingly prioritize flexibility, purpose, and personal fulfillment over traditional markers of career success such as salary and status. Companies are responding with policies designed to support employee well-being: flexible hours, mental health days, parental leave for both genders, and even sabbatical programs. There is growing recognition that employees who are healthy and fulfilled are more productive, creative, and loyal. This shift toward holistic employee well-being represents a fundamental rethinking of the relationship between employers and employees.</p>
-                        <p><strong>G</strong></p>
-                        <p>Continuous learning has become an essential component of the modern career. With technology changing rapidly, skills that were valuable a decade ago may be obsolete today. Lifelong learning is no longer optional but a necessity for career resilience. Individuals must take responsibility for continuously updating their skills, while employers have a growing role in providing training and development opportunities. Educational institutions are also adapting, offering more modular, flexible, and practical programs designed for working professionals rather than just full-time students.</p>
-                        <p><strong>H</strong></p>
-                        <p>The future of work presents both exciting opportunities and significant challenges. The key to thriving in this new environment is adaptability. Workers who can learn new skills, embrace new technologies, and adapt to changing circumstances will be best positioned for success. Companies that can effectively manage remote teams, leverage automation while investing in their people, and create inclusive, flexible work environments will gain competitive advantage. And societies that can update their social safety nets and labor policies to reflect new realities will ensure that the benefits of the evolving workplace are shared broadly, creating a future of work that works for everyone.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-7: TRUE / FALSE / NOT GIVEN</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Do the following statements agree with the information given in the reading passage?</p>
-                        <p style="margin:0 0 8px 0;font-size:0.9rem;"><strong>Write:</strong></p>
-                        <ul style="margin:0 0 16px 0;font-size:0.9rem;">
-                            <li><strong>TRUE</strong> if the statement agrees with the information</li>
-                            <li><strong>FALSE</strong> if the statement contradicts the information</li>
-                            <li><strong>NOT GIVEN</strong> if there is no information on this</li>
-                        </ul>
-                        <p style="margin:8px 0;"><strong>1.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>2.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>3.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>4.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>5.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>6.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>7.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                    </div>
-                    <div class="question-card">
-                        <h4>Questions 8-15: Complete the Summary</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
-                        <p style="line-height:2.2;">
-                            The Step Pyramid was designed by the architect <input type="text" class="blank-input" placeholder="...">. It was built during the <input type="text" class="blank-input" placeholder="..."> century BCE for Pharaoh Djoser. Unlike previous tombs made of <input type="text" class="blank-input" placeholder="...">, this pyramid was constructed from <input type="text" class="blank-input" placeholder="...">. The complex includes various <input type="text" class="blank-input" placeholder="..."> and temples, surrounded by a high <input type="text" class="blank-input" placeholder="...">. Underground, there are over 5 kilometers of <input type="text" class="blank-input" placeholder="..."> and chambers.
-                        </p>
-                    </div>
-                    <div class="question-card">
-                        <h4>Questions 16-19: Multiple Choice</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose the correct letter, A, B, C or D.</p>
-                        <p style="margin:12px 0;"><strong>16.</strong> The Step Pyramid was built approximately how many years ago?</p>
-                        <p style="margin:4px 0;">A. 2,600</p>
-                        <p style="margin:4px 0;">B. 3,600</p>
-                        <p style="margin:4px 0;">C. 4,600</p>
-                        <p style="margin:4px 0;">D. 5,600</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> FALSE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> NOT GIVEN</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> FALSE</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> NOT GIVEN</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>8.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>9.</strong> Imhotep</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>10.</strong> 27th</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>11.</strong> mud brick</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>12.</strong> limestone</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>13.</strong> courtyards</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>14.</strong> wall</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>15.</strong> tunnels</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>16.</strong> C</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>17.</strong> A</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>18.</strong> B</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>19.</strong> D</td></tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 1: TRUE</h5>
-                        <p><strong>定位：</strong>Paragraph A 第2句</p>
-                        <p><strong>原文：</strong><span class="keyword">"the Step Pyramid of Djoser at Saqqara holds the distinction of being the earliest stone pyramid"</span></p>
-                        <p><strong>解析：</strong>题目中的"first pyramid"是原文"earliest stone pyramid"的<span class="synonym">同义替换</span>，与原文信息一致。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 2: FALSE</h5>
-                        <p><strong>定位：</strong>Paragraph B 第1句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Prior to the Step Pyramid, royal tombs were relatively simple structures known as mastabas"</span></p>
-                        <p><strong>解析：</strong>题目与原文信息<span class="synonym">直接矛盾</span>。之前的墓是简单的mastabas，不是complex structures。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 8: Imhotep</h5>
-                        <p><strong>定位：</strong>Paragraph B 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Designed by the brilliant architect Imhotep"</span></p>
-                        <p><strong>解析：</strong>原文原词，注意大写。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 9: 27th</h5>
-                        <p><strong>定位：</strong>Paragraph A 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Built during the 27th century BCE"</span></p>
-                        <p><strong>解析：</strong>数字信息，直接提取。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 18: C</h5>
-                        <p><strong>定位：</strong>Paragraph G 第2句</p>
-                        <p><strong>原文：</strong><span class="keyword">"it remains standing after more than 4,600 years"</span></p>
-                        <p><strong>解析：</strong>原文明确给出4,600年，对应选项C。</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Benefits of Being Bilingual</h1>
+<p>雅思阅读真题 · 第2篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Benefits of Being Bilingual
+A
+According to the latest figures, the majority of the world’s population is now bilingual or
+multilingual, having grown up speaking two or more languages. In the past, such children
+were considered to be at a disadvantage compared with their monolingual peers. Over the
+past few decades, however, technological advances have allowed researchers to look
+more deeply at how bilingualism interacts with and changes the cognitive and neurological
+systems, thereby identifying several clear benefits of being bilingual.
+B
+Research shows that when a bilingual person uses one language, the other is active at the
+same time. When we hear a word, we don’t hear the entire word all at once: the sounds
+arrive in sequential order. Long before the word is finished, the brain’s language system
+begins to guess what that word might be. If you hear ‘can’, you will likely activate words like
+‘candy’ and ‘candle’ as well, at least during the earlier stages of word recognition. For
+bilingual people, this activation is not limited to a single language; auditory input activates
+corresponding words regardless of the language to which they belong. Some of the most
+compelling evidence for this phenomenon, called ‘language co-activation’, comes from
+studying eye movements. A Russian-English bilingual asked to ‘pick up a marker’ from a
+set of objects would look more at a stamp than someone who doesn’t know Russian,
+because the Russian word for ‘stamp’, marka, sounds like the English word he or she
+heard, ‘marker’. In cases like this, language co-activation occurs because what the listener
+hears could map onto words in either language.
+C
+Having to deal with this persistent linguistic competition can result in difficulties, however.
+For instance, knowing more than one language can cause speakers to name pictures more
+slowly, and can increase ‘tip-of-the-tongue states’, when you can almost, but not quite,
+bring a word to mind. As a result, the constant juggling of two languages creates a need to
+control how much a person accesses a language at any given time. For this reason,
+bilingual people often perform better on tasks that require conflict management. In the
+classic Stroop Task, people see a word and are asked to name the colour of the word’s
+font. When the colour and the word match (i., the word ‘red’ printed in red), people correctly
+name the colour more quickly than when the colour and the word don’t match (i., the word
+‘red’ printed in blue). This occurs because the word itself (‘red’) and its font colour (blue)
+conflict. Bilingual people often excel at tasks such as this, which tap into the ability to
+ignore competing perceptual information and focus on the relevant aspects of the input.
+Bilinguals are also better at switching between two tasks; for example, when bilinguals
+have to switch from categorizing objects by colour (red or green) to categorizing them by
+shape (circle or triangle), they do so more quickly than monolingual people, reflecting better
+cognitive control when having to make rapid changes of strategy.
+D
+It also seems that the neurological roots of the bilingual advantage extend to brain areas
+ 1
+more traditionally associated with sensory processing. When monolingual and bilingual
+adolescents listen to simple speech sounds without any intervening background noise, they
+show highly similar brain stem responses. When researchers play the same sound to both
+groups in the presence of background noise, however, the bilingual listeners’ neural
+response is considerably larger, reflecting better encoding of the sound’s fundamental
+frequency, a feature of sound closely related to pitch perception.
+E
+Such improvements in cognitive and sensory processing may help a bilingual person to
+process information in the environment, and help explain why bilingual adults acquire a
+third language better than monolingual adults master a second language. This advantage
+may be rooted in the skill of focussing on information about the new language while
+reducing interference from the languages they already know.
+F
+Research also indicates that bilingual experience may help to keep the cognitive
+mechanisms sharp by recruiting alternate brain networks to compensate for those that
+become damaged during aging. Older bilinguals enjoy improved memory relative to
+monolingual people, which can lead to real-world health benefits. In a study of over 200
+patients with Alzheimer’s disease, a degenerative brain disease, bilingual patients reported
+showing initial symptoms of the disease an average of five years later than monolingual
+patients. In a follow-up study, researchers compared the brains of bilingual and
+monolingual patients matched on the severity of Alzheimer’s symptoms. Surprisingly, the
+bilinguals’ brains had more physical signs of disease than their monolingual counterparts,
+even though their outward behaviour and abilities were the same. If the brain is an engine,
+bilingualism may help it to go farther on the same amount of fuel.
+G
+Furthermore, the benefits associated with bilingual experience seem to start very early. In
+one study, researchers taught seven-month-old babies growing up in monolingual or
+bilingual homes that when they heard a tinkling sound, a puppet appeared on one side of a
+screen. Halfway through the study, the puppet began appearing on the opposite side of the
+screen. In order to get a reward, the infants had to adjust the rule they’d learned; only the
+bilingual babies were able to successfully learn the new rule. This suggests that for very
+young children, as well as for older people, navigating a multilingual environment imparts
+advantages that transfer far beyond language.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Complete the table below.
+ChooseNO MORE THAN TWO WORDS from the passage for each answer.
+Write your answers in boxes 1-5 on your answer sheet.
+Test Findings
+Observing the
+1..................... of Russian-
+English bilingual people
+when asked to select certain
+objectsBilingual people engage
+both languages
+simultaneously: a
+mechanism known as
+2.....................
+Bilingual people are more
+able to handle tasks
+involving a skill called
+4A test called the
+3....................., focusing on
+naming colours.....................
+ When changing
+strategies, bilingual
+people have superior
+5A test involving switching
+between tasks
+.....................
+ 
+ 
+ Questions 6-10
+Do the following statements agree with the claims of the writer in Reading Passage?
+In boxes6-10 on your answer sheet, write
+YES   if the statement agrees with the claims of the writer
+NO   if the statement contradicts the claims of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+6.....................    Attitudes towards bilingualism have changed in recent years.
+7.....................    Bilingual people are better than monolingual people at guessing correctly
+what words are before they are finished.
+8.....................    Bilingual people consistently name images faster than monolingual
+people.
+9.....................    Bilingual people’s brains process single sounds more efficiently than
+monolingual people in all situations.
+10.....................    Fewer bilingual people than monolingual people suffer from brain
+disease in old age.
+ 3
+ 
+  
+ Questions 11-14
+Reading Passage has seven paragraphs, A-G.
+Which paragraph contains the following information?
+Write the correct letter, A-G, in boxes 11-14 on your answer sheet.
+11.....................    an example of how bilingual and monolingual people’s brains respond
+differently to a certain type of non-verbal auditory input
+12.....................    a demonstration of how a bilingual upbringing has benefits even before
+we learn to speak
+13.....................    a description of the process by which people identify words that they
+hear
+14.....................    reference to some negative consequences of being bilingual
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.eye movements
+2.language co-activation
+3.Stroop Task
+4.conflict management
+5.cognitive control
+6.YES
+7.NOT GIVEN8.NO
+9.NO
+10.NOT
+GIVEN
+11.D
+12.G
+13.B
+14.C
+ 5</div>
+</div>
+</div>
 </body>
 </html>

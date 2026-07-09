@@ -1,390 +1,163 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How To Handle The Sun  - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Less Television Less Violence And Aggression - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题247/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 How To Handle The Sun </h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>washed most of the sediment out of the canyon. This problem was avoided in 2004, but
-unfortunately, on that occasion, the volume of sand available behind the dam was too low
-to rebuild the sandbanks. This time, the USGS is convinced that things will be better. The
-amount of sediment available is three times greater than it was in 2004. So if a flood is
-going to do some good, this is the time to unleash one.
-G  Even so, it may turn out to be an empty gesture. At less than 1,200 cubic metres a
-second, this flood is smaller than even an average spring flood, let alone one of the
-mightier deluges of the past. Those glorious inundations moved massive quantities of
-sediment through the Grand Canyon,wiping the slate dirty, and making a muddy mess of
-silt and muck that would make modern river rafters cringe.
- 2</p>
-<p>Questions 1-7
-Do the following statements agree with the information given in Reading Passage?
-In boxes 1-7 on your answer sheet, write
-TRUE
-FALSE
-NOT GIVEN
-if the statement agrees with the information
-if the statement contradicts the information
-if there is no information on this</p>
-<p>1.....................  Damage caused by fire is worse than that caused by flood.
-2.....................  The flood peaks at almost 1500 cubic meters every eight years.
-3.....................  Contribution of sediments delivered by tributaries has little impact.
-4.....................  Decreasing number of chubs is always caused by introducing of trout since
-mid 20th century.
-5.....................  It seemed that the artificial flood in 1996 had achieved success partly at the
-very beginning.
-6.....................  In fact, the yield of artificial flood water is smaller than an average natural
-flood at present.
-7.....................  Mighty floods drove fast moving flows with clean and high quality water.
-Questions 8-13
-Complete the summary below.
-Choose NO MORE THAN TWO WORDS from the passage for each answer.
-Write your answers in boxes 8-13 on your answer sheet.</p>
-<p>The eco-impact of the Canyon Dam
-Floods are people’s nightmare. In the past, canyon was raged by flood every year. The
-snow from far Wyoming would melt in the season of 8..................... and caused a flood flow
-peak in Colorado river. In the four decades after people built the Glen Canyon dam, it only
-could gather 9..................... together from tiny, undammed tributaries.
-Humpback chub population on reduced, why?
-Then, several species disappeared including Colorado pike-minnow, 10..................... and
-the round-tail chub. Meanwhile, some moved in such as fathead minnows, channel catfish
-and 11...................... The non-stopped flow leaded to the washing away of the sediment
-out of the canyon, which poses great threat to the chubs because it has
-poor 12..................... away from predators. In addition, the volume of 13.....................
-available behind the dam was too low to rebuild the bars and flooding became more
-serious.
- 3</p>
-<p>Solution:
- 
-1. NOT GIVEN
-2. FALSE
-3. TRUE
-4. FALSE
-5. TRUE
-6. TRUE
- 
-8. spring
-9. sediment
-10. razorback sucker
-11. common carp
-12. visibility
-13. sand
-7. NOT GIVEN
- 4</p>
-<p>Reading Practice
- Disappearing Delta</p>
-<p>The fertile land of the Nile delta is being eroded along Egypt's Mediterranean coast at an
-astounding rate, in some parts estimated at 100 metres per year. In the past, land scoured
-away from the coastline by the currents of the Mediterranean Sea used to be replaced by
-sediment brought down to the delta by the River Mile, but this is no longer happening.</p>
-<p>Up to now, people have blamed this loss of delta land on the two large dams at Aswan in
-the south of Egypt, which hold back virtually all of the sediment that used to flow down the
-river. Before the dams were built, the Nile flowed freely, carrying huge quantities of
-sediment north from Africa's interior to be deposited on the Nile delta. This continued for
-7,000 years, eventually covering a region of over 22,000 square kilometres with layers of
-fertile silt. Annual flooding brought in new, nutrient-rich soil to the delta region, replacing
-what had been washed away by the sea, and dispensing with the need for fertilizers in
-Egypt's richest food-growing area But when the Aswan dams were constructed in the 20th
-century to provide electricity and irrigation, and to protect the huge population centre of
-Cairo and its surrounding areas from annual flooding and drought, most of the sediment
-with its natural fertilizer accumulated up above the dam in the southern, upstream half of
-Lake Nasser, instead of passing down to the delta.</p>
-<p>Now, however, there turns out to be more to the story It appears that the sediment-free
-water emerging from the Aswan dams picks up silt and land as it erodes the river bed and
-banks on the 800-kilometre trip to Cairo. Daniel Jean Stanley of the Smithsonian Institute
-noticed that water samples taken in Cairo, just before the river enters the delta, indicated
-that the river sometimes carries more than 850 grams of sediment per cubic metre of water
-- almost half of what it carried before the dams were built.
-'I'm ashamed to say that the significance of this didn't strike me until after I had read 50 or
-60 studies,' says Stanley in Marine Geology. 'There is still a lot of sediment coming into the
-delta, but virtually no sediment comes out into the Mediterranean to replenish the coastline.
-So this sediment must be trapped on the delta itself.'</p>
-<p>Once north of Cairo, most of the Nile water is diverted into more than 10,000 kilometres of
-irrigation canals and only o small proportion reaches the sea directly through the rivers in
-the delta. The water in the irrigation canals is still or very slow-moving and thus cannot
-carry sediment, Stanley explains. The sediment sinks to the bottom of the canals and then
-is added to fields by farmers or pumped with the water into the four large freshwater
-lagoons that are located near the outer edges of the delta. So very little of it actually
-reaches the coastline to replace what is being washed away by the Mediterranean
-currents.</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Less Television Less Violence And Aggression</h1>
+<p>雅思阅读真题 · 第180篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Less Television, Less Violence and Aggression
+Cutting back on television, videos, and video games reduces acts of aggression among
+schoolchildren, according to a study by Dr. Thomas Robinson and others from the Stanford
+University School of Medicine. The study, published in the January 2001 issue of the
+Archives of Pediatric and Adolescent Medicine, found that third- and fourth-grade students
+who took part in a curriculum to reduce their TV, video, and video game use engaged in
+fewer acts of verbal and physical aggression than their peers. The study took place in two
+similar San Jose, California, elementary schools. Students in one school underwent an 18-
+lesson, 6-month program designed to limit their media usage, while the others did not. Both
+groups of students had similar reports of aggressive behavior at the beginning of the study.
+After the six-month program, however, the two groups had very real differences. The
+students who cut back on their TV time engaged in six fewer acts of verbal aggression per
+hour and rated 2.4 percent fewer of their classmates as aggressive after the program.
+Physical acts of violence, parental reports of aggressive behavior, and perceptions of a
+mean and scary world also decreased, but the authors suggest further study to solidify
+these results.
+Although many studies have shown that children who watch a lot of TV are more likely to
+act violently, this report further verifies that television, videos, and video games actually
+cause the violent behavior, and it is among the first to evaluate a solution to the problem.
+Teachers at the intervention school included the program in their existing curriculum. Early
+lessons encouraged students to keep tract of and report on the time they spent watching
+TV or videos, or playing Video games, to motivate them to limit those activities on their
+own. The initial lessons were followed by TV-Turnoff, an organization that encourages less
+TV viewing. For ten days, students were challenged to go without television, videos, or
+video games. After that, teachers encouraged the students to stay within a media
+allowance of seven hours per week. Almost all students participated in the Turnoff, and
+most stayed under their budget for the following weeks. Additional lessons encouraged
+children to use their time more selectively, and many of the final lessons had students
+themselves advocate reducing screen activities.
+ This study is by no means the first to find a link between television and violence. Virtually
+all of 3,500 research studies on the subject in the past 40 years have shown the same
+relationship, according to the American Academy of Pediatrics. Among the most
+noteworthy studies is Dr. Leonard D. Eron’s, which found that exposure to television
+violence in childhood is the strongest predictor of aggressive behavior later in life—stronger
+even than violent behavior as children. The more violent television the subjects watched at
+age eight, the more serious was their aggressive behavior even 22 years later. Another
+study by Dr. Brandon S. Centerwall found that murder rates climb after the introduction of
+television. In the United States and Canada, murder rates doubled 10 to 15 years after the
+introduction of television, after the first TV generation grew up.
+Centerwall tested this pattern in South Africa, where television broadcasts were banned
+until 1975. Murder rates in South Africa remained relatively steady from the mid-1940s
+through the mid- 1970s. By 1987, however, the murder rate had increased 130 percent
+from its 1974 level. The murder rates in the United States and Canada had leveled1 off in
+the meantime. Centerwall's study implies that the medium of television, not just the content,
+ 1
+promotes violence and the current study by Dr. Robinson supports that conclusion. The
+Turnoff did not specifically target violent television, nor did the following allowance period.
+Reducing television in general reduces aggressive behavior. Even television that is not
+“violent” is more violent than real life and may lead viewers to believe that violence is funny,
+inconsequential, and a viable solution to problems. Also, watching television of any content
+robs us of the time to interact with real people. Watching too much TV may inhibit the skills
+and patience we need to get along with others without resorting to aggression. TV, as a
+medium, promotes aggression and violence. The best solution is to turn it off.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Complete the summary using words from the box below. Write your answers in boxes 1-
+7 on your Answer Sheet
+A study that was published in January 2001 found that when children 1..................... less,
+they behaved less 2......................
+Students in a California elementary school participated in the study, which lasted
+3......................
+By the end of the study, the children’s behavior had changed.
+For example, the children’s 4..................... reported that the children were acting less
+violently than before.
+During the study, the children kept a record of the 5..................... they watched TV. Then,
+for ten days, they 6......................
+Near the end of the study, the students began to suggest watching 7......................
+parents eighteen days
+teachers classmates
+six months nonviolent programs
+violently time of day
+watched TV number of hours
+scared avoided TV
+less TV
+ 
+ favorite programs
+Questions 8-11
+Do the following statements agree with the information in Reading Passage 2? in boxes 8-
+11 write
+TRUE if the statement is true according to the passage.
+FALSE if the statement contradicts the passage.
+NOT GIVEN if there is no information about this in the passage.
+8.....................    Only one study has found a connection between TV and violent behavior.
+9.....................    There were more murders in Canada after people began watching TV.
+10.....................    The United States has more violence on TV than other countries.
+11.....................    TV was introduced in South Africa in the 1940s.
+ 3
+    Questions 12-13
+For each question, choose the correct letter A-Dand write it in boxes 12 and13 on your
+Answer Sheet
+12    According to the passage,
+A only children are affected by violence on TV.
+B only violent TV programs cause violent behavior.
+C children who watch too much TV get poor grades in school..
+D watching a lot of TV may beep us from learning important social shills.
+13    The authors of this passage believe that
+A some violent TV programs are funny.
+B the best plan is to stop watching TV completely.
+C it’s better to watch TV with other people than on your own.
+D seven hours a week of TV watching is acceptable.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.watched tv/television
+2.violently
+3.6/six months
+4.parents
+5.number of hours
+6.avoided tv/television
+7.8.FALSE
+9.TRUE
+10.NOT GIVEN
+11.NOT GIVEN
+12.D
+13.B
+less tv/television
+ 5</div>
+</div>
+</div>
 </body>
 </html>

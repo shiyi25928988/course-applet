@@ -1,411 +1,167 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ballpoint Pen - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The History Of Tea - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题458/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Ballpoint Pen</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>achieved, because /n/ and /t/ are articulated in the same place (with the tip of the tongue
-against the teeth-ridge), whereas /m/ is articulated elsewhere (with the two lips). So the
-place of articulation of the nasal consonant has been changed to conform with that of the
-following plosive. A more recent example of the same kind of thing is the common
-pronunciation of football as football.
-F Assimilation is not the only way in which we change our pronunciation in order to
-increase efficiency. It is very common for consonants to be lost at the end of a word: in
-Middle English, word-final [-n] was often lost in unstressed syllables, so that baken ‘to bake’
-changed from [‘ba:kan] to [‘ba:k3],and later to [ba:k]. Consonant-clusters are often
-simplified. At one time there was a [t] in words like castle and Christmas, and an initial [k] in
-words like knight and know. Sometimes a whole syllable is dropped out when two
-successive syllables begin with the same consonant (haplology): a recent example is
-temporary, which in Britain is often pronounced as if it were tempory.
- 2</p>
-<p>Questions 1-4
-Complete the summary below.
-Choose NO MORE THAN THREE WORDS from the passage for each answer.
-Write your answers in boxes 1-4 on your answer sheet.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The History Of Tea</h1>
+<p>雅思阅读真题 · 第340篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The history of tea
+ The story of tea begins in China. According to legend, in 2737 BC, the Chinese emperor
+Shen Nung was sitting beneath a tree while his servant boiled drinking water, when some
+leaves from the tree blew into the water. Shen Nung, a renowned herbalist, decided to try
+the infusion that his servant had accidentally created. The tree was a Camellia sinensis,
+and the resulting drink was what we now call tea. It is impossible to know whether there is
+any truth in this story. But tea drinking certainly became established in China many
+centuries before it had even been heard of in the West. Containers for tea have been found
+in tombs dating from the Han Dynasty (206 BC—220 AD) but it was under the Tang
+Dynasty (618—906 AD), that tea became firmly established as the national drink of China.
+Ad.Plus
+It became such a favourite that during the late eighth century a writer called Lu Yu wrote
+the first book entirely about tea, the Ch’a Ching, or Tea Classic. It was shortly after this that
+tea was first introduced to Japan, by Japanese Buddhist monks who had travelled to China
+to study. Tea received almost instant imperial sponsorship and spread rapidly from the
+royal court and monasteries to the other sections of Japanese society.
+So at this stage in the history of tea, Europe was rather lagging behind. In the latter half of
+the sixteenth century there are the first brief mentions of tea as a drink among Europeans.
+These are mostly from Portuguese who were living in the East as traders and missionaries.
+But although some of these individuals may have brought back samples of tea to their
+native country, it was not the Portuguese who were the first to ship back tea as a
+commercial import. This was done by the Dutch, who in the last years of the sixteenth
+century began to encroach on Portuguese trading routes in the East. By the turn of the
+century they had established a trading post on the island of Java, and it was via Java that
+in 1606 the first consignment of tea was shipped from China to Holland. Tea soon became
+a fashionable drink among the Dutch, and from there spread to other countries in
+continental western Europe, but because of its high price it remained a drink for the
+wealthy.
+Britain, always a little suspicious of continental trends, had yet to become the nation of tea
+drinkers that it is today. Starting in 1600, the British East India Company had a monopoly
+on importing goods from outside Europe, and it is likely that sailors on these ships brought
+tea home as gifts. The first coffee house had been established in London in 1652, and tea
+was still somewhat unfamiliar to most readers, so it is fair to assume that the drink was still
+something of a curiosity. Gradually, it became a popular drink in coffee houses, which were
+as many locations for the transaction of business as they were for relaxation or pleasure.
+They were though the preserve of middle- and upper-class men; women drank tea in their
+own homes, and as yet tea was still too expensive to be widespread among the working
+classes. In part, its high price was due to a punitive system of taxation.
+One unforeseen consequence of the taxation of tea was the growth of methods to avoid
+taxation—smuggling and adulteration. By the eighteenth century many Britons wanted to
+drink tea but could not afford the high prices, and their enthusiasm for the drink was
+matched by the enthusiasm of criminal gangs to smuggle it in. What began as a small time
+illegal trade, selling a few pounds of tea to personal contacts, developed by die late
+ 1
+eighteenth century into an astonishing organised crime network, perhaps importing as
+much as 7 million lbs annually, compared to a legal import of 5 million lbs! Worse for die
+drinkers was that taxation also encouraged the adulteration of tea, particularly of smuggled
+tea which was not quality controlled through customs and excise. Leaves from other plants,
+or leaves which had already been brewed and then dried, were added to tea leaves. By
+1784, the government realised that enough was enough, and that heavy taxation was
+creating more problems than it was words. The new Prime Minister, William Pitt the
+Younger, slashed the tax from 119 per cent to 12.5 per cent. Suddenly legal tea was
+affordable, and smuggling stopped virtually overnight.
+Another great impetus to tea drinking resulted from the end of the East India Company’s
+monopoly on trade with China, in 1834. Before that date, China was the country of origin of
+the vast majority of the tea imported to Britain, but the end of its monopoly stimulated the
+East India Company to consider growing tea outside China. India had always been the
+centre of the Company’s operations, which led to the increased cultivation of tea in India,
+beginning in Assam. There were a few false starts, including the destruction by cattle of
+one of the earliest tea nurseries, but by 1888 British tea imports from India were for the first
+time greater than those from China.
+The end of the East India Company’s monopoly on trade with China also had another
+result, which was more dramatic though less important in the long term: it ushered in the
+era of the tea clippers. While the Company had had the monopoly on trade, there was no
+rush to bring the tea from China to Britain, but after 1834 the tea trade became a virtual
+free for all. Individual merchants and sea captains with their own ships raced to bring home
+the tea and make the most money, using fast new clippers which had sleek lines, tall masts
+and huge sails. In particular there was a competition between British and American
+merchants, leading to the famous clipper races of the 1860s. But these races soon came to
+an end with the opening of the Suez Canal, which made the trade routes to China viable for
+steamships for the first time.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Complete the sentences below with words taken from Reading Passage 1
+Use ONE WORD  for each answer.
+Write your answers in boxes  1-7 on your answer sheet.
+ 
+ 1   Researchers believed the tea containers detected in 1..................... from the Han
+Dynasty was the first evidence of the use of tea.
+2   Lu Yu wrote a  2..................... about tea before anyone else in the eighth century.
+3   It was3..................... from Japan who brought tea to their native country from China.
+ 
  
-The pronunciation of living language undergo changes throughout thousands of years.
-Large scale regular Changes are usually called 1...................... There are three reasons
-for these changes. Firstly, the influence of one language on another; when one person
-imitates another pronunciation(the most prestige’s), the imitation always partly involving
-factor of 2...................... Secondly, the imitation of children from adults1 language
-sometimes are 3....................., and may also contribute to this change if there are
-insignificant deviations tough later they may be corrected Finally, for those random
-variations in pronunciation, the deeper evidence lies in the
-4..................... or minimization of effort.</p>
-<p>Questions 5-11
-Do the following statements agree with the information given in Reading Passage?
-In boxes 5-11 on your answer sheet, write
- 
-TRUE          if the statement agrees with the information
-FALSE        if the statement contradicts the information
-NOT GIVEN if there is no information on this
-5..................... It is impossible for modern people to find pronunciation of words in an
-earlier age
-6..................... The great change of language in Russian history is related to the rising
-status and fortune of middle classes.
-7..................... All the children learn speeches from adults white they assume that certain
-language is difficult to imitate exactly.
-8..................... Pronunciation with causal inaccuracy will not exert big influence on
-language changes.
-9..................... The word 'scant' can be pronounced more easily than 'skamt'
-10..................... The [g] in gnat not being pronounced will not be spelt out in the future.
-11..................... The sound of ‘temporary’ cannot wholly present its spelling.
-Questions 12-14
-Look at the following sentences and the list of statements below. Match each statement
-with the correct sentence, A-D.
- 3</p>
-<p>Write the correct letter, A-D, in boxes 12-14 on your answer sheet
-A Since the speakers can pronounce it with less effort
-B Assimilation of a sound under the influence of a neighbouring one
-C It is a trend for changes in pronunciation in a large scale in a given period
-D Because the speaker can pronounce [n] and [t] both in the same time
-12..................... As a consequence, ‘b’ will be pronounced as
-13..................... The pronunciation of [mt] changed to [nt]
-14..................... The omit of ‘f in the sound of Christmas
- 4</p>
-<p>Solution:
- 
-1. sound laws
-2. fashion
-3. imperfect
-4. principle of ease
-5. FALSE
-6. FALSE
-7. NOT GIVEN
-8. TRUE
-9. TRUE
-10. NOT GIVEN
-11. TRUE
-12. C
-13. B
-14. A
- 5</p>
-<p>Reading Practice
- Memory and Age
-{A} Aging, it is now clear, is part of an ongoing maturation process that all our organs go
-through. “In a sense, aging is keyed to the level of vigor of the body and the continuous
-interaction between levels of body activity and levels of mental activity,” reports Arnold B.
-Scheibel, M.D., whose very academic title reflects how once far-flung domains now
-converge on the mind and the brain. Scheibel is professor of anatomy, cell biology,
-psychiatry, and behavioral sciences at the University of California at Los Angeles, and
-director of the university’s Brain Research Institute. Experimental evidence has backed up
-popular assumptions that the aging mind undergoes decay analogous to that of the aging
-body. Younger monkeys, chimps, and lower animals consistently outperform their older
-colleagues on memory tests. In humans, psychologists concluded, memory and other
-mental functions deteriorate over time because of inevitable organic changes in the brain
-as neurons die off. Mental decline after young adulthood appeared inevitable.
-{B} Equipped with imaging techniques that capture the brain in action, Stanley Rapoport,
-Ph.D., at the National Institutes of Health, measured the flow of blood in the brains of old
-and young people as they went through the task of matching photos of faces. Since blood
-flow reflects neuronal activity, Rapoport could compare which networks of neurons were
-being used by different subjects. “Even when the reaction times of older and younger
-subjects were the same, the neural networks they used were significantly different. The
-older subjects were using different internal strategies to accomplish the same result in the
-same time,” Rapoport says. Either the task required greater effort on the part of the older
-subjects or the work of neurons originally involved in tasks of that type had been taken over
-by other neurons, creating different networks.
-{C} At the Georgia Institute of Technology, psychologist Timothy Salthouse, Ph.D.,
-compared a group of very fast and accurate typists of college age with another group in
-their 60s. Since reaction time is faster in younger people and most people’s fingers grow
-less nimble with age, younger typists might be expected to tap right along while the older
-ones fumble. But both typed 60 words a minute. The older typists, it turned out, achieved
-their speed with cunning little strategies that made them far more efficient than their
-younger counterparts: They made fewer finger movements, saving a fraction of a second
-here and there. They also read ahead in the text. The neural networks involved in typing
-appear to have been reshaped to compensate for losses in motor skills or other age
-changes.
-{D} “When a rat is kept in isolation without playmates or objects to interact with, the
-animal’s brain shrinks, but if we put that rat with 11 other rats in a large cage and give them
-an assortment of wheels, ladders, and other toys, we can show–after four days– significant
-differences in its brain,” says Diamond, professor of integrative biology. Proliferating
-dendrites first appear in the visual association areas. After a month in the enriched
-environment, the whole cerebral cortex has expanded, as has its blood supply. Even in the
-enriched environment, rats get bored unless the toys are varied. “Animals are just like we
-are. They need stimulation,” says Diamond.
-{E} One of the most profoundly important mental functions is memory-notorious for its
-failure with age. So important is memory that the Charles A. Dana Foundation recently
-spent $8.4 million to set up a consortium of leading medical centers to measure memory
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 4   Tea was carried from China to Europe actually by the 4.....................
+ 5   The British government had to cut down the taxation on tea due to the serious crime of
+5.....................
+6   Tea was planted in 6..................... besides China in the 19th century.
+7   In order to compete in shipping speed, traders used 7..................... for the race.
+ Questions 8-13
+Do the following statements agree with the information given in Reading Passage 1?
+In boxes 8-13 on your answer sheet, write
+TRUE               if the statement agrees with the information
+FALSE              if the statement contradicts the information
+NOTGIVEN    if there is no information on this
+8   Tea was popular in Britain in the 16th century. 8.....................
+9   Tea was more fashionable than coffee in Europe in the late 16th century. 9.....................
+10   Tea was enjoyed by all classes in Britain in the seventeenth century. 10.....................
+11   The adulteration of tea also prompted William Pitt the Younger to reduce the
+tax.11.....................
+12   Initial problems occurred when tea was planted outside China by the East India
+Company. 12.....................
+13   The fastest vessels were owned by America during the 19th century clipper
+ 3
+races.13.....................
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.tombs
+2.book
+3.monks
+4.Dutch
+5.smuggling
+6.India
+7.8.FALSE
+9.NOT GIVEN
+10.FALSE
+11.TRUE
+12.TRUE
+13.NOT GIVEN
+clippers
+ 5</div>
+</div>
+</div>
 </body>
 </html>

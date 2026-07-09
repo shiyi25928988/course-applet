@@ -1,361 +1,210 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design The Mat And Foot Health - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Flight From Reality - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题167/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Design The Mat And Foot Health</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Muller-Lyer illusion which consists of three lines with arrow-like endings is a prime
-example. In this illusion the middle arrow has both arrow ends pointing out, while the line
-above it has arrow’ ends pointing in and the third and final line possesses one inward
-pointing and one outward pointing arrow’ end. ¿Most respondents from certain
-backgrounds generally respond that the middle arrow is the longest (though all are in fact
-the same). However, cultural backgrounds affect perceptions related to this illusion;
-international research having shown that non-Western subjects, particularly those generally
-not exposed to rectangular shaped buildings and door frames in their day to day life, are
-less likely to misinterpret the true length of the three drawings.
-G. Paradox illusions encourage the mind to believe that we are seeing something we know
-to be impossible. The Penrose Stairs and the Penrose Triangle, developed by Lionel
-Penrose are examples of models created to illustrate this phenomenon. Many naturally
-occurring optical illusions also exist. Throughout the world there a number of locations
-where objects can be perceived to roll uphill; our cognitive and pre-learned knowledge
-inform us that this is impossible; however information received by the visual senses of
-observers creates conflict. These areas are often known as ‘gravity hills or ‘magnetic’ hills
-and are often popular with tourists; the mystical properties of the area often promoted
-vigorously to add mystique or claimed to arise as a result of the special properties and
-magnetic influence of the area’s land.
-H. The scientific explanation for such phenomenon is that such areas are set on slightly
-sloping ground without a visible horizon against which to establish perspective. In addition,
-surrounding points of reference we would generally expect to be perpendicular, such as
-trees, are in fact on a slope. The interpretation of what observers believe they are
-experiencing is therefore confused, downward slopes may be perceived to be horizontal or
-tilting upwards and cars with hand brakes released on such ground appear to roll upwards
-when in fact they a rolling, as gravity dictates, in a downhill direction. While our innate
-sense of balance under normal situations helps us determine the inclination of the ground,
-interference from the visual stimuli as outlined above and lack of reference from points on
-the horizon can override this ability in such situations, especially if the gradient is gentle.
- 2</p>
-<p>Questions 1-3
-Answer the questions below.
-Choose NO MORE THAN THREE WORDS from the passage for each answer.
-Write your answers in boxes 1-3 on your answer sheet.
-1..................... What type of illusion is a result of interference with neurone activity?
-2..................... Which two factors influence the way we process information on a cognitive
-level?
-3..................... Which theory holds that individuals see only the true reality of a situation?
-Questions 4-8
-According to the information in Reading Passage, classify the following as relating to</p>
-<p>A.        Fictional illusions
-B.        Paradox illusions
-C.         Distorting illusions
-D.         Ambiguous illusions</p>
-<p>Write the correct letter A-D in boxes 4-8 on your answer sheet.
-4..................... may be perceived differently by individuals of diverse ethnic origin
-5..................... may override our natural ability to make rational judgement
-6..................... may be interpreted differently even by the same subject
-7..................... may result due to chemical stimulation
-8..................... has been used to question the validity of arguments in a different field
-Questions 9-13
-Choose the correct letter, A, B, C or D.
-Write your answers in boxes 21-25 on your answer sheet.
-9. Fictional illusions
- 3</p>
-<p>A may eventually lead to schizophrenia.
-      B are the only type which are completely subjective.
-      C are very similar to paradox illusions.
-      D are typical of cognitive illusions.
-10. According to ambiguous illusion theory, which face of the Necker Cube is interpreted to
-be the front of the box due to the general tendency to view objects from above?
-     A 
-     B 
-     C
- 11. Which diagram represents the Muller-Lyer illusion?
-       
-       A 
-       B 
-       C
-    12. The Penrose Stairs are an example of a model which
-       A can persuade the viewer they are seeing something infeasible.
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Flight From Reality</h1>
+<p>雅思阅读真题 · 第121篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Flight from reality
+Mobiles are barred, but passengers can lap away on their laptops to their hearts’ content.
+Is one really safer than the other? In the US, a Congressional subcommittee grilled airline
+representatives and regulators about the issue last month. But the committee heard that
+using cellphones in planes may indeed pose a risk albeit a slight one. This would seem to
+vindicate the treatment of Manchester oil worker Neil Whitehouse, who was sentenced last
+summer to a year in jail by a British court for refusing to turn off his mobile phone on a flight
+home from Madrid. Although he was only typing a message to be sent on landing not
+actually making a call, the court decided that hems putting the flight at risk.
+A
+The potential for problems is certainly there. Modern airliners are packed with electronic
+devices that control the plane and handle navigation and communications. Each has to
+meet stringent safeguards to make sure it doesn’t emit radiation that would interfere with
+other devices in the plane-standards that passengers’ personal electronic devices don’t
+necessarily meet. Emissions from inside the plane could also interfere with sensitive
+antennae on the fixed exterior.
+B
+But despite running a number of studies, Boeing, Airbus and various government agencies
+haven’t been able to find clear evidence of problems caused by personal electronic
+devices, including mobile phones. “We’ve done our own studies. We’ve found cellphones
+actually have no impact on the navigation system,” says Maryanne Greczyn, a
+spokeswoman for Airbus Industries of North America in Herndon, Virginia, Not do they
+affect other critical systems, she says The only impact Airbus found? “Sometimes when a
+passenger is starting or finishing a phone call, the pilot hears a wry slight beep in the
+headset,” she says.
+C
+The best evidence yet of a problem comes from a report released this year by Britain’s Civil
+Aviation Authority. Its researchers generated simulated cellphone transmissions inside two
+Boeing aircraft. They concluded that the transmissions could create signals at a power and
+frequency that would not affect the latest equipment, but exceeded the safety threshold
+established in 1984 and might, therefore, affect some of the older equipment on board.
+This doesn’t mean “mission critical” equipment such as the navigation system and flight
+controls. But the devices that could be affected, such as smoke detectors and fuel level
+indicators, could still create serious problems for the flight crew if they malfunction.
+ D
+Many planes still use equipment certified to the older standards, says Dan Hawkes, head of
+avionics at the CAA’s Safely Regulation Croup. The CAA study doesn’t prove the
+equipment will actually fail when subjected to the signals but does show there’s a danger.
+“We’ve taken some of the uncertainty out of these beliefs,” he says Another study later this
+year will see if the cellphone signals actually cause devices to fail.
+E
+ 1
+In 1996, RTCA, a consultant hired by the Federal Aviation Administration in the US to
+conduct tests, determined that potential problems from personal electronic devices were
+“low”. Nevertheless, it recommended a ban on their use during “critical” periods of flight,
+such as take-off and landing. RTCA didn’t actually test cellphones, but nevertheless
+recommended their wholesale ban on flights, But if “better safe than sorry” is the current
+policy, it’s applied inconsistently, according to Marshall Cross, the chairman of Mega Wave
+Corporation, based in Boylston, Massachusetts. Why are cellphones outlawed when no
+one considers a ban on laptops? “It’s like most things in life. The reason is a little bit
+technical, a little bit economic and a little bit political,” says Cross.
+F
+The company wrote a report for the FAA in 1998 saying it is possible to build an on-board
+system that can detect dangerous signals from electronic devices. But Cross’s personal
+conclusion is that mobile phones aren’t the real threat. “You’d have to stretch things pretty
+far to figure out how a cellphone could interfere with a plane’s systems,” he says.
+Cellphones transmit in ranges of around 400, 800 or 1800 megahertz. Since no important
+piece of aircraft equipment operates at those frequencies, the possibility of interference is
+very low, Cross says. The use of Computers and electronic game systems is much more
+worrying, lie says. They can generate very strong signals at frequencies that could interfere
+with plane electronics, especially if a mouse is attached {the wire operates as an antenna
+or if their built-in shielding is somehow damaged. Some airlines are even planning to put
+sockets for laptops in seatbacks.
+G
+There’s fairly convincing anecdotal evidence that some personal electronic devices have
+interfered with systems. Aircrew on one flight found that the autopilot was being
+disconnected, and narrowed the problem down to a passenger’s portable computer. They
+could actually watch the autopilot disconnect when they switched the computer on. Boeing
+bought the computer, took it to the airline’s labs and even tested it on an empty flight. But
+as with every other reported instance of interference, technicians were unable to replicate
+the problem.
+H
+Some engineers, however, such as Bruce Donham of Boeing, say that common sense
+suggests phones are more risky than laptops. “A device capable of producing a strong
+emission is not as safe as a device which does not have any intentional emission,” lie says.
+Nevertheless, many experts think it’s illogical that cellphones are prohibited when
+computers aren’t. Besides, the problem is more complicated than simply looking at power
+and frequency. In the air, the plane operates in a soup of electronic emissions, created by
+its own electronics and by ground-based radiation. Electronic devices in the cabin-
+especially those emitting a strong signal-can behave unpredictably, reinforcing other
+signals, for instance, or creating unforeseen harmonics that disrupt systems.
+I
+Despite the Congressional subcommittee hearings last month, no one seems to be working
+seriously on a technical solution that would allow passengers to use their phones. That’s
+mostly because no one -besides cellphone users themselves-stands to gain a lot if the
+phones are allowed in the air. Even the cellphone companies don’t want it. They are
+ 2
+concerned that airborne signals could cause problems by flooding a number of the
+networks’ base stations at once with the same signal This effect, called bigfooting, happens
+because airborne cellphone signals tend to go to many base stations at once, unlike land
+calls which usually go to just one or two stations. In the US, even if FAA regulations didn’t
+prohibit cellphones in the air, Federal Communications Commission regulations would.
+J
+Possible solutions might be to enhance airliners’ electronic insulation or to fit detectors
+which warned flight staff when passenger devices were emitting dangerous signals. But
+Cross complains that neither the FAA, the airlines nor the manufacturers are showing much
+interest in developing these. So despite Congressional suspicions and the occasional
+irritated (or jailed) mobile user, the industry’s “better safe than sorry” policy on mobile
+phones seems likely to continue. In the absence of firm evidence that the international
+airline industry is engaged in a vast conspiracy to overcharge its customers, a delayed
+phone call seems a small price to pay for even the tiniest reduction in the chances of a
+Plane Crash. But you’ll still be allowed to use your personal computer during a flight. And
+while that remains the case, airlines can hardly claim that logic has prevailed.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Complete the following summary of the paragraphs of Reading Passage.
+Using NO MORE THAN THREE WORDS  from the Reading Passage for each answer.
+Write your answers in boxes  1-4 on your answer sheet.
+The would-be risk surely exists, since the avionic systems on modern aircraft are used to
+manage flight and deal with  1..................... Those devices are designed to meet the safety
+criteria which should be free from interrupting  2..................... or interior emission. The
+personal use of a mobile phone may cause the sophisticated  3..................... outside of the
+plane to dysfunction. Though definite interference in piloting devices has not been
+scientifically testified, the devices such as those which detect  4..................... or indicate fuel
+load could be affected.
+ Questions 5-9
+Use the information in the passage to match the Organization (listed  A-E) with opinions or
+deeds below.
+Write the appropriate letters  A-E in boxes  5-9 on your answer sheet.
+A     British Civil Aviation Authority
+B      Maryanne Greczyn
+C      RTCA
+D     Marshall Cross
+E      Boeing company
+5.....................   Mobile usages should be forbidden in specific fame.
+6.....................   Computers are more dangerous than cell phones.
+7.....................   Finding that the mobile phones pose little risk on flight’s navigation
+devices.
+8.....................   The disruption of laptops is not as dangerous as cellphones.
+9.....................   The mobile signal may have an impact on earlier devices.
+Questions 10-13
+Do the following statements agree with the information given in Reading Passage?
+In boxes 10-13 on your answer sheet, write
+ 4
+ TRUE               if the statement is true
+FALSE              if the statement is false
+NOT GIVEN     if the information is not given in the passage
+10.....................   Almost all scientists accept that cellphones have higher emission than
+that of personal computers.
+11.....................   Some people believe that radio emission will interrupt the equipment on
+the plane.
+12.....................   The signal interference-detecting device has not yet been developed
+because they are in priority for neither administrative department nor offer an economic
+incentive.
+13.....................   FAA initialed open debate with Federal Communications Commission.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.navigation and
+communications
+2.radiation
+3.antennae
+4.smoke
+5.C
+6.D
+7.8.E
+9.A
+10.FALSE
+11.TRUE
+12.TRUE
+13.NOT
+GIVEN
+B
+ 6</div>
+</div>
+</div>
 </body>
 </html>

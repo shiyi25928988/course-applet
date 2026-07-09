@@ -1,385 +1,176 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glass   Capturing The Dance Of Light - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Inside The Mind Of A Fan How Watching Sport Affects The Brain - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题216/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Glass   Capturing The Dance Of Light</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1–3
-Use information in the description below to answer Questions 1 to 3. Write your answer in
-boxes 1-3 on your answer sheet
-1. When was Lieutenant Close given the land on which Morpeth grew? 1.....................
-2. On what river is Morpeth situated? 2.....................
-3.When did trains first get to Morpeth? 3.....................</p>
-<p>Questions 4 -7
-There are four advertisements on the next page for places to stay near Morpeth.
-Answer the questions below by writing the letters of the appropriate advertisements in
-boxes 4-7 on your answer sheet.
-4. Which TWO places to stay have restaurants? 4.....................
-5. Which place claims to offer the cheapest rate? 5.....................
-6. For more information, to which place can you telephone free of charge? 6.....................
-7. At which place can the guests cook their own food? 7.....................</p>
-<p>Questions 8-14
-Using information from the text, fill in the names of the numbered tourist attractions on the
-map. Write pour answers in boxes 8-14 on your answer sheet. The first one has been done
-for you as an example. Note: there are more names than you will need
-Tourist attractions
-A Fig Tree Hill
-B Ferry Boat
-C George Street
-D Gosford
-E Church of the Immaculate Conception
- 3</p>
-<p>F Closebourne House
-G Morpeth Bridge
-H shopping district
-I Surgeon’s Cottage
-J Railway Station
-K Courthouse
- 
-8..................... 9..................... 10.....................  11..................... 12.....................
-13..................... 14.....................
- 4</p>
-<p>Solution:
- 
-1. 1821
-2. (The) Hunter (River)
-3. (The) Hunter (River)
-4. A;C
-5. A
-6. A
-7. D
-8. I
-9. G
-10. K
-11. J
-12. E
-13. H
-14. F
- 5</p>
-<p>Reading Practice
- Crisis! freshwater
-A . As in New Delhi and Phoenix, policymakers worldwide wield great power over how
-water resources and managed. Wise use of such power will become increasingly important
-as the years go by because the world’s demand for freshwater is currently overtaking its
-ready supply in many places, and this situation shows no sign of abating.
-B . That the problem is well-known makes it no less disturbing: today one out of six people,
-more than a billion, suffer inadequate access to safe freshwater. By 2025, according to
-data released by the United Nations, the freshwater resources of more than half the
-countries across the globe will undergo either stress- for example, when people
-increasingly demand more water than is available or safe for use-or outright shortages. By
-mid-century, as much as three-quarters of the earth’s population could face scarcities of
-freshwater. 
-C . Scientists expect water scarcity to become more common in large part because the
-world’s population is rising and many people are getting richer (thus expanding demand)
-and because global climate change is exacerbating aridity and reducing supply in many
-regions. What is more, many water sources are threatened by faulty waste disposal,
-releases of industrial pollutants, fertilizer runoff, and coastal influxes of saltwater into
-aquifers as groundwater is depleted.
-D . Because lack of access to water can lead to starvation, disease, political instability, and
-even armed conflict, failure to take action can have broad and grave consequences.
-Fortunately, to a great extent, the technologies and policy tools required to conserve
-existing freshwater and to secure more of it are known among which several seem
-particularly effective. What is needed now is action. Governments and authorities at every
-level have to formulate and execute plans for implementing the political, economic, and
-technological measures that can ensure water security now and in the coming decades.
-E . The world’s water problems require, as a start, an understanding of how much
-freshwater each person requires, along with knowledge of the factors that impede supply
-and increase demand in different parts of the world. Main Falkenmark of the Stockholm
-International Water Institute and other experts estimate that, on average, each person on
-the earth needs a minimum of 1000 cubic meters (m3) of water. The minimum water each
-person requires for drinking, hygiene, and growing food. The volume is equivalent to twofifths of an Olympic-size swimming pool. 
-F . Much of the Americas and northern Eurasia enjoy abundant water supplies. But several
-regions are beset by greater or lesser degrees of “physical” scarcity-whereby demand
-exceeds local availability. Other areas, among them Central Africa, parts of the Indian
-subcontinent, and Southeast Asia contend with “economic” water scarcity limit access even
-though sufficient supplies are available.
-G. More than half of the precipitation that falls on land is never available for capture or
-storage because it evaporates from the ground or transpires from plants; this fraction is
-called blue-water sources-rivers, lakes, wetlands, and aquifers-that people can tap directly.
-Farm irrigation from these free-flowing bodies is the biggest single human use of
-freshwater resources, but the intense local demand they create often drains the
-surroundings of ready supplies.
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Inside The Mind Of A Fan How Watching Sport Affects The Brain</h1>
+<p>雅思阅读真题 · 第158篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Inside the mind of a fan: How watching sport affects the
+brain
+A
+At about the same time that the poet Homer invented the epic here, the ancient Greeks
+started a festival in which men competed in a single race, about 200 metres long. The
+winner received a branch of wild olives. The Greeks called this celebration the Olympics.
+Through the ancient sprint remains, today the Olympics are far more than that. Indeed, the
+Games seem to celebrate the dream of progress as embodied in the human form. That the
+Games are intoxicating to watch is beyond question. During the Athens Olympics in 2004,
+3.4 billion people, half the world, watched them on television. Certainly, being a spectator is
+a thrilling experience: but why?
+B
+In 1996, three Italian neuroscientists, Giacomo Rizzolatti, Leonardo Forgassi and Vittorio
+Gallese, examined the premotor cortex of monkeys. The discovered that inside these
+primate brains there were groups of cells that ‘store vocabularies of motor actions’. Just as
+there are grammars of movement. These networks of cells are the bodily ‘sentences’ we
+use every day, the ones our brain has chosen to retain and refine. Think, for example,
+about a golf swing. To those who have only watched the Master’s Tournament on TV,
+golfing seems easy. To the novice, however, the skill of casting a smooth arc with a lop-
+side metal stick is virtually impossible. This is because most novices swing with their
+consciousness, using an area of brain next to the premotor cortex. To the expert, on the
+other hand, a perfectly balanced stroke is second nature. For him, the motor action has
+become memorized, and the movements are embedded in the neurons of his premotor
+cortex. He hits the ball with the tranquility of his perfected autopilot.
+C
+These neurons in the premotor cortex, besides explaining why certain athletes seem to
+possess almost unbelievable levels of skill, have an even more amazing characteristic, one
+that caused Rizzolatti, Fogassi and Gallese to give them the lofty title ‘mirror neurons’.
+They note, The main functional characteristic of mirror neurons is that they become active
+both when the monkey performs a particular action (for example, grasping an object or
+holding it) and, astonishingly, when it sees another individual performing a similar action.’
+Humans have an even more elaborate mirror neuron system. These peculiar cells mirror,
+inside the brain, the outside world: they enable us to internalize the actions of another. In
+order to be activated, though, these cells require what the scientists call ‘goal-orientated
+movements’. If we are staring at a photograph, a fixed image of a runner mid-stride, our
+mirror neurons are totally silent. They only fire when the runner is active: running, moving
+or sprinting.
+D
+What these electrophysiological studies indicate is that when we watch a golfer or a runner
+in action, the mirror neurons in our own premotor cortex light up as if we were the ones
+competing. This phenomenon of neural mirror was first discovered in 1954, when two
+French physiologists, Gastaut and Berf, found that the brains of humans vibrate with two
+ 1
+distinct wavelengths, alpha and mu. The mu system is involved in neural mirroring. It is
+active when your bodies are still, and disappears whenever we do something active, like
+playing a sport or changing the TV channel. The surprising fact is that the mu signal is also
+quiet when we watch someone else being active, as on TV, these results are the effect of
+mirror neurons.
+E
+Rizzolatti, Fogassi and Gallese call the idea for mirror neurons the ‘direct matching
+hypothesis’. They believe that we only understand the movement of sports stars when we
+‘map the visual representation of the observed action onto our motor representation of the
+same action’. According to this theory, watching an Olympic athlete ‘causes the motor
+system of the observer to resonate. The “motor knowledge” of the observer is used to
+understand the observed action.’ But mirror neurons are more than just the neural basis for
+our attitude to sport. It turns out that watching a great golfer makes us better golfers, and
+watching a great sprinter actually makes us run faster. This ability to learn by watching is a
+crucial skill. From the acquisition of language as infants to learning facial expressions,
+mimesis (copying) is an essential part of being conscious. The best athletes are those with
+a premotor cortex capable of imagining the movements of victory, together with the
+physical properties to make those movements real.
+F
+But how many of us regularly watch sports in order to be a better athlete? Rather, we
+watch sport for the feeling, the human drama. This feeling also derives from mirror
+neurons. By letting spectators share in the motions of victory, they also allow us to share in
+its feelings. This is because they are directly connected to the amygdale, one of the main
+brain regions involved in emotion. During the Olympics, the mirror neurons of whole nations
+will be electrically identical, their athletes causing spectators to feel, just for a second or
+two, the same thing. Watching sports brings people together. Most of us will never run a
+mile in under four minutes, or hit a home run. Our consolation comes in watching, when we
+gather around the TV, we all feel, just for a moment, what it is to do something perfectly.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Reading Passage has six paragraphs,  A-F.
+Which paragraph contains the following information?
+Write the correct letter,  A-F, in boxes  1-6 on your answer sheet.
+NBYou may use any letter more than once.
+1.....................   an explanation of why watching sport may be emotionally satisfying
+2.....................   an explanation of why beginners find sporting tasks difficult
+3.....................   a factor that needs to combine with mirroring to attain sporting excellence
+4.....................   a comparison of human and animal mirror neurons
+5.....................   the first discovery of brain activity related to mirror neurons
+6.....................   a claim linking observation to improvement in performance
+ Questions 7-9
+Choose the correct letter,  A, B, C or D.
+Write your answers in boxes  7-9 on your answer sheet.
+ 7. The writer uses the term ‘grammar of movement’ to mean
+A   a level of sporting skill.
+B   a system of words about movement.
+C   a pattern of connected cells.
+D   a type of golf swing.
+ 8. The writer states that expert players perform their actions
+A   without conscious thought.
+B   by planning each phase of movement.
+C   without regular practice.
+D   by thinking about the actions of others.
+9. The writer states that the most common motive for watching sport is to  
+ 3
+A   improve personal performance.
+B   feel linked with people of different nationalities.
+C   experience strong positive emotions.
+D   realize what skill consists of.
+ Questions 10-14
+Do the following statements agree with the views of the writer in Reading Passage?
+In boxes 10-14 on your answer sheet, write
+YES                  if the statement is true
+NO                   if the statement is false
+NOT GIVEN     if the information is not given in the passage
+10.....................   Inexpert sports players are too aware of what they are doing.
+11.....................   Monkeys have a more complex mirror neuron system than humans.
+12.....................   Looking at a photograph can activate mirror neurons.
+13.....................   Gastaut and Bert were both researchers and sports players.
+14.....................   The mu system is at rest when we are engaged in an activity.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.F
+2.B
+3.E
+4.C
+5.D
+6.E
+7.C8.A
+9.C
+10.YES
+11.NO
+12.NO
+13.NOT GIVEN
+14.YES
+ 5</div>
+</div>
+</div>
 </body>
 </html>

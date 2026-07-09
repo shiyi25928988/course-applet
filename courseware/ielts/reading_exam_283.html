@@ -1,401 +1,134 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Population Viability Analysis - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Student Life At Canterbury College - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题372/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Population Viability Analysis</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>8. Solar System
-9. sensors and
-circuits IN EITHER
-ORDER; BOTH
-REQUIRED FOR
-ONE MARK
-10. spares
-11. radio dish
-12. TRUE
-13.
-2. F
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Student Life At Canterbury College</h1>
+<p>雅思阅读真题 · 第283篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Student life at Canterbury College
+Most of the courses at Canterbury College only take up four days of the week, leaving
+one day free for independent study.
+The atmosphere at the College is that of an adult environment where a relationship of
+mutual respect is encouraged between students and tutors.
+Canterbury is a student city with several institutes of Further and Higher Education. The
+city centre is just a five-minute walk from the College, easily accessible in lunch or study
+breaks.
+Canterbury College has developed strong international links over the years and, as a
+result, many students have the opportunity of visiting and working in a European country
+in the course of their studies.
+Students' Union and SRC
+All students are automatically members of the Canterbury College Students' Union
+(CCSU) and can attend meetings. The Union is very active and is run by an Executive
+Committee elected by students in the Autumn Term. The President is elected every
+Summer Term to provide continuity for the next academic year. Representatives from
+each area of study form the Student Representative Council (SRC) which allows every
+student a say in Union affairs. In addition to representing students internally in the
+College on the Academic Board and with a subcommittee of the College Corporation,
+the CCSU also belongs to the National Union of Students which represents the interests
+of students nationally. The Union also arranges and supports entertainments, sporting
+activities and trips.
+STUDENT FACILIITES
+Learning Resources Centre (LRC)
+The Corey Learning Resources Centre provides easy access to a wide range of printed
+and audiovisual learning materials which can help students with coursework. There is
+ample space for quiet independent study and there are also areas for group work.
+Resources provided include books, journals, audio and video cassettes and CD-ROMs.
+Inter-library loans are available
+locally and nationally via the British Library. All students are encouraged to use the
+Open Access Information Technology Centre situated on the first floor. This has a
+variety of computing, word processing and desktop publishing software.
+Bookshop
+A branch of Waterstone's bookshops is located on campus, where you can buy a range
+of stationery, drawing equipment, artists' materials and books, as well as many other
+useful items you may need.
+Children's Centre
+The College Children's Centre has places for under 5s with some subsidised places
+being available to students. Places are limited, so, if you are interested, apply early to
+reserve a place by contacting Linda Baker on the College telephone number.
+Refectory
+ 1
+This provides refreshments between 08.30 and 19.00 with hot meals served three times
+a day. Healthy eating options are available.
+Coffee Shop
+This is open during normal College hours and serves light snacks and drinks. Proceeds
+from the Coffee Shop go to the Students' Union.
+Crypt Restaurant
+This is a training restaurant which offers good quality cuisine in pleasant surroundings.
+Meals are very reasonably priced and you are invited to sample the students' highly
+skilled dishes when the restaurant is open to the public during the week. Reservations
+can be made on 01227511244.
+Chapel View Restaurant
+This is another training restaurant and is set up as a quick-service facility which offers a
+selection of snacks and main courses at a modest price.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Read the passage about student life at Canterbury College.
+Do the following statements agree with the information given in the passage?
+In boxes1-6 on your answer sheet, write
 TRUE
+FALSE
+ 
+ 
+ 
+ 
+ 
+ 
+ if the statement agrees with the information
+if the statement contradicts the information
+ NOT GIVEN if there is no information on this
+1..................... Many students are allocated a job experience placement abroad.  
+2..................... The elections for the Union President and Executive Committee are held
+together.  
+3..................... There are staff in the LRC to help students use the facilities.  
+4..................... Nursery care is available on a first-came, first-served basis.  
+5..................... The Refectory serves fast-food options.  
+6..................... The Chapel View Restaurant is for students only.  
+ 3</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
  
-3. B
-4. E
-5. A
-6. C
-7. Jupiter and
-Saturn IN EITHER
-ORDER; BOTH
-REQUIRED FOR
-ONE MARK
-14. FALSE
- 5</p>
-<p>Reading Practice
- In Praise of Amateurs
-Despite the specialization of scientific research, amateurs still have an important role to
-play.
-During the scientific revolution of the 17th century, scientists were largely men of private
-means who pursued their interest in natural philosophy for their own edification. Only in the
-past century or two has it become possible to make a living from investigating the workings
-of nature. Modern science was, in other words, built on the work of amateurs. Today,
-science is an increasingly specialized and compartmentalized subject, the domain of
-experts who know more and more about less and less. Perhaps surprisingly, however,
-amateurs – even those without private means – are still important.
-A recent poll carried out at a meeting of the American Association for the Advancement of
-Science by astronomer Dr Richard Fienberg found that, in addition to his field of
-astronomy, amateurs are actively involved in such field as acoustics, horticulture,
-ornithology, meteorology, hydrology and palaeontology. Far from being crackpots, amateur
-scientists are often in close touch with professionals, some of whom rely heavily on their
-co-operation.
-Admittedly, some fields are more open to amateurs than others. Anything that requires
-expensive equipment is clearly a no-go area. And some kinds of research can be
-dangerous; most amateur chemists, jokes Dr Fienberg, are either locked up or have blown
-themselves to bits. But amateurs can make valuable contributions in fields from rocketry to
-palaeontology and the rise of the Internet has made it easier than before to collect data and
-distribute results.
-Exactly which field of study has benefited most from the contributions of amateurs is a
-matter of some dispute. Dr Fienberg makes a strong case for astronomy. There is, he
-points out, a long tradition of collaboration between amateur and professional sky
-watchers. Numerous comets, asteroids and even the planet Uranus were discovered by
-amateurs. Today, in addition to comet and asteroid spotting, amateurs continue to do
-valuable work observing the brightness of variable stars and detecting novae- ‘new’ stars in
-the Milky Way and supernovae in other galaxies. Amateur observers are helpful, says Dr
-Fienberg, because there are so many of them (they far outnumber professionals) and
-because they are distributed all over the world. This makes special kinds of observations
-possible:’ if several observers around the world accurately record the time when a star is
-eclipsed by an asteroid, for example, it is possible to derive useful information about the
-asteroid’s shape.
-Another field in which amateurs have traditionally played an important role is
-palaeontology. Adrian Hunt, a palaeontologist at Mesa Technical College in New Mexico,
-insists that his is the field in which amateurs have made the biggest contribution. Despite
-the development of high-tech equipment, he says, the best sensors for finding fossils are
-human eyes – lots of them.
-Finding volunteers to look for fossils is not difficult, he says, because of the near universal
-interest in anything to do with dinosaurs. As well as helping with this research, volunteers
-learn about science, a process he calls ‘recreational education’.
- 1</p>
-<p>Rick Bonney of the Cornell Laboratory of Ornithology in Ithaca, New York, contends that
-amateurs have contributed the most in his field. There are, he notes, thought to be as many
-as 60 million birdwatchers in America alone. Given their huge numbers and the wide
-geographical coverage they provide, Mr Bonney has enlisted thousands of amateurs in a
-number of research projects. Over the past few years their observations have uncovered
-previously unknown trends and cycles in bird migrations and revealed declines in the
-breeding populations of several species of migratory birds, prompting a habitat
-conservation programme.
-Despite the successes and whatever the field of study, collaboration between amateurs
-and professionals is not without its difficulties. Not everyone, for example is happy with the
-term ‘amateur’. Mr Bonney has coined the term ‘citizen scientist’ because he felt that other
-words, such as ‘volunteer’ sounded disparaging. A more serious problem is the question of
-how professionals can best acknowledge the contributions made by amateurs. Dr Fienberg
-says that some amateur astronomers are happy to provide their observations but grumble
-about not being reimbursed for out-of-pocket expenses. Others feel let down when their
-observations are used in scientific papers, but they are not listed as co-authors. Dr Hunt
-says some amateur palaeontologists are disappointed when told that they cannot take finds
-home with them.
-These are legitimate concerns but none seems insurmountable. Provided amateurs and
-professionals agree the terms on which they will work together beforehand, there is no
-reason why co-operation between the two groups should not flourish. Last year Dr S.
-Carlson, founder of the Society for Amateur Scientists won an award worth $290,000 for
-his work in promoting such co-operation. He says that one of the main benefits of the prize
-is the endorsement it has given to the contributions of amateur scientists, which has done
-much to silence critics among those professionals who believe science should remain their
-exclusive preserve.
-At the moment, says Dr Carlson, the society is involved in several schemes including an
-innovative rocket-design project and the setting up of a network of observers who will
-search for evidence of a link between low- frequency radiation and earthquakes. The
-amateurs, he says, provide enthusiasm and talent, while the professionals provide
-guidance ‘so that anything they do discover will be taken seriously’. Having laid the
-foundations of science, amateurs will have much to contribute to its ever – expanding
-edifice.
--------------------------------</p>
-<p>-Read through the summary atnormal speedso that you have a fair idea of what it is
-about.
--Check the instructions: you can use a maximum of two words for each answer and
-these words must be taken from the reading passage. If you use more than two words
-or words that are not in the passage, the answer will be marked wrong.
--Skim the passage and find out where the part that has been summarised begins.
--Read the text around each gap carefully. See if you can predict the answer or the kind
-of word(s) that you are looking for.
--Select the best word from the text for each gap.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 1.TRUE
+2.FALSE
+ 4.TRUE
+5.NOT GIVEN
+6. 3.NOT GIVEN NOT GIVEN
+ 4</div>
+</div>
+</div>
 </body>
 </html>

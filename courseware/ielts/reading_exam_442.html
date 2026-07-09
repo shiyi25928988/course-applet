@@ -1,353 +1,186 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Water Crisis - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Worldly Wealth - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题591/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Water Crisis</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>especially for collection purposes, but they are extremely expensive- Jibe raft alone cost
-122,000 [euro] (86,000 [pounds sterling]) in 2001], nut very effective because you can only
-reach the tops of the trees, and are highly dependent on the weather, ” says Dr Wilfried
-Morawetz, director of systematic botany at the University of Leipzig. “Balloons can usually
-only be used in the early morning for two to four hours. Last time, we could only fly three
-times during the whole week.” Given these factors, it comes as no surprise that operations
-involving these balloons numbered just six between 1986 and 2001.</p>
-<p>Smithsonian Tropical Research Institute in Panama. Smith had the idea of using a static
-crane to get into the treetops. Un-tethered balloons may allow widely distributed sites to be
-sampled, but cranes allow scientists to study an area of at least a hectare from soil to
-canopy throughout the year, year after year. “Cranes beat any other access mode. They
-are cheap, reliable and fast. In two minutes I can reach any point in our forest, which is
-essential for comparative measurements across species,” says Professor Christian Korner
-of the University of Basel. Korner is using a static crane in a unique carbon dioxideenrichment experiment in Switzerland, in an attempt to discover how forests might respond
-to the global increase in atmospheric carbon dioxide (see Swiss canopy-crane carbon
-experiment, right). For reasons of convenience, cranes are generally situated close to cities
-or a research center. Leipzig University has a crane not far from the town, the Location
-allowing scientists to study the effect of city pollutants on forests. In order to increase the
-amount of canopy a crane can access, some have been mounted on short rail tracks. In
-“1995, Dr Wilfried Morawetz was the first to use this technique, installing a crane on 150
-meters of track in the Venezuelan rainforest. “In my opinion, cranes should be the core of
-canopy research in the future,” he says.</p>
-<p>It appears that the rest of the scientific community has now come around to Mitchell’s way
-of thinking. “I think most scientists thought him mad to consider such a complex field station
-at first,” says internationally respected ‘canopist’ Meg Lowman, the executive director of the
-Marie Selby Botanical Gardens. “However, we’ve all come to realize that a combination of
-methods, a long-term approach to ecological studies and a collaborative approach are the
-absolute best ways to advance canopy science. A permanent canopy field station would
-allow that to happen.” With A dedicated group of canopy scientists working together and a
-wide range of tools available for them to get into the treetops, we’re now finally on our way
-towards a true understanding of the least-known terrestrial habitat.
- 2</p>
-<p>Questions 1-5
-The reading Passage has seven paragraphs A-F
-Which paragraph contains the following information?
-Write the correct letter A-F, in boxes 1-5 on your answer sheet
-1.....................   The Scientific significance for committing canopy study. 
-2.....................   The first academic research attempt mentioned to getting the top canopy.
-3.....................   The overview idea of the forest canopy and the problem of understanding
-the forests.
-4.....................   Recognition for a long term effect and cooperation.
-5.....................   An innovation accessing to treetop which proved to be an ultimate solution
-till now.
- 
-Questions 6-9
-Complete the following summary of the paragraphs of Reading Passage
-Using NO MORE THAN TWO WORDS from the Reading Passage for each answer.
-Write your answers in boxes 6-9 on your answer sheet.
-  
-Scientists keep trying new methods to access to the canopy of the treetop. Though early
-attempt succeeded in building an observation platform yet the help from
-the 6..................... was imperative; further innovators made by the French who built a
-platform with equipment by using 7...................... Later, the ‘floating’ platform
-of 8..................... is serving as an island in the treetops. Then finally, there came the next
-major breakthrough in Panama. Scientists applied 9..................... to access to the treetops,
-which are proved to be the center of canopy research in today and in the future.
-Questions 10-14
-Use the information in the passage to match the category (listed A-F) with opinions or
-deeds below.
-Write the appropriate letters A-F in boxes 10-14 on your answer sheet.
-NB You may use any letter more than once
-A     Sir Francis Drake
-B     Wilfried Morawetz
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Worldly Wealth</h1>
+<p>雅思阅读真题 · 第442篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Worldly Wealth
+Can the future population of the world enjoy a comfortable lifestyle, with
+possessions, space and mobility, without crippling the environment?
+The world's population is expected to stabilize at around nine billion. Will it be possible for
+nine billion people to have the lifestyle enjoyed today only by the wealthy? One school of
+thought says no: not only should the majority of the world's people resign themselves to
+poverty forever, but rich nations must also revert to simpler lifestyles in order to save the
+planet.
+Admittedly, there may be political or social barriers to achieving a rich world. But in fact
+there seems to be no insuperable physical or ecological reason why nine billion people
+should not achieve a comfortable lifestyle, using technology only slightly more advanced
+than that which we now possess. In thinking about the future of civilization, we ought to
+start by asking w hat people want. The evidence demonstrates that as people get richer
+they w ant a greater range of personal technology, they want lots of room (preferably near
+or in natural surroundings) and they w ant greater speed in travel. More possessions, more
+space, more mobility.
+In the developed world, the personal technologies of the wealthy, including telephones,
+washing machines and ears, have become necessities within a generation or two.
+Increasing productivity that results m decreasing costs for such goods has been
+responsible for the greatest gains in the standard of living, and there is every reason to
+believe that this will continue.
+As affluence grows, the amount of energy and raw- materials used for production of
+machinery w ill therefore escalate. But this need not mean an end to the machine age.
+Rather than being throw n away, materials from old machinery can be recycled by
+manufacturers. And long before all fossil fuels are exhausted, their rising prices may
+compel industrial society not only to become more energy efficient but also to find
+alternative energy sources sufficient for the demands of an advanced technological
+civilization nuclear fission, nuclear fusion, solar energy, chemical photosynthesis,
+geothermal, biomass or some yet unknown source of energy.
+The growth of cities and suburbs is often seen as a threat to the environment. However, in
+fact the increasing amount of land consumed by agriculture is a far greater danger than
+urban sprawl. Stopping the growth of farms is the best way to preserve many of the world's
+remaining wild areas. But is a dramatic downsizing of farmland possible? Thanks to the
+grow th of agricultural productivity, reforestation and ‘re-wilding’ has been under way in the
+industrial countries for generations. Since 1950 more land in the US has been set aside in
+parks than has been occupied by urban and suburban growth. And much of what was
+farmland in the nineteenth century is now forest again. Taking the best Iowa maize growers
+as the norm for world food productivity, it has been calculated that less than a tenth of
+present cropland could support a population of 10 billion.
+In The Environment Game, a vision of a utopia that would be at once high-tech and
+environmentalist. Nigel Calder suggested that ‘nourishing but unpalatable primary food
+produced by industrial techniques - like yeast from petroleum may be fed to animals, so
+ 1
+that we can continue to eat our customary meat, eggs. milk, butter, and cheese and so that
+people in underdeveloped countries can have adequate supplies of animal protein for the
+first time.'
+In the long run. tissue-cloning techniques could be used to grow desired portions of meat
+by themselves. Once their DNA has been extracted to create cow less steaks and chicken
+less drumsticks, domesticated species of livestock, bred for millennia to be stupid or to
+have grotesquely enhanced traits, should be allowed to become extinct, except for a few
+specimens in zoos. However, game such as wild deer, rabbits and wild ducks w ill be ever
+more abundant as farms revert to wilderness, so this could supplement the laboratory-
+grown meat in the diets of tomorrow's affluent.
+With rising personal incomes come rising expectations of mobility. This is another luxury of
+today’s rich that could become a necessity of tomorrow’s global population - particularly if
+its members choose to live widely dispersed in a post-agrarian wilderness. In his recent
+book Free Flight. James Fallows, a pilot as well as a writer, describes serious attempts by
+both state and private entrepreneurs in the USA to promote an ‘air taxi' system within the
+price range of today’s middle class and perhaps tomorrow’s global population.
+Two of the chief obstacles to the science fiction fantasy of the personal plane or hover car
+are price and danger. While technological improvements are driving prices down, piloting
+an aircraft in three dimensions is still more difficult than driving a car in two. and pilot error
+causes more fatalities than driver error. But before long our aircraft and cars will be piloted
+by computers which arc never tired or stressed.
+So perhaps there are some grounds for optimism when viewing the future of civilization.
+With the help of technology, and without putting serious strains on the global environment,
+possessions, space and mobility can be achieved for all the projected population of the
+world.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Do the following statements reflect the claims of the writer in Reading Passage 2?
+In boxes1-6 on your answer sheet write
+                YES
+NO
+ if the statement reflects the writer's claims
+if the statement contradicts the writer's claims
+  
+ NOT GIVEN  if it is impossible to say what the writer thinks about this
+1.....................      Today's wealthy people ignore the fact that millions are living in
+poverty.
+2.....................      There are reasons why the future population of the world may not
+enjoy a comfortable lifestyle.
+3.....................      The first thing to consider when planning for the future is
+environmental protection.
+4.....................      As manufactured goods get cheaper, people will benefit more from
+them.
+5.....................      It may be possible to find new types of raw materials for use in the
+production of machinery.
+6.....................      The rising prices of fossil fuels may bring some benefits.
+ Questions 7-12
+Complete the summary below.
+ChooseONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 7-12 on your answer sheet.
+ 
+ 
+ 
+ 
+ 
+ Space for an increased population
+According to the writer, the use of land for 7..................... is the most serious threat to
+the environment. However, in the US. there has already been an increase in the amount
+of land used for 8..................... forests. Far less land would be required to feed the
+world's population if the 9..................... of the land could be improved worldwide. It has
+also been claimed that the industrial production of animal foods could allow greater
+access to animal 10..................... by the entire world’s population.
+Scientists could use 11..................... from domesticated animals to help produce meat
+by tissue cloning, and these species could then be allowed to die out. In addition to this
+type of meat. 12..................... will also be widely available.
+ 3
+   
+ Questions 13-14
+Choose the correct answer, A. B, CorD
+Write your answers in boxes 13-14 on your answer sheet.
+13    Greater mobility may be a feature of the future because of changes in
+A the location of housing.
+B patterns of employment.
+C centres of transport.
+D the distribution of wealth.
+14    Air transport will be safe because of
+A new types of aircraft.
+B better training methods.
+C three-dimensional models.
+D improved technology.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+  1.NOT GIVEN
+2.YES
+3.NO
+4.YES
+5.NOT GIVEN
+6.YES
+7.agriculture /8.parks
+9.productivity
+10.protein
+11.DNA
+12.game
+13.A
+farms / farmland14.D
+ 5</div>
+</div>
+</div>
 </body>
 </html>

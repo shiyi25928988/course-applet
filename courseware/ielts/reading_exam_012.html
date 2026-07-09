@@ -1,275 +1,180 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Return of the Wolf - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-        }
-        .passage-box {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
-        .question-card {
-            background: #eff6ff;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
-        }
-        .question-card h4 {
-            margin: 0 0 12px 0;
-            color: #1e40af;
-        }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
-            display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
-            text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>A History Of Fingerprinting - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📖 阅读真题 24/50</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
-        </aside>
-
-        <main class="main">
-            <div class="page-hero">
-                <h1>📖 The Return of the Wolf</h1>
-                <p>剑桥14 Test2 Passage1 · 题型：T/F/NG · 填空 · 完整逐题解析</p>
-            </div>
-
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 24: The Return of the Wolf</h3>
-                    <div class="difficulty diff-easy">难度：★★☆☆☆ 简单</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：说明文 · 话题：生态 · 动物 · 建议时间：15-17分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>The Return of the Wolf is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the return of the wolf has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>B</strong></p>
-                        <p>The Return of the Wolf is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the return of the wolf has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>C</strong></p>
-                        <p>The Return of the Wolf is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the return of the wolf has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>D</strong></p>
-                        <p>The Return of the Wolf is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the return of the wolf has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>E</strong></p>
-                        <p>The Return of the Wolf is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the return of the wolf has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>F</strong></p>
-                        <p>The Return of the Wolf is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the return of the wolf has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-8: TRUE / FALSE / NOT GIVEN</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Do the following statements agree with the information given in the reading passage?</p>
-                        <p style="margin:0 0 8px 0;font-size:0.9rem;"><strong>Write:</strong></p>
-                        <ul style="margin:0 0 16px 0;font-size:0.9rem;">
-                            <li><strong>TRUE</strong> if the statement agrees with the information</li>
-                            <li><strong>FALSE</strong> if the statement contradicts the information</li>
-                            <li><strong>NOT GIVEN</strong> if there is no information on this</li>
-                        </ul>
-                        <p style="margin:8px 0;"><strong>1.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>2.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>3.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>4.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>5.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>6.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>7.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>8.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                    </div>
-                    <div class="question-card">
-                        <h4>Questions 9-14: Complete the Summary</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
-                        <p style="line-height:2.2;">
-                            The Step Pyramid was designed by the architect <input type="text" class="blank-input" placeholder="...">. It was built during the <input type="text" class="blank-input" placeholder="..."> century BCE for Pharaoh Djoser. Unlike previous tombs made of <input type="text" class="blank-input" placeholder="...">, this pyramid was constructed from <input type="text" class="blank-input" placeholder="...">. The complex includes various <input type="text" class="blank-input" placeholder="..."> and temples, surrounded by a high <input type="text" class="blank-input" placeholder="...">. Underground, there are over 5 kilometers of <input type="text" class="blank-input" placeholder="..."> and chambers.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> FALSE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> NOT GIVEN</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> FALSE</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> NOT GIVEN</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>8.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>9.</strong> Imhotep</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>10.</strong> 27th</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>11.</strong> mud brick</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>12.</strong> limestone</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>13.</strong> courtyards</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>14.</strong> wall</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>15.</strong> tunnels</td></tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 1: TRUE</h5>
-                        <p><strong>定位：</strong>Paragraph A 第2句</p>
-                        <p><strong>原文：</strong><span class="keyword">"the Step Pyramid of Djoser at Saqqara holds the distinction of being the earliest stone pyramid"</span></p>
-                        <p><strong>解析：</strong>题目中的"first pyramid"是原文"earliest stone pyramid"的<span class="synonym">同义替换</span>，与原文信息一致。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 2: FALSE</h5>
-                        <p><strong>定位：</strong>Paragraph B 第1句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Prior to the Step Pyramid, royal tombs were relatively simple structures known as mastabas"</span></p>
-                        <p><strong>解析：</strong>题目与原文信息<span class="synonym">直接矛盾</span>。之前的墓是简单的mastabas，不是complex structures。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 8: Imhotep</h5>
-                        <p><strong>定位：</strong>Paragraph B 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Designed by the brilliant architect Imhotep"</span></p>
-                        <p><strong>解析：</strong>原文原词，注意大写。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 9: 27th</h5>
-                        <p><strong>定位：</strong>Paragraph A 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Built during the 27th century BCE"</span></p>
-                        <p><strong>解析：</strong>数字信息，直接提取。</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>A History Of Fingerprinting</h1>
+<p>雅思阅读真题 · 第12篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>A History of Fingerprinting
+A
+To detectives, the answers lie at the end of our fingers. Fingerprinting offers an accurate
+and infallible means of personal identification. The ability to identify a person from a mere
+fingerprint is a powerful tool in the fight against crime. It is the most commonly used
+forensic evidence, often outperforming other methods of identification. These days, older
+methods of ink fingerprinting, which could take weeks, have given way to newer, faster
+techniques like fingerprint laser scanning, but the principles stay the same. No matter
+which way you collect fingerprint evidence, every single person’s print is unique. So, what
+makes our fingerprints different from our neighbour’s?
+B
+A good place to start is to understand what fingerprints are and how they are created. A
+fingerprint is the arrangement of skin ridges and furrows on the tips of the fingers. This
+ridged skin develops fully during foetal development, as the skin cells grow in the mother’s
+womb. These ridges are arranged into patterns and remain the same throughout the
+course of a person’s life. Other visible human characteristics, like weight and height,
+change over time whereas fingerprints do not. The reason why every fingerprint is unique is
+that when a baby’s genes combine with environmental influences, such as temperature, it
+affects the way the ridges on the skin grow. It makes the ridges develop at different rates,
+buckling and bending into patterns. As a result, no two people end up having the same
+fingerprints. Even identical twins possess dissimilar fingerprints.
+C
+It is not easy to map the journey of how the unique quality of the fingerprint came to be
+discovered. The moment in history it happened is not entirely dear. However, the use of
+fingerprinting can be traced back to some ancient civilisations, such as Babylon and China,
+where thumbprints were pressed onto clay tablets to confirm business transactions.
+Whether people at this time actually realised the full extent of how fingerprints were
+important for identification purposes is another matter altogether. One cannot be sure if the
+act was seen as a means to confirm identity or a symbolic gesture to bind a contract, where
+giving your fingerprint was like giving your word.
+D
+Despite this uncertainty, there are those who made a significant contribution towards the
+analysis of fingerprinting. History tells us that a 14th century Persian doctor made an early
+statement that no two fingerprints are alike. Later, in the 17th century, Italian physician
+Marcello Malpighi studied the distinguishing shapes of loops and spirals in fingerprints.
+In his honour, the medical world later named a layer of skin after him. It was, however, an
+employee for the East India Company, William Herschel, who came to see the true
+potential of fingerprinting. He took fingerprints from the local people as a form of signature
+for contracts, in order to avoid fraud. His fascination with fingerprints propelled him to study
+them for the next twenty years. He developed the theory that fingerprints were unique to an
+individual and did not change at all over a lifetime. In 1880 Henry Faulds suggested that
+fingerprints could be used to identify convicted criminals. He wrote to Charles Darwin for
+ 1
+advice, and the idea was referred on to Darwin’s cousin, Sir Francis Galton. Galton
+eventually published an in-depth study of fingerprint science in 1892.
+E
+Although the fact that each person has a totally unique fingerprint pattern had been well
+documented and accepted for a long time, this knowledge was not exploited for criminal
+identification until the early 20th century. In the past branding, tattooing and maiming had
+been used to mark the criminal for what he was. In some countries, thieves would have
+their hands cut off. France branded criminals with the fleur-de-lis symbol. The Romans
+tattooed mercenary soldiers to stop them from becoming deserters.
+F
+For many years police agencies in the Western world were reluctant to use fingerprinting,
+much preferring the popular method of the time, the Bertillon System, where dimensions of
+certain body parts were recorded to identify a criminal. The turning point was in 1903 when
+a prisoner by the name of Will West was admitted into Leavenworth Federal Penitentiary.
+Amazingly, Will had almost the same Bertillon measurements as another prisoner residing
+at the very same prison, whose name happened to be William West. It was only their
+fingerprints that could tell them apart. From that point on, fingerprinting became the
+standard for criminal identification.
+G
+Fingerprinting was useful in identifying people with a history of crime and who were listed
+on a database. However, in situations where the perpetrator was not on the database and
+a crime had no witnesses, the system fell short. Fingerprint chemistry is a new technology
+that can work alongside traditional fingerprinting to find more clues than ever before. From
+organic compounds left behind on a print, a scientist can tell if the person is a child, an
+adult, a mature person or a smoker, and much more. It seems, after all these years, fingers
+continue to point the way.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Reading Passage 3 has seven paragraphs, A-G.
+Choose the correct heading for paragraphs B-Gfrom the list of headings below.
+List of Headings
+i Key people that made a difference
+ii An alternative to fingerprinting
+iii The significance of prints
+iv How to identify a criminal
+v Patterns in the making
+vi Family connections
+vii Exciting new developments
+viii A strange coincidence
+ix Punishing a criminal
+X
+  An uncertain past
+  Example
+iii Paragraph A
+1..................... Paragraph B
+2..................... Paragraph C
+3..................... Paragraph D
+4..................... Paragraph E
+5..................... Paragraph F
+6.....................
+ 
+  
+ 
+ Paragraph G
+Questions 7-9
+Complete the sentences.
+ChooseNO MORE THAN TWO WORDS from the passage for each answer.
+7   Unlike other 7.....................  that you can see, fingerprints never change.
+8  Although genetically the same,  8..................... do not share the same fingerprints.
+9  A fingerprint was a substitute for a  9..................... in Indian contracts.
+Questions 10-14
+ 3
+ 
+ Do the following statements agree with the information given in Reading Passage 3? Write
+TRUE                  if the statement agrees with the information
+FALSE                 if the statement contradicts the information
+NOT GIVEN         if there is no information on this
+10.....................   Fingerprinting is the only effective method for identifying criminals.
+11.....................   The ridges and patterns that make up fingerprints develop before birth. 
+12.....................   Malpighi conducted his studies in Italy. 
+13.....................   Roman soldiers were tattooed to prevent them from committing violent
+crimes. 
+14.....................   Fingerprint chemistry can identify if a fingerprint belongs to an elderly
+person. 
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+  1.v
+2.x
+3.i
+4.iv
+5.viii
+6.vii
+7.(human)8.identical twins
+9.signature
+10.FALSE
+11.TRE
+12.NOT GIVEN
+13.FALSE
+characteristics14.TRUE
+ 5</div>
+</div>
+</div>
 </body>
 </html>

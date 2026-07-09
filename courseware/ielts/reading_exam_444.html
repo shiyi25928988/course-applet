@@ -1,379 +1,161 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Worlds Friendliest City - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Flying tortoises - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题596/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Worlds Friendliest City</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>after the sacking of the Alexandrian Library in AD 931, mapmakers in the 15th century
-gradually replaced theology with knowledge of faraway places, as reported by
-travelling merchants like Marco Polo.
-G. Gerhardus Mercator, the foremost shipmaker of the 16th century, developed a
-technique of arranging meridians and parallels in such a way that navigators could
-draw straight lines between two points and steer a constant compass course
-between them. This distortion formula, introduced on his world map of 1569, created
-the ‘Greenland problem’. Even on some standard maps to this day, Greenland looks
-as large as South America - one of the many problems when one tries to portray a
-round world on a flat sheet of paper. But the Mercator projection was so practical that
-it is still popular with sailors.
-H. Scientific mapping of the land came into its own with the achievements of the Cassini
-family- father, son, grandson and great-grandson. In the late 17th century, the Italian
-- born founder, Jean-Dominique, invented a complex method of determining longitude
-based on observations of Jupiter's moons. Using this technique, surveyors were able
-to produce an accurate map of France. The family continued to map the French
-countryside arid his great-grandson finally published their famous Cassini map in
-1793 during the French Revolution. While it may have lacked the artistic appeal of
-earlier maps, it was the model of a social and geographic map showing roads, rivers,
-canals, towns, abbeys, vineyards, lakes and even windmills. With this achievement,
-France became the first country to be completely mapped by scientific methods.
-I.
-the field without being linked to navigation satellites. Their hand-held receivers are
-the most familiar of the new mapping technologies, and the satellite system,
-developed and still operated by the US Defense Department, is increasingly used by
-surveyors. Even ordinary hikers, sailors and explorers can tap into it for data telling
-them where they are. Simplified civilian versions of the receivers are available for a
-few hundred dollars and they are also the heart of electronic map displays available in
-some cars. Cartography is pressing on to cosmic frontiers, but its objective is, and
-always has been, to communicate a sense of ‘here’ in relation to ‘there’, however far
-away ‘there’ may be.
-Mapmaking has come a long way since those days. Today's surveyors rarely go into
- 2</p>
-<p>Questions 1-5
-Choose the correct letter, A, B, c or D.
-Write the correct letter in boxes 1-5 on your answer sheet.
-1. According to the first paragraph, mapmakers in the 21st century
-A combine techniques to chart unknown territory.
-B still rely on being able to see what they map.
-C are now able to visit the darkest jungle.
-D need input from experts in other fields.
-2. The Library of Congress offers an opportunity to
-A borrow from their collection of Dutch maps.
-B learn how to restore ancient and fragile maps.
-C enjoy the atmosphere of the reading room.
-D create individual computer map to order.
-3. Ptolemy alerted his contemporaries to the importance of
-A measuring the circumference of the world.
-B organizing maps to reflect accurate ratios of distance.
-C working out the distance between parallels of latitude.
-D accuracy and precision in mapping.
-4. The invention of the printing press
-A revitalized interest in scientific knowledge.
-B enabled maps to be produced more cheaply.
-C changed the approach to mapmaking.
-D ensured that the work of Ptolemy was continued.
-5. The writer concludes by stating that
-A mapmaking has become too specialized.
-B cartographers work in very harsh conditions.
-C the fundamental aims of mapmaking remain unchanged.
-D the possibilities of satellite mapping are infinite.
-Questions 6-7
-Look at the following list of achievements (Questions 6-7) and the list of mapmakers below.
-Match each achievement with the correct mapmaker, A, B, C or D.
- 3</p>
-<p>Write the correct letter, A, B, C or D, in boxes 6-7 on your answer sheet.
-6..................... came very close to accurately measuring the distance round the Earth
-7..................... produced maps showing man-made landmarks
-8..................... laid the foundation for our modem time zones
-List of Mapmakers
-A Mercator
-B Ptolemy
-C Cassini family
-D Eratosthenes
-Questions 9-13
-Complete the summary below.
-Choose NO MORE THAN TWO WORDS from the passage for each answer.
-Write your answers in boxes 9-13 on your answer sheet.
-Ancient maps allow US to see how we have come to make sense of the world. They also
-reflect the attitudes and knowledge of the day. The first great step in mapmaking took place
-in 9.....................  in the 3rd century BC. Work continued in this tradition until the 2nd
-century AD but was then abandoned for over a thousand years, during which time maps
-were the responsibility of 10..................... scientists.
-Fortunately, however, the writings of 11..................... rather than had been kept, and
-interest in scientific mapmaking was revived as scholars sought to produce maps, inspired
-by the accounts of travellers. These days, 12..................... are vital to the creation of maps
-and radar has allowed cartographers to map areas beyond our immediate world. In
-addition, this high-tech equipment is not only used to map faraway places, but cheaper
-versions have also been developed for use in 13......................
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Flying tortoises</h1>
+<p>雅思阅读真题 · 第444篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Flying tortoises
+An airborne reintroduction programme has helped conservationists take significant steps to protect the
+endangered Galapagos tortoise.
+A 
+Forests of spiny cacti cover much of the uneven lava plains that separate the interior of the Galapagos island of
+Isabela from the Pacific Ocean. With its five distinct volcanoes, the island resembles a lunar landscape. Only the
+thick vegetation at the skirt of the often cloud-covered peak of Sierra Negra offers respite from the barren terrain
+below.
+This inhospitable environment is home to the giant Galapagos tortoise. Some time after the Galapagos’s birth,
+around five million years ago, the islands were colonised by one or more tortoises from mainland South
+America. As these ancestral tortoises settled on the individual islands, the different populations adapted to their
+unique environments, giving rise to at least 14 different subspecies. Island life agreed with them. In the absence
+of significant predators, they grew to become the largest and longest-living tortoises on the planet, weighing
+more than 400 kilograms, occasionally exceeding 1,8 metres in length and living for more than a century.
+B 
+Before human arrival, the archipelago's tortoises numbered in the hundreds of thousands. From the 17th century
+onwards, pirates took a few on board for food, but the arrival of whaling ships in the 1790s saw this exploitation
+grow exponentially. Relatively immobile and capable of surviving for months without food or water, the tortoises
+were taken on board these ships to act as food supplies during long ocean passages. Sometimes, their bodies
+were processed into high- grade oil.
+In total, an estimated 200,000 animals were taken from the archipelago before the 20th century. This historical
+exploitation was then exacerbated when settlers came to the islands. They hunted the tortoises and destroyed
+their habitat to clear land for agriculture. They also introduced alien species - ranging from cattle, pigs, goats,
+rats and dogs to plants and ants - that either prey on the eggs and young tortoises or damage or destroy their
+habitat.
+C
+Today, only 11 of the original subspecies survive and of these, several are highly endangered. In 1989, work
+began on a tortoise-breeding centre just outside the town of Puerto Villamil on Isabela, dedicated to protecting
+the island’s tortoise populations. The centre’s captive-breeding programme proved to be extremely successful,
+and it eventually had to deal with an overpopulation problem.
+ D
+The problem was also a pressing one. Captive-bred tortoises can’t be reintroduced into the wild until they’re at
+least five years old and weigh at least 4,5 kilograms, at which point their size and weight - and their hardened
+shells - are sufficient to protect them from predators. But if people wait too long after that point, the tortoises
+eventually become too large to transport.
+E
+For years, repatriation efforts were carried out in small numbers, with the tortoises carried on the backs of men
+over weeks of long, treacherous hikes along narrow trails. But in November 2010, the environmentalist and
+Galapagos National Park liaison officer Godfrey Merlin, a visiting private motor yacht captain and a helicopter
+pilot gathered around a table in a small cafe in Puerto Ayora on the island of Santa Cruz to work out more
+ambitious reintroduction. The aim was to use a helicopter to move 300 of the breeding centre’s tortoises to
+ 1
+various locations close to Sierra Negra.
+F
+This unprecedented effort was made possible by the owners of the 67-metre yacht White Cloud, who provided
+the Galapagos National Park with free use of their helicopter and its experienced pilot, as well as the logistical
+support of the yacht, its captain and crew. Originally an air ambulance, the yacht’s helicopter has a rear double
+door and a large internal space that’s well suited for cargo, so a custom crate was designed to hold up to 33
+tortoises with a total weight of about 150 kilograms. This weight, together with that of the fuel, pilot and four
+crew, approached the helicopter’s maximum payload, and there were times when it was clearly right on the edge
+of the helicopter’s capabilities. During a period of three days, a group of volunteers from the breeding centre
+worked around the clock to prepare the young tortoises for transport. Meanwhile, park wardens, dropped off
+ahead of time in remote locations, cleared landing sites within the thick brush, cacti and lava rocks.
+G
+Upon their release, the juvenile tortoises quickly spread out over their ancestral territory, investigating their new
+surroundings and feeding on the vegetation. Eventually, one tiny tortoise came across a fully grown giant who
+had been lumbering around the island for around a hundred years. The two stood side by side, a powerful
+symbol of the regeneration of an ancient species.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Reading Passage has seven paragraphs, A-G.
+Choose the correct heading for each paragraph from the list of headings below.
+Write the correct number, i-viii, in boxes 1-7on your answer sheet.
+1.....................    Paragraph    A
+2.....................    Paragraph    B
+3.....................    Paragraph    C
+4.....................    Paragraph    D
+5.....................    Paragraph    E
+6.....................    Paragraph    F
+7.....................    Paragraph    G
+ List of Headings
+iThe importance of getting the timing right
+iiYoung meets old
+Developments to the disadvantage of tortoiseiiipopulations
+ivPlanning a bigger idea
+vTortoises populate the islands
+viCarrying out a carefully prepared operation
+viiLooking for a home for the islands’ tortoises
+viii
+  
+  The start of the conservation project
+Questions 8-13
+Complete the notes below.
+ChooseONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 8-13on your answer sheet.
+The decline of the Galapagos tortoise
+•   Originally from mainland South America
+•   Numbers on Galapagos islands increased, due to lack of predators
+ 3
+ 
+ 
+ •   17th century: small numbers taken onto ships used by 8.....................
+ •   1790s: very large numbers taken onto whaling ships, kept for 9..................... and also
+used to produce 10.....................
+•   Hunted by 11..................... on islands
+ •   Habitat destruction: for the establishment of agriculture and by various
+12..................... not native to the islands, which also fed on baby tortoises and tortoises’
+13.....................
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.v
+2.iii
+3.viii
+4.i
+5.iv
+6.vi
+7.8.pirates
+9.food
+10.oil
+11.settlers
+12.species
+13.eggs
+ii
+ 5</div>
+</div>
+</div>
 </body>
 </html>

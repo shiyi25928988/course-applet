@@ -1,412 +1,165 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Art Of Healing - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The History Of Salt - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题457/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Art Of Healing</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-3
-Choose the appropriate letters A-D and write them in boxes 1-3 on your answer sheet.
-1    The experiment was designed to
- 
-A establish whether increased productivity should be sought at any cost.
-B show that four divisions could use the same technology.
-C perfect a system for processing accounts.
-D exploit the human organisation of a company in order to increase profits.
-2    The four divisions
- 
-A each employed a staff of 500 clerks.
-B each had equal levels of productivity.
-C had identical patterns of organisation.
-D were randomly chosen for the experiment
-3    Before the experiment</p>
-<p>A the four divisions were carefully selected to suit a specific programme.
-B each division was told to reduce its level of productivity.
-C the staff involved spent a number of months preparing for the study.
-D the employees were questioned about their feelings towards the study.</p>
-<p>Questions 4-9
-Complete the summary below. Choose ONE word from Reading Passage for each answer.
-Write your answers in boxes 4-9 on your answer sheet.
-This experiment involved an organisation comprising four divisions, which were divided
-into two programmes: the hierarchically controlled programme and the participative
-programme. For a period of one year a different method of 4..................... was used in
-each programme. Throughout this time 5..................... was calculated on a weekly
-basis. During the course of the experiment the following changes were made in an
-attempt to improve performance.
- 3</p>
-<p>In the participative programme:
-•supervision of all workers was 6.....................
- 
-•supervisory staff were given training in 7.....................
-In the hierarchically controlled programme:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The History Of Salt</h1>
+<p>雅思阅读真题 · 第339篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The History Of Salt
+Salt is so simple and plentiful that we almost take it for granted. In chemical terms, salt is
+the combination of a sodium ion with a chloride ion, making it one of the most basic
+molecules on earth. It is also one of the most plentiful: it has been estimated that salt
+deposits under the state of Kansas alone could supply the entire world’s needs for the next
+250,000 years.
+But salt is also an essential element. Without it, life itself would be impossible since the
+human body requires the mineral in order to function properly. The concentration of sodium
+ions in the blood is directly related to the regulation of safe body fluid levels. And while we
+are all familiar with its many uses in cooking, we may not be aware that this element is
+used in some 14,000 commercial applications. From manufacturing pulp and paper to
+setting dyes in textiles and fabric, from producing soaps and detergents to making our
+roads safe in winter, salt plays an essential part in our daily lives.
+Salt has a long and influential role in world history. From the dawn of civilization, it has
+been a key factor in economic, religious, social and political development. In every corner
+of the world, it has been the subject of superstition, folklore, and warfare, and has even
+been used as currency.
+As a precious and portable commodity, salt has long been a cornerstone of economies
+throughout history. In fact, researcher M.R. Bloch conjectured that civilization began along
+the edges of the desert because of the natural surface deposits of salt found there. Bloch
+also believed that the first war – likely fought near the ancient city of Essalt on the  Jordan
+River – could have been fought over the city’s precious supplies of the mineral.
+In 2200 BC, the Chinese emperor Hsia Yu levied one of the first known taxes. He taxed
+salt. In Tibet, Marco Polo noted that tiny cakes of salt were pressed with images of the
+Grand Khan to be used as coins and to this day among the nomads of Ethiopia’s Danakil
+Plains it is still used as money. Greek slave traders often bartered it for slaves, giving rise
+to the expression that someone was “not worth his salt.” Roman legionnaires were paid in
+salt – a solarium, the Latin origin of the word “salary.”
+Merchants in 12th-century Timbuktu – the gateway to the Sahara Desert and the seat of
+scholars – valued this mineral as highly as books and gold. In France, Charles of Anjou
+levied the “gabelle,” a salt tax, in 1259 to finance his conquest of the Kingdom of Naples.
+Outrage over the gabelle fueled the French Revolution. Though the revolutionaries
+eliminated the tax shortly after Louis XVI, the Republic of France re-established the gabelle
+in the early 19th Century; only in 1946 was it removed from the books.
+The Erie Canal, an engineering marvel that connected the Great Lakes to New York’s
+Hudson River in 1825, was called “the ditch that salt built.” Salt tax revenues paid for half
+the cost of construction of the canal. The British monarchy supported itself with high salt
+taxes, leading to a bustling black market for the white crystal. In 1 785, the Earl of
+Dundonald wrote that every year in England, 10,000 people were arrested for salt
+smuggling. And protesting against British rule in 1930, Mahatma Gandhi led a 200-mile
+march to the Arabian Ocean to collect untaxed salt for India’s poor.
+In religion and culture, salt long held an important place with Greek worshippers
+ 1
+consecrating it in their rituals. Further, in the Buddhist tradition, salt repels evil spirits, which
+is why it is customary to throw it over your- shoulder before entering your house after a
+funeral: it scares off any evil spirits that may be clinging to your back. Shinto religion also
+uses it to purify an area. Before sumo wrestlers enter the ring for a match – which is, in
+reality, an elaborate Shinto rite – a handful is thrown into the center to drive off malevolent
+spirits.
+In the Southwest of the United States, the Pueblo worship the Salt Mother. Other native
+tribes had significant restrictions on who was permitted to eat salt. Hopi legend holds that
+the angry Warrior Twins punished mankind by placing valuable salt deposits far from
+civilization, requiring hard work and bravery to harvest the precious mineral. In 1933, the
+Dalai Lama was buried sitting up in a bed of salt. Today, a gift of salt endures in India as a
+potent symbol of good luck and a reference to Mahatma Gandhi’s liberation of India.
+The effects of salt deficiency are highlighted in times of war, when human bodies and
+national economies are strained to their limits. Thousands of Napoleon’s troops died during
+the French retreat from Moscow due to inadequate wound healing and lowered resistance
+to disease – the results of salt deficiency.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-3
+Choose THREE letters A-H.
+Which THREE statements are true of salt?
+A A number of cities take their name from the word salt.
+B Salt contributed to the French Revolution.
+C The uses of salt are countless.
+D Salt has been produced in China for less than 2000 years.
+E There are many commercial applications for salt.
+F Salt deposits in the state of Kansas are vast.
+G Salt has few industrial uses nowadays.
+H Slaves used salt as a currency.
  
-•supervision of all workers was increased.
  
-•work groups were found to be 8..................... by 30%.</p>
-<p>•the work force was 9..................... by 25%.
-Questions 10-13
-Look at Figures 1, 2, 3 and 4 in Reading Passage.
-Choose the most appropriate label, A-I, for each Figure from the box below.
-Write your answers in boxes 10-13 on your answer sheet.</p>
-<p>A Employees’ interest in the company
-B Cost increases for the company
-C Changes in productivity
-D Employees’ feelings of responsibility towards completion of work
-E Changes in productivity when supervisor was absent
-F Employees’ opinion as to extent of personal support from management
-GEmployees feel closer to their supervisors
-H Employees’ feelings towards increased supervision
-I Supervisors’ opinion as to closeness of work group
-10..................... Fig 1
-11..................... Fig 2
-12..................... Fig 3
-13..................... Fig 4
- 4</p>
-<p>8. overstaffed
-9. reduced // cut
-// decreased
-10.
-2. C</p>
-<p>11. D
+ Questions 4-8
+Complete the summary.
+Choose NO MORE THAN TWO WORDS from the passage for each answer. Write
+your answers in boxes 4-8 on your answer sheet.
+Salt is such a 4......................that people would not be able to live without it. As well as its
+uses in cooking, this basic mineral has thousands of business 5......................ranging from
+making paper to the manufacture of soap. Being a prized and 6....................., it has played
+a major part in the economies of many countries. As such, salt has not only led to war but
+has also been used to raise 7..................... by governments in many parts of the world.
+There are also many instances of its place in religion and culture, being used as a means
+to get rid of evil 8......................
+Questions 9-14
+Do the following statements agree with the information in Reading Passage?
+TRUEif the statement agrees with the information
+FALSEif the statement contradicts the information
+NOT GIVEN if there is no information about the statement
+9..................... It has been suggested that salt was responsible for the first war
+10..................... The first tax on salt was imposed by a Chinese emperor
+11..................... Salt is no longer used as a form of currency
+12..................... Most of the money for the construction of the Erie Canal came from
+salt taxes
+ 3
+13..................... Hopi legend believes that salt deposits were placed far away from
+civilization to penalize mankind
+14..................... A lack of salt is connected with the deaths of many of Napoleon’s
+soldiers during the French retreat from Moscow
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.B
+2.E
+3.F
+  8.SPIRITS
+9.TRUE
+10.NOT
+GIVEN
   
-12. G
- 
-3. C
-4. supervision //
-leadership //
-management
-5. productivity
-6. reduced // cut //
-decreased
-7. (group methods of)
-13. F
-leadership
- 6</p>
-<p>Reading Practice
- Mechanisms of Linguistic Change
-A The changes that have caused the most disagreement are those in pronunciation. We
-have various sources of evidence for the pronunciations of earlier times, such as the
-spellings, the treatment of words borrowed from other languages or borrowed by them, the
-descriptions of contemporary grammarians and spelling-reformers, and the modern
-pronunciations in all the languages and dialects concerned From the middle of the
-sixteenth century, there are in England writers who attempt to describe the position of the
-speech-organs for the production of English phonemes, and who invent what are in effect
-systems of phonetic symbols. These various kinds of evidence, combined with a
-knowledge of the mechanisms of speech-production, can often give us a very good idea of
-the pronunciation of an earlier age, though absolute certainty is never possible.
-B When we study the pronunciation of a language over any period of a few generations or
-more, we find there are always large-scale regularities in the changes: for example, over a
-certain period of time, just about all the long [a:] vowels in a language may change into long
-[e:] vowels, or all the [b] consonants in a certain position (for example at the end of a word)
-may change into [p] consonants. Such regular changes are often called sound laws. There
-are no universal sound laws (even though sound laws often reflect universal tendencies),
-but simply particular sound laws for one given language (or dialect) at one given period
-C It is also possible that fashion plays a part in the process of change. It certainly plays a
-part in the spread of change: one person imitates another, and people with the most
-prestige are most likely to be imitated, so that a change that takes place in one social group
-may be imitated (more or less accurately) by speakers in another group. When a social
-group goes up or down in the world, its pronunciation of Russian, which had formerly been
-considered desirable, became on the contrary an undesirable kind of accent to have, so
-that people tried to disguise it. Some of the changes in accepted English pronunciation in
-the seventeenth and eighteenth centuries have been shown to consist in the replacement
-of one style of pronunciation by another style already existing, and it is likely that such
-substitutions were a result of the great social changes of the period: the increased power
-and wealth of the middle classes, and their steady infiltration upwards into the ranks of the
-landed gentry, probably carried elements of middle-class pronunciation into upper-class
-speech.
-D A less specific variant of the argument is that the imitation of children is imperfect: they
-copy their parents’ speech, but never reproduce it exactly. This is true, but it is also true
-that such deviations from adult speech are usually corrected in later childhood. Perhaps it
-is more significant that even adults show a certain amount of random variation in their
-pronunciation of a given phoneme, even if the phonetic context is kept unchanged. This,
-however, cannot explain changes in pronunciation unless it can be shown that there is
-some systematic trend in the failures of imitation: if they are merely random deviations they
-will cancel one another out and there will be no net change in the language.
-E One such force which is often invoked is the principle of ease, or minimization of effort.
-The change from fussy to fuzzy would be an example of assimilation, which is a very
-common kind of change. Assimilation is the changing of a sound under the influence of a
-neighbouring one. For example, the word scant was once skamt, but the /m/ has been
-changed to /n/ under the influence of the following /t/. Greater efficiency has hereby been
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+  
+ 4.ESSENTIAL ELEMENT 11.FALSE
+ 5.APPLICATIONS
+6.PORTABLE
+COMMODITY
+7.TAXES12.FALSE
+13.TRUE
+14.TRUE
+ 5</div>
+</div>
+</div>
 </body>
 </html>

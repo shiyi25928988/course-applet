@@ -1,372 +1,204 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Pompidou Centre - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Voyage Of Going Beyond The Blue Line 2 - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题554/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Pompidou Centre</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>the history of the dress.
-The first stages in the actual restoration will involve delicate surface cleaning, using a small
-vacuum suction device. Once the level of reconstruction has been determined, the original
-crocheted2 overdress will be stitched onto a dyed net support before repairs begin. It’s
-going to be extraordinarily difficult, because the original doth is quite stretchy, so we’ve
-deliberately chosen net because that has a certain amount of flexibility in it too,' says
-Zenzie. When the dress is displayed, none of our work will be noticeable, but we’ll retain all
-the evidence on the reverse so that future experts will be able to see exactly what we've
-done - and I'll produce a detailed report.’
-Zenzie has estimated that the project, costing about £30,000, will require more than 700
-hours’ work. ‘It will be a huge undertaking and I don’t think the Trust has ever spent quite
-as much on a costume before,’ she says. ‘But this dress is unique. It's very unusual to see
-this level of workmanship on a theatrical costume, and it must have looked spectacular on
-stage.’ If Terry was alive today, there’s no doubt she would be delighted. Unlike many other
-actresses, she valued her costumes because she kept and reused them time and time
-again. 'I'd like to think she’d see our contribution as part of the ongoing history of the dress,’
-says Zenzie.
- 
-1 A conservation organisation whose work includes the funding of projects designed to
-protect and preserve Britain's cultural heritage
-2 Produced using wool and a special needle with a hook at the end
-Adapted from Sussex Life magazine
- 2</p>
-<p>Questions 1-6
-Choose the correct letter, A, B, C or D.
-1    What do you learn about Ellen Terry in the first paragraph?
-A Lady Macbeth was her first leading role.
-B The Lyceum was her favourite theatre.
-C She tried hard to look good on stage.
-D She wanted to look young for her audience.
-2    What is the writer’s purpose in paragraph 2?
-A to describe different responses to the Beetlewing dress
-B to explain why the Beetlewing dress had such a big impact
-C to consider the suitability of the Beetlewing dress for the play
-D to compare the look of the Beetiewing dress on and off the stage
-3    According to the writer, the main effect of the Lyceum productions was to
-A expose more people to Shakespeare’s plays.
-B reduce the interest in other types of production.
-C raise the cost of going to the theatre.
-D encourage writers to produce more plays.
-4    In the fourth paragraph, what comparison does the writer make between Sargent’s
-portrait and the Beetlewing dress?
-A The dress has attracted more attention than the painting.
-B The dress is worth more money than the painting.
-C The painting took longer to produce.
-D The painting looks newer.
-5    Zenzie says the Beetlewing project is particularly special because
-A the dress is very old.
-B people know who wore the dress.
-C the dress was designed by someone famous.
-D there is evidence that the dress has been used
-6    Which of the following is the most suitable title for the passage?
-A A lesson from the past
- 3</p>
-<p>B A challenging task
-C An unusual fashion show
-D An unexpected discovery
-Questions 7-10
-Do the following statements agree with the views of the writer in the reading passage?
-Write</p>
-<p>YES                   if the statement agrees with the views of the writer
-NO                    if the statement contradicts the views of the writer
-NOT GIVEN      if it is impossible to say what the writer thinks about this
-7.....................     The National Trust conducted useful research to assist Zenzie's plans for
-the dress.
-8.....................     There will be some discussion over the changes that Zenzie’s team
-should make to the dress.
-9.....................     Zenzie’s estimate for the timing of the project is realistic.
-10.....................     Ellen Terry’s attitude towards her dresses was typical of her time.</p>
-<p>Questions 11-14
-Complete each sentence with the correct ending, A-F, below.
-11      Pictures will be used11.....................
-12      A special machine will be used12.....................
-13      A net material has been selected 13.....................
-14      Work will be visible on one side14.....................
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Voyage Of Going Beyond The Blue Line 2</h1>
+<p>雅思阅读真题 · 第415篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Voyage of going: beyond the blue line 2
+A. One feels a certain sympathy for Captain James Cook on the day in 1778 that he
+“discovered” Hawaii. Then on his third expedition to the Pacific, the British navigator had
+explored scores of islands across the breadth of the sea, from lush New Zealand to the
+lonely wastes of Easter Island This latest voyage had taken him thousands of miles north
+from the Society Islands to an archipelago so remote that even the ok! Polynesians back
+on Tahiti knew nothing about it. Imagine Cook’s surprise, then, when the natives of Hawaii
+came paddling out in their canoes and greeted him in a familiar tongue, one he had heard
+on virtually every mote of inhabited land he had visited Marveling at the ubiquity of this
+Pacific language and culture, he later wondered in his journal: “How shall we account for
+this Nation spreading it self so far over this Vast ocean?”
+ B. Answers have been slow in coming. But now a startling archaeological find on the island
+of Efate, in the Pacific nation of Vanuatu, has revealed an ancient seafaring people, the
+distant ancestors of today’s Polynesians, taking their first steps into the unknown. The
+discoveries there have also opened a window into the shadowy work! of those early
+voyagers. At the same time, other pieces of this human puzzle are turning up in unlikely
+places. Climate data gleaned from slow-growing corals around the Pacific and from
+sediments in alpine lakes in South America may help explain how, more than a thousand
+years later, a second wave of seafarers beat their way across the entire Pacific.
+C. What we have is a first-or second-generation site containing the graves of some of the
+Pacific’s first explorers,” says Spriggs, professor of archaeology at the Australian National
+University and co-leader of an international team excavating the site. It came to light only
+by luck A backhoe operator, digging up topsoil on the grounds of a derelict coconut
+plantation, scraped open a grave— the first of dozens in a burial ground some 3,000 years
+old It is the oldest cemetery ever found in the Pacific islands, and it harbors the bones of an
+ancient people archaeologists call the Lapita, a label that derives from a beach in New
+Caledonia where a landmark cache of their pottery was found in the 1950s. They were
+daring blue-water adventurers who roved the sea not just as explorers but also as
+pioneers, bringing everything they would need to build new lives— their families and
+livestock, taro seedlings and stone tools.
+ D. Within the span of a few centuries the Lapita stretched the boundaries of their world
+from the jungle-clad volcanoes of Papua New Guinea to the loneliest coral outliers of
+Tonga, at least 2,000 miles eastward in the Pacific. Along the way they explored millions of
+square miles of unknown sea, discovering and colonizing scores of tropical islands never
+before seen by human eyes: Vanuatu, New Caledonia, Fiji, Samoa.
+E. What little is known or surmised about them has been pieced together from fragments of
+pottery, animal bones, obsidian flakes, and such oblique sources as comparative linguistics
+and geochemistry. Although their voyages can be traced back to the northern islands of
+Papua New Guinea, their language variants of which are still spoken across the Pacific
+came from Taiwan. And their peculiar style of pottery decoration, created by pressing a
+carved stamp into the clay, probably had its roots in the northern Philippines. With the
+ 1
+ discovery of the Lapita cemetery on Efate, the volume of data available to researchers has
+expanded dramatically. The bones of at least 62 individuals have been uncovered so far
+including old men, young women, even babies—and more skeletons are known to be in the
+ground. Archaeologists were also thrilled to discover six complete Lapita pots. It’s an
+important find, Spriggs says, for it conclusively identifies the remains as Lapita. “It would be
+hard for anyone to argue that these aren’t Lapita when you have human bones enshrined
+inside what is unmistakably a Lapita urn.”
+F. Several lines of evidence also undergird Spriggs’s conclusion that this was a community
+of pioneers making their first voyages into the remote reaches of Oceania. For one thing,
+the radiocarbon dating of bones and charcoal places them early in the Lapita expansion.
+For another, the chemical makeup of the obsidian flakes littering the site indicates that the
+rock wasn’t local; instead it was imported from a large island in Papua New Guinea’s
+Bismarck Archipelago, the springboard for the Lapita’s thrust into the Pacific. A particularly
+intriguing clue comes from chemical tests on the teeth of several skeletons. DNA teased
+from these ancient bones may also help answer one of the most puzzling questions in
+Pacific anthropology: Did all Pacific islanders spring from one source or many? Was there
+only one outward migration from a single point in Asia, or several from different points?
+“This represents the best opportunity we’ve had yet,” says Spriggs, “to find out who the
+Lapita actually were, where they came from, and who their best descendants are today.
+ G. “There is one stubborn question for which archaeology has yet to provide any answers:
+How did the Lapita accomplish the ancient equivalent of a moon landing, many times over?
+No one has found one of their canoes or any rigging, which could reveal how the canoes
+were sailed Nor do the oral histories and traditions of later Polynesians offer any insights,
+for they segue into myth long before they reach as far back in time as the Lapita.” All we
+can say for certain is that the Lapita had canoes that were capable of ocean voyages, and
+they had the ability to sail them,” says Geoff Irwin, a professor of archaeology at the
+University of Auckland and an avid yachtsman. Those sailing skills, he says, were
+developed and passed down over thousands of years by earlier mariners who worked their
+way through the archipelagoes of the western Pacific making short crossings to islands
+within sight of each other. Reaching Fiji, as they did a century or so later, meant crossing
+more than 500 miles of ocean, pressing on day after day into the great blue void of the
+Pacific. What gave them the courage to launch out on such a risky voyage?
+H. The Lapita’s thrust into the Pacific was eastward, against the prevailing trade winds,
+Irwin notes. Those nagging headwinds, he argues, may have been the key to their
+success. “They could sail out for days into the unknown and reconnoiter, secure in the
+knowledge that if they didn’t find anything, they could turn about and catch a swift ride
+home on the trade winds. It’s what made the whole thing work.” Once out there, skilled
+seafarers would detect abundant leads to follow to land: seabirds and turtles, coconuts and
+twigs carried out to sea by the tides, and the afternoon pileup of clouds on the horizon that
+often betokens an island in the distance. Some islands may have broadcast their presence
+with far less subtlety than a cloud bank. Some of the most violent eruptions anywhere on
+the planet during the past 10,000 years occurred in Melanesia, which sits nervously in one
+of the most explosive volcanic regions on Earth. Even less spectacular eruptions would
+have sent plumes of smoke billowing into the stratosphere and rained ash for hundreds of
+ 2
+miles. It’s possible that the Lapita saw these signs of distant islands and later sailed off in
+their direction, knowing they would find land For returning explorers, successful or not, the
+geography of their own archipelagoes provided a safety net to keep them from
+overshooting their home ports and sailing off into eternity.
+I. However they did it, the Lapita spread themselves a third of the way across the Pacific,
+then called it quits for reasons known only to them. Ahead lay the vast emptiness of the
+central Pacific, and perhaps they were too thinly stretched to venture farther. They probably
+never numbered more than a few thousand in total, and in their rapid migration eastward
+they encountered hundreds of islands - more than 300 in Fiji alone. Still, more than a
+millennium would pass before the Lapita’s descendants, a people we now call the
+Polynesians, struck out in search of new territory.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Do the following statements agree with the information given in  Reading Passage ? 
+In boxes 1-7 on your answer sheet , write
+YESif the statement is true
+NOif the statement is false
+NOT GIVEN   if the information is not given in the passage 
  
-A to show how the team did the repairs on the dress.
-B to reduce the time taken to repair the dress.
-C to remove the dirt from the top layer of the dress.
-D to demonstrate the quality of the team’s work on the dress.
-E to match a quality of the original fabric used in the dress.
-F to help show where the dress needs repair work.
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ 1..................... Captain cook once expected the Hawaii might speak another language
+of people from other pacific islands
+2..................... Captain cook depicted number of cultural aspects of Polynesians in
+his journal
+3..................... Professor Spriggs and his research team went to the Efate to try to
+find the site of ancient cemetery
+4..................... The Lapita completed a journey of around 2,000 miles in a period less
+than a centenary
+5..................... The Lapita were the first inhabitants in many pacific islands
+6..................... The unknown pots discovered in Efate had once been used for
+cooking
+7..................... The um buried in Efate site was plain as it was without any decoration
+Questions 8 -10
+Complete the following summary of the paragraphs of Reading Passage 1, using no more
+than Two words  from the Reading Passage 1 for each answer.
+Write your answers in boxes  8-10 on your answer sheet.
+Scientific Evident found in Efate site
+Tests show the human remains and the charcoal found in the buried um are from the start
+of the Lapita period. Yet The 8..................... covering many of the Efate site did not come
+from that area.
+Then examinations carried out on the 9..................... discovered at Efate site reveal that
+not everyone buried there was a native living in the area. In fact, DNA could identify the
+Lapita’s nearest 10..................... present-days.
+ 4
+ 
+ 
+ Questions 11-13
+Answer the questions below.
+Choose NO MORE THAN THREE WORDS AND/OR A NUMBER  from the passage for
+each answer.
+11 What did the Lapita travel in when they crossed the oceans? 11.....................
+12 In Irwins’s view, what would the Latipa have relied on to bring them fast back to the
+base?12.....................
+13 Which sea creatures would have been an indication to the Lapita of where to find land ?
+13.....................
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.YES
+2.NO
+3.NO
+ 8.rock
+9.teeth
+10.descendants
+  
+ 4.NOT GIVEN 11.canoes
+5.YES 12.trade winds
+6.NOT GIVEN 13.seabirds and turtles
+7.NO
+ 6</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,352 +1,231 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Human Remain In Green Sahara - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Life In An International Orchestra - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题252/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Human Remain In Green Sahara</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Reading Practice
- Domestic robots
-Machines that look after your home are getting cleverer, but they still need care and
-attention if they are to perform as intended.
-Floor-cleaning machines capable of responding to their environment were among the first
-commercially available domestic products worthy of being called robots. The best known is
-the Roomba, made by iRobot, an American company which has sold more than three
-million of the discshaped, frisbee-sized vacuuming robots. The latest model, the fifth
-version of the Roomba, has more sensors and cleverer software than its predecessors.
-Press the 'Clean' button and the robot glides out of its docking station and sets off across
-the floor.
-Domestic robots are supposed to free up time so that you can do other things, but watching
-how the Roomba deals with obstacles is strangely compelling. It is capable of sensing its
-surroundings, and does not simply try to adhere to a pre-planned route, so it is not upset if
-furniture is moved, or if it is picked up and taken to clean another room. Its infra-red
-sensors enable it to slow down before reaching an obstacle - such as a dozy cat - changing
-direction and setting off again.
-It steadily works its way around the room, figuring out how to get out from under the
-television stand or untangle itself from a stray Game Boy recharging lead. Watch it for long
-enough, and you can sometimes predict its next move. The machine has a 'dirt sensor' and
-flashes a blue light when it finds things to clean up. Only when it detects no more dirt does
-it stop going over the same area and, eventually, conclude that the whole room is clean. It
-then trundles back to dock at its recharging station.
-So the first observation of life with a domestic robot is that you will keep watching it before
-you trust it completely. Perhaps that is not surprising: after all, when automatic washing
-machines first appeared, people used to draw up a chair and sit and watch them complete
-their wash, rinse and spin cycles. Now they just load them, switch them on and leave them
-to it.
-The second observation is that, despite their current level of intelligence, certain
-allowances must be made to get the best out of a domestic robot. The Roomba can be set
-up to dean at particular times, and to clean more than one room (small infra-red
-'lighthouses' can be positioned in doorways, creating an invisible barrier between one room
-and the next that is only removed when the first room has been cleaned). A 'drop-off'
-sensor underneath the robot prevents it from falling down stairs. All very clever, but what
-the Roomba wilt not do is pick up toys, shoes and other items left lying around. Rooms
-cared for by robots must be kept tidy. To start with, children will happily put things away in
-order to watch the robot set off, but unfortunately the novelty soon wears off.
-Similar allowances must be made for other domestic robots. Sweden's Husqvarna recently
-launched a new version of its Automower lawn mowing robot. Before it can be used, a wire
-must be placed around the perimeter of the lawn to define the part to be cut. If toys and
-other obstacles are not cleared from the lawn before it starts work, the robot will steer
-around them, leaving uncut areas. However, the latest version can top up its batteries with
- 1</p>
-<p>solar power, or send its owner a text message if it gets into trouble trying to climb a molehill.
-But there is still only a limited range of domestic robots. Machines that mop the floor, clean
-a swimming pool and clear muck from guttering are made by iRobot Several surveillance
-robots are also on offer. The Rovio, made by WowWee of Hong Kong, is a wi-fi-enabled
-webcam, mounted on an extending arm, which rides along smoothly on a nimble set of
-three wheels. Its movement can be remotely operated over the Internet via a laptop or
-mobile phone. The idea is that Rovio can patrol the home when its owner is away, either
-automatically or under manual control: in the latter case, two-way communication allows
-the operator to see and talk via the machine. So you could, for instance, shout at the cat if
-it is sleeping on your best sofa.
-Some machines are called robots even though they cannot move around. There is an
-ironing robot, for instance, that resembles an inflatable dummy: put a damp shirt on it, and
-it puffs up to remove the creases. Similarly, there are elaborate trouser presses that aspire
-to be robots. But do these devices really count as robots'1 If so, then surely dishwashers
-and washing machines do, too.
-Yet whatever shape or size robots come in, many will be adored. Another important
-observation from living with a robot is that it tends to become part of the family. 'People
-give them names, and if they have to be sent back for repair, they carefully add a mark to
-them to ensure they get the same machine back,' says Nancy Dussault Smith of iRobot.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Life In An International Orchestra</h1>
+<p>雅思阅读真题 · 第184篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Life in an international orchestra
+A
+Playing in a big international orchestra is one of life's most exciting experiences, yet it is
+also a very tough job. Players are part of a team of eighty or more musicians playing some
+of the world's greatest music. They work very long hours - turning up early for rehearsals
+on dark, cold, winter's mornings in a chilly, empty hall; working till late in the evening on the
+night of a concert; travelling on trains and planes at all hours of the day and night; eating
+and sleeping when they can; trying to play well when they are tired or hungry or have a
+headache. There's not much time left for home, family or friends. In fact, their 'family' is the
+rest of the orchestra. The musicians share the hectic pace and the worries, but they also
+share the wonderful moments when they are all playing together and feel on top of the
+world.
+B
+Much of an orchestra's time is spent in rehearsal. The players may already know the music
+by heart, but every conductor has his or her own ideas about how a piece of music should
+be played. That is one reason why rehearsals are necessary. Another reason is the
+problem of orchestral balance of sound. With the rest of the orchestra around them, players
+cannot always hear themselves properly (sometimes not at all), and so they cannot gauge
+the balance of sound between their own instruments or section and the rest of the
+orchestra. At rehearsals this is something that the conductor is able to put right.
+C
+Some conductors like to go through a piece of music bar by bar, stopping the orchestra
+each time they want to make a comment. Others let an orchestra play for long stretches at
+a time, then go back to a particular point they want to rehearse again. Whatever the
+conductor's method, it is important that the musicians are happy with it. If the players don't
+like the conductor they can become very difficult, interrupting the session with questions or
+complaints. At one time conductors, such as Toscanini, used to get such fine performances
+out of an orchestra by shouting at the musicians and almost frightening them into playing
+well. That sort of behaviour would not work with most orchestras today. After all, orchestral
+musicians are highly trained and experienced people and they should be treated with
+respect.
+D
+If a rehearsal is held in the morning of a concert, it probably takes place in the concert hall.
+In the morning, everybody will still be in casual clothes but in the evening they will change
+into formal dress. Most will arrive at least an hour early to unpack and inspect their
+instruments - violinists to check their strings and bow, woodwind players to check their
+reeds and change them if need be, and everyone to run over any difficult passages of
+music. If they want a bit of peace and quiet some members of the orchestra may even hide
+themselves away in the toilets or creep down to the boiler room! Players whose
+instruments are too big for them to carry, such as timpani, harps and double-basses, will
+arrive on the platform before the rest to make their last minute checks.
+E
+About five minutes before the concert is due to start, everybody except the leader or
+concert master, files on and takes their place. Then the leader comes on to a round of
+ 1
+applause from the audience and calls for silence, while the oboist sounds the note A. The
+rest of the orchestra tune their instruments to this note. Finally, on comes the conductor, to
+more applause, and, when there is quiet once more, the concert begins.
+F
+However well the orchestra may have rehearsed, problems may still occur. In a warm,
+crowded concert hall the acoustics are different from those in a cool, empty building, and
+this can change the balance of the sound. Also, the instruments may go out of tune after
+some time in a warm atmosphere.
+G
+Musicians, like actors, are aware of the audience; they notice whether the audience is a
+good one or not. A good audience will listen and respond to the music, whereas a difficult
+audience coughs and fidgets throughout the performance. Above all, the musicians are
+also aware of whether they are playing well, not just individually but as a team. Knowing
+they are giving a good performance makes all the difference at the end of a long, hard day.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+ The reading passage has seven paragraphs ( A-G).
+Choose the correct heading for Paragraphs A-Gfrom the list of headings ( i-x) below.
+  Write your answers in boxes 1-6 on the answer sheet.
+NBThere are more headings than paragraphs so you will not use all of them .
+ Example
+   Paragraph FAnswer
+ iii
+List of Headings
+The need
+for a high
+qualityi
+instrument
+Formalities
+at the
+beginning
+of thei
+i
+concert
+Problems
+with
+changes in
+sound ini
+i
+i
+the hall
+Poor and
+iineffective
+vconducting
+method
+The highs
+and lows of
+vbeing a
+member of
+an
+orchestra
+v
+iPre-concert
+arrangeme
+nts
+ivThe
+iresponse of
+the
+audience
+vThe need
+ 3
+i
+i
+ifor detailed
+rehearsal
+The
+importance
+iof the
+xconductor's
+manageme
+nt style
+Correct
+xadjustment
+of each
+ instrument
+ 
+  
+ 1..................... Paragraph A
+2..................... Paragraph B
+3..................... Paragraph C
+4..................... Paragraph D
+5..................... Paragraph E
+6..................... Paragraph G 
+Questions 7-13
+Choose the letter A-Dthat gives the best completion to each sentence below for the
+orchestra passage.
+Write your answers in boxes 7-13 on the answer sheet.
+7.   Playing in a large orchestra requires long hours because
+A there are very many members in the team.
+B the rehearsals take a lot of time.
+C hotel accommodation is not always satisfactory.
+D players are sometimes absent because they are sick.
+8.   Frequent rehearsals may be needed because
+A the musicians are occasionally worried.
+B the conductor must correct players' mistakes.
+C the players may not know each piece of music.
+D the volume of the instruments needs to be adjusted.
+ 4
+9.   An effective conductor is one who
+A has the players' approval.
+B forces the team to play well.
+C explains everything to the players.
+D allows no interruption to the rehearsal.
+10. Today, a conductor who loudly criticises the players
+A is showing them respect.
+B can expect insults from them.
+C will force them to play well.
+D will not get good music from them.
+11. On the evening of a concert, the players, will
+A visit the changing rooms.
+B arrive at the hall too early.
+C make sure their instruments are working properly.
+D check they have their formal clothing.
+12.  Problems in a concert may occur if
+A the hall temperature changes.
+B the audience does not applaud the conductor.
+C the players are playing an unfamiliar piece of music.
+D the conductor doesn't go through the music bar by bar.
+13. Players feel satisfaction in their music when
+A they have rehearsed well.
+B they have worked a long hard day.
+C the whole orchestra plays well together.
+D the audience is happy.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.v
+2.viii
+3.ix
+4.vi
+5.ii
+6.vii
+7.8.D
+9.A
+10.D
+11.C
+12.A
+13.C
+B
+ 6</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,420 +1,185 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finding The Lost Freedom - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>How To Spot A Liar - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题201/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Finding The Lost Freedom</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-5
-Choose the correct letter, A, B, C or D.
-Write your answers in boxes 1-5 on your answer sheet.
- 
-1. The children, especially boys received good education may
-A   always comply with their parents’ words
-B   be good at math
-C   have a high score at school
-D   disobey their parents’ order sometimes
- 
-2. Face to their children’s compliance and noncompliance, parents
-A   must be aware of the compliance
-B   ask for help from their teachers
-C   some of them may ignore their noncompliance
-D   pretend not to see
- 
-3. According to Henry Porter, noncompliance for children
-A   are entirely harmful
-B   may have positive effects
-C   needs medicine assistance
-D   should be treated by an expert doctor
- 
-4. When children are growing up, they
-A   always try to directly say no
-B   are more skillful to negotiate
-C   learn to cheat instead of noncompliance
-D   tend to keep silent
-5. Which is the possible reaction the passage mentioned for elder children and younger
-ones if they don’t want to comply with the order
- 3</p>
-<p>A   elder children prefer to refuse directly
-B   elder ones refuse to answer
-C   younger children may reject directly
-D   younger ones may save any words
-Questions 6-9
-Look at the following people and list of statements below.
-Match each person with the correct statement.
-Write the correct letter A-G in boxes 6-9 on your answer sheet.
-6.....................   Henry Porter
-7.....................   Wallace Friesen
-8.....................   Steven Walson
-9.....................   Paul Edith
-List of statements
-A   children of all ages will indirectly show noncompliance
-B   elder children tend to negotiate rather than show noncompliance
-C   converse behavior means noncompliance
-D   organizing fun activities to occur after frequently refused activities
-E   organizing child’s daily activities in the same order as much as possible.
-F   use praise in order to make children compliant
-G   take the children to school at an early age
- 
-Questions 10-14
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>How To Spot A Liar</h1>
+<p>雅思阅读真题 · 第149篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>How to Spot a Liar
+However much we may abhor it, deception comes naturally to all living things. Birds do it by
+feigning injury to lead hungry predators away from nesting young. Spider crabs do it by
+disguise: adorning themselves with strips of kelp and other debris, they pretend to be
+something they are not – and so escape their enemies. Nature amply rewards successful
+deceivers by allowing them to survive long enough to mate and reproduce. So it may come
+as no surprise to learn that human beings- who, according to psychologist Gerald Johnson
+of the University of South California, or lied to about 200 times a day, roughly one untruth
+every 5 minutes- often deceive for exactly the same reasons: to save their own skins or to
+get something they can’t get by other means.
+But knowing how to catch deceit  can be just as important a survival skill as knowing how to
+tell a lie and get away with it. A person able to spot falsehood quickly is unlikely to be
+swindled by an unscrupulous business associate or hoodwinked by a devious spouse.
+Luckily, nature provides more than enough clues to trap dissemblers in their own tangled
+webs- if you know where to look. By closely observing facial expressions, body language
+and tone of voice, practically anyone can recognise the tell-tale signs of lying. Researchers
+are even programming computers – like those used on Lie Detector -to get at the truth by
+analysing the same physical cues available to the naked eye and ear. “With the proper
+training, many people can learn to reliably detect lies,” says Paul Ekman, professor of
+psychology at the University of California, San Francisco, who has spent the past 15 years
+studying the secret art of deception.
+In order to know what kind of Lies work best, successful liars need to accurately assess
+other people’s emotional states. Ackman’s research shows that this same emotional
+intelligence is essential for good lie detectors, too. The emotional state to watch out for is
+stress, the conflict most liars feel between the truth and what they actually say and do.
+Even high-tech lie detectors don’t detect lies as such; they merely detect the physical cues
+of emotions, which may or may not correspond to what the person being tested is saying.
+Polygraphs, for instance, measure respiration, heart rate and skin conductivity, which tend
+to increase when people are nervous – as they usually are when lying. Nervous people
+typically perspire, and the salts contained in perspiration conducts electricity. That’s why
+ sudden  leap in skin conductivity indicates nervousness -about getting caught, perhaps -
+which makes, in turn, suggest that someone is being economical with the truth. On the
+other hand, it might also mean that the lights in the television Studio are too hot- which is
+one reason polygraph tests are inadmissible in court. “Good lie detectors don’t rely on a
+single thing”  says Ekma ,but interpret clusters of verbal and non-verbal clues that suggest
+someone might be lying.”
+The clues are written all over the face. Because the musculature of the face is directly
+connected to the areas of the brain that processes emotion, the countenance  can be a
+window to the soul. Neurological studies even suggest that genuine emotions travel
+different pathways through the brain than insincere ones. If a patient paralyzed by stroke
+on one side of the face, for example, is asked to  smile deliberately, only the mobile side of
+the mouth is raised. But tell that same person a funny joke, and the patient breaks into a
+full and spontaneous smile. Very few people -most notably, actors and politicians- are able
+to consciously control all of their facial expressions. Lies can often be caught when the liars
+ 1
+true feelings briefly leak through the mask of deception. We don’t think before we feel,
+Ekman says. “Expressions tend to show up on the face before we’re even conscious of
+experiencing an emotion.”
+One of the most difficult facial expressions to fake- or conceal, if it’s genuinely felt - is
+sadness. When someone is truly sad, the forehead wrinkles with grief and the inner corners
+of the eyebrows are pulled up. Fewer than 15% of the people Ekman tested were able to
+produce this eyebrow movement voluntarily. By contrast, the lowering of the eyebrows
+associated with an angry scowl can be replicated at will but almost everybody. “ If someone
+claims they are sad and the inner corners of their eyebrows don’t go up, Ekmam says, the
+sadness is probably false.”
+The smile, on the other hand, is one of the easiest facial expressions to counterfeit. It takes
+just two muscles -the zygomaticus major muscles that extend from the cheekbones to the
+corners of the lips- to produce a grin. But there’s a catch. A genuine smile affects not only
+the corners of the lips but also the orbicularis oculi, the muscle around the eye that
+produces the distinctive “crow’s feet” associated with people who laugh a lot. A counterfeit
+grin can be unmasked if the corners of the lips go up, the eyes crinkle,  but the inner
+corners of the eyebrows are not lowered, a movement controlled by the orbicularis oculi
+that is difficult to fake. The absence of lowered eyebrows is one reason why the smile looks
+so strained and stiff.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
 Do the following statements agree with the claims of the writer in Reading Passage?
-In boxes 10-14 on your answer sheet, write
-YES                  if the statement is true
-NO                   if the statement is false
-NOT GIVEN    if the information is not given in the passage
-10.....................   Socialization takes a long process, while compliance is the beginning of
- 4</p>
-<p>it. 
-11.....................   Many parents were difficult to be aware of compliance or noncompliance. 
-12.....................   Noncompliant Children are simple to deal with the relationship with the
-people at the same age when they are growing up.
-13.....................   Experts never tried drilling compliance into children.
-14.....................   Psychologist Paul Edith negated the importance that knowing how to
-praise children in an encouraging way.
- 5</p>
-<p>Solution:
- 
-1. D
-2. C
-3. B
-4. B
-5. C
-6. B
-7. E
-8. D
-9. F
-10. NOT GIVEN
-11. YES
-12. YES
-13. NO
-14. NO
- 6</p>
-<p>Reading Practice
- 
-Computer Games for Preschoolers: Nintendo’s
-Research and Design Process
-Designing computer games for young children is a daunting task for game producers, who,
-for a long time, have concentrated on more “hard core” game fans. This article chronicles
-the design process and research involved in creating Nintendo DS for preschool gamers.
-After speaking with our producers who have a keen interest in designing for the DS, we
-finally agreed on three key goals for our project. First, to understand the range of physical
-and cognitive abilities of preschoolers in the context of handheld system game play;
-second, to understand how preschool gamers interact with the DS, specifically how they
-control the different forms of play and game mechanics offered by the games presently on
-the market for this platform; third, to understand the expectation of preschooler’s parents
-concerning the handheld systems as well as the purchase and play contexts within which
-game play occurs. The team of research decided that in-home ethnographies with
-preschoolers and their families would yield comprehensive database with which to give our
-producers more information and insights, so we start by conducting 26 in-home
-ethnographies in three markets across the United States: an East coast urban/suburban
-area, a West coast urban/suburban area, and a Midwest suburban/rural area.
+In boxes1-5 on your answer sheet, write
  
-The subject is this study included 15 girls and 11 boys ranging from 3 years and 3 months
-old to 5 years and 11 months old. Also, because previous research had shown the effects
-of older siblings on game play (demonstrated, for example, by more advanced motor
-coordination when using a computer mouse), households were employed to have a
-combination of preschoolers with and without elder peers. In order to understand both
-“experienced” and “new” preschool users of the platform, we divided the sample so that 13
-families owned at least one Nintendo DS and the others did not. For those households that
-did not own a DS, one was brought to the interview for the kid to play. This allowed us to
-see both the instinctive and intuitive movements of the new players (and of the more
-experienced players when playing new games), as well as the learned movements of the
-more experienced players. Each of those interviews took about 60 to 120 minutes and
-included the preschooler, at least one parent, and often siblings and another caregiver.
-Three kinds of information were collected after each interview. From any older siblings and
-the parents that were available, we gathered data about: the buying decisions surrounding
-game systems in the household, the family’s typical game play patterns, levels of parental
-moderation with regard to computer gaming, and the most favorite games play by family
-members. We could also understand the ideology of gaming in these homes because of
-these in-home interviews: what types of spaces were used for game play, how the system
-were installed, where the handheld play occurred in the house (as well as on-the-go play),
-and the number and type of games and game systems owned. The most important is, we
-gathered the game-playing information for every single kid.
-Before carrying out the interviews, the research team had closely discussed with the inhouse game producers to create a list of game mechanics and problems tied to
-preschoolers’ motor and cognitive capabilities that were critical for them to understand prior
-to writing the games. These ranged from general dexterity issues related to game
-controllers to the effectiveness of in-game instructions to specific mechanics in current
-games that the producers were interested in implementing for future preschool titles.
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ YES - if the statement agrees with the information
+NO - if the statement contradicts the information
+NOT GIVEN - if there is no information on this
+ 
+   
+ 1..................... All living animals can lie.
+2..................... Some people tell lies for self-preservation.
+3..................... Scientists have used computers to analyze which part of the brain is
+responsible for telling lies.
+4..................... Lying as a survival skill is more important than detecting a lie.
+5..................... To be a good liar, one has to understand other people's emotions.
+ Questions 6-9
+Choose the correct letter A, B, CorD.
+Write your answers in boxes 6-9.
+ 6. How does the lie detector work?
+ A It detects whether one's emotional state is stable.
+B It detects one’s brain activity level.
+C It detects body behavior during one's verbal response.
+D It analyses one's verbal response word by word.
+7.Lie detectors can't be used as evidence in a court of law because
+ 
+ A Lights often cause lie detectors to malfunction.
+B They are based on too many verbal and non-verbal clues.
+C Polygraph tests are often inaccurate.
+D There may be many causes of certain body behavior.
+8.Why does the author mention the paralyzed patients?
+ 
+ A To demonstrate how a paralyzed patient smiles
+B To show the relation between true emotions and body behavior
+C To examine how they were paralyzed
+D To show the importance of happiness from recovery
+9.The author uses politicians to exemplify that they can
+A Have emotions.
+ 3
+ 
+ 
+ 
+     
+ 
+ 
+ B Imitate actors.
+C Detect other people's lives.
+D Mask their true feelings.
+Questions 10-13
+ Classify the following facial traits as referring to 
+Asadness
+Banger
+C happiness
+Write the correct letter A, BorCin boxes10-13.
+10..................... Inner corners of eyebrows raised
+11..................... The whole eyebrows lowered
+12..................... Lines formed around
+13..................... Lines form above eyebrows
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.YES
+2.YES
+3.NOT GIVEN
+4.NO
+5.YES
+6.C
+7.8.B
+9.D
+10.A
+11.B
+12.C
+13.A
+D
+ 5</div>
+</div>
+</div>
 </body>
 </html>

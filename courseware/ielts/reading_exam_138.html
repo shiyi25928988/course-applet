@@ -1,408 +1,195 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elnino And Seabirds - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Have Teenagers Always Existed - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题188/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Elnino And Seabirds</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>and schools can be closed down. With this at stake it’s not surprising that schools let the
-tests take over’.
-David Laws, the Liberal Democrat schools spokesman, said:The uniquely high stakes
-placed on national tests mean that many primary schools have become too exam focused.’
-However, the Government rejected the criticism. The idea that children are over-tested is
-not a view that the Government accepts,’a spokesman said. The reality is that children
-spend a very small percentage of their time in school being tested. Seeing that children
-leave school up to the right standard in the basics is the highest priority of the
-Government.’
-In another child-centred initiative, both major political parties in the UK – Labour and the
-Conservatives – have announced plans to make Britain more child-friendly following a
-report by UNICEF which ranked the UK the worst place to be a child out of 21 rich nations.
-Parents were warned that they risked creating a generation of’battery-farmed children’ by
-always keeping them indoors to ensure their safety. The family’s minister, Kevin Brennan,
-called for an end to the’cotton wool’culture and warned that children would not learn to
-cope with risks if they were never allowed to play outdoors.
- 2</p>
-<p>Questions 1-5
-Complete the sentences.
-Choose NO MORE THAN TWO WORDS from the passage for each answer.
-1   According to the inquiry, the amount of testing puts a lot of on young children
-1.....................
-2  The education report describes testing in England as 2.....................
-3  Parents often select their childrens schools after studying test results in 3.....................
-4  Kathy Hall and Kamil Ozerk believe testing in England is also used to evaluate
-4..................... in schools.
-5  The major political parties have promised to make Britain in view of the UNICEF report.
-5.....................</p>
-<p>Questions 5-9
-Do the following statements agree with the information given in Reading Passage 2? Write
-TRUE                 if the statement agrees with the information
-FALSE               if the statement contradicts the information
-NOT GIVEN     if there is no information on this
-   
-6.....................   Steve Sinnott says what is taught at school should be more tightly
-controlled. 
-7.....................   According to John Dunford, children would make more progress with much
-shorter and easier tests. 
-8.....................   Mick Brookes wants to see earlier student preparation for SATs. 
-9.....................   David Laws agrees with the opinions of Mick Brookes.
-Questions 10-13
-Choose the correct letter, A, B, C or D.
-10   What does the government argue?
-A There is not enough testing at present.
-B Tests at primary school are too easy.
-C Tests are not given too frequently.
-D Teachers should take more tests.
- 3</p>
-<p>11  The government spokesman
- 
-A is extremely critical of the way exams are written.
-B accepts many of the points made by the teachers’ leaders.
-C thinks education is what the government is most interested in.
-D argues it is the teachers’ fault that students are tested so much. 
-12  According to UNICEF, children in the UK
-A often spend too much time in the worst kind of places.
-B are not so well behaved as in other countries.
-C are not as rich as children in 21 other countries.
-D could be having much more fulfilling childhoods. 
-13  What is the point Kevin Brennan makes?
- 
-A Children use too many electrical devices.
-B Children would learn by being outside more.
-C Its too risky for children to be outside on their own.
-D The most important thing is childrens safety.
- 4</p>
-<p>Solution:
- 
-1. pressure
-2. high stakes
-3. league tables
-4. teaching standards
-5. more child-friendly
-6. FALSE
-7.
-8. FALSE
-9. TRUE
-10. C
-11. C
-12. D
-13. B
-NOT GIVEN
- 5</p>
-<p>Reading Practice
- Children with auditory problems</p>
-<p>Hearing impairment or other auditory function deficit in young children can have a major
-impact on their development of speech and communication, resulting in a detrimental effect
-on their ability to learn at school. This is likely to have major consequences for the
-individual and the population as a whole. The New Zealand Ministry of Health has found
-from research carried out over two decades that 6-10% of children in that country are
-affected by hearing loss.</p>
-<p>A preliminary study in New Zealand has shown that classroom noise presents a major
-concern for teachers and pupils. Modern teaching practices, the organisation of desks in
-the classroom, poor classroom acoustics, and mechanical means of ventilation such as airconditioning units all contribute to the number of children unable to comprehend
-the teacher's voice. Education researchers Nelson and Soli have also suggested that
-recent trends in learning often involve collaborative interaction of multiple minds and tools
-as much as individual possession of information. This all amounts to heightened activity
-and noise levels, which have the potential to be particularly serious for children
-experiencing auditory function deficit. Noise in classrooms can only exacerbate their
-difficulty in comprehending and processing verbal communication with other children and
-instructions from the teacher.</p>
-<p>Children with auditory function deficit are potentially failing to learn to their
-maximum potential because of noise levels generated in classrooms. The effects of noise
-on the ability of children to learn effectively in typical classroom environments are now the
-subject of increasing concern. The International Institute of Noise Control Engineering (IINCE), on the advice of the World Health Organization, has established an
-international working party, which includes New Zealand, to evaluate noise and
-reverberation control for school rooms.</p>
-<p>While the detrimental effects of noise in classroom situations are not limited to children
-experiencing disability, those with a disability that affects their processing of speech
-and verbal communication could be extremely vulnerable. The auditory function deficits
-in question include hearing impairment, autistic spectrum disorders (ASD) and attention
-deficit disorders (ADD/ADHD).</p>
-<p>Autism is considered a neurological and genetic life-long disorder that causes
-discrepancies in the way information is processed. This disorder is characterised by
-interlinking problems with social imagination, social communication and social interaction.
-According to Janzen, this affects the ability to understand and relate in typical ways to
-people, understand events and objects in the environment, and understand or respond to
-sensory stimuli. Autism does not allow learning or thinking in the same ways as in children
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Have Teenagers Always Existed</h1>
+<p>雅思阅读真题 · 第138篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Have teenagers always existed
+Our ancestor, Homo erectus, may not have had culture or even language, but did they
+have teenagers? That question has been contested in the past few years, with some
+anthropologists claiming evidence of an adolescent phase in human fossil.This is not
+merely an academic debate. Humans today are the only animals on Earth to have a
+teenage phase, yet we have very little idea why. Establishing exactly when adolescence
+first evolved and finding out what sorts of changes in our bodies and lifestyles it was
+associated with could help us understand its purpose.Why do we, uniquely, have a growth
+spurt so late in life?
+Until recently, the dominant explanation was that physical growth is delayed by our need to
+grow large brains and to learn all the behaviour patterns associated with humanity –
+speaking, social interaction and so on. While such behaviour is still developing, humans
+cannot easily fend for themselves, so it is best to stay small and look youthful.That way
+your parents and other members of the social group are motivated to continue looking after
+you.What’s more, studies of mammals show a strong relationship between brain size and
+the rate of development, with larger-brained animals taking longer to reach adulthood.
+Humans are at the far end of this spectrum. If this theory is correct, and the development of
+large brains accounts for the teenage growth spurt, the origin of adolescence should have
+been with the evolution of our own species (Homo sapiens) and Neanderthals, starting
+almost 200,000 years ago. The trouble is, some of the fossil evidence seems to tell a
+different story.
+The human fossil record is extremely sparse, and the number of fossilised children
+minuscule. Nevertheless, in the past few years anthropologists have begun to look at what
+can be learned of the lives of our ancestors from these youngsters. One of the most
+studied is the famous Turkana boy, an almost complete skeleton of Homo erectus from 1.6
+million years ago found in Kenya in 1984. Accurately assessing how old someone is from
+their skeleton is a tricky business. Even with a modern human, you can only make a rough
+estimate based on the developmental stage of teeth and bones and the skeleton’s general
+size.
+You need as many developmental markers as possible to get an estimate of
+age.TheTurkana boy’s teeth made him 10 or II years old.The features of his skeleton put
+him at 13, but he was as tall as a modern 15-year-old. Susan Anton of New York University
+points to research by Margaret Clegg who studied a collection of 18th- and 19th-century
+skeletons whose ages at death were known. When she tried to age the skeletons without
+checking the records, she found similar discrepancies to those of the Turkana boy. One 10-
+year-old boy, for example, had a dental age of 9, the skeleton of a 6-year-old but was tall
+enough to be 11. The Turkana kid still has a rounded skull, and needs more growth to
+reach the adult shape,’ Anton adds. She thinks that Homo erectus had already developed
+modern human patterns of growth, with a late, if not quite so extreme, adolescent spurt.
+She believes Turkana boy was just about to enter it.
+If Anton is right, that theory contradicts the orthodox idea linking late growth with
+development of a large brain. Anthropologist Steven Leigh from the University of Illinois
+goes further. He believes the idea of adolescence as catch-up growth does not explain why
+ 1
+the growth rate increases so dramatically. He says that many apes have growth spurts in
+particular body regions that are associated with reaching maturity, and this makes sense
+because by timing the short but crucial spells of maturation to coincide with the seasons
+when food is plentiful, they minimise the risk of being without adequate food supplies while
+growing. What makes humans unique is that the whole skeleton is involved. For Leigh, this
+is the key.
+According to his theory, adolescence evolved as an integral part of efficient upright
+locomotion, as well as to accommodate more complex brains. Fossil evidence suggests
+that our ancestors first walked on two legs six million years ago. If proficient walking was
+important for survival, perhaps the teenage growth spurt has very ancient origins. While
+many anthropologists will consider Leigh’s theory a step too far, he is not the only one with
+new ideas about the evolution of teenagers.
+Another approach, which has produced a surprising result, relies on the minute analysis of
+tooth growth. Every nine days or so the growing teeth of both apes and humans acquire
+ridges on their enamel surface.These are like rings in a tree trunk: the number of them tells
+you how long the crown of a tooth took to form. Across mammals, the rate at which teeth
+develop is closely related to how fast the brain grows and the age you mature. Teeth are
+good indicators of life history because their growth is less related to the environment and
+nutrition than is the growth of the skeleton.
+A more decisive piece of evidence came last year, when researchers in France and Spain
+published their findings from a study of Neanderthal teeth. Neanderthals had much fester
+tooth growth than Homo erectus who went before them, and hence, possibly, a shorter
+childhood. Lead researcher Fernando Ramirez-Rozzi thinks Neanderthals died young –
+about 25 years old — primarily because of the cold, harsh environment they had to endure
+in glacial Europe.They evolved to grow up quicker than their immediate ancestors.
+Neanderthals and Homo erectus probably had to reach adulthood fairly quickly, without
+delaying for an adolescent growth spurt So it still looks as though we are the original
+teenagers.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Choose the correct letter, A, B, C or D
+Write the correct letter in boxes 1-4 on your answer sheet.
+1) In the first paragraph, why does the writer say ‘This is not merely an academic debate’?
+A Anthropologists’ theories need to be backed up by practical research.
+B There have been some important misunderstandings among anthropologists.
+C The attitudes of anthropologists towards adolescence are changing.
+D The work of anthropologists could inform our understanding of modem adolescence.
+2) What was Susan Anton’s opinion of the Turkana boy?
+A He would have experienced an adolescent phase had he lived 2##qi
+B His skull showed he had already reached adulthood 2##qi
+C His skeleton and teeth could not be compared to those from a more modern age.
+D He must have grown much faster than others alive at the time.
+3) What point does Steven Leigh make?
+A Different parts of the human skeleton develop at different speeds.
+B The growth period of many apes Is confined to times when there is enough food 3##qi
+C Humans have different rates of development from each other depending on living
+conditions.
+D The growth phase in most apes lasts longer if more food is available.
+4) What can we learn from a mammal’s teeth?
+A A poor diet will cause them to grow more slowly.
+B They are a better indication of lifestyle than a skeleton.
+C Their growing period is difficult to predict accurately.
+D Their speed of growth is directly related to the body’s speed of development.
+ Questions 5-10
+Do the following statements agree with the claims of the writer in Reading Passage?
+In boxes 5-10 on your answer sheet, write
+YES                                                 if the statement agrees with the claims of the writer
+NO                                                  if the statement contradicts the claims of the writer
+NOT GIVEN                                  if it is impossible to say what the writer thinks about this
+ 3
+5..................... It is difficult for anthropologists to do research on human fossils
+because they are so rare
+6..................... Modern methods mean it is possible to predict the age of a skeleton
+with accuracy
+7..................... Susan Anton’s conclusion about the Turkana boy reinforces an
+established idea
+8..................... Steven Leigh’s ideas are likely to be met with disbelief by many
+anthropologists
+9..................... Researchers in France and Spain developed a unique method of
+analysing teeth
+10..................... There has been too little research comparing the brains of Homo
+erectus and Neanderthals
+Questions 11-14
+Complete each sentence with the correct ending, A-G, below. Write the correct letter,
+A-G, in boxes 11-14 on your answer sheet.
+ 11) Until recently, delayed growth in humans until adolescence was felt to be due
+to 11.....................
+12) In her research, Margaret Clegg discovered  12.....................
+13) Steven Leigh thought the existence of adolescence is connected to  13.....................
+14) Research on Neanderthals suggests that they had short lives because
+of 14.....................
+A. inconsistencies between height, skeleton and dental evidence.
+B. the fact that human beings walk on two legs.
+C. the way teeth grew.
+D. a need to be dependent on others for survival.
+E. difficult climatic conditions.
+F. increased quantities of food.
+G. the existence of much larger brains than previously.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.D
+2.A
+3.B
+4.D
+5.YES
+6.NO
+7.NO8.YES
+9.NOT GIVEN
+10.NOT GIVEN
+11.D
+12.A
+13.B
+14.E
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,368 +1,170 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inspired By Mimicking Mother Nature - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Mammoth Kill - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题263/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Inspired By Mimicking Mother Nature</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>noise. Another is control. If the individual knows that he or she can control the noise,
-this seems to eliminate both its negative effects at the time and its after-effects. This is true
-even if the individual never actually exercises his or her option to turn the noise off (Glass
-and Singer, 1972). Just the knowledge that one has control is sufficient.
-The studies discussed so far exposed people to noise for only short periods and only
-transient effects were studied. But the major worry about noisy environments is that
-living day after day with chronic noise may produce serious, lasting effects. One study,
-suggesting that this worry is a realistic one, compared elementary school pupils who
-attended schools near Los Angeles’s busiest airport with students who attended schools in
-quiet neighbourhoods (Cohen et al., 1980). It was found that children from the noisy
-schools had higher blood pressure and were more easily distracted than those who
-attended the quiet schools. Moreover, there was no evidence of adaptability to the noise. In
-fact, the longer the children had attended the noisy schools, the more distractible they
-became. The effects also seem to be long lasting. A follow-up study showed that children
-who were moved to less noisy classrooms still showed greater distractibility one year later
-than students who had always been in the quiet schools (Cohen et al, 1981). It should be
-noted that the two groups of children had been carefully matched by the investigators so
-that they were comparable in age, ethnicity, race, and social class.
- 2</p>
-<p>Questions 1-3
-Choose the correct letter, A, B, C or D.
-Write the correct letter in boxes 1-3 on your answer sheet.
-1    The writer suggests that people may have difficulty sleeping in the mountains because
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Mammoth Kill</h1>
+<p>雅思阅读真题 · 第194篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Mammoth kill
+ A mammoth is any species of the extinct genus Mammuthus, proboscideans commonly
+equipped with long, curved tusks and, in northern species, a covering of long hair. They
+lived from the Pliocene epoch (from around 5 million years ago) into the Holocene at about
+4,500 years ago, and were members of the family Elephantidae, which contains, along with
+mammoths, the two genera of modern elephants and their ancestors.
+ A  Like their modern relatives, mammoths were quite large. The largest known species
+reached heights in the region of 4 m at the shoulder and weights of up to 8 tonnes, while
+exceptionally large males may have exceeded 12 tonnes. However, most species of
+mammoth were only about as large as a modern Asian elephant. Both sexes bore tusks. A
+first, small set appeared at about the age of six months, and these were replaced at about
+18 months by the permanent set. Growth of the permanent set was at a rate of about 2.5 to
+15.2 cm per year. Based on studies of their close relatives, the modern elephants,
+mammoths probably had a gestation period of 22 months, resulting in a single calf being
+born. Their social structure was probably the same as that of African and Asian elephants,
+with females living in herds headed by a matriarch, whilst bulls lived solitary lives or formed
+loose groups after sexual maturity.
+ B  MEXICO CITY – Although it’s hard to imagine in this age of urban sprawl and
+automobiles, North America once belonged to mammoths, camels, ground sloths as large
+as cows, bear-size beavers and other formidable beasts. Some 11,000 years ago,
+however, these large-bodied mammals and others – about 70 species in all – disappeared.
+Their demise coincided roughly with the arrival of humans in the New World and dramatic
+climatic change – factors that have inspired several theories about the die-off. Yet despite
+decades of scientific investigation, the exact cause remains a mystery. Now new findings
+offer support to one of these controversial hypotheses: that human hunting drove this
+megafaunal menagerie to extinction. The overkill model emerged in the 1960s, when it was
+put forth by Paul S. Martin of the University of Arizona. Since then, critics have charged
+that no evidence exists to support the idea that the first Americans hunted to the extent
+necessary to cause these extinctions. But at the annual meeting of the Society of
+Vertebrate Paleontology in Mexico City last October, paleoecologist John Alroy of the
+University of California at Santa Barbara argued that, in fact, hunting-driven extinction is
+not only plausible, it was unavoidable. He has determined, using a computer simulation,
+that even a very modest amount of hunting would have wiped these animals out.
+ C   Assuming an initial human population of 100 people that grew no more than 2 percent
+annually, Alroy determined that if each band of, say, 50 people killed 15 to 20 large
+mammals a year, humans could have eliminated the animal populations within 1,000 years.
+Large mammals in particular would have been vulnerable to the pressure because they
+have longer gestation periods than smaller mammals and their young require extended
+care.
+D   Not everyone agrees with Alroy’s assessment. For one, the results depend in part on
+population-size estimates for the extinct animals – figures that are not necessarily reliable.
+But a more specific criticism comes from mammalogist Ross D. E. MacPhee of the
+American Museum of Natural History in New York City, who points out that the relevant
+archaeological record contains barely a dozen examples of stone points embedded in
+ 1
+ mammoth bones (and none, it should be noted, are known from other megafaunal remains)
+– hardly what one might expect if hunting drove these animals to extinction. Furthermore,
+some of these species had huge ranges – the giant Jefferson’s ground sloth, for example,
+lived as far north as the Yukon and as far south as Mexico – which would have made
+slaughtering them in numbers sufficient to cause their extinction rather implausible, he
+says.
+ E  MacPhee agrees that humans most likely brought about these extinctions (as well as
+others around the world that coincided with human arrival), but not directly. Rather he
+suggests that people may have introduced hyperlethal disease, perhaps through their dogs
+or hitchhiking vermin, which then spread wildly among the immunologically naive species of
+the New World. As in the overkill model, populations of large mammals would have a
+harder time recovering. Repeated outbreaks of a hyperdisease could thus quickly drive
+them to the point of no return. So far MacPhee does not have empirical evidence for the
+hyperdisease hypothesis, and it won’t be easy to come by: hyperlethal disease would kill
+far too quickly to leave its signature on the bones themselves. But he hopes that analyses
+of tissue and DNA from the last mammoths to perish will eventually reveal murderous
+microbes.
+F   The third explanation for what brought on this North American extinction does not
+involve human beings. Instead its proponents blame the loss on the weather. The
+Pleistocene epoch witnessed considerable climatic instability, explains paleontologist
+Russell W. Graham of the Denver Museum of Nature and Science. As a result, certain
+habitats disappeared, and species that had once formed communities split apart. For some
+animals, this change brought opportunity. For much of the megafauna, however, the
+increasingly homogeneous environment left them with shrinking geographical ranges – a
+death sentence for large animals, which need large ranges. Although these creatures
+managed to maintain viable populations through most of the Pleistocene, the final major
+fluctuation – the so-called Younger Dryas event – pushed them over the edge, Graham
+says. For his part, Alroy is convinced that human hunters demolished the titans of the Ice
+Age. The overkill model explains everything the disease and climate scenarios explain, he
+asserts, and makes accurate predictions about which species would eventually go extinct.
+“Personally, I’m a vegetarian,” he remarks, “and I find all of this kind of gross – but
+believable.”
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Complete the following summary of the paragraphs of Reading Passage, using  NO MORE
+THAN THREE WORDS from the Reading Passage for each answer.
+Write your answers in boxes  1-7 on your answer sheet.
  
-A humans do not prefer peace and quiet to noise.
-B they may be exposed to short bursts of very strange sounds.
-C humans prefer to hear a certain amount of noise while they sleep.
-D they may have adapted to a higher noise level in the city.
-2    In noise experiments, Glass and Singer found that
- 
-A problem-solving is much easier under quiet conditions.
-B physiological arousal prevents the ability to work.
-C bursts of noise do not seriously disrupt problem-solving in the long term.
-D the physiological arousal of control subjects declined quickly.
-3    Researchers discovered that high noise levels are not likely to interfere with the</p>
-<p>A successful performance of a single task.
-B tasks of pilots or air traffic controllers.
-C ability to repeat numbers while tracking moving lines.
-D ability to monitor three dials at once.
-Questions 4-8
-Complete the summary using the list of words and phrases, A-J, below.
-Write the correct letter, A-J, in boxes 4-8 on your answer sheet.
-NB You may use any letter more than once.</p>
-<p>A no control over
-B unexpected 
-C intense
- 3</p>
-<p>D the same amount of
-E performed better than 
-F performed at about the same level as 
-G no
-H showed more irritation than
-I made more mistakes than 
-J different types of</p>
-<p>Glass and Singer (1972) showed that situations in which there is intense noise have less
-effect on performance than circumstances in which 4..................... noise occurs.
-Subjects were divided into groups to perform a task. Some heard loud bursts of noise,
-others soft. For some subjects, the noise was predictable, while for others its occurrence
-was random. All groups were exposed to 5..................... noise.
-The predictable noise group6..................... the unpredictable noise group on this task.
-In the second part of the experiment, the four groups were given a proofreading task to
-complete under conditions of no noise. They were required to check written material for
-errors.The group which had been exposed to unpredictable noise 7..................... the group
-which had been exposed to predictable noise. The group which had been exposed to loud
-predictable noise performed better than those who had heard soft, unpredictable bursts.
-The results suggest that 8..................... noise produces fatigue but that this manifests itself
-later.
-Questions 9-14
-Look at the following statements (Questions 9-14) and the list of researchers below.
-Match each statement with the correct researcher(s), A-E.
-Write the correct letter, A-E, in boxes 9-14 on your answer sheet.
-NB You may use any letter more than once.
-  List of Researchers
-AGlass and Singer
-BBroadbent
-CFinkelman and Glass
-DCohen et al.
-E None of the above
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ The reason why had big size mammals become extinct 11,000 years ago is under hot
+debate.   First explanation is that  1..................... of human made it happen. This so
+called 2..................... began from 1960s suggested by an expert, who however received
+criticism of lack of further information. Another assumption promoted by MacPhee is that
+deadly 3..................... from human causes their demises. However his hypothesis
+required more  4..................... to testify its validity. Graham proposed a third hypothesis
+that 5..................... in Pleistocene epoch drove some species disappear,
+reduced 6..................... posed a dangerous signal to these giants, and  7.....................
+finally wiped them out.
+Questions 8-13
+Use the information in the passage to match the people (listed  A-C) with opinions or deeds
+below.
+Write the appropriate letters  A-C in boxes8-13 on your answer sheet.
+NB    you may use any letter more than once.
+AJohn Alroy
+Ross D.E.BMacPhee
+CRussell W. Graham
+8.....................         Human hunting well explained which species would finally disappear.
+9.....................         Further grounded proof needed to explain human’s indirect impact on
+mammals
+10.....................       Over hunting situation has caused die-out of large mammals.
+11.....................       Illness rather than hunting caused extensive extinction.
+12.....................       Doubt raised through the study of several fossil records.
+13.....................       Climate shift is the main reason of extinction.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.hunting
+2.overkill model
+3.disease/hyper disease
+4.empirical evidence
+5.climatic instability
+6.geographical ranges
+ 8.A
+9.B
+10.A
+11.B
+12.B
+13.C
+7.Younger Dryas event
+ 4</div>
+</div>
+</div>
 </body>
 </html>

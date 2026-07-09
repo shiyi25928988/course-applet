@@ -1,396 +1,204 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Light Pollution - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Neuroaesthetics - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题295/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Light Pollution</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>various locations close to Sierra Negra.</p>
-<p>This unprecedented effort was made possible by the owners of the 67-metre yacht White Cloud, who provided
-the Galapagos National Park with free use of their helicopter and its experienced pilot, as well as the logistical
-support of the yacht, its captain and crew. Originally an air ambulance, the yacht’s helicopter has a rear double
-door and a large internal space that’s well suited for cargo, so a custom crate was designed to hold up to 33
-tortoises with a total weight of about 150 kilograms. This weight, together with that of the fuel, pilot and four
-crew, approached the helicopter’s maximum payload, and there were times when it was clearly right on the edge
-of the helicopter’s capabilities. During a period of three days, a group of volunteers from the breeding centre
-worked around the clock to prepare the young tortoises for transport. Meanwhile, park wardens, dropped off
-ahead of time in remote locations, cleared landing sites within the thick brush, cacti and lava rocks.</p>
-<p>Upon their release, the juvenile tortoises quickly spread out over their ancestral territory, investigating their new
-surroundings and feeding on the vegetation. Eventually, one tiny tortoise came across a fully grown giant who
-had been lumbering around the island for around a hundred years. The two stood side by side, a powerful
-symbol of the regeneration of an ancient species.
- 2</p>
-<p>Questions 1-7
-Reading Passage has seven paragraphs, A-G.
-Choose the correct heading for each paragraph from the list of headings below.
-Write the correct number, i-viii, in boxes 1-7 on your answer sheet.
-1.....................    Paragraph    A
-2.....................    Paragraph    B
-3.....................    Paragraph    C
-4.....................    Paragraph    D
-5.....................    Paragraph    E
-6.....................    Paragraph    F
-7.....................    Paragraph    G
-  List of Headings
-i The importance of getting the timing right
-ii Young meets old
-Developments to the disadvantage of tortoiseiii populations
-iv Planning a bigger idea
-v Tortoises populate the islands
-vi Carrying out a carefully prepared operation
-vii Looking for a home for the islands’ tortoises
-viii</p>
-<p>The start of the conservation project
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Neuroaesthetics</h1>
+<p>雅思阅读真题 · 第221篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Neuroaesthetics
+An emerging discipline called neuroaesthetics is seeking to bring scientific objectivity to the
+study of art, and has already given us a better understanding of many masterpieces. The
+blurred imagery of Impressionist paintings seems to stimulate the brain's amygdala, for
+instance. Since the amygdala plays a crucial role in our feelings, that finding might explain
+why many people find these pieces so moving.
+Could the same approach also shed light on abstract twentieth-century pieces, from
+Mondrian's geometrical blocks of colour, to Pollock's seemingly haphazard
+arrangements of splashed paint on canvas? Sceptics believe that people claim to like such
+works simply because they are famous. We certainly do have an inclination to follow the
+crowd. When asked to make simple perceptual decisions such as matching a shape to its
+rotated image, for example, people often choose a definitively wrong answer if they see
+others doing the same. It is easy to imagine that this mentality would have even more
+impact on a fuzzy concept like art appreciation, where there is no right or wrong answer.
+Angelina Hawley-Dolan, of Boston College, Massachusetts, responded to this debate by
+asking volunteers to view pairs of paintings - either the creations of famous abstract artists
+or the doodles of infants, chimps and elephants. They then had to judge which they
+preferred. A third of the paintings were given no captions, while many were labelled
+incorrectly -volunteers might think they were viewing a chimp's messy brushstrokes when
+they were actually seeing an acclaimed masterpiece. In each set of trials, volunteers
+generally preferred the work of renowned artists, even when they believed it was by an
+animal or a child. It seems that the viewer can sense the artist's vision in paintings, even if
+they can't explain why.
+Robert Pepperell, an artist based at Cardiff University, creates ambiguous works that are
+neither entirely abstract nor clearly representational. In one study, Pepperell and
+his collaborators asked volunteers to decide how'powerful'they considered an artwork to
+be, and whether they saw anything familiar in the piece. The longer they took to answer
+these questions, the more highly they rated the piece under scrutiny, and the greater their
+neural activity. It would seem that the brain sees these images as puzzles, and the harder it
+is to decipher the meaning, the more rewarding is the moment of recognition.
+And what about artists such as Mondrian, whose paintings consist exclusively of horizontal
+and vertical lines encasing blocks of colour? Mondrian's works are deceptively simple,
+but eye-tracking studies confirm that they are meticulously composed, and that simpiy
+rotating a piece radically changes the way we view it. With the originals, volunteers'eyes
+tended to stay longer on certain places in the image, but with the altered versions they
+would flit across a piece more rapidly. As a result, the volunteers considered the altered
+versions less pleasurable when they later rated the work.
+In a similar study, Oshin Vartanian of Toronto University asked volunteers to compare
+original paintings with ones which he had altered by moving objects around within the
+frame. He found that almost everyone preferred the original, whether it was a Van Gogh
+still life or an abstract by Miro. Vartanian also found that changing the composition of the
+paintings reduced activation in those brain areas linked with meaning and interpretation.
+In another experiment, Alex Forsythe of the University of Liverpool analysed the visual
+ 1
+intricacy of different pieces of art, and her results suggest that many artists use a key level
+of detail to please the brain. Too little and the work is boring, but too much results in a kind
+of 'perceptual overload', according to Forsythe. What's more, appealing pieces both
+abstract and representational, show signs of 'fractals' - repeated motifs recurring in different
+scales, fractals are common throughout nature, for example in the shapes of mountain
+peaks or the branches of trees. It is possible that our visual system, which evolved in the
+great outdoors, finds it easier to process such patterns.
+It is also intriguing that the brain appears to process movement when we see a handwritten
+letter, as if we are replaying the writer's moment of creation. This has led some to
+wonder whether Pollock's works feel so dynamic because the brain reconstructs the
+energetic actions the artist used as he painted. This may be down to our brain's 'mirror
+neurons', which are known to mimic others' actions. The hypothesis will need to be
+thoroughly tested, however. It might even be the case that we could use neuroaesthetic
+studies to understand the longevity of some pieces of artwork. While the fashions of the
+time might shape what is currently popular, works that are best adapted to our visual
+system may be the most likely to linger once the trends of previous generations have been
+forgotten.
+It's still early days for the field of neuroaesthetics - and these studies are probably only a
+taste of what is to come. It would, however, be foolish to reduce art appreciation to a set of
+scientific laws. We shouldn't underestimate the importance of the style of a particular artist,
+their place in history and the artistic environment of their time. Abstract art offers both a
+challenge and the freedom to play with different interpretations. In some ways, it's not so
+different to science, where we are constantly looking for systems and decoding meaning so
+that we can view and appreciate the world in a new way.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Choose the correct letter, A, B, C or D.
+Write the correct letter in boxes 1-4 on your answer sheet.
+1.    In the second paragraph, the writer refers to a shape-matching test in order to illustrate
+ A the subjective nature of art appreciation.
+B the reliance of modern art on abstract forms.
+C our tendency to be influenced by the opinions of others.
+D a common problem encountered when processing visual data.
+2.   Angelina Hawley-Dolan’s findings indicate that people
+ A mostly favour works of art which they know well.
+B hold fixed ideas about what makes a good work of art.
+C are often misled by their initial expectations of a work of art.
+D have the ability to perceive the intention behind works of art.
+3    Results of studies involving Robert Pepperell’s pieces suggest that people
+ A can appreciate a painting without fully understanding it.
+B find it satisfying to work out what a painting represents.
+C vary widely in the time they spend looking at paintings.
+D generally prefer representational art to abstract art.
+4.   What do the experiments described in the fifth paragraph suggest about the paintings
+of Mondrian?
+A They are more carefully put together than they appear.
+B They can be interpreted in a number of different ways.
+C They challenge our assumptions about shape and colour.
+D They are easier to appreciate than many other abstract works.
+Questions 5-7
+Complete the summary using the list of words, A-H, below.
+ 3
+  
+ 
+ 
+ Write the correct letters, A-H, in boxes 5-7 on your answer sheet.
+Art and the Brain
+The discipline of neuroaesthetics aims to bring scientific objectivity to the study of art.
+Neurological studies of the brain, for example, demonstrate the impact which Impressionist
+paintings have on our 5.....................
+Alex Forsythe of the University of Liverpool believes many artists give their works the
+precise degree of 6..................... which most appeals to the viewer’s brain.
+She also observes that pleasing works of art often contain certain repeated 7.....................
+which occur frequently in the natural world.
+  
+ A.interpretation    B.complexity    C.emotions
+ D.movements
+G.F.layout
+concern
+ E.skill
+H.images
 Questions 8-13
-Complete the notes below.
-Choose ONE WORD ONLY from the passage for each answer.
-Write your answers in boxes 8-13 on your answer sheet.
-The decline of the Galapagos tortoise
-•   Originally from mainland South America
-•   Numbers on Galapagos islands increased, due to lack of predators
- 3</p>
-<p>•   17th century: small numbers taken onto ships used by8.....................
- 
-•   1790s: very large numbers taken onto whaling ships, kept for9..................... and also
-used to produce 10.....................
-•   Hunted by11..................... on islands
- 
-•   Habitat destruction: for the establishment of agriculture and by various
-12..................... not native to the islands, which also fed on baby tortoises and tortoises’
-13.....................
- 4</p>
-<p>Solution:
- 
-1. v
-2. iii
-3. viii
-4. i
-5. iv
-6. vi
-7.
-8. pirates
-9. food
-10. oil
-11. settlers
-12. species
-13. eggs
-ii
- 5</p>
-<p>Reading Practice
- Food advertising on children
-Food advertising on children
-This review was commissioned by the Food Standards Agency to examine the current
-research evidence on:
-• the extent and nature of food promotion to children
- the effect, if any, that this promotion has on their food knowledge, preferences and
-behaviour.</p>
-<p>Children’s food promotion is dominated by television advertising, and the great majority of
-this promotes the so-called ‘Big Four’ of pre-sugared breakfast cereals, soft drinks,
-confectionery and savoury snacks. In the last ten years advertising for fast food, outlets
-have rapidly increased. There is some evidence that the dominance of television has
-recently begun to wane. The importance of strong, global branding reinforces a need for
-multi-faceted communications combining television with merchandising, ‘tie-ins’ and point
-of sale activity. The advertised diet contrasts sharply with that recommended by public
-health advisors, and themes of fun and fantasy or taste, rather than health and nutrition,
-are used to promote it to children. Meanwhile, the recommended diet gets little promotional
-support.</p>
-<p>There is plenty of evidence that children notice and enjoy food promotion. However,
-establishing whether this actually influences them is a complex problem. The review
-tackled it by looking at studies that had examined possible effects on what children know
-about food, their food preferences, their actual food behaviour (both buying and eating),
-and their health outcomes (eg. Obesity or cholesterol levels). The majority of studies
-examined food advertising, but a few examined other forms of food promotion. In terms of
-nutritional knowledge, food advertising seems to have little influence on children’s general
-perceptions of what constitutes a healthy diet, but, in certain contexts, it does have an
-effect on more specific types of nutritional knowledge. For example, seeing soft drink and
-cereal adverts reduced primary aged children’s ability to determine correctly whether or not
-certain products contained real fruit.</p>
-<p>The review also found evidence that food promotion influences children’s food preferences
-and purchase behaviour. A study of primary school children, for instance, found that
-exposure to advertising influenced which foods they claimed to like; and another showed
-that labelling and signage on a vending machine had an effect on what was bought by
-secondary school pupils. A number of studies have also shown that food advertising can
-influence what children eat. One, for example, showed that advertising influenced a primary
-class’s choice of daily snack at playtime.</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+Do the following statements agree with the views of the writer in Reading Passage?
+In boxes8-13 on your answer sheet,write
+YES    if the statement agrees with the views of the writer
+NO    if the statement contradicts the views of the writer
+NOT GIVEN if there is no information on this
+8.....................    Forsythe’s findings contradicted previous beliefs on the function of
+‘fractals’ in art.
+9.....................    Certain ideas regarding the link between ‘mirror neurons’ and art
+appreciation require further verification.
+10.....................    People’s taste in paintings depends entirely on the current artistic trends
+of the period.
+11.....................    Scientists should seek to define the precise rules which govern people’s
+reactions to works of art.
+12.....................    Art appreciation should always involve taking into consideration the
+cultural context in which an artist worked.
+13.....................    It is easier to find meaning in the field of science than in that of art.
+Questions 14
+Choose the correct letter; A, B, C or D.
+ 4
+ Write the correct letter in box 14 on your answer sheet.
+14. What would be the most appropriate subtitle for the article?
+A Some scientific insights into how the brain responds to abstract art
+B Recent studies focusing on the neural activity of abstract artists 
+C A comparison of the neurological bases of abstract and representational art 
+D How brain research has altered public opinion about abstract art
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.C
+2.D
+3.B
+4.A
+5.C
+6.B
+7.H8.NOT GIVEN
+9.YES
+10.NO
+11.NO
+12.YES
+13.NOT GIVEN
+14.A
+ 6</div>
+</div>
+</div>
 </body>
 </html>

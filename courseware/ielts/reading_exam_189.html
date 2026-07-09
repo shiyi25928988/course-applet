@@ -1,393 +1,184 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In Praise Of Amateurs - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Magnetic Therapy - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题258/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 In Praise Of Amateurs</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>1. NOT
-GIVEN
-2. FALSE
-3. TRUE
- 
-8. E
-9. COMPLEXITY
-10. EVOLUTION AND
-ECONOMICS
-11. COMPLEX ADAPTIVE
-SYSTEMS
-12. RANDOM GENETIC
-MUTATIONS
-13. PERMUTATIONS
-4. TRUE
-5. NOT
-GIVEN
-6. C
-7. C
- 5</p>
-<p>Eco-Resort Management
- 
-A    Ecotourism is often regarded as a form of nature-based tourism and has become an
-important alternative source of tourists. In addition to providing the traditional resort-leisure
-product, it has been argued that ecotourism resort management should have a particular
-focus on best-practice environmental management, an educational and interpretive
-component, and direct and indirect contributions to the conservation of the natural and
-cultural environment (Ayala, 1996).
-B    Couran Cove Island Resort is a large integrated ecotourism-based resort located south
-of Brisbane on the Gold Coast, Queensland, Australia. As the world’s population becomes
-increasingly urbanised, the demand for tourist attractions which are environmentally
-friendly, serene and offer amenities of a unique nature, has grown rapidly. Couran Cove
-Resort, which is one such tourist attractions, is located on South Stradbroke Island,
-occupying approximately 150 hectares of the island. South Stradbroke Island is separated
-from the mainland by the Broadwater, a stretch of sea 3 kilometers wide. More than a
-century ago, there was only one Stradbroke Island, and there were at least four aboriginal
-tribes living and hunting on the island. Regrettably, most of the original island dwellers were
-eventually killed by diseases such as tuberculosis, smallpox and influenza by the end of the
-19th The second ship wreak on the island in 1894, and the subsequent destruction of the
-ship (the Cambus Wallace) because it contained dynamite, caused a large crater in the
-sandhills on Stradbroke Island. Eventually, the ocean broke through the weakened land
-form and Stradbroke became two islands. Couran Cove Island Resort is built on one of the
-world’s few naturally-occurring sand lands, which is home to a wide range of plant
-communities and one of the largest remaining remnants of the rare livistona rainforest left
-on the Gold Coast. Many mangrove and rainforest areas, and Malaleuca Wetlands on
-South Stradbroke Island (and in Queensland), have been cleared, drained or filled for
-residential, industrial, agricultural or urban development in the first half of the 20th century.
-Farmer and graziers finally abandoned South Stradbroke Island in 1939 because the
-vegetation and the soil conditions there were not suitable for agricultural activities.
-SUSTAINABLE PRACTICES OF COURAN COVE RESORT
-Being located on an offshore island, the resort is only accessible by means of water
-transportation. The resort provides hourly ferry service from the marina on the mainland to
-and from the island. Within the resort, transport modes include walking trails, bicycle tracks
-and the beach train. The reception area is the counter of the shop which has not changed
-in 8 years at least. The accommodation is an octagonal “Bure”. These are large rooms that
-are clean but! The equipment is tired and in some cases just working. Our ceiling fan only
-worked on high speed for example. Beds are hard but clean, there is television, radio, an
-old air conditioner and a small fridge. These “Bures” are right on top of each other and
-night noises do carry so be careful what you say and do. The only thing is the mosquitos
-but if you forget to bring mosquito repellant they sell some on the island.
-As an ecotourism-based resort, most of the planning and development of the attraction has
-been concentrated on the need to co-exist with the fragile natural environment of South
-Stradbroke Island to achieve sustainable development.
-WATER AND ENERGY MANAGEMENT
- 1</p>
-<p>C  South Stradbroke Island has groundwater at the centre of the island, which has a
-maximum height of 3 metres above sea level. The water supply is recharged by rainfall and
-is commonly known as an unconfined freshwater aquifer. Couran Cove Island Resort
-obtains its water supply by tapping into this aquifer and extracting it via a bore system.
-Some of the problems which have threatened the island’s freshwater supply include
-pollution, contamination and over-consumption. In order to minimise some of these
-problems, all laundry activities are carried out on the mainland. The resort considers
-washing machines as onerous to the island’s freshwater supply, and that the detergents
-contain a high level of phosphates which are a major source of water pollution. The resort
-uses LPG-power generation rather than a diesel-powered plant for its energy supply,
-supplemented by wind turbine, which has reduced greenhouse emissions by 70% of dieselequivalent generation methods. Excess heat recovered from the generator is used to heat
-the swimming pool. Hot water in the eco-cabins and for some of the resort’s vehicles are
-solar-powered. Water efficient fittings are also installed in showers and toilets. However,
-not all the appliances used by the resort are energy efficient, such as refrigerators. Visitors
-who stay at the resort are encouraged to monitor their water and energy usage via the inhouse television system, and are rewarded with prizes (such as a free return trip to the
-resort) accordingly if their usage level is low.
-CONCLUDING REMARKS
-D  We examined a case study of good management practice and a pro-active sustainable
-tourism stance of an eco-resort. In three years of operation, Couran Cove Island Resort
-has won 23 international and national awards, including the 2001 Australian Tourism
-Award in the 4-Star Accommodation category. The resort has embraced and has effectively
-implemented contemporary environmental management practices. It has been argued that
-the successful implementation of the principles of sustainability should promote long-term
-social, economic and environmental benefits, while ensuring and enhancing the prospects
-of continued viability for the tourism enterprise. Couran Cove Island Resort does not
-conform to the characteristics of the ResortDevelopmentSpectrum, as proposed by
-Prideaux (2000). According to Prideaux, the resort should be at least at Phase 3 of the
-model (the National tourism phase), which describes an integrated resort providing 3-4 star
-hotel-type accommodation. The primary tourist market in Phase 3 of the model consists
-mainly of interstate visitors. However, the number of interstate and international tourists
-visiting the resort is small, with the principal visitor markets comprising locals and residents
-from nearby towns and the Gold Coast region. The carrying capacity of Couran Cove does
-not seem to be of any concern to the Resort management. Given that it is a private
-commercial ecotourist enterprise, regulating the number of visitors to the resort to minimize
-damage done to the natural environment on South Stradbroke Island is not a binding
-constraint. However, the Resort’s growth will eventually be constrained by its carrying
-capacity, and quantity control should be incorporated in the management strategy of the
-resort.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Magnetic Therapy</h1>
+<p>雅思阅读真题 · 第189篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Magnetic Therapy
+A
+ Magnetic therapy, which is a $5-billion market worldwide, is a form of alternative medicine
+which claims that magnetic fields have healing powers. Magnetic devices that are claimed
+to be therapeutic include magnetic bracelets, insoles, wrist and knee bands, back and neck
+braces, and even pillows and mattresses. Their annual sales are estimated at $300 million
+in the United States and more than a billion dollars globally. They have been advertised to
+cure a vast array of ills, particularly pain.
+ 
+ B
+The therapy works on the principle of balancing electrical energy in the body by pulsating
+magnetic waves through different parts of the body. The electrical currents generated by
+magnets increase the blood flow and oxygen which helps to heal many of the ailments. The
+natural effects of the Earth’s magnetic field are considered to play an essential role in the
+health of humans and animals. It is generally accepted that our body draws some benefit
+from the Earth’s magnetic field. To restore the balance within our body allows us to function
+at our optimum level. For example, when the first astronauts returned to earth sick, NASA
+concluded that their illness resulted from the lack of a planetary magnetic field in outer
+space. To resolve the problem, NASA placed magnets in the astronauts’ space suits and
+space travel vehicles, and astronauts have returned to Earth healthy ever since.
+C
+Historically it is reported that magnets have been around for an extremely long time. The
+therapeutic power of magnets was known to physicians in ancient Greece, Egypt and
+China over 4000 years ago, who used naturally magnetic rock – lodestone – to treat a
+variety of physical and psychological ailments. Cleopatra the beautiful Egyptian queen was
+probably the first celebrity to use magnets. It is documented that in order to prevent from
+aging, she slept on a Lodestone to keep her skin youthful. Ancient Romans also used
+magnet therapy to treat eye disease.
+D
+The popularity of magnet therapy in the United States began to rise during the 1800s and
+soared in the post-Civil War era. Sears-Roebuck advertised magnetic jewelry in its catalog
+for the healing of virtually any ailment. An Austrian psychoanalyst by the name of Wilhelm
+Reich immigrated to the United States in 1939 and researched the effects of
+electromagnetism on humans. Today, Germany, Japan, Israel, Russia and at least 45 other
+countries consider magnetic therapy to be an official medical procedure for the treatment of
+numerous ailments, including various inflammatory and neurological problems.
+E
+For those who practice magnetic therapy, strongly believe that certain ailments can be
+ 1
+treated if the patient is exposed to magnetic fields while at the same time there is a strong
+resentment from the medical establishment and critics claim that most magnets don’t have
+the strength to affect the various organs and tissues within the body and it is a product of
+Pseudoscience and is not based on proper research and analysis. There are few reported
+complications of magnetic therapy and the World Health Organization says a low level of
+magnetic energy is not harmful. Documented side effects are not life-threatening and
+include pain, nausea and dizziness that disappeared when the magnets were removed. If
+considering magnet therapy, as with any medical treatment, it is always advisable to
+consult one’s regular physician first. Magnet therapy is gaining popularity; however,
+scientific evidence to support the success of this therapy is lacking. More scientifically
+sound studies are needed in order to fully understand the effects that magnets can have on
+the body and the possible benefits or dangers that could result from their use.
+F
+Researchers at Baylor University Medical Center recently conducted a double-blind study
+on the use of concentric-circle magnets to relieve chronic pain in 50 post-polio patients. A
+static magnetic device or a placebo device was applied to the patient’s skin for 45 minutes.
+The patients were asked to rate how much pain they experienced when a “trigger point was
+touched.” The researchers reported that the 29 patients exposed to the magnetic device
+achieved lower pain scores than did the 21 who were exposed to the placebo device.
+However, this study had significant flaws in their design. Although the groups were said to
+be selected randomly, the ratio of women to men in the experimental group was twice that
+of the control group; the age of the placebo group was four years higher than that of the
+control group; there were just one brief exposure and no systematic follow-up of patients.
+G
+Magnet therapy is gaining popularity; however, scientific evidence to support the success
+of this therapy is lacking. More scientifically sound studies are needed in order to fully
+understand the effects that magnets can have on the body and the possible benefits or
+dangers that could result from their use.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Reading Passage 1 has seven paragraphs,  A-G.
+Choose the correct heading for paragraphs  A-G from the list of headings below.
+Write the correct number,  i-ix, in boxes  1-6 on your answer sheet.
+List of headings
+i           Earth itself as the biggest magnet
+ii          The commercial magnetic products
+iii         Utilize the power from the natural magnetic field
+iv         Early application of the magnet
+v          Brief introduction of how the magnetic therapy works
+vi         pain-reducing effect
+vii        Arguments for and against the therapy
+viii       An experiment on post-polio patients
+ix         Conditions of magnet use today
+1.....................   Paragraph A
+2.....................   Paragraph B
+3.....................   Paragraph C
+4.....................   Paragraph D
+5.....................   Paragraph E
+6.....................   Paragraph F
+Questions 7-8
+Choose TWO letters, A-E.
+Write the correct letters in boxes  7-8 on your answer sheet.
+Which TWO of the lodestone benefits in ancient times are mentioned by the writer in the
+text?
+A   make a facial mask
+B   diminish the energy
+C   improve eyesight
+D   keep a younger appearance
+ 3
+E   remove dizziness 
+ Questions 9-10
+Choose TWO letters, A-E.
+Write the correct letters in boxes  9-10 on your answer sheet.
+Which TWO weakness of the Baylor research does the writer present?
+A   The number of subjects involved was not enough.
+B   There was so further evidence to support.
+C   The patients were at the same age.
+D   The device used in the experiment did not work properly.
+E   The gender ratio was not in proportion
+Questions 11-13
+Complete each sentence with the correct ending,  A-F, below.
+Write the correct letters,  A-F, in boxes  11-13 on your answer sheet.
+11.....................   The first NASA astronauts’ sickness
+12.....................   According to the WHO, under the physician’s instruction, a small amount
+of magnetic energy
+13.....................   The author holds that in order to fully understand the magnetic effects, we
+ A          has no negative side effect.
+B          resulted from physical ailment.
+C          should have more sophisticated studies
+D         is exposed to the placebo device.
+E          must select the subjects randomly.
+F          came from the absence of a magnetic field.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.ii
+2.v
+3.iv
+4.ix
+5.vii
+6.viii
+7.8.D
+9.B
+10.E
+11.F
+12.A
+13.C
+C
+ 5</div>
+</div>
+</div>
 </body>
 </html>

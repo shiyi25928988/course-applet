@@ -1,349 +1,195 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spoken Corpus Comes To Life - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Fluoridation Controversy - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题431/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Spoken Corpus Comes To Life</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>The species’ name originates from the appearance of its unusual cones and needles. The
-bristlecone’s short, pale needles are also trademarks, bunching together to form foxtail-like
-bundles. As is the case of most conifer needles, these specialized leaves cluster together
-to shelter the stomata so very little moisture is lost through them. This adaptation helps the
-bristlecone photosynthesize during particularly brutal months. Saving the energy of
-constant needle replacement and providing a stable supply of chlorophyll. For a plant trying
-to store so much energy, bristlecone seeds are relatively large in size. They are first
-reproduced when trees reach ages between thirty and seventy-five years old. Germination
-rates are generally high, in part because seeds require little to no initial stratification.
-Perhaps the most intriguing physical characteristic of a mature bristlecone, however, is its
-ratio of living to deadwood on harsh sites and how this relates to old age. In older trees,
-however, especially in individuals over 1,500 years, a strip-bark trait is adaptive. This
-condition occurs as a result of cambium dieback, which erodes and thereby exposes
-certain areas of the bole, leaving only narrow bands of bark intact.</p>
-<p>The technique of cambial edge retreat has helped promote old age in bristlecone pine, but
-that certainly is no the only reason. Most crucial to these trees’ longevity is their compact
-size and slow rates of growth. By remaining in most cases under ten meters tall,
-bristlecones stay close to the limited water supply and can hence support more branches
-and photosynthesizing. Combined with the dry, windy, and often freezing mountain air,
-slow growth guarantees the bristlecones tight, fibrous rings with a high resin content and
-structural strength. The absence of natural disaster has also safeguarded the bristlecone’s
-lengthy lifespan. Due to a lack of ground cover vegetation and an evenly spaced layout,
-bristlecone stands on the White Mountain peaks have been practically unaffected by the
-fire. This lack of vegetation also means a lack of competition for the bristlecones.</p>
-<p>Bristlecone pines restricted to numerous, rather isolated stands at higher altitudes in the
-southwestern United States. Stands occur from the Rocky Mountains, through the
-Colorado Plateau, to the western margin of the Great Basin. Within this natural range, the
-oldest and most widely researched stands of bristlecones occur in California’s the White
-Mountains. Even just 200 miles away from the Pacific Ocean, the White Mountains are
-home to one of this country’s few high-elevation deserts. Located in the extreme eastern
-rain shadow of the Sierra Nevada, this region receives only 12.54 inches of precipitation
-per year and experiences temperatures between -20F and +50F. The peaks south of the
-Owens Valley, are higher up than they might appear from a distance. Although most
-summits exist somewhere around 11,000 feet, snow-capped White Mountain Peak, for
-which the range is named, stands at 14,246 feet above sea level. That said, to reach areas
-of a pure bristlecone is an intense journey all to itself.</p>
-<p>With seemingly endless areas of wonder and interest, the bristlecone pines have become
-subject to much research over the past half-century. Since the annual growth of these
-ancient organisms directly reflects the climatic conditions of a particular time period,
-bristlecones are of greatest significance to dendrochronologists or tree-ring specialists.
-Dating any tree is simple and can be done within reasonable accuracy just by counting out
- 2</p>
-<p>the rings made each year by the plant’s natural means of growth. By carefully compiling a
-nearly 10,000-year-old bristlecone pine record, these patient scientists have accurately
-corrected the carbon-14 dating method and estimated ages of past periods of global
-climate change. What makes this record so special to dendrochronologists, too, is that,
-nowhere, throughout time, is precisely the same long-term sequence of wide and narrow
-rings repeated, because year-to-year variations in climate are never exactly the same.</p>
-<p>Historically the bristlecone’s remote location and gnarled wood have deterred commercial
-extraction, but nothing on earth will go unaffected by global warming. If temperatures rise
-by only 6 degrees F, which many experts say is likely this century, about two-thirds of the
-bristlecones’ ideal habitat in the White Mountains effectively will be gone. Almost 30,000
-acres of National Forest now preserves the ancient bristlecone, but paved roads,
-campsites, and self-guided trails have led only to more human impact. In 1966, the U.S.F.S
-reported over 20,000 visitors to the Ancient Bristlecone Pine Forest, a figure which could
-exceed 40,000 today. Over the past hundreds of thousands of years, this species has
-endured in one of the earth’s most trying environments; they deserve our respect and
-reverence. As global climate change slowly alters their environment, we as humans must
-do our part to raise awareness and lower our impact.
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Fluoridation Controversy</h1>
+<p>雅思阅读真题 · 第323篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The fluoridation controversy
+The long-standing debate about whether to fluoridate our drinking water continues
+Fluoridation is the addition of fluorine to public water supplies with the aim of reducing tooth
+decay. The fluorine, when mixed with water, becomes fluoride and the desired
+concentration of fluoride in public water is approximately one part per million, depending on
+the regional temperature and hence the amount of water people are likely to drink. Many
+studies, such as those by McClure in 1970 through to Burt in 1983, have shown that when
+children drink fluoridated water, their average rate of tooth decay seems greatly reduced. A
+typical figure claimed is 50 percent reduction. This apparently enormous benefit for
+children's teeth is the major argument in favor of fluoridation.
+Three main grounds for opposition to fluoridation have been expressed. First, opponents
+claim the benefits are exaggerated or not established. Second, there are claims of health
+risks to pans of the population, for example, allergic reactions. It is also accepted that high
+levels of fluoride can cause discoloration of otherwise healthy teeth. Proponents do not
+consider this to be a problem in such small concentrations, whereas opponents disagree -
+especially because some people drink more water and obtain much more than the
+standard 1 milligram of fluoride per day. Third, fluoridation is thought to be an infringement
+on individual rights because it is compulsory medication of all members of a community.
+An understanding of the fluoridation issue has important implications. If, according to the
+experts, fluoridation is unquestionably a beneficial and non-hazardous measure, then the
+wisdom of allowing the public to vote on, and reject it must be questioned.
+Almost all studies that have been done have assumed that the scientific aspects of the
+controversy are unproblematic, and they have excluded science from sociological
+examination. The traditional view is that science is a special kind of knowledge, which is
+established through scientific methods and objectively applied by members of a scientific
+community. However, in recent years there has been a major challenge to this picture by a
+sociology of science that shows how scientific knowledge is socially negotiated, and
+inevitably linked to the values of the relevant parties, both scientists and nonscientists.
+These challengers do not see scientific knowledge as exempt from social inquiry.
+Kuhn (1970) argued that scientific knowledge does not always develop as an orderly
+process, but is characterized by periodic revolutions. in which the methods of study and the
+assessment criteria change in a fragmented way. According to Kuhn, the shift from one
+scientific way of thinking to another is not made solely on the basis of clear rules of formal
+scientific practice, but can include social factors, though Kuhn has never developed a full
+analysis of what these might be. Collins (1975) took this concept further when he asserted
+that the outcome of experiments was not something whose meaning could be immediately
+comprehended, but rather something for interpretation, discussion between scientists, and
+reinterpretation in the light of other experiments.
+One interpretation of this analysis of science is that traditional distinctions between facts
+and theories, and between scientific knowledge and values, can no longer be justified.
+Because social processes are involved at all stages of the creation, evaluation, and
+establishing of scientific knowledge, social values may also be involved.
+In the same way as many scientists who study fluoridation have overlooked social values,
+ 1
+sociologists have also downplayed an important part of the debate by ignoring the number
+of eminent scientists who have questioned aspects of fluoridation. An example is the study
+by Sutton in 1960, which analyzed the classic North American studies of the effect of
+fluoridation on tooth decay, and found that each showed significant methodological
+shortcomings. Sutton's detailed study throws doubt as to the extent of reductions in tooth
+decay from fluoridation. Yet Sutton's book is not cited in a single analysis of the fluoridation
+issue by any sociologist. In a situation of some scientific uncertainty, differences in values
+are highlighted. A supporter of fluoridation might argue. The evidence for the benefits of
+fluoridation is quite substantial, while the evidence for harm is limited and dubious. I think
+the likely benefits outweigh the possible dangers; hence I support fluoridation because it is
+the cheapest and easiest way to make sure every child reaps the benefits. An opponent
+might argue, 'Though the evidence for the benefits of fluoridation is substantial, there is
+some doubt about it. Since fluoridation is not necessary for good teeth, we should forego
+the benefits if there is some slight chance of harm. Some scientists claim that a small
+percentage of the population could be harmed by fluoride. Therefore I oppose fluoridation
+of water supplies and favor the voluntary use of fluoride tablets by those who want to take
+them.'
+Both arguments consider the scientific evidence concerning fluoridation, but differ in their
+assessments of the social benefits and costs. This difference is not between rationality and
+irrationality but is a legitimate difference in values, for example, the positive value placed
+on good teeth, the negative value placed on possible health risks, and the social benefits or
+costs of compulsory or voluntary intake of fluorides.
+From the sociological point of view, opposition to fluoridation is not necessarily irrational.
+Rather, claims to rationality and to scientific authority are better seen as part of a strategy
+to promote fluoridation than as incontrovertible statements of fact. Second, social values
+are likely to be bound up in any decision about fluoridation, so this is not an issue on which
+declarations by scientific experts ought to be considered the final word.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Choose the correct letter, A, B, C or D
+Write the correct letter in boxes 1-5 on your answer sheet
+1. The optimum amount of fluorine in fluoridated water is calculated partly according to
+A how hot the area is.
+B how warm the water is.
+C how many dental problems there are in the community.
+D how much fluorine the community chooses to have in its water.
+2. One reason given by the writer for opposing fluoridation is that
+A it may contribute to tooth decay
+B it will be unacceptably expensive for the public.
+C obligatory fluoridation takes away personal freedom.
+D excessive fluoride could be added to the water by mistake.
+3. The writer mentions Kuhn in order to
+A provide a contrast with the view of Collins.
+B support the rational nature of scientific inquiry.
+C demonstrate that Kuhn did not argue his case adequately.
+D show that science can be influenced by non-scientific considerations
+4. What did Sutton's research discover about earlier studies in North America?
+A There were failings in the way they were carried out.
+B The scientists involved had achieved unique results.
+C Proponents of fluoridation had not understood its long-term effects.
+D Fluoridation had a greater effect on tooth decay than previously believed.
+5. In the last paragraph, what does the writer say about scientists?
+A They should reveal their true motivations.
+B  They should not decide the fluoridation policy.
+C  They are solely concerned with scientific truths.
+D  They cannot reach agreement on the fluoridation issue.
+Questions 6-9
+ 3
+ 
+ 
+ 
+ 
+ Do the following statements agree with the views of the writer in Reading Passage?
+In boxes 6-9 on your answer sheet, write
+YES                if the statement agrees with the views of the writer
+NO                 if the statement contradicts the views of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+6..................... Scientific knowledge should be kept separate from social values.
+7..................... Many sociologists have disregarded the doubts that some scientists have
+concerning fluoridation.
+8.....................  Sutton's findings have been given insufficient attention by scientists outside
+of North America.
+9..................... There are valid arguments on both sides of the fluoridation debate.
+ Questions 10-14
+Complete each sentence with the correct ending. A-G. below. Write the correct letter. A-G,
+in boxes 10-14 on your answer sheet.
+10. The traditional view of science is that 10.....................
+11. A sociological view of science argues that 11.....................
+12. Collins is of the opinion that 12.....................
+13. The writer suggests that a supporter of fluoridation may conclude that 13.....................
+14. The writer suggests that an opponent of fluoridation may conclude that 14.....................
+A the results of scientific research are not always understood at first
+B if it is impossible to say what the writer thinks about this
+C people should be able to choose whether they want fluoride.
+D there is insufficient proof to support a cautious approach.
+E the serious damage fluoride causes far outweighs any positive effects.
+F children are not the only ones who benefit from fluoridation.
+G scientific knowledge is affected by the beliefs of everyone concerned.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+1.A
+2.C
+3.C
+4.A
+5.B
+6.NO
+7.YES8.NOT GIVEN
+9.YES
+10.B
+11.G
+12.A
+13.D
+14.E
+ 5</div>
+</div>
+</div>
 </body>
 </html>

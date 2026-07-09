@@ -1,355 +1,204 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beyond The Blue Horizon - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Climate Change And The Inuit - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题109/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Beyond The Blue Horizon</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Reading Practice
- Assessing the risk</p>
-<p>As a title for a supposedly unprejudiced debate on scientific progress, “Panic attack:
-interrogating our obsession with risk” did not bode well. Held last week at the Royal
-Institution in London, the event brought together scientists from across the world to ask
-why society is so obsessed with risk and to call for a “more rational” approach. “We seem
-to be organising society around the grandmotherly maxim of ‘better safe than sorry’,”
-exclaimed Spiked, the online publication that organised the event. “What are the
-consequences of this overbearing concern with risks?”</p>
-<p>The debate was preceded by a survey of 40 scientists who were invited to describe how
-awful our lives would be if the “precautionary principle” had been allowed to prevail in the
-past. Their response was: no heart surgery or antibiotics, and hardly any drugs at all; no
-aeroplanes, bicycles or high-voltage power grids; no pasteurisation, pesticides or
-biotechnology; no quantum mechanics; no wheel; no “discovery” of America. In short, their
-message was: no risk, no gain.</p>
-<p>They have absolutely missed the point. The precautionary principle is a subtle idea. It has
-various forms, but all of them generally include some notion of cost-effectiveness. Thus the
-point is not simply to ban things that are not known to be absolutely safe. Rather, it says:
-“Of course you can make no progress without risk. But if there is no obvious gain from
-taking the risk, then don’t take it.”</p>
-<p>Clearly, all the technologies listed by the 40 well-chosen savants were innately risky at their
-inception, as all technologies are. But all of them would have received the green light under
-the precautionary principle because they all had the potential to offer tremendous benefits
-– the solutions to very big problems – if only the snags could be overcome.</p>
-<p>If the precautionary principle had been in place, the scientists tell us, we would not have
-antibiotics. But of course, we would – if the version of the principle that sensible people
-now understand had been applied. When penicillin was discovered in the 1920s, infective
-bacteria were laying waste to the world. Children died from diphtheria and whooping cough,
-every open-drain brought the threat of typhoid, and any wound could lead to septicaemia
-and even gangrene.</p>
-<p>Penicillin was turned into a practical drug during the Second World War when the many
-pestilences that result from were threatened to kill more people than the bombs. Of course
-antibiotics were a priority. Of course, the risks, such as they could be perceived, were
-worth taking.
- 1</p>
-<p>And so with the other items on the scientists’ list: electric light bulbs, blood transfusions.
-CAT scans, knives, the measles vaccine – the precautionary principle would have
-prevented all of them, they tell us. But this is just plain wrong. If the precautionary principle
-had been applied properly, all these creations would have passed muster, because all
-offered incomparable advantages compared to the risks perceived at the time.</p>
-<p>Another issue is at stake here. Statistics are not the only concept people use when
-weighing up risk. Human beings, subtle and evolved creatures that we are, do not survive
-to three-score years and ten simply by thinking like pocket calculators. A crucial issue is the
-consumer’s choice. In deciding whether to pursue the development of new technology, the
-consumer’s right to choose should be considered alongside considerations of risk and
-benefit. Clearly, skiing is more dangerous than genetically modified tomatoes. But people
-who ski choose to do so; they do not have skiing thrust upon them by portentous experts of
-the kind who now feel they have the right to reconstruct our crops. Even with skiing, there
-is the matter of cost-effectiveness to consider: skiing, I am told, is exhilarating. Where is the
-exhilaration in GM soya?</p>
-<p>Indeed, in contrast to all the other items on Spiked’s list, GM crops stand out as an
-example of a technology whose benefits are far from clear. Some of the risks can at least
-be defined. But in the present economic climate, the benefits that might accrue from them
-seem dubious. Promoters of GM crops believe that the future population of the world
-cannot be fed without them. That is untrue. The crops that really matter are wheat and rice,
-and there is no GM research in the pipeline that will seriously affect the yield of either. GM
-is used to make production cheaper and hence more profitable, which is an extremely
-questionable ambition.</p>
-<p>The precautionary principle provides the world with a very important safeguard. If it had
-been in place in the past it might, for example, have prevented insouciant miners from
-polluting major rivers with mercury. We have come to a sorry pass when scientists, who
-should above all be dispassionate scholars, feel they should misrepresent such a principle
-for the purposes of commercial and political propaganda. People at large continue to
-mistrust science and the high technologies it produces partly because they doubt the
-wisdom of scientists. On such evidence as this, these doubts are fully justified.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Climate Change And The Inuit</h1>
+<p>雅思阅读真题 · 第76篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Climate Change and the Inuit
+The threat posed by climate change in the Arctic and the problems faced by Canada's Inuit
+people
+A
+Unusual incidents are being reported across the Arctic. Inuit families going off on
+snowmobiles to prepare their summer hunting camps have found themselves cut off from
+home by a sea of mud, following early thaws. There are reports of igloos losing their
+insulating properties as the snow drips and refreezes, of lakes draining into the sea as
+permafrost melts, and sea ice breaking up earlier than usual, carrying seals beyond the
+reach of hunters. Climate change may still be a rather abstract idea to most of us, but in the
+Arctic it is already having dramatic effects - if summertime ice continues to shrink at its
+present rate, the Arctic Ocean could soon become virtually ice-free in summer. The knock-
+on effects are likely to include more warming, cloudier skies, increased precipitation and
+higher sea levels. Scientists are increasingly keen to find out what's going on because they
+consider the Arctic the 'canary in the mine' for global warming - a warning of what's in store
+for the rest of the world.
+B
+For the Inuit the problem is urgent. They live in precarious balance with one of the toughest
+environments on earth. Climate change, whatever its causes, is a direct threat to their way
+of life. Nobody knows the Arctic as well as the locals, which is why they are not content
+simply to stand back and let outside experts tell them what's happening. In Canada, where
+the Inuit people are jealously guarding their hard-won autonomy in the country's newest
+territory, Nunavut, they believe their best hope of survival in this changing environment lies
+in combining their ancestral knowledge with the best of modern science. This is a challenge
+in itself.
+C
+The Canadian Arctic is a vast, treeless polar desert that's covered with snow for most of
+the year. Venture into this terrain and you get some idea of the hardships facing
+anyone who calls this home. Farming is out of the question and nature offers meagre
+pickings. Humans first settled in the Arctic a mere 4,500 years ago, surviving by exploiting
+sea mammals and fish. The environment tested them to the limits: sometimes the
+colonists were successful, sometimes they failed and vanished. But around a thousand
+years ago, one group emerged that was uniquely well adapted to cope with the
+Arctic environment. These Thule people moved in from Alaska, bringing kayaks, sleds,
+dogs, pottery and iron tools. They are the ancestors of today's Inuit people.
+D
+Life for the descendants of the Thule people is still harsh. Nunavut is 1.9 million square
+kilometres of rock and ice, and a handful of islands around the North Pole. It's
+currently home to 2,500 people, all but a handful of them indigenous Inuit. Over the past
+40 years, most have abandoned their nomadic ways and settled in the territory's 28
+isolated communities, but they still rely heavily on nature to provide food and
+ 1
+clothing. Provisions available in local shops have to be flown into Nunavut on one of the
+most costly air networks in the world, or brought by supply ship during the few ice-free
+weeks of summer. It would cost a family around £7,000 a year to replace meat they
+obtained themselves through hunting with imported meat. Economic opportunities are
+scarce, and for many people state benefits are their only income.
+E
+While the Inuit may not actually starve if hunting and trapping are curtailed by climate
+change, there has certainly been an impact on people's health. Obesity, heart disease and
+diabetes are beginning to appear in a people for whom these have never before been
+problems. There has been a crisis of identity as the traditional skills of hunting, trapping
+and preparing skins have begun to disappear. In Nunavut's 'igloo and email' society, where
+adults who were born in igloos have children who may never have been out on the land,
+there's a high incidence of depression.
+F
+With so much at stake, the Inuit are determined to play a key role in teasing out the
+mysteries of climate change in the Arctic. Having survived there for centuries, they believe
+their wealth of traditional knowledge is vital to the task. And Western scientists are starting
+to draw on this wisdom, increasingly referred to as 'Inuit Qaujimajatuqangit', or IQ. 'In the
+early days scientists ignored us when they came up here to study anything. They just
+figured these people don't know very much so we won't ask them,' says John Amagoalik,
+an Inuit leader and politician. 'But in recent years IQ has had much more credibility and
+weight.' In fact it is now a requirement for anyone hoping to get permission to do research
+that they consult the communities, who are helping to set the research agenda to reflect
+their most important concerns. They can turn down applications from scientists they believe
+will work against their interests, or research projects that will impinge too much on their
+daily lives and traditional activities.
+G
+Some scientists doubt the value of traditional knowledge because the occupation of the
+Arctic doesn't go back far enough. Others, however, point out that the first weather stations
+in the far north date back just 50 years. There are still huge gaps in our environmental
+knowledge, and despite the scientific onslaught, many predictions are no more than best
+guesses. IQ could help to bridge the gap and resolve the tremendous uncertainty about
+how much of what we're seeing is natural capriciousness and how much is the
+consequence of human activity.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Reading Passage has seven paragraphs, A-G.
+Choose the correct heading for paragraphs B-Gfrom the list of headings below.
+Write the correct number, i-ix, in boxes 1-6 on your answer sheet.
+List of Headings
+i       The reaction of the limit community to climate change
+ii      Understanding of climate change remains limited 
+iii      Alternative sources of essential supplies
+¡v      Respect for limit opinion grows
+v       A healthier choice of food  
+vi      A difficult landscape
+vii    Negative effects on well-being
+viii    Alarm caused by unprecedented events in the Arctic
+ix      The benefits of an easier existence
+Example Answer
+ 
+ 
+ 
+ 
+ 
+ 
+ Paragraph A    viii
+ 
+ 
     
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 1    Paragraph B 1.....................
+2    Paragraph C 2.....................
+3    Paragraph D 3.....................
+4    Paragraph E 4.....................
+5    Paragraph F 5.....................
+6    Paragraph G 6.....................
+Questions 7-14
+Complete the summary of paragraphs C and D  below.
+ChooseNO MORE THAN TWO WORDS fromparagraphs C and D for each answer.
+Write your answers in boxes 7-14 on your answer sheet.
+ 3
+ 
+ 
+ 
+ 
+ 
+ If you visit the Canadian Arctic, you immediately appreciate the problems faced by
+people for whom this is home.
+It would clearly be impossible for the people to engage in  7..................... as a means of
+supporting themselves.
+For thousands of years they have had to rely on catching 8..................... and
+9..................... as a means of sustenance.
+The harsh surroundings saw many who tried to settle there pushed to their limits,
+although some were successful.
+The10..................... people were an example of the latter and for them the environment
+did not prove unmanageable. For the present inhabitants, life continues to be a struggle.
+The territory of Nunavut consists of little more than ice, rock and a few 11.....................
+In recent years, many of them have been obliged to give up their 12.....................
+lifestyle, but they continue to depend mainly on 13..................... for their food and
+clothes.
+14..................... produce is particularly expensive.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 
+  
+  
+  
+  
+  
+ 1.i
+ 8.sea mammals, fish IN
+EITHER ORDER
+9.sea mammals, fish IN
+EITHER ORDER
+10.Thule
+11.islands
+12.nomadic
+13.nature
+14.2.vi
+3.iii
+4.vii
+5.iv
+6.ii
+7.farming imported
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,378 +1,175 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bring Back The Big Cats - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Cosmetics In Ancient Past - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题122/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Bring Back The Big Cats</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>10. What conclusions did the writers reach about the inconsistencies in the data from
-Cuddie Springs?
-A The different layers of sediment have been mixed over time.
-B The sand evidence is unhelpful and should be disregarded.
-C The area needs to be re-examined when technology improves.
-D The charcoal found in the area cannot be dated.
-11. According to the writers, what impact could a natural phenomenon have had on this
-site?
-A Floods could have caused the death of the megafauna.
-B Floods could have disturbed the archaeological evidence.
-C Bushfires could have prevented humans from settling in the area for any length of time
-D Bushfires could have destroyed much of the evidence left by megafauna and humans.
-12. What did the writers speculate about the people who lived at this site in 1876?
-A They bred cattle whose bones could have been confused with megafauna
-B They found that the soil was too waterlogged for farming
-C They allowed cattle to move around freely at the site
-D They brought stones there from another area
-13. In the final paragraph what suggestion do the writers hide about Australia’s
-megafauna?
-A A rapid change in climate may have been responsible for the extinction of the
-megafauna.
-B Megafauna could have died out as a result of small numbers being killed year after year.
-C The population of humans at that time was probably insufficient to cause the extinction of
-the megafauna.
-D The extinction of ancient animals should not be compared to that of modern-day species.
-14. Which of the following best represents the writers' criticism of Field and Wroe?
-A Their methods were not well thought out
-B Their excavations did not go deep enough.
-C Their technology failed to obtain precise data.
-D  Their conclusions were based on inconsistent data.40##qa
- 4</p>
-<p>Solution:
- 
-1. YES
-2. NOT GIVEN
-3. NO
-4. YES
-5. B
-6. F
-7. D
-8. C
-9. G
-10. A
-11. B
-12. D
-13. B
-14. D
- 5</p>
-<p>Reading Practice
- Australia's sporting success</p>
-<p>They play hard, they play often, and they play to win. Australian sports teams win more
-than their fair share of titles, demolishing rivals with seeming ease. How do they do it? A
-big part of the secret is an extensive and expensive network of sporting academies
-underpinned by science and medicine. At the Australian Institute of Sport (AIS), hundreds
-of youngsters and pros live and train under the eyes of coaches. Another body, the
-Australian Sports Commission (ASC), finances programmes of excellence in a total of 96
-sports for thousands of sportsmen and women. Both provide intensive coaching, training
-facilities and nutritional advice.</p>
-<p>Inside the academies, science takes centre stage.The AIS employs more than 100 sports
-scientists and doctors, and collaborates with scores of others in universities and
-research centres. AIS scientists work across a number of sports, applying skills learned in
-one - such as building muscle strength in golfers - to others, such as swimming and
-squash.They are backed up by technicians who design instruments to collect data from
-athletes.They all focus on one aim: winning.‘We can’t waste our time looking at ethereal
-scientific questions that don’t help the coach work with an athlete and improve
-performance,’ says Peter Pricker chief of science at AIS.</p>
-<p>A lot of their work comes down to measurement - everything from the exact angle of a
-swimmer’s dive to the second-by-second power output of a cydist.This data is used to
-wring improvements out of athletes.The focus is on individuals, tweaking performances to
-squeeze an extra hundredth of a second here, an extra millimetre there. No gain is too
-slight to bother with. It's the tiny, gradual improvements that add up to world-beating
-results.To demonstrate how the system works, Bruce Mason at AIS shows off the prototype
-of a 3D analysis tool for studying swimmers. A wire-frame model of a champion swimmer
-slices through the water, her arms moving in slow motion. Looking side-on, Mason
-measures the distance between strokes. From above, he analyses how her spine swivels.
-When fully developed, this system will enable him to build a biomechanical profile for
-coaches to use to help budding swimmers. Mason's contribution to sport also includes the
-development of the SWAN (SWimming ANalysis) system now used in Australian national
-competitions. It collects images from digital cameras running at 50 frames a second and
-breaks down each part of a swimmer's performance into factors that can be analysed
-individually - stroke length, stroke frequency, average duration of each stroke, velocity,
-start, lap and finish times, and so on. At the end of each race, SWAN spits out data on
-each swimmer.
-D 
-Take a look,' says Mason, pulling out a sheet of data. He points out the data on the
-swimmers in second and third place, which shows that the one who finished third actually
-swam faster. So why did he finish 35 hundredths of a second down? ‘His turn times were
-44 hundredths of a second behind the other guy,’ says Mason.‘If he can improve on his
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Cosmetics In Ancient Past</h1>
+<p>雅思阅读真题 · 第86篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Cosmetics in Ancient Past
+A
+ Since cosmetics and perfumes are still in wide use today, it is interesting to compare the
+attitudes, customs and beliefs related to them in ancient times to those of our own day and
+age. Cosmetics and perfumes have been popular since the dawn of civilization; it is shown
+by the discovery of a great deal of pertinent archaeological material, dating from the third
+millennium BC. Mosaics, glass perfume flasks, stone vessels, ovens, cooking-pots, clay
+jars, etc., some inscribed by the hand of the artisan. Evidence also appears in the Bible
+and other classical writings, where it is written that spices and perfumes were prestigious
+products known throughout the ancient world and coveted by kings and princes. The
+written and pictorial descriptions, as well as archaeological findings, all show how important
+body care and aesthetic appearance were in the lives of the ancient people. The chain of
+evidence spans many centuries, detailing the usage of cosmetics in various cultures from
+the earliest period of recorded history.
+B
+In antiquity, however, at least in the onset, cosmetics served in religious ceremonies and
+for healing purposes. Cosmetics were also connected with cultic worship and witchcraft: to
+appease the various gods, fragrant ointments were applied to the statuary images and
+even to their attendants. From this, in the course of time, developed the custom of personal
+use, to enhance the beauty of the face and the body, and to conceal defects. 
+C
+ Perfumes and fragrant spices were precious commodities in antiquity, very much in
+demand, and at times even exceeded silver and gold in value. Therefore they were luxury
+products, used mainly in the temples and in the homes of the noble and wealthy. The
+Judean kings kept them in treasure houses (2 Kings 20:13). And the Queen of Sheba
+brought to Solomon “camels laden with spices, gold in great quantity and precious stones.”
+(1 Kings 10:2, 10). However, within time, the use of cosmetics became the custom of that
+period. The use of cosmetics became widespread among the lower classes as well as
+among the wealthy; in the same way, they washed the body, so they used to care for the
+body with substances that softened the skin and anoint it with fragrant oils and ointments.
+D
+Facial treatment was highly developed and women devoted many hours to it. They used to
+spread various scented creams on the face and to apply makeup in vivid and contrasting
+colors. An Egyptian papyrus from the 16th century BC contains detailed recipes to remove
+blemishes, wrinkles, and other signs of age. Greek and Roman women would cover their
+faces in the evening with a “beauty mask” to remove blemishes, which consisted mainly of
+flour mixed with fragrant spices, leaving it on their face all night. The next morning they
+would wash it off with asses’ milk. The very common creams used by women in the ancient
+Far East, particularly important in the hot climate and prevalent in that area of the globe,
+ 1
+ 
+ were made up of oils and aromatic scents. Sometimes the oil in these creams was
+extracted from olives, almonds, gourds, sesame, or from trees and plants; but, for those of
+limited means, scented animal and fish fats were commonly used.
+E
+ Women in the ancient past commonly put colors around their eyes. Besides beautification,
+its purpose was also medicinal as covering the sensitive skin of the lids with colored
+ointments that prevented dryness and eye diseases: the eye-paint repelled the little flies
+that transmitted eye inflammations. Egyptian women colored the upper eyelid black and the
+lower one green and painted the space between the upper lid and the eyebrow gray and
+blue. The women of Mesopotamia favored yellows and reds. The use of kohl for painting
+the eyes is mentioned three times in the Bible, always with disapproval by the sages (2
+Kings, 9:30; Jeremiah 4:30; Ezekiel 23:40). In contrast, Job named one of his daughters
+“Keren Happukh”- “horn of eye paint” (Job 42:14)
+F
+ 
+ Great importance was attached to the care for hair in ancient times. Long hair was always
+considered a symbol of beauty, and kings, nobles and dignitaries grew their hair long and
+kept it well-groomed and cared for. Women devoted much time to the style of the hair;
+while no cutting, they would apply much care to it by arranging it skillfully in plaits and
+“building it up” sometimes with the help of wigs. Egyptian women generally wore their hair
+flowing down to their shoulders or even longer. In Mesopotamia, women cherished long
+hair as a part of their beauty, and hair flowing down their backs in a thick plait and tied with
+a ribbon is seen in art. Assyrian women wore their hair shorter, braiding and binding it in a
+bun at the back. In Ancient Israel, brides would wear their hair long on the wedding day as
+a sign of their virginity. Ordinary people and slaves, however, usually wore their hair short,
+mainly for hygienic reasons, since they could not afford to invest in the kind of treatment
+that long hair required.
+G
+From the Bible and Egyptian and Assyrian sources, as well as the words of classical
+authors, it appears that the centers of the trade-in aromatic resins and incense were
+located in the kingdoms of southern Arabia, and even as far as India, where some of these
+precious aromatic plants were grown. “Dealers from Sheba and Rammah dealt with you,
+offering the choicest spices…” (Ezekiel 27:22). The Nabateans functioned as the important
+middlemen in this trade; Palestine also served as a very important component, as the trade
+routes crisscrossed the country. It is known that the Egyptian Queen Hatsheput (15th
+century BC) sent a royal expedition to the Land of Punt (Somalia) in order to bring back
+myrrh seedlings to plant in her temple. In Assyrian records of tribute and spoils of war,
+perfumes and resins are mentioned; the text from the time of Tukulti-Ninurta II (890-884
+BC) refers to balls of myrrh as a part of the tribute brought to the Assyrian king by the
+Aramaean kings. The trade-in spices and perfumes are also mentioned in the Bible as
+written in Genesis (37:25-26), “Camels carrying gum tragacanth and balm and myrrh”.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 15-21
+Reading Passage  has 7 paragraphs  A-G
+Which paragraph contains the following information?
+Write your answers in boxes  1-7 on your answer sheet. 
+1.....................   recipes to conceal facial defects caused by aging
+2.....................   perfumes were presented to conquerors in war
+3.....................   long hair of girls had special meanings in marriage
+4.....................   evidence exists in abundance showing cosmetics use in ancient times
+5.....................   protecting eyes from fly-transmitted diseases
+6.....................   from witchcraft to beautification
+7.....................   more expensive than gold
+ Question 8-13
+Do the following statements agree with the information given in Reading Passage?
+In boxes 8-13 on your answer sheet, write
+TRUE                if the statement is true
+FALSE               if the statement is false
+NOT GIVEN      if the information is not given in the passage 
+8.....................   The written record for cosmetics and perfumes dates back to the third
+millennium BC.
+9.....................   Since perfumes and spices were luxury products, their use was exclusive
+to the noble and the wealthy.
+10.....................   In the ancient Far East, fish fats were used as a cream by a woman from
+poor households.
+11.....................   The teachings in the Bible were repeatedly against the use of kohl for
+painting the eyes.
+12.....................   Long hair as a symbol of beauty was worn solely by women of ancient
+cultures
+13.....................   The Egyptian Queen Hatsheput sent a royal expedition to Punt to
+establish a trade route for myrrh
+ 3</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.D
+2.G
+3.F
+4.A
+5.E
+6.B
+7.8.NOT GIVEN
+9.FALSE
+10.TRUE
+11.TRUE
+12.FALSE
+13.NOT GIVEN
+C
+ 4</div>
+</div>
+</div>
 </body>
 </html>

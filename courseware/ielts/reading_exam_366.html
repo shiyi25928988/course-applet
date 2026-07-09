@@ -1,362 +1,234 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Earth And Space Foundation - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Problem Of Scarce Resources - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题490/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Earth And Space Foundation</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>repositories of sacred spirit. Carved stone and wooden objects in ancient Polynesian
-religions, when properly fashioned and ritually prepared, were believed to be charged by a
-magical spiritual essence called mana. The ahu platforms of Easter Island were the
-sanctuaries of the people, and the moai statues were the ritually charged sacred objects of
-those sanctuaries.</p>
-<p>Besides its more well-known name, Easter Island is also known as Te-Pito-O-Te-Henuab,
-meaning ‘The Navel of the World’, and as Mata-Ki-Te-Rani, meaning ‘Eyes Looking at
-Heaven’. These ancient name and a host of mythological details ignored by mainstream
-archaeologists point to the possibility that the remote island may once have been a
-geodetic marker and the site of an astronomical observatory of a long-forgotten civilization.
-In his book, Heaven’s Mirror, Graham Hancock suggests that Easter Island may once have
-been a significant scientific outpost of this antediluvian civilization and that its location had
-extreme importance in a planet-spanning, mathematically precise grid of sacred sites. Two
-other alternative scholars, Christopher Knight and Robert Lomas, have extensively studied
-the location and possible function of these geodetic markers. In their fascinating book,
-Uriel’s Machine, they suggest that one purpose of the geodetic markers was as part of a
-global network of sophisticated astronomical observatories dedicated to predicting and
-preparing for future commentary impacts and crystal displacement cataclysms.</p>
-<p>In the latter years of the 20th century and the first years of the 21st century, various writers
-and scientists have advanced theories regarding the rapid decline of Easter Island’s
-magnificent civilization around the time of the first European contact. Principal among these
-theories, and now shown to be inaccurate, is that postulated by Jared Diamond in his
-book Collapse: How Societies Choose to Fail or Survive. Basically, these theories state
-that a few centuries after Easter Island’s initial colonization the resource needs of the
-growing population had begun to outpace the island’s capacity to renew itself ecologically.
-By the 1400s the forests had been entirely cut, the rich ground cover had eroded away, the
-springs had dried up, and the vast flocks of birds coming to roost on the island had
-disappeared. With no logs to build canoes for offshore fishing, with depleted bird and
-wildlife food sources, and with declining crop yields because of the erosion of good soil, the
-nutritional intake of the people plummeted. First famine, then cannibalism, set in. Because
-the island could no longer feed the chiefs, bureaucrats and priests who kept the complex
-society running, the resulting chaos triggered a social and cultural collapse. By 1700 the
-population dropped to between one-quarter and one-tenth of its former number, and many
-of the statues were toppled during supposed “clan wars” of the 1600 and 1700s.</p>
-<p>The faulty notions presented in these theories began with the racist assumptions of Thor
-Heyerdahl and have been perpetuated by writers, such as Jared Diamond, who do not
-have sufficient archaeological and historical understanding of the actual events which
-occurred on Easter Island. The real truth regarding the tremendous social devastation
-which occurred on Easter Island is that it was a direct consequence of the inhumane
-behavior of many of the first European visitors, particularly the slavers who raped and
-murdered the islanders, introduced smallpox and other diseases, and brutally removed the
-natives to mainland South America.
- 2</p>
-<p>Questions 1-4
-The reading passage has seven paragraphs, A-G
-Choose the correct heading for paragraphs A-G from the list below.
-Write the correct number, i-xi, in boxes 1-4 on your answer sheet.
-NB There are more headings than paragraphs
-List of headings
-i           The famous moai
-ii          The status represented symbols of combined purposes
-iii         The ancient spots which indicate the scientific application
-iv         The story of the name
-v          Early immigrants, rise and prosperity
-vi         The geology of Easter Island
-vii        The begin of Thor Heyerdahl’s discovery
-viii       The countering explanation to the misconceptions politically manipulated
-ix         Symbols of authority and power
-x          The Navel of the World
-xi         The Norwegian Invaders’ legacy
-        
-Example: Paragraph A            iv
-1.....................   Paragraph B
-Example: Paragraph C            i
-2.....................   Paragraph D
-3.....................   Paragraph E
-4.....................   Paragraph G
-Questions 5-10
-Do the following statements agree with the information given in Reading Passage?
-In boxes 5-10 on your answer sheet write
-TRUE               if the statement is true
-FALSE              if the statement is false
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Problem Of Scarce Resources</h1>
+<p>雅思阅读真题 · 第366篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Problem of Scarce Resources
+Section A
+The problem of how health-care resources should be allocated or apportioned, so that they
+are distributed in both, the most just and most efficient way, is not a new one. Every health
+system in an economically developed society is faced with the need to decide (either
+formally or informally) what proportion of the community’s total resources should be spent
+on health-care; how resources are to be apportioned; what diseases and disabilities and
+which forms of treatment are to be given priority; which members of the community are to
+be given special consideration in respect of their health needs; and which forms of
+treatment are the most cost-effective.
+Section B
+What is new is that, from the 1950s onwards, there have been certain general changes in
+outlook about the finitude of resources as a whole and of health-care resources in
+particular, as well as more specific changes regarding the clientele of health-care
+resources and the cost to the community of those resources. Thus, in the 1950s and
+1960s, there emerged an awareness in Western societies that resources for the provision
+of fossil fuel energy were finite and exhaustible and that the capacity of nature or the
+environment to sustain economic development and population was also finite. In other
+words, we became aware of the obvious fact that there were ‘limits to growth’. The new
+consciousness that there were also severe limits to health-care resources was part of this
+general revelation of the obvious. Looking back, it now seems quite incredible that in the
+national health systems that emerged in many countries in the years immediately after the
+1939-45 World War, it was assumed without question that all the basic health needs of any
+community could be satisfied, at least in principle; the ‘invisible hand’ of economic progress
+would provide.
+Section C
+However, at exactly the same time as this new realisation of the finite character of health-
+care resources was sinking in, an awareness of a contrary kind was developing in Western
+societies: that people have a basic right to health-care as a necessary condition of a proper
+human life. Like education, political and legal processes and institutions, public order,
+communication, transport and money supply, health-care came to be seen as one of the
+fundamental social facilities necessary for people to exercise their other rights as
+autonomous human beings. People are not in a position to exer- | cise personal liberty and
+to be self-determining if they are poverty-stricken, or deprived of basic education, or do not
+live within a context of law and order. In the same way, basic health-care is a condition of
+the exercise of autonomy.
+Section D
+Although the language of ‘rights’ sometimes leads to confusion, by the late 1970s it was
+recognised in most societies that people have a right to health-care (though there has been
+considerable resistance in the United States to the idea that there is a formal right to
+health-care). It is also accepted that this right generates an obligation or duty for the state
+to ensure that adequate health-care resources are provided out of the public purse. The
+ 1
+state has no obligation to provide a health-care system itself, but to ensure that such a
+system is provided. Put another way, basic health-care is now recognised as a ‘public
+good’, rather than a ‘private good’ that one is expected to buy for oneself. As the 1976
+declaration of the World Health Organisation put it: ‘The enjoyment of the highest attainable
+standard of health is one of the fundamental rights of every human being without distinction
+of race, religion, political belief, economic or social condition.’ As has just been remarked,
+in a liberal society basic health is seen as one of the indispensable conditions for the
+exercise of personal autonomy.
+ 
+ Section E
+Just at the time when it became obvious that health-care resources could not possibly meet
+the demands being made upon them, people were demanding that their fundamental right
+to health-care be satisfied by the state. The second set of more specific changes that have
+led to the present concern about the distribution of health-care resources stems from the
+dramatic rise in health costs in most OECD1 countries, accompanied by large-scale
+demographic and social changes which have meant, to take one example, that elderly
+people are now major (and relatively very expensive) consumers of health-care resources.
+Thus in OECD countries as a whole, health costs increased from 3.8% of GDP1 2 in 1960
+to 7% of GDP in 1980, and it has been predicted that the proportion of health costs to GDP
+will continue to increase. (In the US the current figure is about 12% of GDP, and in
+Australia about 7.8% of GDP)
+ As a consequence, during the 1980s a kind of doomsday scenario (analogous to similar
+doomsday extrapolations about energy needs and fossil fuels or about population
+increases) was projected by health administrators, economists and politicians, i In this
+scenario, ever-rising health costs were matched against static or declining resources.
+ 
+1Organisation for Economic Cooperation and Development
+2Gross Domestic Product
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+    Reading Passage has five sections A-E.
+   Choose the correct heading for sections AandC-Efrom the list of headings below.
+Write the correct number i-viiiin boxes1-4 on your answer sheet.
+1..................... Section A
+Example Answer
+Secti
+on Bviii
+2..................... Section C
+3..................... Section D
+ 4..................... Section E List of
+Headings
+ iThe
+connection
+between
+health-
+care and
+other
+human
+rights
+ iiThe
+developme
+nt of
+market-
+based
+health
+systems
+ iiiThe role
+of the
+state in
+health-
+care
+ ivA
+problem
+shared by
+every
+economica
+lly
+developed
+country
+ vThe
+impact of
+recent
+change
+viThe
+views of
+the
+medical
+establishm
+ent
+ 3
+ 
+ viiThe
+end of an
+illusion
+viii
+Sustainabl
+e
+economic
+developme
+nt
+Questions 5-8
+Classify the following as first occurring
+ 
+ 
+ 
+ 
+     Abetween 1945 and 1950
+Bbetween 1950 and 1980
+Cafter 1980
+ Write the correct letter A, BorCin boxes5-8 on your answer sheet.
+ 5..................... the realisation that the resources of the national health systems were limited
+6..................... a sharp rise in the cost of health-care
+7..................... a belief that all the health-care resources the community needed would be
+produced by economic growth
+8..................... an acceptance of the role of the state in guaranteeing the provision of
+health-care
+ 
+ 
+ Questions 36-40
+Do the following statements agree with the views of the writer in Reading Passage?
+In boxes9-13 on your answer sheet write
+ YESif the statement agrees with the views of the writer
+NOif the statement contradicts the views of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+ 4
+ 
+ 
+ 
+ 9..................... Personal liberty and independence have never been regarded as directly
+linked to health-care.
+10..................... Health-care came to be seen as a right at about the same time that the
+limits of healthcare resources became evident.
+11..................... In OECD countries population changes have had an impact on health-care
+costs in recent years.
+12..................... OECD governments have consistently underestimated the level of health-
+care provision needed.
+13..................... In most economically developed countries the elderly will have to make
+special provision for their health-care in the future.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.iv
+2.i
+3.iii
+4.v
+5.B
+6.B
+7.8.B
+9.NO
+10.YES
+11.YES
+12.NOT GIVEN
+13.NOT GIVEN
+A
+ 6</div>
+</div>
+</div>
 </body>
 </html>

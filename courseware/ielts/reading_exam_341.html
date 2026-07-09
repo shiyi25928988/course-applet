@@ -1,349 +1,182 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Beautiful Game - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The History Of The Invention Of Plastics - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题459/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Beautiful Game</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>loss and aging through brain imaging technology, neurochemical experiments, and
-cognitive and psychological tests. One thing, however, is already fairly clear–many aspects
-of memory are not a function of age at all but of education. Memory exists in more than one
-form. What we call knowledge–facts-is what psychologists such as Harry P. Bahrick, Ph.D.,
-of Ohio Wesleyan University calls semantic memory. Events, conversations, and
-occurrences in time and space, on the other hand, make up episodic or event memory,
-which is triggered by cues from the context. If you were around in 1963 you don’t need to
-be reminded of the circumstances surrounding the moment you heard that JFK had been
-assassinated. That event is etched into your episodic memory.
-{F} When you forget a less vivid item, like buying a roll of paper towels at the supermarket,
-you may blame it on your aging memory. It’s true that episodic memory begins to decline
-when most people are in their 50s, but it’s never perfect at any age. “Every memory begins
-as an event,” says Bahrick. “Through repetition, certain events leave behind a residue of
-knowledge, or semantic memory. On a specific day in the past, somebody taught you that
-two and two are four, but you’ve been over that information so often you don’t remember
-where you learned it. What started as an episodic memory has become a permanent part
-of your knowledge base.” You remember the content, not the context. Our language
-knowledge, our knowledge of the world and of people, is largely that permanent or
-semipermanent residue.
-{G} Probing the longevity of knowledge, Bahrick tested 1,000 high school graduates to see
-how well they recalled their algebra. Some had completed the course as recently as a
-month before, others as long as 50 years earlier. He also determined how long each
-person had studied algebra, the grade received, and how much the skill was used over the
-course of adulthood. Surprisingly, a person’s grasp of algebra at the time of testing did not
-depend on how long ago he’d taken the course–the determining factor was the duration of
-instruction. Those who had spent only a few months learning algebra forgot most of it
-within two or three years.
-{H} In another study, Bahrick discovered that people who had taken several courses in
-Spanish, spread out over a couple of years, could recall, decades later, 60 percent or more
-of the vocabulary they learned. Those who took just one course retained only a trace after
-three years. “This long-term residue of knowledge remains stable over the decades,
-independent of the age of the person and the age of the memory. No serious deficit
-appears until people get to their 50s and 60s, probably due to the degenerative processes
-of aging rather than a cognitive loss.”
-{I} “You could say metamemory is a byproduct of going to school,” says psychologist
-Robert Kail, Ph.D., of Purdue University, who studies children from birth to 20 years, the
-time of life when mental development is most rapid. “The question-and-answer process,
-especially exam-taking, helps children learn–and also teaches them how their memory
-works This may be one reason why, according to a broad range of studies in people over
-60, the better educated a person is, the more likely they are to perform better in life and on
-psychological tests. A group of adult novice chess players were compared with a group of
-child experts at the game. In tests of their ability to remember a random series of numbers,
-the adults, as expected, outscored the children. But when asked to remember the patterns
-of chess pieces arranged on a board, the children won. “Because they’d played a lot of
-chess, their knowledge of chess was better organized than that of the adults, and their
-existing knowledge of chess served as a framework for new memory,” explains Kail.
- 2</p>
-<p>{J} Specialized knowledge is a mental resource that only improves with time. Crystallized
-intelligence about one’s occupation apparently does not decline at all until at least age 75,
-and if there is no disease or dementia, may remain even longer.  Special knowledge is
-often organized by a process called “chunking.” If procedure A and procedure B are always
-done together, for example, the mind may merge them into a single command. When you
-apply yourself to a specific interest–say, cooking–you build increasingly elaborate
-knowledge structures that let you do more and do it better. This ability, which is tied to
-experience, is the essence of expertise. Vocabulary is one such specialized form of
-accrued knowledge. Research clearly shows that vocabulary improves with time. Retired
-professionals, especially teachers and journalists, consistently score higher on tests of
-vocabulary and general information than college students, who are supposed to be in their
-mental prime.
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The History Of The Invention Of Plastics</h1>
+<p>雅思阅读真题 · 第341篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The History of the Invention of Plastics
+{A} Natural polymers include such familiar substances as silk, rubber, and cotton. Plastics
+are artificial polymers. Plastics are used on a daily basis throughout the world. The word
+plastic is a common term that is used for many materials of a synthetic or semi-synthetic
+nature. The term was derived from the Greek plastikos, which means “fit for molding.”
+Plastics are a wide variety of combinations of properties when viewed as a whole. They are
+used for shellac, cellulose, rubber, and asphalt. We also synthetically manufacture items
+such as clothing, packaging, automobiles, electronics, aircraft, medical supplies, and
+recreational items. The list could go on and on and it is obvious that much of what we have
+today would not be possible without plastics.
+ {B} In the early part of the twentieth century, a big boom occurred in polymer chemistry
+when polymer materials such as nylon and Kevlar came on the scene. Much of the work
+done with polymers focuses on improvement while using existing technologies, but
+chemists do have opportunities ahead. There is a need for the development of new
+applications for polymers, always looking for less expensive materials that can replace
+what is used now. Chemists have to be more aware of what the market yearns for, such as
+products with a green emphasis, polymers that break down or are environmentally friendly.
+Concerns such as these have brought new activity to the science arena and there are
+always new discoveries to be made.
+{C} The evolution of the chemistry behind plastics is mind-numbing, and the uses for
+plastics are endless. In the Middle Ages, when scientists first started to experiment, plastics
+were derived from organic natural sources, such as egg and blood proteins. It wasn’t until
+the 19th and 20thcenturies that the plastics we know today were created. Many Americans
+will recognize the name  Goodyear , it was Charles Goodyear who began the modern-day
+plastic revolution when he vulcanized rubber in 1839, paving the way for the tire. Prior to
+his discovery, products made with rubber did not hold up well in warm temperatures or
+climates. Rubber is only one source of plastic, however, and three key inventors followed
+Goodyear’s path and took plastic from a nearly unusable hard substance to the invaluable
+man-made resource it is today.
+{D} The son of a brass lock manufacturer, Alexander Parkes was born in Birmingham,
+England in 1813. Parkes was raised around metal fabrication. In his first job he worked as
+an apprentice at Birmingham’s brass foundry, owned by Samuel S. Messengers and Sons.
+Parkes switched his attention from brass work to electroplating when he went to work for
+George and Henry Elkington. It was there Parkes developed his inventive spirit. Parkes’
+first patent, awarded in 1841, dealt with electroplating delicate items such as flowers, but
+throughout his career Parkes reportedly held more than 80 patents on his works with both
+metals and plastics.Parkes is credited with inventing the first man-made plastic, which he
+patented as Parkesine in 1856. Parkes introduced this combination of nitrocellulose and
+solvents to England in 1862 at the London International Exhibition. While Parkesine itself
+did not prove to be a successful material in its original formulation, it was too flammable, it
+laid the groundwork for successful derivative materials from future inventors. One of those
+inventors being John Wesley Hyatt.
+{E} What Alexander Parkes started, John Wesley Hyatt took to the next level. Hyatt was
+ 1
+ born in Starkey, New York in 1837, and patented several hundred inventions. Hyatt’s link to
+plastics comes in the form of the game of billiards. Billiard balls were originally made of
+ivory, a commodity that was in steep decline in the 1800s. Most likely inspired by the
+$10,000 reward being offered, Hyatt took on the challenge of finding a substitute material to
+manufacture billiard balls. Hyatt’s experiments began with a combination of Parkes’
+Parkesine, a solid form of nitrocellulose, and another English inventor, Frederick Scott
+Archer, discovery of liquid nitrocellulose. Hyatt combined two to create celluloid, which he
+patented in 1870.
+{F} Celluloid was used for numerous products, including billiard balls for Hyatt’s own
+company rather than his former  employer. Celluloid also produced false teeth, combs, baby
+rattles, and piano keys. Despite its replacement by newer synthetic materials in today’s
+marketplace, Hyatt’s patented version of celluloid is still used to produce ping-pong balls.
+There is no doubt that the invention of celluloid was the next important rung in the plastic
+manufacturing ladder, including the use of celluloid in film production.
+{G} Much like Parkes’ invention led to Hyatt’s success, Hyatt’s celluloid influenced Leo
+Baekeland. This Belgium-born chemist paved the way for George Eastman, of Eastman
+Kodak, to build the photographic empire we know today. Born in 1863, Baekeland’s first
+invention was Velox, a paper that allowed photographs to be taken in artificial light.
+Eastman purchased the Velox process from Baekeland for a reported $750,000 in 1899.
+Baekeland used that money to fund his own in-home laboratory.
+{H} Baekeland moved his experiments from photography paper to synthetic resins, and
+invented Bakelite, a combination of phenol and formaldehyde in 1907. Bakelite was
+officially patented in 1909. Bakelite was a hard, yet moldable, plastic, and was considered
+the product that led the world into the Age of Plastics. Bakelite was used in everything from
+buttons to art deco furniture to television sets. While these items are made from different
+types of materials today, Bakelite is still used in the production of items such as car brakes
+and materials used in the space shuttle. 
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Use the information in the passage to match the inventors, chemists or companies (listed
+A-F) with opinions or deeds below. Write the appropriate letters A-F in boxes 1-5 on your
+answer sheet.
+ (A) Alexander Parkes  
+(B) Charles Goodyear 
+(C) John Wesley Hyatt  
+(D) Frederick Scott Archer 
+(E) Leo Baekeland 
+(F) George Eastman
+1..................... Invested a considerable amount of money in buying a technique that had a
+huge impact on the success of his well-known business.
+ 2..................... Invented a chemical formula that was successful only in a lab experimental
+stage yet marked the beginning of an important era.
+3..................... Had a lab sustained by his own capital.
+4..................... In the motivation of an attractive financial incentive, successfully created a
+succedaneum based on the work accomplished by chemists prior to him.
+5..................... Established a famous business on auto parts.
+ Questions 6-9
+Do the following statements agree with the information given in IELTS Data Reading
+Passage 230 – The History of the Invention of Plastics Reading Passage? In boxes 6-9 on
+your answer sheet, write
+TRUE
+FALSEif the statement is True
+if the statement is false
+NOT GIVEN If the information is not given in the passage
+6..................... Silk, cotton as well as plastics have something in common.
+7..................... There are sometimes conflicts between what the chemists are trying on and
+what the markets are driving for.
+8..................... The majority of Alexander Parkes’ patents lie in two major fields.
+9..................... The importance of celluloid has completely faded out of in commercial use
+because of the occurrence of other alternative products.
+ 3
+Questions 10-14
+ 
+  Complete the following summary of the paragraphs of Reading Passage, using  No More
+than Three words  from the Reading Passage for each answer. Write your answers in
+boxes 10-14 on your answer sheet.
+ Alexander Parkes, a well-known chemist, was brought up in an industrial city surrounded by 10......................
+He began his work by learning in a 11..................... in his hometown and later fostered his 12.....................
+during his time working for other employers. He started his journey of getting over 80 patents in the field of
+13..................... ever since then.
+Although his most important invention Parkesine, made up of 14..................... and regarded as the first artificial
+plastic did not get a big success because of some shortcomings, Parkes had paved the road for other coming
+scientists in plastic chemistry.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.F
+2.A
+3.E
+4.C
+5.B
+6.TRUE
+7.NOT
+GIVEN8.TRUE
+9.FALSE
+10.METAL FABRICATION
+11.BRASS FOUNDRY
+12.HIS INVENTION SPIRIT
+13.METALS AND PLASTICS
+14.NITROCELLULOSE AND
+SOLVENTS
+ 5</div>
+</div>
+</div>
 </body>
 </html>

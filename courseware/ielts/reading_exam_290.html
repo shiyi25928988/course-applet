@@ -1,361 +1,174 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainwater Harvesting - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Terminated Dinosaur Era - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题384/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Rainwater Harvesting</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>with a survey that revealed the depth of customer resentment toward the airline industry. In
-an effort to own up to the industry’s shortcomings, United launched a new campaign,
-“Rising,” in which it sought to differentiate itself by acknowledging poor service and
-promising incremental improvements such as better meals. While this was a logical
-premise for the campaign given the tenor of the times, a campaign focusing on customers’
-distaste for flying was deeply discouraging to the staff. Employee resentment ultimately
-made it impossible for United to deliver the improvements it was promising, which in turn
-undermined the “Rising” pledge. Three years later, United decided employee opposition
-was undermining its success and pulled the campaign. It has since moved to a more
-inclusive brand message with the line “United,” which both audiences can embrace. Here,
-a fundamental principle of advertising – find and address a customer concern – failed
-United because it did not consider the internal market.</p>
-<p>When it comes to execution, the most common and effective way to link internal and
-external marketing campaigns is to create external advertising that targets both audiences.
-IBM used this tactic very effectively when it launched its e-business campaign. It took out
-an eight-page ad in the Wall Street Journal declaring its new vision, a message directed at
-both customers and internal stakeholders. This is an expensive way to capture attention,
-but if used sparingly, it is the most powerful form of communication; in fact, you need do it
-only once for everyone in the company to read it. There’s a symbolic advantage as well.
-Such a tactic signals that the company is taking its pledge very seriously; it also signals
-transparency – the same message going out to both audiences.</p>
-<p>Advertising isn’t the only way to link internal and external marketing. At Nike, a number of
-senior executives now hold the additional title of “Corporate Storyteller.” They deliberately
-avoid stories of financial successes and concentrate on parables of “just doing it,”
-reflecting and reinforcing the company’s ad campaigns. One tale, for example, recalls how
-legendary coach and Nike co-founder Bill Bowerman, in an effort to build a better shoe for
-his team, poured rubber into the family waffle iron, giving birth to the prototype of Nike’s
-famous Waffle Sole. By talking about such inventive moves, the company hopes to keep
-the spirit of innovation that characterizes its ad campaigns alive and well within the
-company.</p>
-<p>But while their messages must be aligned, companies must also keep external promises a
-little ahead of internal realities. Such promises provide incentives for employees and give
-them something to live up to. In the 1980s, Ford turned “Quality is Job!” from an internal
-rallying cry into a consumer slogan in response to the threat from cheaper, more reliable
-Japanese cars. It did so before the claim was fully justified, but by placing it in the public
-arena, it gave employees an incentive to match the Japanese. If the promise is pushed too
-far ahead, however, it loses credibility. When a beleaguered British Rail launched a
-campaign announcing service improvement under the banner “We’re Getting There,” it did
-so prematurely. By drawing attention to the gap between the promise and the reality, it
-prompted destructive press coverage. This, in turn, demoralized staff, who had been
-legitimately proud of the service advances they had made.
- 2</p>
-<p>Questions 1-7
-Use the information in the passage to match the company (listed A-F) with correct category
-or deeds below.
-Write the appropriate letters A-F in boxes1-7 on your answer sheet.
-NB You may use any letter more than once
-A   legendary anecdote inspire employee successfully
-B   advertisement campaign inspire employees and ensure a leading role in business
-C   improper ads campaign brings negative effect
-D   internal and external announcement are different
-E   campaign brings positive and realistic expectation internally
- 
-F   a bad slogan that failed both to win support internally and raise standard to its poor
-service
-1.....................   One health insurance Company
-2.....................   British Rail
-3.....................   IBM
-4.....................   United Airline
-5.....................   A financial service company
-6.....................   A Shoemaking company (Nike)
-7.....................   The Company of (Ford)
- 
-Questions 8-11
-Do the following statements agree with the information given in Reading Passage?
-In boxes 35-38 on your answer sheet, write
-TRUE               if the statement is true
-FALSE              if the statement is false
-NOT GIVEN    if the information is not given in the passage
-8.....................   Employers in almost all companies successfully make their employees fully
-understand the outside campaign. 
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Terminated Dinosaur Era</h1>
+<p>雅思阅读真题 · 第290篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Terminated Dinosaur Era
+A.
+Day after day, we hear about how anthropogenic development is causing global warming.
+According to an increasingly vocal minority, however, we should be asking ourselves how
+much of this is media hype, and how much is based on real evidence. It seems – as so
+often is the ease – that it depends on which expert you listen to, or which statistics you
+study.
+B.
+Yes, it is true that there is a mass of evidence to indicate that the world is getting warmer,
+with one of the world’s leading weather predictors stating that air temperatures have frown
+an increase of just under half a degree Celsius since the beginning of the twentieth century.
+And while this may not sound like anything worth losing sleep over, the international press
+would have us believe that the consequences could be devastating. Other experts,
+however, are of the opinion that what we are seeing is just part of a natural upward and
+downward swing that has always been part of the cycle of global weather. An analysis of
+the views of major meteorologists in the United States showed that less than 20% of them
+believed that any change in temperature over the last hundred years was our own fault –
+the rest attributed it to natural cyclical changes.
+C.
+There is, of course, no denying that we are still at a very early stage in understanding
+weather. The effects of such variables as rainfall, cloud formation, the seas and oceans,
+gases such as methane and ozone, or even solar energy are still not really understood,
+and therefore the predictions that we make using them cannot always be relied on.
+Dr James Hansen, in 19BH, was predicting that the likely effects of global warming would
+be a raising of the world temperature which would have disastrous consequences for
+mankind: “a strong cause arid effect relationship between the current climate and human
+alteration of the atmosphere”. He has now gone on record as stating that using artificial
+models of climate as a way of predicting change is all but impossible. In fact, he now
+believes that, rather than getting hotter, our planet is getting greener as a result of the
+carbon dioxide increase, with the prospect of increasing vegetation in areas which in recent
+history have been frozen wastelands.
+D.
+In fact, there is some evidence to suggest that as our computer-based weather models
+have become more sophisticated, the predicted rises In temperature have been cut back.
+In addition, if we look at the much-reported rise in global temperature over the last century,
+a close analysis reveals that the lion’s share of that increase, almost three quarters in total,
+occurred before man began to “poison” his world with industrial processes and the
+accompanying greenhouse gas emissions in the second half of the twentieth century.
+E.
+So should we pay any attention to those stories that scream out at us from billboards and
+television news headlines, claiming that man, with his inexhaustible dependence on oil-
+based machinery and ever more sophisticated forms of transport is creating a nightmare
+ 1
+level of greenhouse gas emissions, poisoning his environment and ripping open the ozone
+layer?
+Doubters point to scientific evidence, which can prove that, of all the greenhouse gases,
+only two per cent come from man-made sources, the rest resulting from natural emissions.
+Who, then, to believe: the environmentalist exhorting us to leave the car at home, to buy re-
+usable products packaged in recycled paper and to plant trees in our back yard? Or the
+sceptics, including, of course, a lot of big businesses who have most to lose, when they tell
+us that we are making a mountain out of a molehill? And my own opinion? The jury’s still
+out as for as I am concerned!
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Choose the appropriate letters A-D
+Write a theme in Boxes 1-5 on your answer sheet.
+1. The author …
+A  believes that man is causing global warming
+B  believes that global warming is a natural process
+C is sure what the causes of global warming are
+D does not say what he believes the causes of global warming are
+2. As to the cause of global warming, the author believes that …
+A occasionally the fact depends on who you are talking to
+B the facts always depend on who you are talking to
+C often the fact depends on which expert you listen to
+D you should not speak to experts
+3. More than 80% of the top meteorologists in the United States are of the opinion
+that…           
+A global warming should make us lose sleep 
+B global warming is not the result of oil natural cyclical changes, but man-made
+C the consequences of global warming will be deviating
+D global warming is not man-made, but the result of natural cyclical changes.
+4. Our understanding of the weather…
+A leads to reliable predictions
+B is variable
+C cannot be denied
+D is not very developed yet
+5. Currently, Dr. James Hansen’s beliefs include the fact that …
+A It is nearly impossible to predict weather change using artificial models
+B the consequences of global  warming would be disastrous in mankind
+C there is a significant link between the climate now, mid man’s changing of the
+atmosphere
+D Earth is getting colder
+ 3
+Questions 6-11
+Do the statements below agree with the information in Reading Passage 1? In
+Boxes 6-11, write:
+YES, if the statement agrees with the information in the passage
+NO, if the statement contradicts the information in the passage
+NOT GIVEN , if there is no information about the statement in the passage
+Example:  Computer-based weather models have become more sophisticated.
+Answer: Yes.
+6..................... At the same time that computer-based weather models have become more
+sophisticated, weather forecasters have become more expert.
+7..................... Most of the increase in global temperature happened in the second half of
+the twentieth century.
+8..................... The media wants us to blame ourselves for global warming.
+9..................... The media encourages the public to use environment-friendly vehicles, such
+as electric cars to combat global warming.
+10..................... Environmentalists are very effective at persuading people to be kind to the
+environment.
+11..................... Many big businesses are on the side of the sceptics as regards the cause
+of global warming.
+Questions 12 and 13
+Complete the sentences below.
+Use NO MORE THAN THREE WORDS  from the passage for each blank space.
+Write your answers in boxes 12 and 13 on your answer sheet.
+12. As well as planting trees and not driving, the environmentalist would like us to choose
+products that are wrapped  12..................... and  can be used more than once.
+13. Big businesses would have us believe that we are making too much fuss about global
+warming, because they have  13......................
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.D
+2.D
+3.D
+4.A
+5.C
+6.NOT GIVEN
+7.8.YES
+9.NOT GIVEN
+10.NOT GIVEN
+11.YES
+12.in recycled paper
+13.most to lose
+NO
+ 5</div>
+</div>
+</div>
 </body>
 </html>

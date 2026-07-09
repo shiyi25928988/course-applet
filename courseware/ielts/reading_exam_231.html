@@ -1,433 +1,195 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Man Or Machine - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Out Of Africa Saharan Solar Energy - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题309/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Man Or Machine</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>glaciers occur on the same mountain, these moraines can create a horn. The Matterhorn,
-in the Swiss Alps is one of the most famous horns. Fjords, which are very common in
-Norway, are coastal valleys that fill with ocean water during a glacial retreat. Hanging
-valleys occur when two or more glacial valleys intersect at varying elevations. It is common
-for waterfalls to connect the higher and lower hanging valleys, such as in Vosemite
-National Park. A cirque is a large bowlshaped valley that forms at the front of a glacier.
-Cirques often have a lip on their down slope that is deep enough to hold small lakes when
-the ice melts away.</p>
-<p>Glacier movement and shape shifting typically occur over hundreds of years. While
-presently about 10 percent of the earth’s land is covered with glaciers, it is believed that
-during the last Ice Age glaciers covered approximately 32 percent of the earth’s surface. In
-the past century, most glaciers have been retreating rather than flowing forward. It is
-unknown whether this glacial activity is due to human impact or natural causes, but by
-studying glacier movement, and comparing climate and agricultural profiles over hundreds
-of years, glaciologists can begin to understand environmental issues such as global
-warming.
- 2</p>
-<p>Questions 1-5
-Reading Passage 1 has five paragraphs, A-E. Choose the most suitable heading for each
-paragraph from the list of headings below.
-Write the appropriate numbers (i-viii) on your Answer Sheet
-There are more headings than paragraphs, so you will not use them all.
- 
-1 Paragraph A 1.....................
-2 Paragraph B 2.....................
-3 Paragraph C 3.....................
-4 Paragraph D 4.....................
-5 Paragraph E 5.....................
-List of Headings
-i Glacial Continents
-ii Formation and Growth of
-Glaciers
-iii Glacial Movement
-iv Glaciers in the Last Ice
-Age
-v Glaciers Through the
-Years
-vi Types of Glaciers
-vii Glacial Effects on
-Landscape
-  
-viiiGlaciers in National Parks</p>
-<p>Questions 6-10
-Do the following statements agree with the information in Passage 1 ? in boxes 6-10 on
-your Answer Sheet, write
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Out Of Africa Saharan Solar Energy</h1>
+<p>雅思阅读真题 · 第231篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Out of Africa: Saharan Solar Energy
+Vivienne Wait reports on how the Sahara Desert could offer a truly green solution to
+Europe’s energy problems
+  A
+For years, the Sahara has been regarded by many Europeans as a terra incognita* of little
+economic value or importance. But this idea may soon change completely. Politicians and
+scientists on both sides of the Mediterranean are beginning to focus on the Sahara’s
+potential to provide power for Europe in the future. They believe the desert’s true value
+comes from the fact that it is dry and empty. Some areas of the Sahara reach 45 degrees
+centigrade on many afternoons. It is, in other words, a gigantic natural storehouse of solar
+energy.
+B
+A few years ago, scientists began to calculate just how much energy the Sahara holds.
+They were astonished at the answer. In theory, a 90,600 square kilometre chunk of the
+Sahara - smaller than Portugal and a little over 1% of its total area - could yield the same
+amount of electricity as all the world’s power plants combined. A smaller square of 15,500
+square kilometres - about the size of Connecticut - could provide electricity for Europe’s
+500 million people.
+'I admit I was sceptical until 1 did the calculations myself,’ says Michael Pawlyn, director of
+Exploration Architecture, one of three British environmental companies comprising the
+Sahara Forest Project, which is testing solar plants in Oman and the United Arab Emirates.
+Pawlyn calls the Sahara’s potential ’staggering’.
+C
+At the moment, no one is proposing the creation of a solar power station the size of a small
+country. But a relatively well-developed technology exists, which proponents say could turn
+the Sahara’s heat and sunlight into a major source of electricity - Concentrating Solar
+Power [CSP], Unlike solar panels, which convert sunlight directly into electricity, CSP
+utilises mirrors which focus light on water pipes or boilers to produce very hot steam to
+operate the turbines of generators. Small CSP plants have produced power in California’s
+Mojave Desert since the 1980s. The Sahara Forest Project proposes building CSP plants
+in areas below sea level (the Sahara has several such depressions) so that sea water can
+flow into them. This water would then be purified and used for powering turbines and
+washing dust off the mirrors. Waste water would then supply irrigation to areas around the
+stations, creating lush oases - hence the ’forest’ in the group’s name.
+     D
+But producing Significant quantities of electricity means building huge arrays of mirrors and
+pipes across hundreds of miles of remote desert, which is expensive. Gerry Wolff, an
+engineer who heads DESERTEC, an international consortium of solar-power scientists,
+says they have estimated it will cost about $59 billion to begin transmitting power from the
+Sahara by 2020.
+ 1
+E
+Building plants is just part of the challenge. One of the drawbacks to CSP technology is
+that it works at maximum efficiency only in sunny, hot climates - and deserts tend to be
+distant from population centres. To supply Europe with 20% of its electricity needs, more
+than 19,300 kilometres of cables would need to be laid under the Mediterranean, says
+Gunnar Asplund, head of HVDC research at ABB Power Technologies in Ludvika, Sweden.
+Indeed, to use renewable sources of power, including solar, wind and tidal, Europe will
+need to build completely new electrical grids. That’s because existing infrastructures, built
+largely for the coal- fired plants that supply 80% of Europe’s power, would not be suitable
+for carrying the amount of electricity generated by the Sahara. Germany’s government-run
+Aerospace Centre, which researches energy, estimates that replacing those lines could
+raise the cost of building solar plants in the Sahara and sending significant amounts of
+power to Europe to about $485 billion over the next 40 years. Generous government
+subsidies will be needed. ‘Of course it costs a lot of money,’ says Asplund. ‘It’s a lot
+cheaper to burn coal than to make solar power in the Sahara.’
+F
+Meanwhile, some companies are getting started. Seville engineering company Abengoa is
+building one solar- thermal plant in Algeria and another in Morocco, while a third is being
+built in Egypt by a Spanish-Japanese joint venture. The next step will be to get cables in
+place. Although the European Parliament has passed a law that aids investors who help
+the continent reach its goal of getting 20% of itg power from renewable energy by 2020, it
+could take years to create the necessary infrastructure.
+G
+ Nicholas Dunlop, secretary-general of the London-based NGO e-Parliament, thinks
+companies should begin transmitting small amounts of solar power as soon as the North
+African plants begin operating, by linking a few cable lines under the Med. 'I call it the Lego
+method,’ he says. ‘Build it piece by piece.’ If It can be shown that power from the Sahara
+can be produced profitably, he says, companies and governments will soon jump in. If they
+do, perhaps airplane passengers flying across the Sahara will one day count the mirrors
+and patches of green instead of staring at sand.
+ adapted from Time Magazine
+*terra incognita - Latin, meaning ‘an unknown land'
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+The reading passage has seven paragraphs, A-G.
+Which paragraph contains the following information?
+Write the correct letter, A-G.
+NBYou may use any letter more than once.
+     
+     1.....................
+2.....................
+3.....................
+potential
+4.....................a mention of systems which could not be used
+estimates of the quantity of power the Sahara could produce
+a suggestion for how to convince organisations about the Sahara’s
+5.....................
+  
+ a short description of the Sahara at present
+a comparison of the costs of two different energy sources
+     Questions 6-9
+Look at the following statements (Questions 6-9)and the list of organisations below.
+Match each statement with the correct organisation, A-G.
+     6.....................
+7.....................They have set a time for achieving an objective.
+They believe that successful small-scale projects will demonstrate that
+     
+     larger projects are possible.
  
-TRUE if the statement is true according to the passage.
-FALSE if the statement contradicts the passage.
-NOT GIVEN if there is no information about this in the passage.
-6.....................    Glaciers exist only near the north and south poles.
-7.....................    Glaciers are formed by a combination of snow and other weather
-conditions.
-8.....................    Glaciers normally move at a rate of about 5 to 10 inches a day.
-9.....................    All parts of the glacier move at the same speed.
-10.....................    During the last Ice Age, average temperatures were much lower than
-they are now.
-Questions 11-15
-Match each definition below with the term it defines.
-Write the letter of the term, A-H, on your Answer Sheet 
-There are more terms than definitions, so you will not use them all 
- 3</p>
-<p>Terms
-A fjord
-B alpine glacier
-C horn
-D polar glacier
-E temperate glacier
-F hanging valley
-G cirque</p>
-<p>11    a glacier formed on a mountain 11.....................
-12    a glacier with temperatures well below freezing 12.....................
-13    a glacier that moves very quickly 13.....................
-14    a glacial valley formed near the ocean 14.....................
-15  a glacial valley that looks like a bowl 15.....................
- 4</p>
-<p>Solution:
  
-1. vi
-2. ii
-3. iii
-4. vii
-5. v
-6. FALSE
-7. TRUE
-8.
-9. FALSE
-10. NOT GIVEN
-11. B
-12. D
-13. H
-14. A
-15. G
-TRUE
- 5</p>
-<p>GLASS - Capturing the dance of light
  
-A Glass, in one form or another, has long been in noble service to humans. As one of the
-most widely used of manufactured materials, and certainly the most versatile, it can be as
-imposing as a telescope mirror the width of a tennis court or as small and simple as a
-marble rolling across dirt. The uses of this adaptable material have been broadened
-dramatically by new technologies glass fibre optics — more than eight million miles —
-carrying telephone and television signals across nations, glass ceramics serving as the
-nose cones of missiles and as crowns for teeth; tiny glass beads taking radiation doses
-inside the body to specific organs, even a new type of glass fashioned of nuclear waste in
-order to dispose of that unwanted material.
  
-B On the horizon are optical computers. These could store programs and process
-information by means of light - pulses from tiny lasers - rather than electrons. And the
-pulses would travel over glass fibres, not copper wire. These machines could function
-hundreds of times faster than today’s electronic computers and hold vastly more
-information. Today fibre optics are used to obtain a clearer image of smaller and smaller
-objects than ever before - even bacterial viruses. A new generation of optical instruments is
-emerging that can provide detailed imaging of the inner workings of cells. It is the surge in
-fibre optic use and in liquid crystal displays that has set the U.S. glass industry (a 16 billion
-dollar business employing some 150,000 workers) to building new plants to meet demand.
  
-C But it is not only in technology and commerce that glass has widened its horizons. The
-use of glass as art, a tradition spins back at least to Roman times, is also booming. Nearly
-everywhere, it seems, men and women are blowing glass and creating works of art. «I
-didn’t sell a piece of glass until 1975,» Dale Chihuly said, smiling, for in the 18 years since
-the end of the dry spell, he has become one of the most financially successful artists of the
-20th century. He now has a new commission - a glass sculpture for the headquarters
-building of a pizza company - for which his fee is half a million dollars.
  
-D But not all the glass technology that touches our lives is ultra-modern. Consider the
-simple light bulb; at the turn of the century most light bulbs were hand blown, and the cost
-of one was equivalent to half a day’s pay for the average worker. In effect, the invention of
-the ribbon machine by Corning in the 1920s lighted a nation. The price of a bulb plunged.
-Small wonder that the machine has been called one of the great mechanical achievements
-of all time. Yet it is very simple: a narrow ribbon of molten glass travels over a moving belt
-of steel in which there are holes. The glass sags through the holes and into waiting moulds.
-Puffs of compressed air then shape the glass. In this way, the envelope of a light bulb is
-made by a single machine at the rate of 66,000 an hour, as compared with 1,200 a day
-produced by a team of four glassblowers.
+ 8.....................
+9.....................They have a number of renewable energy projects under construction.
+They are already experimenting with solar- energy installations in other
+parts of the world.
+ List of Organisations
+AExploration Architecture
+BDESERTEC
+CABB Power Technologies
+DAerospace Centre
+EAbengoa
+FThe European Parliament
+Ge-Parliament
+ 3
+  Questions 10-13
+Complete the summary below.
+ChooseNO MORE THAN TWO WORDS from the passage for each answer.
  
-E The secret of the versatility of glass lies in its interior structure. Although it is rigid, and
-thus like a solid, the atoms are arranged in a random disordered fashion, characteristic of a
-liquid. In the melting process, the atoms in the raw materials are disturbed from their
-normal position in the molecular structure; before they can find their way back to crystalline
-arrangements the glass cools. This looseness in molecular structure gives the material
-what engineers call tremendous “formability” which allows technicians to tailor glass to
-whatever they need.
-F Today, scientists continue to experiment with new glass mixtures and building designers
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+  
+ Concentrating Solar Power (CSP)
+Unlike solar panels, CSP concentrates the sun's rays on boilers by using 10......................
+The resulting heat produces high-temperature 11..................... , which in turn moves the
+turbines which generate electricity.
+CSP plants will be situated in 12..................... to allow sea water to run in.
+This, when purified, can be used to wash the equipment.
+The resulting dirty water will be used for 13..................... around the power plant, and in
+this way oases will be formed.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.E
+2.B
+3.G
+4.A
+5.E
+6.F
+7.8.E
+9.A
+10.mirrors
+11.steam
+12.depressions
+13.irrigation
+G
+ 5</div>
+</div>
+</div>
 </body>
 </html>

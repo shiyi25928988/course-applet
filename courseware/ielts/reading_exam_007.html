@@ -1,279 +1,186 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Evolution of Language - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-        }
-        .passage-box {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
-        .question-card {
-            background: #eff6ff;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
-        }
-        .question-card h4 {
-            margin: 0 0 12px 0;
-            color: #1e40af;
-        }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
-            display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
-            text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Activities For Children - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📖 阅读真题 11/50</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
-        </aside>
-
-        <main class="main">
-            <div class="page-hero">
-                <h1>📖 The Evolution of Language</h1>
-                <p>剑桥15 Test1 Passage1 · 题型：填空 · T/F/NG · 完整逐题解析</p>
-            </div>
-
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 11: The Evolution of Language</h3>
-                    <div class="difficulty diff-easy">难度：★★☆☆☆ 简单</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：说明文 · 话题：语言学 · 人类学 · 建议时间：15-17分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>The Evolution of Language is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the evolution of language has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>B</strong></p>
-                        <p>The Evolution of Language is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the evolution of language has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>C</strong></p>
-                        <p>The Evolution of Language is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the evolution of language has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>D</strong></p>
-                        <p>The Evolution of Language is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the evolution of language has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>E</strong></p>
-                        <p>The Evolution of Language is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the evolution of language has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>F</strong></p>
-                        <p>The Evolution of Language is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the evolution of language has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>G</strong></p>
-                        <p>The Evolution of Language is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the evolution of language has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>H</strong></p>
-                        <p>The Evolution of Language is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the evolution of language has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-8: TRUE / FALSE / NOT GIVEN</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Do the following statements agree with the information given in the reading passage?</p>
-                        <p style="margin:0 0 8px 0;font-size:0.9rem;"><strong>Write:</strong></p>
-                        <ul style="margin:0 0 16px 0;font-size:0.9rem;">
-                            <li><strong>TRUE</strong> if the statement agrees with the information</li>
-                            <li><strong>FALSE</strong> if the statement contradicts the information</li>
-                            <li><strong>NOT GIVEN</strong> if there is no information on this</li>
-                        </ul>
-                        <p style="margin:8px 0;"><strong>1.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>2.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>3.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>4.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>5.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>6.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>7.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>8.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                    </div>
-                    <div class="question-card">
-                        <h4>Questions 9-14: Complete the Summary</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
-                        <p style="line-height:2.2;">
-                            The Step Pyramid was designed by the architect <input type="text" class="blank-input" placeholder="...">. It was built during the <input type="text" class="blank-input" placeholder="..."> century BCE for Pharaoh Djoser. Unlike previous tombs made of <input type="text" class="blank-input" placeholder="...">, this pyramid was constructed from <input type="text" class="blank-input" placeholder="...">. The complex includes various <input type="text" class="blank-input" placeholder="..."> and temples, surrounded by a high <input type="text" class="blank-input" placeholder="...">. Underground, there are over 5 kilometers of <input type="text" class="blank-input" placeholder="..."> and chambers.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> FALSE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> NOT GIVEN</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> FALSE</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> NOT GIVEN</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>8.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>9.</strong> Imhotep</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>10.</strong> 27th</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>11.</strong> mud brick</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>12.</strong> limestone</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>13.</strong> courtyards</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>14.</strong> wall</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>15.</strong> tunnels</td></tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 1: TRUE</h5>
-                        <p><strong>定位：</strong>Paragraph A 第2句</p>
-                        <p><strong>原文：</strong><span class="keyword">"the Step Pyramid of Djoser at Saqqara holds the distinction of being the earliest stone pyramid"</span></p>
-                        <p><strong>解析：</strong>题目中的"first pyramid"是原文"earliest stone pyramid"的<span class="synonym">同义替换</span>，与原文信息一致。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 2: FALSE</h5>
-                        <p><strong>定位：</strong>Paragraph B 第1句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Prior to the Step Pyramid, royal tombs were relatively simple structures known as mastabas"</span></p>
-                        <p><strong>解析：</strong>题目与原文信息<span class="synonym">直接矛盾</span>。之前的墓是简单的mastabas，不是complex structures。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 8: Imhotep</h5>
-                        <p><strong>定位：</strong>Paragraph B 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Designed by the brilliant architect Imhotep"</span></p>
-                        <p><strong>解析：</strong>原文原词，注意大写。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 9: 27th</h5>
-                        <p><strong>定位：</strong>Paragraph A 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Built during the 27th century BCE"</span></p>
-                        <p><strong>解析：</strong>数字信息，直接提取。</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Activities For Children</h1>
+<p>雅思阅读真题 · 第7篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Activities for Children
+A Twenty-five years ago, children in London walked to school and played in parks and
+playing fields after school and at the weekend. Today they are usually driven to school by
+parents anxious about safety and spend hours glued to television screens or computer
+games. Meanwhile, community playing fields are being sold off to property developers at
+an alarming rate. ‘This change in lifestyle has, sadly, meant greater restrictions on
+children,’ says Neil Armstrong, Professor of Health and Exercise Sciences at the University
+of Exeter. ‘If children continue to be this inactive, they’ll be storing up big problems for the
+future.’
+B In 1985, Professor Armstrong headed a five-year research project into children’s fitness.
+The results, published in 1990, were alarming. The survey, which monitored 700 11-16-
+year-olds, found that 48 per cent of girls and 41 per cent of boys already exceeded safe
+cholesterol levels set for children by the American Heart Foundation. Armstrong adds,
+“heart is a muscle and need exercise, or it loses its strength.” It also found that 13 per cent
+of boys and 10 per cent of girls were overweight. More disturbingly, the survey found that
+over a four-day period, half the girls and one-third of the boys did less exercise than the
+equivalent of a brisk 10-minute walk. High levels of cholesterol, excess body fat and
+inactivity are believed to increase the risk of coronary heart disease.
+C Physical education is under pressure in the UK – most schools devote little more than
+100 minutes a week to it in curriculum time, which is less than many other European
+countries. Three European countries are giving children a head start in PE, France, Austria
+and Switzerland – offer at least two hours in primary and secondary schools. These
+findings, from the European Union of Physical Education Associations, prompted
+specialists in children’s physiology to call on European governments to give youngsters a
+daily PE programme. The survey shows that the UK ranks 13th out of the 25 countries, with
+Ireland bottom, averaging under an hour a week for PE. From age six to 18British children
+received, on average, 106 minutes of PE a week. Professor Armstrong, who presented the
+findings at the meeting, noted that since the introduction of the national curriculum there
+had been a marked fall in the time devoted to PE in UK schools, with only a minority of
+pupils getting two hours a week.
+D As a former junior football international, Professor Armstrong is a passionate advocate
+for sport. Although the Government has poured millions into beefing up sport in the
+community, there is less commitment to it as part of the crammed school curriculum. This
+means that many children never acquire the necessary skills to thrive in team games. If
+they are no good at them, they lose interest and establish an inactive pattern of behaviour.
+When this is coupled with a poor diet, it will lead inevitably to weight gain. Seventy per cent
+of British children give up all sport when they leave school, compared with only 20 per cent
+of French teenagers. Professor Armstrong believes that there is far too great an emphasis
+on team games at school. “We need to look at the time devoted to PE and balance it
+between individual and pair activities, such as aerobics and badminton, as well as team
+sports. “He added that children need to have the opportunity to take part in a wide variety
+of individual, partner and team sports.
+E The good news, however, is that a few small companies and children’s activity groups
+have reacted positively and creatively to the problem. Take That, shouts Gloria Thomas,
+ 1
+striking a disco pose astride her mini-spacehopper. Take That, echo a flock of toddlers,
+adopting outrageous postures astride their space hoppers. ‘Michael Jackson, she shouts,
+and they all do a spoof fan-crazed shriek. During the wild and chaotic hopper race across
+the studio floor, commands like this are issued and responded to with untrammelled glee.
+The sight of 15 bouncing seven-year-olds who seem about to launch into orbit at every
+bounce brings tears to the eyes. Uncoordinated, loud, excited and emotional, children
+provide raw comedy.
+F Any cardiovascular exercise is a good option, and it doesn’t necessarily have to be high
+intensity. It can be anything that gets your heart rate up: such as walking the dog,
+swimming, miming, skipping, hiking. “Even walking through the grocery store can be
+exercise,” Samis-Smith said. What they don’t know is that they’re at a Fit Kids class, and
+that the fun is a disguise for the serious exercise plan they’re covertly being taken through.
+Fit Kids trains parents to run fitness classes for children. ‘Ninety per cent of children don’t
+like team sports,’ says company director, Gillian Gale.
+G A Prevention survey found that children whose parents keep in shape are much more
+likely to have healthy body weights themselves. “There’s nothing worse than telling a child
+what he needs to do and not doing it yourself,” says Elizabeth Ward, R.D., a Boston
+nutritional consultant and author of Healthy Foods, Healthy Kids . “Set a good example and
+get your nutritional house in order first.” In the 1930s and ’40s, kids expended 800 calories
+a day just walking, carrying water, and doing other chores, notes Fima Lifshitz, M.D., a
+pediatric endocrinologist in Santa Barbara. “Now, kids in obese families are expending only
+200 calories a day in physical activity,” says Lifshitz, “incorporate more movement in your
+family’s lifepark farther away from the stores at the mall, take stairs instead of the elevator,
+and walk to nearby friends’ houses instead of driving.”
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+The reading Passage has seven paragraphs A-G.
+Which paragraph contains the following information?
+Write the correct letter A-G, in boxes 1-4 on your answer sheet.
+1.....................  Health and living condition of children
+2.....................  Health organization monitored physical activity
+3.....................  Comparison of exercise time between UK and other countries
+4.....................  Wrong approach for school activity
+ 
+ 
+ Questions 5-8
+Do the following statements agree with the information given in Reading Passage?
+In boxes5-8 on your answer sheet, write
+   
+ TRUE         if the statement agrees with the information
+FALSE       if the statement contradicts the information
+NOT GIVEN if there is no information on this
+5..................... According to American Heart Foundation, cholesterol levels of boys are
+higher than girls’.
+6..................... British children generally do less exercise than some other European
+countries.
+7..................... Skipping becomes more and more popular in schools of UK.
+8..................... According to Healthy Kids, the first task is for parents to encourage their
+children to keep the same healthy body weight.
+Questions 9-13
+Choose the correct letter, A, B, CorD.
+Write your answers in boxes 9-13 on your answer sheet.
+9. According to paragraph A, what does Professor Neil Armstrong concern about?
+A Spending more time on TV affect academic level
+B Parents have less time stay with their children
+C Future health of British children
+D Increasing speed of property’s development
+10.  What does Armstrong indicate in Paragraph B?
+ 3
+A We need to take a 10 minute walk everyday
+B We should do more activity to exercise heart
+C Girls’ situation is better than boys
+D Exercise can cure many disease
+11.   What is aim of Fit Kids’ trainning?
+A Make profit by running several sessions
+B Only concentrate on one activity for each child
+C To guide parents how to organize activities for children
+D Spread the idea that team sport is better
+12.  What did Lifshitz suggest in the end of this passage?
+A Create opportunities to exercise your body
+B Taking elevator saves your time
+C Kids should spend more than 200 calories each day
+D We should never drive but walk
+13. What is main idea of this passage?
+A health of the children who are overweight is at risk in the future
+B Children in UK need proper exercises
+C Government mistaken approach for children
+D Parents play the most important role in children’s activity
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.A
+2.B
+3.C
+4.D
+5.NOT GIVEN
+6.TRUE
+ 8.FALSE
+9.C
+10.B
+11.C
+12.A
+13.B
+7.NOT GIVEN
+ 5</div>
+</div>
+</div>
 </body>
 </html>

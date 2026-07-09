@@ -1,401 +1,199 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Return Of Monkey Life - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>What Destroyed The Civilisation Of Easter Island - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题564/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Return Of Monkey Life</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-6
-Reading Passage 3 has ten paragraphs labelled A-J
-Which paragraph contains the following information?
-Write the correct letter A-J in boxes 1-6 on your answer sheet.
-1.....................  a description of the form in which Kuijpers' road surface is taken to
-its destination
-2.....................  an explanation of how Kuijpers makes a smooth road surface
-3.....................  something that has to be considered when evaluating Kuijpers'
-proposal
-4.....................  various economic reasons for reducing road noise
-5.....................  a generalisation about the patterns of use of vehicles on major roads
-6.....................  a summary of the different things affecting levels of noise on roads
- 
-Questions 7-9
-Label the diagram below.
-Choose NO MORE THAN ONE WORD AND/OR A NUMBER from the passage for each
-answer.
-Write your answers in boxes 7-9 on your answer sheet.
-Cross section of Kuijpers’ proposed noise-reducing road
-7.....................
-8.....................
-9.....................
-Questions 10-14
-Complete the table below using the list of words (A-K) from the box below.
-Write the correct letters in boxes 10-14 on your answer sheet.
-Kuijpers’ noise-reducing road: components and function
-Layer Componen Function
- 3</p>
-<p>• reduce oscillations caused by 
-stones
-10.....................
-• create pores which help 11.....................
-foundation</p>
-<p>• convert 12
-slots
-..................... to heat.
-    
-• help to remove 13.....................</p>
-<p>• can be adapted to absorb different 14.....................
-A frequencies
-B the engine
-C rubbish
-D resonators
-E air flow
-F dissipation
-G sound energy
-H pores
-I lanes
-J drainage
-K sources
- 4</p>
-<p>Solution:
- 
-1. G
-2. D
-3. J
-4. B
-5. I
-6. C
-7. asphalt
-8. 9
-9. concrete
-10. E
-11. J
-12. G
-13. C
-14. A
- 5</p>
-<p>Radio Automation
-Today they are everywhere. Production lines controlled by computers and operated by
-robots. There’s no chatter of assembly workers, just the whirr and click of machines. In the
-mid-1940s, the workerless factory was still the stuff of science fiction. There were no
-computers to speak of and electronics was primitive. Yet hidden away in the English
-countryside was a highly automated production line called ECME, which could turn out
-1500 radio receivers a day with almost no help from human hands.
-A. John Sargrove, the visionary engineer who developed the technology, was way ahead
-of his time. For more than a decade, Sargrove had been trying to figure out how to make
-cheaper radios. Automating the manufacturing process would help. But radios didn’t lend
-themselves to such methods: there were too many parts to fit together and too many wires
-to solder. Even a simple receiver might have 30 separate components and 80 handsoldered connections. At every stage, things had to be tested and inspected. Making radios
-required highly skilled labour—and lots of it.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>What Destroyed The Civilisation Of Easter Island</h1>
+<p>雅思阅读真题 · 第423篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>What destroyed the civilisation of Easter Island?
+A
+Easter Island, or Rapu Nui as it is known locally, is home to several hundred ancient
+human statues - the moai. After this remote Pacific island was settled by the Polynesians, it
+remained isolated for centuries. All the energy and resources that went into the moai -
+some of which are ten metres tall and weigh over 7,000 kilos - came from the island itself.
+Yet when Dutch explorers landed in 1722, they met a Stone Age culture. The moai were
+carved with stone tools, then transported for many kilometres, without the use of animals or
+wheels, to massive stone platforms. The identity of the moai builders was in doubt until well
+into the twentieth century. Thor Heyerdahl, the Norwegian ethnographer and adventurer,
+thought the statues had been created by pre-Inca peoples from Peru. Bestselling Swiss
+author Erich von Daniken believed they were built by stranded extraterrestrials.
+Modern science - linguistic, archaeological and genetic evidence - has definitively
+proved the moai builders were Polynesians, but not how they moved their creations. Local
+folklore maintains that the statues walked, while researchers have tended to assume the
+ancestors dragged the statues somehow, using ropes and logs.
+B
+When the Europeans arrived, Rapa Nui was grassland, with only a few scrawny trees. In
+the 1970s and 1980s, though, researchers found pollen preserved in lake sediments, which
+proved the island had been covered in lush palm forests for thousands of years. Only after
+the Polynesians arrived did those forests disappear. US scientist Jared Diamond believes
+that the Rapanui people - descendants of Polynesian settlers - wrecked their own
+environment. They had unfortunately settled on an extremely fragile island - dry, cool, and
+too remote to be properly fertilised by windblown volcanic ash. When the islanders cleared
+the forests for firewood and farming, the forests didn’t grow back. As trees became scarce
+and they could no longer construct wooden canoes for fishing, they ate birds. Soil erosion
+decreased their crop yields. Before Europeans arrived, the Rapanui had descended into
+civil war and cannibalism, he maintains. The collapse of their isolated civilisation, Diamond
+writes, is a ’worst-case scenario for what may lie ahead of us in our own future’.
+C
+The moai, he thinks, accelerated the self-destruction. Diamond interprets them as power
+displays by rival chieftains who, trapped on a remote little island, lacked other ways of
+asserting their dominance. They competed by building ever bigger figures. Diamond thinks
+they laid the moai on wooden sledges, hauled over log rails, but that required both a lot of
+wood and a lot of people. To feed the people, even more land had to be cleared. When the
+wood was gone and civil war began, the islanders began toppling the moai. By the
+nineteenth century none were standing.
+D
+Archaeologists Terry Hunt of the University of Hawaii and Carl Lipo of California State
+University agree that Easter Island lost its lush forests and that it was an ‘ecological
+catastrophe' - but they believe the islanders themselves weren’t to blame. And the moai
+certainly weren’t. Archaeological excavations indicate that the Rapanui went to heroic
+ 1
+efforts to protect the resources of their wind-lashed, infertile fields. They built thousands of
+circular stone windbreaks and gardened inside them, and used broken volcanic rocks to
+keep the soil moist. In short, Hunt and Lipo argue, the prehistoric Rapanui were pioneers of
+sustainable farming.
+E
+Hunt and Lipo contend that moai-building was an activity that helped keep the peace
+between islanders. They also believe that moving the moai required few people and no
+wood, because they were walked upright. On that issue, Hunt and Lipo say, archaeological
+evidence backs up Rapanui folklore. Recent experiments indicate that as few as 18 people
+could, with three strong ropes and a bit of practice, easily manoeuvre a 1,000 kg moai
+replica a few hundred metres. The figures’ fat bellies tilted them forward, and a D-shaped
+base allowed handlers to roll and rock them side to side.
+F
+Moreover, Hunt and Lipo are convinced that the settlers were not wholly responsible for the
+loss of the island’s trees. Archaeological finds of nuts from the extinct Easter Island palm
+show tiny grooves, made by the teeth of Polynesian rats. The rats arrived along with the
+settlers, and in just a few years, Hunt and Lipo calculate, they would have overrun the
+island. They would have prevented the reseeding of the slow-growing palm trees and
+thereby doomed Rapa Nui’s forest, even without the settlers’ campaign of deforestation. No
+doubt the rats ate birds’ eggs too. Hunt and Lipo also see no evidence that Rapanui
+civilisation collapsed when the palm forest did. They think its population grew rapidly and
+then remained more or less stable until the arrival of the Europeans, who introduced
+deadly diseases to which islanders had no immunity. Then in the nineteenth century
+slave traders decimated the population, which shrivelled to 111 people by 1877.
+G
+Hunt and Lipo’s vision, therefore, is one of an island populated by peaceful and ingenious
+moai builders and careful stewards of the land, rather than by reckless destroyers ruining
+their own environment and society. ‘Rather than a case of abject failure, Rapu Nui is an
+unlikely story of success’, they claim. Whichever is the case, there are surely some
+valuable lessons which the world at large can learn from the story of Rapa Nui.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Reading Passage has seven paragraphs, A-G.
+Choose the correct heading for each paragraph from the list of headings below.
+Write the correct number, i-ix, in boxes 1-7 on your answer sheet.
  
-B. In 1944, Sargrove came up with the answer. His solution was to dispense with most of
-the fiddly bits by inventing a primitive chip—a slab of Bakelite with all the receiver’s
-electrical components and connections embedded in it. This was something that could be
-made by machines, and he designed those too. At the end of the war, Sargrove built an
-automatic production line, which he called ECME (electronic circuit-making equipment), in
-a small factory in Effingham, Surrey.
+ 
+ 
+ 
+ 
+ 
+ 
+ List of Headings
+i    Evidence of innovative environment management practices
+ii    An undisputed answer to a question about the moai
+iii    The future of the moai statues
+iv    A theory which supports a local belief
+v    The future of Easter Island
+vi    Two opposing views about the Rapanui people
+vii    Destruction outside the inhabitants’ control
+viii    How the statues made a situation worse
+ix   Diminishing food resources
+  
+ 1    Paragraph A 1.....................
+2    Paragraph B 2.....................
+3    Paragraph C 3.....................
+4    Paragraph D 4.....................
+5    Paragraph E 5.....................
+6    Paragraph F 6.....................
+7    Paragraph G 7.....................
+Questions 8-11
+Complete the summary below.
+ChooseONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 8-11 on your answer sheet.
+Jared Diamond’s View
+ 3
+ 
+ 
+ 
+ 
  
-C. An operator sat at one end of each ECME line, feeding in die plates. She didn’t need
-much skill, only quick hands. From now on, everything was controlled by electronic
-switches and relays. First stop was the sandblaster, which roughened the surface of the
-plastic BO that molten metal would stick to it The plates were then cleaned to remove any
-traces of grit The machine automatically checked that the surface was rough enough
-before sending the plate to the spraying section. There, eight nozzles rotated into position
-and sprayed molten zinc over both sides of the plate. Again, the nozzles only began to
-spray when a plate was in place. The plate whizzed on. The next stop was the milling
-machine, which ground away the surface layer of metal to leave the circuit and other
-components in the grooves and recesses. Now the plate was a composite of metal and
-plastic. It sped on to be lacquered and have its circuits tested. By the time it emerged from
-the end of the line, robot hands had fitted it with sockets to attach components such as
-valves and loudspeakers. When ECME was working flat out; the whole process took 20
-seconds.
-D. ECME was astonishingly advanced. Electronic eyes, photocells that generated a small
-current when a panel arrived, triggered each step in the operation, BO avoiding excessive
-wear and tear on the machinery. The plates were automatically tested at each stage as
-they moved along the conveyor. And if more than two plates in succession were duds, the
-machines were automatically adjusted—or if necessary halted In a conventional factory, I
-workers would test faulty circuits and repair them. But Sargrove’s assembly line produced
-circuits so cheaply they just threw away the faulty ones. Sargrove’s circuit board was even
-more astonishing for the time. It predated the more familiar printed circuit, with wiring
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+   
+ Diamond believes that the Polynesian settlers on Rapa Nui destroyed its forests,
+cutting down its trees for fuel and clearing land for 8.....................
+Twentieth-century discoveries of pollen prove that Rapu Nui had once been covered in
+palm forests, which had turned into grassland by the time the Europeans arrived on the
+island.
+When the islanders were no longer able to build the 9..................... they needed to go
+fishing, they began using the island’s 10..................... as a food source, according to
+Diamond.
+Diamond also claims that the moai were built to show the power of the island’s
+chieftains, and that the methods of transporting the statues needed not only a great
+number of people, but also a great deal of 11.....................
+Questions 12-13
+ChooseTWOletters,A-E.
+Write the correct letters in boxes 12-13 on your answer sheet.
+On what points do Hunt and Lipo disagree with
+Diamond?
+A the period when the moai were created
+B how the moai were transported 
+C the impact of the moai on Rapanui society 
+D how the moai were carved 
+E the origins of the people who made the moai
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.ii
+2.ix
+3.viii
+4.i
+5.iv
+6.vii
+7.8.farming
+9.canoes
+10.birds
+11.wood
+12.B,C IN EITHER ORDER
+13.B,C IN EITHER ORDER
+vi
+ 5</div>
+</div>
+</div>
 </body>
 </html>

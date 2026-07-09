@@ -1,424 +1,184 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Persuaders - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Venus In Transit - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题550/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Persuaders</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Where logging occurs (that is, the cutting down of forests for timber) forest- dependent
-creatures in that area will be forced to leave. Ground-dwelling herbivores may return within
-a decade. However, arboreal marsupials (that is animals which live in trees) may not
-recover to pre-logging densities for over a century. As more forests are logged, animal
-population sizes will be reduced further. Regardless of the theory or model that we choose,
-a reduction in population size decreases the genetic diversity of a population and increases
-the probability of extinction because of any or all of the processes listed above. It is
-therefore a scientific fact that increasing the area that is loaded in any region will increase
-the probability that forest-dependent animals will become extinct.
- 2</p>
-<p>Questions 1-4
-Do the following statements agree with the views of the writer in Part A of Reading
-Passage?
-In boxes 1-4 on your answer sheet write
-YES    if the statement agrees with the writer
-NO    if the statement contradicts the writer
-NOT GIVEN    if it is impossible to say what the writer thinks about this
-Example Answer
-A link exist between the consequences of decisions and the decision making process itself. YES</p>
-<p>1.....................    Scientists are interested in the effect of forestry on native animals.
-2.....................    PVA has been used in Australia for many years.
-3.....................    A species is said to be extinct when only one individual exists.
-4.....................    Extinction is a naturally occurring phenomenon.
-Questions 5-8
-These questions are based on Part B of Reading Passage.
-In paragraphs A to D the author describes four processes which may contribute to the
-extinction of a species.
-Match the list ofprocesses (i-vi) to the paragraphs.
-Write the appropriate number (i-vi) in boxes 5-8 on your answer sheet.
-NB There are more processes than paragraphs so you will not use all of them.
-5.........
-...........
-.
-Paragraph A
-6.........
-...........
-.
-Paragraph B
-7.........
-...........
-.
-Paragraph C
-8.........
-...........
- 
-.
-Paragraph D
-Processes
-i Loss of ability to adapt
-ii Natural disasters
-iii An imblance of the sexes
-iv Human disasters
-v Evolution
-vi The haphazard nature of
- 
-reproduction
- 3</p>
-<p>Questions 9-11
-Based on your reading of Part C, complete the sentences below with words taken from the
-passage.
-Use NO MORE THAN THREE WORDS for boxes 9-11 on your answer sheet.
-9. While the population of a species may be on the increase, there is always a chance that
-small isolated groups 9......................
-10. Survival of a species depends on a balance between the size of a population and
-its 10......................
-11. The likelihood that animals which live in forests will become extinct is increased
-when 11......................
-Questions 12
-Choose the appropriate letter A-D and write it in box 12 on your answer sheet.
-12 An alternative heading for the passage could be:
-A The protection of native flora and fauna
-B Influential factors in assessing survival probability
-C An economic rationale for the logging of forests
-D Preventive measures for the extinction of a species
- 4</p>
-<p>7. i
-8. ii
-9. will/may not
-survive//will/may/could become3. NO
-extinct</p>
-<p>4. NOT
-GIVEN
-5. vi
-6.
-10. locality//distribution
-iii
-11. logging takes place/occurs
-12. B
- 5</p>
-<p>Reading Practice
- Pottery production in ancient Akrotiri
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Venus In Transit</h1>
+<p>雅思阅读真题 · 第411篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Venus in transit
+ June 2004 saw the first passage, known as a ‘transit’, of the planet Venus across the face
+of the Sun in 122 years. Transits have helped shape our view of the whole Universe, as
+Heather Cooper and Nigel Henbest explain
+A
+On 8 June 2004, more than half the population of the world were treated to a rare
+astronomical event. For over six hours, the planet Venus steadily inched its way over the
+surface of the Sun. This ‘transit’ of Venus was the first since 6 December 1882. On
+that occasion, the American astronomer Professor Simon Newcomb led a party to
+South Africa to observe the event. They were based at a girls’ school, where - it is alleged -
+the combined forces of three schoolmistresses outperformed the professionals with
+the accuracy of their observations.
+B
+For centuries, transits of Venus have drawn explorers and astronomers alike to the four
+corners of the globe. And you can put it all down to the extraordinary polymath Edmond
+Halley. In November 1677, Halley observed a transit of the innermost planet, Mercury, from
+the desolate island of St Helena in the South Pacific. He realised that, from different
+latitudes, the passage of the planet across the Sun’s disc would appear to differ. By timing
+the transit from two widely-separated locations, teams of astronomers could calculate the
+parallax angle - the apparent difference in position of an astronomical body due to a
+difference in the observer’s position. Calculating this angle would allow astronomers to
+measure what was then the ultimate goal: the distance of the Earth from the Sun. This
+distance is known as the astronomical unit’ or AU.
+ C    
+Halley was aware that the AU was one of the most fundamental of all
+astronomical measurements. Johannes Kepler, in the early 17th century, had shown that
+the distances of the planets from the Sun governed their orbital speeds, which were
+easily measurable. But no-one had found a way to calculate accurate distances to the
+planets from the Earth. The goal was to measure the AU; then, knowing the orbital speeds
+of all the other planets round the Sun, the scale of the Solar System would fall into
+place. However, Halley realised that Mercury was so far away that its parallax angle would
+be very difficult to determine. As Venus was closer to the Earth, its parallax angle would
+be larger, and Halley worked out that by using Venus it would be possible to measure
+the Suns distance to 1 part in 500. But there was a problem: transits of Venus, unlike those
+of Mercury, are rare, occurring in pairs roughly eight years apart every hundred or so years.
+Nevertheless, he accurately predicted that Venus would cross the face of the Sun in both
+1761 and 1769 - though he didn’t survive to see either.
+D
+Inspired by Halley’s suggestion of a way to pin down the scale of the Solar System, teams
+ 1
+of British and French astronomers set out on expeditions to places as diverse as India and
+Siberia. But things weren’t helped by Britain and France being at war. The person who
+deserves most sympathy is the French astronomer Guillaume Le Gentil.
+He was thwarted by the fact that the British were besieging his observation site at
+Pondicherry in India. Fleeing on a French warship crossing the Indian Ocean, Le
+Gentil saw a wonderful transit - but the ship’s pitching and rolling ruled out any attempt
+at making accurate observations. Undaunted, he remained south of the equator,
+keeping himself busy by studying the islands of Mauritius and Madagascar before setting
+off to observe the next transit in the Philippines. Ironically after travelling nearly
+50,000 kilometres, his view was clouded out at the last moment, a very dispiriting
+experience.
+E
+While the early transit timings were as precise as instruments would allow,
+the measurements were dogged by the ‘black drop’ effect. When Venus begins to cross the
+Sun’s disc, it looks smeared not circular - which makes it difficult to establish timings. This
+is due to diffraction of light. The second problem is that Venus exhibits a halo of light when
+it is seen just outside the Sun’s disc. While this showed astronomers that Venus was
+surrounded by a thick layer of gases refracting sunlight around it, both effects made it
+impossible to obtain accurate timings.
+F
+But astronomers laboured hard to analyse the results of these expeditions to observe
+Venus transits. Johann Franz Encke, Director of the Berlin Observatory, finally determined
+a value for the AU based on all these parallax measurements:
+153,340,000 km. Reasonably accurate for the time, that is quite close to today’s value of
+149,597,870 km, determined by radar, which has now superseded transits and all
+other methods in accuracy. The AU is a cosmic measuring rod, and the basis of how we
+scale the Universe today. The parallax principle can be extended to measure the distances
+to the stars. If we look at a star in January - when Earth is at one point in its orbit - it
+will seem to be in a different position from where it appears six months later. Knowing
+the width of Earth’s orbit, the parallax shift lets astronomers calculate the distance.
+G    
+June 2004’s transit of Venus was thus more of an astronomical spectacle than
+a scientifically important event. But such transits have paved the way for what might prove
+to be one of the most vital breakthroughs in the cosmos - detecting Earth-sized planets
+orbiting other stars.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Reading Passage has seven paragraphs, A-G.
+Which paragraph contains the following information?
+Write the correct letter, A-G, in boxes 1-4on your answer sheet.
  
-Excavations at the site of prehistoric Akrotiri, on the coast of the Aegean Sea, have
-revealed much about the technical aspects of pottery manufacture, indisputably one of the
-basic industries of this Greek city. However, considerably less is known about the socioeconomic context and the way production was organised.
-The bulk of pottery found at Akrotiri is locally made, and dates from the late fifteenth
-century BC. It clearly fulfilled a vast range of the settlement’s requirements: more than fifty
-different types of pots can be distinguished. The pottery found includes a wide variety of
-functional types like storage jars, smaller containers, pouring vessels, cooking pots,
-drinking vessels and so on, which all relate to specific activities and which would have been
-made and distributed with those activities in mind. Given the large number of shapes
-produced and the relatively high degree of standardisation, it has generally been assumed
-that most, if not all, of Akrotiri pottery was produced by specialised craftsmen in a
-nondomestic context. Unfortunately neither the potters’ workshops nor kilns have been
-found within the excavated area. The reason may be that the ceramic workshops were
-located on the periphery of the site, which has not yet been excavated. In any event, the
-ubiquity of the pottery, and the consistent repetition of the same types in different sizes,
-suggests production on an industrial scale.
-The Akrotirian potters seem to have responded to pressures beyond their households,
-namely to the increasing complexity of regional distribution and exchange systems. We can
-imagine them as fulltime craftsmen working permanently in a high production-rate craft
-such as pottery manufacture, and supporting themselves entirely from the proceeds of their
-craft. In view of the above, one can begin to speak in terms of mass-produced pottery and
-the existence of organised workshops of craftsmen during the period 1550-1500 BC. Yet,
-how pottery production was organised at Akrotiri remains an open question, as there is no
-real documentary evidence. Our entire knowledge comes from the ceramic material itself,
-and the tentative conclusions which can be drawn from it.
-The invention of units of quantity and of a numerical system to count them was of capital
-importance for an exchange-geared society such as that of Akrotiri. In spite of the absence
-of any written records, the archaeological evidence reveals that concepts of
-measurements, both of weight and number, had been formulated. Standard measures may
-already have been in operation, such as those evidenced by a graduated series of lead
-weights - made in disc form - found at the site. The existence of units of capacity in Late
-Bronze Age times is also evidenced by the notation of units of a liquid measure for wine on
-excavated containers.
-It must be recognised that the function of pottery vessels plays a very important role in
-determining their characteristics. The intended function affects the choice of clay, the
-production technique, and the shape and the size of the pots. For example, large storage
-jars (pithoi) would be needed to store commodities, whereas smaller containers would be
-used for transport. In fact, the length of a man’s arm limits the size of a smaller pot to a
-capacity of about twenty litres; that is also the maximum a man can comfortably carry.
-The various sizes of container would thus represent standard quantities of a commodity,
-which is a fundamental element in the function of exchange. Akrotirian merchants handling
-a commodity such as wine would have been able to determine easily the amount of wine
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+  1.....................    examples of different ways in which the parallax principle has been
+applied
+2.....................    a description of an event which prevented a transit observation
+3.....................    a statement about potential future discoveries leading on from transit
+observations
+4.....................    a description of physical states connected with Venus which early
+astronomical instruments failed to overcome
+Questions 5-8
+Look at the following statements (Questions 5-8) and the list of people below.
+Match each statement with the correct person, A, B, C or D .
+Write the correct letter, A, B, C or D , in boxes  5-8on your answer sheet.
+ 
+List of People
+A Edmond Halley
+BJohannes Kepler
+CGuillaume Le Gentil
+DJohann Franz Encke
+5.....................    He calculated the distance of the Sun from the Earth based on
+observations of Venus with a fair degree of accuracy.
+6.....................    He understood that the distance of the Sun from the Earth could be
+worked out by comparing observations of a transit.
+7.....................    He realised that the time taken by a planet to go round the Sun depends
+on its distance from the Sun.
+8.....................    He witnessed a Venus transit but was unable to make any calculations.
+Questions 9-13
+Do the following statements agree with the information given in Reading Passage?
+ 3
+  
+ In boxes9-13on your answer sheet, write
+TRUE    if the statement agrees with the information
+FALSE    if the statement contradicts the information
+NOT GIVEN if there is no information on this
+9.....................    Halley observed one transit of the planet Venus.
+10.....................    Le Gentil managed to observe a second Venus transit.
+11.....................    The shape of Venus appears distorted when it starts to pass in front of
+the Sun.
+12.....................    Early astronomers suspected that the atmosphere on Venus was toxic.
+13.....................    The parallax principle allows astronomers to work out how far away
+distant stars are from the Earth.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.F
+2.D
+3.G
+4.E
+5.D
+6.A
+7.8.C
+9.FALSE
+10.FALSE
+11.TRUE
+12.NOT GIVEN
+13.TRUE
+B
+ 5</div>
+</div>
+</div>
 </body>
 </html>

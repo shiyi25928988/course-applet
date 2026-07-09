@@ -1,386 +1,177 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gold Dusters  - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Is Graffiti Art Or Crime - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题222/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Gold Dusters </h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-7
-The reading passage has seven paragraphs, A-G.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Is Graffiti Art Or Crime</h1>
+<p>雅思阅读真题 · 第163篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Is Graffiti Art or Crime
+A
+The term graffiti derives from the Italian  graffito meaning ‘scratching’ and can be defined as
+uninvited marking or writing scratched or applied to objects, built structures and natural
+features. It is not a new phenomenon: examples can be found on ancient structures around
+the world, in some cases predating the Greeks and Romans. In such circumstances it has
+acquired invaluable historical and archaeological significance, providing a social history of
+life and events at that time. Graffiti is now a problem that has become pervasive, as a result
+of the availability of cheap and quick means of mark-making.
+B
+It is usually considered a priority to remove graffiti as quickly as possible after it appears.
+This is for several reasons. The first is to prevent ‘copy-cat’ emulation which can occur
+rapidly once a clean surface is defaced. It may also be of a racist or otherwise offensive
+nature and many companies and councils have a policy of removing this type of graffiti
+within an hour or two of it being reported. Also, as paints, glues and inks dry out over time
+they can become increasingly difficult to remove and are usually best dealt with as soon as
+possible after the incident. Graffiti can also lead to move serious forms of vandalism and,
+ultimately, the deterioration of an area, contributing to social decline.
+C
+Although graffiti may be regarded as an eyesore, any proposal to remove it from sensitive
+historic surfaces should be carefully considered: techniques designed for more robust or
+utilitarian surfaces may result in considerable damage. In the event of graffiti incidents, it is
+important that the owners of buildings or other structures and their consultants are aware of
+the approach they should take in dealing with the problem. The police should be informed
+as there may be other related attacks occurring locally. An incidence pattern can identify
+possible culprits, as can stylised signatures or nicknames, known as ‘tags’, which may
+already be familiar to local police. Photographs are useful to record graffiti incidents and
+may assist the police in bringing a prosecution. Such images are also required for
+insurance claims and can be helpful in cleaning operatives, allowing them to see the
+problem area before arriving on site.
+D
+There are a variety of methods that are used to remove graffiti. Broadly these divide
+between chemical and mechanical systems. Chemical preparations are based on
+dissolving the media; these solvents can range from water to potentially hazardous
+chemical ‘cocktails’. Mechanical systems such as wire-brushing and grit-blasting attempt to
+abrade or chip the media from the surface. Care should be taken to comply with health and
+safety legislation with regard to the protection of both passers-by and any person carrying
+out the cleaning. Operatives should follow product guidelines in terms of application and
+removal, and wear the appropriate protective equipment. Measures must be taken to
+ensure that run-off, aerial mists, drips and splashes do not threaten unprotected members
+of the public. When examining a graffiti incident it is important to assess the ability of the
+substrate to withstand the prescribed treatment. If there is any doubt regarding this, then
+ 1
+small trial areas should be undertaken to assess the impact of more extensive treatment.
+E
+A variety of preventive strategies can be adopted to combat a recurring problem of graffiti
+at a given site. As no two sites are the same, no one set of protection measures will be
+suitable for all situations. Each site must be looked at individually. Surveillance systems
+such as closed-circuit television may also help. In cities and towns around the country,
+prominently placed cameras have been shown to reduce anti-social behavior of all types
+including graffiti. Security patrols will also act as a deterrent to prevent recurring attacks.
+However, the cost of this may be too high for most situations. A physical barriers such as a
+wall, railings, doors or gates can be introduced to discourage unauthorized access to a
+vulnerable site. However, consideration has to be given to the impact measures have on
+the structure being protected. In the worst cases, they can be almost as damaging to the
+quality of the environment as the graffiti they prevent. In others, they might simply provide a
+new surface for graffiti.
+F
+One of the most significant problems associated with graffiti removal is the need to remove
+it from surfaces that are repeatedly attacked. Under these circumstances, the repeated
+removal of graffiti using even the most gentle methods will ultimately cause damage to the
+surface material. There may be situations where the preventive strategies mentioned
+above do not work or are not a viable proposition at a given site. Anti-graffiti coatings are
+usually applied by brush or spray leaving a thin veneer that essentially serves to isolate the
+graffiti from the surface.
+G
+Removal of graffiti from a surface that has been treated in this way is much easier, usually
+using low-pressure water which reduces the possibility of damage. Depending on the type
+of barrier selected it may be necessary to reapply the coating after each graffiti removal
+exercise.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Reading passage has seven paragraphs,  A-G.
 Which paragraph contains the following information?
-Write the correct letter, A-G, in boxes 1-7 on your answer sheet.
-1.....................   Examples of other groups treated the same way as deaf people
-2.....................   Why the word ‘deafness’ is no longer appropriate
-3.....................   The definition of the word ‘dear
-4.....................   Why deaf people might sometimes think negatively of themselves
-5.....................   How one can attain deafhood
-6.....................   Where the word ‘deafhood’ came from
-7.....................   Why deafhood is currently imperilled
- 
-Questions 8-10
-Choose the correct letter, A, B, C or D.
-Write your answers in boxes 8-10 on your answer sheet.
- 
-8. According to Dr Paddy Ladd, Deafhood
-A   is a more appropriate term than ‘hard of hearing’.
-B   doesn’t colonise SLPs as much as ‘deafness’ does.
-C   strives to get rid of the effects of colonisation.
-D   contributes positively to the life and culture of deaf people.
- 
-9. Oralism suggests that
-A   SLPs have no use for sign language.
-B   SLPs don’t belong in the hearing world.
-C   hearing people are superior to SLPs.
-D   SLPs are unable to acquire speech.
-10. Aborigines in Australia are similar to deaf people because 
- 3</p>
-<p>A   eugenicists also tried to eradicate them.
-B   they were also considered inferior by their oppressors.
-C   their languages were also disrespected.
-D   their languages were also colonised.</p>
-<p>Questions 11-13
-Answer the questions below with words taken from Reading Passage.
-Use NO MORE THAN TWO WORDS for each answer.
-11. What should deaf people use to communicate with each other, according to deafhood?
-11.....................
-12. Who has used oralism and audism to attack the deaf community? 12.....................
-13. What does the deaf community strive to achieve for sign language worldwide?
-13.....................
- 4</p>
-<p>Solution:
- 
-1. C
-2. D
-3. A
-4. G
-5. E
-6. B
-7.
-8. C
-9. A
-10. C
-11. natural language
-12. eugenicists
-13. official recognition</p>
-<p>Reading Practice
- Decision, Decision !
-Research explores when we can make a vital decision quickly and we need to proceed
-more deliberately</p>
-<p>A widely recognised legend tells us that in Gordium (in what is now Turkey) in the fourth
-century BC an oxcart was roped to a pole with a complex knot. It was said that the first
-person to untie it would become the king of Asia. Unfortunately, the knot proved impossible
-to untie. The story continues that when confronted with this problem, rather than
-deliberating on how to untie the Gordian knot. Alexander, the famous ruler of the Greeks in
-the ancient world, simply took out his sword and cut it in two – then went on to conquer
-Asia. Ever since the notion of a ‘Gordian solution’ has referred to the attractiveness of a
-simple answer to an otherwise intractable problem.</p>
-<p>Among researchers in the psychology of decision making, however, such solutions have
-traditionally held little appeal. In particular, the ‘conflict model’ of decision making proposed
-by psychologists Irving Janis and Leon Mann in their 1977 book, Decision Making, argued
-that a complex decision-making process is essential for guarding individuals and groups
-from the peril of ‘group-think’. Decisions made without thorough canvassing, surveying,
-weighing, examining and reexamining relevant information and options would be
-suboptimal and often disastrous. One foreign affair decision made by a well-known US
-political leader in the 1960s is typically held us as an example of the perils of inadequate
-thought, whereas his successful handling of a water crisis is cited as an example of the
-advantages of careful deliberation. However, examination of these historical events by
-Peter Suedfield, a psychologist at the University of British Columbia, and Roderick Kramer,
-a psychologist at the Stanford Graduate School of Business, found little difference in the
-two decision-making processes; both crises required and received complex consideration
-by the political administration, but later only the second one was deemed to be the
-effective.</p>
-<p>In general, however, organizational and political science offers little evidence that complex
-decisions fare better than simpler ones. In fact, a growing body of work suggests that in
-many situations simply ‘snap’ decisions with being routinely superior to more complex ones
-– an idea that gained widespread public appeal with Malcolm Gladwell’s best-selling book
-Blink (2005).</p>
-<p>An article by Ap Dijksterhuis of the University of Amsterdam and his colleagues, Making the
-Right Choice: the Deliberation-without-attention Effect’, runs very much in the spirit of
-Gladwell’s influential text. Its core argument is that to be effective, conscious (deliberative)
-decision making requires cognitive resources. Because increasingly complex decisions
-place increasing strain on those resources, the quality of our decisions declines as their
-complexity increases. In short, complex decisions overrun our cognitive powers. On the
-other hand, unconscious decision making (what the author refer to as ‘deliberation without
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+Write the correct letter,  A-G, in boxes  1-6 on your answer sheet.
+NBYou may use any letter more than once .
+1.....................   why chemically cleaning graffiti may cause damage
+2.....................   the benefit of a precautionary strategy on the gentle removal
+3.....................   the damaging and accumulative impact of graffiti on the community
+4.....................   the need for different preventive measures being taken to cope with graffiti
+5.....................   a legal proposal made to the owner of building against graffiti
+6.....................   the reasons for removing graffiti as soon as possible.
+ Questions 7-8
+Choose TWO letters,  A-E
+Write your answers in boxes  7-8 on your answer sheet.
+Which two statements are true concerning the removal of graffiti
+A   cocktail removal can be safer than water treatment
+B   small patch trial before applying large scale of removing
+C   Chemical treatments are the most expensive way of removing
+D   there are risks for both Chemical and medication method
+E   mechanical removals are much more applicable than Chemical treatments
+ Questions 9-10
+Choose TWO letters, A-E.
+Write your answers in boxes  9-10 on your answer sheet.
+Which TWO of the following preventive measures against graffiti are mentioned effectively
+in the passage?
+A  organise more anti-graffiti movement in the city communities
+B  increase the police patrols on the street
+ 3
+C  Build a new building with material repelling to water
+D  installing more visible security cameras
+E  Provide a whole new surface with a chemical coat
+ Questions 11-14
+Complete the Summary of the paragraphs of Reading Passage.
+Use NO MORE THAN TWO WORDS  from the passage for each answer.
+Write your answers in boxes  11-14 on your answer sheet. 
+Ancient graffiti is of significance and records the  11..................... of details life for that
+period.
+The police can recognize newly committed incidents of graffiti by the signature which is
+called 12..................... that they are familiar with
+Operatives ought to comply with relevant rules during the operation, and put on the
+suitable 13.....................
+Removal of graffiti from a new type of coating surface can be much convenient of
+using 14......................
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.D
+2.G
+3.B
+4.E
+5.C
+6.B
+7.B8.D
+9.B
+10.D
+11.social history
+12.tag
+13.protective equipment
+14.water
+ 5</div>
+</div>
+</div>
 </body>
 </html>

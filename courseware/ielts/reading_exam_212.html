@@ -1,377 +1,219 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Lessons From The Past - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Mrs Carlill And The Carbolic Smoke Ball - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题286/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Learning Lessons From The Past</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Mrs Carlill And The Carbolic Smoke Ball</h1>
+<p>雅思阅读真题 · 第212篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Mrs. Carlill and the Carbolic Smoke Ball
+On 14 January 1892, Queen Victoria’s grandson Prince Albert Victor, second in line to the
+British throne, died from flu. He had succumbed to the third and most lethal wave of the
+Russian flu pandemic sweeping the world. The nation was shocked. The people mourned.
+Albert was relegated to a footnote in history.
+Three days later, London housewife Louisa Carlill went down with flu. She was shocked.
+For two months, she had inhaled thrice daily from a carbolic smoke ball, a preventive
+measure guaranteed to fend off flu - if you believed the advert. Which she did. And why
+shouldn’t she when the Carbolic Smoke Ball Company had promised to cough up £100 for
+any customer who fell ill? Unlike Albert, Louisa recovered, claimed her £100 and set in train
+events that would win her lasting fame.
+It started in the spring of 1889. The first reports of a flu epidemic came from Russia. By the
+end of the year, the world was in the grip of the first truly global flu pandemic. The disease
+came in waves, once a year for the next four years, and each worse than the last.
+Whole cities came to a standstill. London was especially hard-hit. As the flu reached each
+annual peak, normal life stopped. The postal service ground to a halt, trains stopped
+running, banks closed. Even courts stopped sitting for lack of judges. At the height of the
+third wave in 1892, 200 people were buried every day at just one London cemetery. This flu
+was far more lethal than previous epidemics, and those who recovered were left weak,
+depressed, and often unfit for work. It was a picture repeated across the continent.
+Accurate figures for the number of the sick and dead were few and far between but Paris,
+Berlin and Vienna all reported a huge upsurge in deaths. The newspapers took an intense
+interest in the disease, not just because of the scale of it but because of who it attacked.
+Most epidemics carried off the poor and weak, the old and frail. This flu was cutting as
+great a swathe through the upper classes, dealing death to the rich and famous, and the
+young and fit.
+The newspaper-reading public was fed a daily diet of celebrity victims. The flu had worked
+its way through the Russian imperial family and invaded the royal palaces of Europe. It
+carried off the Dowager Empress of Germany and the second son of the king of Italy, as
+well as England’s future king. Aristocrats and politicians, poets and opera singers, bishops
+and cardinals - none escaped the attentions of the Russian flu.
+The public grew increasingly fearful. The press might have been overdoing the doom and
+gloom, but their hysterical coverage had exposed one terrible fact.
+The medical profession had no answer to the disease. This flu, which might ft not even
+have begun in Russia, was a mystery. What caused it and how did it spread? No one could
+agree on anything.
+By now, the theory that micro-organisms caused disease was gaining ground, g but no one
+had identified an organism responsible for flu (and wouldn’t until 1933). In the absence of a
+germ, many clung to the old idea of bad airs, or miasmas, possibly stirred by some great
+physical force - earthquakes, perhaps, or electrical phenomena in the upper atmosphere,
+even a passing comet.
+ 1
+Doctors advised people to eat well avoiding “unnecessary assemblies”, and if they were
+really worried, to stuff cotton wool up their nostrils. If they fell ill, they should rest, keep
+warm and eat a nourishing diet of “milk, eggs and farinaceous puddings”. Alcohol figured
+prominently among the prescriptions: one eminent English doctor suggested champagne,
+although he conceded “brandy M in considerable quantities has sometimes been given with
+manifest advantages”. French doctors prescribed warm alcoholic drinks, arguing that they
+never saw an alcoholic with flu. Their prescription had immediate results: over a three-day
+period, 1,200 of the 1,500 drunks picked up on the streets of Paris claimed they were
+following doctor’s orders.
+Some doctors gave drugs to ease symptoms - quinine for fever, salicin for headache,
+heroin for an “incessant cough”. But nothing in the pharmacy remotely resembled a cure.
+Not surprisingly, people looked elsewhere for help. Hoping to cash in while the pandemic
+lasted, purveyors of patent medicines competed for the public’s custom with ever more
+outrageous advertisements. One of the most successful was the Carbolic Smoke Ball
+Company.
+The carbolic smoke ball was a hollow rubber ball, 5 centimetres across, with a nozzle
+covered by gauze. Inside was a powder treated with carbolic acid, or phenol. The idea was
+to clutch it close to the nose and squeeze gently, inhaling deeply from the emerging cloud
+of pungent powder. This, the company claimed, would disinfect the mucous membranes,
+curing any condition related to “taking cold”. In the summer of 1890, sales were steady at
+300 smoke balls a month. In January 1891, the figure skyrocketed to 1,500.
+Eager to exploit the public’s mounting panic, the Carbolic Smoke Ball Company made
+increasingly extravagant claims. Oh 13 November 1892, its latest advert in the Pall Mall
+Gazette caught the eye of south London housewife Louisa Carlill. “Carbolic Smoke Ball,” it
+declared, “will positively cure colds, coughs, asthma, bronchitis, hoarseness, influenza,
+croup, whooping cough ...”. And the list went on. But it was the next part Mrs. Carlill found
+compelling. “A £100 reward will be paid by the Carbolic Smoke Ball Company to any
+person who contracts the increasing epidemic influenza, colds or any disease caused by
+taking cold, after having used the carbolic smoke ball according to the printed directions
+supplied with each ball. £1,000 is deposited with the Alliance bank, Regent Street, showing
+our sincerity in the matter.”
+Mrs. Carlill hurried off to buy a smoke ball, price 10 shillings. After carefully reading the
+instructions, she diligently dosed herself thrice daily until 17 January - when she fell ill.
+On 20 January, Louisa’s husband wrote to the Carbolic Smoke Ball Company.
+Unfortunately for them, Mr. Carlill happened to be a solicitor. His wife, he wrote, had seen
+their advert and bought a smoke ball on the strength of it. She had followed the instructions
+to the letter, and yet now - as their doctor could confirm - she had flu.
+There was no reply. But £100 was not a sum to be sneezed at. Mr. Carlill persisted. The
+company resisted. Louisa recovered and sued. In June, Mr. Justice Hawkins found in Mrs.
+Carlill’s favour. The company’s main defence was that adverts were mere “puffery” and
+only an idiot would believe such extravagant claims. Judge Hawkins pointed out that
+adverts were not aimed at the wise and thoughtful, but at the credulous and weak. A
+vendor who made a promise “must not be surprised if occasionally he is held to his
+promise”.
+Carbolic appealed. In December, three lord justices considered the case. Carbolic’s
+ 2
+lawyers tried several lines of defence. But in the end, the case came down to a single
+matter: not whether the remedy was useless, or whether Carbolic had committed fraud, but
+whether its advert constituted a contract - which the company had broken. A contract
+required agreement between two parties, argued Carbolic’s lawyers. What agreement had
+Mrs. Carlill made with them?
+There were times, the judges decided, when a contract could be one-sided. The advert had
+made a very specific offer to purchasers: protection from flu or £100. By using the smoke
+ball as instructed, Mrs. Carlill had accepted that offer. The company might just have
+wriggled out of if if it hadn’t added the bit about the £1,000 deposit. That, said the judges,
+gave buyers reason to believe Carbolic meant what it said. “It seems to me that if a person
+chooses to make extravagant promises of this kind, he probably does so because it pays
+him to make them, and, if he has made them, the extravagance of the promises is no
+reason in law why he should not be bound by them,” pronounced Lord Justice Bowen.
+Louisa got her £100. The case established the principle of the unilateral contract and is
+frequently cited today.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+ Do the following statements agree with the claims of the writer in Reading Passage?
+In boxes1-4 on your answer sheet write
+TRUE  if the statement agrees with the information
+FALSE  if the statement contradicts the information
+NOT GIVEN  if there is no information on this
+1..................... Cities rather than rural areas were badly affected by the pandemic flu.
+2..................... At the time of the flu pandemic, people didn’t know the link between micro-
+organisms and illnesses.
+3..................... People used to believe flu was caused by miasmas.
+4..................... Flu prescriptions often contained harmful ingredients.
+  
+ Questions 5-8
+Complete the diagram below.
+ChooseNO MORE THAN TWO WORDS from the passage for each answer.
+Write your answers in boxes 5-8 on your answer sheet.
+5.....................
+6.....................
+7.....................
+8.....................
  
-1. F
-2. A
-3. C
-4. B
-5. E
-6. G
-7. F
-8. TRUE
-9. NOT GIVEN
-10. FALSE
-11. TRUE
-12. C
-13. A
-14. D
- 5</p>
-<p>Reading Practice
- Finches on Islands</p>
-<p>Today, the quest continues. On Daphne Major-one of the most desolate of the Galápagos
-Islands, an uninhabited volcanic cone where cacti and shrubs seldom grow higher than a
-researcher’s knee-Peter and Rosemary Grant have spent more than three decades
-watching Darwin’s finch respond to the challenges of storms, drought and competition for
-food Biologists at Princeton University, the Grants know and recognize many of the
-individual birds on the island and can trace the birds’ lineages hack through time. They
-have witnessed Darwin’s principle in action again and again, over many generations of
-finches.</p>
-<p>The Grants’ most dramatic insights have come from watching the evolving bill of the
-medium ground finch. The plumage of this sparrow-sized bird ranges from dull brown to jet
-black. At first glance, it may not seem particularly striking, but among scientists who study
-evolutionary biology, the medium ground finch is a superstar. Its bill is a middling example
-in the array of shapes and sizes found among Galápagos finches: heftier than that of the
-small ground finch, which specializes in eating small, soft seeds, but petite compared to
-that of the large ground finch, an expert at cracking and devouring big, hard seeds.</p>
-<p>When the Grants began their study in the 1970s, only two species of finch lived on Daphne
-Major, the medium ground finch and the cactus finch. The island is so small that the
-researchers were able to count and catalogue every bird. When a severe drought hit in
-1977, the birds soon devoured the last of the small, easily eaten seeds. Smaller members
-of the medium ground finch population, lacking the bill strength to crack large seeds, died
-out.</p>
-<p>Bill and body size are inherited traits, and the next generation had a high proportion of bigbilled individuals. The Grants had documented natural selection at work-the same process
-that, over many millennia, directed the evolution of the Galápagos’ 14 unique finch species,
-all descended from a common ancestor that reached the islands a few million years ago.</p>
-<p>Eight years later, heavy rains brought by an El Nino transformed the normally meager
-vegetation on Daphne Major. Vines and other plants that in most years struggle for survival
-suddenly flourished, choking out the plants that provide large seeds to the finches. Small
-seeds came to dominate the food supply, and big birds with big bills died out at a higher
-rate than smaller ones. ‘Natural selection is observable,’ Rosemary Grant says. ‘It happens
-when the environment changes. When local conditions reverse themselves, so does the
-direction of adaptation.</p>
-<p>Recently, the Grants witnessed another form of natural selection acting on the medium
- 1</p>
-<p>ground finch: competition from bigger, stronger cousins. In 1982, a third finch, the large
-ground finch, came to live on Daphne Major. The stout bills of these birds resemble the
-business end of a crescent wrench. Their arrival was the first such colonization recorded on
-the Galápagos in nearly a century of scientific observation. ‘We realized,’ Peter Grant says,
-‘we had a very unusual and potentially important event to follow.’ For 20 years, the large
-ground finch coexisted with the medium ground finch, which shared the supply of large
-seeds with its bigger-billed relative. Then, in 2002 and 2003, another drought struck. None
-of the birds nested that year, and many died out. Medium ground finches with large bills,
-crowded out of feeding areas by the more powerful large ground finches, were hit
-particularly hard.</p>
-<p>When wetter weather returned in 2004, and the finches nested again, the new generation
-of the medium ground finch was dominated by smaller birds with smaller bills, able to
-survive on smaller seeds. This situation, says Peter Grant, marked the first time that
-biologists have been able to follow the complete process of an evolutionary change due to
-competition between species and the strongest response to natural selection that he had
-seen in 33 years of tracking Galápagos finches.</p>
-<p>On the inhabited island of Santa Cruz, just south of Daphne Major, Andrew Hendry of
-McGill University and Jeffrey Podos of the University of Massachusetts at Amherst have
-discovered a new, man-made twist in finch evolution. Their study focused on birds living
-near the Academy Bay research station, on the fringe of the town of Puerto Ayora. The
-human population of the area has been growing fast-from 900 people in 1974 to 9,582 in
-2001. Today Puerto Ayora is full of hotels and mai tai bars,’ Hendry says. ‘People have
-taken this extremely arid place and tried to turn it into a Caribbean resort.’</p>
-<p>Academy Bay records dating back to the early 1960s show that medium ground finches
-captured there had either small or large bills. Very few of the birds had mid-size bills. The
-finches appeared to be in the early stages of a new adaptive radiation: If the trend
-continued, the medium ground finch on Santa Cruz could split into two distinct subspecies,
-specializing in different types of seeds. But in the late 1960s and early 70s, medium ground
-finches with medium-sized bills began to thrive at Academy Bay along with small and largebilled birds. The booming human population had introduced new food sources, including
-exotic plants and bird feeding stations stocked with rice. Billsize, once critical to the finches’
-survival, no longer made any difference. ‘Now an intermediate bill can do fine,’ Hendry
-says.</p>
-<p>At a control site distant from Puerto Ayora, and relatively untouched by humans, the
-medium ground finch population remains split between large- and small-billed birds. On
-undisturbed parts of Santa Cruz, there is no ecological niche for a middling medium ground
-finch, and the birds continue to diversify. In town, though there are still many finches, oncedistinct populations are merging.</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+   Questions 9-12
+Look at the following people (Questions 9-12) and the list of statements.
+Match each person with the correct statement.
+Write the correct letter A-Fin boxes9-12 on your answer sheet.
+ List of Statements
+AFiled a complaint which was never responded to
+ 4
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ BBroke the contract made with Carbolic Smoke Ball Company
+CInitiated a legal case
+DDescribed the audience of advertisement
+EClaimed that most advertisements are fraudulent
+FTreated advertisement as a type of contract
+9.....................        Mrs. Carlill
+10.....................      Mrs. Carlill’s husband
+11.....................      Judge Hawkins
+12.....................      Lord Justice Bowen
+Questions 13
+Choose the correct letter, A, B, CorD.
+Write your answers in boxes 13 on your answer sheet.
+13. Why is Mrs. Carlill’s case often cited in present-day court trials?
+A It proved the untrustworthiness of advertisements.
+B It established the validity of one-sided contract.
+C It explained the nature of contract.
+D It defended the rights of consumers.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.NOT GIVEN
+2.FALSE
+3.TRUE
+4.NOT GIVEN
+5.gauze
+6.nozzle
+7.8.rubber ball
+9.C
+10.A
+11.D
+12.F
+13.B
+powder
+ 6</div>
+</div>
+</div>
 </body>
 </html>

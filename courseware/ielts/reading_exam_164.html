@@ -1,360 +1,199 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Great Migrations - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>John Franklin The Discovery Of The Slowness - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题223/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Great Migrations</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>attention’) requires no cognitive resources, so task complexity does not Effectiveness. The
-seemingly counterintuitive conclusion is that although conscious thought enhances simple
-decisions, the opposite holds true for more complex decisions.</p>
-<p>Dijksterhuis reports four Simple but elegant studies supporting this argument. In one,
-participants assessed the quality of four hypothetical cars by considering either four
-attributes (a simple task) or 12 attributes (a complex task). Among participants who
-considered four attributes, those who were allowed to engage in undistracted deliberative
-thought did better at discriminating between the best and worst cars. Those who were
-distracted and thus unable to deliberate had to rely on their unconscious thinking and did
-less well. The opposite pattern emerged when people considered 12 criteria. In this case,
-conscious deliberation led to inferior discrimination and poor decisions.</p>
-<p>In other studies, Dijksterhuis surveyed people shopping for clothes (‘simple’ products) and
-furniture (‘complex’ products). Compared with those who said they had deliberated long
-and hard, shoppers who bought with little conscious deliberation felt less happy with their
-simple clothing purchase but happier with the complex furniture purchases. Deliberation
-without attention actually produced better results as the decisions became more complex.</p>
-<p>From there, however, the researchers take a big leap. They write: There is no reason to
-assume that the deliberation-without-attention effect does not generalize to other types of
-choices – political, managerial or otherwise. In such cases, it should benefit the individual
-to think consciously about simple matters and to delegate thinking about more complicated
-matters to the unconscious.</p>
-<p>This radical inference contradicts standard political and managerial theory but doubtless
-comforts those in politics and management who always find the simple solution to the
-complex problem an attractive proposition. Indeed, one suspects many of our political
-leaders already embrace this wisdom.</p>
-<p>Still, it is there, in the realms of society and its governance, that the more problematic
-implications of deliberation without attention begin to surface. Variables that can be neatly
-circumscribed in decisions about shopping lose clarity in a world of group dynamics, social
-interaction, history and politics. Two pertinent questions arise. First, what counts as a
-complex decision? And second, what counts as a good outcome?</p>
-<p>As social psychologist Kurt Lewin (1890 – 1947) noted, a ‘good’ decision that nobody
-respects is actually bad, his classic studies of decision making showed that participating in
-deliberative processes makes people more likely to abide by the results. The issue here is
-that when political decision-makers make mistakes, it is their politics, or the relationship
-between their politics and our own, rather than psychology which is at fault.
- 2</p>
-<p>Gladwell’s book and Dijksterhuis’s paper are invaluable in pointing out the limitations of the
-conventional wisdom that decision quality rises with decision-making complexity. But this
-work still tempts us to believe that decision making is simply a matter of psychology, rather
-than also a question of politics, ideology and group membership. Avoiding social
-considerations in a search for general appeal rather than toward it.
- 3</p>
-<p>Questions 1-5
-Choose the correct letter, A, B, C or D.
-Write your answers in boxes 1-5 on your answer sheet.
- 
-1. The legend of the Gordian knot is used to illustrate the idea that
-A   anyone can solve a difficult problem
-B   difficult problems can have easy solutions
-C   the solution to any problem requires a lot of thought
-D   people who can solve complex problems make good leaders
- 
-2. The ‘conflict model’ of decision making proposed by Janis and Mann requires that
-A   opposing political parties be involved
-B   all-important facts be considered
-C   people be encouraged to have different ideas
-D   previous similar situations be thoroughly examined
- 
-3. According to recent thinking reinforced by Malcolm Gladwell, the best decisions
-A   involve consultation
-B   involve complex thought
-C   are made very quickly
-D   are the most attractive option
- 
-4.Dijksterhuis and his colleagues claim in their article that
-A   our cognitive resources improve as tasks become more complex
-B   conscious decision making is negatively affected by task complexity
-C   unconscious decision making is a popular approach
-D   deliberation without attention defines the way we make decisions
-5. Dijksterhuis’s car study found that, in simple tasks, participants
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>John Franklin The Discovery Of The Slowness</h1>
+<p>雅思阅读真题 · 第164篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>John Franklin: “the discovery of the slowness”
+A
+John Franklin (1786-1847) was the most famous vanisher of the Victorian era. He joined
+the Navy as a midshipman at the age of 14 and fought in the battles of Copenhagen and
+Trafalgar. When peace with the French broke out. he turned his attention to, and in
+particular to solve the conundrum of the Northwest Passage, the mythical clear-water route
+which would, if it existed, link the Atlantic and the Pacific Oceans above the northern coast
+of the American continent. The first expedition Franklin led to the Arctic was an arduous
+overland journey from Hudson Bay to the shores of the so-called Polar Ocean east of the
+Coppermine River. Between 1819 and 1822. Franklin and his twenty-strong team covered
+5550 miles on foot. Their expedition was a triumph of surveying – they managed to chart
+hundreds of miles of previously unknown coastline.
+B
+There followed a career as a travel writer and salon-goer {‘the man who ate his boots’ was
+Franklin’s tag-line), a second long Arctic expedition, and a controversial spell as Governor
+of Van Diemen’s Land. Then, in May 1845, Franklin set off with two ships – the Erebus and
+the Terror – and 129 men on the voyage that would kill him. In July, the convoy was seen
+by two whalers, entering Lancaster Sound. Nothing more would be heard of it for 14 years.
+Had the ships sunk or been iced in? Were the men dead, or in need of rescue? Or had they
+broken through to the legendary open polar sea, beyond the ‘ice barrier’?
+C
+In his personal correspondence and in his published memoirs. Franklin comes across as a
+man dedicated to the external duties of war and exploration, who kept introspection and
+self-analysis to a minimum. His blandness makes him an amenably malleable subject for a
+novelist, and Sten Nadolny has taken full advantage of this licence. Most important, he has
+endowed his John Franklin with a defining character trait for which there is no historical
+evidence: (‘slowness’, or ‘calmness’).
+D
+Slowness influences not only Franklin’s behaviour but also his vision, his thought and his
+speech. The opening scene of The Discovery of Slowness (The Discovery of Slowness by
+Sten Nadolny) – depicts Franklin as a young boy. playing catch badly because his reaction
+time is too slow. Despite the bullying of his peers, Franklin resolves not to fall into step with
+‘their way of doing things’. For Nadolny. Franklin’s fated fascination with the Arctic stems
+from his desire to find an environment suited to his peculiar slowness.
+E
+He describes Franklin as a boy dreaming of the ‘open water and the time without hours and
+days’ which exist in the far north, and of finding in the Arctic a place ‘where nobody would
+find him too slow’. Ice is a slow mover. Ice demands a corresponding patience from those
+who venture onto it. The explorers who have thrived at high latitude and at high altitudes
+haven’t usually been men of great speed. They have tended instead to demonstrate
+unusual self-possession, a considerable capacity for boredom, and a talent for what the
+ 1
+Scots call ‘tholing’, the uncomplaining endurance of suffering.
+F
+These were all qualities which the historical Franklin possessed in abundance, and so
+Nadolny’s concentration and exaggeration of them isn’t unreasonable. Even as an adult,
+his slowness of thought means that he is unable to speak fluently, so he memorises ‘entire
+fleets of words and batteries of response’, and speaks a languid, bric-a-brac language. In
+the Navy, his method of thinking first and acting later initially provokes mockery from his
+fellow sailors. But Franklin persists in doing things his way. and gradually earns the respect
+of those around him. To a commodore who tells him to speed up his report of an
+engagement, he replies: ‘When I tell something, sir. I use my own rhythm.’ A lieutenant
+says approvingly of him: ’Because Franklin is so slow, he never loses time.’
+G
+Since it was first published in Germany in 1983. The Discovery of Slowness has sold more
+than a million copies and been translated into 13 languages. It has been named as one of
+German literature’s twenty ‘contemporary classics’, and it has been as a manual and by
+European pressure groups and institutions representing causes as diverse as sustainable
+development, the Protestant Church, management science, motoring policy and pacifism.
+H
+The various groups that have taken the novel up have one thing in common: a dislike of the
+high-speed culture of Postmodernity. Nadolny’s Franklin appeals to them because he is
+immune to ‘the compulsion to be constantly occupied’, and to the idea that ‘someone was
+better if he could do the same thing fast.’ Several German churches have used him in their
+symposia and focus groups as an example of peacefulness, piety and self-confidence. A
+centre scheme (a ‘march of slowness’ or ‘of the slow’), inspired by the novel. Nadolny has
+appeared as a guest speaker for RIO, a Lucerne-based organisation which aims to
+reconcile management principles with ideas of environmental sustainability. The novel has
+even become involved in the debate about speed limits on German roads. Drive down an
+autobahn today, and you will see large road-side signs proclaiming ‘unhurriedness’ a
+slogan which deliberately plays off the title of the novel.
+I
+A management journal in the US described The Discovery of Slowness is a ‘major event
+not only for connoisseurs of fine historical fiction but also for those of us who concern
+themselves with leadership, communication and systems-thinking, issues’. It’s easy to see
+where the attraction lies for the management crowd. The novel is crammed with quotations
+about time-efficiency, punctiliousness and profitability: ‘As a rule, there are always three
+points in time: the right one. the lost one and the premature one’. ‘What did too late mean?
+They hadn’t waited for it long enough, that’s what it meant.’
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Reading Passage 3 has seven paragraphs  A-H.
+Which paragraph contains the following information?
+Write the correct letter  A-H, in boxes  1-6 on your answer sheet.
+NBYou may use any letter more than once .
+ 1.....................   What was Sir John Franklin’s occupation before he went on a career of the
+arctic exploration?
+2.....................   A story John Franklin reacted strangely when he met bullies by other
+children. 
+3.....................   Reason of popularity for the book  The Discovery of Slowness.
+4.....................   A depiction that Sten Nadolny’s biography on John Franklin is not much
+based on facts.
+5.....................   The particular career Sir John Franklin took after his expedition unmatched
+before.
+6.....................   what is the central scheme and environment conveyed by the book  The
+Discovery of Slowness.
+ Questions 7-10
+Complete the Summary paragraph described below.
+In boxes7-10 on your answer sheet
+Write the correct answer with  ONE WORD  chosen from the box below
+In his personal correspondence to and in his published memoirs by Sten Nadolny, John
+Franklin was depicted as a man dedicated to the exploration, and the word of “slowness”
+was used to define his  7..................... when Franklin was in his childhood, his
+determination to the  8..................... of the schoolboys was too slow for him to fall into step.
+And Franklin was said to be a boy dreaming finding in a place he could enjoy
+the 9..................... in the Arctic. Later in 20th, His biography of the discovery of slowness
+has been adopted as a  10..................... as for the movement such as sustainable
+development, or management science, motoring policy.
+A   exploration             B   blandness    C   personality            D   policy
+E   pressure                  F   guidebook    G   management
+H   timelessness           I   sports            J   bully                         K   evidence
+ 3
+ Questions 11-14
+Choose the correct letter,  A, B, C or D.
+Write your answers in boxes  11-14 on your answer sheet
+11. Why does the author mention  “the ice is a slow mover”  in the geological arctic, to
+demonstrate the idea
+A   of the difficulties Franklin conquered
+B   that Franklin had a dream since his childhood
+C   of fascination with the Arctic exploration
+D   that explorer like Franklin should possess the quality of being patient
+ 12. When Franklin was on board with sailors, how did he speak to his follow sailors
+A   he spoke in a way mocking his followers
+B   he spoke a bric-a-brac language to show his languish attitude
+C   he spoke in the words and phrases he previously memorized 
+D   he spoke in a rhythmical tune to save chatting time
+ 13. His effort to overcome his slowness in marine time life had finally won the
+A   understanding of his personality better
+B   capacity for coping with boredom
+C   respect for him as he insisted to overcome his difficulties
+D   valuable time he can use to finish a report
+14. Why is the book  The Discovery of Slowness  sold more than a million copies
+A   it contains aspects of the life people would like to enjoy
+B   it contains the information for the flag language applied in ships
+C   it induces a debate about speed limits German
+D   it contains the technique for symposia German churches
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+1.A
+2.D
+3.H
+4.C
+5.B
+6.H
+7.C8.J
+9.H
+10.F
+11.D
+12.C
+13.C
+14.A
+ 5</div>
+</div>
+</div>
 </body>
 </html>

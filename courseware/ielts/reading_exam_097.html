@@ -1,362 +1,193 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Childrens Comprehension - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Dinosaurs And The Secrets They Still Hold - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题137/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Childrens Comprehension</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>all tend to think of: the Tahitians and Hawaiians, the New Zealand Maori, and the curious
-people who erected those statues on Easter Island. But it was the Lapita who laid the
-foundation – who bequeathed to the island the language, customs, and cultures that their
-more famous descendants carried around the Pacific.</p>
-<p>While the Lapita left a glorious legacy, they also left precious few clues about themselves.
-A particularly intriguing clue comes from chemical tests on the teeth of several skeletons.
-Then as now, the food and water you consume as a child deposits oxygen, carbon,
-strontium, and other elements in your still-forming adult teeth. The isotope signatures of
-these elements vary subtly from place to place, so that if you grow up in, say, Buffalo, New
-York, then spend your adult life in California, tests on the isotopes in your teeth will always
-reveal your eastern roots.
-Isotope analysis indicates that several of the Lapita buried on Éfaté didn’t spend their
-childhoods here but came from somewhere else. And while isotopes can’t pinpoint their
-precise island of origin, this much is clear: At some point in their lives, these people left the
-villages of their birth and made a voyage by seagoing canoe, never to return. DNA teased
-from these ancient bones may also help answer one of the most puzzling questions in
-Pacific anthropology: Did all Pacific islanders spring from one source or many? Was there
-only one outward migration from a single point in Asia, or several from different points?
-“This represents the best opportunity we’ve had yet,” says Spriggs, “to find out who the
-Lapita actually were, where they came from, and who their closest descendants are today.”</p>
-<p>There is one stubborn question for which archaeology has yet to provide any answers: How
-did the Lapita accomplish the ancient equivalent of a moon landing, many times over? No
-one has found one of their canoes or any rigging, which could reveal how the canoes were
-sailed. Nor do the oral histories and traditions of later Polynesians offer any insights.
-“All we can say for certain is that the Lapita had canoes that were capable of ocean
-voyages, and they had the ability to sail them,” says Geoff Irwin, a professor of archaeology
-at the University of Auckland and an avid yachtsman. Those sailing skills, he says, were
-developed and passed down over thousands of years by earlier mariners who worked their
-way through the archipelagoes of the western Pacific making short crossings to islands
-within sight of each other. The real adventure didn’t begin, however, until their Lapita
-descendants neared the end of the Solomons chain, for this was the edge of the world. The
-nearest landfall, the Santa Cruz Islands, is almost 230 miles away, and for at least 150 of
-those miles, the Lapita sailors would have been out of sight of land, with empty horizons on
-every side.</p>
-<p>The Lapita’s thrust into the Pacific was eastward, against the prevailing trade winds, Irwin
-notes. Those nagging headwinds, he argues, may have been the key to their success.
-“They could sail out for days into the unknown and reconnoiter, secure in the knowledge
-that if they didn’t find anything, they could turn about and catch a swift ride home on the
-trade winds. It’s what made the whole thing work.” Once out there, skilled seafarers would
-detect abundant leads to follow to land: seabirds and turtles, coconuts and twigs carried out
-to sea by the tides and the afternoon pileup of clouds on the horizon that often betokens an
- 2</p>
-<p>island in the distance.
-All this presupposes one essential detail, says Atholl Anderson, professor of prehistory at
-the Australian National University and, like Irwin, a keen yachtsman: that the Lapita had
-mastered the advanced art of tacking into the wind. “And there’s no proof that they could do
-any such thing,” Anderson says. “There has been this assumption that they must have
-done so, and people have built canoes to re-create those early voyages based on that
-assumption. But nobody has any idea what their canoes looked like or how they were
-rigged.”</p>
-<p>However they did it, the Lapita spread themselves a third of the way across the Pacific,
-then called it quits for reasons known only to them. Ahead lay the vast emptiness of the
-central Pacific, and perhaps they were too thinly stretched to venture farther. They probably
-never numbered more than a few thousand in total, and in their rapid migration eastward
-they encountered hundreds of islands – more than 300 in Fiji alone. Supplied with such an
-embarrassment of riches, they could settle down and enjoy what for a time was Earth’s last
-Edens.</p>
-<p>Rather than give all the credit to human skill and daring, Anderson invokes the winds of
-change. El Niño, the same climate disruption that affects the Pacific today, may have
-helped scatter the first settlers to the ends of the ocean, Anderson suggests. Climate data
-obtained from slow-growing corals around the Pacific and from lake-bed sediments in the
-Andes of South America point to a series of unusually frequent El Niño around the time of
-the Lapita expansion, and again between 1,600 and 1,200 years ago, when the second
-wave of pioneer navigators made their voyages farther east, to the remotest corners of the
-Pacific. By reversing the regular east-to-west flow of the trade winds for weeks at a time,
-these “super El Niño” might have sped the Pacific’s ancient mariners on long, unplanned
-voyages could have been key to launching Polynesians across the wide expanse of open
-water between Tonga, where the Lapita stopped, and the distant archipelagoes of eastern
-Polynesia. “Once they crossed that gap, they could island-hop throughout the region, and
-from the Marquesas, it’s mostly downwind to Hawaii,” Anderson says. It took another 400
-years for mariners to reach Easter Island, which lies in the opposite direction – normally
-upwind. “Once again this was during a period of frequent El Niño activity.”
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Dinosaurs And The Secrets They Still Hold</h1>
+<p>雅思阅读真题 · 第97篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Dinosaurs and the secrets they still hold
+Dinosaur expert Dr Steve Brusatte continues to investigate the mysteries surrounding
+these fascinating prehistoric creatures
+I was recently part of a team of palaeontologists that discovered a new dinosaur. Living in
+what is now China, the species would have resembled a strange bird. It was about the size
+of a sheep and covered in feathers, with a sharp beak that it probably used to crack open
+shellfish. It was given the formal scientific name  Tongtianlong , but we called it ‘Mud
+Dragon’ because its skeleton was discovered in rock that had hardened from ancient mud.
+It seems that the creature got trapped in the mud and died. Then its fossil remains were
+found a few months ago when workmen were excavating a site in order to build a school.
+It is every dinosaur-obsessed child’s dearest wish to discover and name a completely new
+species. In fact what my colleagues and I did wasn’t that unusual. New dinosaurs are
+appearing everywhere these days – about 50 each year. And this pace shows no signs of
+slowing, as different areas continue to open up to fossil hunters and a fresh generation of
+scientists comes of age. Because of this plentiful supply of new fossils, we now know more
+about dinosaurs than we do about many modern animals. But there are still many unsolved
+mysteries.
+Dinosaurs didn’t start out as huge monsters like  Tyrannosaurus  Rex. Instead they evolved
+from a group of angular, cat-sized reptiles called dinosauromorphs. These creatures
+remained small and rare for millions of years until they developed into dinosaurs. The
+boundary between dinosauromorphs and dinosaurs is becoming less and less distinct with
+each new discovery that’s made, but what’s becoming clear is that it took millions of years
+for these first dinosaurs to spread around the world, grow to huge sizes and become truly
+dominant.
+Some discoveries in the 1970s, like the agile and strangely bird-like  Deinonychus , proved
+that dinosaurs were far more dynamic and intelligent than previously thought. Some
+palaeontologists even proposed that they were warm-blooded creatures like modern birds
+with a constant high body temperature that they controlled internally, rather than from
+warming themselves by lying in the sun. A few decades later opinions are still mixed. The
+problem is that dinosaurs can’t be observed. Palaeontologists must rely on studying fossils.
+Some results are convincing: we know from studying their bones that dinosaurs had rapid
+growth rates, just like modern, warm-blooded animals. Other palaeontologists, however,
+use the same fossils to suggest that dinosaurs were somewhere between cold-blooded
+reptiles and warm-blooded birds. More studies are needed to provide more clarity.
+The discovery of  Deinonychus  with its long arms, skinny legs, arched neck and big claws
+on its feet, helped to strengthen the theory that birds evolved from dinosaurs. In the late
+1990s, the discovery of thousands of feather- covered dinosaurs closed the argument.
+But the fossils raised another question: why did feathers first develop in dinosaurs? They
+probably originated as simple, hair-like strands — a necessary means of keeping warm.
+Many dinosaurs retained this basic fluffy coat, but in one group the strands modified. They
+grew bigger, started to branch out and changed into feathers like those on modern birds.
+They lined the arms, and sometimes the legs, forming wings. These feathers were probably
+for display: to attract mates or scare off rivals. They appeared in species such as the
+ 1
+ostrich-like  Ornithomimosaur . Such creatures were too large to fly. Flight may actually have
+come about by accident when smaller winged dinosaurs began jumping between trees or
+leaping in the air, and suddenly found that their wings had aerodynamic properties. This is
+one of the most stimulating new notions about dinosaurs and a fascinating area for further
+investigation.
+There’s something else that these feathers can tell us. They allow us to determine what
+colour dinosaurs were. If you look at modern bird feathers under a microscope, you can
+see tiny blobs called melanosomes. These structures contain melanin, one of the main
+colour-producing pigments in animals. Some are round, others are egg-shaped, etc. And
+that’s important, because different shapes contain different colour pigments. So if you can
+identify the shape, you can identify the colour. A few years ago, some palaeontologists
+realised that you could find melanosomes in particularly well-preserved fossil feathers.
+They discovered that different dinosaurs had different melanosomes, which meant they had
+a variety of colours. Dinosaurs, therefore, probably came in a rainbow of colours – yet
+another thing that links them to modern birds.
+The most enduring mystery of all, which has been argued about ever since the first
+dinosaur fossils were found, is ‘Why aren’t dinosaurs around today?’ Of course, we now
+know that birds evolved from dinosaurs, so some dinosaurs do continue in a sense. But
+there’s nothing like a  Tyrannosaurus  Rex today. They dominated the planet for over 150
+million years, but suddenly disappeared from the fossil record 66 million years ago. That’s
+when a 10 km-wide asteroid came out of space and struck what is now Mexico, impacting
+with huge force and unleashing earthquakes, tidal waves, wildfires and hurricane-force
+winds. Although palaeontologists still like to argue about what part the asteroid played in
+the dinosaurs’ extinction, there really isn’t much of a mystery left. The asteroid did it and did
+it quickly. There are few signs that dinosaurs were struggling before the impact. None
+survived except a few birds and some small furry mammals. They found themselves in an
+empty world, and as the planet started to recover, they evolved into new creatures,
+including the first apes, and so the long journey began to the beginning of humankind.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+ Complete the summary below.
+Choose ONE WORD ONLY  from the text for each answer.
+Write your answers in boxes  1-5 on your answer sheet.
+The discovery of Tongtianlong
+This species of dinosaur has only recently been found in an area of China. Scientists
+believe that it was bird-like in appearance and probably no bigger than a  1...................... It
+is thought to have eaten 2..................... and it used its  3..................... to get through their
+hard exterior. The fossil of Tongtianlong was found surrounded by  4..................... under the
+ground where the foundations of a new  5..................... were being dug.
+Questions 6-10
+Choose the correct letter,  A, B, C or D.
+Write the correct letter in boxes  6-10 on your answer sheet
+6. What does the writer suggest about finding new dinosaurs?
+  A Many scientists dream of being able to do so one day.
+  B It is probable that most have now been discovered.
+  C People are running out of places to look for them.
+  D It is becoming relatively common to dig one up.
+7. In the fourth paragraph, what does the writer suggest about palaeontologists?
+  A They should study the fossilised bones of dinosaurs more closely.
+  B Their theories are based on evidence that can be interpreted in different ways.
+  C It is impossible to have any confidence in the proposals they have made.
+  D It is worrying that they still cannot agree about dinosaurs’ body temperature.
+8. When describing the theory of how dinosaurs began to fly, the writer is
+  A amused that their flight probably came about by chance.
+  B surprised by the reason for the initial development of feathers.
+  C excited by the different possibilities it holds for future research.
+  D confused that feathers were also present on some creatures’ legs.
+9. One significance of melanosomes is that they
+   A provide further evidence of where birds evolved from.
+  B are only found in certain parts of the world.
+  C can be clearly seen in most fossilised feathers.
+  D are only found in certain birds and dinosaurs.
+10. Which of the following best summarises the writer’s point in the final paragraph?
+  A Scientists are right to continue questioning the effects of the asteroid strike.
+  B Large flightless dinosaurs may have existed after the asteroid hit.
+  C The dinosaurs were already declining before the asteroid hit.
+  D The effects of the asteroid strike killed most dinosaurs.
+Questions 11-13
+ 3
+Look at the following statements ( Questions 11-13 ) and the list of prehistoric animals
+below.
+Match each statement with the correct animal,  A, B, C or D.
+Write the correct letter,  A, B, C or D, in boxes 11-13 on your answer sheet.
+NB You may use any letter more than once.
+  
+  
+  
+  11..................... It may have used its feathers to frighten off members of the same species.
+12..................... This species resembles a large flightless bird that exists today.
+13..................... Finding this species made scientists revise their opinion of the brain power
+of dinosaurs.
+List of Prehistoric Animals
+A Tongtianlong
+B Tyrannosaurus Rex
+C Deinonychus
+D Ornithomimosaur
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.sheep
+2.shellfish
+3.beak
+4.rock
+5.school
+6.D
+7.8.C
+9.A
+10.D
+11.D
+12.D
+13.C
+B
+ 5</div>
+</div>
+</div>
 </body>
 </html>

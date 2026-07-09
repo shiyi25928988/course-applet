@@ -1,390 +1,167 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tele Working - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The History Of Cakes At Weddings - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题450/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Tele Working</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The History Of Cakes At Weddings</h1>
+<p>雅思阅读真题 · 第335篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The history of cakes at weddings
+ In Western cultures, since antiquity. Weddings customarily have been celebrated with a
+special cake. Ancient Roman wedding ceremonies were finalized by breaking a cake of
+wheat or barley over the bride’s head as n symbol of good fortune. The newly married
+couple then ate some of the crumbs together. Afterward, the wedding guests gathered up
+the remaining crumbs as tokens of good luck. Wedding guests were also supplied with
+sweetmeats called confetti, a sweet mixture of nuts, dried fruit and honeyed almonds.
+Handfuls of confetti were showered over the bride and groom; indeed, it seems to have
+been the custom to throw confetti about enthusiastically. Eventually, confetti in the form of
+sweets and nuts was replaced with rice, flower petals, or colored paper, and these new
+types of confetti continue to be thrown over newly married couples in many countries
+around the world.
+ When the Romans invaded Britain in 43 AD, many of their customs and traditions became
+part of British life. These customs included their wedding customs, and when the Normans
+invaded Britain in 1066 they brought many French traditions. Other changes came about
+due to increased trade and contact with Europe, but present-day British wedding traditions
+remain firmly rooted in the past. In medieval Britain, small spiced buns, which were
+common everyday fare, were often eaten at weddings. These were stacked in a towering
+pile, as high as possible. If the bride and groom were able to kiss over the tall stack, it
+augured a lifetime of riches. The earliest British recipe exclusively for eating at weddings is
+Bride Pie, which was recorded in 1685. This was a large round pie with an elaborately
+decorated pastry crust that concealed a filling of oysters, pine nuts lamb and spices. Each
+guest had to eat a small piece of the pier not to do so was considered extremely impolite. A
+ring was traditionally placed in the pie, and the lady who found it would be next to marry.
+ In the 17th century, Bride Pie was changed into Bride Cake, the predecessor of the modern
+British wedding cake. Cakes containing dried fruit and sugar, symbols of prosperity,
+gradually became the centerpieces for weddings. Some people made Bride Cake in the
+cheaper form of two large rounds of pastry sandwiched together with currants and
+sprinkled with sugar. Very few homes at the time could boast of having ovens, but this type
+of pastry cake could be cooked on a baking stone on the hearth.
+ Later in the 17th century, there was a new development when wedding cakes began to be
+made in pairs, one for the bride and another for the groom. Both cakes were dark, heavy
+fruitcakes; the groom’s cake was smaller than the bride’s cake, and was cut up into little
+squares that were placed in boxes for the guests to take home as a wedding memento.
+Groom’s cakes gradually died out and are no longer part of British weddings. However, the
+tradition has undergone a revival in the United States, where for many years the groom’s
+cake has served as a wedding gift for guests. Modern groom’s cakes are often formed and
+decorated to depict the groom’s hobby, for example a golf bag, a camera, a chess board.
+ 1
+ Groom’s cakes were never covered with icing, but Bride Cake covered with white icing first
+appeared sometime in the 17th century. After the cake was baked, it was covered with a
+pure white, smooth icing made with double refined sugar, egg whites, and orange-flower
+water. The mixture was beaten for two hours, then spread over the cake and dried in the
+oven until hard. A pure white color was much sought after for wedding cake icing because
+white icing meant that only the finest refined sugar had been used. Thus a pure white cake
+was a status symbol, as it displayed the family’s wealth.
+ The late 1800s in Britain saw the introduction of a new tradition, with the first multi-tiered
+wedding cakes. These were impressive cakes: they were heavy because they were made
+with so much dried fruit, and highly decorated with icing and embellished with sugar
+flowers, doves, horseshoes and bells. The first multi-tiered cakes comprised iced cakes
+stacked on top of each other rather like a succession of boxes gradually decreasing in size.
+The cakes from the upper tiers did not sink into the lower tiers because they were a bit put
+on top of each other until the icing between each cake had had time to harden. It was not
+until the beginning of the 20th century that the cake tiers were separated and supported by
+columns.
+Twenty-first-century weddings are big business for Britain’s wedding industry. Over
+300,000 people get married each year and a wedding can cost thousands of pounds. The
+cost of the all-important wedding cake can be hundreds of pounds, depending on the
+dimension and design. It will be interesting to see whether wedding cakes continue to be
+popular at weddings.
+ 2
+ QUESTIONS 1 - 6
+Do the following statements agree with the information given in Reading Passage 1?
+In boxes 1-6 on your answer sheet, write
+TRUE                   if the statement agrees with the information
+FALSE                 if the statement contradicts the information
+NOT GIVEN         if there is no information on this
+1..................... Breaking a cake over the bride’s head was the last part of an ancient
+Roman wedding ceremony.
+ 2..................... Confetti is still made of nuts, dried fruit and honeyed almonds.
+ 3..................... The groom’s family used to supply the confetti.
+ 4..................... It was considered lucky for a newly married couple to be able to kiss over a
+tower of spiced buns.
+5..................... Only brides were allowed to eat Bride Pie.
+ 6..................... The wedding cakes eaten in Britain today developed from Bride Cake of the
+17th century.
+QUESTIONS 7 - 9
+Complete the notes below.
+Choose ONE WORD ONLY  from the passage for each answer.
+Write your answer in boxes 7-9 on your answer sheet.
+ Wedding cakes
+QUESTIONS 10 - 13
+Label the diagram below.
+Choose ONE WORD ONLY  from the passage for each answer.
+ 3
+Write your answers in boxes 10-13 on your answer sheet.
  
-1. I
-2. F
-3. J
-4. D
-5. H
-6. B
-7.
-8. G
-9. NO
-10. NO
-11. NOT GIVEN
-12. YES
-13. NO</p>
-<p>Reading Practice
- MARCEL BICH
-MARCEL BICH
  
-The man who turned a luxury item into an everyday object 
- 
-Marcel Bich, a French manufacturer of traditional ink pens, was the man who turned the
-ballpoint pen into an item that today almost anyone can afford. Bich was appalled at the
-poor quality of the ballpoint pens that were available, and was also shocked at their high
-cost. However, he recognised that the ballpoint was a firmly established invention, and he
-decided to design a cheap pen that worked well and would be commercially successful.
- 
-Bich went to the Biro brothers and asked them if he could use the design of their original
-invention in one of his own pens. In return, he offered to pay them every time he sold a
-pen. Then, for two years, Bich studied the detailed construction of every ballpoint pen that
-was being sold, often working with a microscope.
- 
-By 1950, he was ready to introduce his new wonder: a plastic pen with a clear barrel that
-wrote smoothly, did not leak and only cost a few cents. He called it the 'Bic Cristal'. The
-ballpoint pen had finally become a practical writing instrument. The public liked it
-immediately, and today it is as common as the pencil. In Britain, they are still called Biros,
-and many Bic models also say 'Biro' on the side of the pen, to remind people of their
-original inventors.
-Bich became extremely wealthy thanks to his invention, which had worldwide appeal. Over
-the next 60 years his company, Societe Bic, opened factories all over the world and
-expanded its range of inexpensive products. Today, Bic is as famous for its lighters and
-razors as it is for its pens, and you can even buy a Bic mobile phone.
- 1</p>
-<p>Solution:
  
-1. afford
-2. high cost
-3. commercially
-successful
+ 
  
-5. studied
-6. public
-7. products
-4. (original) invention
- 3</p>
-<p>Reading Practice
- Marketing And Mind Control
-How marketing and advertising appeal to the associative nature of the brain
-While there had been a long tradition of giving rings as a commitment to marry, the custom
-of giving diamond engagement rings was in large part manufactured by one of the most
-effective marketing campaigns in history . In the early 1900s, diamond sales were
-declining, posing a serious problem for the company that essentially had control over the
-diamond market. In 1938, this company hired an advertising agency. Which proposed
-reshaping social attitudes toward diamonds? As well as magazines showing film stars
-draped in diamonds, the agency arranged for movies to incorporate diamond engagement
-rings into their plots. The campaign culminated with the slogan:' A diamond is forever. At
-the time, the approach was unique. Rather than pushing a brand, the objective was to
-promote diamonds as the symbol of everlasting love. This was achieved by exploiting the
-associative nature of the brain: associating neurons! Activated by the concept of' love ' with
-neurons that encoded the concept of “diamonds. By 1941, diamond sales had increased by
-55 %.
-Advertising comes in many forms, from blatant neon signs to subtly embedded products in
-movies. In each case, the goal is to mould our habits, desires and opinions. Our visual
-system is targeted by an avalanche of information on the internet, street posters, and
-billboards and in movie theatres. Our auditory system submits to catchy radio jingles and
-telemarketers. More surreptitiously, our olfactory system is targeted by variations of vanilla
-and citrus perfumes aimed at enticing US to linger in a retail outlet. It is difficult to measure
-how effective these campaigns are, but as in the ' A diamond is forever ’ campaign, they
-can be so successful that they change the fabric of our culture. In the case of bottled water,
-we are swayed by advertising into paying for something that we can obtain for free. Most
-people cannot distinguish bottled from tap water, much less between brands of bottled
-water, which is why you rarely hear of a bottled water company proposing a blind taste test.
-So why is marketing such an effective mind - control technique? It is interesting to consider
-whether other animals exhibit anything analogous to humans ' susceptibility to advertising.
-If we provide a lab rat with two types of cereal, it will consume approximately the same
-amount of each. However, if we put that rat with another rat that spent its day eating just
-one type, when faced with a choice, our rat will now show a preference for the same type
-as the other rat was eating. Psychologists call this ' socially transmitted food preference ‘.
-What many regard as the first documented examples of cultural learning in primates started
-with a clever monkey that lived in a colony of Japanese monkeys on the island of Koshima.
-She began taking her dirt - covered sweet potatoes to the river to wash them before eating
-them. Upon seeing this, a few 11 other open - minded monkeys picked up on the idea.
-Potato washing then spread from monkey to monkey and, over the course of a few years,
-most monkeys were eating clean potatoes. Humans are clearly not the only animals to
-engage in imitation and social learning.
-Learning by observation can be an extraordinarily valuable brain feature, this is how we
-learn to communicate and perform motor skills as well as deal with many everyday
-problems. For example, a newcomer struggling to purchase tickets and navigate the
-subway system in a foreign city may step back to learn from the people nearby. Humans
-and other primates exhibit multiple forms of imitative learning and this is called cultural
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 10. Examples of wedding cakes with several 10......................
+11. In the early 1900s, 11..................... were used to keep individual cakes apart.
+12. The size of these cakes as well as their 12..................... affects pricing.
+13. Hardened 13..................... between cakes stopped higher cakes sinking into tower
+cakes.
+ 4
+  
+  
+  
+  
+  
+  Solution:
+ 1.TRUE
+2.FALSE
+3.NOT GIVEN
+4.TRUE
+5.FALSE
+6.TRUE
+7.8.OVENS
+9.HOBBY
+10.BOXES
+11.COLUMNS
+12.DESIGN
+13.ICING
+PASTRY
+ 5</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions></div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution></div>
+</div>
+</div>
 </body>
 </html>

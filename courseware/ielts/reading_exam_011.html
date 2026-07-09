@@ -1,279 +1,171 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The History of Glass - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-        }
-        .passage-box {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
-        .question-card {
-            background: #eff6ff;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
-        }
-        .question-card h4 {
-            margin: 0 0 12px 0;
-            color: #1e40af;
-        }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
-            display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
-            text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Agriculture And Tourism - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📖 阅读真题 21/50</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
-        </aside>
-
-        <main class="main">
-            <div class="page-hero">
-                <h1>📖 The History of Glass</h1>
-                <p>剑桥14 Test1 Passage1 · 题型：填空 · T/F/NG · 完整逐题解析</p>
-            </div>
-
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 21: The History of Glass</h3>
-                    <div class="difficulty diff-easy">难度：★★☆☆☆ 简单</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：说明文 · 话题：材料 · 历史 · 建议时间：15-17分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>The History of Glass is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the history of glass has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>B</strong></p>
-                        <p>The History of Glass is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the history of glass has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>C</strong></p>
-                        <p>The History of Glass is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the history of glass has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>D</strong></p>
-                        <p>The History of Glass is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the history of glass has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>E</strong></p>
-                        <p>The History of Glass is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the history of glass has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>F</strong></p>
-                        <p>The History of Glass is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the history of glass has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>G</strong></p>
-                        <p>The History of Glass is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the history of glass has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>H</strong></p>
-                        <p>The History of Glass is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the history of glass has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-8: TRUE / FALSE / NOT GIVEN</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Do the following statements agree with the information given in the reading passage?</p>
-                        <p style="margin:0 0 8px 0;font-size:0.9rem;"><strong>Write:</strong></p>
-                        <ul style="margin:0 0 16px 0;font-size:0.9rem;">
-                            <li><strong>TRUE</strong> if the statement agrees with the information</li>
-                            <li><strong>FALSE</strong> if the statement contradicts the information</li>
-                            <li><strong>NOT GIVEN</strong> if there is no information on this</li>
-                        </ul>
-                        <p style="margin:8px 0;"><strong>1.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>2.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>3.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>4.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>5.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>6.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>7.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>8.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                    </div>
-                    <div class="question-card">
-                        <h4>Questions 9-14: Complete the Summary</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
-                        <p style="line-height:2.2;">
-                            The Step Pyramid was designed by the architect <input type="text" class="blank-input" placeholder="...">. It was built during the <input type="text" class="blank-input" placeholder="..."> century BCE for Pharaoh Djoser. Unlike previous tombs made of <input type="text" class="blank-input" placeholder="...">, this pyramid was constructed from <input type="text" class="blank-input" placeholder="...">. The complex includes various <input type="text" class="blank-input" placeholder="..."> and temples, surrounded by a high <input type="text" class="blank-input" placeholder="...">. Underground, there are over 5 kilometers of <input type="text" class="blank-input" placeholder="..."> and chambers.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> FALSE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> NOT GIVEN</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> FALSE</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> NOT GIVEN</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>8.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>9.</strong> Imhotep</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>10.</strong> 27th</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>11.</strong> mud brick</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>12.</strong> limestone</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>13.</strong> courtyards</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>14.</strong> wall</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>15.</strong> tunnels</td></tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 1: TRUE</h5>
-                        <p><strong>定位：</strong>Paragraph A 第2句</p>
-                        <p><strong>原文：</strong><span class="keyword">"the Step Pyramid of Djoser at Saqqara holds the distinction of being the earliest stone pyramid"</span></p>
-                        <p><strong>解析：</strong>题目中的"first pyramid"是原文"earliest stone pyramid"的<span class="synonym">同义替换</span>，与原文信息一致。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 2: FALSE</h5>
-                        <p><strong>定位：</strong>Paragraph B 第1句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Prior to the Step Pyramid, royal tombs were relatively simple structures known as mastabas"</span></p>
-                        <p><strong>解析：</strong>题目与原文信息<span class="synonym">直接矛盾</span>。之前的墓是简单的mastabas，不是complex structures。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 8: Imhotep</h5>
-                        <p><strong>定位：</strong>Paragraph B 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Designed by the brilliant architect Imhotep"</span></p>
-                        <p><strong>解析：</strong>原文原词，注意大写。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 9: 27th</h5>
-                        <p><strong>定位：</strong>Paragraph A 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Built during the 27th century BCE"</span></p>
-                        <p><strong>解析：</strong>数字信息，直接提取。</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Agriculture And Tourism</h1>
+<p>雅思阅读真题 · 第11篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Agriculture and Tourism
+ A. Linkages between the Agri-Food Sector and Tourism offer significant opportunities for
+the development of both sectors within the region. These linkages could lead to ensuring
+the sustainability of the region’s tourism product thus ensuring it preservation. Agriculture
+and tourism — two of Wisconsin’s most industries — are teaming up in southwestern
+Wisconsin has found that tourists, rural communities, and some farmers could benefit from
+stronger efforts to promote and market agricultural tourism there. In 1990, agricultural
+tourism project members surveyed 290 visitors to the annual Monroe Cheese Festival and
+164 visitors to the Picnic on the Farm, a one-time event held in Platteville in conjunction
+with the Chicago Bears summer training camp. More than one-half of those surveyed
+responded favorably to a proposed tour, saying they would be interested in participating in
+some type of agricultural tour in southwestern Wisconsin. Survey respondents reported that
+they would prefer to visit cheese factories, sausage processing plants, dairy farms, and
+historical farm sites, as well as enjoy an old-fashioned picnic dinner. The study also found
+strong interest in visiting specialty farms (strawberries, cranberries, poultry, etc.). More than
+75 percent of the Cheese Day visitors planned ahead for the trip, with 37 percent planning
+at least two months in advance.
+B. More than 40 percent of the visitors came to Monroe for two- or three-day visits. Many
+stopped at other communities on their way to Cheese Days. Visitors at both events
+indicated that they were there to enjoy themselves and were willing to spend money on
+food and arts and crafts. They also wanted the opportunity to experience the “country”
+while there. The study found that planning around existing events should take into account
+what brought visitors to the area and provide additional attractions that will appeal to them.
+For example, visitors to Cheese Days said they were on a holiday and appeared to be
+more open to various tour proposals. Picnic visitors came specifically to see the Chicago
+Bears practice. They showed less interest in a proposed agricultural tour than Cheese Day
+visitors, but more interest in a picnic dinner.
+C. The study identified three primary audiences for agricultural tourism: 1) elderly people
+who take bus tours to see the country; 2) families interested in tours that could be enjoyed
+by both parents and children; and 3) persons already involved in agriculture, including
+international visitors. Agricultural tourism can serve to educate urban tourists about the
+problems and challenges facing farmers, says Andy Lewis, Grant county community
+development agent. While agriculture is vital to Wisconsin, more and more urban folk are
+becoming isolated from the industry. In fact, Lewis notes, farmers are just as interested in
+the educational aspects of agricultural tours as they are in any financial returns.
+D. “Farmers feel that urban consumers are out of touch with farming,” Lewis says. “If
+tourists can be educated on issues that concern farmers, those visits could lead to policies
+more favorable to agriculture.” Animal rights and the environment are examples of two
+issues that concern both urban consumers and farmers. Farm tours could help consumers
+get the farmer’s perspective on these issues, Lewis notes. Several Wisconsin farms
+already offer some type of learning experience for tourists. However, most agricultural
+tourism enterprises currently market their businesses independently, leading to a lack of a
+concerted effort to promote agricultural tourism as an industry.
+ 1
+ 
+E. Lewis is conducting the study with Jean Murphy, assistant community development
+agent. Other participants include UW-Platteville Agricultural Economist Bob Acton, the
+Center for Integrated Agricultural Systems, UW-Extension Recreation Resources Center,
+the Wisconsin Rural Development Center, and Hidden Valleys, a Southwestern Wisconsin
+regional tourism organization. This past fall, Murphy organized several workshops with
+some Green and Grant County farmers, local business leaders, and motor coach tour
+operators to discuss how best to organize and put on farm tours. Committees were formed
+to look at the following: tour site evaluations, inventory of the area’s resources, tour
+marketing, and familiarization of tours. The fourth committee is organizing tours for people
+such as tour bus guides and local reporters to help better educate them about agricultural
+tourism. Green County farmers already have experience hosting visitors during the annual
+Monroe Cheese Days. Green county Tourism Director Larry Lindgren says these farmers
+are set to go ahead with more formal agricultural tours next year. The tours will combine a
+farm visit with a visit to a local cheese factory and a picnic lunch.
+F. Another farm interested in hosting an organized tour is Sinsinawa, a 200-acre Grant
+County farm devoted to sustainable agriculture and run by the Dominican Sisters.
+Education plays a major role at the farm, which has an orchard, dairy and beef cows, and
+hogs. Farm tours could be combined with other activities in the area such as trips to the
+Mississippi River and/or visits to historical towns orlandmarks, Lewis says. The project will
+help expose farmers to the tourism industry and farm vacations as a way to possibly
+supplement incomes, he adds. While farm families probably wouldn’t make a lot of money
+through farm tours, they would be compensated for their time, says Lewis. Farmers could
+earn additional income through the sale of farm products, crafts, and recreational activities.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+The reading Passage has six paragraphs  A-F.
+Which paragraph contains the following information?  Write the correct letter  A- F,
+inboxes 1-4on your answer sheet.
+1..................... About half of all the tourists would spend several days in Monroe.
+ 2..................... Most visitors responded positively to a survey project on farm tour.
+3..................... Cooperation across organisations in research for agriculture tours has been
+carried out.
+4..................... Agriculture tour assist tourists to understand more issues concerning animal
+and environment.
+Questions 5-9
+Which of following statements belongs to the visitor categories in the box 
+Please choose  A, B or C  for each question.
+Write the correct letter  A, B or C,  in boxes  5-9 on your answer sheet.
+NB: You may use any letter more than once.
+A. Cheese Festival visitors
+B. Picnic visitors
+C. Both of them
+———————
+5.....................  have focused destination
+6.....................  majority prepare well before going beforehand.
+7.....................  are comparably less keen on picnic meal
+8.....................  show interest in activities such as visiting factory tour and fruit
+9.....................  are willing to accept a variety of tour recommendation.
+Questions 10-14
+Summary
+Complete the following summary of the paragraphs of  Reading Passage 1 , using no more
+than two words from the  Reading Passage 1  for each answer. Write your answers in
+boxes 10-14 on your answer sheet.
+ 3
+ 
+ 
+ Through farm tour, visitors can better understand significant issues such as
+10..................... and enviroment. In autumn, Murphy organised 11..................... and bring
+other participants together to develop local tour market. Larry Lindgren said the farmers
+already had experience of farm tours with factory visiting and a 12......................
+In Sinsinawa,  a large area of the farmland contains an orchard, cow etc which is managed
+and operated by 13.....................; Lewis said the project will probably bring extra
+14..................... for local farmers.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.B
+2.A
+3.E
+4.D
+5.B
+6.A
+7.A8.C
+9.A
+10.animal rights
+11.workshops
+12.picnic
+13.dominican sisters
+14.incomes
+ 5</div>
+</div>
+</div>
 </body>
 </html>

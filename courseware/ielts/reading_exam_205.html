@@ -1,378 +1,224 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lack Of Sleep - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Micro Enterprise Credit For Street Youth - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题278/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Lack Of Sleep</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 11-14
-Choose the correct letter A, B, C or D.
-11  Which of the following is true of William Potter’s research?
- 
-A It was based on recently developed drugs that he had recommended.
-B It included trial results from a range of drugs companies.
-C Some of the trial results he investigated had not been made public.
-D Some of his findings were not accepted by the drugs industry.
-12  What did William Potter's research reveal about the location of drugs trials?
- 
-A The placebo effect was weakest in the US.
-B Results were not consistent around the world.
-C Results varied depending on the type of hospital.
-D The FDA preferred drugs to be tested in different countries.
-13  What does the tight race refer to in line 80?
- 
-A the standard tests
-B consistent results
-C ratings by trial observers
-D testing sites
-14  What significant discovery was made by Ted Kaptchuk?
-A The effects of a placebo can last longer than previously thought.
-B Patients’ health can improve while waiting to undergo a trial.
-C Patients respond better to a placebo if they are treated by the same clinician
-throughout the trial.
-D Those conducting a placebo trial need to know the subjects’ disorder well.
- 4</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Micro Enterprise Credit For Street Youth</h1>
+<p>雅思阅读真题 · 第205篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Micro-Enterprise Credit for Street Youth
+"I am from a large, poor family and for many years we have done without breakfast.
+Ever since I joined the Street Kids International program I have been able to buy my
+family sugar and buns for breakfast. I have also bought myself decent second-hand
+clothes and shoes."
+Doreen Soko
+'We’ve had business experience. Now I'm confident to expand what we've been
+doing.
+I've learnt cash management, and the way of keeping money so we save for re- :
+investment. Now business is a part of our lives. As well, we didn't know each other
+before - now we've made new friends.'
+Fan Kaoma
+  Participants in the Youth Skills Enterprise Initiative Program, Zambia
+Introduction
+Although small-scale business training and credit programs have become more common
+throughout the world, relatively little attention has been paid to the need to direct such
+opportunities to young people. Even less attention has been paid to children living on the
+street or in difficult circumstances.
+ Over the past nine years, Street Kids International (S.K.I.) has been working with partner
+organisations in Africa, Latin America and India to support the economic lives of street
+children, The purpose of this paper is to share some of the lessons S.K.I. and our partners
+have learned.
+Background
+ Typically, children do not end up on the streets due to a single cause, but to a combination
+of factors: a dearth of adequately funded schools, the demand for income at home, family
+breakdown and violence. The street may be attractive to children as a place to find
+adventurous play and money. However, It is also a place where some children are
+exposed, with little or no protection, to exploitative employment, urban crime, and abuse.
+Children who work on the streets are generally involved in unskilled, labour-intensive tasks
+which require long hours, such as shining shoes, carrying goods, guarding or washing cars,
+and informal trading. Some may also earn income through begging, or through theft and
+ 1
+ other illegal activities. At the same time, there are street children who take pride In
+supporting themselves and their families and who often enjoy their work. Many children
+may choose entrepreneurship because it allows them a degree of independence, is less
+exploitative than many forms of paid employment, and is flexible enough to allow them to
+participate in other activities such as education and domestic tasks.
+Street Business Partnerships
+S.K.I. has worked with partner organisations in Latin America, Africa and India to develop
+innovative opportunities for street children to earn income.
+•The S.K.I. Bicycle Courier Service first started in the Sudan. Participants in this enterprise
+were supplied with bicycles, which they used to deliver parcels and messages, and which
+they were required to pay for gradually from their wages. A similar program was taken up in
+Bangalore, India.
+ •Another successful project, The Shoe Shine Collective, was a partnership program with
+the Y.W.C.A. in the Dominican Republic. In this project, participants were lent money to
+purchase shoe shine boxes. They were also given a safe place to store their equipment,
+and facilities for individual savings plans.
+•The Youth Skills Enterprise Initiative in Zambia is a joint program with the Red Cross
+Society and the Y.W.C.A. Street youths are supported to start their own small business
+through business training, life skills training and access to credit.
+Lessons learned
+The following lessons have emerged from the programs that S.K.I. and partner
+organisations have created.
+•Being an entrepreneur is not for everyone, nor for every street child. Ideally, potential
+participants will have been involved in the organisation's programs for at least six
+months, and trust and relationship building will have already been established.
+•The involvement of the participants has been essential to the development of relevant
+programs. When children have had a major role in determining procedures, they are
+more likely to abide by and enforce them.
+•It is critical for all loans to be linked to training programs that include the development
+of basic business and life skills.
+•There are tremendous advantages to involving parents or guardians in the program,
+where such relationships exist. Home visits allow staff the opportunity to know where
+the participants live, and to understand more about each individual’s situation.
+•Small loans are provided initially for purchasing fixed assets such as bicycles, shoe
+shine kits and basic building materials for a market stall. As the entrepreneurs gain
+experience, the enterprises can be gradually expanded and consideration can be given
+to increasing loan amounts, The loan amounts in S.K.I. programs have generally
+ranged from US$30-$100.
+ 2
+ •All S.K.I. programs have charged interest on the loans, primarily to get the
+entrepreneurs used to the concept of paying interest on borrowed money. Generally
+the rates have been modest (lower than bank rates).
+Conclusion
+ There is a need to recognise the importance of access to credit for impoverished young
+people seeking to fulfil economic needs. The provision of small loans to support the
+entrepreneurial dreams and ambitions of youth can be an effective means to help them
+change their lives. However, we believe that credit must be extended in association with
+other types of support that help participants develop critical life skills as well as productive
+businesses.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Choose the correct letter, A, B, C or D.
+Write your answers in boxes 1-4on your answer sheet.
+1    The quotations in the box at the beginning of the article
+ A exemplify the effects of S.K.I.
+B explain why S.K.I. was set up.
+C outline the problems of street children.
+D highlight the benefits to society of S.K.I.
+2    The main purpose of S.K.I. is to
+ A draw the attention of governments to the problem of street children.
+B provide schools and social support for street children.
+C encourage the public to give money to street children.
+D give business training and loans to street children,
+3    Which of the following is mentioned by the writer as a reason why children end up living
+on the streets?
+ A unemployment
+B war
+C poverty
+D crime
+4    In order to become more independent, street children may
+ A reject paid employment.
+B leave their families.
+C set up their own businesses.
+D employ other children.
+ 4
+  
+  
+ Questions 5-8
+Complete the table below.
+ChooseNO MORE THAN THREE WORDS from Reading Passage for each answer.
+Write your answers in boxes 5-8on your answer sheet.
+CountryOrganisations
+InvolvedType of Project Support Provided
+5..................... •S.K.I.  courier service •provision of 6.....................
+Dominican
+Republic•S.K.I.
+7
+•Y.W.C.A......................•loans
+•storage facilities
+•savings plans
+Zambia•S.K.I.
+•The Red Cross
+•Y.W.C.A.setting up small businesses•business training
+•8..................... training
+•access to credit
+  68
  
-1. NO
-2. YES
-3. NOT GIVEN
-4. YES
-5. NO
-6. H
-7. A
-8. C
-9. G
-10. E
-11. C
-12. B
-13. A
-14. A
- 5</p>
-<p>Reading Practice
- Exploring british village 2
-{A} The Neolithic longhouse was a long, narrow timber dwelling built by the first farmers
-in Europe beginning at least as early as the period 5000 to 6000 BC. The origin of the
-name blackhouse is of some debate. It could be less than 150 years old and may have
-been synonymous with inferior. On Lewis, in particular, it seems to have been used to
-distinguish the older blackhouses from some of the newer white-houses (Scottish Gaelic:
-taigh-geal, Irish: tí geal, tí bán), with their mortared stone walls. There may also be some
-confusion arising from the phonetic similarity between the ‘dubh’ , meaning black and
-taghadh meaning thatch. The houses in Scotland were built high rather than wide;
-however, some were built small and wide.
- 
-{B} The buildings were generally built with double-wall dry-stone walls packed with earth
-and wooden rafters covered with a thatch of turf with cereal straw or reed. The floor was
-generally flagstones or packed earth and there was a central hearth for the fire. There was
-no chimney for the smoke to escape through. Instead, the smoke made its way through the
-roof. The blackhouse was used to accommodate livestock as well as people. People lived
-at one end and the animals lived at the other with a partition between them. 
-{C} It is estimated that there are over ten thousand villages in Britain, yet defining the term
-‘village’ isn’t as simple as it may at first sound. When does a hamlet become a village? And
-when does a village become a town?
-{D} Strictly speaking the term ‘village’ comes from the Latin ‘villaticus’, which roughly
-translates as ‘a group of houses outside a villa farmstead’. Today a village is understood as
-a collection of buildings (usually at least 20) that is larger than a hamlet, yet smaller than a
-town, and which contains at least one communal or public building. This is most commonly
-the parish church, though it can be a chapel, school, public house, shop, post office, smithy
-or mill. Villagers will share communal resources such as access roads, a water supply, and
-usually a place of worship
- 
-{E} A hamlet is a smaller grouping of buildings that don’t necessarily have any public or
-service buildings to support it. A significant difference is that it won’t have a parish church
-like a village does, and most hamlets contain only between three and twenty buildings.
-{F} The point at which a village becomes a town is difficult to determine and is probably
-best defined by those who live there. However, since the Middle Ages, the term ‘town’ has
-been a legal term that refers to the fact that the community has a borough charter. The
-situation is confused by the fact that there are many town-like suburban communities
-calling themselves villages (for example, Oxton Village in Birkenhead), as well as designed
-suburban ‘villages’ such as those built under the Garden Village Movement.
-{G} The 2001 census shows us that approx 80% of people in England live in an urban
-environment, with under 7% living in rural villages (the remainder live in rural towns or
-outside concentrated settlements). This is the exact opposite of the situation two centuries
-ago, when under 20% of the population lived in the town, and the majority lived in rural
-villages. As late as 1851 agriculture remained the largest single source of employment in
-Britain, yet today under 3% of us work on the land.
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ Questions 9-12
+Do the following statements agree with the claims of the writer in Reading Passage?
+In boxes9-12on your answer sheet write
+ YESif the statement agrees with the claims of the writer
+NOif the statement contradicts the claims of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+ 9..................... Any street child can set up their own small business if given enough
+support.
+10..................... In some cases, the families of street children may need financial support
+from S.K.I.
+11..................... Only one fixed loan should be given to each child.
+12..................... The children have to pay back slightly more money than they borrowed.
+ 5
+ 
+  
+ Questions 13
+Choose the correct letter, A, B, C or D.
+Write your answer in box 13on your answer sheet.
+The writers conclude that money should only be lent to street children
+A as part of a wider program of aid.
+B for programs that are not too ambitious.
+C when programs are supported by local businesses.
+D if the projects planned are realistic and useful.
+ 6</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 
+ 1.A
+ 
+ 2.D
+ 3.C
+ 8.life
+skills
+9.NO
+10.
+NOT
+GIVE
+N
+11.4.CNO
+  12.
+YES
+ 5.Sudan and India IN EITHER
+ORDER, BOTH REQUIRED FOR
+ONE MARK
+6.bicycles
+7.Shoe Shine// Shoe Shine13.A
+Collective
+ 7</div>
+</div>
+</div>
 </body>
 </html>

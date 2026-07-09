@@ -1,409 +1,121 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In Search Of The Holy Grail - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Mail Order Brochure - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题259/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 In Search Of The Holy Grail</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-5
-Choose the correct letter, A, B, C or D.
-Write your answers in boxes 27-31 on your answers sheet.
-1    The Stradbroke became two islands
- 
-A    by an intended destruction of the ship of the Cambus Wallace
-B    by an explosion of dynamite on a ship and following nature erosion
-C    by the movement sandhills on Stradbroke Island
-D    by the volcanic eruption on island
-2    Why are laundry activities for the resort carried out on the mainland
- 
-A    In order to obtain its water supply via a bore system
-B    In order to preserve the water and anti-pollution
-C    In order to save the cost of installing onerous washing machines
-D    In order to reduce the level of phosphates in water around
-3    What is the major water supplier in South Stradbroke Island is by
- 
-A   desalinizing the sea water
-B   collecting the rainfall
-C    transporting from the mainland
-D    boring ground water
-4    What is applied for heating water on Couran Cove Island Resort
- 
-A   the LPG-power
-B   a diesel-powered plant
-C  the wind power
-D   the solar-power
-5    What does, as the managers of resorts believe, the prospective future focus on
-A   more awards of for resort’s accommodation
- 3</p>
-<p>B   sustainable administration and development in a long run
-C   Economic and environmental benefits for the tourism enterprise
-D   successful implementation the Resort Development Spectrum
- 
-Questions 6-10
-Complete the following summary of the Reading Passage, using NO MORE THAN TWO
-WORDS from the Reading Passage for each answer.
-Write your answers in boxes 6-10 on your answer sheet.</p>
-<p>Being located away from the mainland, tourists can attain the resort only
-by 6..................... in a regular service. Within the resort, transports include trails for
-walking or tracks for both 7..................... and the beach train. The on-island equipment
-is old-fashioned which is barely working such as the 8..................... overhead. There is
-television, radio, an old 9..................... and a small fridge. And you can buy the repellant
-for 10..................... if you forget to bring some.
-Questions 11-13
-Choose THREE correct letters among, A-E.
-Write your answers in boxes 11-13 on your answer sheet.
-What is true as to the contemporary situation of Couran Cove Island R in the last
-paragraph
-A    Couran Cove Island Resort goes for more eco-friendly practices.
-B   The accommodation standard only conforms to the Resort Development Spectrum of
-Phase 3.
-C   Couran Cove Island Resort should raise the accommodation standard and build more
-facilities.
-D   The principal group visiting the resort is international tourists.
-E    Its carrying capacity will restrict the future business’ expansion.
- 4</p>
-<p>Solution:
- 
-1. B
-2. B
-3. D
-4. D
-5. B
-6. ferry
-7.
-8. fan/ceiling fan
-9. air conditioner
-10. mosquitos/mosquito
-11. A, C, E IN ANY ORDER
-12. A, C, E IN ANY ORDER
-13. A, C, E IN ANY ORDER
-bicycle
- 5</p>
-<p>Reading Practice
- Educating Psyche
-Educating Psyche by Bernie Neville is a book which looks at radical new approaches to
-learning, describing the effects of emotion, imagination and the unconscious on
-learning. One theory discussed in the book is that proposed by George Lozanov, which
-focuses on the power of suggestion.
-Lozanov's instructional technique is based on the evidence that the connections made in
-the brain through unconscious processing (which he calls non-specific mental
-reactivity) are more durable than those made through conscious processing. Besides the
-laboratory evidence for this, we know from our experience that we often remember what we
-have perceived peripherally, long after we have forgotten what we set out to learn. If we
-think of a book we studied months or years ago, we will find it easier to recall
-peripheral details - the colour, the binding, the typeface, the table at the library where we
-sat while studying it - than the content on which we were concentrating. If we think of a
-lecture we listened to with great concentration, we will recall the lecturer's appearance
-and mannerisms, our place in the auditorium, the failure of the air-conditioning, much
-more easily than the ideas we went to learn. Even if these peripheral details are a bit
-elusive, they come back readily in hypnosis or when we relive the event imaginatively, as
-in psychodrama. The details of the content of the lecture, on the other hand, seem to
-have gone forever. 
-This phenomenon can be partly attributed to the common counterproductive approach to
-study (making extreme efforts to memorise, tensing muscles, inducing fatigue), but it
-also simply reflects the way the brain functions. Lozanov therefore made indirect
-instruction (suggestion) central to his teaching system. In suggestopedia, as he called his
-method, consciousness is shifted away from the curriculum to focus on something
-peripheral. The curriculum then becomes peripheral and is dealt with by the reserve
-capacity of the brain.
-The suggestopedic approach to foreign language learning provides a good illustration. In its
-most recent variant (1980), it consists of the reading of vocabulary and text while the class
-is listening to music. The first session is in two parts. In the first part, the music is classical
-(Mozart, Beethoven, Brahms) and the teacher reads the text slowly and solemnly, with
-attention to the dynamics of the music. The students follow the text in their books. This is
-followed by several minutes of silence. In the second part, they listen to baroque music
-(Bach, Corelli, Handel) while the teacher reads the text in a normal speaking voice. During
-this time they have their books closed. During the whole of this session, their attention is
-passive; they listen to the music but make no attempt to learn the material.
-Beforehand, the students have been carefully prepared for the language learning
-experience. Through meeting with the staff and satisfied students they develop
-the expectation that learning will be easy and pleasant and that they will successfully learn
-several hundred words of the foreign language during the class. In a preliminary talk, the
-teacher introduces them to the material to be covered, but does not 'teach' it. Likewise, the
-students are instructed not to try to learn it during this introduction.
-Some hours after the two-part session, there is a follow-up class at which the students are
-stimulated to recall the material presented. Once again the approach is indirect.
-The students do not focus their attention on trying to remember the vocabulary, but focus
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Mail Order Brochure</h1>
+<p>雅思阅读真题 · 第190篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Mail Order Brochure
     
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ Want some great clothing ideas for your family?
+Our key for clothing specials in July: Mfor men, Wfor women , Cfor children
+For under $10
+ Cotton socks C
+Woollen socks C
+Sports socks M
+ 
+ 
+ - made of pure cotton for long wearing
+- to keep young feet warm in winter
+- to go with jeans and other casual clothes
+Patterned belts W- to go with jeans and other casual clothes
+For under $25
+  Cotton shirts W
+Silk shirts M
+T shirtsC
+ 
+ 
+ 
+ - for day and evening wear
+- five sizes, in designer colours, for that special social occasion
+- hard-wearing, white with a variety of animal motifs
+Colour T-shirts MW- cotton and polyester blend, plain colours, no ironing
+For under $50
+ Blue jeans M W
+Silk shirts M W
+Hooded jacket C
+jacketW- non-shrink, colourfast, small sizes only
+- plain and patterned, all sizes
+- protects from the wind, 4 sizes, large strong pockets
+- waterproof with zipper front, all sizes
+Or you can buy a gift voucher so that someone else can choose. These come in $10,
+$20 and $50 amounts.  Additional monthly specials for July to September
+July
+August- $10 voucher with any purchase over $60
+- Travel alarm clock worth $19.95 free with purchases of $80 or more!
+September - Children's backpacks. Free with any credit card purchase over $75!
+Note: Postage and packing charges
+These are applied to each order as follows:
+Within Australia:
+$7.95 per address, regular post
+$17.95 for Express Delivery Service (overnight)
+Overseas:
+Surface Mail (allow a minimum of two months for delivery)
+Airmail (allow around two weeks delivery to most destinations)
+ 1</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Do the following statements agree with the information given in the text.
+In boxes1-7on your answer sheet, write
+TRUE
+FALSEif the statement is true according to the passage
+if the statement is false according to the passage
+NOT GIVEN if the information is not given in the passage
+1..................... Women's cotton socks cost less than men's.  
+2..................... Men's silk shirts are available in more than five colours.  
+3..................... Children's 7-shirts come in a variety of colours.  
+4..................... The child's jacket has four pockets.  
+5..................... If you buy clothes worth $80 in August, you will receive a free alarm clock.  
+6..................... The charge for special next-day delivery in Australia is $7.95.  
+7..................... All clothing is guaranteed to arrive within two months.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.NOT GIVEN
+2.NOT GIVEN
+3.FALSE
+4.5.TRUE
+6.FALSE
+7.FALSE
+NOT GIVEN
+ 3</div>
+</div>
+</div>
 </body>
 </html>

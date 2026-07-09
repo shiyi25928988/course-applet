@@ -1,413 +1,166 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Dugong Sea Cow - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Problem Of Climate Change - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题489/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Dugong Sea Cow</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Section E 
-No matter how the connection between language and music is parsed, what is apparent is
-that our sense of music, even our love for it, is as deeply rooted in our biology and in our
-brains as language is. This is most obvious with babies, says Sandra Trehub at the
-University of Toronto, who also published a paper in the Nature Neuroscience special
-issue. 
-For babies, music and speech are on a continuum. Mothers use musical speech to
-"regulate infants' emotional states", Trehub says. Regardless of what language they speak,
-the voice all mothers use with babies is the same: "something between speech and song".
-This kind of communication "puts the baby in a trancelike state, which may proceed to
-sleep or extended periods of rapture". So if the babies of the world could understand the
-latest research on language and music, they probably wouldn't be very surprised. The
-upshot, says Trehub, is that music may be even more of a necessity than we realise.
- 3</p>
-<p>Questions 1-5
-Reading Passage has five sections A-E.
-Choose the correct heading for each section from the list of headings below. 
-Write the correct number i-viii in boxes 1-5 on your answer sheet.
-1..................... Section A
-2..................... Section B
-3..................... Section C
-4..................... Section D
-5..................... Section E</p>
-<p>List of Headings
-i. Communication in music with animals
-ii. New discoveries on animal music
-iii. Music and language contrasted
-iv. Current research on music
-v. Music is beneficial for infants.
-vi. Music transcends cultures.
-vii. Look back at some of the historical theories
-viii. Are we genetically designed for music?
-Questions 6-12
-Look at the following people (Questions 6-12) and the list of statements below.
-Match each person with the correct statement.
-Write the correct letter A-G in boxes 6-12 on your answer sheet.
-6..................... Steven Pinker
-7..................... Musicologists
-8..................... Greek philosopher Pythagoras
-9..................... Schwartz, Howe, and Purves
-10..................... Marc Hauser and Josh McDermott
-11..................... Charles Rosen
-12..................... Sandra Trehub
-List of Statements
- 4</p>
-<p>A Music exists outside of the world it is created in.
-B Music has a universal character despite cultural influences on it.
-C Music is a necessity for humans.
-D Music preference is related to the surrounding influences.
-E He discovered the mathematical basis of music.
-F Music doesn't enjoy the same status of research interest as language.
-G Humans and monkeys have similar traits in perceiving sound.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Problem Of Climate Change</h1>
+<p>雅思阅读真题 · 第365篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The problem of climate change
+A
+The climate of the Earth is always changing. In the past it has altered as a result of natural
+causes. Nowadays, however, the term ‘climate change’ is generally used when referring to
+changes in our climate which have been identified since the early part of the twentieth
+century. The changes we’ve seen over recent years and those which are predicted to occur
+over the next 100 years are thought by many to be largely a result of human behavior
+rather than due to natural changes in the atmosphere. And this is what is so significant
+about current climactic trends; never before has man played such a significant role in
+determining long-term weather patterns – we are entering the unknown and there is no
+precedent for what might happen next.
+B
+The greenhouse effect is very important when we talk about climate change as it relates to
+the gases which keep the Earth warm. Although the greenhouse effect is a naturally
+occurring phenomenon, it is believed that the effect could be intensified by human activity
+and the emission of gases into the atmosphere. It is the extra greenhouse gases which
+humans have released which are thought to pose the strongest threat. Certain researchers,
+such as Dr Michael Crawley, argue: ‘even though this natural phenomenon does exist it is
+without a doubt human activity that has worsened its effect; this is evident when comparing
+data regarding the earth’s temperature in the last one hundred years with the one hundred
+years prior to that.’ Some scientists, however, dispute this as Dr Ray Ellis suggests:
+‘human activity may be contributing a small amount to climate change but this increase in
+temperature is an unavoidable fact based on the research data we have compiled.
+C
+Scientists around the globe are looking at all the evidence surrounding climate change and
+using advanced technology have come up with predictions for our future environment and
+weather. The next stage of that work, which is just as important, is looking at the knock-on
+effects of potential changes. For example, are we likely to see an increase in precipitation
+and sea levels? Does this mean there will be an increase in flooding and what can we do to
+protect ourselves from that? How will our health be affected by climate change, how will
+agricultural practices change and how will wildlife cope? What will the effects on coral be?
+Professor Max Leonard has suggested, ‘while it may be controversial some would argue
+that climate change could bring with it positive effects as well as negative ones’.
+D
+There are many institutions around the world whose sole priority is to take action against
+these environmental problems. Green Peace is the organisation that is probably the most
+well-known. It is an international organisation that campaigns in favour of researching and
+promoting solutions to climate change, exposes the companies and governments that are
+blocking action, lobbies to change national and international policy, and bears witness to
+the impacts of unnecessary destruction and detrimental human activity.
+E
+ 1
+The problem of climate change is without a doubt something that this generation and the
+generations to come need to deal with. Fortunately, the use of renewable energy is
+becoming increasingly popular, which means that less energy is consumed as renewable
+energy is generated from natural resources—such as sunlight, wind, rain, tides, and
+geothermal heat—which can be naturally replenished. Another way to help the
+environment, in terms of climate change, is by travelling light. Walking or riding a bike
+instead of driving a car uses fewer fossil fuels which release carbon dioxide into the
+atmosphere. In addition, using products that are made from recycled paper, glass, metal
+and plastic reduces carbon emissions because they use less energy to manufacture than
+products made from completely new materials. Recycling paper also saves trees and lets
+them continue to limit climate change naturally as they remain in the forest, where they
+remove carbon from the atmosphere. Professor Mark Halton, who has completed various
+studies in this field, has stated: ‘with all this information and the possible action that we can
+take, it isn’t too late to save our planet from over-heating and the even worse side-effects of
+our own activity
+ 2
  
-Questions 13-14
-Choose the correct letter A, B, C or D.
-Write your answers in boxes 13-14 on your answer sheet.
-13  Why was the study of animal music inconclusive?
-A Animals don’t have the same auditory system as humans.
-B Tests on animal music are limited.
-C Animals can’t make up new tunes.
-D There aren’t enough tests on a wide range of animals.
-14  What is the main theme of this passage?
-A Language and learning
-B The evolution of music
-C The role of music in human society
-D Music for animals
- 5</p>
-<p>Solution:
+  
+ Question 1–5
+Reading Passage has 5 paragraphs, A–E.
+Which paragraph contains the following information? Write the correct letter A–Ein the
+boxes below.
+NB You may use any letter more than once .
  
-1. iii
-2. vii
-3. iv
-4. i
-5. viii
-6. F
-7. B
-8. E
-9. D
-10. G
-11. A
-12. C
-13. C
-14. C
- 6</p>
-<p>Reading Practice
- Mystery in Easter Island</p>
-<p>One of the world’s most famous yet least visited archaeological sites, Easter Island is a
-small, hilly, now treeless island of volcanic origin. Located in the Pacific Ocean at 27
-degrees south of the equator and some 2200 miles (3600 kilometers) off the coast of Chile,
-it is considered to be the world’s most remote inhabited island. The island is, technically
-speaking, a single massive volcano rising over ten thousand feet from the Pacific Ocean
-floor. The island received its most well-known current name, Easter Island, from the Dutch
-sea captain Jacob Roggeveen who became the first European to visit Easter Sunday, April
-5, 1722.</p>
-<p>In the early 1950s, the Norwegian explorer Thor Heyerdahl popularized the idea that the
-island had been originally settled by advanced societies of Indians from the coast of South
-America. Extensive archaeological, ethnographic and linguistic research has conclusively
-shown this hypothesis to be inaccurate. It is now recognized that the original inhabitants of
-Easter Island are of Polynesian stock (DNA extracts from skeletons have confirmed this),
-that they most probably came from the Marquesas or Society islands, and that they arrived
-as early as 318 AD (carbon dating of reeds from a grave confirms this). At the time of their
-arrival, much of the island was forested, was teeming with land birds, and was perhaps the
-most productive breeding site for seabirds in the Polynesia region. Because of the plentiful
-bird, fish and plant food sources, the human population grew and gave rise to a rich
-religious and artistic culture.</p>
-<p>That culture’s most famous features are its enormous stone statues called moai, at least
-288 of which once stood upon massive stone platforms called ahu. There are some 250 of
-these ahu platforms spaced approximately one-half mile apart and creating an almost
-unbroken line around the perimeter of the island. Another 600 moai statues, in various
-stages of completion, are scattered around the island, either in quarries or along ancient
-roads between the quarries and the coastal areas where the statues were most often
-erected. Nearly all the moai are carved from the tough stone of the Rano Raraku volcano.
-The average statue is 14 feet and 6 inches tall and weighs 14 tons. Some moai were as
-large as 33 feet and weighed more than 80 tons. Depending upon the size of the statues, it
-has been estimated that between 50 and 150 people were needed to drag them across the
-countryside on sledges and rollers made from the island’s trees.</p>
-<p>Scholars are unable to definitively explain the function and use of the moai statues. It is
-assumed that their carving and erection derived from an idea rooted in similar practices
-found elsewhere in Polynesia but which evolved in a unique way on Easter Island.
-Archaeological and iconographic analysis indicates that the statue cult was based on an
-ideology of male, lineage-based authority incorporating anthropomorphic symbolism. The
-statues were thus symbols of authority and power, both religious and political. But they
-were not only symbols. To the people who erected and used them, they were actual
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 1..................... A natural phenomenon that could also affect climate change.
+2..................... Steps we can take to help reverse the situation.
+3..................... An explanation of what climate change is.
+4..................... Organisations that want to help.
+5..................... Possible effects of climate change.
+Question 6-9
+Look at the following people (</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 6-9) and the list of statements below.
+Match each person with the correct statement, A-F.
+ 
+ 
+ 
+ A.We have the ability to change the situation
+B. Climate Change is Inevitable
+C. Humans have made the situation much worse
+D.Climate Change might not be all bad
+E.Human activity and natural weather phenomena
+F.While we may not be too late to save our planet, there are bound to be some extreme
+side-effects of past human activity one way or the other
+ 
+  6..................... Professor Max Leonard
+7..................... Dr Michael Crawley 
+8..................... Professor Mark Halton  
+9..................... Dr Ray Ellis
+Questions 10-13
+Do the following statements agree with the information given in Reading Passage? In
+spaces10-13below, write
+ 3
+TRUE                                        if the statements agrees with the information
+FALSE                                      if the statements contradicts the information
+NOT GIVEN                           if there is no information on this
+10..................... Man is not entirely responsible for global warming.
+11..................... Scientists have come up with new evidence about the negative effects of
+carbon-free sources of energy such as nuclear power
+12..................... One of the purposes of Green Peace is to find out which companies and
+governments are doing things which don’t help the actions of environmentalists.
+13..................... Most people aren’t willing to start using renewable energy.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.B
+2.E
+3.A
+4.D
+5.C
+6.D
+7.8.A
+9.B
+10.TRUE
+11.NOT GIVEN
+12.TRUE
+13.FALSE
+C
+ 5</div>
+</div>
+</div>
 </body>
 </html>

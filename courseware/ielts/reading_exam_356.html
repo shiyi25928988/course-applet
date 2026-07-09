@@ -1,404 +1,137 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Creation Of Lasting Memories - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Muscles In Our Body - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题477/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Creation Of Lasting Memories</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>lawyers tried several lines of defence. But in the end, the case came down to a single
-matter: not whether the remedy was useless, or whether Carbolic had committed fraud, but
-whether its advert constituted a contract - which the company had broken. A contract
-required agreement between two parties, argued Carbolic’s lawyers. What agreement had
-Mrs. Carlill made with them?
-There were times, the judges decided, when a contract could be one-sided. The advert had
-made a very specific offer to purchasers: protection from flu or £100. By using the smoke
-ball as instructed, Mrs. Carlill had accepted that offer. The company might just have
-wriggled out of if if it hadn’t added the bit about the £1,000 deposit. That, said the judges,
-gave buyers reason to believe Carbolic meant what it said. “It seems to me that if a person
-chooses to make extravagant promises of this kind, he probably does so because it pays
-him to make them, and, if he has made them, the extravagance of the promises is no
-reason in law why he should not be bound by them,” pronounced Lord Justice Bowen.
-Louisa got her £100. The case established the principle of the unilateral contract and is
-frequently cited today.
- 3</p>
-<p>Questions 1-4
- 
-Do the following statements agree with the claims of the writer in Reading Passage?
-In boxes 1-4 on your answer sheet write
-TRUE  if the statement agrees with the information
-FALSE  if the statement contradicts the information
-NOT GIVEN if there is no information on this
-1..................... Cities rather than rural areas were badly affected by the pandemic flu.
-2..................... At the time of the flu pandemic, people didn’t know the link between microorganisms and illnesses.
-3..................... People used to believe flu was caused by miasmas.
-4..................... Flu prescriptions often contained harmful ingredients.</p>
-<p>Questions 5-8
-Complete the diagram below.
-Choose NO MORE THAN TWO WORDS from the passage for each answer.
-Write your answers in boxes 5-8 on your answer sheet.
-5.....................
-6.....................
-7.....................
-8.....................</p>
-<p>Questions 9-12
-Look at the following people (Questions 9-12) and the list of statements.
-Match each person with the correct statement.
-Write the correct letter A-F in boxes 9-12 on your answer sheet.
- 
-List of Statements
-A Filed a complaint which was never responded to
- 4</p>
-<p>B Broke the contract made with Carbolic Smoke Ball Company
-C Initiated a legal case
-D Described the audience of advertisement
-E Claimed that most advertisements are fraudulent
-F Treated advertisement as a type of contract
-9.....................        Mrs. Carlill
-10.....................      Mrs. Carlill’s husband
-11.....................      Judge Hawkins
-12.....................      Lord Justice Bowen
-Questions 13
-Choose the correct letter, A, B, C or D.
-Write your answers in boxes 13 on your answer sheet.
-13.  Why is Mrs. Carlill’s case often cited in present-day court trials?
-A It proved the untrustworthiness of advertisements.
-B It established the validity of one-sided contract.
-C It explained the nature of contract.
-D It defended the rights of consumers.
- 5</p>
-<p>Solution:
- 
-1. NOT GIVEN
-2. FALSE
-3. TRUE
-4. NOT GIVEN
-5. gauze
-6. nozzle
-7.
-8. rubber ball
-9. C
-10. A
-11. D
-12. F
-13. B
-powder
- 6</p>
-<p>Reading Practice
- Multitasking Debate
-Multitasking Debate
-Can you do them at the same time?</p>
-<p>Talking on the phone while driving isn’t the only situation where we’re worse at multitasking
-than we might like to think we are. New studies have identified a bottleneck in our brains
-that some say means we are fundamentally incapable of true multitasking. If experimental
-findings reflect real-world performance, people who think they are multitasking are probably
-just underperforming in all – or at best, all but one – of their parallel pursuits. Practice might
-improve your performance, but you will never be as good as when focusing on one task at
-a time.</p>
-<p>The problem, according to René Marois, a psychologist at Vanderbilt University in
-Nashville, Tennessee, is that there’s a sticking point in the brain. To demonstrate this,
-Marois devised an experiment to locate it. Volunteers watch a screen and when a particular
-image appears, a red circle, say, they have to press a key with their index finger. Different
-coloured circles require presses from different fingers. Typical response time is about half a
-second, and the volunteers quickly reach their peak performance. Then they learn to listen
-to different recordings and respond by making a specific sound. For instance, when they
-hear a bird chirp, they have to say “ba”; an electronic sound should elicit a “ko”, and so on.
-Again, no problem. A normal person can do that in about half a second, with almost no
-effort.</p>
-<p>The trouble comes when Marois shows the volunteers an image, and then almost
-immediately plays them a sound. Now they’re flummoxed. “If you show an image and play
-a sound at the same time, one task is postponed,” he says. In fact, if the second task is
-introduced within the half-second or so it takes to process and react to the first, it will simply
-be delayed until the first one is done. The largest dual-task delays occur when the two
-tasks are presented simultaneously; delays progressively shorten as the interval between
-presenting the tasks lengthens.</p>
-<p>There are at least three points where we seem to get stuck, says Marois. The first is in
-simply identifying what we’re looking at. This can take a few tenths of a second, during
-which time we are not able to see and recognise a second item. This limitation is known as
-the “attentional blink”: experiments have shown that if you’re watching out for a particular
-event and a second one shows up unexpectedly any time within this crucial window of
-concentration, it may register in your visual cortex but you will be unable to act upon it.
-Interestingly, if you don’t expect the first event, you have no trouble to respond to the
-second. What exactly causes the attentional blink is still a matter for debate.
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Muscles In Our Body</h1>
+<p>雅思阅读真题 · 第356篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Muscles in Our Body
+Our human body is made up of many muscles. All these muscles work together to help you
+move. They form the muscle system. 650 muscles are wrapped around your bones. They
+basically cover the bones like a blanket. Muscles are fastened to the bones by tough
+bands. These bands are called tendons. You can see your tendons when you wiggle your
+finger. Moving your fingers back and forth makes your tendons move.
+These muscles around the bone must be told when to move. They are controlled by your
+thinking. If you want to walk, talk or smile, you send a message to the brain. Your brain
+picks up the message. It receives it and processes it. Then it sends out an electrical signal
+through the nerves. The nerves make connections until the signal reaches the proper
+muscle. This signal tells a muscle what it has to do. The muscle simply does exactly what
+the brain tells it to do. When you jump, hundreds of muscles work to help you do that.
+Muscles work by contracting. They shorten and pull the bone to move the body. They
+always pull and never push. Muscles work in pairs. One muscle pulls, while the other
+relaxes. Then they switch around. For instance, when you move your forearm, you use one
+pair of muscles. The muscles on the inside of your arm is the biceps. It contracts to make
+you bend your arm. The muscle on the outside is the triceps. It relaxes when you bend your
+arm. If you want to straighten your arm, the muscles switch roles. The biceps relaxes,
+whereas the triceps contracts. The biceps and triceps are long and thread-like. The longest
+muscle, the sartorius, helps you cross your legs. The shortest muscle is in your ear.
+However, you cannot control all your muscles. Some muscles work without you thinking
+about them. This is the case with your heart muscle. Heart muscles are stripped and oval in
+shape. They are extremely powerful and pump your heart. This pumping motion gets the
+blood moving through your body. As well, the stomach muscle mixes food around in your
+stomach. Then it pushes the food through your intestines and into the blood system.
+Stomach muscles are short and have pointed ends.
+Muscles work all the time. They even work when you are fast asleep. They keep your body
+firm and strong. Therefore, it is important to be in good shape. You need to stay healthy so
+that your muscles can remain powerful too. One thing that muscles need is good food.
+Muscles develop when they have protein. Milk, eggs, red meat, fish and beans are rich in
+protein. A healthy diet includes these food types. Muscles also need to be exercised to
+remain firm and toned. Regular exercise makes your muscles bigger, strengthens your
+heart and lungs and makes you more flexible. Good ways to exercise our walking,
+swimming, cycling, dancing or playing soccer. These activities improve your stamina. If you
+have good stamina, you can keep going for a long time without getting tired.
+ 1</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Choose the correct letter, A, B, CorD.
+1.What is the topic word of paragraph 1?
+ A         Muscles
+B         The muscle system
+C         Bones
+D         Tendons 
+2.In what order do the following happen?
+A  Processed message, nerve connection, electric signal, execution
+B  Execution, electric signal, nerve connection, processed message
+C Execution, nerve connection, electric signal, processed message
+D Processed message, electric signal, nerve connection, execution
+3.Choose the right word below to fill in the blank.
+“Muscles work by _____."
+  A       Shorten
+B       Squeezing
+C       Pushing
+D       Relaxing
+4.  What happens after the biceps contracts?
+A       The triceps contracts.
+B       The arm straightens.
+C       The arm bends.
+D       The muscles switch around.
+5.What is true about the heart muscle?
+ A       It is the most powerful muscle in the whole body.
+B       It helps you move food into the blood.
+C       It looks different than other muscles.
+D       It is controlled by your brain.
+ 2
+ 6.  What does the author think about regular swimming?
+ 
+   
+                   A       It is better than walking or dancing.
+B       It is not as good as playing soccer.
+C       It makes you stronger and more flexible. 
+D       It helps you to keep going for a long time without getting tired.
+Questions 7-8
+ChooseTWOletters,A-D.
+Write the correct letters.
+What are twothings muscles need to stay strong?
+A       Protein
+B       A lot of food
+C       Good exercise
+D       A lot of sleep
+ 3</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.A
+2.D
+3.B
+4.C5.C
+6.D
+7.A OR C IN EITHER ORDER
+8.A OR C IN EITHER ORDER
+ 4</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,403 +1,196 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effort And Science To Win - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Grimms Fairy Tales - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题187/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Effort And Science To Win</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>door. How is he to know that any other marble of similar size will do just as well? Yet he
-must assume that if he is to solve the problem. Hewson made the functional equivalence of
-different marbles clear by playing a 'swapping game' with the children. The two
-modifications together produced a jump in success rates from 30 per cent to 90 per cent for
-five-year-olds and from 35 per cent to 72.5 per cent for four-year-olds. For three-year- olds,
-for reasons that are still in need of clarification, no improvement—rather a slight drop in
-performance - resulted from the change.
-We may conclude, then, that children experience very real difficulty when faced with the
-Kendler apparatus; but this difficulty cannot be taken as proof that they are incapable of
-deductive reasoning.
- 2</p>
-<p>Questions 1-8
-Classify the following descriptions as a referring</p>
-<p>Clark Hull                            CH
-Howard and Tracy Kendler    HTK
-Micheal Cole and colleagues  MC
-Simon Hewson                     SH
- 
-Write the appropriate letters in boxes 1-8 on your answer sheet.
-NB You may use any answer more than once.
-  
-1..................... is cited as famous in the field of psychology.
-2..................... demonstrated that the two-stage experiment involving button-pressing and
-inserting a marble into a hole poses problems for certain adults as well as children.
-3..................... devised an experiment that investigated deductive reasoning without the
-use of any marbles.
-4..................... appears to have proved that a change in the apparatus dramatically
-improves the performance of children of certain ages.
-5..................... used a machine to measure inductive reasoning that replaced buttonpressing with drawer-opening.
-6..................... experimented with things that the subjects might have been expected to
-encounter in everyday life, rather than with a machine.
-7..................... compared the performance of five-year-olds with college students, using the
-same apparatus with both sets of subjects.
-8..................... is cited as having demonstrated that earlier experiments into children's
-ability to reason deductively may have led to the wrong conclusions.
- 
-Questions 9-13
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Grimms Fairy Tales</h1>
+<p>雅思阅读真题 · 第137篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Grimm’s Fairy Tales
+ The Brothers Grimm, Jacob and Wilhelm, named their story collection Children’s and
+Household Tales and published the first of its seven editions in Germany in 1812. The table
+of contents reads like an A-list of fairy-tale celebrities: Cinderella, Sleeping Beauty, Snow
+White, Little Red Riding Hood, Rapunzel, Rumpelstiltskin, Hansel and Gretel, the Frog
+King. Drawn mostly from oral narratives, the 210 stories in die Grimm’s’ collection
+represent an anthology of fairy tales, animal fables, rustic farces, and religious allegories
+that remain unrivalled to this day.
+Such lasting fame would have shocked the humble Grimms. During their lifetimes the
+collection sold modestly in Germany, at first only a few hundred copies a year. The early
+editions were not even aimed at children. The brothers initially refused to consider
+illustrations, and scholarly footnotes took up almost as much space as the tales
+themselves. Jacob and Wilhelm viewed themselves as patriotic folklorists, not as
+entertainers of children. They began their work at a time when Germany had been overrun
+by the French under Napoleon, who was intent on suppressing local culture. As young,
+workaholic scholars, single and sharing a cramped flat, the Brothers Grimm undertook the
+fairy-tale collection with the goal of serving the endangered oral tradition of Germany.
+ For much of the 19th century teachers, parents, and religious figures, particularly in the
+United States, deplored the Grimms’ collection for its raw, uncivilized content. Offended
+adults objected to the gruesome punishments inflicted on the stories’ villains. In the original
+“Snow White” the evil stepmother is forced to dance in red-hot iron shoes until she falls
+down dead. Even today some protective parents shy from the Grimms’ tales because of
+their reputation for violence.
+Despite its sometimes rocky reception, Children’s and Household Tales gradually took root
+with the public. The brothers had not foreseen that the appearance of their work would
+coincide with a great flowering of children’s literature in Europe. English publishers led the
+way, issuing high-quality picture books such as Jack and the Beanstalk and handsome
+folktale collections, all to satisfy a newly literate audience seeking virtuous material for the
+nursery. Once the Brothers Grimm sighted this new public, they set about refining and
+softening their tales, which had originated centuries earlier as earthy peasant fare. In the
+Grimms’ hands, cruel mothers became nasty stepmothers, unmarried lovers were made
+chaste, and the incestuous father was recast as the devil.
+In the 20th century the Grimms’ fairy tales have come to rule the bookshelves of children’s
+bedrooms. The stories read like dreams come true: handsome lads and beautiful damsels,
+armed with magic, triumph over giants and witches and wild beasts. They outwit mean,
+selfish adults. Inevitably the boy and girl fall in love and live happily ever after. And parents
+keep reading because they approve of the finger-wagging lessons inserted into the stories:
+keep your promises, don’t talk to strangers, work hard, obey your parents. According to the
+Grimms, the collection served as “a manual of manners”.
+Altogether some 40 persons delivered tales to the Grimms. Many of the storytellers came
+to the Grimms’ house in Kassel. The brothers particularly welcomed the visits of Dorothea
+ 1
+Viehmann, a widow who walked to town to sell produce from her garden. An innkeeper
+daughter, Viehmann had grown up listening to stories from travellers on the road to
+Frankfurt. Among her treasure was “Aschenputtel” -Cinderella. Marie Hassenpflug was a
+20-year-old friend of their sister, Charlotte, from a well-bred, French-speaking family.
+Marie’s wonderful stories blended motifs from the oral tradition and from Perrault’s
+influential 1697 book, Tales of My Mother Goose, which contained elaborate versions of
+“Little Red Riding Hood”, “Snow White”, and “Sleeping Beauty”, among others. Many of
+these had been adapted from earlier Italian tales.
+ Given that the origins of many of the Grimm fairy tales reach throughout Europe and into
+the Middle East and Orient, the question must be asked: How German are the Grimm
+tales? Very, says scholar Heinz Rolleke. Love of the underdog, rustic simplicity, creative
+energy—these are Teutonic traits. The coarse texture of life during medieval times in
+Germany, when many of the tales entered the oral tradition, also coloured the narratives.
+Throughout Europe, children were often neglected and abandoned, like Hansel and Gretel.
+Accused witches were burned at the stake, like the evil mother-in-law in “The Six Swans”.
+“The cruelty in the stories was not the Grimm’s fantasy”, Rolleke points out” It reflected the
+law-and-order system of the old times”.
+The editorial fingerprints left by the Grimms betray the specific values of 19th-century
+Christian, bourgeois German society. But that has not stopped the tales from being
+embraced by almost every culture and nationality in the world. What accounts for this
+widespread, enduring popularity? Bernhard Lauer points to the “universal style” of the
+writing, you have no concrete descriptions of the land, or the clothes, or the forest, or the
+castles. It makes the stories timeless and placeless,” The tales allow us to express ‘our
+utopian longings’,” says Jack Zipes of the University of Minnesota, whose 1987 translation
+of the complete fairy tales captures the rustic vigour of the original text. They show a
+striving for happiness that none of us knows but that we sense is possible. We can identify
+with the heroes of the tales and become in our mind the masters and mistresses of our own
+destinies.”
+Fairy tales provide a workout for the unconscious, psychoanalysts maintain. Bruno
+Bettelheim famously promoted the therapeutic of the Grimms’ stories, calling fairy tales the
+“great comforters. By confronting fears and phobias, symbolized by witches, heartless
+stepmothers, and hungry wolves, children find they can master their anxieties. Bettelheim’s
+theory continues to be hotly debated. But most young readers aren’t interested in
+exercising their unconsciousness. The Grimm tales, in fact, please in an infinite number of
+ways, something about them seems to mirror whatever moods or interests we bring to our
+reading of them. The flexibility of interpretation suits them for almost any time and any
+culture.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
 Do the following statements agree with the information given in Reading Passage?
-In boxes 9-13 on your answer sheet write
-YES    if the statement agrees with the information
-NO    if the statement contradicts the information
-NOT GIVEN if there is no information on this in the passage 
- 3</p>
-<p>9.....................      Howard and Tracey Kendler studied under Clark Hull.
-10.....................    The Kendlers trained their subjects separately in the two stages of their
-experiment, but not in how to integrate the two actions.
-11.....................    Michael Cole and his colleagues demonstrated that adult performance
-on inductive reasoning tasks depends on features of the apparatus and procedure.
-12.....................    All Hewson's experiments used marbles of the same size.
-13.....................    Hewson's modifications resulted in a higher success rate for children of
-all ages.
- 4</p>
-<p>Solution:
- 
-1. CH
-2. MC
-3. MC
-4. SH
-5. SH
-6. MC
-7.
-8. SH
-9. NOT GIVEN
-10. YES
-11. YES
-12. YES
-13. NO
-SH
- 5</p>
-<p>Reading Practice
- Children Tested to Destruction?
-English primary school pupils subjected to more tests than in any other country
-English primary school pupils have to deal with unprecedented levels of pressure as they
-face tests more frequently, at a younger age, and in more subjects than children from any
-other country, according to one of the biggest international education inquiries in decades.
-The damning indictment of England’s primary education system revealed that the country’s
-children are now the most tested in the world. From their very earliest days at school they
-must navigate a set-up whose trademark is’high stakes’testing, according to a recent report
-Parents are encouraged to choose schools for their children based on league tables of test
-scores. But this puts children under extreme pressure which could damage their motivation
-and self-esteem, as well as encouraging schools to’teach to the test’at the expense of
-pupils’wider learning, the study found. The findings are part of a two-year inquiry – led by
-Cambridge University – into English primary schools. Other parts of the UK and countries
-such as France, Norway and Japan used testing but it was,’less intrusive, less
-comprehensive, and considerably less frequent’, Cambridge’s Primary Review concluded.
-England was unique in using testing to control what is taught in schools, to monitor
-teaching standards and to encourage parents to choose schools based on the results of
-the tests, according to Kathy Flail, from the National University of Ireland in Cork, and
-Kamil Ozerk, from the University of Oslo, who conducted the research. ‘Assessment in
-England, compared to our other reviewed countries, is pervasive, highly consequential, and
-taken by officialdom and the public more generally to portray objectively the actual quality
-of primary education in schools,’their report concluded. Teachers’leaders said the testing
-regime was ‘past its sell-by date’and called for a fundamental review of assessment.
-Steve Sinnott, General Secretary of the National Union of Teachers, said England’s testing
-system was having a’devastating’impact on schools.’Uniquely, England is a country where
-testing is used to police schools and control what is taught,’ he said. ‘When it comes to
-testing in England, the tail wags the dog. It is patently absurd that even the structure and
-content of education is shaped by the demands of the tests. I call on the Government to
-initiate a full and independent review of the impact of the current testing system on schools
-and on children’s learning and to be prepared to dismantle a system which is long past its
-sell-by date.’
-John Dunford, General Secretary of the Association of School and College Leaders,
-warned that the tests were having a damaging effect on pupils. The whole testing regime is
-governed by the need to produce league tables,’ he said. ‘It has more to do with holding
-schools to account than helping pupils to progress.’
-The fear that many children were suffering intolerable stress because of the tests was
-voiced by Mick Brookes, General Secretary of the National Association of Head Teachers.
-There are schools that start rehearsing for key stage two SATs [Standard Assessment
-Tests] from the moment the children arrive in September. That’s just utterly ridiculous,’he
-said. There are other schools that rehearse SATs during Christmas week.These are young
-children we are talking about They should be having the time of their lives at school not just
-worrying about tests. It is the breadth and richness of the curriculum that suffers. The
-consequences for schools not reaching their targets are dire – heads can lose their jobs
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+In boxes 1-6 on your answer sheet, write
+YES                   if the statement is true
+NO                    if the statement is false
+NOT GIVEN      if the information is not given in the passage
+1.....................   The Grimm brothers believed they would achieve international fame. 
+2.....................   The Grimm brothers were forced to work in secret.
+3.....................   Some parents today still think Grimm fairy tales are not suitable for
+children.
+4.....................   The first edition of Grimm’s fairy tales sold more widely in England than in
+Germany.
+5.....................   Adults like reading Grimm’s fairy tales for reasons different from those of
+children.
+6.....................   The Grimm brothers based the story “Cinderella” on the life of Dorothea
+Viehmann
+ Questions 7-9
+Choose the correct letter,  A, B, C or D.
+Write your answers in boxes  7-9 on your answer sheet.
+7. In paragraph 4, what changes happened at that time in Europe?
+A   Literacy levels of the population increased.
+B   The development of printing technology made it easier to publish.
+C   Schools were open to children.
+D   People were fond of collecting superb picture books.
+8. What changes did the Grimm Brothers make in later editions?
+A   They made the stories shorter.
+B   They used more oral language.
+C   The content of the tales became less violent.
+ 3
+ 
+ D   They found other origins of the tales.
+9. What did Marie Hassenpflug contribute to the Grimm’s Fairy tales?
+A   She wrote stories.
+B   She discussed the stories with them.
+C   She translated a popular book for the brothers using her talent for languages.
+D   She told the oral stories that were based on traditional Italian stories.
+Questions 10-14
+Write the correct letter,  A-H, in boxes  10-14 on your answer sheet.
+10.....................   Heinz Rolleke said the Grimm’s tales are “German” because the tales
+11.....................   Heinz Rolleke said the abandoned children in tales
+12.....................   Bernhard Lauer said the writing style of the Grimm brothers is universal
+because they
+13.....................   Jack Zipes said the pursuit of happiness in the tales means they
+14.....................   Bruno Bettelheim said the therapeutic value of the tales means that the
+fairy tales
+A     reflect what life was like at that time
+B     help children deal with their problems
+C     demonstrate the outdated system
+D     tell of the simplicity of life in the German countryside
+E     encourage people to believe that they can do anything
+F     recognize the heroes in the real life
+G     contribute to the belief in nature power
+H     avoid details about characters’ social settings.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+1.NO
+2.NOT GIVEN
+3.YES
+4.NOT GIVEN
+5.YES
+6.NO
+7.A8.C
+9.D
+10.D
+11.A
+12.H
+13.E
+14.B
+ 5</div>
+</div>
+</div>
 </body>
 </html>

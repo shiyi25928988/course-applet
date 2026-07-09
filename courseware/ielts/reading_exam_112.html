@@ -1,393 +1,204 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copy Your Neighbor - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Environmentally Friendly Vehicles - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题154/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Copy Your Neighbor</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Reading Practice
- Bramley College International Scholarships
-There are seven types of scholarship offered by Bramley College to enrolled international
-students to assist with the costs of their courses. With the exception of applications for
-scholarship category E, all newly-enrolled international students are automatically
-considered for these scholarships. The scholarship is awarded in the student's first year as
-a credit to second semester course fees. In all subsequent years, the scholarship is
-awarded as a credit to first semester course fees. The scholarships are awarded once per
-year unless otherwise stated.
-The scholarship categories are:</p>
-<p>One scholarship of A$2000 for the most outstanding students entering the Foundation Studies Program from
-each of the following countries: Singapore, Malaysia and Thailand. An additional six scholarships are
-available for students from other countries. These scholarships are offered on two dates, to students in the
-March and June intakes of the program. Scholarships are awarded on the basis of first semester results.</p>
-<p>Three scholarships providing 25% of course fees for the duration of the course to the three most outstanding
-State Certificate of Education (SCE) students entering a Diploma or Certificate program. Scholarships are
-awarded on the basis of the previous year's SCE results.</p>
-<p>Seventeen scholarships providing 25% of course fees for the duration of the course to outstanding Diploma
-or Certificate students entering each Bramley College School: three each in the Schools of Business and
-Engineering; two in the School of Applied Science; two in the School of Environmental Design and
-Construction; two in the School of Art and Design; two in the School of Social Sciences and
-Communications; one in the School of Biomedical and Health Science; one in the School of Education and
-one in the School of Nursing. Scholarships are awarded on the basis of first semester results.</p>
-<p>One scholarship of A$4000 per annum for the duration of the course to the most outstanding student
-entering the Diploma in Communication. Scholarships are awarded on the basis of first semester results.</p>
-<p>Nine scholarships of A$3000 per annum for the duration of the course to the most outstanding students
-commencing any Advanced Certificate course. Scholarships are awarded on the basis of Basic Certificate
-results (not SCE results). Note that applicants need to apply for this scholarship on the Bramley College
-International Scholarship Application Form.</p>
-<p>One full-fee scholarship to the most outstanding student commencing a Diploma in Art and Design
-(Photography) course. This scholarship is offered every second year, and is awarded on the basis of results
-obtained in the Certificate in Design course.
-G Four half-fee scholarships to outstanding students of Bramley College's Singapore campus for the final year
-of the two-year Certificate in Business Studies to be completed in Melbourne, Australia. Scholarships are
-awarded on the basis of first year results.
- 1</p>
-<p>Questions 1-7
-Reading Passage has six sections, A-G.
-Which paragraph contains the following information?
-Write the correct letter A-G in boxes 1-7 on your answer sheet.
-NB You may use any letter more than once
-1..................... It is awarded on results obtained in the SCE exam.
-2..................... It is only available to students from the College's overseas branch.
-3..................... It is not offered every year.
-4..................... Students need to apply for it.
-5..................... It is offered twice each year.
-6..................... It pays 100% of the student's tuition fees.
-7..................... It provides 50% of one year's fees.
- 2</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Environmentally Friendly Vehicles</h1>
+<p>雅思阅读真题 · 第112篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Environmentally-Friendly! Vehicles
+A
+In the early 1990s, the California Air Resources Board (CARB), the government of
+California’s “clean air agency”, began a push for more fuel-efficient, lower-emissions
+vehicles, with the ultimate goal being a move to zero-emissions vehicles such as electric
+vehicles. In response, automakers developed electric models, including the Chrysler
+TEVan, Ford Ranger EV pickup truck, GM EV1 and S10 EV pickup, Honda EV Plus
+hatchback, Nissan lithium-battery Altra EV miniwagon and Toyota RAV4 EV. Ford Fusion is
+manufactured at Ford’s Hermosillo Stamping & Assembly plant, located in Sonora Mexico. I
+thought going green was supposed to provide the U.S. with more jobs.
+B
+The automakers were accused of pandering to the wishes of CARB in order to continue to
+be allowed to sell cars in the lucrative Californian market, while failing to adequately
+promote their electric vehicles in order to create the impression that the consumers were
+not interested in the cars, all the while joining oil industry lobbyists in vigorously protesting
+CARB’s mandate. GM’s program came under particular scrutiny; in an unusual move,
+consumers were not allowed to purchase EV1s, but were instead asked to sign closed-end
+leases, meaning that the cars had to be returned to GM at the end of the lease period, with
+no option to purchase, despite lesser interest in continuing to own the cars. Chrysler,
+Toyota, and a group of GM dealers sued CARB in Federal court, leading to the eventual
+neutering of CARB’s ZEV Mandate.
+C
+After public protests by EV drivers’ groups upset by the repossession of their cars, Toyota
+offered the last 328 RAV4-EVs for sale to the general public during six months, up until
+November 22, 2002. Almost all other production electric cars were withdrawn from the
+market and were in some cases seen to have been destroyed by their manufactures.
+Toyota continues to support the several hundred Toyota RAV4-EV in the hands of the
+general public and in fleet usage. GM famously de-activated the few EV1s that were
+donated to engineering schools and museums.
+D
+Throughout the 1990s, the appeal of fuel-efficient or environmentally friendly cars declined
+among Americans, who instead favored sport utility vehicles, which were affordable to
+operate despite their poor fuel efficiency thanks to lower gasoline prices. American
+automakers chose to focus their product lines around the truck-based vehicles, which
+enjoyed larger profit margins than the smaller cars which were preferred in places like
+Europe or Japan. In 1999, the Honda Insight hybrid car became the first hybrid to be sold in
+North America since the little-known Woods hybrid of 1917.
+E
+In 1995, Toyota debuted a hybrid concept car at the Tokyo Motor Show, with testing
+following a year later. The first Prius, model NHW10, went on sale on December 10, 1997.
+It was available only in Japan, though it has been imported privately to at least the United
+ 1
+Kingdom, Australia, and New Zealand. The first-generation Prius, at its launch, became the
+world’s first mass-produced gasoline-electric hybrid car. The NHW10 Prius styling
+originated from California designers, who were selected over competing designs from other
+Toyota design studios.
+F
+In the United States, the NHW11 was the first Prius to be sold. The Prius was marketed
+between the smaller Corolla and the larger Camry. The published retail price of the car was
+US$19,995. The NHW11 Prius became more powerful partly to satisfy the higher speeds
+and longer distances that Americans drive. Air conditioning and electric power steering
+were standard equipment. The vehicle was the second mass-produced hybrid on the
+American market, after the two-seat Honda Insight. While the larger Prius could seat five,
+its battery pack restricted cargo space.
+G
+Hybrids, which featured a combined gasoline and electric powertrain, were seen as a
+balance, offering an environmentally friendly image and improved fuel economy, without
+being hindered by the low range of electric vehicles, albeit at an increased price over
+comparable gasoline cars. Sales were poor, the lack of interest attributed to the car’s small
+size and the lack of necessity for a fuel-efficient car at the time. The 2000s energy crisis
+brought renewed interest in hybrid and electric cars. In America, sales of the Toyota Prius
+jumped, and a variety of automakers followed suit, releasing hybrid models of their own.
+Several began to produce new electric car prototypes, as consumers called for cars that
+would free them from the fluctuations of oil prices.
+H
+In 2000, Hybrid Technologies, later renamed Li-ion Motors, started manufacturing electric
+cars in Mooresville, North Carolina. There has been increasing controversy with Li-ion
+Motors though due to the ongoing ‘Lemon issues’ regarding their product. And their attempt
+to cover it up. California electric-car maker Tesla Motors began development in 2004 on
+the Tesla Roadster, which was first delivered to customers in 2008. The Roadster
+remained the only highway-capable EV in serial production and available for sale until
+2010. Senior leaders at several large automakers, including Nissan and General Motors,
+have stated that the Roadster was a catalyst which demonstrated that there is pent-up
+consumer demand for more efficient vehicles. GM Vice Chairman Bob Lutz said in 2007
+that the Tesla Roadster inspired him to push GM to develop the Chevrolet Volt, a plug-in
+hybrid sedan prototype that aims to reverse years of dwindling market share and massive
+financial losses for America’s largest automaker. In an August 2009 edition of The New
+Yorker, Lutz was quoted as saying, “All the geniuses here at General Motors kept saying
+lithium-ion technology is 10 years away, and Toyota agreed with us – and boom, along
+comes Tesla. So I said, ‘How come some tiny little California startup, run by guys who
+know nothing about the car business, can do this, and we can’t?’ That was the crowbar that
+helped break up the log jam.”
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 27-30
+Choose the correct letter, A, B, C or D.
+27   What does the author think of the factory in Sonora in Mexico where the ford fusion is
+manufactured?
+A   the factory should be helpful in the US soil business
+ B   Employment of US will be created as consumers change their awareness
+ C   More competitive cars will be introduced into the market
+D   this issue is hard to give a predict
+ 28   In the 1990s, what dropped in America for environmentally friendly vehicles?
+A   production
+B   Attractiveness
+C   Announcement
+D   Expectation
+ 29   What did GM notably send to engineering schools and museums?
+A   EV 1
+B   CARB
+C   RAV4
+D   MINI E
+30   Nissan and GM high-level leaders declared the real reason for the popularity of
+Roaster is its
+A   legendary concert
+B    huge population in the market
+C    bursting demand
+D    artistic design
+Questions 31-35
+ 3
+ Do the following statements agree with the information given in Reading Passage 3?
+In boxes 31-35 on your answer sheet, write
+YES                  if the statement is true
+NO                   if the statement is false
+NOT GIVEN     if the information is not given in the passage
+ 31.....................   Some automakers mislead and suppressed the real demand for electric
+cars of keeping profit in a certain market by luring the want of CARB.
+ 32.....................   Toyota started to sell 328 RAV4-EVs for taking up the market share
+33.....................   In some countries, American auto-makers would like to grab the
+opportunity to earn money in the vehicle of bigger litre engine cars rather than smaller ones
+34.....................   Hybrids cars are superior vehicles that combine the impression of an
+environmental friend electric power engine and a lower price in the unit sale.
+35.....................   an inspiration to make an effort to produce hybrid cars is to cope with
+economic difficulties result from a declining market for General Motors.
+ Questions 36-40
+Complete the summary using the list of words,  A-L below
+Write the correct letter,  A-L in boxes  36-40 on your answer sheet.
+A 36..................... was firstly introduced by Car maker Toyota in 1995. Then it started for
+sale in 1997 with a new first-generation model. Not only in Japan but included other
+countries such as  37..................... and Oceania in which  the Prius  was imported to. The
+first-generation Prius was the first car in mass production which is powered
+by 38...................... The model NHW10 was designed by a winning Californian designer.
+The innovated NHW 11 Prius has considerably higher running velocity
+and 39..................... than American counterparts. Still, the load capacity of current Prius
+version was limited in its  40.....................
+A   electric car B   United Kingdom C   Market
+G   battery
+K E   longer distances F   Emissions
+I   gasoline-electricity J   inspiration   cargo spaceD   concept car
+H   Consumers
+L   orientation
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
  
-1. B
-2. G
-3. F
-4.
-5. A
-6. F
-7. G</p>
-<p>Reading Practice
- Bring back the big cats
-It's time to start returning vanished native animals to Britain, says John Vesty There is a
-poem, written around 598 AD, which describes hunting a mystery animal called a llewyn.
-But what was it? Nothing seemed to fit, until 2006, when an animal bone, dating from
-around the same period, was found in the Kinsey Cave in northern England. Until this
-discovery, the lynx - a large spotted cat with tassel led ears - was presumed to have died
-out in Britain at least 6,000 years ago, before the inhabitants of these islands took up
-farming. But the 2006 find, together with three others in Yorkshire and Scotland, is
-compelling evidence that the lynx and the mysterious llewyn were in fact one and the same
-animal. If this is so, it would bring forward the tassel-eared cat's estimated extinction date
-by roughly 5,000 years.
-However, this is not quite the last glimpse of the animal in British culture. A 9th- century
-stone cross from the Isle of Eigg shows, alongside the deer, boar and aurochs pursued by
-a mounted hunter, a speckled cat with tasselled ears. Were it not for the animal's backside
-having worn away with time, we could have been certain, as the lynx's stubby tail is
-unmistakable. But even without this key feature, it's hard to see what else the creature
-could have been. The lynx is now becoming the totemic animal of a movement that is
-transforming British environmentalism: rewilding.
-Rewilding means the mass restoration of damaged ecosystems. It involves letting trees
-return to places that have been denuded, allowing parts of the seabed to recover from
-trawling and dredging, permitting rivers to flow freely again. Above all, it means bringing
-back missing species. One of the most striking findings of modern ecology is that
-ecosystems without large predators behave in completely different ways from those that
-retain them Some of them drive dynamic processes that resonate through the whole food
-chain, creating niches for hundreds of species that might otherwise struggle to survive. The
-killers turn out to be bringers of life.
-Such findings present a big challenge to British conservation, which has often selected
-arbitrary assemblages of plants and animals and sought, at great effort and expense, to
-prevent them from changing. It has tried to preserve the living world as if it were a jar of
-pickles, letting nothing in and nothing out, keeping nature in a state of arrested
-development. But ecosystems are not merely collections of species; they are also the
-dynamic and ever-shifting relationships between them. And this dynamism often depends
-on large predators.
-At sea the potential is even greater: by protecting large areas from commercial fishing, we
-could once more see what 18th-century literature describes: vast shoals of fish being
-chased by fin and sperm whales, within sight of the English shore. This policy would also
-greatly boost catches in the surrounding seas; the fishing industry's insistence on scouring
-every inch of seabed, leaving no breeding reserves, could not be more damaging to its own
-interests.
-Rewilding is a rare example of an environmental movement in which campaigners
-articulate what they are for rather than only what they are against. One of the reasons why
-the enthusiasm for rewilding is spreading so quickly in Britain is that it helps to create a
-more inspiring vision than the green movement's usual promise of 'Follow us and the world
-will be slightly less awful than it would otherwise have been.
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 1.B
+2.B
+3.A
+4.C
+5.YES
+6.NO
+ 8.NO
+9.YES
+10.D
+11.B
+12.I
+13.E
+14. 7.NOT GIVEN G
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,399 +1,193 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inside The Mind Of The Consumer - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Malaria Combat In Italy - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题262/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Inside The Mind Of The Consumer</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-4
-Reading Passage 1 has six paragraphs, A-F.
-Choose the correct heading for paragraphs A and C-E from the list of headings below.
-Write the correct number, i-vii, in boxes 1-4 on your answer sheet.
-List of Headings
-i           The inheritance and development of educational concepts of different thinkers
-ii          Why children had to work to alleviate the burden on family
-iii         Why children are not highly valued
-iv         The explanation for children dying in hospital at their early age
-v          The first appearance of modem educational philosophy
-vi         The application of a creative learning method on a wild kid
-vii        The emergence and spread of the notion of kindergarten
- 
-1.....................    Paragraph A 
-      Example           Answer
-     Paragraph B     ii
-2.....................    Paragraph C
-3.....................   Paragraph D
-4.....................   Paragraph E
- 
-Questions 5-8
-Look at the following events (Questions 5-8) and the list of dates below.
-Match each event with the correct date, A, B or C.
-Write the correct letter, A, B or C, in boxes 5-8 on your answer sheet.
-NB You may use any letter more than once.
-List of Dates
-A          the 18th century (1700-1799)
-B          the 19th century (1800-1899)
-C          the 20th century (1900-1999)
-5.....................   the need for children to work
-6.....................   the rise of the middle class
-7.....................   the emergence of a kindergarten
-8.....................   the spread of kindergartens around the U.S.
- 3</p>
-<p>Questions 9-13
-Look at the following opinions or deeds (Questions 9-13) and the list of people below.
-Match each opinion or deed with the correct person, A, B, C or D.
-Write the correct letter, A, B, C or D, in boxes 9-13 on your answer sheet.
-NB You may use any letter more than once.
-List of People
-A          Jean Jacques Rousseau
-B          Johan Heinrich Pestalozzi
-C          Jean Marc Gaspard Itard
-D          Friedrich Froebel
-9.....................     was not successful to prove the theory
-10.....................   observed a child’s record
-11.....................   requested a study setting with emotional comfort firstly
-12.....................   proposed that corruption was not a characteristic in people’s nature
-13.....................   was responsible for an increase in the number of a type of school
- 4</p>
-<p>Solution:
- 
-1. iii
-2. v
-3. i
-4. vi
-5. A
-6. B
-7.
-8. C
-9. C
-10. A
-11. B
-12. A
-13. D</p>
-<p>Reading Practice
- EFFECTS OF NOISE
-In general, it is plausible to suppose that we should prefer peace and quiet to noise. And
-yet most of us have had the experience of having to adjust to sleeping in the mountains
-or the countryside because it was initially ‘too quiet’, an experience that suggests
-that humans are capable of adapting to a wide range of noise levels. Research supports
-this view. For example, Glass and Singer (1972) exposed people to short bursts of very
-loud noise and then measured their ability to work out problems and their
-physiological reactions to the noise. The noise was quite disruptive at first, but after about
-four minutes the subjects were doing just as well on their tasks as control subjects who
-were not exposed to noise. Their physiological arousal also declined quickly to the same
-levels as those of the control subjects.
-But there are limits to adaptation and loud noise becomes more troublesome if the person
-is required to concentrate on more than one task. For example, high noise levels
-interfered with the performance of subjects who were required to monitor three dials at a
-time, a task not unlike that of an aeroplane pilot or an air-traffic controller (Broadbent,
-1957). Similarly, noise did not affect a subject’s ability to track a moving line with a
-steering wheel, but it did interfere with the subject’s ability to repeat numbers while
-tracking (Finkelman and Glass, 1970).
-Probably the most significant finding from research on noise is that its predictability is more
-important than how loud it is. We are much more able to ‘tune out’ chronic background
-noise, even if it is quite loud, than to work under circumstances with unexpected intrusions
-of noise. In the Glass and Singer study, in which subjects were exposed to bursts of noise
-as they worked on a task, some subjects heard loud bursts and others heard soft bursts.
-For some subjects, the bursts were spaced exactly one minute apart (predictable noise);
-others heard the same amount of noise overall, but the bursts
-  Unpredictable Noise Predictable Noise Average
-Loud noise 40.1 31.8 35.9
-Soft noise 36.7 21A 32.1
-Average 38.4  
- 
-29.6
-Table 1 : Proofreading Errors and Noise
-occurred at random intervals (unpredictable noise). Subjects reported finding the
-predictable and unpredictable noise equally annoying, and all subjects performed at
-about the same level during the noise portion of the experiment. But the different
-noise conditions had quite different after-effects when the subjects were required to
-proofread written material under conditions of no noise. As shown in Table 1 the
-unpredictable noise produced more errors in the later proofreading task than predictable
-noise; and soft, unpredictable noise actually produced slightly more errors on this task than
-the loud, predictable noise.
-Apparently, unpredictable noise produces more fatigue than predictable noise, but it takes
-a while for this fatigue to take its toll on performance.
-Predictability is not the only variable that reduces or eliminates the negative effects of
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Malaria Combat In Italy</h1>
+<p>雅思阅读真题 · 第193篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Malaria Combat in Italy
+A
+Mal-aria. Bad air. Even the world is Italian, and this horrible disease marked the life of
+those in the peninsula for thousands of years. Giuseppe Garibaldi’s wife died of the
+disease, as did the country’s first prime minister, Cavour, in 1861. Yet by 1962, Italy was
+officially declared malaria-free, and it has remained so ever since. Frank Snowden’s study
+of this success story is a remarkable piece of historical work. Original, crystal-clear,
+analytical and passionate, Snowden (who has previously written about cholera) takes us to
+areas historians have rarely visited before.
+B
+Everybody now knows that malaria is carried by mosquitoes. Malaria has always been the
+subject of research for medical practitioners from time immemorial. However, many ancient
+texts, especially medical literature, mention of various aspects of malaria and even of its
+possible link with mosquitoes and insects. Early man, confronting the manifestations of
+malaria, attributed the fevers to supernatural influences: evil spirits, angered deities, or the
+black magic of sorcerers. But in the 19th century, most experts believed that the disease
+was not produced by unclean air (“miasma” or “poisoning of the air”). Two Americans,
+Josiah Clark Nott and Lewis Daniel Beauperthy, echoed Crawford’s ideas. Nott in his essay
+“Yellow Fever Contrasted with Bilious Fever,” published in 1850, dismissed the miasma
+theory as worthless, arguing that microscopic insects somehow transmitted by mosquitoes
+caused both malaria and yellow fever. Others made a link between swamps, water and
+malaria, but did not make the further leap towards insects. The consequences of these
+theories were that little was done to combat the disease before the end of the century.
+Things became so bad that 11m Italians (from a total population of 25m) were
+“permanently at risk”. In malarial zones, the life expectancy of land workers was a terrifying
+22.5 years. Those who escaped death were weakened or suffered from splenomegaly – a
+“painful enlargement of the spleen” and “a lifeless stare”. The economic impact of the
+disease was immense. Epidemics were blamed on southern Italians, given the widespread
+belief that malaria was hereditary. In the 1880s, such theories began to collapse as the
+dreaded mosquito was identified as the real culprit.
+C
+Italian scientists, drawing on the pioneering work of French doctor Alphonse Laveran, were
+able to predict the cycles of fever but it was in Rome that further key discoveries were
+made. Giovanni Battista Grassi, a naturalist, found that a particular type of mosquito was
+the carrier of malaria. By experimenting on healthy volunteers (mosquitoes were released
+into rooms where they drank the blood of the human guinea pigs), Grassi was able to make
+the direct link between the insects (all females of a certain kind) and the disease. Soon,
+doctors and scientists made another startling discovery: the mosquitoes themselves were
+also infected and not mere carriers. Every year, during the mosquito season, malarial blood
+was moved around the population by the insects. Definitive proof of these new theories
+was obtained after an extraordinary series of experiments in Italy, where healthy people
+were introduced into malarial zones but kept free of mosquito bites – and remained well.
+The new Italian state had the necessary information to tackle the disease.
+ 1
+D
+A complicated approach was adopted, which made use of quinine – a drug obtained from
+tree bark which had long been used to combat fever but was now seen as a crucial part of
+the war on malaria. Italy introduced a quinine law and a quinine tax in 1904, and the drug
+was administered to large numbers of rural workers. Despite its often terrible side-effects
+(the headaches produced were known as the “quinine-buzz”), the drug was successful in
+limiting the spread of the disease, and in breaking cycles of infection. In addition, Italy set
+up rural health centres and invested heavily in education programmes. Malaria, as
+Snowden shows, was not just a medical problem, but a social and regional issue, and
+could only be defeated through multi-layered strategies. Politics was itself transformed by
+the anti-malarial campaigns.
+E
+It was originally decided to give quinine to all those in certain regions – even healthy
+people; peasants were often suspicious of the medicine being forced upon them. Doctors
+were sometimes met with hostility and refusal, and many were dubbed “poisoners”. Despite
+these problems, the strategy was hugely successful. Deaths from malaria fell by some 80%
+in the first decade of the 20th century and some areas escaped altogether from the
+scourge of the disease.
+F
+Shamefully, the Italian malaria expert Alberto Missiroli had a role to play in the disaster: he
+did not distribute quinine, despite being well aware of the epidemic to come. Snowden
+claims that Missiroli was already preparing a new strategy – with the support of the US
+Rockefeller Foundation – using a new pesticide, DDT. Missiroli allowed the epidemic to
+spread, in order to create the ideal conditions for a massive, and lucrative, human
+experiment. Fifty-five thousand cases of malaria were recorded in the province of Littoria
+alone in 1944. It is estimated that more than a bird of those in the affected area contracted
+the disease. Thousands, nobody knows how many, died.
+G
+With the war over, the US government and the Rockefeller Foundation were free to
+experiment. DDT was sprayed from the air and 3m Italians had their bodies covered with
+the chemical. The effects were dramatic, and nobody really cared about the toxic effects of
+the chemical. By 1962, malaria was more or less gone from the whole peninsula. The last
+cases were noted in a poor region of Sicily. One of the final victims to die of the disease in
+Italy was the popular cyclist, Fausto Coppi. He had contracted malaria in Africa in 1960,
+and the failure of doctors in the north of Italy to spot the disease was a sign of the times. A
+few decades earlier, they would have immediately noticed the tell-tale signs; it was later
+claimed that a small dose of quinine would have saved his life.
+H
+As there are still more than 1m deaths every year from malaria worldwide, Snowden’s book
+also has contemporary relevance. This is a disease that affects every level of the societies
+where it is rampant. As Snowden writes: “In Italy, malaria undermined agricultural
+productivity, decimated the army, destroyed communities and left families impoverished.”
+The economic miracle of the 50s and 60s which made Italy into a modern industrial nation
+ 2
+would not have been possible without the eradication of malaria. Moreover, this book
+convincingly argues that the disease was “an integral part of the big picture of modern
+Italian history”. This magnificent study, beautifully written and impeccably documented,
+deserves an audience beyond specialists in history, or in Italy. It also provides us with “a
+message of hope for a world struggling with the great present-day medical emergency”.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Complete the following summary of the paragraphs of Reading Passage.
+Using NO MORE THAN TWO WORDS  from the Reading Passage for each answer.
+Write your answers in boxes  1-4 on your answer sheet.
+Theories for malaria origin have always been the issue of research for medical practitioners
+from ancient time. Although the link between malaria and mosquito was established lately,
+it has been recorded in words that  1....................., including mosquito, may play the major
+culprits. In the 19th century, most experts rejected the idea of the miasma theory which
+related malaria to  2...................... Even another widespread theory arose that southern
+Italians were blamed, to whom malaria was  3...................... In southern Italy, the situation
+became so severe that near half the Italians population was thought to be “permanently at
+risk”. In malarial areas the  4...................... Of rural workers was surprisingly shorter. In the
+1880s, such theories began to withdraw as the mosquito was identified as the true cause.
+ Questions 5-8
+Do the following statements agree with the claims of the writer in Reading Passage?
+In boxes 5-8 on your answer sheet write
+YES                  if the statement agrees with the claims of the writer
+NO                   if the statement contradicts the claims of the writer
+NOT GIVEN     if it is impossible to say what the writer thinks about this
+5.....................   The volunteers in Grassi experiments were from all parts over Italy.
+6.....................   Healthy people could remain safe in malaria – infectious zone if they did
+not have mosquito bites.
+7.....................   Quinine is an effective drug which had long been used to combat malaria.
+8.....................   Eradicating malaria was a goal combined both medical and political
+significance.
+ Questions 9-14
+Reading Passage has 8 paragraphs,  A-H.
+Which paragraph contains the following information?
+Write the correct letter  A-H in boxes  9-14 on your answer sheet.
+9.....................   A breakthrough was found that mosquito was the carrier of malaria
+ 4
+10.....................   A scientist intentionally failed to restrict the epidemic area.
+11.....................   This successful story still holds true for today’s readers worldwide.
+12.....................   One of the final cases reported dying of malaria in Italy
+13.....................   the negative symptoms of the highly effective drug
+14.....................   A list of the speculative hypothesis was cited.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.insects
+2.unclean air
+3.hereditary
+4.life expectancy
+5.NOT GIVEN
+6.YES
+7.NO8.YES
+9.C
+10.F
+11.H
+12.G
+13.D
+14.B
+ 6</div>
+</div>
+</div>
 </body>
 </html>

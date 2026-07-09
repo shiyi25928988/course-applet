@@ -1,390 +1,200 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crop Growing Skyscrapers - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Extinct The Giant Deer - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题159/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Crop Growing Skyscrapers</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-6
-Use the information in the passage to match the project Brunel did (listed A-G) with
-opinions or deeds below.
-Write the appropriate letters A-G, in boxes 1-6 on your answer sheet.
-A    River Thames Tunnel
-B    Clifton Suspension Bridge
-C    Atmospheric Railway
-D    Great Britain
-E    The Great Western
-F    Great Western Railway
-G    The Great Eastern
- 
-1.....................   The project of construction that I.K.Brunel was not responsible for.
-2.....................   The project had stopped due to inconvenience and high maintaining cost.
- 
-3.....................   The project was honored to yet not completed by Brunel himself.
-  
-4.....................   The project had a budget problem although built by a famous engineer.
-5.....................   Serious problem happened and delayed repeatedly.
-6.....................   The first one to cross the Atlantic Ocean in mankind history.
- 
-Questions 7-9
-The reading Passage has seven paragraphs A-G.
-Which paragraph contains the following information?
-Write the correct letter A-G, in boxes 7-9 on your answer sheet
-NB You may use any letter more than once.
-7.....................   There was a great ship setting the criteria for the journey of the ocean.
-8.....................   An ambitious project which seemed to be applied in an unplanned service
-later.
-9.....................   Brunel showed his talent of inter-personal skills with landlords and finally,
- 4</p>
-<p>the project had been gone through.
- 
-Questions 10-13
-Complete the following summary of the paragraphs of Reading Passage
-Using NO MORE THAN TWO WORDS from the Reading Passage for each answer.</p>
-<p>Write your answers in boxes 10-13 on your answer sheet.
-The Great Eastern was specially designed with a 10..................... for carrying more fuels
-and was to take a long voyage to 11.....................; However due to physical condition,
-Brunel couldn’t be able to go with the maiden voyage. Actually, the Great Eastern was
-unprofitable and the great ship never crossed 12...................... But soon after there was an
-ironic opportunity for the Great Eastern which was used to carry and to lay
-huge 13..................... in Atlantic Ocean floor.
- 5</p>
-<p>Solution:
- 
-1. A
-2. C
-3. B
-4. G
-5. G
-6. E
-7.
-8. G
-9. C
-10. the biggest ship
-11. Australia
-12. Suez Canal
-13. telegraphic cable</p>
-<p>Build a Medieval Castle
-A. Michel Guyot, owner and restorer of Saint Fargeau castle in France, first had the
-idea of building a 13th-century style fortress following the discovery that the 15thcentury red bricks of his castle obscured the stone walls of a much older
-stronghold. His dream was to build a castle just as it would have been in the Middle
-Ages, an  idea which some found mildly amusing and others
-dismissed as outright folly.
- 
-However, Maryline Martin – project director – was inspired by the exciting potential for the
-venture to regenerate the region. It took several months to bring together and mobilise all
-the various different partners: architects, archaeologists and financial backers. A site in the
-heart of Guédelon forest was found: a site which offered not only all the resources required
-for building a castle – a stone quarry, an oak forest and a water supply – but in sufficient
-quantities to satisfy the demands of this gigantic site. The first team started work and on
-June 20th 1997 the first stone was laid.
-B. Unlike any other present-day building site, Michel Guyot’s purpose is clear, he warmly
-welcomes members of the public to participate. The workers’ role is to demonstrate and
-explain, to a wide audience, the skills of our forefathers. Stone quarrying, the building of
-vaulted ceilings, the blacksmith’s work and the raising of roof timbers are just some of the
-activities which visitors can witness during a visit to Guédelon. The workers are always on
-hand to talk about their craft and the progress of the castle.
- 
-Each year 60,000 children visit Guédelon with their schools. The site is an excellent
-educational resource, bringing to life the history of the Middle Ages. Guided tours are
-tailored to the school curriculum and according to age groups: activity trails for primary
-school children and interactive guided tours for secondary school children. Pupils of all
-ages have the opportunity to follow in the footsteps of medieval stonemasons by taking part
-in a stonecarving workshop or discover the secrets of the medieval master-builders at the
-geometry workshop.
-C. Workers in the Burgundy region of France are building a 13th century castle. They’re not
-restoring an old castle. They’re actually building a new old castle. See the builders are
-constructing it from scratch. The craftsmen have been working for nearly ten years now but
-they’re not even halfway done yet. That’s because they’re using only medieval tools and
-techniques. The World’s Gerry Hadden takes US to the site of what will be the Guedelon
-Castle. Another reason said by Jean Francois, a member of Guedelon stone cutter’s guild,
-for eight hours a day he bangs on a 13th century chisel with a 13th century iron mallet.
-D. The progress of construction has to give way to tourists side for their visits. The visitors
-from 2010, however unsightly they may be, are vital to the project. The initial funding came
-not from pillaging the local peasantry but from regional councils, the European Union and
-large companies. For the last 10 years, Guédelon, 100 miles southeast of Paris, has
-funded itself from its entrance fees. Last year it had a record 300,000 visitors, who paid
-almost €2.5m, making it the second most-visited site in Burgundy. The most visited site
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Extinct The Giant Deer</h1>
+<p>雅思阅读真题 · 第116篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Extinct: the Giant Deer
+Toothed cats, mastodons, giant sloths, woolly rhinos, and many other big, shaggy
+mammals are widely thought to have died out around the end of the last ice age, some
+10,500 years ago.
+A
+The Irish elk is also known as the giant deer (Megaloceros giganteus). Analysis of ancient
+bones and teeth by scientists based in Britain and Russia show the huge herbivore
+survived until about 5,000 B.C. – more than three millennia later than previously believed.
+The research team says this suggests additional factors, besides climate change, probably
+hastened the giant deer’s eventual extinction. The factors could include hunting or habitat
+destruction by humans.
+B
+The Irish elk, so-called because its well-preserved remains are often found in lake
+sediments under peat bogs in Ireland, first appeared about 400,000 years ago in Europe
+and Central Asia. Through a combination of radiocarbon dating of skeletal remains and the
+mapping of locations where the remains were unearthed, the team shows the Irish elk was
+widespread across Europe before the last “big freeze.” The deer’s range later contracted to
+the Ural Mountains, in modern-day Russia, which separate Europe from Asia.
+C
+The giant deer made its last stand in western Siberia, some 3,000 years after the ice
+sheets receded, said the study’s co-author, Adrian Lister, professor of palaeobiology at
+University College London, England. “The eastern foothills of the Urals became very
+densely forested about 8,000 years ago, which could have pushed them on to the plain,” he
+said. He added that pollen analysis indicates the region then became very dry in response
+to further climatic change, leading to the loss of important food plants. “In combination with
+human pressures, this could have finally snuffed them out,” Lister said.
+D
+Hunting by humans has often been put forward as a contributory cause of extinction of the
+Pleistocene megafauna. The team, though, said their new date for the Irish elk’s extinction
+hints at an additional human-made problem – habitat destruction. Lister said, “We haven’t
+got just hunting 7,000 years ago – this was also about the time the first Neolithic people
+settled in the region. They were farmers who would have cleared the land.” The presence
+of humans may help explain why the Irish elk was unable to tough out the latest of many
+climatic fluctuations – periods it had survived in the past.
+E
+Meanwhile, Lister cast doubt on another possible explanation for the deer’s demise – the
+male’s huge antlers. Some scientists have suggested this exaggerated feature – the result
+of females preferring stags with the largest antlers, possibly because they advertised a
+male’s fitness – contributed to the mammal’s downfall. They say such antlers would have
+been a serious inconvenience in the dense forests that spread northward after the last ice
+ 1
+age. But, Lister said, “That’s a hard argument to make because the deer previously
+survived perfectly well through wooded interglacials [warmer periods between ice ages].”
+Some research has suggested that a lack of sufficient high-quality forage caused the
+extinction of the elk. High amounts of calcium and phosphate compounds are required to
+form antlers, and therefore large quantities of these minerals are required for the massive
+structures of the Irish Elk. The males (and male deer in general) met this requirement partly
+from their bones, replenishing them from food plants after the antlers were grown or
+reclaiming the nutrients from discarded antlers (as has been observed in extant deer).
+Thus, in the antler growth phase, Giant Deer was suffering from a condition similar to
+osteoporosis. When the climate changed at the end of the last glacial period, the vegetation
+in the animal’s habitat also changed towards species that presumably could not deliver
+sufficient amounts of the required minerals, at least in the western part of its range.
+F
+The extinction of megafauna around the world was almost completed by the end of the last
+ice age. It is believed that megafauna initially came into existence in response to glacial
+conditions and became extinct with the onset of warmer climates. Tropical and subtropical
+areas have experienced less radical climatic change. The most dramatic of these changes
+was the transformation of a vast area of North Africa into the world’s largest desert.
+Significantly, Africa escaped major faunal extinction as did tropical and sub-tropical Asia.
+The human exodus from Africa and our entrance into the Americas and Australia were also
+accompanied by climate change. Australia’s climate changed from cold-dry to warm-dry. As
+a result, surface water became scarce. Most inland lakes became completely dry or dry in
+the warmer seasons. Most large, predominantly browsing animals lost their habitat and
+retreated to a narrow band in eastern Australia, where there were permanent water and
+better vegetation. Some animals may have survived until about 7000 years ago. If people
+have been in Australia for up to 60 000 years, then megafauna must have co-existed with
+humans for at least 30 000 years. Regularly hunted modern kangaroos survived not only
+10 000 years of Aboriginal hunting, but also an onslaught of commercial shooters.
+G
+The group of scientists led by A.J. Stuart focused on northern Eurasia, which he was taking
+as Europe, plus Siberia, essentially, where they’ve got the best data that animals became
+extinct in Europe during the Late Pleistocene. Some cold-adapted animals, go through into
+the last part of the cold stage and then become extinct up there. So you’ve actually got two
+phases of extinction. Now, neither of these coincide – these are Neanderthals here being
+replaced by modern humans. There’s no obvious coincidence between the arrival of
+humans or climatic change alone and these extinctions. There’s a climatic change here, so
+there’s a double effect here. Again, as animals come through to the last part of the cold
+stage, here there’s a fundamental change in the climate, reorganization of vegetation, and
+the combination of the climatic change and the presence of humans – of advanced
+Paleolithic humans – causes this wave of extinction. There’s a profound difference between
+the North American data and that of Europe, which summarize that the extinctions in
+northern Eurasia, in Europe, are moderate and staggered, and in North America severe
+and sudden. And these things relate to the differences in the timing of human arrival. The
+extinction follows from human predation, but only at times of fundamental changes in the
+environment.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 28-32
+Complete the following summary of the paragraphs of Reading Passage.
+Using NO MORE THAN THREE WORDS  from the Reading Passage for each answer.
+Write your answers in boxes  28-32 on your answer sheet.
+Having been preserved well in Europe and Central Asia, the remains of the Irish elk was
+initially found approximately  28..................... Around  29....................., they were driven to
+live in the plain after being restricted to the Ural Mountains. Hunting was considered as one
+of the important factors of Irish elk’s extinction, people have not started hunting
+until 30..................... when Irish elk used to get through under a variety of climatic
+fluctuations.
+The huge antlers may possibly contribute to the reason why Irish elk extinct, which was
+highly controversial as they live pleasantly over the span of  31...................... Generally, it is
+well-known that, at the last maximum ice age, mammals become extinct
+about 32......................
+Questions 33-35
+Answer the questions below.
+Choose NO MORE THAN THREE WORDS AND/OR A NUMBER  from the passage for
+each answer.
+33.....................   What kind of physical characteristics eventually contributed to the
+extinction of Irish elk?
+34.....................   What kind of nutrient substance needed in maintaining the huge size of
+Irish elk?
+35.....................   What geographical evidence suggested the advent of human resulted in
+the extinction of Irish elk?
+Questions 36-39
+Choose the letter  A-D and write your answers in boxes  36-39 on your answer sheet.
+A          Eurasia
+B          Australia
+C          Asia
+D         Africa
+36.....................   the continents where humans imposed a little impact on large mammals
+extinction
+ 3
+37.....................   the continents where the climatic change was mild and fauna remains
+38.....................   the continents where both humans and climatic change are the causes
+39.....................   the continents where the climatic change along caused a massive
+extinction
+Question 40
+Which statement is true according to the Stuart team’s finding?
+A   Neanderthals rather than modern humans caused the extinction in Europe
+B   Paleolithic humans in Europe along kill the big animals such as Giant deer
+C   climatic change was not solely responsible for the megafauna extinction in Europe
+D   moderate and staggered extinction was mainly the result of fundamental climatic
+change
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+  
+  
+  
+  
+  1.400,000 years ago8.habitat
+destruction
+ 2.8000 years ago
+3.7000 years ago
+4.wooded
+interglacials
+5.10500 years ago
+6.Male’s huge
+antlers
+7.9.B
+10.D
+11.A
+12.C
+13.C
+minerals
+ 5</div>
+</div>
+</div>
 </body>
 </html>

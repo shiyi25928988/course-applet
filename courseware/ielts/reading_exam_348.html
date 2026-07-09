@@ -1,398 +1,176 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Can  A Brief History Lesson - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Invention Of Television - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题469/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Can  A Brief History Lesson</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>12..................... Thinking about music has a similar effect on the brain to hearing
-music.
-13..................... Earworms are more persistent when only a short section of the song
-is constantly replayed.
- 
-List of Researchers
-A Lauren Stewart
-B Ira Hyman
-C Andrea Haiper
-D John Seabrook
- 4</p>
-<p>Solution:
- 
-1. A
-2. E
-3. D
-4. H
-5. wrist
-6. emotions
- 
-8. challenging
-9. C
-10. A
-11. B
-12. C
-13. B
-7. unoccupied
- 5</p>
-<p>Reading Practice
- Mind readers
-It may one day be possible to eavesdrop on another person’s inner voice. 
-As you begin to read this article and your eyes follow the words across the page, you may
-be aware of a voice in your head silently muttering along. The very same thing happens
-when we write: a private, internal narrative shapes the words before we commit them to
-text.
-What if it were possible to tap into this inner voice? Thinking of words does, after all. create
-characteristic electrical signals in our brains, and decoding them could make it possible to
-piece together someone’s thoughts. Such an ability would have phenomenal prospects, not
-least for people unable to communicate as a result of brain damage. But it would also carry
-profoundly worrisome implications for the future of privacy.
-The first scribbled records of electrical activity in the human brain were made in 1924 by a
-German doctor called Hans Berger using his new invention - the electroencephalogram
-(EEG). This uses electrodes placed on the skull to read the output of the brain's billions of
-nerve cells or neurons. By the mid-1990s, the ability to translate the brain's activity into
-readable signals had advanced so far that people could move computer cursors using only
-the electrical fields created by their thoughts.
-The electrical impulses such innovations tap into are produced in a part of the brain called
-the motor cortex, which is responsible for muscle movement. To move a cursor on a
-screen, you do not think 'move left’ in natural language. Instead, you imagine a specific
-motion like hitting a ball with a tennis racket. Training the machine to realise which
-electrical signals correspond to your imagined movements, however, is time consuming
-and difficult. And while this method works well for directing objects on a screen, its
-drawbacks become apparent when you try using it to communicate. At best, you can use
-the cursor to select letters displayed on an on-screen keyboard. Even a practised mind
-would be lucky to write 15 words per minute with that approach. Speaking, we can manage
-150.
-Matching the speed at which we can think and talk would lead to devices that could
-instantly translate the electrical signals of someone’s inner voice into sound produced by a
-speech synthesiser. To do this, it is necessary to focus only on the signals coming from the
-brain areas that govern speech. However, real mind reading requires some way to
-intercept those signals before they hit the motor cortex.
-The translation of thoughts to language in the brain is an incredibly complex and largely
-mysterious process, but this much is known: before they end up in the motor cortex,
-thoughts destined to become spoken words pass through two ‘staging areas’ associated
-with the perception and expression of speech.
-The first is called Wernicke’s area, which deals with semantics - in this case, ideas based
-in meaning, which can include images, smells or emotional memories. Damage to
-Wernicke’s area can result in the loss of semantic associations: words can’t make sense
-when they are decoupled from their meaning. Suffer a stroke in that region, for example,
-and you will have trouble understanding not just what others are telling you, but what you
-yourself are thinking.
- 1</p>
-<p>The second is called Broca’s area, agreed to be the brain’s speech-processing centre.
-Here, semantics are translated into phonetics and. ultimately, word components. From
-here, the assembled sentences take a quick trip to the motor cortex, which activates the
-muscles that will turn the desired words into speech.
-Injure Broca’s area, and though you might know what you want to say. you just can’t send
-those impulses.
-When you listen to your inner voice, two things arc happening. You ‘hear’ yourself
-producing language in Wernicke’s area as you construct it in Broca’s area. The key to mind
-reading seems to lie in these two areas.
-44 The work of Bradley Greger in 2010 broke new ground by marking the first-ever
-excursion beyond the motor cortex into the brain’s language centres. His team used
-electrodes placed inside the skull to detect the electrical signatures of whole words, such
-as 'yes’, ’no’, ’hot’, ‘cold’, 'thirsty', ‘hungry’, etc. Promising as it is. this approach requires a
-new signal to be learned for each new word. English contains a quarter of a million distinct
-words. And though this was the first instance of monitoring Wernicke’s area, it still relied
-largely on the facial motor cortex.
-Greger decided there might be another way. The building blocks of language are called
-phonemes, and the English language has about 40 of them - the ‘kuh’ sound in ‘school’, for
-example the ’$h' in ‘shy’. Every English word contains some subset of these components.
-Decode the brain signals that correspond to the phonemes, and you would have a system
-to unlock any word at the moment someone thinks it.
-In 2011, Eric Leuthardt and his colleague Gerwin Schalk positioned electrodes over the
-language regions of four fully conscious people and were able to detect the phonemes ’oo’,
-‘ah’, ‘eh’ and ‘ee’. What they also discovered was that spoken phonemes activated both the
-language areas and the motor cortex, while imagined speech - that inner voice - boosted
-the activity of neurons in Wernike’s area. Leuthardt had effectively read his subjects' minds.
-‘I would call it brain reading,’ he says. To arrive at whole words. Leuthardt’s next step is to
-expand his library of sounds and to find out how the production of phonemes translates
-across different languages.
-For now. the research is primarily aimed at improving the lives of people with locked-in
-syndrome, but the ability to explore the brain’s language centres could revolutionise other
-fields. The consequences of these findings could ripple out to more general audiences who
-might like to use extreme hands-free mobile communication technologies that can be
-manipulated by inner voice alone. For linguists, it could provide previously unobtainable
-insight into the neural origins and structures of language. Knowing what someone is
-thinking without needing words at all would be functionally indistinguishable from telepathy.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Invention Of Television</h1>
+<p>雅思阅读真题 · 第348篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Invention of Television
+The question “Who invented television?” is simple enough, but the answer is surprisingly
+controversial. No one person was responsible for producing what we think of as television
+today and the credit is due to various inventors.
+The Scotsman, John Logie Baird, is considered by many to be the inventor of television. He
+showed early signs of his inventing ingenuity by setting up a telephone exchange to
+connect his house to those of his friends near by. His first interest in television came in
+1903, after he read a German book on the photoelectric properties of selenium. In 1873,
+this element was discovered to have the capacity to generate a current based on the
+amount of light applied to it. Working initially in Hastings, England, Baird famously created
+an apparatus using an old hatbox he bought in a used goods store, a pair of scissors, some
+needles, some bicycle light lenses and an old tea chest. Baird also used a Nipkow disk,
+created by German inventor, Paul Nipkow, and a lot of his work was based on the previous
+work by German, Arthur Korn. In February 1924, Baird demonstrated moving silhouette
+images on a ‘television’. Later that year, after nearly destroying the house and nearly killing
+himself with an electric shock, Baird moved to London, where he gave the first public
+display of his invention. On 2 October 1925, Baird used an office assistant, William
+Taynton, to move for his transmitted pictures, and Taynton became the first person to be
+televised moving and in full tonal range. Baird is also later credited with demonstrating the
+first images on colour television, on 3rd July 1928, although the credit for being the inventor
+of colour television is again disputed. Another first for Baird was transmitting the first
+television pictures across the Atlantic in 1928. Although Baird was well known for his
+invention, he also became famous for refusing an offer of £100,000 for the shares in his
+company, which was an enormous sum at that time. Baird famously said that he would not
+be able to sleep at night, knowing he had that much money.
+Philo Farnsworth successfully demonstrated electronic television in San Francisco, in 1927,
+using a different system. Farnsworth realised that a picture could be dissected by a simple
+television camera into a series of lines of electricity. The lines would be transmitted so
+quickly that the eyes would merge the lines. Then, an image dissector, which Farnsworth
+created, would change those lines back into a picture. The Russian inventor, Vladimir
+Zworykin, built on this work and it was Zworykin’s designs that were eventually used by the
+BBC in the UK to replace Baird’s system.
+Baird’s initial work would not have been successful without the previous work of Paul
+Nipkow. Nipkow came up with the idea of ‘scanning’ a television image by using a spinning
+disk with a spiral of small pinholes. When spun at a high rate of speed, each hole would
+allow light to fall on a selenium cell on the other side of the disk. The amount of voltage the
+cell generated would depend on the amount of light reflected from the object being
+photographed. One rotation of the disk equalled one frame of “video”. At the place where
+the signal was received, the process would be reversed. A similar disk spun in sync and a
+neon lamp reacted to the changes in voltage with the speed required to keep up with the
+spinning disk and projected the images onto a screen. Although Nipkow created the disk
+and acquired a patent for his invention, he did not create the apparatus to project images.
+The patent expired after 15 years, as no one was interested then in the work. Baird’s first
+practical television systems used an electro-mechanical picture scanning method, the
+method that Nipkow had helped create with his disk. Nipkow became a celebrated scientist
+ 1
+ in Germany for his work, but the mechanical nature of the Nipkow Disk caused the
+invention to fade to obscurity with the use of the cathode ray tube.
+ Arthur Korn was another German scientist working in the same field as Baird and Nipkow
+and it was his work that allowed the development of Nipkow’s work that in turn led to
+Baird’s breakthroughs. Korn’s early work was focused on the transmission of visual
+telegraphic transmission, using his developments in amplification tube technology. He sent
+a picture of the German Crown Prince 1800 kilometres in 1906 and sent a picture of the
+Pope across the Atlantic in 1923. Korn’s work was celebrated and, from 1928, the German
+police used his technology to send photographs and fingerprints.
+Finally, another American, Charles Francis Jenkins, has a claim to be the inventor of
+television. Jenkins, who at the time was very well known for inventing the motion picture
+projector, first transmitted a silhouette picture from one room to another in 1922. Jenkins
+founded a broadcasting company in 1928, but the crash of 1929 forced him out of
+business. Most people agree that Baird gave his first public demonstration of television a
+couple years earlier than Jenkins, but this is disputed in some places.
+It is plain to see why any claim to be the inventor of television is said to be controversial. In
+many cases, the answer to the question, “Who invented television?”, often just depends on
+from which country the person answering the question is.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Look at the different significant people in the process of the invention of the television
+(questions  1 – 7) and match them to their roles in this process ( A – G).
+Write your answers in boxes  1-7 on your answer sheet.
+The Significant Person
+1   John Logie Baird
+2   William Taynton
+3   Philo Farnsworth
+4   Vladimir Zworykin
+5   Paul Nipkow
+6   Arthur Korn
+7   Charles Francis Jenkins
+1.....................
+2.....................
+3.....................
+4.....................
+5.....................
+6.....................
+7Roles
+A   His work was adopted by the BBC for their
+broadcasting business.
+B   His work was used to help fight crime.
+C   He was the first person to move on television.
+D   He used second hand parts in his invention.
+E   His business was destroyed by a
+financial crisis
+F   He invented the image dissector.
+G   His work was initially of no interest to anyone.
+.....................
+Questions 8 -10
+Label the diagram below.
+Write NO MORE THAN THREE WORDS  from the text for each answer.
+Write your answers in boxes  8-10 on your answer sheet.
+ 3
+8.....................
+9.....................
+10.....................
+ 4
+Questions 11-13
+Do the following statements agree with the information given in the text?
+In boxes 11-13 on your answer sheet write:
+TRUE               if the statement agrees with the information
+FALSE              if the statement contradicts the information
+NOT GIVEN      if there is no information on this
+11.....................   Nipkow died without any of his work being widely recognized.
+12.....................   Korn and Nipkow often met to discuss their work.
+13.....................   Charles Francis Jenkins was already famous when he experimented with
+television.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.D
+2.C
+3.F
+4.A
+5.G
+6.B
+7.8.(small) pinholes
+9.(A) selenium cell
+10.(a) neon lamp
+11.FALSE
+12.NOT GIVEN
+13.TRUE
+E
+ 6</div>
+</div>
+</div>
 </body>
 </html>

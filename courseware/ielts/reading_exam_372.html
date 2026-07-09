@@ -1,375 +1,183 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fluoridation Controversy - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Rise And Fall Of The British Textile Industry - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题499/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Fluoridation Controversy</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>E It is sustenance which can absorb the CO2 in the atmosphere 
- 5</p>
-<p>1. B
-2. C
-3. F
-4. A
-5. starch
-6. fermentation
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Rise And Fall Of The British Textile Industry</h1>
+<p>雅思阅读真题 · 第372篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Rise and Fall of the British Textile Industry
+Textile production in Britain can be said to have its roots as an industry at the beginning of
+the 18th century, when Thomas Crotchet and George Sorocold established what is thought
+to be the first factory built in Britain. It was a textile mill with a waterwheel as its source of
+power, the latest machinery, and even accommodation for the workers. As well as possibly
+being the first sweatshop in the modern sense, it was the beginning of the end for
+traditional textile production.
+For hundreds of years the spinning and weaving of cloth had been done manually by men,
+women and children in their own homes.The yarn would be combed and spun using a
+spindle, then woven on a hand loom, and what they produced would be mainly for local
+consumption.Technology far more sophisticated than the spindle and hand-loom would
+change all that.
+The demand for cotton textiles had been growing since the Middle Ages, fostered by the
+importation of high quality cotton fabrics from the Middle East and India. So how were local
+producers to fight off the com petition? The imported fabrics were of course expensive, so
+textile makers (not just in Britain but throughout Europe) produced mixed fabrics and cotton
+substitutes.They also had foreign textiles banned. But the key to the increased productivity
+needed to meet the demand, was machine production. It would be faster, cheaper and the
+finished products would be consistent in quality. Not least of the advantages was that it
+would allow manufacturers to market their goods on a large, if not yet global, scale.
+The story of the growth of the British textile industry from about 1733 and for the next two
+hundred years is one of constant technological innovation and expansion. In 1733 John
+Kay invented the fly-shuttle, which made the hand-loom more efficient, and in 1764 James
+Hargreaves came up with the spinning jenny, which among other things had the effect of
+raising productivity eightfold. The next great innovator was Richard Arkwright, who in 1768
+employed John Kay (of the fly-shuttle) to help him build more efficient machinery. He was a
+man with a vision – to mechanise textile production – and by 1782 he had a network of
+mills across Britain. As the water-powered machinery, though not yet fully mechanised,
+became more complex, Kay began to use steam engines for power. The first power-loom,
+however, which was invented in 1785 by Dr Edmund Cartwright, really did mechanise the
+weaving stage of textile manufacture.
+The pace of growth quickened with the expansion of Britain’s influence in the world and the
+acquisition of colonies from which cheap raw materials could be imported. For example, in
+a single decade, from 1781 to 1791, imports of cotton into Britain quadrupled, going on to
+reach 100 million pounds in weight in 1815 and 263 million in 1830.The increase in exports
+is equally impressive; in 1751 £46,000 worth of cloth was exported and by the end of the
+century this had risen to £5.4 million. By the end of the 19th century the figure had soared
+to close on £50 million. Britain was now supplying cheaper and better quality clothing to a
+global market. Yet during the course of the 20th century Britain lost its position as a major
+textile manufacturer.
+So what happened? There are a number of views on this question, not all of them
+conflicting, and where there is disagreement it is usually about when the decline began.
+Whether it began before the First World War (1914-18), or during the inter-war years
+(1919—1939), or after 1945, most economists would give roughly the same reasons. To
+ 1
+start with, there was competition from abroad, especially from developing countries in the
+Far East, notably Japan. It was thought by manufacturers that the best way to combat this
+increased competition was to modernise. However, management and the labour unions
+were unable to agree on how to handle this situation.
+Modernisation would mean people losing their jobs and possibly a change in labour
+practices. Such changes as were made served only to slow down the industry’s decline
+rather than help regain its predominant position. Economically less developed countries, on
+the other hand, had the advantage of being able to provide low wage competition, without
+the problem of powerful labour unions.
+There are, of course, many other reasons for the textile industry’s decline, two of which
+became particularly noticeable in the late twentieth century and are related. The first is
+outsourcing, when manufacturers establish factories in countries where there is cheap
+labour. This obviously leads to less demand for locally-produced goods. Related to this, the
+textile and clothing industries have acquired a bad reputation for exploiting workers, often
+illegal immigrants, in sweatshops where they are forced to work long hours and are paid far
+less than the minimum wage.
+                    We seem to be back with Crotchet and Sorocold and their first live-in factory. The
+globalising trend of out-sourcing, however, was a rational response to the growing
+competition from overseas, which, it goes without saying, does not excuse the exploitation
+of workers. The British industry itself, while no longer holding a key place in the global
+textile market has adapted itself and now concentrates more on the world of fashion and
+design, where it seems to be doing quite well.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Complete the notes below.
+WriteNO MORE THAN THREE WORDS for each answer.
  
-8. polymer
-9. B
-10. C
-11. A
-12. D
-13. A
-14.7. condensation C
- 6</p>
-<p>Neanderthals and modern humans</p>
-<p>A The evolutionary processes that have made modern humans so different from
-other animals are hard to determine without an ability to examine human species
-that have not achieved similar things. However, in a scientific masterpiece, Svante
-Paabo and his colleagues from the Max Planck Institute for Evolutionary
-Anthropology, in Leipzig, have made such a comparison possible. In 2009, at a
-meeting of the American Association for the Advancement of Science, they made
-public an analysis of the genome [1] of Neanderthal man.
  
-B Homo neanderthalensis, to give its proper name, lived in Europe and parts of Asia from
-400,000 years ago to 30,000 years ago. Towards the end of this period it shared its range
-with interlopers in the form of Homo sapiens [2], who were spreading out from Africa.
-However, the two species did not settle down to a stable cohabitation. For reasons which
-are as yet unknown, the arrival of Homo sapiens in a region was always quickly followed by
-the disappearance of Neanderthals.
  
-C Before 2009, Dr Paabo and his team had conducted only a superficial comparison
-between the DNA of Neanderthals and modern humans. Since then, they have
-performed a more thorough study and, in doing so, have shed a fascinating light on the
-intertwined history of the two species. That history turns out to be more intertwined than
-many had previously believed.</p>
-<p>D Dr Paabo and his colleagues compared their Neanderthal genome (painstakingly
-reconstructed from three bone samples collected from a cave in Croatia) with that of
-five living humans from various parts of Africa and Eurasia. Previous genetic
-analysis, which had only examined DNA passed from mother to child in cellular
-structures called mitochondria, had suggested no interbreeding between
-Neanderthals and modern humans. The new, more extensive examination, which
-looks at DNA in the cell nucleus rather than in the mitochondria, shows this
-conclusion is wrong. By comparing the DNA in the cell nucleus of Africans (whose
-ancestors could not have crossbred with Neanderthals, since they did not overlap
-with them) and various Eurasians (whose ancestors could have crossbred with
-Neanderthals), Dr Paabo has shown that Eurasians are between one percent and
-four percent Neanderthal.
-     
-E That is intriguing. It shows that even after several hundred thousand years of
-separation, the two species were inter-fertile. It is strange, though, that no
-Neanderthal mitochondrial DNA has turned up in modern humans, since the usual
-pattern of invasion in historical times was for the invaders’ males to mate with the
-invaded’s females. One piece of self-knowledge, then - at least for non-Africans - is
-that they have a dash of Neanderthal in them. But Dr Paabo’s work also illuminates
-the differences between the species. By comparing modem humans, Neanderthals,
-and chimpanzees, it is possible to distinguish genetic changes which are shared by
-several species of human in their evolution away from the great-ape lineage, from
-those which are unique to Homo sapiens.
-F More than 90 percent of the ‘human accelerated regions’ [3] that have been identified
-in modem people are found in Neanderthals too. However, the rest are not. Dr Paabo has
-identified 212 parts of the genome that seem to have undergone significant evolution since
- 1</p>
-<p>the species split. The state of genome science is still quite primitive, and it is often unclear
-what any given bit of DNA is actually doing. But an examination of the 20 largest regions of
-DNA that have evolved in this way shows that they include several genes which are
-associated with cognitive ability, and whose malfunction causes serious mental problems.
-These genes therefore look like good places to start the search for modern humanity’s
-essence.
-G The newly evolved regions of DNA also include a gene called RUNX2, which
-controls bone growth. That may account for differences in the shape of the skull and
-the rib cage between the two species. By contrast an earlier phase of the study had
-already shown that Neanderthals and moderns share the same version of a gene
-called FOXP2, which is involved in the ability to speak, and which differs in
-chimpanzees. It is all, then, very promising - and a second coup in quick succession
-for Dr Paabo. Another of his teams has revealed the existence of a hitherto
-unsuspected species of human, using mitochondrial DNA found in a little-finger
-bone. If that species, too, could have its full genome read, humanity’s ability to know
-itself would be enhanced even further.
-[1] an individual’s complete set of genes
  
-[2] the scientific name for modem humans
-[3] parts of the human brain which evolved very rapidly
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ Textile Manufacture
+ 
+     
+ Early history
+Begins as a cottage industry
+Products hand-woven and made for 1.....................
+Local producers face 2..................... from overseas
+Ways found to deal with situation
+Imported fabrics 3..................... , mixed cottons produced
+Early technology
+Machine production needed to 4..................... for cotton fabrics
+Improved technology (such as the fly-shuttle) more 5..................... and productive
+Machinery begins to be powered by 6.....................
+ Questions 7-9
+Choose the correct letter, A,B,CorD.
+7.Which of the following innovations increased productivity by 800%?
+A the power-loom
+B the steam engine
+C  the spinning jenny
+D  the fly-shuttle
+8.During which period was the British textile industry at its peak?
+A 1733-1785
+B 1781-1791
+C 1791-1830
+D 1830-1900
+ 3
+ 9.Which of the following was a major cause of the British textile industry’s decline?
+ A the expansion of foreign textile industries
+B the loss of overseas markets
+C there being no demand for products
+D labour becoming too expensive 9##qa
+ 
+ Questions 10-13
+Do the following statements agree with the information given in Reading Passage?
+In boxes10-13 on your answer sheet write
+TRUE                   if the statement agrees with the information
+FALSE                   if the statement contradicts the information
+NOT GIVEN         if there is no information on this
+10..................... Foreign textiles were banned because of their inferior quality.
+11..................... Richard Arkwright built the first fully-mechanised textile mill.
+12..................... In less developed countries, the industry could rely on cheap labour.
+13..................... Out-sourcing was one method used to compete with foreign
+manufacturers.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.local consumption
+2.competition
+3.banned
+4.meet (the) demand
+5.efficient
+6.steam (engines)
+7.8.D
+9.A
+10.FALSE
+11.NOT
+GIVEN
+12.TRUE
+13.TRUE
+C
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,377 +1,203 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The True Cost Of Food - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Why Risks Can Go Wrong - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题584/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The True Cost Of Food</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
- 
-1. 100
-2. 50%
-3. water
-4. energy monitors
-5. diesel generators
-6. insulation
-7.
-8. FALSE
-9. TRUE
-10. NOT
-GIVEN
-11. TRUE
-12. FALSE
-13. TRUE
-greenhouses
- 4</p>
-<p>Reading Practice
- Reducing the Effects of Climate Change
-Mark Rowe reports on the increasingly ambitious geo-engineering projects being explored
-by scientists</p>
-<p>Such is our dependence on fossil fuels, and such is the volume of carbon dioxide already
-released into the atmosphere, that many experts agree that significant global warming is
-now inevitable. They believe that the best we can do is keep it at a reasonable level, and at
-present the only serious option for doing this is cutting back on our carbon emissions. But
-while a few countries are making major strides in this regard, the majority are having great
-difficulty even stemming the rate of increase, let alone reversing it. Consequently, an
-increasing number of scientists are beginning to explore the alternative of geo-engineering
-— a term which generally refers to the intentional large-scale manipulation of the
-environment. According to its proponents, geo-engineering is the equivalent of a backup
-generator: if Plan A - reducing our dependency on fossil fuels - fails, we require a Plan B,
-employing grand schemes to slow down or reverse the process of global warming.</p>
-<p>Geo-engineering; has been shown to work, at least on a small localised scale. For
-decades, MayDay parades in Moscow have taken place under clear blue skies, aircraft
-having deposited dry ice, silver iodide and cement powder to disperse clouds. Many of the
-schemes now suggested look to do the opposite, and reduce the amount of sunlight
-reaching the planet. The most eye-catching idea of all is suggested by Professor Roger
-Angel of the University of Arizona. His scheme would employ up to 16 trillion minute
-spacecraft, each weighing about one gram, to form a transparent, sunlight-refracting
-sunshade in an orbit 1.5 million km above the Earth. This could, argues Angel, reduce the
-amount of light reaching the Earth by two per cent.</p>
-<p>The majority of geo-engineering projects so far carried out — which include planting forests
-in deserts and depositing iron in the ocean to stimulate the growth of algae - have focused
-on achieving a general cooling of the Earth. But some look specifically at reversing the
-melting at the poles, particularly the Arctic. The reasoning is that if you replenish the ice
-sheets and frozen waters of the high latitudes, more light will be reflected back into space,
-so reducing the warming of the oceans and atmosphere.</p>
-<p>The concept of releasing aerosol sprays into the stratosphere above the Arctic has been
-proposed by several scientists. This would involve using sulphur or hydrogen sulphide
-aerosols so that sulphur dioxide would form clouds, which would, in turn, lead to a global
-dimming. The idea is modelled on historic volcanic explosions, such as that of Mount
-Pinatubo in the Philippines in 1991, which led to a short-term cooling of global
-temperatures by 0.5 °C. Scientists have also scrutinised whether it's possible to preserve
-the ice sheets of Greenland with reinforced high-tension cables, preventing icebergs from
-moving into the sea. Meanwhile in the Russian Arctic, geo-engineering plans include the
-planting of millions of birch trees. Whereas the -regions native evergreen pines shade the
- 1</p>
-<p>snow an absorb radiation, birches would shed their leaves in winter, thus enabling radiation
-to be reflected by the snow. Re-routing Russian rivers to increase cold water flow to iceforming areas could also be used to slow down warming, say some climate scientists.</p>
-<p>But will such schemes ever be implemented? Generally speaking, those who are most
-cautious about geo-engineering are the scientists involved in the research. Angel says that
-his plan is ‘no substitute for developing renewable energy: the only permanent solution'.
-And Dr Phil Rasch of the US-based Pacific Northwest National Laboratory is equally
-guarded about the role of geo-engineering: 'I think all of us agree that if we were to end
-geo-engineering on a given day, then the planet would return to its pre-engineered
-condition very rapidly, and probably within ten to twenty years. That’s certainly something
-to worry about.’</p>
-<p>The US National Center for Atmospheric Research has already suggested that the
-proposal to inject sulphur into the atmosphere might affect rainfall patterns across the
-tropics and the Southern Ocean. ‘Geo-engineering plans to inject stratospheric aerosols or
-to seed clouds would act to cool the planet, and act to increase the extent of sea ice,’ says
-Rasch. ‘But all the models suggest some impact on the distribution of precipitation.’</p>
-<p>A further risk with geo-engineering projects is that you can “overshoot Y says Dr Dan Hunt,
-from the University of Bristol’s School of Geophysical Sciences, who has studied the likely
-impacts of the sunshade and aerosol schemes on the climate. ‘You may bring global
-temperatures back to pre-industrial levels, but the risk is that the poles will still be warmer
-than they should be and the tropics will be cooler than before industrialisation.’To avoid
-such a scenario,” Hunt says, “Angel’s project would have to operate at half strength; all of
-which reinforces his view that the best option is to avoid the need for geo-engineering
-altogether.”</p>
-<p>The main reason why geo-engineering is supported by many in the scientific community is
-that most researchers have little faith in the ability of politicians to agree - and then bring in
-— the necessary carbon cuts. Even leading conservation organisations see the value of
-investigating the potential of geo-engineering. According to Dr Martin Sommerkorn, climate
-change advisor for the World Wildlife Fund’s International Arctic Programme, ‘Humaninduced climate change has brought humanity to a position where we shouldn’t exclude
-thinking thoroughly about this topic and its possibilities.’
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Why Risks Can Go Wrong</h1>
+<p>雅思阅读真题 · 第437篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Why Risks Can Go Wrong
+Human intuition is a bad guide to handling risk
+A. People make terrible decisions about the future. The evidence is all around, from their
+investments in the stock markets to the way they run their businesses. In fact, people are
+consistently bad at dealing with uncertainty, underestimating some kinds of risk and
+overestimating others. Surely there must be a better way than using intuition?
+B. In the 1960s a young American research psychologist, Daniel Kahneman, became
+interested in people's inability to make logical decisions. That launched him on a career to
+show just how irrationally people behave in practice. When Kahneman and his colleagues
+first started work, the idea of applying psychological insights to economics and business
+decisions was seen as rather bizarre. But in the past decade the fields of behavioural
+finance and behavioural economics have blossomed, and in 2002 Kahneman shared a
+Nobel prize in economics for his work. Today he is in demand by business organizations
+and international banking companies. But, he says, there are plenty of institutions that still
+fail to understand the roots of their poor decisions. He claims that, far from being random,
+these mistakes are systematic and predictable.
+C. One common cause of problems in decision-making is over-optimism. Ask most
+people about the future, and they will see too much blue sky ahead, even if past
+experience suggests otherwise. Surveys have shown that people's forecasts of
+future stock market movements are far more optimistic than past long-term returns
+would justify. The same goes for their hopes of ever-rising prices for their homes or
+doing well in games of chance. Such optimism can be useful for managers or
+sportsmen, and sometimes turns into a self-fulfilling prophecy. But most of the time
+it results in wasted effort and dashed hopes. Kahneman's work points to three types
+of over-confidence. First, people tend to exaggerate their own skill and prowess; in
+polls, far fewer than half the respondents admit to having below-average skills in,
+say, driving. Second, they overestimate the amount of control they have over the
+future, forgetting about luck and chalking up success solely to skill. And third, in
+competitive pursuits such as dealing on shares, they forget that they have to judge
+their skills against those of the competition.
+D. Another source of wrong decisions is related to the decisive effect of the initial
+meeting, particularly in negotiations over money. This is referred to as the 'anchor
+effect'. Once a figure has been mentioned, it takes a strange hold over the human
+mind. The asking price quoted in a house sale, for example, tends to become
+accepted by all parties as the 'anchor' around which negotiations take place. Much
+the same goes for salary negotiations or mergers and acquisitions. If nobody has
+much information to go on, a figure can provide comfort - even though it may lead to
+a terrible mistake.
+E. In addition, mistakes may arise due to stubbornness. No one likes to abandon a
+cherished belief, and the earlier a decision has been taken, the harder it is to
+abandon it. Drug companies must decide early to cancel a failing research project to
+avoid wasting money, but may find it difficult to admit they have made a mistake. In
+ 1
+the same way, analysts may have become wedded early to a single explanation that
+coloured their perception. A fresh eye always helps.
+F. People also tend to put a lot of emphasis on things they have seen and
+experienced themselves, which may not be the best guide to decision-making. For
+example, somebody may buy an overvalued share because a relative has made
+thousands on it, only to get his fingers burned. In finance, too much emphasis on
+information close at hand helps to explain the tendency by most investors to invest
+only within the country they live in. Even though they know that diversification is
+good for their portfolio, a large majority of both Americans and Europeans invest far
+too heavily in the shares of their home countries. They would be much better off
+spreading their risks more widely.
+G. More information is helpful in making any decision but, says Kahneman, people
+spend proportionally too much time on small decisions and not enough on big ones.
+They need to adjust the balance. During the boom years, some companies put as
+much effort into planning their office party as into considering strategic mergers.
+H. Finally, crying over spilled milk is not just a waste of time; it also often colours
+people's perceptions of the future. Some stock market investors trade far too
+frequently because they are chasing the returns on shares they wish they had
+bought earlier.
+I. Kahneman reckons that some types of businesses are much better than others at
+dealing with risk. Pharmaceutical companies, which are accustomed to many
+failures and a few big successes in their drug-discovery programmes, are fairly
+rational about their risk-taking. But banks, he says, have a long way to go. They may
+take big risks on a few huge loans, but are extremely cautious about their much
+more numerous loans to small businesses, many of which may be less risky than
+the big ones. And the research has implications for governments too. They face a
+whole range of sometimes conflicting political pressures, which means they are
+even more likely to take irrational decisions.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+ Reading Passage 1 has nine paragraphs A-I.
+Choose the correct heading for Paragraphs B and D-Hfrom the list of headings below.
+Write the correct number (i-xi)in boxes1-6on your answer sheet.
+ List of headings
+i         Not identifying the correct priorities
+ii       A solution for the long term
+iii       The difficulty of changing your mind
+iv       Why looking back is unhelpful
+v        Strengthening inner resources
+vi       A successful approach to the study of decision-making
+vii      The danger of trusting a global market
+viii     Reluctance to go beyond the familiar
+ix       The power of the first number
+x        The need for more effective risk assessment
+xi       Underestimating the difficulties ahead
+Example Answer
+Paragraph A x
+Paragraph C xi
+      
+      
+      1.....................      Paragraph B
+2.....................      Paragraph D
+      3.....................
+4.....................
+5.....................
+6.....................Paragraph E
+Paragraph F
+Paragraph G
+Paragraph H
+ 3
+  
+  Questions 7-10
+Choose the correct answer  A, B, CorD
+Write your answers in boxes 7-10on your answer sheet.
+      7People initially found Kahneman's work unusual because he
+A saw mistakes as following predictable patterns.
+B was unaware of behavioural approaches.
+C dealt with irrational types of practice.
+D applied psychology to finance and economics.
+      8The writer mentions house-owners attitudes towards the value of their homes to
+illustrate that
+A past failures may destroy an optimistic attitude.
+B people tend to exaggerate their chances of success.
+C optimism may be justified in certain circumstances.
+D people are influenced by the success of others.
+      9
+    Stubbornness and inflexibility can cause problems when people
+A think their financial difficulties are just due to bad luck.
+B avoid seeking advice from experts and analysts.
+C refuse to invest in the early stages of a project.
+D are unwilling to give up unsuccessful activities or beliefs.
+10Why do many Americans and Europeans fail to spread their financial risks when
+investing?
+  
+  A They feel safer dealing in a context which is close to home.
+B They do not understand the benefits of diversification.
+C They are over-influenced by the successes of their relatives.
+D They do not have sufficient knowledge of one another’s countries.
+Questions 11-13
+Answer the questions below, using NO MORE THAN THREE WORDS for each answer.
+Write your answers in boxes 11-13on your answer sheet.
+         11Which two occupations may benefit from being over-optimistic? 11.....................
+ 4
+       12
+ Which practical skill are many people over-confident about?  12.....................
+13      Which type of business has a generally good attitude to dealing with
+uncertainty? 13.....................
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.vi
+2.ix
+3.iii
+4.viii
+5.i
+6.iv
+7.8.B
+9.D
+10.A
+11.managers (and/or) sportsmen
+12.driving
+13.Pharmaceutical (companies)
+D
+ 6</div>
+</div>
+</div>
 </body>
 </html>

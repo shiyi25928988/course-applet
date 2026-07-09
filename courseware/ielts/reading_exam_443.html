@@ -1,373 +1,191 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wild Side Of Town - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Young Childrens Sense Of Identity - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题595/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Wild Side Of Town</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>other's points of view.
-Myffanwy Bryant</p>
-<p>F - Splendours of an Ancient Civilisation
-This book is the perfect coffee table book for lovers of Ancient Egypt. Its appeal lies in
-the colour photography and the illustrations. They include detailed close-ups of the most
-impressive and well-known objects and buildings of the time.
-Merle Morcom</p>
-<p>G - Never Count Out the Dead
-Police Officer John Sully is tricked into driving thirteen-year-old Shay Storey to an
-isolated spot, where her mother, Dee, is waiting to kill him. Sully miraculously survives
-and Dee flees to Mexico, where she abandons her daughter. Sully is contacted by a
-journalist who offers to help him catch Dee and find her daughter.
-Gordon Bain</p>
-<p>H - Fresh Flavours of India
-This is a mouth-watering book packed with innovative ideas that reflect the author's
-passion for his homeland's cuisine. The author offers dishes from contemporary India
-with straightforward recipes that burst with flavour and aroma.
-Phillip Knowles
-Reviews are adapted from reviews first appearing in Good Reading (magazine)
- 2</p>
-<p>Questions 1-5
-Look at the reviews of books (A-H).
-Match each question 1-5 with a boob review (A-H). Write your answers in boxes 1-5 on the
-answer sheet.
-You may use any letter more than once.
-Example
-Which books deals with cooking?
-Answer</p>
-<p>1..................... Which book is detective fiction?  
-2..................... Which book handles commercial matters?  
-3..................... Which book teaches about past history?  
-4..................... Which book is written by a sporting personality?
-5..................... Which book attempts to predict future discoveries in the field of medicine?
- 3</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Young Childrens Sense Of Identity</h1>
+<p>雅思阅读真题 · 第443篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Young children's sense of identity
+A
+A sense of self develops in young children by degrees. The process can usefully be
+thought of in terms of the gradual emergence of two somewhat separate features: the self
+as a subject, and the self as an object. William James introduced the distinction in 1892,
+and contemporaries of his, such as Charles Cooley, added to the developing debate. Ever
+since then psychologists have continued building on the theory.
+B
+According to James, a child's first step on the road to self-understanding can be seen as
+the recognition that he or she exists. This is an aspect of the self that he labelled 'self-as-
+subject', and he gave it various elements. These included an awareness of one's own
+agency (i.e. one's power to act), and an awareness of one's distinctiveness from other
+people. These features gradually emerge as infants explore their world and interact with
+caregivers. Cooley (1902) suggested that a sense of the self-as-subject was primarily
+concerned with being able to exercise power. He proposed that the earliest examples of
+this are an infant's attempts to control physical objects, such as toys or his or her own
+limbs. This is followed by attempts to affect the behaviour of other people. For example,
+infants learn that when they cry or smile someone responds to them.
+C
+Another powerful source of information for infants about the effects they can have on the
+world around them is provided when others mimic them. Many parents spend a lot of time,
+particularly in the early months, copying their infant's vocalizations and expressions. In
+addition, young children enjoy looking in mirrors, where the movements they can see are
+dependent upon their own movements.
+This is not to say that infants recognize the reflection as their own image (a later
+development). However, Lewis and Brooks-Gunn (1979) suggest that infants' developing
+understanding that the movements they see in the mirror are contingent on their own, leads
+to a growing awareness that they are distinct from other people. This is because they, and
+only they, can change the reflection in the mirror.
+D
+This understanding that children gain of themselves as active agents continues to develop
+in their attempts to co-operate with others in play. Dunn (1988) points out that it is in such
+day-to-day relationships and interactions that the child's understanding of his- or herself
+emerges. Empirical investigations of the self-as-subject in young children are, however,
+rather scarce because of difficulties of communication: even if young infants can reflect on
+their experience, they certainly cannot express this aspect of the self directly.
+E
+Once children have acquired a certain level of self-awareness, they begin to place
+themselves in a whole series of categories, which together play such an important part in
+defining them uniquely as 'themselves'. This second step in the development of a full sense
+ 1
+of self is what James called the 'self-as-object'. This has been seen by many to be the
+aspect of the self which is most influenced by social elements, since it is made up of social
+roles (such as student, brother, colleague) and characteristics which derive their meaning
+from comparison or interaction with other people (such as trustworthiness, shyness,
+sporting ability).
+F
+Cooley and other researchers suggested a close connection between a person's own
+understanding of their identity and other people's understanding of it. Cooley believed that
+people build up their sense of identity from the reactions of others to them, and from the
+view they believe others have of them. He called the self-as-object the 'looking-glass self',
+since people come to see themselves as they are reflected in others. Mead (1934) went
+even further, and saw the self and the social world as inextricably bound together: 'The self
+is essentially a social structure, and it arises in social experience ... it is impossible to
+conceive of a self arising outside of social experience.'
+G
+Lewis and Brooks-Gunn argued that an important developmental milestone is reached
+when children become able to recognize themselves visually without the support of seeing
+contingent movement. This recognition occurs around their second birthday. In one
+experiment, Lewis and Brooks-Gunn (1979) dabbed some red powder on the noses of
+children who were playing in front of a mirror, and then observed how often they touched
+their noses. The psychologists reasoned that if the children knew what they usually looked
+like, they would be surprised by the unusual red mark and would start touching it. On the
+other hand, they found that children of 15 to 18 months are generally not able to recognize
+themselves unless other cues such as movement are present.
+H
+Finally, perhaps the most graphic expressions of self-awareness in general can be seen in
+the displays of rage which are most common from 18 months to 3 years of age. In a
+longitudinal study of groups of three or four children, Bronson (1975) found that the
+intensity of the frustration and anger in their disagreements increased sharply between the
+ages of 1 and 2 years. Often, the children's disagreements involved a struggle over a toy
+that none of them had played with before or after the tug-of-war: the children seemed to be
+disputing ownership rather than wanting to play with it. Although it may be less marked in
+other societies, the link between the sense of 'self' and of 'ownership' is a notable feature of
+childhood in Western societies.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Reading Passage has eight paragraphs, A-H.
+Which paragraph contains the following information?
+Write the correct letter, A-H, in boxes 1-6on your answer sheet.
+NBYou may use any letter more than once .
  
-1. G
-2. B
-3.
-4. C
-5. A</p>
-<p>Reading Practice
- Revolutions in Mapping
-A. Today, the mapmaker's vision is no longer confined to what the human eye can see.
-The perspective of mapmaking has shifted from the crow's nest of the sailing vessel,
-mountain top and airplane to 'new orbital heights. Radar, which bounces microwave
-radio signals off a given surface to create images of its contours and textures, can
-penetrate jungle foliage and has produced the first maps of the mountains of the
-planet Venus. And a combination of sonar and radar produces charts of the seafloor,
-putting much of Earth on the map for the first time. ‘Suddenly it's a whole different
-world for US,’ says Joel Morrison, chief of geography at the U.S. Bureau of the
-Census, ‘Our future as mapmakers - even ten years from now - is uncertain.’
-B. The world's largest collection of maps resides in the basement of the Library of
-Congress in Washington, D.c. The collection, consisting of up to 4,6 million map
-sheets and 63,000 atlases, includes magnificent bound collections of elaborate mapsthe pride of the golden age of Dutch cartography*. In the reading room scholars,
-wearing thin cotton gloves to protect the fragile sheets, examine ancient maps with
-magnifying glasses. Across the room people sit at their computer screens, studying
-the latest maps, with their prodigious memories, computers are able to store data
-about people, places and environments - the stuff of maps - and almost instantly
-information is displayed on the screen in the desired geographic context, and at the
-dick of a button, a print-out of the map appears.
-C. Measuring the spherical Earth ranks as the first major milestone in scientific
+   1.....................    an account of the method used by researchers in a particular study
+2.....................    the role of imitation in developing a sense of identity
+3.....................    the age at which children can usually identify a static image of themselves
+4.....................    a reason for the limitations of scientific research into ‘self-as-subject’
+5.....................    reference to a possible link between culture and a particular form of
+behaviour
+6.....................    examples of the wide range of features that contribute to the sense of
+‘self-as-object’
+ Questions 7-10
+Look at the following findings (Questions  7-10) and the list of researchers below.
+Match each finding with the correct researcher or researchers, A-E.
+Write the correct letter, A-E, in boxes 7-10on your answer sheet.
  
-cartography. This was first achieved by the Greek astronomer Eratosthenes, a
-scholar at the famous Alexandrian Library in Egypt in the third century BC. He
-calculated the Earth's circumference as 25,200 miles, which was remarkably
-accurate. The longitudinal circumference is known to be 24,860 miles.
-D. Building on the ideas of his predecessors, the astronomer and geographer Ptolemy,
-working in the second century AD, spelled out a system for organizing maps
-according to grids of latitude and longitude. Today, parallels of latitude are often
-spaced at intervals of 10 to 20 degrees and meridians** at 15 degrees, and this is the
-basis for the width of modern time zones. Another legacy of Ptolemy's is his advice to
-cartographers to create maps to scale. Distance on today's maps is expressed as a
-fraction or ratio of the real distance. But mapmakers in Ptolemy's time lacked the
-geographic knowledge to live up to Ptolemy's scientific principles. Even now, when
-surveyors achieve accuracies down to inches and satellites can plot potential missile
-targets within feet, maps are not true pictures of reality.
-E. However, just as the compass improved navigation and created demand for useful
-charts, so the invention of the printing press in the 15th century put maps in the
-hands of more people, and took their production away from monks, who had tended
-to illustrate theology rather than geography. Ocean-going ships launched an age of
-discovery, enlarging both what could and needed to be mapped, and awakened an
-intellectual spirit and desire for knowledge of the world.
-F. Inspired by the rediscovered Ptolemy, whose writing had been preserved by Arabs
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-    <div class="question-block">
-        <p style="margin:0;line-height:1.8;color:#44403c;">question 1-5 with a boob review (A-H). Write your answers in boxes 1-5 on the<br>answer sheet.<br>You may use any letter more than once.<br>Example<br>Which books deals with cooking?<br>Answer<br>1..................... Which book is detective fiction?<br>2..................... Which book handles commercial matters?<br>3..................... Which book teaches about past history?<br>4..................... Which book is written by a sporting personality?<br>5..................... Which book attempts to predict future discoveries in the field of medicine?<br>3<br>Solution:<br>1. G<br>2. B<br>3.<br>4. C<br>5. A<br>Reading Practice<br>Revolutions in Mapping<br>A. Today, the mapmaker's vision is no longer confined to what the human eye can see.<br>The perspective of mapmaking has shifted from the crow's nest of the sailing vessel,<br>mountain top and airplane to 'new orbital heights. Radar, which bounces microwave<br>radio signals off a given surface to create images of its contours and textures, can<br>penetrate jungle foliage and has produced the first maps of the mountains of the<br>planet Venus. And a combination of sonar and radar produces charts of the seafloor,<br>putting much of Earth on the map for the first time. ‘Suddenly it's a whole different<br>world for US,’ says Joel Morrison, chief of geography at the U.S. Bureau of the<br>Census, ‘Our future as mapmakers - even ten years from now - is uncertain.’<br>B. The world's largest collection of maps resides in the basement of the Library of<br>Congress in Washington, D.c. The collection, consisting of up to 4,6 million map<br>sheets and 63,000 atlases, includes magnificent bound collections of elaborate mapsthe pride of the golden age of Dutch cartography*. In the reading room scholars,<br>wearing thin cotton gloves to protect the fragile sheets, examine ancient maps with<br>magnifying glasses. Across the room people sit at their computer screens, studying<br>the latest maps, with their prodigious memories, computers are able to store data<br>about people, places and environments - the stuff of maps - and almost instantly<br>information is displayed on the screen in the desired geographic context, and at the<br>dick of a button, a print-out of the map appears.<br>C. Measuring the spherical Earth ranks as the first major milestone in scientific<br>cartography. This was first achieved by the Greek astronomer Eratosthenes, a<br>scholar at the famous Alexandrian Library in Egypt in the third century BC. He<br>calculated the Earth's circumference as 25,200 miles, which was remarkably<br>accurate. The longitudinal circumference is known to be 24,860 miles.<br>D. Building on the ideas of his predecessors, the astronomer and geographer Ptolemy,<br>working in the second century AD, spelled out a system for organizing maps<br>according to grids of latitude and longitude. Today, parallels of latitude are often<br>spaced at intervals of 10 to 20 degrees and meridians** at 15 degrees, and this is the<br>basis for the width of modern time zones. Another legacy of Ptolemy's is his advice to<br>cartographers to create maps to scale. Distance on today's maps is expressed as a<br>fraction or ratio of the real distance. But mapmakers in Ptolemy's time lacked the<br>geographic knowledge to live up to Ptolemy's scientific principles. Even now, when<br>surveyors achieve accuracies down to inches and satellites can plot potential missile<br>targets within feet, maps are not true pictures of reality.<br>E. However, just as the compass improved navigation and created demand for useful<br>charts, so the invention of the printing press in the 15th century put maps in the<br>hands of more people, and took their production away from monks, who had tended<br>to illustrate theology rather than geography. Ocean-going ships launched an age of<br>discovery, enlarging both what could and needed to be mapped, and awakened an<br>intellectual spirit and desire for knowledge of the world.<br>F. Inspired by the rediscovered Ptolemy, whose writing had been preserved by Arabs<br>1</p>
-    </div>
-    
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ List of Researchers
+AJames
+BCooley
+CLewis and Brooks-Gunn
+DMead E Bronson
+7.....................    A sense of identity can never be formed without relationships with other
+people.
+8.....................    A child’s awareness of self is related to a sense of mastery over things
+and people.
+9.....................    At a certain age, children’s sense of identity leads to aggressive
+behaviour.
+ 3
+ 
+  
+ 10.....................    Observing their own reflection contributes to children’s self awareness.
+Questions 11-13
+Complete the summary below.
+ChooseONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 11-13 on your answer sheet.
+ 
+ How children acquire a sense of identity
+ 
+ First, children come to realise that they can have an effect on the world around them, for
+example by handling objects, or causing the image to move when they face a
+11...................... This aspect of self-awareness is difficult to research directly, because
+of12..................... problems.
+Secondly, children start to become aware of how they are viewed by others. One
+important stage in this process is the visual recognition of themselves which
+usually occurs when they reach the age of two. In Western societies at least, the
+development of self awareness is often linked to a sense of 13....................., and can
+lead to disputes.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.G
+2.C
+3.G
+4.D
+5.H
+6.E
+7.8.B
+9.E
+10.C
+11.mirror
+12.communication
+13.ownership
+D
+ 5</div>
+</div>
+</div>
 </body>
 </html>

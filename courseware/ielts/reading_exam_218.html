@@ -1,377 +1,189 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Code Unlocked - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Nature Or Nurture - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题292/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Life Code Unlocked</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>When this happens, the crystals expand by up to 4%. And if they are within the central,
-tensile region of the pane, the stresses this unleashes can shatter the whole sheet. The
-time that elapses before failure occurs is unpredictable. It could happen just months after
-manufacture, or decades later, although if the glass is heated - by sunlight, for example -
-the process is speeded up. Ironically, says Graham Dodd, of consulting engineers Arup in
-London, the oldest pane of toughened glass known to have failed due to nickel sulphide
-inclusions was in Pilkington's glass research building in Lathom, Lancashire. The pane was
-27 years old.
-Data showing the scale of the nickel sulphide problem Is almost Impossible to find. The
-picture is made more complicated by the fact that these crystals occur in batches. So even
-if, on average, there is only one inclusion in 7 tonnes of glass, if you experience one nickel
-sulphide failure in your building, that probably means you've got a problem in more than
-one pane. Josie says that in the last decade he has worked on over 15 buildings with the
-number of failures into double figures.
-One of the worst examples of this is Waterfront Place, which was completed in 1990. Over
-the following decade the 40- storey Brisbane block suffered a rash of failures. Eighty panes
-of its toughened glass shattered due to inclusions before experts were finally called in.
-John Barry, an expert in nickel sulphide contamination at the University of Queensland,
-analysed every glass pane in the building. Using a studio camera, a photographer went up
-in a cradle to take photos of every pane. These were scanned under a modified microfiche
-reader for signs of nickel sulphide crystals. ‘We discovered at least another 120 panes with
-potentially dangerous inclusions which were then replaced,’ says Barry. ‘It was a very
-expensive and time consuming process that took around six months to complete.'
-Though the project cost A$1.6 million (nearly £700,000), the alternative - re-cladding the
-entire building - would have cost ten times as much. 
- 2</p>
-<p>Questions 1-4
-Look at the following people and the list of statements below.
-Match each person with the correct statement.
-Write the correct letter A-H in boxes 1-4 on your answer sheet.
-List of Statements</p>
-<p>suggests that publicity about nickel sulphide failure has been
-suppressed
- 
-B regularly sees cases of nickel sulphide failure
-C closely examined all the glass in one building
-D was involved with the construction of Bishops Walk
-E recommended the rebuilding of Waterfront Place
-F thinks the benefits of toughened glass are exaggerated
-Gclaims that nickel sulphide failure is very unusual
-H refers to the most extreme case of delayed failure</p>
-<p>1..................... Brian Waldron
-2..................... Trevor Ford
-3..................... Graham Dodd
-4..................... John Barry
-Questions 5-10
-Complete the summary with the list of words A-P below.
-Write your answers in boxes 5-10 on your answer sheet.
-    B detectedC quickly
-  
-A numerous</p>
-<p>D agreed
-warm   F sharp
-  
-G expands H slowly
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Nature Or Nurture</h1>
+<p>雅思阅读真题 · 第218篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Nature or Nurture?
+A
+A few years ago, in one of the most fascinating and disturbing experiments in behavioural
+psychology, Stanley Milgram of Yale University tested 40 subjects from all walks of life for
+their willingness to obey instructions given by a ‘leader’ in a situation in which the subjects
+might feel a personal distaste for the actions they were called upon to perform. Specifically,
+Milgram told each volunteer 'teacher-subject' that the experiment was in the noble cause of
+education, and was designed to test whether or not punishing pupils for their mistakes
+would have a positive effect on the pupils' ability to learn.
+B
+Milgram’s experimental set-up involved placing the teacher-subject before a panel of thirty
+switches with labels ranging from '15 volts of electricity (slight shock)' to ‘450 volts (danger
+- severe shock)' in steps of 15 volts each. The teacher-subject was told that whenever the
+pupil gave the wrong answer to a question, a shock was to be administered, beginning at
+the lowest level and increasing in severity with each successive wrong answer. The
+supposed 'pupil' was in reality an actor hired by Milgram to simulate receiving the shocks
+by emitting a spectrum of groans, screams and writhings together with an assortment of
+statements and expletives denouncing both the experiment and the experimenter. Milgram
+told the teacher-subject to ignore the reactions of the pupil, and to administer whatever
+level of shock was called for. as per the rule governing the experimental situation of the
+moment.
+C
+As the experiment unfolded, the pupil would deliberately give the wrong answers
+to questions posed by the teacher, thereby bringing on various electrical punishments,
+even up to the danger level of 300 volts and beyond. Many of the teacher-subjects balked
+at administering the higher levels of punishment, and turned to Milgram with questioning
+locks and/or complaints about continuing the experiment. In these situations, Milgram
+calmly explained that the teacher-subject was to ignore the pupil's cries for mercy and carry
+on with the experiment. If the subject was still reluctant to proceed, Milgram said that it was
+important for the sake of the experiment that the procedure be followed through to the end.
+His final argument was, ‘You have no other choice. You must go on.' What Milgram was
+trying to discover was the number of teacher-subjects who would be willing to administer
+the highest levels of shock, even in the face of strong persona! and moral revulsion against
+the rules and conditions of the experiment.
+D
+Prior to carrying out the experiment, Milgram explained his idea to a group of 39
+psychiatrists and asked them to predict the average percentage of people in an ordinary
+population who would be willing to administer the highest shock level of 450 volts. The
+overwhelming consensus was that virtually all the teacher-subjects would refuse to obey
+the experimenter. The psychiatrists felt that 'most subjects would not go beyond 150 volts'
+and they further anticipated that only four per cent would go up to 300 volts. Furthermore,
+they thought that only a lunatic fringe of about one in 1.000 would give the highest shock of
+ 1
+450 volts.
+E
+What were the actual results? Well, over 60 per cent of the teacher-subjects continued to
+obey Milgram up to the 450-volt limit! In repetitions of the experiment in other countries, the
+percentage of obedient teacher-subjects was even higher, reaching 85 per cent in one
+country How can we possibly account for this vast discrepancy between what calm,
+rational, knowledgeable people predict in the comfort of their study and what pressured,
+flustered, but cooperative teachers’ actually do in the laboratory of real life?
+F
+One’s first inclination might be to argue that there must be some sort of built-in animal
+aggression instinct that was activated by the experiment, and that Milgram’s teacher-
+subjects were just following a genetic need to discharge this pent-up primal urge onto the
+pupil by administering the electrical shock. A modern hard-core sociobiologist might even
+go so far as to claim that this aggressive instinct evolved as an advantageous trait, having
+been of survival value to our ancestors in their struggle against the hardships of life on the
+plains and in the caves, ultimately finding its way into our genetic make-up as a remnant of
+our ancient animal ways.
+G
+An alternative to this notion ot genetic programming is to see the teacher-subjects' actions
+as a result of the social environment under which the experiment was carried out. As
+Milgram himself pointed out. Most subjects in the experiment see their behaviour in a larger
+context that is benevolent and useful to society - the pursuit of scientific truth. The
+psychological laboratory has a strong claim to legitimacy and evokes trust and confidence
+in those who perform there. An action such as shocking a victim, which in isolation appears
+evil, acquires a completely different meaning when placed in this setting.’
+H
+Thus, in this explanation the subject merges his unique personality and personal and moral
+code with that of larger institutional structures, surrendering individual properties like
+loyalty, self-sacrifice and discipline to the service of malevolent systems of authority.
+I
+ Here we have two radically different explanations for why so many teacher-subjects were
+willing to forgo their sense of personal responsibility for the sake of an institutional authority
+figure. The problem for biologists, psychologists and anthropologists is to sort out which of
+these two polar explanations is more plausible. This, in essence, is the problem of modem
+sociobiology - to discover the degree to which hard-wired genetic programming dictates, or
+at least strongly biases, the interaction of animals and humans with their environment, that
+is, their behaviour. Put another way. sociobiology is concerned with elucidating the
+biological basis of all behaviour.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Reading Passage has nine paragraphs , A-I.
+Which paragraph contains the following information?
+Write the correct letter A-Iin boxes1-5on your answer sheet.
+1..................... a biological explanation of the teacher-subjects’ behaviour
+2..................... the explanation Milgram gave the teacher-subjects for the experiment
+3..................... the identity of the pupils
+4..................... the expected statistical outcome
+5..................... the general aim of sociobiological study
+6..................... the way Milgram persuaded the teacher-subjects to continue
+Questions 7-9
+Choose the correct letter  A, B, C or D.
+Write your answers in boxes 7-9 on your answer sheet.
+7.   The teacher-subjects were told that they were testing whether
+ A a 450-volt shock was dangerous.
+B punishment helps learning.
+C the pupils were honest.
+D they were suited to teaching.
+8.   The teacher-subjects were instructed to
+ A stop when a pupil asked them to.
+B denounce pupils who made mistakes.
+C reduce the shock level after a correct answer.
+D give punishment according to a rule.
+9.   Before the experiment took place the psychiatrists
+A believed that a shock of 150 volts was too dangerous.
+B failed to agree on how the teacher-subjects would respond to instructions.
+ 3
+ C underestimated the teacher-subjects’ willingness to comply with experimental
+procedure.
+D thought that many of the teacher-subjects would administer a shock of 450 volts.
  
-I unexpectedlyJ removed K contractsL disputed
-  M cold  N moved O small
- 
-P calculated
- 3</p>
-<p>Toughened Glass
  
-Toughened glass is favoured by architects because it is much stronger than
-ordinary glass, and the fragments are not as5..................... when it breaks. However, it
-has one disadvantage: it can shatter6...................... This fault is a result of
-the manufacturing process. Ordinary glass is firs' heated, then cooled
-very 7...................... The outer layer 8..................... before the inner layer, and
-the tension between the two layers which is created because of this makes the glass
-stronger. However, if the glass contains nickel sulphide impurities, crystals of nickel
-sulphide are formed. These are unstable, and can expand suddenly, particularly if the
-weather is 9...................... If this happens, the pane of glass may break. The frequency
-with which such problems occur is10..................... by glass experts Furthermore,
-the crystals cannot be detected without sophisticated equipment.</p>
-<p>Questions 11-13
+ Questions 10-13
 Do the following statements agree with the information given in Reading Passage?
-In boxes 11-13 on your answer sheet, write
- 
-TRUE if the statement agrees with the information
-FALSE if the statement contradicts the information
+In boxes10-13 on your answer sheet, write
+ TRUEif the statement agrees with the information
+FALSEif the statement contradicts the information
 NOT GIVEN if there is no information on this
- 
-11..................... Little doubt was expressed about the reason for the Bishops Walk
-accident.
-12..................... Toughened glass has the same appearance as ordinary glass.
-13..................... There is plenty of documented evidence available about the incidence of
-nickel sulphide failure.
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+10..................... Several of the subjects were psychology students at Yale University.
+11..................... Some people may believe that the teacher-subjects’ behaviour could be
+explained as a positive survival mechanism.
+12..................... In a sociological explanation, personal values are more powerful than
+authority.
+13..................... Milgram’s experiment solves an important question in sociobiology.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.F
+2.A
+3.B
+4.D
+5.I
+6.C
+7.8.D
+9.C
+10.NOT GIVEN
+11.TRUE
+12.FALSE
+13.FALSE
+B
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,401 +1,204 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Ways Of Teaching History - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Satellite Technology - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题345/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 New Ways Of Teaching History</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>8. physical
-chemistry,
-thermodynamics IN
-EITHER ORDER
-9. adapt
-10. immortality
-11. NO
-12. YES
-13.
-1. ix
-NOT GIVEN
- 
-2. ii
-3. vii
-4. i
-5. viii
-6. iv
-7. physical
-chemistry,
-thermodynamics IN
-EITHER ORDER
-14. YES
- 5</p>
-<p>Reading Practice
-How Do Many Hearing-impaired People Talk?
-Hearing-impaired people cannot hear sounds well. How do they “hear” words?
-Many hearing-impaired people use sign language. They talk with their hands. Two hearingimpaired people can talk to each other. They both use sign language. Sometimes a person
-who can hear and interprets for hearing-impaired people. The person listens to someone
-talking, and then he or she makes hand signs. There are two kinds of hand sign. Some
-signs are for whole words. For example, there is one hand sign for the word love. There are
-hand signs for different actions, things, and ideas. Some of the signs are very easy, for
-example, the sign for eat, milk, and house. You can see what they mean. Others are more
-difficult, for example, the sign for star, egg, and week.
-The second kind of hand sign is fingerspelling. In fingerspelling, there is a sign for every
-letter in the alphabet. For example, to fingerspell the word love, a person makes four
-different signs. It is much slower to fingerspell, but is useful for signing names and technical
-words. People can use both kinds of hand signs together.
-Each country has its own sign language. For example, American Sign Language (ASL) is
-very different from British Sign Language. Using sign language is almost like a dance. The
-whole body talks. Sign languages are beautiful.
- 1</p>
-<p>Questions 1-8
-Do the following statements agree with the claims of the writer in the reading passage?
-Write
-YES                 if the statement agrees with the claims of the writer
-NO                  if the statement contradicts the claims of the writer
-NOT GIVEN if it is impossible to say what the writer thinks about this
-1.....................  Hearing-impaired people cannot hear sounds well.
-2.....................  A person who interprets for hearing-impaired people cannot hear.
-3.....................  There are more signs for words than for letters.
-4.....................  Japanese people use ASL.
-5.....................  Finger spelling has signs for numbers.
-6.....................  Africans cannot learn ASL because they don't speak English.
-7.....................  Only the hands move in ASL.
-8.....................  It is difficult for children to learn ASL.
- 2</p>
-<p>Solution:
- 
-1. YES
-2. NO
-3. NOT GIVEN
-4. NOT GIVEN
-5. NOT GIVEN
-6. NOT GIVEN
-7. NOT GIVEN
-8. NOT GIVEN
- 3</p>
-<p>Reading Practice
- How do we find our way?
-A. Most modern navigation, such as the Global Positioning System (GPS), relies primarily
-on positions determined electronically by receivers collecting information from satellites.
-Yet if the satellite service’s digital maps become even slightly outdated, we can become
-lost. Then we have to rely on the ancient human skill of navigating in three dimensional
-space. Luckily, our biological finder has an important advantage over GPS: we can ask
-questions of people on the sidewalk, or follow a street that looks familiar, or rely on a
-navigational rubric. The human positioning system is flexible and capable of learning.
-Anyone who knows the way from point A to point B-and from A to C-can probably figure out
-how to get from B to C, too.
- 
-B. But how does this complex cognitive system really work? Researchers are looking at
-several strategies people use to orient themselves in space: guidance, path integration and
-route following. We may use all three or combinations thereof, and as experts learn more
-about these navigational skills, they are making the case that our abilities may underlie our
-powers of memory and logical thinking. For example, you come to New York City for the
-first time and you get off the train at Grand Central Terminal in midtown Manhattan. You
-have a few hours to see popular spots you have been told about: Rockefeller Center,
-Central Park, and the Metropolitan Museum of Art. You meander in and out of shops along
-the way. Suddenly, it is time to get back to the station. But how?
-C. If you ask passersby for help, most likely you will receive information in many different
-forms. A person who orients herself by a prominent landmark would gesture southward:
-“Look down there. See the tall, broad MetLife Building? Head for that- the station is right
-below it.” Neurologists call this navigational approach “guidance”, meaning that a landmark
-visible from a distance serves as the marker for one’s destination.
- 
-D. Another city dweller might say: “What places do you remember passing? … Okay. Go
-toward the end of Central Park, then walk down to St. Patrick’s Cathedral. A few more
-blocks, and Grand Central will be off to your left.” In this case, you are pointed toward the
-most recent place you recall, and you aim for it. Once there you head for the next notable
-place and so on, retracing your path. Your brain is adding together the individual legs of
-your trek into a cumulative progress report. Researchers call this strategy “path
-integration.” Many animals rely primarily on path integration to get around, including
-insects, spiders, crabs and rodents. The desert ants of the genus Cataglyphis employ this
-method to return from foraging as far as 100 yards away. They note the general direction
-they came from and retrace their steps, using the polarization of sunlight to orient
-themselves even under overcast skies. On their way back they are faithful to this inner
-homing vector. Even when a scientist picks up an ant and puts it in a totally different spot,
-the insect stubbornly proceeds in the originally determined direction until it has gone “back”
-all of the distance it wandered from its nest. Only then does the ant realize it has not
-succeeded, and it begins to walk in successively larger loops to find its way home.
-E. Whether it is trying to get back to the anthill or the train station, any animal using path
-integration must keep track of its own movements so it knows, while returning, which
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>beverage</strong>
-            <p>n. 饮料</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consumption</strong>
-            <p>n. 消费，消耗</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>controversy</strong>
-            <p>n. 争论，争议</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>importation</strong>
-            <p>n. 进口，输入</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Satellite Technology</h1>
+<p>雅思阅读真题 · 第263篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Satellite Technology
+The space-age began with the launch of the Russian artificial satellite Sputnik in 1957 and
+developed further with the race to the moon between the United States and Russia. This
+rivalry was characterized by advanced technology and huge budgets. In this process, there
+were spectacular successes, some failures, but also many spin-offs.
+Europe, Japan, China, and India quickly joined this space club of the superpowers. With
+the advent of relatively low-cost high-performance mini-satellites and launchers, the
+acquisition of indigenous space capabilities by smaller nations in Asia has become
+possible. How, in what manner, and for what purpose will these capabilities be realized?
+ A
+Rocket technology has progressed considerably since the days of ‘fire arrows’ (bamboo
+poles filled with gunpowder) first used in China around 500 BC, and, during the Sung
+Dynasty, to repel Mongol invaders at the battle of Kaifeng (Kai-fung fu) in AD 1232. These
+ancient rockets stand in stark contrast to the present-day Chinese rocket launch vehicles,
+called the ‘Long March’, intended to place a Chinese astronaut in space by 2005 and,
+perhaps, to achieve a Chinese moon-landing by the end of the decade.
+ B
+In the last decade, there has been a dramatic growth in space activities in Asia both in the
+utilization of space-based services and the production of satellites and launchers. This
+rapid expansion has led many commentators and analysts to predict that Asia will become
+a world space power. The space-age has had dramatic effects worldwide with direct
+developments in space technology influencing telecommunications, meteorological
+forecasting, earth resource and environmental monitoring, and disaster mitigation (flood,
+forest fires, and oil spills). Asian nations have been particularly eager to embrace these
+developments.
+C 
+New and innovative uses for satellites are constantly being explored with potential
+revolutionary effects, such as in the field of health and telemedicine, distance education,
+crime prevention (piracy on the high seas), food and agricultural planning and production
+(rice crop monitoring). Space in Asia is very much influenced by the competitive
+commercial space sector, the emergence of low-cost mini-satellites, and the globalization
+of industrial and financial markets. It is not evident how Asian space will develop in the
+coming decades in the face of these trends. It is, however, important to understand and
+assess the factors and forces that shape Asian space activities and development in
+determining its possible consequences for the region.
+ D
+At present, three Asian nations, Japan, China, and India, have comprehensive end-to-end
+space capabilities and possess a complete space infrastructure: space technology, satellite
+manufacturing, rockets, and spaceports. Already self-sufficient in terms of satellite design
+and manufacturing, South Korea is currently attempting to join their ranks with its plans to
+develop a launch site and spaceport. Additionally, nations in Southeast Asia as well as
+ 1
+those bordering the Indian subcontinent (Nepal, Pakistan, and Bangladesh), have, or are
+starting to develop indigenous space programmes. The Association of Southeast Asian
+Nations (ASEAN) has, in varying degrees, embraced space applications using foreign
+technology and over the past five years or so its space activities have been expanding.
+Southeast Asia is predicted to become the largest and fastest-growing market for
+commercial space products and applications, driven by telecommunications (mobile and
+fixed services), the Internet, and remote sensing applications. In the development of this
+technology, many non-technical factors, such as economics, politics, culture, and history,
+interact and play important roles, which in turn affect Asian technology.
+ E
+Asia and Southeast Asia, in particular, suffers from a long list of recurrent large-scale
+environmental problems including storms and flooding, forest fires and deforestation, and
+crop failures. Thus the space application that has attracted the most attention in this region
+is remote sensing. Remote sensing satellites equipped with instruments to take
+photographs of the ground at different wavelengths provide essential information for natural
+resource accounting, environmental management, disaster prevention and monitoring,
+land-use mapping, and sustainable development planning. Progress in these applications
+has been rapid and impressive. ASEAN members, unlike Japan, China, and India, do not
+have their own remote sensing satellites, however, most of its member nations have
+facilities to receive, process, and interpret such data from American and European
+satellites. In particular, Thailand, Malaysia, and Singapore have world-class remote
+sensing processing facilities and research programmes. ASEAN has plans to develop (and
+launch) its own satellites and in particular remote sensing satellites. Japan is regarded as
+the dominant space power in Asia and its record of successes and quality of technologies
+are equal to those of the West. In view of the technological challenges and high risks
+involved in space activities, a very long, and expensive, the learning curve has been
+followed to obtain those successes achieved. Japan, s satellite manufacturing was based
+on the old and traditional defense and military procurement methodologies as practiced in
+the US and Europe.
+ F
+In recent years there have been fundamental changes in the way satellites are designed
+and built to drastically reduce costs. The emergence of ‘small satellites’ and their quick
+adoption by Asian countries as a way to develop low-cost satellite technology and rapidly
+establish a space capability has given these countries the possibility to shorten their
+learning curve by a decade or more. The global increase of technology transfer
+mechanisms and use of readily available commercial technology to replace costly space
+and military-standard components may very well result in a highly competitive Asian
+satellite manufacturing industry.
+ G
+The laws of physics are the same in Tokyo as in Toulouse, and the principles of electronics
+and mechanics know no political or cultural boundaries. However, no such immutability
+applies to engineer practices and management; they are very much influenced by
+education, culture, and history. These factors, in turn, have an effect on costs, lead times,
+product designs and, eventually, international sales. Many Asian nations are sending their
+engineers to be trained in the West. Highly experienced, they return to work in the growing
+ 2
+Asian space industry. Will this acquisition of technical expertise, coupled perhaps with the
+world-renowned Japanese manufacturing and management techniques, be applied to build
+world-class satellites and reduce costs?
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+The reading passage has seven paragraphs,  A-G
+Choose the correct heading for paragraphs  A-G from the list below.
+Write the correct number,  i-ix, in boxes  1-5 on your answer sheet.
+List of Headings
+i           Western countries provide essential assistance
+ii          Unbalanced development for an essential space technology
+iii         Innovative application compelled by competition
+iv         An ancient invention which is related to the future
+v          Military purpose of the satellite
+vi         Rockets for application in ancient China
+vii        Space development in Asia in the past
+viii       Non-technology factors counts
+ix         competitive edge gained by more economically feasible satellite
+1.....................   Paragraph  A
+2.....................   Paragraph  B
+3.....................   Paragraph  C
+Paragraph D Example: Current space technology development in Asia
+4.....................  Paragraph  E
+5.....................   Paragraph  F
+Questions 6-9
+Match the following reasons for each question according to the information given in the
+passage
+Write the correct letter  A-F, in boxes 6-9 on your answer sheet.
+A     Because it helps administrate the crops.
+B     Because there are some unapproachable areas.
+C     Because the economic level in that area is low.
+D    Because there are influences from some other social factors. 
+ 4
+ E     Because it can be used in non-peaceful purpose.
+F     Because disasters such as bush fire happened in Southeast Asia.
+ 6.....................   Why  remote-photographic technology  is used to resolve environmental
+problems?
+7.....................   Why satellites technology is used in the medicine area?
+8.....................   Why Asian countries satellite technology is limited for development?
+9.....................   Why satellites technology is deployed in an agricultural area?
+ Questions 10-13
+Do the following statements agree with the information given in Reading Passage?
+In boxes  10-13 on your answer sheet, write
+TRUE               if the statement is true
+FALSE              if the statement is false
+NOT GIVEN     if the information is not given in the passage
+10.....................   Ancient China had already deployed rockets as a military purpose as
+early as 500 years ago.
+11.....................   Space technology has enhanced the literacy of Asia.
+12.....................   photos taken by satellites with certain technology help predict some
+natural catastrophes prevention and surveillance.
+13.....................   commercial competition constitutes a boosting factor to Asian technology
+development.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.iv
+2.vii
+3.iii
+4.ii
+5.ix
+6.F
+7.8.D
+9.A
+10.FALSE
+11.NOT GIVEN
+12.TRUE
+13.TRUE
+B
+ 6</div>
+</div>
+</div>
 </body>
 </html>

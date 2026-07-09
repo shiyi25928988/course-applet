@@ -1,345 +1,264 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Beginning Of Intelligence - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The History Of The Tortoise - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题461/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Beginning Of Intelligence</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>10 of spades. He pointed at a fireplace and said, “Destiny’s Child is whacking Franz
-Schubert with handbags.” The next three cards were the king of hearts, the king of spades,
-and the jack of clubs.</p>
-<p>How did he do it? Cooke has already memorized a specific person, verb, and object that he
-associates with each card in the deck. For example, for the 7 of spades, the person (or, in
-this case, persons) is always the singing group Destiny’s Child, the action is surviving a
-storm, and the image is a dinghy. The queen of clubs is always his friend Henrietta, the
-action is thwacking with a handbag, and the image is of wardrobes filled with designer
-clothes. When Cooke commits a deck to memory, he does it three cards at a time. Every
-three-card group forms a single image of a person doing something to an object. The first
-card in the triplet becomes the person, the second the verb, the third the object. He then
-places those images along a specific familiar route, such as the one he took through the
-Lamb and Flag. In competitions, he uses an imaginary route that he has designed to be as
-smooth and downhill as possible. When it comes time to recall, Cooke takes a mental walk
-along his route and translates the images into cards. That’s why the MRIs of the memory
-contestants showed activation in the brain areas associated with visual imagery and spatial
-navigation.</p>
-<p>The more resonant the images are, the more difficult they are to forget. But even
-meaningful information is hard to remember when there’s a lot of it. That’s why competitive
-memorizers place their images along an imaginary route. That technique, known as the loci
-method, reportedly originated in 477 B.C. with the Greek poet Simonides of Ceos.
-Simonides was the sole survivor of a roof collapse that killed all the other guests at a royal
-banquet. The bodies were mangled beyond recognition, but Simonides was able to
-reconstruct the guest list by closing his eyes and recalling each individual around the
-dinner table. What he had discovered was that our brains are exceptionally good at
-remembering images and spatial information. Evolutionary psychologists have offered an
-explanation: Presumably, our ancestors found it important to recall where they found their
-last meal or the way back to the cave. After Simonides’ discovery, the loci method became
-popular across ancient Greece as a trick for memorizing speeches and texts. Aristotle
-wrote about it, and later a number of treatises on the art of memory were published in
-Rome. Before printed books, the art of memory was considered a staple of classical
-education, on a par with grammar, logic, and rhetoric.</p>
-<p>The most famous of the naturals was the Russian journalist S.V. Shereshevski, who could
-recall long lists of numbers memorized decades earlier, as well as poems, strings of
-nonsense syllables, and just about anything else he was asked to remember. “The capacity
-of his memory had no distinct limits,” wrote Alexander Luria, the Russian psychologist who
-studies Shereshevski also had synesthesia, a rare condition in which the senses become
-intertwined. For example, every number may be associated with a color or every word with
-a taste. Synesthetic reactions evoke a response in more areas of the brain, making
-memory easier.</p>
-<p>K. Anders Ericsson, a Swedish-born psychologist at Florida State University, thinks anyone
-can acquire Shereshevski’s skills. He cites an experiment with S. F., an undergraduate who
-was paid to take a standard test of memory called the digit span for one hour a day, two or
-three days a week. When he started, he could hold, like most people, only about seven
-digits in his head at any given time (conveniently, the length of a phone number). Over two
-years, S. F. completed 250 hours of testing. By then, he had stretched his digit span from 7
-to more than 80. The study of S. F. led Ericsson to believe that innately superior memory
-doesn’t exist at all. When he reviewed original case studies of naturals, he found that
-exceptional memorizers were using techniques – sometimes without realizing it – and lots
-of practice. Often, exceptional memory was only for a single type of material, like digits. “If
-we look at some of these memory tasks, they’re the kind of thing most people don’t even
-waste one hour practicing, but if they wasted 50 hours, they’d be exceptional at it,”
-Ericsson says. It would be remarkable, he adds, to find a “person who is exceptional across
-a number of tasks. I don’t think that there’s any compelling evidence that there are such
-people.”
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The History Of The Tortoise</h1>
+<p>雅思阅读真题 · 第343篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The history of the tortoise
+If you go back far enough, everything lived in the sea. At various points in
+evolutionary history, enterprising individuals within many different animal groups moved
+out onto the land, sometimes even to the most parched deserts, taking their own private
+seawater with them in blood and cellular fluids. In addition to the reptiles, birds, mammals
+and insects which we see all around us, other groups that have succeeded out of water
+include scorpions, snails, crustaceans such as woodlice and land crabs, millipedes and
+centipedes, spiders and various worms. And we mustn’t forget the plants, without
+whose prior invasion of the land none of the other migrations could have happened.
+Moving from water to land involved a major redesign of every aspect of life, including
+breathing and reproduction. Nevertheless, a good number of thoroughgoing land animals
+later turned around, abandoned their hard-earned terrestrial re-tooling, and returned to the
+water again. Seals have only gone part way back. They show us what the intermediates
+might have been like, on the way to extreme cases such as whales and dugongs. Whales
+(including the small whales we call dolphins) and dugongs, with their close cousins the
+manatees, ceased to be land creatures altogether and reverted to the full marine habits
+of their remote ancestors. They don’t even come ashore to breed. They do, however, still
+breathe air, having never developed anything equivalent to the gills of their earlier marine
+incarnation. Turtles went back to the sea a very long time ago and, like all vertebrate
+returnees to the water, they breathe air. However, they are, in one respect, less fully given
+back to the water than whales or dugongs, for turtles still lay their eggs on beaches.
+There is evidence that all modem turtles are descended from a terrestrial ancestor which
+lived before most of the dinosaurs. There are two key fossils called Proganochelys
+quenstedti and Palaeochersis talampayensis dating from early dinosaur times, which
+appear to be close to the ancestry of all modem turtles and tortoises. You might
+wonder how we can tell whether fossil animals lived on land or in water, especially if only
+fragments are found. Sometimes it’s obvious. Ichthyosaurs were reptilian contemporaries
+of the dinosaurs, with fins and streamlined bodies. The fossils look like dolphins and they
+surely lived like dolphins, in the water. With turtles it is a little less obvious. One way to tell
+is by measuring the bones of their forelimbs.
+Walter Joyce and Jacques Gauthier, at Yale University, obtained three measurements in
+these particular bones
+of 71 species of living turtles and tortoises. They used a kind of triangular graph paper to
+plot the three measurements against one another. All the land tortoise species formed a
+tight cluster of points in the upper part of the triangle; all the water turtles cluster in the
+lower part of the triangular graph. There was no overlap, except when they added some
+species that spend time both in water and on land. Sure enough, these amphibious species
+show up on the triangular graph approximately half way between the ‘wet cluster’ of sea
+turtles and the ‘dry cluster’ of land tortoises. The next step was to determine where the
+fossils fell. The bones of P quenstedti and JR talampayensis leave us in no doubt.
+Their points on the graph are right in the thick of the dry cluster. Both these fossils
+were dry-land tortoises. They come from the era before our turtles returned to the water.
+You might think, therefore, that modem land tortoises have probably stayed on land ever
+since those early terrestrial times, as most mammals did after a few of them went back to
+ 1
+the sea. But apparently not. If you draw out the family tree of all modem turtles and
+tortoises, nearly all the branches are aquatic. Today’s land tortoises constitute a single
+branch, deeply nested among branches consisting of aquatic turtles. This suggests
+that modem land tortoises have not stayed on land continuously since the time of
+P. quenstedti and P talampayensis. Rather, their ancestors were among those who went
+back to the water, and they then re-emerged back onto the land in (relatively) more recent
+times.
+Tortoises therefore represent a remarkable double return. In common with all mammals,
+reptiles and birds, their remote ancestors were marine fish and before that various more or
+less worm-like creatures stretching back, still in the sea, to the primeval bacteria. Later
+ancestors lived on land and stayed there for a very large number of generations. Later
+ancestors still evolved back into the water and became sea turtles. And finally they
+returned yet again to the land as tortoises, some of which now live in the driest of deserts.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Answer the questions below.
+ChooseNO MORE THAN THREE WORDS from the passage for each answer.
+Write your answers in boxes 1-4 on your answer sheet.
+1    What had to transfer from sea to land before any animals could migrate? 1.....................
+2    WhichTWOprocesses are mentioned as those in which animals had to make
+big changes as they moved onto land? 2.....................
+3    Which physical feature, possessed by their ancestors, do whales lack? 3.....................
+4    Which animals might ichthyosaurs have resembled? 4.....................
+ Questions 5-7
+Do the following statements agree with the information given in Reading Passage?
+In boxes5-7 on your answer sheet, write
+  
+ TRUE    if the statement agrees with the information
+FALSE    if the statement contradicts the information
+NOT GIVEN if there is no information on this
+5.....................    Turtles were among the first group of animals to migrate back to the sea.
+6.....................    It is always difficult to determine where an animal lived when its fossilised
+remains are incomplete.
+7.....................    The habitat of ichthyosaurs can be determined by the appearance of their
+fossilised remains.
+Questions 8-13
+Complete the flow-chart below.
+ChooseNO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each
+answer.
+Write your answers in boxes 8-13 on your answer sheet.
+Method of determining where the ancestors of turtles
+and tortoises come from
+Step 1
+ 3
+ 
+71 species
+of living
+turtles and
+tortoises
+were
+examined
+and a total
+of
+8................
+..... were
+taken from
+the bones
+of their
+forelimbs.
+Step 2
+The data
+was
+recorded
+on a
+9................
+.....
+(necessary
+for
+comparing
+the
+information
+).
+Outcome:
+Land
+tortoises
+were
+represente
+d by a
+dense
+10..............
+....... of
+points
+towards
+the top.
+Sea turtles
+were
+grouped
+together in
+the bottom
+ 4
+ 
+part.
+Step 3
+ The same
+data was
+collected
+from some
+living
+11..............
+.......
+species
+and added
+to the other
+results.
+Outcome:
+The points
+for these
+species
+turned out
+to be
+positioned
+about
+12..............
+....... up the
+triangle
+between
+the land
+tortoises
+and the
+sea turtles.
+Step 4
+Bones of P
+quenstedti
+and P.
+talampaye
+nsis were
+examined
+in a similar
+way and
+the results
+added.
+ 5
+ 
+ 
+ 
+ Outcome:
+The
+position of
+the points
+indicated
+that both
+these
+ancient
+creatures
+were
+13..............
+.......
+Questions 14
+ Choose the correct letter, A, B, C or D .
+Write the correct letter in box 14 on your answer sheet.
+According to the writer, the most significant thing about tortoises is that
+A    they are able to adapt to life in extremely dry environments.
+B    their original life form was a kind of primeval bacteria.
+C    they have so much in common with sea turtles.
+D    they have made the transition from sea to land more than once.
+ 6</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.plants
+2.breathing and
+reproduction
+3.gills
+4.dolphins
+5.NOT GIVEN
+6.FALSE
+7.TRUE8.3 measurements
+9.(triangular) graph
+10.cluster
+11.amphibious
+12.half way
+13.dry-land tortoises
+14.D
+ 7</div>
+</div>
+</div>
 </body>
 </html>

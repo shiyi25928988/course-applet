@@ -1,372 +1,196 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Song On The Brain - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Bring Back The Big Cats - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题90/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 A Song On The Brain</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>the sound on screen. Such sounds are included so as to provide an appropriate emotional
-nuance, and they may also add to the realism of the film. For example, a film-maker might
-opt to include the background sound of an ambulance's siren while the foreground sound
-and image portrays an arguing couple. The asynchronous ambulance siren underscores
-the psychic injury incurred in the argument; at the same time the noise of the siren adds to
-the realism of the film by acknowledging the film's city setting.
-We are probably all familiar with background music in films, which has become so
-ubiquitous as to be noticeable in its absence. We are aware that it is used to add emotion
-and rhythm. Usually not meant to be noticeable, it often provides a tone or an emotional
-attitude toward the story and /or the characters depicted. In addition, background music
-often foreshadows a change in mood. For example, dissonant music may be used in film to
-indicate an approaching (but not yet visible) menace or disaster.
-Background music may aid viewer understanding by linking scenes. For example, a
-particular musical theme associated with an individual character or situation may be
-repeated at various points in a film in order to remind the audience of salient motifs or
-ideas.
-Film sound comprises conventions and innovations. We have come to expect
-an acceleration of music during car chases and creaky doors in horror films. Yet, it is
-important to note as well that sound is often brilliantly conceived. The effects of sound are
-often largely subtle and often are noted by only our subconscious minds. We need to foster
-an awareness of film sound as well as film space so as to truly appreciate an art form that
-sprang to life during the twentieth century - the modern film.
- 2</p>
-<p>Questions 1-5
-Choose the correct letter, A, B, C or D
-Write the correct letter in boxes 1-5 on your answer sheet.
-1    In the first paragraph, the writer makes a point that
- 
-A the director should plan the sound track at an early stage in filming.
-B it would be wrong to overlook the contribution of sound to the artistry of films.
-C the music industry can have a beneficial influence on sound in film.
-D it is important for those working on the sound in a film to have sole responsibility for
-it.
-2    One reason that the writer refers to Humphrey Bogart is to exemplify
- 
-A the importance of the actor and the character appearing to have similar personalities.
-B the audience’s wish that actors are visually appropriate for their roles.
-C the value of the actor having had similar feelings to the character.
-D the audience’s preference for dialogue to be as authentic as possible.
-3    In the third paragraph, the writer suggests that
- 
-A audiences are likely to be critical of film dialogue that does not reflect their own
-experience.
-B film dialogue that appears to be dull may have a specific purpose.
-C filmmakers vary considerably in the skill with which they handle dialogue.
-D the most successful films are those with dialogue of a high Quality.
-4    What does the writer suggest about Bringing Up
- 
-A The plot suffers from the filmmaker’s wish to focus on humorous dialogue.
-B The dialogue helps to make it one of the best comedy films ever produced.
-C There is a mismatch between the speed of the dialogue and the speed of actions.
-D The nature of the dialogue emphasises key elements of the film.
- 3</p>
-<p>5    The writer refers to the ‘click’ of a door to make the point that realistic sounds
- 
-A are often used to give the audience a false impression of events in the film.
-B may be interpreted in different ways by different members of the audience.
-C may be modified in order to manipulate the audience’s response to the film.
-D tend to be more significant in films presenting realistic situations.</p>
-<p>Questions 6-10
-Do the following statements agree with the information given in Reading Passage?
-In boxes 6-10 on your answer sheet, write
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Bring Back The Big Cats</h1>
+<p>雅思阅读真题 · 第60篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Bring back the big cats
+It's time to start returning vanished native animals to Britain, says John Vesty There is a
+poem, written around 598 AD, which describes hunting a mystery animal called a llewyn.
+But what was it? Nothing seemed to fit, until 2006, when an animal bone, dating from
+around the same period, was found in the Kinsey Cave in northern England. Until this
+discovery, the lynx - a large spotted cat with tassel led ears - was presumed to have died
+out in Britain at least 6,000 years ago, before the inhabitants of these islands took up
+farming. But the 2006 find, together with three others in Yorkshire and Scotland, is
+compelling evidence that the lynx and the mysterious llewyn were in fact one and the same
+animal. If this is so, it would bring forward the tassel-eared cat's estimated extinction date
+by roughly 5,000 years.
+However, this is not quite the last glimpse of the animal in British culture. A 9th- century
+stone cross from the Isle of Eigg shows, alongside the deer, boar and aurochs pursued by
+a mounted hunter, a speckled cat with tasselled ears. Were it not for the animal's backside
+having worn away with time, we could have been certain, as the lynx's stubby tail is
+unmistakable. But even without this key feature, it's hard to see what else the creature
+could have been. The lynx is now becoming the totemic animal of a movement that is
+transforming British environmentalism: rewilding.
+Rewilding means the mass restoration of damaged ecosystems. It involves letting trees
+return to places that have been denuded, allowing parts of the seabed to recover from
+trawling and dredging, permitting rivers to flow freely again. Above all, it means bringing
+back missing species. One of the most striking findings of modern ecology is that
+ecosystems without large predators behave in completely different ways from those that
+retain them Some of them drive dynamic processes that resonate through the whole food
+chain, creating niches for hundreds of species that might otherwise struggle to survive. The
+killers turn out to be bringers of life.
+Such findings present a big challenge to British conservation, which has often selected
+arbitrary assemblages of plants and animals and sought, at great effort and expense, to
+prevent them from changing. It has tried to preserve the living world as if it were a jar of
+pickles, letting nothing in and nothing out, keeping nature in a state of arrested
+development. But ecosystems are not merely collections of species; they are also the
+dynamic and ever-shifting relationships between them. And this dynamism often depends
+on large predators.
+At sea the potential is even greater: by protecting large areas from commercial fishing, we
+could once more see what 18th-century literature describes: vast shoals of fish being
+chased by fin and sperm whales, within sight of the English shore. This policy would also
+greatly boost catches in the surrounding seas; the fishing industry's insistence on scouring
+every inch of seabed, leaving no breeding reserves, could not be more damaging to its own
+interests.
+Rewilding is a rare example of an environmental movement in which campaigners
+articulate what they are for rather than only what they are against. One of the reasons why
+the enthusiasm for rewilding is spreading so quickly in Britain is that it helps to create a
+more inspiring vision than the green movement's usual promise of 'Follow us and the world
+will be slightly less awful than it would otherwise have been.
+ 1
+The lynx presents no threat to human beings: there is no known instance of one preying on
+people. It is a specialist predator of roe deer, a species that has exploded in Britain in
+recent decades, holding back, by intensive browsing, attempts to re-establish forests. It will
+also winkle out sika deer: an exotic species that is almost impossible for human beings to
+control, as it hides in impenetrable plantations of young trees. The attempt to reintroduce
+this predator marries well with the aim of bringing forests back to parts of our bare and
+barren uplands. The lynx requires deep cover, and as such presents little risk to sheep and
+other livestock, which are supposed, as a condition of farm subsidies, to be kept out of the
+woods.
+On a recent trip to the Cairngorm Mountains, I heard several conservationists suggest that
+the lynx could be reintroduced there within 20 years. If trees return to the bare hills
+elsewhere in Britain, the big cats could soon follow. There is nothing extraordinary about
+these proposals, seen from the perspective of anywhere else in Europe. The lynx has now
+been reintroduced to the Jura Mountains, the Alps, the Vosges in eastern France and the
+Harz mountains in Germany, and has re-established itself in many more places. The
+European population has tripled since 1970 to roughly 10,000. As with wolves, bears,
+beavers, boar, bison, moose and many other species, the lynx has been able to spread as
+farming has,left the hills and people discover that it is more lucrative to protect charismatic
+wildlife than to hunt it, as tourists will pay for the chance to see it. Large-scale rewilding is
+happening almost everywhere - except Britain.
+Here, attitudes are just beginning to change. Conservationists are starting to accept that
+the old preservation-jar model is failing, even on its own terms. Already, projects such as
+Trees for Life in the Highlands provide a hint of what might be coming. An organisation is
+being set up that will seek to catalyse the rewilding of land and sea across Britain, its aim
+being to reintroduce that rarest of species to British ecosystems: hope.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Write the correct letter, A, B, CorD, in boxes 1-5 on your answer sheet.
+1    What did the 2006 discovery of the animal bone reveal about the lynx?
+ A Its physical appearance was very distinctive.
+B Its extinction was linked to the spread of farming.
+C It vanished from Britain several thousand years ago.
+D It survived in Britain longer than was previously thought.
+2    What point does the writer make about large predators in the third paragraph?
+ A Their presence can increase biodiversity.
+B They may cause damage to local ecosystems.
+C Their behaviour can alter according to the environment.
+D They should be reintroduced only to areas where they were native.
+3    What does the writer suggest about British conservation in the fourth paragraph?
+ A It has failed to achieve its aims.
+B It is beginning to change direction.
+C it has taken a misguided approach.
+D It has focused on the most widespread species.
+4    Protecting large areas of the sea from commercial fishing would result in
+ A practical benefits for the fishing industry.
+B some short-term losses to the fishing industry.
+C widespread opposition from the fishing industry.
+D certain changes to techniques within the fishing industry.
+5    According to the author, what distinguishes rewilding from other environmental
+campaigns?
+A Its objective is more achievable.
+ 3
   
-TRUE    if the statement agrees with the information
-FALSE if the statement contradicts the information
-NOT GIVEN if there is no information on this
-6.....................    Audiences are likely to be surprised if a film lacks background music.
-7.....................    Background music may anticipate a development in a film.
-8.....................    Background music has more effect on some people than on others.
-9.....................    Background music may help the audience to make certain connections
-within the film.
-10.....................    Audiences tend to be aware of how the background music is affecting
-them.</p>
-<p>Questions 11-13
-Complete each sentence with the correct letter below.
-Write the correct letter, A-E, in boxes 11-13 on your answer sheet.</p>
-<p>A when the audience listens to the dialogue.
-B if the film reflects the audience’s own concerns.
-C if voice, sound and music are combined appropriately.
-D when the director is aware of how the audience will respond.
-E when the actor s appearance, voice and moves are consistent with each other.
-11    The audience’s response to different parts of a film can be controlled 11.....................
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+  B Its supporters are more articulate.
+C Its positive message is more appealing.
+D It is based on sounder scientific principles.
+Questions 6-9
+Complete the summary using the list of words and phrases A-Fbelow.
+Write the correct letter, A-F, in boxes 6-9 on your answer sheet.
+ 
+ 
+ 
+ Reintroducing the lynx to Britain
+ There would be many advantages to reintroducing the lynx to Britain. While there is no
+evidence that the lynx has ever put 6..................... in danger, it would reduce the
+numbers of certain 7..................... whose populations have increased enormously in
+recent decades. It would present only a minimal threat to 8....................., provided these
+were kept away from lynx habitats. Furthermore, the reintroduction programme would
+also link efficiently with initiatives to return native 9..................... to certain areas of the
+country.
+Atrees Bendangered species Chillsides
+Dwild animals Ehumans
+ Ffarm animals
+ 
+ 
+ Questions 10-13
+Do the following statements agree with the claims of the writer in Reading Passage?
+In boxes10-13 on your answer sheet, write
+YES   if the statement agrees with the claims of the writer
+NO   if the statement contradicts the claims of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+10.....................    Britain could become the first European country to reintroduce the lynx.
+11.....................    The large growth in the European lynx population since 1970 has
+exceeded conservationists’ expectations.
+12.....................    Changes in agricultural practices have extended the habitat of the lynx in
+Europe.
+13.....................    It has become apparent that species reintroduction has commercial
+advantages.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.D
+2.A
+3.C
+4.A
+5.C
+6.E
+7.8.F
+9.A
+10.NO
+11.NOT GIVEN
+12.YES
+13.YES
+D
+ 5</div>
+</div>
+</div>
 </body>
 </html>

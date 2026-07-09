@@ -1,348 +1,183 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Birds Of London - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Impact Of The Potato - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题463/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Birds Of London</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>spent slumped in front of the TV.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Impact Of The Potato</h1>
+<p>雅思阅读真题 · 第345篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Impact of the Potato
+ Jeff Chapman relates the story of history the most important vegetable
+ AThe potato was first cultivated in South America between three and seven thousand
+years ago, though scientists believe they may have grown wild in the region as long as
+13,000 years ago. The genetic patterns of potato distribution indicate that the potato
+probably originated in the mountainous west-central region of the continent.
+ BEarly Spanish chroniclers who misused the Indian word batata (sweet potato) as the
+name for the potato noted the importance of the tuber to the Incan Empire. The Incas had
+learned to preserve the potato for storage by dehydrating and mashing potatoes into a
+substance called Chuchu could be stored in a room for up to 10 years, providing excellent
+insurance against possible crop failures. As well as using the food as a staple crop,  the
+Incas thought potatoes made childbirth easier and used it to treat injuries.
+ CThe Spanish conquistadors first encountered the potato when they arrived in Peru in
+1532 in search of gold, and noted Inca miners eating chuchu. At the time the Spaniards
+failed to realize that the potato represented a far more important treasure than either silver
+or gold, but they did gradually begin to use potatoes as basic rations aboard their ships.
+After the arrival of the potato in Spain in 1570a few Spanish farmers began to cultivate
+them on a small scale, mostly as food for livestock.
+ DThroughout Europe, potatoes were regarded with suspicion, distaste and fear. Generally
+considered to be unfit for human consumption, they were used only as animal fodder and
+sustenance for the starving. In northern Europe, potatoes were primarily grown in botanical
+gardens as an exotic novelty. Even peasants refused to eat from a plant that produced
+ugly, misshapen tubers and that had come from a heathen civilization. Some felt that the
+potato plant’s resemblance to plants in the nightshade family hinted that it was the creation
+of witches or devils.
+ EIn meat-loving England, farmers and urban workers regarded potatoes with extreme
+distaste. In 1662, the Royal Society recommended the cultivation of the tuber to the English
+government and the nation, but this recommendation had little impact. Potatoes did not
+become a staple until, during the food shortages associated with the Revolutionary Wars,
+the English government began to officially encourage potato cultivation. In 1795, the Board
+of Agriculture issued a pamphlet entitled “Hints Respecting the Culture and Use of
+Potatoes” this was followed shortly by pro-potato editorials and potato recipes in The
+Times. Gradually, the lower classes began to follow the lead of the upper classes.
+ FA similar pattern emerged across the English Channel in the Netherlands, Belgium and
+France. While the potato slowly gained ground in eastern France (where it was often the
+only crop remaining after marauding soldiers plundered wheat fields and vineyards), it did
+not achieve widespread acceptance until the late 1700s. The peasants remained
+suspicious, in spite of a 1771 paper from the Facult de Paris testifying that the potato was
+not harmful but beneficial. The people began to overcome their distaste when the plant
+received the royal seal of approval: Louis XVI began to sport a potato flower in his
+buttonhole, and Marie-Antoinette wore the purple potato blossom in her hair.
+GFrederick the Great of Prussia saw the potato’s potential to help feed his nation and
+ 1
+ lower the price of bread, but faced the challenge of overcoming the people’s prejudice
+against the plant. When he issued a 1774 order for his subjects to grow potatoes as
+protection against famine, the town of Kolberg replied: “The things have neither smell nor
+taste, not even the dogs will eat them, so what use are they to us?” Trying a less direct
+approach to encourage his subjects to begin planting potatoes, Frederick used a bit of
+reverse psychology: he planted a royal field of potato plants and stationed a heavy guard to
+protect this field from thieves. Nearby peasants naturally assumed that anything worth
+guarding was worth stealing, and so snuck into the field and snatched the plants for their
+home gardens. Of course, this was entirely in line with Frederick’s wishes.
+ HHistorians debate whether the potato was primarily a cause or an effect of the huge
+population boom in industrial-era England and Wales. Prior to 1800the English diet had
+consisted primarily of meat, supplemented by bread, butter and cheese. Few vegetables
+were consumed, most vegetables being regarded as nutritionally worthless and potentially
+harmful. This view began to change gradually in the late 1700s. The Industrial Revolution
+was drawing an ever increasing percentage of the populace into crowded cities, where only
+the richest could afford homes with ovens or coal storage rooms, and people were working
+12-16 hour days which left them with little time or energy to prepare food. High yielding,
+easily prepared potato crops were the obvious solution to England’s food problems.
+ IWhereas most of their neighbors regarded the potato with suspicion and had to be
+persuaded to use it by the upper classes, the Irish peasantry embraced the tuber more
+passionately than anyone since the Incas. The potato was well suited to the Irish the soil
+and climate, and its high yield suited the most important concern of most Irish farmers: to
+feed their families.
+JThe most dramatic example of the potato’s potential to alter population patterns occurred
+in Ireland, where the potato had become a staple by 1800. The Irish population doubled to
+eight million between 1780 and 1841this without any significant expansion of industry or
+reform of agricultural techniques beyond the widespread cultivation of the potato. Though
+Irish landholding practices were primitive in comparison with those of England, the potato’s
+high yields allowed even the poorest farmers to produce more healthy food than they
+needed with scarcely any investment or hard labor. Even children could easily plant,
+harvest and cook potatoes, which of course required no threshing, curing or grinding. The
+abundance provided by potatoes greatly decreased infant mortality and encouraged early
+marriage.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+ Do the following statements agree with the views of the writer in Reading Passage 1?
+ In boxes1-5 on your answer sheet, write
+ TRUE   if the statement agrees with the information
+ FALSE   if the statement contradicts the information
+NOT GIVEN if there is no information on this
+1..................... The early Spanish called potato as the Incan name ‘Chuchu’
+2..................... The purposes of Spanish coming to Peru were to find out potatoes
+3..................... The Spanish believed that the potato has the same nutrients as other
+vegetables
+4..................... Peasants at that time did not like to eat potatoes because they were
+ugly
+5..................... The popularity of potatoes in the UK was due to food shortages during
+the war
+  Questions 6-13
+  Complete the sentences below with NO MORE THAN ONE WORD from the passage for
+each answer.
  
-H. So, read a book upside down. Write or brush your teeth with your wrong hand. Feel your
-way around the room with your eyes shut. Sniff vanilla essence while listening intently to
-orchestral music. Anything, says Katz, to break your normal mental routine. It will help
-invigorate your brain, encouraging its cells to make new connections and pump out
-neuroteophins, substances that feed and sustain brain circuits.
-I. Well, up to a point it will. “What I’m really talking about is brain maintenance rather than
-bulking up your IQ,” Katz adds. Neurobics, in other words, is about letting your brain fulfill
-its potential. It cannot create super-brains. Can it achieve even that much, though?
-Certainly the brain is an organ that can adapt to the demands placed on it. Tests on animal
-brain tissue, for example, have repeatedly shown that electrically stimulating the synapses
-that connect nerve cells thought to be crucial to learning and reasoning, makes them
-stronger and more responsive. Brain scans suggest we use a lot more of our grey matter
-when carrying out new or strange tasks than when we’re doing well-rehearsed ones. Rats
-raised in bright cages with toys sprout more neural connections than rats raised in bare
-cages— suggesting perhaps that novelty and variety could be crucial to a developing brain.
-Katz, And neurologists have proved time and again that people who lose brain cells
-suddenly during a stroke often sprout new connections to compensate for the
-loss—especially if they undergo extensive therapy to overcome any paralysis.
-J. Guy Claxton, an educational psychologist at the University of Bristol, dismisses most of
-the neurological approaches as “neuro-babble”. Nevertheless, there are specific mental
-skills we can learn, he contends. Desirable attributes such as creativity, mental flexibility,
-and even motivation, are not the fixed faculties that most of US think. They are thought
-habits that can be learned. The problem, says Claxton, is that most of US never get proper
-training in these skills. We develop our own private set of mental strategies for tackling
-tasks and never learn anything explicitly. Worse still, because any learned skill— even
-driving a car or brushing our teeth-quickly sinks out of consciousness, we can no longer
-see the very thought habits we’re relying upon. Our mental tools become invisible to US.
- 
-K. Claxton is the academic adviser to the Mind Gym. So not surprisingly, the company
-espouses his solution-that we must return our thought patterns to a conscious level,
-becoming aware of the details of how we usually think. Only then can we start to practise
-better thought patterns, until eventually these become our new habits. Switching
-metaphors, picture not gym classes, but tennis or football coaching.
-L. In practice, the training can seem quite mundane. For example, in one of the eight
-different creativity workouts offered by the Mind Gym—entitled “creativity for logical
-thinkers” one of the mental strategies taught is to make a sensible suggestion, then
-immediately pose its opposite. So, asked to spend five minutes inventing a new pizza, a
-group soon comes up with no topping, sweet topping, cold topping, price based on time of
-day, flat-rate prices and so on.
-M. Bailey agrees that the trick is simple. But it is surprising how few such tricks people
-have to call upon when they are suddenly asked to be creative: “They tend to just label
-themselves as uncreative, not realising that there are techniques that every creative person
-employs.” Bailey says the aim is to introduce people to half a dozen or so such strategies in
- 2</p>
-<p>a session so that what at first seems like a dauntingly abstract mental task becomes a set
-of concrete, learnable behaviours. He admits this is not a short cut to genius.
-Neurologically, some people do start with quicker circuits or greater handling capacity.
-However, with the right kind of training he thinks we can dramatically increase how
-efficiently we use it.
-N. It is hard to prove that the training itself is effective. How do you measure a change in an
-employee’s creativity levels, or memory skills? But staff certainly report feeling that such
-classes have opened their eyes. So, neurological boosting or psychological training? At the
-moment you can pay your money and take your choice. Claxton for one believes there is
-no reason why schools and universities shouldn’t spend more time teaching basic thinking
-skills, rather than trying to stuff heads with facts and hoping that effective thought habits
-are somehow absorbed by osmosis.
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+  
+  
+  
+ 
+  
+  
+ 
+ Write your answers in boxes 6-13on your answer sheet.
+6.In France, people started to overcome their disgusting about potatoes because the King
+put a potato 6..................... in his button hole.
+7.Frederick realized the potential of potato but he had to handle the 7..................... against
+potatoes from ordinary people.
+8.The King of Prussia adopted some 8..................... psychology to make people accept
+potatoes.
+9.Before 1800the English people preferred eating 9..................... with bread, butter and
+cheese.
+10.The obvious way to deal with England food problems were high yielding potato
+10.....................
+11.The Irish11..................... and climate suited potatoes well.
+12.Between 1780 and 1841, based on the 12..................... of the potatoes, the Irish
+population doubled to eight million.
+13.The potato’s high yields help the poorest farmers to produce more healthy food almost
+without13.....................
+ 3</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.FALSE
+2.FALSE
+3.NOT GIVEN
+4.TRUE
+5.TRUE
+6.flower
+7.8.reverse
+9.meat
+10.crops
+11.soil
+12.cultivation
+13.investment
+prejudice
+ 4</div>
+</div>
+</div>
 </body>
 </html>

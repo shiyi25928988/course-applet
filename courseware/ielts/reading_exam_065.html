@@ -1,387 +1,190 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attitudes To Language - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Can Scientists Tell Us What Happiness Is - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题95/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Attitudes To Language</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-6
-Do the following statements agree with the information given in Reading Passage?
-In boxes 1-6 on your answer sheet, write</p>
-<p>TRUE    if the statement agrees with the information
-FALSE    if the statement contradicts the information
-NOT GIVEN if there is no information on this
-1.....................    Ants use the same channels of communication as humans do.
-2.....................    City life is one factor that encourages the development of intelligence.
-3.....................    Ants can build large cities more quickly than humans do.
-4.....................    Some ants can find their way by making calculations based on distance
-and position.
-5.....................    In one experiment, foraging teams were able to use their sense of smell to
-find food.
-6.....................    The essay, ‘In the company of ants’, explores ant communication.
-Questions 7-13
-Complete the summary using the list of words, A-O, below.
-Write the correct letter, A-O, in boxes 7-13 on your answer sheet.</p>
-<p>Ants as farmers
-  
-Ants have sophisticated methods of farming, including herding livestock and growing
-crops, which are in many ways similar to those used in human agriculture. The
-ants cultivate a large number of different species of edible fungi which convert
-7..................... into a form which they can digest. They use their own
-natural 8..................... as weed-killers and also use unwanted materials as
-9...................... Genetic analysis shows they constantly upgrade these fungi by
-developing new species and by 10..................... species with neighbouring ant colonies.
-In fact, the farming methods of ants could be said to be more advanced than human
-agribusiness, since they use11..................... methods, they do not affect the
-12..................... and do not waste 13......................
-A aphids Bagricultural C cellulose Dexchanging
- 3</p>
-<p>F fertilizersE energy</p>
-<p>Gfood
-growing
-Hfungi
-LJ interbreeding K natural other species
-Msecretions Nsustainable    Oenvironment 
- 4</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Can Scientists Tell Us What Happiness Is</h1>
+<p>雅思阅读真题 · 第65篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Can Scientists tell us: What happiness is?
+A
+Economists accept that if people describe themselves as happy, then they are happy.
+However, psychologists differentiate between levels of happiness. The most immediate
+type involves a feeling; pleasure or joy. But sometimes happiness is a judgment that life is
+satisfying, and does not imply an emotional state. Esteemed psychologist Martin Seligman
+has spearheaded an effort to study the science of happiness. The bad news is that we’re
+not wired to be happy. The good news is that we can do something about it. Since its
+origins in a Leipzig laboratory 130 years ago, psychology has had little to say about
+goodness and contentment. Mostly psychologists have concerned themselves with
+weakness and misery. There are libraries full of theories about why we get sad, worried,
+and angry. It hasn’t been respectable science to study what happens when lives go well.
+Positive experiences, such as joy, kindness, altruism and heroism, have mainly been
+ignored. For every 100 psychology papers dealing with anxiety or depression, only one
+concerns a positive trait.
+B
+A few pioneers in experimental psychology bucked the trend. Professor Alice Isen of
+Cornell University and colleagues have demonstrated how positive emotions make people
+think faster and more creatively. Showing how easy it is to give people an intellectual
+boost, Isen divided doctors making a tricky diagnosis into three groups: one received
+candy, one read humanistic statements about medicine, one was a control group. The
+doctors who had candy displayed the most creative thinking and worked more efficiently.
+Inspired by Isen and others, Seligman got stuck in. He raised millions of dollars of research
+money and funded 50 research groups involving 150 scientists across the world. Four
+positive psychology centres opened, decorated in cheerful colours and furnished with sofas
+and baby-sitters. There were get-togethers on Mexican beaches where psychologists
+would snorkel and eat fajitas, then form “pods” to discuss subjects such as wonder and
+awe. A thousand therapists were coached in the new science.
+C
+But critics are demanding answers to big questions. What is the point of defining levels of
+haziness and classifying the virtues? Aren’t these concepts vague and impossible to pin
+down? Can you justify spending funds to research positive states when there are problems
+such as famine, flood and epidemic depression to be solved? Seligman knows his work
+can be belittled alongside trite notions such as “the power of positive thinking”. His plan to
+stop the new science floating “on the waves of self- improvement fashion” is to make sure it
+is anchored to positive philosophy above, and to positive biology below.
+D
+And this takes us back to our evolutionary past Homo sapiens evolved during the
+Pleistocene era (1.8 m to 10,000 years ago), a time of hardship and turmoil. It was the Ice
+Age, and our ancestors endured long freezes as glaciers formed, then ferocious floods as
+the ice masses melted. We shared the planet with terrifying creatures such as mammoths,
+elephant-sized ground sloths and sabre-toothed cats. But by the end of the Pleistocene, all
+ 1
+these animals were extinct. Humans, on the other hand, had evolved large brains and used
+their intelligence to make fire and sophisticated tools, to develop talk and social rituals.
+Survival in a time of adversity forged our brains into a persistent mould. Professor
+Seligman says: “Because our brain evolved during a time of ice, flood and famine, we have
+a catastrophic brain. The way the brain works is looking for what’s wrong. The problem is,
+that worked in the Pleistocene era. It favoured you, but it doesn’t work in the modem
+world”.
+E
+Although most people rate themselves as happy, there is a wealth of evidence to show that
+negative thinking is deeply ingrained in the human psyche. Experiments show that we
+remember failures more vividly than success. We dwell on what went badly, not what went
+well. Of the six universal emotions, four anger, fear, disgust and sadness are negative and
+only one, joy, is positive. (The sixth, surprise, is neutral). According to the psychologist
+Daniel Nettle, author of Happiness, and one of the Royal Institution lectures, the negative
+emotion each tells us “something bad has happened” and suggest a different course of
+action.
+F
+What is it about the structure of the brain that underlies our bias towards negative thinking?
+And is there a biology of joy? At Iowa University, neuroscientist studied what happens
+when people are shown pleasant and unpleasant pictures. When subjects see landscapes
+or dolphins playing, part of the frontal lobe of the brain becomes active. But when they are
+shown unpleasant images a bird covered in oil, or a dead soldier with part of his face
+missing the response comes from more primitive parts of the brain. The ability to feel
+negative emotions derives from an ancient danger-recognition system formed early in the
+brain’s evolution. The pre-frontal cortex, which registers happiness, is the part used for
+higher thinking, an area that evolved later in human history.
+G
+Our difficulty, according to Daniel Nettle, is that the brain systems for liking and wanting are
+separate. Wanting involves two ancient regions the amygdala and the nucleus accumbens
+that communicate using the chemical dopamine to form the brain’s reward system. They
+are involved in anticipating the pleasure of eating and in addiction to drugs. A rat will press
+a bar repeatedly ignoring sexually available partners, to receive electrical stimulation of the
+“wanting” parts of the brain. But having received brain stimulation, the rat eats more but
+shows no sign of enjoying the food it craved. In humans, a drug like nicotine produces
+much craving but little pleasure.
+H
+In essence, what the biology lesson tells us is that negative emotions are fundamental to
+the human condition and it’s no wonder they are difficult to eradicate. At the same time, by
+a trick of nature, our brains are designed to crave but never really achieve lasting
+happiness.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+The reading Passage has seven paragraphs  A-H.
+Which paragraph contains the following information?
+Write the correct letter  A-H, in boxes  1-7 on your answer sheet.
+1.....................   An experiment involving dividing several groups one of which received
+positive icon
+2.....................   Review of a poorly researched psychology area
+3.....................   Contrast being made about the brains’ action as response to positive or
+negative stimulus
+4.....................   The skeptical attitude toward the research seemed to be a waste of fund
+5.....................   a substance that produces much wanting instead of much liking
+6.....................   a conclusion that lasting happiness is hardly obtained because of the
+nature of brains
+7.....................   One description that listed the human emotional categories.
+ Questions 8-12
+Complete the following summary of the paragraphs of Reading Passage
+Using NO MORE THAN FOUR WORDS  from the Reading Passage for each answer.
+Write your answers in boxes  8-12 on your answer sheet.
+A few pioneers in experimental psychology study what happens when lives go well.
+Professor Alice divided doctors, making a tricky experiment, into three groups: besides the
+one control group, the other two either are asked to read humanistic statements about
+drugs or received  8..................... The latter displayed the most creative thinking and
+worked more efficiently. Since critics are questioning the significance of the  9.....................
+for both levels of happiness and classification for the virtues. Professor Seligman countered
+in an evolutional theory: survival in a time of adversity forged our brains into the way of
+thinking for what’s wrong because we have a  10......................
+There is bountiful of evidence to show that negative thinking is deeply built in the human
+psyche. Later, at Iowa University, neuroscientists studied the active parts in brains to
+contrast when people are shown pleasant and unpleasant pictures. When positive images
+like 11..................... are shown, part of the frontal lobe of the brain becomes active. But
+when they are shown unpleasant image, the response comes from  12..................... of the
+brain.
+ 3
+Question 13
+Choose the correct letter,  A, B, C or D.
+Write your answers in boxes  13 on your answer sheet.
+According to Daniel Nettle in the last two paragraphs, what is true as the scientists can tell
+us about happiness
+A       Brain systems always mix liking and wanting together.
+B       Negative emotions can be easily rid of if we think positively.
+C       Happiness is like nicotine we are craving for but get little pleasure.
+D      The inner mechanism of human brains does not assist us to achieve durable
+happiness
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
  
-1. FALSE
-2. TRUE
-3. NOT GIVEN
-4. TRUE
-5. FALSE
-6. NOT GIVEN
-7.
-8. M
-9. F
-10. D
-11. N
-12. O
-13. E</p>
-<p>Ants Could Teach Ants
- 
-The ants are tiny and usually nest between rocks in the south coast of England.
-Transformed into research subjects at the University of Bristol, they raced along a tabletop
-foraging for food -and then, remarkably, returned to guide others. Time and again, followers
-trailed behind leaders, darting this way and that along the route, presumably to memorize
-land- marks. Once a follower got its bearings, it tapped the leader with its antennae,
-prompting the lesson to literally proceed to the next step. The ants were only looking for
-food but the researchers said the careful way the leaders led followers -thereby turning
-them into leaders in their own right -marked the Temnothorax albipennis ant as the very
-first example of a non-human animal exhibiting teaching behavior.
-"Tandem running is an example of teaching, to our knowledge the first in a non-human
-animal, that involves bidirectional feedback between teacher and pupil," remarks Nigel
-Franks, professor of animal behavior and ecology, whose paper on the ant educators was
-published last week in the journal Nature.
-No sooner was the paper published, of course, than another educator questioned it. Marc
-Hauser, a psychologist and biologist and one of the scientists who came up with the
-definition of teaching, said it was unclear whether the ants had learned a new skill or
-merely acquired new information.
-Later, Franks took a further study and found that there were even races between leaders.
-With the guidance of leaders, ants could find food faster. But the help comes at a cost for
-the leader, who normally would have reached the food about four times faster if not
-hampered by a follower. This means the hypothesis that the leaders deliberately slowed
-down in order to pass the skills on to the followers seems potentially valid. His ideas were
-advocated by the students who carried out the video project with him.
-Opposing views still arose, however. Hauser noted that mere communication of information
-is commonplace in the animal world. Consider a species, for example, that uses alarm calls
-to warn fellow members about the presence of a predator. Sounding the alarm can be
-costly, because the animal may draw the attention of the predator to itself. But it allows
-others to flee to safety. “Would you call this teaching?” wrote Hauser. “The caller incurs a
-cost. The naive animals gain a benefit and new knowledge that better enables them to
-learn about the predator’s location than if the caller had not called. This happens
-throughout the animal kingdom, but we don’t call it teaching, even though it is clearly
-transfer of information.”
-Tim Caro, a zoologist, presented two cases of animal communication. He found that
-cheetah mothers that take their cubs along on hunts gradually allow their cubs to do more
-of the hunting -going, for example, from killing a gazelle and allowing young cubs to eat to
-merely tripping the gazelle and letting the cubs finish it off. At one level, such behavior
-might be called teaching -except the mother was not really teaching the cubs to hunt but
-merely facilitating various stages of learning. In another instance, birds watching other birds
-using a stick to locate food such as insects and so on, are observed to do the same thing
-themselves while finding food later.
-Psychologists study animal behavior in part to understand the evolutionary roots of human
-behavior, Hauser said. The challenge in understanding whether other animals truly teach
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+  1.B
+2.A
+3.F
+4.C
+5.G
+ 8.Candy
+9.definition
+10.a catastrophic brain
+11.landscapes or dolphins playing
+12.primitive parts
+13.D 6.H
+7.E
+ 5</div>
+</div>
+</div>
 </body>
 </html>

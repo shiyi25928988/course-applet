@@ -1,369 +1,210 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctoring Sales - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Global Warming In New Zealand 2 - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题177/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Doctoring Sales</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>8. social,
-economic,
-environmental
-9. (the) 1970s
-10. NOT GIVEN
-11. YES
-12. NO
-13.
-1. viii
-NO
- 
-2. ii
-3. iv
-4. ix
-5. vii
-6. 1946
-7. (the) wealthy
-(members) (of)
-(society)
-14. NOT GIVEN
- 5</p>
-<p>Reading Practice
- Changing Rules for Health Treatment
-People who are grossly overweight, who smoke heavily or drink excessively could be
-denied surgery or drugs.The National Institute for Health and Clinical Excellence (NICE),
-which advises on the clinical and cost effectiveness of treatments for the National Health
-Service (NHS) in the UK, said that in some cases the’self-inflicted’ nature of an illness
-should be taken into account.
-NICE stressed that people should not be discriminated against by doctors simply because
-they smoked or were overweight. Its ruling should apply only if the treatment was likely to
-be less effective, or not work because of an unhealthy habit The agency also insisted that
-its decision was not an edict for the whole NHS but guidance for its own appraisal
-committees when reaching judgements on new drugs or procedures. But the effect is likely
-to be the same.
-NICE is a powerful body and the cause of much controversy. It is seen by some as a new
-way of rationing NHS treatment Across the UK, primary care trusts (PCTs) regularly wait
-for many months for a NICE decision before agreeing to fund a new treatment. One group
-of primary care trusts is ahead of NICE. Three PCTs in east Suffolk have already decided
-that obese people would not be entitled to have hip or knee replacements unless they lost
-weight The group said the risks of operating on them were greater, the surgery may be less
-successful and the joints would wear out sooner. It was acknowledged that the decision
-would also save money.
-NICE said no priority should be given to patients based on income, social class or social
-roles at different ages when considering the cost effectiveness of a treatment. Patients
-should not be discriminated against on the grounds of age either, unless age has a direct
-relevance to the condition. NICE has already ruled that IVF should be available on the NHS
-to women aged 23 to 39 as the treatment has less chance of success in older women. It
-also recommends that flu drugs should be available to over-65s, as older people are more
-vulnerable.
-But NICE also said that if self-inflicted factors meant that drugs or treatment would be less
-clinically and cost effective, this may need to be considered when producing advice for the
-NHS. They state that If the self-inflicted cause of the condition will influence the likely
-outcome of a particular treatment, then it may be appropriate to take this into account in
-some circumstances.’They acknowledge that it can be difficult to decide whether an illness
-such as a heart attack was self-inflicted in a smoker. ‘A patient’s individual circumstances
-may only be taken into account when there will be an impact on the clinical and cost
-effectiveness of the treatment’
-Prof Sir Michael Rawlins, the chairman of NICE, said: ‘On age we are very clear – our
-advisory groups should not make recommendations that depend on people’s ages when
-they are considering the use of a particular treatment unless there is clear evidence of a
-difference in its effectiveness for particular age groups. Even then, age should only be
-mentioned when it provides the only practical ‘marker1 of risk or benefit NICE values
-people, equally, at all ages.’
-But Steve Webb, the Liberal Democrat health spokesman, said there was a danger of
-primary care trusts following the same course of action. There is no excuse for cash-
- 1</p>
-<p>strapped hospitals denying treatment to people whose lifestyle they disapprove of/ he said.
-Treatment decisions involving people’s lifestyle should be based on clinical reasons, not
-grounds of cost The NHS is there to keep people healthy, not to sit in judgement on
-individual lifestyles.’
-A spokesman for NICE said: ‘We want to reassure people that in producing our guidance
-we are not going to take into consideration whether or not a particular condition was or is
-self-inflicted. The only circumstances where that may be taken into account is where that
-treatment may be less effective because of lifestyle choices.’
-Jonathan Ellis, the policy manager at Help the Aged, said it was pleased NICE had finally
-shown an understanding of the importance of tackling age discrimination.’While this is a
-major feat, there is still some way to go to banish the evident inherent age discrimination
-that exists within health care services,’he said.The NHS now has much to leam. It will
-ensure a fairer deal all round for older people using the NHS.’
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Global Warming In New Zealand 2</h1>
+<p>雅思阅读真题 · 第129篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Global Warming in New Zealand 2
+A
+New Zealand is expected to warm by about 3°C over the next century. The northern polar
+regions will be more than 6°C warmer, while the large continents – also the largest centres
+of population – will be 4°C or warmer. In contrast, the Southern Ocean, which surrounds
+New Zealand, may warm by only 2°C. The sea will act as an air conditioner and in this
+aspect, New Zealand’s location is comparatively fortunate.
+B
+Any predictions are complicated by the variability of New Zealand’s climate. The annual
+temperature can fluctuate as much as 1°C above or below the long-term average. The
+early summer of 2006-7, for instance, was notably cool, thanks in part to the iceberg that
+drifted up the east coast. A few months later, warm water from the Tasman Sea helped
+make May 2007 unusually hot. These variables will continue unaffected so that, although
+the general pattern will be for rising temperatures, the warming trend may not be uniform.
+C
+The Ocean to the south of New Zealand will have one important effect. As the world
+warms, the great bank of west winds that circle Antarctica will become stronger. This has
+already been observed, and its impact on New Zealand is likely to be profound, stronger,
+more frequent west winds will bring increased, sometimes catastrophic rainfall to the west
+coast of the country and create drier conditions in some eastern regions that are already
+drought-prone. At the same time, the general warming will spread south.
+D
+Furthermore, in the drier regions, the average moisture deficit – that is, the difference
+between the amount of water in soils available to plants and the amount plants need for
+optimum growth – will increase. Soils could go into moisture deficit earlier in the growing
+season and the deficits could last longer into autumn that at present. What we think of
+today as a medium-severity drought could be an almost annual occurrence by the end of
+the century. One direct consequence of warmer – and shorter – winters will be a reduction
+in snow cover. The permanent snow line in the mountains will rise, while snow cover below
+this will be shorter-lived. The amount of snow that falls may actually increase, however,
+even in some northern centres, owing to the intensification of precipitation, Ski-field base
+station may eventually have to be moved upwards to be within reach of the new snow line
+but there could still be plenty of the white stuff up there.
+E
+There will also be a marked impact on New Zealand’s glaciers. Over the last 100 years, the
+glaciers have been reduced by 35%, although since 1978 increase snowfall has offset the
+effect of warming. The latest studies conducted by the National Institute for Water and
+Atmospheric. Research (NIWA), however, suggest that by the end of the century, warming
+over the Southern Alps could be significantly greater than over the rest of the country.
+F
+ 1
+Sea levels around New Zealand have risen by 25cm since the middle of the 9th century
+and by 7 cm since 1990. Predictions for the coming years cover a wide range, however,
+partly because of unknown rises resulting from the melting of the ice in the Arctic,
+Greenland and Antarctica. In addition, sea level at any given time is affected by many
+different factors, one of which is called storm surge. When a Coincides with a high tide
+along low lying coastal areas, this bulge raises the tide higher than normal, creating. Surge
+not unlike a slow-motion tsunami. Not only does a rise in sea level increase the potential for
+his sort damage, but it also has less immediate impacts. The one potentially grave outcome
+is that groundwater systems may become contaminated with saltwater, spoiling them for
+the irrigation of farmland, which in turn could diminish crop harvests. Similarly, over time,
+estuaries may be enlarged by erosion as tidal influences reach further upstream, altering
+the contours of whole shorelines and initiating further unforeseen consequences.
+G
+The impacts these changes will have on New Zealand are difficult to generalize. Human
+systems are better able to adapt to change than natural ecosystems because humans can
+see a problem coming and plan a response. Farmers and horticulturalists have made
+considerable advances, replacing crops they grow to better suit the new conditions.
+However, plant breeders will need to show considerable ingenuity if they can overcome the
+acute water shortages that are forecast.
+H
+For natural ecosystems the rate of change is crucial. If it is low, the plants and animals and
+fish will be able to ‘keep up’; if it is high, only the most adaptable species-those that can
+survive in the widest range of ecological niches-are likely to survive. Species adapted to
+only a narrow range of conditions or food sources will find adaptation much more difficult.
+Take tuatara, for instance. Their sex is determined by the temperature at which the eggs
+are incubated in warm (currently above 22 °C) condition become predominately male – and
+now males already outnumber females by nearly two to one in some island refuges. In the
+mountains, as the permanent snow line moves upwards, the tolerance zones of some
+alpine plants and animals may simply disappear. It should also be remembered that global
+warming is just that – a global phenomenon. ‘New Zealand’s own greenhouse emissions
+are tiny – around 0.5% of the global total. Even if New Zealanders were to achieve the
+government’s target of carbon neutrality, this would have no discernable impact on global
+climate change.
+I
+ The changes that global warming is going to bring to New Zealand during the 21st century
+are going to be significant, but where the country is likely to be most vulnerable is with
+respect to climate change elsewhere. New Zealand may warm more slowly than most
+places, but if its major export markets undergo damaging change, the economic impact will
+be severe.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Choose the correct letter, A, B, C or D.
+Write your answers in boxes 1-6  on your answer sheet.
+1.   What is the main idea of the first paragraph?
+A   The air condition in New Zealand will maintain a high quality because of the ocean
+B   The Southern Ocean will remain at a constant strength
+C   The continents will warm more than the point
+D   New Zealand will not warm as much as other countries in the next century because it is
+surrounded by sea.
+2. What does the writer say about New Zealand’s variable weather?
+A   Temperature changes of 1°C will not be seem important in future
+B   Variable weather will continue, unchanged by global warming
+C   There was an unusually small amount of variation in 2006-2007
+D   Summer temperatures will vary but winter ones will be consistent
+3. What is the predicted impact of conditions in the ocean to the south of New Zealand?
+A   New Zealand will be more affected by floods and droughts
+B   Antarctica will not be adversely affected by warming.
+C   The band of west winds will move further to the south.
+D   The usual west wind will no longer be reliable
+4. The writer mentions ‘moisture deficit’ to show?
+A   The droughts will be shorter but more severe
+B   How the growing season will become longer.
+C   How growing conditions will deteriorate
+D   That farmers should alter the make-up of soils
+5. What are the implications of global warming for New Zealand’s
+A   Skiing may move to lower the altitude in future.
+B   The ski season will be later in the year than at present.
+C   The northern ski field will have to move to the south
+D   Warming may provide more snow for some ski locations
+6. The writer refers to NIWA’s latest studies in the 3rd paragraph to show
+ 3
+A   how a particular place could be affected by warming
+B   that the warming trend has been intensifying since 1978
+C   that freezing levels will rise throughout the century
+D   how the growth of glaciers is likely to cause damage
+Questions 7-9
+Complete the summary below.
+Choose NO MORE THAN TWO WORDS  from the passage for each answer.
+Write your answers in boxes  7-9 on your answer sheet.
+Rising sea levels
+The extent of future sea level rises around New Zealand is uncertain and may be
+determined in the  7...................... Another variable is sudden rises in sea level caused by
+bad weather. Higher sea levels can lead to reduced  8..................... and result in changes to
+the shape of  9......................
+A     agriculture production
+B     tropical waters
+C     tidal waves
+D     polar regions
+E     global warming
+F     coastal land
+G     high tides
+Questions 10-14
+Do the following statements agree with the information given in Reading Passage?
+In boxes 10-14 on your answer sheet, write
+YES                  if the statement is true
+NO                   if the statement is false
+NOT GIVEN     if the information is not given in the passage
+10.....................   The natural world is less responsive to challenges than humans.
+11.....................   The agricultural sector is being too conservative and resistant to
+innovation.
+12.....................   The global warming is slow; it will affect different regions in different
+ 4
+ways.
+13.....................   The tuatara is vulnerable to changes in climate conditions.
+14.....................   New Zealand must reduce carbon emission if global warming is to be
+slowed.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.D
+2.B
+3.A
+4.C
+5.D
+6.A
+7.D8.A
+9.F
+10.YES
+11.NOT GIVEN
+12.NOT GIVEN
+13.YES
+14.NO
+ 6</div>
+</div>
+</div>
 </body>
 </html>

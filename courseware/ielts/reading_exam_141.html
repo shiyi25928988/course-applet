@@ -1,362 +1,208 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Environmentally Friendly Vehicles - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Honey Bees In Trouble - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题192/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Environmentally Friendly Vehicles</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-8
-Do the following statements agree with the information in reading passage?  In
-boxes 1-8 in your answer sheet write
-YES              if the statement reflects the claims of the writer
-NO               if the statement contradicts the writer
-NOT GIVEN  if it is impossible to say what the writer thinks about this
-1..................... Out of four Vedas, music is only described in samaveds.
-2..................... Music is believed to have an effect on human body.
-3..................... Indian classical music system is simple and sophisticated.</p>
-<p>4..................... There are 7 basic notes and 12 semitones in Indian classical music.
-5..................... Talas in the Indian music is derived from western music
-6..................... Indian classical music could express in writing.
-7..................... The composition used by Indian musicians was based on Devnagri script.
-8...................... New script used for music had no symbols.
-Question 9-12
-9. “Chakras” is a name given to energy centers in the path of 9.....................
-10. Out of all kind of music, Indian classical music is 10..................... and having complete
-system.
-11. Monophonic music system is based on a single11......................
-12. The instruments flute, veena and violinare12..................... in carnation music.
- 2</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Honey Bees In Trouble</h1>
+<p>雅思阅读真题 · 第141篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Honey bees in trouble
+ Can native pollinators fill the gap?
+ ARecently, ominous headlines have described a mysterious ailment, colony collapse
+disorder(CCD)that is wiping out the honeybees that pollinate many crops. Without
+honeybees, the story goes, fields will be sterile, economies will collapse, and food will be
+scarce.
+ BBut what few accounts acknowledge is that what’s at risk is not itself a natural state of
+affairs. For one thing, in the United States, where CCD was first reported and has had its
+greatest impacts, honeybees are not a native species. Pollination in modem agriculture
+isn’t alchemy, it’s industry. The total number of hives involved in the U.S. pollination
+industry has been somewhere between 2.5 million and 3 million in recent years.
+Meanwhile, American farmers began using large quantities of organophosphate
+insecticides, planted large-scale crop monocultures, and adopted “clean farming” practices
+that scrubbed native vegetation from field margins and roadsides. These practices killed
+many native bees outright—they’re as vulnerable to insecticides as any agricultural
+pest—and made the agricultural landscape inhospitable to those that remained. Concern
+about these practices and their effects on pollinators isn’t new—in her 1962 ecological
+alarm cry Silent Spring, Rachel Carson warned of a ‘Fruitless Fall’ that could result from the
+disappearance of insect pollinators.
+ CIf that ‘Fruitless Fall, has not—yet—occurred, it may be largely thanks to the honeybee,
+which farmers turned to as the ability of wild pollinators to service crops declined. The
+honeybee has been semi-domesticated since the time of the ancient Egyptians, but it
+wasn’t just familiarity that determined this choice: the bees’ biology is in many ways suited
+to the kind of agricultural system that was emerging. For example, honeybee hives can be
+closed up and moved out of the way when pesticides are applied to a field. The bees are
+generalist pollinators, so they can be used to pollinate many different crops. And although
+they are not the most efficient pollinator of every crop, honeybees have strength in
+numbers, with 20,000 to 100,000 bees living in a single hive. “Without a doubt, if there was
+one bee you wanted for agriculture, it would be the honeybee, “says Jim Cane, of the U.S.
+Department of Agriculture. The honeybee, in other words, has become a crucial cog in the
+modem system of industrial agriculture. That system delivers more food, and more kinds of
+it, to more places, more cheaply than ever before. But that system is also vulnerable,
+because making a farm field into the photosynthetic equivalent of a factory floor, and
+pollination into a series of continent-long assembly lines, also leaches out some of the
+resilience characteristic of natural ecosystems.
+ DBreno Freitas, an agronomist, pointed out that in nature such a high degree of
+specialization usually is a very dangerous game: it works well while all the rest is in
+equilibrium, but runs quickly to extinction at the least disbalance. In effect, by developing an
+agricultural system that is heavily reliant on a single pollinator species, we humans have
+become riskily overspecialized. And when the human-honeybee relationship is disrupted,
+as it has been by colony collapse disorder, the vulnerability of that agricultural system
+begins to become clear.
+EIn fact, a few wild bees are already being successfully managed for crop pollination. “The
+problem is trying to provide native bees in adequate numbers on a reliable basis in a fairly
+ 1
+ short number of years in order to service the crop” Jim Cane says. “You’re talking millions
+of flowers per acre in a two-to three-week time frame, or less, for a lot of crops.” On the
+other hand, native bees can be much more efficient pollinators of certain crops than
+honeybees, so you don’t need as many to do the job. For example, about 750 blue orchard
+bees (Osmia lignaria) can pollinate a hectare of apples or almonds, a task that would
+require roughly 50,000 to 150,000 honeybees. There are bee tinkerers engaged in similar
+work in many comers of the world. In Brazil, Breno Freitas has found that Centris tarsata,
+the native pollinator of wild cashew, can survive in commercial cashew orchards if growers
+provide a source of floral oils, such as by interplanting their cashew trees with Caribbean
+cherry.
+ FIn certain places, native bees may already be doing more than they’re getting credit for.
+Ecologist Rachael Winfree recently led a team that looked at pollination of four summer
+crops (tomato, watermelon, peppers, and muskmelon) at 29 farms in the region of New
+Jersey and Pennsylvania. Winfiree’s team identified 54 species of wild bees that visited
+these crops, and found that wild bees were the most important pollinators in the system:
+even though managed honeybees were present on many of the farms, wild bees were
+responsible for 62 percent of flower visits in the study. In another study focusing specifically
+on watermelon, Winfree and her colleagues calculated that native bees alone could provide
+sufficient pollination at 90 percent of the 23 farms studied. By contrast, honeybees alone
+could provide sufficient pollination at only 78 percent of farms.
+ G“The region I work in is not typical of the way most food is produced” Winfree admits. In
+the Delaware Valley, most farms and farm fields are relatively small, each fanner typically
+grows a variety of crops, and farms are interspersed with suburbs and other types of land
+use which means there are opportunities for homeowners to get involved in bee
+conservation, too. The landscape is a bee-friendly patchwork that provides a variety of
+nesting habitat and floral resources distributed among different kinds of crops, weedy field
+margins, fallow fields, suburban neighborhoods, and semi natural habitat like old woodlots,
+all at a relatively small scale. In other words, ’’pollinator-friendly” farming practices would
+not only aid pollination of agricultural crops, but also serve as a key element in the over all
+conservation strategy for wild pollinators, and often aid other wild species as well.
+HOf course, not all farmers will be able to implement all of these practices. And
+researchers are suggesting a shift to a kind of polyglot agricultural system. For some small-
+scale farms, native bees may indeed be all that’s needed. For larger operations, a suite of
+managed bees—with honeybees filling the generalist role and other, native bees pollinating
+specific crops—could be augmented by free pollination services from resurgent wild
+pollinators. In other words, they’re saying, we still have an opportunity to replace a risky
+monoculture with something diverse, resilient, and robust.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Do the following statements agree with the claims of the writer in Reading Passage?
+In boxes1-4 on your answer sheet, write
+YES - if the statement agrees with the information
+NO - if the statement contradicts the information
+NOT GIVEN - if there is no information on this
+1..................... In the United States, farmers use honeybees in a large scale over the
+past few years
+2..................... Cleaning farming practices would be harmful to farmers’
+3..................... The blue orchard bee is the most efficient pollinator among native
+bees for every crop
+4..................... It is beneficial to other local creatures to protect native bees
+Questions 5-9
+Choose the correct letter, A,B,CorD.
+Write your answers in boxes 5-9 on your answer sheet.
+5.   The example of the ‘Fruitless Fair underlines the writer’s point about
+ A needs for using pesticides.
+B impacts of losing insect pollinators.
+C vulnerabilities of native bees.
+D benefits in building more pollination industries.
+6.   Why can honeybees adapt to the modem agricultural system?
+ A the honeybees can pollinated more crops efficiently
+B The bees are semi-domesticated since ancient times.
+C Honeybee hives can be protected away from pesticides.
+D The ability of wild pollinators using to serve crops declines.
+7.  The writer mentions factories and assembly lines to illustrate
+A one drawback of the industrialised agricultural system.
+B a low cost in modem agriculture.
+C the role of honeybees in pollination.
+ 3
+ D what a high yield of industrial agriculture.
+8.   In the 6th paragraphWlnfree’s experiment proves that
+ A honeybee can pollinate various crops.
+B there are many types of wild bees as the pollinators.
+C the wild bees can increase the yield to a higher percentage
+D wild bees work more efficiently as a pollinator than honey bees in certain cases
+9.   What does the writer want to suggest in the last paragraph?
  
-1. NO
-2. YES
-3. NO
-4. YES
-5. NOT GIVEN
-6. NO
-7. YES
-8. NO
-9. Kundalin
-10. Most complex
-11. Melody line
-12. Typically used
- 3</p>
-<p>Reading Practice
- Climate Change and the Inuit
-The threat posed by climate change in the Arctic and the problems faced by Canada's Inuit
-people</p>
-<p>Unusual incidents are being reported across the Arctic. Inuit families going off on
-snowmobiles to prepare their summer hunting camps have found themselves cut off from
-home by a sea of mud, following early thaws. There are reports of igloos losing their
-insulating properties as the snow drips and refreezes, of lakes draining into the sea as
-permafrost melts, and sea ice breaking up earlier than usual, carrying seals beyond the
-reach of hunters. Climate change may still be a rather abstract idea to most of us, but in the
-Arctic it is already having dramatic effects - if summertime ice continues to shrink at its
-present rate, the Arctic Ocean could soon become virtually ice-free in summer. The knockon effects are likely to include more warming, cloudier skies, increased precipitation and
-higher sea levels. Scientists are increasingly keen to find out what's going on because they
-consider the Arctic the 'canary in the mine' for global warming - a warning of what's in store
-for the rest of the world.</p>
-<p>For the Inuit the problem is urgent. They live in precarious balance with one of the toughest
-environments on earth. Climate change, whatever its causes, is a direct threat to their way
-of life. Nobody knows the Arctic as well as the locals, which is why they are not content
-simply to stand back and let outside experts tell them what's happening. In Canada, where
-the Inuit people are jealously guarding their hard-won autonomy in the country's newest
-territory, Nunavut, they believe their best hope of survival in this changing environment lies
-in combining their ancestral knowledge with the best of modern science. This is a challenge
-in itself.</p>
-<p>The Canadian Arctic is a vast, treeless polar desert that's covered with snow for most of
-the year. Venture into this terrain and you get some idea of the hardships facing
-anyone who calls this home. Farming is out of the question and nature offers meagre
-pickings. Humans first settled in the Arctic a mere 4,500 years ago, surviving by exploiting
-sea mammals and fish. The environment tested them to the limits: sometimes the
-colonists were successful, sometimes they failed and vanished. But around a thousand
-years ago, one group emerged that was uniquely well adapted to cope with the
-Arctic environment. These Thule people moved in from Alaska, bringing kayaks, sleds,
-dogs, pottery and iron tools. They are the ancestors of today's Inuit people.</p>
-<p>Life for the descendants of the Thule people is still harsh. Nunavut is 1.9 million square
-kilometres of rock and ice, and a handful of islands around the North Pole. It's
-currently home to 2,500 people, all but a handful of them indigenous Inuit. Over the past
-40 years, most have abandoned their nomadic ways and settled in the territory's 28
-isolated communities, but they still rely heavily on nature to provide food and
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-    <div class="question-block">
-        <p style="margin:0;line-height:1.8;color:#44403c;">Question 9-12<br>9. “Chakras” is a name given to energy centers in the path of 9.....................<br>10. Out of all kind of music, Indian classical music is 10..................... and having complete<br>system.<br>11. Monophonic music system is based on a single11......................<br>12. The instruments flute, veena and violinare12..................... in carnation music.<br>2<br>Solution:<br>1. NO<br>2. YES<br>3. NO<br>4. YES<br>5. NOT GIVEN<br>6. NO<br>7. YES<br>8. NO<br>9. Kundalin<br>10. Most complex<br>11. Melody line<br>12. Typically used<br>3<br>Reading Practice<br>Climate Change and the Inuit<br>The threat posed by climate change in the Arctic and the problems faced by Canada's Inuit<br>people<br>Unusual incidents are being reported across the Arctic. Inuit families going off on<br>snowmobiles to prepare their summer hunting camps have found themselves cut off from<br>home by a sea of mud, following early thaws. There are reports of igloos losing their<br>insulating properties as the snow drips and refreezes, of lakes draining into the sea as<br>permafrost melts, and sea ice breaking up earlier than usual, carrying seals beyond the<br>reach of hunters. Climate change may still be a rather abstract idea to most of us, but in the<br>Arctic it is already having dramatic effects - if summertime ice continues to shrink at its<br>present rate, the Arctic Ocean could soon become virtually ice-free in summer. The knockon effects are likely to include more warming, cloudier skies, increased precipitation and<br>higher sea levels. Scientists are increasingly keen to find out what's going on because they<br>consider the Arctic the 'canary in the mine' for global warming - a warning of what's in store<br>for the rest of the world.<br>For the Inuit the problem is urgent. They live in precarious balance with one of the toughest<br>environments on earth. Climate change, whatever its causes, is a direct threat to their way<br>of life. Nobody knows the Arctic as well as the locals, which is why they are not content<br>simply to stand back and let outside experts tell them what's happening. In Canada, where<br>the Inuit people are jealously guarding their hard-won autonomy in the country's newest<br>territory, Nunavut, they believe their best hope of survival in this changing environment lies<br>in combining their ancestral knowledge with the best of modern science. This is a challenge<br>in itself.<br>The Canadian Arctic is a vast, treeless polar desert that's covered with snow for most of<br>the year. Venture into this terrain and you get some idea of the hardships facing<br>anyone who calls this home. Farming is out of the question and nature offers meagre<br>pickings. Humans first settled in the Arctic a mere 4,500 years ago, surviving by exploiting<br>sea mammals and fish. The environment tested them to the limits: sometimes the<br>colonists were successful, sometimes they failed and vanished. But around a thousand<br>years ago, one group emerged that was uniquely well adapted to cope with the<br>Arctic environment. These Thule people moved in from Alaska, bringing kayaks, sleds,<br>dogs, pottery and iron tools. They are the ancestors of today's Inuit people.<br>Life for the descendants of the Thule people is still harsh. Nunavut is 1.9 million square<br>kilometres of rock and ice, and a handful of islands around the North Pole. It's<br>currently home to 2,500 people, all but a handful of them indigenous Inuit. Over the past<br>40 years, most have abandoned their nomadic ways and settled in the territory's 28<br>isolated communities, but they still rely heavily on nature to provide food and<br>1</p>
-    </div>
-    
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+  A the importance of honey bees in pollination
+B adoption of different bees in various sizes of agricultural system
+C the comparison between the intensive and the rarefied agricultural system
+D the reason why farmers can rely on native pollinators
+ Questions 10-14
+Complete each sentence with the correct ending, A-F, below.
+Write the correct letter, A-F, in boxes 10-14 on your answer sheet
+ 
+ 
+ 
+ 
+ 
+ 10..................... Headline of colony collapse disorder states that
+11..................... Viewpoints of Freitas manifest that
+12..................... Examples of blue orchard bees have shown that
+13..................... Centris tarsata is mentioned to exemplify that
+14..................... One finding of the research in Delaware Valley is that
+A.native pollinators can survive when a specific plant is supplied.
+B.it would cause severe consequences both to commerce and agriculture.
+C.honey bees cannot be bred.
+D.some agricultural landscapes are favorable in supporting wild bees.
+E.a large scale of honey bees are needed to pollinate.
+ 4
+ F.an agricultural system is fragile when relying on a single pollinator  
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.YES
+2.NOT GIVEN
+3.NO
+4.YES
+5.B
+6.C
+7.A8.D
+9.B
+10.B
+11.F
+12.E
+13.A
+14.D
+ 6</div>
+</div>
+</div>
 </body>
 </html>

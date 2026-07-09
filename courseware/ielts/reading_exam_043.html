@@ -1,381 +1,174 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anesthesiology - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Australian Culture And Culture Shock - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题71/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Anesthesiology</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-6
-Do the following statements agree with the information given in Reading Passage?
-In boxes 1-6 on your answer sheet, write
-TRUE                if the statement is true
-FALSE               if the statement is false
-NOT GIVEN     if the information is not given in the passage
-1.....................    The first Nobel Prize was awarded in 1895.
-2.....................    Nobel’s father wanted his son to have a better education than what he had
-had.
-3.....................    Nobel was an unsuccessful businessman.
-4.....................    Bertha von Suttner was selected by Nobel himself for the first peace prize.
-5.....................    The Nobel Foundation was established after the death of Nobel
-6.....................    Nobel’s social involvement was uncommon in the 1800s.
- 
-Questions 7-13
-Complete the notes below using NO MORE THAN TWO WORDS from the passage.
-Write your answers in boxes 7-13 on your answer sheet.
-Education:
-Having accumulated a great fortune in his business, Nobel’s father determined to give his
-son the best education and sent him abroad to be trained in 7..................... during Nobel’s
-study in Paris, he worked in a private laboratory, where he came in contact with a young
-engineer 8..................... and his invention nitroglycerine, a more powerful explosive
-than 9......................
-Benefits in construction works:
-Nobel became really interested in this new explosive and experimented on it. But
-nitroglycerine was too dangerous and was banned for experiments within the city
-of 10...................... So Nobel had to move his experiments to a lake. To make
-nitroglycerine easily usable, Nobel invented dynamite along with 11...................... while in
-the meantime 12..................... became popular, all of which dramatically lowered
-the 13..................... of construction works.
- 3</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Australian Culture And Culture Shock</h1>
+<p>雅思阅读真题 · 第43篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Australian culture and culture shock
+ Sometimes work, study or an sense of adventure take us out of our familiar surroundings to
+go and live in a different culture. The experience can be difficult, even shocking.
+Almost everyone who studies, lives or works abroad has problems adjusting to a new
+culture. This response is commonly referred to as 'culture shock' . Culture shock can be
+defined as 'the physical and emotional discomfort a person experiences when entering a
+culture different from their own' (Weaver, 1993).
+For people moving to Australia, Price (2001) has identified certain values which may give
+rise to culture shock. Firstly, he argues that Australians place a high value on
+independence and personal choice. This means that a teacher or course tutor will not tell
+students what to do, but will give them a number of options and suggest they work out
+which one is the best in their circumstances. It also means that they are expected to take
+action if something goes wrong and seek out resources and support for themselves.
+Australians are also prepared to accept a range of opinions rather than believing there is
+one truth. This means that in an educational setting, students will be expected to form their
+own opinions and defend the reasons for that point of view and the evidence for it.
+Price also comments that Australians are uncomfortable with differences in status and
+hence idealise the idea of treating everyone equally. An illustration of this is that most adult
+Australians call each other by their first names. This concern with equality means that
+Australians are uncomfortable taking anything too seriously and are even ready to joke
+about themselves.
+Australians believe that life should have a balance between work and leisure time. As a
+consequence, some students may be critical of others who they perceive as doing nothing
+but study.
  
-1. FALSE
-2. NOT GIVEN
-3. FALSE
-4. FALSE
-5. TRUE
-6. TRUE
-7. chemical
-8. Ascanio Sobrero
-9. gunpower
-10. Stockholm
-11. detonator
-12. pneumatic drill
-13. cost
-engineering
- 4</p>
-<p>Reading Practice
- A little-known island community comes in from the cold
-Back in early 1961, few outside the corridors of dwindling British power had heard of the
-archipelago centred on the main island of Tristan da Cunha, from which the scattered
-islands that make up the group took their name.
-It would take a dramatic volcanic eruption, and an emergency evacuation that would grab
-the attention of the media, to bring attention to this mysterious outpost of the British
-Empire. It seemed that the islands, no more than pin-pricks in the Southern Atlantic Ocean,
-almost equidistant between Buenos Aires in South America and Cape Town in South
-Africa, preferred not to be found.
-The same can be said of the 290 or so residents of Tristan da Cunha at that time. They
-lived on the remotest island on the entire planet.There was no airport, nor was there space
-to build one on this mountainous carbuncle projecting from the ocean.The only harbour,
-impenetrable during rough weather, was 1,500 miles distant from the nearest mainland
-port. Cape Town. Communications with the outside world relied predominantly on signals
-to passing fishing boats and the annual visit of the vessel that supplied the islanders with
-the goods they could not produce themselves.
-For this was a self-reliant community, proud of their ability to survive and help each other in
-times of adversity. Colonised early in the 19th century, until December 1942, money had
-not been exchanged on the island. However, war-time conditions and new development, in
-particular a new fishing industry, saw the beginnings of links which meant that the islanders
-had to accept they were now part of the modern world, however much the older members
-of the community might resist such change.
-The lives of the islanders ticked quietly along, largely ignored as the government of Britain
-struggled with larger events on the world stage, until the beginning of August 1961. Earth
-tremors and rock falls began on the 6th, but by October the situation had got so bad that
-the island had to be evacuated.The entire population eventually found themselves in
-England, where they were met with unwanted and unexpected attention from the media.
-They were housed at a military camp just outside the port of Southampton.
-Coming from a sub-tropical island and having had little exposure to the illnesses and chill
-endured by the natives of the British Isles during winter, several of the elder islanders
-succumbed. The government did not seem to know what to offer the islanders, there was
-no news about what was happening to their homeland, and the future looked very
-bleak.These were people who had built up their own way of life for over one hundred and
-fifty years. They were a compact community who shared only seven family names between
-them, and now it seemed that their way of life was to be destroyed.
-Fortunately, and despite the islanders reluctance to have any dealings with the media, who
-they suspected looked on them as historical curiosities, the attention helped keep their
-plight in the public eye. Eventually, word came through that the island was again habitable
-and, despite strong resistance from the British Government, the vast majority of the
-islanders voted to return, turning their backs on the temptations of the brighter lights of their
-temporary home in favour of their own.
-The last of the returning islanders arrived in November 1963 and, with the rebuilding of the
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ Australian notions of privacy mean that areas such as financial matters, appearance and
+relationships are only discussed with close friends. While people may volunteer such
+information, they may resent someone actually asking them unless the friendship is firmly
+established. Even then, it is considered very impolite to ask someone what they earn. With
+older people, it is also rude to ask how old they are, why they are not married or why they
+do not have children. It is also impolite to ask people how much they have paid for
+something, unless there is a very good reason for asking.
+  Kohls (1996) describes culture shock as a process of change marked by four basic stages.
+Duringthe first stage , the new arrival is excited to be in a new place, so this is often
+referred to as the "honeymoon" stage . Like a tourist, they are intrigued by all the new
+sights and sounds, new smells and tastes of their surroundings. They may have some
+problems, but usually they accept them as just part of the novelty. At this point, it is the
+similarities that stand out, and it seems to the newcomer that people everywhere and their
+way of life are very much alike. This period of euphoria may last from a couple of weeks to
+a month, but the letdown is inevitable.
+Duringthe second stage , known as the 'rejection' stage , the newcomer starts to
+experience difficulties due to the differences between the new culture and the way they
+were accustomed to living. The initial enthusiasm turns into irritation, frustration, anger and
+ 1
+ 
+ depression, and these feelings may have the effect of people rejecting the new culture so
+that they notice only the things that cause them trouble, which they then complain about. In
+addition, they may feel homesick, bored, withdrawn and irritable during this period as well.
+  Fortunately, most people gradually learn to adapt to the new culture and move on to the
+third stage , known as 'adjustment and reorientation' . During this stage a transition
+occurs to a new optimistic attitude. As the newcomer begins to understand more of the new
+culture, they are able to interpret some of the subtle cultural clues which passed by
+unnoticed earlier. Now things make more sense and the culture seems more familiar. As a
+result, they begin to develop problem-solving skills, and feelings of disorientation and
+anxiety no longer affect them.
+In Kohls's model, in the fourth stage , newcomers undergo a process of adaptation . They
+have settled into the new culture, and this results in a feeling of direction and self-
+confidence. They have accepted the new food, drinks, habits and customs and may even
+find themselves enjoying some of the very customs that bothered them so much previously.
+In addition, they realise that the new culture has good and bad things to offer and that no
+way is really better than another, just different.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Do the following statements agree with the information given in the reading passage?
+Write
+            TRUE
+ 
+ if the statement agrees with the information
+        FALSE          if the statement contradicts the information
+NOT GIVEN    if there is no information on this
+     Australian teacherswill suggest alternatives to students rather than offer
+        In Australia, teachers will show interest in students’ personal
+        Australians use people’s first names so that everyone feels their status is
+        Students who study all the time may receive positive comments from their
+        1.....................
+one solution.
+2.....................
+circumstances.
+3.....................
+similar.
+4.....................
+colleagues.
+5.....................
+well.It is acceptable to discuss financialissues with people you do not know
+6.....................
+ Younger Australians tend to be friendlier than olderAustralians.
+Questions 7-13
+Complete the table below.
+ChooseNO MORE THAN TWO WORDS  from the passage for each answer.
+THE STAGES OF CULTURE SHOCK
+ Name Newcomers' reaction to problems
+Stage
+1
+ They notice the
+8..................... between different
+nationalities and cultures.
+They may experience this stage for
+up to97.....................
+.....................
+Stage
+2 They reject the new culture and lose
+the10..................... they had at the Rejection
+beginning.
+StageAdjustment  They can understand
+some 11..................... which they
+ 3
+3 had not reviously observed.
+They learn 12.....................and reorientation
+for dealing with difficulties.
+Stage
+4They enjoy some of the customs that13.....................annoyed them before.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.TRUE
+2.NOT GIVEN
+3.TRUE
+4.FALSE
+5.FALSE
+6.NOT GIVEN
+ 8.similarities
+9.one month
+10.enthusiasm
+11.clues
+12.skills
+13.adaptation
+7.Honeymoon
+ 5</div>
+</div>
+</div>
 </body>
 </html>

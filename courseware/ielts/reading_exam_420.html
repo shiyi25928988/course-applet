@@ -1,370 +1,192 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Rainmaker Design - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>We Have Star Performers - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题560/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Rainmaker Design</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
- 
-1. B
-2. C
-3. A
-4. C
-5. FALSE
-6. TRUE
- 
-8. TRUE
-9. FALSE
-10. C
-11. B
-12. A
-13. D
-7. NOT GIVEN
- 6</p>
-<p>Reading Practice
- Pulling strings to build pyramids
-No one knows exactly how the pyramids were built. Marcus Chown reckons the answer
-could be 'hanging in the air'.
-The pyramids of Egypt were built more than three thousand years ago, and no one knows
-how. The conventional picture is that tens of thousands of slaves dragged stones on
-sledges. But there is no evidence to back this up. Now a Californian software
-consultant called Maureen Clemmons has suggested that kites might have been involved.
-While perusing a book on the monuments of Egypt, she noticed a hieroglyph that showed a
-row of men standing in odd postures. They were holding what looked like ropes that led, via
-some kina of mechanical system, to a giant bird in the sky. She wondered if perhaps the
-bird was actually a giant kite, and the men were using it to lift a heavy object.
-Intrigued, Clemmons contacted Morteza Gharib, aeronautics professor at the California
-Institute of Technology. He was fascinated by the idea. 'Coming from Iran, I have a
-keen interest in Middle Eastern science/ he says. He too was puzzled by the picture that
-had sparked Clemmons's interest. The object in the sky apparently had wings far too short
-and wide for a bird. The possibility certainly existed that it was a kite/ he says. And since
-he needed a summer project for his student Emilio Graff, investigating the possibility of
-using kites as heavy lifters seemed like a good idea.
-Gharib and Graff set themselves the task of raising a 4.5-metre stone column from
-horizontal to vertical, using no source of energy except the wind. Their initial
-calculations and scale-model wind-tunnel experiments convinced them they wouldn't need
-a strong wind to lift the 33.5-tonne column. Even a modest force, if sustained over a long
-time, would do. The key was to use a pulley system that would magnify the applied force.
-So they rigged up a tent-shaped scaffold directly above the tip of the horizontal column,
-with pulleys suspended from the scaffold's apex. The idea was that as one end of the
-column rose, the base would roll across the ground on a trolley.
-Earlier this year, the team put Clemmons's unlikely theory to the test, using a 40-squaremetre rectangular nylon sail. The kite lifted the column clean off the ground. 'We were
-absolutely stunned,' Gharib says. The instant the sail opened into the wind, a huge
-force was generated and the column was raised to the vertical in a mere 40 seconds.'
-The wind was blowing at a gentle 16 to 20 kilometres an hour, little more than half what
-they thought would be needed. What they had failed to reckon with was what
-happened when the kite was opened. There was a huge initial force - five times larger than
-the steady state force,' Gharib says. This jerk meant that kites could lift huge weights,
-Gharib realised. Even a 300-tonne column could have been lifted to the vertical with 40 or
-so men and four or five sails. So Clemmons was right: the pyramid, builders could have
-used kites to lift massive stones into place. 'Whether they actually did is another matter,'
-Gharib says. There are no pictures showing the construction of the pyramids, so there is no
-way to tell what really happened. The evidence for using kites to move large stones is no
-better or worse than the evidence for the brute force method,' Gharib says.
-Indeed, the experiments have left many specialists unconvinced. The evidence for
-kitelifting is non-existent,' says Willeke Wendrich, an associate professor of Egyptology at
- 1</p>
-<p>the University of California, Los Angeles.
-Others feel there is more of a case for the theory. Harnessing the wind would not have
-been a problem for accomplished sailors like the Egyptians. And they are known to
-have used wooden pulleys, which could have been made strong enough to bear the weight
-of massive blocks of stone. In addition, there is some physical evidence that the
-ancient Egyptians were interested in flight. A wooden artefact found on the step pyramid
-at Saqqara looks uncannily like a modern glider. Although it dates from several
-hundred years after the building of the pyramids, its sophistication suggests that the
-Egyptians might nave been developing ideas of flight for a long time. And other ancient
-civilisations certainly knew about kites; as early as 1250 BC, the Chinese were using them
-to deliver messages and dump flaming debris on their foes.
-The experiments might even have practical uses nowadays. There are plenty of places
-around the globe where people have no access to heavy machinery, but do know how
-to deal with wind, sailing and basic mechanical principles. Gharib has already
-been contacted by a civil engineer in Nicaragua, who wants to put up buildings with
-adobe roofs supported by concrete arches on a site that heavy equipment can't reach. His
-idea is to build the arcnes horizontally, then lift them into place using kites. 'We've given
-him some design hints,' says Gharib. We're just waiting for him to report back.' So
-whether they were actually used to build the pyramids or not, it seems that kites may make
-sensible construction tools in the 21 st century AD.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>We Have Star Performers</h1>
+<p>雅思阅读真题 · 第420篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>We have Star performers!
+A
+The difference between companies is people. With capital and technology in plentiful
+supply, the critical resource for companies in the knowledge era will be human talent.
+Companies full of achievers will, by definition, outperform organisations of plodders. Ergo,
+compete ferociously for the best people. Poach and pamper stars; ruthlessly weed out
+second-raters. This, in essence, has been the recruitment strategy of the ambitious
+company of the past decade. The ‘talent mindset’ was given definitive form in two reports
+by the consultancy McKinsey famously entitled The War for Talent. Although the intensity
+of the warfare subsequently subsided along with the air in the internet bubble, it has been
+warming up again as the economy tightens: labour shortages, for example, are the reason
+the government has laid out the welcome mat for immigrants from the new Europe.
+B
+Yet while the diagnosis – people are important – is evident to the point of platitude, the
+apparently logical prescription – hire the best – like so much in management is not only not
+obvious: it is in fact profoundly wrong. The first suspicions dawned with the crash to earth
+of the dotcom meteors, which showed that dumb is dumb whatever the IQ of those who
+perpetrate it. The point was illuminated in brilliant relief by Enron, whose leaders, as a New
+Yorker article called ‘The Talent Myth’ entertainingly related, were so convinced of their
+own cleverness that they never twigged that collective intelligence is not the sum of a lot of
+individual intelligence. In fact, in a profound sense, the two are opposites. Enron believed in
+stars, noted author Malcolm Gladwell, because they didn’t believe in systems. But
+companies don’t just create: ‘they execute and compete and coordinate the efforts of many
+people, and the organisations that are most successful at that task are the ones where the
+system is the star’. The truth is that you can’t win the talent wars by hiring stars – only lose
+it. New light on why this should be so is thrown by an analysis of star behaviour in this
+months’ Harvard Business Review. In a study of the careers of 1,000 star-stock analysts in
+the 1990s, the researchers found that when a company recruited a star performer, three
+things happened.
+C
+First, stardom doesn’t easily transfer from one organisation to another. In many cases,
+performance dropped sharply when high performers switched employers and in some
+instances never recovered. More of success than commonly supposed is due to the
+working environment – systems, processes, leadership, accumulated embedded learning
+that are absent in and can’t be transported to the new firm. Moreover, precisely because of
+their past stellar performance, stars were unwilling to learn new tricks and antagonised
+those (on whom they now unwittingly depended) who could teach them. So they moved,
+upping their salary as they did – 36 per cent moved on within three years, fast even for
+Wall Street. Second, group performance suffered as a result of tensions and resentment by
+rivals within the team. One respondent likened hiring a star to an organ transplant. The new
+organ can damage others by hogging the blood supply, other organs can start aching or
+threaten to stop working or the body can reject the transplants altogether, he said. ‘You
+should think about it very carefully before you do a transplant to a healthy body.’ Third,
+investors punished the offender by selling its stock. This is ironic since the motive for
+ 1
+importing stars was often a suffering share price in the first place. Shareholders evidently
+believe that the company is overpaying, the hiree is cashing in on a glorious past rather
+than preparing for a glowing present, and a spending spree is in the offing.
+D
+The result of mass star hirings as well as individual ones seems to confirm such doubts.
+Look at County NatWest and Barclays de Zoete Wedd, both of which hired teams of stars
+with loud fanfare to do great things in investment banking in the 1990s. Both failed
+dismally. Everyone accepts the cliche that people make the organisation – but much more
+does the organisation make the people. When researchers studied the performance of fund
+managers in the 1990s, they discovered that just 30 per cent of the variation in fund
+performance was due to the individual, compared to 70 per cent to the company-specific
+setting.
+E
+That will be no surprise to those familiar with systems thinking. W Edwards Deming used to
+say that there was no point in beating up on people when 90 per cent of performance
+variation was down to the system within which they worked. Consistent improvement, he
+said, is a matter not of raising the level of individual intelligence, but of the learning of the
+organisation as a whole. The star system is glamorous – for the few. But it rarely benefits
+the company that thinks it is working it. And the knock-on consequences indirectly affect
+everyone else too. As one internet response to Gladwell’s New Yorker article put it: after
+Enron, ‘the rest of corporate America is stuck with overpaid, arrogant, underachieving, and
+relatively useless talent.’
+F
+Football is another illustration of the star vs systems strategic choice. As with investment
+banks and stockbrokers, it seems obvious that success should ultimately be down to
+money. Great players are scarce and expensive. So the club that can afford more of them
+than anyone else will win. But the performance of Arsenal and Manchester United on one
+hand and Chelsea and Real Madrid on the other proves that it’s not as easy as that. While
+Chelsea and Real have the funds to be compulsive star collectors – as with Juan Sebastian
+Veron – they are less successful than Arsenal and United which, like Liverpool before
+them, have put much more emphasis on developing a setting within which stars-in-the-
+making can flourish. Significantly, Thierry Henry, Patrick Veira and Robert Pires are much
+bigger stars than when Arsenal bought them, their value (in all senses) enhanced by the
+Arsenal system. At Chelsea, by contrast, the only context is the stars themselves –
+managers with different outlooks come and go every couple of seasons. There is no settled
+system for the stars to blend into. The Chelsea context has not only not added value, but it
+has also subtracted it. The side is less than the sum of its exorbitantly expensive parts.
+Even Real Madrid’s galacticos, the most extravagantly gifted on the planet, are being
+outperformed by less talented but better-integrated Spanish sides. In football, too, stars are
+trumped by systems.
+G
+So if not by hiring stars, how do you compete in the war for talent? You grow your own.
+This worked for investment analysts, where some companies were not only better at
+creating stars but also at retaining them. Because they had a much more sophisticated
+ 2
+view of the interdependent relationship between star and system, they kept them longer
+without resorting to the exorbitant salaries that were so destructive to rivals.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+The Reading Passage has seven paragraphs  A-G
+Which paragraph contains the following information?
+Write the correct letter  A-G, in boxes  1-4 on your answer sheet.
+NBYou may use any letter more than once.
+1.....................   One example from non-commerce/business settings that better system win
+bigger stars
+2.....................   One failed company that believes stars rather than the system 
+3.....................   One suggestion that the author made to acquire employees than to win the
+competition nowadays
+4.....................   One metaphor to human medical anatomy that illustrates the problems of
+hiring stars.
+ Questions 5-8
+Do the following statements agree with the information given in Reading Passage?
+In boxes 5-8 on your answer sheet, write
+YES                  if the statement agrees with the information
+NO                   if the statement contradicts the information
+NOT GIVEN     if there is no information on this
+5.....................   McKinsey who wrote The War for Talent had not expected the huge
+influence made by this book.
+6.....................   Economic condition becomes one of the factors which decide whether or
+not a country would prefer to hire foreign employees. 
+7.....................   The collapse of Enron is caused totally by an unfortunate incident instead
+of company’s management mistake.
+8.....................   Football clubs that focus making stars in the setting are better than simply
+collecting stars
+Questions 10-13
+Complete the following summary of the paragraphs of Reading Passage
+Using NO MORE THAN TWO WORDS  from the Reading Passage for each answer.
+ 4
+ Write your answers in boxes  10-13 on your answer sheet.
+An investigation carried out on 1000  9...................... Participants of a survey by Harvard
+Business Review found a company hire a  10..................... has negative effects. For
+instance, they behave considerably worse in a new team than in the  11..................... that
+they used to be. They move faster than wall street and increase their  12......................
+Secondly, they faced rejections or refuse from those  13..................... within the team.
+Lastly, the one who made mistakes had been punished by selling his/her stock share.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.F
+2.B
+3.G
+4.C
+  8.YES
+9.analysts
+10.performance star
+11.working environment
+  5.NOT GIVEN 12.salary
+ 6.YES
+7.13.rivals
+NO
+ 6</div>
+</div>
+</div>
 </body>
 </html>

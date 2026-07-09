@@ -1,374 +1,174 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Effects Of Light On Plant And Animal Species - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Rainmaker Design - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题493/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Effects Of Light On Plant And Animal Species</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Rainmaker Design</h1>
+<p>雅思阅读真题 · 第368篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Rainmaker design
+A
+Sometimes ideas just pop up out of the blue. Or in Charlie Paton’s case, out of the rain. ‘I
+was on a bus in Morocco traveling through the desert,’ he remembers. ‘It had been raining
+and the bus was full of hot, wet people. The windows steamed up and I went to sleep with
+a towel against the glass. When I woke, the thing was soaking wet. I had to wring it out.
+And it set me thinking. Why was it so wet?
+B
+The answer, of course, was condensation. Back home in London, a physicist friend, Philip
+Davies, explained that the glass, chilled by the rain outside, had cooled the hot humid air
+inside the bus below its dew point, causing droplets of water to form on the inside of the
+window. Intrigued, Paton – a lighting engineer by profession – started rigging up his own
+equipment. ‘I made my own solar stills It occurred to me that you might be able to produce
+water in this way in the desert, simply by cooling the air. I wondered whether you could
+make enough to irrigate fields and grow crops.’
+C
+Today, a decade on, his dream has taken shape as a giant greenhouse on a desert island
+off Abu Dhabi in the Persian Gulf – the first commercially viable version of his ‘seawater
+greenhouse’. Local scientists, working with Paton, are watering the desert and growing
+vegetables in what is basically a giant dew-making machine that produces freshwater and
+cool air from sun and seawater. In awarding Paton first prize in a design competition two
+years ago, Marco Goldschmied, president of the Royal Institute of British Architects, called
+it ‘a truly original idea which has the potential to impact on the lives of millions of people
+living in coastal water-starved areas around the world’.
+D
+The seawater greenhouse as developed by Paton has three main parts. They both air-
+condition the greenhouse and provide water for irrigation. The front of the greenhouse
+faces into the prevailing wind so that hot dry air blows in through a front wall. The wall is
+made of perforated cardboard kept moist by a constant trickle of seawater pumped up from
+the ocean. The purpose is to cool and moisten the incoming desert air. The cool moist air
+allows the plants to grow faster. And, crucially, because much less water evaporates from
+the leaves, the plants need much less moisture to grow than if they were being irrigated in
+the hot dry desert air outside the greenhouse.
+E
+The air-conditioning of the interior of the greenhouse is completed by the second feature:
+the roof. It has two layers: an outer layer of clear polyethylene and an inner coated layer
+that reflects infrared radiation. This combination ensures that visible light can stream
+through to the plants, maximizing the rate of plant growth through photosynthesis but at the
+same time heat from the infrared radiation is trapped in the space between the layers, and
+kept away from the plants. This helps keep the air around the plants cool.
+ 1
+F
+At the back of the greenhouse sits the third elements. This is the main water production
+unit. Here, the air hits a second moist cardboard wall that increases its humidity as it
+reaches the condenser, which finally collects from the hot humid air the moisture for
+irrigating the plants. The condenser is a metal surface kept cool by still more seawater. It is
+the equivalent of the window on Paton’s Morcoccan bus. Drops of pure distilled water from
+on the condenser and flow into a tank for irrigating the crops.
+G
+The Abu Dhai greenhouse more or less runs itself. Sensors switch everything on when the
+sun rises and alter flows of air and seawater through the day in response to changes in
+temperature, humidity, and sunlight. On windless days, fans ensure a constant flow of air
+through the greenhouse. ‘Once it is turned to the local environment, you don’t need
+anymore there for it to work,’ says Paton. “We can run the entire operation of one 13-amp
+plug, and in the future, we could make it entirely independent of the grid, powered from a
+few solar panels.’
+H
+Critics point out that construction costs of around $4 a square foot are quite high. By
+illustration, however, Paton presents that it can cool as efficiently as a 500-kilowatt air
+conditioner while using less than 3 kilowatts of electricity. Thus the plants need only an
+eighth of the volume of water used by those grown conventionally. And so the effective cost
+of the desalinated water in the greenhouse is only a quarter that of water from a standard
+desalinator, which is good economics. Besides it really suggests an environmentally-
+friendly way of providing air conditioning on a scale large enough to cool large
+greenhouses where crops can be grown despite the high outside temperatures.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 27-31
+Do the following statements agree with the claims of the writer in Reading Passage 3?
+In boxes27-31on your answer sheet, write
+               YES
+NO
  
-1. NOT GIVEN
-2. FALSE
-3. NOT GIVEN
-4. TRUE
-5. TRUE
-6. D
-7.
-8. C
-9. A
-10. C
-11. B
-12. A
-13. B</p>
-<p>Reading Practice
- Natural pesticide in India</p>
-<p>A dramatic story about cotton farmers in India shows how destructive pesticides can be for
-people and the environment; and why today’s agriculture is so dependent on pesticides.
-This story also shows that it’s possible to stop using chemical pesticides without losing a
-crop to ravaging insects, and it explains how to do it.</p>
-<p>The story began about 30 years ago, a handful of families migrated from the Guntur district
-of Andhra Pradesh, southeast India, into Punukula, a community of around 900 people
-farming plots of between two and 10 acres. The outsiders from Guntur brought cottonculture with them. Cotton wooed farmers by promising to bring in more hard cash than the
-mixed crops they were already growing to eat and sell: millet, sorghum, groundnuts, pigeon
-peas, mung beans, chili and rice. But raising cotton meant using pesticides and fertilizers –
-until then a mystery to the mostly illiterate farmers of the community. When cotton
-production started spreading through Andhra Pradesh state. The high value of cotton made
-it an exceptionally attractive crop, but growing cotton required chemical fertilizers and
-pesticides. As most of the farmers were poor, illiterate, and without previous experience
-using agricultural chemicals, they were forced to rely on local, small-scale agricultural
-dealers for advice. The dealers sold them seeds, fertilizers, and pesticides on credit and
-also guaranteed the purchase of their crop. The dealers themselves had little technical
-knowledge about pesticides. They merely passed on promotional information from
-multinational chemical companies that supplied their products.</p>
-<p>At first, cotton yields were high, and expenses for pesticides were low because cotton
-pests had not yet moved in. The farmers had never earned so much! But within a few
-years, cotton pests like bollworms and aphids plagued the fields, and the farmers saw how
-rapid insect evolution can be. Repeated spraying killed off the weaker pests, but left the
-ones most resistant to pesticides to multiply. As pesticide resistance mounted, the farmers
-had to apply more and more of the pesticides to get the same results. At the same time, the
-pesticides killed off birds, wasps, beetles, spiders, and other predators that had once
-provided natural control of pest insects. Without these predators, the pests could destroy
-the entire crop if pesticides were not used. Eventually, farmers were mixing sometimes
-having to spray their cotton as frequently as two times a week. They were really hooked!</p>
-<p>The villagers were hesitant, but one of Punukula’s village elders decided to risk trying the
-natural methods instead of pesticides. His son had collapsed with acute pesticide poisoning
-and survived but the hospital bill was staggering. SECURE’s staff coached this villager on
-how to protect his cotton crop by using a toolkit of natural methods chat India’s Center for
-Sustainable Agriculture put together in collaboration with scientists at Andhra Pradesh’s
-state university. They called the toolkit “Non-Pesticide Management” – or “NPM.”</p>
-<p>The most important resource in the NPM toolkit was the neem tree (Azadirachta indica)
-which is common throughout much of India. Neem tree is a broad-leaved evergreen tree
-related to mahogany. It protects itself against insects by producing a multitude of natural
-pesticides that work in a variety of ways: with an arsenal of chemical defenses that repel
-egg-laying, interfere with insect growth, and most important, disrupt the ability of cropeating insects to sense their food.</p>
-<p>In fact, neem has been used traditionally in India to protect stored grains from insects and
-to produce soaps, skin lotions, and other health products. To protect crops from insects,
-neem seeds are simply ground into a powder that is soaked overnight in water. The
-solution is then sprayed onto the crop. Another preparation, neem cake, can be mixed into
-the soil to kill pests and diseases in the soil, and it doubles as an organic fertilizer high in
-nitrogen. Neem trees grow locally, so the only “cost” is the labor to prepare neem for
-application to fields.</p>
-<p>The first farmer’s trial with NPM was a complete success! His harvest was as good as the
-harvests of farmers that were using pesticides, and he earned much more because he did
-not spend a single rupee on pesticides. Inspired by this success, 20 farmers tried NPM the
-next year. SECURE posted two well-trained staff in Punukula to teach and help everyone in
-the village, and the village women put pressure on their husbands to stop using toxic
-chemicals. Families that were no longer exposing themselves to pesticides began to feel
-much better, and the rapid improvement in income, health, and general wellbeing quickly
-sold everyone on the value of NPM. By 2000, all the farmers in Punukula were using NPM,
-not only for cotton but for their other crops as well.</p>
-<p>The suicide epidemic came to an end. And with the cash, health, and energy that returned
-when they stopped poisoning themselves with pesticides, the villagers were inspired to
-start more community and business projects. The women of Punukula created a new
-source of income by collecting, grinding, and selling neem seeds for NPM in other villages.
-The villagers rescued their indentured children and gave them special six-month “catchup,” courses to return to school.</p>
-<p>Fighting against pesticides, and winning, increased village solidarity, self-confidence, and
-optimism about the future. When dealers tried to punish NPM users by paying less for NPM
-cotton, the farmers united to form a marketing cooperative that found fairer prices
-elsewhere. The leadership and collaboration skills that the citizens of Punukula developed
-in the NPM struggle have helped them to take on other challenges, like water purification,
-building a cotton gin to add value to the cotton before they sell it, and convincing the state
-government to support NPM over the objection of multi-national pesticide corporations.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ 
+ if the statement is true
+if the statement is false
+NOT GIVEN     if the information is not given in the passage
+27.....................   The idea just came to Charlie Paton by accident.
+28.....................   The bus was well ventilated.
+29.....................   After waking up, Paton found his towel was wet.
+30.....................   The fan on the bus did not work well.
+31.....................   Paton immediately operated his own business in the Persian Gulf after
+talking with Philip Davies.
+Questions 32-36
+Label the diagram below.
+Choose NO MORE THAN THREE WORDS from the passage for each answer.
+Write your answers in boxes 32-36 on your answer sheet.
+ 3
+  
+  
+ 
+ 
+ 
+ 32.....................
+33.....................
+34.....................
+35.....................
+36.....................
+Questions 37-40
+Complete the summary below.
+UsingNO MORE THAN TWO WORDS from the Reading Passage for each answer.
+Write your answers in boxes 37-40on your answer sheet.
+To some extent, the Abu Dhai greenhouse functions automatically. When the day is sunny,
+the equipment can respond to the changes in several natural elements. When there is no
+wind,37..................... help to retain the flow of air. Even in the future, we have an ideal
+plan to power the greenhouse from 38...................... However, there are still some critics
+who argue that 39..................... are not good economics.
+To justify himself, Paton presents favorable arguments against these critics and suggests
+that it is an 40..................... approach to provide air conditioning in a scale large sense.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.YES
+2.NO
+3.YES
+4.NOT
+GIVEN
+5.NO
+ 8.infrared radiation
+9.pure distilled water
+10.condenser
+11.fans
+12.solar panels
+ 
+ 6.hot dry13.airconstruction costs
+ 7.moist14.environmentally-friendly
+ 5</div>
+</div>
+</div>
 </body>
 </html>

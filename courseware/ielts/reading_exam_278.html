@@ -1,425 +1,160 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plain English Campaign - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Spider Silk 2 - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题366/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Plain English Campaign</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-2
-What TWO aspects of the whale’s journey surprised researchers?
-A   the destination 
-B   the direction     
-C   the distance
-D  the reason
-E  the season</p>
-<p>Questions 3-4
-The passage mentions reasons why whales generally migrate.
-What TWO reasons are given?
-A  to avoid humans   
-B  to be safe        
-C  to eat
-D  to keep warm
-E  to produce young</p>
-<p>Questions 5-6
-What TWO methods did researchers use to record the identity of the whale near Brazil?
-A They analysed part of the whale’s body.
-B They marked its tail.
-C They made notes of its behaviour.
-D They recorded the sounds it made.
-E They took a picture.
-Questions 7-8
-The passage mentions places the whale may have passed close to on its journey.
-Which TWO places may the whale have passed?
- 2</p>
-<p>A Antarctica      
-B Hawaii                       
-C Maine
-D New Zealand
-E South Africa
-  
-Questions 9-10
-The passage says that more research is done in the Northern Hemisphere.
-Which TWO reasons are given for this?
-A It contains more whales.
-B It has friendlier surroundings.
-C There are more samples available.
-D It is easier to reach.
-E It contains smaller whales.
-  
-Questions 11-12
-The passage suggests why the whale made a different journey from usual.
-Which TWO reasons does it suggest?
-A She did not know where she was going.
-B She did not want to breed.
-C She wanted to escape a danger.
-D She was looking for a new place to live.
-E She was recovering from an illness.
-Questions 13-14
-Which TWO methods of finding out where whales migrate are mentioned in the passage?
-A attaching radio transmitters
-B comparing pictures taken in different place
-C following them in boats
-D placing cameras in key positions
- 3</p>
-<p>E following their movements from space.
- 4</p>
-<p>Solution:
- 
-1. B, C (in either
-order)
-2. B, C (in either
-order)
-3. C, E (in either
-order)
-4. C, E (in either
-order)
-5. A OR E IN
-EITHER ORDER
-6. A OR E IN
-EITHER ORDER
-7. A OR E IN
-EITHER ORDER
-8. A OR E IN
-EITHER ORDER
-9. B OR D IN
-EITHER ORDER
-10. B OR D IN
-EITHER ORDER
-11. A OR D IN
-EITHER ORDER
-12. A OR D IN
-EITHER ORDER
-13. B OR E IN
-EITHER ORDER
-14. B OR E IN
-EITHER ORDER
- 5</p>
-<p>Reading Practice
- Hunting Perfume in Madagascar
-A. Ever since the unguentari plied their trade in ancient Rome, perfumers have to keep
-abreast of changing fashions. These days they have several thousand ingredients to
-choose from when creating new scents, but there is always demand for new combinations.
-The bigger the “palette7 of smells, the better the perfumer’s chance of creating something
-fresh and appealing. Even with everyday products such as shampoo and soap, kitchen
-cleaners and washing powders, consumers are becoming increasingly fussy. And many of
-today’s fragrances have to survive tougher treatment than ever before, resisting the
-destructive power of bleach or a high temperature wash cycle. Chemists can create new
-smells from synthetic molecules, and a growing number of the odours on the perfumer’s
-palette are artificial. But nature has been in the business far longer.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Spider Silk 2</h1>
+<p>雅思阅读真题 · 第278篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Spider silk 2
+ A strong, light bio-material made by genes from spiders could transform construction and
+industry
+A
+Scientists have succeeded in copying the silk-producing genes of the Golden Orb Weaver
+spider and are using them to create a synthetic material which they believe is the model for
+a new generation of advanced bio-materials. The new material, biosilk, which has been
+spun for the first time by researchers at DuPont, has an enormous range of potential uses
+in construction and manufacturing.
+B
+The attraction of the silk spun by the spider is a combination of great strength and
+enormous elasticity, which man-made fibres have been unable to replicate. On an equal-
+weight basis, spider silk is far stronger than steel and it is estimated that if a single strand
+could be made about 10m in diameter, it would be strong enough to stop a jumbo jet in
+flight. A third important factor is that it is extremely light. Army scientists are already looking
+at the possibilities of using it for lightweight, bulletproof vests and parachutes.
+C
+For some time, biochemists have been trying to synthesise the drag-line silk of the Golden
+Orb Weaver. The drag-line silk, which forms the radial arms of the web, is stronger than the
+other parts of the web and some biochemists believe a synthetic version could prove to be
+as important a material as nylon, which has been around for 50 years, since the
+discoveries of Wallace Carothers and his team ushered in the age of polymers.
+D
+To recreate the material, scientists, including Randolph Lewis at the University of
+Wyoming, first examined the silk-producing gland of the spider. ‘We took out the glands
+that produce the silk and looked at the coding for the protein material they make, which is
+spun into a web. We then went looking for clones with the right DNA,’ he says.
+E
+At DuPont, researchers have used both yeast and bacteria as hosts to grow the raw
+material, which they have spun into fibres. Robert Dorsch, DuPont’s director of biochemical
+development, says the globules of protein, comparable with marbles in an egg, are
+harvested and processed. ‘We break open the bacteria, separate out the globules of
+protein and use them as the raw starting material. With yeast, the gene system can be
+designed so that the material excretes the protein outside the yeast for better access,’ he
+says.
+F
+‘The bacteria and the yeast produce the same protein, equivalent to that which the spider
+uses in the draglines of the web. The spider mixes the protein into a water-based solution
+ 1
+and then spins it into a solid fibre in one go. Since we are not as clever as the spider and
+we are not using such sophisticated organisms, we substituted man-made approaches and
+dissolved the protein in chemical solvents, which are then spun to push the material
+through small holes to form the solid fibre.’
+G
+Researchers at DuPont say they envisage many possible uses for a new biosilk material.
+They say that earthquake-resistant suspension bridges hung from cables of synthetic
+spider silk fibres may become a reality. Stronger ropes, safer seat belts, shoe soles that do
+not wear out so quickly and tough new clothing are among the other applications.
+Biochemists such as Lewis see the potential range of uses of biosilk as almost limitless. ‘It
+is very strong and retains elasticity: there are no man-made materials that can mimic both
+these properties. It is also a biological material with all the advantages that have over
+petrochemicals,’ he says.
+H
+At DuPont’s laboratories, Dorsch is excited by the prospect of new super-strong materials
+but he warns they are many years away. ‘We are at an early stage but theoretical
+predictions are that we will wind up with a very strong, tough material, with an ability to
+absorb shock, which is stronger and tougher than the man-made materials that are
+conventionally available to us,’ he says.
+I
+The spider is not the only creature that has aroused the interest of material scientists. They
+have also become envious of the natural adhesive secreted by the sea mussel. It produces
+a protein adhesive to attach itself to rocks. It is tedious and expensive to extract the protein
+from the mussel, so researchers have already produced a synthetic gene for use in
+surrogate bacteria.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Reading Passage 1 has nine paragraphs,  A-I
+Which paragraph contains the following information?
+Write the correct letter,  A-I, in boxes  1-5 on your answer sheet.
+1.....................   a comparison of the ways two materials are used to replace silk-producing
+glands 
+2.....................   predictions regarding the availability of the synthetic silk
+3.....................   ongoing research into other synthetic materials
+4.....................   the research into the part of the spider that manufactures silk
+5.....................   the possible application of the silk in civil engineering
+Questions 6-10
+Complete the flow-chart below.
+Choose NO MORE THAN TWO WORDS  from the passage for each answer.
+Write your answers in boxes  6-10 on your answer sheet.
+Synthetic gene grown in  6..................... or  7.....................
+globules of  8......................
+dissolved in  9.....................
+passed through  10.....................
+to produce a solid fibre
+Questions 11-13
+Do the following statements agree with the information given in Reading Passage?
+In boxes 11-13 on your answer sheet, write
+TRUE               if the statement is true
+ 3
  
-B. The island of Madagascar is an evolutionary hot spot; 85% of its plants are unique,
-making it an ideal source for novel fragrances. Last October, Quest International, a
-company that develops fragrances for everything from the most delicate perfumes to
-cleaning products, sent an expedition to Madagascar in pursuit of some of nature’s most
-novel fragrances. With some simple technology, borrowed from the pollution monitoring
-industry, and a fair amount of ingenuity, the perfume hunters bagged 20 promising new
-aromas in the Madagascan rainforest. Each day the team set out from their “hotel”—a
-wooden hut lit by kerosene lamps, and trailed up and down paths and animal tracks,
-exploring the thick vegetation up to 10 meters on either side of the trail. Some smells came
-from obvious places, often big showy flowers within easy reach- Others were harder to pin
-down. “Often it was the very small flowers that were much more interesting, says Clery.
-After the luxuriance of the rainforest, the little-known island of Nosy Hara was a stark, dry
-place geologically and biologically very different from the mainland, “Apart from two
-beaches, the rest of the Island Is impenetrable, except by hacking through the bush, says
-Clery. One of the biggest prizes here was a sweet- smelling sap weeping from the gnarled
-branches of some ancient shrubby trees in the parched Interior. So far no one has been
-able to identify the plant.
-C. With most flowers or fruits, the hunters used a technique originally designed to trap and
-identify air pollutants. The technique itself is relatively simple. A glass bell jar or flask  S
-fitted over the flower. The fragrance molecules are trapped in this “headspace” and can be
-extracted by pumping the air out over a series of filters which absorb different types of
-volatile molecules. Back home in the laboratory, the molecules are flushed out of the filters
-and injected into a gas chromatograph for analysis. If it Is Impossible to attach the
-headspace gear, hunters fix an absorbent probe close to the source of the smell. The
-probe looks something like a hypodermic syringe, except that the ‘needle’ is made of
-silicone rubber which soaks up molecules from the air. After a few hours, the hunters
-retract the rubber needle and seal the tube, keeping the odour molecules inside until they
-can.be injected into the gas chromatograph in the laboratory.
-D. Some of the most promising fragrances were those given, off by resins that oozed from
-the bark of trees. Resins are the source of many traditional perfumes, including
-frankincense and myrrh. The most exciting resin came from a Calophyllum tree, which
-produces a strongly scented medicinal oil. The sap of this Calophyllum smelt rich and
-aromatic, a little like church incense. But It also smelt of something the fragrance industry
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ FALSE              if the statement is false
+NOTGIVEN    if the information is not given in the passage
+11.....................   Biosilk has already replaced nylon in parachute manufacture.
+12.....................   The spider produces silk of varying strengths.
+13.....................   Lewis and Dorsch co-operated in the synthetic production of silk.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.E
+2.H
+3.I
+4.D
+5.G
+6.yeast
+ 8.protein
+9.chemical
+10.holes
+11.FALSE
+12.TRUE
+13.NOT GIVEN
+7.bacteria
+ 5</div>
+</div>
+</div>
 </body>
 </html>

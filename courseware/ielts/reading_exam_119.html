@@ -1,360 +1,204 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Density And Crowding - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Finding Our Way - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题165/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Density And Crowding</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>these animals were extinct. Humans, on the other hand, had evolved large brains and used
-their intelligence to make fire and sophisticated tools, to develop talk and social rituals.
-Survival in a time of adversity forged our brains into a persistent mould. Professor
-Seligman says: “Because our brain evolved during a time of ice, flood and famine, we have
-a catastrophic brain. The way the brain works is looking for what’s wrong. The problem is,
-that worked in the Pleistocene era. It favoured you, but it doesn’t work in the modem
-world”.</p>
-<p>Although most people rate themselves as happy, there is a wealth of evidence to show that
-negative thinking is deeply ingrained in the human psyche. Experiments show that we
-remember failures more vividly than success. We dwell on what went badly, not what went
-well. Of the six universal emotions, four anger, fear, disgust and sadness are negative and
-only one, joy, is positive. (The sixth, surprise, is neutral). According to the psychologist
-Daniel Nettle, author of Happiness, and one of the Royal Institution lectures, the negative
-emotion each tells us “something bad has happened” and suggest a different course of
-action.</p>
-<p>What is it about the structure of the brain that underlies our bias towards negative thinking?
-And is there a biology of joy? At Iowa University, neuroscientist studied what happens
-when people are shown pleasant and unpleasant pictures. When subjects see landscapes
-or dolphins playing, part of the frontal lobe of the brain becomes active. But when they are
-shown unpleasant images a bird covered in oil, or a dead soldier with part of his face
-missing the response comes from more primitive parts of the brain. The ability to feel
-negative emotions derives from an ancient danger-recognition system formed early in the
-brain’s evolution. The pre-frontal cortex, which registers happiness, is the part used for
-higher thinking, an area that evolved later in human history.</p>
-<p>Our difficulty, according to Daniel Nettle, is that the brain systems for liking and wanting are
-separate. Wanting involves two ancient regions the amygdala and the nucleus accumbens
-that communicate using the chemical dopamine to form the brain’s reward system. They
-are involved in anticipating the pleasure of eating and in addiction to drugs. A rat will press
-a bar repeatedly ignoring sexually available partners, to receive electrical stimulation of the
-“wanting” parts of the brain. But having received brain stimulation, the rat eats more but
-shows no sign of enjoying the food it craved. In humans, a drug like nicotine produces
-much craving but little pleasure.</p>
-<p>In essence, what the biology lesson tells us is that negative emotions are fundamental to
-the human condition and it’s no wonder they are difficult to eradicate. At the same time, by
-a trick of nature, our brains are designed to crave but never really achieve lasting
-happiness.
- 2</p>
-<p>Questions 1-7
-The reading Passage has seven paragraphs A-H.
-Which paragraph contains the following information?
-Write the correct letter A-H, in boxes 1-7 on your answer sheet.
-1.....................   An experiment involving dividing several groups one of which received
-positive icon
-2.....................   Review of a poorly researched psychology area
-3.....................   Contrast being made about the brains’ action as response to positive or
-negative stimulus
-4.....................   The skeptical attitude toward the research seemed to be a waste of fund
-5.....................   a substance that produces much wanting instead of much liking
-6.....................   a conclusion that lasting happiness is hardly obtained because of the
-nature of brains
-7.....................   One description that listed the human emotional categories.
- 
-Questions 8-12
-Complete the following summary of the paragraphs of Reading Passage
-Using NO MORE THAN FOUR WORDS from the Reading Passage for each answer.
-Write your answers in boxes 8-12 on your answer sheet.
-A few pioneers in experimental psychology study what happens when lives go well.
-Professor Alice divided doctors, making a tricky experiment, into three groups: besides the
-one control group, the other two either are asked to read humanistic statements about
-drugs or received 8..................... The latter displayed the most creative thinking and
-worked more efficiently. Since critics are questioning the significance of the 9.....................
-for both levels of happiness and classification for the virtues. Professor Seligman countered
-in an evolutional theory: survival in a time of adversity forged our brains into the way of
-thinking for what’s wrong because we have a 10......................
-There is bountiful of evidence to show that negative thinking is deeply built in the human
-psyche. Later, at Iowa University, neuroscientists studied the active parts in brains to
-contrast when people are shown pleasant and unpleasant pictures. When positive images
-like 11..................... are shown, part of the frontal lobe of the brain becomes active. But
-when they are shown unpleasant image, the response comes from 12..................... of the
-brain.
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Finding Our Way</h1>
+<p>雅思阅读真题 · 第119篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Finding our way
+A. “Drive 200 yards, and then turn right,” says the car’s computer voice. You relax in the
+driver’s seat, follow the directions and reach your destination without error. It’s certainly
+nice to have the Global Positioning System (GPS) to direct you to within a few yards of
+your goal. Yet if the satellite service’s digital maps become even slightly outdated, you can
+become lost. Then you have to rely on the ancient human skill of navigating in three-
+dimensional space. Luckily, your biological finder has an important advantage over GPS: it
+does not go awry if only one part of the guidance system goes wrong, because it works in
+various ways. You can ask questions of people on the sidewalk. Or follow a street that
+looks familiar. Or rely on a navigational rubric: “If I keep the East River on my left, I will
+eventually cross 34th Street.” The human positioning system is flexible and capable of
+learning. Anyone who knows the way from point A to point B—and from A to C—can
+probably figure out how to get from B to c, too.
+ B. But how does this complex cognitive system really work? Researchers are looking at
+several strategies people use to orient themselves in space: guidance, path integration and
+route following. We may use all three or combinations thereof. And as experts learn more
+about these navigational skills, they are making the case that our abilities may underlie our
+powers of memory and logical thinking. Grand Central, Please Imagine that you have
+arrived in a place you have never visited-New York City. You get off the train at Grand
+Central Terminal in midtown Manhattan. You have a few hours to explore before you must
+return for your ride home. You head uptown to see popular spots you have been told about:
+Rockefeller Center, Central Park, the Metropolitan Museum of Art. You meander in and out
+of shops along the way. Suddenly, it is time to get back to the station. But how?
+C. If you ask passersby for help, most likely you will receive information in many different
+forms. A person who orients herself by a prominent landmark would gesture southward:
+“Look down there. See the tall, broad MetLife Building? Head for that “the station is right
+below it.” Neurologists call this navigational approach “guidance,” meaning that a landmark
+visible from a distance serves as the marker for one’s destination.
+D. Another city dweller might say: “What places do you remember passing? … Okay. Go
+toward the end of Central Park, then walk down to St. Patrick’s Cathedral. A few more
+blocks, and Grand Central will be off to your left.” In this case, you are pointed toward the
+most recent place you recall, and you aim for it. Once there you head for the next notable
+place and so on, retracing your path. Your brain is adding together the individual legs of
+your trek into a cumulative progress report. Researchers call this strategy “path
+integration.” Many animals rely primarily on path integration to get around, including
+insects, spiders, crabs and rodents. The desert ants of the genus Cataglyphis employ this
+method to return from foraging as far as 100 yards away. They note the general direction
+they came from and retrace then steps, using the polarization of sunlight to orient
+themselves even under overcast skies. On their way back they are faithful to this inner
+homing vector. Even when a scientist picks up an ant and puts it in a totally different spot,
+the insect stubbornly proceeds in the originally determined direction until it has gone “back”
+all of the distance it wandered from its nest. Only then does the ant realize it has not
+succeeded, and it begins to walk in successively larger loops to find its way home.
+ 1
+ E. Whether it is trying to get back to the anthill or the train station, any animal using path
+integration must keep track of its own movements so it knows, while returning, which
+segments it has already completed. As you move, your brain gathers data from your
+environment—sights, sounds, smells, lighting, muscle contractions, a sense of time
+passing—to determine which way your body has gone. The church spire, the sizzling
+sausages on that vendor’s grill, the open courtyard, and the train station—all represent
+snapshots of memorable junctures during your journey.
+ F. In addition to guidance and path integration, we use a third method for finding our way.
+An office worker you approach for help on a Manhattan street comer might say: “Walk
+straight down Fifth, turn left on 47th, turn right on Park, go through the walkway under the
+Helmsley Building, then cross the street to the MetLife Building into Grand Central.” This
+strategy, called route following, uses landmarks such as buildings and street names, plus
+directions-straight, turn, go through—for reaching intermediate points. Route following is
+more precise than guidance or path integration, but if you forget the details and take a
+wrong turn, the only way to recover is to backtrack until you reach a familiar spot, because
+you do not know the general direction or have a reference landmark for your goal. The
+route-following navigation strategy truly challenges the brain. We have to keep all the
+landmarks and intermediate directions in our head. It is the most detailed and therefore
+most reliable method, but it can be undone by routine memory lapses. With path
+integration, our cognitive memory is less burdened; it has to deal with only a few general
+instructions and the homing vector. Path integration works because it relies most
+fundamentally on our knowledge of our body’s general direction of movement, and we
+always have access to these inputs. Nevertheless, people often choose to give route-
+following directions, in part because saying “Go straight that way!” just does not work in our
+complex, man-made surroundings.
+G. Road Map or Metaphor? On your next visit to Manhattan you will rely on your memory to
+get around. Most likely you will use guidance, path integration and route following in
+various combinations. But how exactly do these constructs deliver concrete directions? Do
+we humans have, as an image of the real world, a kind of road map in our heads—with
+symbols for cities, train stations and churches; thick lines for highways; narrow lines for
+local streets? Neurobiologists and cognitive psychologists do call the portion of our memory
+that controls navigation a “cognitive map.” The map metaphor is obviously seductive: maps
+are the easiest way to present geographic information for convenient visual inspection. In
+many cultures, maps were developed before writing, and today they are used in almost
+every society. It is even possible that maps derive from a universal way in which our
+spatial-memory networks are wired.
+H. Yet the notion of a literal map in our heads may be misleading; a growing body of
+research implies that the cognitive map is mostly a metaphor. It may be more like a
+hierarchical structure of relationships. To get back to Grand Central, you first envision the
+large scale-that is, you visualize the general direction of the station. Within that system you
+then imagine the route to the last place you remember. After that, you observe your nearby
+surroundings to pick out a recognizable storefront or street comer that will send you toward
+that place. In this hierarchical, or nested, scheme, positions and distances are relative, in
+contrast with a road map, where the same information is shown in a geometrically precise
+scale.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Use the information in the passage to match the category of each navigation method
+(listed A-C) with correct statement. Write the appropriate letters  A-C in boxes  1-5 on your
+answer sheet.
+NB you may use any letter more than once
+A. Guidance
+B. Path integration,
+C. Route following
+  
+ 1.....................  Using basic direction from starting point and light intensity to move
+on
+2.....................  Using combination of place and direction heading for destination
+3.....................  Using an iconic building near your destination as orientation
+4.....................  Using a retrace method from a known place if a mistake happens
+5.....................  Using a passed spot as reference for a new integration
+Questions 6-8
+Choose the correct letter,  A, B, C or D .
+Write your answers in boxes  6-8 on your answer sheet.
+6. What does the ant of Cataglyphis respond if it has been taken to another location
+according to the passage?
+A Changes the orientation sensors improvingly 
+B Releases biological scent for help from others 
+C Continues to move by the original orientation 
+D Totally gets lost once disturbed
+7. Which of the followings is true about “cognitive map” in this passage?
+A There is not obvious difference contrast by real map
+B It exists in our head and is always correct 
+C It only exists under some cultures
+D It was managed by brain memory
+8. Which of following description of way findings correctly reflects the function of cognitive
+map?
+ 3
+ 
+ A It visualises a virtual route in a large scope
+B It reproduces an exact details of every landmark 
+C Observation plays a more important role
+D Store or supermarket is a must in file map
+Questions 9-13
+Do the following statements agree with the information given in  Reading Passage ? In
+boxes9-13 on your answer sheet, write
+TRUE               if the statement is true
+FALSE              if the statement is false
+NOTGIVEN     if the information is not given in the passage 
+9.....................  Biological navigation has a state of flexibility
+10.....................  You will always receive good reaction when you ask direction
+11.....................  When someone follows a route, he or she collects comprehensive
+perceptional information in mind on the way
+12..................... Path integration requires more thought from brain compared with
+route- following
+13..................... In a familiar surrounding, an exact map of where you are will
+automatically emerge in your head
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+1.B
+2.C
+3.A
+4.C
+5.B
+6.C
+7.8.A
+9.TRUE
+10.NOT GIVEN
+11.TRUE
+12.FALSE
+13.FALSE
+D
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,358 +1,180 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Is A Serious Business - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Sponging Dolphins - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题369/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Play Is A Serious Business</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Reading Practice
- Indoor Pollution
-Since the early eighties we have been only too aware of the devastating effects of largescale environmental pollution. Such pollution is generally the result of poor government
-planning in many developing nations or the short-sighted, selfish policies of the already
-industrialised countries which encourage a minority of the world’s population to squander
-the majority of its natural resources.
-While events such as the deforestation of the Amazon jungle or the nuclear disaster in
-Chernobyl continue to receive high media exposure, as do acts of environmental sabotage,
-it must be remembered that not all pollution is on this grand scale. A large proportion of the
-world’s pollution has its source much closer to home. The recent spillage of crude oil from
-an oil tanker accidentally discharging its cargo straight into Sydney Harbour not only
-caused serious damage to the harbour foreshores but also created severely toxic fumes
-which hung over the suburbs for days and left the angry residents wondering how such a
-disaster could have been allowed to happen.
-Avoiding pollution can be a fulltime job. Try not to inhale traffic fumes; keep away from
-chemical plants and building-sites; wear a mask when cycling. It is enough to make you
-want to stay at home. But that, according to a growing body of scientific evidence, would
-also be a bad idea. Research shows that levels of pollutants such as hazardous gases,
-particulate matter and other chemical ‘nasties’ are usually higher indoors than out, even in
-the most polluted cities. Since the average American spends 18 hours indoors for every
-hour outside, it looks as though many environmentalists may be attacking the wrong target.
-The latest study, conducted by two environmental engineers, Richard Corsi and Cynthia
-Howard-Reed, of the University of Texas in Austin, and published in Environmental
-Science and Technology, suggests that it is the process of keeping clean that may be
-making indoor pollution worse. The researchers found that baths, showers, dishwashers
-and washing machines can all be significant sources of indoor pollution, because they
-extract trace amounts of chemicals from the water that they use and transfer them to the
-air.
-Nearly all public water supplies contain very low concentrations of toxic chemicals, most of
-them left over from the otherwise beneficial process of chlorination. Dr. Corsi wondered
-whether they stay there when water is used, or whether they end up in the air that people
-breathe. The team conducted a series of experiments in which known quantities of five
-such chemicals were mixed with water and passed through a dishwasher, a washing
-machine, a shower head inside a shower stall or a tap in a bath, all inside a specially
-designed chamber. The levels of chemicals in the effluent water and in the air extracted
-from the chamber were then measured to see how much of each chemical had been
-transferred from the water into the air.
-The degree to which the most volatile elements could be removed from the water, a
-process known as chemical stripping, depended on a wide range of factors, including the
-volatility of the chemical, the temperature of the water and the surface area available for
-transfer. Dishwashers were found to be particularly effective: the high-temperature spray,
-splashing against the crockery and cutlery, results in a nasty plume of toxic chemicals that
-escapes when the door is opened at the end of the cycle.
- 1</p>
-<p>In fact, in many cases, the degree of exposure to toxic chemicals in tap water by inhalation
-is comparable to the exposure that would result from drinking the stuff. This is significant
-because many people are so concerned about water-borne pollutants that they drink only
-bottled water, worldwide sales of which are forecast to reach $72 billion by next year. D.
-Corsi’s results suggest that they are being exposed to such pollutants anyway simply by
-breathing at home.
-The aim of such research is not, however, to encourage the use of gas masks when
-unloading the washing. Instead, it is to bring a sense of perspective to the debate about
-pollution. According to Dr Corsi, disproportionate effort is wasted campaigning against
-certain forms of outdoor pollution, when there is as much or more cause for concern
-indoors, right under people’s noses.
-Using gas cookers or burning candles, for example, both result in indoor levels of carbon
-monoxide and particulate matter that are just as high as those to be found outside, amid
-heavy traffic. Overcrowded classrooms whose ventilation systems were designed for
-smaller numbers of children frequently contain levels of carbon dioxide that would be
-regarded as unacceptable on board a submarine. ‘New car smell’ is the result of high levels
-of toxic chemicals, not cleanliness. Laser printers, computers, carpets and paints all
-contribute to the noxious indoor mix.
- 
-The implications of indoor pollution for health are unclear. But before worrying about the
-problems caused by large-scale industry, it makes sense to consider the small-scale
-pollution at home and welcome international debate about this. Scientists investigating
-indoor pollution will gather next month in Edinburgh at the Indoor Air conference to discuss
-the problem. Perhaps unwisely, the meeting is being held indoors.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Sponging Dolphins</h1>
+<p>雅思阅读真题 · 第280篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Sponging dolphins
+(A) In 1984, researchers spotted dolphins doing something unusual in Shark Bay, Western
+Australia. When the animals got hungry, they ripped a marine basket sponge from the sea
+floor and fitted it over their beaks like a person would fit a glove over a hand. The scientists
+suspected that as the dolphins foraged for fish, the sponges protected their beaks, or
+rostra, from the rocks and broken chunks of coral that litter the sea floor, making this
+behavior the first example of tool use in this species.
+(B) The researchers surmised that a long time ago one ingenious Shark Bay dolphin
+figured out that by prodding the sediments with a sponge attached to her beak, she
+could stir up these swim bladder-less fish without being hurt. Eventually, such technique
+became popular among other dolphins. But why do dolphins go to all of this trouble when
+they could simply snag a fish from the open sea? The answer is that the bottom-dwelling
+fish are a lot more nutritious. Some species also don't have swim bladders, gas chambers
+that help other fish control their buoyancy as they travel up and down the water column. In
+the Bahamas, where dolphins are also known to forage for bottom-dwelling fish, dolphins
+hunt partly by echolocating these bladders, which give off a strong acoustic signal. That
+helps the cetaceans find prey even when it's buried in sea sand. But bottom-dwelling fish,
+such as barred sandperch, which are favored by some Shark Bay dolphins, don't have
+swim bladders and so are harder to find with echolocation. The sea floor is not nearly as
+soft here as it is in the Bahamas, so if dolphins want to probe for these fish, they risk
+injuring their rostra.
+(C) Not every dolphin in Shark Bay hunts with sponges. "It's primarily done by females,"
+says Janet Mann, a behavioral ecologist. She believes the female dolphins invented the
+method because of the "selective pressures they face while raising a calf as long as they
+do," about 4 to 5 years. "These clever dolphins have figured out a way to target fish that
+other dolphins cannot," she says, adding that even the local fishermen do not catch, or
+even know about, this particular species. Mann's previous research has shown that dolphin
+mothers pass the sponging method to their daughters and some of their sons, rare
+evidence of a cultural tradition in an animal other than humans. The team has documented
+three generations of sponging dolphins.
+(D) The foraging technique came to light a few decades ago - very recently in evolutionary
+terms - when a local fisherman spotted what looked like a strange tumour on a dolphin’s
+nose. Researchers eventually worked out that the ‘tumour’ was a conically shaped sponge
+and it became apparent that the dolphins would spend considerable time searching for one
+the right shape to fit their nose. The sponge is used to scatter the sand gently on the sea
+floor and disturb buried fish. When a fish is spotted, the dolphin drops the sponge and
+gives chase. "It has been thought that behaviours which are exclusively learnt from one
+parent are not very stable. With our model we could now show that sponging can be a
+stable behaviour," said Dr Anna Kopps, a biologist at the University of New South Wales.
+(E) By modelling the emergence of "sponger" dolphins in a computer simulation, the team
+ 1
+of researchers could see different scenarios in which the skill could have spread among the
+dolphin population over the years. They then compared the results of these simulations
+with field data on the genetic relationship between the spongers, to estimate the role of
+mothers teaching their offspring in transmitting the skill. They found that if the likelihood of
+a sponger's offspring learning the ability was less than certain, the dolphins that did pick up
+the technique needed to gain a survival advantage from the skill, in order for the ability to
+pass on to the next generation. The model also allowed them to attempt to calculate the
+date that the behaviour was likely to have originated."The results suggested that sponging
+was innovated at least 120 to 180 years ago - it is only a best estimate," said Dr Kopps.
+Scientists discovered that although dolphins tried to teach the hunting technique to all their
+young, it was mainly female offspring that grasped the concept. Why male offspring rarely
+acquire the same skill remains unclear, though the team put forward one possible
+explanation: male bottlenose dolphins tend to form close bonds with other males, and such
+alliances aren't suited to seabed foraging, since it is a time-consuming, solitary activity.
+(F) The US scientists say discovering a new tool is a direct sign of intelligence. “There’s a
+strong link between animals with larger brains and tool users. Bottlenose dolphins have a
+brain second in size only to humans.” said Janet Mann, a marine biologist who led the
+research. “Dolphins are already good at catching fish so they don’t need tools, but they’ve
+discovered this sponge makes their job easier. Working out how to use tools in a creative
+way like that is a hallmark of intelligence.” Mann admits we still do not understand dolphins
+well. “It’s hard to get inside their heads because their brains are constructed differently and
+it’s very hard to analyse their language, but they do seem very intelligent,” she said.
+(G) Dolphins are also often seen engaging in playful behaviour and creating tools to use for
+entertainment. They have been observed to blow bubbles which they form into rings to play
+with. After creating the bubble ring, a dolphin will use its nose and body to maintain the
+shape of the bubble and keep it from floating to the surface. The study provides a "better
+understanding of the why and how of sponging" by the Shark Bay dolphins, says Louis
+Herman, a cognitive psychologist. The work "adds to previously documented" examples of
+"innovation by this highly intelligent species." Patterson's and Mann's results also "reinforce
+a pattern" often seen in other tool-using animals, says Simon Reader, a behavioral
+biologist. "Tool use appears to be almost a last option, taken when other options fail or are
+unavailable," he says, noting that woodpecker finches in the Galápagos Islands "turn to tool
+use only in arid areas," wielding cactus spines to extract grubs from tree branches. Using
+tools takes time and energy, Reader says, and animals tend to rely on them only when
+there's a guaranteed payoff, such as turning up a fatty fish that most other dolphins (and
+fishermen) know nothing about.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Reading Passage has seven paragraphs,  A-G.
+Which paragraph contains the following information?
+Write the correct letter,  A-G, in boxes 1-7 on your answer sheet.
+1..................... Hallmark of intelligence
+2..................... Fisrt example of dolphins using tools
+3..................... Tool for entertainment
+4..................... The reason why dolphins go through trouble of getting fish from the bottom
+of the ocean
+5..................... The evidence of tradition in dolphins
+6..................... The estimated time of sponging innovation
+7..................... The observation of a local fisherman
+ Questions 8-12
+Choose the correct letter,  A, B, C or D.
+Write the correct letter in boxes 8-12 on your answer sheet.
+ 8. Dolphins use sponges for hunting fish because:
+A they like it.
+B it helps them get fish from the bottom of the ocean.
+C it makes hunting easier.
+D it helps them to get more fish during the hunt.
+ 9. All the following statements about dolphins are true,  EXCEPT:
+A Females discovered the method of hunting with sponges.
+B The sponging method is passed by female dolphins to their daughters.
+C Male dolphins never use the sponging technique.
+D Three generations of sponging dolphins have been documented.
+ 3
+ 10. Biologist Dr. Anna says that
+A sponging is very dangerous for dolphins.
+B dolphins do not inherit sponging method from their parents.
+C she has benn studying dolphins for a few decades now.
+D sponging can be a stable behaviour.
+ 11. With the computer simulation that modeled sponging, researchers
+A managed to find out approximately when sponging was originated.
+B were able to predict the behaviour of dolphins.
+C found out the true reason of sponging.
+D discovered a new way treating dolphins
+12. Accroding to Janet Mann
+A bottlenose dolphins have brain as big as humans have.
+B we can understand dolphins well now.
+C dolphins are very intellegent.
+D all of the above.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.F
+2.A
+3.G
+4.B
+5.C
+6.E7.D
+8.B
+9.C
+10.D
+11.A
+12.C
+ 5</div>
+</div>
+</div>
 </body>
 </html>

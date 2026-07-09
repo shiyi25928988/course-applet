@@ -1,278 +1,163 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why We Need to Protect Polar Bears - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-        }
-        .passage-box {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
-        .question-card {
-            background: #eff6ff;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
-        }
-        .question-card h4 {
-            margin: 0 0 12px 0;
-            color: #1e40af;
-        }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
-            display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
-            text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Secret of the Yawn - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📖 阅读真题 4/50</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
-        </aside>
-
-        <main class="main">
-            <div class="page-hero">
-                <h1>📖 Why We Need to Protect Polar Bears</h1>
-                <p>剑桥16 Test2 Passage1 · 题型：T/F/NG · 填空 · 完整逐题解析</p>
-            </div>
-
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 4: Why We Need to Protect Polar Bears</h3>
-                    <div class="difficulty diff-easy">难度：★★☆☆☆ 简单</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：说明文 · 话题：环境 · 动物 · 建议时间：15-17分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>Polar bears, the majestic white bears of the Arctic, face an uncertain future as climate change transforms their icy habitat. These remarkable creatures are uniquely adapted to life in one of the harshest environments on Earth, with thick fur, a layer of blubber for insulation, and large paws that act as snowshoes and paddles. But the very sea ice that defines their existence is disappearing at an alarming rate, threatening the survival of the entire species.</p>
-                        <p><strong>B</strong></p>
-                        <p>Polar bears depend on sea ice for virtually every aspect of their lives. They use it as a platform for hunting seals, their primary prey. Without sea ice, polar bears cannot reach their food source, leading to starvation and population decline. The ice also serves as transportation routes, allowing bears to travel vast distances in search of food and mates. Pregnant females use the ice as a base from which to build maternity dens where they give birth and care for their cubs during the vulnerable first months of life.</p>
-                        <p><strong>C</strong></p>
-                        <p>Climate change is causing Arctic sea ice to form later in the autumn and melt earlier in the spring. This reduces the time polar bears have for hunting. Studies show that for every week the ice breaks up earlier, polar bears lose approximately 10 kilograms of body weight, a significant amount for an animal that relies on fat reserves to survive the ice-free season. The reduction in hunting time is particularly critical for pregnant females, who need to accumulate sufficient fat to sustain themselves and their cubs through the long winter denning period.</p>
-                        <p><strong>D</strong></p>
-                        <p>The consequences of reduced sea ice are already visible in polar bear populations. In the western Hudson Bay population in Canada, for example, polar bear numbers have declined by approximately 30 percent since the 1980s. Bears in this population are thinner, reproduce less frequently, and cub survival rates are lower. Similar trends are being observed across the Arctic. Some models predict that if current warming trends continue, polar bears could disappear from most of their range by the end of this century, with only small, isolated populations remaining in the northernmost islands of the Canadian Arctic archipelago.</p>
-                        <p><strong>E</strong></p>
-                        <p>The loss of sea ice also forces polar bears to spend more time on land, bringing them into increased conflict with humans. As bears search for alternative food sources, they are more likely to encounter human settlements, raid garbage dumps, and prey on livestock or dogs. This creates dangerous situations for both bears and people. In some areas, the number of polar bear encounters has increased dramatically, leading to more bears being killed in defense of life or property. These conflicts further reduce polar bear populations and create additional challenges for conservation efforts.</p>
-                        <p><strong>F</strong></p>
-                        <p>While climate change represents the most significant threat to polar bears, it is not the only challenge. Pollution, particularly persistent organic pollutants that bioaccumulate up the food chain, poses health risks to polar bears at the top of the Arctic marine food web. Oil and gas development in the Arctic also threatens polar bear habitat through direct disturbance, potential oil spills, and industrial activity. These additional stressors compound the effects of climate change, making polar bears even more vulnerable.</p>
-                        <p><strong>G</strong></p>
-                        <p>Protecting polar bears requires urgent action on multiple fronts. The most critical step is reducing greenhouse gas emissions to slow climate change and preserve Arctic sea ice. International agreements such as the Paris Climate Accord represent important steps, but much more ambitious action is needed. Conservation efforts also include protecting critical polar bear habitat, managing human-bear conflicts to reduce bear mortality, and regulating industrial activity in the Arctic. International cooperation is essential because polar bears cross international boundaries and their conservation transcends national interests.</p>
-                        <p><strong>H</strong></p>
-                        <p>Polar bears have become the iconic symbol of climate change, capturing public imagination and galvanizing conservation action. Their plight demonstrates the profound impacts of global warming on Arctic ecosystems. Protecting polar bears is not just about saving a single species; it is about preserving the entire Arctic ecosystem and addressing the root causes of climate change that affect us all. The future of polar bears is inextricably linked to our collective willingness to act decisively on climate change. By protecting these magnificent creatures, we ultimately protect ourselves and the planet we share.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-8: TRUE / FALSE / NOT GIVEN</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Do the following statements agree with the information given in the reading passage?</p>
-                        <p style="margin:0 0 8px 0;font-size:0.9rem;"><strong>Write:</strong></p>
-                        <ul style="margin:0 0 16px 0;font-size:0.9rem;">
-                            <li><strong>TRUE</strong> if the statement agrees with the information</li>
-                            <li><strong>FALSE</strong> if the statement contradicts the information</li>
-                            <li><strong>NOT GIVEN</strong> if there is no information on this</li>
-                        </ul>
-                        <p style="margin:8px 0;"><strong>1.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>2.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>3.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>4.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>5.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>6.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>7.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                        <p style="margin:8px 0;"><strong>8.</strong> The Step Pyramid was the first pyramid built in ancient Egypt.</p>                    </div>
-                    <div class="question-card">
-                        <h4>Questions 9-14: Complete the Summary</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
-                        <p style="line-height:2.2;">
-                            The Step Pyramid was designed by the architect <input type="text" class="blank-input" placeholder="...">. It was built during the <input type="text" class="blank-input" placeholder="..."> century BCE for Pharaoh Djoser. Unlike previous tombs made of <input type="text" class="blank-input" placeholder="...">, this pyramid was constructed from <input type="text" class="blank-input" placeholder="...">. The complex includes various <input type="text" class="blank-input" placeholder="..."> and temples, surrounded by a high <input type="text" class="blank-input" placeholder="...">. Underground, there are over 5 kilometers of <input type="text" class="blank-input" placeholder="..."> and chambers.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> FALSE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> NOT GIVEN</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> FALSE</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> NOT GIVEN</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>8.</strong> TRUE</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>9.</strong> Imhotep</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>10.</strong> 27th</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>11.</strong> mud brick</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>12.</strong> limestone</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>13.</strong> courtyards</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>14.</strong> wall</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>15.</strong> tunnels</td></tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 1: TRUE</h5>
-                        <p><strong>定位：</strong>Paragraph A 第2句</p>
-                        <p><strong>原文：</strong><span class="keyword">"the Step Pyramid of Djoser at Saqqara holds the distinction of being the earliest stone pyramid"</span></p>
-                        <p><strong>解析：</strong>题目中的"first pyramid"是原文"earliest stone pyramid"的<span class="synonym">同义替换</span>，与原文信息一致。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 2: FALSE</h5>
-                        <p><strong>定位：</strong>Paragraph B 第1句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Prior to the Step Pyramid, royal tombs were relatively simple structures known as mastabas"</span></p>
-                        <p><strong>解析：</strong>题目与原文信息<span class="synonym">直接矛盾</span>。之前的墓是简单的mastabas，不是complex structures。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 8: Imhotep</h5>
-                        <p><strong>定位：</strong>Paragraph B 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Designed by the brilliant architect Imhotep"</span></p>
-                        <p><strong>解析：</strong>原文原词，注意大写。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 9: 27th</h5>
-                        <p><strong>定位：</strong>Paragraph A 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Built during the 27th century BCE"</span></p>
-                        <p><strong>解析：</strong>数字信息，直接提取。</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Secret of the Yawn</h1>
+<p>雅思阅读真题 · 第3篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The secret of the Yawn
+A
+When a scientist began to study yawning in the 1980s, it was difficult to convince some of
+his research students of the merits of “yawning science.” Although it may appear quirky, his
+decision to study yawning was a logical extension to human beings of my research in
+developmental neuroscience, reported in such papers as “Wing-flapping during
+Development and Evolution.” As a neurobehavioral problem, there is not much difference
+between the wing-flapping of birds and the face – and body-flapping of human yawners.
+B
+Yawning is an ancient, primitive act. Humans do it even before they are born, opening wide
+in the womb. Some snakes unhinge their jaws to do it. One species of penguins yawns as
+part of mating. Only now are researchers beginning to understand why we yawn, when we
+yawn and why we yawn back. A professor of cognitive neuroscience at Drexel University in
+Philadelphia, Steven Platek, studies the act of contagious yawning, something done only
+by people and other primates.
+C
+In his first experiment, he used a psychological test to rank people on their empathic
+feelings. He found that participants who did not score high on compassion did not yawn
+back. “We literally had people saying, ‘Why am I looking at people yawning?’” Professor
+Platek said. “It just had no effect.”
+D
+For his second experiment, he put 10 students in a magnetic resonance imaging machine
+as they watched video tapes of people yawning. When the students watched the videos,
+the part of the brain which reacted was the part scientists believe controls empathy – the
+posterior cingulate, in the brain’s middle rear.” I don’t know if it’s necessarily that nice
+people yawn more, but I think it’s a good indicator of a state of mind,” said Professor
+Platek. “It’s also a good indicator if you’re empathizing with me and paying attention.”
+E
+His third experiment is studying yawning in those with brain disorders, such as autism and
+schizophrenia, in which victims have difficulty connecting emotionally with others. A
+psychology professor at the University of Maryland, Robert Provine, is one of the few other
+researchers into yawning. He found the basic yawn lasts about six seconds and they come
+in bouts with an interval of about 68 seconds. Men and women yawn or half-yawn equally
+often, but men are significantly less likely to cover their mouths which may indicate
+complex distinction in genders.” A watched yawner never yawns,” Professor Provine said.
+However, the physical root of yawning remains a mystery. Some researchers say it’s
+coordinated within the hypothalamus of the brain, the area that also controls breathing.
+F
+Yawning and stretching also share properties and may be performed together as parts of a
+ 1
+global motor complex. But they do not always co-occur – people usually yawn when we
+stretch, but we don’t always stretch when we yawn, especially before bedtime. Studies by
+J.I.P, G.H.A. Visser and H.F. Prechtl in the early 1980s, charting movement in the
+developing fetus using ultrasound, observed not just yawning but a link between yawning
+and stretching as early as the end of the first prenatal trimester.
+G
+The most extraordinary demonstration of the yawn-stretch linkage occurs in many people
+paralyzed on one side of their body because of brain damage caused by a stroke. The
+prominent British neurologist Sir Francis Walshe noted in 1923 what when these
+hemiplegics yawn, they are startled and mystified to observe that their otherwise paralyzed
+arm rises and flexes automatically in what neurologists term an “associated response.”
+Yawning apparently activates undamaged, unconsciously controlled connections between
+the brain and the cord motor system innervating the paralyzed limb. It is not known whether
+the associated response is a positive prognosis for recovery, nor whether yawning is
+therapeutic for reinnervation or prevention of muscular atrophy.
+H
+Clinical neurology offers other surprises. Some patients with “locked-in” syndrome, who are
+almost totally deprived of the ability to move voluntarily, can yawn normally. The neural
+circuits for spontaneous yawning must exist in the brain stem near other respiratory and
+vasomotor centers, because yawning is performed by anencephalic who possess only the
+medulla oblongata. The multiplicity of stimuli of contagious yawning, by contrast, implicates
+many higher brain regions.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-5
+Complete the Summary paragraph described below.
+In boxes 1-5 on your answer sheet, write the correct answer with  NO MORE THAN THREE
+WORDS.
+A psychology professor drew a conclusion after observation that it takes about six seconds
+to complete average yawning which needs 1..................... before the following yawning
+comes. It is almost at the same frequency that male and female yawn or half, yet behavior
+accompanied with yawning showing a 2..................... in genders. Some parts within the
+brain may affect the movement which also has something to do with 3..................... another
+finding also finds there is a link between a yawn and 4..................... before a baby was
+born, which two can be automatically co-operating even among people whose
+5..................... is damaged.
+ Questions 6-10
+Read paragraph  A-H.
+Which paragraph contains the following information?
+Write the correct letter  A-H for questions 6-10
+NBYou may use any letter more than once.
+ 6.....................   The rate for yawning shows some regular pattern.
+7.....................   Yawning is an inherent ability that appears in both animals and humans.
+8.....................   Stretching and yawning is not always going together.
+9.....................   Yawning may suggest people are having positive notice or response in
+communicating.
+10.....................   Some superior areas in the brain may deal with the infectious feature of
+yawning.
+ Questions 11-13
+Do the following statements agree with the information given in Reading Passage?
+In boxes11-13 on your answer sheet, write
+TRUE               if the statement is true
+FALSE              if the statement is false
+NOT GIVEN     if the information is not given in the passage
+ 3
+11.....................   Several students in Platek’s experiment did not comprehend why their
+tutor ask them to yawn back.
+12.....................   Some results from the certain experiment indicate the link between
+yawning and compassion.
+13.....................   Yawning can show an affirmative impact on the recovery from brain
+damage brought by s stroke.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.68 seconds
+2.distinction
+3.breathing
+4.stretch
+5.brain
+6.E
+7.8.F
+9.D
+10.H
+11.NOT GIVEN
+12.TRUE
+13.FALSE
+B
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,377 +1,176 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reflecting On The Mirror - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Beginning Of Football - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题394/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Reflecting On The Mirror</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 11-14
-Choose the correct letter, A, B, C or D.
-Write your answers in boxes 11-14 on your answer sheet
-11. Why does the author mention “the ice is a slow mover” in the geological arctic, to
-demonstrate the idea
-A   of the difficulties Franklin conquered
-B   that Franklin had a dream since his childhood
-C   of fascination with the Arctic exploration
-D   that explorer like Franklin should possess the quality of being patient
- 
-12. When Franklin was on board with sailors, how did he speak to his follow sailors
-A   he spoke in a way mocking his followers
-B   he spoke a bric-a-brac language to show his languish attitude
-C   he spoke in the words and phrases he previously memorized 
-D   he spoke in a rhythmical tune to save chatting time
- 
-13. His effort to overcome his slowness in marine time life had finally won the
-A   understanding of his personality better
-B   capacity for coping with boredom
-C   respect for him as he insisted to overcome his difficulties
-D   valuable time he can use to finish a report
-14. Why is the book The Discovery of Slowness sold more than a million copies
-A   it contains aspects of the life people would like to enjoy
-B   it contains the information for the flag language applied in ships
-C   it induces a debate about speed limits German
-D   it contains the technique for symposia German churches
- 4</p>
-<p>Solution:
-1. A
-2. D
-3. H
-4. C
-5. B
-6. H
-7. C
-8. J
-9. H
-10. F
-11. D
-12. C
-13. C
-14. A
- 5</p>
-<p>Reading Practice
-Johnson's Dictionary
-For the century before Johnson's Dictionary was published in 1775. there had been
-concern about the state of the English language.There was no standard way of speaking or
-writing and no agreement as to the best way of bringing some order to the chaos' of
-English spelling. Dr Johnson provided the solution.
-There had, of course, been dictionaries in the past, the first of these being a little book of
-some 120 pages, compiled by a certain Robert Cawdray, published in 1604 under the title
-A Table Alphabetical! ‘of hard usual English wordes'. Like the various dictionaries that
-came after it during the seventeenth century, Cawdray's tended to concentrate on
-'scholarly' words; one function of the dictionary was to enable its student to convey an
-impression of fine learning.
-Beyond the practical need to make order out of chaos, the rise of dictionaries is associated
-with the rise of the English middle class, who were anxious to define and circumscribe the
-various worlds to conquer - lexical as well as social and commercial. It is highly appropriate
-that Dr Samuel Johnson, the very model of an eighteenth-century literary man, as famous
-in his own time as in ours, should have published his dictionary at the very beginning of the
-heyday of the middle class.
-Johnson was a poet and critic who raised common sense to the heights of genius. His
-approach to the problems that had worried writers throughout the late seventeenth and
-early eighteenth centuries was intensely practical. Up until his time, the task of producing a
-dictionary on such a large scale had seemed impossible without the establishment of an
-academy to make decisions about right and wrong usage Johnson decided he did not need
-an academy to settle arguments about language; he would write a dictionary himself; and
-he would do it single-handed. Johnson signed the contract for the Dictionary with the
-bookseller Robert Dosley at a breakfast held at the Golden Anchor Inn near Holbom Bar on
-18 June 1764. He was to be paid £ 1.575 in instalments, and from this he took money to
-rent 17 Gough Square, in which he set up his 'dictionary workshop'.
-James Boswell, his biographer described the garret where Johnson worked as ‘fitted up
-like a counting house' with a long desk running down the middle at which the copying
-clerks would work standing up. Johnson himself was stationed on a rickety chair at an 'old
-crazy deal table' surrounded by a chaos of borrowed books. He was also helped by six
-assistants, two of whom died whilst the Dictionary was still in preparation.
-The work was immense; filling about eighty large notebooks (and without a library to hand).
-Johnson wrote the definitions of over 40,000 words, and illustrated their many meanings
-with some I 14.000 quotations drawn from English writing on every subject, from the
-Elizabethans to his own time. He did not expect to achieve complete originality. Working to
-a deadline, he had to draw on the best of all previous dictionaries, and to make his work
-one of heroic synthesis. In fact it was very much more. Unlike his predecessors.Johnson
-treated English very practically, as a living language, with many different shades of
-meaning. He adopted his definitions on the principle of English common law - according to
-precedent. After its publication, his Dictionary was not seriously rivalled for over a century.
-After many vicissitudes the Dictionary was finally published on 15 April 1775. It was
-instantly recognised as a landmark throughout Europe. This very noble work.’ wrote the
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Beginning Of Football</h1>
+<p>雅思阅读真题 · 第296篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Beginning of Football
+A
+ Football as we now know it developed in Britain in the 19th century, but the game is far
+older than this. In fact, the term has historically been applied to games played on foot, as
+opposed to those played on horseback, so ‘football’ hasn’t always involved kicking a ball. It
+has generally been played by men, though at the end of the 17th century, games were
+played between married and single women in a town in Scotland. The married women
+regularly won.
+B
+The very earliest form of football for which we have evidence is the ‘tsu’chu’, which was
+played in China and may date back 3,000 years. It was performed in front of the Emperor
+during festivities to mark his birthday. It involved kicking a leather ball through a 30-40 cm
+opening into a small net fixed onto long bamboo canes – a feat that demanded great skill
+and excellent technique.
+C
+Another form of the game, also originating from the Far East, was the Japanese ‘kemari’
+which dates from about the fifth century and is still played today. This is a type of circular
+football game, a more dignified and ceremonious experience requiring certain skills, but not
+competitive in the way the Chinese game was, nor is there the slightest sign of struggle for
+possession of the ball. The players had to pass the ball to each other, in a relatively small
+space, trying not to let it touch the ground.
+D
+The Romans had a much livelier game, ‘harpastum’. Each team member had his own
+specific tactical assignment took a noisy interest in the proceedings and the score. The role
+of the feet was so small as scarcely to be of consequence. The game remained popular for
+700 or 800 years, but, although it was taken to England, it is doubtful whether it can be
+considered as a forerunner of contemporary football.
+E
+The game that flourished in Britain from the 8th to the 19th centuries was substantially
+different from all the previously known forms – more disorganised, more violent, more
+spontaneous and usually played by an indefinite number of players. Frequently, the games
+took the form of a heated contest between whole villages. Kicking opponents were allowed,
+as in fact was almost everything else.
+F
+There was tremendous enthusiasm for football, even though the authorities repeatedly
+intervened to restrict it, as a public nuisance. In the 14th and 15th centuries, England,
+Scotland and France all made football punishable by law, because of the disorder that
+commonly accompanied it, or because the well-loved recreation prevented subjects from
+practicing more useful military disciplines. None of these efforts had much effect.
+ 1
+G
+The English passion for football was particularly strong in the 16th century, influenced by
+the popularity of the rather better organised Italian game of ‘calcio’. English football was as
+rough as ever, but it found a prominent supporter in the school headmaster Richard
+Mulcaster. He pointed out that it had positive educational value and promoted health and
+strength. Mulcaster claimed that all that was needed was to refine it a little, limit the number
+of participants in each team and, more importantly, have a referee to oversee the game.
+H
+The game persisted in a disorganised form until the early 19th century, when a number of
+influential English schools developed their own adaptations. In some, including Rugby
+School, the ball could be touched with the hands or carried; opponents could be tripped up
+and even kicked. It was recognised in educational circles that, as a team game, football
+helped to develop such fine qualities as loyalty, selflessness, cooperation, subordination
+and deference to the team spirit. A ‘games cult’ developed in schools and some form of
+football became an obligatory part of the curriculum.
+I
+In 1863, developments reached a climax. At Cambridge University, an initiative began to
+establish some uniform standards and rules that would be accepted by everyone, but there
+were essentially two camps: the minority – Rugby School and some others – wished to
+continue with their own form of the game, in particular allowing players to carry the ball. In
+October of the same year, eleven London clubs and schools sent representatives to
+establish a set of fundamental rules to govern the matches played amongst them. This
+meeting marked the birth of the Football Association.
+J
+The dispute concerning kicking and tripping opponents and carrying the ball was discussed
+thoroughly at this and subsequent meetings, until eventually, on 8 December, the die-hard
+exponents of the Rugby style withdrew, marking a final split between rugby and football.
+Within eight years, the Football Association already had 50 member clubs, and the first
+football competition in the world was started – the FA Cup.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Reading Passage 1 has ten paragraphs  A-J.
+Choose the correct headings for paragraphs  D-J from the list of headings below.
+Write the correct number  i-x in boxes  1-7 on your answer sheet.
+List of Headings
+i           Limited success in suppressing the game
+ii          Opposition to the role of football in schools
+iii         A way of developing moral values
+iv         Football matches between countries
+v          A game that has survived
+vi         Separation into two sports
+vii        Proposals for minor improvements
+viii       Attempts to standardize the game
+ix         Probably not an early version of football
+x          A chaotic activity with virtually no rules
+Example          Paragraph  C                Answer v
+1.....................   Paragraph D
+2.....................   Paragraph E
+3.....................   Paragraph F
+4.....................   Paragraph G
+5.....................   Paragraph H
+6.....................   Paragraph I
+7.....................   Paragraph J
+Questions 8-13
+Complete each sentence with the correct ending  A-I from the box below.
+Write the correct letter  A-I in boxes  8-13 on your answer sheet.
+8.....................   Tsu’chu
+9.....................   Kemari
+10.....................   Harpastum
+ 3
+11.....................   From the 8th centuries, football in the British Isles
+12.....................   In the past, the authorities legitimately despised the football and acted on
+the belief that football.
+13.....................   When it was accepted in academic settings, football.
+ A   was seen as something to be encouraged in the young.
+B   involved individual players having different responsibilities.
+C   was influenced by a game from another country.
+D   was a cooperative effort by all the players.
+E   distracted people from more important activities.
+F   was played by teams of a fixed size.
+G   was less popular than it later became.
+H   was often played by one community against another.
+I   formed part of a celebration.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.ix
+2.x
+3.i
+4.vii
+5.iii
+6.viii
+7.8.I
+9.D
+10.B
+11.H
+12.E
+13.A
+vi
+ 5</div>
+</div>
+</div>
 </body>
 </html>

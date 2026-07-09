@@ -1,394 +1,198 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Department Of Ethnography - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Nature And Aims Of Archaelogy - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题479/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Department Of Ethnography</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-5
-The Reading Passage has ten paragraphs A-J.
-Which paragraph contains the following information?
-Write the correct letter A-J, in boxes 1-5 on your answer sheet.
-1.....................   A theory explained delay happens when selecting one reaction
-2.....................   Different age group responds to important things differently
-3.....................   Conflicts happened when visual and audio element emerge simultaneously
-4.....................   An experiment designed to demonstrates the critical part of the brain for
-multitasking
-5.....................   A viewpoint favors the optimistic side of multitasking performance
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Nature And Aims Of Archaelogy</h1>
+<p>雅思阅读真题 · 第357篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The nature and aims of archaelogy
+Archaeology is partly the discovery of the treasures of the past, partly the careful work of
+the scientific analyst, partly the exercise of the creative imagination. It is toiling in the sun
+on an excavation in the Middle East, it is working with living Inuit in the snows of Alaska,
+and it is investigating the sewers of Roman Britain. But it is also the painstaking task of
+interpretation, so that we come to understand what these things mean for the human story.
+And it is the conservation of the world's cultural heritage against looting and careless harm.
+Archaeology, then, is both a physical activity out in the field, and an intellectual pursuit in
+the study or laboratory. That is part of its great attraction. The rich mixture of danger and
+detective work has also made it the perfect vehicle for fiction writers and film-makers, from
+Agatha Christie with Murder in Mesopotamia to Stephen Spielberg with Indiana Jones.
+However far from reality such portrayals are, they capture the essential truth that
+archaeology is an exciting quest - the quest for knowledge about ourselves and our past.
+ But how does archaeology relate to disciplines such as anthropology and history, that are
+also concerned with the human story? Is archaeology itself a science? And what are the
+responsibilities of the archaeologist in today's world?
+Anthropology, at its broadest, is the study of humanity - our physical characteristics as
+animals and our unique non-biological characteristics that we call culture. Culture in this
+sense includes what the anthropologist, Edward Tylor, summarised in 1871 as 'knowledge,
+belief, art, morals, custom and any other capabilities and habits acquired by man as a
+member of society'. Anthropologists also use the term 'culture’ in a more restricted sense
+when they refer to the ‘culture1 of a particular society, meaning the non-biological
+characteristics unique to that society, which distinguish it from other societies.
+Anthropology is thus a broad discipline - so broad that it is generally broken down into three
+smaller disciplines: physical anthropology, cultural anthropology and archaeology.
+Physical anthropology, or biological anthropology as it is also called, concerns the study of
+human biological or physical characteristics and how they evolved. Cultural anthropology -
+or social anthropology - analyses human culture and society. Two of its branches are
+ethnography (the study at first hand of individual living cultures) and ethnology (which sets
+out to .compare cultures using ethnographic evidence to derive general principles about
+human society).
+Archaeology is the ‘past tense of cultural anthropology’. Whereas cultural anthropologists
+will often base their conclusions on the experience of living within contemporaly
+communities, archaeologists study past societies primarily through their material remains -
+the buildings, tools, and other artefacts that constitute what is known as the material culture
+left over from former societies.
+Nevertheless, one of the most important tasks for the archaeologist today is to know how to
+interpret material culture in human terms. How were those pots used? Why are some
+dwellings round and others square? Here the methods of archaeology and ethnography
+overlap. Archaeologists in recent decades have developed ‘ethnoarchaeology’, where, like
+ethnographers, they live among contemporary communities, but with the specific purpose
+of learning how such societies use material culture - how they make their tools and
+weapons, why they build their settlements where they do, and so on. Moreover,
+ 1
+archaeology has an active role to play in the field of conservation. Heritage studies
+constitutes a developing field, where it is realised that the world's cultural heritage is a
+diminishing resource which holds different meanings for different people.
+If, then, archaeology deals with the past, in what way does it differ from history? In the
+broadest sense, just as archaeology is an aspect of anthropology, so too is it a part of
+history - where we mean the whole history of humankind from its beginnings over three
+million years ago. Indeed, for more than ninety-nine per cent of that huge span of time,
+archaeology - the study of past material culture - is the only significant source of
+information. Conventional historical sources begin only with the introduction of written
+records around 3,000 BC in western Asia, and much later in most other parts of the world.
+A commonly drawn distinction is between pre-history, i.e. the period before written records
+- and history in the narrow sense, meaning the study of the past using written evidence. To
+archaeology, which studies all cultures and periods, whether with or without writing, the
+distinction between history and pre-history is a convenient dividing line that recognises the
+importance of the written word, but in no way lessens the importance of the useful
+information contained in oral histories.
+Since the aim of archaeology is the understanding of humankind, it is a humanistic study,
+and since it deals with the human past, it is a historical discipline. But it differs from the
+study of written history in a fundamental way. The material the archaeologist finds does not
+tell us directly what to think. Historical records make statements, offer opinions and pass
+judgements. The objects the archaeologists discover, on the other hand, tell us nothing
+directly in themselves. In this respect, the practice of the archaeologist is rather like that of
+the scientist, who collects data, conducts experiments, formulates a hypothesis, tests the
+hypothesis against more data, and then, in conclusion, devises a model that seems best to
+summarise the pattern observed in the data. The archaeologist has to develop a picture of
+the past, just as the scientist has to develop a coherent view of the natural world. 
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Do the following Statements agree with the claims of the writer in Reading Passage?
+In boxes1-6on your answer sheet write
+ YESif the statement agrees with the claims of the writer
+NOif the statement contradicts the claims of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
  
-Questions 6-8
-Choose the correct letter, A, B, C or D.
-Write your answers in boxes 6-8 on your answer sheet.
- 
-6. Which one is correct about the experiment conducted by René Marois?
-A   participants performed poorly on the listening task solely
-B   volunteers press a different key on different color
-C   participants need to use different fingers on the different colored object
-D   they did a better fob on Mixed image and sound information
- 
-7. Which statement is correct about the first limitation of Marois’s experiment?
-A   “attentional blink” takes about ten seconds
-B   lag occurs if we concentrate on one object while the second one appears
-C   we always have trouble in reaching the second one
-D   first limitation can be avoided by certain measures
-8. Which one is NOT correct about Meyer’s experiments and statements?
-A   just after failure in several attempts can people execute dual-task
- 4</p>
-<p>B   Practice can overcome dual-task interference
-C   Meyer holds a different opinion on Marois’s theory
-D   an existing processor decides whether to delay another task or not
- 
-Questions 9-13
-Do the following statements agree with the information given in Reading Passage?
-In boxes 9-13 on your answer sheet, write
-YES                  if the statement is true
-NO                   if the statement is false
-NOT GIVEN    if the information is not given in the passage
-9.....................   The longer gap between two presenting tasks means shorter delay toward
-the second one.
-10.....................   Incapable of human memory cause people to sometimes miss the
-differences when presented two similar images.
-11.....................   Marois has a different opinion on the claim that training removes the
-bottleneck effect.
-12.....................   Art Kramer proved there is a correlation between multitasking
-performance and genders
-13.....................   The author doesn’t believe that the effect of practice could bring any
-variation.
- 5</p>
-<p>Solution:
+   
  
-1. F
-2. I
-3. C
-4. B
-5. G
-6. C
-7.
-8. A
-9. YES
-10. YES
-11. NO
-12. NOT GIVEN
-13. NO</p>
-<p>Reading Practice
- Multitasks</p>
-<p>Do you read while listening to music? Do you like to watch TV while finishing your
-homework? People who have these kinds of habits are called multi-taskers.
-Multitasks are able to complete two tasks at the same time by dividing their focus.
-However, Thomas Lehman, a researcher in Psychology, believes people never really do
-multiple things simultaneously. Maybe a person is reading while listening to music, but in
-reality, the brain can only focus on one task. Reading thewords in a book will cause you to
-ignore some of the words of the music. When people think they are accomplishing two
-different tasks efficiently, what they are really doing is dividing their focus. While listening to
-music, people become less able to focus on their surroundings. For example, we all have
-experience of times when we talk with friends and they are not responding properly. Maybe
-they are listening to someone else talk, or maybe they are reading a text on their smart
-phone and don't hear what you are saying. Lehman called this phenomenon “email voice"</p>
-<p>the world has been changed by computers and its spin offs like smart-phones or
-cellphones. Now that most individuals have a personal device, like a smart-phoneor a
-laptop, they are frequently reading, watching or listening to virtual information. This raises
-the occurrence of multitasking in our day to day life. Nowwhen you work, you work with
-your typewriter, your cellphone, and some colleagues who may drop by at any time to
-speak with you. In professional meetings, when one normally focuses and listens to one
-another, people are more likely to have a cell phone in their lap, reading or communicating
-silently with more people than ever, liven inventions such as the cordless phone has
-increased multitasking. In the old days, a traditional wall phone would ring, and then the
-housewife would have to stop her activities to answer it. When it rang, the housewife will sit
-down with her legs up. and chat, with no laundry or sweeping or answering the door. In the
-modern era, our technology is convenient enough to not interrupt our daily tasks.</p>
-<p>Earl Miller, an expert at the Massachusetts Institute of Technology, studied the prefrontal
-cortex, which controls the brain while a person is multitasking. According to his studies, the
-size of this cortex varies between species, He found that for humans, the size of this part
-constitutes one third of the brain, while it is only 4 to 5 percent in dogs, and about 15% in
-monkeys. Given that this cortex is larger on a human, it allows a human to be more flexible
-and accurate in his or her multitasking.. However, Miller wanted to look further into whether
-the cortexwas truly processing information about two different tasks simultaneously. He
-designed an experiment where he presents visual stimulants to his subjects in a wax that
-mimics multi-tasking. Miller then attached sensors tothe patients " heads to pick up the
-electric patterns of the brain. This sensor would show if" the brain particles, called neurons,
-were truly processing two different tasks. What he found is that the brain neurons only lit up
-in singular areas one at a time, and never simultaneously.</p>
-<p>Davis Meyer, a professor of University of Michigan, studied the young adults in a similar
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+  1..................... Archaeology involves creativity as well as careful investigative work.
+2..................... Archaeologists must be able to translate texts from ancient languages.
+3..................... Movies give a realistic picture of the work of archaeologists.
+4..................... Anthropologists define culture in more than one way.
+5..................... Archaeology is a more demanding field of study than anthropology.
+6..................... The history of Europe has been documented since 3,000 BC.
+ Questions 7-8
+ChooseTWOlettersA-E.
+Write your answers in boxes 7-8 on your answer sheet.
+The list below gives some statements about anthropology.
+WhichTWOstatements are mentioned by the writer of the text?
+ 
+ A It is important for government planners.
+B It is a continually growing field of study.
+C It often involves long periods of fieldwork.
+D It is subdivided for study purposes.
+E It studies human evolutionary patterns.
+Questions 9-10
+ 3
+   
+ 
+  
+ ChooseTWOlettersA-E.
+Write your answers in boxes 9-10 on your answer sheet.
+The list below gives some of the tasks of an archaeologist.
+WhichTWOof these tasks are mentioned by the writer of the text?
+  
+ 
+ A examining ancient waste sites to investigate diet
+B studying cave art to determine its significance
+C deducing reasons for the shape of domestic buildings
+D investigating the way different cultures make and use objects
+E examining evidence for past climate changes
+ 
+ 
+ Questions 11-14
+Complete the summary of the last two paragraphs of Reading Passage.
+ChooseNO MORE THAN TWO WORDS from the passage for each answer.
+Write your answers in boxes 11-14 on your answer sheet.
+Much of the work of archaeologists can be done using written records but they find
+11..................... equally valuable. The writer describes archaeology as both a
+12..................... and a 13...................... However, as archaeologists do not try to
+influence human behaviour, the writer compares their style of working to that of a
+14......................
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+  8.D, E IN EITHER ORDER
+  
+  
+ 1.YES
+2.NOT
+GIVEN
+3.NO
+4.9.C, D IN EITHER ORDER
+YES
+ 
+ 5.NOT
+GIVEN
+ 
+ 10.C, D IN EITHER ORDER
+11.oral histories
+12.humanistic study,
+historical discipline IN
+EITHER ORDER
+13.humanistic study,
+historical discipline IN 6.NO
+EITHER ORDER
+ 7.D, E IN
+EITHER
+ORDER14.scientist
+ 5</div>
+</div>
+</div>
 </body>
 </html>

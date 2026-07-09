@@ -1,401 +1,197 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Burden Of Thirst - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Impact Of Wilderness Tourism - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题466/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Burden Of Thirst</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 5-8
-Complete the table below.
-Choose NO MORE THAN THREE WORDS from Reading Passage for each answer.
-Write your answers in boxes 5-8 on your answer sheet.
-Country
-Organisations
-Involved Type of Project Support Provided
-5..................... •S.K.I.  courier service •provision of 6.....................
-Dominican
-Republic
-•S.K.I.</p>
-<p>•Y.W.C.A.
-.....................
-•loans
-•storage facilities
-•savings plans
-Zambia
-•S.K.I.
-•The Red Cross
-•Y.W.C.A.
-setting up small businesses
-•business training
-•8..................... training
-•access to credit</p>
-<p>Questions 9-12
-Do the following statements agree with the claims of the writer in Reading Passage?
-In boxes 9-12 on your answer sheet write
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Impact Of Wilderness Tourism</h1>
+<p>雅思阅读真题 · 第346篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Impact of Wilderness Tourism
+A
+The market for tourism In remote areas is booming as never before. Countries ail across
+the world are actively promoting their ‘wilderness’ regions - such as mountains, Arctic
+lands, deserts, small islands and wetlands - to high-spending tourists. The attraction of
+these areas is obvious.- by definition, wilderness tourism requires little or no initial
+investment. But that does not mean that there is no cost. As the 1992 United Nations
+Conference on Environment and Development recognized, these regions are fragile (i.e.
+highly vulnerable to abnormal pressures) not just in terms of their ecology, but also in terms
+of the culture of their inhabitants. The three most significant types of fragile environment in
+these respects, and also in terms of the proportion of the Earth's surface they cover, are
+deserts, mountains and Arctic areas. An important characteristic is their marked
+seasonality, with harsh conditions prevailing for many months each year. Consequently,
+most human activities, including tourism, are limited to quite clearly defined parts of the
+year.
+Tourists are drawn to these regions by their natural landscape beauty and the unique
+cultures of their indigenous people. And poor governments in these isolated areas have
+welcomed the new breed of ‘adventure tourist’, grateful for the hard currency they bring.
+For several years now, tourism has been the prime source of foreign exchange in Nepal
+and Bhutan. Tourism is also a key element in the economies of Arctic zones such as
+Lapland and Alaska and in desert areas such as Ayers Rock in Australia and Arizona’s
+Monument Valley.
+B 
+Once a location is established as a main tourist destination, the effects on the local
+community are profound. When hill-farmers, for example, can make more money in a few
+weeks working as porters for foreign trekkers than they can in a year working in their fields,
+it is not surprising that many of them give up their farm-work, which is thus left to other
+members of the family. In some hill-regions, this has led to a serious decline in farm output
+and a change in the local diet, because there is insufficient labour to maintain terraces and
+irrigation systems and tend to crops. The result has been that many people in these
+regions have turned to outside supplies of rice and other foods.
+In Arctic and desert societies, year-round survival has traditionally depended on hunting
+animals and fish and collecting fruit over a relatively short season. However, as some
+inhabitants become Involved in tourism, they no longer have time to collect wild food; this
+has led to increasing dependence on bought food and stores. Tourism is not always the
+culprit behind such changes. All kinds of wage labour, or government handouts, tend to
+undermine traditional survival systems. Whatever the cause, the dilemma is always the
+same: what happens If these new, external sources of income dry up?
+The physical impact of visitors is another serious problem associated with the growth In
+adventure tourism. Much attention has focused on erosion along major trails, but perhaps
+more important are the deforestation and impacts on water supplies arising from the need
+to provide tourists with cooked food and hot showers. In both mountains and deserts, slow-
+growing trees are often the main sources of fuel and water supplies may be limited or
+ 1
+vulnerable to degradation through heavy use.
+C
+Stories about the problems of tourism have become legion in the last few years. Yet it does
+not have to be a problem. Although tourism inevitably affects the region in which it takes
+place, the costs to these fragile environments and their local cultures can be minimized.
+Indeed, it can even be a vehicle for reinvigorating local cultures, as has happened with the
+Sherpas of Nepal’s Khumbu Valley and in some Alpine villages. And a growing number of
+adventure tourism operators are trying to ensure that their activities benefit the local
+population and environment over the long term.
+In the Swiss Alps, communities have decided that their future depends on integrating
+tourism more effectively with the local economy. Local concern about the rising number of
+second home developments in the Swiss Pays d'Enhaut resulted in limits being imposed
+on their growth. There has also been a renaissance in communal cheese production In the
+area, providing the locals with a reliable source of income that does not depend on outside
+visitors.
+Many of the Arctic tourist destinations have been exploited by outside companies, who
+employ transient workers and repatriate most of the profits to their home base. But some
+Arctic communities are now operating tour businesses themselves, thereby ensuring that
+the benefits accrue locally. For instance, a native corporation in Alaska, employing local
+people. Is running an air tour from Anchorage to Kotzebue, where tourists eat Arctic food,
+walk on the tundra and watch local musicians and dancers.
+Native people In the desert regions of the American Southwest have followed similar
+strategies, encouraging tourists to visit their pueblos and reservations to purchase high-
+quality handicrafts and artwork. The Acoma and San lldefonso pueblos have established
+highly profitable pottery businesses, while the Navajo and Hopi groups have been similarly
+successful with jewellery.
+ Too many people living in fragile environments have lost control over their economies, their
+culture and their environment when tourism has penetrated their homelands. Merely
+restricting tourism cannot be the solution to the imbalance, because people's desire to see
+new places will not just disappear. Instead, communities in fragile environments must
+achieve greater control over tourism ventures in their regions, in order to balance their
+needs and aspirations with the demands of tourism. A growing number of communities are
+demonstrating that, with firm communal decision-making, this is possible. The critical
+question now is whether this can become the norm, rather than the exception.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-3
+Reading Passage has three sections, A-C.
+Choose the correct heading for each section from the list of headings below.
+Write the correct number i-viin boxes1-3on your answer sheet.
+ List of Headings
+iThe expansion of international tourism in recent years
+iiHow local communities can balance their own needs with the demands of wilderness tourism
+iiiFragile regions and the reasons for the expansion of tourism there
+ivTraditional methods of food-supply in fragile regions
+vSome of the disruptive effects of wilderness tourism
+vi
+ The economic benefits of mass tourism
  
-YES if the statement agrees with the claims of the writer
-NO if the statement contradicts the claims of the writer
+ 
+ 
+  1..................... Section A
+2..................... Section B
+3..................... Section C
+ 
+ 
+ Questions 4-9
+Do the following statements reflect the opinion of the writer of Reading Passage?
+In boxes4-9on your answer sheet, write
+ YESif the statement reflects the opinion of the writer
+NOif the statement contradicts the opinion of the writer
 NOT GIVEN if it is impossible to say what the writer thinks about this
+4..................... The low financial cost of selling up wilderness tourism makes it attractive to
+many countries.
+5..................... Deserts, mountains and Arctic regions are examples of environments that
+are both ecologically and culturally fragile.
+6..................... Wilderness tourism operates throughout the year in fragile areas.
+ 3
  
-9..................... Any street child can set up their own small business if given enough
-support.
-10..................... In some cases, the families of street children may need financial support
-from S.K.I.
-11..................... Only one fixed loan should be given to each child.
-12..................... The children have to pay back slightly more money than they borrowed.
- 5</p>
-<p>Questions 13
-Choose the correct letter, A, B, C or D.
-Write your answer in box 13 on your answer sheet.
-The writers conclude that money should only be lent to street children
-A as part of a wider program of aid.
-B for programs that are not too ambitious.
-C when programs are supported by local businesses.
-D if the projects planned are realistic and useful.
- 6</p>
-<p>2. D
- 
-3. C
- 
-8. life
-skills
-9. NO
-10.
-NOT
-GIVE</p>
-<p>11.4. C NO
   
-12.
+ 7..................... The spread of tourism in certain hill-regions has resulted in a fall in the
+amount of food produced locally.
+8..................... Traditional food-gathering in desert societies was distributed evenly over the
+year.
+9..................... Government handouts do more damage than tourism does to traditional
+patterns of food-gathering.
+Questions 10-13
+Complete the table below.
+ChooseONE WORD from Reading Passage for each answer.
+Write your answers in boxes 10-13 on your answer sheet.
+The positive ways In which some local communities have
+responded to tourism
+People/Location Activity
+Swiss Pays d'Enhaut
+Arctic communities
+Acoma and San lldefonso 
+ Revived production of 10
+Navajo and Hopi.....................
+ Operate11..................... businesses
+ Produce and sell 12.....................
+Produce and sell 13.....................
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.iii
+2.v
+3.ii
+4.YES
+5.YES
+6.NO
+7.8.NO
+9.NOT GIVEN
+10.cheese
+11.tourism/tourist/tour
+12.pottery
+13.jewellery/jewelry
 YES
- 
-5. Sudan and India IN EITHER
-ORDER, BOTH REQUIRED FOR
-ONE MARK
-6. bicycles
-7. Shoe Shine// Shoe Shine
-13. A
-Collective
- 7</p>
-<p>Migratory Beekeeping
-Taking Wing
-To eke out a full-time living from their honeybees, about half the nation’s 2,000
-commercial beekeepers pull up stakes each spring, migrating north to find more
-flowers for their bees. Besides turning floral nectar into honey, these hardworking
-insects also pollinate crops for farmers -for a fee. As autumn approaches, the
-beekeepers pack up their hives and go south, scrambling for pollination contracts in
-hot spots like California’s fertile Central Valley.
-Of the 2,000 commercial beekeepers in the United States about half migrate This pays off
-in two ways Moving north in the summer and south in the winter lets bees work a longer
-blooming season, making more honey — and money — for their keepers. Second,
-beekeepers can carry their hives to farmers who need bees to pollinate their crops. Every
-spring a migratory beekeeper in California may move up to 160 million bees to flowering
-fields in Minnesota and every winter his family may haul the hives back to California, where
-farmers will rent the bees to pollinate almond and cherry trees.
-Migratory beekeeping is nothing new. The ancient Egyptians moved clay hives, probably
-on rafts, down the Nile to follow the bloom and nectar flow as it moved toward Cairo. In the
-1880s North American beekeepers experimented with the same idea, moving bees on
-barges along the Mississippi and on waterways in Florida, but their lighter, wooden hives
-kept falling into the water. Other keepers tried the railroad and horse- drawn wagons, but
-that didn’t prove practical. Not until the 1920s when cars and trucks became affordable and
-roads improved, did migratory beekeeping begin to catch on.
-For the Californian beekeeper, the pollination season begins in February. At this time, the
-beehives are in particular demand by farmers who have almond groves; they need two
-hives an acre. For the three-week long bloom, beekeepers can hire out their hives for $32
-each. It’s a bonanza for the bees too. Most people consider almond honey too bitter to eat
-so the bees get to keep it for themselves.
-By early March it is time to move the bees. It can take up to seven nights to pack the 4,000
-or so hives that a beekeeper may own. These are not moved in the middle of the day
-because too many of the bees would end up homeless. But at night, the hives are stacked
-onto wooden pallets, back-to-back in sets of four, and lifted onto a truck. It is not necessary
-to wear gloves or a beekeeper’s veil because the hives are not being opened and the bees
-should remain relatively quiet. Just in case some are still lively, bees can be pacified with a
-few puffs of smoke blown into each hive’s narrow entrance.
-In their new location, the beekeeper will pay the farmer to allow his bees to feed in such
-places as orange groves. The honey produced here is fragrant and sweet and can be sold
-by the beekeepers. To encourage the bees to produce as much honey as possible during
-this period, the beekeepers open the hives and stack extra boxes called supers on top.
-These temporary hive extensions contain frames of empty comb for the bees to fill with
-honey. In the brood chamber below, the bees will stash honey to eat later. To prevent the
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 5</div>
+</div>
+</div>
 </body>
 </html>

@@ -1,369 +1,168 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Going Nowhere Fast - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Is Aid Hurting Africa - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题221/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Going Nowhere Fast</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-2
-What is significant about the ‘dark soil’ that the writer is referring to?
-You will need to select more than one response.
-A It indicates the presence of good soil below it..
-B It is not present in rainforests.
-C It has resulted from agricultural activity.
-D It is more common in South America than Africa.
-E It is being found near where humans have lived.
-F It has confirmed what people have believed for a long time.
-G It is less productive than people once thought..
- 2</p>
-<p>Solution:
- 1. C, E IN ANY
-ORDER
-2. C, E IN ANY
-ORDER
- 3</p>
-<p>Reading Practice
- Deafhood</p>
-<p>At this point, you might be wondering: what does ‘deafhood’ mean? Is it a synonym for
-‘deafness’? Is it a slightly more politically correct term to express the very same concept
-you’ve grown accustomed to-a person who lacks the power of hearing, or a person whose
-hearing is impaired? What’s wrong with terms like ‘hard of hearing’ or ‘deafness’? Have
-they not represented the deaf community just fine for the past few centuries? Who came up
-with the term ‘Deafhood’ anyway, and why?</p>
-<p>The term ‘Deafhood’ was first coined in 1993 by Dr Paddy Ladd, a deaf scholar in the Deaf
-Studies Department at the University of Bristol in England. First explored through his
-doctoral dissertation in 1998, and later elaborated on in his 2003 book, ‘Understanding
-Deaf Culture – In Search of Deafhood‘, the idea behind Deafhood is twofold: first, it seeks
-to collect everything that is already known about the life, culture, politics, etc. of Sign
-Language Peoples (SLPs); secondly, it attempts to remove the limitations imposed on
-SLPs through their colonization from hearing people.</p>
-<p>In order to understand what Deafhood represents, it’s first important to understand what is
-meant by colonisation. To do that, we need to examine two terms: Oralism and Audism.
-Oralism is a philosophy that first emerged in the late 19th century, and which suggests that
-reduced use of sign language would be more beneficial to SLPs, as it would allow them to
-integrate better to the hearing world. In that respect, sign language is dismissively regarded
-as a mere obstacle to listening skills and acquisition of speech-treated, in effect, in the
-same manner as the languages of other peoples who were oppressed and colonised, e.g.
-the Maori in New Zealand, or the Aborigines in Australia. Audism, however, is an even
-more sinister ideology: first coined in 1975 by Dr Tom Humphries of the University of
-California in San Diego, it describes the belief that deaf people are somehow inferior to
-hearing people, and that deafhood – or, in this case, we should say ‘deafness’ – is a flaw, a
-terrible disability that needs to be eliminated. It is the effect of these two ideologies that
-Deafhood seeks to counter, by presenting SLPs in a positive light, not as patients who
-require treatment.</p>
-<p>But even if we understand the oppression that SLPs have suffered at the hands of hearing
-people since the late 1800s, and even if we acknowledge that ‘deafness’ is a medical term
-with negative connotations that need to be replaced, that doesn’t mean it’s easy to explain
-what the term Deafhood represents exactly. This is because Deafhood is, as Dr Donald
-Grushkin puts it, a ‘physical, emotional, mental, spiritual, cultural and linguistic’ journey that
-every deaf person is invited-but not obligated-to embark on.</p>
-<p>Deafhood is essentially a search for understanding: what does being ‘Deaf’ mean? How did
-deaf people in the past define themselves, and what did they believe to be their reasons for
- 1</p>
-<p>existing before Audism was conceived? Why are some people born deaf? Are they
-biologically defective, or are there more positive reasons for their existence? What do
-terms like ‘Deaf Art’ or ‘Deaf Culture’ actually mean? What is ‘the Deaf Way’ or doing
-things? True Deafhood is achieved when a deaf person feels comfortable with who they
-are and connected to the rest of the deaf community through use of their natural language,
-but the journey there might differ.</p>
-<p>Aside from all those questions, however, Deafhood also seeks to counter the eect of what
-is known as ‘neo-eugenics’. Neo-eugenics, as described by Patrick Boudreault at the 2005
-California Association of the Deaf Conference, is a modern manifestation of what has
-traditionally been defined as ‘eugenics’, i.e. an attempt to eradicate any human
-characteristics which are perceived as negative. Deaf people have previously been a target
-of eugenicists through the aforementioned ideologies of Audism and Oralism, but recent
-developments in science and society-such as cochlear implants or genetic engineeringmean that Deafhood is once again under threat, and needs to be protected. The only way
-to do this is by celebrating the community’s history, language, and countless contributions
-to the world, and confronting those who want to see it gone.</p>
-<p>So, how do we go forward? We should start by decolonising SLPs-by embracing Deafhood
-for what it is, removing all the negative connotations that surround it and accepting that
-deaf people are neither broken nor incomplete. This is a task not just for hearing people,
-but for deaf people as well, who have for decades internalised society’s unfavourable views
-of them. We should also seek recognition of the deaf community’s accomplishments, as
-well as official recognition of sign languages around the world by their respective
-governments. Effectively, what we should do is ask ourselves: how would the Deaf
-community be like, had it never been colonised by the mainstream world? And whatever it
-is it would be like, we should all together-hearing and Deaf alike-strive to achieve it.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Is Aid Hurting Africa</h1>
+<p>雅思阅读真题 · 第162篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>IS AID HURTING AFRICA?
+Despite its population of more than one billion and its rich land and natural resources, the
+continent of Africa remains poor. The combined economies of its 54 states equal that of
+one European country: the Netherlands.
+It is difficult to speak of Africa as a unit as its states differ from each other in culture,
+climate, size, and political system. Since mid-20th-century independence, many African
+states have pursued different economic policies. Yet, none of them has overcome poverty.
+Why might this be?
+One theory says Africa is unlucky. Sparsely populated with diverse language and culture, it
+contains numerous landlocked countries, and it is far from international markets. Dambisa
+Moyo, a Zambian-born economist, has another theory. In her 2009 book, Dead Aid, she
+proposes that international aid is largely to blame for African poverty because it has
+encouraged dependence and corruption, and has diverted talented people from the
+business. One of her statistics is that from 1970-98, when aid to Africa was highest, poverty
+rose from eleven to 66%. If aid were cut, she believes Africans would utilise their resources
+more creatively. 
+When a state lacks the capacity to care for its people, international non-governmental
+organisations (NGOs), like Oxfam or the Red Cross, assume this role. While NGOs
+distribute food or medical supplies, Moyo argues they reduce the ability of the state to
+provide. Furthermore, during this process, those in government and the military siphon off
+aid goods and money themselves. Transparency International, an organisation that surveys
+corruption, rates the majority of African states poorly.
+Moyo provides another example. Maybe a Hollywood star donates American-made
+mosquito nets. Certainly, this benefits malaria-prone areas, but it also draws business
+away from local African traders who supply nets. More consultation is needed between do-
+gooder foreigners and local communities.
+Moyo also suggests African nations increase their wealth by investment in bonds, or by
+increased co-operation with China.
+ The presidents of Rwanda and Senegal are strong supporters of Moyo, but critics say her
+theories are simplistic. The international aid community is not responsible for geography,
+nor has it anything to do with the military takeover, corruption, or legislation that hampers
+trade. Africans have had half a century of self-government and economic control, yet, as
+the population of the continent doubled, its GDP has risen only 60%. In the same period,
+Malaysia and Vietnam threw off colonialism and surged ahead economically by investing in
+education, health, and infrastructure; by lowering taxes on international trade; and, by
+being fortunate to be surrounded by other successful nations.
+The economist Paul Collier has speculated that if aid were cut, African governments would
+not find alternative sources of income, nor would they reduce corruption. Another
+economist, Jeffrey Sachs, has calculated that twice the amount of aid currently given is
+needed to prevent suffering on a grand scale.
+ 1
+In Dead Aid, Moyo presents her case through a fictitious country called ‘Dongo’, but
+nowhere does she provide examples of real aid organisations causing actual problems. Her
+approach may be entertaining, but it is hardly academic.
+Other scholars point out that Africa is dominated by tribal societies with military-government
+elites. Joining the army, rather than doing business, was the easiest route to personal
+wealth and power. Unsurprisingly, military takeovers have occurred in almost every African
+country. In the 1960s and 70s, European colonials were replaced by African ‘colonials’ –
+African generals and their families. Meantime, the very small, educated bourgeoisie has
+moved abroad. All over Africa, strongmen leaders have ruled for a long time, or one
+unstable military regime has succeeded another. As a result, business, separate from the
+military government is rare, and international investment limited.
+Post-secondary education rates are low in Africa. Communications and transportation
+remain basic although mobile phones are having an impact. The distances farmers must
+travel to market are vast due to poor roads. High cross-border taxes and long bureaucratic
+delays are par for the course. African rural populations exceed those elsewhere in the
+world. Without a decent infrastructure or an educated urbanised workforce, a business
+cannot prosper. Recent World Bank statistics show that in southern Africa, the number of
+companies using the internet for business is 20% as opposed to 40% in South America or
+80% in the US. There are 37 days each year without water whereas there is less than one
+day in Europe. The average cost of sending one container to the US is $7600, but only
+$3900 from East Asia or the Pacific. All these problems are the result of poor state
+planning. 
+Great ethnic and linguistic diversity within African countries has led to tribal favouritism.
+Governments are often controlled by one tribe or allied tribes; civil war is usually tribal. It is
+estimated each civil war costs a country roughly $64 billion. Southern Africa had 34 such
+conflicts from 1940-2000 while South Asia, the next-affected region, had only 24 in the
+same period. To this day, a number of bloody conflicts continue.
+Other opponents of Moyo add that her focus on market investment and more business with
+China is shortsighted. The 2008 financial crisis meant that countries with market
+investments lost money. Secondly, China’s real intentions in Africa are unknown, but
+everyone can see China is buying up African farmland and securing cheap oil supplies.
+All over Africa, there are untapped resources, but distance, diversity, and low population
+density contribute to poverty. Where there is no TV, infrequent electricity, and bad roads,
+there still seems to be money for automatic weapons just the right size for 12-year-old boys
+to use. Blaming the West for assisting with aid fails to address the issues of continuous
+conflict, ineffective government, and little infrastructure. Nor does it prevent terrible
+suffering.
+Has aid caused problems for Africa, or is Africa’s strife of its own making or due to
+geography? Whatever you think, Dambisa Moyo’s book has generated lively discussion,
+which is fruitful for Africa.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-11
+Complete the chart on the following page.
+Choose ONE WORD OR A NUMBER  from the passage for each answer.
+(image Q28-38)
+1.....................
+2.....................
+3.....................
+4.....................
+5.....................
+6.....................
+7.....................
+8.....................
+9.....................
+10.....................
+11.....................1
+Questions 12-13
+Choose TWO letters: A-E.
+Which of the statements does the writer of Passage support?
+A   Moyo is right that international aid is causing Africa’s problems. 
+B   Moyo has ignored the role of geography in Africa.
+C   Convincing evidence is lacking in Moyo’s theory.
+D   Most political leaders in Africa agree with Moyo’s analysis.
+E   Useful discussion about Africa has resulted from Moyo’s book.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.land
+2.poor
+3.aid
+4.business
+5.communities
+6.China
+7.8.investment
+9.education
+10.34
+11.suffering
+12.C
+13.E
+geography
+ 4</div>
+</div>
+</div>
 </body>
 </html>

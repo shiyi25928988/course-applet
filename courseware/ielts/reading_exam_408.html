@@ -1,356 +1,183 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Nature And Aims Of Archaelogy - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Undoing Our Emotions - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题545/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Nature And Aims Of Archaelogy</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>significant effect on their hunting prowess in later life.</p>
-<p>Earlier this year, Sergio Pellis of Lethbridge University, Canada, reported that there is a
-strong positive link between brain size and playfulness among mammals in general.
-Comparing measurements for fifteen orders of mammal, he and his team found larger
-brains (for a given body size) are linked to greater playfulness. The converse was also
-found to be true. Robert Barton of Durham University believes that, because large brains
-are more sensitive to developmental stimuli than smaller brains, they require more play to
-help mould them for adulthood. ‘I concluded it’s to do with learning, and with the
-importance of environmental data to the brain during development,’ he says.</p>
-<p>According to Byers, the timing of the playful stage in young animals provides an important
-clue to what’s going on. If you plot the amount of time a juvenile devotes to play each day
-over the course of its development, you discover a pattern typically associated with a
-‘sensitive period’ - a brief development window during which the brain can actually be
-modified in ways that are not possible earlier or later in life. Think of the relative ease with
-which young children - but not infants or adults - absorb language. Other researchers have
-found that play in cats, rats and mice is at its most intense just as this ‘window of
-opportunity’ reaches its peak.</p>
-<p>‘People have not paid enough attention to the amount of the brain activated by play,’ says
-Marc Bekoff from Colorado University. Bekoff studied coyote pups at play and found that
-the kind of behaviour involved was markedly more variable and unpredictable than that of
-adults. Such behaviour activates many different parts of the brain, he reasons. Bekoff
-likens it to a behavioural kaleidoscope, with animals at play jumping rapidly between
-activities. ‘They use behaviour from a lot of different contexts - predation, aggression,
-reproduction,’ he says. ‘Their developing brain is getting all sorts of stimulation.’</p>
-<p>Not only is more of the brain involved in play than was suspected, but it also seems to
-activate higher cognitive processes. ‘There’s enormous cognitive involvement in play,’ says
-Bekoff. He points out that play often involves complex assessments of playmates, ideas of
-reciprocity and the use of specialised signals and rules. He believes that play creates a
-brain that has greater behavioural flexibility and improved potential for learning later in life.
-The idea is backed up by the work of Stephen Siviy of Gettysburg College. Siviy studied
-how bouts of play affected the brain’s levels of a particular chemical associated with the
-stimulation and growth of nerve cells. He was surprised by the extent of the activation.
-‘Play just lights everything up,’ he says. By allowing link-ups between brain areas that
-might not normally communicate with each other, play may enhance creativity.</p>
-<p>What might further experimentation suggest about the way children are raised in many
-societies today? We already know that rat pups denied the chance to play grow smaller
-brain components and fail to develop the ability to apply social rules when they interact with
-their peers. With schooling beginning earlier and becoming increasingly exam-orientated,
- 2</p>
-<p>play is likely to get even less of a look-in. Who knows what the result of that will be?
- 3</p>
-<p>Questions 1-6
-Reading Passage has nine paragraphs labelled A-I.
-Which paragraph contains the following information?
-Write the correct letter A-I in boxes 1-6 on your answer sheet.
-NB You may use any letter more than once.</p>
-<p>1..................... the way play causes unusual connections in the brain which are beneficial
-2..................... insights from recording how much time young animals spend playing
-3..................... a description of the physical hazards that can accompany play
-4..................... a description of the mental activities which are exercised and developed
-during play
-5..................... the possible effects that a reduction in play opportunities will have on
-humans
-6..................... the classes of animals for which play is important
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Undoing Our Emotions</h1>
+<p>雅思阅读真题 · 第408篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>UNDOING OUR EMOTIONS
+ A.   Three generations ago, 180 young women wrote essays describing why they wanted to
+join a convent (a religious community of nuns). Years later, a team of psychological
+researchers came across these autobiographies in the convent’s archives. The researchers
+were seeking material to confirm earlier studies hinting at a link between having a good
+vocabulary in youth and a low risk of Alzheimer’s disease in old age. What they found was
+even more amazing.  The researchers found that, although the young women were in their
+early twenties when they wrote their essays, the emotions expressed in these writings were
+predictive of how long they would live: those with upbeat autobiographies lived more than
+ten years longer than those whose language was more neutral. Deborah Danner, a
+psychologist at the University of Kentucky who spearheaded the study, noted that the
+results were particularly striking because all members of the convent lived similar lifestyles,
+eliminating many variables that normally make it difficult to interpret longevity studies. It
+was a phenomenal finding’, she says. ‘A researcher gets a finding like that maybe once in a
+lifetime.’ However, she points out that no one has been able to determine why positive
+emotions might have such life-extending effects.
+ B.   Barbara Fredrickson, Professor of Psychology at the University of Michigan, believes
+that part of the answer is the ‘undo effect’. According to this theory, positive emotions help
+you live longer by shutting down the effects of negative ones. Fredrickson’s theory begins
+with the observation that negative emotions, like fear and stress, enhance our flight-or-fight
+response to very real threats. However, even when the emergency is gone, negative
+emotions produce lingering effects. Brooks Gump, a stress researcher at the State
+University of New York, explains that one of these effects is excessive cardiovascular
+reactivity. Behaviourally, Gump says, this reactivity is related to excessive vigilance: the
+state of being constantly on guard for potential dangers. Not only is it physically draining to
+live in a perpetual state of high vigilance, but high cardiovascular reactivity could be linked
+to increased chances of a heart attack.
+ C.    Fredrickson believes positive emotions work their magic by producing a rapid
+unwinding of pent-up tension, restoring the system to normal. People who quickly bounce
+back from stress often speed the process by harnessing such emotions as amusement,
+interest, excitement, and happiness, she says. To test her theory, Fredrickson told a group
+of student volunteers that they had only a few minutes to prepare a speech that would be
+critiqued by experts. After letting the students get nervous about that, Fredrickson then told
+them they wouldn’t actually have to deliver their speeches. She monitored heart rates and
+blood pressure. Not surprisingly, all students got nervous about their speeches, but those
+who viewed the experiment with good-humored excitement saw their heart rates return to
+normal much more quickly than those who were angry about being fooled. In a second
+experiment, Fredrickson reported that even those who normally were slow to bounce back
+could be coached to recover more quickly by being told to view the experiment as a
+challenge, rather than a threat.
+ 1
+ D.    Fredrickson believes that positive emotions make people more flexible and creative.
+Negative emotions, she says, give a heightened sense of detail that makes us
+hypersensitive to minute clues related to the source of a threat. But that also produces
+‘tunnel vision’ in which we ignore anything unrelated to the danger. Fredrickson speculated
+that just as positive emotions can undo the cardiovascular effects of negative ones, they
+may also reverse the attention-narrowing effects of negative feelings: broadening our
+perspectives.
+ E.    To verify her theory, Fredrickson showed a group of students some film clips- some
+saw frightening clips, some saw humorous ones or peaceful ones. They then did a
+matching test in which they were shown a simple drawing and asked which of two other
+drawings it most resembled. The drawings were designed so that people would tend to give
+one answer if they focused on details, and another answer if they focused on the big
+picture. The results confirmed Fredrickson’s suspicion that positive emotions affect our
+perceptions. Students who had seen the humorous or peaceful clips were more likely to
+match objects according to broad impressions.
+ F.   This fits with the role that positive emotions might have played in early human tribes,
+Fredrickson says. Negative emotions provided focus, which was important for surviving in
+life-or-death situations, but the ability to feel positive emotions was of long-term value
+because it opened the mind to new ideas. Humour is a good example of this. She says:
+‘The emotions are transient, but the resources are durable. If you building a friendship
+through being playful, that friendship is a lasting resource.’ So while the good feelings may
+pass, the friendship remains. On an individual level, Fredrickson’s theory also says that
+taking time to do things that make you feel happy isn’t simply self-indulgent. Not only are
+these emotions good for the individual, but they are also good for society.
+G.  Other researchers are intrigued by Fredrickson’s findings. Susan Folkman, of the
+University of California, has spent two decades studying how people cope with long-term
+stresses such as bereavement, or caring for a chronically ill child. Contrary to what one
+might expect, she says, these people frequently experience positive emotions. ‘These
+emotions aren’t there by accident’, she adds. ‘Mother Nature doesn’t work that way, I think
+that they give a person time out from the intense stress to restore their resources and keep
+going. This is very consistent with Fredrickson’s work.’
+ 2
+ QUESTIONS 1-6
+Reading Passage has seven sections,  A-G.
+Which section contains the following information?
+Write the correct letter,  A-G, in boxes 1-6 on your answer sheet.
+NB    You may use any letter more than once.
+1.....................  a conclusion that it is possible to train people to deal with anxiety
+conclusive evidence that lifespan can be influenced by emotions.
+2.....................  an explanation of the way negative emotions affect what people
+concentrate on
+3.....................  an experiment that showed how a positive outlook can help people adjust
+to
+4.....................  a stressful situation faster than others
+5.....................  a discovery beyond what researchers were investigating
+6.....................  an experiment where the nature of a material seen by participants affected
+the way they performed a task
+ QUESTIONS 7-10
+ook at the following statements (</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 7-10) and the list of researchers below.
+Match each statement with the correct researcher,  A-D.
+Write the correct letter,  A-D, in boxes 7-10 on your answer sheet.
+ NB    You may use any letter more than once.
+                                      List of Researchers
+                  A       Deborah Danner
+                   
+                    B       Barbara Fredrickson
+C       Brooks Gump
+D       Susan Folkman
+7.....................  People whose daily lives are stressful often have surprisingly positive
+emotions.
+8.....................  The body’s reaction to a crisis may trigger a life-threatening event.
+ 3
+9.....................  It is unusual to have a study group whose circumstances were very alike.
+10.....................  The reasons for a link between positive emotions and a longer life have
+not been established.
  
-Questions 7-9
-Choose THREE letters A-F.
-Write your answers in boxes 1-9 on your answer sheet.
-The list below gives some ways of regarding play.
-Which THREE ways are mentioned by the writer of the text?</p>
-<p>A a rehearsal for later adult activities
-B a method animals use to prove themselves to their peer group
-C an activity intended to build up strength for adulthood
-D a means of communicating feelings
-E a defensive strategy
-F an activity assisting organ growth
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ QUESTIONS 11-13
+Complete the sentences below.
+Choose ONE WORD ONLY  from the passage for each answer.
+Write your answers in boxes 11-13 on your answer sheet.
+-11. In early tribes, negative emotions gave humans the 11..................... that they
+needed to deal with emergencies.
+-12. Fredrickson believes that a passing positive emotion can lead to an enduring asset
+such as a 12....................., which is useful in times to come.
+-13. Fredrickson also believes that both individuals and 13..................... benefit from
+positive emotions.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.C
+2.A
+3.D
+4.C
+5.A
+6.E
+7.8.C
+9.A
+10.A
+11.FOCUS
+12.FRIENDSHIP
+13.SOCIETY
+D
+ 5</div>
+</div>
+</div>
 </body>
 </html>

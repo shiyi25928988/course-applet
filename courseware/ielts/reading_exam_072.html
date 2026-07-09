@@ -1,358 +1,158 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Wonder Plant - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Childrens Thinking - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题103/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 A Wonder Plant</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>identical, the unbelievers changed their minds. In addition, it is well known that Turner
-always worked alone and had no assistants. This reduces the chances of accidental
-contribution substantially. The painting, originally bought for a few hundred dollars, finally
-sold for close to $200,000 at auction at Phillips in London in 1995.
-{F} In 1998, three envelopes containing old correspondence had been purchased in an
-antique shop. One of the envelopes postmarked April 2, 1915, was found to contain a
-drawing folded in half. The drawing depicts a woman’s head. It is executed in red chalk with
-an inscription written in reverse with brown ink. The design is faded and worn. Some spots
-suggest foxing and subsequent discolouration. The paper is yellowed and contaminated.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Childrens Thinking</h1>
+<p>雅思阅读真题 · 第72篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Children's thinking
+One of the most eminent of psychologists, Clark Hull, claimed that the essence of
+reasoning lies in the putting together of two 'behaviour segments' in some novel way, never
+actually performed before, so as to reach a goal.
+Two followers of Clark Hull, Howard and Tracey Kendler, devised a test for children that
+was explicitly based on Clark Hull's principles. The children were given the task of learning
+to operate a machine so as to get a toy. In order to succeed they had to go through a two-
+stage sequence. The children were trained on each stage separately. The stages consisted
+merely of pressing the correct one of two buttons to get a marble; and of inserting the
+marble into a small hole to release the toy.
+The Kendlers found that the children could learn the separate bits readily enough. Given
+the task of getting a marble by pressing the button they could get the marble; given the task
+of getting a toy when a marble was handed to them, they could use the marble. (All they
+had to do was put it in a hole.) But they did not for the most part 'integrate', to use the
+Kendlers' terminology. They did not press the button to get the marble and then proceed
+without further help to use the marble to get the toy. So the Kendlers concluded that they
+were incapable of deductive reasoning.
+The mystery at first appears to deepen when we learn, from another psychologist, Michael
+Cole, and his colleagues, that adults in an African culture apparently cannot do the
+Kendlers' task either. But it lessens, on the other hand, when we learn that a task was
+devised which was strictly analogous to the Kendlers' one but much easier for the African
+males to handle.
+Instead of the button-pressing machine, Cole used a locked box and two differently
+coloured match-boxes, one of which contained a key that would open the box. Notice that
+there are still two behaviour segments — 'open the right match-box to get the key' and 'use
+the key to open the box' - so the task seems formally to be the same. But psychologically it
+is quite different. Now the subject is dealing not with a strange machine but with familiar
+meaningful objects; and it is clear to him what he is meant to do. It then turns out that the
+difficulty of 'integration' is greatly reduced.
+Recent work by Simon Hewson is of great interest here for it shows that, for young
+children, too, the difficulty lies not in the inferential processes which the task demands, but
+in certain perplexing features of the apparatus and the procedure. When these are
+changed in ways which do not at all affect the inferential nature of the problem, then five-
+year-old children solve the problem as well as college students did in the Kendlers' own
+experiments.
+Hewson made two crucial changes. First, he replaced the button-pressing mechanism in
+the side panels by drawers in these panels which the child could open and shut. This took
+away the mystery from the first stage of training. Then he helped the child to understand
+that there was no 'magic' about the specific marble which, during the second stage of
+training, the experimenter handed to him so that he could pop it in the hole and get the
+reward.
+A child understands nothing, after all, about how a marble put into a hole can open a little
+ 1
+door. How is he to know that any other marble of similar size will do just as well? Yet he
+must assume that if he is to solve the problem. Hewson made the functional equivalence of
+different marbles clear by playing a 'swapping game' with the children. The two
+modifications together produced a jump in success rates from 30 per cent to 90 per cent for
+five-year-olds and from 35 per cent to 72.5 per cent for four-year-olds. For three-year- olds,
+for reasons that are still in need of clarification, no improvement—rather a slight drop in
+performance - resulted from the change.
+We may conclude, then, that children experience very real difficulty when faced with the
+Kendler apparatus; but this difficulty cannot be taken as proof that they are incapable of
+deductive reasoning.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-8
+Classify the following descriptions as a referring 
  
-{G} The newly discovered design bears great similarity to that of the Head of St Anne by
-Leonardo da Vinci, (RL 12533) in the Windsor Collection since 1629. The medium is
-different, red chalk being used instead of black. The scale of the two images is different so
-offsetting (copying by contact transference) is not a satisfactory explanation for the new
-drawing. When the paper was first examined, several fingerprints were noticed on the
-verso. One of them was found clear and containing many ridges suitable for comparison,
-however, no analysis was done at the time due to the lack of reference material. Many of
-Leonardo’s works are not easily accessible and fingerprint data either does not exist or is
-not published.
-{H} By chance, on March 30, 1999, several clear and usable fingerprints were found on an
-unusually good detail photo in a publication on Leonardo. The photograph of Leonardo’s St
-Jerome, in the Vatican Museum, revealed no less than 16 partial fingertip marks. The
-importance of this is that the fingerprints are left in the still-wet paint and without doubt, the
-use of the fingertip served to model paint. Since the authorship of the painting of St Jerome
-is unquestioned by scholarship and has always been ascribed to Leonardo, the conclusion
-that these fingerprints are his would be hard to argue against.
+    
+  Clark Hull                             CH
+Howard and Tracy Kendler     HTK
+Micheal Cole and colleagues   MC
+Simon Hewson                      SH
+ Write the appropriate letters in boxes 1-8on your answer sheet.
+NBYou may use any answer more than once .
+  1..................... is cited as famous in the field of psychology.
+2..................... demonstrated that the two-stage experiment involving button-pressing and
+inserting a marble into a hole poses problems for certain adults as well as children.
+3..................... devised an experiment that investigated deductive reasoning without the
+use of any marbles.
+4..................... appears to have proved that a change in the apparatus dramatically
+improves the performance of children of certain ages.
+5..................... used a machine to measure inductive reasoning that replaced button-
+pressing with drawer-opening.
+6..................... experimented with things that the subjects might have been expected to
+encounter in everyday life, rather than with a machine.
+7..................... compared the performance of five-year-olds with college students, using the
+same apparatus with both sets of subjects.
+8..................... is cited as having demonstrated that earlier experiments into children's
+ability to reason deductively may have led to the wrong conclusions.
+ Questions 9-13
+Do the following statements agree with the information given in Reading Passage?
+In boxes9-13on your answer sheet write
+YES    if the statement agrees with the information
+NO    if the statement contradicts the information
+NOT GIVEN if there is no information on this in the passage  
+ 3
  
-{I} The fingerprints on the St Jerome illustration were scanned and enlarged so
-comparisons could be made with the fingerprint on the newly discovered drawing. One of
-them proved to match. The result of our analyses was presented on March 31, 1999, to
-fingerprint examiner Staff Sergeant André Turcotte for an independent assessment. He
-agreed with the findings and confirmed the conclusion. The fingerprint on the St Jerome
-painting in the Vatican and the newly discovered drawing were created by the same finger.
-{J] Remember, the authentication approach should rest on strict considerations and
-rigorous methodology. Only prints that are clearly from the original creative process are
-admitted for consideration. The reference samples should ideally come from unquestioned
-works of art with good provenance. Spurious contributors must be eliminated such as
-assistants who may have touched the painting while still wet. A match is never made
-unless corroborated by at least one fully trained and experienced fingerprint examiner.
- 2</p>
-<p>Questions 1-4
-The reading Passage has ten paragraphs A-J. 
-Which paragraph contains the following information?
- Write the correct letter A-J, in boxes 1-4 on your answer sheet.
-1..................... Mention of fingerprint identification in the legal process.  
-2..................... The author’s advice on fingerprint authentication of arts.
-3..................... The use of fingerprints in ancient times.  
-4..................... The medium comparison between two drawings.
- 
-Questions 5-9
-Complete each sentence with the correct ending A-I below. 
-Write the correct letters in boxes 5-9 on your answer sheet.
-5..................... The fingerprint in ancient pottery
-6..................... The science of fingerprint identification
-7..................... The authentication of a painting without a signature
-8..................... Landscape with Rainbow
-9..................... When painting, artists
-(A) might use fingers to remove unwanted paint left by brushes.  
-(B) revealed the utilization of clay. 
-(C) was first used on Galton’s mathematical assumption. 
-(D) was left to identify the person who made it. 
-(E) was restored at a high expense. 
-(F) was finally determined at an appropriate price.
-(G) has been accepted as a reliable system available. 
-(H)  was preserved at the Windsor Collection.
-(I) could be authenticated by comparing fingerprints from other sources.
-Questions 10-12
-Choose the correct letter, A, B, C, or D. 
- 3</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+9.....................      Howard and Tracey Kendler studied under Clark Hull.
+10.....................    The Kendlers trained their subjects separately in the two stages of their
+experiment, but not in how to integrate the two actions.
+11.....................    Michael Cole and his colleagues demonstrated that adult performance
+on inductive reasoning tasks depends on features of the apparatus and procedure.
+12.....................    All Hewson's experiments used marbles of the same size.
+13.....................    Hewson's modifications resulted in a higher success rate for children of
+all ages.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.CH
+2.MC
+3.MC
+4.SH
+5.SH
+6.MC
+7.8.SH
+9.NOT GIVEN
+10.YES
+11.YES
+12.YES
+13.NO
+SH
+ 5</div>
+</div>
+</div>
 </body>
 </html>

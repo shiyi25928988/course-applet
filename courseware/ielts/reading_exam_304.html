@@ -1,381 +1,172 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Running On Empty - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Clipper Races An Era Of Competition Between Cargo Ships - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题406/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Running On Empty</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>board; questions from the textbook are worked through first with the class, and then the
-class is set questions from the textbook to do individually. Only rarely are supplementary
-worksheets distributed in a maths class. The impression is that the logical nature of the
-textbooks and their comprehensive coverage of different types of examples, combined with
-the relative homogeneity of the class, renders work sheets unnecessary. At this point,
-the teacher would circulate and make sure that all the pupils were coping well.</p>
-<p>It is remarkable that large, mixed-ability classes could be kept together for maths
-throughout all their compulsory schooling from 6 to 15. Teachers say that they give
-individual help at the end of a lesson or after school, setting extra work if necessary. In
-observed lessons, any strugglers would be assisted by the teacher or quietly seek help
-from their neighbour. Carefully fostered class identity makes pupils keen to help each other
-- anyway, it is in their interests since the class progresses together.
-This scarcely seems adequate help to enable slow learners to keep up. However, the
-Japanese attitude towards education runs along the lines of 'if you work hard enough, you
-can do almost anything'. Parents are kept closely informed of their children's progress and
-will play a part in helping their children to keep up with class, sending them to 'Juku'
-(private evening tuition) if extra help is needed and encouraging them to work harder. It
-seems to work, at least for 95 per cent of the school population.</p>
-<p>So what are the major contributing factors in the success of maths teaching? Clearly,
-attitudes are important. Education is valued greatly in Japanese culture; maths is
-recognised as an important compulsory subject throughout schooling; and the emphasis is
-on hard work coupled with a focus on accuracy.
-Other relevant points relate to the supportive attitude of a class towards slower pupils, the
-lack of competition within a class, and the positive emphasis on learning for oneself and
-improving one's own standard. And the view of repetitively boring lessons and learning the
-facts by heart, which is sometimes quoted in relation to Japanese classes, may be unfair
-and unjustified. No poor maths lessons were observed. They were mainly good and one or
-two were inspirational.
- 2</p>
-<p>Questions 1-5
-Reading Passage 1 has six sections, A-F.
-Choose the correct heading for sections B-F from the list of headings below.
-Write the correct number, i-ix, in boxes 1-5 on your answer sheet.
- 
-List of Headings
-i    The influence of Monbusho
-ii    Helping less successful students
-iii    The success of compulsory education
-iv    Research findings concerning achievements in maths
-v    The typical format of a maths lesson
-vi    Comparative expenditure on maths education
-vii    Background to middle-years education in Japan
-viii    The key to Japanese successes in maths education
-ix    The role of homework correction
-Example Answer
-Section A</p>
-<p>iv
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Clipper Races An Era Of Competition Between Cargo Ships</h1>
+<p>雅思阅读真题 · 第304篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Clipper Races: an era of competition between cargo
+ships
+During the seventeenth and eighteenth centuries, the British East India Company had the
+monopoly on trade with China and India. This meant that because no rival could legally
+import tea or other goods from these countries at this time, the company was rarely in a
+hurry to transport its merchandise. Instead, its priority was to minimise costs by carrying as
+much as possible on each ship. This meant that its ships - known as East Indiamen - were
+enormous, strong and very slow.
+By 1800, the average East Indiaman could carry 1,200 tons of merchandise. The trading
+pattern for China tea usually meant the East Indiamen set sail from Britain in January,
+sailed round the Cape of Good Hope at the southernmost tip of Africa, and arrived in China
+in September. There they would load up that year's tea harvest, set off again and,
+depending on the wind and weather, aim to arrive back by the following September. So
+even with favourable sailing conditions, the round trip lasted almost two years, and if
+anything went wrong it could take a lot longer.
+However, by 1834 the company had lost its trading monopolies, and tea had become a
+freely traded item. Having no more use for its great ships, the company sold them off, and
+many were bought by merchants or their captains, who continued to plough the seas
+between Britain and China. But now that tea could be traded freely, a few smart sailors
+began to realise that whoever brought each new harvest of tea to Britain first, stood to
+make the most money.
+  This was partly because if you were home first, you could sell your shipment of tea before
+your competitors even arrived, and partly because consumers in Britain in the nineteenth
+century believed that the fresher and earlier-picked the tea, the better the resulting drink.
+Tea traders now needed faster, sleeker ships to bring their precious cargo back.
+Nevertheless, in Britain this idea only caught on slowly, and white the 1840s saw a few
+faster ships launched, for the time being many merchants remained satisfied with the slow
+but reliable East Indiamen.
   
-1    Section    B  1.....................
-2    Section    C   2.....................
-3    Section    D  3.....................
-4    Section    E  4.....................
-5    Section    F  5.....................
+  
+  In fact it was the Americans who pioneered the first clipper ships. These vessels were fast
+and slender, with a narrow hull that was deeper at the back than at the front and masses of
+sails on tall masts. They earned their name from the way that they clipped off journey times
+British merchants resolved to build their own clippers to rival the Americans and the first
+British tea clipper, Stornaway, was built in Aberdeen in 1850 More tea clippers were
+designed and built in Britain throughout the 1850s and 1860s, they had a narrower beam
+than their American equivalents, making them less powerful during storms, but faster in
+calmer weather.
+There was a great spirit of competition between the British and American ships plying the
+tea trade, but to begin with the Americans had the edge. Then in 1851 a British ship owner,
+Richard Green, built the aptly named clipper Challenger, with the stated intention of beating
+the American ships. Loaded with tea, Challenger left China for London in 1852 at the same
+time as the American clipper Challenge, a much larger, older ship, already greatly admired
+for its speed. Large sums were bet on which would complete the journey first. In the event,
+the British ship beat its rival to London by two days, amid much jubilation. From then on,
+ 1
+such international races grew in popularity.
+After 1855, American participation in the British tea trade gradually stopped. But even
+without the Anglo-American rivalry, the competitive spirit continued. It was really ignited
+when new ports were opened up for trade in China. These included Fouchow, which was
+much closer to the tea-producing areas than Canton, the port used previously. As a result,
+tea could be loaded onboard earlier and fresher, and the clippers could set off in late May
+or early June - sometimes not even taking time to fill out the official paperwork - racing
+back to Britain whatever the difficulties.
+They sped down through the South China Sea and into the Indian Ocean, then raced to get
+round the southernmost tip of Africa at the Cape of Good Hope. Then it was north across
+the vast Atlantic, past the Azores, through the English Channel and into the estuary of the
+River Thames. Once there, they would be towed by tugs, up the river and into the docks.
+The cargo of the winning ship could earn a premium of up to sixpence per pound-and so
+the captain and crew were rewarded by the owners of the cargo. But the races were about
+more than just money the crews, about 40 men on each clipper, were expert sailors, proud
+of their ships, and they delighted in competing against each other. Without their
+enthusiasm, the races would never have happened, since getting the ship home as fast as
+possible required the crew to be totally dedicated and to sacrifice much of their rest for the
+duration of the race.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1 - 6
+Do the following statements agree with the information given in Reading Passage 1? In
+boxes 1-6 on your answer sheet, write
+TRUE                          if the statement agrees with the information
+FALSE                        if the statement contradicts the information
+NOT GIVEN  if there is no information on this
+  1..................... In the seventeenth and eighteenth centuries, the British East India Company
+faced a lot of competition.
+2..................... Before 1800, cargo size was the most important consideration for the East
+India Company.
+3..................... At best, voyages of the East Indiamen to China and back took nearly two
+years to complete.
+4..................... Before 1834, voyages to and from China were considered to be highly
+dangerous.
+5..................... After 1834, the ships which had served the East India Company stopped
+being used for commercial purposes.
+6..................... In the nineteenth century, British drinkers preferred tea made from mature
+leaves to that made from younger leaves.
  
-Questions 6-9
-Do the following statements agree with the claims of the writer in Reading Passage 1?
-In boxes 6-9 on your answer sheet, write
-YES    if the statement agrees with the claims of the writer
-NO    if the statement contradicts the claims of the writer
-NOT GIVEN    if it is impossible to say what the writer thinks about this
- 3</p>
-<p>6.....................    There is a wider range of achievement amongst English pupils studying
-maths than amongst their Japanese counterparts.
-7.....................    The percentage of Gross National Product spent on education generally
-reflects the level of attainment in mathematics.
-8.....................    Private schools in Japan are more modern and spacious than state-run
-lower secondary schools.
-9.....................    Teachers mark homework in Japanese schools.
-Questions 10-13
-Choose the correct letter, A, B, C or D.
-Write the correct letter in boxes 10-13 on your answer sheet.
-10    Maths textbooks in Japanese schools are 
- 
-A cheap for pupils to buy.
-B well organised and adapted to the needs of the pupils.
-C written to be used in conjunction with TV programmes.
-D not very popular with many Japanese teachers.
-11    When a new maths topic is introduced,
- 
-A students answer questions on the board.
-B students rely entirely on the textbook.
-C it is carefully and patiently explained to the students.
-D it is usual for students to use extra worksheets.
-12    How do schools deal with students who experience difficulties?
- 
-A They are given appropriate supplementary tuition.
-B They are encouraged to copy from other pupils.
-C They are forced to explain their slow progress.
-D They are placed in a mixed-ability class.
-13    Why do Japanese students tend to achieve relatively high rates of success in maths?
-A It is a compulsory subject in Japan.
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ Questions 7-13
+Complete the notes below.
+ChooseONE WORD ONL Y from the passage for each answer.
+Write your answers in boxes 7-13 on your answer sheet.
+Clipper races
+The ships
+Clipper ships were first used for trading by American merchants.
+The ships were remarkable for the number of 7..................... they had.
+The performance of British tea clippers was particularly affected when there were
+8.....................  at sea.
+The races
+It was in a ship called 9..................... that  the British first competed successfully against
+the Americans.
+ 3
+ 
+ 
+ Richard Green’s ship arrived two days ahead of its competitor.
+Competition increased when additional Chinese trading 10..................... were established.
+Merchants were occasionally in such a hurry that they failed to complete the
+11.....................  before leaving China.
+At the end of their journey, the ships needed the help of 12.....................
+The rewards
+The crews were motivated by both 13..................... and    their enthusiasm for the
+competition.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.FALSE
+2.TRUE
+3.TRUE
+4.NOT GIVEN
+5.FALSE
+6.FALSE
+7.8.storms
+9.Challenger
+10.ports
+11.paperwork
+12.tugs
+13.money
+sails
+ 5</div>
+</div>
+</div>
 </body>
 </html>

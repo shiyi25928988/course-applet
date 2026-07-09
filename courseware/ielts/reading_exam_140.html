@@ -1,400 +1,189 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entertainment Activities - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>History Of Timekeeping - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题191/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Entertainment Activities</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>F. However, some good news was also there, as the researchers reported an increase
-in gentoo penguins population in neighbouring colonies, beyond Elephant Island. “It’s
-interesting, as a tale of two penguins on the Antarctic Peninsula,” said Strycker.
-“Gentoo is a species from further north and they appear to be colonizing the area and
-are actually increasing in numbers.”
-G. The Greenpeace ship Esperanza has been documenting the threat to the oceans
-worldwide and taking the scientists for travelling abroad. For the first time, the Low
-Island in the South Shetland Islands, north of the Antarctic Peninsula, has been
-surveyed properly. The manual and drone techniques are used by the researchers,
-from Stony Brook and Northeastern University in Boston, to survey a series of
-significant but relatively unknown colonies of chinstrap penguin here. The results are,
-however, not yet available. Greenpeace has been campaigning for the three Antarctic
-sanctuaries that it would establish to offer protection to many of the colonies
-surveyed. These would be off-limits to humans.
-H.
-an iconic species, but this new research shows how the climate emergency is
-decimating their numbers and having far-reaching impacts on wildlife in the most
-remote corners of Earth. This is a critical year for our oceans. “Governments must
-respond to the science and agree on a strong Global Ocean Treaty at the United
-Nations this spring that can create a network of ocean sanctuaries to protect marine
-life and help these creatures adapt to our rapidly changing climate.”
-Louisa Casson, Greenpeace Oceans Campaigner, said in a statement: “Penguins are
- 2</p>
-<p>Question 1 - 7
-The Reading Passage has 8 paragraphs labelled A-H.
-Which paragraph contains the following information?
-Write the correct letter A-H in boxes.
-NB You may use any letter more than once.
-1..................... the highest temperatures ever.
-2..................... the difference between current and past records on penguin
-population.
-3..................... places where people cannot go to.
-4..................... places where chinstrap penguins live.
-5..................... measures to protect ocean species.
-6..................... factors contributing to the decline in the amount of food available.
-7..................... description of a specific species.
- 
-Question 8-10
-Choose TRUE if the statement agrees with the information given in the text, 
-choose FALSE if the statement contradicts the information, 
-or choose NOT GIVEN if there is no information on this.
-  
-8..................... The IUCN showed little concern about the fall in penguin numbers.
-9..................... Climate change is a reason for the changes in the food chain of
-chinstrap penguins.
-10..................... Gentoo penguins are not affected by climate change.</p>
-<p>Question 11 - 13
-Complete the note below.
-Choose ONLY ONE WORD from the passage for each answer.
-The Greenpeace ship has been used to:
-- record the11..................... to marine life over the world.
--carry the 12..................... overseas.
- 3</p>
-<p>- Build13..................... to protect many surveyed colonies.
- 4</p>
-<p>Solution:
- 
-1. D
-2. C
-3. G
-4. A
-5. H
-6. E
-7.
-8. NOT GIVEN
-9. TRUE
-10. NOT GIVEN
-11. threat
-12. scientists
-13. sanctuaries</p>
-<p>Reading Practice
- Classical music over the centuries
-INDIAN CLASSICAL MUSIC
-The origins of Indian classical music can be found from the oldest of scriptures, part of the
-Hindus tradition, the Vedas.
-Samaveda, one of the four Vedas, describes music at length. Indian classical music has its
-origins as a meditation tool for attaining self realization. All different forms of these
-melodies (ragas) are believed to affect various “chakras” (energy centers, or “mood”) in the
-path of the Kundalini. However, there is little mention of these esoteric beliefs in Bharat’s
-Natyashastra , the first treatise laying down the fundamental principles of drama, dance
-and music. The Samadeva, one of the four Vedas, created out of riga-veda so that its
-hymns could be sung as Samagana, established its first pop.
-Indian classical music has one of the most complex and complete musical systems ever
-developed. Like Western classical music, it divides the octave s into 12 Semitones of which
-the 7 basic notes are Sa Re Ga Ma Pa Dha Ni Sa, replacing Do Re Mi Fa So La Ti Do.
-However, it uses the just intonation tuning (unlike western classical music which uses the
-equal temperament tuning system).
-Indian classical music is monophonic in nature and based around a single melody line
-which is played over a fixed drone. The performance is based melodically on particular
-rages and rhythmically on talas.
-NATIONAL SYSTEM
-Scholars of Europe in the seventeenth and eighteenth century were enormed by Indian
-music. With no facility to record the sound they explored for some existing system that
-might exist system that express sounds in the composition. There were pointers to an
-ancient notations system which scholars had also translated into Persian: still’ complexity
-of Indian classical music could not be expressed in writing. Though some western scholars
-did record compositions in staff notation system, Indian musicians used Pt.Bhakhande
-system. Though more accurate, this relies on Devanagari script rather than symbols and
-hence is cumbersome at times. A new notation system has been proposed which uses
-symbols and offers instantaneous comprehension like staff notation system. It is with
-standardization of a notation system that hitherto unknown compositions would see the
-light of day.
-INSTRUMENTS
-Instruments typically used in Hindustani music include sitar, sarood,tanpura, bansuri,
-shehnai, sarangi, and table. Instruments typically used in carnatic music include flute,
-gottuvadyam, veena mridangam, kanjira, ghatam and violon
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-    <div class="question-block">
-        <p style="margin:0;line-height:1.8;color:#44403c;">Question 8-10<br>Choose TRUE if the statement agrees with the information given in the text,<br>choose FALSE if the statement contradicts the information,<br>or choose NOT GIVEN if there is no information on this.<br>8..................... The IUCN showed little concern about the fall in penguin numbers.<br>9..................... Climate change is a reason for the changes in the food chain of<br>chinstrap penguins.<br>10..................... Gentoo penguins are not affected by climate change.</p>
-    </div>
-    
-
-    <div class="question-block">
-        <p style="margin:0;line-height:1.8;color:#44403c;">Question 11 - 13<br>Complete the note below.<br>Choose ONLY ONE WORD from the passage for each answer.<br>The Greenpeace ship has been used to:<br>- record the11..................... to marine life over the world.<br>-carry the 12..................... overseas.<br>3<br>- Build13..................... to protect many surveyed colonies.<br>4<br>Solution:<br>1. D<br>2. C<br>3. G<br>4. A<br>5. H<br>6. E<br>7.<br>8. NOT GIVEN<br>9. TRUE<br>10. NOT GIVEN<br>11. threat<br>12. scientists<br>13. sanctuaries<br>Reading Practice<br>Classical music over the centuries<br>INDIAN CLASSICAL MUSIC<br>The origins of Indian classical music can be found from the oldest of scriptures, part of the<br>Hindus tradition, the Vedas.<br>Samaveda, one of the four Vedas, describes music at length. Indian classical music has its<br>origins as a meditation tool for attaining self realization. All different forms of these<br>melodies (ragas) are believed to affect various “chakras” (energy centers, or “mood”) in the<br>path of the Kundalini. However, there is little mention of these esoteric beliefs in Bharat’s<br>Natyashastra , the first treatise laying down the fundamental principles of drama, dance<br>and music. The Samadeva, one of the four Vedas, created out of riga-veda so that its<br>hymns could be sung as Samagana, established its first pop.<br>Indian classical music has one of the most complex and complete musical systems ever<br>developed. Like Western classical music, it divides the octave s into 12 Semitones of which<br>the 7 basic notes are Sa Re Ga Ma Pa Dha Ni Sa, replacing Do Re Mi Fa So La Ti Do.<br>However, it uses the just intonation tuning (unlike western classical music which uses the<br>equal temperament tuning system).<br>Indian classical music is monophonic in nature and based around a single melody line<br>which is played over a fixed drone. The performance is based melodically on particular<br>rages and rhythmically on talas.<br>NATIONAL SYSTEM<br>Scholars of Europe in the seventeenth and eighteenth century were enormed by Indian<br>music. With no facility to record the sound they explored for some existing system that<br>might exist system that express sounds in the composition. There were pointers to an<br>ancient notations system which scholars had also translated into Persian: still’ complexity<br>of Indian classical music could not be expressed in writing. Though some western scholars<br>did record compositions in staff notation system, Indian musicians used Pt.Bhakhande<br>system. Though more accurate, this relies on Devanagari script rather than symbols and<br>hence is cumbersome at times. A new notation system has been proposed which uses<br>symbols and offers instantaneous comprehension like staff notation system. It is with<br>standardization of a notation system that hitherto unknown compositions would see the<br>light of day.<br>INSTRUMENTS<br>Instruments typically used in Hindustani music include sitar, sarood,tanpura, bansuri,<br>shehnai, sarangi, and table. Instruments typically used in carnatic music include flute,<br>gottuvadyam, veena mridangam, kanjira, ghatam and violon<br>1</p>
-    </div>
-    
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>History Of Timekeeping</h1>
+<p>雅思阅读真题 · 第140篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>History of timekeeping
+ Ever since man first noticed the regular movement of the Sun and the stars, we have
+wondered about the passage of time. Prehistoric people first recorded the phases of the
+Moon some 30,000 years ago, and recording time has been a way by which humanity has
+observed the heavens and represented the progress of civilization.
+ The earliest natural events to be recognized were in the heavens, but during the course of
+the year, there were many other events that indicated significant changes in the
+environment. Seasonal winds and rains, the flooding of rivers, the flowering of trees and
+plants, and the breeding cycles or migration of animals and birds, all led to natural divisions
+of the year, and further observation and local customs led to the recognition of the
+seasons.
+Egyptian shadow clocks divided daytime into 12 parts with each part further divided into
+more precise parts. One type of shadow clock consisted of a long stem with five variable
+marks and an elevated crossbar which cast a shadow over those marks. It was positioned
+eastward in the morning and was turned west at noon. Obelisks functioned in much the
+same manner: the shadow cast on the markers around it allowed the Egyptians to calculate
+the time. The obelisk also indicated whether it was morning or afternoon, as well as the
+summer and winter solstices. 1500 BCE, was similar in shape to a bent T-square. It
+measured the passage of time by the shadow cast by its crossbar on a non-linear rule. The
+T was oriented eastward in the mornings and turned around at noon so that it could cast its
+shadow in the opposite direction. Although accurate, shadow clocks relied on the sun, and
+so were useless at night and in cloudy weather.
+Inventions for measuring and regulating time
+The early inventions were made to divide the day or the night into different periods in order
+to regulate work or ritual, so the lengths of the time periods varied greatly from place to
+place and from one culture to another.
+Oil lamps
+There is archaeological evidence of oil lamps about 4,000 BCE, and the Chinese were
+using oil for heating and lighting by 2,000 BCE. Oil lamps are still significant in religious
+practices, symbolic of the journey from darkness and ignorance to light and knowledge.
+The shape of the lamp gradually evolved into the typical pottery style shown. It was
+possible to devise a way of measuring the level in the oil reservoir to measure the passing
+of time.
+Candle Clocks
+Marked candles were used for telling the time in China from the sixth century CE. There is
+a popular story that King Alfred the Great invented the candle clock, but we know they were
+in use in England from the tenth century CE. However, the rate of burning is subject to
+draughts, and the variable quality of the wax. Life oil lamps, candles were used to mark the
+passage of time from one event to another, rather than tell the time of day.
+ 1
+Water Clocks
+The water clock, or clepsydra, appears to have been invented about 1,500 BCE and was a
+device which relied on the steady flow of water from or into a container. Measurements
+could be marked on the container or on a receptacle for the water. In comparison with the
+candle or the oil lamp, the clepsydra was more reliable, but the water flow still depended on
+the variation of pressure from the head of water in the container.
+Astronomical and astrological clock making was developed in China from 200 to 1300 CE.
+Early Chinese clepsydras drove various mechanisms illustrating astronomical phenomena.
+The astronomer Su Sung and his associates built an elaborate clepsydra in 1088 CE. This
+device incorporated a water-driven bucket system originally invented about 725 CE. Among
+the displays were a bronze power-driven rotating celestial globe, and manikins that rang
+gongs, and indicated special times of the day.
+Hour Glasses or Sandglasses
+As the technology of glass-blowing developed, from some time in the 14th century it
+became possible to make sandglasses. Originally, sandglasses were used as a measure
+for periods of time like the lamps or candles, but as clocks became more accurate they
+were used to calibrate sandglasses to measure specific periods of time, and to determine
+the duration of sermons, university lectures, and even periods of torture.
+The Division of the Day and the Length of the ‘Hour’ An Egyptian sundial from about 1,500
+BCE is the earliest evidence of the division of the day into equal parts, but the sundial was
+no use at night. The passage of time was extremely important for astronomers and priests
+who were responsible for determining the exact hour for the daily rituals and for the
+important religious festivals, so a water clock was invented.
+The Merkhet
+The Egyptians improved upon the sundial with a ‘merkhet’, one of the oldest known
+astronomical instruments. It was developed around 600 BCE and uses a string with a
+weight as a plumb line to obtain a true vertical line, as in the picture. The other object is the
+rib of a palm leaf, stripped of its fronds and split at one end, making a thin slit for a sight.
+ A pair of merkhets were used to establish a North-South direction by lining them up one
+behind the other with the Pole Star. Viewing the plumb lines through the sight made sure
+the two merkhets and the sight were in the same straight line with the Pole Star. This
+allowed for the measurement of night-time events with a water clock when certain stars
+crossed the vertical plumb line (a ‘transit line’), and these events could then be recorded by
+‘night-time lines’ drawn on a sundial.
+There are various theories about how the 24 hour day developed. The fact that the day was
+divided into 12 hours might be because 12 is a factor of 60, and both the Babylonian and
+Egyptian civilisations recognised a zodiac cycle of 12 constellations. On the other hand,
+(excuse the pun) finger-counting with base 12 was a possibility. The fingers each have 3
+joints, and so counting on the joints gives one ‘full hand’ of 12.
+In classical Greek and Roman times they used twelve hours from sunrise to sunset; but
+since summer days and winter nights are longer than winter days and summer nights, the
+lengths of the hours varied throughout the year.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+Do the following statements agree with the information given in Reading Passage?
+In boxes 1-4 on your answer sheet, write
+YES                  if the statement is true
+NO                   if the statement is false
+NOTGIVEN    if the information is not given in the passage
+ 1.....................   Timekeeper’s exact date of origin was not clear today.
+2.....................   People use candles and oil lamps for recording time to do things in the
+early days.
+ 3.....................   Oil lamps are used for religious beliefs in 4000 BCE.
+  4.....................   The sundials have always been inaccurate to record time in ancient Egypt.
+ Questions 5-10
+Write the correct letter  A-D, in boxes  5-10 on your answer sheet
+NBYou may use any letter more than once.
+A     Wooden shadow clock
+B     Clepsydra
+C     Sandglasses
+D     lamp oil candle
+5.....................   It is used the container tag position recording time
+6.....................   It is used to measure a particular time
+7.....................   It is used only in the sunny day
+8.....................   It is used oil cistern to measure the passage of time
+9.....................   It isn’t only used to tell the time
+10.....................   It is more accurate than candles and oil lamps
+Questions 11-13
+ 3
+Choose the correct letter,  A, B, C or D.
+Write your answers in boxes  11-13 on your answer.
+11   Which picture shows the working principle of clepsydra?
+A
+B 
+C 
+D  
+12   Which picture best describes the wooden shadow?
+A
+B 
+C 
+D  
+13   The picture below illustrates the oil lamp clock’s working
+A
+B 
+C 
+D  
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.YES
+2.YES
+3.YES
+4.NOT GIVEN
+5.B
+6.A
+7.8.C
+9.A
+10.B
+11.C
+12.A
+13.D
+D
+ 5</div>
+</div>
+</div>
 </body>
 </html>

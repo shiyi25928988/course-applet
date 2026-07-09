@@ -1,353 +1,249 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Lost City - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Travel Accounts - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题534/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Lost City</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Reading Practice
- 
-Persistent bullying is one of the worst experiences a
-child can face
-How can it be prevented? Peter Smith, Professor of Psychology at the University of
-Sheffield, directed the Sheffield Anti-Bullying Intervention Project, funded by the
-Department for Education
-Here he reports on his findings.</p>
-<p>Bullying can take a variety of forms, from the verbal - being taunted or called hurtful names
-- to the physical - being kicked or shoved - as well as indirect forms, such as being
-excluded from social groups. A survey I conducted with Irene Whitney found that in British
-primary schools up to a quarter of pupils reported experience of bullying, which in about
-one in ten cases was persistent. There was less bullying in secondary schools, with about
-one in twenty-five suffering persistent bullying, but these cases may be particularly
-recalcitrant.</p>
-<p>Bullying is clearly unpleasant, and can make the child experiencing it feel unworthy and
-depressed. In extreme cases it can even lead to suicide, though this is thankfully rare.
-Victimised pupils are more likely to experience difficulties with interpersonal relationships
-as adults, while children who persistently bully are more likely to grow up to be physically
-violent, and convicted of anti-social offences.</p>
-<p>Until recently, not much was known about the topic, and little help was available to
-teachers to deal with bullying. Perhaps as a consequence, schools would often deny the
-problem. ‘There is no bullying at this school’ has been a common refrain, almost certainly
-untrue. Fortunately more schools are now saying: There is not much bullying here, but
-when it occurs we have a clear policy for dealing with it.’</p>
-<p>Three factors are involved in this change. First is an awareness of the severity of the
-problem. Second, a number of resources to help tackle bullying have become available in
-Britain. For example, the Scottish Council for Research in Education produced a package
-of materials, Action Against Bullying, circulated to all schools in England and Wales as well
-as in Scotland in summer 1992, with a second pack, Supporting Schools Against Bullying,
-produced the following year. In Ireland, Guidelines on Countering Bullying Behaviour in
-Post-Primary Schools was published in 1993. Third, there is evidence that these materials
-work, and that schools can achieve something. This comes from carefully conducted
-‘before and after’ evaluations of interventions in schools, monitored by a research team. In
-Norway, after an intervention campaign was introduced nationally, an evaluation of fortytwo schools suggested that, over a two-year period, bullying was halved. The Sheffield
-investigation, which involved sixteen primary schools and seven secondary schools, found
-that most schools succeeded in reducing bullying.
- 1</p>
-<p>Evidence suggests that a key step is to develop a policy on bullying, saying clearly what is
-meant by bullying, and giving explicit guidelines on what will be done if it occurs, what
-records will be kept, who will be informed, what sanctions will be employed. The policy
-should be developed through consultation, over a period of time - not just imposed from the
-head teacher’s office! Pupils, parents and staff should feel they have been involved in the
-policy, which needs to be disseminated and implemented effectively.
-Other actions can be taken to back up the policy. There are ways of dealing with the topic
-through the curriculum, using video, drama and literature. These are useful for raising
-awareness, and can best be tied in to early phases of development, while the school is
-starting to discuss the issue of bullying. They are also useful in renewing the policy for new
-pupils, or revising it in the light of experience. But curriculum work alone may only have
-short-term effects; it should be an addition to policy work, not a substitute.
-There are also ways of working with individual pupils, or in small groups. Assertiveness
-training for pupils who are liable to be victims is worthwhile, and certain approaches to
-group bullying such as 'no blame’, can be useful in changing the behaviour of bullying
-pupils without confronting them directly, although other sanctions may be needed for those
-who continue with persistent bullying.
-Work in the playground is important, too. One helpful step is to train lunchtime supervisors
-to distinguish bullying from playful fighting, and help them break up conflicts. Another
-possibility is to improve the playground environment, so that pupils are less likely to be led
-into bullying from boredom or frustration.</p>
-<p>With these developments, schools can expect that at least the most serious kinds of
-bullying can largely be prevented. The more effort put in and the wider the whole school
-involvement, the more substantial the results are likely to be. The reduction in bullying -
-and the consequent improvement in pupil happiness - is surely a worthwhile objective.
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Travel Accounts</h1>
+<p>雅思阅读真题 · 第401篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Travel Accounts
+A
+There are many reasons why individuals have traveled beyond their own societies. Some
+travelers may have simply desired to satisfy curiosity about the larger world. Until recent
+times, however, trade, business dealings, diplomacy, political administration, military
+campaigns, exile, flight from persecution, migration, pilgrimage, missionary efforts, and the
+quest for economic or educational opportunities were more common inducements for
+foreign travel than was a mere curiosity. While the travelers’ accounts give much valuable
+information on these foreign lands and provide a window for the understanding of the local
+cultures and histories, they are also a mirror to the travelers themselves, for these accounts
+help them to have a better understanding of themselves.
+B
+Records of foreign travel appeared soon after the invention of writing, and fragmentary
+travel accounts appeared in both Mesopotamia and Egypt in ancient times. After the
+formation of large, imperial states in the classical world, travel accounts emerged as a
+prominent literary genre in many lands, and they held especially strong appeal for rulers
+desiring useful knowledge about their realms. The Greek historian Herodotus reported on
+his travels in Egypt and Anatolia in researching the history of the Persian wars. The
+Chinese envoy Zhang Qian described much of central Asia as far west as Bactria (modern-
+day Afghanistan) on the basis of travels undertaken in the first century BC while searching
+for allies for the Han dynasty. Hellenistic and Roman geographers such as Ptolemy,
+Strabo, and Pliny the Elder relied on their own travels through much of the Mediterranean
+world as well as reports of other travelers to compile vast compendia of geographical
+knowledge.
+C
+During the postclassical era (about 500 to 1500 CE), trade and pilgrimage emerged as
+major incentives for travel to foreign lands. Muslim merchants sought trading opportunities
+throughout much of the eastern hemisphere. They described lands, peoples, and
+commercial products of the Indian Ocean basin from East Africa to Indonesia, and they
+supplied the first written accounts of societies in sub-Saharan west Africa. While merchants
+set out in search of trade and profit, devout Muslims traveled as pilgrims to Mecca to make
+their hajj and visit the holy sites of Islam. Since the prophet Muhammad’s original
+pilgrimage to Mecca, untold millions of Muslims have followed his example, and thousands
+of hajj accounts have related their experiences. One of the best known Muslim travelers,
+Ibn Battuta, began his travels with the hajj but then went on to visit central Asia, India,
+China, sub-Saharan Africa, and parts of Mediterranean Europe before returning finally to
+his home in Morocco. East Asian travelers were not quite so prominent as Muslims during
+the postclassical era, but they too followed many of the highways and sea lanes of the
+eastern hemisphere. Chinese merchants frequently visited Southeast Asia and India,
+occasionally venturing even to east Africa, and devout East Asian Buddhists undertook
+distant pilgrimages. Between the 5th and 9th centuries CE, hundreds and possibly even
+thousands of Chinese Buddhists traveled to India to study with Buddhist teachers, collect
+sacred texts, and visit holy sites. Written accounts recorded the experiences of many
+pilgrims, such as Faxian, Xuanzang, and Yijing. Though not so numerous as the Chinese
+ 1
+pilgrims, Buddhists from Japan, Korea, and other lands also ventured abroad in the
+interests of spiritual enlightenment.
+D
+Medieval Europeans did not hit the roads in such large numbers as their Muslim and east
+Asian counterparts during the early part of the postclassical era, although gradually
+increasing crowds of Christian pilgrims flowed to Jerusalem, Rome, Santiago de
+Compostela (in northern Spain), and other sites. After the 12th century, however,
+merchants, pilgrims, and missionaries from medieval Europe traveled widely and left
+numerous travel accounts, of which Marco Polo’s description of his travels and sojourn in
+China is the best known. As they became familiar with the larger world of the eastern
+hemisphere – and the profitable commercial opportunities that it offered – European
+peoples worked to find new and more direct routes to Asian and African markets. Their
+efforts took them not only to all parts of the eastern hemisphere but eventually to the
+Americas and Oceania as well.
+E
+If Muslim and Chinese peoples dominated travel writing in postclassical times, European
+explorers, conquerors, merchants, and missionaries took center stage during the early
+modern era (about 1500 to 1800 CE). By no means did Muslim and Chinese travel come to
+a halt in early modern times. But European peoples ventured to the distant corners of the
+globe, and European printing presses churned out thousands of travel accounts that
+described foreign lands and peoples for a reading public with an apparently insatiable
+appetite for news about the larger world. The volume of travel literature was so great that
+several editors, including Giambattista Ramusio, Richard Hakluyt, Theodore de Bry, and
+Samuel Purchas, assembled numerous travel accounts and made them available in
+enormous published collections.
+F
+During the 19th century, European travelers made their way to the interior regions of Africa
+and the Americas, generating a fresh round of travel writing as they did so. Meanwhile,
+European colonial administrators devoted numerous writing to the societies of their colonial
+subjects, particularly in Asian and African colonies they established. By midcentury,
+attention was flowing also in the other direction. Painfully aware of the military and
+technological prowess of European and Euro-American societies, Asian travelers, in
+particular, visited Europe and the United States in hopes of discovering principles useful for
+the reorganization of their own societies. Among the most prominent of these travelers who
+made extensive use of their overseas observations and experiences in their own writing
+were the Japanese reformer Fukuzawa Yukichi and the Chinese revolutionary Sun Yat-
+sen.
+G
+With the development of inexpensive and reliable means of mass transport, the 20th
+century witnessed explosions both in the frequency of long-distance travel and in the
+volume of travel writing. While a great deal of travel took place for reasons of business,
+administration, diplomacy, pilgrimage, and missionary work, as in ages past, increasingly
+effective modes of mass transport made it possible for new kinds of travel to flourish. The
+most distinctive of them was mass tourism, which emerged as a major form of consumption
+ 2
+for individuals living in the world’s wealthy societies. Tourism enabled consumers to get
+away from home to see the sights in Rome, take a cruise through the Caribbean, walk the
+Great Wall of China, visit some wineries in Bordeaux, or go on safari in Kenya. A peculiar
+variant of the travel account arose to meet the needs of these tourists: the guidebook,
+which offered advice on food, lodging, shopping, local customs, and all the sights that
+visitors should not miss seeing. Tourism has had a massive economic impact throughout
+the world, but other new forms of travel have also had considerable influence in
+contemporary times. Recent times have seen unprecedented waves of migration, for
+example, and numerous migrants have sought to record their experiences and articulate
+their feelings about life in foreign lands. Recent times have also seen an unprecedented
+development of ethnic consciousness, and many are the intellectuals and writers in the
+diaspora who have visited the homes of their ancestors to see how much of their forebears’
+values and cultural traditions they themselves have inherited. Particularly notable among
+their accounts are the memoirs of Malcolm X and Maya Angelou describing their visits to
+Africa.
+ 3</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-8
+Complete the table below.
+ Write NO MORE THAN TWO WORDS  from Reading Passage for each answer.
+Write your answer in boxes 1-8 on your answer sheet.
+TIME DESTINATION TRAVELER
+Classical era Egypt and Anatolia Herodotus
+1st century BC Central Asia Zhang Qian
+Roman EmpirePtolemy, StraboMediterraneanPliny the Elder
+Post-classical eraEastern
+HemisphereMuslims
+5th to 9th
+centuries CEIndia Asian Buddhists
+Early modern eraDistant places of
+the globeThe Europeans
+19th centuryColonialAsia, Africaadministrator
+By the mid-
+century of the
+1800sEurope and the
+United StatesPURPOSE
+To obtain
+information
+on 1......................
+To
+seek 2.....................
+.
+To
+gather 3...................
+..
+For business
+and 4.....................
+To study
+with 5.....................
+and for spiritual
+enlightenment
+To meet the public’s
+expectation for the
+outside
+To provide
+information on
+the 6.....................
+they conquer
+To
+learn 7Sun Yat-sen,.....................
+Fukuzawa Yukichifor the
+reorganization of
+their societies
+20th centuryPeople
+from 8................... For entertainment Mass tourism
+..  countries
+Questions 9-13
+ Choose the correct letter,  A, B, C or D.
+ Write your answers in boxes 9-13 on your answer sheet.
+9. Why did some people travel in the early days?
+A   to do research on themselves
+B   to write travel books
+ 4
+ C   to have a better understanding of other people and places
+D   to study local culture
+ 10. The travelers’ accounts are a mirror to themselves,
+A   because they help them to be aware of local histories.
+B   because travelers are curious about the world.
+C   because travelers could do more research on the unknown.
+D   because they reflect the writers’ own experience and social life.
+ 11. Most of the people who went to holy sites during the early part of the postclassical era
+are
+A   Europeans.
+B   Muslim and East Asians.
+C   Americans.
+D   Greeks.
+ 12. During the early modern era, a large number of travel books were published to
+A   provide what the public wants.
+B   encourage the public’s feedback.
+C   gain profit.
+D   prompt trips to the new world.
+13. What stimulated the market for traveling in the 20th century?
+A   the wealthy
+B   travel books
+C   delicious food
+D   mass transport
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.Persian wars
+2.allies
+3.geographical
+knowledge
+4.pilgrimage
+5.Buddhist teachers
+6.colonies
+7.8.wealthy
+9.C
+10.D
+11.B
+12.A
+13.D
+principles
+ 6</div>
+</div>
+</div>
 </body>
 </html>

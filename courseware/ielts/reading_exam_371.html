@@ -1,397 +1,182 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Farmers Parade Of History - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Return Of Monkey Life - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题497/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Farmers Parade Of History</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-4
-Write the letters A-F in boxes 1-4 on your answer sheet.
-1.....................   scientists manage to
-2.....................   Cargill needs to have contacts with
-3.....................   Nature work is used for
-4.....................   Ingeo is used to
-A     make things like clothes
-B     produce plastic from plant
-C     selling plastic in market
-D     fermentation process
-E     drape fabrics
-F     wrapping products
-Questions 5-8
-Complete the following summary of the paragraphs of Reading Passage.
-Using NO MORE THAN TWO WORDS from the Reading Passage for each answer.
-Write your answers in boxes 5-8 on your answer sheet.
- 3</p>
-<p>Process: the production of PLA
-5.....................
-6.....................
-7.....................
- 4</p>
-<p>8.....................
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Return Of Monkey Life</h1>
+<p>雅思阅读真题 · 第371篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The return of monkey life
+ Rain forest trees growing anew on Central American farmland are helping scientists find
+ways for monkey and agriculture to benefit one another.
  
-Questions 9-10
-Choose the correct letter, A, B, C or D.
-Write your answers in boxes 9-10 on your answer sheet.
+ A.    Hacienda La Pacifica, a remote working cattle ranch in Guanacaste province of
+northern Costa Rica, has for decades been home to a community of mantled howler
+monkeys. Other native primates- white-faced capuchin monkeys and spider monkeys were
+once common in this area, too, but vanished after the Pan-American Highway was built
+nearby in the 1950s and most of the surrounding land was cleared for cattle-raising. At
+Hacienda La Pacifica, however, an enlightened ranch owner chose to leave some strips of
+native trees growing. He used these as windbreaks to protect both cattle and their food
+crops from dry-season winds. In the process, the farmer unwittingly founded a unique
+laboratory for the study of monkeys.
+ B.   Ken Glander, a primatologist from Duke University in the USA, is studying La Pacifica’s
+monkeys in an effort to understand the relationship between howlers and regenerating
+forests at the edges of grazing lands. Studying such disturbed woodlands is increasingly
+important because throughout much of the New World Tropics, these are the only forests
+left. In the 18th century, tropical dry forests once covered most of Central America, but by
+the 1980s less than two percent remained undisturbed, and less than one percent was
+protected.
+ C.     Howlers persists at La Pacifica, Glander explains, because they are leaf-eaters. They
+eat fruit when it is available but, unlike capuchin and spider monkeys, do not depend on
+large areas of fruiting trees. Glander is particularly interested in howlers’ ability to thrive on
+leaves loaded with toxins- poisonous substances designed to protect the plants. For leaf-
+eaters, long-term exposure to a specific plant toxin can increase their ability to neutralize
+the poisonous substances and absorb the leaf nutrients. Watching generations of howlers
+at La Pacifica has shown Glander that the monkeys keep their systems primed by sampling
+a variety of plants and then focusing on a small number of the most nutritious food items.
+The leaves that grow in regenerating forests, like those at La Pacifica, are actually more
+howler-friendly than those produced by the centuries-old trees that survive farther south. In
+younger forests, trees put most of their limited energy into growing wood, leaves, and fruit,
+so they produce much lower levels of toxin than do well-established, old-growth trees.
+D.   The value of maturing forests to primates is also a subject of study at Santa Rosa
+National Park, about 35 miles northwest of La Pacifica. Large areas of Santa Rosa’s
+forests had at one time been burnt to make space for cattle ranching and coffee farming,
+thereby devastating local monkey habitat. But in 1971 the government protected the area
+by designating it a National Park, and species of Indigenous Lees which had been absent
+ 1
  
-9. Why did choose the PLA as material for food packaging?
-A   It smells good
-B   It can save food freshness
-C   It can be used on other materials
-D   Some other things need to be revised about it.</p>
-<p>10. What is PLA packaging is used for?
-A   absorbing moisture
-B   composting facilities
-C   Packaging fresh food
-D   manufacturing
-Questions 11-12
-Which two features of PLA are correct?
-A   It is made of renewable raw materials
-B   It involves the removal of carbon dioxide
-C   It is no use of fossil fuel product
-D   It uses renewable raw resources
-E   It is sustenance which can absorb the CO2 in the atmosphere
-Questions 13-14
-Which two features of PLA are correct?
- 5</p>
-<p>A   It takes in moisture of skin
-B   It is waterproof
-C   comfortable sportswear
-D   It’s fading under the sun
-E   It is only made in deep color
- 6</p>
-<p>1. B
-2. C
-3. F
-4. A
-5. starch
-6. fermentation
+ for decades began to invade the abandoned pastures. Capuchins were the first to begin
+using the reborn forests, followed by howlers. Eventually, even spider monkeys, fruit-eaters
+that need large areas of continuous forest, returned. In the first 28 years following
+protection of the area, the capuchin population doubled, while the number of howlers
+increased sevenfold.
+ E.    Some of the same traits that allow howlers to survive at La Pacifica also explain their
+population boom in Santa Rosa, Howler reproduction is faster than that of other native
+monkey species. They give birth for the first time at about 3.5 years of age, compared with
+seven years for capuchins, and eight or more for spider monkeys. Also, while a female
+spider monkey will have a baby about once every four years, well-fed howlers can produce
+an infant every two years. Another factor is diet. Howlers are very adaptable feeders, and
+only need a comparatively small home range. Spider monkeys, on the other hand, need to
+occupy a huge home range. Also crucial is fact that the leaves howlers eat hold plenty of
+water, so the monkeys can survive away from open streams and water holes. This ability
+gives them a real advantage over capuchin and spider monkeys, which have suffered
+during the long, ongoing drought in the area.
+ F.   Alejandro Estrada, an ecologist at Estacion de Biologia Los Tuxtlas in Veracruz,
+Mexico, has been studying the ecology of a group of howler monkeys that thrive in a
+habitat totally altered by humans: a cacao plantation in Tabasco state, Mexico. Cacao
+plants need shade to grow, so 40 years ago the owners of Cholula Cacao Farm planted
+figs, monkeypod and other tall trees to form a protective canopy over their crop. The
+howlers moved in about 25 years ago after nearby forests were cut. This strange habitat
+seems to support about as many monkeys as would a same-sized patch of wild forest. The
+howlers eat the leaves and fruit of the shade trees, leaving the valuable cacao pods alone.
+G.   Estrada believes the monkeys bring underappreciated benefits to such plantations,
+dispersing the seeds of fruits such as fig and other shade trees, and fertilizing the soil.
+Spider monkeys also forage for fruit here, though they need nearby areas of forest to
+survive in the long term. He hopes that farmers will begin to see the advantages of
+associating with wild monkeys, which could include potential ecotourism projects,
+‘Conservation is usually viewed as a conflict between farming practices and the need to
+preserve nature,’ Estrada says. ‘We’re moving away from that vision and beginning to
+consider ways in which commercial activities may become a tool for the conservation of
+primates in human-modified landscapes.’
+ 2
+ QUESTIONS 1-4
+Reading Passage has seven paragraphs,  A-G.
+Which paragraph contains the following information?
+Write the correct letter  A-G, in boxes 1-4 on your answer sheet.
+ NB    You may use any letter more than once
+1..................... a reason why newer forests provide howlers with better feeding
+opportunities than older forests
+ 2..................... a reference to a change in farmers’ attitudes towards wildlife
+ 3..................... a description of the means by which howlers select the best available diet
+for themselves
+4..................... figures relating to the reduction of natural wildlife habitat over a period of
+time
+ QUESTIONS 5-8
+Complete the summary below.
+Choose ONE WORD ONLY  from the passage for each answer.
+Write your answers in boxes 5-8 on your answer sheet.
+ 
  
-8. polymer
-9. B
-10. C
-11. A
-12. C
-13. A
-14.7. condensation D
- 7</p>
-<p>Reading Practice
- Nature works Polylactic acid
-A dozen years ago, scientists at Cargill got the idea of converting lactic acid made from
-corn into plastic while examining possible new uses for materials produced from corn wet
-milling processes. In the past, several efforts had been made to develop plastics from lactic
-acid, but with limited success. Achieving this technological breakthrough didn’t come easily,
-but in time the efforts did succeed. A fermentation and distillation process using com was
-designed to create a polymer suitable for a broad variety of applications.</p>
-<p>As an agricultural based firm, Cargill had taken this product as far as it could by 1997.
-The company needed a partner with access to plastics markets and polymerization
-capabilities, and began discussions with The Dow Chemical Company. The next step was
-the formation of the joint venture that created Cargill Dow LLC. Cargill Dow’s product is the
-world’s first commercially available plastic made from annually renewable resources such
-as com:
--Nature Works™ PLA is a family of packaging polymers (carbon-based molecules)
-made from non-petroleum based resources.
--Ingeo is a family of polymers for fibers made in a similar manner.
-c
-By applying their unique technology to the processing of natural plant sugars, Cargill Dow
-has created a more environmentally friendly material that reaches the consumer in clothes,
-cups, packaging and other products. While Cargill Dow is a stand-alone business, it
-continues to leverage the agricultural processing, manufacturing and polymer expertise of
-the two parent companies in order to bring the best possible products to market.</p>
-<p>The basic raw materials for PLA are carbon dioxide and water. Growing plants, like com,
-take these building blocks from the atmosphere and the soil. They are combined in the
-plant to make carbohydrates (sucrose and starch) through a process driven by
-photosynthesis. The process for making Nature Works PLA begins when a renewable
-resource such as corn is milled, separating starch from the raw material. Unrefined
-dextrose, in turn, is processed from the starch.</p>
-<p>Cargill Dow turns the unrefined dextrose into lactic acid using a fermentation process
-similar to that used by beer and wine producers. This is the same lactic acid that is used as
-a food additive and is found in muscle tissue in the human body. Through a special
-condensation process, a lactide is formed. This lactide is purified through vacuum
-distillation and becomes a polymer (the base for Natureworks PLA) that is ready for use
-through a solvent-free melt process. Development of this new technology allows the
-company to “harvest” the carbon that living plants remove from the air through
-photosynthesis. Carbon is stored in plant starches, which can be broken down into natural
-plant sugars. The carbon and other elements in these natural sugars are then used to
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+                                               Why do howlers have an advantage over other
+                                                              Central American monkeys?
+ -Howler monkeys have a more rapid rate of 5..................... than either capuchin of
+spider monkeys. 
+-Unlike the other local monkey species, howlers can survive without eating
+6....................., 
+-and so can live inside a relatively small habitat area. Their diet is more flexible,  and
+they are able to tolerate leaves with high levels of 7......................
+-Howlers can also survive periods of 8..................... better than the other monkey
+species can. 
+ 3
+ QUESTIONS 9-13
+Look at the following features (</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 9-13) and the list of locations below.
+Match each feature with the correct location,  A, B or C.
+Write the correct letter,  A, B or C, in boxes 9-13 on your answer sheet.
+ NB    You may use any letter more than once.
+         
+                   List of Locations
+           A       Hacienda La Pacifica
+ B       Santa Rosa National Park
+ 
+ C       Cholula Cacao Farm
+9..................... It has seen the return of native tree species. 
+10..................... It supports only one species of native monkey. 
+11..................... Its monkey population helps the agriculture of the area.  
+12..................... It is home to populations of all three local monkey species.  
+13..................... Its landscape was altered by the construction of a transport link.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.C
+2.G
+3.E
+4.B
+5.REPRODUCTION
+6.FRUIT
+7.8.DROUGHT
+9.B
+10.C
+11.C
+12.A
+13.A
+TOXICS
+ 5</div>
+</div>
+</div>
 </body>
 </html>

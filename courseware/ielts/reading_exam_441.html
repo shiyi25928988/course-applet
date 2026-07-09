@@ -1,379 +1,108 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Vikings Wayfaring Way - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Work And Travel Usa - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题590/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Vikings Wayfaring Way</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Questions 1-7
-Do the following statements agree with the information given in Reading Passage?
-In boxes 1-7 on your answer sheet, write
-TRUE               if the statement agrees with the information
-FALSE              if the statement contradicts the information
-NOT GIVEN    if there is no information on this
-1.....................   In Australia, alternative energies are less expensive than conventional
-electricity.
-2.....................   Geoenergy needs to adapt its system to make it less harmful to the
-environment.
-3.....................   Dr Prue Chopra has studied the effects of radon gas on the environment.
-4.....................   Hot, dry rocks could provide enough power for the whole of Australia.
-5.....................   The new Enviropower facility will keep tourists away.
-6.....................   Wavetech was established when its founders were turned down by another
-company.
-7.....................   According to AEA, Australia is a world leader in developing renewable
-energy.
-Questions 8-13
-Look at the following statements (Questions 8-13) and the list of companies below.
-Match each statement with the correct company, A-D.
-Write the correct letter, A-D, in boxes 8-13 on your answer sheet.
-NB You may use any letter more than once.
-8.....................   During the process, harmful substances are prevented from escaping.
-9.....................   Water is used to force air through a special device.
-10.....................   Techniques used by other countries are being copied.
-11.....................   The system can provide services other than energy production.
-12.....................   It is planned to force water deep under the ground.
-13.....................   Original estimates for part of the project have been revised.
-List of Companies
-A     Australian Hydro
- 3</p>
-<p>B     Geoenergy
-C     Enviropower
-D     Wavetech
- 4</p>
-<p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Work And Travel Usa</h1>
+<p>雅思阅读真题 · 第441篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Work and Travel USA
+Do you want to hove the best summer holiday ever?
+Have you just graduated and want to escape for a unique experience abroad?
+Only $1950 will make It all happen!
+  This unbeatable program fee includes:
+-return flight from Sydney to Los Angeles (onward travel in USA not included)
+-3 months' insurance cover
+-2 nights' accommodation on arrival plus meet and greet and airport transfer
+-arrival orientation by experienced InterExchange staff
+-visa application fees
+ You also have:
  
-1. FALSE
-2. TRUE
-3. NOT GIVEN
-4. TRUE
-5. FALSE
-6. TRUE
-7.
-8. B
-9. D
-10. A
-11. C
-12. B
-13. C
-FALSE
- 5</p>
-<p>Reading Practice
- Researcher on the Tree Crown</p>
-<p>The forest canopy – the term given to the aggregated crowns of trees in a forest – is
-thought to host up to 40 per cent of all species, of which ten per cent could be unique to the
-forest roof. “We’re dealing with the richest, least known, most threatened habitat on Earth,”
-says Andrew Mitchell, the executive director of the Global Canopy Programme (GCP), a
-collection of groups undertaking research into this lofty world. “The problem with our
-understanding of forests is that nearly all the information we have has been gleaned from
-just two meters above the soil, and yet we’re dealing with trees that grow to heights of 60
-meters, or in the case of the tallest redwood 112 meters. It’s like doctors trying to treat
-humans by only looking at their feet.”</p>
-<p>Tropical rainforest comprises the richest of ecosystems, rivalled only by coral reel for its
-diversity and complex interrelationships. And a great deal of that diversity lives up in the
-canopy – an estimated 70-90 per cent of life in the rainforest exists in the trees; one in ten
-of all vascular plants are canopy dwellers, and about 20-25 per cent of all invertebrates are
-thought to be unique to the canopy.</p>
-<p>The first Briton to actually get into the canopy may have been Sir Francis Drake who, in
-1573, gained his first glimpse of the Pacific Ocean from a tall tree in Darien, Panama.
-However, the first serious effort to reach and study the canopy didn’t begin until 1929. The
-Oxford University Expedition to British Guiana, led by Major RWG Hingston, still ended up
-help of locals when it came to building an observation platform. It was a successful
-expedition all the same, despite the colony’s acting governor getting stuck high up on a
-winched seat during a visit. In terms of canopy access, the French have proved themselves
-to be excellent innovators, taking things further with the development of ‘lighter-than-air
-platforms -balloons and related equipment, to you and me. Francis Halle; from the
-Laboratoire de Botanique Tropicale at Montpellier University took to a balloon in the mid1980s in order to approach the canopy from above. His work in French Guiana was
-inspired by the use in Gabon of a tethered helium balloon by Marcel and Annette Hladick.
-Halle went one further by using a small purpose-built airship-a cigar-shaped balloon with
-propellers to aid manoeuvrability. “We suddenly had a mobile system that could move
-around the treetops; there were no other means of doing this,” says Mitchell.</p>
-<p>From this, two balloon-dependent features have developed: the radeau or raft, and the luge
-or sledge. The raft is a ‘floating’ platform, employed by French academics Dany CleyetMarrel and Laurent Pyot and is essentially an island in the treetops. Made of kevlar mesh
-netting and edged with inflated neoprene tubes, it rests on top of the canopy, allowing
-sampling (mostly of plants and insects) to take place at the edges of the platform, and can
-stay in position for several days. The luge, on the other hand, is an inflated hexagon similar
-to a traditional balloon basket but with a hole in the bottom covered with Kevlar mesh. Such
-techniques aren’t without their problems, however, “balloons can cover larger areas,
- 1</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+  -access to a J-l visa enabling you to work in the USA
+-an extensive directory of employers
+-InterExchange support throughout the program
+-24-hour emergency support throughout the length of the program
+Call toll-free 1800 678 738InterExchange has 50 yeors' experience in international
+student exchange programs. 18,000 students from around the world travel yearly to the
+USA on this very program. InterExchange con also offer you work opportunities in other
+countries. WHAT IS INTEREXCHANGE?InterExchange , one of the world's leading
+operators of international exchange programs and related services:
+ -is a non-profit, non-governmental organisation
+-has 700 professional staff in 30 countries worldwide
+-was founded in 1947
+InterExchange operates these programs for students all around the world. It offers you
+trained and travelled staff, plus full support during the application process. You can
+choose any job that interests you anywhere in the USA, whether that is working in a law
+firm in Boston, a famous ski resort in Colorado or serving coffee and doughnuts in the
+bzzing streets of New York. You can select the period you work and the period you
+travel; you may want to work for 1 month and travel for 3, or work the entire duration of
+your stay. The choice is yours. YOU CAN TAKE UP THIS OPPORTUNITY IF YOU
+ARE:
+-a full-time student at an Australian university or TAFE college
+-presently enrolled, or finishing this year, or you have deferred a year of study
+-over 18 years old by November in the academic year in which you apply to
+ 1
+InterExchange
+-enthusiastic about the experience of a lifetime...
+Sign up now!!
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Do the following statements agree with the information given in the advertisement.
+In boxes1-6on your answer sheet, write
+TRUE
+FALSEif the statement is true according to the passage
+if the statement is false according to the passage
+NOT GIVEN if the information is not given in the passage
+1..................... The program cost includes internal flights within the USA.  
+2..................... Emergency assistance offered in the program includes legal advice.
+3..................... InterExchange offers similar programs in countries other than the USA.  
+4..................... InterExchange is part of a government program.  
+5..................... There are no restrictions on the type of job you can do.  
+6..................... There is an upper age limit for applicants.  
+ 3</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+1.FALSE
+2.NOT GIVEN
+3.TRUE4.FALSE
+5.TRUE
+6.NOT GIVEN
+ 4</div>
+</div>
+</div>
 </body>
 </html>

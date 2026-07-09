@@ -1,365 +1,171 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio Automation - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Tea And The Industrial Revolution - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题382/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Radio Automation</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Tea And The Industrial Revolution</h1>
+<p>雅思阅读真题 · 第288篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Tea and the Industrial Revolution
+A Cambridge professor says that a change in drinking babits was the reason for the
+ 
+ Industrial Revolution in Britain. Anjana Abuja reports
+ A    Alan Macfarlane, professor of anthropological science at King’s College, Cambridge
+has, like other historians, spent decades wrestling with the enigma of the Industrial
+Revolution. Why did this particular Big Bang – the world-changing birth of industry-happen
+in Britain? And why did it strike at the end of the 18th century?
+ B     Macfarlane compares the puzzle to a combination lock. ‘There are about 20 different
+factors and all of them need to be present before the revolution can happen,’ he says. For
+industry to take off, there needs to be the technology and power to drive factories, large
+urban populations to provide cheap labour, easy transport to move goods around, an
+affluent middle-class willing to buy mass-produced objects, a market-driven economy and a
+political system that allows this to happen. While this was the case for England, other
+nations, such as Japan, the Netherlands and France also met some of these criteria but
+were not industrialising. All these factors must have been necessary. But not sufficient to
+cause the revolution, says Macfarlane. ‘After all, Holland had everything except coal while
+China also had many of these factors. Most historians are convinced there are one or two
+missing factors that you need to open the lock.’
+ C     The missing factors, he proposes, are to be found in almost even kitchen cupboard.
+Tea and beer, two of the nation’s favourite drinks, fuelled the revolution. The antiseptic
+properties of tannin, the active ingredient in tea, and of hops in beer – plus the fact that
+both are made with boiled water – allowed urban communities to flourish at close quarters
+without succumbing to water-borne diseases such as dysentery. The theory sounds
+eccentric but once he starts to explain the detective work that went into his deduction, the
+scepticism gives way to wary admiration. Macfarlanes case has been strengthened by
+support from notable quarters – Roy Porter, the distinguished medical historian, recently
+wrote a favourable appraisal of his research.
+ D     Macfarlane had wondered for a long time how the Industrial Revolution came about.
+Historians had alighted on one interesting factor around the mid-18th century that required
+explanation. Between about 1650 and 1740the population in Britain was static. But then
+there was a burst in population growth. Macfarlane says: ‘The infant mortality rate halved in
+the space of 20 years, and this happened in both rural areas and cities, and across all
+classes. People suggested four possible causes. Was there a sudden change in the
+viruses and bacteria around? Unlikely. Was there a revolution in medical science? But this
+was a century before Lister’s revolution*. Was there a change in environmental conditions?
+There were improvements in agriculture that wiped out malaria, but these were small gains.
+Sanitation did not become widespread until the 19th century. The only option left is food.
+But the height and weight statistics show a decline. So the food must have got worse.
+Efforts to explain this sudden reduction in child deaths appeared to draw a blank.’
+E     This population burst seemed to happen at just the right time to provide labour for the
+Industrial Revolution. ‘When you start moving towards an industrial revolution, it is
+economically efficient to have people living close together,’  says Macfarlane. ‘But then you
+get disease, particularly from human waste.’ Some digging around in historical records
+revealed that there was a change in the incidence of water-borne disease at that time,
+ 1
+especially dysentery. Macfarlane deduced that whatever the British were drinking must
+have been important in regulating disease. He says, ‘We drank beer. For a long time, the
+English were protected by the strong antibacterial agent in hops, which were added to help
+preserve the beer. But in the late 17th century a tax was introduced on malt, the basic
+ingredient of beer. The poor turned to water and gin and in the 1720s the mortality rate
+began to rise again. Then it suddenly dropped again. What caused this?’
+ F      Macfarlane looked to Japan, which was also developing large cities about the same
+time, and also had no sanitation. Water-borne diseases had a much looser grip on the
+Japanese population than those in Britain. Could it be the prevalence of tea in their culture?
+Macfarlane then noted that the history of tea in Britain provided an extraordinary
+coincidence of dates. Tea was relatively expensive until Britain started a direct dipper trade
+with China in the early 18th century. By the 1740s, about the time that infant mortality was
+dipping, the drink was common. Macfarlane guessed that the fact that water had to be
+boiled, together with the stomach-purifying properties of tea meant that the breast milk
+provided by mothers was healthier than it had ever been. No other European nation sipped
+tea like the British, which, by Macfarlanes logic, pushed these other countries out of
+contention for the revolution.
+G     But, if tea is a factor in the combination lock, why didn’t Japan forge ahead in a tea-
+soaked industrial revolution of its own? Macfarlane notes that even though 17th-century
+Japan had large cities, high literacy rates, even a futures market, it had turned its back on
+the essence of any work-based revolution by giving up labour-saving devices such as
+animals, afraid that they would put people out of work. So, the nation that we now think of
+as one of the most technologically advanced entered the 19th century having ‘abandoned
+the wheel’.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-7
+Reading Passage has seven paragraphs, A-G.
+Choose the correct heading for each paragraph from the list of headings below.
+Write the correct number, i-ix, in boxes 1-7on your answer sheet
+  List of Headings
+i       The search for the reasons for an increase in population
+ii      Industrialisation and the fear of unemployment
+iii     The development of cities in Japan 4 The time and place of the Industrial
+Revolution
+iv     The time and place of the Industrial Revolution
+v      The cases of Holland, France and China
+vi     Changes in drinking habits in Britain
+vii    Two keys to Britain’s industrial revolution
+viii   Conditions required for industrialisation
+ix     Comparisons with Japan lead to the answer
+1     Paragraph A  1.....................
+2     Paragraph B 2.....................
+3    Paragraph C 3.....................
+4    Paragraph D 4.....................
+5    Paragraph E 5.....................
+6    Paragraph F 6.....................
+7    Paragraph G 7.....................
  
-1. C
-2. A
-3. B
-4. A
-5. C
-6. B
-7. NO
-8. NOT GIVEN
-9. YES
-10. YES
-11. NOT GIVEN
-12. YES
-13. NO
-14. NO
- 5</p>
-<p>Reading Practice
- Intelligence and Giftedness</p>
-<p>In 1904 the French minister of education, facing limited resources for schooling, sought a
-way to separate the unable from the merely lazy. Alfred Binet got the job of devising
-selection principles and his brilliant solution put a stamp on the study of intelligence and
-was the forerunner of intelligence tests still used today, he developed a thirty-problem test
-in 1905, which tapped several abilities related to intellect, such as judgment and reasoning,
-the test determined a given child’s mental age’. The test previously established a norm for
-children of a given physical age. (for example, five-year-old on average get ten items
-correct), therefore, a child with a mental age of five should score 10, which would mean
-that he or she was functioning pretty much as others of that age. The child’s mental age
-was then compared to his physical age.</p>
-<p>A large disparity in the wrong direction (e.g., a child of nine with a mental age of four) might
-suggest inability rather than laziness and mean he or she was earmarked for special
-schooling, Binet, however, denied that the test was measuring intelligence, its purpose was
-simply diagnostic, for selection only. This message was however lost and caused many
-problems and misunderstanding later.</p>
-<p>Although Binet’s test was popular, it was a bit inconvenient to deal with a variety of physical
-and mental ages. So in 1912, Wilhelm Stern suggested simplifying this by reducing the two
-to a single number, he divided the mental age by the physical age and multiplied the result
-by 100. An average child, irrespective of age, would score 100. A number much lower than
-100 would suggest the need for help, and one much higher would suggest a child well
-ahead of his peer.</p>
-<p>This measurement is what is now termed the IQ (for intelligence quotient) score and it has
-evolved to be used to show how a person, adult or child, performed in relation to others.
-(the term IQ was coined by Lewis M. Terman, professor of psychology and education of
-Stanford University, in 1916. He had constructed an enormously influential revision of
-Binet’s test, called the Stanford-Binet test, versions of which are still given extensively.)</p>
-<p>The field studying intelligence and developing tests eventually coalesced into a sub-field of
-psychology called psychometrics (psycho for ‘mind’ and metrics for ‘measurements’). The
-practical side of psychometrics (the development and use of tests) became widespread
-quite early, by 1917, when Einstein published his grand theory of relativity, mass-scale
-testing was already in use. Germany’s unrestricted submarine warfare (which led to the
-sinking of the Lusitania in 1915) provoked the United States to finally enter the First World
-War in the same year. The military had to build up an army very quickly; it had two million
-inductees to sort out. Who would become officers and who enlisted men?
-Psychometricians developed two intelligence tests that help sort all these people out, at
- 1</p>
-<p>least to some extent, this was the first major use of testing to decide who lived and who
-died, as officers were a lot safer on the battlefield, the tests themselves were given under
-horrendously bad conditions, and the examiners seemed to lack commonsense, a lot of
-recruits simply had no idea what to do and in several sessions most inductees scored zero!
-The examiners also came up with the quite astounding conclusion from the testing that the
-average American adult’s intelligence was equal to that of a thirteen-year-old!</p>
-<p>Intelligence testing enforced political and social prejudice, their results were used to argue
-that Jews ought to be kept out of the united states because they were so intelligently
-inferior that they would pollute the racial mix, and blacks ought not to be allowed to breed
-at all. And so abuse and test bias controversies continued to plaque psychometrics.</p>
-<p>Measurement is fundamental to science and technology, science often advances in leaps
-and bounds when measurement devices improve, psychometrics has long tried to develop
-ways to gauge psychological qualities such as intelligence and more specific abilities,
-anxiety, extroversion, emotional stability, compatibility, with a marriage partner, and so on.
-Their scores are often given enormous weight, a single IQ measurement can take on a life
-of its own if teachers and parents see it as definitive, it became a major issue in the 70s,
-when court cases were launched to stop anyone from making important decisions based
-on IQ test scores, the main criticism was and still is that current tests don’t really measure
-intelligence, whether intelligence can be measured at all is still controversial, some say it
-cannot others say that IQ tests are psychology’s greatest accomplishments. 
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ Questions 8-13
+Do the following statements agree with the information given in Reading Passage?
+In boxes8-13on your answer sheet, write
+TRUEif the statement agrees with the information
+FALSEif the statement contradicts the information
+NOT GIVEN if there is no information on this
+ 3
+8..................... China’s transport system was not suitable for industry in the 18th century.
+9..................... Tea and beer both helped to prevent dysentery in Britain.
+10..................... Roy Porter disagrees with Professor Macfarlane’s findings.
+11.....................  After 1740there was a reduction in population in Britain.
+12..................... People in Britain used to make beer at home.
+13..................... The tax on malt indirectly caused a rise in the death rate.
+ 4</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.iv
+2.viii
+3.vii
+4.i
+5.vi
+6.ix
+7.8.NOT GIVEN
+9.TRUE
+10.FALSE
+11.FALSE
+12.NOT GIVEN
+13.TRUE
+ii
+ 5</div>
+</div>
+</div>
 </body>
 </html>

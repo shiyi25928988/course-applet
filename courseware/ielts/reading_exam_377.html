@@ -1,360 +1,236 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Garbage Problem - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>The Search For Extra Terrestrial Intelligence - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题504/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 The Garbage Problem</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>Solution:
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>The Search For Extra Terrestrial Intelligence</h1>
+<p>雅思阅读真题 · 第377篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>The Search for Extra-terrestrial Intelligence
+ The question of whether we are alone in the Universe has haunted humanity for
+centuries, but we may now stand poised on the brink of the answer to that question, as we
+search for radio signals from other intelligent civilisations. This search, often known by the
+acronym SETI (search for extra-terrestrial intelligence], is a difficult one. Although groups
+around the world have been searching intermittently for three decades, it is only now that
+we have reached the level of technology where we can make a determined attempt to
+search all nearby stars for any sign of life.
+A
+The primary reason for the search is basic curiosity - the same curiosity about the natural
+world that drives all pure science. We want to know whether we are alone in the
+Universe. We want to know whether life evolves naturally if given the right conditions, or
+whether there is something very special about the Earth to have fostered the variety of life
+forms that we see around us on the planet. The simple detection of a radio signal will be
+sufficient to answer this most basic of all questions. In this sense, SETI is another cog in
+the machinery of pure science which is continually pushing out the horizon of our
+knowledge. However, there are other reasons for being interested in whether life exists
+elsewhere. For example, we have had civilisation on Earth for perhaps only a few thousand
+years, and the threats of nuclear war and pollution over the last few decades have told us
+that our survival may be tenuous. Will we last another two thousand years or will we wipe
+ourselves out? Since the lifetime of a planet like ours is several billion years, we can expect
+that, if other civilisations do survive in our galaxy, their ages will range from zero to several
+billion years. Thus any other civilisation that we hear from is likely to be far older, on
+average, than ourselves. The mere existence of such a civilisation will tell us that long-term
+survival is possible, and gives us some cause for optimism. It is even possible that the
+older civilisation may pass on the benefits of their experience in dealing with threats to
+survival such as nuclear war and global pollution, and other threats that we haven’t yet
+discovered.
+B
+In discussing whether we are alone, most SETI scientists adopt two ground rules. First,
+UFQs (Unidentified Flying Objects) are generally ignored since most scientists
+don’t consider the evidence for them to be strong enough to bear serious
+consideration (although it is also important to keep an open mind in case any really
+convincing evidence emerges in the future). Second, we make a very conservative
+assumption that we are looking for a life form that is pretty well like us, since if it differs
+radically from us we may well not recognise it as a life form, quite apart from whether we
+are able to communicate with it. In other words, the life form we are looking for may well
+have two green heads and seven fingers, but it will nevertheless resemble us in that it
+should communicate with its fellows, be interested in the Universe, live on a planet orbiting
+a star like our Sun, and perhaps most restrictively, have a chemistry, like us, based on
+carbon and water.
+C
+ 1
+Even when we make these assumptions, our understanding of other life forms is still
+severely limited. We do not even know, for example, how many stars have planets, and
+we certainly do not know how likely it is that life will arise naturally, given the right
+conditions. However, when we look at the 100 billion stars in our galaxy (the Milky Way),
+and 100 billion galaxies in the observable Universe, it seems inconceivable that at least
+one of these planets does not have a life form on it; in fact, the best educated guess we
+can make, using the little that we do know about the conditions for carbon-based life, leads
+us to estimate that perhaps one in 100,000 stars might have a life-bearing planet orbiting it.
+That means that our nearest neighbours are perhaps 100 light years away, which is almost
+next door in astronomical terms.
+D
+An alien civilisation could choose many different ways of sending information across the
+galaxy, but many of these either require too much energy, or else are severely
+attenuated while traversing the vast distances across the galaxy. It turns out that, for a
+given amount of transmitted power, radio waves in the frequency range 1000 to 3000 MHz
+travel the greatest distance, and so all searches to date have concentrated on looking for
+radio waves in this frequency range. So far there have been a number of searches by
+various groups around the world, including Australian searches using the radio telescope at
+Parkes, New South Wales. Until now there have not been any detections from the few
+hundred stars which have been searched. The scale of the searches has been increased
+dramatically since 1992, when the US Congress voted NASA $10 million per year for ten
+years to conduct a thorough search for extra-terrestrial life. Much of the money in this
+project is being spent on developing the special hardware needed to search many
+frequencies at once. The project has two parts. One part is a targeted search using the
+world’s largest radio telescopes, the American-operated telescope in Arecibo, Puerto Rico
+and the French telescope in Nancy in France. This part of the project is searching the
+nearest 1000 likely stars with high sensitivity for signals in the frequency range 1000 to
+3000 MHz. The other part of the project is an undirected search which is monitoring all of
+space with a lower sensitivity, using the smaller antennas of NASA’s Deep Space Network.
+E
+There is considerable debate over how we should react if we detect a signal from an alien
+civilisation. Everybody agrees that we should not reply immediately. Quite apart from
+the impracticality of sending a reply over such large distances at short notice, it raises a
+host of ethical questions that would have to be addressed by the global community before
+any reply could be sent. Would the human race face the culture shock if faced with a
+superior and much older civilisation? Luckily, there is no urgency about this. The stars
+being searched are hundreds of light years away, so it takes hundreds of years for their
+signal to reach us, and a further few hundred years for our reply to reach them. It’s not
+important, then, if there’s a delay of a few years, or decades, while the human race debates
+the question of whether to reply, and perhaps carefully drafts a reply.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-4
+  Reading Passage has five paragraphs, A-E.
+   Choose the correct heading for paragraphs B-Efrom the list of headings below.
+Write the correct number, i-vii, in boxes 1-4on your answer sheet.
+Example Answer
+Paragraph A
+ v
+ 1    Paragraph B 1.....................
+ 2    Paragraph C 2.....................
+ 3    Paragraph D 3.....................
+4    Paragraph E 4.....................List of
+Headings
+i    Seeking
+the
+transmissio
+n of radio
+signals from
+planets
+   ii
+Appropriat
+e responses
+to signals
+from other
+civilisations
+iii    Vast
+distances to
+Earth’s
+closest
+neighbours
+   iv
+Assumpti
+ons
+underlying
+the search
+for extra-
+terrestrial
+intelligence
+   v
+Reasons
+for the
+search for
+extra-
+terrestrial
+intelligence
+   vi
+Knowledg
+e of extra-
+terrestrial
+life forms
+ 3
+   vii
+ 
+ 
+  
  
-1. x
-2. i
-3. v
-4.
-5. ix
-6. iv
-7. viii
-ii
- 3</p>
-<p>NEW RULES FOR THE PAPER GAME
-1.    Computerized data storage and electronic mail were to have heralded the paperless
-office. But, contrary to expectation, paper consumption throughout the world shows no sign
-of abating. In fact, consumption, especially of printing and writing papers, continues to
-increase. World demand for paper and board is now expected to grow faster than the
-general economic growth in the next 15 years. Strong demand will be underprinted by the
-growing industrialization of South East Asia, the reemergence of paper packaging, greater
-use of facsimile machines and photocopiers, and the popularity of direct -mail advertising. It
-is possible that by 2007, world paper and board demand will reach 455 million tonnes,
-compared with 241 million tonnes in 1991.
  
-2.    The pulp and paper industry has not been badly affected by the electronic technologies
-that promised a paperless society. But what has radically altered the industry’s structure is
-pressure from another front-a more environmentally conscious society driving an
-irreversible move towards cleaner industrial production. The environmental consequences
-of antiquated pulp mill practices and technologies had marked this industry as one in need
-of reform. Graphic descriptions of deformed fish and thinning populations, particularly in the
-Baltic Sea where old pulp mills had discharged untreated effluents for 100 years, have
-disturbed the international community.
- 
-3.    Until the 1950s, it was common for pulp mills and other industries to discharge
-untreated effluent into rivers and seas. The environmental effects were at the time either
-not understood, or regarded as an acceptable cost of economic prosperity in an
-increasingly import-oriented world economy. But greater environmental awareness has
-spurred a fundamental change in attitude in the community, in government and in industry
-itself.
- 
-4.    Since the early 1980s, most of the world-scale pulp mills in Scandinavia and North
-America have modernized their operations, outlying substantial amounts to improve
-production methods. Changes in mill design and processes have been aimed at minimizing
-the environmental effects of effluent discharge while at the same time producing pulp with
-the whiteness and strength demanded by the international market. The environmental
-impetus is taking this industry even further, with the focus now on developing processes
-that may even eliminate waste-water discharges. But the ghost of the old mills continues to
-haunt industry today. In Europe, companies face a flood of environment-related legislation.
-In Germany, companies are now being held responsible for the waste they create.
- 
-5.    Pulp is the porridge -like mass of plant fibers from which paper is made. Paper makers
-choose the type of plant fibre and the processing methods, depending on what the end
-product will be used for: whether it is a sturdy packing box, a smooth sheet of writing paper
-or a fragile tissue. In wood, which is the source of about 90% of the world’s paper
-production, fibres are bound together by lignin, which gives the unbleached pulp a brown
-colour. Pulping can be done by mechanical grinding, or by chemical treatment in which
-woodchips are “cooked” with chemicals, or by a combination of both methods.
-6.    Kraft pulping is the most widely used chemical process for producing pulp with the
-strength required by the high-quality paper market. It is now usually carried out in a
-continuous process in a large vessel called digester. Woodchips are fed from a pile into the
-top of the digester. In the digester, the chips are cooked in a solution called white liquor,
- 1</p>
-<p>nosed of caustic soda (sodium hydroxide) sodium sulphide. The chips are cooked at high
-temperatures of up to 170 degree for up to three hours. The pulp is then washed and rate
-from the spent cooking liquor which has turned dark and is now appropriately ailed black
-liquor. An important feature of kraft pulping is a chemical recovery system which recycles
-about 95 % of the cooking chemicals and produces more than enough energy runs the mill.
-In a series of steps involving a furnace and tanks, some of the black liquor is transformed
-into energy, while some is regenerated into the original white cooking liquor. The pulp that
-comes out has little lignin left in the fibres. Bleaching removes the last remaining lignin and
-brightens the pulp. Most modern mills have modified their pulping process to remove as
-much of the lignin as possible before the pulp moves to the bleaching stage. 
- 2</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ Likelihood
+of life on
+other
+planets
+ Questions 5-7
+Answer the questions below.
+ChooseNO MORE THAN THREE WORDS AND/OR A NUMBER from the passage for
+each answer.
+Write your answers in boxes 5-7 on your answer sheet.
+5    What is the life expectancy of Earth? 5.....................
+6    What kind of signals from other intelligent civilisations are SETI scientists
+searching for? 6.....................
+7    How many stars are the world’s most powerful radio telescopes searching?
+7.....................
+ Questions 8-13
+Do the following statements agree with the views of the writer in Reading Passage?
+In boxes8-13 on your answer sheet, write
+YES    if the statement agrees with the views of the writer
+NO    if the statement contradicts the views of the writer
+NOT GIVEN    if it is impossible to say what the writer thinks about this
+8.....................    Alien civilisations may be able to help the human race to overcome
+serious problems.
+9.....................    SETI scientists are trying to find a life form that resembles humans in
+many ways.
+10.....................    The Americans and Australians have co-operated on joint research
+projects.
+11.....................    So far SETI scientists have picked up radio signals from several stars.
+12.....................    The NASA project attracted criticism from some members of Congress.
+13.....................    If a signal from outer space is received, it will be important to respond
+ 4
+promptly.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.iv
+2.vii
+3.i
+4.ii
+5.several billion years
+6.radio (waves/signals)
+7.8.YES
+9.YES
+10.NOT
+GIVEN
+11.NO
+12.NOT
+GIVEN
+13.NO
+1000 (stars)
+ 6</div>
+</div>
+</div>
 </body>
 </html>

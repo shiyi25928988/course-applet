@@ -1,361 +1,200 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh-CN>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fossil Files The Paleobiology Database - 雅思阅读真题详解</title>
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <script src="../assets/js/common.js"></script>
-    <style>
-        .page-hero {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: #fff;
-            padding: 32px 24px;
-            border-radius: 16px;
-            margin-bottom: 32px;
-        }
-        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        .page-hero p { opacity: 0.95; margin: 0; }
-        .content-section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .content-section h3 {
-            margin: 0 0 16px 0;
-            color: #1d4ed8;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .content-section h3::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: #3b82f6;
-            border-radius: 2px;
-            display: inline-block;
-        }
-        .passage-content {
-            line-height: 2;
-            text-align: justify;
-            font-size: 1rem;
-            color: #1e293b;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .passage-content p { 
-            margin-bottom: 16px; 
-            text-indent: 2em;
-        }
-        .passage-content p:last-child {
-            margin-bottom: 0;
-        }
-        .questions-section {
-            background: #fffbeb;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #f59e0b;
-        }
-        .question-block {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 12px 0;
-            border: 1px solid #fde68a;
-        }
-        .question-block h4 {
-            margin: 0 0 12px 0;
-            color: #92400e;
-            font-size: 1rem;
-        }
-        .question-number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            text-align: center;
-            background: #fbbf24;
-            color: #451a03;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-        }
-        .nav-links a {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
-        .vocab-card {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        .vocab-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .vocab-card strong {
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-        .vocab-card p {
-            margin: 4px 0 0 0;
-            font-size: 0.9rem;
-            color: #475569;
-        }
-        .analysis-box {
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-        }
-        .answer-item {
-            background: #dcfce7;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-weight: 600;
-            color: #065f46;
-            border: 1px solid #86efac;
-        }
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
-            margin: 24px 0;
-            border-radius: 1px;
-        }
-        @media (max-width: 768px) {
-            .answer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<title>Indoor Pollution - 雅思阅读真题</title>
+<link rel=stylesheet href=../assets/css/common.css>
+<style>
+body {background:#f8fafc;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+.article-header {background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;padding:24px 32px;border-radius:16px;margin-bottom:24px;}
+.article-header h1 {font-size:1.5rem;margin:0 0 8px;}
+.article-header p {opacity:.9;margin:0;font-size:.9rem;}
+.content-section {background:#fff;border-radius:12px;padding:24px 32px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.content-section h2 {color:#1d4ed8;font-size:1.2rem;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;}
+.passage {line-height:1.9;color:#334155;font-size:.95rem;}
+.passage p {margin-bottom:12px;}
+.questions {line-height:1.8;color:#334155;}
+.questions .q-item {margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px;}
+.solution {line-height:1.8;color:#334155;}
+.solution .ans {display:inline-block;background:#dcfce7;color:#047857;padding:2px 10px;border-radius:4px;margin:2px;font-weight:600;}
+.back-links {margin-bottom:20px;display:flex;gap:12px;}
+.back-links a {display:inline-flex;align-items:center;padding:8px 16px;background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;}
+</style>
 </head>
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <h3>📚 阅读真题209/1000</h3>
-            <ul class="chapter-list">
-                <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
-                <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
-                <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
-            </ul>
-            <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
-            </div>
-        </aside>
-        
-        <main class="main">
-            <div class="page-hero">
-                <h1>📄 Fossil Files The Paleobiology Database</h1>
-                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
-            </div>
-
-            <!-- 阅读文章部分 -->
-            <div class="content-section">
-                <h3>📖 阅读文章 Reading Passage</h3>
-                <div class="passage-content">
-                    <p>most exquisite examples of evolution known to science.” In addition to colour, many mimics
-copy behaviours and even the flight pattern of their model species.</p>
-<p>But why are there so many different mimicry rings? One idea is that species flying at the
-same height in the forest canopy evolve to look like one another. “It had been suggested
-since the 1970s that mimicry complexes were stratified by flight height,” says DeVries. The
-idea is that wing colour patterns are camouflaged against the different patterns of light and
-shadow at each level in the canopy, providing the first line of defence against predators.”
-But the light patterns and wing patterns don’t match very well,” he says. And observations
-show that the insects do not shift in height as the day progresses and the light patterns
-change. Worse still, according to DeVries, this theory doesn’t explain why the model
-species is flying at that particular height in the first place.</p>
-<p>“When I first went out to Ecuador, I didn’t believe the flight height hypothesis and set out to
-test it,” says Beccaloni. “A few weeks with the collecting net convinced me otherwise. They
-really flew that way.” What he didn’t accept, however, was the explanation about light
-patterns. “I thought if this idea really is true, can I can work out why it could help explain
-why there are so many different warning patterns in any not place. Then we might finally
-understand how they could evolve in such a complex way.” The job was complicated by the
-sheer diversity of species involved at Jatun Sach. Not only were there 56 ithomiine butterfly
-species divided among eight mimicry rings, but there were also 69 other insect species,
-including 34 day-flying moths and a damselfly, all in a 200-hectare study area. Like many
-entomologists before him, Beccaloni used a large bag-like net to capture his prey. This
-allowed him to sample the 2.5 metres immediately above the forest floor. Unlike many
-previous workers, he kept very precise notes on exactly where he caught his specimens.</p>
-<p>The attention to detail paid off. Beccaloni found that the mimicry rings were flying at two
-quite separate altitudes. “Their use of the forest was quite distinctive,” he recalls. “For
-example, most members of the clear-winged mimicry ring would fly close to the forest floor,
-while the majority of the 12 species in the tiger-winged ring fly high up.” Each mimicry wing
-had its own characteristic flight height.</p>
-<p>However, this being practice rather than theory, things were a bit fuzzy. “They’d spend the
-majority of their time flying at a certain height. But they’d also spend a smaller proportion of
-their time flying at other heights,” Beccaloni admits. Species weren’t stacked rigidly like
-passenger jets waiting to land, but they did appear to have preferred airspace in the forest.
-So far, so good, but he still hadn’t explained what causes the various groups of ithomiines
-and their chromatic consorts to fly in formations at these particular heights.</p>
-<p>Then Beccaloni had a bright idea. “I started looking at the distribution of ithomiine larval
-food plants within the canopy,” he says. “For each one, I’d record the height to which the
-host plant grew and the height above the ground at which the eggs or larvae were found.
-Once I got them back to the field station’s lab, it was just a matter of keeping them alive
- 2</p>
-<p>until they pupated and then hatched into adults which I could identify.”
- 3</p>
-<p>Questions 1-5
-The reading Passage has seven paragraphs A-I
-Which paragraph contains the following information?
-Write the correct letter A-I, in boxes 1-5 on your answer sheet.
-NB You may use any letter more than once.
-1.....................   Criticism against flight height theory of butterfly
-2.....................   Explained why Beccaloni carried out research in Ecuador. 
-3.....................   Different mimicry ring flies at different height
-4.....................   The method of catching butterfly by Beccaloni
-5.....................   Not all Mimicry patterns are toxic information sent out from insects.
+<div class=container>
+<div class=back-links>
+<a href=reading_exam_index.html>← 阅读真题列表</a>
+<a href=index.html>← 雅思首页</a>
+</div>
+<div class=article-header>
+<h1>Indoor Pollution</h1>
+<p>雅思阅读真题 · 第154篇</p>
+</div>
+<div class=content-section>
+<h2>📖 Reading Passage</h2>
+<div class=passage>Indoor Pollution
+Since the early eighties we have been only too aware of the devastating effects of large-
+scale environmental pollution. Such pollution is generally the result of poor government
+planning in many developing nations or the short-sighted, selfish policies of the already
+industrialised countries which encourage a minority of the world’s population to squander
+the majority of its natural resources.
+While events such as the deforestation of the Amazon jungle or the nuclear disaster in
+Chernobyl continue to receive high media exposure, as do acts of environmental sabotage,
+it must be remembered that not all pollution is on this grand scale. A large proportion of the
+world’s pollution has its source much closer to home. The recent spillage of crude oil from
+an oil tanker accidentally discharging its cargo straight into Sydney Harbour not only
+caused serious damage to the harbour foreshores but also created severely toxic fumes
+which hung over the suburbs for days and left the angry residents wondering how such a
+disaster could have been allowed to happen.
+Avoiding pollution can be a fulltime job. Try not to inhale traffic fumes; keep away from
+chemical plants and building-sites; wear a mask when cycling. It is enough to make you
+want to stay at home. But that, according to a growing body of scientific evidence, would
+also be a bad idea. Research shows that levels of pollutants such as hazardous gases,
+particulate matter and other chemical ‘nasties’ are usually higher indoors than out, even in
+the most polluted cities. Since the average American spends 18 hours indoors for every
+hour outside, it looks as though many environmentalists may be attacking the wrong target.
+The latest study, conducted by two environmental engineers, Richard Corsi and Cynthia
+Howard-Reed, of the University of Texas in Austin, and published in Environmental
+Science and Technology, suggests that it is the process of keeping clean that may be
+making indoor pollution worse. The researchers found that baths, showers, dishwashers
+and washing machines can all be significant sources of indoor pollution, because they
+extract trace amounts of chemicals from the water that they use and transfer them to the
+air.
+Nearly all public water supplies contain very low concentrations of toxic chemicals, most of
+them left over from the otherwise beneficial process of chlorination. Dr. Corsi wondered
+whether they stay there when water is used, or whether they end up in the air that people
+breathe. The team conducted a series of experiments in which known quantities of five
+such chemicals were mixed with water and passed through a dishwasher, a washing
+machine, a shower head inside a shower stall or a tap in a bath, all inside a specially
+designed chamber. The levels of chemicals in the effluent water and in the air extracted
+from the chamber were then measured to see how much of each chemical had been
+transferred from the water into the air.
+The degree to which the most volatile elements could be removed from the water, a
+process known as chemical stripping, depended on a wide range of factors, including the
+volatility of the chemical, the temperature of the water and the surface area available for
+transfer. Dishwashers were found to be particularly effective: the high-temperature spray,
+splashing against the crockery and cutlery, results in a nasty plume of toxic chemicals that
+escapes when the door is opened at the end of the cycle.
+ 1
+In fact, in many cases, the degree of exposure to toxic chemicals in tap water by inhalation
+is comparable to the exposure that would result from drinking the stuff. This is significant
+because many people are so concerned about water-borne pollutants that they drink only
+bottled water, worldwide sales of which are forecast to reach $72 billion by next year. D.
+Corsi’s results suggest that they are being exposed to such pollutants anyway simply by
+breathing at home.
+The aim of such research is not, however, to encourage the use of gas masks when
+unloading the washing. Instead, it is to bring a sense of perspective to the debate about
+pollution. According to Dr Corsi, disproportionate effort is wasted campaigning against
+certain forms of outdoor pollution, when there is as much or more cause for concern
+indoors, right under people’s noses.
+Using gas cookers or burning candles, for example, both result in indoor levels of carbon
+monoxide and particulate matter that are just as high as those to be found outside, amid
+heavy traffic. Overcrowded classrooms whose ventilation systems were designed for
+smaller numbers of children frequently contain levels of carbon dioxide that would be
+regarded as unacceptable on board a submarine. ‘New car smell’ is the result of high levels
+of toxic chemicals, not cleanliness. Laser printers, computers, carpets and paints all
+contribute to the noxious indoor mix.
+ The implications of indoor pollution for health are unclear. But before worrying about the
+problems caused by large-scale industry, it makes sense to consider the small-scale
+pollution at home and welcome international debate about this. Scientists investigating
+indoor pollution will gather next month in Edinburgh at the Indoor Air conference to discuss
+the problem. Perhaps unwisely, the meeting is being held indoors.
+ 2</div>
+</div>
+<div class=content-section>
+<h2>📝 Questions</h2>
+<div class=questions>Questions 1-6
+Choose the appropriate letters A-Dand write them in boxes 1-6on your answer sheet.
+1.In the first paragraph, the writer argues that pollution
+A has increased since the eighties.
+B is at its worst in industrialised countries.
+C results from poor relations between nations.
+D is caused by human self-interest.
+2.The Sydney Harbour oil spill was the result of a
+ A ship refuelling in the harbour.
+B tanker pumping oil into the sea.
+C collision between two oil tankers.
+D deliberate act of sabotage.
+3. In the 3rd paragraph the writer suggests that
+ A people should avoid working in cities.
+B Americans spend too little time outdoors.
+C hazardous gases are concentrated in industrial suburbs.
+D there are several ways to avoid city pollution.
+4.The Corsi research team hypothesised that
+ A toxic chemicals can pass from air to water.
+B pollution is caused by dishwashers and baths.
+C city water contains insufficient chlorine.
+D household appliances are poorly designed.
+5.Asa result of their experiments, Dr Corsi’s team found that
+A dishwashers are very efficient machines.
+B tap water is as polluted as bottled water.
+C indoor pollution rivals outdoor pollution.
+D gas masks are a useful protective device.
+6.Regarding the dangers of pollution, the writer believes that
+A there is a need for rational discussion.
+ 3
  
-Questions 6-11
-Do the following statements agree with the information given in Reading Passage 1?
-In boxes 6-11 on your answer sheet, write
-TRUE               if the statement is true
-FALSE              if the statement is false
-NOT GIVEN    if the information is not given in the passage
+ 
+    B indoor pollution is a recent phenomenon.
+C people should worry most about their work environment.
+D industrial pollution causes specific diseases.
+Questions 7-13
+Reading Passage 1 describes a number of cause and effect relationships.
+Match each Cause (Questions 7-13) in List A with its Effect ( A-J) in List B.
+Write the appropriate letters (A-J)in boxes7-13on your answer sheet.
  
-6.....................   All butterflies’ colours of wings reflect the sense of warning to other
-predators.
- 
-7.....................   Insects may imitate butterflies’ wing pattern as well.
-8.....................   Flying Altitude of the butterfly is determined by their food.
-9.....................   Beccaloni agreed with the flight height hypothesis and decided to reassure
-its validity.
-10.....................   Jatun Sacha has the richest diversity of breeds in the world.
-11.....................   Beccaloni has more detailed records on the location of butterfly collection
-than others.
-Questions 12-13
-Choose the correct letter A, B, C or D
- 4</p>
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目部分 -->
-            <div class="content-section">
-                <h3>📝 题目 Questions</h3>
-                <div class="questions-section">
-                    
-        <div class="question-block">
-            <h4>📌 题目正在整理中...</h4>
-            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
-        </div>
-        
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 核心词汇部分 -->
-            <div class="content-section">
-                <h3>💡 核心词汇 Key Vocabulary</h3>
-                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-                    
-        <div class="vocab-card">
-            <strong>phenomenon</strong>
-            <p>n. 现象</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>significant</strong>
-            <p>adj. 重要的，显著的</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>contribute</strong>
-            <p>v. 贡献，导致</p>
-        </div>
-        
-        <div class="vocab-card">
-            <strong>consequence</strong>
-            <p>n. 结果，后果</p>
-        </div>
-        
-                </div>
-                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
-                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
-                </p>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- 题目解析部分 -->
-            <div class="content-section">
-                <h3>🎯 题目解析 Analysis & Answers</h3>
-                
-    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
-        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
-        <ul style="margin:0;padding-left:20px;line-height:2;">
-            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
-            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
-            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
-            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
-        </ul>
-    </div>
-
-    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
-        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
-        <div class="answer-grid">
-            <div class="answer-item">1. ii</div>
-            <div class="answer-item">2. v</div>
-            <div class="answer-item">3. vii</div>
-            <div class="answer-item">4. iii</div>
-            <div class="answer-item">5. ix</div>
-            <div class="answer-item">6. i</div>
-            <div class="answer-item">7. vi</div>
-            <div class="answer-item">8. iv</div>
-            <div class="answer-item">9. TRUE</div>
-            <div class="answer-item">10. FALSE</div>
-            <div class="answer-item">11. NOT GIVEN</div>
-            <div class="answer-item">12. TRUE</div>
-        </div>
-    </div>
-
-    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
-        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
-        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
-            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
-            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
-            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
-            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
-            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
-        </ol>
-    </div>
-    
-            </div>
-
-            <div class="nav-links">
-                <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看完整真题 →</a>
-            </div>
-        </main>
-    </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ List A: CAUSES
+7.....................        Industrialised nations use a lot of energy.
+8.....................        Oil spills into the sea.
+9.....................        The researchers publish their findings.
+10.....................      Water is brought to a high temperature.
+11.....................      People fear pollutants in tap water.
+12.....................      Air conditioning systems are inadequate.
+13.....................      Toxic chemicals are abundant in new cars.
+List B: EFFECTS
+AThe focus of pollution moves to the home.
+BThe levels of carbon monoxide rise.
+CThe world’s natural resources are unequally shared.
+DPeople demand an explanation.
+EEnvironmentalists look elsewhere for an explanation.
+FChemicals are effectively stripped from the water.
+GA clean odour is produced.
+HSales of bottled water increase.
+IThe levels of carbon dioxide rise.
+ 4
+ 
+ JThe chlorine content of drinking water increased.
+ 5</div>
+</div>
+<div class=content-section>
+<h2>✅ Solution</h2>
+<div class=solution>Solution:
+ 1.D
+2.B
+3.D
+4.B
+5.C
+6.A
+7.8.D
+9.A
+10.F
+11.H
+12.I
+13.G
+C
+ 6</div>
+</div>
+</div>
 </body>
 </html>
