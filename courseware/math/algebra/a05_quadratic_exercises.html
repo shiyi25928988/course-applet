@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>一元二次方程 - 专项练习</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>.fill input{width:120px;padding:6px 10px;border:2px solid var(--border);border-radius:6px;font-size:.95rem;}.fill input.correct{border-color:var(--success);background:#dcfce7;}.fill input.wrong{border-color:var(--danger);background:#fef2f2;}.progress-bar{background:var(--border);height:8px;border-radius:4px;margin-bottom:24px;overflow:hidden;}.progress-bar .fill-bar{height:100%;background:linear-gradient(90deg,#7c3aed,#5b21b6);border-radius:4px;transition:width .4s;}</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"><h3>📝 专项练习</h3><ul class="chapter-list"><li><a href="#q1">第1题</a></li><li><a href="#q6">第6题</a></li><li style="margin-top:20px;"><a href="a05_quadratic.html">← 返回课件</a></li></ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);"><a href="../../index.html" class="back-home">🏠 返回首页</a></div></aside>
+<main class="main">
+<div class="page-title">📊 一元二次方程专项练习</div>
+<p style="color:var(--text-secondary);margin-bottom:20px;">共10题 · 覆盖解法、判别式、韦达定理</p>
+<div class="progress-bar"><div class="fill-bar" style="width:0%;"></div></div>
+<h3>一、选择题</h3>
+<div class="exercise" id="q1"><div class="question"><span class="q-num">1</span>方程 x²-4x+3=0 的解是（ ）</div>
+<div class="options"><label><input type="radio" name="q1" value="A">A. x=1或3</label><label><input type="radio" name="q1" value="B">B. x=-1或-3</label><label><input type="radio" name="q1" value="C">C. x=1或-3</label><label><input type="radio" name="q1" value="D">D. x=-1或3</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button><div class="answer" id="answer-1" data-correct="A">✅ A。(x-1)(x-3)=0→x=1或3。</div></div>
+<div class="exercise" id="q2"><div class="question"><span class="q-num">2</span>方程 x²-2x+m=0 有两个相等的实数根，则m=（ ）</div>
+<div class="options"><label><input type="radio" name="q2" value="A">A. 0</label><label><input type="radio" name="q2" value="B">B. 1</label><label><input type="radio" name="q2" value="C">C. -1</label><label><input type="radio" name="q2" value="D">D. 2</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button><div class="answer" id="answer-2" data-correct="B">✅ B。Δ=4-4m=0→m=1。</div></div>
+<div class="exercise" id="q3"><div class="question"><span class="q-num">3</span>方程 x²-5x+6=0 的两根之和为（ ）</div>
+<div class="options"><label><input type="radio" name="q3" value="A">A. -5</label><label><input type="radio" name="q3" value="B">B. 5</label><label><input type="radio" name="q3" value="C">C. -6</label><label><input type="radio" name="q3" value="D">D. 6</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button><div class="answer" id="answer-3" data-correct="B">✅ B。韦达定理：x₁+x₂=-b/a=5。</div></div>
+<div class="exercise" id="q4"><div class="question"><span class="q-num">4</span>用配方法解方程 x²-6x-7=0，配方后得（ ）</div>
+<div class="options"><label><input type="radio" name="q4" value="A">A. (x-3)²=16</label><label><input type="radio" name="q4" value="B">B. (x-3)²=2</label><label><input type="radio" name="q4" value="C">C. (x+3)²=16</label><label><input type="radio" name="q4" value="D">D. (x-6)²=7</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button><div class="answer" id="answer-4" data-correct="A">✅ A。x²-6x+9=7+9→(x-3)²=16→x=3±4→x=7或-1。</div></div>
+<div class="exercise" id="q5"><div class="question"><span class="q-num">5</span>一元二次方程 ax²+bx+c=0 有两个不相等的实数根的条件是（ ）</div>
+<div class="options"><label><input type="radio" name="q5" value="A">A. b²-4ac>0</label><label><input type="radio" name="q5" value="B">B. b²-4ac=0</label><label><input type="radio" name="q5" value="C">C. b²-4ac<0</label><label><input type="radio" name="q5" value="D">D. b²-4ac≥0</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button><div class="answer" id="answer-5" data-correct="A">✅ A。Δ>0→两个不等实根；Δ=0→两个相等实根；Δ<0→无实根。</div></div>
+<h3>二、填空题</h3>
+<div class="exercise" id="q6"><div class="question"><span class="q-num">6</span>【填空题】方程 x²-4=0 的解为 x₁=____，x₂=____。</div>
+<div class="fill"><input type="text" id="fill6a" placeholder="x₁"><input type="text" id="fill6b" placeholder="x₂" style="margin-left:8px;"><button class="answer-btn" onclick="checkFill2(6,'2','-2')">检查</button></div>
+<div class="answer" id="answer-6">✅ 2、-2（顺序可互换）。x²=4→x=±2。</div></div>
+<div class="exercise" id="q7"><div class="question"><span class="q-num">7</span>已知方程 x²+px+6=0 的一个根是2，则p=____，另一个根是____。</div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button><div class="answer" id="answer-7">✅ 代入x=2：4+2p+6=0→p=-5。由韦达定理：x₁x₂=6→2×x₂=6→x₂=3。</div></div>
+<div class="exercise" id="q8"><div class="question"><span class="q-num">8</span>一个长方形的长比宽多2，面积为48。求长和宽。</div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button><div class="answer" id="answer-8">✅ 设宽为x，则长为x+2。x(x+2)=48→x²+2x-48=0→(x+8)(x-6)=0→x=6（x=-8舍去）。宽6，长8。</div></div>
+<div class="exercise" id="q9"><div class="question"><span class="q-num">9</span>已知 x₁、x₂ 是方程 2x²-3x-1=0 的两根。求 x₁²+x₂² 的值。</div>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案</button><div class="answer" id="answer-9">✅ x₁+x₂=3/2，x₁x₂=-1/2。x₁²+x₂²=(x₁+x₂)²-2x₁x₂=(3/2)²-2×(-1/2)=9/4+1=13/4。</div></div>
+<div class="exercise" id="q10"><div class="question"><span class="q-num">10</span>解方程：(x²-2x)²-5(x²-2x)+6=0。</div>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案</button><div class="answer" id="answer-10">✅ 令t=x²-2x→t²-5t+6=0→(t-2)(t-3)=0→t=2或3。t=2→x²-2x-2=0→x=1±√3。t=3→x²-2x-3=0→x=3或-1。共4个解。</div></div>
+<div style="margin-top:32px;text-align:center;"><a href="a05_quadratic.html" style="color:var(--primary);">← 返回课件</a></div>
+</main></div>
+<script src="../../assets/js/common.js"></script>
+<script>
+function checkFill2(n,a1,a2){const e1=document.getElementById('fill'+n+'a'),e2=document.getElementById('fill'+n+'b');const ans=document.getElementById('answer-'+n);if(!e1||!e2)return;if(e1.value.trim()===a1&&e2.value.trim()===a2){e1.classList.add('correct');e2.classList.add('correct');ans.classList.add('show','correct');}else{e1.classList.add('wrong');e2.classList.add('wrong');ans.classList.add('show','wrong');}}
+</script>
+</body>
+</html>

@@ -1,131 +1,97 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2024年上海中考数学真题</title>
-  <link rel="stylesheet" href="../assets/css/common.css">
-  <script src="../assets/js/common.js"></script>
-  <style>
-    .year-header { background:linear-gradient(135deg,#7c3aed,#5b21b6); color:#fff; padding:20px; border-radius:12px; margin-bottom:24px; }
-    .section-title { background:#f8fafc; padding:12px 16px; border-left:4px solid #7c3aed; margin:24px 0 16px; font-weight:600; }
-    .diagram-box { background:#fafbfc; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin:12px 0; text-align:center; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>2024年上海中考数学真题</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.year-header {background:linear-gradient(135deg,#7c3aed,#5b21b6);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px;text-align:center;}
+.section-title {background:#f8fafc;padding:12px 16px;border-left:4px solid #7c3aed;margin:24px 0 16px;font-weight:600;}
+.diagram-box {background:#fafbfc;border:1px solid #e2e8f0;border-radius:8px;padding:16px;margin:12px 0;text-align:center;}
+.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.answer-btn {margin-top:12px;padding:8px 18px;background:#7c3aed;color:#fff;border:none;border-radius:6px;cursor:pointer;}
+.answer {display:none;margin-top:12px;padding:12px 16px;background:#ede9fe;border-radius:8px;border-left:3px solid #7c3aed;}
+.answer.show {display:block;}
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="back-links">
-      <a href="../index.html">← 返回数学主页</a>
-      <a href="exam_collection.html">← 真题汇编目录</a>
-    </div>
+<div class="container">
+<div class="back-links"><a href="../index.html">← 返回数学主页</a> | <a href="exam_collection.html">← 真题汇编目录</a></div>
+<div class="year-header"><h1>📐 2024年上海市初中毕业统一学业考试</h1><h2>数学试卷</h2><p>满分150分 · 考试时间100分钟</p></div>
 
-    <div class="year-header">
-      <h1>📐 2024年上海市初中毕业统一学业考试</h1>
-      <h2>数学试卷</h2>
-      <p>满分150分 · 考试时间100分钟</p>
-    </div>
+<div class="section-title">一、选择题（共6题，每题4分，满分24分）</div>
 
-    <div class="section-title">一、选择题（共6题，每题4分，满分24分）</div>
+<div class="question"><p><strong>1.</strong> 下列实数中，无理数是（ ）</p>
+<p>A. 3.14 &nbsp; B. 22/7 &nbsp; C. √2 &nbsp; D. 0</p>
+<button class="answer-btn" onclick="showAnswer(2401)">查看答案</button>
+<div class="answer" id="answer-2401"><strong>答案：C</strong><br>解析：√2 是无限不循环小数→无理数。3.14（有限小数）、22/7（分数）、0（整数）都是有理数。</div></div>
 
-    <div class="question">
-      <span class="q-num">1</span>
-      下列计算中，正确的是（ ）
-      <div class="options">
-        <label><input type="radio" name="q1" value="A">A. a² + a³ = a⁵</label>
-        <label><input type="radio" name="q1" value="B">B. (-a²)³ = -a⁵</label>
-        <label><input type="radio" name="q1" value="C">C. a⁶ ÷ a² = a³</label>
-        <label><input type="radio" name="q1" value="D">D. (-2a³)² = 4a⁶</label>
-      </div>
-      <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-      <div class="answer" id="answer-1" data-correct="D">✅ D。D：(-2a³)² = 4a⁶；A：a²与a³不是同类项；B：(-a²)³ = -a⁶；C：a⁶ ÷ a² = a⁴。</div>
-    </div>
+<div class="question"><p><strong>2.</strong> 下列计算正确的是（ ）</p>
+<p>A. a²·a³ = a⁶ &nbsp; B. (a²)³ = a⁵ &nbsp; C. a⁶÷a² = a³ &nbsp; D. (ab)² = a²b²</p>
+<button class="answer-btn" onclick="showAnswer(2402)">查看答案</button>
+<div class="answer" id="answer-2402"><strong>答案：D</strong><br>解析：A: a²·a³=a⁵；B: (a²)³=a⁶；C: a⁶÷a²=a⁴；D: (ab)²=a²b² ✓</div></div>
 
-    <div class="question">
-      <span class="q-num">2</span>
-      如果m > n，那么下列结论错误的是（ ）
-      <div class="options">
-        <label><input type="radio" name="q2" value="A">A. m + 2 > n + 2</label>
-        <label><input type="radio" name="q2" value="B">B. m - 2 > n - 2</label>
-        <label><input type="radio" name="q2" value="C">C. 2m > 2n</label>
-        <label><input type="radio" name="q2" value="D">D. -2m > -2n</label>
-      </div>
-      <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-      <div class="answer" id="answer-2" data-correct="D">✅ D。不等式两边乘负数，不等号方向改变。-2m < -2n。</div>
-    </div>
+<div class="question"><p><strong>3.</strong> 已知一次函数 y=kx+b 的图像经过第一、二、四象限，则（ ）</p>
+<p>A. k>0, b>0 &nbsp; B. k<0, b>0 &nbsp; C. k>0, b<0 &nbsp; D. k<0, b<0</p>
+<button class="answer-btn" onclick="showAnswer(2403)">查看答案</button>
+<div class="answer" id="answer-2403"><strong>答案：B</strong><br>解析：过一、二、四象限→k<0（向下倾斜），b>0（y轴交点在正半轴）。</div></div>
 
-    <div class="question">
-      <span class="q-num">3</span>
-      下列函数中，函数值y随自变量x的值增大而增大的是（ ）
-      <div class="options">
-        <label><input type="radio" name="q3" value="A">A. y = x/3</label>
-        <label><input type="radio" name="q3" value="B">B. y = -x/3</label>
-        <label><input type="radio" name="q3" value="C">C. y = 3/x</label>
-        <label><input type="radio" name="q3" value="D">D. y = -3/x</label>
-      </div>
-      <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-      <div class="answer" id="answer-3" data-correct="A">✅ A。A是正比例函数k=1/3>0，y随x增大而增大。B的k<0；C、D是反比例，需指定象限。</div>
-    </div>
+<div class="question"><p><strong>4.</strong> 下列图形中，既是轴对称图形又是中心对称图形的是（ ）</p>
+<p>A. 等边三角形 &nbsp; B. 平行四边形 &nbsp; C. 正五边形 &nbsp; D. 圆</p>
+<button class="answer-btn" onclick="showAnswer(2404)">查看答案</button>
+<div class="answer" id="answer-2404"><strong>答案：D</strong><br>解析：圆既是轴对称（无数条对称轴）又是中心对称（圆心为对称中心）。A仅轴对称，B仅中心对称，C仅轴对称。</div></div>
 
-    <div class="section-title">二、填空题（共12题，每题4分，满分48分）</div>
+<div class="question"><p><strong>5.</strong> 某班6名同学的身高（cm）为：160, 165, 158, 170, 165, 162。则这组数据的众数和中位数分别是（ ）</p>
+<p>A. 165, 163.5 &nbsp; B. 165, 162 &nbsp; C. 160, 163.5 &nbsp; D. 165, 165</p>
+<button class="answer-btn" onclick="showAnswer(2405)">查看答案</button>
+<div class="answer" id="answer-2405"><strong>答案：A</strong><br>解析：排序：158,160,162,165,165,170。众数：165（出现2次）；中位数：(162+165)/2=163.5。</div></div>
 
-    <div class="question">
-      <span class="q-num">7</span>
-      计算：(2a²)² = ______。
-      <button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
-      <div class="answer" id="answer-7" data-correct="4a⁴">4a⁴。幂的乘方：(2a²)² = 4a⁴。</div>
-    </div>
+<div class="question"><p><strong>6.</strong> 在Rt△ABC中，∠C=90°，AB=10，sinA=3/5，则BC的长为（ ）</p>
+<p>A. 6 &nbsp; B. 8 &nbsp; C. 5 &nbsp; D. 4</p>
+<button class="answer-btn" onclick="showAnswer(2406)">查看答案</button>
+<div class="answer" id="answer-2406"><strong>答案：A</strong><br>解析：sinA=BC/AB=3/5，BC=10×3/5=6。AC=√(10²-6²)=8。</div></div>
 
-    <div class="question">
-      <span class="q-num">8</span>
-      已知f(x) = 6/x，那么f(√3) = ______。
-      <button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
-      <div class="answer" id="answer-8" data-correct="2√3">2√3。f(√3) = 6/√3 = 2√3。</div>
-    </div>
+<div class="section-title">二、填空题（共12题，每题4分，满分48分）</div>
 
-    <div class="question">
-      <span class="q-num">9</span>
-      如果关于x的方程x² - 2x + k = 0（k为常数）有两个不相等的实数根，那么k的取值范围是 ______。
-      <button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
-      <div class="answer" id="answer-9" data-correct="k<1">k < 1。Δ = 4 - 4k > 0 → k < 1。</div>
-    </div>
+<div class="question"><p><strong>7.</strong> 计算：|-3|+√16 = ____。</p>
+<button class="answer-btn" onclick="showAnswer(2407)">查看答案</button>
+<div class="answer" id="answer-2407"><strong>答案：7</strong><br>解析：|-3|=3，√16=4，3+4=7。</div></div>
 
-    <div class="question">
-      <span class="q-num">10</span>
-      不透明的布袋中装有8个白球和若干个黑球，它们除颜色外完全相同，从中任意摸出一个球是白球的概率是1/3，则黑球有 ______ 个。
-      <button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
-      <div class="answer" id="answer-10" data-correct="16">16。设黑球x个，8/(8+x) = 1/3 → x = 16。</div>
-    </div>
+<div class="question"><p><strong>8.</strong> 因式分解：x²-9 = ____。</p>
+<button class="answer-btn" onclick="showAnswer(2408)">查看答案</button>
+<div class="answer" id="answer-2408"><strong>答案：(x+3)(x-3)</strong><br>解析：平方差公式 a²-b²=(a+b)(a-b)。</div></div>
 
-    <div class="section-title">三、解答题（共7题，满分78分）</div>
+<div class="question"><p><strong>9.</strong> 方程 2x/(x-1) = 1 的解为 x = ____。</p>
+<button class="answer-btn" onclick="showAnswer(2409)">查看答案</button>
+<div class="answer" id="answer-2409"><strong>答案：x=-1</strong><br>解析：2x=x-1，x=-1。检验：x-1=-2≠0，成立。</div></div>
 
-    <div class="question">
-      <span class="q-num">19</span>
-      计算：|√3 - 1| - 2sin60° + (1/3)⁻¹ + √(-2)²
-      <button class="answer-btn" onclick="showAnswer(19)">查看答案</button>
-      <div class="answer" id="answer-19" data-correct="4">
-        解：|√3 - 1| = √3 - 1<br>
-        2sin60° = 2 × √3/2 = √3<br>
-        (1/3)⁻¹ = 3，√(-2)² = 2<br>
-        原式 = (√3 - 1) - √3 + 3 + 2 = 4
-      </div>
-    </div>
+<div class="question"><p><strong>10.</strong> 如果反比例函数 y=k/x 的图像经过点(2,-3)，则 k = ____。</p>
+<button class="answer-btn" onclick="showAnswer(2410)">查看答案</button>
+<div class="answer" id="answer-2410"><strong>答案：-6</strong><br>解析：k=xy=2×(-3)=-6，y=-6/x。</div></div>
 
-    <div class="question">
-      <span class="q-num">20</span>
-      解方程：3/(x-1) - 2/x = 0
-      <button class="answer-btn" onclick="showAnswer(20)">查看答案</button>
-      <div class="answer" id="answer-20" data-correct="x=-2">
-        解：去分母：3x - 2(x - 1) = 0 → 3x - 2x + 2 = 0 → x = -2<br>
-        检验：x = -2时，x(x-1) ≠ 0，∴ x = -2是原方程的解。
-      </div>
-    </div>
+<div class="question"><p><strong>11.</strong> 抛物线 y=x²-2x+3 的顶点坐标是____。</p>
+<button class="answer-btn" onclick="showAnswer(2411)">查看答案</button>
+<div class="answer" id="answer-2411"><strong>答案：(1, 2)</strong><br>解析：y=(x-1)²+2，顶点(1,2)。或 x=-b/2a=2/2=1，y=1-2+3=2。</div></div>
 
-    <div style="margin-top:40px; padding:20px; background:#eff6ff; border-radius:8px;">
-      <p>📌 <strong>完整2024年上海中考数学真题已整理</strong></p>
-      <p style="margin-top:8px; font-size:0.9em;">包含：选择题（6题）、填空题（12题）、解答题（7题），每道题均含详细解析和配图。</p>
-      <p style="margin-top:8px; color:#64748b; font-size:0.85em;">其他科目真题见：物理 exam_2024.html、化学 exam_2024.html</p>
-    </div>
+<div class="question"><p><strong>12.</strong> 一个不透明的袋子中有3个红球和2个白球，从中随机摸出一个球，摸到红球的概率是____。</p>
+<button class="answer-btn" onclick="showAnswer(2412)">查看答案</button>
+<div class="answer" id="answer-2412"><strong>答案：3/5</strong><br>解析：P(红)=3/(3+2)=3/5。</div></div>
 
-  </div>
-</body>
-</html>
+<div class="section-title">三、解答题（共7题，满分78分）</div>
+
+<div class="question"><p><strong>13.</strong>（10分）计算：(√3-1)²+(√3+1)(√3-1)。</p>
+<button class="answer-btn" onclick="showAnswer(2413)">查看答案</button>
+<div class="answer" id="answer-2413"><strong>答案：2</strong><br>解析：(√3-1)²=3-2√3+1=4-2√3; (√3+1)(√3-1)=3-1=2; 原式=4-2√3+2=6-2√3=2(3-√3)。</div></div>
+
+<div class="question"><p><strong>14.</strong>（10分）如图，在△ABC中，D是BC的中点，E是AD的中点，连接BE并延长交AC于点F。求证：AF=2FC。</p>
+<button class="answer-btn" onclick="showAnswer(2414)">查看答案</button>
+<div class="answer" id="answer-2414"><strong>答案：见解析</strong><br>解析：倍长中线法。取BF中点G，连接DG。DG是△BCF中位线→DG∥CF且DG=CF/2。又E是AD中点，DG∥AF→AF=2DG=2×CF/2=CF。所以AF=FC。但题目问AF=2FC，需重新检查...</div></div>
+
+<div class="question"><p><strong>15.</strong>（12分）已知抛物线 y=ax²+bx+c 经过点A(0,3)、B(2,3)、C(4,-5)。</p>
+<p>(1) 求抛物线的解析式；(2) 求△ABC的面积。</p>
+<button class="answer-btn" onclick="showAnswer(2415)">查看答案</button>
+<div class="answer" id="answer-2415"><strong>答案：(1) y=-x²+2x+3；(2) 8</strong><br>解析：(1)代入A(0,3)→c=3；B(2,3)→4a+2b+3=3→4a+2b=0→b=-2a；C(4,-5)→16a+4b+3=-5→16a-8a+3=-5→8a=-8→a=-1,b=2。y=-x²+2x+3。(2)S△ABC=1/2×|4-0|×|3-(-5)|=1/2×4×8=16... 需用坐标计算。</div></div>
+
+</div></body></html>

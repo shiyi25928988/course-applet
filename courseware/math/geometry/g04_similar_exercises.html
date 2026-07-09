@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>相似三角形 - 专项练习</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>.fill input{width:120px;padding:6px 10px;border:2px solid var(--border);border-radius:6px;font-size:.95rem;}.fill input.correct{border-color:var(--success);background:#dcfce7;}.fill input.wrong{border-color:var(--danger);background:#fef2f2;}</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"><h3>📝 专项练习</h3><ul class="chapter-list"><li><a href="#q1">第1题</a></li><li><a href="#q6">第6题</a></li><li style="margin-top:20px;"><a href="g04_similar.html">← 返回课件</a></li></ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);"><a href="../../index.html" class="back-home">🏠 返回首页</a></div></aside>
+<main class="main">
+<div class="page-title">📐 相似三角形专项练习</div>
+<p style="color:var(--text-secondary);margin-bottom:20px;">共10题</p>
+<div class="progress-bar"><div class="fill-bar" style="width:0%;"></div></div>
+<h3>一、选择题</h3>
+<div class="exercise" id="q1"><div class="question"><span class="q-num">1</span>下列条件中，能判定△ABC∽△DEF的是（ ）</div>
+<div class="options"><label><input type="radio" name="q1" value="A">A. ∠A=∠D, ∠B=∠E</label><label><input type="radio" name="q1" value="B">B. AB=DE, BC=EF</label><label><input type="radio" name="q1" value="C">C. ∠A=∠D, AB=DE</label><label><input type="radio" name="q1" value="D">D. AB=DE, AC=DF, BC=EF</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button><div class="answer" id="answer-1" data-correct="A">✅ A。两角对应相等→相似(AA)。D是SSS全等，也蕴含相似但更严格。</div></div>
+<div class="exercise" id="q2"><div class="question"><span class="q-num">2</span>如图，DE∥BC，AD=2，DB=3，则DE:BC=（ ）</div>
+<div class="options"><label><input type="radio" name="q2" value="A">A. 2:3</label><label><input type="radio" name="q2" value="B">B. 2:5</label><label><input type="radio" name="q2" value="C">C. 3:5</label><label><input type="radio" name="q2" value="D">D. 4:25</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button><div class="answer" id="answer-2" data-correct="B">✅ B。DE∥BC→△ADE∽△ABC。DE:BC=AD:AB=2:5。</div></div>
+<div class="exercise" id="q3"><div class="question"><span class="q-num">3</span>两个相似三角形的相似比为2:3，则面积比为（ ）</div>
+<div class="options"><label><input type="radio" name="q3" value="A">A. 2:3</label><label><input type="radio" name="q3" value="B">B. 4:9</label><label><input type="radio" name="q3" value="C">C. 4:6</label><label><input type="radio" name="q3" value="D">D. 8:27</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button><div class="answer" id="answer-3" data-correct="B">✅ B。面积比=相似比的平方=(2/3)²=4/9。</div></div>
+<div class="exercise" id="q4"><div class="question"><span class="q-num">4</span>在△ABC中，点D、E分别在AB、AC上，且AD/DB=AE/EC，则DE与BC的关系是（ ）</div>
+<div class="options"><label><input type="radio" name="q4" value="A">A. DE=BC</label><label><input type="radio" name="q4" value="B">B. DE∥BC</label><label><input type="radio" name="q4" value="C">C. DE⊥BC</label><label><input type="radio" name="q4" value="D">D. 无法确定</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button><div class="answer" id="answer-4" data-correct="B">✅ B。平行线分线段成比例定理的逆定理→DE∥BC。</div></div>
+<div class="exercise" id="q5"><div class="question"><span class="q-num">5</span>在Rt△ABC中，∠C=90°，CD⊥AB于D。下列结论错误的是（ ）</div>
+<div class="options"><label><input type="radio" name="q5" value="A">A. △ACD∽△ABC</label><label><input type="radio" name="q5" value="B">B. △CBD∽△ABC</label><label><input type="radio" name="q5" value="C">C. △ACD∽△CBD</label><label><input type="radio" name="q5" value="D">D. △ACD≌△CBD</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button><div class="answer" id="answer-5" data-correct="D">✅ D。三个三角形相似但不全等（除非AC=BC）。</div></div>
+<h3>二、综合题</h3>
+<div class="exercise" id="q6"><div class="question"><span class="q-num">6</span>【填空题】△ABC∽△DEF，AB=6，DE=9，△ABC的面积为12，则△DEF的面积为____。</div>
+<div class="fill"><input type="text" id="fill6" placeholder="请填写答案"><button class="answer-btn" onclick="checkFill(6,'27')">检查</button></div>
+<div class="answer" id="answer-6">✅ 27。相似比=6/9=2/3，面积比=4/9。S△DEF=12×9/4=27。</div></div>
+<div class="exercise" id="q7"><div class="question"><span class="q-num">7</span>如图，在△ABC中，DE∥BC，AD=4，DB=2，△ADE的面积为8。求梯形DBCE的面积。</div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button><div class="answer" id="answer-7">✅ AD/AB=4/6=2/3。S△ADE/S△ABC=(2/3)²=4/9→S△ABC=8×9/4=18。S梯形=18-8=10。</div></div>
+<div class="exercise" id="q8"><div class="question"><span class="q-num">8</span>在Rt△ABC中，∠C=90°，CD⊥AB，AC=3，BC=4。求CD的长。</div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button><div class="answer" id="answer-8">✅ 由面积法：1/2×3×4=1/2×5×CD→CD=12/5=2.4。或由射影定理：CD²=AD×DB。</div></div>
+<div class="exercise" id="q9"><div class="question"><span class="q-num">9</span>如图，已知△ABC中，AB=AC，D是BC上一点，∠ADE=∠B。求证：△ABD∽△DCE。</div>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案</button><div class="answer" id="answer-9">✅ AB=AC→∠B=∠C。∠ADE=∠B→∠ADE=∠C。∠ADB+∠ADE+∠CDE=180°。∠ADB+∠B+∠BAD=180°。可得∠BAD=∠CDE。又∠B=∠C。∴△ABD∽△DCE(AA)。</div></div>
+<div class="exercise" id="q10"><div class="question"><span class="q-num">10</span>在△ABC中，AB=12，AC=8，在AB上取点D使AD=3，在AC上取点E。若△ADE与△ABC相似，求AE的长。</div>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案</button><div class="answer" id="answer-10">✅ 两种情况：①若∠ADE=∠B→AD/AB=AE/AC→3/12=AE/8→AE=2。②若∠ADE=∠C→AD/AC=AE/AB→3/8=AE/12→AE=4.5。所以AE=2或4.5。</div></div>
+<div style="margin-top:32px;text-align:center;"><a href="g04_similar.html" style="color:var(--primary);">← 返回课件</a></div>
+</main></div>
+<script src="../../assets/js/common.js"></script>
+<script>
+function checkFill(n,answer){const el=document.getElementById('fill'+n);if(!el)return;const ans=document.getElementById('answer-'+n);if(el.value.trim()===answer){el.classList.add('correct');el.classList.remove('wrong');ans.classList.add('show','correct');ans.classList.remove('wrong');}else{el.classList.add('wrong');el.classList.remove('correct');ans.classList.add('show','wrong');ans.classList.remove('correct');}}
+</script>
+</body>
+</html>

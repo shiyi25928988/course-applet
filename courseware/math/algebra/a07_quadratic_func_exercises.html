@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>二次函数 - 专项练习</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>.fill input{width:120px;padding:6px 10px;border:2px solid var(--border);border-radius:6px;font-size:.95rem;}.fill input.correct{border-color:var(--success);background:#dcfce7;}.fill input.wrong{border-color:var(--danger);background:#fef2f2;}.progress-bar{background:var(--border);height:8px;border-radius:4px;margin-bottom:24px;overflow:hidden;}.progress-bar .fill-bar{height:100%;background:linear-gradient(90deg,#7c3aed,#5b21b6);border-radius:4px;transition:width .4s;}</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"><h3>📝 专项练习</h3><ul class="chapter-list"><li><a href="#q1">第1题</a></li><li><a href="#q6">第6题</a></li><li style="margin-top:20px;"><a href="a07_quadratic_func.html">← 返回课件</a></li></ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);"><a href="../../index.html" class="back-home">🏠 返回首页</a></div></aside>
+<main class="main">
+<div class="page-title">📊 二次函数专项练习</div>
+<p style="color:var(--text-secondary);margin-bottom:20px;">共10题 · 覆盖顶点式、图像、最值、应用</p>
+<div class="progress-bar"><div class="fill-bar" style="width:0%;"></div></div>
+<h3>一、选择题</h3>
+<div class="exercise" id="q1"><div class="question"><span class="q-num">1</span>抛物线 y=x²-2x+3 的顶点坐标是（ ）</div>
+<div class="options"><label><input type="radio" name="q1" value="A">A. (1,2)</label><label><input type="radio" name="q1" value="B">B. (1,4)</label><label><input type="radio" name="q1" value="C">C. (-1,2)</label><label><input type="radio" name="q1" value="D">D. (2,1)</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button><div class="answer" id="answer-1" data-correct="A">✅ A。y=(x-1)²+2，顶点(1,2)。</div></div>
+<div class="exercise" id="q2"><div class="question"><span class="q-num">2</span>抛物线 y=-x²+4x-1 的开口方向和对称轴是（ ）</div>
+<div class="options"><label><input type="radio" name="q2" value="A">A. 开口向上，x=2</label><label><input type="radio" name="q2" value="B">B. 开口向下，x=2</label><label><input type="radio" name="q2" value="C">C. 开口向上，x=-2</label><label><input type="radio" name="q2" value="D">D. 开口向下，x=-2</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button><div class="answer" id="answer-2" data-correct="B">✅ B。a=-1<0→开口向下。对称轴x=-b/2a=-4/(-2)=2。</div></div>
+<div class="exercise" id="q3"><div class="question"><span class="q-num">3</span>将抛物线 y=x² 向右平移2个单位，再向上平移1个单位，得到（ ）</div>
+<div class="options"><label><input type="radio" name="q3" value="A">A. y=(x-2)²+1</label><label><input type="radio" name="q3" value="B">B. y=(x+2)²+1</label><label><input type="radio" name="q3" value="C">C. y=(x-2)²-1</label><label><input type="radio" name="q3" value="D">D. y=(x+2)²-1</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button><div class="answer" id="answer-3" data-correct="A">✅ A。左加右减，上加下减。</div></div>
+<div class="exercise" id="q4"><div class="question"><span class="q-num">4</span>抛物线 y=x²-6x+5 与x轴的交点个数是（ ）</div>
+<div class="options"><label><input type="radio" name="q4" value="A">A. 0个</label><label><input type="radio" name="q4" value="B">B. 1个</label><label><input type="radio" name="q4" value="C">C. 2个</label><label><input type="radio" name="q4" value="D">D. 无法确定</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button><div class="answer" id="answer-4" data-correct="C">✅ C。Δ=36-20=16>0→2个交点。(x-1)(x-5)=0→(1,0)和(5,0)。</div></div>
+<div class="exercise" id="q5"><div class="question"><span class="q-num">5</span>函数 y=x²-2x-3 在 0≤x≤3 上的最小值是（ ）</div>
+<div class="options"><label><input type="radio" name="q5" value="A">A. -3</label><label><input type="radio" name="q5" value="B">B. -4</label><label><input type="radio" name="q5" value="C">C. 0</label><label><input type="radio" name="q5" value="D">D. 3</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button><div class="answer" id="answer-5" data-correct="B">✅ B。对称轴x=1在[0,3]内。f(0)=-3,f(1)=-4,f(3)=0。最小值-4。</div></div>
+<h3>二、填空题</h3>
+<div class="exercise" id="q6"><div class="question"><span class="q-num">6</span>【填空题】抛物线 y=2(x-1)²-3 的顶点坐标是____。</div>
+<div class="fill"><input type="text" id="fill6" placeholder="请填写答案"><button class="answer-btn" onclick="checkFill(6,'(1,-3)')">检查</button></div>
+<div class="answer" id="answer-6">✅ (1,-3)。顶点式y=a(x-h)²+k中顶点为(h,k)。</div></div>
+<div class="exercise" id="q7"><div class="question"><span class="q-num">7</span>已知抛物线过(0,3)、(1,0)、(2,-1)，求解析式。</div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button><div class="answer" id="answer-7">✅ 设y=ax²+bx+c。c=3；a+b+3=0；4a+2b+3=-1。解：a+b=-3,4a+2b=-4→2a+b=-2。a=1,b=-4。y=x²-4x+3。</div></div>
+<div class="exercise" id="q8"><div class="question"><span class="q-num">8</span>已知二次函数 y=x²+bx+c 的顶点为(2,1)，求b和c的值。</div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button><div class="answer" id="answer-8">✅ 顶点式：y=(x-2)²+1=x²-4x+5。所以b=-4，c=5。</div></div>
+<div class="exercise" id="q9"><div class="question"><span class="q-num">9</span>某商品售价每件50元，月销量500件。每涨价1元，销量减少10件。求月利润y关于售价x的函数关系式（成本40元/件）。</div>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案</button><div class="answer" id="answer-9">✅ 销量=500-10(x-50)=1000-10x。利润/件=x-40。y=(x-40)(1000-10x)=-10x²+1400x-40000。x=70时利润最大9000元。</div></div>
+<div class="exercise" id="q10"><div class="question"><span class="q-num">10</span>已知抛物线 y=x²-2x-3 与直线 y=kx-1 只有一个交点，求k的值。</div>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案</button><div class="answer" id="answer-10">✅ x²-2x-3=kx-1→x²-(2+k)x-2=0。Δ=(2+k)²+8=0→(2+k)²=-8，无实数解。所以k不存在→直线与抛物线必有2个交点。修正：x²-(2+k)x-2=0，Δ=(2+k)²+8>0恒成立。所以无论如何都有2个交点，不存在只有一个交点的情况。</div></div>
+<div style="margin-top:32px;text-align:center;"><a href="a07_quadratic_func.html" style="color:var(--primary);">← 返回课件</a></div>
+</main></div>
+<script src="../../assets/js/common.js"></script>
+<script>
+function checkFill(n,answer){const el=document.getElementById('fill'+n);if(!el)return;const ans=document.getElementById('answer-'+n);if(el.value.trim()===answer){el.classList.add('correct');el.classList.remove('wrong');ans.classList.add('show','correct');ans.classList.remove('wrong');}else{el.classList.add('wrong');el.classList.remove('correct');ans.classList.add('show','wrong');ans.classList.remove('correct');}}
+</script>
+</body>
+</html>

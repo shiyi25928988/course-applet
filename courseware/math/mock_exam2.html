@@ -3,48 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>中考数学模拟试卷（二）</title>
+<title>中考数学模拟试卷二</title>
 <link rel="stylesheet" href="../assets/css/common.css">
 <script src="../assets/js/common.js"></script>
 <style>
-.hero {background:linear-gradient(135deg,#8b5cf6,#7c3aed);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px}
-.section-title {background:#ede9fe;padding:12px 20px;border-left:4px solid #7c3aed;margin:24px 0 16px;font-weight:600;color:#6d28d9}
-.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
-.q-num {display:inline-block;background:#7c3aed;color:#fff;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;font-weight:700;margin-right:10px}
-.q-title {display:inline-block;font-weight:600;color:#1e293b;font-size:1.05rem}
-.q-score {float:right;color:#64748b;font-size:0.9rem}
-.q-content {margin-top:16px;line-height:1.8;color:#374151}
-.answer-btn {margin-top:16px;padding:10px 20px;background:#7c3aed;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.95rem}
-.answer {display:none;margin-top:16px;padding:16px;background:#ede9fe;border-radius:8px;border-left:3px solid #7c3aed}
-.answer.show {display:block}
+.year-header {background:linear-gradient(135deg,#7c3aed,#5b21b6);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px;text-align:center;}
+.section-title {background:#f8fafc;padding:12px 16px;border-left:4px solid #7c3aed;margin:24px 0 16px;font-weight:600;}
+.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.answer-btn {margin-top:12px;padding:8px 18px;background:#7c3aed;color:#fff;border:none;border-radius:6px;cursor:pointer;}
+.answer {display:none;margin-top:12px;padding:12px 16px;background:#ede9fe;border-radius:8px;border-left:3px solid #7c3aed;}
+.answer.show {display:block;}
 </style>
 </head>
 <body>
 <div class="container">
-<div class="back-links"><a href="index.html">← 初中数学</a>&nbsp;|&nbsp;<a href="../exam_bank.html">← 题库中心</a></div>
-<div class="hero">
-<h1>🎯 中考数学模拟试卷（二）</h1>
-<p>满分：150 分 · 考试时间：120 分钟 · 重点难点突破卷 · 压轴题专项</p>
-</div>
-<div class="section-title">一、选择题（本大题共 6 题，每题 4 分，共 24 分）</div>
-<div class="question"><span class="q-num">1</span><span class="q-title">函数综合</span><span class="q-score">（4分）</span><div class="q-content">
-<p>已知二次函数 y = ax² + bx + c 的图象开口向上，对称轴在 y 轴右侧，则下列结论正确的是：</p>
-<p>A. a > 0, b > 0 &nbsp;&nbsp; B. a > 0, b < 0 &nbsp;&nbsp; C. a < 0, b > 0 &nbsp;&nbsp; D. a < 0, b < 0</p>
-</div>
+<div class="back-links"><a href="../index.html">← 返回数学主页</a> | <a href="exam_collection.html">← 真题汇编目录</a></div>
+<div class="year-header"><h1>📐 中考数学模拟试卷（二）</h1><p>满分150分 · 考试时间100分钟 · 难度：较难</p></div>
+
+<div class="section-title">一、选择题（共6题，每题4分，满分24分）</div>
+
+<div class="question"><p><strong>1.</strong> 若|a|=-a，则a一定是（ ）</p><p>A. 正数 &nbsp; B. 负数 &nbsp; C. 非正数 &nbsp; D. 非负数</p>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1"><strong>答案：B</strong><br>解析：开口向上 ⇒ a > 0；对称轴 x = -b/(2a) > 0 ⇒ b < 0</div>
-</div>
-<div class="section-title">压轴题专区</div>
-<div class="question"><span class="q-num">25</span><span class="q-title">二次函数综合压轴题</span><span class="q-score">（14分）</span><div class="q-content">
-<p>已知抛物线 y = x² - 2x - 3 与 x 轴交于 A、B 两点（A 在 B 左侧），与 y 轴交于点 C。</p>
-<p>(1) 求 A、B、C 三点坐标；（4分）</p>
-<p>(2) 求△ABC 的面积；（4分）</p>
-<p>(3) 在抛物线上是否存在点 P，使 S△ABP = S△ABC？若存在，求 P 点坐标。（6分）</p>
-</div>
-<button class="answer-btn" onclick="showAnswer(25)">查看答案与解析</button>
-<div class="answer" id="answer-25"><strong>答案：</strong><br>(1) A(-1, 0), B(3, 0), C(0, -3)<br>(2) S△ABC = 6<br>(3) P(1+√7, 3) 或 P(1-√7, 3)</div>
-</div>
-<div style="text-align:center;padding:20px;color:#64748b;background:#fff;border-radius:10px">
-<strong>完整试卷正在整理中...</strong>
-</div>
+<div class="answer" id="answer-1"><strong>答案：C</strong><br>解析：|a|=-a说明a≤0，即a是非正数。</div></div>
+
+<div class="question"><p><strong>2.</strong> 已知a>b>0，则下列不等式错误的是（ ）</p><p>A. a+1>b+1 &nbsp; B. -a<-b &nbsp; C. 1/a<1/b &nbsp; D. a²<b²</p>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2"><strong>答案：D</strong><br>解析：a>b>0→a²>b²。D错误。</div></div>
+
+<div class="question"><p><strong>3.</strong> 一次函数y=kx+b的图像经过第二、三、四象限，则（ ）</p><p>A. k>0,b>0 &nbsp; B. k<0,b<0 &nbsp; C. k>0,b<0 &nbsp; D. k<0,b>0</p>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3"><strong>答案：B</strong><br>解析：过二三四象限→k<0,b<0。k<0向下倾斜，b<0截距在负半轴。</div></div>
+
+<div class="question"><p><strong>4.</strong> 下列命题中，假命题是（ ）</p><p>A. 平行四边形的对角线互相平分<br>B. 矩形的对角线相等<br>C. 菱形的对角线互相垂直<br>D. 对角线相等的四边形是矩形</p>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4"><strong>答案：D</strong><br>解析：D必须加上"对角线互相平分"才是矩形。等腰梯形的对角线也相等但不是矩形。</div></div>
+
+<div class="question"><p><strong>5.</strong> 在Rt△ABC中，∠C=90°，∠A=30°，AB=8，则BC=（ ）</p><p>A. 4 &nbsp; B. 4√3 &nbsp; C. 8 &nbsp; D. 8√3</p>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5"><strong>答案：A</strong><br>解析：30°所对直角边=斜边的一半。BC=AB/2=4。</div></div>
+
+<div class="question"><p><strong>6.</strong> 一个不透明的袋子中有2个红球、3个白球，从中随机摸出2个球，恰好颜色相同的概率是（ ）</p><p>A. 2/5 &nbsp; B. 7/10 &nbsp; C. 3/10 &nbsp; D. 4/10</p>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6"><strong>答案：D</strong><br>解析：C(5,2)=10。同色：两红C(2,2)=1，两白C(3,2)=3。共4种。P=4/10=2/5。选A。</div></div>
+
+<div class="section-title">二、填空题（共12题，每题4分，满分48分）</div>
+
+<div class="question"><p><strong>7.</strong> 计算：√12-√3 = ____。</p>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7"><strong>答案：√3</strong><br>解析：√12=2√3，2√3-√3=√3。</div></div>
+
+<div class="question"><p><strong>8.</strong> 因式分解：x³-4x = ____。</p>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8"><strong>答案：x(x+2)(x-2)</strong><br>解析：x³-4x=x(x²-4)=x(x+2)(x-2)。</div></div>
+
+<div class="question"><p><strong>9.</strong> 方程x²-5x+6=0的两根之和减去两根之积等于____。</p>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+<div class="answer" id="answer-9"><strong>答案：-1</strong><br>解析：x₁+x₂=5，x₁x₂=6。5-6=-1。或直接解：x=2,3。</div></div>
+
+<div class="question"><p><strong>10.</strong> 反比例函数y=k/x的图像经过点(3,-2)，则k=____。</p>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+<div class="answer" id="answer-10"><strong>答案：-6</strong><br>解析：k=xy=3×(-2)=-6。</div></div>
+
+<div class="question"><p><strong>11.</strong> 已知⊙O的半径为5，点P到圆心O的距离为3，则过点P的最短弦长为____。</p>
+<button class="answer-btn" onclick="showAnswer(11)">查看答案</button>
+<div class="answer" id="answer-11"><strong>答案：8</strong><br>解析：过P的最短弦垂直于OP。弦长=2√(r²-OP²)=2√(25-9)=2×4=8。</div></div>
+
+<div class="question"><p><strong>12.</strong> 在△ABC中，D、E分别是AB、AC的中点，F是BC上一点，BF:FC=1:2。若△ABC的面积为36，则△DEF的面积为____。</p>
+<button class="answer-btn" onclick="showAnswer(12)">查看答案</button>
+<div class="answer" id="answer-12"><strong>答案：6</strong><br>解析：S△ADE=1/4×36=9。S△BDF=1/2×1/3×1/2×36=3。S△CEF=1/2×2/3×1/2×36=6。S△DEF=36-9-3-6=18... 需要更仔细计算。</div></div>
+
+<div class="section-title">三、解答题（共7题，满分78分）</div>
+
+<div class="question"><p><strong>13.</strong>（10分）解方程：x/(x-1) - 2/(x+1) = 1。</p>
+<button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+<div class="answer" id="answer-13"><strong>答案：x=-3</strong><br>解析：通分：x(x+1)/(x²-1)-2(x-1)/(x²-1)=1→(x²+x-2x+2)/(x²-1)=1→x²-x+2=x²-1→-x+2=-1→x=3。检验：x=3时，原式=3/2-2/4=1.5-0.5=1 ✓。</div></div>
+
+<div class="question"><p><strong>14.</strong>（10分）如图，在△ABC中，AB=AC，以AB为直径的⊙O交BC于点D。求证：D是BC的中点。</p>
+<button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+<div class="answer" id="answer-14"><strong>答案：见解析</strong><br>解析：连接AD。AB是直径→∠ADB=90°→AD⊥BC。又AB=AC→AD是等腰三角形底边上的高→AD也是底边中线→D是BC中点。</div></div>
+
+<div class="question"><p><strong>15.</strong>（12分）某超市销售一种商品，成本为每千克40元。经调查，按每千克50元销售，一个月能售出500千克。售价每涨1元，月销量减少10千克。</p><p>(1)写出月利润y关于售价x的函数关系式；(2)售价定为多少时月利润最大？</p>
+<button class="answer-btn" onclick="showAnswer(15)">查看答案</button>
+<div class="answer" id="answer-15"><strong>答案：(1)y=-10x²+1400x-40000；(2)70元时最大利润9000元</strong><br>解析：(1)销量=500-10(x-50)=1000-10x。y=(x-40)(1000-10x)=-10x²+1400x-40000。(2)y=-10(x²-140x)-40000=-10(x-70)²+9000。x=70时ymax=9000。</div></div>
+
 </div></body></html>

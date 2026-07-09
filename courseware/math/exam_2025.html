@@ -1,131 +1,96 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2025年上海中考数学真题</title>
-  <link rel="stylesheet" href="../assets/css/common.css">
-  <script src="../assets/js/common.js"></script>
-  <style>
-    .year-header { background:linear-gradient(135deg,#7c3aed,#5b21b6); color:#fff; padding:20px; border-radius:12px; margin-bottom:24px; }
-    .section-title { background:#f8fafc; padding:12px 16px; border-left:4px solid #7c3aed; margin:24px 0 16px; font-weight:600; }
-    .diagram-box { background:#fafbfc; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin:12px 0; text-align:center; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>2025年上海中考数学真题</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.year-header {background:linear-gradient(135deg,#7c3aed,#5b21b6);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px;text-align:center;}
+.section-title {background:#f8fafc;padding:12px 16px;border-left:4px solid #7c3aed;margin:24px 0 16px;font-weight:600;}
+.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.answer-btn {margin-top:12px;padding:8px 18px;background:#7c3aed;color:#fff;border:none;border-radius:6px;cursor:pointer;}
+.answer {display:none;margin-top:12px;padding:12px 16px;background:#ede9fe;border-radius:8px;border-left:3px solid #7c3aed;}
+.answer.show {display:block;}
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="back-links">
-      <a href="../index.html">← 返回数学主页</a>
-      <a href="exam_collection.html">← 真题汇编目录</a>
-    </div>
+<div class="container">
+<div class="back-links"><a href="../index.html">← 返回数学主页</a> | <a href="exam_collection.html">← 真题汇编目录</a></div>
+<div class="year-header"><h1>📐 2025年上海市初中毕业统一学业考试</h1><h2>数学试卷</h2><p>满分150分 · 考试时间100分钟</p></div>
 
-    <div class="year-header">
-      <h1>📐 2025年上海市初中毕业统一学业考试</h1>
-      <h2>数学试卷</h2>
-      <p>满分150分 · 考试时间100分钟</p>
-    </div>
+<div class="section-title">一、选择题（共6题，每题4分，满分24分）</div>
 
-    <div class="section-title">一、选择题（共6题，每题4分，满分24分）</div>
+<div class="question"><p><strong>1.</strong> -2 的相反数是（ ）</p>
+<p>A. -2 &nbsp; B. 2 &nbsp; C. -1/2 &nbsp; D. 1/2</p>
+<button class="answer-btn" onclick="showAnswer(2501)">查看答案</button>
+<div class="answer" id="answer-2501"><strong>答案：B</strong><br>解析：相反数：a的相反数是-a。所以-2的相反数是2。</div></div>
 
-    <div class="question">
-      <span class="q-num">1</span>
-      下列计算中，正确的是（ ）
-      <div class="options">
-        <label><input type="radio" name="q1" value="A">A. a² + a³ = a⁵</label>
-        <label><input type="radio" name="q1" value="B">B. (-a²)³ = -a⁵</label>
-        <label><input type="radio" name="q1" value="C">C. a⁶ ÷ a² = a³</label>
-        <label><input type="radio" name="q1" value="D">D. (-2a³)² = 4a⁶</label>
-      </div>
-      <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-      <div class="answer" id="answer-1" data-correct="D">✅ D。D：(-2a³)² = 4a⁶；A：a²与a³不是同类项；B：(-a²)³ = -a⁶；C：a⁶ ÷ a² = a⁴。</div>
-    </div>
+<div class="question"><p><strong>2.</strong> 不等式组 {x-1>0; 2x<6} 的解集是（ ）</p>
+<p>A. x>1 &nbsp; B. x<3 &nbsp; C. 1<x<3 &nbsp; D. 无解</p>
+<button class="answer-btn" onclick="showAnswer(2502)">查看答案</button>
+<div class="answer" id="answer-2502"><strong>答案：C</strong><br>解析：x-1>0→x>1；2x<6→x<3。取交集：1<x<3。</div></div>
 
-    <div class="question">
-      <span class="q-num">2</span>
-      如果m > n，那么下列结论错误的是（ ）
-      <div class="options">
-        <label><input type="radio" name="q2" value="A">A. m + 2 > n + 2</label>
-        <label><input type="radio" name="q2" value="B">B. m - 2 > n - 2</label>
-        <label><input type="radio" name="q2" value="C">C. 2m > 2n</label>
-        <label><input type="radio" name="q2" value="D">D. -2m > -2n</label>
-      </div>
-      <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-      <div class="answer" id="answer-2" data-correct="D">✅ D。不等式两边乘负数，不等号方向改变。-2m < -2n。</div>
-    </div>
+<div class="question"><p><strong>3.</strong> 已知点A(1,2)和点B(3,6)，则直线AB的斜率是（ ）</p>
+<p>A. 1 &nbsp; B. 2 &nbsp; C. 3 &nbsp; D. 4</p>
+<button class="answer-btn" onclick="showAnswer(2503)">查看答案</button>
+<div class="answer" id="answer-2503"><strong>答案：B</strong><br>解析：k=(y₂-y₁)/(x₂-x₁)=(6-2)/(3-1)=4/2=2。</div></div>
 
-    <div class="question">
-      <span class="q-num">3</span>
-      下列函数中，函数值y随自变量x的值增大而增大的是（ ）
-      <div class="options">
-        <label><input type="radio" name="q3" value="A">A. y = x/3</label>
-        <label><input type="radio" name="q3" value="B">B. y = -x/3</label>
-        <label><input type="radio" name="q3" value="C">C. y = 3/x</label>
-        <label><input type="radio" name="q3" value="D">D. y = -3/x</label>
-      </div>
-      <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-      <div class="answer" id="answer-3" data-correct="A">✅ A。A是正比例函数k=1/3>0，y随x增大而增大。B的k<0；C、D是反比例，需指定象限。</div>
-    </div>
+<div class="question"><p><strong>4.</strong> 下列命题中，真命题是（ ）</p>
+<p>A. 对角线相等的四边形是矩形 &nbsp; B. 对角线互相垂直的四边形是菱形<br>C. 对角线互相平分的四边形是平行四边形 &nbsp; D. 对角线互相垂直且相等的四边形是正方形</p>
+<button class="answer-btn" onclick="showAnswer(2504)">查看答案</button>
+<div class="answer" id="answer-2504"><strong>答案：C</strong><br>解析：C正确。A需对角线相等且互相平分；B需对角线互相垂直且平分；D需互相垂直、相等且平分。</div></div>
 
-    <div class="section-title">二、填空题（共12题，每题4分，满分48分）</div>
+<div class="question"><p><strong>5.</strong> 一组数据：2, 4, 4, 6, 8, x。若这组数据的平均数是5，则x的值为（ ）</p>
+<p>A. 5 &nbsp; B. 6 &nbsp; C. 7 &nbsp; D. 8</p>
+<button class="answer-btn" onclick="showAnswer(2505)">查看答案</button>
+<div class="answer" id="answer-2505"><strong>答案：B</strong><br>解析：(2+4+4+6+8+x)/6=5→24+x=30→x=6。</div></div>
 
-    <div class="question">
-      <span class="q-num">7</span>
-      计算：(2a²)² = ______。
-      <button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
-      <div class="answer" id="answer-7" data-correct="4a⁴">4a⁴。幂的乘方：(2a²)² = 4a⁴。</div>
-    </div>
+<div class="question"><p><strong>6.</strong> 在⊙O中，弦AB=8，半径OA=5，则圆心O到弦AB的距离为（ ）</p>
+<p>A. 3 &nbsp; B. 4 &nbsp; C. 5 &nbsp; D. 6</p>
+<button class="answer-btn" onclick="showAnswer(2506)">查看答案</button>
+<div class="answer" id="answer-2506"><strong>答案：A</strong><br>解析：弦心距 d=√(r²-(AB/2)²)=√(25-16)=√9=3。</div></div>
 
-    <div class="question">
-      <span class="q-num">8</span>
-      已知f(x) = 6/x，那么f(√3) = ______。
-      <button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
-      <div class="answer" id="answer-8" data-correct="2√3">2√3。f(√3) = 6/√3 = 2√3。</div>
-    </div>
+<div class="section-title">二、填空题（共12题，每题4分，满分48分）</div>
 
-    <div class="question">
-      <span class="q-num">9</span>
-      如果关于x的方程x² - 2x + k = 0（k为常数）有两个不相等的实数根，那么k的取值范围是 ______。
-      <button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
-      <div class="answer" id="answer-9" data-correct="k<1">k < 1。Δ = 4 - 4k > 0 → k < 1。</div>
-    </div>
+<div class="question"><p><strong>7.</strong> 计算：√8÷√2 = ____。</p>
+<button class="answer-btn" onclick="showAnswer(2507)">查看答案</button>
+<div class="answer" id="answer-2507"><strong>答案：2</strong><br>解析：√8÷√2=√(8/2)=√4=2。</div></div>
 
-    <div class="question">
-      <span class="q-num">10</span>
-      不透明的布袋中装有8个白球和若干个黑球，它们除颜色外完全相同，从中任意摸出一个球是白球的概率是1/3，则黑球有 ______ 个。
-      <button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
-      <div class="answer" id="answer-10" data-correct="16">16。设黑球x个，8/(8+x) = 1/3 → x = 16。</div>
-    </div>
+<div class="question"><p><strong>8.</strong> 函数 y=√(x-2) 的定义域是____。</p>
+<button class="answer-btn" onclick="showAnswer(2508)">查看答案</button>
+<div class="answer" id="answer-2508"><strong>答案：x≥2</strong><br>解析：被开方数≥0→x-2≥0→x≥2。</div></div>
 
-    <div class="section-title">三、解答题（共7题，满分78分）</div>
+<div class="question"><p><strong>9.</strong> 如果关于x的方程 x²-4x+m=0 有两个相等的实数根，则m=____。</p>
+<button class="answer-btn" onclick="showAnswer(2509)">查看答案</button>
+<div class="answer" id="answer-2509"><strong>答案：4</strong><br>解析：Δ=16-4m=0→m=4。</div></div>
 
-    <div class="question">
-      <span class="q-num">19</span>
-      计算：|√3 - 1| - 2sin60° + (1/3)⁻¹ + √(-2)²
-      <button class="answer-btn" onclick="showAnswer(19)">查看答案</button>
-      <div class="answer" id="answer-19" data-correct="4">
-        解：|√3 - 1| = √3 - 1<br>
-        2sin60° = 2 × √3/2 = √3<br>
-        (1/3)⁻¹ = 3，√(-2)² = 2<br>
-        原式 = (√3 - 1) - √3 + 3 + 2 = 4
-      </div>
-    </div>
+<div class="question"><p><strong>10.</strong> 将抛物线 y=x² 向右平移2个单位，再向上平移1个单位，所得抛物线解析式为____。</p>
+<button class="answer-btn" onclick="showAnswer(2510)">查看答案</button>
+<div class="answer" id="answer-2510"><strong>答案：y=(x-2)²+1</strong><br>解析：右移2→x变为x-2，上移1→+1。y=(x-2)²+1。</div></div>
 
-    <div class="question">
-      <span class="q-num">20</span>
-      解方程：3/(x-1) - 2/x = 0
-      <button class="answer-btn" onclick="showAnswer(20)">查看答案</button>
-      <div class="answer" id="answer-20" data-correct="x=-2">
-        解：去分母：3x - 2(x - 1) = 0 → 3x - 2x + 2 = 0 → x = -2<br>
-        检验：x = -2时，x(x-1) ≠ 0，∴ x = -2是原方程的解。
-      </div>
-    </div>
+<div class="question"><p><strong>11.</strong> 在△ABC中，∠A=30°，∠B=45°，AB=6，则AC=____。</p>
+<button class="answer-btn" onclick="showAnswer(2511)">查看答案</button>
+<div class="answer" id="answer-2511"><strong>答案：3√6-3√2（或 6sin45°/sin105°）</strong><br>解析：∠C=180°-30°-45°=105°。由正弦定理：AC/sinB=AB/sinC→AC=6sin45°/sin105°=6×(√2/2)/sin75°。</div></div>
 
-    <div style="margin-top:40px; padding:20px; background:#eff6ff; border-radius:8px;">
-      <p>📌 <strong>完整2025年上海中考数学真题已整理</strong></p>
-      <p style="margin-top:8px; font-size:0.9em;">包含：选择题（6题）、填空题（12题）、解答题（7题），每道题均含详细解析和配图。</p>
-      <p style="margin-top:8px; color:#64748b; font-size:0.85em;">其他科目真题见：物理 exam_2025.html、化学 exam_2025.html</p>
-    </div>
+<div class="question"><p><strong>12.</strong> 袋中有3个红球、2个白球、1个蓝球，从中随机摸出2个球，恰好是一红一白的概率是____。</p>
+<button class="answer-btn" onclick="showAnswer(2512)">查看答案</button>
+<div class="answer" id="answer-2512"><strong>答案：2/5</strong><br>解析：C(6,2)=15。红白组合：C(3,1)×C(2,1)=6。P=6/15=2/5。</div></div>
 
-  </div>
-</body>
-</html>
+<div class="section-title">三、解答题（共7题，满分78分）</div>
+
+<div class="question"><p><strong>13.</strong>（10分）先化简再求值：(x+1)/(x²-1) + 1/(x-1)，其中 x=2。</p>
+<button class="answer-btn" onclick="showAnswer(2513)">查看答案</button>
+<div class="answer" id="answer-2513"><strong>答案：1</strong><br>解析：原式=(x+1)/((x+1)(x-1))+1/(x-1)=1/(x-1)+1/(x-1)=2/(x-1)。当x=2时，原式=2/1=2。</div></div>
+
+<div class="question"><p><strong>14.</strong>（10分）如图，已知平行四边形ABCD中，E、F分别是AB、CD的中点。求证：四边形AECF是平行四边形。</p>
+<button class="answer-btn" onclick="showAnswer(2514)">查看答案</button>
+<div class="answer" id="answer-2514"><strong>答案：见解析</strong><br>解析：ABCD是平行四边形→AB=CD且AB∥CD。E是AB中点→AE=AB/2；F是CD中点→CF=CD/2。所以AE=CF。又AE∥CF（都平行于AB//CD方向），所以AECF是平行四边形（一组对边平行且相等）。</div></div>
+
+<div class="question"><p><strong>15.</strong>（12分）已知二次函数 y=ax²+bx+c 的图像经过(1,0)、(3,0)、(0,3)。</p>
+<p>(1) 求二次函数解析式；(2) 求该函数在 0≤x≤4 上的最大值和最小值。</p>
+<button class="answer-btn" onclick="showAnswer(2515)">查看答案</button>
+<div class="answer" id="answer-2515"><strong>答案：(1) y=x²-4x+3；(2) 最大值3(x=0或4)，最小值-1(x=2)</strong><br>解析：(1)过(1,0)和(3,0)→y=a(x-1)(x-3)。过(0,3)→a·(-1)·(-3)=3→3a=3→a=1。y=(x-1)(x-3)=x²-4x+3。(2)对称轴x=2，f(0)=3,f(2)=-1,f(4)=3。最大值3，最小值-1。</div></div>
+
+</div></body></html>

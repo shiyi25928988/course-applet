@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>有理数与实数 - 专项练习</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.fill input{width:120px;padding:6px 10px;border:2px solid var(--border);border-radius:6px;font-size:.95rem;}
+.fill input.correct{border-color:var(--success);background:#dcfce7;}
+.fill input.wrong{border-color:var(--danger);background:#fef2f2;}
+.progress-bar{background:var(--border);height:8px;border-radius:4px;margin-bottom:24px;overflow:hidden;}
+.progress-bar .fill-bar{height:100%;background:linear-gradient(90deg,#7c3aed,#5b21b6);border-radius:4px;transition:width .4s;}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📝 专项练习</h3>
+  <ul class="chapter-list">
+    <li><a href="#q1">第1题</a></li><li><a href="#q6">第6题</a></li><li><a href="#q11">第11题</a></li>
+    <li style="margin-top:20px;"><a href="a01_numbers.html">← 返回课件</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);"><a href="../../index.html" class="back-home">🏠 返回首页</a></div>
+</aside>
+<main class="main">
+<div class="page-title">📊 有理数与实数专项练习</div>
+<p style="color:var(--text-secondary);margin-bottom:20px;">共12题 · 覆盖数的分类、有理数运算、平方根立方根、实数</p>
+<div class="progress-bar"><div class="fill-bar" id="progress" style="width:0%;"></div></div>
+
+<h3>一、选择题</h3>
+
+<div class="exercise" id="q1"><div class="question"><span class="q-num">1</span>下列各数中，属于无理数的是（ ）</div>
+<div class="options"><label><input type="radio" name="q1" value="A">A. 0</label><label><input type="radio" name="q1" value="B">B. 3.14</label><label><input type="radio" name="q1" value="C">C. √2</label><label><input type="radio" name="q1" value="D">D. -1/3</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button><div class="answer" id="answer-1" data-correct="C">✅ C。√2是无限不循环小数→无理数。0是整数，3.14是有限小数，-1/3是分数，都是有理数。</div></div>
+
+<div class="exercise" id="q2"><div class="question"><span class="q-num">2</span>-3的相反数是（ ）</div>
+<div class="options"><label><input type="radio" name="q2" value="A">A. -3</label><label><input type="radio" name="q2" value="B">B. 3</label><label><input type="radio" name="q2" value="C">C. -1/3</label><label><input type="radio" name="q2" value="D">D. 1/3</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button><div class="answer" id="answer-2" data-correct="B">✅ B。相反数：a的相反数是-a。所以-3的相反数是3。</div></div>
+
+<div class="exercise" id="q3"><div class="question"><span class="q-num">3</span>|-5|的值是（ ）</div>
+<div class="options"><label><input type="radio" name="q3" value="A">A. -5</label><label><input type="radio" name="q3" value="B">B. 5</label><label><input type="radio" name="q3" value="C">C. 0</label><label><input type="radio" name="q3" value="D">D. ±5</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button><div class="answer" id="answer-3" data-correct="B">✅ B。绝对值：正数的绝对值是它本身，负数的绝对值是它的相反数。|-5|=5。</div></div>
+
+<div class="exercise" id="q4"><div class="question"><span class="q-num">4</span>计算 (-2)³ 的结果是（ ）</div>
+<div class="options"><label><input type="radio" name="q4" value="A">A. -6</label><label><input type="radio" name="q4" value="B">B. 6</label><label><input type="radio" name="q4" value="C">C. -8</label><label><input type="radio" name="q4" value="D">D. 8</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button><div class="answer" id="answer-4" data-correct="C">✅ C。(-2)³=(-2)×(-2)×(-2)=-8。负数的奇次幂是负数。</div></div>
+
+<div class="exercise" id="q5"><div class="question"><span class="q-num">5</span>√16的算术平方根是（ ）</div>
+<div class="options"><label><input type="radio" name="q5" value="A">A. 4</label><label><input type="radio" name="q5" value="B">B. ±4</label><label><input type="radio" name="q5" value="C">C. 2</label><label><input type="radio" name="q5" value="D">D. ±2</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button><div class="answer" id="answer-5" data-correct="C">✅ C。√16=4，4的算术平方根是√4=2。注意区分平方根(±)和算术平方根(非负)。</div></div>
+
+<h3>二、填空题</h3>
+
+<div class="exercise" id="q6"><div class="question"><span class="q-num">6</span>【填空题】用科学记数法表示 0.00035 = ____。</div>
+<div class="fill"><input type="text" id="fill6" placeholder="请填写答案"><button class="answer-btn" onclick="checkFill(6,'3.5×10⁻⁴')">检查</button></div>
+<div class="answer" id="answer-6">✅ 3.5×10⁻⁴。小数点向右移动4位→指数为-4。</div></div>
+
+<div class="exercise" id="q7"><div class="question"><span class="q-num">7</span>【填空题】√81 = ____，-√49 = ____。</div>
+<div class="fill"><input type="text" id="fill7a" placeholder="第一空"><input type="text" id="fill7b" placeholder="第二空" style="margin-left:8px;"><button class="answer-btn" onclick="checkFill2(7,'9','-7')">检查</button></div>
+<div class="answer" id="answer-7">✅ 9、-7。√81=9（算术平方根），-√49=-7。</div></div>
+
+<div class="exercise" id="q8"><div class="question"><span class="q-num">8</span>【填空题】比较大小：√5 ____ 2.5（填 > < 或 =）。</div>
+<div class="fill"><input type="text" id="fill8" placeholder="请填写答案"><button class="answer-btn" onclick="checkFill(8,'<')">检查</button></div>
+<div class="answer" id="answer-8">✅ <。√5≈2.236<2.5。</div></div>
+
+<h3>三、计算题</h3>
+
+<div class="exercise" id="q9"><div class="question"><span class="q-num">9</span>计算：(-3)+(-2)×4-(-6)÷(-3)</div>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案</button><div class="answer" id="answer-9">✅ 原式=(-3)+(-8)-2=(-3)-8-2=-13。先乘除后加减，注意符号。</div></div>
+
+<div class="exercise" id="q10"><div class="question"><span class="q-num">10</span>计算：|√3-2|+√(1-√3)²</div>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案</button><div class="answer" id="answer-10">✅ |√3-2|+|1-√3|。√3≈1.732，所以√3-2<0→|√3-2|=2-√3。1-√3<0→|1-√3|=√3-1。原式=2-√3+√3-1=1。</div></div>
+
+<div class="exercise" id="q11"><div class="question"><span class="q-num">11</span>化简：√8+√18-√2</div>
+<button class="answer-btn" onclick="showAnswer(11)">查看答案</button><div class="answer" id="answer-11">✅ √8=2√2，√18=3√2。原式=2√2+3√2-√2=4√2。</div></div>
+
+<div class="exercise" id="q12"><div class="question"><span class="q-num">12</span>已知a=√2+1，b=√2-1，求a²+b²的值。</div>
+<button class="answer-btn" onclick="showAnswer(12)">查看答案</button><div class="answer" id="answer-12">✅ a²=(√2+1)²=2+2√2+1=3+2√2。b²=(√2-1)²=2-2√2+1=3-2√2。a²+b²=6。</div></div>
+
+<div style="margin-top:32px;text-align:center;"><a href="a01_numbers.html" style="color:var(--primary);">← 返回课件</a></div>
+</main></div>
+<script src="../../assets/js/common.js"></script>
+<script>
+function checkFill(n,answer){const el=document.getElementById('fill'+n);if(!el)return;const ans=document.getElementById('answer-'+n);if(el.value.trim()===answer){el.classList.add('correct');el.classList.remove('wrong');ans.classList.add('show','correct');ans.classList.remove('wrong');}else{el.classList.add('wrong');el.classList.remove('correct');ans.classList.add('show','wrong');ans.classList.remove('correct');}}
+function checkFill2(n,a1,a2){const e1=document.getElementById('fill'+n+'a'),e2=document.getElementById('fill'+n+'b');const ans=document.getElementById('answer-'+n);if(!e1||!e2)return;if(e1.value.trim()===a1&&e2.value.trim()===a2){e1.classList.add('correct');e2.classList.add('correct');e1.classList.remove('wrong');e2.classList.remove('wrong');ans.classList.add('show','correct');ans.classList.remove('wrong');}else{e1.classList.add('wrong');e2.classList.add('wrong');e1.classList.remove('correct');e2.classList.remove('correct');ans.classList.add('show','wrong');ans.classList.remove('correct');}}
+</script>
+</body>
+</html>

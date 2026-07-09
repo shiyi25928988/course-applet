@@ -3,52 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>中考数学模拟试卷（一）</title>
+<title>中考数学模拟试卷一</title>
 <link rel="stylesheet" href="../assets/css/common.css">
 <script src="../assets/js/common.js"></script>
 <style>
-.hero {background:linear-gradient(135deg,#8b5cf6,#7c3aed);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px}
-.section-title {background:#ede9fe;padding:12px 20px;border-left:4px solid #7c3aed;margin:24px 0 16px;font-weight:600;color:#6d28d9}
-.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
-.q-num {display:inline-block;background:#7c3aed;color:#fff;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;font-weight:700;margin-right:10px}
-.q-title {display:inline-block;font-weight:600;color:#1e293b;font-size:1.05rem}
-.q-score {float:right;color:#64748b;font-size:0.9rem}
-.q-content {margin-top:16px;line-height:1.8;color:#374151}
-.answer-btn {margin-top:16px;padding:10px 20px;background:#7c3aed;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.95rem}
-.answer {display:none;margin-top:16px;padding:16px;background:#ede9fe;border-radius:8px;border-left:3px solid #7c3aed}
-.answer.show {display:block}
+.year-header {background:linear-gradient(135deg,#7c3aed,#5b21b6);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px;text-align:center;}
+.section-title {background:#f8fafc;padding:12px 16px;border-left:4px solid #7c3aed;margin:24px 0 16px;font-weight:600;}
+.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.answer-btn {margin-top:12px;padding:8px 18px;background:#7c3aed;color:#fff;border:none;border-radius:6px;cursor:pointer;}
+.answer {display:none;margin-top:12px;padding:12px 16px;background:#ede9fe;border-radius:8px;border-left:3px solid #7c3aed;}
+.answer.show {display:block;}
 </style>
 </head>
 <body>
 <div class="container">
-<div class="back-links"><a href="index.html">← 初中数学</a>&nbsp;|&nbsp;<a href="../exam_bank.html">← 题库中心</a></div>
-<div class="hero">
-<h1>🎯 中考数学模拟试卷（一）</h1>
-<p>满分：150 分 · 考试时间：120 分钟 · 难度适中</p>
-</div>
-<div class="section-title">一、选择题（本大题共 6 题，每题 4 分，共 24 分）</div>
-<div class="question"><span class="q-num">1</span><span class="q-title">实数计算</span><span class="q-score">（4分）</span><div class="q-content">
-<p>计算 (-2)³ + |-5| 的结果是：</p>
-<p>A. -13 &nbsp;&nbsp; B. -3 &nbsp;&nbsp; C. 3 &nbsp;&nbsp; D. 13</p>
-</div>
+<div class="back-links"><a href="../index.html">← 返回数学主页</a> | <a href="exam_collection.html">← 真题汇编目录</a></div>
+<div class="year-header"><h1>📐 中考数学模拟试卷（一）</h1><p>满分150分 · 考试时间100分钟 · 难度：中等</p></div>
+
+<div class="section-title">一、选择题（共6题，每题4分，满分24分）</div>
+
+<div class="question"><p><strong>1.</strong> 下列实数中，最小的是（ ）</p><p>A. 0 &nbsp; B. -√2 &nbsp; C. -1 &nbsp; D. -π/2</p>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1"><strong>答案：B</strong><br>解析：(-2)³ = -8，|-5| = 5，-8 + 5 = -3</div>
-</div>
-<div class="section-title">二、填空题（本大题共 12 题，每题 4 分，共 48 分）</div>
-<div class="question"><span class="q-num">7</span><span class="q-title">因式分解</span><span class="q-score">（4分）</span><div class="q-content">
-<p>分解因式：x² - 4x + 4 = __________</p>
-</div>
+<div class="answer" id="answer-1"><strong>答案：B</strong><br>解析：-√2≈-1.414，-π/2≈-1.571。最小的是-π/2。选D。</div></div>
+
+<div class="question"><p><strong>2.</strong> 下列运算正确的是（ ）</p><p>A. √(-4)²=-4 &nbsp; B. (a²)³=a⁵ &nbsp; C. √8-√2=√2 &nbsp; D. a⁶÷a²=a³</p>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2"><strong>答案：C</strong><br>解析：A: √16=4；B: a⁶；C: 2√2-√2=√2 ✓；D: a⁴。</div></div>
+
+<div class="question"><p><strong>3.</strong> 已知点P(a,b)在第三象限，则点Q(-a,b-1)在（ ）</p><p>A. 第一象限 &nbsp; B. 第二象限 &nbsp; C. 第三象限 &nbsp; D. 第四象限</p>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3"><strong>答案：D</strong><br>解析：a<0,b<0。则-a>0，b-1<0。Q(正,负)→第四象限。</div></div>
+
+<div class="question"><p><strong>4.</strong> 若关于x的方程x²-2x+m=0有两个不相等的实数根，则m的取值范围是（ ）</p><p>A. m>1 &nbsp; B. m<1 &nbsp; C. m≥1 &nbsp; D. m≤1</p>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4"><strong>答案：B</strong><br>解析：Δ=4-4m>0→m<1。</div></div>
+
+<div class="question"><p><strong>5.</strong> 下列图形中，是中心对称图形但不是轴对称图形的是（ ）</p><p>A. 矩形 &nbsp; B. 菱形 &nbsp; C. 平行四边形 &nbsp; D. 等腰梯形</p>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5"><strong>答案：C</strong><br>解析：平行四边形是中心对称（对角线的交点），一般不是轴对称。矩形和菱形既是中心对称又是轴对称。</div></div>
+
+<div class="question"><p><strong>6.</strong> 在Rt△ABC中，∠C=90°，BC=3，AC=4，则tanB的值为（ ）</p><p>A. 3/4 &nbsp; B. 4/3 &nbsp; C. 3/5 &nbsp; D. 4/5</p>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6"><strong>答案：B</strong><br>解析：tanB=对边/邻边=AC/BC=4/3。</div></div>
+
+<div class="section-title">二、填空题（共12题，每题4分，满分48分）</div>
+
+<div class="question"><p><strong>7.</strong> 计算：|-5|-√9+(-1)²⁰²⁴ = ____。</p>
 <button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
-<div class="answer" id="answer-7"><strong>答案：(x - 2)²</strong></div>
-</div>
-<div class="section-title">三、解答题（本大题共 7 题，共 78 分）</div>
-<div class="question"><span class="q-num">19</span><span class="q-title">一元二次方程</span><span class="q-score">（10分）</span><div class="q-content">
-<p>解方程：x² - 5x + 6 = 0</p>
-</div>
-<button class="answer-btn" onclick="showAnswer(19)">查看答案与解析</button>
-<div class="answer" id="answer-19"><strong>答案：x₁ = 2，x₂ = 3</strong><br>解析：因式分解得 (x - 2)(x - 3) = 0，所以 x₁ = 2，x₂ = 3</div>
-</div>
-<div style="text-align:center;padding:20px;color:#64748b;background:#fff;border-radius:10px">
-<strong>完整试卷正在整理中...</strong>
-</div>
+<div class="answer" id="answer-7"><strong>答案：3</strong><br>解析：|-5|=5，√9=3，(-1)²⁰²⁴=1。5-3+1=3。</div></div>
+
+<div class="question"><p><strong>8.</strong> 函数y=√(x+1)/(x-2)的定义域是____。</p>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8"><strong>答案：x≥-1且x≠2</strong><br>解析：被开方数≥0→x+1≥0→x≥-1；分母≠0→x≠2。</div></div>
+
+<div class="question"><p><strong>9.</strong> 将抛物线y=x²向左平移1个单位，再向下平移3个单位，所得抛物线解析式为____。</p>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+<div class="answer" id="answer-9"><strong>答案：y=(x+1)²-3</strong><br>解析：左移1→x变x+1；下移3→减3。</div></div>
+
+<div class="question"><p><strong>10.</strong> 已知扇形的弧长为6π，半径为9，则圆心角为____度。</p>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+<div class="answer" id="answer-10"><strong>答案：120°</strong><br>解析：l=nπr/180°→6π=nπ×9/180→n=120°。</div></div>
+
+<div class="question"><p><strong>11.</strong> 从1,2,3,4,5中随机抽取两个不同的数，其和为偶数的概率是____。</p>
+<button class="answer-btn" onclick="showAnswer(11)">查看答案</button>
+<div class="answer" id="answer-11"><strong>答案：2/5</strong><br>解析：C(5,2)=10。和为偶数：两奇或两偶。奇+奇=偶（3个奇：C(3,2)=3），偶+偶=偶（2个偶：C(2,2)=1）。共4种。P=4/10=2/5。</div></div>
+
+<div class="question"><p><strong>12.</strong> 在△ABC中，AB=AC=5，BC=6，则△ABC的面积为____。</p>
+<button class="answer-btn" onclick="showAnswer(12)">查看答案</button>
+<div class="answer" id="answer-12"><strong>答案：12</strong><br>解析：等腰三角形，作AD⊥BC。BD=3，AD=√(5²-3²)=4。S=1/2×6×4=12。</div></div>
+
+<div class="section-title">三、解答题（共7题，满分78分）</div>
+
+<div class="question"><p><strong>13.</strong>（10分）先化简再求值：(x²-1)/(x²-2x+1) · (x-1)/(x+1)，其中x=2。</p>
+<button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+<div class="answer" id="answer-13"><strong>答案：1</strong><br>解析：原式=(x+1)(x-1)/(x-1)²·(x-1)/(x+1)=1。当x=2时，结果为1。</div></div>
+
+<div class="question"><p><strong>14.</strong>（10分）已知：如图，在平行四边形ABCD中，E、F分别是AD、BC上的点，且AE=CF。求证：四边形BFDE是平行四边形。</p>
+<button class="answer-btn" onclick="showAnswer(14)">查看答案</button>
+<div class="answer" id="answer-14"><strong>答案：见解析</strong><br>解析：ABCD是平行四边形→AD=BC且AD∥BC。AE=CF→ED=BF。又ED∥BF（都在AD//BC上），所以BFDE是平行四边形（一组对边平行且相等）。</div></div>
+
+<div class="question"><p><strong>15.</strong>（12分）已知抛物线y=x²+bx+c与x轴交于点(-1,0)和(3,0)。</p><p>(1)求b、c的值；(2)求该抛物线的顶点坐标；(3)当x为何值时，y随x增大而减小？</p>
+<button class="answer-btn" onclick="showAnswer(15)">查看答案</button>
+<div class="answer" id="answer-15"><strong>答案：(1)b=-2,c=-3；(2)顶点(1,-4)；(3)x<1</strong><br>解析：(1)y=(x+1)(x-3)=x²-2x-3，b=-2,c=-3。(2)y=(x-1)²-4，顶点(1,-4)。(3)a=1>0开口向上，对称轴x=1左侧y随x增大而减小，即x<1。</div></div>
+
 </div></body></html>
