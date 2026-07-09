@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Future of Education - 雅思阅读真题详解</title>
+    <title>Answers Underground - 雅思阅读真题详解</title>
     <link rel="stylesheet" href="../assets/css/common.css">
     <script src="../assets/js/common.js"></script>
     <style>
@@ -14,14 +14,8 @@
             border-radius: 16px;
             margin-bottom: 32px;
         }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
         .content-section {
             background: #fff;
             border-radius: 12px;
@@ -33,95 +27,65 @@
             margin: 0 0 16px 0;
             color: #1d4ed8;
             font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        .passage-box {
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
             background: #f8fafc;
             padding: 20px;
             border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
+            border-left: 4px solid #0ea5e9;
         }
-        .question-card {
-            background: #eff6ff;
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
             border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
+            border-left: 4px solid #f59e0b;
         }
-        .question-card h4 {
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
             margin: 0 0 12px 0;
-            color: #1e40af;
+            color: #92400e;
+            font-size: 1rem;
         }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
+        .question-number {
             display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
             text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
         }
         .nav-links {
             display: flex;
@@ -135,132 +99,300 @@
             padding: 10px 24px;
             border-radius: 8px;
             text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
     </style>
 </head>
 <body>
     <div class="layout">
         <aside class="sidebar">
-            <h3>📖 阅读真题 49/50</h3>
+            <h3>📚 阅读真题78/1000</h3>
             <ul class="chapter-list">
                 <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
                 <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
                 <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
             </ul>
             <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
         </aside>
-
+        
         <main class="main">
             <div class="page-hero">
-                <h1>📖 The Future of Education</h1>
-                <p>剑桥12 Test3 Passage3 · 题型：选择 · Matching · 完整逐题解析</p>
+                <h1>📄 Answers Underground</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
             </div>
 
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 49: The Future of Education</h3>
-                    <div class="difficulty diff-hard">难度：★★★★★ 困难</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：议论文 · 话题：教育 · 科技 · 建议时间：20-25分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>The Future of Education is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of education has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>B</strong></p>
-                        <p>The Future of Education is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of education has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>C</strong></p>
-                        <p>The Future of Education is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of education has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>D</strong></p>
-                        <p>The Future of Education is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of education has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>E</strong></p>
-                        <p>The Future of Education is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of education has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>F</strong></p>
-                        <p>The Future of Education is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of education has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>G</strong></p>
-                        <p>The Future of Education is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of education has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>H</strong></p>
-                        <p>The Future of Education is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of education has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-
-                    </div>
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>Questions 1-7
+Reading Passage 2 has SEVEN paragraphs, A-G.
+Choose the correct heading for each paragraph from the list of headings below.
+Write the correct number, i-ix.</p>
+<p>List of Headings
+i          A better use for large sums of money.
+ii         The environmental costs of manufacture and installation.
+iii        Estimates of the number of micro-turbines in use.
+iv        The environmental benefits of running a micro-turbine.
+v         The size and output of the largest type of micro-turbine.
+vi        A limited case for subsidising micro-turbines.
+vii       Recent improvements in the design of micro-turbines.
+viii      An indirect method of reducing carbon emissions.
+ix        The financial benefits of running a micro-turbine.
+1..................... Paragraph A
+2.....................    Paragraph B
+3.....................    Paragraph C
+4.....................    Paragraph D
+5.....................    Paragraph E
+6.....................    Paragraph F
+7.....................    Paragraph G
+Questions 8-9
+Choose TWO letters, A-E.
+The list below contains some possible statements about micro wind-turbines.
+Which TWO of these statements are made by the writer of the passage?
+A In certain areas, permission is required to install them.
+B Their exact energy output depends on their position.
+C They probably take less energy to make than other engines.
+ 3</p>
+<p>D The UK government contributes towards their purchase cost.
+E They can produce more energy than a household needs.
+Questions 10-13
+Complete the sentences below.
+Choose NO MORE THAN THREE WORDS from the passage for each answer.
+     10 10..................... would be a more effective target for government investment than
+micro-turbines. 
+     11
+      
+An indirect benefit of subsidising micro-turbines is the support it provides for
+11.....................
+12 Most spending has a 12..................... effect on the environment.
+     13
+ 
+If people buy a micro-turbine, they have less money to spend on things like foreign
+holidays and 13.....................       
+ 4</p>
+<p>Solution:
+ 
+1. v
+2. ii
+3. iv
+4. ix
+5. i
+6. vi
+7.
+8. B OR E IN EITHER ORDER
+9. B OR E IN EITHER ORDER
+10. offshore wind farms
+11. developing technology
+12. negative
+13. cars
+viii
+ 5</p>
+<p>Reading Practice
+ Ancient Chinese Chariots
+A The Shang Dynasty or Yin Dynasty, according to traditional historiography, ruled in the
+Yellow River valley in the second millennium. Archaeological work at the Ruins of Yin (near
+modern-day Anyang), which has been identified as the last Shang capital, uncovered
+eleven major Yin royal tombs and the foundations of palaces and ritual sites, containing
+weapons of war and remains from both animal and human sacrifices.
+B The Tomb of Fu Hao is an archaeological site at Yinxu, the ruins of the ancient Shang
+Dynasty capital Yin, within the modem city of Anyang in Henan Province, China.
+Discovered in 1976it was identified as the final resting place of the queen and military
+general Fu Hao. The artifacts unearthed within the grave included jade objects, bone
+objects, bronze objects etc. These grave goods are confirmed by the oracle texts, which
+constitute almost all of the first hand written record we possess of the Shang Dynasty.
+Below the corpse was a small pit holding the remains of six sacrificial dogs and along the
+edge lay the skeletons of human slaves, evidence of human sacrifice.
+C The Terracotta Army was discovered on 29 March 1974 to the east of Xian in Shaanxi.
+The terracotta soldiers were accidentally discovered when a group of local farmers was
+digging a well during a drought around 1.6 km (1 mile) east of the Qin Emperors tomb
+around at Mount Li (Lishan), a region riddled with underground springs and watercourses.
+Experts currently place the entire number of soldiers at 8,000 — with 130 chariots (130 cm
+long), 530 horses and 150 cavalry horses helping to ward of any dangers in the afterlife. In
+contrast, the burial of Tutank Hamun yielded six complete but dismantled chariots of
+unparalleled richness and sophistication. Each was designed for two people (90 cm long)
+and had its axle sawn through to enable it to be brought along the narrow corridor into the
+tomb.
+D Excavation of ancient Chinese chariots has confirmed the descriptions of them in the
+earliest texts. Wheels were constructed from a variety of woods: elm provided the hub,
+rose-wood the spokes and oak the felloes. The hub was drilled through to form an empty
+space into which the tampering axle was fitted, the whole being covered with leather to
+retain lubricating oil. Though the number of spokes varied, a wheel by the fourth century
+BC usually had eighteen to thirty-two of them. Records show how elaborate was the testing
+of each completed wheel: flotation and weighing were regarded as the best measures of
+balance, but even the empty spaces in the assembly were checked with millet grains. One
+outstanding constructional asset of the ancient Chinese wheel was dishing. Dishing refers
+to the dish-like shape of an advanced wooden wheel, which looks rather like a flat cone. On
+occasion they chose to strengthen a dished wheel with a pair of struts running from rim to
+rim on each of the hub. As these extra supports were inserted separately into the felloes,
+they would have added even greater strength to the wheel. Leather wrapped up the edge
+of the wheel aimed to retain bronze.
+E Within a millennium, however, Chinese chariot-makers had developed a vehicle with
+shafts, the precursor of the true carriage or cart. This design did not make its appearance
+in Europe until the end of the Roman Empire. Because the shafts curved upwards, and the
+harness pressed against a horse’s shoulders, not his neck, the shaft chariot was incredibly
+efficient. The halberd was also part of chariot standard weaponry. This halberd usually
+measured well over 3 metres in length, which meant that a chariot warrior wielding it
+ 1</p>
                 </div>
             </div>
 
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-4: Matching Information</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Which paragraph contains the following information?</p>
-                        <p style="margin:8px 0;"><strong>1.</strong> The underground structures beneath the pyramid</p>
-                        <p style="margin:8px 0;"><strong>2.</strong> The influence on later Egyptian architecture</p>
-                        <p style="margin:8px 0;"><strong>3.</strong> The buildings within the pyramid complex</p>
-                        <p style="margin:8px 0;"><strong>4.</strong> The revolutionary nature of stone construction</p>
-                    </div>
-                    <div class="question-card">
-                        <h4>Questions 5-8: Multiple Choice</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose the correct letter, A, B, C or D.</p>
-                        <p style="margin:12px 0;"><strong>5.</strong> The Step Pyramid was built approximately how many years ago?</p>
-                        <p style="margin:4px 0;">A. 2,600</p>
-                        <p style="margin:4px 0;">B. 3,600</p>
-                        <p style="margin:4px 0;">C. 4,600</p>
-                        <p style="margin:4px 0;">D. 5,600</p>
-                    </div>
+            <div class="section-divider"></div>
 
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
                 </div>
             </div>
 
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> E</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> G</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> C</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> D</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> C</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> A</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> B</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>8.</strong> D</td></tr>
-                        </table>
-                    </div>
-                </div>
+            <div class="section-divider"></div>
 
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 14: E</h5>
-                        <p><strong>定位：</strong>Paragraph E 第1句</p>
-                        <p><strong>原文：</strong><span class="keyword">"The underground galleries beneath the Step Pyramid are equally impressive."</span></p>
-                        <p><strong>解析：</strong>"underground galleries"对应题目中的"underground structures"。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 18: C</h5>
-                        <p><strong>定位：</strong>Paragraph G 第2句</p>
-                        <p><strong>原文：</strong><span class="keyword">"it remains standing after more than 4,600 years"</span></p>
-                        <p><strong>解析：</strong>原文明确给出4,600年，对应选项C。</p>
-                    </div>
-
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
                 </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
             </div>
 
             <div class="nav-links">
                 <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
             </div>
         </main>
     </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
 </body>
 </html>

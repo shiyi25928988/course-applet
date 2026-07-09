@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Mystery of the Bermuda Triangle - 雅思阅读真题详解</title>
+    <title>An Introduction To Film Sound - 雅思阅读真题详解</title>
     <link rel="stylesheet" href="../assets/css/common.css">
     <script src="../assets/js/common.js"></script>
     <style>
@@ -14,14 +14,8 @@
             border-radius: 16px;
             margin-bottom: 32px;
         }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
         .content-section {
             background: #fff;
             border-radius: 12px;
@@ -33,95 +27,65 @@
             margin: 0 0 16px 0;
             color: #1d4ed8;
             font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        .passage-box {
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
             background: #f8fafc;
             padding: 20px;
             border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
+            border-left: 4px solid #0ea5e9;
         }
-        .question-card {
-            background: #eff6ff;
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
             border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
+            border-left: 4px solid #f59e0b;
         }
-        .question-card h4 {
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
             margin: 0 0 12px 0;
-            color: #1e40af;
+            color: #92400e;
+            font-size: 1rem;
         }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
+        .question-number {
             display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
             text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
         }
         .nav-links {
             display: flex;
@@ -135,118 +99,269 @@
             padding: 10px 24px;
             border-radius: 8px;
             text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
     </style>
 </head>
 <body>
     <div class="layout">
         <aside class="sidebar">
-            <h3>📖 阅读真题 48/50</h3>
+            <h3>📚 阅读真题77/1000</h3>
             <ul class="chapter-list">
                 <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
                 <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
                 <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
             </ul>
             <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
         </aside>
-
+        
         <main class="main">
             <div class="page-hero">
-                <h1>📖 The Mystery of the Bermuda Triangle</h1>
-                <p>剑桥12 Test3 Passage2 · 题型：Matching Headings · 填空 · 完整逐题解析</p>
+                <h1>📄 An Introduction To Film Sound</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
             </div>
 
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 48: The Mystery of the Bermuda Triangle</h3>
-                    <div class="difficulty diff-medium">难度：★★★☆☆ 中等</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：说明文/议论文 · 话题：地理 · 神秘 · 建议时间：18-20分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>The Mystery of the Bermuda Triangle is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the mystery of the bermuda triangle has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>B</strong></p>
-                        <p>The Mystery of the Bermuda Triangle is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the mystery of the bermuda triangle has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>C</strong></p>
-                        <p>The Mystery of the Bermuda Triangle is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the mystery of the bermuda triangle has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>D</strong></p>
-                        <p>The Mystery of the Bermuda Triangle is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the mystery of the bermuda triangle has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>E</strong></p>
-                        <p>The Mystery of the Bermuda Triangle is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the mystery of the bermuda triangle has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>F</strong></p>
-                        <p>The Mystery of the Bermuda Triangle is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the mystery of the bermuda triangle has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-
-                    </div>
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>Solution:
+ 
+1. A
+2. C
+3. D
+4. A
+5. B
+6. beaks
+ 
+8. vomited
+9. hardens
+10. TRUE
+11. NOT GIVEN
+12. NOT GIVEN
+13. FALSE
+7. passage
+ 4</p>
+<p>An assessment of micro-wind turbines
+ 
+A In terms of micro-renewable energy sources suitable for private use, a 15-kilowatt (kW)
+turbine is at the biggest end of the spectrum. With a nine metre diameter and a pole as
+high as a four-storey house, this is the most efficient form of wind microturbine, and the sort
+of thing you could install only if you had plenty of space and money. According to one
+estimate, a 15-kW micro-turbine (that’s one with the maximum output), costing £41,000 to
+purchase and a further £9,000 to install, is capable of delivering 25,000 kilowatt-hours
+(kWh)’ of electricity each year if placed on a suitably windy site.
+ 
+B I don’t know of any credible studies of the greenhouse gas emissions involved in
+producing and installing turbines, so my estimates here are going to be even more broad
+than usual. However, it is worth trying. If turbine manufacture is about as carbon intensive
+per pound sterling of product as other generators and electrical motors, which seems a
+reasonable assumption, the carbon intensity of manufacture will be around 640 kilograms
+(kg) per £1,000 of value. Installation is probably about as carbon intensive as typical
+construction, at around 380 kg per £1,000. That makes the carbon footprint (the total
+amount of greenhouse gases that installing a turbine creates) 30 tonnes.
+ 
+C The carbon savings from wind-powered electricity generation depend on the carbon
+intensity of the electricity that you’re replacing. Let’s assume that your generation replaces
+the coal-fuelled part of the country’s energy mix. In other words, if you live in the UK, let’s
+say that rather than replacing typical grid electricity, which comes from a mix of coal, gas,
+oil and renewable energy sources, the effect of your turbine is to reduce the use of coalfired power stations. That’s reasonable, because coal is the least preferable source in the
+electricity mix. In this case the carbon saving is roughly one kilogram per kWh, so you save
+25 tonnes per year and pay back the embodied carbon in just 14 months - a great start.
+ 
+D The UK government has recently introduced a subsidy for renewable energy that pays
+individual producers 24p per energy unit on top of all the money they save on their own fuel
+bill, and on selling surplus electricity back to the grid at approximately 5p per unit. With all
+this taken into account, individuals would get back £7,250 per year on their investment.
+That pays back the costs in about six years. It makes good financial sense and, for people
+who care about the carbon savings for their own sake, it looks like a fantastic move. The
+carbon investment pays back in just over a year, and every year after that is a 25-tonne
+carbon saving. (It’s important to remember that all these sums rely on a wind turbine having
+a favourable location)
+ 
+E So, at face value, the turbine looks like a great idea environmentally, and a fairly good
+long-term investment economically for the person installing it. However, there is a crucial
+perspective missing from the analysis so far. Has the government spent its money wisely?
+It has invested 24p per unit into each micro-turbine. That works out at a massive £250 per
+tonne of carbon saved. My calculations tell me that had the government invested its money
+in offshore wind farms, instead of subsidising smaller domestic turbines, they would have
+broken even after eight years. In other words, the micro-turbine works out as a good
+investment for individuals, but only because the government spends, and arguably wastes,
+so much money subsidising it. Carbon savings are far lower too.
+F Nevertheless, although the micro-wind turbine subsidy doesn’t look like the very best way
+of spending government resources on climate change mitigation, we are talking about
+ 1</p>
+<p>investing only about 0.075 percent per year of the nation’s GDP to get a one percent
+reduction in carbon emissions, which is a worthwhile benefit. In other words, it could be
+much better, but it could be worse. In addition, such investment helps to promote and
+sustain developing technology.
+G There is one extra favourable way of looking at the micro-wind turbine, even if it is not
+the single best way of investing money in cutting carbon. Input- output modelling has told
+us that it is actually quite difficult to spend money without having a negative carbon impact.
+So if the subsidy encourages people to spend their money on a carbon-reducing
+technology such as a wind turbine, rather than on carbon-producing goods like cars, and
+services such as overseas holidays, then the reductions in emissions will be greater than
+my simple sums above have suggested. 
+ 2</p>
                 </div>
             </div>
 
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-8: Complete the Summary</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
-                        <p style="line-height:2.2;">
-                            The Step Pyramid was designed by the architect <input type="text" class="blank-input" placeholder="...">. It was built during the <input type="text" class="blank-input" placeholder="..."> century BCE for Pharaoh Djoser. Unlike previous tombs made of <input type="text" class="blank-input" placeholder="...">, this pyramid was constructed from <input type="text" class="blank-input" placeholder="...">. The complex includes various <input type="text" class="blank-input" placeholder="..."> and temples, surrounded by a high <input type="text" class="blank-input" placeholder="...">. Underground, there are over 5 kilometers of <input type="text" class="blank-input" placeholder="..."> and chambers.
-                        </p>
-                    </div>
+            <div class="section-divider"></div>
 
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
                 </div>
             </div>
 
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> Imhotep</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> 27th</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> mud brick</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> limestone</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> courtyards</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> wall</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> tunnels</td></tr>
-                        </table>
-                    </div>
-                </div>
+            <div class="section-divider"></div>
 
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 8: Imhotep</h5>
-                        <p><strong>定位：</strong>Paragraph B 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Designed by the brilliant architect Imhotep"</span></p>
-                        <p><strong>解析：</strong>原文原词，注意大写。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 9: 27th</h5>
-                        <p><strong>定位：</strong>Paragraph A 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Built during the 27th century BCE"</span></p>
-                        <p><strong>解析：</strong>数字信息，直接提取。</p>
-                    </div>
-
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
                 </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
             </div>
 
             <div class="nav-links">
                 <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
             </div>
         </main>
     </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
 </body>
 </html>

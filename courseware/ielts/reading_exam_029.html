@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Future of Space Travel - 雅思阅读真题详解</title>
+    <title>Activities For Children - 雅思阅读真题详解</title>
     <link rel="stylesheet" href="../assets/css/common.css">
     <script src="../assets/js/common.js"></script>
     <style>
@@ -14,14 +14,8 @@
             border-radius: 16px;
             margin-bottom: 32px;
         }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
         .content-section {
             background: #fff;
             border-radius: 12px;
@@ -33,95 +27,65 @@
             margin: 0 0 16px 0;
             color: #1d4ed8;
             font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        .passage-box {
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
             background: #f8fafc;
             padding: 20px;
             border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
+            border-left: 4px solid #0ea5e9;
         }
-        .question-card {
-            background: #eff6ff;
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
             border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
+            border-left: 4px solid #f59e0b;
         }
-        .question-card h4 {
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
             margin: 0 0 12px 0;
-            color: #1e40af;
+            color: #92400e;
+            font-size: 1rem;
         }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
+        .question-number {
             display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
             text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
         }
         .nav-links {
             display: flex;
@@ -135,132 +99,274 @@
             padding: 10px 24px;
             border-radius: 8px;
             text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
     </style>
 </head>
 <body>
     <div class="layout">
         <aside class="sidebar">
-            <h3>📖 阅读真题 29/50</h3>
+            <h3>📚 阅读真题54/1000</h3>
             <ul class="chapter-list">
                 <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
                 <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
                 <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
             </ul>
             <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
         </aside>
-
+        
         <main class="main">
             <div class="page-hero">
-                <h1>📖 The Future of Space Travel</h1>
-                <p>剑桥14 Test3 Passage3 · 题型：选择 · Matching · 完整逐题解析</p>
+                <h1>📄 Activities For Children</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
             </div>
 
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 29: The Future of Space Travel</h3>
-                    <div class="difficulty diff-hard">难度：★★★★★ 困难</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：议论文 · 话题：太空 · 科技 · 建议时间：20-25分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>The Future of Space Travel is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of space travel has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>B</strong></p>
-                        <p>The Future of Space Travel is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of space travel has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>C</strong></p>
-                        <p>The Future of Space Travel is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of space travel has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>D</strong></p>
-                        <p>The Future of Space Travel is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of space travel has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>E</strong></p>
-                        <p>The Future of Space Travel is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of space travel has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>F</strong></p>
-                        <p>The Future of Space Travel is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of space travel has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>G</strong></p>
-                        <p>The Future of Space Travel is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of space travel has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>H</strong></p>
-                        <p>The Future of Space Travel is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of space travel has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-
-                    </div>
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>Solution:
+ 
+1. D
+2. B
+3. F
+4. E
+5. B
+6. F
+7.
+8. A
+9. (ship’s) anchor/(an/the) anchor
+10. (escape) wheel
+11. tooth
+12. (long) pendulum
+13. second</p>
+<p>Acquiring the principles of mathematics and science
+ 
+A It has been pointed out that learning mathematics and science is not so much
+learning facts as learning ways of thinking. It has also been emphasised that in order
+to learn science, people often have to change the way they think in ordinary
+situations. For example, in order to understand even simple concepts such as heat
+and temperature, ways of thinking of temperature as a measure of heat must be
+abandoned and a distinction between ‘temperature’ and ‘heat’ must be learned.
+These changes in ways of thinking are often referred to as conceptual changes. But
+how do conceptual changes happen? How do young people change their ways of
+thinking as they develop and as they learn in school?
+ 
+B Traditional instruction based on telling students how modern scientists think does
+not seem to be very successful. Students may learn the definitions, the formulae, the
+terminology, and yet still maintain their previous conceptions. This difficulty has
+been illustrated many times, for example, when instructed students are interviewed
+about heat and temperature. It is often identified by teachers as a difficulty in
+applying the concepts learned in the classroom; students may be able to repeat a
+formula but fail to use the concept represented by the formula when they explain
+observed events.
+ 
+C The psychologist Piaget suggested an interesting hypothesis relating to the
+process of cognitive change in children. Cognitive change was expected to result
+from the pupils’ own intellectual activity. When confronted with a result that
+challenges their thinking - that is, when faced with conflict - pupils realise that they
+need to think again about their own ways of solving problems, regardless of whether
+the problem is one in mathematics or in science. He hypothesised that conflict
+brings about disequilibrium, and then triggers equilibration processes that
+ultimately produce cognitive change. For this reason, according to Piaget and his
+colleagues, in order for pupils to progress in their thinking they need to be actively
+engaged in solving problems that will challenge their current mode of reasoning.
+However, Piaget also pointed out that young children do not always discard their
+ideas in the face of contradictory evidence. They may actually discard the evidence
+and keep their theory.
+ 
+D Piaget’s hypothesis about how cognitive change occurs was later translated into
+an educational approach which is now termed ‘discovery learning’. Discovery
+learning initially took what is now considered the Tone learner’ route. The role of the
+teacher was to select situations that challenged the pupils’ reasoning; and the
+pupils’ peers had no real role in this process. However, it was subsequently
+proposed that interpersonal conflict, especially with peers, might play an important
+role in promoting cognitive change. This hypothesis, originally advanced by PerretClermont (1980) and Doise and Mugny (1984), has been investigated in many recent
+studies of science teaching and learning.
+E Christine Howe and her colleagues, for example, have compared children’s
+progress in understanding several types of science concepts when they are given
+the opportunity to observe relevant events. In one study, Howe compared the
+progress of 8 to 12-year-old children in understanding what influences motion down
+ 1</p>
+<p>a slope. In order to ascertain the role of conflict in group work, they created two
+kinds of groups according to a pre-test: one in which the children had dissimilar
+views, and a second in which the children had similar views.
+ 
+They found support for the idea that children in the groups with dissimilar views progressed
+more after their training sessions than those who had been placed in groups with similar
+views. However, they found no evidence to support the idea that the children worked out
+their new conceptions during their group discussions, because progress was not actually
+observed in a post-test immediately after the sessions of group work, but rather in a second
+test given around four weeks after the group work.
+F In another study, Howe set out to investigate whether the progress obtained
+through pair work could be a function of the exchange of ideas. They investigated
+the progress made by 12-15-year-old pupils in understanding the path of falling
+objects, a topic that usually involves conceptual difficulties. In order to create pairs
+of pupils with varying levels of dissimilarity in their initial conceptions, the pupils’
+predictions and explanations of the path of falling objects were assessed before
+they were engaged in pair work. The work sessions involved solving computerpresented problems, again about predicting and explaining the paths of falling
+objects. A post-test, given to individuals, assessed the progress made by pupils in
+their conceptions of what influenced the path of falling objects.
+ 2</p>
                 </div>
             </div>
 
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-4: Matching Information</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Which paragraph contains the following information?</p>
-                        <p style="margin:8px 0;"><strong>1.</strong> The underground structures beneath the pyramid</p>
-                        <p style="margin:8px 0;"><strong>2.</strong> The influence on later Egyptian architecture</p>
-                        <p style="margin:8px 0;"><strong>3.</strong> The buildings within the pyramid complex</p>
-                        <p style="margin:8px 0;"><strong>4.</strong> The revolutionary nature of stone construction</p>
-                    </div>
-                    <div class="question-card">
-                        <h4>Questions 5-8: Multiple Choice</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose the correct letter, A, B, C or D.</p>
-                        <p style="margin:12px 0;"><strong>5.</strong> The Step Pyramid was built approximately how many years ago?</p>
-                        <p style="margin:4px 0;">A. 2,600</p>
-                        <p style="margin:4px 0;">B. 3,600</p>
-                        <p style="margin:4px 0;">C. 4,600</p>
-                        <p style="margin:4px 0;">D. 5,600</p>
-                    </div>
+            <div class="section-divider"></div>
 
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
                 </div>
             </div>
 
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> E</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> G</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> C</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> D</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> C</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> A</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> B</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>8.</strong> D</td></tr>
-                        </table>
-                    </div>
-                </div>
+            <div class="section-divider"></div>
 
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 14: E</h5>
-                        <p><strong>定位：</strong>Paragraph E 第1句</p>
-                        <p><strong>原文：</strong><span class="keyword">"The underground galleries beneath the Step Pyramid are equally impressive."</span></p>
-                        <p><strong>解析：</strong>"underground galleries"对应题目中的"underground structures"。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 18: C</h5>
-                        <p><strong>定位：</strong>Paragraph G 第2句</p>
-                        <p><strong>原文：</strong><span class="keyword">"it remains standing after more than 4,600 years"</span></p>
-                        <p><strong>解析：</strong>原文明确给出4,600年，对应选项C。</p>
-                    </div>
-
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
                 </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
             </div>
 
             <div class="nav-links">
                 <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
             </div>
         </main>
     </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
 </body>
 </html>

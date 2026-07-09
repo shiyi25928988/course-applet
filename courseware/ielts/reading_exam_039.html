@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Future of Food - 雅思阅读真题详解</title>
+    <title>Alternative Medicine In Australia - 雅思阅读真题详解</title>
     <link rel="stylesheet" href="../assets/css/common.css">
     <script src="../assets/js/common.js"></script>
     <style>
@@ -14,14 +14,8 @@
             border-radius: 16px;
             margin-bottom: 32px;
         }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
         .content-section {
             background: #fff;
             border-radius: 12px;
@@ -33,95 +27,65 @@
             margin: 0 0 16px 0;
             color: #1d4ed8;
             font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        .passage-box {
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
             background: #f8fafc;
             padding: 20px;
             border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
+            border-left: 4px solid #0ea5e9;
         }
-        .question-card {
-            background: #eff6ff;
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
             border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
+            border-left: 4px solid #f59e0b;
         }
-        .question-card h4 {
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
             margin: 0 0 12px 0;
-            color: #1e40af;
+            color: #92400e;
+            font-size: 1rem;
         }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
+        .question-number {
             display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
             text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
         }
         .nav-links {
             display: flex;
@@ -135,138 +99,276 @@
             padding: 10px 24px;
             border-radius: 8px;
             text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
     </style>
 </head>
 <body>
     <div class="layout">
         <aside class="sidebar">
-            <h3>📖 阅读真题 39/50</h3>
+            <h3>📚 阅读真题66/1000</h3>
             <ul class="chapter-list">
                 <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
                 <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
                 <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
             </ul>
             <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
         </aside>
-
+        
         <main class="main">
             <div class="page-hero">
-                <h1>📖 The Future of Food</h1>
-                <p>剑桥13 Test3 Passage3 · 题型：选择 · 填空 · 完整逐题解析</p>
+                <h1>📄 Alternative Medicine In Australia</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
             </div>
 
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 39: The Future of Food</h3>
-                    <div class="difficulty diff-hard">难度：★★★★★ 困难</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：议论文 · 话题：农业 · 科技 · 建议时间：20-25分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>The Future of Food is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of food has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>B</strong></p>
-                        <p>The Future of Food is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of food has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>C</strong></p>
-                        <p>The Future of Food is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of food has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>D</strong></p>
-                        <p>The Future of Food is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of food has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>E</strong></p>
-                        <p>The Future of Food is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of food has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>F</strong></p>
-                        <p>The Future of Food is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of food has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>G</strong></p>
-                        <p>The Future of Food is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of food has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>H</strong></p>
-                        <p>The Future of Food is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the future of food has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-
-                    </div>
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>is, Los Angeles  seem to like being alone in their cars.</p>
+<p>Singapore has for a while had o scheme that forces drivers to buy a badge if they wish to
+visit a certain part of the city. Electronic innovations make possible increasing
+sophistication: rates can vary according to road conditions, time of day and so on.
+Singapore is advancing in this direction, with a city-wide network of transmitters to collect
+information and charge drivers as they pass certain points. Such road-pricing, however,
+can be controversial. When the local government in Cambridge, England, considered
+introducing Singaporean techniques, it faced vocal and ultimately successful opposition.
+Part Two
+The scope of the problem facing the world’s cities is immense. In 1992, the United Nations
+Environmental Programme and the World Health Organisation (WHO) concluded that all of
+a sample of twenty megacities - places likely to have more than ten million inhabitants in
+the year 2000 - already exceeded the level the WHO deems healthy in at least one major
+pollutant. Two-thirds of them exceeded the guidelines for two, seven for three or more.
+Of the six pollutants monitored by the WHO - carbon dioxide, nitrogen dioxide, ozone,
+sulphur dioxide, lead and particulate matter - it is this last category that is attracting the
+most attention from health researchers. PM10, a sub-category of particulate matter
+measuring ten-millionths of a metre across, has been implicated in thousands of deaths a
+year in Britain alone. Research being conducted in two counties of Southern California is
+reaching similarly disturbing conclusions concerning this little- understood pollutant.
+A world-wide rise in allergies, particularly asthma, over the past four decades is now said to
+be linked with increased air pollution. The lungs and brains of children who grow up in
+polluted air offer further evidence of its destructive power The old and ill, however, are the
+most vulnerable to the acute effects of heavily polluted stagnant air. It con actually hasten
+death, os it did in December 1991 when a cloud of exhaust fumes lingered over the city of
+London for over a week.
+The United Nations has estimated that in the year 2000 there will be twenty-four megacities and a further eighty-five cities of more than three million people. The pressure on
+public officials, corporations and urban citizens to reverse established trends in air pollution
+is likely to grow in proportion with the growth of cities themselves. Progress is being made.
+The question, though, remains the same: ‘Will change happen quickly enough?’
+ 2</p>
+<p>Questions 1-5
+Look at the following solutions (Questions 1-5) and locations. Match each solution with one
+location.
+Write the appropriate locations in boxes 1-5 on your answer sheet.
+NB You may use any location more than once.
+LOCATIONS
+Singapore
+Tokyo
+London
+New York
+Mexico City
+Cambridge
+Los Angeles</p>
+<p>1 Manufacturers must sell cleaner cars. 1.....................
+2 Authorities want to have power to enforce anti-pollution laws. 2.....................
+3 Drivers will be charged according to the roads they use. 3.....................
+4 Moving vehicles will be monitored for their exhaust emissions. 4.....................
+5 Commuters are encouraged to share their vehicles with others. 5.....................</p>
+<p>Questions 6-10
+Do the following statements reflect the claims of the writer in Reading Passage?
+In boxes 6-10 on your answer sheet write
+YES if the statement reflects the claims of the writer
+NO if the statement contradicts the claims of the writer
+ 3</p>
+<p>NOT GIVEN if it is impossible to say what the writer thinks about this</p>
+<p>6..................... According to British research, a mere twelve per cent of vehicles tested
+produced over fifty per cent of total pollution produced by the sample group.
+7..................... It is currently possible to measure the pollution coming from individual
+vehicles whilst they are moving.
+8..................... Residents of Los Angeles are now tending to reduce the yearly distances
+they travel by car.
+9..................... Car-pooling has steadily become more popular in Los Angeles in recent
+years.
+10..................... Charging drivers for entering certain parts of the city has been successfully
+done in Cambridge, England.
+ 
+Questions 11-13
+Choose the appropriate letters A—D and write them in boxes 11-13 on your answer sheet.
+11  How many pollutants currently exceed WHO guidelines in all megacities studied?
+ 
+A one
+B two
+C three
+D seven
+12  Which pollutant is currently the subject of urgent research?
+ 
+A nitrogen dioxide
+B ozone
+C lead
+D particulate matter
+13  Which of the following groups of people are the most severely affected by intense air
+pollution?
+A allergy sufferers
+ 4</p>
                 </div>
             </div>
 
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-8: Complete the Summary</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
-                        <p style="line-height:2.2;">
-                            The Step Pyramid was designed by the architect <input type="text" class="blank-input" placeholder="...">. It was built during the <input type="text" class="blank-input" placeholder="..."> century BCE for Pharaoh Djoser. Unlike previous tombs made of <input type="text" class="blank-input" placeholder="...">, this pyramid was constructed from <input type="text" class="blank-input" placeholder="...">. The complex includes various <input type="text" class="blank-input" placeholder="..."> and temples, surrounded by a high <input type="text" class="blank-input" placeholder="...">. Underground, there are over 5 kilometers of <input type="text" class="blank-input" placeholder="..."> and chambers.
-                        </p>
-                    </div>
-                    <div class="question-card">
-                        <h4>Questions 9-12: Multiple Choice</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose the correct letter, A, B, C or D.</p>
-                        <p style="margin:12px 0;"><strong>9.</strong> The Step Pyramid was built approximately how many years ago?</p>
-                        <p style="margin:4px 0;">A. 2,600</p>
-                        <p style="margin:4px 0;">B. 3,600</p>
-                        <p style="margin:4px 0;">C. 4,600</p>
-                        <p style="margin:4px 0;">D. 5,600</p>
-                    </div>
+            <div class="section-divider"></div>
 
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
                 </div>
             </div>
 
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> Imhotep</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> 27th</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> mud brick</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> limestone</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> courtyards</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> wall</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> tunnels</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>8.</strong> C</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>9.</strong> A</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>10.</strong> B</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>11.</strong> D</td></tr>
-                        </table>
-                    </div>
-                </div>
+            <div class="section-divider"></div>
 
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 8: Imhotep</h5>
-                        <p><strong>定位：</strong>Paragraph B 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Designed by the brilliant architect Imhotep"</span></p>
-                        <p><strong>解析：</strong>原文原词，注意大写。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 9: 27th</h5>
-                        <p><strong>定位：</strong>Paragraph A 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Built during the 27th century BCE"</span></p>
-                        <p><strong>解析：</strong>数字信息，直接提取。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 18: C</h5>
-                        <p><strong>定位：</strong>Paragraph G 第2句</p>
-                        <p><strong>原文：</strong><span class="keyword">"it remains standing after more than 4,600 years"</span></p>
-                        <p><strong>解析：</strong>原文明确给出4,600年，对应选项C。</p>
-                    </div>
-
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
                 </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
             </div>
 
             <div class="nav-links">
                 <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
             </div>
         </main>
     </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
 </body>
 </html>

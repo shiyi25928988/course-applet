@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Power of Colour - 雅思阅读真题详解</title>
+    <title>Ancient Storytelling - 雅思阅读真题详解</title>
     <link rel="stylesheet" href="../assets/css/common.css">
     <script src="../assets/js/common.js"></script>
     <style>
@@ -14,14 +14,8 @@
             border-radius: 16px;
             margin-bottom: 32px;
         }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
         .content-section {
             background: #fff;
             border-radius: 12px;
@@ -33,95 +27,65 @@
             margin: 0 0 16px 0;
             color: #1d4ed8;
             font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        .passage-box {
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
             background: #f8fafc;
             padding: 20px;
             border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
+            border-left: 4px solid #0ea5e9;
         }
-        .question-card {
-            background: #eff6ff;
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
             border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
+            border-left: 4px solid #f59e0b;
         }
-        .question-card h4 {
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
             margin: 0 0 12px 0;
-            color: #1e40af;
+            color: #92400e;
+            font-size: 1rem;
         }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
+        .question-number {
             display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
             text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
         }
         .nav-links {
             display: flex;
@@ -135,118 +99,286 @@
             padding: 10px 24px;
             border-radius: 8px;
             text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
     </style>
 </head>
 <body>
     <div class="layout">
         <aside class="sidebar">
-            <h3>📖 阅读真题 42/50</h3>
+            <h3>📚 阅读真题70/1000</h3>
             <ul class="chapter-list">
                 <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
                 <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
                 <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
             </ul>
             <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
         </aside>
-
+        
         <main class="main">
             <div class="page-hero">
-                <h1>📖 The Power of Colour</h1>
-                <p>剑桥12 Test1 Passage2 · 题型：Matching Headings · 填空 · 完整逐题解析</p>
+                <h1>📄 Ancient Storytelling</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
             </div>
 
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 42: The Power of Colour</h3>
-                    <div class="difficulty diff-medium">难度：★★★☆☆ 中等</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：说明文/议论文 · 话题：心理学 · 设计 · 建议时间：18-20分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>The Power of Colour is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the power of colour has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>B</strong></p>
-                        <p>The Power of Colour is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the power of colour has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>C</strong></p>
-                        <p>The Power of Colour is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the power of colour has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>D</strong></p>
-                        <p>The Power of Colour is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the power of colour has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>E</strong></p>
-                        <p>The Power of Colour is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the power of colour has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>F</strong></p>
-                        <p>The Power of Colour is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the power of colour has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-
-                    </div>
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>Solution:
+ 
+1. ii
+2. iii
+3. v
+4. iv
+5. viii
+6. vii
+7.
+8. FALSE
+9. NOT GIVEN
+10. TRUE
+11. TRUE
+12. FALSE
+13. TRUE
+FALSE
+ 5</p>
+<p>Reading Practice
+ Alfred Nobel: The man behind the Nobel Prize</p>
+<p>Since 1901, the Nobel Prize has been honoring men and women from all corners of the
+globe for outstanding achievements in physics, chemistry, medicine, literature, and for work
+in peace. The foundations for the prize were laid in 1895 when Alfred Nobel wrote his last
+will, leaving much of his wealth to the establishment of the Nobel Prize.</p>
+<p>Alfred Nobel was born in Stockholm on October 21, 1833. His father Immanuel Nobel was
+an engineer and inventor who built bridges and buildings in Stockholm. In connection with
+his construction work, Immanuel Nobel also experimented with different techniques for
+blasting rocks. Successful in his industrial and business ventures, Immanuel Nobel was
+able, in 1842, to bring his family to St. Petersburg. There, his sons were given a first-class
+education by private teachers. The training included natural sciences, languages and
+literature. By the age of 17, Alfred Nobel was fluent in Swedish, Russian, French, English
+and German. His primary interests were in English literature and poetry as well as in
+chemistry and physics. Alfred’s father, who wanted his sons to join his enterprise as
+engineers, disliked Alfred’s interest in poetry and found his son rather introverted.</p>
+<p>In order to widen Alfred’s horizons, his father sent him abroad for further training in
+chemical engineering. During a two year period, Alfred Nobel visited Sweden, Germany,
+France and the United States. In Paris, the city he came to like best, he worked in the
+private laboratory of Professor T. J. Pclouze, a famous chemist. There he met the young
+Italian chemist Ascanio Sobrero who, three years earlier, had invented nitroglycerine, a
+highly explosive liquid. But it was considered too dangerous to be of any practical use.
+Although its explosive power greatly exceeded that of gunpowder, the liquid would explode
+in a very unpredictable manner if subjected to heat and pressure. Alfred Nobel became
+very interested in nitroglycerine and how it could be put to practical use in construction
+work. He also realized that the safety problems had to be solved and a method had to be
+developed for the controlled detonation of nitroglycerine.</p>
+<p>After his return to Sweden in 1863, Alfred Nobel concentrated on developing nitroglycerine
+as an explosive. Several explosions, including one (1864) in which his brother Emil and
+several other persons were killed, convinced the authorities that nitroglycerine production
+was exceedingly dangerous. They forbade further experimentation with nitroglycerine
+within the Stockholm city limits and Alfred Nobel had to move his experimentation to a
+barge anchored on Lake Malaren. Alfred was not discouraged and in 1864 he was able to
+start mass production of nitroglycerine. To make the handling of nitroglycerine safer Alfred
+Nobel experimented with different additives. He soon found that mixing nitroglycerine with
+kieselguhr would turn the liquid into a paste which could be shaped into rods of a size and
+form suitable for insertion into drilling holes. In 1867 he patented this material under the
+name of dynamite. To be able to detonate the dynamite rods he also invented a detonator
+(blasting cap) which could be ignited by lighting a fuse. These inventions were made at the
+ 1</p>
+<p>same time as the pneumatic drill came into general use. Together these inventions
+drastically reduced the cost of blasting rock, drilling tunnels, building canals and many
+other forms of construction work.</p>
+<p>The market for dynamite and detonating caps grew very rapidly and Alfred Nobel also
+proved himself to be a very skillful entrepreneur and businessman. Over the years he
+founded factories and laboratories in some 90 different places in more than 20 countries.
+Although he lived in Paris much of his life he was constantly traveling. When he was not
+traveling or engaging in business activities Nobel himself worked intensively in his various
+laboratories, first in Stockholm and later in other places. He focused on the development of
+explosives technology as well as other chemical inventions including such materials as
+synthetic rubber and leather, artificial silk, etc. By the time of his death in 18%, he had 355
+patents.</p>
+<p>Intensive work and travel did not leave much time for private life. At the age of 43, he was
+feeling like an old man. At this time he advertised in a newspaper “Wealthy, highlyeducated elderly gentleman seeks the lady of mature age, versed in languages, as
+secretary and supervisor of household.” The most qualified applicant turned out to be an
+Austrian woman, Countess Bertha Kinsky. After working a very short time for Nobel she
+decided to return to Austria to marry Count Arthur von Suttner. In spite of this Alfred Nobel
+and Bertha von Suttner remained friends and kept writing letters to each other for decades.
+Over the years Bertha von Suttner became increasingly critical of the arms race. She wrote
+a famous book, Lay Down Your Arms and became a prominent figure in the peace
+movement. No doubt this influenced Alfred Nobel when he wrote his final will which was to
+include a Prize for persons or organizations who promoted peace. Several years after the
+death of Alfred Nobel, the Norwegian Storting (Parliament) decided to award the 1905
+Nobel Peace Prize to Bertha von Suttner.</p>
+<p>Alfred Nobel died in San Remo, Italy, on December 10, 1896. When his will was opened it
+came as a surprise that his fortune was to be used for Prizes in Physics, Chemistry,
+Physiology or Medicine, Literature and Peace. The executors of his will were two young
+engineers, Ragnar Sohlman and Rudolf Lilljequist. They set about forming the Nobel
+Foundation as an organization to take care of the financial assets left by Nobel for this
+purpose and to coordinate the work of the Prize-Awarding Institutions. This was not without
+its difficulties since the will was contested by relatives and questioned by authorities in
+various countries.</p>
+<p>Alfred Nobel’s greatness lay in his ability to combine the penetrating mind of the scientist
+and inventor with the forward-looking dynamism of the industrialist. Nobel was very
+interested in social and peace-related issues and held what were considered radical views
+in his era. He had a great interest in literature and wrote his own poetry and dramatic
+works. The Nobel Prizes became an extension and a fulfillment of his lifetime interests.
+ 2</p>
                 </div>
             </div>
 
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-8: Complete the Summary</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
-                        <p style="line-height:2.2;">
-                            The Step Pyramid was designed by the architect <input type="text" class="blank-input" placeholder="...">. It was built during the <input type="text" class="blank-input" placeholder="..."> century BCE for Pharaoh Djoser. Unlike previous tombs made of <input type="text" class="blank-input" placeholder="...">, this pyramid was constructed from <input type="text" class="blank-input" placeholder="...">. The complex includes various <input type="text" class="blank-input" placeholder="..."> and temples, surrounded by a high <input type="text" class="blank-input" placeholder="...">. Underground, there are over 5 kilometers of <input type="text" class="blank-input" placeholder="..."> and chambers.
-                        </p>
-                    </div>
+            <div class="section-divider"></div>
 
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
                 </div>
             </div>
 
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> Imhotep</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> 27th</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> mud brick</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> limestone</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> courtyards</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> wall</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> tunnels</td></tr>
-                        </table>
-                    </div>
-                </div>
+            <div class="section-divider"></div>
 
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 8: Imhotep</h5>
-                        <p><strong>定位：</strong>Paragraph B 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Designed by the brilliant architect Imhotep"</span></p>
-                        <p><strong>解析：</strong>原文原词，注意大写。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 9: 27th</h5>
-                        <p><strong>定位：</strong>Paragraph A 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Built during the 27th century BCE"</span></p>
-                        <p><strong>解析：</strong>数字信息，直接提取。</p>
-                    </div>
-
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>phenomenon</strong>
+            <p>n. 现象</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>significant</strong>
+            <p>adj. 重要的，显著的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>contribute</strong>
+            <p>v. 贡献，导致</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>consequence</strong>
+            <p>n. 结果，后果</p>
+        </div>
+        
                 </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
             </div>
 
             <div class="nav-links">
                 <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
             </div>
         </main>
     </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
 </body>
 </html>

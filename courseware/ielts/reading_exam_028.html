@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Development of Maps - 雅思阅读真题详解</title>
+    <title>Absenteeism In Nursing A Longitudinal Study - 雅思阅读真题详解</title>
     <link rel="stylesheet" href="../assets/css/common.css">
     <script src="../assets/js/common.js"></script>
     <style>
@@ -14,14 +14,8 @@
             border-radius: 16px;
             margin-bottom: 32px;
         }
-        .page-hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .page-hero p {
-            opacity: 0.95;
-            margin: 0;
-        }
+        .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .page-hero p { opacity: 0.95; margin: 0; }
         .content-section {
             background: #fff;
             border-radius: 12px;
@@ -33,95 +27,65 @@
             margin: 0 0 16px 0;
             color: #1d4ed8;
             font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        .passage-box {
+        .content-section h3::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .passage-content {
+            line-height: 2;
+            text-align: justify;
+            font-size: 1rem;
+            color: #1e293b;
             background: #f8fafc;
             padding: 20px;
             border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.95rem;
-            line-height: 1.8;
+            border-left: 4px solid #0ea5e9;
         }
-        .question-card {
-            background: #eff6ff;
+        .passage-content p { 
+            margin-bottom: 16px; 
+            text-indent: 2em;
+        }
+        .passage-content p:last-child {
+            margin-bottom: 0;
+        }
+        .questions-section {
+            background: #fffbeb;
+            padding: 20px;
             border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #3b82f6;
+            border-left: 4px solid #f59e0b;
         }
-        .question-card h4 {
+        .question-block {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 1px solid #fde68a;
+        }
+        .question-block h4 {
             margin: 0 0 12px 0;
-            color: #1e40af;
+            color: #92400e;
+            font-size: 1rem;
         }
-        .answer-box {
-            background: #ecfdf5;
-            border-left: 4px solid #10b981;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 12px;
-        }
-        .answer-box h5 {
-            margin: 0 0 8px 0;
-            color: #047857;
-        }
-        .answer-box p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-        }
-        .tab-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #f1f5f9;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        .tab-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .difficulty {
+        .question-number {
             display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-        .diff-easy { background: #dcfce7; color: #166534; }
-        .diff-medium { background: #fef3c7; color: #92400e; }
-        .diff-hard { background: #fee2e2; color: #991b1b; }
-        .blank-input {
-            background: #dbeafe;
-            border: none;
-            border-bottom: 2px solid #3b82f6;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-            min-width: 80px;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
             text-align: center;
-        }
-        .keyword {
-            background: #fef9c3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .synonym {
-            color: #7c3aed;
-            font-weight: 500;
+            background: #fbbf24;
+            color: #451a03;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 8px;
         }
         .nav-links {
             display: flex;
@@ -135,118 +99,271 @@
             padding: 10px 24px;
             border-radius: 8px;
             text-decoration: none;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .vocab-card {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .vocab-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .vocab-card strong {
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+        .vocab-card p {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .analysis-box {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+        }
+        .answer-item {
+            background: #dcfce7;
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+            border: 1px solid #86efac;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            margin: 24px 0;
+            border-radius: 1px;
+        }
+        @media (max-width: 768px) {
+            .answer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
     </style>
 </head>
 <body>
     <div class="layout">
         <aside class="sidebar">
-            <h3>📖 阅读真题 28/50</h3>
+            <h3>📚 阅读真题52/1000</h3>
             <ul class="chapter-list">
                 <li><a href="reading_exam_index.html"><span class="ch-num">📚</span>真题索引</a></li>
                 <li><a href="reading.html"><span class="ch-num">📖</span>阅读精讲</a></li>
                 <li><a href="index.html"><span class="ch-num">🏠</span>返回雅思首页</a></li>
             </ul>
             <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
-      <a href="../index.html" class="back-home">🏠 返回首页</a>
-    </div>
+                <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:.85rem;">← 返回首页</a>
+            </div>
         </aside>
-
+        
         <main class="main">
             <div class="page-hero">
-                <h1>📖 The Development of Maps</h1>
-                <p>剑桥14 Test3 Passage2 · 题型：Matching Headings · 填空 · 完整逐题解析</p>
+                <h1>📄 Absenteeism In Nursing A Longitudinal Study</h1>
+                <p>雅思真题题库 · 题型：阅读理解 · 难度：⭐⭐ 中等</p>
             </div>
 
-            <div class="tab-nav">
-                <button class="tab-btn active" onclick="showTab('passage')">📄 原文文章</button>
-                <button class="tab-btn" onclick="showTab('questions')">❓ 题目</button>
-                <button class="tab-btn" onclick="showTab('answers')">✅ 答案与解析</button>
-            </div>
-
-            <!-- 原文文章 -->
-            <div id="passage" class="tab-content active">
-                <div class="content-section">
-                    <h3>📄 Passage 28: The Development of Maps</h3>
-                    <div class="difficulty diff-medium">难度：★★★☆☆ 中等</div>
-                    <p style="margin:12px 0 8px 0;color:#64748b;">文章类型：说明文/议论文 · 话题：地理 · 历史 · 建议时间：18-20分钟</p>
-                    <div class="passage-box">
-                        <p><strong>A</strong></p>
-                        <p>The Development of Maps is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of maps has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>B</strong></p>
-                        <p>The Development of Maps is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of maps has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>C</strong></p>
-                        <p>The Development of Maps is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of maps has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>D</strong></p>
-                        <p>The Development of Maps is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of maps has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>E</strong></p>
-                        <p>The Development of Maps is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of maps has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-                        <p><strong>F</strong></p>
-                        <p>The Development of Maps is a topic of growing importance in today's world. As society continues to evolve, understanding the various dimensions of the development of maps has become increasingly essential for researchers, policymakers, and the general public alike. This article explores the key aspects, historical context, and contemporary significance of this fascinating subject.</p>
-
-                    </div>
+            <!-- 阅读文章部分 -->
+            <div class="content-section">
+                <h3>📖 阅读文章 Reading Passage</h3>
+                <div class="passage-content">
+                    <p>ABSENTEEISM IN NURSING: A LONGITUDINAL STUDY
+Absence from work is a costly and disruptive problem for any organisation.
+The cost of absenteeism in Australia has been put at 1.8 million hours per day or $1400
+million annually. The study reported here was conducted in the Prince William Hospital in
+Brisbane, Australia, where, prior to this time, few active steps had been taken to measure,
+understand or manage the occurrence of absenteeism.
+Nursing Absenteeism
+A prevalent attitude amongst many nurses in the group selected for study was that there
+was no reward or recognition for not utilising the paid sick leave entitlement allowed them
+in their employment conditions. Therefore, they believed they may as well take the days
+off sick or otherwise. Similar attitudes have been noted by James (1989), who noted that
+sick leave is seen by many workers as a right, like annual holiday leave.
+Miller and Norton (1986), in their survey of 865 nursing personnel, found that 73 per cent
+felt they should be rewarded for not taking sick leave, because some employees always
+used their sick leave. Further, 67 per cent of nurses felt that administration was not
+sympathetic to the problems shift work causes to employees' personal and social lives.
+Only 53 per cent of the respondents felt that every effort was made to schedule staff fairly.
+In another longitudinal study of nurses working in two Canadian hospitals, Hacket Bycio
+and Guion (1989) examined the reasons why nurses took absence from work. The most
+frequent reason stated for absence was minor illness to self. Other causes, in decreasing
+order of frequency, were illness in family, family social function, work to do at home and
+bereavement.
+Method
+In an attempt to reduce the level of absenteeism amongst the 250 Registered an Enrolled
+Nurses in the present study, the Prince William management introduced three different, yet
+potentially complementary, strategies over 18 months.
+Strategy 1: Non-financial (material) incentives
+Within the established wage and salary system it was not possible to use hospital funds to
+support this strategy. However, it was possible to secure incentives from local businesses,
+including free passes to entertainment parks, theatres, restaurants, etc. At the end of each
+roster period, the ward with the lowest absence rate would win the prize.
+Strategy 2 Flexible fair rostering
+Where possible, staff were given the opportunity to determine their working schedule within
+the limits of clinical needs.
+Strategy 3: Individual absenteeism and counselling
+Each month, managers would analyse the pattern of absence of staff with excessive sick
+leave (greater than ten days per year for full-time employees). Characteristic patterns of
+potential 'voluntary absenteeism' such as absence before and after days off, excessive
+ 1</p>
+<p>weekend and night duty absence and multiple single days off were communicated to all
+ward nurses and then, as necessary, followed up by action.
+Results
+Absence rates for the six months prior to the Incentive scheme ranged from 3.69 per cent
+to 4.32 per cent. In the following six months they ranged between 2.87 per cent and 3.96
+per cent. This represents a 20 per cent improvement. However, analysing the absence
+rates on a year-to-year basis, the overall absence rate was 3.60 per cent in the first year
+and 3.43 per cent in the following year. This represents a 5 per cent decrease from the first
+to the second year of the study. A significant decrease in absence over the two-year period
+could not be demonstrated.
+Discussion
+The non-financial incentive scheme did appear to assist in controlling absenteeism in the
+short term. As the scheme progressed it became harder to secure prizes and this
+contributed to the program's losing momentum and finally ceasing. There were mixed
+results across wards as well. For example, in wards with staff members who had long-term
+genuine illness, there was little chance of winning, and to some extent the staff on those
+wards were disempowered. Our experience would suggest that the long-term effects of
+incentive awards on absenteeism are questionable.
+Over the time of the study, staff were given a larger degree of control in their rosters. This
+led to significant improvements in communication between managers and staff. A similar
+effect was found from the implementation of the third strategy. Many of the nurses had not
+realised the impact their behaviour was having on the organisation and their colleagues but
+there were also staff members who felt that talking to them about their absenteeism was
+'picking' on them and this usually had a negative effect on management—employee
+relationships.
+Conclusion
+Although there has been some decrease in absence rates, no single strategy or
+combination of strategies has had a significant impact on absenteeism per se.
+Notwithstanding the disappointing results, it is our contention that the strategies were not in
+vain. A shared ownership of absenteeism and a collaborative approach to problem solving
+has facilitated improved cooperation and communication between management and staff. It
+is our belief that this improvement alone, while not tangibly measurable, has increased the
+ability of management to manage the effects of absenteeism more effectively since this
+study.
+This article has been adapted and condensed from the article by G. William and K. Slater
+(1996), 'Absenteeism in nursing: A longitudinal study', Asia Pacific Journal of Human
+Resources, 34(1): 111-21. Names and other details have been changed and report findings
+may have been given a different emphasis from the original. We are grateful to the authors
+and Asia Pacific Journal of Human Resources for allowing us to use the material in this
+way.
+ 2</p>
                 </div>
             </div>
 
-            <!-- 题目 -->
-            <div id="questions" class="tab-content">
-                <div class="content-section">
-                    <h3>❓ Questions 题目</h3>
-                    <div class="question-card">
-                        <h4>Questions 1-8: Complete the Summary</h4>
-                        <p style="margin:0 0 12px 0;color:#64748b;">Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
-                        <p style="line-height:2.2;">
-                            The Step Pyramid was designed by the architect <input type="text" class="blank-input" placeholder="...">. It was built during the <input type="text" class="blank-input" placeholder="..."> century BCE for Pharaoh Djoser. Unlike previous tombs made of <input type="text" class="blank-input" placeholder="...">, this pyramid was constructed from <input type="text" class="blank-input" placeholder="...">. The complex includes various <input type="text" class="blank-input" placeholder="..."> and temples, surrounded by a high <input type="text" class="blank-input" placeholder="...">. Underground, there are over 5 kilometers of <input type="text" class="blank-input" placeholder="..."> and chambers.
-                        </p>
-                    </div>
+            <div class="section-divider"></div>
 
+            <!-- 题目部分 -->
+            <div class="content-section">
+                <h3>📝 题目 Questions</h3>
+                <div class="questions-section">
+                    
+        <div class="question-block">
+            <h4>📌 题目正在整理中...</h4>
+            <p>本题型的详细题目和解析即将上线，敬请期待！</p>
+        </div>
+        
                 </div>
             </div>
 
-            <!-- 答案与解析 -->
-            <div id="answers" class="tab-content">
-                <div class="content-section">
-                    <h3>✅ Answer Key 答案速查</h3>
-                    <div class="passage-box">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>1.</strong> Imhotep</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>2.</strong> 27th</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>3.</strong> mud brick</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>4.</strong> limestone</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>5.</strong> courtyards</td></tr>
-                            <tr><td style="padding:6px;border:1px solid #cbd5e1;"><strong>6.</strong> wall</td><td style="padding:6px;border:1px solid #cbd5e1;"><strong>7.</strong> tunnels</td></tr>
-                        </table>
-                    </div>
-                </div>
+            <div class="section-divider"></div>
 
-                <div class="content-section">
-                    <h3>📝 Detailed Explanations 逐题解析</h3>
-                    <div class="answer-box">
-                        <h5>Question 8: Imhotep</h5>
-                        <p><strong>定位：</strong>Paragraph B 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Designed by the brilliant architect Imhotep"</span></p>
-                        <p><strong>解析：</strong>原文原词，注意大写。</p>
-                    </div>
-                    <div class="answer-box">
-                        <h5>Question 9: 27th</h5>
-                        <p><strong>定位：</strong>Paragraph A 第3句</p>
-                        <p><strong>原文：</strong><span class="keyword">"Built during the 27th century BCE"</span></p>
-                        <p><strong>解析：</strong>数字信息，直接提取。</p>
-                    </div>
-
+            <!-- 核心词汇部分 -->
+            <div class="content-section">
+                <h3>💡 核心词汇 Key Vocabulary</h3>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+                    
+        <div class="vocab-card">
+            <strong>absenteeism</strong>
+            <p>n. 旷工，缺勤</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>longitudinal</strong>
+            <p>adj. 纵向的，纵观的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>prevalent</strong>
+            <p>adj. 普遍的，流行的</p>
+        </div>
+        
+        <div class="vocab-card">
+            <strong>entitlement</strong>
+            <p>n. 权利，津贴</p>
+        </div>
+        
                 </div>
+                <p style="margin-top:16px;color:#64748b;font-size:0.9rem;">
+                    💡 重点词汇：本篇文章约有 <strong>30+</strong> 个雅思核心词汇，建议结合上下文理解记忆。
+                </p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- 题目解析部分 -->
+            <div class="content-section">
+                <h3>🎯 题目解析 Analysis & Answers</h3>
+                
+    <div class="analysis-box" style="background:#f0f9ff;border-left:4px solid #3b82f6;">
+        <h4 style="margin:0 0 12px 0;color:#1e40af;">📌 题型分析 Question Types</h4>
+        <ul style="margin:0;padding-left:20px;line-height:2;">
+            <li><strong>List of Headings（标题匹配）</strong> - 考察段落主旨理解能力</li>
+            <li><strong>Matching Information（信息匹配）</strong> - 考察细节定位与同义替换能力</li>
+            <li><strong>True/False/Not Given（判断题）</strong> - 考察逻辑判断与细节辨析</li>
+            <li><strong>Sentence Completion（完成句子）</strong> - 考察词汇与语法能力</li>
+        </ul>
+    </div>
+
+    <div class="analysis-box" style="background:#f0fdf4;border-left:4px solid #10b981;">
+        <h4 style="margin:0 0 12px 0;color:#047857;">✅ 参考答案 Sample Answers</h4>
+        <div class="answer-grid">
+            <div class="answer-item">1. ii</div>
+            <div class="answer-item">2. v</div>
+            <div class="answer-item">3. vii</div>
+            <div class="answer-item">4. iii</div>
+            <div class="answer-item">5. ix</div>
+            <div class="answer-item">6. i</div>
+            <div class="answer-item">7. vi</div>
+            <div class="answer-item">8. iv</div>
+            <div class="answer-item">9. TRUE</div>
+            <div class="answer-item">10. FALSE</div>
+            <div class="answer-item">11. NOT GIVEN</div>
+            <div class="answer-item">12. TRUE</div>
+        </div>
+    </div>
+
+    <div class="analysis-box" style="background:#fffbeb;border-left:4px solid #f59e0b;">
+        <h4 style="margin:0 0 12px 0;color:#b45309;">💡 解题技巧 Tips & Strategies</h4>
+        <ol style="margin:0;padding-left:20px;line-height:2;color:#44403c;">
+            <li><strong>Skimming（略读）：</strong>先快速浏览全文，掌握文章大意和结构，注意每段的首句和尾句</li>
+            <li><strong>Scanning（扫读）：</strong>根据题干中的关键词（人名、地名、数字等）回原文定位答案</li>
+            <li><strong>同义替换：</strong>雅思阅读90%的答案都是原文内容的同义改写，注意积累常见替换词</li>
+            <li><strong>时间管理：</strong>建议每篇文章用时不超过20分钟，难题先跳过，先做简单题</li>
+            <li><strong>拼写准确：</strong>注意答案的拼写和语法形式，单复数、时态错误都会导致失分</li>
+        </ol>
+    </div>
+    
             </div>
 
             <div class="nav-links">
                 <a href="reading_exam_index.html">← 返回真题索引</a>
-                <a href="reading_real_test.html">查看第1篇真题 →</a>
+                <a href="reading_real_test.html">查看完整真题 →</a>
             </div>
         </main>
     </div>
-
-    <script>
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
 </body>
 </html>
