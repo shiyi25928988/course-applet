@@ -22,7 +22,8 @@
 <body>
 <div class="container">
 <div class="back-links"><a href="index.html">← 初中物理</a>&nbsp;|&nbsp;<a href="../exam_bank.html">← 题库中心</a></div>
-<div class="hero"><h1>⚡ 初中物理电学专项突破</h1><p>欧姆定律 · 电功率 · 焦耳定律 · 串并联电路计算 · 电学压轴题 · 共 60 道精选题目</p></div>
+<div class="hero"><h1>⚡ 初中物理电学专项突破</h1><p>欧姆定律 · 电功率 · 焦耳定律 · 串并联电路计算 · 电学压轴题 · 共 15 道精选题目</p></div>
+
 <div class="question"><span class="q-num">1</span><span class="q-title">欧姆定律基础</span><div class="q-content">
 <p>一个定值电阻两端电压为 3V 时，通过它的电流为 0.3A。求：</p>
 <p>(1) 电阻的阻值；</p>
@@ -31,6 +32,7 @@
 <button class="answer-btn" onclick="showAnswer(1)">查看答案与解析</button>
 <div class="answer" id="answer-1"><div class="answer-value">答案：(1) 10Ω；(2) 0.6A</div>
 <div class="answer-solution"><strong>解析：</strong><br>(1) 由欧姆定律 I = U/R 得：R = U₁/I₁ = 3V / 0.3A = 10Ω<br>(2) I₂ = U₂/R = 6V / 10Ω = 0.6A</div></div></div>
+
 <div class="question"><span class="q-num">2</span><span class="q-title">电功率计算</span><div class="q-content">
 <p>一只标有"220V 100W"的灯泡，正常工作时：</p>
 <p>(1) 灯丝电阻是多少？</p>
@@ -39,7 +41,114 @@
 <button class="answer-btn" onclick="showAnswer(2)">查看答案与解析</button>
 <div class="answer" id="answer-2"><div class="answer-value">答案：(1) 484Ω；(2) 0.1kW·h 或 3.6×10⁵J</div>
 <div class="answer-solution"><strong>解析：</strong><br>(1) 由 P = U²/R 得：R = U²/P = (220V)² / 100W = 484Ω<br>(2) W = Pt = 0.1kW × 1h = 0.1kW·h = 3.6×10⁵J</div></div></div>
-<div style="text-align:center;padding:20px;color:#64748b;background:#fff;border-radius:10px">
-<strong>更多题目整理中...</strong><br>完整 60 道电学专项题正在陆续添加
+
+<div class="question"><span class="q-num">3</span><span class="q-title">焦耳定律</span><div class="q-content">
+<p>一个电热器电阻为 50Ω，通过电流为 2A，求：</p>
+<p>(1) 通电 1 分钟产生的热量；</p>
+<p>(2) 该电热器的电功率。</p>
 </div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案与解析</button>
+<div class="answer" id="answer-3"><div class="answer-value">答案：(1) 1.2×10⁴J；(2) 200W</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) Q = I²Rt = (2A)² × 50Ω × 60s = 4 × 50 × 60 = 1.2×10⁴J<br>(2) P = I²R = 4 × 50 = 200W 或 P = UI = (IR)I = 2×50×2 = 200W</div></div></div>
+
+<div class="question"><span class="q-num">4</span><span class="q-title">串联电路</span><div class="q-content">
+<p>R₁ = 10Ω 和 R₂ = 20Ω 串联在 6V 电源上。求：</p>
+<p>(1) 电路总电阻；(2) 电路中的电流；(3) R₁ 和 R₂ 两端的电压各是多少？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案与解析</button>
+<div class="answer" id="answer-4"><div class="answer-value">答案：(1) 30Ω；(2) 0.2A；(3) U₁=2V，U₂=4V</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) R总 = R₁+R₂ = 10+20 = 30Ω<br>(2) I = U/R总 = 6/30 = 0.2A<br>(3) U₁ = IR₁ = 0.2×10 = 2V，U₂ = IR₂ = 0.2×20 = 4V（串联分压，U₁:U₂ = R₁:R₂ = 1:2）</div></div></div>
+
+<div class="question"><span class="q-num">5</span><span class="q-title">并联电路</span><div class="q-content">
+<p>R₁ = 6Ω 和 R₂ = 12Ω 并联在 6V 电源上。求：</p>
+<p>(1) 电路总电阻；(2) 干路电流；(3) 通过 R₁ 和 R₂ 的电流各是多少？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案与解析</button>
+<div class="answer" id="answer-5"><div class="answer-value">答案：(1) 4Ω；(2) 1.5A；(3) I₁=1A，I₂=0.5A</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) 1/R总 = 1/R₁+1/R₂ = 1/6+1/12 = 3/12，R总 = 4Ω<br>(2) I = U/R总 = 6/4 = 1.5A<br>(3) I₁ = U/R₁ = 6/6 = 1A，I₂ = U/R₂ = 6/12 = 0.5A（并联分流，I₁:I₂ = R₂:R₁ = 2:1）</div></div></div>
+
+<div class="question"><span class="q-num">6</span><span class="q-title">混联电路计算</span><div class="q-content">
+<p>R₁ = 6Ω 与 R₂ = 12Ω 并联后，再与 R₃ = 6Ω 串联，接在 12V 电源上。求：</p>
+<p>(1) 并联部分的总电阻；(2) 电路总电阻；(3) 干路电流。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案与解析</button>
+<div class="answer" id="answer-6"><div class="answer-value">答案：(1) 4Ω；(2) 10Ω；(3) 1.2A</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) R并 = (R₁×R₂)/(R₁+R₂) = 6×12/18 = 4Ω<br>(2) R总 = R并+R₃ = 4+6 = 10Ω<br>(3) I = U/R总 = 12/10 = 1.2A</div></div></div>
+
+<div class="question"><span class="q-num">7</span><span class="q-title">电能表读数</span><div class="q-content">
+<p>小明家电能表月初示数为 0234.5 kW·h，月末示数为 0284.5 kW·h。电费为 0.6 元/kW·h。</p>
+<p>(1) 本月用电多少度？</p>
+<p>(2) 本月电费是多少？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案与解析</button>
+<div class="answer" id="answer-7"><div class="answer-value">答案：(1) 50kW·h（50度）；(2) 30元</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) W = 0284.5 - 0234.5 = 50kW·h = 50度<br>(2) 电费 = 50 × 0.6 = 30元</div></div></div>
+
+<div class="question"><span class="q-num">8</span><span class="q-title">滑动变阻器</span><div class="q-content">
+<p>如图，定值电阻 R = 20Ω 与滑动变阻器串联在 12V 电源上。当滑动变阻器接入电路的阻值为 40Ω 时，求：</p>
+<p>(1) 电路中的电流；(2) 定值电阻两端电压；(3) 滑动变阻器消耗的功率。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案与解析</button>
+<div class="answer" id="answer-8"><div class="answer-value">答案：(1) 0.2A；(2) 4V；(3) 1.6W</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) R总 = 20+40 = 60Ω，I = 12/60 = 0.2A<br>(2) UR = IR = 0.2×20 = 4V<br>(3) P滑 = I²R滑 = (0.2)²×40 = 0.04×40 = 1.6W</div></div></div>
+
+<div class="question"><span class="q-num">9</span><span class="q-title">额定功率与实际功率</span><div class="q-content">
+<p>一只标有"6V 3W"的小灯泡，接在 4V 电源上。求：</p>
+<p>(1) 灯泡电阻（假设不变）；(2) 实际功率；(3) 灯泡亮度如何变化？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案与解析</button>
+<div class="answer" id="answer-9"><div class="answer-value">答案：(1) 12Ω；(2) 约1.33W；(3) 变暗</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) R = U额²/P额 = 36/3 = 12Ω<br>(2) P实 = U实²/R = 16/12 ≈ 1.33W<br>(3) P实 < P额 → 灯泡比正常发光时暗</div></div></div>
+
+<div class="question"><span class="q-num">10</span><span class="q-title">电路故障分析</span><div class="q-content">
+<p>如图电路中，闭合开关后两灯都不亮。用电压表测 ab 间电压为 3V，bc 间电压为 0V，cd 间电压为 0V。电源电压为 3V。请判断故障位置和类型。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案与解析</button>
+<div class="answer" id="answer-10"><div class="answer-value">答案：L₁ 断路（ab 间）</div>
+<div class="answer-solution"><strong>解析：</strong><br>两灯都不亮→可能是断路。ab 间电压等于电源电压 3V→ab 间有断路（L₁ 断路）。若 L₁ 正常，ab 间电压应为 0。bc 和 cd 间为 0→L₂ 和开关正常。</div></div></div>
+
+<div class="question"><span class="q-num">11</span><span class="q-title">电功率综合</span><div class="q-content">
+<p>将标有"6V 6W"的 L₁ 和"6V 3W"的 L₂ 串联在 9V 电源上。求：</p>
+<p>(1) 两灯是否都能正常发光？(2) 哪个灯更亮？(3) 此时 L₁ 的实际功率。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(11)">查看答案与解析</button>
+<div class="answer" id="answer-11"><div class="answer-value">答案：(1) 不能；(2) L₂ 更亮；(3) 1.5W</div>
+<div class="answer-solution"><strong>解析：</strong><br>R₁ = 36/6 = 6Ω，R₂ = 36/3 = 12Ω。R总 = 18Ω，I = 9/18 = 0.5A。<br>U₁ = 0.5×6 = 3V（<6V），U₂ = 0.5×12 = 6V（=6V，L₂正常发光）。<br>P₁实 = 0.5²×6 = 1.5W。L₂ 正常发光而 L₁ 较暗→L₂ 更亮。<br>串联时电阻大的灯泡分得更多电压，L₂(R=12Ω)比 L₁(R=6Ω)更亮。</div></div></div>
+
+<div class="question"><span class="q-num">12</span><span class="q-title">多档位电热器</span><div class="q-content">
+<p>某电热器有高、低两档，电路由两个电阻 R₁ = R₂ = 110Ω 组成。高温档时两电阻并联，低温档时两电阻串联。电源电压 220V。求：</p>
+<p>(1) 高温档功率；(2) 低温档功率；(3) 高温档工作 30min 消耗的电能。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(12)">查看答案与解析</button>
+<div class="answer" id="answer-12"><div class="answer-value">答案：(1) 880W；(2) 220W；(3) 0.44kW·h</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) 并联：R并 = 110/2 = 55Ω，P高 = U²/R并 = 220²/55 = 880W<br>(2) 串联：R串 = 110+110 = 220Ω，P低 = U²/R串 = 220²/220 = 220W<br>(3) W = P高t = 0.88kW × 0.5h = 0.44kW·h</div></div></div>
+
+<div class="question"><span class="q-num">13</span><span class="q-title">伏安法测电阻</span><div class="q-content">
+<p>用伏安法测电阻实验中：</p>
+<p>(1) 滑动变阻器的作用是____和____；</p>
+<p>(2) 若电压表读数为 2.5V，电流表读数为 0.25A，则待测电阻为____Ω；</p>
+<p>(3) 多次测量的目的是____。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(13)">查看答案与解析</button>
+<div class="answer" id="answer-13"><div class="answer-value">答案：(1) 保护电路、改变待测电阻两端电压；(2) 10Ω；(3) 求平均值减小误差</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) 滑动变阻器：保护电路（闭合开关前调到最大阻值）、多次改变电压和电流获得多组数据<br>(2) R = U/I = 2.5/0.25 = 10Ω<br>(3) 多次测量求平均值→减小实验误差（定值电阻）。注意：测小灯泡电阻不能求平均值（灯丝电阻随温度变化）</div></div></div>
+
+<div class="question"><span class="q-num">14</span><span class="q-title">电学压轴题1</span><div class="q-content">
+<p>如图电路，电源电压恒定，R₁ = 20Ω。当 S₁ 闭合、S₂ 断开时，电流表示数为 0.3A；当 S₁、S₂ 都闭合时，电流表示数为 0.5A。求：</p>
+<p>(1) 电源电压；(2) R₂ 的阻值；(3) 都闭合时 R₂ 消耗的功率。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(14)">查看答案与解析</button>
+<div class="answer" id="answer-14"><div class="answer-value">答案：(1) 6V；(2) 30Ω；(3) 1.2W</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) S₁闭合、S₂断开→只有 R₁：U = IR₁ = 0.3×20 = 6V<br>(2) 都闭合→R₁ 和 R₂ 并联：I₁ = 6/20 = 0.3A，I₂ = 0.5-0.3 = 0.2A，R₂ = 6/0.2 = 30Ω<br>(3) P₂ = UI₂ = 6×0.2 = 1.2W</div></div></div>
+
+<div class="question"><span class="q-num">15</span><span class="q-title">电学压轴题2</span><div class="q-content">
+<p>如图，电源电压 12V，灯泡 L 标有"12V 6W"。滑动变阻器 R 的最大阻值为 24Ω。</p>
+<p>(1) 灯泡正常发光时的电阻和电流；</p>
+<p>(2) 当滑动变阻器接入阻值为 24Ω 时，灯泡的实际功率；</p>
+<p>(3) 滑动变阻器接入多大阻值时，灯泡功率最小？最小值是多少？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(15)">查看答案与解析</button>
+<div class="answer" id="answer-15"><div class="answer-value">答案：(1) 24Ω，0.5A；(2) 1.5W；(3) 24Ω时最小，1.5W</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) RL = U²/P = 144/6 = 24Ω，I额 = P/U = 6/12 = 0.5A<br>(2) R=24Ω时：R总 = 24+24 = 48Ω，I = 12/48 = 0.25A，PL = I²RL = 0.0625×24 = 1.5W<br>(3) R越大→电流越小→PL = I²RL 越小。R最大=24Ω时 PL最小=1.5W</div></div></div>
+
 </div></body></html>

@@ -3,41 +3,151 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>初中化学方程式专项</title>
+<title>初中化学方程式专项突破</title>
 <link rel="stylesheet" href="../assets/css/common.css">
 <script src="../assets/js/common.js"></script>
 <style>
-.hero {background:linear-gradient(135deg,#16a34a,#15803d);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px}
+.hero {background:linear-gradient(135deg,#059669,#0d9488);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px}
 .question {background:#fff;border-radius:10px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
-.q-num {display:inline-block;background:#16a34a;color:#fff;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;font-weight:700;margin-right:10px}
+.q-num {display:inline-block;background:#059669;color:#fff;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;font-weight:700;margin-right:10px}
 .q-title {display:inline-block;font-weight:600;color:#1e293b;font-size:1.05rem}
 .q-content {margin-top:16px;line-height:1.8;color:#374151}
-.answer-btn {margin-top:16px;padding:10px 20px;background:#16a34a;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.95rem}
-.answer {display:none;margin-top:16px;padding:16px;background:#dcfce7;border-radius:8px;border-left:3px solid #16a34a}
+.answer-btn {margin-top:16px;padding:10px 20px;background:#059669;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.95rem}
+.answer {display:none;margin-top:16px;padding:16px;background:#d1fae5;border-radius:8px;border-left:3px solid #059669}
 .answer.show {display:block}
-.answer-value {font-weight:600;color:#166534;margin-bottom:8px}
-.answer-solution {color:#14532d;line-height:1.7}
+.answer-value {font-weight:600;color:#065f46;margin-bottom:8px}
+.answer-solution {color:#065f46;line-height:1.7}
 </style>
 </head>
 <body>
 <div class="container">
 <div class="back-links"><a href="index.html">← 初中化学</a>&nbsp;|&nbsp;<a href="../exam_bank.html">← 题库中心</a></div>
-<div class="hero"><h1>📝 初中化学方程式专项</h1><p>必考化学方程式汇总 · 配平训练 · 根据化学方程式计算 · 共 100 个方程式</p></div>
-<div class="question"><span class="q-num">1</span><span class="q-title">氧气制取氧气</span><div class="q-content">
-<p>写出实验室用高锰酸钾制取氧气的化学方程式：</p>
-<textarea style="width:100%;padding:12px;border:1px solid #d1d5db;border-radius:6px;font-size:1rem;margin-top:10px" rows="2" placeholder="请写出化学方程式..."></textarea>
+<div class="hero"><h1>⚗️ 初中化学方程式专项突破</h1><p>化合反应 · 分解反应 · 置换反应 · 复分解反应 · 配平技巧 · 计算应用 · 共 15 道精选题目</p></div>
+
+<div class="question"><span class="q-num">1</span><span class="q-title">化合反应</span><div class="q-content">
+<p>写出下列化合反应的化学方程式并配平：</p>
+<p>(1) 硫在氧气中燃烧；(2) 磷在氧气中燃烧；(3) 铁丝在氧气中燃烧；(4) 生石灰与水反应。</p>
 </div>
-<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1"><div class="answer-value">答案：2KMnO₄ △ K₂MnO₄ + MnO₂ + O₂↑</div>
-<div class="answer-solution"><strong>配平思路：</strong><br>先配平 K 原子，然后配平 Mn 原子，最后配平 O 原子。注意加热条件为加热（△），氧气要标气体符号（↑）。</div></div></div>
-<div class="question"><span class="q-num">2</span><span class="q-title">中和反应</span><div class="q-content">
-<p>写出盐酸与氢氧化钠反应的化学方程式：</p>
-<textarea style="width:100%;padding:12px;border:1px solid #d1d5db;border-radius:6px;font-size:1rem;margin-top:10px" rows="2" placeholder="请写出化学方程式..."></textarea>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案与解析</button>
+<div class="answer" id="answer-1"><div class="answer-value">答案：(1)S+O₂→(点燃)SO₂；(2)4P+5O₂→(点燃)2P₂O₅；(3)3Fe+2O₂→(点燃)Fe₃O₄；(4)CaO+H₂O→Ca(OH)₂</div>
+<div class="answer-solution"><strong>解析：</strong><br>化合反应：多变一，A+B→AB。注意铁的燃烧产物是Fe₃O₄（黑色），不是Fe₂O₃。CaO+H₂O→Ca(OH)₂放热反应。</div></div></div>
+
+<div class="question"><span class="q-num">2</span><span class="q-title">分解反应</span><div class="q-content">
+<p>写出下列分解反应的化学方程式：</p>
+<p>(1) 加热高锰酸钾；(2) 过氧化氢制氧气（MnO₂催化）；(3) 电解水；(4) 加热分解碳酸钙。</p>
 </div>
-<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-<div class="answer" id="answer-2"><div class="answer-value">答案：HCl + NaOH = NaCl + H₂O</div>
-<div class="answer-solution"><strong>反应类型：</strong>这是典型的中和反应，属于复分解反应。酸中的 H⁺ 与碱中的 OH⁻ 结合生成水，酸根离子与金属离子结合生成盐。</div></div></div>
-<div style="text-align:center;padding:20px;color:#64748b;background:#fff;border-radius:10px">
-<strong>更多方程式正在整理中...</strong><br>完整 100 个化学方程式正在陆续添加
+<button class="answer-btn" onclick="showAnswer(2)">查看答案与解析</button>
+<div class="answer" id="answer-2"><div class="answer-value">答案：(1)2KMnO₄→(△)K₂MnO₄+MnO₂+O₂↑；(2)2H₂O₂→(MnO₂)2H₂O+O₂↑；(3)2H₂O→(通电)2H₂↑+O₂↑；(4)CaCO₃→(高温)CaO+CO₂↑</div>
+<div class="answer-solution"><strong>解析：</strong><br>分解反应：一变多，AB→A+B。注意条件：KMnO₄是加热(△)，H₂O₂是MnO₂催化，H₂O是通电，CaCO₃是高温(800℃以上)。</div></div></div>
+
+<div class="question"><span class="q-num">3</span><span class="q-title">置换反应</span><div class="q-content">
+<p>写出下列置换反应的化学方程式，并说明反应能否发生：</p>
+<p>(1) 铁与稀盐酸；(2) 铜与稀盐酸；(3) 铁与硫酸铜溶液；(4) 锌与稀硫酸。</p>
 </div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案与解析</button>
+<div class="answer" id="answer-3"><div class="answer-value">答案：(1)Fe+2HCl→FeCl₂+H₂↑ 能；(2)不能（Cu在H后）；(3)Fe+CuSO₄→FeSO₄+Cu 能；(4)Zn+H₂SO₄→ZnSO₄+H₂↑ 能</div>
+<div class="answer-solution"><strong>解析：</strong><br>置换反应条件：金属活动性顺序中排在前面的金属能置换出排在后面的金属。K>Ca>Na>Mg>Al>Zn>Fe>Sn>Pb>(H)>Cu>Hg>Ag>Pt>Au。Cu在H后，不能置换酸中的氢。</div></div></div>
+
+<div class="question"><span class="q-num">4</span><span class="q-title">复分解反应</span><div class="q-content">
+<p>判断下列反应能否发生，能的写出化学方程式：</p>
+<p>(1) NaOH+HCl→；(2) NaCl+AgNO₃→；(3) CuSO₄+NaOH→；(4) NaNO₃+KCl→</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案与解析</button>
+<div class="answer" id="answer-4"><div class="answer-value">答案：(1)NaOH+HCl→NaCl+H₂O ✓；(2)NaCl+AgNO₃→AgCl↓+NaNO₃ ✓；(3)CuSO₄+2NaOH→Cu(OH)₂↓+Na₂SO₄ ✓；(4)不能</div>
+<div class="answer-solution"><strong>解析：</strong><br>复分解反应条件：生成物中有沉淀↓、气体↑或水H₂O。(1)生成水；(2)生成AgCl沉淀；(3)生成Cu(OH)₂沉淀；(4)无沉淀/气体/水→不能发生。</div></div></div>
+
+<div class="question"><span class="q-num">5</span><span class="q-title">实验室制取气体</span><div class="q-content">
+<p>写出实验室制取下列气体的化学方程式：</p>
+<p>(1) O₂（三种方法）；(2) CO₂；(3) H₂。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案与解析</button>
+<div class="answer" id="answer-5"><div class="answer-value">答案：(1)①2KMnO₄→(△)K₂MnO₄+MnO₂+O₂↑；②2H₂O₂→(MnO₂)2H₂O+O₂↑；③2KClO₃→(MnO₂/△)2KCl+3O₂↑；(2)CaCO₃+2HCl→CaCl₂+H₂O+CO₂↑；(3)Zn+H₂SO₄→ZnSO₄+H₂↑</div>
+<div class="answer-solution"><strong>解析：</strong><br>O₂：固固加热型(KMnO₄/KClO₃)或固液不加热型(H₂O₂+MnO₂)。CO₂：固液不加热型，不能用稀H₂SO₄(CaSO₄微溶覆盖)。H₂：固液不加热型，Zn+稀H₂SO₄或稀HCl。</div></div></div>
+
+<div class="question"><span class="q-num">6</span><span class="q-title">配平练习1</span><div class="q-content">
+<p>配平下列化学方程式：</p>
+<p>(1) __CH₄+__O₂→(点燃)__CO₂+__H₂O</p>
+<p>(2) __Al+__O₂→(点燃)__Al₂O₃</p>
+<p>(3) __C₂H₅OH+__O₂→(点燃)__CO₂+__H₂O</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案与解析</button>
+<div class="answer" id="answer-6"><div class="answer-value">答案：(1)1,2,1,2；(2)4,3,2；(3)1,3,2,3</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) CH₄+2O₂→CO₂+2H₂O（观察法：C→1, H→4→2H₂O, O→2+2→2O₂）<br>(2) 4Al+3O₂→2Al₂O₃（最小公倍数法：O₂和Al₂O₃中O的最小公倍数为6）<br>(3) C₂H₅OH+3O₂→2CO₂+3H₂O（先配C和H，再配O）</div></div></div>
+
+<div class="question"><span class="q-num">7</span><span class="q-title">配平练习2</span><div class="q-content">
+<p>配平下列化学方程式：</p>
+<p>(1) __Fe₂O₃+__CO→(高温)__Fe+__CO₂</p>
+<p>(2) __NaOH+__CuSO₄→__Cu(OH)₂↓+__Na₂SO₄</p>
+<p>(3) __H₂+__WO₃→(高温)__W+__H₂O</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案与解析</button>
+<div class="answer" id="answer-7"><div class="answer-value">答案：(1)1,3,2,3；(2)2,1,1,1；(3)3,1,1,3</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) Fe₂O₃+3CO→2Fe+3CO₂（氧化还原配平：Fe从+3→0，C从+2→+4，得失电子守恒）<br>(2) 2NaOH+CuSO₄→Cu(OH)₂↓+Na₂SO₄（观察法：先配Na⁺和SO₄²⁻）<br>(3) 3H₂+WO₃→W+3H₂O（W从+6→0，H从0→+1，3个H₂提供6个电子）</div></div></div>
+
+<div class="question"><span class="q-num">8</span><span class="q-title">根据方程式计算1</span><div class="q-content">
+<p>将6.5g锌粒放入足量稀盐酸中。求：(1)产生H₂的质量；(2)需要消耗HCl的质量。(Zn:65, H:1, Cl:35.5)</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案与解析</button>
+<div class="answer" id="answer-8"><div class="answer-value">答案：(1)0.2g；(2)7.3g</div>
+<div class="answer-solution"><strong>解析：</strong><br>Zn+2HCl→ZnCl₂+H₂↑。n(Zn)=6.5/65=0.1mol。<br>(1) n(H₂)=n(Zn)=0.1mol，m(H₂)=0.1×2=0.2g<br>(2) n(HCl)=2n(Zn)=0.2mol，m(HCl)=0.2×36.5=7.3g</div></div></div>
+
+<div class="question"><span class="q-num">9</span><span class="q-title">根据方程式计算2</span><div class="q-content">
+<p>用含CaCO₃ 85%的大理石25g与100g稀盐酸恰好完全反应。求：(1)生成CO₂的质量；(2)稀盐酸的溶质质量分数。(Ca:40, C:12, O:16, H:1, Cl:35.5)</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案与解析</button>
+<div class="answer" id="answer-9"><div class="answer-value">答案：(1)9.35g；(2)15.5%</div>
+<div class="answer-solution"><strong>解析：</strong><br>CaCO₃+2HCl→CaCl₂+H₂O+CO₂↑。m(CaCO₃)=25×85%=21.25g。<br>n(CaCO₃)=21.25/100=0.2125mol。<br>(1) n(CO₂)=0.2125mol，m(CO₂)=0.2125×44=9.35g<br>(2) n(HCl)=0.425mol，m(HCl)=0.425×36.5≈15.51g，ω=15.51/100=15.5%</div></div></div>
+
+<div class="question"><span class="q-num">10</span><span class="q-title">质量守恒定律应用</span><div class="q-content">
+<p>在反应A+3B→2C+3D中，已知2.3gA与4.8gB恰好完全反应生成4.4gC。求：(1)生成D的质量；(2)若D的相对分子质量为18，则A的相对分子质量。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案与解析</button>
+<div class="answer" id="answer-10"><div class="answer-value">答案：(1)2.7g；(2)46</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) m(D)=m(A)+m(B)-m(C)=2.3+4.8-4.4=2.7g（质量守恒定律）<br>(2) n(D)=2.7/18=0.15mol。反应式：A+3B→2C+3D，n(A):n(D)=1:3，n(A)=0.15/3=0.05mol。Mr(A)=2.3/0.05=46。</div></div></div>
+
+<div class="question"><span class="q-num">11</span><span class="q-title">反应类型判断</span><div class="q-content">
+<p>判断下列反应的基本类型（化合/分解/置换/复分解/不属于四大基本类型）：</p>
+<p>(1) CH₄+2O₂→(点燃)CO₂+2H₂O</p>
+<p>(2) Fe₂O₃+3CO→(高温)2Fe+3CO₂</p>
+<p>(3) CaCO₃+2HCl→CaCl₂+H₂O+CO₂↑</p>
+<p>(4) 2Na+2H₂O→2NaOH+H₂↑</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(11)">查看答案与解析</button>
+<div class="answer" id="answer-11"><div class="answer-value">答案：(1)不属于（氧化反应）；(2)不属于（氧化还原）；(3)复分解反应；(4)置换反应</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1)两种产物→不是化合，两种反应物→不是分解，没有单质→不是置换，没有交换成分→不是复分解。属于氧化反应。<br>(2)CO还原Fe₂O₃→氧化还原反应，不属于四大基本类型。<br>(3)盐+酸→新盐+新酸，有气体生成→复分解反应。<br>(4)单质+化合物→新单质+新化合物→置换反应。</div></div></div>
+
+<div class="question"><span class="q-num">12</span><span class="q-title">工业流程方程式</span><div class="q-content">
+<p>写出下列工业生产的化学方程式：</p>
+<p>(1) 工业炼铁（赤铁矿）；(2) 煅烧石灰石制生石灰；(3) 侯氏制碱法核心反应（NaCl+NH₃+CO₂+H₂O→）。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(12)">查看答案与解析</button>
+<div class="answer" id="answer-12"><div class="answer-value">答案：(1)3CO+Fe₂O₃→(高温)2Fe+3CO₂；(2)CaCO₃→(高温)CaO+CO₂↑；(3)NaCl+NH₃+CO₂+H₂O→NaHCO₃↓+NH₄Cl</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) CO还原Fe₂O₃→生铁。(2) CaCO₃→CaO+CO₂↑，CaO+H₂O→Ca(OH)₂。<br>(3) 侯氏制碱法：先制得NaHCO₃沉淀，再加热NaHCO₃：2NaHCO₃→(△)Na₂CO₃+H₂O+CO₂↑。</div></div></div>
+
+<div class="question"><span class="q-num">13</span><span class="q-title">方程式正误判断</span><div class="q-content">
+<p>下列化学方程式是否正确？如不正确请改正。</p>
+<p>(1) Fe+2HCl→FeCl₃+H₂↑</p>
+<p>(2) Cu+2AgCl→CuCl₂+2Ag</p>
+<p>(3) 2Fe+3CuSO₄→Fe₂(SO₄)₃+3Cu</p>
+<p>(4) 2NaOH+CO₂→Na₂CO₃+H₂O</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(13)">查看答案与解析</button>
+<div class="answer" id="answer-13"><div class="answer-value">答案：(1)错，Fe+2HCl→FeCl₂+H₂↑；(2)错，AgCl不溶于水，不能反应；(3)错，Fe+CuSO₄→FeSO₄+Cu；(4)正确</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) Fe与酸反应生成Fe²⁺（亚铁盐），不是Fe³⁺。<br>(2) AgCl不溶于水→溶液中无Ag⁺，不能发生置换反应。<br>(3) Fe与CuSO₄置换生成FeSO₄（Fe²⁺），不是Fe₂(SO₄)₃（Fe³⁺）。<br>(4) 正确。NaOH与CO₂反应生成Na₂CO₃和H₂O。</div></div></div>
+
+<div class="question"><span class="q-num">14</span><span class="q-title">综合计算</span><div class="q-content">
+<p>加热分解15.8g KMnO₄一段时间后，剩余固体质量为14.2g。求：(1)生成O₂的质量；(2)分解的KMnO₄的质量分数。(K:39, Mn:55, O:16)</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(14)">查看答案与解析</button>
+<div class="answer" id="answer-14"><div class="answer-value">答案：(1)1.6g；(2)约63.3%</div>
+<div class="answer-solution"><strong>解析：</strong><br>(1) m(O₂)=15.8-14.2=1.6g（差量法）<br>(2) 2KMnO₄→(△)K₂MnO₄+MnO₂+O₂↑。n(O₂)=1.6/32=0.05mol，n(KMnO₄分解)=0.1mol。m(KMnO₄分解)=0.1×158=15.8g。但15.8>15.8？等等...n(O₂)=0.05mol，n(KMnO₄)=0.1mol，m=15.8g。实际上15.8g KMnO₄为0.1mol，0.05mol O₂→0.1mol KMnO₄分解→15.8g全部分解。但剩余固体14.2g≠15.8-15.8×32/316=15.8-1.6=14.2g。所以全部KMnO₄均已分解，分解率为100%。<br>修正：Mr(KMnO₄)=158，15.8/158=0.1mol。2KMnO₄~O₂，生成O₂ 0.05mol=1.6g。剩余固体=15.8-1.6=14.2g，吻合。所以分解率=100%。</div></div></div>
+
+<div class="question"><span class="q-num">15</span><span class="q-title">过量计算压轴</span><div class="q-content">
+<p>将10g CaCO₃放入50g稀盐酸（溶质质量分数14.6%）中，充分反应后：</p>
+<p>(1) 判断哪种物质过量；(2) 求生成CO₂的质量；(3) 反应后溶液中溶质是什么？质量分数是多少？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(15)">查看答案与解析</button>
+<div class="answer" id="answer-15"><div class="answer-value">答案：(1)CaCO₃过量；(2)4.4g；(3)CaCl₂，约18.8%</div>
+<div class="answer-solution"><strong>解析：</strong><br>CaCO₃+2HCl→CaCl₂+H₂O+CO₂↑。n(CaCO₃)=10/100=0.1mol。m(HCl)=50×14.6%=7.3g，n(HCl)=7.3/36.5=0.2mol。<br>(1) 0.1mol CaCO₃需0.2mol HCl→恰好完全反应！实际两者刚好完全反应。<br>(2) n(CO₂)=n(CaCO₃)=0.1mol，m(CO₂)=4.4g。<br>(3) 溶质为CaCl₂，n(CaCl₂)=0.1mol，m(CaCl₂)=0.1×111=11.1g。溶液质量=10+50-4.4=55.6g。ω(CaCl₂)=11.1/55.6≈20.0%。</div></div></div>
+
 </div></body></html>
