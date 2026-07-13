@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第4章 圆与弧度制 - CAIE A-LEVEL 数学 (9709)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.radian-demo { width:100%; height:300px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.radian-demo canvas { width:100%; height:100%; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📐 A-LEVEL 数学</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quadratics.html"><span class="ch-num">1</span>二次函数</a></li>
+    <li><a href="ch02_functions.html"><span class="ch-num">2</span>函数与图像变换</a></li>
+    <li><a href="ch03_coordinate_geometry.html"><span class="ch-num">3</span>坐标几何</a></li>
+    <li><a href="ch04_circular_measure.html" class="active" data-section="s1"><span class="ch-num">4</span>圆与弧度制</a>
+      <div class="subsections">
+        <a href="#sec4-1" data-section="s1">4.1 弧度制</a>
+        <a href="#sec4-2" data-section="s2">4.2 弧长公式</a>
+        <a href="#sec4-3" data-section="s3">4.3 扇形面积</a>
+        <a href="#sec4-4" data-section="s4">4.4 弦与弓形</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch05_trigonometry.html"><span class="ch-num">5</span>三角函数</a></li>
+    <li><a href="ch06_sequences_series.html"><span class="ch-num">6</span>数列与级数</a></li>
+    <li><a href="ch07_differentiation.html"><span class="ch-num">7</span>微分</a></li>
+    <li><a href="ch08_integration.html"><span class="ch-num">8</span>积分</a></li>
+    <li><a href="ch09_logarithms_exponentials.html"><span class="ch-num">9</span>对数与指数</a></li>
+    <li><a href="ch10_numerical_methods.html"><span class="ch-num">10</span>数值方法</a></li>
+    <li><a href="ch11_vectors.html"><span class="ch-num">11</span>三维向量</a></li>
+    <li><a href="ch12_differential_equations.html"><span class="ch-num">12</span>微分方程</a></li>
+    <li><a href="ch13_complex_numbers.html"><span class="ch-num">13</span>复数</a></li>
+    <li><a href="ch14_mechanics_statistics.html"><span class="ch-num">14</span>力学与统计</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">📐 数学首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a><span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+      <a href="index.html">📐 数学</a><span>›</span>
+      <span>第4章 圆与弧度制</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="index.html" class="active">数学</a>
+      <a href="../physics/index.html">物理</a>
+      <a href="../chemistry/index.html">化学</a>
+      <a href="../biology/index.html">生物</a>
+      <a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第4章 圆与弧度制 (Circular Measure)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>理解弧度制的定义及与角度制的转换</li>
+      <li>掌握弧长公式 s = rθ（θ 为弧度）</li>
+      <li>掌握扇形面积公式 A = (1/2)r²θ</li>
+      <li>能够计算弦长、弓形面积等复合图形问题</li>
+    </ul>
+  </div>
+
+  <h2 data-section="s1" id="sec4-1" style="margin:28px 0 16px;">4.1 弧度制 (Radian Measure)</h2>
+
+  <div class="kp">
+    <h3>弧度的定义</h3>
+    <p><strong>1 弧度</strong>定义为：当弧长等于半径时所对应的圆心角。</p>
+    <p>即：<strong>θ (rad) = s / r</strong>，其中 s 是弧长，r 是半径。</p>
+    <span class="formula">θ (rad) = s / r</span>
+  </div>
+
+  <div class="kp">
+    <h3>角度与弧度的转换</h3>
+    <p>一个完整的圆周长 = 2πr，对应圆心角 360°。因此：</p>
+    <span class="formula">360° = 2π rad</span>
+    <span class="formula">180° = π rad</span>
+    <span class="formula">1° = π/180 rad ≈ 0.01745 rad</span>
+    <span class="formula">1 rad = 180°/π ≈ 57.3°</span>
+  </div>
+
+  <div class="kp">
+    <h3>常用角度-弧度对照</h3>
+    <table style="width:100%;border-collapse:collapse;text-align:center;">
+      <tr style="background:#f0fdf4;"><td>角度</td><td>0°</td><td>30°</td><td>45°</td><td>60°</td><td>90°</td><td>180°</td><td>270°</td><td>360°</td></tr>
+      <tr><td>弧度</td><td>0</td><td>π/6</td><td>π/4</td><td>π/3</td><td>π/2</td><td>π</td><td>3π/2</td><td>2π</td></tr>
+    </table>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">🔄 弧度制演示</h3>
+    <div class="radian-demo"><canvas id="radianCanvas"></canvas></div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      当弧长等于半径时，对应的圆心角为 1 rad ≈ 57.3°
+    </p>
+  </div>
+
+  <h2 data-section="s2" id="sec4-2" style="margin:28px 0 16px;">4.2 弧长公式</h2>
+
+  <div class="kp">
+    <h3>弧长公式</h3>
+    <p>圆中，圆心角为 θ（弧度），半径为 r，弧长为 s：</p>
+    <span class="formula">s = rθ</span>
+    <p>注意：θ 必须使用<strong>弧度</strong>！如果是角度，需先转换为弧度。</p>
+  </div>
+
+  <h2 data-section="s3" id="sec4-3" style="margin:28px 0 16px;">4.3 扇形面积</h2>
+
+  <div class="kp">
+    <h3>扇形面积公式</h3>
+    <p>圆心角为 θ（弧度），半径为 r 的扇形面积：</p>
+    <span class="formula">A = (1/2) × r² × θ</span>
+    <p>也可以写成 A = (1/2) × r × s（其中 s = rθ 是弧长）</p>
+    <span class="formula">A = (1/2) × r × s</span>
+  </div>
+
+  <h2 data-section="s4" id="sec4-4" style="margin:28px 0 16px;">4.4 弦与弓形</h2>
+
+  <div class="kp">
+    <h3>弦长公式</h3>
+    <p>圆心角为 θ（弧度），半径为 r 的弦长为：</p>
+    <span class="formula">弦长 = 2r × sin(θ/2)</span>
+  </div>
+
+  <div class="kp">
+    <h3>弓形面积 (Segment Area)</h3>
+    <p>弓形面积 = 扇形面积 - 三角形面积</p>
+    <span class="formula">A_segment = (1/2)r²θ - (1/2)r² × sin θ</span>
+    <span class="formula">A_segment = (1/2)r²(θ - sin θ)</span>
+  </div>
+
+  <div class="kp">
+    <h3>复合图形问题</h3>
+    <p>CAIE 考试中常出现由多个扇形和弓形组成的复合图形，需要：</p>
+    <ol style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li>分析图形由哪些基本图形组成</li>
+      <li>分别计算各部分的面积</li>
+      <li>通过加减组合得到结果</li>
+      <li>注意单位统一使用弧度</li>
+    </ol>
+  </div>
+
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>120° 等于多少弧度？</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. π/3</label>
+      <label><input type="radio" name="q1" value="B">B. 2π/3</label>
+      <label><input type="radio" name="q1" value="C">C. 3π/4</label>
+      <label><input type="radio" name="q1" value="D">D. 5π/6</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="B">✅ 正确答案：B。120° = 120 × π/180 = 2π/3 rad。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>半径为 5 cm 的圆中，圆心角为 0.8 rad 的弧长为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 3 cm</label>
+      <label><input type="radio" name="q2" value="B">B. 4 cm</label>
+      <label><input type="radio" name="q2" value="C">C. 5 cm</label>
+      <label><input type="radio" name="q2" value="D">D. 6.25 cm</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="B">✅ 正确答案：B。s = rθ = 5 × 0.8 = 4 cm。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>半径为 6 cm、圆心角为 1.2 rad 的扇形面积为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 21.6 cm²</label>
+      <label><input type="radio" name="q3" value="B">B. 43.2 cm²</label>
+      <label><input type="radio" name="q3" value="C">C. 36 cm²</label>
+      <label><input type="radio" name="q3" value="D">D. 7.2 cm²</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="A">✅ 正确答案：A。A = (1/2)r²θ = (1/2)×36×1.2 = 21.6 cm²。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>半径为 4 cm、圆心角为 π/3 rad 的弦长为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. 2 cm</label>
+      <label><input type="radio" name="q4" value="B">B. 2√3 cm</label>
+      <label><input type="radio" name="q4" value="C">C. 4 cm</label>
+      <label><input type="radio" name="q4" value="D">D. 4√3 cm</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="C">✅ 正确答案：C。弦长 = 2r sin(θ/2) = 2×4×sin(π/6) = 8×0.5 = 4 cm。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>半径为 r、圆心角为 θ 的弓形面积为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. (1/2)r²θ</label>
+      <label><input type="radio" name="q5" value="B">B. (1/2)r²(θ - sin θ)</label>
+      <label><input type="radio" name="q5" value="C">C. (1/2)r²(θ + sin θ)</label>
+      <label><input type="radio" name="q5" value="D">D. (1/2)r² sin θ</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="B">✅ 正确答案：B。弓形面积 = 扇形面积 - 三角形面积 = (1/2)r²θ - (1/2)r² sin θ = (1/2)r²(θ - sin θ)。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>一条弧长为 10 cm，半径为 4 cm，圆心角为____ rad。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. 2.0</label>
+      <label><input type="radio" name="q6" value="B">B. 2.5</label>
+      <label><input type="radio" name="q6" value="C">C. 3.0</label>
+      <label><input type="radio" name="q6" value="D">D. 4.0</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="B">✅ 正确答案：B。θ = s/r = 10/4 = 2.5 rad。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('radianCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const cx = w/2 - 40, cy = h/2;
+    const r = 100;
+    ctx.clearRect(0, 0, w, h);
+    // Circle
+    ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI*2); ctx.stroke();
+    // Sector (1 rad)
+    ctx.fillStyle = 'rgba(16,185,129,0.2)';
+    ctx.beginPath(); ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, r, 0, 1); ctx.closePath(); ctx.fill();
+    ctx.strokeStyle = '#10b981'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, r, 0, 1); ctx.closePath(); ctx.stroke();
+    // Arc length label
+    const mx = cx + r * Math.cos(0.5);
+    const my = cy - r * Math.sin(0.5);
+    ctx.fillStyle = '#10b981'; ctx.font = '13px sans-serif';
+    ctx.fillText('s = r', mx + 8, my);
+    // Radius
+    ctx.strokeStyle = '#f59e0b'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + r, cy); ctx.stroke();
+    ctx.fillStyle = '#f59e0b'; ctx.font = '13px sans-serif';
+    ctx.fillText('r', cx + r/2, cy - 10);
+    // Angle label
+    ctx.fillStyle = '#fff'; ctx.font = '14px sans-serif';
+    ctx.fillText('1 rad', cx + 30, cy - 30);
+    // Info
+    ctx.fillStyle = '#94a3b8'; ctx.font = '13px sans-serif';
+    ctx.fillText('1 rad ≈ 57.3°', w - 150, 30);
+    ctx.fillText('弧长 = 半径 × 弧度', w - 170, 50);
+    ctx.fillText('s = rθ', w - 100, 70);
+  }
+  draw();
+  window.addEventListener('resize', draw);
+})();
+</script>
+</body>
+</html>

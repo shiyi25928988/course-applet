@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第6章 固体形变 - CAIE A-LEVEL 物理 (9702)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="breadcrumb">
+    <a href="../../index.html">🏠 首页</a><span>›</span>
+    <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+    <a href="index.html">⚛️ 物理</a><span>›</span>
+    <span>第6章 固体形变</span>
+  </div>
+  <div class="spacer"></div>
+  <div class="subject-switch">
+    <a href="../math/index.html">数学</a>
+    <a href="index.html" class="active">物理</a>
+    <a href="../chemistry/index.html">化学</a>
+    <a href="../biology/index.html">生物</a>
+    <a href="../economics/index.html">经济</a>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h3>⚛️ A-LEVEL 物理</h3>
+    <ul class="chapter-list">
+      <li><a href="ch01_quantities_units.html"><span class="ch-num">1</span>物理量与单位</a></li>
+      <li><a href="ch02_kinematics.html"><span class="ch-num">2</span>运动学</a></li>
+      <li><a href="ch03_dynamics.html"><span class="ch-num">3</span>动力学</a></li>
+      <li><a href="ch04_forces_pressure.html"><span class="ch-num">4</span>力、密度与压强</a></li>
+      <li><a href="ch05_work_energy_power.html"><span class="ch-num">5</span>功、能与功率</a></li>
+      <li><a href="ch06_deformation.html" class="active"><span class="ch-num">6</span>固体形变</a></li>
+      <li><a href="ch07_waves.html"><span class="ch-num">7</span>波</a></li>
+      <li><a href="ch08_superposition.html"><span class="ch-num">8</span>叠加与干涉</a></li>
+      <li><a href="ch09_electricity.html"><span class="ch-num">9</span>电场与电流</a></li>
+      <li><a href="ch10_dc_circuits.html"><span class="ch-num">10</span>直流电路</a></li>
+      <li><a href="ch11_particle_physics.html"><span class="ch-num">11</span>粒子与核物理</a></li>
+      <li><a href="ch12_practical_skills.html"><span class="ch-num">12</span>实验技能</a></li>
+    </ul>
+    <div class="subsections">
+      <a href="#s6.1">6.1 胡克定律</a>
+      <a href="#s6.2">6.2 应力与应变</a>
+      <a href="#s6.3">6.3 杨氏模量</a>
+      <a href="#s6.4">6.4 弹性形变与塑性形变</a>
+      <a href="#s6.5">6.5 应力-应变曲线</a>
+      <a href="#animation">🎬 应力-应变图</a>
+      <a href="#exercises">📝 章节练习</a>
+    </div>
+    <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-home">⚛️ 物理首页</a>
+      <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+      <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <h1 class="page-title">第6章 固体形变</h1>
+
+    <div class="card" style="background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:5px solid #2563eb;">
+      <div class="card-title"><span class="icon">🎯</span> 学习目标</div>
+      <ul style="color:#475569;line-height:2;padding-left:20px;">
+        <li>理解胡克定律 F = kx 及其适用条件</li>
+        <li>掌握应力 (σ = F/A) 和应变 (ε = ΔL/L) 的概念</li>
+        <li>理解杨氏模量 E = σ/ε 的物理意义和计算方法</li>
+        <li>区分弹性形变和塑性形变</li>
+        <li>能够解读应力-应变曲线中的关键特征点</li>
+      </ul>
+    </div>
+
+    <!-- 6.1 胡克定律 -->
+    <h2 id="s6.1" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">6.1 胡克定律</h2>
+
+    <div class="kp">
+      <h3>胡克定律 (Hooke's Law)</h3>
+      <p>在弹性限度内，弹簧的伸长量（或压缩量）与所施加的力成正比。</p>
+      <p><span class="formula">F = kx</span></p>
+      <p>其中：F 是施加的力 (N)，k 是弹簧的劲度系数 (spring constant, N m⁻¹)，x 是弹簧的形变量（伸长量或压缩量，m）。</p>
+      <p style="margin-top:10px;"><strong>弹簧的劲度系数 k：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>k 越大，弹簧越"硬"，越难拉伸或压缩</li>
+        <li>k 取决于弹簧的材料、线径、圈数和直径</li>
+        <li>k 的单位：N m⁻¹</li>
+      </ul>
+    </div>
+
+    <div class="kp">
+      <h3>弹簧的串联与并联</h3>
+      <p><strong>串联 (Series)：</strong>相同力作用下，总伸长量相加。</p>
+      <p><span class="formula">1/k<sub>total</sub> = 1/k₁ + 1/k₂</span></p>
+      <p><strong>并联 (Parallel)：</strong>相同伸长量下，总力相加。</p>
+      <p><span class="formula">k<sub>total</sub> = k₁ + k₂</span></p>
+      <p style="margin-top:10px;"><strong>F-x 图：</strong>胡克定律区域内的 F-x 图是一条过原点的直线，斜率 = k。直线下方的面积 = 储存在弹簧中的弹性势能 = ½Fx = ½kx²。</p>
+    </div>
+
+    <div class="kp">
+      <h3>弹性限度 (Limit of Proportionality)</h3>
+      <p>胡克定律只在弹性限度内成立。超过弹性限度后，F 与 x 不再成正比，但弹簧仍可能恢复原状（弹性形变）。</p>
+      <p>超过弹性极限 (Elastic Limit) 后，弹簧产生永久形变，不能完全恢复原状（塑性形变）。</p>
+    </div>
+
+    <!-- 6.2 应力与应变 -->
+    <h2 id="s6.2" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">6.2 应力与应变</h2>
+
+    <div class="kp">
+      <h3>应力 (Stress)</h3>
+      <p>应力是单位横截面积上所受的力，衡量材料内部受力程度。</p>
+      <p><span class="formula">σ = F / A</span></p>
+      <p>单位：帕斯卡 (Pa)，即 N m⁻²。常用 MPa (10⁶ Pa) 或 GPa (10⁹ Pa)。</p>
+      <p style="margin-top:10px;"><strong>应力的类型：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li><strong>拉应力 (Tensile Stress)：</strong>使材料拉伸的应力</li>
+        <li><strong>压应力 (Compressive Stress)：</strong>使材料压缩的应力</li>
+        <li><strong>剪应力 (Shear Stress)：</strong>使材料层间滑动的应力</li>
+      </ul>
+    </div>
+
+    <div class="kp">
+      <h3>应变 (Strain)</h3>
+      <p>应变是材料形变程度相对于原始尺寸的比例，是一个无量纲量（无单位）。</p>
+      <p><span class="formula">ε = ΔL / L</span></p>
+      <p>其中：ΔL 是长度变化量 (m)，L 是原始长度 (m)。</p>
+      <p style="margin-top:10px;"><strong>应变类型：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li><strong>拉应变 (Tensile Strain)：</strong>ΔL > 0，材料被拉长</li>
+        <li><strong>压应变 (Compressive Strain)：</strong>ΔL < 0，材料被压缩</li>
+      </ul>
+      <p>注意：应变通常用百分比表示，如 ε = 0.002 = 0.2%。</p>
+    </div>
+
+    <!-- 6.3 杨氏模量 -->
+    <h2 id="s6.3" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">6.3 杨氏模量</h2>
+
+    <div class="kp">
+      <h3>杨氏模量 (Young Modulus)</h3>
+      <p>杨氏模量是材料在弹性范围内的刚度度量，定义为应力与应变的比值。</p>
+      <p><span class="formula">E = σ / ε = (F/A) / (ΔL/L) = FL / (A ΔL)</span></p>
+      <p>单位：Pa 或 N m⁻²。</p>
+      <p style="margin-top:10px;"><strong>杨氏模量的物理意义：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>E 越大，材料越难被拉伸或压缩（越"刚"）</li>
+        <li>E 是材料的固有属性，与试样的尺寸和形状无关</li>
+        <li>应力-应变图中直线部分的斜率 = 杨氏模量</li>
+      </ul>
+    </div>
+
+    <div class="kp">
+      <h3>常见材料的杨氏模量</h3>
+      <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:.9rem;">
+        <thead>
+          <tr style="background:#eff6ff;">
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">材料</th>
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">杨氏模量 (GPa)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">金刚石</td><td style="padding:8px;border:1px solid #e2e8f0;">~1200</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">钢 (Steel)</td><td style="padding:8px;border:1px solid #e2e8f0;">~200</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">铜 (Copper)</td><td style="padding:8px;border:1px solid #e2e8f0;">~120</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">铝 (Aluminium)</td><td style="padding:8px;border:1px solid #e2e8f0;">~70</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">玻璃</td><td style="padding:8px;border:1px solid #e2e8f0;">~70</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">橡胶</td><td style="padding:8px;border:1px solid #e2e8f0;">~0.01-0.1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="kp">
+      <h3>测定杨氏模量的实验</h3>
+      <p>使用长金属丝、游标尺和螺旋测微计：</p>
+      <ol style="padding-left:20px;line-height:2;">
+        <li>测量金属丝原长 L 和直径 d（计算截面积 A = πd²/4）</li>
+        <li>逐步增加砝码，测量伸长量 ΔL（使用游标尺或 travelling microscope）</li>
+        <li>绘制 F-ΔL 图，求斜率 = F/ΔL</li>
+        <li>E = (F/ΔL) × (L/A) = 斜率 × L/A</li>
+      </ol>
+      <p>为了减小误差，应使用长金属丝（使 ΔL 易于测量）和细金属丝（使应力较大，产生可测的应变）。</p>
+    </div>
+
+    <!-- 6.4 弹性形变与塑性形变 -->
+    <h2 id="s6.4" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">6.4 弹性形变与塑性形变</h2>
+
+    <div class="kp">
+      <h3>弹性形变 (Elastic Deformation)</h3>
+      <p><strong>定义：</strong>当外力移除后，材料能够完全恢复原来的形状和尺寸。</p>
+      <p><strong>特征：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>形变是可逆的</li>
+        <li>原子间键被拉伸但未断裂</li>
+        <li>卸载时沿原路径返回（应力-应变图上为同一条线）</li>
+        <li>储存在材料中的弹性势能完全释放</li>
+      </ul>
+    </div>
+
+    <div class="kp">
+      <h3>塑性形变 (Plastic Deformation)</h3>
+      <p><strong>定义：</strong>当外力移除后，材料不能完全恢复原来的形状，产生永久形变。</p>
+      <p><strong>特征：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>形变是不可逆的</li>
+        <li>原子层之间发生永久滑移</li>
+        <li>卸载路径与加载路径不同，产生永久应变</li>
+        <li>部分能量以热能形式散失（迟滞回线）</li>
+      </ul>
+      <p style="margin-top:10px;"><strong>脆性材料 vs 韧性材料：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>脆性材料（如玻璃、陶瓷）：几乎没有塑性形变，直接断裂</li>
+        <li>韧性材料（如铜、钢）：有明显的塑性形变区域，断裂前有颈缩(necking)</li>
+      </ul>
+    </div>
+
+    <!-- 6.5 应力-应变曲线 -->
+    <h2 id="s6.5" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">6.5 应力-应变曲线</h2>
+
+    <div class="kp">
+      <h3>典型韧性材料的应力-应变曲线</h3>
+      <p>应力-应变曲线是材料力学性能的"身份证"，包含以下关键特征点：</p>
+      <ol style="padding-left:20px;line-height:2;">
+        <li><strong>比例极限 (Limit of Proportionality, P)：</strong>应力与应变成正比的终点。在此之前，材料服从胡克定律。直线斜率 = 杨氏模量。</li>
+        <li><strong>弹性极限 (Elastic Limit, E)：</strong>材料能够完全恢复原状的最大应力。超过此点产生塑性形变。</li>
+        <li><strong>屈服点 (Yield Point, Y)：</strong>材料在应力几乎不增加的情况下发生明显应变。有些材料（如低碳钢）有明显的上屈服点和下屈服点。</li>
+        <li><strong>极限抗拉强度 (Ultimate Tensile Strength, UTS)：</strong>应力-应变曲线上的最高点，材料能承受的最大应力。在此之后出现颈缩 (necking)。</li>
+        <li><strong>断裂点 (Fracture Point, F)：</strong>材料最终断裂的位置。</li>
+      </ol>
+    </div>
+
+    <div class="kp">
+      <h3>应力-应变曲线下的面积</h3>
+      <p>应力-应变曲线与应变轴之间的面积代表单位体积材料在断裂前吸收的能量（应变能密度，单位：J m⁻³）。</p>
+      <p>韧性材料（如铜）的曲线下面积大，表示材料在断裂前能吸收大量能量（韧性好）。</p>
+      <p>脆性材料（如玻璃）的曲线下面积小，表示材料在断裂前吸收能量少（脆性）。</p>
+    </div>
+
+    <!-- 应力-应变曲线动画 -->
+    <h2 id="animation" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">🎬 应力-应变曲线交互演示</h2>
+
+    <div class="anim-container">
+      <canvas id="ssCanvas" width="750" height="450" style="background:#fff;border-radius:12px;border:1px solid #e2e8f0;max-width:100%;"></canvas>
+      <div class="anim-controls">
+        <button onclick="drawDuctile()">韧性材料 (铜)</button>
+        <button onclick="drawBrittle()">脆性材料 (玻璃)</button>
+        <button onclick="drawRubber()">橡胶 (弹性体)</button>
+        <button class="reset" onclick="drawAll()">全部显示</button>
+      </div>
+    </div>
+
+    <script>
+      const ssCanvas = document.getElementById('ssCanvas');
+      const ssCtx = ssCanvas.getContext('2d');
+      const W = ssCanvas.width;
+      const H = ssCanvas.height;
+
+      function drawAxes() {
+        ssCtx.clearRect(0, 0, W, H);
+        // bg
+        ssCtx.fillStyle = '#fafbfc';
+        ssCtx.fillRect(0, 0, W, H);
+
+        const margin = { top: 40, right: 40, bottom: 60, left: 70 };
+        const px = margin.left;
+        const py = H - margin.bottom;
+        const pw = W - margin.left - margin.right;
+        const ph = H - margin.top - margin.bottom;
+
+        // grid
+        ssCtx.strokeStyle = '#e2e8f0';
+        ssCtx.lineWidth = 0.5;
+        for (let i = 0; i <= 10; i++) {
+          const x = px + (pw * i / 10);
+          const y = py - (ph * i / 10);
+          ssCtx.beginPath(); ssCtx.moveTo(x, py); ssCtx.lineTo(x, margin.top); ssCtx.stroke();
+          ssCtx.beginPath(); ssCtx.moveTo(px, y); ssCtx.lineTo(px + pw, y); ssCtx.stroke();
+        }
+
+        // axes
+        ssCtx.strokeStyle = '#475569';
+        ssCtx.lineWidth = 2;
+        ssCtx.beginPath(); ssCtx.moveTo(px, py); ssCtx.lineTo(px + pw, py); ssCtx.stroke();
+        ssCtx.beginPath(); ssCtx.moveTo(px, py); ssCtx.lineTo(px, margin.top); ssCtx.stroke();
+
+        // labels
+        ssCtx.fillStyle = '#475569';
+        ssCtx.font = '13px sans-serif';
+        ssCtx.fillText('应变 ε (×10⁻³)', px + pw/2 - 40, py + 40);
+        ssCtx.save();
+        ssCtx.translate(px - 50, py - ph/2);
+        ssCtx.rotate(-Math.PI/2);
+        ssCtx.fillText('应力 σ (MPa)', -40, 0);
+        ssCtx.restore();
+
+        // tick marks
+        ssCtx.font = '10px sans-serif';
+        for (let i = 0; i <= 10; i++) {
+          const x = px + (pw * i / 10);
+          ssCtx.fillText(i, x - 5, py + 18);
+        }
+        for (let i = 0; i <= 5; i++) {
+          const y = py - (ph * i / 5);
+          ssCtx.fillText(i * 100, px - 40, y + 4);
+        }
+
+        return { px, py, pw, ph };
+      }
+
+      function drawDuctile() {
+        const { px, py, pw, ph } = drawAxes();
+        const maxStress = 500; // MPa
+        const maxStrain = 10; // x10^-3
+
+        ssCtx.strokeStyle = '#2563eb';
+        ssCtx.lineWidth = 3;
+        ssCtx.beginPath();
+
+        // Linear elastic region (0 to ~300 MPa, strain 0 to 1.5)
+        for (let strain = 0; strain <= 1.5; strain += 0.05) {
+          const stress = strain / 1.5 * 300;
+          const x = px + (strain / maxStrain) * pw;
+          const y = py - (stress / maxStress) * ph;
+          if (strain === 0) ssCtx.moveTo(x, y);
+          else ssCtx.lineTo(x, y);
+        }
+        // Yield plateau (strain 1.5 to 3.0, stress ~300)
+        for (let strain = 1.5; strain <= 3.0; strain += 0.05) {
+          const x = px + (strain / maxStrain) * pw;
+          const y = py - (300 / maxStress) * ph + (strain - 1.5) * 5;
+          ssCtx.lineTo(x, y);
+        }
+        // Strain hardening (strain 3.0 to 7.0, stress 300 to 500)
+        for (let strain = 3.0; strain <= 7.0; strain += 0.05) {
+          const stress = 300 + (strain - 3.0) / 4.0 * 200;
+          const x = px + (strain / maxStrain) * pw;
+          const y = py - (stress / maxStress) * ph;
+          ssCtx.lineTo(x, y);
+        }
+        // Necking to fracture (strain 7.0 to 9.5, stress drops)
+        for (let strain = 7.0; strain <= 9.5; strain += 0.05) {
+          const stress = 500 - (strain - 7.0) / 2.5 * 250;
+          const x = px + (strain / maxStrain) * pw;
+          const y = py - (stress / maxStress) * ph;
+          ssCtx.lineTo(x, y);
+        }
+        ssCtx.stroke();
+
+        // Annotations
+        ssCtx.fillStyle = '#2563eb';
+        ssCtx.font = 'bold 12px sans-serif';
+        const sx1 = px + (1.5 / maxStrain) * pw;
+        const sy1 = py - (300 / maxStress) * ph;
+        ssCtx.fillText('P', sx1 + 5, sy1 - 5);
+        ssCtx.fillText('E', sx1 + 5, sy1 + 15);
+        const sx2 = px + (7.0 / maxStrain) * pw;
+        const sy2 = py - (500 / maxStress) * ph;
+        ssCtx.fillText('UTS', sx2 + 5, sy2 - 5);
+        const sx3 = px + (9.5 / maxStrain) * pw;
+        const sy3 = py - (250 / maxStress) * ph;
+        ssCtx.fillText('F', sx3 + 5, sy3 + 5);
+
+        ssCtx.fillStyle = '#1e293b';
+        ssCtx.font = '14px sans-serif';
+        ssCtx.fillText('韧性材料 (如铜、低碳钢)', px + pw/2 - 60, 30);
+      }
+
+      function drawBrittle() {
+        const { px, py, pw, ph } = drawAxes();
+        const maxStress = 500;
+        const maxStrain = 10;
+
+        ssCtx.strokeStyle = '#dc2626';
+        ssCtx.lineWidth = 3;
+        ssCtx.beginPath();
+        ssCtx.moveTo(px, py);
+        // Linear elastic to fracture
+        for (let strain = 0; strain <= 2.0; strain += 0.02) {
+          const stress = strain / 2.0 * 450;
+          const x = px + (strain / maxStrain) * pw;
+          const y = py - (stress / maxStress) * ph;
+          ssCtx.lineTo(x, y);
+        }
+        ssCtx.stroke();
+
+        // fracture mark
+        const fx = px + (2.0 / maxStrain) * pw;
+        const fy = py - (450 / maxStress) * ph;
+        ssCtx.fillStyle = '#dc2626';
+        ssCtx.font = 'bold 12px sans-serif';
+        ssCtx.fillText('F (断裂)', fx + 5, fy + 5);
+
+        ssCtx.fillStyle = '#1e293b';
+        ssCtx.font = '14px sans-serif';
+        ssCtx.fillText('脆性材料 (如玻璃、陶瓷)', px + pw/2 - 60, 30);
+      }
+
+      function drawRubber() {
+        const { px, py, pw, ph } = drawAxes();
+        const maxStress = 500;
+        const maxStrain = 10;
+
+        ssCtx.strokeStyle = '#16a34a';
+        ssCtx.lineWidth = 3;
+        ssCtx.beginPath();
+        ssCtx.moveTo(px, py);
+        // Non-linear loading
+        for (let strain = 0; strain <= 8.0; strain += 0.05) {
+          const stress = 50 * Math.pow(strain / 8.0, 0.6) * 8;
+          const x = px + (strain / maxStrain) * pw;
+          const y = py - (stress / maxStress) * ph;
+          ssCtx.lineTo(x, y);
+        }
+        ssCtx.stroke();
+
+        // unloading path (hysteresis)
+        ssCtx.setLineDash([5, 3]);
+        ssCtx.strokeStyle = '#16a34a';
+        ssCtx.lineWidth = 1.5;
+        ssCtx.beginPath();
+        const lx = px + (8.0 / maxStrain) * pw;
+        const ly = py - (50 * Math.pow(1, 0.6) * 8 / maxStress) * ph;
+        ssCtx.moveTo(lx, ly);
+        for (let strain = 8.0; strain >= 0; strain -= 0.05) {
+          const stress = 30 * Math.pow(strain / 8.0, 0.8) * 8;
+          const x = px + (strain / maxStrain) * pw;
+          const y = py - (stress / maxStress) * ph;
+          ssCtx.lineTo(x, y);
+        }
+        ssCtx.stroke();
+        ssCtx.setLineDash([]);
+
+        ssCtx.fillStyle = '#1e293b';
+        ssCtx.font = '14px sans-serif';
+        ssCtx.fillText('橡胶 (弹性体, 展示迟滞回线)', px + pw/2 - 60, 30);
+      }
+
+      function drawAll() {
+        const { px, py, pw, ph } = drawAxes();
+        const maxStress = 500;
+        const maxStrain = 10;
+
+        // Ductile
+        ssCtx.strokeStyle = '#2563eb';
+        ssCtx.lineWidth = 2.5;
+        ssCtx.globalAlpha = 0.7;
+        ssCtx.beginPath();
+        for (let strain = 0; strain <= 1.5; strain += 0.05) {
+          const stress = strain / 1.5 * 300;
+          const x = px + (strain / maxStrain) * pw;
+          const y = py - (stress / maxStress) * ph;
+          if (strain === 0) ssCtx.moveTo(x, y);
+          else ssCtx.lineTo(x, y);
+        }
+        for (let strain = 1.5; strain <= 3.0; strain += 0.05) {
+          const x = px + (strain / maxStrain) * pw;
+          const y = py - (300 / maxStress) * ph + (strain - 1.5) * 5;
+          ssCtx.lineTo(x, y);
+        }
+        for (let strain = 3.0; strain <= 7.0; strain += 0.1) {
+          const stress = 300 + (strain - 3.0) / 4.0 * 200;
+          ssCtx.lineTo(px + (strain / maxStrain) * pw, py - (stress / maxStress) * ph);
+        }
+        ssCtx.stroke();
+
+        // Brittle
+        ssCtx.strokeStyle = '#dc2626';
+        ssCtx.beginPath();
+        ssCtx.moveTo(px, py);
+        for (let strain = 0; strain <= 2.0; strain += 0.05) {
+          const stress = strain / 2.0 * 450;
+          ssCtx.lineTo(px + (strain / maxStrain) * pw, py - (stress / maxStress) * ph);
+        }
+        ssCtx.stroke();
+
+        // Rubber
+        ssCtx.strokeStyle = '#16a34a';
+        ssCtx.beginPath();
+        ssCtx.moveTo(px, py);
+        for (let strain = 0; strain <= 8.0; strain += 0.1) {
+          const stress = 50 * Math.pow(strain / 8.0, 0.6) * 8;
+          ssCtx.lineTo(px + (strain / maxStrain) * pw, py - (stress / maxStress) * ph);
+        }
+        ssCtx.stroke();
+        ssCtx.globalAlpha = 1.0;
+
+        // Legend
+        ssCtx.font = '12px sans-serif';
+        ssCtx.fillStyle = '#2563eb';
+        ssCtx.fillRect(px + 10, 50, 20, 3);
+        ssCtx.fillText('韧性材料 (铜/钢)', px + 35, 54);
+        ssCtx.fillStyle = '#dc2626';
+        ssCtx.fillRect(px + 10, 70, 20, 3);
+        ssCtx.fillText('脆性材料 (玻璃)', px + 35, 74);
+        ssCtx.fillStyle = '#16a34a';
+        ssCtx.fillRect(px + 10, 90, 20, 3);
+        ssCtx.fillText('弹性体 (橡胶)', px + 35, 94);
+      }
+
+      drawAll();
+    </script>
+
+    <!-- 练习 -->
+    <h2 id="exercises" style="color:#1e293b;margin-top:32px;margin-bottom:16px;">📝 章节练习</h2>
+
+    <div class="exercise" id="ex1">
+      <p><span class="q-num">1</span><span class="question">一个弹簧的劲度系数为 200 N m⁻¹。当施加 50 N 的力时，弹簧的伸长量为：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="A"> A. 0.1 m</label>
+        <label><input type="radio" name="q1" value="B"> B. 0.25 m</label>
+        <label><input type="radio" name="q1" value="C"> C. 0.5 m</label>
+        <label><input type="radio" name="q1" value="D"> D. 4.0 m</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex1')">显示答案</button>
+      <div class="answer" id="answer-ex1" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">F = kx → x = F/k = 50/200 = 0.25 m</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex2">
+      <p><span class="q-num">2</span><span class="question">一根长度为 2.0 m、横截面积为 1.0 × 10⁻⁶ m² 的金属丝，在 200 N 的拉力下伸长了 2.0 mm。其杨氏模量为：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="A"> A. 1.0 × 10¹¹ Pa</label>
+        <label><input type="radio" name="q2" value="B"> B. 2.0 × 10¹¹ Pa</label>
+        <label><input type="radio" name="q2" value="C"> C. 4.0 × 10¹¹ Pa</label>
+        <label><input type="radio" name="q2" value="D"> D. 2.0 × 10¹⁰ Pa</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex2')">显示答案</button>
+      <div class="answer" id="answer-ex2" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">E = FL/(AΔL) = 200 × 2.0 / (1.0×10⁻⁶ × 2.0×10⁻³) = 400 / (2.0×10⁻⁹) = 2.0 × 10¹¹ Pa。这是钢的典型杨氏模量。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex3">
+      <p><span class="q-num">3</span><span class="question">在应力-应变曲线中，比例极限表示：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q3" value="A"> A. 材料能承受的最大应力</label>
+        <label><input type="radio" name="q3" value="B"> B. 应力与应变保持正比关系的最大应力</label>
+        <label><input type="radio" name="q3" value="C"> C. 材料开始断裂的应力</label>
+        <label><input type="radio" name="q3" value="D"> D. 材料完全恢复原状的最大应力</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex3')">显示答案</button>
+      <div class="answer" id="answer-ex3" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">比例极限是胡克定律成立的最大应力点，在此点之前应力与应变成正比。选项D描述的是弹性极限。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex4">
+      <p><span class="q-num">4</span><span class="question">两个劲度系数分别为 k₁ = 100 N m⁻¹ 和 k₂ = 200 N m⁻¹ 的弹簧并联。系统的等效劲度系数为：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q4" value="A"> A. 66.7 N m⁻¹</label>
+        <label><input type="radio" name="q4" value="B"> B. 150 N m⁻¹</label>
+        <label><input type="radio" name="q4" value="C"> C. 300 N m⁻¹</label>
+        <label><input type="radio" name="q4" value="D"> D. 200 N m⁻¹</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex4')">显示答案</button>
+      <div class="answer" id="answer-ex4" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">并联：k<sub>total</sub> = k₁ + k₂ = 100 + 200 = 300 N m⁻¹。串联时为 1/k = 1/100 + 1/200 → k = 66.7 N m⁻¹。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex5">
+      <p><span class="q-num">5</span><span class="question">以下哪种材料在应力-应变曲线中表现出最明显的塑性形变区域？</span></p>
+      <div class="options">
+        <label><input type="radio" name="q5" value="A"> A. 玻璃</label>
+        <label><input type="radio" name="q5" value="B"> B. 陶瓷</label>
+        <label><input type="radio" name="q5" value="C"> C. 铜</label>
+        <label><input type="radio" name="q5" value="D"> D. 铸铁</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex5')">显示答案</button>
+      <div class="answer" id="answer-ex5" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">铜是典型的韧性材料，在应力-应变曲线上有显著的塑性形变区域。玻璃和陶瓷是脆性材料，几乎没有塑性形变。铸铁也是脆性材料。</div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

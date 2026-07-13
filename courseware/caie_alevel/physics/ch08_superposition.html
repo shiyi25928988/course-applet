@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第8章 叠加与干涉 - CAIE A-LEVEL 物理 (9702)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.interference-demo { width:100%; height:340px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.interference-demo canvas { width:100%; height:100%; }
+.param-sliders { display:flex; gap:16px; flex-wrap:wrap; margin-top:12px; justify-content:center; }
+.param-sliders label { display:flex; align-items:center; gap:6px; font-size:.85rem; color:#475569; }
+.param-sliders input[type=range] { width:100px; }
+.param-sliders .val { display:inline-block; width:40px; text-align:center; font-weight:600; color:#2563eb; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>⚛️ A-LEVEL 物理</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quantities_units.html">1 物理量与单位</a></li>
+    <li><a href="ch02_kinematics.html">2 运动学</a></li>
+    <li><a href="ch03_dynamics.html">3 动力学</a></li>
+    <li><a href="ch04_forces_pressure.html">4 力、密度与压强</a></li>
+    <li><a href="ch05_work_energy_power.html">5 功、能与功率</a></li>
+    <li><a href="ch06_deformation.html">6 固体形变</a></li>
+    <li><a href="ch07_waves.html">7 波</a></li>
+    <li><a href="ch08_superposition.html" class="active" data-section="s1"><span class="ch-num">8</span>叠加与干涉</a>
+      <div class="subsections">
+        <a href="#sec8-1" data-section="s1">8.1 叠加原理</a>
+        <a href="#sec8-2" data-section="s2">8.2 双缝干涉</a>
+        <a href="#sec8-3" data-section="s3">8.3 衍射</a>
+        <a href="#sec8-4" data-section="s4">8.4 衍射光栅</a>
+        <a href="#sec8-5" data-section="s5">8.5 驻波</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch09_electricity.html">9 电场与电流</a></li>
+    <li><a href="ch10_dc_circuits.html">10 直流电路</a></li>
+    <li><a href="ch11_particle_physics.html">11 粒子与核物理</a></li>
+    <li><a href="ch12_practical_skills.html">12 实验技能</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">⚛️ 物理首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a>
+      <span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a>
+      <span>›</span>
+      <a href="index.html">⚛️ 物理</a>
+      <span>›</span>
+      <span>第8章 叠加与干涉</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="../math/index.html">数学</a>
+      <a href="index.html" class="active">物理</a>
+      <a href="../chemistry/index.html">化学</a>
+      <a href="../biology/index.html">生物</a>
+      <a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第8章 叠加与干涉 (Superposition & Interference)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>理解叠加原理：两列波相遇时，合位移为各位移的代数和</li>
+      <li>掌握杨氏双缝干涉实验的条件和条纹间距公式 λ = ax/D</li>
+      <li>理解衍射现象及其条件（缝宽与波长可比拟）</li>
+      <li>掌握衍射光栅方程 d sin θ = nλ 及其应用</li>
+      <li>理解驻波的形成条件、节点和波腹的特征</li>
+    </ul>
+  </div>
+
+  <!-- 8.1 -->
+  <h2 data-section="s1" id="sec8-1" style="margin:28px 0 16px;">8.1 叠加原理 (Principle of Superposition)</h2>
+
+  <div class="kp">
+    <h3>叠加原理</h3>
+    <p>当两列或多列波在同一介质中同时传播时，在重叠区域，任意一点的合位移等于各列波单独引起的位移的<strong>矢量和</strong>。</p>
+    <span class="formula">y = y₁ + y₂ + y₃ + ...</span>
+    <p><strong>相长干涉 (Constructive Interference)</strong>：两列波同相（相位差为 0, 2π, 4π...），合振幅最大。</p>
+    <p><strong>相消干涉 (Destructive Interference)</strong>：两列波反相（相位差为 π, 3π, 5π...），合振幅最小。</p>
+  </div>
+
+  <div class="kp">
+    <h3>相干条件</h3>
+    <p>要产生稳定的干涉图案，两列波必须满足：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li><strong>频率相同</strong>（或波长相同）</li>
+      <li><strong>相位差恒定</strong>（相干光源）</li>
+      <li><strong>振动方向相同</strong>（或至少有平行的分量）</li>
+    </ul>
+    <p>普通光源（如白炽灯）发出的光不满足相干条件，因此需要特殊装置（如杨氏双缝）来获得相干光。</p>
+  </div>
+
+  <!-- 8.2 -->
+  <h2 data-section="s2" id="sec8-2" style="margin:28px 0 16px;">8.2 双缝干涉 (Young's Double Slit)</h2>
+
+  <div class="kp">
+    <h3>杨氏双缝实验</h3>
+    <p>托马斯·杨在 1801 年首次用双缝实验证明了光的波动性。实验装置：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li>单色光源通过单缝 S₀ 产生相干光</li>
+      <li>光通过两个相距很近的狭缝 S₁ 和 S₂（间距 a）</li>
+      <li>在距离双缝 D 处的屏幕上形成明暗相间的干涉条纹</li>
+    </ul>
+    <p>条纹间距（相邻亮纹或暗纹之间的距离）：</p>
+    <span class="formula">x = λD / a</span>
+    <p>其中 λ 为光波长，D 为双缝到屏幕的距离，a 为双缝间距。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>💡 亮纹条件（相长干涉）</h3>
+      <p>两列光的光程差为波长的整数倍：</p>
+      <span class="formula">Δ = nλ  (n = 0, 1, 2, ...)</span>
+      <p>n = 0 为中央亮纹（零级），n = 1 为第一级亮纹，以此类推。</p>
+    </div>
+    <div class="kp">
+      <h3>🌑 暗纹条件（相消干涉）</h3>
+      <p>两列光的光程差为半波长的奇数倍：</p>
+      <span class="formula">Δ = (n + 1/2)λ  (n = 0, 1, 2, ...)</span>
+      <p>n = 0 为第一暗纹，n = 1 为第二暗纹，以此类推。</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>影响条纹间距的因素</h3>
+    <p>从 x = λD/a 可知：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li>增大 λ（如用红光代替蓝光）→ 条纹间距变大</li>
+      <li>增大 D → 条纹间距变大</li>
+      <li>减小 a（双缝更近）→ 条纹间距变大</li>
+    </ul>
+    <p>如果使用白光，中央亮纹为白色，两侧为彩色光谱（紫光在内、红光在外）。</p>
+  </div>
+
+  <!-- 8.3 -->
+  <h2 data-section="s3" id="sec8-3" style="margin:28px 0 16px;">8.3 衍射 (Diffraction)</h2>
+
+  <div class="kp">
+    <h3>衍射现象</h3>
+    <p><strong>衍射</strong>是波绕过障碍物或通过狭缝时<strong>偏离直线传播</strong>的现象。</p>
+    <p>衍射的显著程度取决于波长与障碍物/缝宽的相对大小：</p>
+    <span class="formula">显著的衍射：λ ≥ 缝宽</span>
+    <p>当缝宽远大于波长时，衍射不明显（波沿直线传播）。</p>
+    <p>这就是为什么声波（λ ≈ 1 m）能绕过门缝，而光波（λ ≈ 500 nm）不能。</p>
+  </div>
+
+  <div class="kp">
+    <h3>单缝衍射 (Single-Slit Diffraction)</h3>
+    <p>单色光通过单缝时，在屏幕上形成中央亮纹（最宽最亮）加上两侧对称的暗亮相间的条纹。</p>
+    <p>暗纹条件（极小值）：</p>
+    <span class="formula">a sin θ = nλ  (n = 1, 2, 3, ...)</span>
+    <p>其中 a 为缝宽，θ 为第 n 级暗纹对应的角度。</p>
+    <p>中央亮纹的半角宽度：sin θ ≈ λ/a（第一暗纹位置）。</p>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">🔬 双缝干涉图案模拟</h3>
+    <div class="interference-demo">
+      <canvas id="interfCanvas"></canvas>
+    </div>
+    <div class="param-sliders">
+      <label>缝间距 a = <input type="range" id="sliderA" min="5" max="40" value="15" step="1"><span class="val" id="valA">15</span> μm</label>
+      <label>波长 λ = <input type="range" id="sliderL" min="4" max="7" value="5" step="1"><span class="val" id="valL">500</span> nm</label>
+      <label>屏距 D = <input type="range" id="sliderD" min="10" max="50" value="25" step="1"><span class="val" id="valD">2.5</span> m</label>
+    </div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      拖动滑块观察缝间距、波长和屏距对干涉条纹间距的影响。条纹间距 x = λD/a。
+    </p>
+  </div>
+
+  <!-- 8.4 -->
+  <h2 data-section="s4" id="sec8-4" style="margin:28px 0 16px;">8.4 衍射光栅 (Diffraction Grating)</h2>
+
+  <div class="kp">
+    <h3>衍射光栅方程</h3>
+    <p>衍射光栅由大量等间距的平行狭缝组成。光栅常数 d = 1/N，其中 N 为单位长度上的狭缝数。</p>
+    <p>光栅方程（亮纹条件）：</p>
+    <span class="formula">d sin θ = nλ  (n = 0, 1, 2, ...)</span>
+    <p>其中 d 为光栅常数（相邻缝间距），θ 为第 n 级衍射角。</p>
+    <p>与双缝干涉相比，光栅产生的条纹更<strong>锐利</strong>更<strong>亮</strong>，因为更多缝参与干涉。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>🔢 光栅的重要性质</h3>
+      <p>最大级数由 sin θ ≤ 1 决定：</p>
+      <span class="formula">n_max = d / λ（取整数部分）</span>
+      <p>如果 d 减小（缝更密），各级条纹间距增大。</p>
+      <p>如果 λ 增大，各级条纹间距也增大。</p>
+    </div>
+    <div class="kp">
+      <h3>🌈 光谱分析</h3>
+      <p>白光通过光栅后，各级（除 n=0 外）产生连续光谱。</p>
+      <p>紫光偏转角最小，红光偏转角最大（因为 λ 红 > λ 紫）。</p>
+      <p>光栅用于光谱仪中精确测量波长。</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>光栅的应用</h3>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li><strong>光谱仪</strong>：精确测量光源的波长成分，用于化学元素分析。</li>
+      <li><strong>CD/DVD</strong>：光盘表面的凹槽形成反射光栅，产生彩虹色。</li>
+      <li><strong>X射线晶体学</strong>：利用晶体中的原子层作为天然光栅，研究晶体结构（布拉格定律：2d sin θ = nλ）。</li>
+    </ul>
+  </div>
+
+  <!-- 8.5 -->
+  <h2 data-section="s5" id="sec8-5" style="margin:28px 0 16px;">8.5 驻波 (Stationary Waves)</h2>
+
+  <div class="kp">
+    <h3>驻波的形成</h3>
+    <p><strong>驻波</strong>是两列<strong>频率相同、振幅相等、传播方向相反</strong>的波叠加的结果。</p>
+    <p>驻波不发生能量传播，能量被"困"在波节之间。</p>
+    <p>驻波由<strong>入射波</strong>和<strong>反射波</strong>叠加形成，常见于弦乐器和管乐器中。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>📍 波节 (Node)</h3>
+      <p>位移始终为零的点。</p>
+      <p>相邻波节间距为 λ/2。</p>
+      <p>在波节处，两列波始终反相，相消干涉。</p>
+    </div>
+    <div class="kp">
+      <h3>🔺 波腹 (Antinode)</h3>
+      <p>振幅最大的点。</p>
+      <p>相邻波腹间距为 λ/2。</p>
+      <p>在波腹处，两列波始终同相，相长干涉。</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>弦上的驻波与谐波</h3>
+    <p>一根长度为 L、两端固定的弦上的驻波：</p>
+    <span class="formula">L = n × (λₙ/2)  →  λₙ = 2L/n  (n = 1, 2, 3, ...)</span>
+    <span class="formula">fₙ = n × v/(2L) = n × f₁</span>
+    <p>n = 1：基频（第一谐波），两端为节点，中间一个波腹。</p>
+    <p>n = 2：第二谐波，两个波腹，中间一个节点。</p>
+    <p>n = 3：第三谐波，三个波腹，两个中间节点。</p>
+  </div>
+
+  <div class="kp">
+    <h3>开管与闭管中的驻波</h3>
+    <p><strong>两端开口的管</strong>：两端为波腹，L = nλ/2（n = 1,2,3...），与两端固定弦相同。</p>
+    <p><strong>一端封闭的管</strong>：封闭端为波节，开口端为波腹，L = nλ/4（n = 1,3,5...），只有奇次谐波。</p>
+    <p>以上解释了为什么笛子（开管）和单簧管（闭管）的音色不同。</p>
+  </div>
+
+  <!-- 练习题 -->
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>在杨氏双缝实验中，双缝间距为 0.5 mm，屏距为 2.0 m，使用波长为 600 nm 的光。条纹间距为 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 0.6 mm</label>
+      <label><input type="radio" name="q1" value="B">B. 1.2 mm</label>
+      <label><input type="radio" name="q1" value="C">C. 2.4 mm</label>
+      <label><input type="radio" name="q1" value="D">D. 4.8 mm</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="C">✅ 正确答案：C。x = λD/a = (600×10⁻⁹ × 2.0) / (0.5×10⁻³) = 1200×10⁻⁹/0.5×10⁻³ = 2.4×10⁻³ m = 2.4 mm。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>衍射光栅的光栅常数为 2.0 × 10⁻⁶ m，使用波长为 500 nm 的光垂直照射。最多能观察到第几级光谱？</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 第 2 级</label>
+      <label><input type="radio" name="q2" value="B">B. 第 3 级</label>
+      <label><input type="radio" name="q2" value="C">C. 第 4 级</label>
+      <label><input type="radio" name="q2" value="D">D. 第 5 级</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="B">✅ 正确答案：B。由 d sin θ = nλ，sin θ ≤ 1，n_max = d/λ = 2.0×10⁻⁶/(500×10⁻⁹) = 4，因此最多可观察第 4 级。但题目问的是"最多能观察到"，当 n=4 时 sinθ=1，理论上在 90° 方向，实际观察不到，所以最多第 3 级。在 CAIE 中 n_max = floor(d/λ) = 4，但边缘级数不易观察。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>一根长度为 0.80 m 的弦，两端固定，基频为 200 Hz。波在弦上的传播速度为 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 160 m/s</label>
+      <label><input type="radio" name="q3" value="B">B. 320 m/s</label>
+      <label><input type="radio" name="q3" value="C">C. 400 m/s</label>
+      <label><input type="radio" name="q3" value="D">D. 500 m/s</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="B">✅ 正确答案：B。基频 n=1，λ₁ = 2L = 1.60 m，v = f₁λ₁ = 200 × 1.60 = 320 m/s。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>在单缝衍射中，当缝宽增大时，中央亮纹的宽度 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. 增大</label>
+      <label><input type="radio" name="q4" value="B">B. 减小</label>
+      <label><input type="radio" name="q4" value="C">C. 不变</label>
+      <label><input type="radio" name="q4" value="D">D. 先增大后减小</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="B">✅ 正确答案：B。中央亮纹半角宽度 sin θ ≈ λ/a，缝宽 a 增大 → θ 减小 → 中央亮纹变窄。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>一端封闭、另一端开口的管中，基频对应的波长与管长 L 的关系是 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. λ = L</label>
+      <label><input type="radio" name="q5" value="B">B. λ = 2L</label>
+      <label><input type="radio" name="q5" value="C">C. λ = 4L</label>
+      <label><input type="radio" name="q5" value="D">D. λ = L/2</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="C">✅ 正确答案：C。一端封闭一端开口，闭端为波节，开口端为波腹，L = λ/4 → λ = 4L。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>两列频率相同的波相位差为 π 时，发生 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. 完全相长干涉</label>
+      <label><input type="radio" name="q6" value="B">B. 完全相消干涉</label>
+      <label><input type="radio" name="q6" value="C">C. 部分相长干涉</label>
+      <label><input type="radio" name="q6" value="D">D. 不发生干涉</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="B">✅ 正确答案：B。相位差 π（180°）意味着两列波完全反相，发生完全相消干涉，合振幅为零（如果振幅相等）。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('interfCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const sliderA = document.getElementById('sliderA');
+  const sliderL = document.getElementById('sliderL');
+  const sliderD = document.getElementById('sliderD');
+  const valA = document.getElementById('valA');
+  const valL = document.getElementById('valL');
+  const valD = document.getElementById('valD');
+
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const a = parseInt(sliderA.value);
+    const lambda = parseInt(sliderL.value) * 100;
+    const D = parseInt(sliderD.value) / 10;
+    valA.textContent = a;
+    valL.textContent = lambda;
+    valD.textContent = D.toFixed(1);
+
+    const fringeSpacing = lambda * D / a;
+
+    ctx.clearRect(0, 0, w, h);
+    ctx.fillStyle = '#0f172a';
+    ctx.fillRect(0, 0, w, h);
+
+    // Draw interference pattern as intensity variation
+    const cx = w/2;
+    const scale = w / (fringeSpacing * 10);
+    if(scale <= 0 || !isFinite(scale)) return;
+
+    for(let px = 0; px < w; px++) {
+      const x = (px - cx) / scale;
+      const intensity = Math.cos(Math.PI * x / fringeSpacing) ** 2;
+      const brightness = Math.floor(intensity * 255);
+      ctx.fillStyle = `rgb(${brightness},${Math.floor(brightness*0.3)},${Math.floor(brightness*0.1)})`;
+      ctx.fillRect(px, 0, 1, h);
+    }
+
+    // Labels
+    ctx.fillStyle = '#94a3b8';
+    ctx.font = '12px sans-serif';
+    ctx.fillText('条纹间距 x = λD/a = ' + fringeSpacing.toFixed(1) + ' (a.u.)', 12, h - 12);
+    ctx.fillText('a = ' + a + ' μm  |  λ = ' + lambda + ' nm  |  D = ' + D.toFixed(1) + ' m', 12, 20);
+
+    // Center line
+    ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([2, 8]);
+    ctx.beginPath(); ctx.moveTo(cx, 0); ctx.lineTo(cx, h); ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Mark fringe spacing
+    ctx.strokeStyle = '#f59e0b';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([4, 4]);
+    ctx.beginPath();
+    ctx.moveTo(cx, h - 40);
+    ctx.lineTo(cx + fringeSpacing * scale, h - 40);
+    ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = '#f59e0b';
+    ctx.fillText('x', cx + fringeSpacing * scale / 2 - 10, h - 46);
+  }
+
+  sliderA.addEventListener('input', draw);
+  sliderL.addEventListener('input', draw);
+  sliderD.addEventListener('input', draw);
+  draw();
+})();
+</script>
+</body>
+</html>

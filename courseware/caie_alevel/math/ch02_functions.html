@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第2章 函数与图像变换 - CAIE A-LEVEL 数学 (9709)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.func-demo { width:100%; height:300px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.func-demo canvas { width:100%; height:100%; }
+.transform-btns { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-top:12px; }
+.transform-btns button {
+  padding:8px 16px; background:#fff; border:1px solid #059669; color:#059669;
+  border-radius:6px; cursor:pointer; font-size:.85rem; transition:all .2s;
+}
+.transform-btns button:hover, .transform-btns button.active {
+  background:#059669; color:#fff;
+}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📐 A-LEVEL 数学</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quadratics.html"><span class="ch-num">1</span>二次函数</a></li>
+    <li><a href="ch02_functions.html" class="active" data-section="s1"><span class="ch-num">2</span>函数与图像变换</a>
+      <div class="subsections">
+        <a href="#sec2-1" data-section="s1">2.1 函数的基本概念</a>
+        <a href="#sec2-2" data-section="s2">2.2 复合函数</a>
+        <a href="#sec2-3" data-section="s3">2.3 反函数</a>
+        <a href="#sec2-4" data-section="s4">2.4 图像变换</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch03_coordinate_geometry.html"><span class="ch-num">3</span>坐标几何</a></li>
+    <li><a href="ch04_circular_measure.html"><span class="ch-num">4</span>圆与弧度制</a></li>
+    <li><a href="ch05_trigonometry.html"><span class="ch-num">5</span>三角函数</a></li>
+    <li><a href="ch06_sequences_series.html"><span class="ch-num">6</span>数列与级数</a></li>
+    <li><a href="ch07_differentiation.html"><span class="ch-num">7</span>微分</a></li>
+    <li><a href="ch08_integration.html"><span class="ch-num">8</span>积分</a></li>
+    <li><a href="ch09_logarithms_exponentials.html"><span class="ch-num">9</span>对数与指数</a></li>
+    <li><a href="ch10_numerical_methods.html"><span class="ch-num">10</span>数值方法</a></li>
+    <li><a href="ch11_vectors.html"><span class="ch-num">11</span>三维向量</a></li>
+    <li><a href="ch12_differential_equations.html"><span class="ch-num">12</span>微分方程</a></li>
+    <li><a href="ch13_complex_numbers.html"><span class="ch-num">13</span>复数</a></li>
+    <li><a href="ch14_mechanics_statistics.html"><span class="ch-num">14</span>力学与统计</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">📐 数学首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a>
+      <span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a>
+      <span>›</span>
+      <a href="index.html">📐 数学</a>
+      <span>›</span>
+      <span>第2章 函数与图像变换</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="index.html" class="active">数学</a>
+      <a href="../physics/index.html">物理</a>
+      <a href="../chemistry/index.html">化学</a>
+      <a href="../biology/index.html">生物</a>
+      <a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第2章 函数与图像变换 (Functions)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>理解函数的定义、定义域 (domain) 和值域 (range)</li>
+      <li>掌握一对一函数 (one-to-one) 和多对一函数 (many-to-one) 的区别</li>
+      <li>熟练计算复合函数 fg(x) = f(g(x))</li>
+      <li>理解反函数的概念并能够求反函数</li>
+      <li>掌握函数图像的四种基本变换：平移、伸缩、对称</li>
+    </ul>
+  </div>
+
+  <h2 data-section="s1" id="sec2-1" style="margin:28px 0 16px;">2.1 函数的基本概念</h2>
+
+  <div class="kp">
+    <h3>函数的定义</h3>
+    <p>函数是一种映射关系，将定义域中的<strong>每一个</strong>输入值 x 映射到<strong>唯一</strong>的输出值 y = f(x)。</p>
+    <p><strong>定义域 (Domain)</strong>：所有可接受的输入值 x 的集合。</p>
+    <p><strong>值域 (Range)</strong>：所有可能的输出值 f(x) 的集合。</p>
+    <span class="formula">f: x → f(x)，x ∈ Domain</span>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>1-1 一对一函数</h3>
+      <p>定义域中不同的 x 映射到不同的 f(x)。</p>
+      <p>水平线检验：任何水平线与函数图像最多有一个交点。</p>
+      <p>示例：f(x) = 2x + 1, f(x) = eˣ</p>
+      <p><strong>只有一对一函数才有反函数。</strong></p>
+    </div>
+    <div class="kp">
+      <h3>多对一函数</h3>
+      <p>定义域中不同的 x 可能映射到相同的 f(x)。</p>
+      <p>水平线检验：存在水平线与图像有多个交点。</p>
+      <p>示例：f(x) = x², f(x) = sin x</p>
+      <p>需要<strong>限制定义域</strong>才能定义反函数。</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>常见定义域限制</h3>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li>分母 ≠ 0（如 f(x) = 1/x，定义域为 x ≠ 0）</li>
+      <li>平方根内 ≥ 0（如 f(x) = √x，定义域为 x ≥ 0）</li>
+      <li>对数真数 > 0（如 f(x) = ln x，定义域为 x > 0）</li>
+    </ul>
+  </div>
+
+  <h2 data-section="s2" id="sec2-2" style="margin:28px 0 16px;">2.2 复合函数 (Composite Functions)</h2>
+
+  <div class="kp">
+    <h3>复合函数的定义</h3>
+    <p>复合函数 fg(x) 表示先应用 g，再将结果输入 f：</p>
+    <span class="formula">fg(x) = f(g(x))</span>
+    <p>注意：<strong>fg(x) ≠ gf(x)</strong>（一般情况），顺序很重要！</p>
+    <p>fg(x) 的定义域：g(x) 的值域中属于 f 定义域的那部分 x 值。</p>
+  </div>
+
+  <div class="kp">
+    <h3>例子：复合函数计算</h3>
+    <p>设 f(x) = 2x + 1，g(x) = x² - 3</p>
+    <p>fg(x) = f(g(x)) = f(x² - 3) = 2(x² - 3) + 1 = 2x² - 5</p>
+    <p>gf(x) = g(f(x)) = g(2x + 1) = (2x + 1)² - 3 = 4x² + 4x - 2</p>
+    <p>可见 fg(x) ≠ gf(x)，顺序不同结果不同。</p>
+  </div>
+
+  <h2 data-section="s3" id="sec2-3" style="margin:28px 0 16px;">2.3 反函数 (Inverse Functions)</h2>
+
+  <div class="kp">
+    <h3>反函数的概念</h3>
+    <p>反函数 f⁻¹(x) 将原函数的输出"反向映射"回输入。</p>
+    <p>关系：<strong>f(f⁻¹(x)) = x</strong> 且 <strong>f⁻¹(f(x)) = x</strong>。</p>
+    <p>f⁻¹(x) 的图像是 f(x) 关于直线 y = x 的对称。</p>
+    <span class="formula">f(a) = b ⇔ f⁻¹(b) = a</span>
+  </div>
+
+  <div class="kp">
+    <h3>求反函数的步骤</h3>
+    <ol style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li>将 y = f(x) 写成 y = ...</li>
+      <li>交换 x 和 y：x = f(y)</li>
+      <li>解出 y（用 x 表示）</li>
+      <li>写成 f⁻¹(x) = ...</li>
+    </ol>
+    <p>f⁻¹(x) 的定义域 = f(x) 的值域；f⁻¹(x) 的值域 = f(x) 的定义域。</p>
+  </div>
+
+  <div class="kp">
+    <h3>例子：求反函数</h3>
+    <p>求 f(x) = (2x - 3)/(x + 1) 的反函数，x ≠ -1</p>
+    <p>y = (2x - 3)/(x + 1) → y(x + 1) = 2x - 3 → yx + y = 2x - 3</p>
+    <p>yx - 2x = -3 - y → x(y - 2) = -(y + 3) → x = (y + 3)/(2 - y)</p>
+    <p>f⁻¹(x) = (x + 3)/(2 - x)，x ≠ 2</p>
+  </div>
+
+  <h2 data-section="s4" id="sec2-4" style="margin:28px 0 16px;">2.4 图像变换 (Transformations)</h2>
+
+  <div class="kp">
+    <h3>四种基本变换</h3>
+    <p>设原函数为 y = f(x)，则：</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>↕️ 平移 (Translation)</h3>
+      <p><strong>y = f(x) + a</strong>：向上平移 a 单位</p>
+      <p><strong>y = f(x) - a</strong>：向下平移 a 单位</p>
+      <p><strong>y = f(x - a)</strong>：向右平移 a 单位</p>
+      <p><strong>y = f(x + a)</strong>：向左平移 a 单位</p>
+    </div>
+    <div class="kp">
+      <h3>↔️ 伸缩 (Stretch)</h3>
+      <p><strong>y = a f(x)</strong>：垂直方向拉伸 a 倍（a>1）或压缩（0<a<1）</p>
+      <p><strong>y = f(ax)</strong>：水平方向压缩 a 倍（a>1）或拉伸（0<a<1）</p>
+    </div>
+    <div class="kp">
+      <h3>🪞 对称 (Reflection)</h3>
+      <p><strong>y = -f(x)</strong>：关于 x 轴反射</p>
+      <p><strong>y = f(-x)</strong>：关于 y 轴反射</p>
+    </div>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">📊 函数图像变换演示</h3>
+    <div class="func-demo">
+      <canvas id="funcCanvas"></canvas>
+    </div>
+    <div class="transform-btns">
+      <button class="active" onclick="setTransform('original',this)">原函数 f(x)=x²</button>
+      <button onclick="setTransform('up',this)">f(x)+2</button>
+      <button onclick="setTransform('right',this)">f(x-2)</button>
+      <button onclick="setTransform('stretch',this)">2f(x)</button>
+      <button onclick="setTransform('reflect',this)">-f(x)</button>
+    </div>
+  </div>
+
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>设 f(x) = 3x - 2，g(x) = x² + 1，则 fg(2) = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 13</label>
+      <label><input type="radio" name="q1" value="B">B. 17</label>
+      <label><input type="radio" name="q1" value="C">C. 11</label>
+      <label><input type="radio" name="q1" value="D">D. 15</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="A">✅ 正确答案：A。g(2) = 2² + 1 = 5，fg(2) = f(5) = 3×5 - 2 = 13。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>函数 f(x) = √(x - 3) 的定义域是____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. x ≥ 0</label>
+      <label><input type="radio" name="q2" value="B">B. x ≥ 3</label>
+      <label><input type="radio" name="q2" value="C">C. x > 3</label>
+      <label><input type="radio" name="q2" value="D">D. x ≤ 3</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="B">✅ 正确答案：B。平方根内必须 ≥ 0，x - 3 ≥ 0 → x ≥ 3。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>函数 f(x) = (x + 1)/(x - 2) 的反函数为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. f⁻¹(x) = (2x + 1)/(x - 1)</label>
+      <label><input type="radio" name="q3" value="B">B. f⁻¹(x) = (x - 1)/(x + 2)</label>
+      <label><input type="radio" name="q3" value="C">C. f⁻¹(x) = (2x + 1)/(x - 1)</label>
+      <label><input type="radio" name="q3" value="D">D. f⁻¹(x) = (x + 2)/(x - 1)</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="A">✅ 正确答案：A。y = (x+1)/(x-2) → y(x-2) = x+1 → yx - 2y = x + 1 → yx - x = 2y + 1 → x(y-1) = 2y+1 → x = (2y+1)/(y-1)，f⁻¹(x) = (2x+1)/(x-1)。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>将 y = f(x) 的图像向右平移 3 个单位，再向上平移 2 个单位，得到的函数是____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. y = f(x - 3) + 2</label>
+      <label><input type="radio" name="q4" value="B">B. y = f(x + 3) + 2</label>
+      <label><input type="radio" name="q4" value="C">C. y = f(x - 3) - 2</label>
+      <label><input type="radio" name="q4" value="D">D. y = f(x + 3) - 2</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="A">✅ 正确答案：A。向右平移是 x → x - 3，向上平移是 + 2。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>f(x) = x² - 2x + 3，x ≤ 1。f⁻¹(x) 的值域是____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. x ≥ 1</label>
+      <label><input type="radio" name="q5" value="B">B. x ≤ 1</label>
+      <label><input type="radio" name="q5" value="C">C. x ≥ 2</label>
+      <label><input type="radio" name="q5" value="D">D. x ≤ 2</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="B">✅ 正确答案：B。f⁻¹(x) 的值域 = f(x) 的定义域 = x ≤ 1。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>设 f(x) = 2x + 1，g(x) = 3 - x，则 gf(x) = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. 2 - 2x</label>
+      <label><input type="radio" name="q6" value="B">B. 2x - 2</label>
+      <label><input type="radio" name="q6" value="C">C. 5 - 2x</label>
+      <label><input type="radio" name="q6" value="D">D. 2x + 2</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="A">✅ 正确答案：A。gf(x) = g(2x+1) = 3 - (2x+1) = 2 - 2x。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+let currentTransform = 'original';
+function setTransform(t, btn) {
+  currentTransform = t;
+  document.querySelectorAll('.transform-btns button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  draw();
+}
+(function(){
+  const canvas = document.getElementById('funcCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const cx = w/2, cy = h/2;
+    const scale = 40;
+    ctx.clearRect(0, 0, w, h);
+    // Grid
+    ctx.strokeStyle = '#334155';
+    ctx.lineWidth = 0.5;
+    for(let x = 0; x < w; x += scale) { ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,h); ctx.stroke(); }
+    for(let y = 0; y < h; y += scale) { ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(w,y); ctx.stroke(); }
+    // Axes
+    ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(cx,0); ctx.lineTo(cx,h); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(0,cy); ctx.lineTo(w,cy); ctx.stroke();
+    // y=x line
+    ctx.strokeStyle = '#475569'; ctx.lineWidth = 1; ctx.setLineDash([5,5]);
+    ctx.beginPath(); ctx.moveTo(0,h); ctx.lineTo(w,0); ctx.stroke();
+    ctx.setLineDash([]);
+
+    function plot(f, color, label) {
+      ctx.strokeStyle = color; ctx.lineWidth = 2.5; ctx.beginPath();
+      let first = true;
+      for(let px = 0; px < w; px++) {
+        const x = (px - cx) / scale;
+        let y = f(x);
+        const py = cy - y * scale;
+        if(py > -50 && py < h + 50) {
+          if(first) { ctx.moveTo(px, py); first = false; }
+          else { ctx.lineTo(px, py); }
+        }
+      }
+      ctx.stroke();
+      ctx.fillStyle = color; ctx.font = '12px sans-serif';
+      ctx.fillText(label, w - 120, 30 + (label === '2f(x)' ? 0 : label === 'f(x)+2' ? 20 : label === 'f(x-2)' ? 40 : 60));
+    }
+
+    // Original
+    plot(x => x*x, '#10b981', 'f(x)=x²');
+    // Transformed
+    if(currentTransform === 'up') plot(x => x*x + 2, '#f59e0b', 'f(x)+2');
+    if(currentTransform === 'right') plot(x => (x-2)*(x-2), '#3b82f6', 'f(x-2)');
+    if(currentTransform === 'stretch') plot(x => 2*x*x, '#ef4444', '2f(x)');
+    if(currentTransform === 'reflect') plot(x => -x*x, '#8b5cf6', '-f(x)');
+  }
+  draw();
+  window.addEventListener('resize', draw);
+})();
+</script>
+</body>
+</html>

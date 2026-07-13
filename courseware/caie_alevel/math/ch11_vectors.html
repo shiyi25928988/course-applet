@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第11章 三维向量 - CAIE A-LEVEL 数学 (9709)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.vec-demo { width:100%; height:300px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.vec-demo canvas { width:100%; height:100%; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📐 A-LEVEL 数学</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quadratics.html"><span class="ch-num">1</span>二次函数</a></li>
+    <li><a href="ch02_functions.html"><span class="ch-num">2</span>函数与图像变换</a></li>
+    <li><a href="ch03_coordinate_geometry.html"><span class="ch-num">3</span>坐标几何</a></li>
+    <li><a href="ch04_circular_measure.html"><span class="ch-num">4</span>圆与弧度制</a></li>
+    <li><a href="ch05_trigonometry.html"><span class="ch-num">5</span>三角函数</a></li>
+    <li><a href="ch06_sequences_series.html"><span class="ch-num">6</span>数列与级数</a></li>
+    <li><a href="ch07_differentiation.html"><span class="ch-num">7</span>微分</a></li>
+    <li><a href="ch08_integration.html"><span class="ch-num">8</span>积分</a></li>
+    <li><a href="ch09_logarithms_exponentials.html"><span class="ch-num">9</span>对数与指数</a></li>
+    <li><a href="ch10_numerical_methods.html"><span class="ch-num">10</span>数值方法</a></li>
+    <li><a href="ch11_vectors.html" class="active" data-section="s1"><span class="ch-num">11</span>三维向量</a>
+      <div class="subsections">
+        <a href="#sec11-1" data-section="s1">11.1 三维向量的表示</a>
+        <a href="#sec11-2" data-section="s2">11.2 向量运算</a>
+        <a href="#sec11-3" data-section="s3">11.3 点积</a>
+        <a href="#sec11-4" data-section="s4">11.4 直线方程</a>
+        <a href="#sec11-5" data-section="s5">11.5 平面方程</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch12_differential_equations.html"><span class="ch-num">12</span>微分方程</a></li>
+    <li><a href="ch13_complex_numbers.html"><span class="ch-num">13</span>复数</a></li>
+    <li><a href="ch14_mechanics_statistics.html"><span class="ch-num">14</span>力学与统计</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">📐 数学首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a><span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+      <a href="index.html">📐 数学</a><span>›</span>
+      <span>第11章 三维向量</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="index.html" class="active">数学</a><a href="../physics/index.html">物理</a>
+      <a href="../chemistry/index.html">化学</a><a href="../biology/index.html">生物</a><a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第11章 三维向量 (Vectors in 3D)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>掌握三维向量的表示方法：位置向量和单位向量</li>
+      <li>掌握向量运算：加减、数乘、模长计算</li>
+      <li>理解点积 (Dot Product) 的定义和几何意义</li>
+      <li>掌握向量夹角公式及其应用</li>
+      <li>能够写出三维空间中直线的向量方程和参数方程 (P3)</li>
+      <li>理解平面方程及其与直线的关系 (P3)</li>
+    </ul>
+  </div>
+
+  <h2 data-section="s1" id="sec11-1" style="margin:28px 0 16px;">11.1 三维向量的表示</h2>
+
+  <div class="kp">
+    <h3>向量的坐标表示</h3>
+    <p>在三维空间中，一个向量可以用三个分量表示：</p>
+    <span class="formula">a = (a₁, a₂, a₃) = a₁ i + a₂ j + a₃ k</span>
+    <p>其中 i = (1, 0, 0)，j = (0, 1, 0)，k = (0, 0, 1) 是沿三个坐标轴方向的<strong>单位向量</strong>。</p>
+  </div>
+
+  <div class="kp">
+    <h3>位置向量 (Position Vector)</h3>
+    <p>点 P(x, y, z) 相对于原点 O(0, 0, 0) 的位置向量为：</p>
+    <span class="formula">OP = (x, y, z) = x i + y j + z k</span>
+    <p>两点 A(x₁, y₁, z₁) 和 B(x₂, y₂, z₂) 之间的向量：</p>
+    <span class="formula">AB = OB - OA = (x₂-x₁, y₂-y₁, z₂-z₁)</span>
+  </div>
+
+  <div class="kp">
+    <h3>单位向量 (Unit Vector)</h3>
+    <p>与向量 a 方向相同的单位向量为：</p>
+    <span class="formula">â = a / |a|</span>
+    <p>单位向量的模长为 1，即 |â| = 1。</p>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">📊 三维向量可视化</h3>
+    <div class="vec-demo"><canvas id="vecCanvas"></canvas></div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      红色：位置向量 (3, 2, 4) — 三维空间中的向量表示
+    </p>
+  </div>
+
+  <h2 data-section="s2" id="sec11-2" style="margin:28px 0 16px;">11.2 向量运算</h2>
+
+  <div class="kp">
+    <h3>向量加法与减法</h3>
+    <span class="formula">a + b = (a₁+b₁, a₂+b₂, a₃+b₃)</span>
+    <span class="formula">a - b = (a₁-b₁, a₂-b₂, a₃-b₃)</span>
+    <p>向量加法满足<strong>平行四边形法则</strong>和<strong>三角形法则</strong>。</p>
+  </div>
+
+  <div class="kp">
+    <h3>数乘 (Scalar Multiplication)</h3>
+    <span class="formula">λa = (λa₁, λa₂, λa₃)</span>
+    <p>若 λ > 0，方向不变；若 λ < 0，方向相反。|λa| = |λ|·|a|。</p>
+  </div>
+
+  <div class="kp">
+    <h3>向量的模长 (Magnitude)</h3>
+    <span class="formula">|a| = √(a₁² + a₂² + a₃²)</span>
+    <p>两点 A 和 B 之间的距离：</p>
+    <span class="formula">|AB| = √[(x₂-x₁)² + (y₂-y₁)² + (z₂-z₁)²]</span>
+  </div>
+
+  <h2 data-section="s3" id="sec11-3" style="margin:28px 0 16px;">11.3 点积 (Dot Product)</h2>
+
+  <div class="kp">
+    <h3>点积的定义</h3>
+    <p><strong>代数定义：</strong></p>
+    <span class="formula">a · b = a₁b₁ + a₂b₂ + a₃b₃</span>
+    <p><strong>几何定义：</strong></p>
+    <span class="formula">a · b = |a| |b| cos θ</span>
+    <p>其中 θ 是两个向量之间的夹角（0 ≤ θ ≤ π）。</p>
+  </div>
+
+  <div class="kp">
+    <h3>夹角公式</h3>
+    <span class="formula">cos θ = (a · b) / (|a| |b|)</span>
+    <p>由此可推导：</p>
+    <p><strong>垂直（正交）：</strong> a · b = 0（θ = 90°）</p>
+    <p><strong>平行：</strong> a · b = ±|a||b|（θ = 0° 或 180°）</p>
+    <p><strong>锐角：</strong> a · b > 0</p>
+    <p><strong>钝角：</strong> a · b < 0</p>
+  </div>
+
+  <div class="kp">
+    <h3>点积的性质</h3>
+    <span class="formula">a · a = |a|²</span>
+    <span class="formula">a · b = b · a（交换律）</span>
+    <span class="formula">a · (b + c) = a · b + a · c（分配律）</span>
+    <span class="formula">i · i = j · j = k · k = 1</span>
+    <span class="formula">i · j = j · k = k · i = 0</span>
+  </div>
+
+  <h2 data-section="s4" id="sec11-4" style="margin:28px 0 16px;">11.4 直线方程 (P3)</h2>
+
+  <div class="kp">
+    <h3>直线的向量方程</h3>
+    <p>过点 A（位置向量为 a）且方向向量为 d 的直线：</p>
+    <span class="formula">r = a + λd，λ ∈ R</span>
+    <p>其中 r 是直线上任意点的位置向量，λ 是参数。</p>
+  </div>
+
+  <div class="kp">
+    <h3>直线的参数方程</h3>
+    <p>若 a = (x₀, y₀, z₀)，d = (l, m, n)，则：</p>
+    <span class="formula">x = x₀ + λl</span>
+    <span class="formula">y = y₀ + λm</span>
+    <span class="formula">z = z₀ + λn</span>
+  </div>
+
+  <div class="kp">
+    <h3>直线的对称式方程 (Cartesian Form)</h3>
+    <p>消去参数 λ，得到：</p>
+    <span class="formula">(x - x₀)/l = (y - y₀)/m = (z - z₀)/n (= λ)</span>
+    <p>若某个方向分量为 0（如 l = 0），则相应的坐标恒为常数（x = x₀）。</p>
+  </div>
+
+  <div class="kp">
+    <h3>两直线的夹角</h3>
+    <p>两条直线的夹角等于它们方向向量之间的夹角：</p>
+    <span class="formula">cos θ = |d₁ · d₂| / (|d₁| |d₂|)</span>
+    <p>取绝对值是因为直线夹角通常取锐角（0 ≤ θ ≤ 90°）。</p>
+  </div>
+
+  <h2 data-section="s5" id="sec11-5" style="margin:28px 0 16px;">11.5 平面方程 (P3)</h2>
+
+  <div class="kp">
+    <h3>平面的法向量</h3>
+    <p>平面的方向由<strong>法向量 n</strong> 确定，法向量垂直于平面内的所有向量。</p>
+    <p>若平面过点 A（位置向量为 a），法向量为 n，则对平面上任意点 r：</p>
+    <span class="formula">(r - a) · n = 0</span>
+  </div>
+
+  <div class="kp">
+    <h3>平面方程的几种形式</h3>
+    <p><strong>向量形式：</strong> r · n = a · n = d（常数）</p>
+    <p><strong>标量形式：</strong> 若 n = (A, B, C)，则：</p>
+    <span class="formula">Ax + By + Cz = D</span>
+    <p>其中 D = n · a。</p>
+  </div>
+
+  <div class="kp">
+    <h3>直线与平面的交点</h3>
+    <p>将直线的参数方程 r = a + λd 代入平面方程 r · n = d：</p>
+    <span class="formula">(a + λd) · n = D → λ = (D - a · n) / (d · n)</span>
+    <p>若 d · n = 0，则直线平行于平面（无交点或直线在平面内）。</p>
+  </div>
+
+  <div class="kp">
+    <h3>点到平面的距离</h3>
+    <p>点 P（位置向量为 p）到平面 r · n = D 的距离：</p>
+    <span class="formula">d = |p · n - D| / |n|</span>
+  </div>
+
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>向量 a = (3, 4, 0)，则 |a| = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 3</label>
+      <label><input type="radio" name="q1" value="B">B. 4</label>
+      <label><input type="radio" name="q1" value="C">C. 5</label>
+      <label><input type="radio" name="q1" value="D">D. 7</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="C">✅ 正确答案：C。|a| = √(3² + 4² + 0²) = √(9 + 16) = 5。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>a = (1, 2, 2)，b = (4, 0, -3)，则 a · b = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 2</label>
+      <label><input type="radio" name="q2" value="B">B. -2</label>
+      <label><input type="radio" name="q2" value="C">C. 10</label>
+      <label><input type="radio" name="q2" value="D">D. -10</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="B">✅ 正确答案：B。a · b = 1×4 + 2×0 + 2×(-3) = 4 + 0 - 6 = -2。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>a = (1, 0, -1)，b = (2, 1, 2)，则 a 与 b 的夹角为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 30°</label>
+      <label><input type="radio" name="q3" value="B">B. 45°</label>
+      <label><input type="radio" name="q3" value="C">C. 60°</label>
+      <label><input type="radio" name="q3" value="D">D. 90°</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="D">✅ 正确答案：D。a · b = 1×2 + 0×1 + (-1)×2 = 2 + 0 - 2 = 0，故 a ⟂ b，夹角 90°。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>过点 A(1, 2, 3) 且方向向量为 d = (2, -1, 4) 的直线参数方程为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. x = 1+2λ, y = 2+λ, z = 3+4λ</label>
+      <label><input type="radio" name="q4" value="B">B. x = 1+2λ, y = 2-λ, z = 3+4λ</label>
+      <label><input type="radio" name="q4" value="C">C. x = 2+λ, y = -1+2λ, z = 4+3λ</label>
+      <label><input type="radio" name="q4" value="D">D. x = 1-2λ, y = 2+λ, z = 3-4λ</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="B">✅ 正确答案：B。r = a + λd = (1, 2, 3) + λ(2, -1, 4) → x = 1+2λ, y = 2-λ, z = 3+4λ。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>平面 2x - y + 3z = 6 的法向量为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. (6, -1, 3)</label>
+      <label><input type="radio" name="q5" value="B">B. (2, 1, 3)</label>
+      <label><input type="radio" name="q5" value="C">C. (2, -1, 3)</label>
+      <label><input type="radio" name="q5" value="D">D. (2, -1, 6)</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="C">✅ 正确答案：C。平面 Ax + By + Cz = D 的法向量 n = (A, B, C) = (2, -1, 3)。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>点 P(1, 2, 2) 到平面 x + 2y + 2z = 6 的距离为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. 1</label>
+      <label><input type="radio" name="q6" value="B">B. 2</label>
+      <label><input type="radio" name="q6" value="C">C. 3</label>
+      <label><input type="radio" name="q6" value="D">D. 1/3</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="A">✅ 正确答案：A。n = (1, 2, 2)，|n| = √(1+4+4) = 3。p·n = 1×1 + 2×2 + 2×2 = 9。d = |9 - 6| / 3 = 1。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('vecCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  function project(x, y, z) {
+    // Isometric projection
+    const sx = (x - z) * 0.866;
+    const sy = -(x + z) * 0.5 - y;
+    return [sx, sy];
+  }
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const cx = w / 2, cy = h / 2;
+    const scale = Math.min(w, h) / 10;
+    ctx.clearRect(0,0,w,h);
+    // 3D axes
+    const axes = [
+      { vec: [6, 0, 0], color: '#ef4444', label: 'x' },
+      { vec: [0, 6, 0], color: '#10b981', label: 'y' },
+      { vec: [0, 0, 6], color: '#3b82f6', label: 'z' }
+    ];
+    axes.forEach(ax => {
+      const [ex, ey] = project(ax.vec[0], ax.vec[1], ax.vec[2]);
+      ctx.strokeStyle = ax.color; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + ex*scale, cy + ey*scale); ctx.stroke();
+      ctx.fillStyle = ax.color; ctx.font = '14px sans-serif';
+      ctx.fillText(ax.label, cx + ex*scale + 5, cy + ey*scale - 5);
+    });
+    // Grid dots on xz-plane
+    ctx.fillStyle = '#334155';
+    for(let i = 1; i <= 5; i++) {
+      for(let j = 1; j <= 5; j++) {
+        const [gx, gy] = project(i, 0, j);
+        ctx.beginPath(); ctx.arc(cx + gx*scale, cy + gy*scale, 1.5, 0, Math.PI*2); ctx.fill();
+      }
+    }
+    // Vector (3, 2, 4)
+    const [vx, vy] = project(3, 2, 4);
+    ctx.strokeStyle = '#f59e0b'; ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + vx*scale, cy + vy*scale); ctx.stroke();
+    // Arrowhead
+    const angle = Math.atan2(vy, vx);
+    const len = 10;
+    ctx.beginPath();
+    ctx.moveTo(cx + vx*scale, cy + vy*scale);
+    ctx.lineTo(cx + vx*scale - len*Math.cos(angle - 0.5), cy + vy*scale - len*Math.sin(angle - 0.5));
+    ctx.lineTo(cx + vx*scale - len*Math.cos(angle + 0.5), cy + vy*scale - len*Math.sin(angle + 0.5));
+    ctx.closePath(); ctx.fillStyle = '#f59e0b'; ctx.fill();
+    // Dotted lines to axes
+    ctx.setLineDash([3,3]); ctx.strokeStyle = '#64748b'; ctx.lineWidth = 0.8;
+    // To xz-plane
+    const [pxz_x, pxz_y] = project(3, 0, 4);
+    ctx.beginPath(); ctx.moveTo(cx + vx*scale, cy + vy*scale); ctx.lineTo(cx + pxz_x*scale, cy + pxz_y*scale); ctx.stroke();
+    // On xz-plane to x-axis
+    const [px_x, px_y] = project(3, 0, 0);
+    ctx.beginPath(); ctx.moveTo(cx + pxz_x*scale, cy + pxz_y*scale); ctx.lineTo(cx + px_x*scale, cy + px_y*scale); ctx.stroke();
+    // On xz-plane to z-axis
+    const [pz_x, pz_y] = project(0, 0, 4);
+    ctx.beginPath(); ctx.moveTo(cx + pxz_x*scale, cy + pxz_y*scale); ctx.lineTo(cx + pz_x*scale, cy + pz_y*scale); ctx.stroke();
+    ctx.setLineDash([]);
+    // Dot at tip
+    ctx.fillStyle = '#f59e0b'; ctx.beginPath();
+    ctx.arc(cx + vx*scale, cy + vy*scale, 5, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = '#fff'; ctx.font = '13px sans-serif';
+    ctx.fillText('(3, 2, 4)', cx + vx*scale + 10, cy + vy*scale - 10);
+    // Origin
+    ctx.fillStyle = '#fff'; ctx.beginPath();
+    ctx.arc(cx, cy, 4, 0, Math.PI*2); ctx.fill();
+    ctx.fillText('O', cx - 15, cy + 15);
+  }
+  draw();
+  window.addEventListener('resize', draw);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第5章 三角函数 - CAIE A-LEVEL 数学 (9709)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.trig-demo { width:100%; height:300px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.trig-demo canvas { width:100%; height:100%; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📐 A-LEVEL 数学</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quadratics.html"><span class="ch-num">1</span>二次函数</a></li>
+    <li><a href="ch02_functions.html"><span class="ch-num">2</span>函数与图像变换</a></li>
+    <li><a href="ch03_coordinate_geometry.html"><span class="ch-num">3</span>坐标几何</a></li>
+    <li><a href="ch04_circular_measure.html"><span class="ch-num">4</span>圆与弧度制</a></li>
+    <li><a href="ch05_trigonometry.html" class="active" data-section="s1"><span class="ch-num">5</span>三角函数</a>
+      <div class="subsections">
+        <a href="#sec5-1" data-section="s1">5.1 基本三角恒等式</a>
+        <a href="#sec5-2" data-section="s2">5.2 三角方程</a>
+        <a href="#sec5-3" data-section="s3">5.3 三角函数的图像</a>
+        <a href="#sec5-4" data-section="s4">5.4 和差公式与倍角公式</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch06_sequences_series.html"><span class="ch-num">6</span>数列与级数</a></li>
+    <li><a href="ch07_differentiation.html"><span class="ch-num">7</span>微分</a></li>
+    <li><a href="ch08_integration.html"><span class="ch-num">8</span>积分</a></li>
+    <li><a href="ch09_logarithms_exponentials.html"><span class="ch-num">9</span>对数与指数</a></li>
+    <li><a href="ch10_numerical_methods.html"><span class="ch-num">10</span>数值方法</a></li>
+    <li><a href="ch11_vectors.html"><span class="ch-num">11</span>三维向量</a></li>
+    <li><a href="ch12_differential_equations.html"><span class="ch-num">12</span>微分方程</a></li>
+    <li><a href="ch13_complex_numbers.html"><span class="ch-num">13</span>复数</a></li>
+    <li><a href="ch14_mechanics_statistics.html"><span class="ch-num">14</span>力学与统计</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">📐 数学首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a><span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+      <a href="index.html">📐 数学</a><span>›</span>
+      <span>第5章 三角函数</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="index.html" class="active">数学</a><a href="../physics/index.html">物理</a>
+      <a href="../chemistry/index.html">化学</a><a href="../biology/index.html">生物</a><a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第5章 三角函数 (Trigonometry)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>掌握基本三角恒等式和三角函数的正负象限规则</li>
+      <li>能够解 P1、P2/P3 级别的三角方程</li>
+      <li>理解 sin、cos、tan 的图像特征和变换</li>
+      <li>熟练运用和差公式、倍角公式、和差化积公式</li>
+    </ul>
+  </div>
+
+  <h2 data-section="s1" id="sec5-1" style="margin:28px 0 16px;">5.1 基本三角恒等式</h2>
+
+  <div class="kp">
+    <h3>核心恒等式</h3>
+    <span class="formula">tan θ = sin θ / cos θ</span>
+    <span class="formula">sin² θ + cos² θ = 1</span>
+    <p>由 sin²θ + cos²θ = 1 可推导出：</p>
+    <span class="formula">1 + tan² θ = sec² θ</span>
+    <span class="formula">1 + cot² θ = csc² θ</span>
+  </div>
+
+  <div class="kp">
+    <h3>ASTC 象限规则</h3>
+    <p>记忆口诀：<strong>All Students Take Calculus</strong>（逆时针四个象限）</p>
+    <table style="width:100%;border-collapse:collapse;text-align:center;margin-top:10px;">
+      <tr style="background:#f0fdf4;"><td>象限</td><td>I (0°-90°)</td><td>II (90°-180°)</td><td>III (180°-270°)</td><td>IV (270°-360°)</td></tr>
+      <tr><td>正值的函数</td><td>All 全部</td><td>Sin 正弦</td><td>Tan 正切</td><td>Cos 余弦</td></tr>
+    </table>
+  </div>
+
+  <h2 data-section="s2" id="sec5-2" style="margin:28px 0 16px;">5.2 三角方程</h2>
+
+  <div class="kp">
+    <h3>解三角方程的一般步骤</h3>
+    <ol style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li>将方程化为单一三角函数的形式（如 sin θ = k）</li>
+      <li>求基本解（使用 sin⁻¹、cos⁻¹、tan⁻¹）</li>
+      <li>根据 ASTC 规则找出所有象限解</li>
+      <li>利用周期性给出通解（sin 和 cos 周期为 2π，tan 周期为 π）</li>
+    </ol>
+  </div>
+
+  <div class="kp">
+    <h3>通解公式</h3>
+    <span class="formula">sin θ = k → θ = nπ + (-1)ⁿ α（n ∈ Z）</span>
+    <span class="formula">cos θ = k → θ = 2nπ ± α（n ∈ Z）</span>
+    <span class="formula">tan θ = k → θ = nπ + α（n ∈ Z）</span>
+    <p>其中 α 是基本解（主值）。</p>
+  </div>
+
+  <h2 data-section="s3" id="sec5-3" style="margin:28px 0 16px;">5.3 三角函数的图像</h2>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>sin x</h3>
+      <p>定义域：R；值域：[-1, 1]</p>
+      <p>周期：2π；奇函数</p>
+      <p>过原点 (0, 0)</p>
+      <p>极大值 1 在 x = π/2 + 2kπ</p>
+    </div>
+    <div class="kp">
+      <h3>cos x</h3>
+      <p>定义域：R；值域：[-1, 1]</p>
+      <p>周期：2π；偶函数</p>
+      <p>在 x = 0 处取值 1</p>
+      <p>极大值 1 在 x = 2kπ</p>
+    </div>
+    <div class="kp">
+      <h3>tan x</h3>
+      <p>定义域：x ≠ π/2 + kπ</p>
+      <p>值域：R；周期：π</p>
+      <p>奇函数，有垂直渐近线</p>
+      <p>在 x = π/2 + kπ 处无定义</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>图像变换</h3>
+    <p><strong>y = a sin(bx + c) + d</strong>：</p>
+    <p>|a| = 振幅 (amplitude)，周期 = 2π/|b|，c 影响相位位移，d 影响垂直位移。</p>
+    <span class="formula">y = a sin(bx + c) + d：振幅 = |a|，周期 = 2π/|b|</span>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">📈 三角函数图像</h3>
+    <div class="trig-demo"><canvas id="trigCanvas"></canvas></div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      绿色 sin x，蓝色 cos x，橙色 tan x（虚线为渐近线）
+    </p>
+  </div>
+
+  <h2 data-section="s4" id="sec5-4" style="margin:28px 0 16px;">5.4 和差公式与倍角公式</h2>
+
+  <div class="kp">
+    <h3>和差公式 (P2/P3)</h3>
+    <span class="formula">sin(A ± B) = sin A cos B ± cos A sin B</span>
+    <span class="formula">cos(A ± B) = cos A cos B ∓ sin A sin B</span>
+    <span class="formula">tan(A ± B) = (tan A ± tan B) / (1 ∓ tan A tan B)</span>
+  </div>
+
+  <div class="kp">
+    <h3>倍角公式</h3>
+    <span class="formula">sin 2θ = 2 sin θ cos θ</span>
+    <span class="formula">cos 2θ = cos² θ - sin² θ = 2cos² θ - 1 = 1 - 2sin² θ</span>
+    <span class="formula">tan 2θ = 2 tan θ / (1 - tan² θ)</span>
+  </div>
+
+  <div class="kp">
+    <h3>和差化积与积化和差 (P3)</h3>
+    <span class="formula">sin A + sin B = 2 sin((A+B)/2) cos((A-B)/2)</span>
+    <span class="formula">sin A - sin B = 2 cos((A+B)/2) sin((A-B)/2)</span>
+    <span class="formula">cos A + cos B = 2 cos((A+B)/2) cos((A-B)/2)</span>
+    <span class="formula">cos A - cos B = -2 sin((A+B)/2) sin((A-B)/2)</span>
+  </div>
+
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>sin² 30° + cos² 30° = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 0</label>
+      <label><input type="radio" name="q1" value="B">B. 1</label>
+      <label><input type="radio" name="q1" value="C">C. 1/2</label>
+      <label><input type="radio" name="q1" value="D">D. 2</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="B">✅ 正确答案：B。根据基本恒等式 sin²θ + cos²θ = 1，对任意 θ 都成立。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>在 0 ≤ x ≤ 2π 范围内，sin x = 1/2 的解为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. x = π/6 和 x = 5π/6</label>
+      <label><input type="radio" name="q2" value="B">B. x = π/3 和 x = 2π/3</label>
+      <label><input type="radio" name="q2" value="C">C. x = π/6 和 x = 11π/6</label>
+      <label><input type="radio" name="q2" value="D">D. x = π/6 和 x = 7π/6</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="A">✅ 正确答案：A。sin 在第一、二象限为正，sin(π/6)=1/2，sin(5π/6)=sin(π-π/6)=1/2。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>函数 y = 3 sin(2x) 的周期是____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. π/2</label>
+      <label><input type="radio" name="q3" value="B">B. π</label>
+      <label><input type="radio" name="q3" value="C">C. 2π</label>
+      <label><input type="radio" name="q3" value="D">D. 3π</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="B">✅ 正确答案：B。周期 = 2π/|b| = 2π/2 = π。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>cos 2θ 用 sin θ 表示为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. 1 - 2sin² θ</label>
+      <label><input type="radio" name="q4" value="B">B. 2sin² θ - 1</label>
+      <label><input type="radio" name="q4" value="C">C. 1 + 2sin² θ</label>
+      <label><input type="radio" name="q4" value="D">D. sin² θ - 1</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="A">✅ 正确答案：A。cos 2θ = 1 - 2sin² θ（由 cos 2θ = cos²θ - sin²θ = (1-sin²θ) - sin²θ = 1 - 2sin²θ）。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>sin(A + B) = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. sin A cos B + cos A sin B</label>
+      <label><input type="radio" name="q5" value="B">B. sin A cos B - cos A sin B</label>
+      <label><input type="radio" name="q5" value="C">C. sin A sin B + cos A cos B</label>
+      <label><input type="radio" name="q5" value="D">D. cos A cos B - sin A sin B</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="A">✅ 正确答案：A。sin(A+B) = sin A cos B + cos A sin B。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>在 0 ≤ x ≤ 2π 内，方程 cos 2x = cos x 的解的个数为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. 2</label>
+      <label><input type="radio" name="q6" value="B">B. 3</label>
+      <label><input type="radio" name="q6" value="C">C. 4</label>
+      <label><input type="radio" name="q6" value="D">D. 5</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="C">✅ 正确答案：C。cos 2x - cos x = 0 → 2cos²x - 1 - cos x = 0 → 2cos²x - cos x - 1 = 0 → (2cos x + 1)(cos x - 1) = 0 → cos x = -1/2 或 cos x = 1。cos x = -1/2 → x = 2π/3, 4π/3；cos x = 1 → x = 0, 2π。共 4 个解。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('trigCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const cx = 60, cy = h/2;
+    const scaleX = (w - 120) / (Math.PI * 4);
+    const scaleY = h * 0.35;
+    ctx.clearRect(0, 0, w, h);
+    // Grid
+    ctx.strokeStyle = '#334155'; ctx.lineWidth = 0.5;
+    for(let i = 0; i <= 8; i++) {
+      const x = cx + i * (Math.PI/2) * scaleX;
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
+    }
+    // Axes
+    ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(cx, 0); ctx.lineTo(cx, h); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(0, cy); ctx.lineTo(w, cy); ctx.stroke();
+    // Labels
+    ctx.fillStyle = '#94a3b8'; ctx.font = '10px sans-serif';
+    ['0','π/2','π','3π/2','2π','5π/2','3π','7π/2','4π'].forEach((l, i) => {
+      ctx.fillText(l, cx + i * (Math.PI/2) * scaleX - 10, cy + 14);
+    });
+    // sin (green)
+    ctx.strokeStyle = '#10b981'; ctx.lineWidth = 2;
+    ctx.beginPath();
+    for(let px = 0; px < w; px++) {
+      const x = (px - cx) / scaleX;
+      const y = cy - Math.sin(x) * scaleY;
+      px === 0 ? ctx.moveTo(px, y) : ctx.lineTo(px, y);
+    }
+    ctx.stroke();
+    // cos (blue)
+    ctx.strokeStyle = '#3b82f6'; ctx.lineWidth = 2;
+    ctx.beginPath();
+    for(let px = 0; px < w; px++) {
+      const x = (px - cx) / scaleX;
+      const y = cy - Math.cos(x) * scaleY;
+      px === 0 ? ctx.moveTo(px, y) : ctx.lineTo(px, y);
+    }
+    ctx.stroke();
+    // Legend
+    ctx.fillStyle = '#10b981'; ctx.fillText('sin x', w - 80, 20);
+    ctx.fillStyle = '#3b82f6'; ctx.fillText('cos x', w - 80, 38);
+  }
+  draw();
+  window.addEventListener('resize', draw);
+})();
+</script>
+</body>
+</html>

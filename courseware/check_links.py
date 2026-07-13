@@ -83,14 +83,14 @@ def main():
     
     # Report results
     if broken_links:
-        print(f"❌ Found {len(broken_links)} broken links:\n")
+        print(f"Found {len(broken_links)} broken links:\n")
         for i, bl in enumerate(broken_links, 1):
             print(f"{i}. Source: {bl['source']}")
             print(f"   Link: {bl['link']}")
             print(f"   Missing: {bl['target']}")
             print()
     else:
-        print("✅ No broken links found!")
+        print("OK - No broken links found!")
     
     print(f"\nChecked {checked_count} files. {len(broken_links)} broken links found.")
 

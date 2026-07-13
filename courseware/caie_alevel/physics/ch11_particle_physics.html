@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第11章 粒子与核物理 - CAIE A-LEVEL 物理 (9702)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.decay-demo { width:100%; height:280px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.decay-demo canvas { width:100%; height:100%; }
+.param-sliders { display:flex; gap:16px; flex-wrap:wrap; margin-top:12px; justify-content:center; }
+.param-sliders label { display:flex; align-items:center; gap:6px; font-size:.85rem; color:#475569; }
+.param-sliders input[type=range] { width:100px; }
+.param-sliders .val { display:inline-block; width:50px; text-align:center; font-weight:600; color:#2563eb; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>⚛️ A-LEVEL 物理</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quantities_units.html">1 物理量与单位</a></li>
+    <li><a href="ch02_kinematics.html">2 运动学</a></li>
+    <li><a href="ch03_dynamics.html">3 动力学</a></li>
+    <li><a href="ch04_forces_pressure.html">4 力、密度与压强</a></li>
+    <li><a href="ch05_work_energy_power.html">5 功、能与功率</a></li>
+    <li><a href="ch06_deformation.html">6 固体形变</a></li>
+    <li><a href="ch07_waves.html">7 波</a></li>
+    <li><a href="ch08_superposition.html">8 叠加与干涉</a></li>
+    <li><a href="ch09_electricity.html">9 电场与电流</a></li>
+    <li><a href="ch10_dc_circuits.html">10 直流电路</a></li>
+    <li><a href="ch11_particle_physics.html" class="active" data-section="s1"><span class="ch-num">11</span>粒子与核物理</a>
+      <div class="subsections">
+        <a href="#sec11-1" data-section="s1">11.1 卢瑟福散射</a>
+        <a href="#sec11-2" data-section="s2">11.2 放射性衰变</a>
+        <a href="#sec11-3" data-section="s3">11.3 半衰期</a>
+        <a href="#sec11-4" data-section="s4">11.4 核反应与质能方程</a>
+        <a href="#sec11-5" data-section="s5">11.5 标准模型</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch12_practical_skills.html">12 实验技能</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">⚛️ 物理首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a>
+      <span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a>
+      <span>›</span>
+      <a href="index.html">⚛️ 物理</a>
+      <span>›</span>
+      <span>第11章 粒子与核物理</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="../math/index.html">数学</a>
+      <a href="index.html" class="active">物理</a>
+      <a href="../chemistry/index.html">化学</a>
+      <a href="../biology/index.html">生物</a>
+      <a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第11章 粒子与核物理 (Particle & Nuclear Physics)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>理解卢瑟福 α 粒子散射实验及其对原子核式模型的支撑</li>
+      <li>掌握 α、β、γ 三种放射性衰变的本质和性质</li>
+      <li>掌握半衰期的概念和相关计算</li>
+      <li>理解质能方程 E = mc² 和核反应中的质量亏损与结合能</li>
+      <li>了解粒子物理标准模型：夸克、轻子和基本相互作用</li>
+    </ul>
+  </div>
+
+  <!-- 11.1 -->
+  <h2 data-section="s1" id="sec11-1" style="margin:28px 0 16px;">11.1 原子结构：卢瑟福散射实验</h2>
+
+  <div class="kp">
+    <h3>卢瑟福 α 粒子散射实验 (1911)</h3>
+    <p>实验装置：放射源发射 α 粒子（He²⁺ 核），轰击极薄的金箔（~10⁻⁷ m），周围用荧光屏检测散射 α 粒子。</p>
+    <p><strong>主要发现</strong>：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li>绝大多数 α 粒子直接穿过金箔——原子内大部分是<strong>空的</strong>。</li>
+      <li>少数 α 粒子发生大角度偏转（> 90°）——原子中心有一个<strong>质量集中、带正电</strong>的核。</li>
+      <li>极少数 α 粒子被反弹回来——原子核的<strong>质量远大于</strong> α 粒子。</li>
+    </ul>
+    <p>结论：原子由<strong>带正电的原子核</strong>和核外<strong>电子</strong>组成，核的体积远小于原子体积（~10⁻¹⁵ m vs ~10⁻¹⁰ m）。</p>
+  </div>
+
+  <div class="kp">
+    <h3>原子核的组成</h3>
+    <p>原子核由<strong>质子 (p)</strong> 和<strong>中子 (n)</strong> 组成，统称核子。</p>
+    <p>质子带 +e 电荷，中子不带电。两者质量相近：m_p ≈ m_n ≈ 1.67 × 10⁻²⁷ kg。</p>
+    <p>原子序数 Z = 质子数，质量数 A = 质子数 + 中子数。</p>
+    <p>核素符号：<sup>A</sup>_Z X（如 ²³⁸₉₂U 表示铀-238，有 92 个质子和 146 个中子）。</p>
+  </div>
+
+  <!-- 11.2 -->
+  <h2 data-section="s2" id="sec11-2" style="margin:28px 0 16px;">11.2 放射性衰变 (α, β, γ)</h2>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>🟡 α 衰变 (Alpha Decay)</h3>
+      <p>α 粒子 = 氦核 ⁴₂He，带 +2e 电荷。</p>
+      <p>母核 A 减少 4，Z 减少 2：</p>
+      <span class="formula">ᴬ_Z X → ᴬ⁻⁴_{Z-2} Y + ⁴₂He</span>
+      <p>穿透力弱（一张纸或几厘米空气可挡住），电离能力强。</p>
+      <p>示例：²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He</p>
+    </div>
+    <div class="kp">
+      <h3>🔵 β⁻ 衰变 (Beta-minus Decay)</h3>
+      <p>中子转变为质子，发射电子和反中微子：</p>
+      <span class="formula">n → p + e⁻ + ν̄_e</span>
+      <p>A 不变，Z 增加 1：</p>
+      <span class="formula">ᴬ_Z X → ᴬ_{Z+1} Y + e⁻ + ν̄_e</span>
+      <p>穿透力中等（几毫米铝板），电离能力中等。</p>
+      <p>示例：¹⁴₆C → ¹⁴₇N + e⁻ + ν̄_e</p>
+    </div>
+    <div class="kp">
+      <h3>🟣 γ 衰变 (Gamma Decay)</h3>
+      <p>γ 射线 = 高能电磁波（光子），无质量无电荷。</p>
+      <p>核从激发态跃迁到基态时发射：</p>
+      <span class="formula">ᴬ_Z X* → ᴬ_Z X + γ</span>
+      <p>A 和 Z 均不变。穿透力极强（需几厘米铅板），电离能力弱。</p>
+      <p>常伴随 α 或 β 衰变发生。</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>三种射线的穿透能力对比</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:.9rem;color:var(--text-secondary);">
+      <tr style="border-bottom:2px solid var(--border);">
+        <th style="text-align:left;padding:8px;">性质</th><th style="text-align:center;padding:8px;">α 粒子</th><th style="text-align:center;padding:8px;">β⁻ 粒子</th><th style="text-align:center;padding:8px;">γ 射线</th>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;">本质</td><td style="text-align:center;padding:8px;">氦核</td><td style="text-align:center;padding:8px;">电子</td><td style="text-align:center;padding:8px;">电磁波</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;">电荷</td><td style="text-align:center;padding:8px;">+2e</td><td style="text-align:center;padding:8px;">−e</td><td style="text-align:center;padding:8px;">0</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;">穿透力</td><td style="text-align:center;padding:8px;">弱</td><td style="text-align:center;padding:8px;">中</td><td style="text-align:center;padding:8px;">强</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;">电离能力</td><td style="text-align:center;padding:8px;">强</td><td style="text-align:center;padding:8px;">中</td><td style="text-align:center;padding:8px;">弱</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">在电场/磁场中</td><td style="text-align:center;padding:8px;">偏转小</td><td style="text-align:center;padding:8px;">偏转大</td><td style="text-align:center;padding:8px;">不偏转</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 11.3 -->
+  <h2 data-section="s3" id="sec11-3" style="margin:28px 0 16px;">11.3 半衰期与衰变常数</h2>
+
+  <div class="kp">
+    <h3>半衰期 (Half-Life, T₁/₂)</h3>
+    <p><strong>半衰期</strong>：放射性原子核衰变到原来数量的一半所需的时间。</p>
+    <p>放射性衰变是<strong>随机过程</strong>，对单个原子核无法预测何时衰变，但对大量核的统计规律是确定的。</p>
+    <span class="formula">N = N₀ × (1/2)^(t/T₁/₂)</span>
+    <p>其中 N₀ 为初始核数，N 为 t 时刻剩余的核数，T₁/₂ 为半衰期。</p>
+  </div>
+
+  <div class="kp">
+    <h3>衰变常数 (λ) 与活度 (A)</h3>
+    <p>衰变常数 λ 表示每个原子核在单位时间内衰变的概率：</p>
+    <span class="formula">λ = ln 2 / T₁/₂</span>
+    <p>活度 A 定义为单位时间内发生衰变的核数：</p>
+    <span class="formula">A = λN = −dN/dt</span>
+    <p>活度单位：贝克勒尔 (Bq)，1 Bq = 1 次衰变/秒。活度也按指数衰减：A = A₀ × e^(−λt)。</p>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">☢️ 放射性衰变曲线模拟</h3>
+    <div class="decay-demo">
+      <canvas id="decayCanvas"></canvas>
+    </div>
+    <div class="param-sliders">
+      <label>初始核数 N₀ = <input type="range" id="sliderN" min="100" max="1000" value="500" step="10"><span class="val" id="valN">500</span></label>
+      <label>半衰期 T₁/₂ = <input type="range" id="sliderT" min="10" max="50" value="25" step="1"><span class="val" id="valT">25</span> s</label>
+    </div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      调整参数观察衰变曲线。N = N₀(1/2)^(t/T₁/₂)。红色虚线标记半衰期位置。
+    </p>
+  </div>
+
+  <!-- 11.4 -->
+  <h2 data-section="s4" id="sec11-4" style="margin:28px 0 16px;">11.4 核反应与质能方程</h2>
+
+  <div class="kp">
+    <h3>质能方程 (Mass-Energy Equivalence)</h3>
+    <p>爱因斯坦质能方程：</p>
+    <span class="formula">E = mc²</span>
+    <p>质量与能量可以相互转化。c = 3.00 × 10⁸ m/s。</p>
+    <p>质量亏损 Δm = 反应前总质量 − 反应后总质量。</p>
+    <p>释放的能量：ΔE = Δm × c²。</p>
+    <p>常用单位：1 u = 931.5 MeV/c²（1 原子质量单位的能量当量）。</p>
+  </div>
+
+  <div class="kp">
+    <h3>结合能 (Binding Energy)</h3>
+    <p><strong>结合能</strong>是将原子核分解为单独质子和中子所需的能量。</p>
+    <p>结合能 = 质量亏损 × c² = [Z×m_p + (A−Z)×m_n − m_nucleus] × c²。</p>
+    <p><strong>每个核子的结合能</strong> = 结合能 / A。</p>
+    <p>铁 (Fe-56) 具有最高的每个核子结合能，是最稳定的核素。</p>
+    <p>轻核聚变和重核裂变都能释放能量，因为产物核的每个核子结合能更大。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>⚡ 核裂变 (Fission)</h3>
+      <p>重核（如 ²³⁵U）吸收中子后分裂成两个中等质量核，释放能量和中子（链式反应）。</p>
+      <p>应用：核电站、原子弹。</p>
+      <span class="formula">²³⁵U + n → ¹⁴¹Ba + ⁹²Kr + 3n + 能量</span>
+    </div>
+    <div class="kp">
+      <h3>🌟 核聚变 (Fusion)</h3>
+      <p>轻核在高温下合并成更重的核，释放巨大能量。</p>
+      <p>应用：氢弹、恒星能量来源（太阳核心约 1500 万 K）。</p>
+      <span class="formula">²H + ³H → ⁴He + n + 17.6 MeV</span>
+    </div>
+  </div>
+
+  <!-- 11.5 -->
+  <h2 data-section="s5" id="sec11-5" style="margin:28px 0 16px;">11.5 粒子物理标准模型</h2>
+
+  <div class="kp">
+    <h3>基本粒子分类</h3>
+    <p>标准模型将所有基本粒子分为两大类：</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>🔴 费米子 (Fermions) — 物质粒子</h3>
+      <p><strong>夸克 (Quarks)</strong>：u, d, c, s, t, b（6 种味）。</p>
+      <p>夸克带分数电荷：u 型 +2/3e，d 型 −1/3e。</p>
+      <p>夸克禁闭：夸克不能单独存在，只能组成强子。</p>
+      <p><strong>轻子 (Leptons)</strong>：电子 e⁻, μ子 μ⁻, τ子 τ⁻ 及对应的中微子 ν_e, ν_μ, ν_τ。</p>
+      <p>轻子带整数电荷（−e 或 0），可单独存在。</p>
+    </div>
+    <div class="kp">
+      <h3>🟢 玻色子 (Bosons) — 传递相互作用的粒子</h3>
+      <p><strong>光子 (γ)</strong>：传递电磁力。</p>
+      <p><strong>胶子 (g)</strong>：传递强力（将夸克束缚在强子内）。</p>
+      <p><strong>W⁺/W⁻/Z⁰</strong>：传递弱力（负责 β 衰变等）。</p>
+      <p><strong>引力子 (graviton)</strong>：引力（未发现，不在标准模型中）。</p>
+      <p><strong>希格斯玻色子 (H⁰)</strong>：赋予粒子质量（2012 年发现）。</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>强子 (Hadrons) — 由夸克组成的复合粒子</h3>
+    <p><strong>重子 (Baryons)</strong>：由 3 个夸克组成。如质子 (uud)、中子 (udd)。重子数 B = 1。</p>
+    <p><strong>介子 (Mesons)</strong>：由 1 个夸克 + 1 个反夸克组成。如 π⁺ (ud̄)、π⁻ (ūd)、π⁰。</p>
+    <p>在反应中，重子数守恒、轻子数守恒、电荷守恒。</p>
+  </div>
+
+  <!-- 练习题 -->
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>在卢瑟福 α 粒子散射实验中，少数 α 粒子发生大角度偏转说明了 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 原子内大部分是空的</label>
+      <label><input type="radio" name="q1" value="B">B. 原子核质量集中且带正电</label>
+      <label><input type="radio" name="q1" value="C">C. 电子在核外绕核旋转</label>
+      <label><input type="radio" name="q1" value="D">D. 金箔非常薄</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="B">✅ 正确答案：B。大角度偏转说明 α 粒子遇到了质量集中、带正电荷的原子核。A 选项说明大多数 α 粒子直接穿过，不是大角度偏转的原因。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>²³⁸₉₂U 经过一次 α 衰变后，产物的原子序数和质量数分别为 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. Z=90, A=234</label>
+      <label><input type="radio" name="q2" value="B">B. Z=90, A=238</label>
+      <label><input type="radio" name="q2" value="C">C. Z=92, A=234</label>
+      <label><input type="radio" name="q2" value="D">D. Z=93, A=238</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="A">✅ 正确答案：A。α 衰变：A 减少 4 → 234，Z 减少 2 → 90。产物为 ²³⁴₉₀Th。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>某放射性核素的半衰期为 8 天。经过 24 天后，剩余的核数占原来的 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 1/2</label>
+      <label><input type="radio" name="q3" value="B">B. 1/4</label>
+      <label><input type="radio" name="q3" value="C">C. 1/8</label>
+      <label><input type="radio" name="q3" value="D">D. 1/16</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="C">✅ 正确答案：C。24 天 = 3 个半衰期，N = N₀(1/2)³ = N₀/8。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>在核反应中，质量亏损为 0.1 u，释放的能量约为 ____。(1 u = 931.5 MeV)</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. 9.315 MeV</label>
+      <label><input type="radio" name="q4" value="B">B. 93.15 MeV</label>
+      <label><input type="radio" name="q4" value="C">C. 931.5 MeV</label>
+      <label><input type="radio" name="q4" value="D">D. 0.9315 MeV</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="B">✅ 正确答案：B。ΔE = Δm × 931.5 = 0.1 × 931.5 = 93.15 MeV。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>质子的夸克组成为 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. uud</label>
+      <label><input type="radio" name="q5" value="B">B. udd</label>
+      <label><input type="radio" name="q5" value="C">C. ud̄</label>
+      <label><input type="radio" name="q5" value="D">D. uuu</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="A">✅ 正确答案：A。质子由两个上夸克和一个下夸克组成 (uud)，电荷：+2/3 + 2/3 − 1/3 = +1。中子为 udd，电荷：+2/3 − 1/3 − 1/3 = 0。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('decayCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const sliderN = document.getElementById('sliderN');
+  const sliderT = document.getElementById('sliderT');
+  const valN = document.getElementById('valN');
+  const valT = document.getElementById('valT');
+
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const N0 = parseInt(sliderN.value);
+    const Thalf = parseInt(sliderT.value);
+    valN.textContent = N0;
+    valT.textContent = Thalf;
+
+    const margin = { top: 30, right: 30, bottom: 40, left: 60 };
+    const pw = w - margin.left - margin.right;
+    const ph = h - margin.top - margin.bottom;
+    const tMax = Thalf * 4;
+
+    ctx.clearRect(0, 0, w, h);
+    ctx.fillStyle = '#0f172a';
+    ctx.fillRect(0, 0, w, h);
+
+    // Grid
+    ctx.strokeStyle = '#1e293b';
+    ctx.lineWidth = 0.5;
+    for(let i = 0; i <= 10; i++) {
+      const y = margin.top + ph * i / 10;
+      ctx.beginPath(); ctx.moveTo(margin.left, y); ctx.lineTo(w - margin.right, y); ctx.stroke();
+      ctx.fillStyle = '#64748b';
+      ctx.font = '10px sans-serif';
+      ctx.fillText(Math.round(N0 * (10-i) / 10), margin.left - 40, y + 4);
+    }
+    for(let i = 0; i <= 4; i++) {
+      const x = margin.left + pw * i / 4;
+      ctx.beginPath(); ctx.moveTo(x, margin.top); ctx.lineTo(x, h - margin.bottom); ctx.stroke();
+      ctx.fillText((Thalf * i).toString(), x - 6, h - margin.bottom + 16);
+    }
+
+    // Axes
+    ctx.strokeStyle = '#94a3b8';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(margin.left, margin.top); ctx.lineTo(margin.left, h - margin.bottom); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(margin.left, h - margin.bottom); ctx.lineTo(w - margin.right, h - margin.bottom); ctx.stroke();
+
+    // Labels
+    ctx.fillStyle = '#94a3b8';
+    ctx.font = '12px sans-serif';
+    ctx.fillText('N (核数)', margin.left - 50, margin.top - 10);
+    ctx.fillText('t (s)', w - margin.right - 20, h - margin.bottom + 24);
+
+    // Decay curve
+    ctx.strokeStyle = '#3b82f6';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    let first = true;
+    for(let px = 0; px < pw; px++) {
+      const t = tMax * px / pw;
+      const N = N0 * Math.pow(0.5, t / Thalf);
+      const py = margin.top + ph * (1 - N / N0);
+      if(first) { ctx.moveTo(margin.left + px, py); first = false; }
+      else { ctx.lineTo(margin.left + px, py); }
+    }
+    ctx.stroke();
+
+    // Half-life markers
+    ctx.strokeStyle = '#ef4444';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([4, 4]);
+    for(let i = 1; i <= 4; i++) {
+      const t = Thalf * i;
+      const x = margin.left + pw * t / tMax;
+      const N = N0 * Math.pow(0.5, i);
+      const y = margin.top + ph * (1 - N / N0);
+      ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x, h - margin.bottom); ctx.stroke();
+      ctx.fillStyle = '#ef4444';
+      ctx.font = '10px sans-serif';
+      ctx.fillText('T₁/₂ × ' + i, x + 2, h - margin.bottom - 4);
+      ctx.fillText('N₀/' + Math.pow(2, i), x + 2, y - 4);
+    }
+    ctx.setLineDash([]);
+  }
+
+  sliderN.addEventListener('input', draw);
+  sliderT.addEventListener('input', draw);
+  draw();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第12章 实验技能 - CAIE A-LEVEL 物理 (9702)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.error-bar-demo { width:100%; height:280px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.error-bar-demo canvas { width:100%; height:100%; }
+.param-sliders { display:flex; gap:16px; flex-wrap:wrap; margin-top:12px; justify-content:center; }
+.param-sliders label { display:flex; align-items:center; gap:6px; font-size:.85rem; color:#475569; }
+.param-sliders input[type=range] { width:100px; }
+.param-sliders .val { display:inline-block; width:40px; text-align:center; font-weight:600; color:#2563eb; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>⚛️ A-LEVEL 物理</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quantities_units.html">1 物理量与单位</a></li>
+    <li><a href="ch02_kinematics.html">2 运动学</a></li>
+    <li><a href="ch03_dynamics.html">3 动力学</a></li>
+    <li><a href="ch04_forces_pressure.html">4 力、密度与压强</a></li>
+    <li><a href="ch05_work_energy_power.html">5 功、能与功率</a></li>
+    <li><a href="ch06_deformation.html">6 固体形变</a></li>
+    <li><a href="ch07_waves.html">7 波</a></li>
+    <li><a href="ch08_superposition.html">8 叠加与干涉</a></li>
+    <li><a href="ch09_electricity.html">9 电场与电流</a></li>
+    <li><a href="ch10_dc_circuits.html">10 直流电路</a></li>
+    <li><a href="ch11_particle_physics.html">11 粒子与核物理</a></li>
+    <li><a href="ch12_practical_skills.html" class="active" data-section="s1"><span class="ch-num">12</span>实验技能</a>
+      <div class="subsections">
+        <a href="#sec12-1" data-section="s1">12.1 测量与不确定度</a>
+        <a href="#sec12-2" data-section="s2">12.2 误差传递</a>
+        <a href="#sec12-3" data-section="s3">12.3 图像处理技巧</a>
+        <a href="#sec12-4" data-section="s4">12.4 实验设计原则</a>
+        <a href="#sec12-5" data-section="s5">12.5 常见仪器使用方法</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">⚛️ 物理首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a>
+      <span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a>
+      <span>›</span>
+      <a href="index.html">⚛️ 物理</a>
+      <span>›</span>
+      <span>第12章 实验技能</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="../math/index.html">数学</a>
+      <a href="index.html" class="active">物理</a>
+      <a href="../chemistry/index.html">化学</a>
+      <a href="../biology/index.html">生物</a>
+      <a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第12章 实验技能 (Practical Skills)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>掌握测量不确定度的来源、类型和表示方法</li>
+      <li>理解误差传递的规则：加减法和乘除法的误差合成</li>
+      <li>掌握图像处理技巧：最佳拟合线、误差棒、斜率与截距的确定</li>
+      <li>理解实验设计原则：控制变量、重复实验、减少系统误差</li>
+      <li>熟悉常见实验仪器的使用方法、精度和读数规则</li>
+    </ul>
+  </div>
+
+  <!-- 12.1 -->
+  <h2 data-section="s1" id="sec12-1" style="margin:28px 0 16px;">12.1 测量与不确定度</h2>
+
+  <div class="kp">
+    <h3>误差与不确定度</h3>
+    <p><strong>误差 (Error)</strong>：测量值与真值之间的差异。</p>
+    <p><strong>不确定度 (Uncertainty)</strong>：对测量结果可信程度的量化估计，表示测量值可能波动的范围。</p>
+    <p>在 CAIE 物理中，不确定度是核心概念，贯穿 Paper 3 和 Paper 5。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>📏 系统误差 (Systematic Error)</h3>
+      <p>每次测量都重复出现的偏差，使测量值系统性偏大或偏小。</p>
+      <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+        <li>仪器零点未校准</li>
+        <li>刻度不准确</li>
+        <li>读数方法不当（如视差）</li>
+      </ul>
+      <p style="color:#dc2626;">特征：可通过改进实验方法或校准仪器来减少或消除。</p>
+    </div>
+    <div class="kp">
+      <h3>🎲 随机误差 (Random Error)</h3>
+      <p>每次测量结果随机波动的误差，不可预测、不可消除。</p>
+      <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+        <li>环境条件的微小变化</li>
+        <li>人反应时间的波动</li>
+        <li>读数时的估计误差</li>
+      </ul>
+      <p style="color:#16a34a;">减小方法：增加测量次数，取平均值。</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>不确定度的表示</h3>
+    <p><strong>绝对不确定度</strong>：Δx，与测量值有相同单位。如 L = (25.0 ± 0.1) cm。</p>
+    <p><strong>相对不确定度</strong>（百分比不确定度）：Δx/x × 100%。如 0.1/25.0 × 100% = 0.4%。</p>
+    <p>对于模拟仪表，不确定度通常取最小刻度的一半。对于数字仪表，取最后一位的 ±1。</p>
+    <p>对于重复测量，不确定度 = (最大值 − 最小值) / 2 或使用标准偏差。</p>
+  </div>
+
+  <!-- 12.2 -->
+  <h2 data-section="s2" id="sec12-2" style="margin:28px 0 16px;">12.2 误差传递</h2>
+
+  <div class="kp">
+    <h3>误差传递规则</h3>
+    <p>当通过测量值计算导出量时，不确定度需要按照以下规则合成：</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>➕ 加减法</h3>
+      <p>若 Z = X + Y 或 Z = X − Y：</p>
+      <span class="formula">ΔZ = ΔX + ΔY</span>
+      <p>绝对不确定度直接相加。</p>
+      <p>示例：X = (5.0 ± 0.2) cm, Y = (3.0 ± 0.1) cm</p>
+      <p>X + Y = (8.0 ± 0.3) cm</p>
+    </div>
+    <div class="kp">
+      <h3>✖️ 乘除法</h3>
+      <p>若 Z = X × Y 或 Z = X / Y：</p>
+      <span class="formula">ΔZ/Z = ΔX/X + ΔY/Y</span>
+      <p>相对不确定度（百分比）相加。</p>
+      <p>示例：X = (10.0 ± 0.5) cm, Y = (2.0 ± 0.1) s</p>
+      <p>v = 10.0/2.0 = 5.0 cm/s, Δv/v = 5% + 5% = 10%</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>幂函数的误差传递</h3>
+    <p>若 Z = X^n，则相对不确定度：</p>
+    <span class="formula">ΔZ/Z = |n| × ΔX/X</span>
+    <p>示例：面积 A = πr²，半径 r = (5.0 ± 0.1) cm。Δr/r = 2%，ΔA/A = 2 × 2% = 4%。</p>
+    <p>对于更复杂的函数，CAIE 通常要求使用极端值法：分别用最大值和最小值代入计算，取差值的一半。</p>
+  </div>
+
+  <div class="kp">
+    <h3>极端值法 (Max/Min Method)</h3>
+    <p>步骤：</p>
+    <ol style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li>用测量值计算最佳估计值 Z。</li>
+      <li>用各测量值的最大值代入公式，计算 Z_max。</li>
+      <li>用各测量值的最小值代入公式，计算 Z_min。</li>
+      <li>不确定度 ΔZ = (Z_max − Z_min) / 2。</li>
+    </ol>
+    <p>这种方法通用且直观，适用于任何复杂函数。</p>
+  </div>
+
+  <!-- 12.3 -->
+  <h2 data-section="s3" id="sec12-3" style="margin:28px 0 16px;">12.3 图像处理技巧</h2>
+
+  <div class="kp">
+    <h3>最佳拟合线 (Line of Best Fit)</h3>
+    <p>最佳拟合线应尽可能多地穿过数据点，并使线上的点均匀分布在线的两侧。</p>
+    <p>对于线性关系，通常使用<strong>最小二乘法</strong>或目测绘制。</p>
+    <p>从图中可提取：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li><strong>斜率 (gradient)</strong>：选择线上两个相距较远的点（不一定是数据点），计算 Δy/Δx。</li>
+      <li><strong>截距 (intercept)</strong>：延长最佳拟合线至与 y 轴相交。</li>
+    </ul>
+  </div>
+
+  <div class="kp">
+    <h3>误差棒 (Error Bars)</h3>
+    <p>误差棒表示每个数据点的不确定度范围。</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li><strong>水平误差棒</strong>：表示 x 轴变量的不确定度 ±Δx。</li>
+      <li><strong>垂直误差棒</strong>：表示 y 轴变量的不确定度 ±Δy。</li>
+      <li>误差棒的长度 = 2 × 绝对不确定度（从 −Δ 到 +Δ）。</li>
+    </ul>
+    <p>通过误差棒可以绘制<strong>最差拟合线</strong>（worst acceptable line），从而确定斜率的不确定度。</p>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">📈 最佳拟合线与误差棒</h3>
+    <div class="error-bar-demo">
+      <canvas id="errorCanvas"></canvas>
+    </div>
+    <div class="param-sliders">
+      <label>斜率 = <input type="range" id="sliderM" min="10" max="40" value="20" step="1"><span class="val" id="valM">2.0</span></label>
+      <label>不确定度 % = <input type="range" id="sliderU" min="2" max="20" value="8" step="1"><span class="val" id="valU">8</span>%</label>
+    </div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      蓝色虚线为最佳拟合线，黑色误差棒表示每个数据点的不确定度。
+    </p>
+  </div>
+
+  <!-- 12.4 -->
+  <h2 data-section="s4" id="sec12-4" style="margin:28px 0 16px;">12.4 实验设计原则</h2>
+
+  <div class="kp">
+    <h3>控制变量法 (Control of Variables)</h3>
+    <p>在探究两个物理量之间的关系时，必须保持其他所有可能影响结果的变量不变。</p>
+    <p>例如：探究电阻 R 与导线长度 L 的关系时，必须保持材料、横截面积和温度不变。</p>
+    <p>CAIE Paper 5 中，实验设计题常要求你列出需要控制的变量及控制方法。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>🔄 重复实验</h3>
+      <p>每个测量值应至少重复测量 3 次，取平均值以减少随机误差。</p>
+      <p>如果重复测量值完全一致，应考虑仪器精度是否足够（可能需要更换更精密的仪器）。</p>
+    </div>
+    <div class="kp">
+      <h3>📐 量程选择</h3>
+      <p>选取足够大的测量范围（至少 6 个数据点），覆盖尽可能宽的区间。</p>
+      <p>避免数据点集中在某一小范围，导致拟合线不可靠。</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>减少误差的策略</h3>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li><strong>视差</strong>：读数时眼睛正对刻度，或使用数字仪表。</li>
+      <li><strong>零点误差</strong>：测量前校准仪器（如调整游标卡尺零点）。</li>
+      <li><strong>反应时间</strong>：使用电子计时器（如光门）代替手动秒表。</li>
+      <li><strong>温度波动</strong>：在恒温环境中进行实验，或快速完成测量。</li>
+      <li><strong>摩擦</strong>：使用润滑或空气轨道减少摩擦影响。</li>
+    </ul>
+  </div>
+
+  <div class="kp">
+    <h3>安全注意事项</h3>
+    <p>CAIE Paper 5 可能要求你描述实验中的安全措施：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li>使用低电压（< 12 V）避免触电</li>
+      <li>重物实验时穿安全鞋</li>
+      <li>高温实验使用隔热手套</li>
+      <li>放射源实验保持安全距离</li>
+      <li>激光实验佩戴护目镜</li>
+    </ul>
+  </div>
+
+  <!-- 12.5 -->
+  <h2 data-section="s5" id="sec12-5" style="margin:28px 0 16px;">12.5 常见实验仪器使用方法</h2>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>📏 游标卡尺 (Vernier Caliper)</h3>
+      <p>精度：0.1 mm 或 0.05 mm。</p>
+      <p>可测量：外径、内径、深度。</p>
+      <p>读数 = 主尺读数 + 游标对齐刻度 × 精度。</p>
+      <p>使用前检查零点误差。</p>
+    </div>
+    <div class="kp">
+      <h3>🔬 螺旋测微器 (Micrometer)</h3>
+      <p>精度：0.01 mm。</p>
+      <p>用于测量小物体的直径或厚度。</p>
+      <p>读数 = 主尺读数 + 微分筒读数 × 0.01 mm。</p>
+      <p>使用棘轮防止过度夹紧。</p>
+    </div>
+    <div class="kp">
+      <h3>⏱️ 秒表 (Stopwatch)</h3>
+      <p>精度：0.01 s（数字）或 0.1 s（模拟）。</p>
+      <p>主要误差来源：人的反应时间 (~0.2 s)。</p>
+      <p>减小方法：测量多个周期的时间，除以周期数。</p>
+    </div>
+    <div class="kp">
+      <h3>📐 量角器 (Protractor)</h3>
+      <p>精度：通常为 1° 或 0.5°。</p>
+      <p>用于测量角度，如光的反射/折射角。</p>
+      <p>对齐基准线，读数时避免视差。</p>
+    </div>
+    <div class="kp">
+      <h3>⚡ 万用表 (Multimeter)</h3>
+      <p>可测量电压 (V)、电流 (A)、电阻 (Ω)。</p>
+      <p>数字万用表精度：通常为读数的 ±0.5% ~ ±1%。</p>
+      <p>注意选择正确的量程和接线方式。</p>
+    </div>
+    <div class="kp">
+      <h3>💡 光门 (Light Gate)</h3>
+      <p>精度：通常为 0.001 s 或更高。</p>
+      <p>用于精确测量时间间隔，消除反应时间误差。</p>
+      <p>常用于测量速度、加速度（配合计时器）。</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>数据记录表格的设计</h3>
+    <p>CAIE Paper 3 要求你设计数据记录表格。一个好的表格应具备：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li>每列标题包含<strong>物理量的名称/符号</strong>和<strong>单位</strong>（如 Length L/cm）</li>
+      <li>读数应记录到仪器的精度（如 25.0 cm 而非 25 cm）</li>
+      <li>同一物理量的有效数字位数应一致</li>
+      <li>包含计算列（如平均值）</li>
+    </ul>
+  </div>
+
+  <!-- 练习题 -->
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>某学生用游标卡尺（精度 0.1 mm）测量圆柱直径，三次测量结果为：25.2 mm, 25.3 mm, 25.1 mm。该测量结果应表示为 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. (25.2 ± 0.05) mm</label>
+      <label><input type="radio" name="q1" value="B">B. (25.2 ± 0.1) mm</label>
+      <label><input type="radio" name="q1" value="C">C. (25.2 ± 0.2) mm</label>
+      <label><input type="radio" name="q1" value="D">D. (25.20 ± 0.10) mm</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="B">✅ 正确答案：B。平均值 = 25.2 mm，不确定度 = (25.3 − 25.1)/2 = 0.1 mm。仪器精度也为 0.1 mm，两者一致。结果：d = (25.2 ± 0.1) mm。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>测量某导线的长度 L = (100.0 ± 0.5) cm，横截面积 A = (2.00 ± 0.04) mm²。计算电阻 R = ρL/A 时，R 的相对不确定度约为 ____。（ρ 为常数）</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 0.5%</label>
+      <label><input type="radio" name="q2" value="B">B. 2.0%</label>
+      <label><input type="radio" name="q2" value="C">C. 2.5%</label>
+      <label><input type="radio" name="q2" value="D">D. 1.5%</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="C">✅ 正确答案：C。ΔL/L = 0.5/100.0 = 0.5%，ΔA/A = 0.04/2.00 = 2.0%。乘除法中相对不确定度相加：0.5% + 2.0% = 2.5%。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>以下哪种误差可以通过增加测量次数来减小？</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 系统误差</label>
+      <label><input type="radio" name="q3" value="B">B. 随机误差</label>
+      <label><input type="radio" name="q3" value="C">C. 零点误差</label>
+      <label><input type="radio" name="q3" value="D">D. 仪器刻度误差</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="B">✅ 正确答案：B。随机误差通过多次测量取平均值来减小。系统误差（零点误差、刻度误差）需要校准仪器来消除。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>在绘制最佳拟合线时，应选择线上哪两个点来计算斜率？</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. 任意两个数据点</label>
+      <label><input type="radio" name="q4" value="B">B. 第一个和最后一个数据点</label>
+      <label><input type="radio" name="q4" value="C">C. 线上相距较远的两个点（不一定是数据点）</label>
+      <label><input type="radio" name="q4" value="D">D. 最靠近拟合线的两个数据点</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="C">✅ 正确答案：C。应选择线上相距较远的两个点（不一定是数据点），这样计算出的斜率不确定度更小。两点间距越大，Δy/Δx 的相对不确定度越小。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>螺旋测微器的精度通常为 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. 0.1 mm</label>
+      <label><input type="radio" name="q5" value="B">B. 0.05 mm</label>
+      <label><input type="radio" name="q5" value="C">C. 0.01 mm</label>
+      <label><input type="radio" name="q5" value="D">D. 0.001 mm</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="C">✅ 正确答案：C。螺旋测微器（千分尺）精度为 0.01 mm。游标卡尺精度为 0.1 mm 或 0.05 mm。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('errorCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const sliderM = document.getElementById('sliderM');
+  const sliderU = document.getElementById('sliderU');
+  const valM = document.getElementById('valM');
+  const valU = document.getElementById('valU');
+
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const m = parseInt(sliderM.value) / 10;
+    const uPct = parseInt(sliderU.value);
+    valM.textContent = m.toFixed(1);
+    valU.textContent = uPct;
+
+    const margin = { top: 30, right: 30, bottom: 40, left: 55 };
+    const pw = w - margin.left - margin.right;
+    const ph = h - margin.top - margin.bottom;
+
+    ctx.clearRect(0, 0, w, h);
+    ctx.fillStyle = '#0f172a';
+    ctx.fillRect(0, 0, w, h);
+
+    // Grid
+    ctx.strokeStyle = '#1e293b';
+    ctx.lineWidth = 0.5;
+    for(let i = 0; i <= 10; i++) {
+      const y = margin.top + ph * i / 10;
+      ctx.beginPath(); ctx.moveTo(margin.left, y); ctx.lineTo(w - margin.right, y); ctx.stroke();
+      ctx.fillStyle = '#64748b';
+      ctx.font = '10px sans-serif';
+      ctx.fillText((10 - i).toString(), margin.left - 18, y + 4);
+    }
+    for(let i = 0; i <= 10; i++) {
+      const x = margin.left + pw * i / 10;
+      ctx.beginPath(); ctx.moveTo(x, margin.top); ctx.lineTo(x, h - margin.bottom); ctx.stroke();
+      ctx.fillText(i.toString(), x - 4, h - margin.bottom + 16);
+    }
+
+    // Axes
+    ctx.strokeStyle = '#94a3b8';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(margin.left, margin.top); ctx.lineTo(margin.left, h - margin.bottom); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(margin.left, h - margin.bottom); ctx.lineTo(w - margin.right, h - margin.bottom); ctx.stroke();
+
+    // Best fit line
+    ctx.strokeStyle = '#3b82f6';
+    ctx.lineWidth = 1.5;
+    ctx.setLineDash([8, 4]);
+    ctx.beginPath();
+    ctx.moveTo(margin.left, h - margin.bottom);
+    ctx.lineTo(margin.left + pw, h - margin.bottom - m * 10 / 10 * ph);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Data points with error bars
+    const pts = [
+      {x: 1, y: 1.2}, {x: 2, y: 1.9}, {x: 3, y: 3.1},
+      {x: 4, y: 4.2}, {x: 5, y: 4.8}, {x: 6, y: 6.1},
+      {x: 7, y: 7.0}, {x: 8, y: 7.8}, {x: 9, y: 9.1}
+    ];
+
+    pts.forEach(p => {
+      const px = margin.left + pw * p.x / 10;
+      const py = h - margin.bottom - ph * p.y / 10;
+      const errLen = ph * uPct / 100;
+
+      // Error bar
+      ctx.strokeStyle = '#94a3b8';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(px, py - errLen);
+      ctx.lineTo(px, py + errLen);
+      ctx.stroke();
+      // Top cap
+      ctx.beginPath();
+      ctx.moveTo(px - 4, py - errLen);
+      ctx.lineTo(px + 4, py - errLen);
+      ctx.stroke();
+      // Bottom cap
+      ctx.beginPath();
+      ctx.moveTo(px - 4, py + errLen);
+      ctx.lineTo(px + 4, py + errLen);
+      ctx.stroke();
+
+      // Data point
+      ctx.fillStyle = '#f59e0b';
+      ctx.beginPath();
+      ctx.arc(px, py, 4, 0, Math.PI * 2);
+      ctx.fill();
+    });
+
+    // Labels
+    ctx.fillStyle = '#94a3b8';
+    ctx.font = '11px sans-serif';
+    ctx.fillText('最佳拟合线', margin.left + pw * 0.7, margin.top + 20);
+    ctx.fillText('误差棒 ±' + uPct + '%', margin.left + pw * 0.7, margin.top + 36);
+  }
+
+  sliderM.addEventListener('input', draw);
+  sliderU.addEventListener('input', draw);
+  draw();
+})();
+</script>
+</body>
+</html>

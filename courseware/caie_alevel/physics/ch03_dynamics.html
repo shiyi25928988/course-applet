@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第3章 动力学 - CAIE A-LEVEL 物理 (9702)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="breadcrumb">
+    <a href="../../index.html">🏠 首页</a><span>›</span>
+    <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+    <a href="index.html">⚛️ 物理</a><span>›</span>
+    <span>第3章 动力学</span>
+  </div>
+  <div class="spacer"></div>
+  <div class="subject-switch">
+    <a href="../math/index.html">数学</a>
+    <a href="index.html" class="active">物理</a>
+    <a href="../chemistry/index.html">化学</a>
+    <a href="../biology/index.html">生物</a>
+    <a href="../economics/index.html">经济</a>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h3>⚛️ A-LEVEL 物理</h3>
+    <ul class="chapter-list">
+      <li><a href="ch01_quantities_units.html"><span class="ch-num">1</span>物理量与单位</a></li>
+      <li><a href="ch02_kinematics.html"><span class="ch-num">2</span>运动学</a></li>
+      <li><a href="ch03_dynamics.html" class="active"><span class="ch-num">3</span>动力学</a></li>
+      <li><a href="ch04_forces_pressure.html"><span class="ch-num">4</span>力、密度与压强</a></li>
+      <li><a href="ch05_work_energy_power.html"><span class="ch-num">5</span>功、能与功率</a></li>
+      <li><a href="ch06_deformation.html"><span class="ch-num">6</span>固体形变</a></li>
+      <li><a href="ch07_waves.html"><span class="ch-num">7</span>波</a></li>
+      <li><a href="ch08_superposition.html"><span class="ch-num">8</span>叠加与干涉</a></li>
+      <li><a href="ch09_electricity.html"><span class="ch-num">9</span>电场与电流</a></li>
+      <li><a href="ch10_dc_circuits.html"><span class="ch-num">10</span>直流电路</a></li>
+      <li><a href="ch11_particle_physics.html"><span class="ch-num">11</span>粒子与核物理</a></li>
+      <li><a href="ch12_practical_skills.html"><span class="ch-num">12</span>实验技能</a></li>
+    </ul>
+    <div class="subsections">
+      <a href="#s3.1">3.1 牛顿第一定律与惯性</a>
+      <a href="#s3.2">3.2 牛顿第二定律 (F = ma)</a>
+      <a href="#s3.3">3.3 牛顿第三定律</a>
+      <a href="#s3.4">3.4 动量与冲量</a>
+      <a href="#s3.5">3.5 动量守恒定律</a>
+      <a href="#exercises">📝 章节练习</a>
+    </div>
+    <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-home">⚛️ 物理首页</a>
+      <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+      <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <h1 class="page-title">第3章 动力学</h1>
+
+    <div class="card" style="background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:5px solid #2563eb;">
+      <div class="card-title"><span class="icon">🎯</span> 学习目标</div>
+      <ul style="color:#475569;line-height:2;padding-left:20px;">
+        <li>理解牛顿三大运动定律及其应用</li>
+        <li>掌握质量和重量的区别</li>
+        <li>理解动量概念，运用 F = ma 和 p = mv 解题</li>
+        <li>掌握冲量概念 (Ft = Δp) 及其在碰撞中的应用</li>
+        <li>运用动量守恒定律分析碰撞和爆炸问题</li>
+      </ul>
+    </div>
+
+    <!-- 3.1 牛顿第一定律 -->
+    <h2 id="s3.1" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">3.1 牛顿第一定律与惯性</h2>
+
+    <div class="kp">
+      <h3>牛顿第一定律 (Newton's First Law)</h3>
+      <p>任何物体都将保持静止或匀速直线运动状态，除非有外力迫使它改变这种状态。</p>
+      <p style="margin-top:8px;"><strong>惯性 (Inertia)：</strong>物体抵抗运动状态改变的性质。质量是惯性大小的量度——质量越大，惯性越大，越难改变其运动状态。</p>
+      <p style="margin-top:8px;"><strong>平衡状态：</strong>当物体所受合外力为零时，物体处于平衡状态。此时：</p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>静止物体保持静止</li>
+        <li>运动物体保持匀速直线运动</li>
+      </ul>
+      <p>注意：匀速直线运动也是平衡状态，不需要力来维持——力是改变运动状态的原因，而非维持运动的原因。</p>
+    </div>
+
+    <div class="kp">
+      <h3>质量与重量</h3>
+      <p><strong>质量 (Mass, m)：</strong>标量。物体所含物质的多少，是物体的固有属性。单位：kg。质量在任何地方都不变。</p>
+      <p><strong>重量 (Weight, W)：</strong>矢量。地球对物体的引力。单位：N。</p>
+      <p><span class="formula">W = mg</span></p>
+      <p>g 是重力场强度，地球上约为 9.81 N kg⁻¹。重量随位置变化（如在月球上 g 约为地球的 1/6）。</p>
+    </div>
+
+    <!-- 3.2 牛顿第二定律 -->
+    <h2 id="s3.2" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">3.2 牛顿第二定律 (F = ma)</h2>
+
+    <div class="kp">
+      <h3>牛顿第二定律 (Newton's Second Law)</h3>
+      <p>物体加速度的大小与合外力成正比，与质量成反比，加速度方向与合外力方向相同。</p>
+      <p><span class="formula">F<sub>net</sub> = ma</span> 或 <span class="formula">ΣF = ma</span></p>
+      <p>其中 F<sub>net</sub> 是合外力（单位：N），m 是质量（kg），a 是加速度（m s⁻²）。</p>
+      <p style="margin-top:10px;"><strong>解题步骤：</strong></p>
+      <ol style="padding-left:20px;line-height:2;">
+        <li>画出受力分析图 (free-body diagram)</li>
+        <li>选择正方向</li>
+        <li>列出合外力方程：ΣF = ma</li>
+        <li>代入已知量求解</li>
+      </ol>
+    </div>
+
+    <div class="kp">
+      <h3>例题：斜面问题</h3>
+      <p>一个质量为 5.0 kg 的物体放在倾角为 30° 的光滑斜面上。求物体沿斜面下滑的加速度。（取 g = 9.81 m s⁻²）</p>
+      <p style="margin-top:8px;"><strong>解：</strong>沿斜面方向的分力为 mg sin θ。</p>
+      <p>沿斜面方向：ΣF = mg sin 30° = 5.0 × 9.81 × 0.5 = 24.525 N</p>
+      <p>a = F/m = 24.525 / 5.0 = 4.91 m s⁻²</p>
+      <p>注意：光滑斜面上加速度与质量无关，a = g sin θ。</p>
+    </div>
+
+    <!-- 3.3 牛顿第三定律 -->
+    <h2 id="s3.3" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">3.3 牛顿第三定律</h2>
+
+    <div class="kp">
+      <h3>牛顿第三定律 (Newton's Third Law)</h3>
+      <p>当物体A对物体B施加一个力时，物体B同时会对物体A施加一个大小相等、方向相反、作用在同一直线上的力。</p>
+      <p><span class="formula">F<sub>AB</sub> = −F<sub>BA</sub></span></p>
+      <p style="margin-top:10px;"><strong>关键要点：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>作用力和反作用力作用在<strong>不同</strong>的物体上</li>
+        <li>因此它们<strong>不会</strong>相互抵消</li>
+        <li>它们总是成对出现，属于同种性质的力</li>
+      </ul>
+      <p style="margin-top:8px;">常见例子：</p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>走路时脚向后蹬地，地面给脚向前的摩擦力</li>
+        <li>火箭向下喷射气体，气体给火箭向上的推力</li>
+        <li>书放在桌上：书对桌面的压力 vs 桌面对书的支持力</li>
+      </ul>
+    </div>
+
+    <!-- 3.4 动量与冲量 -->
+    <h2 id="s3.4" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">3.4 动量与冲量</h2>
+
+    <div class="kp">
+      <h3>动量 (Momentum)</h3>
+      <p>动量是物体质量与速度的乘积，是矢量，方向与速度方向相同。</p>
+      <p><span class="formula">p = mv</span></p>
+      <p>单位：kg m s⁻¹ 或 N s。</p>
+      <p style="margin-top:10px;">牛顿第二定律的动量形式：</p>
+      <p><span class="formula">F = dp/dt = Δp / Δt</span> （当质量不变时，F = m dv/dt = ma）</p>
+    </div>
+
+    <div class="kp">
+      <h3>冲量 (Impulse)</h3>
+      <p>冲量是力在时间上的累积效应，等于动量的变化量。</p>
+      <p><span class="formula">Impulse = F Δt = Δp = mv − mu</span></p>
+      <p>单位：N s（与动量单位 kg m s⁻¹ 等价）。</p>
+      <p style="margin-top:10px;"><strong>F-t 图：</strong>F-t 图与时间轴围成的面积 = 冲量 = 动量的变化量。</p>
+      <p style="margin-top:10px;"><strong>应用：</strong>在碰撞或冲击中，延长作用时间可以减小平均作用力（如安全气囊、缓冲垫）。</p>
+    </div>
+
+    <!-- 3.5 动量守恒 -->
+    <h2 id="s3.5" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">3.5 动量守恒定律</h2>
+
+    <div class="kp">
+      <h3>动量守恒定律 (Conservation of Momentum)</h3>
+      <p>在一个孤立系统中（无外力或合外力为零），系统的总动量保持不变。</p>
+      <p><span class="formula">Σp<sub>before</sub> = Σp<sub>after</sub></span></p>
+      <p>即 <span class="formula">m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂</span></p>
+      <p style="margin-top:10px;"><strong>碰撞类型：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li><strong>完全弹性碰撞 (Perfectly Elastic):</strong> 动量守恒 + 动能守恒。物体碰撞后分离。</li>
+        <li><strong>完全非弹性碰撞 (Perfectly Inelastic):</strong> 动量守恒，动能不守恒。物体碰撞后粘在一起，以共同速度运动。</li>
+        <li><strong>一般非弹性碰撞：</strong>动量守恒，部分动能转化为热能/声能。</li>
+      </ul>
+    </div>
+
+    <div class="kp">
+      <h3>例题：碰撞问题</h3>
+      <p>一个质量为 2.0 kg 的小车以 3.0 m s⁻¹ 的速度向右运动，与一个质量为 1.0 kg 的静止小车发生完全非弹性碰撞。求碰撞后两车的共同速度。</p>
+      <p style="margin-top:8px;"><strong>解：</strong>动量守恒：m₁u₁ + m₂u₂ = (m₁ + m₂)v</p>
+      <p>2.0 × 3.0 + 1.0 × 0 = (2.0 + 1.0) × v</p>
+      <p>6.0 = 3.0v → v = 2.0 m s⁻¹（向右）</p>
+      <p>初始动能 = ½ × 2.0 × 3.0² = 9.0 J</p>
+      <p>最终动能 = ½ × 3.0 × 2.0² = 6.0 J</p>
+      <p>损失动能 = 3.0 J（转化为热能和声能）</p>
+    </div>
+
+    <!-- 练习 -->
+    <h2 id="exercises" style="color:#1e293b;margin-top:32px;margin-bottom:16px;">📝 章节练习</h2>
+
+    <div class="exercise" id="ex1">
+      <p><span class="q-num">1</span><span class="question">一个质量为 10 kg 的物体受到 50 N 的合外力作用，其加速度为：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="A"> A. 2.0 m s⁻²</label>
+        <label><input type="radio" name="q1" value="B"> B. 5.0 m s⁻²</label>
+        <label><input type="radio" name="q1" value="C"> C. 10 m s⁻²</label>
+        <label><input type="radio" name="q1" value="D"> D. 500 m s⁻²</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex1')">显示答案</button>
+      <div class="answer" id="answer-ex1" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">F = ma → a = F/m = 50/10 = 5.0 m s⁻²</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex2">
+      <p><span class="q-num">2</span><span class="question">关于牛顿第三定律，以下说法正确的是：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="A"> A. 作用力和反作用力作用在同一物体上</label>
+        <label><input type="radio" name="q2" value="B"> B. 作用力和反作用力可以相互抵消</label>
+        <label><input type="radio" name="q2" value="C"> C. 作用力和反作用力大小相等、方向相反，作用在不同物体上</label>
+        <label><input type="radio" name="q2" value="D"> D. 作用力大于反作用力</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex2')">显示答案</button>
+      <div class="answer" id="answer-ex2" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">牛顿第三定律的核心是作用力和反作用力大小相等、方向相反，但作用在不同物体上，因此不能抵消。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex3">
+      <p><span class="q-num">3</span><span class="question">一个质量为 0.5 kg 的足球以 20 m s⁻¹ 的速度飞来，守门员用 0.1 s 将其停住。足球受到的平均力为：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q3" value="A"> A. 50 N</label>
+        <label><input type="radio" name="q3" value="B"> B. 100 N</label>
+        <label><input type="radio" name="q3" value="C"> C. 200 N</label>
+        <label><input type="radio" name="q3" value="D"> D. 1000 N</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex3')">显示答案</button>
+      <div class="answer" id="answer-ex3" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">F = Δp/Δt = (mv − mu)/Δt = (0 − 0.5×20)/0.1 = −10/0.1 = −100 N。力的大小为 100 N，负号表示方向与初速度相反。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex4">
+      <p><span class="q-num">4</span><span class="question">一个质量为 3.0 kg 的小车以 4.0 m s⁻¹ 的速度向右运动，与一个质量为 2.0 kg 以 1.0 m s⁻¹ 向左运动的小车发生完全非弹性碰撞。碰撞后两车的共同速度为：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q4" value="A"> A. 1.0 m s⁻¹ 向右</label>
+        <label><input type="radio" name="q4" value="B"> B. 2.0 m s⁻¹ 向右</label>
+        <label><input type="radio" name="q4" value="C"> C. 2.6 m s⁻¹ 向右</label>
+        <label><input type="radio" name="q4" value="D"> D. 3.0 m s⁻¹ 向右</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex4')">显示答案</button>
+      <div class="answer" id="answer-ex4" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">取向右为正方向。m₁u₁ + m₂u₂ = (m₁ + m₂)v → 3.0×4.0 + 2.0×(−1.0) = 5.0v → 12 − 2 = 5v → v = 2.0 m s⁻¹（向右）</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex5">
+      <p><span class="q-num">5</span><span class="question">以下哪个是应用牛顿第一定律的例子？</span></p>
+      <div class="options">
+        <label><input type="radio" name="q5" value="A"> A. 火箭发射时气体向下喷射</label>
+        <label><input type="radio" name="q5" value="B"> B. 汽车刹车时乘客向前倾</label>
+        <label><input type="radio" name="q5" value="C"> C. 用同样的力推质量不同的物体，加速度不同</label>
+        <label><input type="radio" name="q5" value="D"> D. 两个滑冰者互相推开后向相反方向运动</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex5')">显示答案</button>
+      <div class="answer" id="answer-ex5" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">汽车刹车时乘客由于惯性保持原来的运动状态而向前倾，这是牛顿第一定律（惯性定律）的体现。A和D是第三定律的例子，C是第二定律的例子。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex6">
+      <p><span class="q-num">6</span><span class="question">一个质量为 1500 kg 的汽车在 10 s 内从静止加速到 25 m s⁻¹。发动机提供的平均净力为：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q6" value="A"> A. 1500 N</label>
+        <label><input type="radio" name="q6" value="B"> B. 2500 N</label>
+        <label><input type="radio" name="q6" value="C"> C. 3750 N</label>
+        <label><input type="radio" name="q6" value="D"> D. 6000 N</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex6')">显示答案</button>
+      <div class="answer" id="answer-ex6" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">a = (v − u)/t = 25/10 = 2.5 m s⁻²。F = ma = 1500 × 2.5 = 3750 N。</div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

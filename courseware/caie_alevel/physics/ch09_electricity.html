@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第9章 电场与电流 - CAIE A-LEVEL 物理 (9702)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.field-line-demo { width:100%; height:280px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.field-line-demo canvas { width:100%; height:100%; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>⚛️ A-LEVEL 物理</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quantities_units.html">1 物理量与单位</a></li>
+    <li><a href="ch02_kinematics.html">2 运动学</a></li>
+    <li><a href="ch03_dynamics.html">3 动力学</a></li>
+    <li><a href="ch04_forces_pressure.html">4 力、密度与压强</a></li>
+    <li><a href="ch05_work_energy_power.html">5 功、能与功率</a></li>
+    <li><a href="ch06_deformation.html">6 固体形变</a></li>
+    <li><a href="ch07_waves.html">7 波</a></li>
+    <li><a href="ch08_superposition.html">8 叠加与干涉</a></li>
+    <li><a href="ch09_electricity.html" class="active" data-section="s1"><span class="ch-num">9</span>电场与电流</a>
+      <div class="subsections">
+        <a href="#sec9-1" data-section="s1">9.1 库仑定律与电场</a>
+        <a href="#sec9-2" data-section="s2">9.2 电场强度</a>
+        <a href="#sec9-3" data-section="s3">9.3 电势与电势差</a>
+        <a href="#sec9-4" data-section="s4">9.4 电流与漂移速度</a>
+        <a href="#sec9-5" data-section="s5">9.5 电阻与欧姆定律</a>
+        <a href="#sec9-6" data-section="s6">9.6 电阻率</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch10_dc_circuits.html">10 直流电路</a></li>
+    <li><a href="ch11_particle_physics.html">11 粒子与核物理</a></li>
+    <li><a href="ch12_practical_skills.html">12 实验技能</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">⚛️ 物理首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a>
+      <span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a>
+      <span>›</span>
+      <a href="index.html">⚛️ 物理</a>
+      <span>›</span>
+      <span>第9章 电场与电流</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="../math/index.html">数学</a>
+      <a href="index.html" class="active">物理</a>
+      <a href="../chemistry/index.html">化学</a>
+      <a href="../biology/index.html">生物</a>
+      <a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第9章 电场与电流 (Electric Fields & Current)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>理解库仑定律，掌握点电荷间静电力的计算</li>
+      <li>掌握电场强度的定义和计算 (E = F/q)</li>
+      <li>理解电势、电势差的概念及其与电场的关系</li>
+      <li>掌握电流的定义 (I = Q/t) 和漂移速度的概念</li>
+      <li>理解欧姆定律 (V = IR) 和电阻率 (R = ρL/A)</li>
+    </ul>
+  </div>
+
+  <!-- 9.1 -->
+  <h2 data-section="s1" id="sec9-1" style="margin:28px 0 16px;">9.1 库仑定律与电场</h2>
+
+  <div class="kp">
+    <h3>库仑定律 (Coulomb's Law)</h3>
+    <p>两个点电荷之间的静电力大小与电荷量的乘积成正比，与距离的平方成反比：</p>
+    <span class="formula">F = kQ₁Q₂ / r² = Q₁Q₂ / (4πε₀r²)</span>
+    <p>其中 k = 8.99 × 10⁹ N·m²/C²，ε₀ = 8.85 × 10⁻¹² F/m（真空介电常数）。</p>
+    <p><strong>同号电荷相斥，异号电荷相吸</strong>。力的方向沿两电荷连线。</p>
+    <p>库仑力与万有引力形式上相似，但库仑力远大于引力（例如电子与质子间的库仑力是引力的 ~10³⁹ 倍）。</p>
+  </div>
+
+  <div class="kp">
+    <h3>电场 (Electric Field)</h3>
+    <p><strong>电场</strong>是电荷周围空间中存在的一种特殊物质，对放入其中的电荷有力的作用。</p>
+    <p>电场线规定：从正电荷出发，指向负电荷（或无穷远）。</p>
+    <p>电场线越密，电场越强。电场线永不相交。</p>
+    <p>匀强电场中，电场线为等间距平行线（如平行板电容器之间的电场）。</p>
+  </div>
+
+  <!-- 9.2 -->
+  <h2 data-section="s2" id="sec9-2" style="margin:28px 0 16px;">9.2 电场强度 (Electric Field Strength)</h2>
+
+  <div class="kp">
+    <h3>电场强度的定义</h3>
+    <p>电场强度 E 定义为单位正电荷在该点受到的电场力：</p>
+    <span class="formula">E = F / q</span>
+    <p>单位：N/C 或 V/m（两者等价）。</p>
+    <p>E 是矢量，方向与正电荷在该点的受力方向相同。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>🔵 点电荷的电场</h3>
+      <p>距离点电荷 Q 为 r 处的电场强度：</p>
+      <span class="formula">E = kQ / r² = Q / (4πε₀r²)</span>
+      <p>方向：Q > 0 时沿径向向外；Q < 0 时沿径向向内。</p>
+      <p>E ∝ 1/r²，随距离增大快速衰减。</p>
+    </div>
+    <div class="kp">
+      <h3>🟦 匀强电场</h3>
+      <p>平行板之间的匀强电场：</p>
+      <span class="formula">E = V / d</span>
+      <p>其中 V 为两板间电势差，d 为板间距。</p>
+      <p>匀强电场中 E 处处相等，方向垂直于板面。</p>
+    </div>
+  </div>
+
+  <!-- 9.3 -->
+  <h2 data-section="s3" id="sec9-3" style="margin:28px 0 16px;">9.3 电势与电势差</h2>
+
+  <div class="kp">
+    <h3>电势 (Electric Potential)</h3>
+    <p><strong>电势 V</strong> 定义为单位正电荷从无穷远移到该点过程中电场力做的功的负值（或外力做的功）。</p>
+    <span class="formula">V = W / q</span>
+    <p>单位：伏特 (V)，1 V = 1 J/C。</p>
+    <p>点电荷的电势：V = kQ/r = Q/(4πε₀r)。（注意：电势是标量，有正负）</p>
+  </div>
+
+  <div class="kp">
+    <h3>电势差 (Potential Difference)</h3>
+    <p><strong>电势差（电压）</strong>是两点间电势的差值：ΔV = V_B − V_A。</p>
+    <p>电荷 q 在电势差 ΔV 中移动时，电场力做功：</p>
+    <span class="formula">W = q × ΔV</span>
+    <p>电子伏特 (eV)：1 eV = 1 个电子通过 1 V 电势差获得的能量 = 1.60 × 10⁻¹⁹ J。</p>
+  </div>
+
+  <div class="kp">
+    <h3>电场强度与电势的关系</h3>
+    <p>在匀强电场中，电场强度与电势梯度的关系：</p>
+    <span class="formula">E = −ΔV / Δx</span>
+    <p>负号表示电场方向指向电势降低的方向。</p>
+    <p>等势面处处与电场线垂直。沿等势面移动电荷，电场力不做功。</p>
+  </div>
+
+  <!-- 9.4 -->
+  <h2 data-section="s4" id="sec9-4" style="margin:28px 0 16px;">9.4 电流与漂移速度</h2>
+
+  <div class="kp">
+    <h3>电流的定义</h3>
+    <p><strong>电流 I</strong> 定义为单位时间内通过导体横截面的电荷量：</p>
+    <span class="formula">I = Q / t</span>
+    <p>单位：安培 (A)，1 A = 1 C/s。</p>
+    <p>电流方向规定为<strong>正电荷定向移动的方向</strong>（与电子移动方向相反）。</p>
+  </div>
+
+  <div class="kp">
+    <h3>漂移速度 (Drift Velocity)</h3>
+    <p>金属导体中自由电子在电场作用下沿电场反方向缓慢漂移的平均速度。</p>
+    <span class="formula">I = nAvq</span>
+    <p>其中 n 为自由电子数密度（m⁻³），A 为横截面积（m²），v 为漂移速度（m/s），q 为每个载流子的电荷量。</p>
+    <p>对于铜导线，n ≈ 8.5 × 10²⁸ m⁻³。在典型电流下，漂移速度仅约 10⁻⁴ m/s 量级，非常慢。</p>
+    <p>虽然电子漂移慢，但电场以光速建立，因此电路一接通灯泡就亮。</p>
+  </div>
+
+  <!-- 9.5 -->
+  <h2 data-section="s5" id="sec9-5" style="margin:28px 0 16px;">9.5 电阻与欧姆定律</h2>
+
+  <div class="kp">
+    <h3>欧姆定律 (Ohm's Law)</h3>
+    <p>对于欧姆导体（如金属），在温度恒定时，通过导体的电流与两端电压成正比：</p>
+    <span class="formula">V = IR</span>
+    <p>电阻 R 的单位：欧姆 (Ω)，1 Ω = 1 V/A。</p>
+    <p><strong>欧姆导体</strong>的 I-V 图像是过原点的直线（电阻恒定）。</p>
+    <p><strong>非欧姆导体</strong>如半导体二极管、灯丝（温度升高电阻增大），I-V 图像不是直线。</p>
+  </div>
+
+  <div class="kp">
+    <h3>I-V 特性曲线</h3>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li><strong>金属导体</strong>（恒温）：过原点的直线，斜率 = 1/R。</li>
+      <li><strong>灯丝</strong>：电流增大 → 温度升高 → 电阻增大 → 曲线弯曲（斜率减小）。</li>
+      <li><strong>半导体二极管</strong>：正向偏置时电流指数增长，反向偏置时几乎无电流（截止）。</li>
+      <li><strong>热敏电阻 (NTC)</strong>：温度升高 → 电阻减小。用于温度传感器。</li>
+      <li><strong>LDR (光敏电阻)</strong>：光照增强 → 电阻减小。用于自动路灯。</li>
+    </ul>
+  </div>
+
+  <!-- 9.6 -->
+  <h2 data-section="s6" id="sec9-6" style="margin:28px 0 16px;">9.6 电阻率 (Resistivity)</h2>
+
+  <div class="kp">
+    <h3>电阻与电阻率</h3>
+    <p>导体的电阻取决于材料的电阻率以及导体的几何尺寸：</p>
+    <span class="formula">R = ρL / A</span>
+    <p>其中 ρ 为电阻率（Ω·m），L 为长度（m），A 为横截面积（m²）。</p>
+    <p>电阻率是材料的固有属性，与几何尺寸无关。温度升高，金属的电阻率增大。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>📏 长度的影响</h3>
+      <p>长度翻倍 → 电阻翻倍：R ∝ L。</p>
+      <p>类比：水流过更长的管道，阻力更大。</p>
+    </div>
+    <div class="kp">
+      <h3>📐 横截面积的影响</h3>
+      <p>横截面积翻倍 → 电阻减半：R ∝ 1/A。</p>
+      <p>类比：更粗的管道，水流更容易通过。</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>常见材料的电阻率 (20°C)</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:.9rem;color:var(--text-secondary);">
+      <tr style="border-bottom:2px solid var(--border);"><th style="text-align:left;padding:8px;">材料</th><th style="text-align:right;padding:8px;">电阻率 ρ (Ω·m)</th></tr>
+      <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px;">铜 (Copper)</td><td style="text-align:right;padding:8px;">1.72 × 10⁻⁸</td></tr>
+      <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px;">铝 (Aluminum)</td><td style="text-align:right;padding:8px;">2.65 × 10⁻⁸</td></tr>
+      <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px;">钨 (Tungsten)</td><td style="text-align:right;padding:8px;">5.60 × 10⁻⁸</td></tr>
+      <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px;">镍铬合金 (Nichrome)</td><td style="text-align:right;padding:8px;">1.10 × 10⁻⁶</td></tr>
+      <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px;">硅 (Silicon)</td><td style="text-align:right;padding:8px;">~640 (半导体)</td></tr>
+      <tr><td style="padding:8px;">玻璃 (Glass)</td><td style="text-align:right;padding:8px;">10¹⁰ ~ 10¹⁴ (绝缘体)</td></tr>
+    </table>
+  </div>
+
+  <!-- 练习题 -->
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>两个点电荷的电荷量分别为 +2 μC 和 +3 μC，相距 0.5 m。它们之间的静电力大小为 ____。(k = 9×10⁹ N·m²/C²)</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 0.108 N</label>
+      <label><input type="radio" name="q1" value="B">B. 0.216 N</label>
+      <label><input type="radio" name="q1" value="C">C. 1.08 N</label>
+      <label><input type="radio" name="q1" value="D">D. 0.054 N</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="B">✅ 正确答案：B。F = kQ₁Q₂/r² = (9×10⁹ × 2×10⁻⁶ × 3×10⁻⁶) / (0.5)² = 54×10⁻³ / 0.25 = 0.216 N，同号相斥。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>平行板电容器两极板间距为 2.0 cm，电势差为 100 V。板间匀强电场的电场强度为 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 50 N/C</label>
+      <label><input type="radio" name="q2" value="B">B. 200 N/C</label>
+      <label><input type="radio" name="q2" value="C">C. 5000 N/C</label>
+      <label><input type="radio" name="q2" value="D">D. 20000 N/C</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="C">✅ 正确答案：C。E = V/d = 100 / 0.02 = 5000 V/m = 5000 N/C。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>某导体中通过 2.0 A 的电流，则在 30 秒内通过导体横截面的电荷量为 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 15 C</label>
+      <label><input type="radio" name="q3" value="B">B. 30 C</label>
+      <label><input type="radio" name="q3" value="C">C. 60 C</label>
+      <label><input type="radio" name="q3" value="D">D. 0.067 C</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="C">✅ 正确答案：C。Q = I × t = 2.0 × 30 = 60 C。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>一根铜导线的长度为 2.0 m，横截面积为 1.0 × 10⁻⁶ m²，电阻率为 1.72 × 10⁻⁸ Ω·m。该导线的电阻为 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. 0.0172 Ω</label>
+      <label><input type="radio" name="q4" value="B">B. 0.0344 Ω</label>
+      <label><input type="radio" name="q4" value="C">C. 0.086 Ω</label>
+      <label><input type="radio" name="q4" value="D">D. 3.44 Ω</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="B">✅ 正确答案：B。R = ρL/A = (1.72×10⁻⁸ × 2.0) / (1.0×10⁻⁶) = 3.44×10⁻⁸ / 10⁻⁶ = 0.0344 Ω。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>关于欧姆定律，以下说法正确的是 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. 所有导体的 I-V 图像都是过原点的直线</label>
+      <label><input type="radio" name="q5" value="B">B. 金属的电阻随温度升高而减小</label>
+      <label><input type="radio" name="q5" value="C">C. 欧姆定律 V=IR 对任何导体都严格成立</label>
+      <label><input type="radio" name="q5" value="D">D. 对于欧姆导体，在恒温下 V 与 I 成正比</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="D">✅ 正确答案：D。欧姆定律仅适用于欧姆导体（如金属在恒温下）。金属电阻随温度升高而增大，半导体二极管是非欧姆导体。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

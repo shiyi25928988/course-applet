@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第4章 力、密度与压强 - CAIE A-LEVEL 物理 (9702)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="breadcrumb">
+    <a href="../../index.html">🏠 首页</a><span>›</span>
+    <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+    <a href="index.html">⚛️ 物理</a><span>›</span>
+    <span>第4章 力、密度与压强</span>
+  </div>
+  <div class="spacer"></div>
+  <div class="subject-switch">
+    <a href="../math/index.html">数学</a>
+    <a href="index.html" class="active">物理</a>
+    <a href="../chemistry/index.html">化学</a>
+    <a href="../biology/index.html">生物</a>
+    <a href="../economics/index.html">经济</a>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h3>⚛️ A-LEVEL 物理</h3>
+    <ul class="chapter-list">
+      <li><a href="ch01_quantities_units.html"><span class="ch-num">1</span>物理量与单位</a></li>
+      <li><a href="ch02_kinematics.html"><span class="ch-num">2</span>运动学</a></li>
+      <li><a href="ch03_dynamics.html"><span class="ch-num">3</span>动力学</a></li>
+      <li><a href="ch04_forces_pressure.html" class="active"><span class="ch-num">4</span>力、密度与压强</a></li>
+      <li><a href="ch05_work_energy_power.html"><span class="ch-num">5</span>功、能与功率</a></li>
+      <li><a href="ch06_deformation.html"><span class="ch-num">6</span>固体形变</a></li>
+      <li><a href="ch07_waves.html"><span class="ch-num">7</span>波</a></li>
+      <li><a href="ch08_superposition.html"><span class="ch-num">8</span>叠加与干涉</a></li>
+      <li><a href="ch09_electricity.html"><span class="ch-num">9</span>电场与电流</a></li>
+      <li><a href="ch10_dc_circuits.html"><span class="ch-num">10</span>直流电路</a></li>
+      <li><a href="ch11_particle_physics.html"><span class="ch-num">11</span>粒子与核物理</a></li>
+      <li><a href="ch12_practical_skills.html"><span class="ch-num">12</span>实验技能</a></li>
+    </ul>
+    <div class="subsections">
+      <a href="#s4.1">4.1 力矩与平衡</a>
+      <a href="#s4.2">4.2 密度</a>
+      <a href="#s4.3">4.3 压强</a>
+      <a href="#s4.4">4.4 液体压强</a>
+      <a href="#s4.5">4.5 阿基米德原理与浮力</a>
+      <a href="#exercises">📝 章节练习</a>
+    </div>
+    <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-home">⚛️ 物理首页</a>
+      <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+      <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <h1 class="page-title">第4章 力、密度与压强</h1>
+
+    <div class="card" style="background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:5px solid #2563eb;">
+      <div class="card-title"><span class="icon">🎯</span> 学习目标</div>
+      <ul style="color:#475569;line-height:2;padding-left:20px;">
+        <li>理解力矩概念，掌握力矩平衡条件</li>
+        <li>计算密度 ρ = m/V 并理解其物理意义</li>
+        <li>掌握压强定义 P = F/A 及其应用</li>
+        <li>推导液体压强公式 P = ρgh</li>
+        <li>理解阿基米德原理和浮力概念</li>
+      </ul>
+    </div>
+
+    <!-- 4.1 力矩与平衡 -->
+    <h2 id="s4.1" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">4.1 力矩与平衡</h2>
+
+    <div class="kp">
+      <h3>力矩 (Moment / Torque)</h3>
+      <p>力矩是力使物体绕某点（支点/转轴）转动的效果。力矩是矢量，有顺时针和逆时针两个方向。</p>
+      <p><span class="formula">力矩 = 力 × 力臂 = Fd</span></p>
+      <p>其中 d 是力的作用线到支点的垂直距离（力臂），单位：N m。</p>
+      <p style="margin-top:10px;"><strong>力矩原理 (Principle of Moments)：</strong>当物体处于平衡状态时，顺时针力矩之和 = 逆时针力矩之和。</p>
+      <p><span class="formula">ΣM<sub>clockwise</sub> = ΣM<sub>anticlockwise</sub></span></p>
+    </div>
+
+    <div class="kp">
+      <h3>平衡条件</h3>
+      <p>物体处于平衡状态需同时满足两个条件：</p>
+      <ol style="padding-left:20px;line-height:2;">
+        <li><strong>合力为零：</strong>ΣF = 0（无平动加速度）</li>
+        <li><strong>合力矩为零：</strong>ΣM = 0（无转动加速度）</li>
+      </ol>
+      <p style="margin-top:8px;"><strong>重心 (Centre of Gravity)：</strong>物体的重量可以看作集中作用在重心上。对于均匀规则物体，重心在其几何中心。</p>
+    </div>
+
+    <div class="kp">
+      <h3>力偶 (Couple)</h3>
+      <p>力偶是大小相等、方向相反、作用线不重合的一对平行力。力偶只产生转动效果，不产生平动效果。</p>
+      <p><span class="formula">力偶矩 = F × d</span>（d 为两力作用线之间的垂直距离）</p>
+      <p>力偶矩与参考点的选择无关——这是力偶的重要性质。</p>
+    </div>
+
+    <!-- 4.2 密度 -->
+    <h2 id="s4.2" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">4.2 密度</h2>
+
+    <div class="kp">
+      <h3>密度 (Density)</h3>
+      <p>密度是单位体积内所含物质的质量，是标量。</p>
+      <p><span class="formula">ρ = m / V</span></p>
+      <p>单位：kg m⁻³。常用单位还有 g cm⁻³（1 g cm⁻³ = 1000 kg m⁻³）。</p>
+      <p style="margin-top:10px;">常见物质的密度：</p>
+      <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:.9rem;">
+        <thead>
+          <tr style="background:#eff6ff;">
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">物质</th>
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">密度 (kg m⁻³)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">水 (4°C)</td><td style="padding:8px;border:1px solid #e2e8f0;">1000</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">冰</td><td style="padding:8px;border:1px solid #e2e8f0;">917</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">铝</td><td style="padding:8px;border:1px solid #e2e8f0;">2700</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">铁/钢</td><td style="padding:8px;border:1px solid #e2e8f0;">7800</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">汞 (水银)</td><td style="padding:8px;border:1px solid #e2e8f0;">13600</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">空气 (0°C, 1 atm)</td><td style="padding:8px;border:1px solid #e2e8f0;">1.29</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 4.3 压强 -->
+    <h2 id="s4.3" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">4.3 压强</h2>
+
+    <div class="kp">
+      <h3>压强 (Pressure)</h3>
+      <p>压强是单位面积上受到的正压力，是标量。</p>
+      <p><span class="formula">P = F / A</span></p>
+      <p>单位：帕斯卡 (Pa)，1 Pa = 1 N m⁻²。</p>
+      <p style="margin-top:10px;">常见压强的数量级：</p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>大气压强 ≈ 1.01 × 10⁵ Pa</li>
+        <li>汽车轮胎压强 ≈ 2-3 × 10⁵ Pa</li>
+        <li>高跟鞋对地面的压强可高达 ~10⁷ Pa</li>
+      </ul>
+      <p style="margin-top:10px;">压强与力不同——同样的力作用在不同面积上产生不同的压强。这就是为什么图钉尖头能刺入墙壁而平头不能。</p>
+    </div>
+
+    <!-- 4.4 液体压强 -->
+    <h2 id="s4.4" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">4.4 液体压强</h2>
+
+    <div class="kp">
+      <h3>液体压强 (Pressure in Liquids)</h3>
+      <p>液体内部某点的压强由该点上方液柱的重量产生。</p>
+      <p><span class="formula">P = ρgh</span></p>
+      <p>其中 ρ 是液体密度，g 是重力加速度，h 是液体表面到该点的深度。</p>
+      <p style="margin-top:10px;"><strong>关键性质：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>液体压强只与深度 h 和密度 ρ 有关，与容器形状无关</li>
+        <li>同一深度各方向的压强相等</li>
+        <li>液体压强随深度线性增加</li>
+      </ul>
+      <p style="margin-top:10px;"><strong>U型管压强计：</strong>利用液体压强差测量气体压强。ΔP = ρgΔh，其中 Δh 是两侧液面高度差。</p>
+    </div>
+
+    <div class="kp">
+      <h3>大气压强 (Atmospheric Pressure)</h3>
+      <p>大气压强是地球大气层中空气柱的重量产生的压强。在海平面，标准大气压为：</p>
+      <p><span class="formula">1 atm = 1.01 × 10⁵ Pa = 760 mmHg</span></p>
+      <p>托里拆利实验：用水银柱测量大气压强，约 760 mm 高的水银柱。若用水代替水银，水柱高度约为 10.3 m。</p>
+    </div>
+
+    <!-- 4.5 阿基米德原理 -->
+    <h2 id="s4.5" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">4.5 阿基米德原理与浮力</h2>
+
+    <div class="kp">
+      <h3>阿基米德原理 (Archimedes' Principle)</h3>
+      <p>浸在流体中的物体受到向上的浮力，浮力的大小等于物体排开的流体的重量。</p>
+      <p><span class="formula">F<sub>浮</sub> = ρ<sub>fluid</sub> V<sub>displaced</sub> g</span></p>
+      <p style="margin-top:10px;"><strong>浮沉条件：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>物体密度 < 流体密度 → 物体上浮</li>
+        <li>物体密度 = 流体密度 → 物体悬浮</li>
+        <li>物体密度 > 流体密度 → 物体下沉</li>
+      </ul>
+      <p style="margin-top:10px;"><strong>表观重量 (Apparent Weight)：</strong>物体在流体中测得的重量 = 真实重量 − 浮力。</p>
+      <p>这就是为什么在水中提起重物感觉比在空气中轻。</p>
+    </div>
+
+    <div class="kp">
+      <h3>例题：浮力计算</h3>
+      <p>一个体积为 2.0 × 10⁻³ m³ 的铁块（密度 7800 kg m⁻³）完全浸没在水中。求：</p>
+      <p>(a) 铁块受到的浮力</p>
+      <p>(b) 铁块在水中的表观重量（取 g = 9.81 m s⁻²）</p>
+      <p style="margin-top:8px;"><strong>解：</strong></p>
+      <p>(a) F<sub>浮</sub> = ρ<sub>水</sub> V g = 1000 × 2.0×10⁻³ × 9.81 = 19.6 N</p>
+      <p>(b) 真实重量 = m g = ρ<sub>铁</sub> V g = 7800 × 2.0×10⁻³ × 9.81 = 153.0 N</p>
+      <p>表观重量 = 153.0 − 19.6 = 133.4 N</p>
+    </div>
+
+    <!-- 练习 -->
+    <h2 id="exercises" style="color:#1e293b;margin-top:32px;margin-bottom:16px;">📝 章节练习</h2>
+
+    <div class="exercise" id="ex1">
+      <p><span class="q-num">1</span><span class="question">一根均匀的米尺在50 cm处有支点。在20 cm处挂一个 2.0 N 的砝码。要使米尺平衡，在80 cm处应挂多重的砝码？</span></p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="A"> A. 1.0 N</label>
+        <label><input type="radio" name="q1" value="B"> B. 2.0 N</label>
+        <label><input type="radio" name="q1" value="C"> C. 3.0 N</label>
+        <label><input type="radio" name="q1" value="D"> D. 4.0 N</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex1')">显示答案</button>
+      <div class="answer" id="answer-ex1" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">2.0 × (50−20) = F × (80−50) → 2.0 × 30 = F × 30 → F = 2.0 N</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex2">
+      <p><span class="q-num">2</span><span class="question">一个物体的质量为 540 g，体积为 200 cm³。其密度为多少 kg m⁻³？</span></p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="A"> A. 2.7 kg m⁻³</label>
+        <label><input type="radio" name="q2" value="B"> B. 270 kg m⁻³</label>
+        <label><input type="radio" name="q2" value="C"> C. 2700 kg m⁻³</label>
+        <label><input type="radio" name="q2" value="D"> D. 27000 kg m⁻³</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex2')">显示答案</button>
+      <div class="answer" id="answer-ex2" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">ρ = m/V = 540 g / 200 cm³ = 2.7 g cm⁻³。转换为 SI 单位：2.7 × 1000 = 2700 kg m⁻³（这是铝的密度）。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex3">
+      <p><span class="q-num">3</span><span class="question">一个游泳池水深 3.0 m，池底受到的液体压强为多少？（ρ<sub>水</sub> = 1000 kg m⁻³，g = 10 m s⁻²，忽略大气压）</span></p>
+      <div class="options">
+        <label><input type="radio" name="q3" value="A"> A. 3.0 × 10³ Pa</label>
+        <label><input type="radio" name="q3" value="B"> B. 3.0 × 10⁴ Pa</label>
+        <label><input type="radio" name="q3" value="C"> C. 3.0 × 10⁵ Pa</label>
+        <label><input type="radio" name="q3" value="D"> D. 3.0 × 10⁶ Pa</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex3')">显示答案</button>
+      <div class="answer" id="answer-ex3" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">P = ρgh = 1000 × 10 × 3.0 = 3.0 × 10⁴ Pa</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex4">
+      <p><span class="q-num">4</span><span class="question">一个体积为 1.0 × 10⁻⁴ m³ 的物体完全浸没在水中，受到的浮力为：（ρ<sub>水</sub> = 1000 kg m⁻³，g = 10 m s⁻²）</span></p>
+      <div class="options">
+        <label><input type="radio" name="q4" value="A"> A. 0.1 N</label>
+        <label><input type="radio" name="q4" value="B"> B. 1.0 N</label>
+        <label><input type="radio" name="q4" value="C"> C. 10 N</label>
+        <label><input type="radio" name="q4" value="D"> D. 100 N</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex4')">显示答案</button>
+      <div class="answer" id="answer-ex4" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">F<sub>浮</sub> = ρ<sub>水</sub> V g = 1000 × 1.0×10⁻⁴ × 10 = 1.0 N</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex5">
+      <p><span class="q-num">5</span><span class="question">关于力偶，以下说法正确的是：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q5" value="A"> A. 力偶产生平动效果</label>
+        <label><input type="radio" name="q5" value="B"> B. 力偶的力矩与参考点有关</label>
+        <label><input type="radio" name="q5" value="C"> C. 力偶只产生转动效果，不产生平动效果</label>
+        <label><input type="radio" name="q5" value="D"> D. 力偶的两力作用在同一作用线上</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex5')">显示答案</button>
+      <div class="answer" id="answer-ex5" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">力偶由大小相等、方向相反、作用线不重合的一对平行力组成。它只产生纯转动效果，合力为零，力矩与参考点无关。</div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

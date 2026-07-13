@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第7章 波 - CAIE A-LEVEL 物理 (9702)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.wave-demo { width:100%; height:300px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.wave-demo canvas { width:100%; height:100%; }
+.param-sliders { display:flex; gap:16px; flex-wrap:wrap; margin-top:12px; justify-content:center; }
+.param-sliders label { display:flex; align-items:center; gap:6px; font-size:.85rem; color:#475569; }
+.param-sliders input[type=range] { width:100px; }
+.param-sliders .val { display:inline-block; width:40px; text-align:center; font-weight:600; color:#2563eb; }
+.em-spectrum { display:flex; gap:4px; margin:16px 0; }
+.em-spectrum .em-band { flex:1; padding:12px 8px; border-radius:8px; text-align:center; font-size:.75rem; font-weight:600; color:#fff; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>⚛️ A-LEVEL 物理</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quantities_units.html">1 物理量与单位</a></li>
+    <li><a href="ch02_kinematics.html">2 运动学</a></li>
+    <li><a href="ch03_dynamics.html">3 动力学</a></li>
+    <li><a href="ch04_forces_pressure.html">4 力、密度与压强</a></li>
+    <li><a href="ch05_work_energy_power.html">5 功、能与功率</a></li>
+    <li><a href="ch06_deformation.html">6 固体形变</a></li>
+    <li><a href="ch07_waves.html" class="active" data-section="s1"><span class="ch-num">7</span>波</a>
+      <div class="subsections">
+        <a href="#sec7-1" data-section="s1">7.1 波的基本性质</a>
+        <a href="#sec7-2" data-section="s2">7.2 强度与振幅</a>
+        <a href="#sec7-3" data-section="s3">7.3 横波与纵波</a>
+        <a href="#sec7-4" data-section="s4">7.4 多普勒效应</a>
+        <a href="#sec7-5" data-section="s5">7.5 电磁波谱</a>
+        <a href="#sec7-6" data-section="s6">7.6 偏振</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch08_superposition.html">8 叠加与干涉</a></li>
+    <li><a href="ch09_electricity.html">9 电场与电流</a></li>
+    <li><a href="ch10_dc_circuits.html">10 直流电路</a></li>
+    <li><a href="ch11_particle_physics.html">11 粒子与核物理</a></li>
+    <li><a href="ch12_practical_skills.html">12 实验技能</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">⚛️ 物理首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a>
+      <span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a>
+      <span>›</span>
+      <a href="index.html">⚛️ 物理</a>
+      <span>›</span>
+      <span>第7章 波</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="../math/index.html">数学</a>
+      <a href="index.html" class="active">物理</a>
+      <a href="../chemistry/index.html">化学</a>
+      <a href="../biology/index.html">生物</a>
+      <a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第7章 波 (Waves)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>理解波的基本性质：波长、频率、周期、波速及它们之间的关系 v = fλ</li>
+      <li>掌握波的强度与振幅的关系 I ∝ A²</li>
+      <li>区分横波与纵波，理解偏振现象</li>
+      <li>理解多普勒效应及其在天文学和雷达中的应用</li>
+      <li>掌握电磁波谱中各波段的特点与应用</li>
+    </ul>
+  </div>
+
+  <!-- 7.1 -->
+  <h2 data-section="s1" id="sec7-1" style="margin:28px 0 16px;">7.1 波的基本性质</h2>
+
+  <div class="kp">
+    <h3>波的基本参数</h3>
+    <p><strong>波长 (λ)</strong>：相邻两个同相位点之间的距离（如相邻波峰或波谷间的距离）。单位：米 (m)。</p>
+    <p><strong>频率 (f)</strong>：单位时间内通过某一点的完整波的个数。单位：赫兹 (Hz)，1 Hz = 1 s⁻¹。</p>
+    <p><strong>周期 (T)</strong>：一个完整波通过某一点所需的时间。T = 1/f。</p>
+    <p><strong>振幅 (A)</strong>：质点离开平衡位置的最大位移。单位：米 (m)。</p>
+    <p><strong>波速 (v)</strong>：波在介质中传播的速度。单位：m/s。</p>
+    <span class="formula">v = fλ</span>
+    <p>波速由介质性质决定，频率由波源决定，波长由介质和频率共同决定（λ = v/f）。</p>
+  </div>
+
+  <div class="kp">
+    <h3>波的相位</h3>
+    <p><strong>相位</strong>描述波上某点的振动状态。两个点的相位差可用角度或弧度表示：</p>
+    <span class="formula">相位差 Δφ = 2π × (Δx / λ)</span>
+    <p>两点间距为 λ 时，相位差为 2π（同相）；间距为 λ/2 时，相位差为 π（反相）。</p>
+    <p>在 CAIE 考试中，常用"相位差为 60°"或"相位差为 π/3 rad"来描述。</p>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">🌊 横波传播演示</h3>
+    <div class="wave-demo">
+      <canvas id="waveCanvas"></canvas>
+    </div>
+    <div class="param-sliders">
+      <label>频率 f = <input type="range" id="sliderF" min="5" max="30" value="15" step="1"><span class="val" id="valF">1.5</span> Hz</label>
+      <label>振幅 A = <input type="range" id="sliderA" min="10" max="50" value="30" step="1"><span class="val" id="valA">30</span> px</label>
+      <label>波速 v = <input type="range" id="sliderV" min="10" max="50" value="25" step="1"><span class="val" id="valV">2.5</span> m/s</label>
+    </div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      拖动滑块观察频率、振幅和波速对横波波形的影响。波长 λ = v/f 自动调节。
+    </p>
+  </div>
+
+  <!-- 7.2 -->
+  <h2 data-section="s2" id="sec7-2" style="margin:28px 0 16px;">7.2 波的强度与振幅</h2>
+
+  <div class="kp">
+    <h3>强度与振幅的关系</h3>
+    <p><strong>强度 (I)</strong> 定义为单位面积上单位时间内通过的能量。单位：W/m²。</p>
+    <p>对于机械波和电磁波，强度与振幅的<strong>平方</strong>成正比：</p>
+    <span class="formula">I ∝ A²</span>
+    <p>这意味着如果振幅加倍(A → 2A)，强度变为原来的 4 倍。</p>
+    <p>对于球面波（如声波、光波从点源发出），强度随距离 r 的平方衰减：</p>
+    <span class="formula">I ∝ 1/r²</span>
+    <p>结合两式得：A ∝ 1/r，即振幅与距离成反比。</p>
+  </div>
+
+  <div class="kp">
+    <h3>波的衰减</h3>
+    <p>波在传播过程中，由于介质吸收和散射，能量逐渐衰减。</p>
+    <p>衰减系数 μ 描述介质对波的吸收能力：I = I₀ e^(−μx)，其中 x 为传播距离。</p>
+    <p>在医学超声成像中，利用不同组织对超声波的不同衰减系数来形成图像。</p>
+  </div>
+
+  <!-- 7.3 -->
+  <h2 data-section="s3" id="sec7-3" style="margin:28px 0 16px;">7.3 横波与纵波</h2>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>🔁 横波 (Transverse Wave)</h3>
+      <p>质点的振动方向<strong>垂直于</strong>波的传播方向。</p>
+      <p>特征：存在<strong>波峰</strong>和<strong>波谷</strong>。</p>
+      <p>示例：</p>
+      <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+        <li>电磁波（光、无线电波、X射线等）</li>
+        <li>弦上的波（吉他弦振动）</li>
+        <li>水面波（近似）</li>
+      </ul>
+      <p style="color:#2563eb;font-weight:600;">横波可以发生偏振。</p>
+    </div>
+    <div class="kp">
+      <h3>↔️ 纵波 (Longitudinal Wave)</h3>
+      <p>质点的振动方向<strong>平行于</strong>波的传播方向。</p>
+      <p>特征：存在<strong>疏部</strong>和<strong>密部</strong>。</p>
+      <p>示例：</p>
+      <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+        <li>声波</li>
+        <li>地震 P 波</li>
+        <li>弹簧中的压缩波</li>
+      </ul>
+      <p style="color:#dc2626;font-weight:600;">纵波不能发生偏振。</p>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>位移-距离图与位移-时间图</h3>
+    <p><strong>位移-距离图</strong>：在某一时刻，展示各质点的位移——横轴为距离，从图中可直接读出波长 λ。</p>
+    <p><strong>位移-时间图</strong>：在某一点，展示该质点位移随时间的变化——横轴为时间，从图中可直接读出周期 T。</p>
+    <p>CAIE 考试中常要求从图中读取信息并计算 v = fλ。</p>
+  </div>
+
+  <!-- 7.4 -->
+  <h2 data-section="s4" id="sec7-4" style="margin:28px 0 16px;">7.4 多普勒效应 (Doppler Effect)</h2>
+
+  <div class="kp">
+    <h3>多普勒效应原理</h3>
+    <p>当波源和观察者之间存在<strong>相对运动</strong>时，观察者接收到的频率与波源发出的频率不同。</p>
+    <p><strong>相向运动</strong>（彼此靠近）：观察到的频率 <strong>升高</strong>。</p>
+    <p><strong>相背运动</strong>（彼此远离）：观察到的频率 <strong>降低</strong>。</p>
+    <p>观察到的频率公式：</p>
+    <span class="formula">f' = f × (v ± vₒ) / (v ∓ vₛ)</span>
+    <p>其中 v 为波速，vₒ 为观察者速度，vₛ 为波源速度。符号选择：靠近时使频率增大。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>🚨 声波多普勒效应</h3>
+      <p>救护车/警车驶近时音调变高（频率增大），驶离时音调变低（频率减小）。</p>
+      <p>常用于<strong>雷达测速</strong>：发射微波，测量反射波频率变化 Δf 来计算车速。</p>
+    </div>
+    <div class="kp">
+      <h3>🌌 光的多普勒效应（红移）</h3>
+      <p>光源远离时，观察到的光谱线向<strong>红光端</strong>移动（红移，Redshift）。</p>
+      <p>红移是宇宙膨胀的证据——哈勃发现遥远星系都在远离我们。</p>
+      <span class="formula">Δλ/λ₀ ≈ v/c（v << c 时）</span>
+    </div>
+  </div>
+
+  <!-- 7.5 -->
+  <h2 data-section="s5" id="sec7-5" style="margin:28px 0 16px;">7.5 电磁波谱</h2>
+
+  <div class="kp">
+    <h3>电磁波谱按波长/频率排列</h3>
+    <p>所有电磁波在真空中传播速度相同：<strong>c = 3.00 × 10⁸ m/s</strong>。</p>
+    <p>c = fλ，频率越高，波长越短。按波长从长到短（频率从低到高）排列：</p>
+    <div class="em-spectrum" style="flex-wrap:wrap;">
+      <span class="em-band" style="background:#ef4444;">无线电波<br>λ > 10⁻¹ m</span>
+      <span class="em-band" style="background:#f97316;">微波<br>10⁻¹~10⁻³ m</span>
+      <span class="em-band" style="background:#eab308;">红外线<br>10⁻³~7×10⁻⁷ m</span>
+      <span class="em-band" style="background:#22c55e;">可见光<br>400~700 nm</span>
+      <span class="em-band" style="background:#3b82f6;">紫外线<br>10⁻⁷~10⁻⁸ m</span>
+      <span class="em-band" style="background:#8b5cf6;">X射线<br>10⁻⁸~10⁻¹¹ m</span>
+      <span class="em-band" style="background:#ec4899;">γ射线<br>λ < 10⁻¹¹ m</span>
+    </div>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>📻 无线电波</h3>
+      <p>应用：通信、广播、电视、雷达。</p>
+      <p>产生：振荡电路中的加速电子。典型的 AM 广播频率约 1 MHz。</p>
+    </div>
+    <div class="kp">
+      <h3>📡 微波</h3>
+      <p>应用：卫星通信、微波炉 (2.45 GHz)、WiFi、蓝牙。</p>
+      <p>微波炉原理：微波使水分子振动，产生热量。</p>
+    </div>
+    <div class="kp">
+      <h3>🔥 红外线</h3>
+      <p>应用：遥控器、热成像、夜视仪、光纤通信。</p>
+      <p>所有温度高于绝对零度的物体都发射红外线。</p>
+    </div>
+    <div class="kp">
+      <h3>☀️ 紫外线</h3>
+      <p>应用：消毒杀菌、荧光检测、验钞。</p>
+      <p>过量暴露导致皮肤癌。臭氧层吸收大部分太阳紫外线。</p>
+    </div>
+    <div class="kp">
+      <h3>🩻 X射线</h3>
+      <p>应用：医学成像 (X光片)、安检、晶体结构分析。</p>
+      <p>产生：高速电子撞击金属靶，产生韧致辐射。</p>
+    </div>
+    <div class="kp">
+      <h3>☢️ γ射线</h3>
+      <p>应用：癌症放疗、工业探伤、食品灭菌。</p>
+      <p>产生：原子核衰变、核反应。穿透力极强。</p>
+    </div>
+  </div>
+
+  <!-- 7.6 -->
+  <h2 data-section="s6" id="sec7-6" style="margin:28px 0 16px;">7.6 偏振 (Polarization)</h2>
+
+  <div class="kp">
+    <h3>偏振的概念</h3>
+    <p><strong>偏振</strong>是横波特有的性质。偏振将非偏振光的振动方向限制在<strong>单一平面</strong>内。</p>
+    <p>自然光（如太阳光）是非偏振的——电场在各个方向振动。</p>
+    <span class="formula">只有横波才能发生偏振</span>
+    <p>这提供了区分横波和纵波的实验方法：如果波可以通过偏振片，说明它是横波。</p>
+  </div>
+
+  <div class="kp">
+    <h3>马吕斯定律 (Malus's Law)</h3>
+    <p>当偏振光通过一个与其偏振方向夹角为 θ 的偏振片时，透射光的强度为：</p>
+    <span class="formula">I = I₀ cos²θ</span>
+    <p>当 θ = 0°（平行）：I = I₀（全部透过）。</p>
+    <p>当 θ = 90°（垂直）：I = 0（完全消光）。</p>
+    <p>当 θ = 45°：I = I₀/2。</p>
+  </div>
+
+  <div class="kp">
+    <h3>偏振的应用</h3>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li><strong>偏振太阳镜</strong>：过滤水面/路面反射的眩光（反射光多为水平偏振）。</li>
+      <li><strong>LCD 液晶显示屏</strong>：利用偏振片和液晶旋转偏振方向来控制像素亮度。</li>
+      <li><strong>应力分析</strong>：透明材料在应力下产生双折射，通过偏振光检测。</li>
+      <li><strong>3D 电影</strong>：使用两个相互垂直偏振方向的投影仪，配合偏振眼镜观看。</li>
+    </ul>
+  </div>
+
+  <!-- 练习题 -->
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>一列波的频率为 50 Hz，波长为 0.68 m。该波的波速为 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 0.0136 m/s</label>
+      <label><input type="radio" name="q1" value="B">B. 34 m/s</label>
+      <label><input type="radio" name="q1" value="C">C. 73.5 m/s</label>
+      <label><input type="radio" name="q1" value="D">D. 340 m/s</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="B">✅ 正确答案：B。v = fλ = 50 × 0.68 = 34 m/s。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>一列波的振幅增加为原来的 3 倍，则波的强度变为原来的 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 3 倍</label>
+      <label><input type="radio" name="q2" value="B">B. 6 倍</label>
+      <label><input type="radio" name="q2" value="C">C. 9 倍</label>
+      <label><input type="radio" name="q2" value="D">D. 1/3 倍</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="C">✅ 正确答案：C。I ∝ A²，所以 A → 3A 时，I → 9I，强度变为原来的 9 倍。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>以下哪种波是纵波？</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 可见光</label>
+      <label><input type="radio" name="q3" value="B">B. 无线电波</label>
+      <label><input type="radio" name="q3" value="C">C. 声波</label>
+      <label><input type="radio" name="q3" value="D">D. X 射线</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="C">✅ 正确答案：C。声波是纵波，质点的振动方向平行于波的传播方向。所有电磁波（光、无线电波、X射线）都是横波。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>当光源远离观察者时，观察到的光谱线将发生 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. 蓝移</label>
+      <label><input type="radio" name="q4" value="B">B. 红移</label>
+      <label><input type="radio" name="q4" value="C">C. 不变</label>
+      <label><input type="radio" name="q4" value="D">D. 先红移后蓝移</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="B">✅ 正确答案：B。光源远离时，接收到的频率降低，波长变长，光谱线向红光端移动，称为红移。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>偏振光通过一个偏振片，偏振方向与偏振片透振方向夹角为 60°，则透射光强度为入射光强度的 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. 1/2</label>
+      <label><input type="radio" name="q5" value="B">B. 1/4</label>
+      <label><input type="radio" name="q5" value="C">C. 3/4</label>
+      <label><input type="radio" name="q5" value="D">D. 1</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="B">✅ 正确答案：B。I = I₀ cos²60° = I₀ × (1/2)² = I₀/4，即原强度的 1/4。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>在电磁波谱中，波长介于红外线和紫外线之间的是 ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. 微波</label>
+      <label><input type="radio" name="q6" value="B">B. X 射线</label>
+      <label><input type="radio" name="q6" value="C">C. 可见光</label>
+      <label><input type="radio" name="q6" value="D">D. γ 射线</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="C">✅ 正确答案：C。按波长从长到短：红外线 (IR) > 可见光 (Visible) > 紫外线 (UV)。可见光波长约 400-700 nm。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('waveCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const sliderF = document.getElementById('sliderF');
+  const sliderA = document.getElementById('sliderA');
+  const sliderV = document.getElementById('sliderV');
+  const valF = document.getElementById('valF');
+  const valA = document.getElementById('valA');
+  const valV = document.getElementById('valV');
+
+  let time = 0;
+
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const f = parseInt(sliderF.value) / 10;
+    const A = parseInt(sliderA.value);
+    const v = parseInt(sliderV.value) / 10;
+    const lambda = v / f;
+    valF.textContent = f.toFixed(1);
+    valA.textContent = A;
+    valV.textContent = v.toFixed(1);
+
+    ctx.clearRect(0, 0, w, h);
+    // Background
+    ctx.fillStyle = '#0f172a';
+    ctx.fillRect(0, 0, w, h);
+
+    // Grid
+    ctx.strokeStyle = '#1e293b';
+    ctx.lineWidth = 0.5;
+    for(let x = 0; x < w; x += 50) {
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
+    }
+    for(let y = 0; y < h; y += 50) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+    }
+
+    // Center line
+    ctx.strokeStyle = '#475569';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([5, 5]);
+    ctx.beginPath(); ctx.moveTo(0, h/2); ctx.lineTo(w, h/2); ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Wave
+    ctx.strokeStyle = '#3b82f6';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    let first = true;
+    const k = 2 * Math.PI / (lambda * 50);
+    const omega = 2 * Math.PI * f;
+    for(let px = 0; px < w; px++) {
+      const x = px / 50;
+      const y = A * Math.sin(k * x - omega * time);
+      const py = h/2 - y;
+      if(first) { ctx.moveTo(px, py); first = false; }
+      else { ctx.lineTo(px, py); }
+    }
+    ctx.stroke();
+
+    // Mark wavelength
+    const lambdaPx = lambda * 50;
+    if(lambdaPx > 10 && lambdaPx < w) {
+      ctx.strokeStyle = '#f59e0b';
+      ctx.lineWidth = 1;
+      ctx.setLineDash([4, 4]);
+      const y0 = h/2 - A * Math.sin(omega * time);
+      ctx.beginPath(); ctx.moveTo(0, y0 - A - 20); ctx.lineTo(lambdaPx, y0 - A - 20); ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = '#f59e0b';
+      ctx.font = '12px sans-serif';
+      const yLabel = y0 - A - 30;
+      ctx.fillText('λ = ' + lambda.toFixed(2) + ' m', lambdaPx/2 - 30, yLabel > 15 ? yLabel : 20);
+      // Arrow heads
+      ctx.beginPath(); ctx.moveTo(0, y0 - A - 20); ctx.lineTo(8, y0 - A - 25); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(0, y0 - A - 20); ctx.lineTo(8, y0 - A - 15); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(lambdaPx, y0 - A - 20); ctx.lineTo(lambdaPx - 8, y0 - A - 25); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(lambdaPx, y0 - A - 20); ctx.lineTo(lambdaPx - 8, y0 - A - 15); ctx.stroke();
+    }
+
+    // Mark amplitude
+    ctx.strokeStyle = '#22c55e';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([3, 3]);
+    ctx.beginPath(); ctx.moveTo(20, h/2); ctx.lineTo(20, h/2 - A); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = '#22c55e';
+    ctx.font = '12px sans-serif';
+    ctx.fillText('A = ' + A + ' px', 24, h/2 - A/2);
+
+    // Info
+    ctx.fillStyle = '#94a3b8';
+    ctx.font = '12px sans-serif';
+    ctx.fillText('f = ' + f.toFixed(1) + ' Hz  |  v = ' + v.toFixed(1) + ' m/s  |  T = ' + (1/f).toFixed(2) + ' s', 12, h - 12);
+
+    time += 0.05;
+    requestAnimationFrame(draw);
+  }
+
+  sliderF.addEventListener('input', function(){});
+  sliderA.addEventListener('input', function(){});
+  sliderV.addEventListener('input', function(){});
+  draw();
+})();
+</script>
+</body>
+</html>

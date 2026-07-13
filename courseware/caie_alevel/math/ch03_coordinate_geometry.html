@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第3章 坐标几何 - CAIE A-LEVEL 数学 (9709)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.geo-demo { width:100%; height:300px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.geo-demo canvas { width:100%; height:100%; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📐 A-LEVEL 数学</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quadratics.html"><span class="ch-num">1</span>二次函数</a></li>
+    <li><a href="ch02_functions.html"><span class="ch-num">2</span>函数与图像变换</a></li>
+    <li><a href="ch03_coordinate_geometry.html" class="active" data-section="s1"><span class="ch-num">3</span>坐标几何</a>
+      <div class="subsections">
+        <a href="#sec3-1" data-section="s1">3.1 直线方程</a>
+        <a href="#sec3-2" data-section="s2">3.2 距离与中点</a>
+        <a href="#sec3-3" data-section="s3">3.3 圆的方程</a>
+        <a href="#sec3-4" data-section="s4">3.4 直线与圆的交点</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch04_circular_measure.html"><span class="ch-num">4</span>圆与弧度制</a></li>
+    <li><a href="ch05_trigonometry.html"><span class="ch-num">5</span>三角函数</a></li>
+    <li><a href="ch06_sequences_series.html"><span class="ch-num">6</span>数列与级数</a></li>
+    <li><a href="ch07_differentiation.html"><span class="ch-num">7</span>微分</a></li>
+    <li><a href="ch08_integration.html"><span class="ch-num">8</span>积分</a></li>
+    <li><a href="ch09_logarithms_exponentials.html"><span class="ch-num">9</span>对数与指数</a></li>
+    <li><a href="ch10_numerical_methods.html"><span class="ch-num">10</span>数值方法</a></li>
+    <li><a href="ch11_vectors.html"><span class="ch-num">11</span>三维向量</a></li>
+    <li><a href="ch12_differential_equations.html"><span class="ch-num">12</span>微分方程</a></li>
+    <li><a href="ch13_complex_numbers.html"><span class="ch-num">13</span>复数</a></li>
+    <li><a href="ch14_mechanics_statistics.html"><span class="ch-num">14</span>力学与统计</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">📐 数学首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a><span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+      <a href="index.html">📐 数学</a><span>›</span>
+      <span>第3章 坐标几何</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="index.html" class="active">数学</a>
+      <a href="../physics/index.html">物理</a>
+      <a href="../chemistry/index.html">化学</a>
+      <a href="../biology/index.html">生物</a>
+      <a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第3章 坐标几何 (Coordinate Geometry)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>掌握直线方程的各种形式：点斜式、斜截式、一般式</li>
+      <li>理解平行线和垂直线的斜率关系</li>
+      <li>熟练计算两点间的距离和中点坐标</li>
+      <li>掌握圆的标准方程和一般方程</li>
+      <li>能够求解直线与圆的交点</li>
+    </ul>
+  </div>
+
+  <h2 data-section="s1" id="sec3-1" style="margin:28px 0 16px;">3.1 直线方程</h2>
+
+  <div class="kp">
+    <h3>斜率的计算</h3>
+    <p>过两点 A(x₁, y₁) 和 B(x₂, y₂) 的直线斜率为：</p>
+    <span class="formula">m = (y₂ - y₁) / (x₂ - x₁)</span>
+    <p>斜率表示直线的倾斜程度。m > 0 表示上升；m < 0 表示下降；m = 0 表示水平；m 无定义表示垂直。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>点斜式</h3>
+      <p>过点 (x₁, y₁)，斜率为 m：</p>
+      <span class="formula">y - y₁ = m(x - x₁)</span>
+    </div>
+    <div class="kp">
+      <h3>斜截式</h3>
+      <p>斜率为 m，y 轴截距为 c：</p>
+      <span class="formula">y = mx + c</span>
+    </div>
+    <div class="kp">
+      <h3>一般式</h3>
+      <p>最通用的直线方程形式：</p>
+      <span class="formula">ax + by + c = 0</span>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>平行线与垂直线</h3>
+    <p>若两条直线的斜率分别为 m₁ 和 m₂：</p>
+    <p><strong>平行</strong>（parallel）：<strong>m₁ = m₂</strong>（斜率相等）</p>
+    <p><strong>垂直</strong>（perpendicular）：<strong>m₁ × m₂ = -1</strong>（斜率互为负倒数）</p>
+    <span class="formula">若 m₁ = 2，则垂线斜率 m₂ = -1/2</span>
+  </div>
+
+  <h2 data-section="s2" id="sec3-2" style="margin:28px 0 16px;">3.2 距离与中点</h2>
+
+  <div class="kp">
+    <h3>两点间距离公式</h3>
+    <p>两点 A(x₁, y₁) 和 B(x₂, y₂) 之间的距离：</p>
+    <span class="formula">d = √[(x₂ - x₁)² + (y₂ - y₁)²]</span>
+    <p>这是勾股定理在坐标几何中的应用。</p>
+  </div>
+
+  <div class="kp">
+    <h3>中点坐标公式</h3>
+    <p>线段 AB 的中点 M 的坐标为：</p>
+    <span class="formula">M = ((x₁ + x₂)/2, (y₁ + y₂)/2)</span>
+  </div>
+
+  <h2 data-section="s3" id="sec3-3" style="margin:28px 0 16px;">3.3 圆的方程</h2>
+
+  <div class="kp">
+    <h3>圆的标准方程</h3>
+    <p>圆心为 C(a, b)，半径为 r 的圆：</p>
+    <span class="formula">(x - a)² + (y - b)² = r²</span>
+  </div>
+
+  <div class="kp">
+    <h3>圆的一般方程</h3>
+    <p>展开标准式可得：</p>
+    <span class="formula">x² + y² + 2gx + 2fy + c = 0</span>
+    <p>圆心：(-g, -f)，半径：√(g² + f² - c)</p>
+    <p>注意：g² + f² - c > 0 才表示一个实圆；等于 0 表示一个点；小于 0 无意义。</p>
+  </div>
+
+  <h2 data-section="s4" id="sec3-4" style="margin:28px 0 16px;">3.4 直线与圆的交点</h2>
+
+  <div class="kp">
+    <h3>求解方法</h3>
+    <p>将直线方程 y = mx + c 代入圆的方程 (x - a)² + (y - b)² = r²，得到一个关于 x 的二次方程。</p>
+    <p>使用判别式判断交点情况：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li><strong>Δ > 0</strong>：直线与圆有两个交点（相交）</li>
+      <li><strong>Δ = 0</strong>：直线与圆相切（一个交点）</li>
+      <li><strong>Δ < 0</strong>：直线与圆无交点（相离）</li>
+    </ul>
+  </div>
+
+  <div class="kp">
+    <h3>切线方程</h3>
+    <p>求圆上一点 (x₁, y₁) 处的切线方程：</p>
+    <p>切线垂直于该点处的半径，斜率 m_tangent = -1/m_radius。</p>
+    <p>半径斜率 = (y₁ - b)/(x₁ - a)，切线斜率 = -(x₁ - a)/(y₁ - b)。</p>
+    <span class="formula">(x₁ - a)(x - a) + (y₁ - b)(y - b) = r²</span>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">📐 直线与圆交点演示</h3>
+    <div class="geo-demo"><canvas id="geoCanvas"></canvas></div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      圆 (x-2)² + (y-1)² = 16，蓝色直线 y = mx + c 与圆的交点情况
+    </p>
+  </div>
+
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>过点 A(1, 2) 和 B(4, 8) 的直线斜率为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 1</label>
+      <label><input type="radio" name="q1" value="B">B. 2</label>
+      <label><input type="radio" name="q1" value="C">C. 3</label>
+      <label><input type="radio" name="q1" value="D">D. 6</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="B">✅ 正确答案：B。m = (8-2)/(4-1) = 6/3 = 2。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>直线 y = 3x - 1 的垂线斜率为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 3</label>
+      <label><input type="radio" name="q2" value="B">B. -3</label>
+      <label><input type="radio" name="q2" value="C">C. 1/3</label>
+      <label><input type="radio" name="q2" value="D">D. -1/3</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="D">✅ 正确答案：D。m₁ × m₂ = -1，3 × m₂ = -1，m₂ = -1/3。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>点 A(-1, 3) 和点 B(5, -5) 之间的距离为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 8</label>
+      <label><input type="radio" name="q3" value="B">B. 10</label>
+      <label><input type="radio" name="q3" value="C">C. 12</label>
+      <label><input type="radio" name="q3" value="D">D. 14</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="B">✅ 正确答案：B。d = √[(5-(-1))² + (-5-3)²] = √[36 + 64] = √100 = 10。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>圆 x² + y² - 6x + 4y - 12 = 0 的圆心坐标是____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. (-3, 2)</label>
+      <label><input type="radio" name="q4" value="B">B. (3, -2)</label>
+      <label><input type="radio" name="q4" value="C">C. (6, -4)</label>
+      <label><input type="radio" name="q4" value="D">D. (-6, 4)</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="B">✅ 正确答案：B。2g = -6 → g = -3，2f = 4 → f = 2，圆心 (-g, -f) = (3, -2)。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>直线 y = 2x + 1 与圆 x² + y² = 5 的交点个数为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. 0</label>
+      <label><input type="radio" name="q5" value="B">B. 1</label>
+      <label><input type="radio" name="q5" value="C">C. 2</label>
+      <label><input type="radio" name="q5" value="D">D. 无穷多</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="C">✅ 正确答案：C。x² + (2x+1)² = 5 → x² + 4x² + 4x + 1 = 5 → 5x² + 4x - 4 = 0，Δ = 16 + 80 = 96 > 0，两个交点。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>过点 (2, 3) 且与直线 y = -2x + 1 平行的直线方程为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. y = 2x - 1</label>
+      <label><input type="radio" name="q6" value="B">B. y = -2x + 7</label>
+      <label><input type="radio" name="q6" value="C">C. y = -2x + 1</label>
+      <label><input type="radio" name="q6" value="D">D. y = (1/2)x + 2</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="B">✅ 正确答案：B。平行线斜率相同 m = -2，过 (2,3)：y - 3 = -2(x - 2) → y = -2x + 7。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('geoCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const cx = w/2, cy = h/2;
+    const scale = 22;
+    ctx.clearRect(0, 0, w, h);
+    // Grid
+    ctx.strokeStyle = '#334155'; ctx.lineWidth = 0.5;
+    for(let x = 0; x < w; x += scale) { ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,h); ctx.stroke(); }
+    for(let y = 0; y < h; y += scale) { ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(w,y); ctx.stroke(); }
+    // Axes
+    ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(cx,0); ctx.lineTo(cx,h); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(0,cy); ctx.lineTo(w,cy); ctx.stroke();
+    // Circle: (x-2)² + (y-1)² = 16
+    const ccx = cx + 2*scale, ccy = cy - 1*scale;
+    ctx.strokeStyle = '#f59e0b'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(ccx, ccy, 4*scale, 0, Math.PI*2); ctx.stroke();
+    ctx.fillStyle = '#f59e0b'; ctx.beginPath(); ctx.arc(ccx, ccy, 4, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = '#fff'; ctx.font = '11px sans-serif'; ctx.fillText('C(2,1)', ccx-20, ccy-8);
+    // Line: y = 0.5x + 0.5
+    ctx.strokeStyle = '#3b82f6'; ctx.lineWidth = 2;
+    ctx.beginPath();
+    const y0 = cy - 0.5*scale;
+    ctx.moveTo(0, y0 - (0-cx)/scale*0.5*scale);
+    ctx.lineTo(w, cy - ((w-cx)/scale*0.5 + 0.5)*scale);
+    ctx.stroke();
+    ctx.fillStyle = '#3b82f6'; ctx.fillText('y=0.5x+0.5', w-100, 40);
+  }
+  draw();
+  window.addEventListener('resize', draw);
+})();
+</script>
+</body>
+</html>

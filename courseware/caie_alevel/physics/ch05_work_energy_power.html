@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第5章 功、能与功率 - CAIE A-LEVEL 物理 (9702)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="breadcrumb">
+    <a href="../../index.html">🏠 首页</a><span>›</span>
+    <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+    <a href="index.html">⚛️ 物理</a><span>›</span>
+    <span>第5章 功、能与功率</span>
+  </div>
+  <div class="spacer"></div>
+  <div class="subject-switch">
+    <a href="../math/index.html">数学</a>
+    <a href="index.html" class="active">物理</a>
+    <a href="../chemistry/index.html">化学</a>
+    <a href="../biology/index.html">生物</a>
+    <a href="../economics/index.html">经济</a>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h3>⚛️ A-LEVEL 物理</h3>
+    <ul class="chapter-list">
+      <li><a href="ch01_quantities_units.html"><span class="ch-num">1</span>物理量与单位</a></li>
+      <li><a href="ch02_kinematics.html"><span class="ch-num">2</span>运动学</a></li>
+      <li><a href="ch03_dynamics.html"><span class="ch-num">3</span>动力学</a></li>
+      <li><a href="ch04_forces_pressure.html"><span class="ch-num">4</span>力、密度与压强</a></li>
+      <li><a href="ch05_work_energy_power.html" class="active"><span class="ch-num">5</span>功、能与功率</a></li>
+      <li><a href="ch06_deformation.html"><span class="ch-num">6</span>固体形变</a></li>
+      <li><a href="ch07_waves.html"><span class="ch-num">7</span>波</a></li>
+      <li><a href="ch08_superposition.html"><span class="ch-num">8</span>叠加与干涉</a></li>
+      <li><a href="ch09_electricity.html"><span class="ch-num">9</span>电场与电流</a></li>
+      <li><a href="ch10_dc_circuits.html"><span class="ch-num">10</span>直流电路</a></li>
+      <li><a href="ch11_particle_physics.html"><span class="ch-num">11</span>粒子与核物理</a></li>
+      <li><a href="ch12_practical_skills.html"><span class="ch-num">12</span>实验技能</a></li>
+    </ul>
+    <div class="subsections">
+      <a href="#s5.1">5.1 功 (W = Fd cos θ)</a>
+      <a href="#s5.2">5.2 动能与势能</a>
+      <a href="#s5.3">5.3 能量守恒与转换</a>
+      <a href="#s5.4">5.4 功率</a>
+      <a href="#s5.5">5.5 效率</a>
+      <a href="#exercises">📝 章节练习</a>
+    </div>
+    <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-home">⚛️ 物理首页</a>
+      <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+      <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <h1 class="page-title">第5章 功、能与功率</h1>
+
+    <div class="card" style="background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:5px solid #2563eb;">
+      <div class="card-title"><span class="icon">🎯</span> 学习目标</div>
+      <ul style="color:#475569;line-height:2;padding-left:20px;">
+        <li>理解功的定义 W = Fd cos θ，区分正功和负功</li>
+        <li>掌握动能 (KE = ½mv²) 和重力势能 (GPE = mgh) 的计算</li>
+        <li>运用能量守恒定律分析能量转化过程</li>
+        <li>理解功率概念 P = W/t = Fv</li>
+        <li>计算效率并分析能量损失</li>
+      </ul>
+    </div>
+
+    <!-- 5.1 功 -->
+    <h2 id="s5.1" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">5.1 功 (Work)</h2>
+
+    <div class="kp">
+      <h3>功的定义</h3>
+      <p>功是力在位移方向上做的效果。当力 F 作用在物体上，物体沿力的方向发生位移 s 时，力做的功为：</p>
+      <p><span class="formula">W = F s cos θ</span></p>
+      <p>其中 θ 是力与位移方向之间的夹角。单位：焦耳 (J)，1 J = 1 N m。</p>
+      <p style="margin-top:10px;"><strong>功的正负：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>θ = 0°：力与位移同向，W = Fs（正功，力做正功）</li>
+        <li>θ = 90°：力与位移垂直，W = 0（不做功，如向心力）</li>
+        <li>θ = 180°：力与位移反向，W = −Fs（负功，力做负功，如摩擦力）</li>
+      </ul>
+    </div>
+
+    <div class="kp">
+      <h3>F-s 图与功</h3>
+      <p>力-位移图 (F-s graph) 与位移轴围成的面积 = 力所做的功。</p>
+      <p>对于恒力，功 = F × s（矩形面积）。</p>
+      <p>对于变力（如弹簧的弹力 F = kx），功 = ½F<sub>max</sub> s（三角形面积）= ½kx²。</p>
+    </div>
+
+    <!-- 5.2 动能与势能 -->
+    <h2 id="s5.2" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">5.2 动能与势能</h2>
+
+    <div class="kp">
+      <h3>动能 (Kinetic Energy, KE)</h3>
+      <p>动能是物体由于运动而具有的能量，是标量。</p>
+      <p><span class="formula">KE = ½mv²</span></p>
+      <p>单位：焦耳 (J)。</p>
+      <p style="margin-top:10px;"><strong>动能定理 (Work-Energy Theorem)：</strong>合外力对物体做的功等于物体动能的变化量。</p>
+      <p><span class="formula">W<sub>net</sub> = ΔKE = ½mv² − ½mu²</span></p>
+      <p>这是牛顿第二定律的能量表述形式，可由 F = ma 和 v² = u² + 2as 推导得出。</p>
+    </div>
+
+    <div class="kp">
+      <h3>重力势能 (Gravitational Potential Energy, GPE)</h3>
+      <p>重力势能是物体由于位置高度而具有的能量。</p>
+      <p><span class="formula">GPE = mgh</span></p>
+      <p>其中 h 是相对于参考平面的高度。单位：焦耳 (J)。</p>
+      <p style="margin-top:10px;"><strong>注意：</strong>势能是相对的，取决于参考平面的选择。但我们通常只关心势能的变化量 ΔGPE = mgΔh。</p>
+    </div>
+
+    <div class="kp">
+      <h3>弹性势能 (Elastic Potential Energy)</h3>
+      <p>弹簧或弹性物体在发生弹性形变时储存的能量。</p>
+      <p><span class="formula">EPE = ½kx²</span> 或 <span class="formula">EPE = ½F x</span></p>
+      <p>其中 k 是弹簧的劲度系数 (N m⁻¹)，x 是形变量 (m)。</p>
+    </div>
+
+    <!-- 5.3 能量守恒 -->
+    <h2 id="s5.3" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">5.3 能量守恒与能量转换</h2>
+
+    <div class="kp">
+      <h3>能量守恒定律 (Conservation of Energy)</h3>
+      <p>能量既不会凭空产生，也不会凭空消失，它只能从一种形式转化为另一种形式，或从一个物体转移到另一个物体，而在转化和转移过程中，能量的总量保持不变。</p>
+      <p><span class="formula">ΣE<sub>initial</sub> = ΣE<sub>final</sub></span></p>
+      <p style="margin-top:10px;"><strong>常见能量形式：</strong>动能、重力势能、弹性势能、热能（内能）、声能、光能、电能、化学能、核能。</p>
+    </div>
+
+    <div class="kp">
+      <h3>例题：自由落体中的能量转换</h3>
+      <p>一个质量为 2.0 kg 的物体从 10 m 高处自由落下。求：</p>
+      <p>(a) 初始的总机械能</p>
+      <p>(b) 落到 5 m 高度时的速度（取 g = 10 m s⁻²）</p>
+      <p style="margin-top:8px;"><strong>解：</strong></p>
+      <p>(a) 初始：GPE = mgh = 2.0 × 10 × 10 = 200 J，KE = 0，总机械能 = 200 J</p>
+      <p>(b) 在 5 m 处：GPE = 2.0 × 10 × 5 = 100 J，KE = 200 − 100 = 100 J</p>
+      <p>½mv² = 100 → v² = 100 → v = 10 m s⁻¹</p>
+      <p>（使用 suvat 公式验证：v² = 0 + 2×10×5 = 100 → v = 10 m s⁻¹ ✓）</p>
+    </div>
+
+    <!-- 5.4 功率 -->
+    <h2 id="s5.4" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">5.4 功率</h2>
+
+    <div class="kp">
+      <h3>功率 (Power)</h3>
+      <p>功率是做功的快慢，即单位时间内做的功。</p>
+      <p><span class="formula">P = W / t</span> 或 <span class="formula">P = ΔE / t</span></p>
+      <p>单位：瓦特 (W)，1 W = 1 J s⁻¹。</p>
+      <p style="margin-top:10px;"><strong>功率与速度的关系：</strong></p>
+      <p><span class="formula">P = F v</span>（当力与速度方向相同时）</p>
+      <p>推导：P = W/t = Fs/t = Fv</p>
+      <p style="margin-top:10px;">对于以恒定功率运动的车辆：当速度增大时，牵引力减小（P = Fv，P恒定），加速度减小，直到牵引力等于阻力时达到最大速度。</p>
+    </div>
+
+    <!-- 5.5 效率 -->
+    <h2 id="s5.5" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">5.5 效率</h2>
+
+    <div class="kp">
+      <h3>效率 (Efficiency)</h3>
+      <p>效率衡量能量转换或转移过程中有用输出所占的比例。</p>
+      <p><span class="formula">效率 = (有用输出能量 / 总输入能量) × 100%</span></p>
+      <p>或 <span class="formula">效率 = (有用输出功率 / 总输入功率) × 100%</span></p>
+      <p style="margin-top:10px;"><strong>关键点：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>效率总是小于 100%（由于能量损失，如摩擦生热）</li>
+        <li>效率没有单位，通常用百分比表示</li>
+        <li>能量损失的主要途径：摩擦、空气阻力、电阻发热、声能等</li>
+      </ul>
+    </div>
+
+    <div class="kp">
+      <h3>能量损失</h3>
+      <p>在机械系统中，能量损失通常以热能形式散失。例如：</p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>电机：电能 → 机械能 + 热能（线圈电阻发热）</li>
+        <li>汽车发动机：化学能 → 动能 + 热能（废气、冷却系统）</li>
+        <li>斜面滑动物体：GPE → KE + 热能（摩擦）</li>
+      </ul>
+    </div>
+
+    <!-- 练习 -->
+    <h2 id="exercises" style="color:#1e293b;margin-top:32px;margin-bottom:16px;">📝 章节练习</h2>
+
+    <div class="exercise" id="ex1">
+      <p><span class="q-num">1</span><span class="question">一个 50 N 的力作用于一个物体，使其沿力的方向移动了 4.0 m。力做的功为：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="A"> A. 12.5 J</label>
+        <label><input type="radio" name="q1" value="B"> B. 50 J</label>
+        <label><input type="radio" name="q1" value="C"> C. 200 J</label>
+        <label><input type="radio" name="q1" value="D"> D. 400 J</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex1')">显示答案</button>
+      <div class="answer" id="answer-ex1" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">W = Fs = 50 × 4.0 = 200 J</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex2">
+      <p><span class="q-num">2</span><span class="question">一个质量为 1000 kg 的汽车以 20 m s⁻¹ 的速度行驶，其动能为：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="A"> A. 1.0 × 10⁴ J</label>
+        <label><input type="radio" name="q2" value="B"> B. 2.0 × 10⁴ J</label>
+        <label><input type="radio" name="q2" value="C"> C. 1.0 × 10⁵ J</label>
+        <label><input type="radio" name="q2" value="D"> D. 2.0 × 10⁵ J</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex2')">显示答案</button>
+      <div class="answer" id="answer-ex2" data-correct="D">
+        <div class="answer-value">答案：D</div>
+        <div class="answer-solution">KE = ½mv² = ½ × 1000 × 20² = ½ × 1000 × 400 = 2.0 × 10⁵ J</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex3">
+      <p><span class="q-num">3</span><span class="question">一个质量为 5.0 kg 的物体被匀速提升 3.0 m。重力做的功是多少？（g = 10 m s⁻²）</span></p>
+      <div class="options">
+        <label><input type="radio" name="q3" value="A"> A. 0 J</label>
+        <label><input type="radio" name="q3" value="B"> B. +150 J</label>
+        <label><input type="radio" name="q3" value="C"> C. −150 J</label>
+        <label><input type="radio" name="q3" value="D"> D. −50 J</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex3')">显示答案</button>
+      <div class="answer" id="answer-ex3" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">重力方向向下，位移方向向上，θ = 180°。W = mg × h × cos 180° = 5.0 × 10 × 3.0 × (−1) = −150 J。重力做负功，意味着重力势能增加。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex4">
+      <p><span class="q-num">4</span><span class="question">一台起重机在 5.0 s 内将 200 kg 的重物提升了 10 m。起重机的输出功率为多少？（g = 10 m s⁻²）</span></p>
+      <div class="options">
+        <label><input type="radio" name="q4" value="A"> A. 400 W</label>
+        <label><input type="radio" name="q4" value="B"> B. 2000 W</label>
+        <label><input type="radio" name="q4" value="C"> C. 4000 W</label>
+        <label><input type="radio" name="q4" value="D"> D. 10000 W</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex4')">显示答案</button>
+      <div class="answer" id="answer-ex4" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">W = mgh = 200 × 10 × 10 = 20000 J。P = W/t = 20000/5.0 = 4000 W。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex5">
+      <p><span class="q-num">5</span><span class="question">一台电动机的输入功率为 500 W，输出机械功率为 400 W。其效率为：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q5" value="A"> A. 20%</label>
+        <label><input type="radio" name="q5" value="B"> B. 40%</label>
+        <label><input type="radio" name="q5" value="C"> C. 75%</label>
+        <label><input type="radio" name="q5" value="D"> D. 80%</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex5')">显示答案</button>
+      <div class="answer" id="answer-ex5" data-correct="D">
+        <div class="answer-value">答案：D</div>
+        <div class="answer-solution">效率 = (P<sub>输出</sub> / P<sub>输入</sub>) × 100% = (400/500) × 100% = 80%</div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

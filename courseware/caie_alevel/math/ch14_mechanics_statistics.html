@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第14章 力学与统计 - CAIE A-LEVEL 数学 (9709)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.mech-demo { width:100%; height:300px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.mech-demo canvas { width:100%; height:100%; }
+.mech-controls { display:flex; gap:16px; flex-wrap:wrap; margin-top:12px; justify-content:center; }
+.mech-controls label { display:flex; align-items:center; gap:6px; font-size:.85rem; color:#475569; }
+.mech-controls input[type=range] { width:100px; }
+.mech-controls .val { display:inline-block; width:36px; text-align:center; font-weight:600; color:#059669; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📐 A-LEVEL 数学</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quadratics.html"><span class="ch-num">1</span>二次函数</a></li>
+    <li><a href="ch02_functions.html"><span class="ch-num">2</span>函数与图像变换</a></li>
+    <li><a href="ch03_coordinate_geometry.html"><span class="ch-num">3</span>坐标几何</a></li>
+    <li><a href="ch04_circular_measure.html"><span class="ch-num">4</span>圆与弧度制</a></li>
+    <li><a href="ch05_trigonometry.html"><span class="ch-num">5</span>三角函数</a></li>
+    <li><a href="ch06_sequences_series.html"><span class="ch-num">6</span>数列与级数</a></li>
+    <li><a href="ch07_differentiation.html"><span class="ch-num">7</span>微分</a></li>
+    <li><a href="ch08_integration.html"><span class="ch-num">8</span>积分</a></li>
+    <li><a href="ch09_logarithms_exponentials.html"><span class="ch-num">9</span>对数与指数</a></li>
+    <li><a href="ch10_numerical_methods.html"><span class="ch-num">10</span>数值方法</a></li>
+    <li><a href="ch11_vectors.html"><span class="ch-num">11</span>三维向量</a></li>
+    <li><a href="ch12_differential_equations.html"><span class="ch-num">12</span>微分方程</a></li>
+    <li><a href="ch13_complex_numbers.html"><span class="ch-num">13</span>复数</a></li>
+    <li><a href="ch14_mechanics_statistics.html" class="active" data-section="s1"><span class="ch-num">14</span>力学与统计</a>
+      <div class="subsections">
+        <a href="#sec14-1" data-section="s1">M1.1 运动学 (suvat)</a>
+        <a href="#sec14-2" data-section="s2">M1.2 牛顿定律与力的平衡</a>
+        <a href="#sec14-3" data-section="s3">M1.3 动量与冲量</a>
+        <a href="#sec14-4" data-section="s4">S1.1 数据的表示</a>
+        <a href="#sec14-5" data-section="s5">S1.2 概率</a>
+        <a href="#sec14-6" data-section="s6">S1.3 离散随机变量与正态分布</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">📐 数学首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a><span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+      <a href="index.html">📐 数学</a><span>›</span>
+      <span>第14章 力学与统计</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="index.html" class="active">数学</a><a href="../physics/index.html">物理</a>
+      <a href="../chemistry/index.html">化学</a><a href="../biology/index.html">生物</a><a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第14章 力学与统计 (Mechanics & Statistics)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li><strong>力学 (M1)：</strong>掌握匀加速运动公式 (suvat)，理解牛顿定律与力的平衡，掌握动量与冲量概念</li>
+      <li><strong>统计 (S1)：</strong>掌握数据的图表表示方法，理解条件概率与独立事件，掌握离散随机变量与正态分布</li>
+      <li>能够将力学问题转化为数学模型并求解，能够解释统计图表和概率分布</li>
+    </ul>
+  </div>
+
+  <!-- ====== MECHANICS SECTION ====== -->
+  <h2 style="margin:28px 0 8px;color:#059669;border-bottom:2px solid #059669;padding-bottom:6px;">🔧 力学部分 (Mechanics - M1)</h2>
+
+  <!-- M1.1 -->
+  <h2 data-section="s1" id="sec14-1" style="margin:28px 0 16px;">M1.1 运动学：匀加速运动公式 (suvat equations)</h2>
+
+  <div class="kp">
+    <h3>五个基本量</h3>
+    <p>匀加速直线运动中涉及五个基本物理量：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li><strong>s</strong> — 位移 (displacement)，单位：m</li>
+      <li><strong>u</strong> — 初速度 (initial velocity)，单位：m/s</li>
+      <li><strong>v</strong> — 末速度 (final velocity)，单位：m/s</li>
+      <li><strong>a</strong> — 加速度 (acceleration)，单位：m/s²</li>
+      <li><strong>t</strong> — 时间 (time)，单位：s</li>
+    </ul>
+  </div>
+
+  <div class="kp">
+    <h3>五个 suvat 公式</h3>
+    <span class="formula">v = u + at</span>
+    <span class="formula">s = ut + (1/2)at²</span>
+    <span class="formula">s = vt - (1/2)at²</span>
+    <span class="formula">v² = u² + 2as</span>
+    <span class="formula">s = (u + v)t / 2</span>
+    <p>每个公式包含四个量，已知其中三个可求第四个。解题时列出已知量并选择合适的公式。</p>
+  </div>
+
+  <div class="kp">
+    <h3>重力加速度</h3>
+    <p>在竖直方向运动中，加速度为重力加速度 g = 9.8 m/s²（或取 10 m/s²）。</p>
+    <p>取向上为正方向时，a = -g。</p>
+    <span class="formula">v = u - gt，s = ut - (1/2)gt²</span>
+  </div>
+
+  <!-- M1.2 -->
+  <h2 data-section="s2" id="sec14-2" style="margin:28px 0 16px;">M1.2 牛顿定律与力的平衡</h2>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>🔵 牛顿第一定律</h3>
+      <p>物体在不受外力（或合力为零）时保持静止或匀速直线运动状态。</p>
+      <span class="formula">ΣF = 0 → v 恒定</span>
+    </div>
+    <div class="kp">
+      <h3>🔴 牛顿第二定律</h3>
+      <p>物体的加速度与合力成正比，与质量成反比。</p>
+      <span class="formula">F = ma</span>
+      <p>F 为合力 (N)，m 为质量 (kg)，a 为加速度 (m/s²)。</p>
+    </div>
+    <div class="kp">
+      <h3>🟢 牛顿第三定律</h3>
+      <p>作用力与反作用力大小相等、方向相反，作用在不同物体上。</p>
+      <span class="formula">F₁₂ = -F₂₁</span>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>力的平衡条件</h3>
+    <p>物体处于平衡状态时：</p>
+    <span class="formula">ΣF_x = 0（水平方向合力为零）</span>
+    <span class="formula">ΣF_y = 0（竖直方向合力为零）</span>
+    <p>常见力：重力 (mg)、法向力 (R)、摩擦力 (F = μR)、张力 (T)。</p>
+  </div>
+
+  <div class="kp">
+    <h3>斜面问题</h3>
+    <p>物体在倾角为 θ 的斜面上：</p>
+    <span class="formula">沿斜面分量：mg sin θ</span>
+    <span class="formula">垂直斜面分量：mg cos θ</span>
+    <p>当物体沿斜面运动时，需分解重力并考虑摩擦力。</p>
+  </div>
+
+  <!-- M1.3 -->
+  <h2 data-section="s3" id="sec14-3" style="margin:28px 0 16px;">M1.3 动量与冲量</h2>
+
+  <div class="kp">
+    <h3>动量 (Momentum)</h3>
+    <p>动量定义为质量与速度的乘积：</p>
+    <span class="formula">p = mv</span>
+    <p>动量是矢量，方向与速度方向相同。单位：kg·m/s。</p>
+  </div>
+
+  <div class="kp">
+    <h3>动量守恒定律</h3>
+    <p>在无外力作用的系统中，总动量守恒：</p>
+    <span class="formula">m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂</span>
+    <p>适用于碰撞和爆炸问题。</p>
+  </div>
+
+  <div class="kp">
+    <h3>冲量 (Impulse)</h3>
+    <p>冲量是力在时间上的累积效果：</p>
+    <span class="formula">I = F × Δt = Δp = mv - mu</span>
+    <p>冲量等于动量的变化量。单位：N·s。</p>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">📐 抛体运动轨迹可视化</h3>
+    <div class="mech-demo">
+      <canvas id="mechCanvas"></canvas>
+    </div>
+    <div class="mech-controls">
+      <label>u = <input type="range" id="sliderU" min="10" max="50" value="25" step="1"><span class="val" id="valU">25</span> m/s</label>
+      <label>θ = <input type="range" id="sliderAngle" min="10" max="80" value="45" step="1"><span class="val" id="valAngle">45</span>°</label>
+    </div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      拖动滑块调整初速度 u 和发射角 θ，观察抛体运动轨迹及最大高度和射程的变化
+    </p>
+  </div>
+
+  <!-- ====== STATISTICS SECTION ====== -->
+  <h2 style="margin:28px 0 8px;color:#8b5cf6;border-bottom:2px solid #8b5cf6;padding-bottom:6px;">📊 统计部分 (Statistics - S1)</h2>
+
+  <!-- S1.1 -->
+  <h2 data-section="s4" id="sec14-4" style="margin:28px 0 16px;">S1.1 数据的表示：直方图、累积频率、箱线图</h2>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>📊 直方图 (Histogram)</h3>
+      <p>用矩形面积表示频率。关键在于：</p>
+      <span class="formula">频数密度 = 频数 / 组距</span>
+      <p>面积 = 频数密度 × 组距 = 频数。</p>
+    </div>
+    <div class="kp">
+      <h3>📈 累积频率图</h3>
+      <p>绘制累积频率 (Cumulative Frequency) 对应上组界的折线图。</p>
+      <p>用于估计中位数、四分位数和百分位数。</p>
+      <span class="formula">中位数 ≈ Q₂，下四分位数 ≈ Q₁，上四分位数 ≈ Q₃</span>
+    </div>
+    <div class="kp">
+      <h3>📦 箱线图 (Box Plot)</h3>
+      <p>显示数据五数概括：最小值、Q₁、中位数、Q₃、最大值。</p>
+      <p>四分位距 IQR = Q₃ - Q₁，用于识别异常值。</p>
+      <span class="formula">异常值：< Q₁ - 1.5×IQR 或 > Q₃ + 1.5×IQR</span>
+    </div>
+  </div>
+
+  <!-- S1.2 -->
+  <h2 data-section="s5" id="sec14-5" style="margin:28px 0 16px;">S1.2 概率：条件概率、独立事件</h2>
+
+  <div class="kp">
+    <h3>条件概率</h3>
+    <p>在事件 B 已发生的条件下，事件 A 发生的概率：</p>
+    <span class="formula">P(A|B) = P(A ∩ B) / P(B)，其中 P(B) > 0</span>
+    <p>乘法公式：P(A ∩ B) = P(A|B) × P(B) = P(B|A) × P(A)。</p>
+  </div>
+
+  <div class="kp">
+    <h3>独立事件</h3>
+    <p>若 A 和 B 独立，则：</p>
+    <span class="formula">P(A ∩ B) = P(A) × P(B)</span>
+    <span class="formula">P(A|B) = P(A)，P(B|A) = P(B)</span>
+    <p>互斥事件 (Mutually Exclusive)：A ∩ B = ∅，P(A ∪ B) = P(A) + P(B)。</p>
+  </div>
+
+  <div class="kp">
+    <h3>全概率公式与贝叶斯定理</h3>
+    <span class="formula">P(A) = P(A|B₁)P(B₁) + P(A|B₂)P(B₂) + ...</span>
+    <span class="formula">P(B|A) = P(A|B)P(B) / P(A)（贝叶斯定理）</span>
+  </div>
+
+  <!-- S1.3 -->
+  <h2 data-section="s6" id="sec14-6" style="margin:28px 0 16px;">S1.3 离散随机变量与正态分布</h2>
+
+  <div class="kp">
+    <h3>离散随机变量</h3>
+    <p>随机变量 X 的取值及其概率分布：</p>
+    <span class="formula">期望 E(X) = Σ x · P(X = x)</span>
+    <span class="formula">方差 Var(X) = E(X²) - [E(X)]²</span>
+    <span class="formula">E(aX + b) = aE(X) + b，Var(aX + b) = a²Var(X)</span>
+  </div>
+
+  <div class="kp">
+    <h3>二项分布 (Binomial Distribution)</h3>
+    <p>n 次独立试验，每次成功概率为 p：</p>
+    <span class="formula">X ~ B(n, p)，P(X = r) = C(n,r) × p^r × (1-p)^(n-r)</span>
+    <span class="formula">E(X) = np，Var(X) = np(1-p)</span>
+  </div>
+
+  <div class="kp">
+    <h3>正态分布 (Normal Distribution)</h3>
+    <p>连续型分布，概率密度函数呈钟形曲线：</p>
+    <span class="formula">X ~ N(μ, σ²)</span>
+    <span class="formula">Z = (X - μ) / σ ~ N(0, 1)（标准化）</span>
+    <p>约 68% 的数据在 μ ± σ 内，约 95% 在 μ ± 2σ 内，约 99.7% 在 μ ± 3σ 内。</p>
+  </div>
+
+  <!-- 练习题 -->
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <h3 style="color:#059669;margin:20px 0 12px;">🔧 力学练习题 (Mechanics)</h3>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>一辆汽车从静止开始以 2 m/s² 匀加速行驶 8 秒，求行驶的距离。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 32 m</label>
+      <label><input type="radio" name="q1" value="B">B. 64 m</label>
+      <label><input type="radio" name="q1" value="C">C. 128 m</label>
+      <label><input type="radio" name="q1" value="D">D. 16 m</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="B">✅ 正确答案：B。u=0, a=2, t=8 → s = ut + (1/2)at² = 0 + (1/2)×2×64 = 64 m。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>一个质量为 5 kg 的物体受到 20 N 的合力，则加速度为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 2 m/s²</label>
+      <label><input type="radio" name="q2" value="B">B. 4 m/s²</label>
+      <label><input type="radio" name="q2" value="C">C. 5 m/s²</label>
+      <label><input type="radio" name="q2" value="D">D. 100 m/s²</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="B">✅ 正确答案：B。F = ma → 20 = 5a → a = 4 m/s²。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>质量为 2 kg 的小球以 6 m/s 的速度撞击墙壁后以 2 m/s 反向弹回，则冲量大小为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 8 N·s</label>
+      <label><input type="radio" name="q3" value="B">B. 16 N·s</label>
+      <label><input type="radio" name="q3" value="C">C. 12 N·s</label>
+      <label><input type="radio" name="q3" value="D">D. 4 N·s</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="B">✅ 正确答案：B。I = mv - mu = 2×(-2) - 2×6 = -4 - 12 = -16，冲量大小为 16 N·s。</div>
+  </div>
+
+  <h3 style="color:#8b5cf6;margin:20px 0 12px;">📊 统计练习题 (Statistics)</h3>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>一组数据：3, 7, 8, 5, 12, 14, 21, 18, 25。中位数是____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. 8</label>
+      <label><input type="radio" name="q4" value="B">B. 12</label>
+      <label><input type="radio" name="q4" value="C">C. 14</label>
+      <label><input type="radio" name="q4" value="D">D. 11</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="B">✅ 正确答案：B。排序：3,5,7,8,12,14,18,21,25，共 9 个数，第 5 个为中位数 = 12。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>袋中有 4 个红球和 6 个蓝球，不放回地依次取出 2 个球。第一次取到红球且第二次取到蓝球的概率是____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. 4/15</label>
+      <label><input type="radio" name="q5" value="B">B. 6/25</label>
+      <label><input type="radio" name="q5" value="C">C. 24/90</label>
+      <label><input type="radio" name="q5" value="D">D. 2/9</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="A">✅ 正确答案：A。P(红蓝) = (4/10) × (6/9) = 24/90 = 4/15。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>随机变量 X ~ B(10, 0.3)，则 E(X) = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. 3</label>
+      <label><input type="radio" name="q6" value="B">B. 2.1</label>
+      <label><input type="radio" name="q6" value="C">C. 7</label>
+      <label><input type="radio" name="q6" value="D">D. 0.3</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="A">✅ 正确答案：A。对于二项分布 X ~ B(n, p)，E(X) = np = 10 × 0.3 = 3。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('mechCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const sliderU = document.getElementById('sliderU');
+  const sliderAngle = document.getElementById('sliderAngle');
+  const valU = document.getElementById('valU');
+  const valAngle = document.getElementById('valAngle');
+
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const u = parseInt(sliderU.value);
+    const angleDeg = parseInt(sliderAngle.value);
+    const angleRad = angleDeg * Math.PI / 180;
+    valU.textContent = u;
+    valAngle.textContent = angleDeg;
+
+    const g = 9.8;
+    const scaleX = w / 80;
+    const scaleY = h / 40;
+
+    ctx.clearRect(0, 0, w, h);
+
+    // Ground
+    const groundY = h - 30;
+    ctx.strokeStyle = '#475569';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(0, groundY);
+    ctx.lineTo(w, groundY);
+    ctx.stroke();
+
+    // Grid
+    ctx.strokeStyle = '#334155';
+    ctx.lineWidth = 0.5;
+    for(let x = 0; x < w; x += scaleX * 10) {
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, groundY); ctx.stroke();
+    }
+    for(let y = 0; y < groundY; y += scaleY * 5) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+    }
+
+    const ux = u * Math.cos(angleRad);
+    const uy = u * Math.sin(angleRad);
+
+    // Total flight time & range
+    const totalTime = 2 * uy / g;
+    const range = ux * totalTime;
+    const maxHeight = (uy * uy) / (2 * g);
+
+    // Trajectory
+    ctx.strokeStyle = '#10b981';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    let first = true;
+    const margin = 40;
+    const originX = margin;
+    const originY = groundY;
+
+    for(let t = 0; t <= totalTime; t += totalTime / 200) {
+      const x = ux * t;
+      const y = uy * t - 0.5 * g * t * t;
+      const px = originX + x * scaleX;
+      const py = originY - y * scaleY;
+      if(px < w && py > 0 && py < groundY + 50) {
+        if(first) { ctx.moveTo(px, py); first = false; }
+        else { ctx.lineTo(px, py); }
+      }
+    }
+    ctx.stroke();
+
+    // Max height marker
+    const maxX = range / 2;
+    const maxPx = originX + maxX * scaleX;
+    const maxPy = originY - maxHeight * scaleY;
+    ctx.setLineDash([4, 4]);
+    ctx.strokeStyle = '#f59e0b';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(maxPx, maxPy);
+    ctx.lineTo(maxPx, groundY);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Markers
+    ctx.fillStyle = '#f59e0b';
+    ctx.beginPath();
+    ctx.arc(maxPx, maxPy, 4, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = '#fff';
+    ctx.font = '11px sans-serif';
+    ctx.fillText('最高点 ' + maxHeight.toFixed(1) + 'm', maxPx + 6, maxPy - 6);
+
+    ctx.fillStyle = '#3b82f6';
+    ctx.beginPath();
+    ctx.arc(originX + range * scaleX, groundY, 4, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillText('射程 ' + range.toFixed(1) + 'm', originX + range * scaleX + 6, groundY - 10);
+
+    // Info
+    ctx.fillStyle = '#fff';
+    ctx.font = '12px sans-serif';
+    ctx.fillText('u = ' + u + ' m/s,  θ = ' + angleDeg + '°', 10, 20);
+    ctx.fillText('飞行时间 = ' + totalTime.toFixed(2) + ' s', 10, 38);
+    ctx.fillText('g = 9.8 m/s²', 10, 56);
+  }
+
+  sliderU.addEventListener('input', draw);
+  sliderAngle.addEventListener('input', draw);
+  draw();
+})();
+</script>
+</body>
+</html>

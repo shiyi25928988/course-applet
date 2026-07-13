@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第13章 复数 - CAIE A-LEVEL 数学 (9709)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.complex-demo { width:100%; height:340px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.complex-demo canvas { width:100%; height:100%; }
+.complex-controls { display:flex; gap:16px; flex-wrap:wrap; margin-top:12px; justify-content:center; align-items:center; }
+.complex-controls label { display:flex; align-items:center; gap:6px; font-size:.85rem; color:#475569; }
+.complex-controls input[type=range] { width:100px; }
+.complex-controls .val { display:inline-block; width:40px; text-align:center; font-weight:600; color:#059669; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📐 A-LEVEL 数学</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quadratics.html"><span class="ch-num">1</span>二次函数</a></li>
+    <li><a href="ch02_functions.html"><span class="ch-num">2</span>函数与图像变换</a></li>
+    <li><a href="ch03_coordinate_geometry.html"><span class="ch-num">3</span>坐标几何</a></li>
+    <li><a href="ch04_circular_measure.html"><span class="ch-num">4</span>圆与弧度制</a></li>
+    <li><a href="ch05_trigonometry.html"><span class="ch-num">5</span>三角函数</a></li>
+    <li><a href="ch06_sequences_series.html"><span class="ch-num">6</span>数列与级数</a></li>
+    <li><a href="ch07_differentiation.html"><span class="ch-num">7</span>微分</a></li>
+    <li><a href="ch08_integration.html"><span class="ch-num">8</span>积分</a></li>
+    <li><a href="ch09_logarithms_exponentials.html"><span class="ch-num">9</span>对数与指数</a></li>
+    <li><a href="ch10_numerical_methods.html"><span class="ch-num">10</span>数值方法</a></li>
+    <li><a href="ch11_vectors.html"><span class="ch-num">11</span>三维向量</a></li>
+    <li><a href="ch12_differential_equations.html"><span class="ch-num">12</span>微分方程</a></li>
+    <li><a href="ch13_complex_numbers.html" class="active" data-section="s1"><span class="ch-num">13</span>复数</a>
+      <div class="subsections">
+        <a href="#sec13-1" data-section="s1">13.1 复数的引入</a>
+        <a href="#sec13-2" data-section="s2">13.2 复数的代数运算</a>
+        <a href="#sec13-3" data-section="s3">13.3 复平面 (Argand Diagram)</a>
+        <a href="#sec13-4" data-section="s4">13.4 极坐标形式</a>
+        <a href="#sec13-5" data-section="s5">13.5 棣莫弗定理</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch14_mechanics_statistics.html"><span class="ch-num">14</span>力学与统计</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">📐 数学首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a><span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+      <a href="index.html">📐 数学</a><span>›</span>
+      <span>第13章 复数</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="index.html" class="active">数学</a><a href="../physics/index.html">物理</a>
+      <a href="../chemistry/index.html">化学</a><a href="../biology/index.html">生物</a><a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第13章 复数 (Complex Numbers)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>理解虚数单位 i 的定义（i² = -1）及复数的代数形式 z = a + bi</li>
+      <li>掌握复数的四则运算：加法、减法、乘法和除法</li>
+      <li>能够在复平面 (Argand Diagram) 上表示复数并理解其几何意义</li>
+      <li>掌握复数的极坐标形式 r(cos θ + i sin θ)，理解模与辐角</li>
+      <li>熟练运用棣莫弗定理 (De Moivre's Theorem) 求幂和根</li>
+    </ul>
+  </div>
+
+  <!-- 13.1 -->
+  <h2 data-section="s1" id="sec13-1" style="margin:28px 0 16px;">13.1 复数的引入：i² = -1，实部和虚部</h2>
+
+  <div class="kp">
+    <h3>虚数单位 i</h3>
+    <p>在实数范围内，方程 x² + 1 = 0 无解。引入<strong>虚数单位 i</strong>，定义为：</p>
+    <span class="formula">i² = -1 或 i = √(-1)</span>
+    <p>由此所有负数都可以开平方：√(-a) = i√a（a > 0）。</p>
+  </div>
+
+  <div class="kp">
+    <h3>复数的定义</h3>
+    <p>复数 z 可以表示为 <strong>z = a + bi</strong>，其中 a, b 为实数：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li>a 称为<strong>实部 (Real Part)</strong>，记作 Re(z) = a</li>
+      <li>b 称为<strong>虚部 (Imaginary Part)</strong>，记作 Im(z) = b</li>
+      <li>当 b = 0 时，z 为实数；当 a = 0 且 b ≠ 0 时，z 为纯虚数</li>
+    </ul>
+    <span class="formula">z = a + bi，其中 a, b ∈ ℝ</span>
+  </div>
+
+  <div class="kp">
+    <h3>i 的幂次循环</h3>
+    <span class="formula">i¹ = i，i² = -1，i³ = -i，i⁴ = 1</span>
+    <p>i 的幂次以 4 为周期循环：i^(4k) = 1，i^(4k+1) = i，i^(4k+2) = -1，i^(4k+3) = -i。</p>
+  </div>
+
+  <!-- 13.2 -->
+  <h2 data-section="s2" id="sec13-2" style="margin:28px 0 16px;">13.2 复数的代数运算：加减乘除</h2>
+
+  <div class="kp">
+    <h3>加法与减法</h3>
+    <p>设 z₁ = a + bi，z₂ = c + di，则：</p>
+    <span class="formula">z₁ + z₂ = (a + c) + (b + d)i</span>
+    <span class="formula">z₁ - z₂ = (a - c) + (b - d)i</span>
+    <p>复数的加减法满足交换律和结合律。</p>
+  </div>
+
+  <div class="kp">
+    <h3>乘法</h3>
+    <span class="formula">z₁ × z₂ = (a + bi)(c + di) = (ac - bd) + (ad + bc)i</span>
+    <p>注意：i² = -1，所以 bd·i² = -bd。</p>
+  </div>
+
+  <div class="kp">
+    <h3>共轭复数与除法</h3>
+    <p>z = a + bi 的<strong>共轭复数 (Conjugate)</strong> 为 z* = a - bi。</p>
+    <span class="formula">z · z* = (a + bi)(a - bi) = a² + b²（实数）</span>
+    <p>除法：分子分母同乘以分母的共轭：</p>
+    <span class="formula">z₁ / z₂ = (a+bi)/(c+di) = ((a+bi)(c-di)) / (c² + d²)</span>
+  </div>
+
+  <!-- 13.3 -->
+  <h2 data-section="s3" id="sec13-3" style="margin:28px 0 16px;">13.3 复数的几何表示：复平面 (Argand Diagram)</h2>
+
+  <div class="kp">
+    <h3>复平面 (Argand Diagram)</h3>
+    <p>复数 z = a + bi 可以用复平面上的点 (a, b) 表示：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li>横轴（x 轴）为<strong>实轴 (Real Axis)</strong></li>
+      <li>纵轴（y 轴）为<strong>虚轴 (Imaginary Axis)</strong></li>
+      <li>复数 z 对应从原点指向 (a, b) 的向量</li>
+    </ul>
+  </div>
+
+  <div class="kp">
+    <h3>模 (Modulus)</h3>
+    <p>复数 z = a + bi 的模 |z| 表示该点到原点的距离：</p>
+    <span class="formula">|z| = √(a² + b²)</span>
+    <p>性质：|z₁ · z₂| = |z₁| · |z₂|，|z₁ / z₂| = |z₁| / |z₂|。</p>
+  </div>
+
+  <div class="kp">
+    <h3>辐角 (Argument)</h3>
+    <p>辐角 arg(z) 是向量与正实轴之间的夹角，通常取主值范围 (-π, π] 或 [0, 2π)。</p>
+    <span class="formula">arg(z) = θ，其中 tan θ = b/a</span>
+    <p>注意：需要根据 a 和 b 的符号确定 θ 所在的象限。</p>
+  </div>
+
+  <!-- 13.4 -->
+  <h2 data-section="s4" id="sec13-4" style="margin:28px 0 16px;">13.4 极坐标形式：r(cos θ + i sin θ)，模与辐角</h2>
+
+  <div class="kp">
+    <h3>极坐标形式 (Polar Form / Modulus-Argument Form)</h3>
+    <p>复数 z = a + bi 可以表示为极坐标形式：</p>
+    <span class="formula">z = r(cos θ + i sin θ)</span>
+    <p>其中 r = |z| = √(a² + b²)，θ = arg(z)，且 a = r cos θ，b = r sin θ。</p>
+  </div>
+
+  <div class="kp">
+    <h3>极坐标形式的乘法</h3>
+    <p>设 z₁ = r₁(cos θ₁ + i sin θ₁)，z₂ = r₂(cos θ₂ + i sin θ₂)，则：</p>
+    <span class="formula">z₁ · z₂ = r₁r₂ [cos(θ₁ + θ₂) + i sin(θ₁ + θ₂)]</span>
+    <p>乘法：<strong>模相乘，辐角相加</strong>。</p>
+  </div>
+
+  <div class="kp">
+    <h3>极坐标形式的除法</h3>
+    <span class="formula">z₁ / z₂ = (r₁/r₂) [cos(θ₁ - θ₂) + i sin(θ₁ - θ₂)]</span>
+    <p>除法：<strong>模相除，辐角相减</strong>。</p>
+  </div>
+
+  <!-- 13.5 -->
+  <h2 data-section="s5" id="sec13-5" style="margin:28px 0 16px;">13.5 棣莫弗定理 (De Moivre's Theorem) 及应用</h2>
+
+  <div class="kp">
+    <h3>棣莫弗定理</h3>
+    <p>对于任意整数 n：</p>
+    <span class="formula">[r(cos θ + i sin θ)]ⁿ = rⁿ (cos nθ + i sin nθ)</span>
+    <p>这是极坐标形式乘法的自然推广：<strong>模取 n 次方，辐角乘以 n</strong>。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>🔢 求复数的幂</h3>
+      <p>将复数化为极坐标形式后，直接应用棣莫弗定理。</p>
+      <p>例如：(1 + i)⁸：先求 r = √2, θ = π/4，则 (1 + i)⁸ = (√2)⁸(cos 2π + i sin 2π) = 16。</p>
+      <span class="formula">(1 + i)⁸ = 16</span>
+    </div>
+    <div class="kp">
+      <h3>🌱 求复数的 n 次方根</h3>
+      <p>z^(1/n) = r^(1/n) [cos((θ+2kπ)/n) + i sin((θ+2kπ)/n)]，k = 0, 1, ..., n-1。</p>
+      <p>n 个根均匀分布在复平面以原点为圆心、r^(1/n) 为半径的圆上。</p>
+      <span class="formula">n 个根呈正 n 边形分布</span>
+    </div>
+  </div>
+
+  <div class="kp">
+    <h3>三角恒等式的推导</h3>
+    <p>棣莫弗定理可用于推导三角函数的倍角公式：</p>
+    <p>由 (cos θ + i sin θ)ⁿ = cos nθ + i sin nθ，展开左边并比较实部和虚部。</p>
+    <p>例如 n = 3：cos 3θ = 4cos³θ - 3cos θ，sin 3θ = 3sin θ - 4sin³θ。</p>
+    <span class="formula">cos 3θ = 4cos³θ - 3cos θ</span>
+    <span class="formula">sin 3θ = 3sin θ - 4sin³θ</span>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">🎨 复平面上复数乘法可视化</h3>
+    <div class="complex-demo">
+      <canvas id="complexCanvas"></canvas>
+    </div>
+    <div class="complex-controls">
+      <label>|z₁| = <input type="range" id="sliderR1" min="5" max="30" value="15" step="1"><span class="val" id="valR1">1.5</span></label>
+      <label>arg(z₁) = <input type="range" id="sliderA1" min="0" max="628" value="78" step="1"><span class="val" id="valA1">45°</span></label>
+      <label>|z₂| = <input type="range" id="sliderR2" min="5" max="30" value="12" step="1"><span class="val" id="valR2">1.2</span></label>
+      <label>arg(z₂) = <input type="range" id="sliderA2" min="0" max="628" value="104" step="1"><span class="val" id="valA2">60°</span></label>
+    </div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      拖动滑块观察两个复数及其乘积在复平面上的位置变化（蓝色=z₁，红色=z₂，绿色=z₁·z₂）
+    </p>
+  </div>
+
+  <!-- 练习题 -->
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>若 z = 3 + 4i，则 |z| = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 7</label>
+      <label><input type="radio" name="q1" value="B">B. 5</label>
+      <label><input type="radio" name="q1" value="C">C. 25</label>
+      <label><input type="radio" name="q1" value="D">D. √7</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="B">✅ 正确答案：B。|z| = √(3² + 4²) = √(9 + 16) = √25 = 5。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>计算 (2 + i)(3 - 2i) = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 8 + i</label>
+      <label><input type="radio" name="q2" value="B">B. 4 - i</label>
+      <label><input type="radio" name="q2" value="C">C. 8 - i</label>
+      <label><input type="radio" name="q2" value="D">D. 6 + i</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="C">✅ 正确答案：C。(2+i)(3-2i) = 6 - 4i + 3i - 2i² = 6 - i + 2 = 8 - i。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>复数 z = 1 + i 的辐角主值 arg(z) = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. π/6</label>
+      <label><input type="radio" name="q3" value="B">B. π/4</label>
+      <label><input type="radio" name="q3" value="C">C. π/3</label>
+      <label><input type="radio" name="q3" value="D">D. π/2</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="B">✅ 正确答案：B。tan θ = 1/1 = 1，且 a=1>0, b=1>0，在第一象限，θ = π/4。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>利用棣莫弗定理，计算 (1 + i√3)⁶ = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. 64</label>
+      <label><input type="radio" name="q4" value="B">B. -64</label>
+      <label><input type="radio" name="q4" value="C">C. 32</label>
+      <label><input type="radio" name="q4" value="D">D. -32</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="A">✅ 正确答案：A。r = √(1+3) = 2，θ = π/3，(1+i√3)⁶ = 2⁶(cos 2π + i sin 2π) = 64(1 + 0) = 64。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>方程 z³ = 8 在复数范围内有几个根？</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. 1 个</label>
+      <label><input type="radio" name="q5" value="B">B. 2 个</label>
+      <label><input type="radio" name="q5" value="C">C. 3 个</label>
+      <label><input type="radio" name="q5" value="D">D. 无穷多个</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="C">✅ 正确答案：C。根据棣莫弗定理，z = 8^(1/3)[cos(2kπ/3) + i sin(2kπ/3)]，k=0,1,2，共3个根：2, -1+i√3, -1-i√3。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>若 z₁ = 2(cos 30° + i sin 30°)，z₂ = 3(cos 45° + i sin 45°)，则 z₁ · z₂ 的模为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. 5</label>
+      <label><input type="radio" name="q6" value="B">B. 6</label>
+      <label><input type="radio" name="q6" value="C">C. √6</label>
+      <label><input type="radio" name="q6" value="D">D. 1</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="B">✅ 正确答案：B。|z₁·z₂| = |z₁|·|z₂| = 2 × 3 = 6。辐角为 30° + 45° = 75°。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('complexCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const sliderR1 = document.getElementById('sliderR1');
+  const sliderA1 = document.getElementById('sliderA1');
+  const sliderR2 = document.getElementById('sliderR2');
+  const sliderA2 = document.getElementById('sliderA2');
+  const valR1 = document.getElementById('valR1');
+  const valA1 = document.getElementById('valA1');
+  const valR2 = document.getElementById('valR2');
+  const valA2 = document.getElementById('valA2');
+
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const cx = w/2, cy = h/2;
+    const scale = Math.min(w, h) / 8;
+
+    const r1 = parseInt(sliderR1.value) / 10;
+    const a1 = parseInt(sliderA1.value) / 100;
+    const r2 = parseInt(sliderR2.value) / 10;
+    const a2 = parseInt(sliderA2.value) / 100;
+
+    valR1.textContent = r1.toFixed(1);
+    valA1.textContent = Math.round(a1 * 180 / Math.PI) + '°';
+    valR2.textContent = r2.toFixed(1);
+    valA2.textContent = Math.round(a2 * 180 / Math.PI) + '°';
+
+    ctx.clearRect(0, 0, w, h);
+
+    // Grid
+    ctx.strokeStyle = '#334155';
+    ctx.lineWidth = 0.5;
+    for(let i = -4; i <= 4; i++) {
+      const px = cx + i * scale;
+      ctx.beginPath(); ctx.moveTo(px, 0); ctx.lineTo(px, h); ctx.stroke();
+    }
+    for(let j = -3; j <= 3; j++) {
+      const py = cy + j * scale;
+      ctx.beginPath(); ctx.moveTo(0, py); ctx.lineTo(w, py); ctx.stroke();
+    }
+
+    // Axes
+    ctx.strokeStyle = '#94a3b8';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(cx, 0); ctx.lineTo(cx, h); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(0, cy); ctx.lineTo(w, cy); ctx.stroke();
+
+    // Unit circle
+    ctx.strokeStyle = '#475569';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.arc(cx, cy, scale, 0, Math.PI * 2);
+    ctx.stroke();
+
+    // Draw vectors
+    function drawVector(px, py, color, label, alpha) {
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 2.5;
+      ctx.globalAlpha = alpha || 1;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.lineTo(px, py);
+      ctx.stroke();
+
+      // Arrowhead
+      const dx = px - cx, dy = -(py - cy);
+      const angle = Math.atan2(dy, dx);
+      const len = 10;
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.moveTo(px, py);
+      ctx.lineTo(
+        px - len * Math.cos(angle - 0.5),
+        py + len * Math.sin(angle - 0.5)
+      );
+      ctx.lineTo(
+        px - len * Math.cos(angle + 0.5),
+        py + len * Math.sin(angle + 0.5)
+      );
+      ctx.closePath();
+      ctx.fill();
+
+      ctx.fillStyle = color;
+      ctx.font = '12px sans-serif';
+      ctx.fillText(label, px + 6, py - 6);
+      ctx.globalAlpha = 1;
+    }
+
+    // z1 (blue)
+    const x1 = cx + r1 * scale * Math.cos(a1);
+    const y1 = cy - r1 * scale * Math.sin(a1);
+    drawVector(x1, y1, '#3b82f6', 'z₁', 1);
+
+    // z2 (red)
+    const x2 = cx + r2 * scale * Math.cos(a2);
+    const y2 = cy - r2 * scale * Math.sin(a2);
+    drawVector(x2, y2, '#ef4444', 'z₂', 1);
+
+    // z1 * z2 (green) - mod multiply, arg add
+    const r3 = r1 * r2;
+    const a3 = a1 + a2;
+    const x3 = cx + r3 * scale * Math.cos(a3);
+    const y3 = cy - r3 * scale * Math.sin(a3);
+    drawVector(x3, y3, '#10b981', 'z₁·z₂', 0.8);
+
+    // Legend
+    ctx.fillStyle = '#fff';
+    ctx.font = '11px sans-serif';
+    ctx.fillText('|z₁·z₂| = ' + r3.toFixed(2), 10, 20);
+    ctx.fillText('arg(z₁·z₂) = ' + Math.round(a3 * 180 / Math.PI) + '°', 10, 38);
+  }
+
+  sliderR1.addEventListener('input', draw);
+  sliderA1.addEventListener('input', draw);
+  sliderR2.addEventListener('input', draw);
+  sliderA2.addEventListener('input', draw);
+  draw();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第7章 微分 - CAIE A-LEVEL 数学 (9709)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.deriv-demo { width:100%; height:300px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.deriv-demo canvas { width:100%; height:100%; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📐 A-LEVEL 数学</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quadratics.html"><span class="ch-num">1</span>二次函数</a></li>
+    <li><a href="ch02_functions.html"><span class="ch-num">2</span>函数与图像变换</a></li>
+    <li><a href="ch03_coordinate_geometry.html"><span class="ch-num">3</span>坐标几何</a></li>
+    <li><a href="ch04_circular_measure.html"><span class="ch-num">4</span>圆与弧度制</a></li>
+    <li><a href="ch05_trigonometry.html"><span class="ch-num">5</span>三角函数</a></li>
+    <li><a href="ch06_sequences_series.html"><span class="ch-num">6</span>数列与级数</a></li>
+    <li><a href="ch07_differentiation.html" class="active" data-section="s1"><span class="ch-num">7</span>微分</a>
+      <div class="subsections">
+        <a href="#sec7-1" data-section="s1">7.1 导数的定义</a>
+        <a href="#sec7-2" data-section="s2">7.2 基本求导法则</a>
+        <a href="#sec7-3" data-section="s3">7.3 切线、法线与驻点</a>
+        <a href="#sec7-4" data-section="s4">7.4 链式法则与隐函数</a>
+        <a href="#sec7-5" data-section="s5">7.5 参数方程求导</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch08_integration.html"><span class="ch-num">8</span>积分</a></li>
+    <li><a href="ch09_logarithms_exponentials.html"><span class="ch-num">9</span>对数与指数</a></li>
+    <li><a href="ch10_numerical_methods.html"><span class="ch-num">10</span>数值方法</a></li>
+    <li><a href="ch11_vectors.html"><span class="ch-num">11</span>三维向量</a></li>
+    <li><a href="ch12_differential_equations.html"><span class="ch-num">12</span>微分方程</a></li>
+    <li><a href="ch13_complex_numbers.html"><span class="ch-num">13</span>复数</a></li>
+    <li><a href="ch14_mechanics_statistics.html"><span class="ch-num">14</span>力学与统计</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">📐 数学首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a><span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+      <a href="index.html">📐 数学</a><span>›</span>
+      <span>第7章 微分</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="index.html" class="active">数学</a><a href="../physics/index.html">物理</a>
+      <a href="../chemistry/index.html">化学</a><a href="../biology/index.html">生物</a><a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第7章 微分 (Differentiation)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>理解导数作为函数变化率（切线斜率）的几何意义</li>
+      <li>掌握基本函数的导数公式</li>
+      <li>熟练运用乘积法则、商的法则、链式法则</li>
+      <li>能够求隐函数和参数方程定义的函数的导数</li>
+      <li>利用导数求切线/法线方程，判断驻点性质</li>
+    </ul>
+  </div>
+
+  <h2 data-section="s1" id="sec7-1" style="margin:28px 0 16px;">7.1 导数的定义</h2>
+
+  <div class="kp">
+    <h3>导数作为极限</h3>
+    <p>函数 f(x) 在 x = a 处的导数定义为：</p>
+    <span class="formula">f'(a) = lim(h→0) [f(a+h) - f(a)] / h</span>
+    <p>几何意义：导数 f'(a) 是曲线 y = f(x) 在点 (a, f(a)) 处的<strong>切线斜率</strong>。</p>
+  </div>
+
+  <div class="kp">
+    <h3>莱布尼茨记号</h3>
+    <span class="formula">dy/dx = d/dx[f(x)]</span>
+    <p>dy/dx 表示 y 对 x 的变化率。二阶导数记作 d²y/dx²。</p>
+  </div>
+
+  <h2 data-section="s2" id="sec7-2" style="margin:28px 0 16px;">7.2 基本求导法则</h2>
+
+  <div class="kp">
+    <h3>常用函数的导数</h3>
+    <span class="formula">d/dx(xⁿ) = n xⁿ⁻¹</span>
+    <span class="formula">d/dx(sin x) = cos x</span>
+    <span class="formula">d/dx(cos x) = -sin x</span>
+    <span class="formula">d/dx(tan x) = sec² x</span>
+    <span class="formula">d/dx(eˣ) = eˣ</span>
+    <span class="formula">d/dx(ln x) = 1/x</span>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>乘积法则</h3>
+      <span class="formula">d/dx(uv) = u'v + uv'</span>
+      <p>例：d/dx(x² sin x) = 2x sin x + x² cos x</p>
+    </div>
+    <div class="kp">
+      <h3>商的法则</h3>
+      <span class="formula">d/dx(u/v) = (u'v - uv') / v²</span>
+      <p>例：d/dx(x/(x+1)) = (1·(x+1) - x·1)/(x+1)² = 1/(x+1)²</p>
+    </div>
+  </div>
+
+  <h2 data-section="s3" id="sec7-3" style="margin:28px 0 16px;">7.3 切线、法线与驻点</h2>
+
+  <div class="kp">
+    <h3>切线与法线方程</h3>
+    <p>曲线 y = f(x) 在点 (a, f(a)) 处的：</p>
+    <p><strong>切线方程</strong>：y - f(a) = f'(a)(x - a)</p>
+    <p><strong>法线方程</strong>：y - f(a) = -1/f'(a)(x - a)（当 f'(a) ≠ 0）</p>
+  </div>
+
+  <div class="kp">
+    <h3>驻点与增减性</h3>
+    <p><strong>驻点 (Stationary Point)</strong>：f'(x) = 0 的点。</p>
+    <p>利用一阶导数判断增减性：</p>
+    <p>f'(x) > 0 → 函数递增；f'(x) < 0 → 函数递减。</p>
+  </div>
+
+  <div class="keypoints-grid">
+    <div class="kp">
+      <h3>二阶导数判断驻点性质</h3>
+      <p>在驻点 x = a 处，f'(a) = 0：</p>
+      <p><strong>f''(a) > 0</strong> → 极小值点</p>
+      <p><strong>f''(a) < 0</strong> → 极大值点</p>
+      <p><strong>f''(a) = 0</strong> → 需进一步判断（可能是拐点）</p>
+    </div>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">📈 切线随曲线变化</h3>
+    <div class="deriv-demo"><canvas id="derivCanvas"></canvas></div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      蓝色曲线 f(x) = x³ - 3x，橙色切线随 x 位置变化
+    </p>
+  </div>
+
+  <h2 data-section="s4" id="sec7-4" style="margin:28px 0 16px;">7.4 链式法则与隐函数求导 (P2/P3)</h2>
+
+  <div class="kp">
+    <h3>链式法则 (Chain Rule)</h3>
+    <span class="formula">dy/dx = dy/du × du/dx</span>
+    <p>例：y = (3x² + 1)⁵，令 u = 3x² + 1，则 dy/dx = 5u⁴ × 6x = 30x(3x² + 1)⁴。</p>
+  </div>
+
+  <div class="kp">
+    <h3>隐函数求导 (Implicit Differentiation)</h3>
+    <p>当 y 不能显式表达为 x 的函数时，对等式两边同时求导，y 视作 x 的函数：</p>
+    <span class="formula">d/dx(y²) = 2y × dy/dx</span>
+    <p>例：x² + y² = 25 → 2x + 2y·dy/dx = 0 → dy/dx = -x/y。</p>
+  </div>
+
+  <h2 data-section="s5" id="sec7-5" style="margin:28px 0 16px;">7.5 参数方程求导 (P3)</h2>
+
+  <div class="kp">
+    <h3>参数方程形式</h3>
+    <p>若 x = f(t)，y = g(t)，则：</p>
+    <span class="formula">dy/dx = (dy/dt) / (dx/dt)</span>
+    <p>二阶导数：</p>
+    <span class="formula">d²y/dx² = d/dx(dy/dx) = d/dt(dy/dx) / (dx/dt)</span>
+  </div>
+
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>d/dx (x⁴) = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 4x³</label>
+      <label><input type="radio" name="q1" value="B">B. x³</label>
+      <label><input type="radio" name="q1" value="C">C. 4x⁴</label>
+      <label><input type="radio" name="q1" value="D">D. 3x⁴</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="A">✅ 正确答案：A。d/dx(xⁿ) = n xⁿ⁻¹，所以 d/dx(x⁴) = 4x³。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>d/dx (sin 2x) = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. cos 2x</label>
+      <label><input type="radio" name="q2" value="B">B. 2 cos 2x</label>
+      <label><input type="radio" name="q2" value="C">C. -2 cos 2x</label>
+      <label><input type="radio" name="q2" value="D">D. 2 sin 2x</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="B">✅ 正确答案：B。链式法则：d/dx(sin 2x) = cos 2x × 2 = 2 cos 2x。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>曲线 y = x² - 2x + 3 在 x = 2 处的切线斜率为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 0</label>
+      <label><input type="radio" name="q3" value="B">B. 1</label>
+      <label><input type="radio" name="q3" value="C">C. 2</label>
+      <label><input type="radio" name="q3" value="D">D. 3</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="C">✅ 正确答案：C。dy/dx = 2x - 2，在 x = 2 处，斜率为 2×2 - 2 = 2。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>f(x) = x³ - 3x，f'(x) = 0 时的 x 值为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. x = 0</label>
+      <label><input type="radio" name="q4" value="B">B. x = ±1</label>
+      <label><input type="radio" name="q4" value="C">C. x = 0, ±1</label>
+      <label><input type="radio" name="q4" value="D">D. x = 1, 2</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="B">✅ 正确答案：B。f'(x) = 3x² - 3 = 3(x² - 1) = 0 → x = ±1。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>d/dx (x² eˣ) = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. 2x eˣ</label>
+      <label><input type="radio" name="q5" value="B">B. x² eˣ + 2x eˣ</label>
+      <label><input type="radio" name="q5" value="C">C. 2x eˣ + x²</label>
+      <label><input type="radio" name="q5" value="D">D. (x² + 2x) eˣ</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="D">✅ 正确答案：D。乘积法则：d/dx(x²)·eˣ + x²·d/dx(eˣ) = 2x eˣ + x² eˣ = (x² + 2x) eˣ。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>若 y = (2x - 1)³，则 dy/dx = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. 3(2x - 1)²</label>
+      <label><input type="radio" name="q6" value="B">B. 6(2x - 1)²</label>
+      <label><input type="radio" name="q6" value="C">C. 2(2x - 1)²</label>
+      <label><input type="radio" name="q6" value="D">D. (2x - 1)²</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="B">✅ 正确答案：B。链式法则：dy/dx = 3(2x-1)² × 2 = 6(2x-1)²。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('derivCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let t = 0;
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const cx = w/2, cy = h/2;
+    const scale = 40;
+    ctx.clearRect(0, 0, w, h);
+    // Grid & axes
+    ctx.strokeStyle = '#334155'; ctx.lineWidth = 0.5;
+    for(let x = 0; x < w; x += scale) { ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,h); ctx.stroke(); }
+    for(let y = 0; y < h; y += scale) { ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(w,y); ctx.stroke(); }
+    ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(cx,0); ctx.lineTo(cx,h); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(0,cy); ctx.lineTo(w,cy); ctx.stroke();
+
+    const f = x => x*x*x - 3*x;
+    const fp = x => 3*x*x - 3;
+
+    // Curve
+    ctx.strokeStyle = '#3b82f6'; ctx.lineWidth = 2.5; ctx.beginPath();
+    let first = true;
+    for(let px = 0; px < w; px++) {
+      const x = (px - cx) / scale;
+      const y = cy - f(x) * scale;
+      if(y > -50 && y < h + 50) {
+        if(first) { ctx.moveTo(px, y); first = false; }
+        else ctx.lineTo(px, y);
+      }
+    }
+    ctx.stroke();
+
+    // Tangent at moving point
+    const x0 = 1.8 * Math.sin(t * 0.02);
+    const y0 = f(x0);
+    const m = fp(x0);
+    const sx = cx + x0 * scale;
+    const sy = cy - y0 * scale;
+
+    ctx.strokeStyle = '#f59e0b'; ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(sx - 80, sy - m * (-80));
+    ctx.lineTo(sx + 80, sy - m * 80);
+    ctx.stroke();
+
+    // Point
+    ctx.fillStyle = '#ef4444'; ctx.beginPath();
+    ctx.arc(sx, sy, 5, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = '#fff'; ctx.font = '11px sans-serif';
+    ctx.fillText('斜率 = ' + m.toFixed(1), sx + 10, sy - 10);
+
+    t++;
+    requestAnimationFrame(draw);
+  }
+  draw();
+  window.addEventListener('resize', resize);
+})();
+</script>
+</body>
+</html>

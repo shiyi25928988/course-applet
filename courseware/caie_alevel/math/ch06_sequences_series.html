@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第6章 数列与级数 - CAIE A-LEVEL 数学 (9709)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📐 A-LEVEL 数学</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quadratics.html"><span class="ch-num">1</span>二次函数</a></li>
+    <li><a href="ch02_functions.html"><span class="ch-num">2</span>函数与图像变换</a></li>
+    <li><a href="ch03_coordinate_geometry.html"><span class="ch-num">3</span>坐标几何</a></li>
+    <li><a href="ch04_circular_measure.html"><span class="ch-num">4</span>圆与弧度制</a></li>
+    <li><a href="ch05_trigonometry.html"><span class="ch-num">5</span>三角函数</a></li>
+    <li><a href="ch06_sequences_series.html" class="active" data-section="s1"><span class="ch-num">6</span>数列与级数</a>
+      <div class="subsections">
+        <a href="#sec6-1" data-section="s1">6.1 等差数列</a>
+        <a href="#sec6-2" data-section="s2">6.2 等比数列</a>
+        <a href="#sec6-3" data-section="s3">6.3 二项式展开</a>
+        <a href="#sec6-4" data-section="s4">6.4 无穷级数</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch07_differentiation.html"><span class="ch-num">7</span>微分</a></li>
+    <li><a href="ch08_integration.html"><span class="ch-num">8</span>积分</a></li>
+    <li><a href="ch09_logarithms_exponentials.html"><span class="ch-num">9</span>对数与指数</a></li>
+    <li><a href="ch10_numerical_methods.html"><span class="ch-num">10</span>数值方法</a></li>
+    <li><a href="ch11_vectors.html"><span class="ch-num">11</span>三维向量</a></li>
+    <li><a href="ch12_differential_equations.html"><span class="ch-num">12</span>微分方程</a></li>
+    <li><a href="ch13_complex_numbers.html"><span class="ch-num">13</span>复数</a></li>
+    <li><a href="ch14_mechanics_statistics.html"><span class="ch-num">14</span>力学与统计</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">📐 数学首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a><span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+      <a href="index.html">📐 数学</a><span>›</span>
+      <span>第6章 数列与级数</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="index.html" class="active">数学</a><a href="../physics/index.html">物理</a>
+      <a href="../chemistry/index.html">化学</a><a href="../biology/index.html">生物</a><a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第6章 数列与级数 (Sequences & Series)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>掌握等差数列 (AP) 的通项公式与求和公式</li>
+      <li>掌握等比数列 (GP) 的通项公式与求和公式</li>
+      <li>理解二项式展开定理并能够求特定项</li>
+      <li>掌握无穷等比级数的收敛条件与求和</li>
+    </ul>
+  </div>
+
+  <h2 data-section="s1" id="sec6-1" style="margin:28px 0 16px;">6.1 等差数列 (Arithmetic Progression)</h2>
+
+  <div class="kp">
+    <h3>定义与通项公式</h3>
+    <p>等差数列中，相邻两项的差为常数 d（公差）。</p>
+    <span class="formula">aₙ = a + (n - 1)d</span>
+    <p>其中 a 为首项，d 为公差，n 为项数。</p>
+  </div>
+
+  <div class="kp">
+    <h3>前 n 项和公式</h3>
+    <span class="formula">Sₙ = n/2 × (a + l) = n/2 × [2a + (n - 1)d]</span>
+    <p>其中 l = aₙ 是末项。第一个公式利用首末项平均，第二个利用首项和公差。</p>
+  </div>
+
+  <h2 data-section="s2" id="sec6-2" style="margin:28px 0 16px;">6.2 等比数列 (Geometric Progression)</h2>
+
+  <div class="kp">
+    <h3>定义与通项公式</h3>
+    <p>等比数列中，相邻两项的比为常数 r（公比）。</p>
+    <span class="formula">aₙ = a × rⁿ⁻¹</span>
+    <p>其中 a 为首项，r 为公比。</p>
+  </div>
+
+  <div class="kp">
+    <h3>前 n 项和公式</h3>
+    <span class="formula">Sₙ = a(1 - rⁿ) / (1 - r)，当 r ≠ 1</span>
+    <span class="formula">Sₙ = na，当 r = 1</span>
+  </div>
+
+  <h2 data-section="s3" id="sec6-3" style="margin:28px 0 16px;">6.3 二项式展开 (Binomial Expansion)</h2>
+
+  <div class="kp">
+    <h3>二项式定理 (P1)</h3>
+    <span class="formula">(a + b)ⁿ = Σ(k=0→n) C(n,k) × aⁿ⁻ᵏ × bᵏ</span>
+    <p>其中 C(n,k) = n! / [k!(n-k)!] 是二项式系数。</p>
+  </div>
+
+  <div class="kp">
+    <h3>广义二项式展开 (P2/P3)</h3>
+    <p>当 n 为有理数（非正整数）时，展开为无穷级数：</p>
+    <span class="formula">(1 + x)ⁿ = 1 + nx + n(n-1)/2! x² + n(n-1)(n-2)/3! x³ + ...</span>
+    <p>收敛条件：<strong>|x| < 1</strong></p>
+  </div>
+
+  <div class="kp">
+    <h3>求特定项的技巧</h3>
+    <p>Caie 考试中常要求求展开式中 xᵏ 的系数。通项公式：</p>
+    <span class="formula">T_{k+1} = C(n,k) × aⁿ⁻ᵏ × bᵏ</span>
+  </div>
+
+  <h2 data-section="s4" id="sec6-4" style="margin:28px 0 16px;">6.4 无穷等比级数</h2>
+
+  <div class="kp">
+    <h3>收敛条件与求和</h3>
+    <p>当 |r| < 1 时，无穷等比级数收敛：</p>
+    <span class="formula">S∞ = a / (1 - r)，当 |r| < 1</span>
+    <p>当 |r| ≥ 1 时，级数发散（除 r = 1 且 a = 0 外）。</p>
+  </div>
+
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>等差数列首项 3，公差 4，第 10 项为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. 35</label>
+      <label><input type="radio" name="q1" value="B">B. 39</label>
+      <label><input type="radio" name="q1" value="C">C. 43</label>
+      <label><input type="radio" name="q1" value="D">D. 47</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="B">✅ 正确答案：B。a₁₀ = 3 + (10-1)×4 = 3 + 36 = 39。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>等差数列 2, 5, 8, ..., 前 20 项和为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 580</label>
+      <label><input type="radio" name="q2" value="B">B. 590</label>
+      <label><input type="radio" name="q2" value="C">C. 610</label>
+      <label><input type="radio" name="q2" value="D">D. 620</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="C">✅ 正确答案：C。a=2, d=3, n=20。S₂₀ = 20/2 × [2×2 + 19×3] = 10 × (4+57) = 610。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>等比数列首项 2，公比 3，第 5 项为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 54</label>
+      <label><input type="radio" name="q3" value="B">B. 108</label>
+      <label><input type="radio" name="q3" value="C">C. 162</label>
+      <label><input type="radio" name="q3" value="D">D. 486</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="C">✅ 正确答案：C。a₅ = 2 × 3⁴ = 2 × 81 = 162。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>(1 + 2x)⁵ 展开式中 x³ 的系数为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. 40</label>
+      <label><input type="radio" name="q4" value="B">B. 60</label>
+      <label><input type="radio" name="q4" value="C">C. 80</label>
+      <label><input type="radio" name="q4" value="D">D. 120</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="C">✅ 正确答案：C。T₄ = C(5,3) × 1² × (2x)³ = 10 × 8x³ = 80x³，系数为 80。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>无穷等比级数 1 + 1/2 + 1/4 + 1/8 + ... 的和为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. 1</label>
+      <label><input type="radio" name="q5" value="B">B. 3/2</label>
+      <label><input type="radio" name="q5" value="C">C. 2</label>
+      <label><input type="radio" name="q5" value="D">D. ∞</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="C">✅ 正确答案：C。a=1, r=1/2, |r|<1。S∞ = 1/(1-1/2) = 2。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>等比数列前 3 项和为 14，首项为 2，公比为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. 2</label>
+      <label><input type="radio" name="q6" value="B">B. -3</label>
+      <label><input type="radio" name="q6" value="C">C. 2 或 -3</label>
+      <label><input type="radio" name="q6" value="D">D. 3</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="C">✅ 正确答案：C。S₃ = 2(1-r³)/(1-r) = 14 → 2(1+r+r²) = 14 → r²+r+1 = 7 → r²+r-6 = 0 → (r+3)(r-2) = 0 → r = 2 或 r = -3。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

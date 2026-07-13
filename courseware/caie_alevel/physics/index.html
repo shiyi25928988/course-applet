@@ -3,115 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>CAIE A-LEVEL 物理 (9702) 真题</title>
+<title>CAIE A-LEVEL 物理 (9702) 课程与真题</title>
 <link rel="stylesheet" href="../../assets/css/common.css">
 <style>
-.back-links {
-    margin-bottom: 20px;
-    display: flex;
-    gap: 12px;
-}
-.back-links a {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 18px;
-    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-    color: #fff !important;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 0.9rem;
-    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
-    transition: all 0.3s ease;
-}
-.back-links a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
-    text-decoration: none !important;
-}
-.back-links a::before {
-    content: "←";
-    margin-right: 6px;
-    font-weight: bold;
-}
 .subject-hero {
-    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-    color: #fff;
-    border-radius: 20px;
-    padding: 40px 24px;
-    margin-bottom: 28px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #fff; border-radius: 20px; padding: 40px 24px; margin-bottom: 28px;
 }
-.subject-hero h1 {
-    font-size: 1.8rem;
-    margin-bottom: 8px;
+.subject-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+.subject-hero p { opacity: .95; font-size: 1.05rem; }
+
+/* 课程章节卡片 */
+.ch-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px; margin-bottom: 24px;
 }
-.year-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
-    margin: 24px 0;
+.ch-card {
+    background: #fff; border-radius: 14px; padding: 20px; text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06); border-left: 4px solid #2563eb;
+    transition: transform .2s, box-shadow .2s; display: block; color: #1e293b;
 }
-.year-btn {
-    text-align: center;
-    padding: 20px 16px;
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    text-decoration: none;
-    color: #1e293b;
-    transition: all 0.2s;
-    display: block;
+.ch-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.1); }
+.ch-card .level { font-size: .75rem; color: #2563eb; font-weight: 600; margin-bottom: 4px; }
+.ch-card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.ch-card .sections { font-size: .8rem; color: #64748b; line-height: 1.5; }
+.ch-card .sub-count {
+    display: inline-block; margin-top: 8px; font-size: .75rem;
+    padding: 3px 8px; background: #eff6ff; color: #2563eb; border-radius: 10px;
 }
-.year-btn:hover {
-    border-color: #3b82f6;
-    background: #eff6ff;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
-}
-.year-btn .year {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #3b82f6;
-    margin-bottom: 4px;
-}
-.year-btn .session {
-    font-size: 0.85rem;
-    color: #64748b;
-}
+
+/* 真题 */
 .paper-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    margin: 16px 0;
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 16px 0;
 }
 .paper-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    border-left: 4px solid #3b82f6;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    background: #fff; border-radius: 12px; padding: 20px;
+    border-left: 4px solid #2563eb; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
-.paper-card h3 {
-    color: #3b82f6;
-    margin-bottom: 12px;
-}
-.paper-card ul {
-    list-style: none;
-    padding: 0;
-}
-.paper-card li {
-    padding: 8px 0;
-    border-bottom: 1px solid #f1f5f9;
-}
-.paper-card li:last-child {
-    border-bottom: none;
-}
-.paper-card li a {
-    color: #1e40af;
-    text-decoration: none;
-}
-.paper-card li a:hover {
-    text-decoration: underline;
+.paper-card h3 { color: #2563eb; margin-bottom: 12px; }
+.paper-card ul { list-style: none; padding: 0; }
+.paper-card li { padding: 8px 0; border-bottom: 1px solid #f1f5f9; }
+.paper-card li:last-child { border-bottom: none; }
+.paper-card li a { color: #1e40af; text-decoration: none; }
+.paper-card li a:hover { text-decoration: underline; }
+
+.section-divider {
+    margin: 32px 0 20px; padding: 16px 20px;
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    border-radius: 12px; display: flex; align-items: center; gap: 10px;
+    font-weight: 700; font-size: 1.1rem; color: #1e40af;
 }
 </style>
 </head>
@@ -120,11 +60,12 @@
     <aside class="sidebar">
         <h3>⚛️ A-LEVEL 物理</h3>
         <ul class="chapter-list">
-            <li><a href="#2026"><span class="ch-num">📅</span>2026年</a></li>
-            <li><a href="#2025"><span class="ch-num">📅</span>2025年</a></li>
-            <li><a href="#2024"><span class="ch-num">📅</span>2024年</a></li>
-            <li><a href="#2023"><span class="ch-num">📅</span>2023年</a></li>
-            <li><a href="#2022"><span class="ch-num">📅</span>2022年</a></li>
+            <li><a href="#course-content"><span class="ch-num">📖</span>课程内容</a></li>
+            <li><a href="#2026"><span class="ch-num">📅</span>2026年真题</a></li>
+            <li><a href="#2025"><span class="ch-num">📅</span>2025年真题</a></li>
+            <li><a href="#2024"><span class="ch-num">📅</span>2024年真题</a></li>
+            <li><a href="#2023"><span class="ch-num">📅</span>2023年真题</a></li>
+            <li><a href="#2022"><span class="ch-num">📅</span>2022年真题</a></li>
         </ul>
         <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
             <a href="index.html" class="back-home">⚛️ 物理首页</a>
@@ -136,10 +77,10 @@
     <main class="main">
         <div class="subject-hero">
             <h1>⚛️ CAIE A-LEVEL 物理 (9702)</h1>
-            <p>2022-2026年真题 · 含详细解答与评分标准</p>
+            <p>完整课程知识体系 + 2022-2026年真题 · 含详细解答与评分标准</p>
         </div>
 
-        <div style="background: #eff6ff; padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-bottom: 24px;">
+        <div style="background: #eff6ff; padding: 20px; border-radius: 12px; border-left: 4px solid #2563eb; margin-bottom: 24px;">
             <h3 style="color: #1d4ed8; margin-bottom: 12px;">📋 试卷结构</h3>
             <div style="color: #475569; line-height: 1.8;">
                 <strong>Paper 1</strong>: 选择题 - 1小时15分钟，40分<br>
@@ -148,6 +89,100 @@
                 <strong>Paper 4</strong>: A2结构化问题 - 2小时，100分<br>
                 <strong>Paper 5</strong>: 实验计划、分析与评估 - 1小时15分钟，30分
             </div>
+        </div>
+
+        <!-- ====== 课程内容 ====== -->
+        <div id="course-content" class="section-divider">
+            📖 课程内容 — 知识点讲解与练习
+        </div>
+
+        <h3 style="margin-bottom: 16px; color: #2563eb;">AS Level 核心内容</h3>
+        <div class="ch-grid">
+            <a href="ch01_quantities_units.html" class="ch-card">
+                <div class="level">AS Level</div>
+                <h3>第1章 物理量与单位</h3>
+                <div class="sections">SI单位制 · 测量误差 · 不确定度 · 数量级估计</div>
+                <div class="sub-count">含实验技能</div>
+            </a>
+            <a href="ch02_kinematics.html" class="ch-card">
+                <div class="level">AS Level</div>
+                <h3>第2章 运动学</h3>
+                <div class="sections">匀加速运动 · 自由落体 · 抛体运动 · 运动图像</div>
+                <div class="sub-count">含运动动画</div>
+            </a>
+            <a href="ch03_dynamics.html" class="ch-card">
+                <div class="level">AS Level</div>
+                <h3>第3章 动力学</h3>
+                <div class="sections">牛顿三定律 · 动量 · 冲量 · 动量守恒</div>
+                <div class="sub-count">含力学动画</div>
+            </a>
+            <a href="ch04_forces_pressure.html" class="ch-card">
+                <div class="level">AS Level</div>
+                <h3>第4章 力、密度与压强</h3>
+                <div class="sections">力矩平衡 · 密度 · 压强 · 阿基米德原理</div>
+                <div class="sub-count">含浮力演示</div>
+            </a>
+            <a href="ch05_work_energy_power.html" class="ch-card">
+                <div class="level">AS Level</div>
+                <h3>第5章 功、能与功率</h3>
+                <div class="sections">功 · 动能 · 势能 · 能量守恒 · 功率 · 效率</div>
+                <div class="sub-count">含能量转换动画</div>
+            </a>
+            <a href="ch06_deformation.html" class="ch-card">
+                <div class="level">AS Level</div>
+                <h3>第6章 固体形变</h3>
+                <div class="sections">胡克定律 · 应力-应变 · 杨氏模量 · 弹性与塑性</div>
+                <div class="sub-count">含应力-应变图</div>
+            </a>
+        </div>
+
+        <h3 style="margin: 24px 0 16px; color: #2563eb;">波与电磁学</h3>
+        <div class="ch-grid">
+            <a href="ch07_waves.html" class="ch-card">
+                <div class="level">AS/A2 Level</div>
+                <h3>第7章 波</h3>
+                <div class="sections">波的性质 · 强度 · 多普勒效应 · 电磁波谱 · 偏振</div>
+                <div class="sub-count">含波动动画</div>
+            </a>
+            <a href="ch08_superposition.html" class="ch-card">
+                <div class="level">AS/A2 Level</div>
+                <h3>第8章 叠加与干涉</h3>
+                <div class="sections">干涉 · 衍射 · 驻波 · 双缝实验 · 衍射光栅</div>
+                <div class="sub-count">含干涉动画</div>
+            </a>
+            <a href="ch09_electricity.html" class="ch-card">
+                <div class="level">AS/A2 Level</div>
+                <h3>第9章 电场与电流</h3>
+                <div class="sections">电场 · 库仑定律 · 电流 · 电阻 · 电阻率 · 分压器</div>
+                <div class="sub-count">含电场线动画</div>
+            </a>
+            <a href="ch10_dc_circuits.html" class="ch-card">
+                <div class="level">AS/A2 Level</div>
+                <h3>第10章 直流电路</h3>
+                <div class="sections">基尔霍夫定律 · 内阻 · 电功率 · 电动势</div>
+                <div class="sub-count">含电路模拟</div>
+            </a>
+        </div>
+
+        <h3 style="margin: 24px 0 16px; color: #2563eb;">现代物理与实验</h3>
+        <div class="ch-grid">
+            <a href="ch11_particle_physics.html" class="ch-card">
+                <div class="level">A2 Level</div>
+                <h3>第11章 粒子与核物理</h3>
+                <div class="sections">原子结构 · 放射性衰变 · 核反应 · 夸克与轻子</div>
+                <div class="sub-count">含衰变模拟</div>
+            </a>
+            <a href="ch12_practical_skills.html" class="ch-card">
+                <div class="level">AS/A2 Level</div>
+                <h3>第12章 实验技能</h3>
+                <div class="sections">不确定度分析 · 图像处理 · 实验设计 · 误差分析</div>
+                <div class="sub-count">含数据处理技巧</div>
+            </a>
+        </div>
+
+        <!-- ====== 真题 ====== -->
+        <div class="section-divider" style="background: linear-gradient(135deg, #fef3c7, #fde68a); color: #92400e;">
+            📝 真题试卷 — 按年份与考季
         </div>
 
         <h2 id="2026" style="margin: 32px 0 16px; color: #1e293b;">📅 2026年真题</h2>

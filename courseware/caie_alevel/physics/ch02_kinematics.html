@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第2章 运动学 - CAIE A-LEVEL 物理 (9702)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="breadcrumb">
+    <a href="../../index.html">🏠 首页</a><span>›</span>
+    <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+    <a href="index.html">⚛️ 物理</a><span>›</span>
+    <span>第2章 运动学</span>
+  </div>
+  <div class="spacer"></div>
+  <div class="subject-switch">
+    <a href="../math/index.html">数学</a>
+    <a href="index.html" class="active">物理</a>
+    <a href="../chemistry/index.html">化学</a>
+    <a href="../biology/index.html">生物</a>
+    <a href="../economics/index.html">经济</a>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h3>⚛️ A-LEVEL 物理</h3>
+    <ul class="chapter-list">
+      <li><a href="ch01_quantities_units.html"><span class="ch-num">1</span>物理量与单位</a></li>
+      <li><a href="ch02_kinematics.html" class="active"><span class="ch-num">2</span>运动学</a></li>
+      <li><a href="ch03_dynamics.html"><span class="ch-num">3</span>动力学</a></li>
+      <li><a href="ch04_forces_pressure.html"><span class="ch-num">4</span>力、密度与压强</a></li>
+      <li><a href="ch05_work_energy_power.html"><span class="ch-num">5</span>功、能与功率</a></li>
+      <li><a href="ch06_deformation.html"><span class="ch-num">6</span>固体形变</a></li>
+      <li><a href="ch07_waves.html"><span class="ch-num">7</span>波</a></li>
+      <li><a href="ch08_superposition.html"><span class="ch-num">8</span>叠加与干涉</a></li>
+      <li><a href="ch09_electricity.html"><span class="ch-num">9</span>电场与电流</a></li>
+      <li><a href="ch10_dc_circuits.html"><span class="ch-num">10</span>直流电路</a></li>
+      <li><a href="ch11_particle_physics.html"><span class="ch-num">11</span>粒子与核物理</a></li>
+      <li><a href="ch12_practical_skills.html"><span class="ch-num">12</span>实验技能</a></li>
+    </ul>
+    <div class="subsections">
+      <a href="#s2.1">2.1 位移、速度与加速度</a>
+      <a href="#s2.2">2.2 匀加速运动公式 (suvat)</a>
+      <a href="#s2.3">2.3 自由落体与抛体运动</a>
+      <a href="#s2.4">2.4 运动图像</a>
+      <a href="#animation">🎬 抛体运动动画</a>
+      <a href="#exercises">📝 章节练习</a>
+    </div>
+    <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-home">⚛️ 物理首页</a>
+      <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+      <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <h1 class="page-title">第2章 运动学</h1>
+
+    <div class="card" style="background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:5px solid #2563eb;">
+      <div class="card-title"><span class="icon">🎯</span> 学习目标</div>
+      <ul style="color:#475569;line-height:2;padding-left:20px;">
+        <li>区分位移和路程、速度和速率、瞬时速度和平均速度</li>
+        <li>熟练运用匀加速运动公式 (suvat equations) 解题</li>
+        <li>分析自由落体运动和抛体运动（水平分解与竖直分解）</li>
+        <li>绘制和解读运动图像：s-t图、v-t图、a-t图</li>
+      </ul>
+    </div>
+
+    <!-- 2.1 位移、速度与加速度 -->
+    <h2 id="s2.1" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">2.1 位移、速度与加速度</h2>
+
+    <div class="kp">
+      <h3>基本概念</h3>
+      <p><strong>位移 (Displacement, s)：</strong>矢量。物体从初始位置到最终位置的直线距离和方向。单位：m。</p>
+      <p><strong>路程 (Distance, d)：</strong>标量。物体运动轨迹的总长度。路程总是大于或等于位移大小。</p>
+      <p style="margin-top:10px;"><strong>速度 (Velocity, v)：</strong>矢量。单位时间内的位移变化。</p>
+      <p><span class="formula">v = Δs / Δt</span> 单位：m s⁻¹</p>
+      <p><strong>速率 (Speed)：</strong>标量。单位时间内的路程。速率 = 路程 / 时间。</p>
+      <p style="margin-top:10px;"><strong>加速度 (Acceleration, a)：</strong>矢量。单位时间内速度的变化量。</p>
+      <p><span class="formula">a = Δv / Δt = (v − u) / t</span> 单位：m s⁻²</p>
+      <p>加速度为正值表示速度增加（与正方向相同），负值表示减速（与正方向相反）。</p>
+    </div>
+
+    <div class="kp">
+      <h3>矢量的关键性质</h3>
+      <p>速度和加速度都是矢量，具有大小和方向。在一维运动中，用正负号表示方向。</p>
+      <p>例如：一辆车以 20 m s⁻¹ 向东行驶，突然以 5 m s⁻² 减速。建立向东为正方向：</p>
+      <p>初始速度 u = +20 m s⁻¹，加速度 a = −5 m s⁻²</p>
+      <p>当加速度方向与速度方向相反时，物体做减速运动，最终可能反向运动。</p>
+    </div>
+
+    <!-- 2.2 匀加速运动公式 -->
+    <h2 id="s2.2" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">2.2 匀加速运动公式 (suvat equations)</h2>
+
+    <div class="kp">
+      <h3>五个 suvat 公式</h3>
+      <p>当加速度恒定时，可以使用以下5个公式。其中 s = 位移，u = 初速度，v = 末速度，a = 加速度，t = 时间。</p>
+      <div style="background:#f1f5f9;padding:16px;border-radius:10px;margin:12px 0;">
+        <p style="margin:8px 0;"><strong>1.</strong> <span class="formula">v = u + at</span> （不含 s）</p>
+        <p style="margin:8px 0;"><strong>2.</strong> <span class="formula">s = ut + ½at²</span> （不含 v）</p>
+        <p style="margin:8px 0;"><strong>3.</strong> <span class="formula">s = ½(u + v)t</span> （不含 a）</p>
+        <p style="margin:8px 0;"><strong>4.</strong> <span class="formula">v² = u² + 2as</span> （不含 t）</p>
+        <p style="margin:8px 0;"><strong>5.</strong> <span class="formula">s = vt − ½at²</span> （不含 u）</p>
+      </div>
+      <p>解题技巧：列出已知量 (s, u, v, a, t)，确定目标量，选择不含未知量的公式。</p>
+    </div>
+
+    <div class="kp">
+      <h3>例题：汽车制动</h3>
+      <p>一辆汽车以 25 m s⁻¹ 的速度行驶，司机看到红灯后以 5.0 m s⁻² 的加速度制动。求：</p>
+      <p>(a) 汽车完全停止所需的时间</p>
+      <p>(b) 制动距离</p>
+      <p style="margin-top:8px;"><strong>解：</strong>已知 u = 25 m s⁻¹, v = 0, a = −5.0 m s⁻²</p>
+      <p>(a) 用 v = u + at: 0 = 25 + (−5.0)t → t = 5.0 s</p>
+      <p>(b) 用 v² = u² + 2as: 0 = 25² + 2(−5.0)s → s = 625/10 = 62.5 m</p>
+    </div>
+
+    <!-- 2.3 自由落体与抛体运动 -->
+    <h2 id="s2.3" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">2.3 自由落体与抛体运动</h2>
+
+    <div class="kp">
+      <h3>自由落体 (Free Fall)</h3>
+      <p>在忽略空气阻力的情况下，所有物体在地球表面附近自由下落时具有相同的加速度：</p>
+      <p><span class="formula">g = 9.81 m s⁻²</span> （CAIE考试中通常取 9.81，除非题目另有说明）</p>
+      <p>自由落体是初速度为零的匀加速直线运动，可直接使用 suvat 公式，其中 a = g = 9.81 m s⁻²。</p>
+      <p style="margin-top:10px;">竖直上抛运动：物体以初速度 u 竖直向上抛出，到达最高点时 v = 0，加速度始终为 −g（取向上为正方向）。</p>
+    </div>
+
+    <div class="kp">
+      <h3>抛体运动 (Projectile Motion)</h3>
+      <p>抛体运动可以分解为两个独立的运动分量：</p>
+      <p><strong>水平方向：</strong>匀速直线运动（忽略空气阻力，无水平加速度）</p>
+      <p><span class="formula">v<sub>x</sub> = u cos θ</span> <span class="formula">x = u<sub>x</sub> t</span></p>
+      <p><strong>竖直方向：</strong>匀加速运动（a = −g，取向上为正）</p>
+      <p><span class="formula">v<sub>y</sub> = u sin θ</span> <span class="formula">y = u<sub>y</sub> t − ½gt²</span></p>
+      <p style="margin-top:10px;"><strong>关键公式：</strong></p>
+      <p>最大高度：<span class="formula">H = (u sin θ)² / (2g)</span></p>
+      <p>飞行时间：<span class="formula">T = 2u sin θ / g</span></p>
+      <p>水平射程：<span class="formula">R = u² sin 2θ / g</span></p>
+      <p>最大射程发生在 θ = 45° 时：<span class="formula">R<sub>max</sub> = u² / g</span></p>
+    </div>
+
+    <!-- 2.4 运动图像 -->
+    <h2 id="s2.4" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">2.4 运动图像</h2>
+
+    <div class="kp">
+      <h3>位移-时间图 (s-t Graph)</h3>
+      <ul style="padding-left:20px;line-height:2;">
+        <li><strong>斜率 = 速度：</strong>s-t图在某点的切线斜率等于该时刻的瞬时速度</li>
+        <li>匀速运动：图像为一条倾斜直线</li>
+        <li>静止：图像为水平直线</li>
+        <li>加速运动：图像为曲线，斜率逐渐增大</li>
+        <li>减速运动：图像为曲线，斜率逐渐减小</li>
+      </ul>
+    </div>
+
+    <div class="kp">
+      <h3>速度-时间图 (v-t Graph)</h3>
+      <ul style="padding-left:20px;line-height:2;">
+        <li><strong>斜率 = 加速度：</strong>v-t图在某点的切线斜率等于该时刻的瞬时加速度</li>
+        <li><strong>面积 = 位移：</strong>v-t图与时间轴围成的面积等于位移（面积在t轴上方为正位移，下方为负位移）</li>
+        <li>匀加速运动：图像为一条倾斜直线</li>
+        <li>匀速运动：图像为水平直线</li>
+      </ul>
+    </div>
+
+    <div class="kp">
+      <h3>加速度-时间图 (a-t Graph)</h3>
+      <ul style="padding-left:20px;line-height:2;">
+        <li><strong>面积 = 速度变化量：</strong>a-t图与时间轴围成的面积等于 Δv</li>
+        <li>匀加速运动：图像为水平直线</li>
+        <li>变加速运动：图像为曲线</li>
+      </ul>
+    </div>
+
+    <!-- 抛体运动动画 -->
+    <h2 id="animation" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">🎬 抛体运动模拟</h2>
+
+    <div class="anim-container">
+      <canvas id="projectileCanvas" width="750" height="420" style="background:#1e293b;border-radius:12px;max-width:100%;"></canvas>
+      <div class="anim-controls">
+        <button onclick="startAnimation()">▶ 发射</button>
+        <button class="reset" onclick="resetAnimation()">↺ 重置</button>
+      </div>
+      <div style="margin-top:10px;font-size:.85rem;color:#64748b;">
+        调节参数：初速度 <input type="range" id="speedSlider" min="10" max="50" value="25" style="width:150px;vertical-align:middle;" oninput="document.getElementById('speedVal').textContent=this.value">
+        <span id="speedVal">25</span> m/s &nbsp;
+        角度 <input type="range" id="angleSlider" min="10" max="80" value="45" style="width:150px;vertical-align:middle;" oninput="document.getElementById('angleVal').textContent=this.value">
+        <span id="angleVal">45</span>°
+      </div>
+    </div>
+
+    <script>
+      const canvas = document.getElementById('projectileCanvas');
+      const ctx = canvas.getContext('2d');
+      let animId = null;
+      let trajectory = [];
+
+      const g = 9.81;
+      const scale = 4; // pixels per meter
+      const groundY = 380;
+      const originX = 60;
+      const originY = groundY;
+
+      function drawGrid() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // grid
+        ctx.strokeStyle = '#334155';
+        ctx.lineWidth = 0.5;
+        for (let x = originX; x < canvas.width; x += 50) {
+          ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
+        }
+        for (let y = 0; y < canvas.height; y += 50) {
+          ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
+        }
+        // ground
+        ctx.strokeStyle = '#94a3b8';
+        ctx.lineWidth = 2;
+        ctx.beginPath(); ctx.moveTo(0, groundY); ctx.lineTo(canvas.width, groundY); ctx.stroke();
+        // labels
+        ctx.fillStyle = '#94a3b8';
+        ctx.font = '11px sans-serif';
+        ctx.fillText('地面', 10, groundY - 5);
+      }
+
+      function drawTrajectory() {
+        if (trajectory.length < 2) return;
+        ctx.strokeStyle = '#fbbf24';
+        ctx.lineWidth = 2;
+        ctx.setLineDash([5, 3]);
+        ctx.beginPath();
+        ctx.moveTo(trajectory[0].x, trajectory[0].y);
+        for (let i = 1; i < trajectory.length; i++) {
+          ctx.lineTo(trajectory[i].x, trajectory[i].y);
+        }
+        ctx.stroke();
+        ctx.setLineDash([]);
+      }
+
+      function drawBall(x, y) {
+        // shadow
+        ctx.fillStyle = 'rgba(0,0,0,0.3)';
+        ctx.beginPath();
+        ctx.ellipse(x, groundY + 2, 8, 3, 0, 0, Math.PI * 2);
+        ctx.fill();
+        // ball
+        const gradient = ctx.createRadialGradient(x - 3, y - 3, 2, x, y, 10);
+        gradient.addColorStop(0, '#fef08a');
+        gradient.addColorStop(0.6, '#eab308');
+        gradient.addColorStop(1, '#a16207');
+        ctx.fillStyle = gradient;
+        ctx.beginPath();
+        ctx.arc(x, y, 10, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = '#92400e';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+
+      function startAnimation() {
+        if (animId) cancelAnimationFrame(animId);
+        const u = parseFloat(document.getElementById('speedSlider').value);
+        const angleDeg = parseFloat(document.getElementById('angleSlider').value);
+        const angleRad = angleDeg * Math.PI / 180;
+        const ux = u * Math.cos(angleRad);
+        const uy = u * Math.sin(angleRad);
+        const totalTime = 2 * uy / g;
+        trajectory = [];
+        let t = 0;
+        const dt = 0.03;
+
+        function frame() {
+          if (t > totalTime) {
+            drawGrid();
+            drawTrajectory();
+            drawBall(originX + ux * totalTime * scale, groundY);
+            // show range
+            const range = ux * totalTime;
+            ctx.fillStyle = '#fbbf24';
+            ctx.font = '13px sans-serif';
+            ctx.fillText('射程: ' + range.toFixed(1) + ' m', originX + ux * totalTime * scale + 15, groundY - 15);
+            ctx.fillText('最大高度: ' + ((uy * uy) / (2 * g)).toFixed(1) + ' m', originX + ux * (totalTime / 2) * scale, groundY - (uy * uy / (2 * g)) * scale - 15);
+            animId = null;
+            return;
+          }
+          const sx = ux * t;
+          const sy = uy * t - 0.5 * g * t * t;
+          const px = originX + sx * scale;
+          const py = groundY - sy * scale;
+          trajectory.push({ x: px, y: py });
+          drawGrid();
+          drawTrajectory();
+          drawBall(px, py);
+          // velocity vectors
+          const vx = ux;
+          const vy = uy - g * t;
+          ctx.strokeStyle = '#ef4444';
+          ctx.lineWidth = 2;
+          ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(px + vx * 2, py); ctx.stroke(); // horizontal
+          ctx.strokeStyle = '#3b82f6';
+          ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(px, py - vy * 2); ctx.stroke(); // vertical
+          ctx.fillStyle = '#ef4444';
+          ctx.font = '11px sans-serif';
+          ctx.fillText('vx=' + vx.toFixed(1), px + vx * 2 + 5, py + 4);
+          ctx.fillStyle = '#3b82f6';
+          ctx.fillText('vy=' + vy.toFixed(1), px + 5, py - vy * 2 - 4);
+
+          t += dt;
+          animId = requestAnimationFrame(frame);
+        }
+        frame();
+      }
+
+      function resetAnimation() {
+        if (animId) { cancelAnimationFrame(animId); animId = null; }
+        trajectory = [];
+        drawGrid();
+        ctx.fillStyle = '#94a3b8';
+        ctx.font = '14px sans-serif';
+        ctx.fillText('调整参数后点击"发射"按钮查看抛体运动轨迹', originX + 100, originY - 200);
+        ctx.fillText('黄色虚线 = 轨迹  红色箭头 = 水平速度  蓝色箭头 = 竖直速度', originX + 100, originY - 175);
+        drawBall(originX, groundY);
+      }
+
+      resetAnimation();
+    </script>
+
+    <!-- 练习 -->
+    <h2 id="exercises" style="color:#1e293b;margin-top:32px;margin-bottom:16px;">📝 章节练习</h2>
+
+    <div class="exercise" id="ex1">
+      <p><span class="q-num">1</span><span class="question">一个物体从静止开始以 2.0 m s⁻² 的加速度匀加速运动。5秒后它的速度是多少？</span></p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="A"> A. 5.0 m s⁻¹</label>
+        <label><input type="radio" name="q1" value="B"> B. 10.0 m s⁻¹</label>
+        <label><input type="radio" name="q1" value="C"> C. 12.5 m s⁻¹</label>
+        <label><input type="radio" name="q1" value="D"> D. 25.0 m s⁻¹</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex1')">显示答案</button>
+      <div class="answer" id="answer-ex1" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">v = u + at = 0 + 2.0 × 5 = 10.0 m s⁻¹</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex2">
+      <p><span class="q-num">2</span><span class="question">一辆汽车以 20 m s⁻¹ 的速度行驶，以 4.0 m s⁻² 的加速度制动。制动距离是多少？</span></p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="A"> A. 25 m</label>
+        <label><input type="radio" name="q2" value="B"> B. 40 m</label>
+        <label><input type="radio" name="q2" value="C"> C. 50 m</label>
+        <label><input type="radio" name="q2" value="D"> D. 100 m</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex2')">显示答案</button>
+      <div class="answer" id="answer-ex2" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">v² = u² + 2as，0 = 20² + 2(−4.0)s → s = 400/8 = 50 m</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex3">
+      <p><span class="q-num">3</span><span class="question">一个物体以 30 m s⁻¹ 的初速度竖直向上抛出。它能到达的最大高度是多少？（取 g = 10 m s⁻²）</span></p>
+      <div class="options">
+        <label><input type="radio" name="q3" value="A"> A. 30 m</label>
+        <label><input type="radio" name="q3" value="B"> B. 45 m</label>
+        <label><input type="radio" name="q3" value="C"> C. 60 m</label>
+        <label><input type="radio" name="q3" value="D"> D. 90 m</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex3')">显示答案</button>
+      <div class="answer" id="answer-ex3" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">v² = u² + 2as，0 = 30² + 2(−10)H → H = 900/20 = 45 m</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex4">
+      <p><span class="q-num">4</span><span class="question">在 v-t 图中，图线与时间轴围成的面积代表什么物理量？</span></p>
+      <div class="options">
+        <label><input type="radio" name="q4" value="A"> A. 加速度</label>
+        <label><input type="radio" name="q4" value="B"> B. 速度</label>
+        <label><input type="radio" name="q4" value="C"> C. 位移</label>
+        <label><input type="radio" name="q4" value="D"> D. 时间</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex4')">显示答案</button>
+      <div class="answer" id="answer-ex4" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">v-t图与时间轴围成的面积 = ∫ v dt = 位移。这是由速度定义 v = ds/dt 积分得到的。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex5">
+      <p><span class="q-num">5</span><span class="question">一个物体以 20 m s⁻¹ 的初速度、与水平面成 30° 角斜向上抛出。水平射程是多少？（取 g = 10 m s⁻²，sin 60° = 0.866）</span></p>
+      <div class="options">
+        <label><input type="radio" name="q5" value="A"> A. 17.3 m</label>
+        <label><input type="radio" name="q5" value="B"> B. 20.0 m</label>
+        <label><input type="radio" name="q5" value="C"> C. 34.6 m</label>
+        <label><input type="radio" name="q5" value="D"> D. 40.0 m</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex5')">显示答案</button>
+      <div class="answer" id="answer-ex5" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">R = u² sin 2θ / g = 20² × sin 60° / 10 = 400 × 0.866 / 10 = 34.6 m</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex6">
+      <p><span class="q-num">6</span><span class="question">一辆汽车在 s-t 图上的图像是一条越来越陡的曲线。这表示汽车正在：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q6" value="A"> A. 匀速运动</label>
+        <label><input type="radio" name="q6" value="B"> B. 减速运动</label>
+        <label><input type="radio" name="q6" value="C"> C. 加速运动</label>
+        <label><input type="radio" name="q6" value="D"> D. 静止</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex6')">显示答案</button>
+      <div class="answer" id="answer-ex6" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">s-t图的斜率代表速度。曲线越来越陡意味着斜率越来越大，即速度在增加，所以汽车在做加速运动。</div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

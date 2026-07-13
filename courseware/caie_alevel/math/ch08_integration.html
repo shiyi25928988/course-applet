@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第8章 积分 - CAIE A-LEVEL 数学 (9709)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.int-demo { width:100%; height:300px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.int-demo canvas { width:100%; height:100%; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📐 A-LEVEL 数学</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quadratics.html"><span class="ch-num">1</span>二次函数</a></li>
+    <li><a href="ch02_functions.html"><span class="ch-num">2</span>函数与图像变换</a></li>
+    <li><a href="ch03_coordinate_geometry.html"><span class="ch-num">3</span>坐标几何</a></li>
+    <li><a href="ch04_circular_measure.html"><span class="ch-num">4</span>圆与弧度制</a></li>
+    <li><a href="ch05_trigonometry.html"><span class="ch-num">5</span>三角函数</a></li>
+    <li><a href="ch06_sequences_series.html"><span class="ch-num">6</span>数列与级数</a></li>
+    <li><a href="ch07_differentiation.html"><span class="ch-num">7</span>微分</a></li>
+    <li><a href="ch08_integration.html" class="active" data-section="s1"><span class="ch-num">8</span>积分</a>
+      <div class="subsections">
+        <a href="#sec8-1" data-section="s1">8.1 不定积分</a>
+        <a href="#sec8-2" data-section="s2">8.2 定积分</a>
+        <a href="#sec8-3" data-section="s3">8.3 面积与体积</a>
+        <a href="#sec8-4" data-section="s4">8.4 换元积分与分部积分</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch09_logarithms_exponentials.html"><span class="ch-num">9</span>对数与指数</a></li>
+    <li><a href="ch10_numerical_methods.html"><span class="ch-num">10</span>数值方法</a></li>
+    <li><a href="ch11_vectors.html"><span class="ch-num">11</span>三维向量</a></li>
+    <li><a href="ch12_differential_equations.html"><span class="ch-num">12</span>微分方程</a></li>
+    <li><a href="ch13_complex_numbers.html"><span class="ch-num">13</span>复数</a></li>
+    <li><a href="ch14_mechanics_statistics.html"><span class="ch-num">14</span>力学与统计</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">📐 数学首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a><span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+      <a href="index.html">📐 数学</a><span>›</span>
+      <span>第8章 积分</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="index.html" class="active">数学</a><a href="../physics/index.html">物理</a>
+      <a href="../chemistry/index.html">化学</a><a href="../biology/index.html">生物</a><a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第8章 积分 (Integration)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>理解不定积分是微分的逆运算</li>
+      <li>掌握基本积分公式</li>
+      <li>能够计算定积分并求曲线下的面积</li>
+      <li>掌握换元积分法和分部积分法</li>
+      <li>能够计算旋转体体积</li>
+    </ul>
+  </div>
+
+  <h2 data-section="s1" id="sec8-1" style="margin:28px 0 16px;">8.1 不定积分 (Indefinite Integration)</h2>
+
+  <div class="kp">
+    <h3>积分是微分的逆运算</h3>
+    <p>若 F'(x) = f(x)，则 ∫ f(x) dx = F(x) + C，其中 C 为积分常数。</p>
+    <span class="formula">∫ xⁿ dx = xⁿ⁺¹/(n+1) + C，n ≠ -1</span>
+    <span class="formula">∫ 1/x dx = ln|x| + C</span>
+    <span class="formula">∫ eˣ dx = eˣ + C</span>
+    <span class="formula">∫ sin x dx = -cos x + C</span>
+    <span class="formula">∫ cos x dx = sin x + C</span>
+    <span class="formula">∫ sec² x dx = tan x + C</span>
+  </div>
+
+  <h2 data-section="s2" id="sec8-2" style="margin:28px 0 16px;">8.2 定积分 (Definite Integration)</h2>
+
+  <div class="kp">
+    <h3>牛顿-莱布尼茨公式</h3>
+    <span class="formula">∫ₐᵇ f(x) dx = [F(x)]ₐᵇ = F(b) - F(a)</span>
+    <p>定积分表示曲线 y = f(x) 与 x 轴在区间 [a, b] 上的<strong>净面积</strong>（x 轴上方面积为正，下方为负）。</p>
+  </div>
+
+  <h2 data-section="s3" id="sec8-3" style="margin:28px 0 16px;">8.3 面积与旋转体体积</h2>
+
+  <div class="kp">
+    <h3>曲线下的面积</h3>
+    <p>曲线 y = f(x) 与 x 轴在 x = a 到 x = b 之间的面积：</p>
+    <span class="formula">A = ∫ₐᵇ |f(x)| dx</span>
+    <p>两条曲线之间的面积：</p>
+    <span class="formula">A = ∫ₐᵇ |f(x) - g(x)| dx</span>
+  </div>
+
+  <div class="kp">
+    <h3>旋转体体积 (P2/P3)</h3>
+    <p>曲线绕 x 轴旋转一周形成的旋转体体积：</p>
+    <span class="formula">V = π ∫ₐᵇ [f(x)]² dx</span>
+    <p>曲线绕 y 轴旋转：</p>
+    <span class="formula">V = π ∫ x² dy</span>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">📊 定积分 — 曲线下的面积</h3>
+    <div class="int-demo"><canvas id="intCanvas"></canvas></div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      绿色区域 = ∫₀² (x²) dx = 8/3 ≈ 2.67
+    </p>
+  </div>
+
+  <h2 data-section="s4" id="sec8-4" style="margin:28px 0 16px;">8.4 换元积分与分部积分 (P2/P3)</h2>
+
+  <div class="kp">
+    <h3>换元积分法 (Substitution)</h3>
+    <span class="formula">∫ f(g(x)) g'(x) dx = ∫ f(u) du，其中 u = g(x)</span>
+    <p>例：∫ 2x cos(x²) dx，令 u = x²，du = 2x dx → ∫ cos u du = sin u + C = sin(x²) + C。</p>
+  </div>
+
+  <div class="kp">
+    <h3>分部积分法 (Integration by Parts)</h3>
+    <span class="formula">∫ u dv = uv - ∫ v du</span>
+    <p>例：∫ x eˣ dx，令 u = x, dv = eˣ dx → du = dx, v = eˣ → x eˣ - ∫ eˣ dx = x eˣ - eˣ + C = eˣ(x - 1) + C。</p>
+  </div>
+
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>∫ x³ dx = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. x⁴/4 + C</label>
+      <label><input type="radio" name="q1" value="B">B. 3x² + C</label>
+      <label><input type="radio" name="q1" value="C">C. x⁴/3 + C</label>
+      <label><input type="radio" name="q1" value="D">D. 4x⁴ + C</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="A">✅ 正确答案：A。∫ xⁿ dx = xⁿ⁺¹/(n+1) + C，∫ x³ dx = x⁴/4 + C。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>∫₀¹ (2x + 1) dx = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 1</label>
+      <label><input type="radio" name="q2" value="B">B. 2</label>
+      <label><input type="radio" name="q2" value="C">C. 3</label>
+      <label><input type="radio" name="q2" value="D">D. 4</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="B">✅ 正确答案：B。∫₀¹ (2x+1)dx = [x² + x]₀¹ = (1+1) - 0 = 2。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>曲线 y = x² 与 x 轴在 x = 0 到 x = 2 之间的面积为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 2/3</label>
+      <label><input type="radio" name="q3" value="B">B. 4/3</label>
+      <label><input type="radio" name="q3" value="C">C. 8/3</label>
+      <label><input type="radio" name="q3" value="D">D. 2</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="C">✅ 正确答案：C。∫₀² x² dx = [x³/3]₀² = 8/3。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>∫ cos x dx = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. sin x + C</label>
+      <label><input type="radio" name="q4" value="B">B. -sin x + C</label>
+      <label><input type="radio" name="q4" value="C">C. cos x + C</label>
+      <label><input type="radio" name="q4" value="D">D. -cos x + C</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="A">✅ 正确答案：A。∫ cos x dx = sin x + C。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>曲线 y = √x 绕 x 轴从 x = 0 到 x = 1 旋转，旋转体体积为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. π/4</label>
+      <label><input type="radio" name="q5" value="B">B. π/2</label>
+      <label><input type="radio" name="q5" value="C">C. π</label>
+      <label><input type="radio" name="q5" value="D">D. π/3</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="B">✅ 正确答案：B。V = π ∫₀¹ (√x)² dx = π ∫₀¹ x dx = π [x²/2]₀¹ = π/2。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>∫ x eˣ dx = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. eˣ(x - 1) + C</label>
+      <label><input type="radio" name="q6" value="B">B. eˣ(x + 1) + C</label>
+      <label><input type="radio" name="q6" value="C">C. x eˣ + C</label>
+      <label><input type="radio" name="q6" value="D">D. eˣ/x + C</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="A">✅ 正确答案：A。分部积分：u=x, dv=eˣdx → du=dx, v=eˣ → x eˣ - ∫ eˣ dx = x eˣ - eˣ + C = eˣ(x-1) + C。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('intCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const cx = 60, cy = h - 60;
+    const scaleX = (w - 120) / 4;
+    const scaleY = (h - 120) / 10;
+    ctx.clearRect(0,0,w,h);
+    // Grid & axes
+    ctx.strokeStyle = '#334155'; ctx.lineWidth = 0.5;
+    for(let i = 0; i <= 4; i++) { ctx.beginPath(); ctx.moveTo(cx+i*scaleX,0); ctx.lineTo(cx+i*scaleX,h); ctx.stroke(); }
+    for(let i = 0; i <= 10; i++) { ctx.beginPath(); ctx.moveTo(0,cy-i*scaleY); ctx.lineTo(w,cy-i*scaleY); ctx.stroke(); }
+    ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(cx,0); ctx.lineTo(cx,h); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(0,cy); ctx.lineTo(w,cy); ctx.stroke();
+    // Area under y=x² from 0 to 2
+    ctx.fillStyle = 'rgba(16,185,129,0.3)';
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    for(let px = 0; px <= 2*scaleX; px++) {
+      const x = px / scaleX;
+      const y = x * x;
+      ctx.lineTo(cx + px, cy - y * scaleY);
+    }
+    ctx.lineTo(cx + 2*scaleX, cy);
+    ctx.closePath(); ctx.fill();
+    // Curve y=x²
+    ctx.strokeStyle = '#10b981'; ctx.lineWidth = 2.5; ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    for(let px = 0; px <= w - cx - 20; px++) {
+      const x = px / scaleX;
+      const y = x * x;
+      ctx.lineTo(cx + px, cy - y * scaleY);
+    }
+    ctx.stroke();
+    // Labels
+    ctx.fillStyle = '#fff'; ctx.font = '12px sans-serif';
+    ctx.fillText('y = x²', w - 100, 30);
+    ctx.fillText('A = 8/3', cx + 40, cy - 30);
+  }
+  draw();
+  window.addEventListener('resize', draw);
+})();
+</script>
+</body>
+</html>

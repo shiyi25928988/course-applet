@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第10章 数值方法 - CAIE A-LEVEL 数学 (9709)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+<style>
+.iter-demo { width:100%; height:300px; background:#0f172a; border-radius:12px; overflow:hidden; }
+.iter-demo canvas { width:100%; height:100%; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h3>📐 A-LEVEL 数学</h3>
+  <ul class="chapter-list">
+    <li><a href="ch01_quadratics.html"><span class="ch-num">1</span>二次函数</a></li>
+    <li><a href="ch02_functions.html"><span class="ch-num">2</span>函数与图像变换</a></li>
+    <li><a href="ch03_coordinate_geometry.html"><span class="ch-num">3</span>坐标几何</a></li>
+    <li><a href="ch04_circular_measure.html"><span class="ch-num">4</span>圆与弧度制</a></li>
+    <li><a href="ch05_trigonometry.html"><span class="ch-num">5</span>三角函数</a></li>
+    <li><a href="ch06_sequences_series.html"><span class="ch-num">6</span>数列与级数</a></li>
+    <li><a href="ch07_differentiation.html"><span class="ch-num">7</span>微分</a></li>
+    <li><a href="ch08_integration.html"><span class="ch-num">8</span>积分</a></li>
+    <li><a href="ch09_logarithms_exponentials.html"><span class="ch-num">9</span>对数与指数</a></li>
+    <li><a href="ch10_numerical_methods.html" class="active" data-section="s1"><span class="ch-num">10</span>数值方法</a>
+      <div class="subsections">
+        <a href="#sec10-1" data-section="s1">10.1 根的定位</a>
+        <a href="#sec10-2" data-section="s2">10.2 迭代法</a>
+        <a href="#sec10-3" data-section="s3">10.3 牛顿-拉夫森法</a>
+        <a href="#sec10-4" data-section="s4">10.4 梯形法则</a>
+        <a href="#exercises" data-section="ex">练习题</a>
+      </div>
+    </li>
+    <li><a href="ch11_vectors.html"><span class="ch-num">11</span>三维向量</a></li>
+    <li><a href="ch12_differential_equations.html"><span class="ch-num">12</span>微分方程</a></li>
+    <li><a href="ch13_complex_numbers.html"><span class="ch-num">13</span>复数</a></li>
+    <li><a href="ch14_mechanics_statistics.html"><span class="ch-num">14</span>力学与统计</a></li>
+  </ul>
+  <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+    <a href="index.html" class="back-home">📐 数学首页</a>
+    <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+    <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../../index.html">🏠 首页</a><span>›</span>
+      <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+      <a href="index.html">📐 数学</a><span>›</span>
+      <span>第10章 数值方法</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="index.html" class="active">数学</a><a href="../physics/index.html">物理</a>
+      <a href="../chemistry/index.html">化学</a><a href="../biology/index.html">生物</a><a href="../economics/index.html">经济</a>
+    </div>
+  </div>
+  <div class="page-title">第10章 数值方法 (Numerical Methods)</div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>学习目标</div>
+    <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+      <li>掌握用符号变化法定位方程根所在的区间</li>
+      <li>理解迭代法 x = g(x) 的收敛条件</li>
+      <li>掌握牛顿-拉夫森法 (Newton-Raphson) 求根</li>
+      <li>掌握梯形法则 (Trapezium Rule) 求数值积分</li>
+      <li>能够判断数值方法的收敛性和精度</li>
+    </ul>
+  </div>
+
+  <h2 data-section="s1" id="sec10-1" style="margin:28px 0 16px;">10.1 根的定位 (Locating Roots)</h2>
+
+  <div class="kp">
+    <h3>符号变化法 (Sign Change Method)</h3>
+    <p>若连续函数 f(x) 在区间 [a, b] 两端点的函数值符号相反，即 f(a) 和 f(b) 异号，则区间内至少存在一个根。</p>
+    <span class="formula">f(a) · f(b) &lt; 0 → 存在 c ∈ (a, b)，使得 f(c) = 0</span>
+    <p><strong>注意：</strong> 若 f(a) · f(b) > 0，则不能保证无根（可能有偶数个根）。</p>
+  </div>
+
+  <div class="kp">
+    <h3>根的定位步骤</h3>
+    <p>1. 计算整数点上的函数值：f(0), f(1), f(2), ...</p>
+    <p>2. 寻找函数值符号变化的相邻整数点</p>
+    <p>3. 确定根所在的具体区间</p>
+    <p><strong>例：</strong> f(x) = x³ - 3x - 5，f(2) = 8 - 6 - 5 = -3，f(3) = 27 - 9 - 5 = 13，符号由负变正，故根在 (2, 3) 内。</p>
+  </div>
+
+  <h2 data-section="s2" id="sec10-2" style="margin:28px 0 16px;">10.2 迭代法 (Iteration)</h2>
+
+  <div class="kp">
+    <h3>不动点迭代法的基本思想</h3>
+    <p>将方程 f(x) = 0 改写为 x = g(x) 的形式，然后从初始值 x₀ 出发，反复迭代：</p>
+    <span class="formula">xₙ₊₁ = g(xₙ)</span>
+    <p>若序列收敛，则极限值即为方程的一个根。</p>
+  </div>
+
+  <div class="kp">
+    <h3>收敛条件</h3>
+    <p>迭代 xₙ₊₁ = g(xₙ) 在根附近收敛的充分条件是：</p>
+    <span class="formula">|g'(x)| &lt; 1 在根附近的区间上</span>
+    <p>若 |g'(x)| > 1，则迭代发散，不会逼近根。</p>
+    <p><strong>例：</strong> f(x) = x² - 5x + 4 = 0，可改写为 x = (x² + 4)/5，则 g(x) = (x² + 4)/5。</p>
+  </div>
+
+  <div class="kp">
+    <h3>迭代法的几何意义 — 蛛网图 (Cobweb Diagram)</h3>
+    <p>在坐标平面上画出 y = x 和 y = g(x) 两条曲线，从 (x₀, 0) 出发，垂直向上到 y = g(x)，再水平到 y = x，再垂直到 y = g(x)... 形成一条"蛛网"状的折线，趋向交点。</p>
+  </div>
+
+  <div class="anim-container">
+    <h3 style="margin-bottom:16px;">📊 迭代法 — 蛛网图 (Cobweb Diagram)</h3>
+    <div class="iter-demo"><canvas id="iterCanvas"></canvas></div>
+    <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
+      g(x) = (x² + 4)/5，从 x₀ = 0 开始迭代，收敛到 x = 1
+    </p>
+  </div>
+
+  <h2 data-section="s3" id="sec10-3" style="margin:28px 0 16px;">10.3 牛顿-拉夫森法 (Newton-Raphson Method)</h2>
+
+  <div class="kp">
+    <h3>牛顿-拉夫森公式</h3>
+    <p>牛顿-拉夫森法是求解 f(x) = 0 的一种快速迭代方法，利用切线逼近根：</p>
+    <span class="formula">xₙ₊₁ = xₙ - f(xₙ) / f'(xₙ)</span>
+    <p>从初始估计 x₀ 出发，每次迭代用切线代替曲线，计算切线与 x 轴的交点作为新的近似值。</p>
+  </div>
+
+  <div class="kp">
+    <h3>牛顿法的几何意义</h3>
+    <p>在点 (xₙ, f(xₙ)) 处作曲线的切线，切线方程为：</p>
+    <span class="formula">y - f(xₙ) = f'(xₙ)(x - xₙ)</span>
+    <p>令 y = 0，得切线与 x 轴的交点 xₙ₊₁ = xₙ - f(xₙ)/f'(xₙ)，这正是下一次迭代的值。</p>
+  </div>
+
+  <div class="kp">
+    <h3>牛顿法的收敛性</h3>
+    <p>牛顿法通常具有<strong>二次收敛</strong>速度，比普通迭代法快得多。但需要注意：</p>
+    <p>1. 初始值 x₀ 必须足够接近真实根</p>
+    <p>2. f'(xₙ) 不能为零（否则切线平行于 x 轴）</p>
+    <p>3. 在拐点附近可能不收敛或收敛到错误的根</p>
+  </div>
+
+  <div class="kp">
+    <h3>牛顿法应用示例</h3>
+    <p>求 √2 的近似值：令 f(x) = x² - 2 = 0，f'(x) = 2x。</p>
+    <span class="formula">xₙ₊₁ = xₙ - (xₙ² - 2)/(2xₙ) = (xₙ + 2/xₙ)/2</span>
+    <p>取 x₀ = 1：x₁ = (1 + 2)/2 = 1.5，x₂ = (1.5 + 2/1.5)/2 ≈ 1.4167，x₃ ≈ 1.4142... 快速收敛。</p>
+  </div>
+
+  <h2 data-section="s4" id="sec10-4" style="margin:28px 0 16px;">10.4 数值积分：梯形法则 (Trapezium Rule)</h2>
+
+  <div class="kp">
+    <h3>梯形法则公式</h3>
+    <p>将区间 [a, b] 等分为 n 个宽度为 h = (b - a)/n 的子区间，用梯形面积之和近似曲线下的面积：</p>
+    <span class="formula">∫ₐᵇ f(x) dx ≈ (h/2) [y₀ + 2(y₁ + y₂ + ... + yₙ₋₁) + yₙ]</span>
+    <p>其中 yᵢ = f(xᵢ)，xᵢ = a + ih。</p>
+  </div>
+
+  <div class="kp">
+    <h3>梯形法则的精度</h3>
+    <p>梯形法则的误差约为 O(h²)。增加条数 n（减小 h）可以提高精度。</p>
+    <p>对于凹函数，梯形法则<strong>高估</strong>面积；对于凸函数，梯形法则<strong>低估</strong>面积。</p>
+    <p><strong>例：</strong> 用 n = 4 条梯形近似 ∫₀² x² dx：</p>
+    <p>h = 0.5，x: 0, 0.5, 1, 1.5, 2</p>
+    <p>y: 0, 0.25, 1, 2.25, 4</p>
+    <span class="formula">∫₀² x² dx ≈ (0.5/2)[0 + 2(0.25 + 1 + 2.25) + 4] = 0.25 × 11 = 2.75</span>
+    <p>精确值 = 8/3 ≈ 2.667，梯形法则略有高估（因为 x² 是凸函数，等等，x² 是 convex 凸函数，梯形法则应该高估。2.75 > 2.667，确实高估了）。</p>
+  </div>
+
+  <h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+  <div class="exercise"><div class="question"><span class="q-num">1</span>f(x) = x³ - x - 2，f(1) = -2，f(2) = 4，则方程 f(x) = 0 的根在哪个区间内？</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A">A. (0, 1)</label>
+      <label><input type="radio" name="q1" value="B">B. (1, 2)</label>
+      <label><input type="radio" name="q1" value="C">C. (2, 3)</label>
+      <label><input type="radio" name="q1" value="D">D. (-1, 0)</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+    <div class="answer" id="answer-1" data-correct="B">✅ 正确答案：B。f(1) = -2 < 0，f(2) = 4 > 0，符号变化，故根在 (1, 2) 内。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">2</span>迭代公式 xₙ₊₁ = (xₙ² + 2)/3，g(x) = (x² + 2)/3，则 g'(1) = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A">A. 1/3</label>
+      <label><input type="radio" name="q2" value="B">B. 2/3</label>
+      <label><input type="radio" name="q2" value="C">C. 1</label>
+      <label><input type="radio" name="q2" value="D">D. 4/3</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+    <div class="answer" id="answer-2" data-correct="B">✅ 正确答案：B。g'(x) = 2x/3，g'(1) = 2/3。|g'(1)| < 1，故在 x = 1 附近收敛。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">3</span>用牛顿法求 f(x) = x² - 5 = 0 的根，x₀ = 2，则 x₁ = ____。</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A">A. 2.25</label>
+      <label><input type="radio" name="q3" value="B">B. 2.2</label>
+      <label><input type="radio" name="q3" value="C">C. 2.5</label>
+      <label><input type="radio" name="q3" value="D">D. 2.15</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+    <div class="answer" id="answer-3" data-correct="A">✅ 正确答案：A。f'(x) = 2x，x₁ = 2 - (4-5)/4 = 2 + 1/4 = 2.25。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">4</span>用 n = 2 条梯形近似 ∫₀¹ eˣ dx，结果约为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A">A. 1.72</label>
+      <label><input type="radio" name="q4" value="B">B. 1.86</label>
+      <label><input type="radio" name="q4" value="C">C. 1.75</label>
+      <label><input type="radio" name="q4" value="D">D. 1.68</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+    <div class="answer" id="answer-4" data-correct="C">✅ 正确答案：C。h = 0.5，x: 0, 0.5, 1；y: 1, e⁰·⁵≈1.6487, e¹≈2.7183。∫ ≈ (0.5/2)[1 + 2×1.6487 + 2.7183] = 0.25 × 7.0157 ≈ 1.754。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">5</span>关于牛顿-拉夫森法，以下说法正确的是____。</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A">A. 牛顿法总是收敛</label>
+      <label><input type="radio" name="q5" value="B">B. 需要计算二阶导数</label>
+      <label><input type="radio" name="q5" value="C">C. 具有二次收敛速度</label>
+      <label><input type="radio" name="q5" value="D">D. 不需要初始值</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+    <div class="answer" id="answer-5" data-correct="C">✅ 正确答案：C。牛顿法具有二次收敛速度，但需要初始值接近真实根，且需要 f'(x) ≠ 0。它需要一阶导数，不是二阶。牛顿法不是总是收敛的。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">6</span>迭代公式 xₙ₊₁ = 2xₙ - 1，g'(x) = 2，从 x₀ = 0 开始迭代，序列会____。</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A">A. 收敛到 1</label>
+      <label><input type="radio" name="q6" value="B">B. 收敛到 0</label>
+      <label><input type="radio" name="q6" value="C">C. 发散</label>
+      <label><input type="radio" name="q6" value="D">D. 震荡</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+    <div class="answer" id="answer-6" data-correct="C">✅ 正确答案：C。|g'(x)| = 2 > 1，迭代发散。x₀ = 0 → x₁ = -1 → x₂ = -3 → x₃ = -7 → ... 发散到 -∞。</div>
+  </div>
+</main>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const canvas = document.getElementById('iterCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  function draw() {
+    resize();
+    const w = canvas.width, h = canvas.height;
+    const cx = 80, cy = h - 80;
+    const scaleX = (w - 160) / 5;
+    const scaleY = (h - 160) / 5;
+    ctx.clearRect(0,0,w,h);
+    // Grid
+    ctx.strokeStyle = '#334155'; ctx.lineWidth = 0.5;
+    for(let i = 0; i <= 5; i++) {
+      ctx.beginPath(); ctx.moveTo(cx + i*scaleX, 0); ctx.lineTo(cx + i*scaleX, h); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(0, cy - i*scaleY); ctx.lineTo(w, cy - i*scaleY); ctx.stroke();
+    }
+    // Axes
+    ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(cx, 0); ctx.lineTo(cx, h); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(0, cy); ctx.lineTo(w, cy); ctx.stroke();
+    // y = x
+    ctx.strokeStyle = '#64748b'; ctx.lineWidth = 1; ctx.setLineDash([5,5]);
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + 5*scaleX, cy - 5*scaleY); ctx.stroke();
+    ctx.setLineDash([]);
+    // y = g(x) = (x^2 + 4)/5
+    ctx.strokeStyle = '#10b981'; ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    let started = false;
+    for(let px = 0; px <= 5*scaleX; px++) {
+      const x = px / scaleX;
+      const y = (x*x + 4) / 5;
+      if(y > 5) continue;
+      const sx = cx + px;
+      const sy = cy - y * scaleY;
+      if(!started) { ctx.moveTo(sx, sy); started = true; }
+      else ctx.lineTo(sx, sy);
+    }
+    ctx.stroke();
+    // Cobweb: x0 = 0, iterate
+    const g = x => (x*x + 4) / 5;
+    let x0 = 0;
+    ctx.strokeStyle = '#f59e0b'; ctx.lineWidth = 1.5;
+    for(let i = 0; i < 10; i++) {
+      const x1 = g(x0);
+      // Vertical: (x0, x0) to (x0, x1)
+      ctx.beginPath();
+      ctx.moveTo(cx + x0*scaleX, cy - x0*scaleY);
+      ctx.lineTo(cx + x0*scaleX, cy - x1*scaleY);
+      ctx.stroke();
+      // Horizontal: (x0, x1) to (x1, x1)
+      ctx.beginPath();
+      ctx.moveTo(cx + x0*scaleX, cy - x1*scaleY);
+      ctx.lineTo(cx + x1*scaleX, cy - x1*scaleY);
+      ctx.stroke();
+      x0 = x1;
+      if(Math.abs(x1 - 1) < 0.01) break;
+    }
+    // Labels
+    ctx.fillStyle = '#fff'; ctx.font = '12px sans-serif';
+    ctx.fillText('y = x', cx + 4.5*scaleX, cy - 4.5*scaleY + 15);
+    ctx.fillText('y = (x²+4)/5', cx + 2*scaleX, cy - 1.5*scaleY);
+    ctx.fillText('收敛到 x=1', cx + 0.5*scaleX, cy - 0.5*scaleY);
+    // Dot at intersection (1,1)
+    ctx.fillStyle = '#ef4444'; ctx.beginPath();
+    ctx.arc(cx + 1*scaleX, cy - 1*scaleY, 5, 0, Math.PI*2); ctx.fill();
+  }
+  draw();
+  window.addEventListener('resize', draw);
+})();
+</script>
+</body>
+</html>

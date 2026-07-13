@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第1章 物理量与单位 - CAIE A-LEVEL 物理 (9702)</title>
+<link rel="stylesheet" href="../../assets/css/common.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="breadcrumb">
+    <a href="../../index.html">🏠 首页</a><span>›</span>
+    <a href="../index.html">🎓 CAIE A-LEVEL</a><span>›</span>
+    <a href="index.html">⚛️ 物理</a><span>›</span>
+    <span>第1章 物理量与单位</span>
+  </div>
+  <div class="spacer"></div>
+  <div class="subject-switch">
+    <a href="../math/index.html">数学</a>
+    <a href="index.html" class="active">物理</a>
+    <a href="../chemistry/index.html">化学</a>
+    <a href="../biology/index.html">生物</a>
+    <a href="../economics/index.html">经济</a>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h3>⚛️ A-LEVEL 物理</h3>
+    <ul class="chapter-list">
+      <li><a href="ch01_quantities_units.html" class="active"><span class="ch-num">1</span>物理量与单位</a></li>
+      <li><a href="ch02_kinematics.html"><span class="ch-num">2</span>运动学</a></li>
+      <li><a href="ch03_dynamics.html"><span class="ch-num">3</span>动力学</a></li>
+      <li><a href="ch04_forces_pressure.html"><span class="ch-num">4</span>力、密度与压强</a></li>
+      <li><a href="ch05_work_energy_power.html"><span class="ch-num">5</span>功、能与功率</a></li>
+      <li><a href="ch06_deformation.html"><span class="ch-num">6</span>固体形变</a></li>
+      <li><a href="ch07_waves.html"><span class="ch-num">7</span>波</a></li>
+      <li><a href="ch08_superposition.html"><span class="ch-num">8</span>叠加与干涉</a></li>
+      <li><a href="ch09_electricity.html"><span class="ch-num">9</span>电场与电流</a></li>
+      <li><a href="ch10_dc_circuits.html"><span class="ch-num">10</span>直流电路</a></li>
+      <li><a href="ch11_particle_physics.html"><span class="ch-num">11</span>粒子与核物理</a></li>
+      <li><a href="ch12_practical_skills.html"><span class="ch-num">12</span>实验技能</a></li>
+    </ul>
+    <div class="subsections">
+      <a href="#s1.1">1.1 SI基本单位与导出单位</a>
+      <a href="#s1.2">1.2 物理量的量纲分析</a>
+      <a href="#s1.3">1.3 测量误差与不确定度</a>
+      <a href="#s1.4">1.4 有效数字与数量级估计</a>
+      <a href="#exercises">📝 章节练习</a>
+    </div>
+    <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
+      <a href="index.html" class="back-home">⚛️ 物理首页</a>
+      <a href="../index.html" class="back-home" style="margin-top:8px;">🎓 CAIE 首页</a>
+      <a href="../../index.html" class="back-home" style="margin-top:8px;">🏠 返回首页</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <h1 class="page-title">第1章 物理量与单位</h1>
+
+    <!-- 学习目标 -->
+    <div class="card" style="background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:5px solid #2563eb;">
+      <div class="card-title"><span class="icon">🎯</span> 学习目标</div>
+      <ul style="color:#475569;line-height:2;padding-left:20px;">
+        <li>理解SI基本单位制（m, kg, s, A, K, mol, cd）及其导出单位</li>
+        <li>掌握量纲分析方法，能够检验物理公式的合理性</li>
+        <li>区分系统误差与随机误差，计算绝对不确定度、相对不确定度和百分比不确定度</li>
+        <li>正确使用有效数字，能够进行数量级估计</li>
+      </ul>
+    </div>
+
+    <!-- 1.1 SI基本单位与导出单位 -->
+    <h2 id="s1.1" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">1.1 SI基本单位与导出单位</h2>
+
+    <div class="kp">
+      <h3>SI基本单位</h3>
+      <p>国际单位制 (SI: Systeme International d'Unites) 定义了7个基本量及其对应的基本单位。所有其他物理量都可以由这7个基本量导出。</p>
+      <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:.9rem;">
+        <thead>
+          <tr style="background:#eff6ff;">
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">基本物理量</th>
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">SI基本单位</th>
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">符号</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">长度 (length)</td><td style="padding:8px;border:1px solid #e2e8f0;">米 (metre)</td><td style="padding:8px;border:1px solid #e2e8f0;">m</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">质量 (mass)</td><td style="padding:8px;border:1px solid #e2e8f0;">千克 (kilogram)</td><td style="padding:8px;border:1px solid #e2e8f0;">kg</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">时间 (time)</td><td style="padding:8px;border:1px solid #e2e8f0;">秒 (second)</td><td style="padding:8px;border:1px solid #e2e8f0;">s</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">电流 (electric current)</td><td style="padding:8px;border:1px solid #e2e8f0;">安培 (ampere)</td><td style="padding:8px;border:1px solid #e2e8f0;">A</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">热力学温度 (thermodynamic temperature)</td><td style="padding:8px;border:1px solid #e2e8f0;">开尔文 (kelvin)</td><td style="padding:8px;border:1px solid #e2e8f0;">K</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">物质的量 (amount of substance)</td><td style="padding:8px;border:1px solid #e2e8f0;">摩尔 (mole)</td><td style="padding:8px;border:1px solid #e2e8f0;">mol</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">发光强度 (luminous intensity)</td><td style="padding:8px;border:1px solid #e2e8f0;">坎德拉 (candela)</td><td style="padding:8px;border:1px solid #e2e8f0;">cd</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="kp">
+      <h3>导出单位</h3>
+      <p>导出单位由基本单位通过乘除组合而成。以下是常见物理量的导出单位：</p>
+      <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:.9rem;">
+        <thead>
+          <tr style="background:#eff6ff;">
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">物理量</th>
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">导出单位</th>
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">用基本单位表示</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">速度 (velocity)</td><td style="padding:8px;border:1px solid #e2e8f0;">m s⁻¹</td><td style="padding:8px;border:1px solid #e2e8f0;">m s⁻¹</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">加速度 (acceleration)</td><td style="padding:8px;border:1px solid #e2e8f0;">m s⁻²</td><td style="padding:8px;border:1px solid #e2e8f0;">m s⁻²</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">力 (force)</td><td style="padding:8px;border:1px solid #e2e8f0;">牛顿 (N)</td><td style="padding:8px;border:1px solid #e2e8f0;">kg m s⁻²</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">压强 (pressure)</td><td style="padding:8px;border:1px solid #e2e8f0;">帕斯卡 (Pa)</td><td style="padding:8px;border:1px solid #e2e8f0;">kg m⁻¹ s⁻²</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">能量 (energy)</td><td style="padding:8px;border:1px solid #e2e8f0;">焦耳 (J)</td><td style="padding:8px;border:1px solid #e2e8f0;">kg m² s⁻²</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">功率 (power)</td><td style="padding:8px;border:1px solid #e2e8f0;">瓦特 (W)</td><td style="padding:8px;border:1px solid #e2e8f0;">kg m² s⁻³</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">电荷 (charge)</td><td style="padding:8px;border:1px solid #e2e8f0;">库仑 (C)</td><td style="padding:8px;border:1px solid #e2e8f0;">A s</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">电势差 (p.d.)</td><td style="padding:8px;border:1px solid #e2e8f0;">伏特 (V)</td><td style="padding:8px;border:1px solid #e2e8f0;">kg m² s⁻³ A⁻¹</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">电阻 (resistance)</td><td style="padding:8px;border:1px solid #e2e8f0;">欧姆 (Ω)</td><td style="padding:8px;border:1px solid #e2e8f0;">kg m² s⁻³ A⁻²</td></tr>
+        </tbody>
+      </table>
+      <p>每个导出单位都有其对应的SI专用名称，便于书写和记忆，但考试中常要求将其转化为基本单位形式。</p>
+    </div>
+
+    <div class="kp">
+      <h3>单位前缀与科学记数法</h3>
+      <p>CAIE考试中常用的单位前缀：</p>
+      <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:.9rem;">
+        <thead>
+          <tr style="background:#eff6ff;">
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">前缀名称</th>
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">符号</th>
+            <th style="padding:10px;border:1px solid #e2e8f0;text-align:left;">10的幂</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">tera (太)</td><td style="padding:8px;border:1px solid #e2e8f0;">T</td><td style="padding:8px;border:1px solid #e2e8f0;">10¹²</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">giga (吉)</td><td style="padding:8px;border:1px solid #e2e8f0;">G</td><td style="padding:8px;border:1px solid #e2e8f0;">10⁹</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">mega (兆)</td><td style="padding:8px;border:1px solid #e2e8f0;">M</td><td style="padding:8px;border:1px solid #e2e8f0;">10⁶</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">kilo (千)</td><td style="padding:8px;border:1px solid #e2e8f0;">k</td><td style="padding:8px;border:1px solid #e2e8f0;">10³</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">centi (厘)</td><td style="padding:8px;border:1px solid #e2e8f0;">c</td><td style="padding:8px;border:1px solid #e2e8f0;">10⁻²</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">milli (毫)</td><td style="padding:8px;border:1px solid #e2e8f0;">m</td><td style="padding:8px;border:1px solid #e2e8f0;">10⁻³</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">micro (微)</td><td style="padding:8px;border:1px solid #e2e8f0;">μ</td><td style="padding:8px;border:1px solid #e2e8f0;">10⁻⁶</td></tr>
+          <tr style="background:#f8fafc;"><td style="padding:8px;border:1px solid #e2e8f0;">nano (纳)</td><td style="padding:8px;border:1px solid #e2e8f0;">n</td><td style="padding:8px;border:1px solid #e2e8f0;">10⁻⁹</td></tr>
+          <tr><td style="padding:8px;border:1px solid #e2e8f0;">pico (皮)</td><td style="padding:8px;border:1px solid #e2e8f0;">p</td><td style="padding:8px;border:1px solid #e2e8f0;">10⁻¹²</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 1.2 量纲分析 -->
+    <h2 id="s1.2" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">1.2 物理量的量纲分析</h2>
+
+    <div class="kp">
+      <h3>量纲的定义</h3>
+      <p>量纲 (dimension) 表示一个物理量与基本物理量之间的关系。用方括号表示量纲：</p>
+      <p><span class="formula">[长度] = L</span> <span class="formula">[质量] = M</span> <span class="formula">[时间] = T</span> <span class="formula">[电流] = I</span> <span class="formula">[温度] = Θ</span></p>
+      <p>导出量的量纲由基本量纲组合而成。例如：</p>
+      <p><span class="formula">[速度] = LT⁻¹</span> <span class="formula">[加速度] = LT⁻²</span> <span class="formula">[力] = MLT⁻²</span></p>
+      <p><span class="formula">[能量] = ML²T⁻²</span> <span class="formula">[压强] = ML⁻¹T⁻²</span> <span class="formula">[频率] = T⁻¹</span></p>
+    </div>
+
+    <div class="kp">
+      <h3>量纲分析的应用</h3>
+      <p><strong>1. 检验公式的正确性：</strong>等式两边必须具有相同的量纲。例如检验 <span class="formula">v² = u² + 2as</span></p>
+      <p>左侧: [v²] = (LT⁻¹)² = L²T⁻²</p>
+      <p>右侧: [u²] = L²T⁻², [2as] = (LT⁻²)(L) = L²T⁻² ✓ 量纲一致</p>
+      <p style="margin-top:10px;"><strong>2. 推导物理量之间的关系：</strong>通过量纲分析可以确定公式中物理量的指数关系。</p>
+      <p style="margin-top:10px;"><strong>3. 无单位常数：</strong>纯数字（如 π, ½）、角度（弧度 rad）和计数都是无量纲的。</p>
+    </div>
+
+    <!-- 1.3 测量误差与不确定度 -->
+    <h2 id="s1.3" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">1.3 测量误差与不确定度</h2>
+
+    <div class="kp">
+      <h3>误差的分类</h3>
+      <p><strong>系统误差 (Systematic Error)：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>测量值始终偏向同一方向（总是偏大或总是偏小）</li>
+        <li>来源：仪器零点误差、校准错误、环境条件恒定影响</li>
+        <li>可通过校准仪器、改进测量方法来减小</li>
+        <li>重复测量<strong>不能</strong>消除系统误差</li>
+      </ul>
+      <p style="margin-top:10px;"><strong>随机误差 (Random Error)：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>测量值分散在真实值两侧，无明显规律</li>
+        <li>来源：读数波动、环境微小变化、操作者判断差异</li>
+        <li>通过<strong>重复测量取平均值</strong>可以减小随机误差</li>
+      </ul>
+    </div>
+
+    <div class="kp">
+      <h3>不确定度的计算</h3>
+      <p><strong>绝对不确定度 (Absolute Uncertainty):</strong> 测量值的不确定范围，通常取仪器最小刻度的 ± 一半（或 ± 一个最小刻度）。</p>
+      <p>例如：用最小刻度为1 mm的尺子测量长度 L = 24.5 cm，则绝对不确定度 = ±0.5 mm = ±0.05 cm</p>
+      <p style="margin-top:10px;"><strong>相对不确定度 (Fractional Uncertainty):</strong></p>
+      <p><span class="formula">相对不确定度 = 绝对不确定度 / 测量值</span></p>
+      <p style="margin-top:10px;"><strong>百分比不确定度 (Percentage Uncertainty):</strong></p>
+      <p><span class="formula">百分比不确定度 = (绝对不确定度 / 测量值) × 100%</span></p>
+      <p style="margin-top:12px;"><strong>不确定度的合成规则：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>加减法：绝对不确定度相加 <span class="formula">ΔQ = ΔA + ΔB</span></li>
+        <li>乘除法：百分比不确定度相加 <span class="formula">%ΔQ = %ΔA + %ΔB</span></li>
+        <li>幂运算：百分比不确定度乘以指数 <span class="formula">%Δ(Aⁿ) = n × %ΔA</span></li>
+      </ul>
+    </div>
+
+    <!-- 1.4 有效数字与数量级估计 -->
+    <h2 id="s1.4" style="color:#2563eb;margin-top:32px;margin-bottom:16px;">1.4 有效数字与数量级估计</h2>
+
+    <div class="kp">
+      <h3>有效数字 (Significant Figures)</h3>
+      <p><strong>规则：</strong></p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>所有非零数字都是有效数字（如 123.45 有 5 位有效数字）</li>
+        <li>非零数字之间的零是有效数字（如 1002 有 4 位有效数字）</li>
+        <li>小数点后的零是有效数字（如 2.50 有 3 位有效数字）</li>
+        <li>大数末尾的零是否为有效数字取决于写法：1200 有歧义，应写为 1.2 × 10³（2位）或 1.200 × 10³（4位）</li>
+      </ul>
+      <p style="margin-top:10px;">在CAIE考试中，最终答案的有效数字通常应与所给数据中最少的有效数字位数一致（通常为2-3位）。</p>
+    </div>
+
+    <div class="kp">
+      <h3>数量级估计 (Order of Magnitude)</h3>
+      <p>数量级是指一个物理量在10的幂次上的大小。当两个值的数量级相差1时，意味着它们相差约10倍。</p>
+      <p>例如：估算地球大气层中空气分子的数量</p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>大气压强 ≈ 1.0 × 10⁵ Pa</li>
+        <li>地球表面积 ≈ 4πR² ≈ 5 × 10¹⁴ m²</li>
+        <li>大气总质量 ≈ (P × A) / g ≈ (10⁵ × 5 × 10¹⁴) / 10 ≈ 5 × 10¹⁸ kg</li>
+        <li>空气平均摩尔质量 ≈ 0.029 kg mol⁻¹</li>
+        <li>分子数 ≈ (5 × 10¹⁸ / 0.029) × 6.02 × 10²³ ≈ 1 × 10⁴⁴</li>
+      </ul>
+      <p style="margin-top:10px;">数量级估计在CAIE Paper 5中尤为重要，尤其是在实验设计部分。</p>
+    </div>
+
+    <!-- 练习 -->
+    <h2 id="exercises" style="color:#1e293b;margin-top:32px;margin-bottom:16px;">📝 章节练习</h2>
+
+    <div class="exercise" id="ex1">
+      <p><span class="q-num">1</span><span class="question">下列哪个是SI基本单位？</span></p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="A"> A. 牛顿 (N)</label>
+        <label><input type="radio" name="q1" value="B"> B. 安培 (A)</label>
+        <label><input type="radio" name="q1" value="C"> C. 焦耳 (J)</label>
+        <label><input type="radio" name="q1" value="D"> D. 伏特 (V)</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex1')">显示答案</button>
+      <div class="answer" id="answer-ex1" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">安培 (A) 是电流的SI基本单位。牛顿 (N)、焦耳 (J) 和伏特 (V) 都是导出单位，它们可以表示为基本单位的组合。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex2">
+      <p><span class="q-num">2</span><span class="question">压强的SI基本单位组合是什么？</span></p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="A"> A. kg m⁻¹ s⁻²</label>
+        <label><input type="radio" name="q2" value="B"> B. kg m² s⁻²</label>
+        <label><input type="radio" name="q2" value="C"> C. kg m⁻¹ s⁻¹</label>
+        <label><input type="radio" name="q2" value="D"> D. kg m s⁻²</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex2')">显示答案</button>
+      <div class="answer" id="answer-ex2" data-correct="A">
+        <div class="answer-value">答案：A</div>
+        <div class="answer-solution">P = F/A = (kg m s⁻²) / m² = kg m⁻¹ s⁻²。选项B是能量的单位，选项D是力的单位。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex3">
+      <p><span class="q-num">3</span><span class="question">某学生用游标卡尺测量圆柱体直径，五次测量结果为：2.54 cm, 2.56 cm, 2.53 cm, 2.55 cm, 2.57 cm。其测量结果的平均值和绝对不确定度应为：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q3" value="A"> A. 2.55 ± 0.01 cm</label>
+        <label><input type="radio" name="q3" value="B"> B. 2.55 ± 0.02 cm</label>
+        <label><input type="radio" name="q3" value="C"> C. 2.55 ± 0.04 cm</label>
+        <label><input type="radio" name="q3" value="D"> D. 2.55 ± 0.005 cm</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex3')">显示答案</button>
+      <div class="answer" id="answer-ex3" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">平均值 = (2.54+2.56+2.53+2.55+2.57)/5 = 2.55 cm。不确定度通常取测量值的范围的一半：range = 2.57 - 2.53 = 0.04 cm，一半 = 0.02 cm。所以结果为 2.55 ± 0.02 cm。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex4">
+      <p><span class="q-num">4</span><span class="question">某电阻的测量值为 R = 220 Ω，百分比不确定度为 5%。则其绝对不确定度为：</span></p>
+      <div class="options">
+        <label><input type="radio" name="q4" value="A"> A. 5 Ω</label>
+        <label><input type="radio" name="q4" value="B"> B. 10 Ω</label>
+        <label><input type="radio" name="q4" value="C"> C. 11 Ω</label>
+        <label><input type="radio" name="q4" value="D"> D. 22 Ω</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex4')">显示答案</button>
+      <div class="answer" id="answer-ex4" data-correct="C">
+        <div class="answer-value">答案：C</div>
+        <div class="answer-solution">绝对不确定度 = 百分比不确定度 × 测量值 = 5% × 220 = 0.05 × 220 = 11 Ω。</div>
+      </div>
+    </div>
+
+    <div class="exercise" id="ex5">
+      <p><span class="q-num">5</span><span class="question">以下哪种方法可以减小随机误差？</span></p>
+      <div class="options">
+        <label><input type="radio" name="q5" value="A"> A. 校准仪器</label>
+        <label><input type="radio" name="q5" value="B"> B. 重复测量取平均值</label>
+        <label><input type="radio" name="q5" value="C"> C. 消除零点误差</label>
+        <label><input type="radio" name="q5" value="D"> D. 使用更精密的刻度</label>
+      </div>
+      <button class="answer-btn" onclick="showAnswer('ex5')">显示答案</button>
+      <div class="answer" id="answer-ex5" data-correct="B">
+        <div class="answer-value">答案：B</div>
+        <div class="answer-solution">重复测量取平均值可以有效减小随机误差的影响。选项A和C针对的是系统误差，选项D虽然能提高精度但不能直接减小随机误差。</div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

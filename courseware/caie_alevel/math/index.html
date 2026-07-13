@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>CAIE A-LEVEL 数学 (9709) 真题</title>
+<title>CAIE A-LEVEL 数学 (9709) 课程与真题</title>
 <link rel="stylesheet" href="../../assets/css/common.css">
 <style>
 .back-links {
@@ -46,6 +46,57 @@
     font-size: 1.8rem;
     margin-bottom: 8px;
 }
+.subject-hero p { opacity: .95; font-size: 1.05rem; }
+
+/* 课程内容章节卡片 */
+.ch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.ch-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    border-left: 4px solid #059669;
+    transition: transform .2s, box-shadow .2s;
+    display: block;
+    color: #1e293b;
+}
+.ch-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,.1);
+}
+.ch-card .paper-tag {
+    font-size: .75rem;
+    color: #059669;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.ch-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+    color: #1e293b;
+}
+.ch-card .sections {
+    font-size: .8rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+.ch-card .sub-count {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: .75rem;
+    padding: 3px 8px;
+    background: #ecfdf5;
+    color: #059669;
+    border-radius: 10px;
+}
+
+/* 真题试卷 */
 .year-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -114,6 +165,18 @@
 .paper-card li a:hover {
     text-decoration: underline;
 }
+.section-divider {
+    margin: 32px 0 20px;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #065f46;
+}
 </style>
 </head>
 <body>
@@ -121,11 +184,12 @@
     <aside class="sidebar">
         <h3>📐 A-LEVEL 数学</h3>
         <ul class="chapter-list">
-            <li><a href="#2026"><span class="ch-num">📅</span>2026年</a></li>
-            <li><a href="#2025"><span class="ch-num">📅</span>2025年</a></li>
-            <li><a href="#2024"><span class="ch-num">📅</span>2024年</a></li>
-            <li><a href="#2023"><span class="ch-num">📅</span>2023年</a></li>
-            <li><a href="#2022"><span class="ch-num">📅</span>2022年</a></li>
+            <li><a href="#course-content"><span class="ch-num">📖</span>课程内容</a></li>
+            <li><a href="#2026"><span class="ch-num">📅</span>2026年真题</a></li>
+            <li><a href="#2025"><span class="ch-num">📅</span>2025年真题</a></li>
+            <li><a href="#2024"><span class="ch-num">📅</span>2024年真题</a></li>
+            <li><a href="#2023"><span class="ch-num">📅</span>2023年真题</a></li>
+            <li><a href="#2022"><span class="ch-num">📅</span>2022年真题</a></li>
         </ul>
         <div style="padding:16px 0;margin-top:20px;border-top:1px solid var(--border);">
             <a href="index.html" class="back-home">📐 数学首页</a>
@@ -137,7 +201,7 @@
     <main class="main">
         <div class="subject-hero">
             <h1>📐 CAIE A-LEVEL 数学 (9709)</h1>
-            <p>2022-2026年真题 · 含详细解答与评分标准</p>
+            <p>完整课程知识体系 + 2022-2026年真题 · 含详细解答与评分标准</p>
         </div>
 
         <div style="background: #f0fdf4; padding: 20px; border-radius: 12px; border-left: 4px solid #059669; margin-bottom: 24px;">
@@ -149,6 +213,116 @@
                 <strong>Paper 4</strong>: 力学 1 (M1) - 1小时15分钟，50分<br>
                 <strong>Paper 5</strong>: 概率统计 1 (S1) - 1小时15分钟，50分
             </div>
+        </div>
+
+        <!-- ====== 课程内容 ====== -->
+        <div id="course-content" class="section-divider">
+            📖 课程内容 — 知识点讲解与练习
+        </div>
+
+        <h3 style="margin-bottom: 16px; color: #059669;">纯数学 P1（AS Level 核心）</h3>
+        <div class="ch-grid">
+            <a href="ch01_quadratics.html" class="ch-card">
+                <div class="paper-tag">P1</div>
+                <h3>第1章 二次函数</h3>
+                <div class="sections">配方法 · 判别式 · 韦达定理 · 二次不等式</div>
+                <div class="sub-count">含抛物线动画</div>
+            </a>
+            <a href="ch02_functions.html" class="ch-card">
+                <div class="paper-tag">P1</div>
+                <h3>第2章 函数与图像变换</h3>
+                <div class="sections">定义域与值域 · 复合函数 · 反函数 · 图像平移/伸缩</div>
+                <div class="sub-count">含函数图像动画</div>
+            </a>
+            <a href="ch03_coordinate_geometry.html" class="ch-card">
+                <div class="paper-tag">P1</div>
+                <h3>第3章 坐标几何</h3>
+                <div class="sections">直线方程 · 距离公式 · 中点 · 圆方程</div>
+                <div class="sub-count">含几何演示</div>
+            </a>
+            <a href="ch04_circular_measure.html" class="ch-card">
+                <div class="paper-tag">P1</div>
+                <h3>第4章 圆与弧度制</h3>
+                <div class="sections">弧度制 · 弧长公式 · 扇形面积 · 弦长</div>
+                <div class="sub-count">含弧度动画</div>
+            </a>
+        </div>
+
+        <h3 style="margin: 24px 0 16px; color: #059669;">纯数学 P1/P2/P3（进阶）</h3>
+        <div class="ch-grid">
+            <a href="ch05_trigonometry.html" class="ch-card">
+                <div class="paper-tag">P1/P2/P3</div>
+                <h3>第5章 三角函数</h3>
+                <div class="sections">三角恒等式 · 三角方程 · 图像变换 · 和差化积</div>
+                <div class="sub-count">含三角函数图像</div>
+            </a>
+            <a href="ch06_sequences_series.html" class="ch-card">
+                <div class="paper-tag">P1/P2</div>
+                <h3>第6章 数列与级数</h3>
+                <div class="sections">等差数列 · 等比数列 · 二项式展开 · 无穷级数</div>
+                <div class="sub-count">含级数可视化</div>
+            </a>
+            <a href="ch07_differentiation.html" class="ch-card">
+                <div class="paper-tag">P1/P2/P3</div>
+                <h3>第7章 微分</h3>
+                <div class="sections">求导法则 · 链式法则 · 隐函数求导 · 参数方程求导</div>
+                <div class="sub-count">含切线动画</div>
+            </a>
+            <a href="ch08_integration.html" class="ch-card">
+                <div class="paper-tag">P1/P2/P3</div>
+                <h3>第8章 积分</h3>
+                <div class="sections">不定积分 · 定积分 · 面积计算 · 旋转体体积</div>
+                <div class="sub-count">含面积动画</div>
+            </a>
+            <a href="ch09_logarithms_exponentials.html" class="ch-card">
+                <div class="paper-tag">P2/P3</div>
+                <h3>第9章 对数与指数函数</h3>
+                <div class="sections">对数运算 · 指数方程 · 自然对数 · eˣ 与 ln x</div>
+                <div class="sub-count">含函数对比动画</div>
+            </a>
+            <a href="ch10_numerical_methods.html" class="ch-card">
+                <div class="paper-tag">P2/P3</div>
+                <h3>第10章 数值方法</h3>
+                <div class="sections">迭代法 · 牛顿-拉夫森法 · 梯形法则 · 误差估计</div>
+                <div class="sub-count">含迭代动画</div>
+            </a>
+        </div>
+
+        <h3 style="margin: 24px 0 16px; color: #059669;">纯数学 P3（高等）</h3>
+        <div class="ch-grid">
+            <a href="ch11_vectors.html" class="ch-card">
+                <div class="paper-tag">P3</div>
+                <h3>第11章 三维向量</h3>
+                <div class="sections">向量运算 · 点积 · 叉积 · 直线与平面方程</div>
+                <div class="sub-count">含3D向量演示</div>
+            </a>
+            <a href="ch12_differential_equations.html" class="ch-card">
+                <div class="paper-tag">P3</div>
+                <h3>第12章 微分方程</h3>
+                <div class="sections">分离变量法 · 一阶线性 · 通解与特解 · 应用问题</div>
+                <div class="sub-count">含斜率场</div>
+            </a>
+            <a href="ch13_complex_numbers.html" class="ch-card">
+                <div class="paper-tag">P3</div>
+                <h3>第13章 复数</h3>
+                <div class="sections">复数的表示 · 代数运算 · 极坐标形式 · 棣莫弗定理</div>
+                <div class="sub-count">含复平面动画</div>
+            </a>
+        </div>
+
+        <h3 style="margin: 24px 0 16px; color: #059669;">力学与统计（M1 + S1）</h3>
+        <div class="ch-grid">
+            <a href="ch14_mechanics_statistics.html" class="ch-card">
+                <div class="paper-tag">M1/S1</div>
+                <h3>第14章 力学与统计</h3>
+                <div class="sections">运动学 · 牛顿定律 · 动量 · 概率分布 · 正态分布</div>
+                <div class="sub-count">含运动模拟</div>
+            </a>
+        </div>
+
+        <!-- ====== 真题试卷 ====== -->
+        <div class="section-divider" style="background: linear-gradient(135deg, #fef3c7, #fde68a); color: #92400e;">
+            📝 真题试卷 — 按年份与考季
         </div>
 
         <h2 id="2026" style="margin: 32px 0 16px; color: #1e293b;">📅 2026年真题</h2>
