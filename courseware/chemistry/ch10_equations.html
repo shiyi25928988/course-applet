@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>初中化学 · 化学反应式大全</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.c-red { color:#dc2626; font-weight:600; }
+.c-blue { color:#2563eb; font-weight:600; }
+.c-green { color:#059669; font-weight:600; }
+.c-orange { color:#d97706; font-weight:600; }
+.c-purple { color:#7c3aed; font-weight:600; }
+.c-pink { color:#db2777; font-weight:600; }
+.c-teal { color:#0d9488; font-weight:600; }
+.highlight-box {
+  background:linear-gradient(135deg, #fef3c7, #fde68a);
+  border-left:4px solid #f59e0b; padding:14px 18px; border-radius:8px;
+  margin:12px 0; font-size:.92rem; line-height:1.8;
+}
+.info-box {
+  background:linear-gradient(135deg, #eff6ff, #dbeafe);
+  border-left:4px solid #3b82f6; padding:14px 18px; border-radius:8px;
+  margin:12px 0; font-size:.92rem; line-height:1.8;
+}
+.danger-box {
+  background:linear-gradient(135deg, #fef2f2, #fee2e2);
+  border-left:4px solid #ef4444; padding:14px 18px; border-radius:8px;
+  margin:12px 0; font-size:.92rem; line-height:1.8;
+}
+table.eq-table { width:100%; border-collapse:collapse; font-size:.88rem; margin:10px 0; }
+table.eq-table th { background:#f0fdf4; padding:10px 12px; text-align:left; color:#065f46; }
+table.eq-table td { padding:10px 12px; border-bottom:1px solid #e2e8f0; vertical-align:top; }
+table.eq-table tr:hover td { background:#f8fafc; }
+table.eq-table .eq-col { font-family:"Courier New",monospace; font-size:.92rem; font-weight:600; white-space:nowrap; }
+.eq-count { display:inline-block; background:#d1fae5; color:#065f46; padding:2px 10px; border-radius:12px; font-size:.8rem; margin-left:8px; }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"><h3>🧪 初中化学</h3><ul class="chapter-list">
+<li><a href="ch01_intro.html"><span class="ch-num">1</span>开启化学之门</a></li>
+<li><a href="ch02_substances.html"><span class="ch-num">2</span>身边的化学物质</a></li>
+<li><a href="ch03_matter.html"><span class="ch-num">3</span>物质构成的奥秘</a></li>
+<li><a href="ch04_reactions.html"><span class="ch-num">4</span>认识化学变化</a></li>
+<li><a href="ch05_metals.html"><span class="ch-num">5</span>金属的冶炼与利用</a></li>
+<li><a href="ch06_solutions.html"><span class="ch-num">6</span>溶解现象</a></li>
+<li><a href="ch07_acid_base.html"><span class="ch-num">7</span>酸、碱、盐</a></li>
+<li><a href="ch08_organic.html"><span class="ch-num">8</span>有机化合物</a></li>
+<li><a href="ch09_society.html"><span class="ch-num">9</span>化学与社会发展</a></li>
+<li><a href="ch10_equations.html" class="active" data-section="s1"><span class="ch-num">10</span>⭐ 化学反应式大全</a>
+<div class="subsections">
+  <a href="#sec1" data-section="s1">一、物质与氧气的反应</a>
+  <a href="#sec2" data-section="s2">二、氧气的制取</a>
+  <a href="#sec3" data-section="s3">三、二氧化碳相关反应</a>
+  <a href="#sec4" data-section="s4">四、水的相关反应</a>
+  <a href="#sec5" data-section="s5">五、金属与金属氧化物</a>
+  <a href="#sec6" data-section="s6">六、酸的性质</a>
+  <a href="#sec7" data-section="s7">七、碱的性质</a>
+  <a href="#sec8" data-section="s8">八、盐的反应</a>
+  <a href="#sec9" data-section="s9">九、复分解反应</a>
+  <a href="#sec10" data-section="s10">十、有机物反应</a>
+  <a href="#sec11" data-section="s11">十一、分解反应</a>
+  <a href="#sec12" data-section="s12">十二、其他重要反应</a>
+</div></li>
+</ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+      <a href="../index.html" class="back-home">🏠 返回首页</a>
+    </div>
+        <a href="index.html" class="back-subject">📂 化学目录</a>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="breadcrumb">
+      <a href="../index.html">🏠 首页</a><span>›</span>
+      <a href="index.html">📂 初中化学</a><span>›</span>
+      <span>化学反应式大全</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="subject-switch">
+      <a href="../math/index.html">数学</a>
+      <a href="../physics/index.html">物理</a>
+      <a href="index.html" class="active">化学</a>
+      <a href="../chinese/index.html">语文</a>
+    </div>
+  </div>
+  <div class="page-title">⭐ 初中化学反应式大全</div>
+
+<div class="card"><div class="card-title"><span class="icon">📖</span>使用说明</div>
+<ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+<li>本页汇总了<span class="c-red">沪教版初中化学</span>（九年级上、下册）涉及的全部化学反应方程式</li>
+<li>按反应类型分为<span class="c-blue">12大类</span>，方便分类记忆和复习</li>
+<li>每个方程式标注了<span class="c-green">反应条件</span>（点燃、加热、高温、通电、催化剂等）</li>
+<li>标注 <span class="c-orange">"↑"</span> 表示生成气体，<span class="c-purple">"↓"</span> 表示生成沉淀</li>
+<li>标注 <span class="c-pink">"⚠"</span> 的为考试高频方程式，需重点掌握</li>
+</ul></div>
+
+<div class="highlight-box">
+<strong>📊 统计：</strong>共计收录 <span class="c-red">60+</span> 个化学反应方程式，涵盖初中化学全部核心反应类型。
+</div>
+
+<!-- ====== 一、物质与氧气的反应 ====== -->
+<h2 data-section="s1" id="sec1" style="margin:28px 0 16px;">一、物质与氧气的反应（燃烧） <span class="eq-count">10个</span></h2>
+
+<table class="eq-table">
+<tr><th style="width:5%;">#</th><th style="width:42%;">化学方程式</th><th style="width:28%;">实验现象</th><th style="width:25%;">备注</th></tr>
+<tr>
+  <td>1</td>
+  <td class="eq-col"><span class="c-pink">C + O₂ —点燃→ CO₂</span></td>
+  <td>在空气中<span class="c-orange">红热</span>；在氧气中发出<span class="c-red">白光</span></td>
+  <td>生成气体使石灰水变浑浊</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class="eq-col"><span class="c-pink">4P + 5O₂ —点燃→ 2P₂O₅</span></td>
+  <td>产生<span class="c-orange">大量白烟</span>（P₂O₅固体颗粒）</td>
+  <td><span class="c-red">白烟不是白雾</span>；用于测定空气中O₂含量</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class="eq-col"><span class="c-pink">S + O₂ —点燃→ SO₂</span></td>
+  <td>空气中：<span class="c-blue">淡蓝色</span>火焰；氧气中：<span class="c-purple">明亮蓝紫色</span>火焰</td>
+  <td>生成<span class="c-red">刺激性气味</span>气体；集气瓶底留水吸收SO₂</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td class="eq-col"><span class="c-pink">3Fe + 2O₂ —点燃→ Fe₃O₄</span></td>
+  <td><span class="c-red">剧烈燃烧，火星四射</span>，生成<span class="c-blue">黑色固体</span></td>
+  <td>瓶底<span class="c-red">必须留水或铺沙</span>（防炸裂）</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td class="eq-col"><span class="c-pink">2Mg + O₂ —点燃→ 2MgO</span></td>
+  <td>发出<span class="c-red">耀眼白光</span>，生成<span class="c-blue">白色粉末</span></td>
+  <td>用于照明弹、烟花</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td class="eq-col">2H₂ + O₂ —点燃→ 2H₂O</td>
+  <td>产生<span class="c-blue">淡蓝色</span>火焰</td>
+  <td>点燃前<span class="c-red">必须验纯</span>；产物只有水（清洁能源）</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td class="eq-col">2CO + O₂ —点燃→ 2CO₂</td>
+  <td>产生<span class="c-blue">蓝色</span>火焰</td>
+  <td>CO有毒，注意通风</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td class="eq-col">2C + O₂ —点燃→ 2CO</td>
+  <td>—</td>
+  <td><span class="c-red">不完全燃烧</span>，产生有毒CO</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td class="eq-col">4Al + 3O₂ —点燃→ 2Al₂O₃</td>
+  <td>剧烈燃烧，发出耀眼白光</td>
+  <td>铝在常温下表面形成<span class="c-blue">致密氧化膜</span></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td class="eq-col">2Cu + O₂ —加热→ 2CuO</td>
+  <td><span class="c-red">红色</span>固体变为<span class="c-blue">黑色</span></td>
+  <td>铜在空气中加热</td>
+</tr>
+</table>
+
+<!-- ====== 二、氧气的制取 ====== -->
+<h2 data-section="s2" id="sec2" style="margin:28px 0 16px;">二、氧气的制取 <span class="eq-count">4个</span></h2>
+
+<table class="eq-table">
+<tr><th style="width:5%;">#</th><th style="width:42%;">化学方程式</th><th style="width:28%;">说明</th><th style="width:25%;">备注</th></tr>
+<tr>
+  <td>1</td>
+  <td class="eq-col"><span class="c-pink">2H₂O₂ —MnO₂→ 2H₂O + O₂↑</span></td>
+  <td>过氧化氢分解（<span class="c-green">不需加热</span>）</td>
+  <td><span class="c-orange">MnO₂作催化剂</span></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class="eq-col"><span class="c-pink">2KMnO₄ —加热→ K₂MnO₄ + MnO₂ + O₂↑</span></td>
+  <td>高锰酸钾加热分解</td>
+  <td>试管口<span class="c-red">略向下倾斜</span>；导管口放<span class="c-blue">棉花</span></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class="eq-col">2KClO₃ —MnO₂/加热→ 2KCl + 3O₂↑</td>
+  <td>氯酸钾分解（MnO₂作催化剂）</td>
+  <td>—</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td class="eq-col">2HgO —加热→ 2Hg + O₂↑</td>
+  <td>氧化汞分解（拉瓦锡实验）</td>
+  <td>历史上最早制取O₂的方法之一</td>
+</tr>
+</table>
+
+<!-- ====== 三、二氧化碳相关反应 ====== -->
+<h2 data-section="s3" id="sec3" style="margin:28px 0 16px;">三、二氧化碳相关反应 <span class="eq-count">6个</span></h2>
+
+<table class="eq-table">
+<tr><th style="width:5%;">#</th><th style="width:42%;">化学方程式</th><th style="width:28%;">说明</th><th style="width:25%;">备注</th></tr>
+<tr>
+  <td>1</td>
+  <td class="eq-col"><span class="c-pink">CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑</span></td>
+  <td><span class="c-green">实验室制CO₂</span></td>
+  <td>用<span class="c-red">稀盐酸</span>，不用稀硫酸</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class="eq-col"><span class="c-pink">CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O</span></td>
+  <td>CO₂使澄清石灰水变浑浊</td>
+  <td><span class="c-red">检验CO₂的特征反应</span></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class="eq-col">CO₂ + H₂O → H₂CO₃</td>
+  <td>CO₂溶于水生成碳酸</td>
+  <td>使石蕊溶液变<span class="c-red">红</span></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td class="eq-col">H₂CO₃ —加热→ CO₂↑ + H₂O</td>
+  <td>碳酸不稳定，受热分解</td>
+  <td>石蕊由红变回<span class="c-purple">紫</span></td>
+</tr>
+<tr>
+  <td>5</td>
+  <td class="eq-col">CaCO₃ —高温→ CaO + CO₂↑</td>
+  <td>石灰石高温分解</td>
+  <td>工业制CO₂和生石灰</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td class="eq-col">CO₂ + 2NaOH → Na₂CO₃ + H₂O</td>
+  <td>CO₂与氢氧化钠反应</td>
+  <td>用于吸收CO₂（NaOH溶液）</td>
+</tr>
+</table>
+
+<!-- ====== 四、水的相关反应 ====== -->
+<h2 data-section="s4" id="sec4" style="margin:28px 0 16px;">四、水的相关反应 <span class="eq-count">4个</span></h2>
+
+<table class="eq-table">
+<tr><th style="width:5%;">#</th><th style="width:42%;">化学方程式</th><th style="width:28%;">说明</th><th style="width:25%;">备注</th></tr>
+<tr>
+  <td>1</td>
+  <td class="eq-col"><span class="c-pink">2H₂O —通电→ 2H₂↑ + O₂↑</span></td>
+  <td><span class="c-green">电解水</span>：证明水由H、O元素组成</td>
+  <td><span class="c-red">正氧负氢</span>，<span class="c-blue">氢二氧一</span></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class="eq-col"><span class="c-pink">2H₂ + O₂ —点燃→ 2H₂O</span></td>
+  <td>氢气燃烧生成水</td>
+  <td>验证了水的组成</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class="eq-col">CaO + H₂O → Ca(OH)₂</td>
+  <td>生石灰与水反应（<span class="c-red">放热</span>）</td>
+  <td>CaO可作<span class="c-blue">干燥剂</span></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td class="eq-col">SO₂ + H₂O → H₂SO₃</td>
+  <td>SO₂溶于水生成亚硫酸</td>
+  <td>酸雨的形成原因之一</td>
+</tr>
+</table>
+
+<!-- ====== 五、金属与金属氧化物 ====== -->
+<h2 data-section="s5" id="sec5" style="margin:28px 0 16px;">五、金属与金属氧化物 <span class="eq-count">9个</span></h2>
+
+<table class="eq-table">
+<tr><th style="width:5%;">#</th><th style="width:42%;">化学方程式</th><th style="width:28%;">说明</th><th style="width:25%;">备注</th></tr>
+<tr>
+  <td>1</td>
+  <td class="eq-col"><span class="c-pink">Fe₂O₃ + 3CO —高温→ 2Fe + 3CO₂</span></td>
+  <td><span class="c-green">高炉炼铁原理</span></td>
+  <td>红色粉末→黑色；石灰水变浑浊</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class="eq-col"><span class="c-pink">Fe + CuSO₄ → FeSO₄ + Cu</span></td>
+  <td><span class="c-green">湿法炼铜</span>（置换反应）</td>
+  <td>铁钉表面有<span class="c-red">红色物质</span>析出；溶液由<span class="c-blue">蓝色</span>→<span class="c-green">浅绿色</span></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class="eq-col">Zn + H₂SO₄ → ZnSO₄ + H₂↑</td>
+  <td>锌与稀硫酸反应</td>
+  <td>实验室制H₂</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td class="eq-col"><span class="c-pink">Zn + 2HCl → ZnCl₂ + H₂↑</span></td>
+  <td>锌与稀盐酸反应</td>
+  <td>实验室制H₂</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td class="eq-col">Fe + 2HCl → FeCl₂ + H₂↑</td>
+  <td>铁与稀盐酸反应</td>
+  <td>溶液变为<span class="c-green">浅绿色</span>（Fe²⁺）</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td class="eq-col">2Al + 6HCl → 2AlCl₃ + 3H₂↑</td>
+  <td>铝与稀盐酸反应</td>
+  <td>反应剧烈</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td class="eq-col">Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag</td>
+  <td>铜与硝酸银溶液反应</td>
+  <td>铜表面析出<span class="c-blue">银白色</span>固体；溶液变<span class="c-blue">蓝</span></td>
+</tr>
+<tr>
+  <td>8</td>
+  <td class="eq-col">Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O</td>
+  <td>铁锈与稀盐酸反应（除锈）</td>
+  <td>铁锈溶解，溶液变<span class="c-orange">黄</span>（Fe³⁺）</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td class="eq-col">CuO + 2HCl → CuCl₂ + H₂O</td>
+  <td>氧化铜与稀盐酸反应</td>
+  <td><span class="c-blue">黑色</span>固体溶解，溶液变<span class="c-green">蓝绿色</span></td>
+</tr>
+</table>
+
+<!-- ====== 六、酸的性质 ====== -->
+<h2 data-section="s6" id="sec6" style="margin:28px 0 16px;">六、酸的性质（酸的通性） <span class="eq-count">6个</span></h2>
+
+<table class="eq-table">
+<tr><th style="width:5%;">#</th><th style="width:42%;">化学方程式</th><th style="width:28%;">说明</th><th style="width:25%;">备注</th></tr>
+<tr>
+  <td>1</td>
+  <td class="eq-col">Zn + 2HCl → ZnCl₂ + H₂↑</td>
+  <td>酸 + 活泼金属 → 盐 + H₂</td>
+  <td>金属活动性须排在<span class="c-red">H之前</span></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class="eq-col">Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O</td>
+  <td>酸 + 金属氧化物 → 盐 + 水</td>
+  <td>用于<span class="c-green">除铁锈</span></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class="eq-col">CuO + H₂SO₄ → CuSO₄ + H₂O</td>
+  <td>酸 + 金属氧化物 → 盐 + 水</td>
+  <td>黑色固体溶解，溶液变<span class="c-blue">蓝</span></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td class="eq-col"><span class="c-pink">NaOH + HCl → NaCl + H₂O</span></td>
+  <td>酸 + 碱 → 盐 + 水（<span class="c-red">中和反应</span>）</td>
+  <td>实质：H⁺ + OH⁻ → H₂O</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td class="eq-col"><span class="c-pink">Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑</span></td>
+  <td>酸 + 碳酸盐 → 盐 + 水 + CO₂</td>
+  <td>用于检验<span class="c-green">碳酸盐</span></td>
+</tr>
+<tr>
+  <td>6</td>
+  <td class="eq-col">NaHCO₃ + HCl → NaCl + H₂O + CO₂↑</td>
+  <td>酸 + 碳酸氢盐 → 盐 + 水 + CO₂</td>
+  <td>小苏打<span class="c-blue">治疗胃酸过多</span></td>
+</tr>
+</table>
+
+<!-- ====== 七、碱的性质 ====== -->
+<h2 data-section="s7" id="sec7" style="margin:28px 0 16px;">七、碱的性质（碱的通性） <span class="eq-count">6个</span></h2>
+
+<table class="eq-table">
+<tr><th style="width:5%;">#</th><th style="width:42%;">化学方程式</th><th style="width:28%;">说明</th><th style="width:25%;">备注</th></tr>
+<tr>
+  <td>1</td>
+  <td class="eq-col"><span class="c-pink">CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O</span></td>
+  <td>碱 + 非金属氧化物 → 盐 + 水</td>
+  <td><span class="c-red">检验CO₂</span>；石灰水变浑浊</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class="eq-col">CO₂ + 2NaOH → Na₂CO₃ + H₂O</td>
+  <td>碱 + 非金属氧化物 → 盐 + 水</td>
+  <td>NaOH溶液吸收CO₂</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class="eq-col">SO₂ + 2NaOH → Na₂SO₃ + H₂O</td>
+  <td>碱 + 非金属氧化物 → 盐 + 水</td>
+  <td>NaOH溶液吸收SO₂</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td class="eq-col"><span class="c-pink">CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄</span></td>
+  <td>碱 + 盐 → 新碱 + 新盐</td>
+  <td>产生<span class="c-blue">蓝色沉淀</span>Cu(OH)₂</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td class="eq-col">FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl</td>
+  <td>碱 + 盐 → 新碱 + 新盐</td>
+  <td>产生<span class="c-orange">红褐色沉淀</span>Fe(OH)₃</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td class="eq-col">Na₂CO₃ + Ca(OH)₂ → CaCO₃↓ + 2NaOH</td>
+  <td>碱 + 盐 → 新碱 + 新盐</td>
+  <td><span class="c-green">制取NaOH</span>（纯碱制烧碱）</td>
+</tr>
+</table>
+
+<!-- ====== 八、盐的反应 ====== -->
+<h2 data-section="s8" id="sec8" style="margin:28px 0 16px;">八、盐的反应（置换反应） <span class="eq-count">5个</span></h2>
+
+<table class="eq-table">
+<tr><th style="width:5%;">#</th><th style="width:42%;">化学方程式</th><th style="width:28%;">说明</th><th style="width:25%;">备注</th></tr>
+<tr>
+  <td>1</td>
+  <td class="eq-col"><span class="c-pink">Fe + CuSO₄ → FeSO₄ + Cu</span></td>
+  <td>金属 + 盐 → 新金属 + 新盐</td>
+  <td>活动性强的金属置换活动性弱的</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class="eq-col">Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag</td>
+  <td>金属 + 盐 → 新金属 + 新盐</td>
+  <td>Cu 置换出 Ag</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class="eq-col">Zn + CuSO₄ → ZnSO₄ + Cu</td>
+  <td>金属 + 盐 → 新金属 + 新盐</td>
+  <td>Zn 置换出 Cu</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td class="eq-col">2Al + 3CuSO₄ → Al₂(SO₄)₃ + 3Cu</td>
+  <td>金属 + 盐 → 新金属 + 新盐</td>
+  <td>Al 置换出 Cu</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td class="eq-col">Cu + Hg(NO₃)₂ → Cu(NO₃)₂ + Hg</td>
+  <td>金属 + 盐 → 新金属 + 新盐</td>
+  <td>Cu 置换出 Hg</td>
+</tr>
+</table>
+
+<!-- ====== 九、复分解反应 ====== -->
+<h2 data-section="s9" id="sec9" style="margin:28px 0 16px;">九、复分解反应 <span class="eq-count">8个</span></h2>
+
+<div class="info-box">
+<strong>🔍 复分解反应发生条件：</strong>生成物中有<span class="c-red">沉淀</span>、<span class="c-blue">气体</span>或<span class="c-green">水</span>（至少满足一个条件）。
+</div>
+
+<table class="eq-table">
+<tr><th style="width:5%;">#</th><th style="width:42%;">化学方程式</th><th style="width:28%;">说明</th><th style="width:25%;">备注</th></tr>
+<tr>
+  <td>1</td>
+  <td class="eq-col"><span class="c-pink">AgNO₃ + NaCl → AgCl↓ + NaNO₃</span></td>
+  <td>生成<span class="c-blue">白色沉淀</span>AgCl</td>
+  <td>用于检验<span class="c-red">Cl⁻</span></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class="eq-col"><span class="c-pink">BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl</span></td>
+  <td>生成<span class="c-blue">白色沉淀</span>BaSO₄</td>
+  <td>用于检验<span class="c-red">SO₄²⁻</span>（加稀HNO₃酸化）</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class="eq-col">Na₂CO₃ + CaCl₂ → CaCO₃↓ + 2NaCl</td>
+  <td>生成<span class="c-blue">白色沉淀</span>CaCO₃</td>
+  <td>用于检验<span class="c-red">CO₃²⁻</span></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td class="eq-col"><span class="c-pink">CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑</span></td>
+  <td>生成<span class="c-green">气体</span>和水</td>
+  <td>实验室制CO₂</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td class="eq-col">Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑</td>
+  <td>生成<span class="c-green">气体</span>和水</td>
+  <td>检验碳酸盐</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td class="eq-col"><span class="c-pink">NaOH + HCl → NaCl + H₂O</span></td>
+  <td>生成<span class="c-green">水</span>（中和反应）</td>
+  <td>实质：H⁺ + OH⁻ → H₂O</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td class="eq-col">Ca(OH)₂ + 2HCl → CaCl₂ + 2H₂O</td>
+  <td>生成<span class="c-green">水</span></td>
+  <td>中和酸性土壤</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td class="eq-col">Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O</td>
+  <td>生成<span class="c-green">水</span></td>
+  <td><span class="c-blue">胃药</span>中和胃酸</td>
+</tr>
+</table>
+
+<!-- ====== 十、有机物反应 ====== -->
+<h2 data-section="s10" id="sec10" style="margin:28px 0 16px;">十、有机物反应 <span class="eq-count">4个</span></h2>
+
+<table class="eq-table">
+<tr><th style="width:5%;">#</th><th style="width:42%;">化学方程式</th><th style="width:28%;">说明</th><th style="width:25%;">备注</th></tr>
+<tr>
+  <td>1</td>
+  <td class="eq-col"><span class="c-pink">CH₄ + 2O₂ —点燃→ CO₂ + 2H₂O</span></td>
+  <td>甲烷燃烧（天然气主要成分）</td>
+  <td>产生<span class="c-blue">蓝色</span>火焰</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class="eq-col"><span class="c-pink">C₂H₅OH + 3O₂ —点燃→ 2CO₂ + 3H₂O</span></td>
+  <td>乙醇（酒精）燃烧</td>
+  <td><span class="c-green">可再生能源</span></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class="eq-col">6CO₂ + 6H₂O —光/叶绿素→ C₆H₁₂O₆ + 6O₂</td>
+  <td><span class="c-green">光合作用</span></td>
+  <td>将光能转化为化学能</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td class="eq-col">C₆H₁₂O₆ + 6O₂ —酶→ 6CO₂ + 6H₂O</td>
+  <td><span class="c-blue">呼吸作用</span></td>
+  <td>释放能量供生命活动</td>
+</tr>
+</table>
+
+<!-- ====== 十一、分解反应 ====== -->
+<h2 data-section="s11" id="sec11" style="margin:28px 0 16px;">十一、分解反应 <span class="eq-count">5个</span></h2>
+
+<table class="eq-table">
+<tr><th style="width:5%;">#</th><th style="width:42%;">化学方程式</th><th style="width:28%;">说明</th><th style="width:25%;">备注</th></tr>
+<tr>
+  <td>1</td>
+  <td class="eq-col">2H₂O₂ —MnO₂→ 2H₂O + O₂↑</td>
+  <td>过氧化氢分解</td>
+  <td>MnO₂<span class="c-blue">催化</span></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class="eq-col">2KMnO₄ —加热→ K₂MnO₄ + MnO₂ + O₂↑</td>
+  <td>高锰酸钾加热分解</td>
+  <td>—</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class="eq-col">CaCO₃ —高温→ CaO + CO₂↑</td>
+  <td>石灰石高温分解</td>
+  <td>工业制生石灰</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td class="eq-col">H₂CO₃ → CO₂↑ + H₂O</td>
+  <td>碳酸分解</td>
+  <td>碳酸不稳定</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td class="eq-col">Cu₂(OH)₂CO₃ —加热→ 2CuO + H₂O + CO₂↑</td>
+  <td>铜绿（碱式碳酸铜）分解</td>
+  <td><span class="c-green">绿色</span>→<span class="c-blue">黑色</span></td>
+</tr>
+</table>
+
+<!-- ====== 十二、其他重要反应 ====== -->
+<h2 data-section="s12" id="sec12" style="margin:28px 0 16px;">十二、其他重要反应 <span class="eq-count">5个</span></h2>
+
+<table class="eq-table">
+<tr><th style="width:5%;">#</th><th style="width:42%;">化学方程式</th><th style="width:28%;">说明</th><th style="width:25%;">备注</th></tr>
+<tr>
+  <td>1</td>
+  <td class="eq-col"><span class="c-pink">4P + 5O₂ —点燃→ 2P₂O₅</span></td>
+  <td>红磷燃烧测定空气中O₂含量</td>
+  <td>消耗O₂，水进入约1/5体积</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class="eq-col">2Mg + CO₂ —点燃→ 2MgO + C</td>
+  <td>镁在CO₂中燃烧</td>
+  <td><span class="c-red">CO₂不能扑灭镁火</span></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class="eq-col">SO₂ + H₂O → H₂SO₃</td>
+  <td>SO₂溶于水</td>
+  <td>酸雨形成</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td class="eq-col">2H₂SO₃ + O₂ → 2H₂SO₄</td>
+  <td>亚硫酸被氧化</td>
+  <td>酸雨酸性增强</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td class="eq-col">C + CO₂ —高温→ 2CO</td>
+  <td>碳还原CO₂</td>
+  <td>高炉中产生还原剂CO</td>
+</tr>
+</table>
+
+<!-- ====== 总结 ====== -->
+<div class="highlight-box" style="margin-top:28px;">
+<strong>📊 总统计：</strong>共收录 <span class="c-red">60+</span> 个化学反应方程式，覆盖<span class="c-blue">12大类别</span>。<br>
+<strong>🔥 反应条件汇总：</strong><span class="c-orange">点燃</span>（燃烧反应）、<span class="c-purple">加热</span>（△）、<span class="c-red">高温</span>、<span class="c-blue">通电</span>（电解）、<span class="c-green">催化剂</span>（MnO₂等）、<span class="c-pink">光照/叶绿素</span>（光合作用）<br>
+<strong>📝 四大基本反应类型：</strong><span class="c-red">化合反应</span>（多变一）、<span class="c-blue">分解反应</span>（一变多）、<span class="c-green">置换反应</span>（单+化→新单+新化）、<span class="c-purple">复分解反应</span>（化+化→新化+新化）
+</div>
+
+</main></div>
+<script src="../assets/js/common.js"></script>
+</body>
+</html>

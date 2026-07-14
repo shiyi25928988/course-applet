@@ -3,18 +3,57 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>第6章 溶解现象 - 沪教版化学</title>
 <link rel="stylesheet" href="../assets/css/common.css">
+<style>
+/* ===== Enriched Color & Box Styles ===== */
+.c-red { color: #dc2626; font-weight: 600; }
+.c-blue { color: #2563eb; font-weight: 600; }
+.c-green { color: #059669; font-weight: 600; }
+.c-orange { color: #d97706; font-weight: 600; }
+.c-purple { color: #7c3aed; font-weight: 600; }
+.c-pink { color: #db2777; font-weight: 600; }
+.c-teal { color: #0d9488; font-weight: 600; }
+
+.highlight-box {
+  background: #fef9c3; border-left: 4px solid #eab308;
+  padding: 16px 20px; border-radius: 8px; margin: 16px 0;
+}
+.danger-box {
+  background: #fef2f2; border-left: 4px solid #dc2626;
+  padding: 16px 20px; border-radius: 8px; margin: 16px 0;
+}
+.info-box {
+  background: #eff6ff; border-left: 4px solid #2563eb;
+  padding: 16px 20px; border-radius: 8px; margin: 16px 0;
+}
+
+table.chem-table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: .9rem; background: #fff; border-radius: 8px;
+  overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+table.chem-table th {
+  background: #f1f5f9; color: #1e293b; font-weight: 700;
+  padding: 10px 14px; text-align: center; border-bottom: 2px solid #e2e8f0;
+}
+table.chem-table td {
+  padding: 10px 14px; text-align: center; border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+table.chem-table tr:hover td { background: #f8fafc; }
+table.chem-table .hl { background: #fef9c3; font-weight: 600; }
+</style>
 </head>
 <body>
 <div class="layout">
 <aside class="sidebar"><h3>🧪 初中化学</h3><ul class="chapter-list">
 <li><a href="ch05_metals.html"><span class="ch-num">5</span>金属的冶炼与利用</a></li>
 <li><a href="ch06_solutions.html" class="active"><span class="ch-num">6</span>溶解现象</a>
-<div class="subsections"><a href="#sec6-1">6.1 物质在水中的分散</a><a href="#sec6-2">6.2 溶液组成的表示</a><a href="#sec6-3">6.3 物质的溶解性</a><a href="#exercises">练习题</a></div></li>
+<div class="subsections"><a href="#sec6-1">6.1 物质在水中的分散</a><a href="#sec6-2">6.2 溶液组成的表示</a><a href="#sec6-3">6.3 物质的溶解性</a><a href="#experiments">基础实验</a><a href="#exercises">练习题</a></div></li>
 <li><a href="ch07_acid_base.html"><span class="ch-num">7</span>酸、碱、盐</a></li>
 </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
-	    <a href="index.html" class="back-subject">📂 化学目录</a>
+		    <a href="index.html" class="back-subject">📂 化学目录</a>
 </aside>
 <main class="main">
   <div class="topbar">
@@ -36,62 +75,306 @@
   <div class="page-title">第6章 溶解现象</div>
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-<li>了解溶液、悬浊液、乳浊液的区别</li><li>掌握溶质质量分数的计算</li><li>了解溶解度概念及影响因素</li><li>掌握一定溶质质量分数溶液的配制方法</li></ul></div>
+<li>了解<span class="c-blue">溶液、悬浊液、乳浊液</span>的区别和各自特征</li>
+<li>掌握<span class="c-red">溶质质量分数</span>的计算及稀释问题</li>
+<li>理解<span class="c-green">溶解度</span>概念、影响因素及溶解度曲线</li>
+<li>掌握<span class="c-purple">配制一定溶质质量分数溶液</span>的方法与误差分析</li>
+<li>了解<span class="c-teal">电解质与非电解质</span>的区别及溶液导电性</li></ul></div>
 
+<!-- ============================================================ -->
+<!-- 6.1 物质在水中的分散 -->
+<!-- ============================================================ -->
 <h2 id="sec6-1">6.1 物质在水中的分散</h2>
-<div class="kp chemistry"><h3>溶液</h3>
-<p><strong>溶液</strong>：一种或几种物质分散到另一种物质中，形成<strong>均一、稳定</strong>的混合物。</p>
-<p>组成：<strong>溶质</strong>（被溶解的物质）+ <strong>溶剂</strong>（溶解其他物质的物质）。水是最常用的溶剂。</p>
-<p>特征：<strong>均一性</strong>（各部分组成相同）、<strong>稳定性</strong>（外界条件不变时，溶质和溶剂不会分离）。</p>
-<p>溶液不一定是无色的：CuSO₄溶液蓝色，FeCl₃溶液黄色。</p></div>
-<div class="kp chemistry"><h3>乳化现象</h3>
-<p><strong>乳浊液</strong>：小液滴分散到液体中形成的<strong>不均一、不稳定</strong>的混合物。</p>
-<p><strong>乳化</strong>：洗涤剂等使油分散成细小液滴均匀悬浮在水中形成的现象。乳化不是溶解。</p></div>
 
-<h2 id="sec6-2">6.2 溶液组成的表示</h2>
-<div class="kp chemistry"><h3>溶质质量分数</h3>
-<span class="formula">ω = m(溶质) / m(溶液) × 100%</span>
-<p><strong>m(溶液) = m(溶质) + m(溶剂)</strong></p>
-<p>饱和溶液中：<span class="formula">ω = S / (100+S) × 100%</span>（S为溶解度）。</p>
-<p>稀释计算依据：稀释前后<strong>溶质质量不变</strong>。</p></div>
+<div class="kp chemistry"><h3>一、溶液</h3>
+<p><strong>溶液</strong>：一种或几种物质分散到另一种物质中，形成<span class="c-blue">均一、稳定</span>的混合物。</p>
+<p>组成：<span class="c-red">溶质</span>（被溶解的物质）+ <span class="c-green">溶剂</span>（溶解其他物质的物质）。<span class="c-blue">水</span>是最常用的溶剂，酒精、汽油等也可作溶剂。</p>
+<p>特征：<span class="c-purple">均一性</span>（各部分组成和性质完全相同）、<span class="c-purple">稳定性</span>（外界条件不变时，溶质和溶剂不会分离，即不分层、不沉淀）。</p>
+<p>注意：溶液<span class="c-red">不一定是无色的</span>！例如：CuSO₄溶液呈<span class="c-blue">蓝色</span>，FeCl₃溶液呈<span class="c-orange">黄色</span>，FeSO₄溶液呈<span class="c-green">浅绿色</span>，KMnO₄溶液呈<span class="c-pink">紫红色</span>。</p>
+<p>溶液也不一定是液态：合金（如黄铜）可视为<span class="c-teal">固态溶液</span>，空气可视为<span class="c-teal">气态溶液</span>。</p></div>
 
-<h2 id="sec6-3">6.3 物质的溶解性</h2>
-<div class="keypoints-grid">
-<div class="kp chemistry"><h3>饱和溶液与不饱和溶液</h3>
-<p><strong>饱和溶液</strong>：在一定温度下，一定量溶剂中，不能再溶解某种溶质的溶液。</p>
-<p>相互转化：<strong>加溶质/降温（一般）/蒸发溶剂</strong>→饱和；<strong>加溶剂/升温（一般）</strong>→不饱和。</p></div>
-<div class="kp chemistry"><h3>溶解度</h3>
-<p><strong>溶解度</strong>：在一定温度下，某固体物质在100g溶剂中达到饱和状态时所溶解的质量（单位：g）。</p>
-<p>影响溶解度的因素：</p><ul style="padding-left:16px;line-height:2;color:var(--text-secondary);">
-<li>内因：溶质和溶剂的性质</li><li>外因：<strong>温度</strong>（大多数固体随温度升高溶解度增大，气体随温度升高溶解度减小）</li></ul>
-<p><strong>溶解度曲线</strong>：直观表示溶解度随温度变化。</p></div>
+<div class="kp chemistry"><h3>二、悬浊液与乳浊液</h3>
+<p><strong>悬浊液</strong>：<span class="c-red">固体小颗粒</span>悬浮在液体中形成的<span class="c-red">不均一、不稳定</span>的混合物（如泥水、石灰浆）。静置后固体颗粒会沉降。</p>
+<p><strong>乳浊液</strong>：<span class="c-blue">小液滴</span>分散到液体中形成的<span class="c-red">不均一、不稳定</span>的混合物（如牛奶、油水混合物）。静置后会分层。</p>
+<p><strong>乳化</strong>：洗涤剂等使油分散成<span class="c-teal">细小液滴</span>均匀悬浮在水中，形成<span class="c-green">乳浊液</span>的过程。乳化<span class="c-red">不是溶解</span>，乳化后的液体仍是混合物，久置仍可能分层。</p></div>
+
+<!-- 对比表 -->
+<div class="highlight-box">
+<h3 style="margin-bottom:12px;">📊 溶液、悬浊液、乳浊液对比表</h3>
+<table class="chem-table">
+<tr><th>对比项目</th><th>溶液</th><th>悬浊液</th><th>乳浊液</th></tr>
+<tr><td><strong>分散质状态</strong></td><td>分子或离子</td><td>固体小颗粒</td><td>小液滴</td></tr>
+<tr><td><strong>均一性</strong></td><td class="c-green">均一</td><td class="c-red">不均一</td><td class="c-red">不均一</td></tr>
+<tr><td><strong>稳定性</strong></td><td class="c-green">稳定</td><td class="c-red">不稳定（沉降）</td><td class="c-red">不稳定（分层）</td></tr>
+<tr><td><strong>分散质能否透过滤纸</strong></td><td>能</td><td>不能</td><td>能</td></tr>
+<tr><td><strong>实例</strong></td><td>食盐水、糖水、碘酒</td><td>泥水、石灰浆</td><td>牛奶、油水混合物</td></tr>
+</table>
 </div>
 
-<h2 id="experiments" style="margin:28px 0 16px;">🔬 基础实验</h2>
-<div class="card"><h3>基础实验5：配制一定溶质质量分数的氯化钠溶液</h3><p style="color:var(--text-secondary);">步骤：①计算→②称量（托盘天平称NaCl，量筒量水）→③溶解（烧杯中玻璃棒搅拌）→④装瓶贴标签。仪器：托盘天平、量筒、胶头滴管、烧杯、玻璃棒。</p></div>
-<div class="card"><h3>基础实验6：粗盐的初步提纯</h3><p style="color:var(--text-secondary);">步骤：①溶解→②过滤（除去不溶性杂质）→③蒸发→④计算产率。过滤操作要点"一贴二低三靠"。</p></div>
+<div class="kp chemistry"><h3>三、溶解过程中的热效应</h3>
+<p>物质溶解时通常伴随<span class="c-red">热量变化</span>，这是因为溶解过程中同时发生两个过程：</p>
+<p>（1）<span class="c-blue">扩散过程</span>：溶质分子（或离子）向溶剂中扩散——<span class="c-red">吸收热量</span>（物理过程）。</p>
+<p>（2）<span class="c-green">水合过程</span>：溶质分子（或离子）与水分子结合形成水合分子（或水合离子）——<span class="c-blue">放出热量</span>（化学过程）。</p>
+<p>最终溶液温度的变化取决于两者热量的相对大小：</p>
+<table class="chem-table">
+<tr><th>物质</th><th>热效应</th><th>温度变化</th><th>原因解释</th></tr>
+<tr><td><span class="c-red">NaOH（氢氧化钠）</span></td><td>放热</td><td class="c-red">温度升高</td><td>水合过程放热 &gt; 扩散过程吸热</td></tr>
+<tr><td><span class="c-blue">NH₄NO₃（硝酸铵）</span></td><td>吸热</td><td class="c-blue">温度降低</td><td>扩散过程吸热 &gt; 水合过程放热</td></tr>
+<tr><td><span class="c-green">NaCl（氯化钠）</span></td><td>基本不变</td><td class="c-green">温度变化不大</td><td>扩散吸热 ≈ 水合放热</td></tr>
+<tr><td><span class="c-orange">浓H₂SO₄</span></td><td>大量放热</td><td class="c-red">温度显著升高</td><td>稀释时强烈水合放热</td></tr>
+</table>
+<div class="danger-box">
+<strong>⚠️ 安全警示：</strong>浓硫酸稀释时放出大量热，必须将<span class="c-red">浓硫酸沿器壁缓慢注入水中</span>并不断搅拌（"酸入水"），绝不能将水倒入浓硫酸中！否则会引起液滴飞溅，造成严重灼伤。
+</div>
+</div>
 
+<div class="kp chemistry"><h3>四、溶液导电性 —— 电解质与非电解质</h3>
+<p>某些物质溶于水（或熔融状态）后能够<span class="c-blue">导电</span>，是因为溶液中存在<span class="c-red">自由移动的离子</span>。</p>
+<p><span class="c-purple">电解质</span>：在水溶液中或熔融状态下能够<span class="c-green">导电</span>的化合物。如：<span class="c-blue">NaCl、NaOH、HCl、H₂SO₄</span>等酸、碱、盐。</p>
+<p><span class="c-teal">非电解质</span>：在水溶液中和熔融状态下都<span class="c-red">不能导电</span>的化合物。如：<span class="c-orange">蔗糖（C₁₂H₂₂O₁₁）、酒精（C₂H₅OH）</span>等有机物。</p>
+<div class="info-box">
+<strong>💡 理解要点：</strong>电解质和非电解质都必须是<span class="c-purple">化合物</span>。金属单质（如Cu、Fe）能导电，但<span class="c-red">不是电解质</span>（因为不是化合物）。NaCl溶液能导电，但NaCl溶液是<span class="c-orange">混合物</span>，不能说"NaCl溶液是电解质"——应该说"NaCl是电解质"。
+</div>
+<p>电解质的电离示例：</p>
+<p><span class="formula">NaCl → Na⁺ + Cl⁻</span></p>
+<p><span class="formula">HCl → H⁺ + Cl⁻</span></p>
+<p><span class="formula">NaOH → Na⁺ + OH⁻</span></p>
+<p>电解质溶液导电是<span class="c-blue">化学变化</span>（伴随电解反应），而金属导电是<span class="c-teal">物理变化</span>。</p></div>
+
+<!-- ============================================================ -->
+<!-- 6.2 溶液组成的表示 -->
+<!-- ============================================================ -->
+<h2 id="sec6-2">6.2 溶液组成的表示</h2>
+
+<div class="kp chemistry"><h3>一、溶质质量分数</h3>
+<p><strong>定义</strong>：<span class="c-red">溶质质量</span>与<span class="c-blue">溶液质量</span>之比（通常以百分数表示）。</p>
+<p><span class="formula">ω(溶质) = m(溶质) / m(溶液) × 100%</span></p>
+<p><span class="formula">m(溶液) = m(溶质) + m(溶剂)</span></p>
+<p><strong>饱和溶液中</strong>溶质质量分数与溶解度的关系：</p>
+<p><span class="formula">ω = S / (100 + S) × 100%</span>（S为溶解度，单位：g）</p>
+<p>注意：<span class="c-red">饱和溶液中溶质质量分数达到该温度下的最大值</span>，其值由溶解度唯一确定。</p></div>
+
+<div class="kp chemistry"><h3>二、稀释计算 —— 稀释前后溶质质量不变</h3>
+<p><strong>核心原则</strong>：溶液稀释时，<span class="c-red">溶质的质量保持不变</span>，只是溶剂的质量增加了。</p>
+<p><span class="formula">m(浓)·ω(浓) = m(稀)·ω(稀)</span></p>
+<div class="info-box">
+<strong>📝 稀释计算典型例题：</strong><br>
+【例】将100g质量分数为<span class="c-red">20%</span>的NaCl溶液稀释成质量分数为<span class="c-green">5%</span>的溶液，需加水多少克？<br>
+<strong>解：</strong>设稀释后溶液质量为 x g。<br>
+根据稀释前后溶质质量不变：<span class="c-blue">100 × 20% = x × 5%</span><br>
+解得：x = 400 g<br>
+需要加水的质量 = 400 - 100 = <span class="c-red">300 g</span><br>
+<strong>答：</strong>需要加水 300 g。
+</div>
+<p><strong>另一种解法</strong>（直接求加水量）：</p>
+<p><span class="formula">m(水) = m(浓) × [ω(浓) / ω(稀) - 1]</span></p>
+<p>代入：m(水) = 100 × (20% / 5% - 1) = 100 × 3 = 300 g。✓</p></div>
+
+<div class="kp chemistry"><h3>三、配制一定溶质质量分数溶液的步骤和误差分析</h3>
+<p><strong>实验步骤</strong>（以配制50g 6%的NaCl溶液为例）：</p>
+<table class="chem-table">
+<tr><th>步骤</th><th>操作</th><th>仪器</th></tr>
+<tr><td><span class="c-blue">① 计算</span></td><td>m(NaCl) = 50×6% = 3g，m(水) = 50 - 3 = 47g（即47mL）</td><td>—</td></tr>
+<tr><td><span class="c-orange">② 称量</span></td><td>用<span class="c-red">托盘天平</span>称取3g NaCl（左物右码）；用<span class="c-blue">量筒</span>量取47mL水（接近刻度时用<span class="c-teal">胶头滴管</span>逐滴加入至凹液面最低处与刻度齐平）</td><td>托盘天平、量筒、胶头滴管</td></tr>
+<tr><td><span class="c-green">③ 溶解</span></td><td>将NaCl倒入烧杯，加入水，用<span class="c-purple">玻璃棒搅拌</span>加速溶解</td><td>烧杯、玻璃棒</td></tr>
+<tr><td><span class="c-pink">④ 装瓶贴标签</span></td><td>将溶液转移至试剂瓶中，贴好标签（注明溶液名称和溶质质量分数）</td><td>试剂瓶</td></tr>
+</table>
+
+<div class="danger-box">
+<strong>⚠️ 误差分析（高频考点）：</strong>
+<table class="chem-table" style="margin-top:8px;">
+<tr><th>操作错误</th><th>结果</th><th>原因</th></tr>
+<tr><td>称量时<span class="c-red">砝码和药品放反</span>（用游码时）</td><td class="c-red">ω偏小</td><td>实际称得溶质质量偏小</td></tr>
+<tr><td><span class="c-red">量水时仰视读数</span></td><td class="c-red">ω偏小</td><td>实际量取水的体积偏大</td></tr>
+<tr><td><span class="c-blue">量水时俯视读数</span></td><td class="c-red">ω偏大</td><td>实际量取水的体积偏小</td></tr>
+<tr><td>溶解时将溶液<span class="c-red">洒出</span></td><td class="c-red">ω偏小</td><td>溶质损失（洒出的是溶液，含溶质）</td></tr>
+<tr><td>NaCl固体<span class="c-red">不纯</span>（含杂质）</td><td class="c-red">ω偏小</td><td>实际溶质质量偏小</td></tr>
+<tr><td>烧杯内壁<span class="c-red">有水</span></td><td class="c-red">ω偏小</td><td>溶剂质量偏大</td></tr>
+</table>
+</div>
+
+<div class="highlight-box">
+<strong>📏 量筒读数口诀：</strong>仰视读数<span class="c-red">偏小</span>（实际液体偏多），俯视读数<span class="c-blue">偏大</span>（实际液体偏少）。记住：<span class="c-purple">"羊（仰）小虎（俯）大"</span>——指的是读数大小，实际体积与之相反。
+</div>
+</div>
+
+<div class="kp chemistry"><h3>四、体积分数</h3>
+<p><strong>定义</strong>：溶液中<span class="c-blue">溶质的体积</span>与<span class="c-green">溶液的体积</span>之比（通常以百分数表示）。</p>
+<p><span class="formula">φ(溶质) = V(溶质) / V(溶液) × 100%</span></p>
+<p>应用：生活中常用的<span class="c-red">白酒度数</span>、<span class="c-red">医用酒精浓度</span>（如75%酒精）就是体积分数。75%的医用酒精表示每100mL酒精溶液中含<span class="c-blue">75mL无水乙醇</span>。</p>
+<p>注意：体积分数<span class="c-red">不等于</span>质量分数。同一种溶液的体积分数和质量分数可以通过<span class="c-teal">密度</span>进行换算：</p>
+<p><span class="formula">ω = φ × ρ(溶质) / ρ(溶液)</span></p></div>
+
+<!-- ============================================================ -->
+<!-- 6.3 物质的溶解性 -->
+<!-- ============================================================ -->
+<h2 id="sec6-3">6.3 物质的溶解性</h2>
+
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>一、饱和溶液与不饱和溶液</h3>
+<p><strong>饱和溶液</strong>：在一定<span class="c-red">温度</span>下，一定量<span class="c-blue">溶剂</span>中，<span class="c-red">不能再溶解</span>某种溶质的溶液。</p>
+<p><strong>不饱和溶液</strong>：还能继续溶解某种溶质的溶液。</p>
+<p>相互转化方法：</p>
+<p><span class="c-red">不饱和 → 饱和</span>：加溶质、蒸发溶剂、降温（大多数固体）</p>
+<p><span class="c-blue">饱和 → 不饱和</span>：加溶剂、升温（大多数固体）</p>
+<div class="info-box">
+<strong>💡 注意：</strong>Ca(OH)₂的溶解度随温度升高而<span class="c-red">减小</span>，所以Ca(OH)₂的不饱和溶液变为饱和溶液的方法是<span class="c-blue">升温</span>（与大多数物质相反！）。
+</div></div>
+<div class="kp chemistry"><h3>二、溶解度</h3>
+<p><strong>定义</strong>：在一定<span class="c-red">温度</span>下，某固体物质在<span class="c-blue">100g溶剂</span>中达到<span class="c-green">饱和状态</span>时所溶解的质量（单位：<span class="c-purple">g</span>）。</p>
+<p>溶解度的<span class="c-red">四要素</span>缺一不可：①一定温度 ②100g溶剂 ③饱和状态 ④溶质质量（单位g）。</p></div>
+</div>
+
+<div class="kp chemistry"><h3>三、固体溶解度曲线详解</h3>
+<p>溶解度曲线能直观表示<span class="c-blue">溶解度随温度的变化趋势</span>。根据曲线形状，可分为以下三种典型类型：</p>
+
+<table class="chem-table">
+<tr><th>类型</th><th>特征</th><th>代表物质</th><th>结晶方法</th></tr>
+<tr><td><span class="c-blue">陡升型</span></td><td>溶解度随温度升高<span class="c-red">显著增大</span>（曲线陡峭）</td><td><span class="c-blue">KNO₃（硝酸钾）</span>、NH₄Cl</td><td><span class="c-purple">降温结晶</span>（冷却热饱和溶液）</td></tr>
+<tr><td><span class="c-green">平缓型</span></td><td>溶解度随温度升高<span class="c-green">变化不大</span>（曲线平坦）</td><td><span class="c-green">NaCl（氯化钠）</span></td><td><span class="c-orange">蒸发结晶</span></td></tr>
+<tr><td><span class="c-red">下降型</span></td><td>溶解度随温度升高<span class="c-red">反而减小</span></td><td><span class="c-red">Ca(OH)₂（氢氧化钙）</span></td><td>升温结晶</td></tr>
+</table>
+
+<div class="highlight-box">
+<strong>📈 溶解度曲线应用要点：</strong>
+<ul style="padding-left:18px;line-height:2;margin-top:8px;">
+<li>① 查出某物质在某温度下的<span class="c-blue">溶解度值</span></li>
+<li>② 比较同一温度下<span class="c-red">不同物质的溶解度大小</span></li>
+<li>③ 判断溶液是否饱和：若溶质质量 &gt; 该温度下溶解度对应值，则<span class="c-red">有晶体析出</span></li>
+<li>④ 确定<span class="c-purple">结晶分离</span>的方法：溶解度差异大的物质可用降温结晶法分离</li>
+<li>⑤ 曲线<span class="c-green">交点</span>的含义：该温度下两物质的溶解度<span class="c-teal">相等</span>（饱和溶液质量分数也相等）</li>
+</ul>
+</div>
+</div>
+
+<div class="kp chemistry"><h3>四、气体溶解度的影响因素</h3>
+<p>气体溶解度通常随<span class="c-red">温度升高</span>而<span class="c-red">减小</span>，随<span class="c-blue">压强增大</span>而<span class="c-blue">增大</span>。</p>
+<table class="chem-table">
+<tr><th>影响因素</th><th>变化趋势</th><th>对气体溶解度的影响</th><th>生活实例</th></tr>
+<tr><td><span class="c-red">温度 ↑</span></td><td>升高</td><td class="c-red">溶解度 ↓（减小）</td><td>烧水时，水未沸腾就有气泡冒出（溶解的空气逸出）</td></tr>
+<tr><td><span class="c-blue">温度 ↓</span></td><td>降低</td><td class="c-blue">溶解度 ↑（增大）</td><td>冷水鱼比热水鱼存活好（水中溶氧量高）</td></tr>
+<tr><td><span class="c-green">压强 ↑</span></td><td>增大</td><td class="c-green">溶解度 ↑（增大）</td><td>打开汽水瓶盖，气泡冒出（压强减小，CO₂逸出）</td></tr>
+<tr><td><span class="c-orange">压强 ↓</span></td><td>减小</td><td class="c-orange">溶解度 ↓（减小）</td><td>高原地区沸点低，溶解氧少</td></tr>
+</table>
+<div class="danger-box">
+<strong>⚠️ 注意：</strong>气体的溶解度与温度、压强的关系<span class="c-red">恰好与固体相反</span>——固体一般是温度升高溶解度增大，而气体是温度升高溶解度减小。这是中考高频易错点！
+</div>
+</div>
+
+<div class="kp chemistry"><h3>五、结晶的两种方法</h3>
+<p><strong>结晶</strong>：溶质从溶液中以<span class="c-blue">晶体</span>形式析出的过程。</p>
+
+<table class="chem-table">
+<tr><th>方法</th><th>原理</th><th>适用范围</th><th>操作</th><th>实例</th></tr>
+<tr>
+<td><span class="c-purple">蒸发结晶</span></td>
+<td>蒸发溶剂使溶液达到饱和后继续析出晶体</td>
+<td>溶解度受温度影响<span class="c-green">较小</span>的物质（如NaCl）</td>
+<td><span class="c-orange">蒸发</span>（加热蒸发溶剂）</td>
+<td>海水晒盐——利用太阳能蒸发海水获得食盐</td>
+</tr>
+<tr>
+<td><span class="c-blue">降温结晶</span><br>（冷却热饱和溶液）</td>
+<td>利用溶解度随温度降低而<span class="c-red">显著减小</span>的性质</td>
+<td>溶解度受温度影响<span class="c-red">较大</span>的物质（如KNO₃）</td>
+<td>加热制成热饱和溶液，<span class="c-blue">冷却</span>后晶体析出</td>
+<td>从KNO₃和NaCl混合物中分离出较纯的KNO₃</td>
+</tr>
+</table>
+
+<div class="highlight-box">
+<strong>🔑 分离KNO₃和NaCl混合物的方法选择：</strong><br>
+若NaCl中混有少量KNO₃ → 用<span class="c-orange">蒸发结晶</span>（NaCl先析出，KNO₃留在母液中）<br>
+若KNO₃中混有少量NaCl → 用<span class="c-blue">降温结晶</span>（冷却热饱和溶液，KNO₃大量析出，NaCl因量少且溶解度变化不大而留在溶液中）
+</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 基础实验 -->
+<!-- ============================================================ -->
+<h2 id="experiments" style="margin:28px 0 16px;">🔬 基础实验</h2>
+
+<div class="card"><h3>基础实验5：配制一定溶质质量分数的氯化钠溶液</h3>
+<p style="color:var(--text-secondary);"><strong>步骤：</strong>①<span class="c-blue">计算</span>→②<span class="c-orange">称量</span>（托盘天平称NaCl，量筒量水，接近刻度时用<span class="c-teal">胶头滴管</span>逐滴加入）→③<span class="c-green">溶解</span>（烧杯中用<span class="c-purple">玻璃棒搅拌</span>加速溶解）→④<span class="c-pink">装瓶贴标签</span>。</p>
+<p style="color:var(--text-secondary);"><strong>所需仪器：</strong>托盘天平、量筒、胶头滴管、烧杯、玻璃棒、药匙、试剂瓶。</p>
+<p style="color:var(--text-secondary);"><strong>玻璃棒的作用：</strong>搅拌，<span class="c-blue">加速NaCl溶解</span>（不能碰到烧杯壁和烧杯底）。</p></div>
+
+<div class="card"><h3>基础实验6：粗盐的初步提纯</h3>
+<p style="color:var(--text-secondary);"><strong>步骤：</strong>①<span class="c-blue">溶解</span>（加水，玻璃棒搅拌加速溶解）→②<span class="c-red">过滤</span>（除去不溶性杂质）→③<span class="c-orange">蒸发</span>（蒸发溶剂，获得NaCl晶体）→④<span class="c-green">计算产率</span>。</p>
+<p style="color:var(--text-secondary);"><strong>过滤操作要点 —— "一贴二低三靠"：</strong></p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li><span class="c-blue">一贴</span>：滤纸紧贴漏斗内壁（中间不留气泡）</li>
+<li><span class="c-red">二低</span>：滤纸边缘低于漏斗口；液面低于滤纸边缘</li>
+<li><span class="c-green">三靠</span>：烧杯口紧靠玻璃棒（引流）；玻璃棒下端轻靠三层滤纸一侧；漏斗下端管口紧靠烧杯内壁</li>
+</ul>
+<p style="color:var(--text-secondary);"><strong>蒸发操作要点：</strong>蒸发皿中溶液不超过容积的<span class="c-red">2/3</span>；加热时用<span class="c-purple">玻璃棒不断搅拌</span>（防止局部温度过高造成液滴飞溅）；当蒸发皿中出现<span class="c-orange">较多固体</span>时停止加热，利用余热蒸干。</p>
+<p style="color:var(--text-secondary);"><strong>产率偏低的原因：</strong>①溶解时水量不足，NaCl未完全溶解；②过滤时有溶液洒出；③蒸发时有液滴飞溅；④转移时有NaCl残留。</p></div>
+
+<!-- ============================================================ -->
+<!-- 章节练习题 -->
+<!-- ============================================================ -->
 <h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
-<div class="exercise"><div class="question"><span class="q-num">1</span>溶液的特征是____。</div>
+
+<div class="exercise"><div class="question"><span class="q-num">1</span>溶液的基本特征是____。</div>
 <div class="options">
 <label><input type="radio" name="q1" value="A">A. 无色透明</label><label><input type="radio" name="q1" value="B">B. 均一、稳定</label>
 <label><input type="radio" name="q1" value="C">C. 上层稀下层浓</label><label><input type="radio" name="q1" value="D">D. 一定是液体</label></div>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1" data-correct="B">✅ B。溶液是均一、稳定的混合物。溶液不一定无色（如CuSO₄蓝色）。</div></div>
+<div class="answer" id="answer-1" data-correct="B">✅ B。溶液是<span class="c-blue">均一、稳定</span>的混合物。溶液不一定无色（如CuSO₄溶液蓝色），也不一定是液体（如合金是固态溶液）。</div></div>
 
-<div class="exercise"><div class="question"><span class="q-num">2</span>配制50g质量分数为6%的NaCl溶液，需NaCl____g。</div>
+<div class="exercise"><div class="question"><span class="q-num">2</span>配制50g质量分数为6%的NaCl溶液，需NaCl____g，需水____mL。</div>
 <div class="options">
-<label><input type="radio" name="q2" value="A">A. 1</label><label><input type="radio" name="q2" value="B">B. 3</label>
-<label><input type="radio" name="q2" value="C">C. 6</label><label><input type="radio" name="q2" value="D">D. 10</label></div>
+<label><input type="radio" name="q2" value="A">A. 1g, 49mL</label><label><input type="radio" name="q2" value="B">B. 3g, 47mL</label>
+<label><input type="radio" name="q2" value="C">C. 6g, 44mL</label><label><input type="radio" name="q2" value="D">D. 10g, 40mL</label></div>
 <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-<div class="answer" id="answer-2" data-correct="B">✅ B。m(NaCl)=50×6%=3g，需水47g(47mL)。</div></div>
+<div class="answer" id="answer-2" data-correct="B">✅ B。m(NaCl) = 50×6% = <span class="c-red">3g</span>；需水质量 = 50 - 3 = 47g，水的密度约为1g/mL，所以需水<span class="c-blue">47mL</span>。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">3</span>下列物质溶于水，溶液温度明显降低的是____。</div>
 <div class="options">
 <label><input type="radio" name="q3" value="A">A. NaCl</label><label><input type="radio" name="q3" value="B">B. NaOH</label>
 <label><input type="radio" name="q3" value="C">C. NH₄NO₃</label><label><input type="radio" name="q3" value="D">D. 浓H₂SO₄</label></div>
 <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-<div class="answer" id="answer-3" data-correct="C">✅ C。NH₄NO₃溶于水吸热，溶液温度降低。NaOH和浓H₂SO₄溶解放热。</div></div>
+<div class="answer" id="answer-3" data-correct="C">✅ C。<span class="c-blue">NH₄NO₃</span>溶于水<span class="c-red">吸热</span>（扩散吸热 &gt; 水合放热），溶液温度降低。NaOH和浓H₂SO₄溶解放热，NaCl基本不变。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>将100g 20%的NaCl溶液稀释成10%的溶液，需加水____。</div>
+<div class="options">
+<label><input type="radio" name="q4" value="A">A. 50g</label><label><input type="radio" name="q4" value="B">B. 80g</label>
+<label><input type="radio" name="q4" value="C">C. 100g</label><label><input type="radio" name="q4" value="D">D. 200g</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="C">✅ C。稀释前后溶质质量不变：100×20% = x×10%，解得 x = 200g（稀释后溶液总质量）。需加水 = 200 - 100 = <span class="c-red">100g</span>。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>下列物质中，属于电解质的是____。</div>
+<div class="options">
+<label><input type="radio" name="q5" value="A">A. 蔗糖</label><label><input type="radio" name="q5" value="B">B. 酒精</label>
+<label><input type="radio" name="q5" value="C">C. NaCl</label><label><input type="radio" name="q5" value="D">D. 铜</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="C">✅ C。<span class="c-blue">NaCl</span>是离子化合物，溶于水或熔融状态能导电，属于电解质。蔗糖和酒精是有机物，属于非电解质。铜是单质，不是化合物，既不是电解质也不是非电解质。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>关于溶解度曲线，下列说法正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. NaCl的溶解度随温度升高而显著增大</label>
+<label><input type="radio" name="q6" value="B">B. KNO₃适合用蒸发结晶法获得晶体</label>
+<label><input type="radio" name="q6" value="C">C. Ca(OH)₂的溶解度随温度升高而减小</label>
+<label><input type="radio" name="q6" value="D">D. 气体溶解度随温度升高而增大</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="C">✅ C。<span class="c-red">Ca(OH)₂</span>的溶解度随温度升高而<span class="c-red">减小</span>（下降型）。A错：NaCl溶解度随温度变化不大（平缓型）。B错：KNO₃是陡升型，适合<span class="c-blue">降温结晶</span>。D错：气体溶解度随温度升高而<span class="c-red">减小</span>。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>配制一定溶质质量分数的溶液时，量取水时俯视读数，会导致____。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. 溶质质量分数偏小</label><label><input type="radio" name="q7" value="B">B. 溶质质量分数偏大</label>
+<label><input type="radio" name="q7" value="C">C. 溶质质量分数不变</label><label><input type="radio" name="q7" value="D">D. 无法确定</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="B">✅ B。俯视读数时<span class="c-red">读数偏大</span>，但实际量取水的体积<span class="c-red">偏小</span>，导致溶剂质量偏小，溶质质量分数<span class="c-red">偏大</span>。记住：仰小俯大是指读数，实际液体体积相反。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>打开汽水瓶盖时，有大量气泡冒出，这是因为____。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 温度升高，CO₂溶解度增大</label>
+<label><input type="radio" name="q8" value="B">B. 压强减小，CO₂溶解度减小</label>
+<label><input type="radio" name="q8" value="C">C. 压强增大，CO₂溶解度增大</label>
+<label><input type="radio" name="q8" value="D">D. 温度降低，CO₂溶解度减小</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="B">✅ B。打开瓶盖时，瓶内<span class="c-blue">压强减小</span>，CO₂的<span class="c-red">溶解度减小</span>，多余的CO₂从溶液中逸出形成气泡。气体溶解度随压强增大而增大，随压强减小而减小。</div></div>
+
 </main></div>
 <script src="../assets/js/common.js"></script>
 </body>

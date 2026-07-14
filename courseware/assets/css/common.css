@@ -271,6 +271,53 @@ body {
   gap:16px; margin-bottom:20px;
 }
 
+/* === Color-coded text spans === */
+.c-red { color: #dc2626; font-weight: 600; }
+.c-blue { color: #2563eb; font-weight: 600; }
+.c-green { color: #059669; font-weight: 600; }
+.c-orange { color: #d97706; font-weight: 600; }
+.c-purple { color: #7c3aed; font-weight: 600; }
+.c-pink { color: #db2777; font-weight: 600; }
+.c-teal { color: #0d9488; font-weight: 600; }
+
+/* === Highlight/Info/Danger boxes === */
+.highlight-box {
+  background: #fef9c3; border-left: 5px solid #eab308;
+  padding: 16px 20px; border-radius: 8px; margin: 16px 0;
+  font-size: .95rem; line-height: 1.8;
+}
+.highlight-box strong { color: #a16207; }
+.danger-box {
+  background: #fef2f2; border-left: 5px solid #dc2626;
+  padding: 16px 20px; border-radius: 8px; margin: 16px 0;
+  font-size: .95rem; line-height: 1.8;
+}
+.danger-box strong { color: #b91c1c; }
+.info-box {
+  background: #eff6ff; border-left: 5px solid #2563eb;
+  padding: 16px 20px; border-radius: 8px; margin: 16px 0;
+  font-size: .95rem; line-height: 1.8;
+}
+.info-box strong { color: #1d4ed8; }
+
+/* === Chemistry data table === */
+table.chem-table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: .9rem; background: var(--card-bg);
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow);
+}
+table.chem-table thead th {
+  background: var(--chemistry); color: #fff;
+  padding: 12px 14px; text-align: center; font-weight: 600;
+}
+table.chem-table tbody td {
+  padding: 10px 14px; text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+table.chem-table tbody tr:hover { background: var(--chemistry-light); }
+table.chem-table tbody tr:last-child td { border-bottom: none; }
+
 /* Responsive */
 @media (max-width:768px) {
   .layout { flex-direction:column; }

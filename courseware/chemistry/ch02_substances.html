@@ -3,26 +3,58 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>第2章 身边的化学物质 - 沪教版化学</title>
 <link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.c-red { color:#dc2626; font-weight:600; }
+.c-blue { color:#2563eb; font-weight:600; }
+.c-green { color:#059669; font-weight:600; }
+.c-orange { color:#d97706; font-weight:600; }
+.c-purple { color:#7c3aed; font-weight:600; }
+.c-pink { color:#db2777; font-weight:600; }
+.highlight-box {
+  background:linear-gradient(135deg, #fef3c7, #fde68a);
+  border-left:4px solid #f59e0b; padding:14px 18px; border-radius:8px;
+  margin:12px 0; font-size:.92rem; line-height:1.8;
+}
+.danger-box {
+  background:linear-gradient(135deg, #fef2f2, #fee2e2);
+  border-left:4px solid #ef4444; padding:14px 18px; border-radius:8px;
+  margin:12px 0; font-size:.92rem; line-height:1.8;
+}
+.info-box {
+  background:linear-gradient(135deg, #eff6ff, #dbeafe);
+  border-left:4px solid #3b82f6; padding:14px 18px; border-radius:8px;
+  margin:12px 0; font-size:.92rem; line-height:1.8;
+}
+table.chem-table { width:100%; border-collapse:collapse; font-size:.9rem; margin:10px 0; }
+table.chem-table th { background:#f0fdf4; padding:10px 12px; text-align:left; color:#065f46; }
+table.chem-table td { padding:10px 12px; border-bottom:1px solid #e2e8f0; }
+table.chem-table tr:hover td { background:#f8fafc; }
+</style>
 </head>
 <body>
 <div class="layout">
 <aside class="sidebar"><h3>🧪 初中化学</h3><ul class="chapter-list">
 <li><a href="ch01_intro.html"><span class="ch-num">1</span>开启化学之门</a></li>
-<li><a href="ch02_substances.html" class="active"><span class="ch-num">2</span>身边的化学物质</a>
-<div class="subsections"><a href="#sec2-1">2.1 氧气</a><a href="#sec2-2">2.2 二氧化碳</a><a href="#sec2-3">2.3 自然界中的水</a><a href="#experiments">基础实验</a><a href="#exercises">练习题</a></div></li>
+<li><a href="ch02_substances.html" class="active" data-section="s1"><span class="ch-num">2</span>身边的化学物质</a>
+<div class="subsections">
+  <a href="#sec2-1" data-section="s1">2.1 空气的组成</a>
+  <a href="#sec2-2" data-section="s2">2.2 性质活泼的氧气</a>
+  <a href="#sec2-3" data-section="s3">2.3 奇妙的二氧化碳</a>
+  <a href="#sec2-4" data-section="s4">2.4 自然界中的水</a>
+  <a href="#experiments" data-section="s5">基础实验</a>
+  <a href="#exercises" data-section="ex">练习题</a>
+</div></li>
 <li><a href="ch03_matter.html"><span class="ch-num">3</span>物质构成的奥秘</a></li>
 </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
-	    <a href="index.html" class="back-subject">📂 化学目录</a>
+        <a href="index.html" class="back-subject">📂 化学目录</a>
 </aside>
 <main class="main">
   <div class="topbar">
     <div class="breadcrumb">
-      <a href="../index.html">🏠 首页</a>
-      <span>›</span>
-      <a href="index.html">📂 初中化学</a>
-      <span>›</span>
+      <a href="../index.html">🏠 首页</a><span>›</span>
+      <a href="index.html">📂 初中化学</a><span>›</span>
       <span>第2章 身边的化学物质</span>
     </div>
     <div class="spacer"></div>
@@ -34,94 +66,337 @@
     </div>
   </div>
   <div class="page-title">第2章 身边的化学物质</div>
+
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-<li>了解空气的组成，掌握氧气和二氧化碳的性质</li><li>掌握实验室制取氧气和二氧化碳的方法</li><li>了解水的组成和净化方法</li></ul></div>
+<li>了解<span class="c-blue">空气的组成</span>及各组分气体的用途</li>
+<li>掌握<span class="c-red">氧气</span>和<span class="c-green">二氧化碳</span>的物理性质、化学性质和实验室制法</li>
+<li>理解<span class="c-orange">催化剂</span>的概念及其在化学反应中的作用</li>
+<li>了解<span class="c-purple">水的组成</span>（电解水实验）和水的净化方法</li>
+<li>认识<span class="c-pink">硬水与软水</span>的区别及硬水软化的方法</li>
+</ul></div>
 
-<h2 id="sec2-1">2.1 性质活泼的氧气</h2>
-<div class="keypoints-grid">
-<div class="kp chemistry"><h3>氧气的物理性质</h3>
-<p>无色无味气体，密度比空气略大（ρ=1.429g/L）。不易溶于水。液态和固态氧为淡蓝色。</p></div>
-<div class="kp chemistry"><h3>氧气的化学性质</h3>
-<p>化学性质<strong>比较活泼</strong>，具有<strong>氧化性</strong>（助燃性）。能与多种物质反应：</p>
-<ul style="padding-left:16px;font-size:.9rem;color:var(--text-secondary);line-height:2;">
-<li>C + O₂ → CO₂（碳在氧气中剧烈燃烧，发出白光）</li>
-<li>S + O₂ → SO₂（硫燃烧产生蓝紫色火焰）</li>
-<li>3Fe + 2O₂ → Fe₃O₄（铁在氧气中剧烈燃烧，火星四射）</li>
-<li>4P + 5O₂ → 2P₂O₅（磷燃烧产生大量白烟）</li></ul></div>
+<!-- ====== 2.1 空气 ====== -->
+<h2 data-section="s1" id="sec2-1" style="margin:28px 0 16px;">2.1 空气的组成</h2>
+
+<div class="kp chemistry"><h3>空气的成分</h3>
+<p>空气是一种<span class="c-blue">混合物</span>，主要成分按体积分数：</p>
+<table class="chem-table">
+<tr><th>成分</th><th>体积分数</th><th>主要用途</th></tr>
+<tr><td><span class="c-blue">氮气 N₂</span></td><td><span class="c-red">约 78%</span></td><td>保护气（食品充氮防腐）、制氨、液氮冷冻</td></tr>
+<tr><td><span class="c-green">氧气 O₂</span></td><td><span class="c-red">约 21%</span></td><td>呼吸、助燃、炼钢、医疗急救</td></tr>
+<tr><td><span class="c-purple">稀有气体</span></td><td>约 0.94%</td><td>氩气作保护气、氦气充气球、氖气制霓虹灯</td></tr>
+<tr><td><span class="c-orange">二氧化碳 CO₂</span></td><td>约 0.03%</td><td>光合作用、灭火、制冷（干冰）</td></tr>
+<tr><td>其他气体和杂质</td><td>约 0.03%</td><td>水蒸气、尘埃等</td></tr>
+</table>
+<div class="highlight-box">
+<strong>💡 记忆口诀：</strong>氮七八、氧二一、稀有零点九四、二氧化碳零点零三。
 </div>
+</div>
+
+<div class="kp chemistry"><h3>拉瓦锡测定空气组成的实验</h3>
+<p><span class="c-blue">拉瓦锡</span>（1777年）通过将汞在密闭容器中加热 12 天，发现空气<span class="c-red">不是单一物质</span>，而是由<span class="c-green">氧气</span>（约占 1/5）和<span class="c-purple">氮气</span>（约占 4/5）组成的。</p>
+<p>现代测定法——<span class="c-orange">红磷燃烧法</span>：在密闭容器中燃烧红磷，消耗氧气，水进入容器约占 1/5 体积，证明 O₂ 约占空气体积的 <span class="c-red">1/5</span>。</p>
+<span class="formula">4P + 5O₂ —点燃→ 2P₂O₅</span>
+</div>
+
+<div class="kp chemistry"><h3>空气污染与保护</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>主要污染物</h3>
+<p><span class="c-red">SO₂</span>（煤燃烧）→ 酸雨</p>
+<p><span class="c-orange">NO₂</span>（汽车尾气）→ 酸雨、光化学烟雾</p>
+<p><span class="c-blue">CO</span>（不完全燃烧）→ 有毒</p>
+<p><span class="c-purple">PM2.5 / PM10</span> → 雾霾</p>
+<p><span class="c-green">O₃</span>（地面臭氧）→ 刺激呼吸道</p></div>
+<div class="kp chemistry"><h3>防治措施</h3>
+<p>使用<span class="c-green">清洁能源</span>（太阳能、风能）</p>
+<p>汽车加装<span class="c-blue">催化转化器</span></p>
+<p>工业废气<span class="c-orange">处理达标后排放</span></p>
+<p>植树造林，增加<span class="c-purple">绿化面积</span></p>
+<p>减少<span class="c-red">化石燃料</span>的使用</p></div>
+</div>
+</div>
+
+<!-- ====== 2.2 氧气 ====== -->
+<h2 data-section="s2" id="sec2-2" style="margin:28px 0 16px;">2.2 性质活泼的氧气</h2>
+
+<div class="kp chemistry"><h3>氧气的物理性质</h3>
+<p>通常状况下：<span class="c-blue">无色无味</span>气体，密度比空气<span class="c-red">略大</span>（ρ = 1.429 g/L），<span class="c-green">不易溶于水</span>（1L 水约溶解 30mL O₂）。</p>
+<p>在 101kPa、-183°C 时液化为<span class="c-purple">淡蓝色</span>液态氧，-218°C 时凝固为淡蓝色固态氧。</p>
+</div>
+
+<div class="kp chemistry"><h3>氧气的化学性质 — 活泼的氧化剂</h3>
+<p>氧气的化学性质<span class="c-red">比较活泼</span>，具有<span class="c-green">氧化性</span>（助燃性），能与多种物质发生反应。</p>
+<table class="chem-table">
+<tr><th>反应物</th><th>化学方程式</th><th>实验现象</th><th>注意事项</th></tr>
+<tr>
+  <td><span class="c-blue">碳 C</span></td>
+  <td><span class="formula" style="font-size:.85rem;">C + O₂ → CO₂</span></td>
+  <td>在空气中：<span class="c-orange">红热</span>；在氧气中：<span class="c-red">剧烈燃烧，发出白光</span></td>
+  <td>生成气体使澄清石灰水变浑浊</td>
+</tr>
+<tr>
+  <td><span class="c-orange">硫 S</span></td>
+  <td><span class="formula" style="font-size:.85rem;">S + O₂ → SO₂</span></td>
+  <td>在空气中：淡蓝色火焰；在氧气中：<span class="c-purple">明亮蓝紫色火焰</span></td>
+  <td>生成<span class="c-red">刺激性气味</span>气体 SO₂，集气瓶底留少量水吸收</td>
+</tr>
+<tr>
+  <td><span class="c-red">铁 Fe</span></td>
+  <td><span class="formula" style="font-size:.85rem;">3Fe + 2O₂ → Fe₃O₄</span></td>
+  <td><span class="c-red">剧烈燃烧，火星四射</span>，生成<span class="c-blue">黑色固体</span></td>
+  <td>集气瓶底<span class="c-red">必须留水或铺沙</span>（防止高温熔融物炸裂瓶底）</td>
+</tr>
+<tr>
+  <td><span class="c-green">磷 P</span></td>
+  <td><span class="formula" style="font-size:.85rem;">4P + 5O₂ → 2P₂O₅</span></td>
+  <td>产生<span class="c-orange">大量白烟</span>（P₂O₅ 固体小颗粒）</td>
+  <td>白烟是<span class="c-blue">五氧化二磷</span>固体，不是白雾</td>
+</tr>
+<tr>
+  <td><span class="c-purple">镁 Mg</span></td>
+  <td><span class="formula" style="font-size:.85rem;">2Mg + O₂ → 2MgO</span></td>
+  <td>发出<span class="c-red">耀眼白光</span>，生成<span class="c-blue">白色粉末</span></td>
+  <td>用于照明弹、烟花</td>
+</tr>
+</table>
+<div class="danger-box">
+<strong>⚠️ 易错提醒：</strong>氧气具有<span class="c-green">助燃性</span>，但<span class="c-red">不是可燃物</span>！不要把"助燃性"和"可燃性"混淆。氧气本身不能燃烧，它帮助其他物质燃烧。
+</div>
+</div>
+
 <div class="kp chemistry"><h3>氧气的实验室制法</h3>
-<p><strong>原理</strong>：用含氧化合物分解制取。</p>
-<span class="formula">2H₂O₂ →(MnO₂) 2H₂O + O₂↑</span>
-<span class="formula">2KMnO₄ →(加热) K₂MnO₄ + MnO₂ + O₂↑</span>
-<p>催化剂（MnO₂）：改变化学反应速率，本身质量和化学性质不变。</p>
-<p>收集方法：<strong>排水法</strong>（不易溶于水）或<strong>向上排空气法</strong>（密度比空气大）。</p>
-<p>验满：将带火星木条放在集气瓶口，木条<strong>复燃</strong>则满。</p></div>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>🧪 方法一：H₂O₂ 分解</h3>
+<p><strong>原理：</strong></p>
+<span class="formula">2H₂O₂ —MnO₂→ 2H₂O + O₂↑</span>
+<p><strong>优点：</strong><span class="c-green">不需加热</span>，操作简便</p>
+<p><span class="c-orange">MnO₂ 是催化剂</span>：改变化学反应速率，自身的质量和化学性质在反应前后不变</p></div>
+<div class="kp chemistry"><h3>🔥 方法二：KMnO₄ 加热</h3>
+<p><strong>原理：</strong></p>
+<span class="formula">2KMnO₄ —加热→ K₂MnO₄ + MnO₂ + O₂↑</span>
+<p><strong>注意：</strong>试管口要<span class="c-red">略向下倾斜</span>（防止冷凝水回流炸裂试管）；导管口放一团棉花（防止 KMnO₄ 粉末进入导管）</p></div>
+</div>
+<div class="kp chemistry"><h3>收集与验满</h3>
+<p><strong>收集方法：</strong></p>
+<p>① <span class="c-blue">排水法</span>（O₂ 不易溶于水）—— 收集到的气体更纯净</p>
+<p>② <span class="c-green">向上排空气法</span>（O₂ 密度比空气大）—— 操作更简便，但纯度略低</p>
+<p><strong>验满：</strong>将<span class="c-red">带火星的木条</span>放在集气瓶口，木条<span class="c-orange">复燃</span>则满。</p>
+<p><strong>放置：</strong>集满 O₂ 的集气瓶应<span class="c-purple">正放</span>（O₂ 密度比空气大），盖上玻璃片。</p>
+</div>
+</div>
 
-<h2 id="sec2-2">2.2 奇妙的二氧化碳</h2>
-<div class="kp chemistry"><h3>CO₂的性质</h3>
-<p>无色无味气体，密度比空气大（约1.5倍），<strong>能溶于水</strong>。</p>
-<p>化学性质：<strong>不能燃烧，也不支持燃烧</strong>。能与水反应：<span class="formula">CO₂ + H₂O → H₂CO₃</span></p>
-<p>能使澄清石灰水<strong>变浑浊</strong>（检验CO₂的方法）：<span class="formula">CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O</span></p>
-<p><strong>温室效应</strong>：大气中CO₂含量增加导致全球气候变暖。</p>
-<p>干冰（固态CO₂）升华吸热，可用于人工降雨、舞台烟雾。</p></div>
-<div class="kp chemistry"><h3>CO₂的实验室制法</h3>
-<p><strong>原理</strong>：用石灰石（或大理石）与稀盐酸反应。</p>
+<div class="kp chemistry"><h3>催化剂与催化作用</h3>
+<p><span class="c-red">催化剂（Catalyst）</span>：在化学反应中能<span class="c-blue">改变</span>其他物质的反应速率，而自身的<span class="c-green">质量和化学性质</span>在反应前后<span class="c-purple">不变</span>的物质。</p>
+<div class="highlight-box">
+<strong>💡 关键理解：</strong><br>
+① 催化剂<span class="c-orange">改变</span>速率（可加快，也可减慢），不是"增加"速率<br>
+② 催化剂<span class="c-red">不参与</span>最终产物的组成，但可能参与中间过程<br>
+③ 催化剂<span class="c-blue">不能改变</span>反应的产率和平衡<br>
+④ 生物体内的催化剂叫做<span class="c-green">酶</span>（如消化酶）
+</div>
+</div>
+
+<!-- ====== 2.3 二氧化碳 ====== -->
+<h2 data-section="s3" id="sec2-3" style="margin:28px 0 16px;">2.3 奇妙的二氧化碳</h2>
+
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>物理性质</h3>
+<p><span class="c-blue">无色无味</span>气体</p>
+<p>密度比空气<span class="c-red">大</span>（约 1.5 倍）</p>
+<p><span class="c-green">能溶于水</span>（1 体积水约溶 1 体积 CO₂）</p>
+<p>固态 CO₂ 叫<span class="c-purple">"干冰"</span>，升华时<span class="c-orange">吸热</span>，用于人工降雨、舞台烟雾</p></div>
+<div class="kp chemistry"><h3>化学性质</h3>
+<p><span class="c-red">不能燃烧，也不支持燃烧</span>（可用于灭火）</p>
+<p>与水反应：<span class="formula">CO₂ + H₂O → H₂CO₃</span></p>
+<p>与石灰水反应：<span class="formula">CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O</span>（<span class="c-green">检验 CO₂</span>）</p>
+<p><span class="c-orange">无毒</span>，但含量过高会使人窒息</p></div>
+</div>
+
+<div class="kp chemistry"><h3>CO₂ 的实验室制法</h3>
+<p><strong>原理：</strong>石灰石（或大理石，主要成分 CaCO₃）与稀盐酸反应</p>
 <span class="formula">CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑</span>
-<p>收集方法：<strong>向上排空气法</strong>（密度比空气大，能溶于水）。</p>
-<p>验满：将燃着木条放瓶口，木条<strong>熄灭</strong>则满。</p></div>
+<div class="info-box">
+<strong>🔍 为什么不用其他酸？</strong><br>
+• <span class="c-red">不用稀硫酸</span>：生成微溶的 CaSO₄ 覆盖在 CaCO₃ 表面，阻止反应继续进行<br>
+• <span class="c-blue">不用浓盐酸</span>：浓盐酸有挥发性，使收集的 CO₂ 不纯（混有 HCl 气体）<br>
+• <span class="c-green">不用碳酸钠</span>：反应速率太快，不便于控制
+</div>
+<p style="margin-top:8px;"><strong>收集方法：</strong><span class="c-purple">向上排空气法</span>（CO₂ 密度比空气大，且能溶于水，不能用排水法）</p>
+<p><strong>验满：</strong>将<span class="c-orange">燃着的木条</span>放在瓶口，木条<span class="c-red">熄灭</span>则满。</p>
+</div>
 
-<h2 id="sec2-3">2.3 自然界中的水</h2>
-<div class="kp chemistry"><h3>水的组成</h3>
-<p><strong>电解水实验</strong>证明水由氢元素和氧元素组成。</p>
-<span class="formula">2H₂O →(通电) 2H₂↑ + O₂↑</span>
-<p>正极产生O₂（体积小），负极产生H₂（体积大）。<strong>V(H₂) : V(O₂) = 2 : 1</strong>。</p>
-<p>氢气燃烧：<span class="formula">2H₂ + O₂ →(点燃) 2H₂O</span>（产生淡蓝色火焰，验证了水的组成）。</p></div>
+<div class="kp chemistry"><h3>自然界中的碳循环</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>CO₂ 的产生</h3>
+<p>① 动植物的<span class="c-red">呼吸作用</span></p>
+<p>② 化石燃料的<span class="c-orange">燃烧</span></p>
+<p>③ 微生物的<span class="c-purple">分解作用</span></p>
+<p>④ 火山喷发</p></div>
+<div class="kp chemistry"><h3>CO₂ 的消耗</h3>
+<p>① 植物的<span class="c-green">光合作用</span></p>
+<p>② 海洋的<span class="c-blue">吸收溶解</span></p>
+<p>③ 形成<span class="c-purple">碳酸盐岩</span>（石灰岩）</p></div>
+</div>
+<div class="danger-box">
+<strong>🌍 温室效应：</strong>大气中 CO₂ 含量增加 → 全球气候变暖 → 冰川融化、海平面上升、极端天气增多。应对措施：<span class="c-green">节能减排</span>、<span class="c-blue">使用清洁能源</span>、<span class="c-purple">植树造林</span>。
+</div>
+</div>
+
+<!-- ====== 2.4 水 ====== -->
+<h2 data-section="s4" id="sec2-4" style="margin:28px 0 16px;">2.4 自然界中的水</h2>
+
+<div class="kp chemistry"><h3>水的组成 — 电解水实验</h3>
+<p>电解水实验证明：水由<span class="c-red">氢元素</span>和<span class="c-blue">氧元素</span>组成。</p>
+<span class="formula">2H₂O —通电→ 2H₂↑ + O₂↑</span>
+<table class="chem-table">
+<tr><th>电极</th><th>产生气体</th><th>体积比</th><th>检验方法</th></tr>
+<tr><td><span class="c-red">正极（+）</span></td><td><span class="c-green">氧气 O₂</span></td><td>1</td><td>带火星木条<span class="c-orange">复燃</span></td></tr>
+<tr><td><span class="c-blue">负极（-）</span></td><td><span class="c-purple">氢气 H₂</span></td><td>2</td><td>气体燃烧产生<span class="c-blue">淡蓝色火焰</span></td></tr>
+</table>
+<div class="highlight-box">
+<strong>💡 记忆口诀：</strong><span class="c-red">正氧负氢</span>，<span class="c-blue">氢二氧一</span>（V(H₂):V(O₂) = 2:1）。正极产生氧气，负极产生氢气。
+</div>
+</div>
+
+<div class="kp chemistry"><h3>氢气</h3>
+<p>物理性质：<span class="c-blue">无色无味</span>气体，密度<span class="c-red">最小</span>的气体（约空气的 1/14），<span class="c-green">难溶于水</span>。</p>
+<p>化学性质：<span class="c-red">可燃性</span>（燃烧产物只有水，是清洁能源）</p>
+<span class="formula">2H₂ + O₂ —点燃→ 2H₂O</span>
+<div class="danger-box">
+<strong>⚠️ 氢气验纯：</strong>点燃氢气前<span class="c-red">必须验纯</span>！不纯的氢气点燃会发生<span class="c-orange">爆炸</span>。验纯方法：用排水法收集一小试管氢气，移近火焰，听到<span class="c-blue">轻微的"噗"声</span>则纯，<span class="c-red">尖锐的爆鸣声</span>则不纯。
+</div>
+</div>
+
 <div class="kp chemistry"><h3>水的净化</h3>
-<p>净化方法：<strong>沉淀 → 过滤 → 吸附 → 蒸馏</strong>（净化程度递增）。</p>
-<p><strong>硬水与软水</strong>：含较多钙镁化合物的水为硬水。用<strong>肥皂水</strong>鉴别：泡沫多的是软水，泡沫少、有浮渣的是硬水。硬水软化的方法：<strong>煮沸</strong>或蒸馏。</p></div>
+<table class="chem-table">
+<tr><th>方法</th><th>除去杂质类型</th><th>净化程度</th></tr>
+<tr><td><span class="c-blue">沉淀</span></td><td>较大不溶性固体颗粒</td><td>低</td></tr>
+<tr><td><span class="c-green">过滤</span></td><td>不溶性固体</td><td>中</td></tr>
+<tr><td><span class="c-orange">吸附</span>（活性炭）</td><td>色素、异味、部分可溶性杂质</td><td>较高</td></tr>
+<tr><td><span class="c-purple">蒸馏</span></td><td>几乎所有杂质（包括可溶性矿物质）</td><td><span class="c-red">最高</span></td></tr>
+</table>
+<p>净化程度：<span class="c-blue">沉淀</span> → <span class="c-green">过滤</span> → <span class="c-orange">吸附</span> → <span class="c-purple">蒸馏</span>（逐步提高）</p>
+</div>
 
-<h2 id="experiments" style="margin:28px 0 16px;">🔬 基础实验</h2>
-<div class="card"><h3>基础实验1：氧气的制取与性质</h3>
-<p style="color:var(--text-secondary);">用过氧化氢溶液和二氧化锰制取氧气，用排水法收集。验证氧气的助燃性：将带火星木条伸入集气瓶，木条复燃。</p></div>
-<div class="card"><h3>基础实验2：二氧化碳的制取与性质</h3>
-<p style="color:var(--text-secondary);">用大理石和稀盐酸制取CO₂。将CO₂通入紫色石蕊溶液（变红→碳酸的酸性），再加热（变回紫色→碳酸分解）。通入澄清石灰水验证。</p></div>
+<div class="kp chemistry"><h3>硬水与软水</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>定义</h3>
+<p><span class="c-red">硬水</span>：含有较多<span class="c-blue">可溶性钙、镁化合物</span>的水</p>
+<p><span class="c-green">软水</span>：不含或含较少可溶性钙、镁化合物的水</p></div>
+<div class="kp chemistry"><h3>鉴别与软化</h3>
+<p><strong>鉴别：</strong>加<span class="c-purple">肥皂水</span>振荡——泡沫多的是<span class="c-green">软水</span>，泡沫少、有浮渣的是<span class="c-red">硬水</span></p>
+<p><strong>软化：</strong>① <span class="c-orange">煮沸</span>（生活常用）② <span class="c-blue">蒸馏</span>（实验室）</p>
+<p>硬水的危害：洗衣服浪费肥皂、锅炉结垢易爆炸</p></div>
+</div>
+</div>
 
-<h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
-<div class="exercise"><div class="question"><span class="q-num">1</span>检验二氧化碳常用的试剂是____。</div>
+<div class="kp chemistry"><h3>水资源保护</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>节约用水</h3>
+<p>地球水资源总量虽大，但<span class="c-red">淡水资源仅占 2.53%</span>，其中可利用的河水、湖泊水和浅层地下水不到<span class="c-orange">1%</span></p>
+<p>节水措施：使用节水器具、一水多用、工业循环用水</p></div>
+<div class="kp chemistry"><h3>防治水污染</h3>
+<p>污染源：<span class="c-red">工业废水</span>、<span class="c-orange">农业农药化肥</span>、<span class="c-purple">生活污水</span></p>
+<p>防治：工业废水<span class="c-green">处理达标后排放</span>、合理使用化肥农药、生活污水集中处理</p></div>
+</div>
+</div>
+
+<!-- ====== 基础实验 ====== -->
+<h2 data-section="s5" id="experiments" style="margin:28px 0 16px;">🔬 基础实验</h2>
+
+<div class="card"><h3>基础实验1：氧气的制取与性质实验</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>📋 实验步骤</h3>
+<p>① 检查装置<span class="c-red">气密性</span></p>
+<p>② 加药品（H₂O₂ + MnO₂ 或 KMnO₄）</p>
+<p>③ 用排水法或向上排空气法收集</p>
+<p>④ 用带火星木条<span class="c-orange">验满</span></p>
+<p>⑤ 进行氧气性质实验（木炭、硫、铁丝燃烧）</p></div>
+<div class="kp chemistry"><h3>⚠️ 注意事项</h3>
+<p>用 KMnO₄ 时<span class="c-red">试管口略向下</span>倾斜</p>
+<p>导管口放<span class="c-blue">棉花</span>防堵塞</p>
+<p>实验结束先<span class="c-orange">撤导管</span>再<span class="c-purple">撤酒精灯</span>（防倒吸）</p>
+<p>铁丝燃烧时瓶底<span class="c-red">留水或铺沙</span></p></div>
+</div></div>
+
+<div class="card"><h3>基础实验2：二氧化碳的制取与性质实验</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>📋 实验步骤</h3>
+<p>① 加<span class="c-blue">大理石</span>于锥形瓶</p>
+<p>② 从长颈漏斗加入<span class="c-orange">稀盐酸</span></p>
+<p>③ 用向上排空气法收集 CO₂</p>
+<p>④ 验满：燃着木条放瓶口</p></div>
+<div class="kp chemistry"><h3>🧪 性质验证</h3>
+<p>① 通入<span class="c-purple">紫色石蕊溶液</span> → 变<span class="c-red">红</span>（H₂CO₃ 呈酸性）→ 加热 → 变回<span class="c-purple">紫</span>（H₂CO₃ 分解）</p>
+<p>② 通入<span class="c-green">澄清石灰水</span> → 变<span class="c-blue">浑浊</span>（CaCO₃ 沉淀）</p>
+<p>③ 倒入燃着蜡烛的烧杯 → 蜡烛<span class="c-orange">熄灭</span>（CO₂ 不助燃）</p></div>
+</div></div>
+
+<!-- ====== 练习题 ====== -->
+<h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
+<div class="exercise"><div class="question"><span class="q-num">1</span>空气中体积分数约为 21% 的气体是____。</div>
 <div class="options">
-<label><input type="radio" name="q1" value="A">A. 紫色石蕊溶液</label><label><input type="radio" name="q1" value="B">B. 澄清石灰水</label>
-<label><input type="radio" name="q1" value="C">C. 酚酞溶液</label><label><input type="radio" name="q1" value="D">D. 食盐水</label></div>
+<label><input type="radio" name="q1" value="A">A. 氮气</label><label><input type="radio" name="q1" value="B">B. 氧气</label>
+<label><input type="radio" name="q1" value="C">C. 二氧化碳</label><label><input type="radio" name="q1" value="D">D. 稀有气体</label></div>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1" data-correct="B">✅ B。CO₂使澄清石灰水变浑浊（生成CaCO₃沉淀），这是检验CO₂的特征反应。</div></div>
+<div class="answer" id="answer-1" data-correct="B">✅ B。空气成分（体积分数）：N₂ <span class="c-blue">78%</span>，O₂ <span class="c-red">21%</span>，稀有气体 0.94%，CO₂ 0.03%。</div></div>
 
-<div class="exercise"><div class="question"><span class="q-num">2</span>电解水时，正极产生的气体是____。</div>
+<div class="exercise"><div class="question"><span class="q-num">2</span>检验二氧化碳常用的试剂是____。</div>
 <div class="options">
-<label><input type="radio" name="q2" value="A">A. 氢气</label><label><input type="radio" name="q2" value="B">B. 氧气</label>
-<label><input type="radio" name="q2" value="C">C. 氮气</label><label><input type="radio" name="q2" value="D">D. 二氧化碳</label></div>
+<label><input type="radio" name="q2" value="A">A. 紫色石蕊溶液</label><label><input type="radio" name="q2" value="B">B. 澄清石灰水</label>
+<label><input type="radio" name="q2" value="C">C. 酚酞溶液</label><label><input type="radio" name="q2" value="D">D. 食盐水</label></div>
 <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-<div class="answer" id="answer-2" data-correct="B">✅ B。电解水：正氧负氢，V(H₂):V(O₂)=2:1。</div></div>
+<div class="answer" id="answer-2" data-correct="B">✅ B。CO₂ 使<span class="c-green">澄清石灰水变浑浊</span>（Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O），这是检验 CO₂ 的<span class="c-red">特征反应</span>。</div></div>
 
-<div class="exercise"><div class="question"><span class="q-num">3</span>实验室制取CO₂不用稀硫酸的原因是____。</div>
+<div class="exercise"><div class="question"><span class="q-num">3</span>电解水时，正极产生的气体是____。</div>
 <div class="options">
-<label><input type="radio" name="q3" value="A">A. 反应太快</label><label><input type="radio" name="q3" value="B">B. 生成微溶CaSO₄覆盖在固体表面阻止反应</label>
-<label><input type="radio" name="q3" value="C">C. 不反应</label><label><input type="radio" name="q3" value="D">D. 产生有毒气体</label></div>
+<label><input type="radio" name="q3" value="A">A. 氢气</label><label><input type="radio" name="q3" value="B">B. 氧气</label>
+<label><input type="radio" name="q3" value="C">C. 氮气</label><label><input type="radio" name="q3" value="D">D. 二氧化碳</label></div>
 <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-<div class="answer" id="answer-3" data-correct="B">✅ B。稀硫酸与CaCO₃反应生成微溶的CaSO₄，覆盖在大理石表面，阻止反应继续进行。</div></div>
+<div class="answer" id="answer-3" data-correct="B">✅ B。<span class="c-red">正氧负氢</span>，<span class="c-blue">氢二氧一</span>。V(H₂):V(O₂) = 2:1。</div></div>
 
-<div class="exercise"><div class="question"><span class="q-num">4</span>收集氧气不能用____。</div>
+<div class="exercise"><div class="question"><span class="q-num">4</span>实验室制取 CO₂ 不用稀硫酸的原因是____。</div>
 <div class="options">
-<label><input type="radio" name="q4" value="A">A. 排水法</label><label><input type="radio" name="q4" value="B">B. 向上排空气法</label>
-<label><input type="radio" name="q4" value="C">C. 向下排空气法</label><label><input type="radio" name="q4" value="D">D. 以上都可以</label></div>
+<label><input type="radio" name="q4" value="A">A. 反应太快</label>
+<label><input type="radio" name="q4" value="B">B. 生成微溶 CaSO₄ 覆盖在固体表面阻止反应</label>
+<label><input type="radio" name="q4" value="C">C. 不反应</label>
+<label><input type="radio" name="q4" value="D">D. 产生有毒气体</label></div>
 <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
-<div class="answer" id="answer-4" data-correct="C">✅ C。O₂密度比空气大，不能用向下排空气法。可用排水法和向上排空气法。</div></div>
+<div class="answer" id="answer-4" data-correct="B">✅ B。稀硫酸与 CaCO₃ 反应生成<span class="c-red">微溶的 CaSO₄</span>，覆盖在大理石表面，阻止反应继续进行。</div></div>
 
-<div class="exercise"><div class="question"><span class="q-num">5</span>区别硬水和软水可用____。</div>
+<div class="exercise"><div class="question"><span class="q-num">5</span>收集氧气不能用的方法是____。</div>
 <div class="options">
-<label><input type="radio" name="q5" value="A">A. 食盐水</label><label><input type="radio" name="q5" value="B">B. 肥皂水</label>
-<label><input type="radio" name="q5" value="C">C. 石灰水</label><label><input type="radio" name="q5" value="D">D. 蒸馏水</label></div>
+<label><input type="radio" name="q5" value="A">A. 排水法</label><label><input type="radio" name="q5" value="B">B. 向上排空气法</label>
+<label><input type="radio" name="q5" value="C">C. 向下排空气法</label><label><input type="radio" name="q5" value="D">D. 以上都可以</label></div>
 <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
-<div class="answer" id="answer-5" data-correct="B">✅ B。加肥皂水：泡沫多的是软水，泡沫少且有浮渣的是硬水。</div></div>
+<div class="answer" id="answer-5" data-correct="C">✅ C。O₂ 密度比空气<span class="c-red">大</span>，用<span class="c-blue">向上排空气法</span>；不易溶于水，可用<span class="c-green">排水法</span>。不能用向下排空气法。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>区别硬水和软水可用____。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 食盐水</label><label><input type="radio" name="q6" value="B">B. 肥皂水</label>
+<label><input type="radio" name="q6" value="C">C. 石灰水</label><label><input type="radio" name="q6" value="D">D. 蒸馏水</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="B">✅ B。加<span class="c-purple">肥皂水</span>：泡沫多的是<span class="c-green">软水</span>，泡沫少且有浮渣的是<span class="c-red">硬水</span>。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>铁丝在氧气中燃烧时，集气瓶底要留少量水或铺沙，其目的是____。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. 吸收生成的二氧化硫</label>
+<label><input type="radio" name="q7" value="B">B. 防止高温熔融物溅落炸裂瓶底</label>
+<label><input type="radio" name="q7" value="C">C. 加快反应速率</label>
+<label><input type="radio" name="q7" value="D">D. 使现象更明显</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="B">✅ B。铁丝燃烧生成<span class="c-red">高温熔融的 Fe₃O₄</span>，溅落到瓶底可能导致集气瓶<span class="c-orange">炸裂</span>，所以需要留水或铺沙。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>关于催化剂的说法正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 催化剂只能加快反应速率</label>
+<label><input type="radio" name="q8" value="B">B. 催化剂在反应前后质量和化学性质不变</label>
+<label><input type="radio" name="q8" value="C">C. 催化剂会增加生成物的质量</label>
+<label><input type="radio" name="q8" value="D">D. 所有反应都需要催化剂</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="B">✅ B。催化剂<span class="c-blue">改变</span>速率（可加快或减慢），自身的<span class="c-red">质量和化学性质</span>不变。催化剂不能改变生成物的量，也不是所有反应都需要催化剂。</div></div>
 </main></div>
 <script src="../assets/js/common.js"></script>
 </body>

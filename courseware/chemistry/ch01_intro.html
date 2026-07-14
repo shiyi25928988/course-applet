@@ -3,25 +3,58 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>第1章 开启化学之门 - 沪教版化学</title>
 <link rel="stylesheet" href="../assets/css/common.css">
+<style>
+/* 彩色文字辅助类 */
+.c-red { color:#dc2626; font-weight:600; }
+.c-blue { color:#2563eb; font-weight:600; }
+.c-green { color:#059669; font-weight:600; }
+.c-orange { color:#d97706; font-weight:600; }
+.c-purple { color:#7c3aed; font-weight:600; }
+.c-pink { color:#db2777; font-weight:600; }
+.highlight-box {
+  background:linear-gradient(135deg, #fef3c7, #fde68a);
+  border-left:4px solid #f59e0b; padding:14px 18px; border-radius:8px;
+  margin:12px 0; font-size:.92rem; line-height:1.8;
+}
+.danger-box {
+  background:linear-gradient(135deg, #fef2f2, #fee2e2);
+  border-left:4px solid #ef4444; padding:14px 18px; border-radius:8px;
+  margin:12px 0; font-size:.92rem; line-height:1.8;
+}
+.info-box {
+  background:linear-gradient(135deg, #eff6ff, #dbeafe);
+  border-left:4px solid #3b82f6; padding:14px 18px; border-radius:8px;
+  margin:12px 0; font-size:.92rem; line-height:1.8;
+}
+table.chem-table { width:100%; border-collapse:collapse; font-size:.9rem; margin:10px 0; }
+table.chem-table th { background:#f0fdf4; padding:10px 12px; text-align:left; color:#065f46; }
+table.chem-table td { padding:10px 12px; border-bottom:1px solid #e2e8f0; }
+table.chem-table tr:hover td { background:#f8fafc; }
+</style>
 </head>
 <body>
 <div class="layout">
 <aside class="sidebar"><h3>🧪 初中化学</h3><ul class="chapter-list">
-<li><a href="ch01_intro.html" class="active"><span class="ch-num">1</span>开启化学之门</a>
-<div class="subsections"><a href="#sec1-1">1.1 化学给我们带来什么</a><a href="#sec1-2">1.2 化学研究些什么</a><a href="#sec1-3">1.3 怎样学习研究化学</a><a href="#exercises">练习题</a></div></li>
+<li><a href="ch01_intro.html" class="active" data-section="s1"><span class="ch-num">1</span>开启化学之门</a>
+<div class="subsections">
+  <a href="#sec1-1" data-section="s1">1.1 化学给我们带来什么</a>
+  <a href="#sec1-2" data-section="s2">1.2 化学研究些什么</a>
+  <a href="#sec1-3" data-section="s3">1.3 怎样学习研究化学</a>
+  <a href="#sec1-4" data-section="s4">1.4 实验室安全与规范</a>
+  <a href="#exercises" data-section="ex">练习题</a>
+</div></li>
 <li><a href="ch02_substances.html"><span class="ch-num">2</span>身边的化学物质</a></li>
+<li><a href="ch03_matter.html"><span class="ch-num">3</span>物质构成的奥秘</a></li>
 </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
-	    <a href="index.html" class="back-subject">📂 化学目录</a>
+        <a href="index.html" class="back-subject">📂 化学目录</a>
 </aside>
 <main class="main">
   <div class="topbar">
     <div class="breadcrumb">
-      <a href="../index.html">🏠 首页</a>
-      <span>›</span>
-      <a href="index.html">📂 初中化学</a>
-      <span>›</span>
+      <a href="../index.html">🏠 首页</a><span>›</span>
+      <a href="index.html">📂 初中化学</a><span>›</span>
       <span>第1章 开启化学之门</span>
     </div>
     <div class="spacer"></div>
@@ -33,83 +66,296 @@
     </div>
   </div>
   <div class="page-title">第1章 开启化学之门</div>
+
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-<li>了解化学与生活的密切关系</li><li>知道化学研究的内容和范围</li>
-<li>认识常见的化学实验仪器，了解基本实验操作</li>
-<li>学会用化学符号和化学式表示物质</li></ul></div>
+<li>了解<span class="c-blue">化学</span>的研究对象及其在生活中的广泛应用</li>
+<li>能区分<span class="c-red">物理变化</span>与<span class="c-green">化学变化</span>、<span class="c-red">物理性质</span>与<span class="c-green">化学性质</span></li>
+<li>认识常见的化学实验仪器，掌握<span class="c-purple">基本实验操作</span>规范</li>
+<li>了解<span class="c-orange">实验室安全</span>规则，学会应对常见意外</li>
+<li>初步认识元素符号和化学式，会用化学语言描述物质</li>
+</ul></div>
 
-<h2 id="sec1-1">1.1 化学给我们带来什么</h2>
-<div class="kp chemistry"><h3>化学与生活</h3>
-<p><strong>化学</strong>是在分子、原子层次上研究物质的性质、组成、结构与变化规律的科学。</p>
-<p>化学对人类的贡献：</p><ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-<li>生产化肥和农药——提高粮食产量</li><li>合成药物——治疗疾病</li><li>开发新能源——解决能源危机</li><li>制造新材料——如塑料、合成纤维、合金</li><li>治理环境污染——保护生态环境</li></ul>
-<p><strong>绿色化学</strong>：从源头上消除污染，实现"零排放"的化学。</p></div>
+<!-- ====== 1.1 ====== -->
+<h2 data-section="s1" id="sec1-1" style="margin:28px 0 16px;">1.1 化学给我们带来什么</h2>
 
-<h2 id="sec1-2">1.2 化学研究些什么</h2>
-<div class="kp chemistry"><h3>物理变化与化学变化</h3>
-<table style="width:100%;border-collapse:collapse;font-size:.9rem;">
-<tr style="background:var(--bg);"><th style="padding:10px;text-align:left;">比较项</th><th style="padding:10px;text-align:left;">物理变化</th><th style="padding:10px;text-align:left;">化学变化</th></tr>
-<tr><td style="padding:10px;">定义</td><td>没有生成新物质的变化</td><td>生成新物质的变化</td></tr>
-<tr><td style="padding:10px;">特征</td><td>形态、状态等改变</td><td>有新物质生成</td></tr>
-<tr><td style="padding:10px;">伴随现象</td><td>形状改变、状态变化</td><td>发光、放热、变色、产生气体、生成沉淀</td></tr>
-<tr><td style="padding:10px;">举例</td><td>水结成冰、玻璃破碎</td><td>蜡烛燃烧、铁生锈</td></tr>
-<tr><td style="padding:10px;">本质区别</td><td colspan="2" style="text-align:center;"><strong>是否有新物质生成</strong></td></tr>
-</table></div>
-
-<div class="kp chemistry"><h3>物理性质与化学性质</h3>
-<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-<li><strong>物理性质</strong>：不需要发生化学变化就表现出来的性质。如颜色、状态、气味、熔点、沸点、硬度、密度、溶解性、导电性等。</li>
-<li><strong>化学性质</strong>：物质在化学变化中表现出来的性质。如可燃性、氧化性、还原性、酸碱性、稳定性等。</li></ul></div>
-
-<h2 id="sec1-3">1.3 怎样学习研究化学</h2>
-<div class="keypoints-grid">
-<div class="kp chemistry"><h3>常用仪器</h3>
-<p>可直接加热：<strong>试管、蒸发皿、燃烧匙</strong></p>
-<p>需垫石棉网加热：<strong>烧杯、烧瓶、锥形瓶</strong></p>
-<p>不能加热：<strong>量筒、集气瓶、水槽</strong></p>
-<p>计量仪器：<strong>托盘天平</strong>（称质量）、<strong>量筒</strong>（量体积）</p>
-<p>加热仪器：<strong>酒精灯</strong></p></div>
-<div class="kp chemistry"><h3>基本操作</h3>
-<p><strong>药品取用</strong>：固体用<strong>药匙</strong>，液体用<strong>滴管</strong>或直接倾倒。遵循"三不"原则。</p>
-<p><strong>加热</strong>：用酒精灯<strong>外焰</strong>加热。试管内液体不超过容积1/3，管口不对人。</p>
-<p><strong>过滤</strong>：分离不溶性固体和液体。"一贴二低三靠"。</p>
-<p><strong>蒸发</strong>：用蒸发皿，玻璃棒搅拌，有大量晶体析出时停止加热。</p></div>
-<div class="kp chemistry"><h3>化学用语</h3>
-<p><strong>元素符号</strong>：用拉丁文名称缩写表示元素，如H（氢）、O（氧）、Fe（铁）。</p>
-<p><strong>化学式</strong>：用元素符号表示物质组成的式子。如H₂O、CO₂、NaCl。</p>
-<p><strong>化学方程式</strong>：用化学式表示化学反应的式子。</p>
-<span class="formula">2H₂ + O₂ → 2H₂O</span></div>
+<div class="kp chemistry"><h3>什么是化学</h3>
+<p><span class="c-blue">化学</span>是在<span class="c-red">分子、原子层次</span>上研究物质的<span class="c-purple">性质、组成、结构</span>与<span class="c-green">变化规律</span>的科学。</p>
+<p>化学不是孤立的学科——它与<span class="c-orange">物理学、生物学、材料科学、环境科学、医学</span>等紧密交叉，是现代科学体系的核心支柱之一。</p>
 </div>
 
-<h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+<div class="kp chemistry"><h3>化学发展简史</h3>
+<table class="chem-table">
+<tr><th>时期</th><th>代表人物</th><th>主要贡献</th></tr>
+<tr><td>古代</td><td>炼丹家、炼金术士</td><td>积累了物质转化的经验，发明了蒸馏、升华等操作</td></tr>
+<tr><td>1661年</td><td><span class="c-blue">波义耳 (Boyle)</span></td><td>提出<span class="c-red">元素</span>的科学概念，化学成为独立学科</td></tr>
+<tr><td>1777年</td><td><span class="c-blue">拉瓦锡 (Lavoisier)</span></td><td>推翻燃素说，建立<span class="c-green">氧化学说</span>，提出质量守恒定律</td></tr>
+<tr><td>1803年</td><td><span class="c-blue">道尔顿 (Dalton)</span></td><td>提出<span class="c-purple">原子论</span>，为近代化学奠定基础</td></tr>
+<tr><td>1869年</td><td><span class="c-blue">门捷列夫 (Mendeleev)</span></td><td>发现<span class="c-orange">元素周期律</span>，编制第一张元素周期表</td></tr>
+</table>
+</div>
+
+<div class="kp chemistry"><h3>化学对人类的巨大贡献</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>🌾 农业</h3>
+<p>合成<span class="c-green">氨</span>（哈伯法）→ 氮肥 → 养活了全球一半人口</p>
+<p><span class="c-orange">农药</span>：保护农作物免受害虫和病害</p>
+<p><span class="c-purple">植物生长调节剂</span>：提高产量和品质</p></div>
+<div class="kp chemistry"><h3>💊 医药</h3>
+<p>合成药物：<span class="c-red">阿司匹林</span>（解热镇痛）、<span class="c-blue">青霉素</span>（抗生素）</p>
+<p>疫苗佐剂、药物缓释技术</p>
+<p><span class="c-green">青蒿素</span>：屠呦呦从黄花蒿中提取，获诺贝尔奖</p></div>
+<div class="kp chemistry"><h3>🔋 能源</h3>
+<p>石油炼制的<span class="c-orange">催化裂化</span> → 汽油、柴油</p>
+<p><span class="c-blue">锂电池</span>：手机、电动车的心脏</p>
+<p><span class="c-green">氢能</span>：清洁能源的未来方向</p></div>
+<div class="kp chemistry"><h3>🏗️ 材料</h3>
+<p><span class="c-purple">塑料</span>（聚乙烯、聚氯乙烯）</p>
+<p><span class="c-red">合成纤维</span>（尼龙、涤纶）</p>
+<p><span class="c-blue">合金</span>（不锈钢、铝合金、钛合金）</p>
+<p><span class="c-green">半导体</span>（硅芯片）</p></div>
+</div>
+</div>
+
+<div class="kp chemistry"><h3>绿色化学 — 化学的未来</h3>
+<p><span class="c-green">绿色化学</span>（Green Chemistry）的核心理念：从<span class="c-red">源头上</span>消除污染，实现<span class="c-purple">"零排放"</span>。</p>
+<div class="info-box">
+<strong>💡 绿色化学的12条原则（核心5条）：</strong><br>
+① 防止污染优于治理污染<br>
+② 提高原子经济性（让反应物中的原子尽可能进入产物）<br>
+③ 使用无毒无害的原料和溶剂<br>
+④ 设计可降解的产品<br>
+⑤ 使用催化剂而非化学计量试剂
+</div>
+<p style="margin-top:8px;">例如：用<span class="c-blue">二氧化碳</span>代替有毒的<span class="c-red">光气</span>生产聚碳酸酯塑料，就是一种绿色化学工艺。</p>
+</div>
+
+<!-- ====== 1.2 ====== -->
+<h2 data-section="s2" id="sec1-2" style="margin:28px 0 16px;">1.2 化学研究些什么</h2>
+
+<div class="kp chemistry"><h3>物理变化 vs 化学变化</h3>
+<table class="chem-table">
+<tr><th>比较项</th><th><span class="c-blue">物理变化</span></th><th><span class="c-red">化学变化</span></th></tr>
+<tr><td><strong>定义</strong></td><td>没有生成<span class="c-blue">新物质</span>的变化</td><td><span class="c-red">有新物质生成</span>的变化</td></tr>
+<tr><td><strong>特征</strong></td><td>形态、状态等物理属性的改变</td><td>分子种类改变，原子重新组合</td></tr>
+<tr><td><strong>伴随现象</strong></td><td>形状改变、状态变化（熔化、凝固、汽化）</td><td><span class="c-red">发光</span>、<span class="c-orange">放热/吸热</span>、<span class="c-green">变色</span>、<span class="c-purple">产生气体</span>、<span class="c-blue">生成沉淀</span></td></tr>
+<tr><td><strong>举例</strong></td><td>水结成冰、玻璃破碎、铁块拉成铁丝</td><td>蜡烛燃烧、铁生锈、食物腐败、酿酒</td></tr>
+<tr><td><strong>本质区别</strong></td><td colspan="2" style="text-align:center;background:#fef2f2;"><span class="c-red">是否有新物质生成</span></td></tr>
+<tr><td><strong>联系</strong></td><td colspan="2" style="text-align:center;">化学变化中<span class="c-orange">一定伴随</span>物理变化（如蜡烛燃烧伴随熔化），物理变化中<span class="c-blue">不一定</span>有化学变化</td></tr>
+</table>
+</div>
+
+<div class="kp chemistry"><h3>🧪 典型化学变化实例详解</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>🕯️ 蜡烛燃烧</h3>
+<p>化学变化：石蜡 + O₂ → CO₂ + H₂O</p>
+<p>伴随现象：<span class="c-orange">发光</span>、<span class="c-red">放热</span></p>
+<p>物理变化：石蜡<span class="c-blue">熔化</span>（固态→液态）</p>
+<p>检验产物：干冷烧杯壁出现<span class="c-purple">水雾</span>；涂有澄清石灰水的烧杯变<span class="c-green">浑浊</span></p></div>
+<div class="kp chemistry"><h3>🔩 铁钉生锈</h3>
+<p>化学变化：Fe + O₂ + H₂O → Fe₂O₃·xH₂O</p>
+<p>伴随现象：<span class="c-red">颜色改变</span>（银白→红棕）</p>
+<p>条件：<span class="c-orange">同时接触氧气和水</span></p>
+<p>防锈：涂油、刷漆、镀层、制成合金</p></div>
+</div>
+</div>
+
+<div class="kp chemistry"><h3>物理性质 vs 化学性质</h3>
+<table class="chem-table">
+<tr><th>类别</th><th>定义</th><th>包含内容</th><th>举例</th></tr>
+<tr>
+  <td><span class="c-blue">物理性质</span></td>
+  <td>不需要发生化学变化就表现出来的性质</td>
+  <td>颜色、状态、气味、熔点、沸点、<br>硬度、密度、溶解性、导电性、<br>导热性、延展性、挥发性</td>
+  <td>铜是<span class="c-red">紫红色</span>固体；<br>水的沸点是<span class="c-blue">100°C</span>；<br>氯化钠<span class="c-green">易溶于水</span></td>
+</tr>
+<tr>
+  <td><span class="c-green">化学性质</span></td>
+  <td>物质在化学变化中表现出来的性质</td>
+  <td>可燃性、助燃性、氧化性、<br>还原性、酸碱性、稳定性、<br>毒性、腐蚀性</td>
+  <td>氢气具有<span class="c-red">可燃性</span>；<br>氧气具有<span class="c-blue">助燃性</span>；<br>浓硫酸具有<span class="c-orange">腐蚀性</span></td>
+</tr>
+</table>
+<div class="danger-box" style="margin-top:12px;">
+<strong>⚠️ 易错提醒：</strong>"发光放热"<span class="c-red">不一定是</span>化学变化！电灯发光是<span class="c-blue">物理变化</span>（钨丝通电发热发光，没有生成新物质）。判断依据：<span class="c-red">是否有新物质生成</span>。
+</div>
+</div>
+
+<!-- ====== 1.3 ====== -->
+<h2 data-section="s3" id="sec1-3" style="margin:28px 0 16px;">1.3 怎样学习研究化学</h2>
+
+<div class="kp chemistry"><h3>🔬 常用实验仪器</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>🔥 加热类</h3>
+<p><span class="c-red">可直接加热</span>：<strong>试管</strong>、<strong>蒸发皿</strong>、<strong>燃烧匙</strong>、<strong>坩埚</strong></p>
+<p><span class="c-orange">需垫石棉网</span>：<strong>烧杯</strong>、<strong>烧瓶</strong>、<strong>锥形瓶</strong></p>
+<p><span class="c-blue">不能加热</span>：<strong>量筒</strong>、<strong>集气瓶</strong>、<strong>水槽</strong>、<strong>漏斗</strong></p>
+<p>加热仪器：<span class="c-purple">酒精灯</span>（外焰温度最高，约 500°C）</p></div>
+<div class="kp chemistry"><h3>⚖️ 计量类</h3>
+<p><strong>托盘天平</strong>：称量固体质量（精确到 0.1g）</p>
+<p><strong>量筒</strong>：量取液体体积</p>
+<p><span class="c-red">读数时视线与凹液面最低处齐平</span></p>
+<p><strong>温度计</strong>：测量温度</p>
+<p><strong>pH 试纸</strong>：测溶液酸碱度</p></div>
+<div class="kp chemistry"><h3>🧴 容器类</h3>
+<p><strong>试剂瓶</strong>：存放药品（广口瓶装固体，细口瓶装液体）</p>
+<p><strong>集气瓶</strong>：收集气体</p>
+<p><strong>滴瓶</strong>：盛放少量液体试剂</p>
+<p><strong>干燥器</strong>：保存干燥物品</p></div>
+<div class="kp chemistry"><h3>🔧 辅助类</h3>
+<p><strong>铁架台</strong>+铁圈/铁夹：固定和支持仪器</p>
+<p><strong>漏斗</strong>：过滤或加液</p>
+<p><strong>玻璃棒</strong>：搅拌、引流、转移</p>
+<p><strong>药匙</strong>：取用粉末状固体</p>
+<p><strong>胶头滴管</strong>：滴加少量液体</p></div>
+</div>
+</div>
+
+<div class="kp chemistry"><h3>📐 基本实验操作规范</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>💊 药品取用</h3>
+<p><span class="c-red">"三不"原则</span>：不<strong>用手</strong>接触药品、不<strong>用鼻</strong>凑近闻、不<strong>用口</strong>尝味道</p>
+<p>固体粉末：<span class="c-blue">药匙</span>或纸槽，"一斜二送三直立"</p>
+<p>块状固体：<span class="c-green">镊子</span>夹取，"一横二放三慢竖"</p>
+<p>液体：<span class="c-purple">倾倒法</span>（标签向手心、瓶口紧挨、瓶塞倒放）或<span class="c-orange">滴管</span>（垂直悬空、不伸入试管）</p></div>
+<div class="kp chemistry"><h3>🔬 物质加热</h3>
+<p>用酒精灯<span class="c-red">外焰</span>加热（温度最高）</p>
+<p>试管内液体不超过容积的<span class="c-orange">1/3</span></p>
+<p>试管口<span class="c-red">不对着人</span></p>
+<p>先<span class="c-blue">预热</span>（来回移动），再集中加热</p>
+<p>热的玻璃仪器<span class="c-purple">不能立即用冷水冲洗</span></p></div>
+<div class="kp chemistry"><h3>🔍 过滤操作</h3>
+<p>目的：分离<span class="c-blue">不溶性固体</span>和液体</p>
+<p><span class="c-red">"一贴二低三靠"</span>：</p>
+<p>①滤纸紧贴漏斗内壁</p>
+<p>②滤纸边缘低于漏斗口，液面低于滤纸边缘</p>
+<p>③烧杯嘴靠玻璃棒、玻璃棒靠三层滤纸、漏斗下端靠烧杯内壁</p></div>
+<div class="kp chemistry"><h3>🧂 蒸发结晶</h3>
+<p>用<span class="c-blue">蒸发皿</span>，放在铁圈上加热</p>
+<p>用<span class="c-green">玻璃棒</span>不断搅拌（防止液滴飞溅）</p>
+<p>当出现<span class="c-orange">大量晶体</span>时<span class="c-red">停止加热</span>，用余热蒸干</p>
+<p>热的蒸发皿用<span class="c-purple">坩埚钳</span>取下</p></div>
+</div>
+</div>
+
+<div class="kp chemistry"><h3>📝 化学用语入门</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>元素符号</h3>
+<p>用拉丁文名称缩写表示元素</p>
+<p>书写规则：<span class="c-red">第一个字母大写，第二个字母小写</span></p>
+<p>例：<span class="c-blue">H</span>（氢）、<span class="c-blue">O</span>（氧）、<span class="c-blue">C</span>（碳）、<span class="c-blue">N</span>（氮）</p>
+<p><span class="c-blue">Na</span>（钠）、<span class="c-blue">Fe</span>（铁）、<span class="c-blue">Cu</span>（铜）</p>
+<p>常见错误：<span class="c-red">CO 不是 Co</span>（一氧化碳 vs 钴元素）</p></div>
+<div class="kp chemistry"><h3>化学式</h3>
+<p>用元素符号表示<span class="c-green">物质组成</span>的式子</p>
+<p>宏观意义：表示一种<span class="c-purple">物质</span>及其<span class="c-orange">元素组成</span></p>
+<p>微观意义：表示该物质的<span class="c-blue">一个分子</span>及其<span class="c-red">原子构成</span></p>
+<p>如 H₂O 表示：水、水由氢氧元素组成、一个水分子、一个水分子含 2个H + 1个O</p></div>
+<div class="kp chemistry"><h3>化学方程式</h3>
+<p>用化学式表示<span class="c-red">化学反应</span>的式子</p>
+<p>以<span class="c-green">客观事实</span>为基础，遵循<span class="c-purple">质量守恒定律</span></p>
+<span class="formula">2H₂ + O₂ —点燃→ 2H₂O</span>
+<p style="margin-top:8px;font-size:.85rem;">读法：氢气和氧气在点燃条件下反应生成水</p></div>
+</div>
+</div>
+
+<!-- ====== 1.4 新增 ====== -->
+<h2 data-section="s4" id="sec1-4" style="margin:28px 0 16px;">1.4 实验室安全与意外处理</h2>
+
+<div class="kp chemistry"><h3>🚨 实验室安全规则</h3>
+<div class="danger-box">
+<strong>⚠️ 绝对禁止的行为：</strong><br>
+• <span class="c-red">禁止在实验室饮食、喝水</span><br>
+• <span class="c-red">禁止将药品带出实验室</span><br>
+• <span class="c-red">禁止用嘴吹灭酒精灯</span>（用灯帽盖灭）<br>
+• <span class="c-red">禁止向燃着的酒精灯内添加酒精</span><br>
+• <span class="c-red">禁止将水倒入浓硫酸中</span>（应酸入水、沿器壁、不断搅拌）
+</div>
+</div>
+
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>🔥 酒精灯意外</h3>
+<p>酒精洒出着火：<span class="c-red">用湿抹布盖灭</span></p>
+<p>衣物着火：<span class="c-orange">就地打滚</span>或用灭火器</p>
+<p>禁止用水灭火（酒精比水轻，浮在水面继续燃烧）</p></div>
+<div class="kp chemistry"><h3>🧪 酸碱灼伤</h3>
+<p>酸溅到皮肤：先用<span class="c-blue">干布擦</span>，再用<span class="c-green">大量水冲洗</span>，最后涂<span class="c-purple">3%~5% NaHCO₃溶液</span></p>
+<p>碱溅到皮肤：用<span class="c-blue">大量水冲洗</span>，再涂<span class="c-orange">硼酸溶液</span></p></div>
+<div class="kp chemistry"><h3>💨 有毒气体</h3>
+<p>闻到刺激性气味：<span class="c-red">立即开窗通风</span></p>
+<p>做有毒气体实验：必须在<span class="c-green">通风橱</span>中进行</p>
+<p>闻气体方法：<span class="c-blue">扇闻法</span>（用手轻轻扇动）</p></div>
+<div class="kp chemistry"><h3>🔪 割伤处理</h3>
+<p>玻璃割伤：先取出玻璃碎片</p>
+<p>用<span class="c-purple">双氧水</span>清洗伤口</p>
+<p>涂<span class="c-orange">碘酒</span>消毒，贴创可贴</p>
+<p>严重时立即就医</p></div>
+</div>
+
+<!-- ====== 练习题 ====== -->
+<h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
 <div class="exercise"><div class="question"><span class="q-num">1</span>化学变化的本质特征是____。</div>
 <div class="options">
 <label><input type="radio" name="q1" value="A">A. 有发光发热现象</label><label><input type="radio" name="q1" value="B">B. 有新物质生成</label>
 <label><input type="radio" name="q1" value="C">C. 状态发生改变</label><label><input type="radio" name="q1" value="D">D. 颜色发生变化</label></div>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1" data-correct="B">✅ B。化学变化的本质特征是有新物质生成。发光、变色等是伴随现象，不是本质。</div></div>
+<div class="answer" id="answer-1" data-correct="B">✅ B。化学变化的本质特征是有<span class="c-red">新物质生成</span>。发光、变色等是伴随现象，不是本质。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">2</span>下列属于化学变化的是____。</div>
 <div class="options">
 <label><input type="radio" name="q2" value="A">A. 冰雪融化</label><label><input type="radio" name="q2" value="B">B. 铁生锈</label>
 <label><input type="radio" name="q2" value="C">C. 玻璃破碎</label><label><input type="radio" name="q2" value="D">D. 湿衣服晾干</label></div>
 <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-<div class="answer" id="answer-2" data-correct="B">✅ B。铁生锈生成铁锈（新物质），是化学变化。其他都是物理变化。</div></div>
+<div class="answer" id="answer-2" data-correct="B">✅ B。铁生锈生成了铁锈（新物质 Fe₂O₃·xH₂O），是化学变化。其他都属于物理变化。</div></div>
 
-<div class="exercise"><div class="question"><span class="q-num">3</span>可以直接加热的仪器是____。</div>
+<div class="exercise"><div class="question"><span class="q-num">3</span>可以直接加热的玻璃仪器是____。</div>
 <div class="options">
 <label><input type="radio" name="q3" value="A">A. 烧杯</label><label><input type="radio" name="q3" value="B">B. 试管</label>
 <label><input type="radio" name="q3" value="C">C. 量筒</label><label><input type="radio" name="q3" value="D">D. 集气瓶</label></div>
 <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-<div class="answer" id="answer-3" data-correct="B">✅ B。试管可直接加热。烧杯需垫石棉网，量筒和集气瓶不能加热。</div></div>
+<div class="answer" id="answer-3" data-correct="B">✅ B。试管可直接加热。烧杯需垫<span class="c-orange">石棉网</span>，量筒和集气瓶<span class="c-red">不能加热</span>。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">4</span>物质的下列性质中，属于化学性质的是____。</div>
 <div class="options">
 <label><input type="radio" name="q4" value="A">A. 颜色</label><label><input type="radio" name="q4" value="B">B. 密度</label>
 <label><input type="radio" name="q4" value="C">C. 可燃性</label><label><input type="radio" name="q4" value="D">D. 熔点</label></div>
 <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
-<div class="answer" id="answer-4" data-correct="C">✅ C。可燃性是物质在化学变化中表现的性质，属于化学性质。</div></div>
+<div class="answer" id="answer-4" data-correct="C">✅ C。可燃性是物质在燃烧（化学变化）中表现出来的<span class="c-green">化学性质</span>。其他三项都是物理性质。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>酒精灯的火焰中，温度最高的是____。</div>
+<div class="options">
+<label><input type="radio" name="q5" value="A">A. 内焰</label><label><input type="radio" name="q5" value="B">B. 外焰</label>
+<label><input type="radio" name="q5" value="C">C. 焰心</label><label><input type="radio" name="q5" value="D">D. 都一样</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="B">✅ B。酒精灯火焰分三层：<span class="c-red">外焰</span>（燃烧最充分，温度最高）> <span class="c-orange">内焰</span> > <span class="c-blue">焰心</span>。加热时用外焰。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>下列实验操作正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 用手直接取用固体药品</label>
+<label><input type="radio" name="q6" value="B">B. 将鼻孔凑近集气瓶口闻气体气味</label>
+<label><input type="radio" name="q6" value="C">C. 用嘴吹灭酒精灯</label>
+<label><input type="radio" name="q6" value="D">D. 用灯帽盖灭酒精灯</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="D">✅ D。酒精灯<span class="c-red">必须用灯帽盖灭</span>（隔绝空气），不能用嘴吹灭。A违反"三不"原则，B应用扇闻法。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>浓硫酸不慎溅到皮肤上，正确的处理方法是____。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. 立即用大量水冲洗，再涂 NaHCO₃ 溶液</label>
+<label><input type="radio" name="q7" value="B">B. 先用干布擦去，再用大量水冲洗，最后涂 NaHCO₃ 溶液</label>
+<label><input type="radio" name="q7" value="C">C. 立即用 NaOH 溶液中和</label>
+<label><input type="radio" name="q7" value="D">D. 用湿抹布擦掉即可</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="B">✅ B。浓硫酸溶于水<span class="c-red">大量放热</span>，直接用水冲洗会灼伤。正确的顺序是：<span class="c-orange">干布擦 → 大量水冲 → NaHCO₃溶液</span>。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>过滤操作中"一贴二低三靠"中的"一贴"指的是____。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 烧杯嘴紧贴玻璃棒</label>
+<label><input type="radio" name="q8" value="B">B. 滤纸紧贴漏斗内壁</label>
+<label><input type="radio" name="q8" value="C">C. 漏斗下端紧贴烧杯内壁</label>
+<label><input type="radio" name="q8" value="D">D. 玻璃棒紧贴滤纸</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="B">✅ B。"一贴"：<span class="c-blue">滤纸紧贴漏斗内壁</span>（不留气泡，加快过滤）。"二低"：滤纸边缘低于漏斗口，液面低于滤纸边缘。"三靠"：烧杯嘴靠玻璃棒、玻璃棒靠三层滤纸处、漏斗下端靠烧杯内壁。</div></div>
 </main></div>
 <script src="../assets/js/common.js"></script>
 </body>

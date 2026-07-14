@@ -3,26 +3,59 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>第3章 物质构成的奥秘 - 沪教版化学</title>
 <link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.c-red { color:#dc2626; font-weight:600; }
+.c-blue { color:#2563eb; font-weight:600; }
+.c-green { color:#059669; font-weight:600; }
+.c-orange { color:#d97706; font-weight:600; }
+.c-purple { color:#7c3aed; font-weight:600; }
+.c-pink { color:#db2777; font-weight:600; }
+.c-teal { color:#0d9488; font-weight:600; }
+.highlight-box {
+  background:linear-gradient(135deg, #fef3c7, #fde68a);
+  border-left:4px solid #f59e0b; padding:14px 18px; border-radius:8px;
+  margin:12px 0; font-size:.92rem; line-height:1.8;
+}
+.danger-box {
+  background:linear-gradient(135deg, #fef2f2, #fee2e2);
+  border-left:4px solid #ef4444; padding:14px 18px; border-radius:8px;
+  margin:12px 0; font-size:.92rem; line-height:1.8;
+}
+.info-box {
+  background:linear-gradient(135deg, #eff6ff, #dbeafe);
+  border-left:4px solid #3b82f6; padding:14px 18px; border-radius:8px;
+  margin:12px 0; font-size:.92rem; line-height:1.8;
+}
+table.chem-table { width:100%; border-collapse:collapse; font-size:.9rem; margin:10px 0; }
+table.chem-table th { background:#f0fdf4; padding:10px 12px; text-align:left; color:#065f46; }
+table.chem-table td { padding:10px 12px; border-bottom:1px solid #e2e8f0; }
+table.chem-table tr:hover td { background:#f8fafc; }
+</style>
 </head>
 <body>
 <div class="layout">
 <aside class="sidebar"><h3>🧪 初中化学</h3><ul class="chapter-list">
 <li><a href="ch01_intro.html"><span class="ch-num">1</span>开启化学之门</a></li>
 <li><a href="ch02_substances.html"><span class="ch-num">2</span>身边的化学物质</a></li>
-<li><a href="ch03_matter.html" class="active"><span class="ch-num">3</span>物质构成的奥秘</a>
-<div class="subsections"><a href="#sec3-1">3.1 构成物质的基本微粒</a><a href="#sec3-2">3.2 化学元素</a><a href="#sec3-3">3.3 物质的组成</a><a href="#exercises">练习题</a></div></li>
+<li><a href="ch03_matter.html" class="active" data-section="s1"><span class="ch-num">3</span>物质构成的奥秘</a>
+<div class="subsections">
+  <a href="#sec3-1" data-section="s1">3.1 构成物质的基本微粒</a>
+  <a href="#sec3-2" data-section="s2">3.2 原子结构揭秘</a>
+  <a href="#sec3-3" data-section="s3">3.3 组成物质的化学元素</a>
+  <a href="#sec3-4" data-section="s4">3.4 化学式与化合价</a>
+  <a href="#sec3-5" data-section="s5">3.5 有关化学式的计算</a>
+  <a href="#exercises" data-section="ex">练习题</a>
+</div></li>
 </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
-	    <a href="index.html" class="back-subject">📂 化学目录</a>
+        <a href="index.html" class="back-subject">📂 化学目录</a>
 </aside>
 <main class="main">
   <div class="topbar">
     <div class="breadcrumb">
-      <a href="../index.html">🏠 首页</a>
-      <span>›</span>
-      <a href="index.html">📂 初中化学</a>
-      <span>›</span>
+      <a href="../index.html">🏠 首页</a><span>›</span>
+      <a href="index.html">📂 初中化学</a><span>›</span>
       <span>第3章 物质构成的奥秘</span>
     </div>
     <div class="spacer"></div>
@@ -34,79 +67,370 @@
     </div>
   </div>
   <div class="page-title">第3章 物质构成的奥秘</div>
+
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-<li>了解分子、原子、离子的概念</li><li>掌握常见元素的符号和名称</li><li>了解元素周期表的基本结构</li><li>学会书写化学式，计算化合价和相对分子质量</li></ul></div>
+<li>理解<span class="c-blue">分子</span>、<span class="c-red">原子</span>、<span class="c-green">离子</span>的概念及其区别与联系</li>
+<li>了解原子结构模型的发展历程，掌握<span class="c-purple">原子核外电子排布</span>规律</li>
+<li>认识<span class="c-orange">元素</span>的概念，了解元素周期表的结构</li>
+<li>掌握<span class="c-pink">化合价</span>规则，能正确书写化学式</li>
+<li>学会计算<span class="c-teal">相对分子质量</span>、元素质量比和元素质量分数</li>
+</ul></div>
 
-<h2 id="sec3-1">3.1 构成物质的基本微粒</h2>
-<div class="keypoints-grid">
-<div class="kp chemistry"><h3>分子</h3>
-<p><strong>分子</strong>是保持物质<strong>化学性质</strong>的最小粒子。</p>
-<p>分子的特性：①质量体积都很小 ②不断运动（温度越高运动越快）③分子间有间隔 ④同种分子性质相同，不同种分子性质不同。</p>
-<p>由分子构成的物质：水(H₂O)、二氧化碳(CO₂)、氧气(O₂)等。</p></div>
-<div class="kp chemistry"><h3>原子</h3>
-<p><strong>原子</strong>是<strong>化学变化</strong>中的最小粒子。</p>
-<p>原子由<strong>原子核</strong>（质子+中子）和<strong>核外电子</strong>构成。</p>
-<p>核电荷数 = 质子数 = 核外电子数（原子不显电性）。</p>
-<p><strong>相对原子质量</strong>：以一种碳原子质量的1/12为标准，其他原子质量与它的比值。</p>
-<p>相对原子质量 ≈ 质子数 + 中子数。</p></div>
-<div class="kp chemistry"><h3>离子</h3>
-<p>带电的<strong>原子或原子团</strong>叫做<strong>离子</strong>。</p>
-<p><strong>阳离子</strong>：原子失去电子，带正电。如Na⁺、Mg²⁺。</p>
-<p><strong>阴离子</strong>：原子得到电子，带负电。如Cl⁻、O²⁻。</p>
-<p>离子化合物：由阴阳离子相互作用形成的化合物。如NaCl。</p></div>
+<!-- ====== 3.1 微粒 ====== -->
+<h2 data-section="s1" id="sec3-1" style="margin:28px 0 16px;">3.1 构成物质的基本微粒</h2>
+
+<div class="kp chemistry"><h3>三种微粒总览</h3>
+<table class="chem-table">
+<tr><th>微粒</th><th>定义</th><th>带电情况</th><th>构成的物质举例</th></tr>
+<tr>
+  <td><span class="c-blue">分子</span></td>
+  <td>保持物质<span class="c-red">化学性质</span>的最小粒子</td>
+  <td><span class="c-green">不显电性</span></td>
+  <td>H₂O、CO₂、O₂、N₂、NH₃ 等<span class="c-purple">共价化合物</span>和非金属单质</td>
+</tr>
+<tr>
+  <td><span class="c-red">原子</span></td>
+  <td><span class="c-blue">化学变化</span>中的最小粒子</td>
+  <td><span class="c-green">不显电性</span></td>
+  <td>Fe、Cu、C、Si、He 等<span class="c-orange">金属单质</span>、稀有气体和部分非金属</td>
+</tr>
+<tr>
+  <td><span class="c-purple">离子</span></td>
+  <td>带电的<span class="c-red">原子</span>或<span class="c-blue">原子团</span></td>
+  <td><span class="c-orange">带正电或负电</span></td>
+  <td>NaCl、KNO₃、NaOH 等<span class="c-pink">离子化合物</span></td>
+</tr>
+</table>
+<div class="highlight-box">
+<strong>💡 三者关系：</strong>分子由原子构成，原子得失电子变成离子。在化学变化中，<span class="c-red">分子可分</span>（分裂为原子），<span class="c-blue">原子不可分</span>（原子重新组合成新分子）。
+</div>
 </div>
 
-<h2 id="sec3-2">3.2 组成物质的化学元素</h2>
-<div class="kp chemistry"><h3>元素</h3>
-<p><strong>元素</strong>：具有相同<strong>质子数</strong>（核电荷数）的一类原子的总称。</p>
-<p>地壳中含量前四位：<strong>氧(O) > 硅(Si) > 铝(Al) > 铁(Fe)</strong>。</p>
-<p>人体中含量最多的是<strong>氧(O)</strong>，其次是碳、氢。</p>
-<p>空气中含量最多的是<strong>氮(N)</strong>，其次是氧。</p></div>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>🔵 分子</h3>
+<p><strong>定义：</strong><span class="c-blue">分子</span>是保持物质<span class="c-red">化学性质</span>的最小粒子。</p>
+<p><strong>分子的特性：</strong></p>
+<p>① <span class="c-orange">质量和体积都很小</span></p>
+<p>② 分子在<span class="c-green">不断运动</span>（温度越高，运动越快）</p>
+<p>③ 分子间有<span class="c-purple">间隔</span>（固<液<气）</p>
+<p>④ 同种分子性质<span class="c-blue">相同</span>，不同种分子性质<span class="c-red">不同</span></p>
+<p><strong>实例：</strong>闻到花香（分子运动）；热胀冷缩（分子间间隔改变）；水蒸发是物理变化（水分子本身没变）</p></div>
+<div class="kp chemistry"><h3>🔴 原子</h3>
+<p><strong>定义：</strong><span class="c-red">原子</span>是<span class="c-blue">化学变化</span>中的最小粒子。</p>
+<p><strong>原子的特性：</strong></p>
+<p>① 质量和体积都很小</p>
+<p>② 原子在<span class="c-green">不断运动</span></p>
+<p>③ 原子间有<span class="c-purple">间隔</span></p>
+<p>④ 在化学变化中<span class="c-red">不可再分</span></p>
+<p><strong>注意：</strong>原子在化学变化中不可分，但在<span class="c-orange">核反应</span>中可继续分裂。</p></div>
+<div class="kp chemistry"><h3>🟣 离子</h3>
+<p><strong>定义：</strong>带电的<span class="c-red">原子</span>或<span class="c-blue">原子团</span>叫做<span class="c-purple">离子</span>。</p>
+<p><strong>分类：</strong></p>
+<p>① <span class="c-red">阳离子</span>：原子<span class="c-orange">失去电子</span>，带正电。如 Na⁺、Mg²⁺、Al³⁺、NH₄⁺</p>
+<p>② <span class="c-blue">阴离子</span>：原子<span class="c-green">得到电子</span>，带负电。如 Cl⁻、O²⁻、SO₄²⁻、OH⁻</p>
+<p><strong>离子化合物：</strong>由<span class="c-red">阳离子</span>和<span class="c-blue">阴离子</span>通过静电作用形成的化合物。如 NaCl、CaO</p></div>
+</div>
+
+<div class="kp chemistry"><h3>分子、原子、离子的区别与联系</h3>
+<div class="info-box">
+<strong>🔗 联系：</strong><br>
+<span class="c-blue">原子</span> —（得失电子）→ <span class="c-purple">离子</span><br>
+<span class="c-blue">原子</span> —（结合）→ <span class="c-red">分子</span><br>
+<span class="c-red">分子</span> —（分裂）→ <span class="c-blue">原子</span> —（得失电子）→ <span class="c-purple">离子</span>
+</div>
+<div class="danger-box" style="margin-top:8px;">
+<strong>⚠️ 易错提醒：</strong>分子<span class="c-red">不是</span>保持物质性质的唯一粒子！由原子直接构成的物质（如铁、金刚石），其化学性质由<span class="c-blue">原子</span>保持。由离子构成的物质（如 NaCl），其化学性质由<span class="c-purple">离子</span>保持。
+</div>
+</div>
+
+<!-- ====== 3.2 原子结构 ====== -->
+<h2 data-section="s2" id="sec3-2" style="margin:28px 0 16px;">3.2 原子结构揭秘</h2>
+
+<div class="kp chemistry"><h3>原子结构模型的发展</h3>
+<table class="chem-table">
+<tr><th>模型</th><th>提出者</th><th>核心观点</th><th>贡献与局限</th></tr>
+<tr>
+  <td><span class="c-blue">实心球模型</span></td>
+  <td>道尔顿 (1803)</td>
+  <td>原子是不可再分的实心球体</td>
+  <td>首创原子论，但未涉及原子内部结构</td>
+</tr>
+<tr>
+  <td><span class="c-orange">葡萄干布丁模型</span></td>
+  <td>汤姆生 (1897)</td>
+  <td>发现<span class="c-red">电子</span>；原子是均匀带正电的球体，电子镶嵌其中</td>
+  <td>发现电子，但结构描述有误</td>
+</tr>
+<tr>
+  <td><span class="c-red">行星模型（核式结构）</span></td>
+  <td>卢瑟福 (1911)</td>
+  <td>α粒子散射实验→原子中心有<span class="c-red">原子核</span>，电子绕核运动</td>
+  <td>提出原子核概念，但未解释电子分层</td>
+</tr>
+<tr>
+  <td><span class="c-purple">分层模型</span></td>
+  <td>玻尔 (1913)</td>
+  <td>电子在<span class="c-green">特定轨道</span>上分层排布</td>
+  <td>解释了光谱，但轨道概念过于简单</td>
+</tr>
+<tr>
+  <td><span class="c-green">电子云模型</span></td>
+  <td>量子力学 (1926后)</td>
+  <td>电子在核外空间<span class="c-blue">概率分布</span>（电子云）</td>
+  <td>现代公认模型</td>
+</tr>
+</table>
+</div>
+
+<div class="kp chemistry"><h3>原子的构成</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>结构示意</h3>
+<p style="text-align:center;line-height:2.5;">
+<span class="c-red">原子</span><br>
+├── <span class="c-purple">原子核</span>（位于中心，体积极小，质量极大）<br>
+│   ├── <span class="c-blue">质子</span>：带<span class="c-red">正电</span>，相对质量 ≈ 1<br>
+│   └── <span class="c-green">中子</span>：<span class="c-orange">不带电</span>，相对质量 ≈ 1<br>
+└── <span class="c-orange">核外电子</span>：带<span class="c-blue">负电</span>，相对质量 ≈ 1/1836
+</p></div>
+<div class="kp chemistry"><h3>三个等式</h3>
+<p><span class="c-red">核电荷数</span> = <span class="c-blue">质子数</span> = <span class="c-green">核外电子数</span></p>
+<p>（原子整体不显电性）</p>
+<p><span class="c-purple">原子序数</span> = 质子数</p>
+<p><span class="c-orange">相对原子质量</span> ≈ 质子数 + 中子数</p>
+<p style="margin-top:8px;font-size:.85rem;">电子质量极小（约质子的 1/1836），可忽略不计</p></div>
+</div>
+</div>
+
+<div class="kp chemistry"><h3>核外电子排布规律</h3>
+<p>电子在原子核外是<span class="c-blue">分层排布</span>的（能量低的离核近，能量高的离核远）。</p>
+<table class="chem-table">
+<tr><th>电子层</th><th>第一层（K）</th><th>第二层（L）</th><th>第三层（M）</th><th>第 n 层</th></tr>
+<tr><td>最多容纳电子数</td><td><span class="c-red">2</span></td><td><span class="c-blue">8</span></td><td><span class="c-green">8</span>（初中阶段）</td><td>2n²</td></tr>
+</table>
+<div class="highlight-box">
+<strong>💡 排布规则：</strong><br>
+① 电子先排满<span class="c-blue">能量低</span>的内层，再排外层<br>
+② 第一层最多 2 个，第二层最多 8 个<br>
+③ 最外层电子数<span class="c-red">不超过 8 个</span>（只有一个电子层时不超过 2 个）
+</div>
+<p style="margin-top:8px;"><strong>举例：</strong></p>
+<p>钠 Na（原子序数 11）：<span class="c-blue">2, 8, 1</span>（第一层2个，第二层8个，第三层1个）</p>
+<p>氯 Cl（原子序数 17）：<span class="c-green">2, 8, 7</span>（最外层7个电子，容易得1个电子变为 Cl⁻）</p>
+</div>
+
+<div class="kp chemistry"><h3>最外层电子数与化学性质</h3>
+<table class="chem-table">
+<tr><th>最外层电子数</th><th>元素类型</th><th>化学性质</th><th>举例</th></tr>
+<tr><td><span class="c-red">8（或 2）</span></td><td><span class="c-purple">稀有气体</span></td><td><span class="c-green">稳定</span>，不易发生反应</td><td>He(2)、Ne(8)、Ar(8)</td></tr>
+<tr><td><span class="c-orange">1~3</span></td><td><span class="c-blue">金属元素</span></td><td>易<span class="c-red">失去</span>电子，形成阳离子</td><td>Na(1)、Mg(2)、Al(3)</td></tr>
+<tr><td><span class="c-blue">4~7</span></td><td><span class="c-green">非金属元素</span></td><td>易<span class="c-blue">得到</span>电子，形成阴离子</td><td>O(6)、Cl(7)、N(5)</td></tr>
+</table>
+<div class="highlight-box">
+<strong>💡 核心规律：</strong>元素的化学性质主要取决于<span class="c-red">最外层电子数</span>。最外层电子数相同的元素，化学性质<span class="c-blue">相似</span>（如 F 和 Cl 都是 7 个，都是活泼非金属）。
+</div>
+</div>
+
+<!-- ====== 3.3 元素 ====== -->
+<h2 data-section="s3" id="sec3-3" style="margin:28px 0 16px;">3.3 组成物质的化学元素</h2>
+
+<div class="kp chemistry"><h3>元素的概念</h3>
+<p><span class="c-red">元素</span>：具有相同<span class="c-blue">质子数</span>（即核电荷数）的一类原子的总称。</p>
+<div class="info-box">
+<strong>🔍 关键理解：</strong><br>
+• 决定元素种类的是<span class="c-red">质子数</span>（不是中子数，也不是电子数）<br>
+• 质子数相同的原子和离子属于<span class="c-blue">同一种元素</span>（如 Na 和 Na⁺ 都是钠元素）<br>
+• 元素是<span class="c-green">宏观概念</span>，只讲种类，不讲个数（说"氧元素"，不说"一个氧元素"）
+</div>
+</div>
+
+<div class="kp chemistry"><h3>元素的分布</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>🌍 地壳中含量前五位</h3>
+<p>1. <span class="c-red">氧 O</span>（约 48.6%）</p>
+<p>2. <span class="c-blue">硅 Si</span>（约 26.4%）</p>
+<p>3. <span class="c-orange">铝 Al</span>（约 7.73%）</p>
+<p>4. <span class="c-green">铁 Fe</span>（约 4.75%）</p>
+<p>5. <span class="c-purple">钙 Ca</span>（约 3.45%）</p>
+<p style="margin-top:6px;font-size:.85rem;">Al 是含量最多的<span class="c-orange">金属</span>元素</p></div>
+<div class="kp chemistry"><h3>🧬 人体中含量前五位</h3>
+<p>1. <span class="c-red">氧 O</span>（约 65%）</p>
+<p>2. <span class="c-blue">碳 C</span>（约 18%）</p>
+<p>3. <span class="c-green">氢 H</span>（约 10%）</p>
+<p>4. <span class="c-purple">氮 N</span>（约 3%）</p>
+<p>5. <span class="c-orange">钙 Ca</span>（约 1.5%）</p>
+<p style="margin-top:6px;font-size:.85rem;">Ca 是含量最多的<span class="c-orange">金属</span>元素</p></div>
+<div class="kp chemistry"><h3>💨 空气中含量前两位</h3>
+<p>1. <span class="c-blue">氮 N</span>（约 78%）</p>
+<p>2. <span class="c-red">氧 O</span>（约 21%）</p>
+<p style="margin-top:6px;font-size:.85rem;">都是<span class="c-green">非金属</span>元素</p></div>
+</div>
+</div>
+
 <div class="kp chemistry"><h3>元素周期表</h3>
-<p>共有<strong>7个周期</strong>（横行）、<strong>16个族</strong>（纵列）。</p>
-<p>原子序数 = 质子数 = 核电荷数。</p>
-<p>元素分为：<strong>金属元素</strong>（如Na、Fe）、<strong>非金属元素</strong>（如O、C）、<strong>稀有气体元素</strong>（如He、Ne）。</p></div>
+<p>由<span class="c-blue">门捷列夫</span>于 1869 年发现。元素周期表是学习和研究化学的重要工具。</p>
+<p><strong>结构：</strong><span class="c-red">7 个周期</span>（横行）、<span class="c-purple">16 个族</span>（纵列，其中 8、9、10 三个纵列合称第VIII族）。</p>
+<p><span class="c-green">原子序数</span> = 质子数 = 核电荷数 = 核外电子数</p>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>元素分类</h3>
+<p><span class="c-blue">金属元素</span>：Na、Fe、Cu、Al、Ca 等（"钅"字旁，汞除外）</p>
+<p><span class="c-green">非金属元素</span>：O、C、N、S、P、Cl 等（"石""气"字旁）</p>
+<p><span class="c-purple">稀有气体元素</span>：He、Ne、Ar、Kr、Xe、Rn</p></div>
+<div class="kp chemistry"><h3>周期表规律</h3>
+<p>同周期：从左到右，<span class="c-red">金属性减弱</span>，<span class="c-blue">非金属性增强</span></p>
+<p>同族（主族）：从上到下，<span class="c-orange">金属性增强</span>，<span class="c-green">非金属性减弱</span></p>
+<p>原子半径：同周期从左到右<span class="c-purple">减小</span>；同族从上到下<span class="c-pink">增大</span></p></div>
+</div>
+</div>
 
-<h2 id="sec3-3">3.3 物质的组成</h2>
-<div class="kp chemistry"><h3>化合价</h3>
-<p>化合价表示原子之间相互化合的数目。</p>
-<p>常见化合价口诀：<strong>一价钾钠氯氢银，二价氧钙钡镁锌；三铝四硅五价磷，二三铁、二四碳；铜汞二价最常见。</strong></p>
-<p>化合物中：正负化合价代数和<strong>为零</strong>。单质中元素化合价为<strong>零</strong>。</p></div>
-<div class="kp chemistry"><h3>化学式的计算</h3>
-<p><strong>相对分子质量</strong>：化学式中各原子的相对原子质量之和。</p>
-<p>如：H₂O的相对分子质量 = 1×2 + 16 = 18。</p>
-<p><strong>元素质量比</strong>：H₂O中 m(H):m(O) = (1×2):16 = 1:8。</p>
-<p><strong>元素质量分数</strong>：ω(H) = 2/18 × 100% ≈ 11.1%。</p></div>
+<!-- ====== 3.4 化学式与化合价 ====== -->
+<h2 data-section="s4" id="sec3-4" style="margin:28px 0 16px;">3.4 化学式与化合价</h2>
 
-<h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+<div class="kp chemistry"><h3>化学式的书写规则</h3>
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>单质的化学式</h3>
+<p><span class="c-blue">金属、稀有气体、部分固态非金属</span>：直接用元素符号</p>
+<p>如：Fe、Cu、He、C、S、P</p>
+<p><span class="c-green">常见气体非金属</span>：元素符号 + 下标 2</p>
+<p>如：O₂、N₂、H₂、Cl₂</p></div>
+<div class="kp chemistry"><h3>化合物的化学式</h3>
+<p><strong>书写口诀：</strong></p>
+<p><span class="c-red">正价在前，负价在后</span></p>
+<p><span class="c-orange">交叉化简，标在右下</span></p>
+<p>如：Al³⁺ + O²⁻ → Al₂O₃</p>
+<p>（+3 和 -2 交叉，3 给 O 做下标，2 给 Al 做下标）</p></div>
+</div>
+</div>
+
+<div class="kp chemistry"><h3>化合价口诀</h3>
+<div class="highlight-box">
+<strong>📝 常见化合价口诀：</strong><br>
+<span class="c-red">一价</span>钾钠氯氢银（K⁺ Na⁺ Cl⁻ H⁺ Ag⁺）<br>
+<span class="c-blue">二价</span>氧钙钡镁锌（O²⁻ Ca²⁺ Ba²⁺ Mg²⁺ Zn²⁺）<br>
+<span class="c-green">三铝</span>四硅五价磷（Al³⁺ Si⁴⁺ P⁵⁺）<br>
+<span class="c-orange">二三铁</span>、<span class="c-purple">二四碳</span>（Fe²⁺/Fe³⁺、C²⁺/C⁴⁺）<br>
+<span class="c-pink">铜汞二价</span>最常见（Cu²⁺ Hg²⁺）<br>
+<span class="c-teal">单质为零</span>要记牢！
+</div>
+</div>
+
+<div class="kp chemistry"><h3>化合价规则</h3>
+<div class="danger-box">
+<strong>⚠️ 必须掌握的规则：</strong><br>
+① 化合物中，正负化合价的<span class="c-red">代数和为零</span><br>
+② 单质中元素的化合价为<span class="c-blue">零</span><br>
+③ 通常氧显<span class="c-green">-2 价</span>，氢显<span class="c-orange">+1 价</span><br>
+④ 金属元素通常显<span class="c-purple">正价</span><br>
+⑤ 原子团（根）的化合价等于其组成元素的化合价代数和
+</div>
+</div>
+
+<div class="kp chemistry"><h3>常见原子团（根）</h3>
+<table class="chem-table">
+<tr><th>名称</th><th>符号</th><th>化合价</th><th>名称</th><th>符号</th><th>化合价</th></tr>
+<tr><td>氢氧根</td><td><span class="c-red">OH⁻</span></td><td>-1</td><td>硝酸根</td><td><span class="c-blue">NO₃⁻</span></td><td>-1</td></tr>
+<tr><td>硫酸根</td><td><span class="c-green">SO₄²⁻</span></td><td>-2</td><td>碳酸根</td><td><span class="c-orange">CO₃²⁻</span></td><td>-2</td></tr>
+<tr><td>铵根</td><td><span class="c-purple">NH₄⁺</span></td><td>+1</td><td>磷酸根</td><td><span class="c-pink">PO₄³⁻</span></td><td>-3</td></tr>
+</table>
+</div>
+
+<!-- ====== 3.5 计算 ====== -->
+<h2 data-section="s5" id="sec3-5" style="margin:28px 0 16px;">3.5 有关化学式的计算</h2>
+
+<div class="keypoints-grid">
+<div class="kp chemistry"><h3>1. 相对分子质量 (Mr)</h3>
+<p>化学式中各原子的相对原子质量（Ar）之和。</p>
+<p><strong>例：H₂SO₄</strong></p>
+<p>Mr = 1×2 + 32 + 16×4 = <span class="c-red">98</span></p>
+<p><strong>例：Ca(OH)₂</strong></p>
+<p>Mr = 40 + (16+1)×2 = <span class="c-blue">74</span></p></div>
+<div class="kp chemistry"><h3>2. 元素质量比</h3>
+<p>化学式中各元素的质量比 = 各元素的 (Ar × 原子个数) 之比。</p>
+<p><strong>例：H₂O 中</strong></p>
+<p>m(H) : m(O) = (1×2) : 16 = <span class="c-green">1 : 8</span></p>
+<p><strong>例：CO₂ 中</strong></p>
+<p>m(C) : m(O) = 12 : (16×2) = <span class="c-orange">3 : 8</span></p></div>
+<div class="kp chemistry"><h3>3. 元素质量分数</h3>
+<p>ω(元素) = (该元素的 Ar×原子个数 / Mr) × 100%</p>
+<p><strong>例：求 NH₄NO₃ 中 N%</strong></p>
+<p>Mr = 14×2 + 1×4 + 16×3 = 80</p>
+<p>N% = (14×2 / 80) × 100% = <span class="c-purple">35%</span></p></div>
+<div class="kp chemistry"><h3>4. 求物质质量</h3>
+<p>化合物中某元素质量 = 化合物质量 × 该元素的质量分数</p>
+<p><strong>例：</strong>100g Fe₂O₃ 中铁元素的质量</p>
+<p>ω(Fe) = (56×2/160) × 100% = 70%</p>
+<p>m(Fe) = 100 × 70% = <span class="c-red">70g</span></p></div>
+</div>
+
+<div class="kp chemistry"><h3>计算示例详解</h3>
+<div class="info-box">
+<strong>📐 例题：</strong>求 50g CaCO₃ 中钙元素的质量。<br><br>
+<strong>解：</strong><br>
+① Mr(CaCO₃) = 40 + 12 + 16×3 = <span class="c-blue">100</span><br>
+② ω(Ca) = 40/100 × 100% = <span class="c-red">40%</span><br>
+③ m(Ca) = 50g × 40% = <span class="c-green">20g</span><br><br>
+<strong>答：</strong>50g CaCO₃ 中含钙元素 20g。
+</div>
+</div>
+
+<!-- ====== 练习题 ====== -->
+<h2 data-section="ex" id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
 <div class="exercise"><div class="question"><span class="q-num">1</span>保持水的化学性质的最小粒子是____。</div>
 <div class="options">
 <label><input type="radio" name="q1" value="A">A. 氢原子</label><label><input type="radio" name="q1" value="B">B. 氧原子</label>
 <label><input type="radio" name="q1" value="C">C. 水分子</label><label><input type="radio" name="q1" value="D">D. 氢离子和氧离子</label></div>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1" data-correct="C">✅ C。分子是保持物质化学性质的最小粒子，水的化学性质由水分子保持。</div></div>
+<div class="answer" id="answer-1" data-correct="C">✅ C。<span class="c-blue">分子</span>是保持物质<span class="c-red">化学性质</span>的最小粒子。水由水分子构成，其化学性质由<span class="c-green">水分子</span>保持。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">2</span>决定元素种类的是____。</div>
 <div class="options">
 <label><input type="radio" name="q2" value="A">A. 中子数</label><label><input type="radio" name="q2" value="B">B. 质子数</label>
 <label><input type="radio" name="q2" value="C">C. 电子数</label><label><input type="radio" name="q2" value="D">D. 相对原子质量</label></div>
 <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-<div class="answer" id="answer-2" data-correct="B">✅ B。质子数（核电荷数）决定元素种类。质子数相同的一类原子属同种元素。</div></div>
+<div class="answer" id="answer-2" data-correct="B">✅ B。<span class="c-red">质子数</span>（核电荷数）决定元素种类。质子数相同的一类原子属于<span class="c-blue">同种元素</span>。Na 和 Na⁺ 质子数都是 11，都是钠元素。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">3</span>地壳中含量最多的金属元素是____。</div>
 <div class="options">
 <label><input type="radio" name="q3" value="A">A. 铁</label><label><input type="radio" name="q3" value="B">B. 铝</label>
 <label><input type="radio" name="q3" value="C">C. 钙</label><label><input type="radio" name="q3" value="D">D. 硅</label></div>
 <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-<div class="answer" id="answer-3" data-correct="B">✅ B。地壳中含量：O>Si>Al>Fe>Ca。Al是含量最多的金属元素。</div></div>
+<div class="answer" id="answer-3" data-correct="B">✅ B。地壳中含量：<span class="c-red">O > Si > Al > Fe > Ca</span>。Al 是含量最多的<span class="c-orange">金属元素</span>（Si 是非金属）。</div></div>
 
-<div class="exercise"><div class="question"><span class="q-num">4</span>H₂O中氢元素和氧元素的质量比是____。</div>
+<div class="exercise"><div class="question"><span class="q-num">4</span>H₂O 中氢元素和氧元素的质量比是____。</div>
 <div class="options">
 <label><input type="radio" name="q4" value="A">A. 2:1</label><label><input type="radio" name="q4" value="B">B. 1:2</label>
 <label><input type="radio" name="q4" value="C">C. 1:8</label><label><input type="radio" name="q4" value="D">D. 1:16</label></div>
 <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
-<div class="answer" id="answer-4" data-correct="C">✅ C。m(H):m(O)=(1×2):16=2:16=1:8。</div></div>
+<div class="answer" id="answer-4" data-correct="C">✅ C。m(H) : m(O) = (1×2) : 16 = 2 : 16 = <span class="c-red">1 : 8</span>。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>钠原子的核外电子排布为 2, 8, 1，其最外层电子在化学反应中容易____。</div>
+<div class="options">
+<label><input type="radio" name="q5" value="A">A. 得到 1 个电子</label><label><input type="radio" name="q5" value="B">B. 失去 1 个电子</label>
+<label><input type="radio" name="q5" value="C">C. 得到 7 个电子</label><label><input type="radio" name="q5" value="D">D. 不发生变化</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="B">✅ B。钠原子最外层只有 <span class="c-red">1 个电子</span>，容易<span class="c-orange">失去</span>1 个电子变为 <span class="c-blue">Na⁺</span>，达到稳定结构（2, 8）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>下列物质中，由离子直接构成的是____。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 水</label><label><input type="radio" name="q6" value="B">B. 铁</label>
+<label><input type="radio" name="q6" value="C">C. 氯化钠</label><label><input type="radio" name="q6" value="D">D. 氧气</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="C">✅ C。NaCl 是<span class="c-purple">离子化合物</span>，由 Na⁺ 和 Cl⁻ 构成。水由<span class="c-blue">分子</span>构成，铁由<span class="c-red">原子</span>构成，氧气由<span class="c-green">分子</span>构成。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>Fe₂O₃ 中铁元素的化合价是____。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. +1</label><label><input type="radio" name="q7" value="B">B. +2</label>
+<label><input type="radio" name="q7" value="C">C. +3</label><label><input type="radio" name="q7" value="D">D. +4</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="C">✅ C。设 Fe 化合价为 x，化合物中化合价代数和为 0：2x + 3×(-2) = 0 → 2x = 6 → x = <span class="c-red">+3</span>。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>200g CaCO₃ 中含钙元素的质量为____。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 40g</label><label><input type="radio" name="q8" value="B">B. 80g</label>
+<label><input type="radio" name="q8" value="C">C. 100g</label><label><input type="radio" name="q8" value="D">D. 120g</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="B">✅ B。ω(Ca) = 40/100 × 100% = <span class="c-red">40%</span>，m(Ca) = 200 × 40% = <span class="c-blue">80g</span>。</div></div>
 </main></div>
 <script src="../assets/js/common.js"></script>
 </body>

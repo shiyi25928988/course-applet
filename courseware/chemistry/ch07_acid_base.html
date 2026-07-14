@@ -3,18 +3,57 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>第7章 酸、碱、盐 - 沪教版化学</title>
 <link rel="stylesheet" href="../assets/css/common.css">
+<style>
+/* ===== Enriched Color & Box Styles ===== */
+.c-red { color: #dc2626; font-weight: 600; }
+.c-blue { color: #2563eb; font-weight: 600; }
+.c-green { color: #059669; font-weight: 600; }
+.c-orange { color: #d97706; font-weight: 600; }
+.c-purple { color: #7c3aed; font-weight: 600; }
+.c-pink { color: #db2777; font-weight: 600; }
+.c-teal { color: #0d9488; font-weight: 600; }
+
+.highlight-box {
+  background: #fef9c3; border-left: 4px solid #eab308;
+  padding: 16px 20px; border-radius: 8px; margin: 16px 0;
+}
+.danger-box {
+  background: #fef2f2; border-left: 4px solid #dc2626;
+  padding: 16px 20px; border-radius: 8px; margin: 16px 0;
+}
+.info-box {
+  background: #eff6ff; border-left: 4px solid #2563eb;
+  padding: 16px 20px; border-radius: 8px; margin: 16px 0;
+}
+
+table.chem-table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: .9rem; background: #fff; border-radius: 8px;
+  overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+table.chem-table th {
+  background: #f1f5f9; color: #1e293b; font-weight: 700;
+  padding: 10px 14px; text-align: center; border-bottom: 2px solid #e2e8f0;
+}
+table.chem-table td {
+  padding: 10px 14px; text-align: center; border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+table.chem-table tr:hover td { background: #f8fafc; }
+table.chem-table .hl { background: #fef9c3; font-weight: 600; }
+</style>
 </head>
 <body>
 <div class="layout">
 <aside class="sidebar"><h3>🧪 初中化学</h3><ul class="chapter-list">
 <li><a href="ch06_solutions.html"><span class="ch-num">6</span>溶解现象</a></li>
 <li><a href="ch07_acid_base.html" class="active"><span class="ch-num">7</span>酸、碱、盐</a>
-<div class="subsections"><a href="#sec7-1">7.1 溶液的酸碱性</a><a href="#sec7-2">7.2 常见的酸和碱</a><a href="#sec7-3">7.3 几种重要的盐</a><a href="#exercises">练习题</a></div></li>
+<div class="subsections"><a href="#sec7-1">7.1 溶液的酸碱性</a><a href="#sec7-2">7.2 常见的酸和碱</a><a href="#sec7-3">7.3 几种重要的盐</a><a href="#experiments">基础实验</a><a href="#exercises">练习题</a></div></li>
 <li><a href="ch08_organic.html"><span class="ch-num">8</span>有机化合物</a></li>
 </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
-	    <a href="index.html" class="back-subject">📂 化学目录</a>
+		    <a href="index.html" class="back-subject">📂 化学目录</a>
 </aside>
 <main class="main">
   <div class="topbar">
@@ -36,100 +75,396 @@
   <div class="page-title">第7章 应用广泛的酸、碱、盐</div>
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-<li>会用酸碱指示剂和pH试纸检验溶液酸碱性</li><li>掌握常见酸（盐酸、硫酸）和碱（氢氧化钠、氢氧化钙）的性质</li><li>理解中和反应的实质</li><li>了解常见盐的性质和复分解反应条件</li></ul></div>
+<li>会用<span class="c-blue">酸碱指示剂</span>和<span class="c-purple">pH试纸</span>检验溶液的酸碱性</li>
+<li>掌握常见酸（<span class="c-red">盐酸、硫酸</span>）和常见碱（<span class="c-blue">氢氧化钠、氢氧化钙</span>）的性质和用途</li>
+<li>理解<span class="c-green">中和反应</span>的实质及其应用</li>
+<li>了解常见<span class="c-orange">盐</span>的性质、俗称和<span class="c-purple">复分解反应</span>的条件</li>
+<li>掌握<span class="c-teal">离子共存</span>问题的判断方法</li></ul></div>
 
+<!-- ============================================================ -->
+<!-- 7.1 溶液的酸碱性 -->
+<!-- ============================================================ -->
 <h2 id="sec7-1">7.1 溶液的酸碱性</h2>
+
 <div class="keypoints-grid">
-<div class="kp chemistry"><h3>酸碱指示剂</h3>
-<table style="width:100%;font-size:.85rem;border-collapse:collapse;">
-<tr style="background:var(--bg);"><th>指示剂</th><th>酸性溶液</th><th>中性溶液</th><th>碱性溶液</th></tr>
-<tr><td>紫色石蕊</td><td style="color:#ef4444;">红色</td><td>紫色</td><td style="color:#2563eb;">蓝色</td></tr>
-<tr><td>无色酚酞</td><td>无色</td><td>无色</td><td style="color:#ef4444;">红色</td></tr>
-</table></div>
-<div class="kp chemistry"><h3>pH</h3>
-<p>pH范围：0~14。</p>
-<p>pH &lt; 7：酸性，pH越小酸性越强</p>
-<p>pH = 7：中性</p>
-<p>pH &gt; 7：碱性，pH越大碱性越强</p>
-<p>测定方法：pH试纸（取一小片，用玻璃棒蘸取待测液滴在试纸上，与标准比色卡对比）。</p>
-<p><strong>注意</strong>：pH试纸不能润湿，否则测酸性溶液pH偏大。</p></div>
+<div class="kp chemistry"><h3>一、酸碱指示剂</h3>
+<table class="chem-table">
+<tr><th>指示剂</th><th>酸性溶液</th><th>中性溶液</th><th>碱性溶液</th></tr>
+<tr><td><strong>紫色石蕊溶液</strong></td><td class="c-red">红色</td><td>紫色</td><td class="c-blue">蓝色</td></tr>
+<tr><td><strong>无色酚酞溶液</strong></td><td>无色</td><td>无色</td><td class="c-pink">红色</td></tr>
+</table>
+<p style="margin-top:12px;"><strong>记忆口诀：</strong>石蕊——<span class="c-red">"酸红"</span><span class="c-blue">"碱蓝"</span>；酚酞——<span class="c-pink">"遇碱变红"</span>（酸性和中性均为无色）。</p>
+</div>
+<div class="kp chemistry"><h3>二、pH —— 溶液酸碱度的表示</h3>
+<p><strong>pH范围：</strong>0 ~ 14</p>
+<p>pH <span class="c-red">&lt; 7</span>：酸性溶液，pH越小酸性越强</p>
+<p>pH <span class="c-green">= 7</span>：中性溶液</p>
+<p>pH <span class="c-blue">&gt; 7</span>：碱性溶液，pH越大碱性越强</p>
+<p><strong>注意：</strong>酸溶液一定呈酸性（pH &lt; 7），但酸性溶液<span class="c-red">不一定</span>是酸溶液（如NaHSO₄溶液呈酸性，但是盐溶液）。同理，碱溶液一定呈碱性，但碱性溶液不一定是碱溶液（如Na₂CO₃溶液呈碱性，但是盐溶液）。</p></div>
 </div>
 
+<div class="kp chemistry"><h3>三、pH试纸使用方法详解</h3>
+<p><strong>正确操作步骤：</strong></p>
+<ol style="padding-left:20px;line-height:2.2;color:var(--text-secondary);">
+<li>取一小片<span class="c-blue">pH试纸</span>放在洁净干燥的<span class="c-purple">玻璃片</span>或<span class="c-purple">表面皿</span>上</li>
+<li>用洁净干燥的<span class="c-teal">玻璃棒</span>蘸取少量待测液</li>
+<li>将蘸有待测液的玻璃棒<span class="c-orange">点在pH试纸中部</span></li>
+<li>待试纸变色后，在<span class="c-green">半分钟内</span>与<span class="c-blue">标准比色卡</span>对比，读出pH（整数）</li>
+</ol>
+
+<div class="danger-box">
+<strong>⚠️ pH试纸使用的关键注意事项（高频考点）：</strong>
+<ul style="padding-left:18px;line-height:2.2;margin-top:8px;">
+<li><span class="c-red">不能将pH试纸直接伸入待测液中</span>——会污染试剂</li>
+<li><span class="c-red">不能先用水润湿pH试纸</span>——润湿后相当于稀释待测液：测酸性溶液时pH<span class="c-red">偏大</span>（酸性减弱），测碱性溶液时pH<span class="c-blue">偏小</span>（碱性减弱），测中性溶液时pH不变</li>
+<li>pH试纸测出的pH只能是<span class="c-orange">整数</span>（0~14），不能精确到小数。精确测定需用<span class="c-purple">pH计</span>（酸度计）</li>
+</ul>
+</div>
+</div>
+
+<div class="kp chemistry"><h3>四、溶液酸碱性与生活</h3>
+<table class="chem-table">
+<tr><th>物质/环境</th><th>pH范围</th><th>酸碱性</th><th>说明</th></tr>
+<tr><td><span class="c-red">胃液（胃酸）</span></td><td>0.9 ~ 1.5</td><td class="c-red">强酸性</td><td>主要成分HCl，帮助消化和杀菌</td></tr>
+<tr><td><span class="c-orange">正常雨水</span></td><td>≈ 5.6</td><td class="c-orange">弱酸性</td><td>因空气中CO₂溶于水形成H₂CO₃</td></tr>
+<tr><td><span class="c-red">酸雨</span></td><td>&lt; 5.6</td><td class="c-red">较强酸性</td><td>SO₂和NO₂等污染物溶于雨水所致</td></tr>
+<tr><td><span class="c-green">纯水</span></td><td>7</td><td class="c-green">中性</td><td>—</td></tr>
+<tr><td><span class="c-blue">血液</span></td><td>7.35 ~ 7.45</td><td class="c-blue">弱碱性</td><td>维持在此范围内对生命至关重要</td></tr>
+<tr><td><span class="c-purple">肥皂水</span></td><td>≈ 10</td><td class="c-blue">碱性</td><td>含碱性物质，可去油污</td></tr>
+<tr><td><span class="c-teal">土壤</span></td><td>各地不同</td><td>多数弱酸性</td><td>酸性土壤可施加熟石灰改良</td></tr>
+</table>
+</div>
+
+<div class="highlight-box">
+<h3 style="margin-bottom:10px;">📖 化学史话：酸碱指示剂的发现</h3>
+<p style="line-height:2;color:var(--text-secondary);">17世纪，英国化学家<span class="c-purple">波义耳（Robert Boyle）</span>在一次实验中，将盐酸溅到了紫罗兰花上。他发现紫罗兰的花瓣变成了<span class="c-red">红色</span>。受此启发，波义耳采集各种植物花叶制成浸出液，用来检验溶液的酸碱性，从而发现了<span class="c-blue">酸碱指示剂</span>。他发现紫罗兰浸出液遇酸变红，遇碱变蓝（或绿）。此后，他又发现了石蕊指示剂——至今仍是实验室最常用的酸碱指示剂之一。波义耳的这一发现，为酸碱化学的发展奠定了基础。</p>
+</div>
+
+<!-- ============================================================ -->
+<!-- 7.2 常见的酸和碱 -->
+<!-- ============================================================ -->
 <h2 id="sec7-2">7.2 常见的酸和碱</h2>
-<div class="kp chemistry"><h3>常见的酸</h3>
-<p><strong>盐酸（HCl的水溶液）</strong>：无色有刺激性气味液体，有挥发性。能使石蕊变红，与活泼金属反应产生H₂。</p>
-<span class="formula">Zn + 2HCl → ZnCl₂ + H₂↑</span>
-<p><strong>硫酸（H₂SO₄）</strong>：无色粘稠油状液体，不易挥发。有<strong>吸水性</strong>（可用于干燥剂）。浓硫酸溶于水放出大量热——稀释时<strong>酸入水</strong>（将浓硫酸沿器壁缓慢注入水中并不断搅拌）。</p>
-<p>酸的共性（H⁺的性质）：使石蕊变红、与活泼金属反应、与金属氧化物反应、与碱反应、与某些盐反应。</p></div>
-<div class="kp chemistry"><h3>常见的碱</h3>
-<p><strong>氢氧化钠（NaOH，俗称烧碱、火碱、苛性钠）</strong>：白色固体，极易溶于水（放热），有强<strong>腐蚀性</strong>。易<strong>潮解</strong>（可做干燥剂）。</p>
-<p><strong>氢氧化钙（Ca(OH)₂，俗称熟石灰、消石灰）</strong>：白色粉末，微溶于水。其水溶液为<strong>石灰水</strong>。CaO+H₂O→Ca(OH)₂（放热）。</p>
-<p>碱的共性（OH⁻的性质）：使石蕊变蓝、使酚酞变红、与酸性氧化物反应、与酸反应、与某些盐反应。</p></div>
 
-<div class="kp chemistry"><h3>中和反应</h3>
-<p>酸与碱作用生成盐和水的反应叫<strong>中和反应</strong>。实质：<strong>H⁺ + OH⁻ → H₂O</strong>。</p>
-<span class="formula">NaOH + HCl → NaCl + H₂O</span>
-<p>应用：改良酸性土壤（用熟石灰）、处理酸性废水、胃药（如Al(OH)₃中和胃酸）。</p></div>
+<div class="kp chemistry"><h3>一、酸的分类</h3>
+<p><strong>按是否含氧元素：</strong></p>
+<p><span class="c-blue">含氧酸</span>：H₂SO₄（硫酸）、HNO₃（硝酸）、H₂CO₃（碳酸）、H₃PO₄（磷酸）</p>
+<p><span class="c-teal">无氧酸</span>：HCl（盐酸/氢氯酸）、H₂S（氢硫酸）、HF（氢氟酸）</p>
 
-<h2 id="sec7-3">7.3 几种重要的盐</h2>
-<div class="keypoints-grid">
-<div class="kp chemistry"><h3>常见盐</h3>
-<p><strong>NaCl</strong>（食盐）：调味品、生理盐水、化工原料。</p>
-<p><strong>Na₂CO₃</strong>（纯碱/苏打）：用于玻璃、造纸、洗涤剂。水溶液呈<strong>碱性</strong>（纯碱不是碱，是盐！）。</p>
-<p><strong>NaHCO₃</strong>（小苏打）：发酵粉、治疗胃酸过多。</p>
-<p><strong>CaCO₃</strong>（石灰石/大理石）：建筑材料、补钙剂。</p></div>
-<div class="kp chemistry"><h3>复分解反应</h3>
-<p>两种化合物相互交换成分，生成另外两种化合物的反应。</p>
-<p><strong>发生条件</strong>：生成物中有<strong>沉淀、气体或水</strong>（至少一个条件）。</p>
-<span class="formula">Na₂CO₃ + Ca(OH)₂ → CaCO₃↓ + 2NaOH</span>
-<p>盐的溶解性口诀（部分）：钾钠铵硝皆可溶，盐酸不溶银亚汞；硫酸不溶钡和铅，碳酸只溶钾钠铵。</p></div>
+<p style="margin-top:12px;"><strong>按电离出H⁺的个数：</strong></p>
+<p><span class="c-orange">一元酸</span>：HCl、HNO₃（每个分子电离出1个H⁺）</p>
+<p><span class="c-purple">二元酸</span>：H₂SO₄、H₂CO₃（每个分子电离出2个H⁺）</p>
+<p><span class="c-pink">三元酸</span>：H₃PO₄（每个分子电离出3个H⁺）</p></div>
+
+<div class="kp chemistry"><h3>二、常见的酸</h3>
+<p><strong>盐酸（HCl的水溶液）：</strong></p>
+<ul style="padding-left:18px;line-height:2;color:var(--text-secondary);">
+<li>物理性质：<span class="c-teal">无色</span>有<span class="c-red">刺激性气味</span>的液体，有<span class="c-red">挥发性</span>（打开瓶盖有白雾——HCl气体与空气中的水蒸气结合形成盐酸小液滴）。</li>
+<li>化学性质：使石蕊变红；与活泼金属反应产生H₂；与金属氧化物反应；与碱反应；与AgNO₃反应产生白色沉淀（AgCl）。</li>
+</ul>
+<p><span class="formula">Zn + 2HCl → ZnCl₂ + H₂↑</span></p>
+<p><span class="formula">HCl + AgNO₃ → AgCl↓ + HNO₃</span>（检验Cl⁻的方法）</p>
+
+<p style="margin-top:14px;"><strong>硫酸（H₂SO₄）：</strong></p>
+<ul style="padding-left:18px;line-height:2;color:var(--text-secondary);">
+<li>物理性质：<span class="c-teal">无色</span>粘稠油状液体，<span class="c-green">不易挥发</span>，密度大于水。</li>
+<li><span class="c-blue">吸水性</span>：浓硫酸可吸收空气中的水分，可作<span class="c-blue">干燥剂</span>（但不能干燥NH₃——会反应生成(NH₄)₂SO₄）。</li>
+</ul>
 </div>
 
-<div class="kp chemistry"><h3>化学肥料</h3>
-<p><strong>氮肥</strong>：促进茎叶生长（尿素CO(NH₂)₂、NH₄NO₃）。铵态氮肥不能与碱性物质混用（会放出NH₃）。</p>
-<p><strong>磷肥</strong>：促进根系发达、籽粒饱满（Ca(H₂PO₄)₂）。</p>
-<p><strong>钾肥</strong>：增强抗倒伏、抗病虫害能力（KCl、K₂SO₄）。</p>
-<p><strong>复合肥</strong>：含两种或以上营养元素（KNO₃、NH₄H₂PO₄）。</p></div>
+<div class="kp chemistry"><h3>三、浓硫酸的特性 —— 脱水性与"黑面包"实验</h3>
+<p><strong>脱水性</strong>：浓硫酸能将有机物（如蔗糖、纸张、木材、棉布等）中的<span class="c-red">氢、氧元素按2:1比例</span>脱去（相当于脱去H₂O），使有机物<span class="c-red">碳化变黑</span>。这是<span class="c-red">化学变化</span>。</p>
 
+<div class="highlight-box">
+<strong>🔬 "黑面包"实验：</strong>在蔗糖（C₁₂H₂₂O₁₁）中加入浓硫酸，蔗糖迅速变黑并膨胀成"黑面包"状。<br>
+<span class="formula">C₁₂H₂₂O₁₁ →[浓H₂SO₄] 12C + 11H₂O</span><br>
+反应放热，生成的水蒸发，碳被水蒸气推出形成疏松多孔结构。同时浓硫酸还可将部分碳氧化：<br>
+<span class="formula">C + 2H₂SO₄(浓) →[加热] CO₂↑ + 2SO₂↑ + 2H₂O</span>
+</div>
+
+<div class="danger-box">
+<strong>⚠️ 浓硫酸的安全使用：</strong><br>
+稀释浓硫酸时，必须<span class="c-red">将浓硫酸沿器壁缓慢注入水中</span>，并用玻璃棒不断搅拌——<span class="c-red">"酸入水，沿器壁，不断搅拌"</span>。绝不能将水倒入浓硫酸中！浓硫酸密度大于水，水倒入酸中会浮在表面，局部温度剧升导致水沸腾，使酸液飞溅，造成严重灼伤。<br>
+若浓硫酸不慎溅到皮肤上：先用<span class="c-blue">干布擦拭</span>，再用<span class="c-blue">大量水冲洗</span>，最后涂上<span class="c-green">3%~5%的NaHCO₃溶液</span>。
+</div>
+</div>
+
+<div class="kp chemistry"><h3>四、常见的碱 —— 分类与特性</h3>
+<p><strong>碱的分类：</strong></p>
+<p>按溶解性分：<span class="c-blue">可溶性碱</span>（NaOH、KOH、Ba(OH)₂、Ca(OH)₂微溶）和<span class="c-red">不溶性碱</span>（Cu(OH)₂蓝色沉淀、Fe(OH)₃红褐色沉淀、Mg(OH)₂白色沉淀等）。</p>
+<p>口诀：<span class="c-green">钾钠钡铵皆可溶</span>（KOH、NaOH、Ba(OH)₂、NH₃·H₂O），<span class="c-orange">钙是微溶</span>（Ca(OH)₂），其余一般不溶。</p>
+
+<p style="margin-top:14px;"><strong>氢氧化钠（NaOH，俗称<span class="c-red">烧碱、火碱、苛性钠</span>）：</strong></p>
+<ul style="padding-left:18px;line-height:2;color:var(--text-secondary);">
+<li>白色固体，<span class="c-blue">极易溶于水</span>（溶于水<span class="c-red">放出大量热</span>），溶液有滑腻感。</li>
+<li>有强<span class="c-red">腐蚀性</span>（能腐蚀皮肤和织物）。</li>
+<li>易<span class="c-teal">潮解</span>（吸收空气中的水分而表面变潮湿），可作<span class="c-blue">干燥剂</span>（但不能干燥CO₂、SO₂等酸性气体——会反应）。</li>
+</ul>
+
+<div class="danger-box">
+<strong>⚠️ NaOH的保存方法：</strong><br>
+①必须<span class="c-red">密封保存</span>——防止潮解（吸收水分）和与空气中的CO₂反应变质：<span class="formula">2NaOH + CO₂ → Na₂CO₃ + H₂O</span><br>
+②NaOH溶液<span class="c-red">不能用玻璃塞</span>——NaOH会与玻璃中的SiO₂反应生成Na₂SiO₃（具有粘性），将瓶塞与瓶口粘住。应使用<span class="c-blue">橡胶塞</span>。<br>
+③盛放NaOH溶液的试剂瓶若瓶口出现白色固体，说明NaOH已与CO₂反应生成了Na₂CO₃。
+</div>
+
+<p style="margin-top:14px;"><strong>氢氧化钙（Ca(OH)₂，俗称<span class="c-blue">熟石灰、消石灰</span>）：</strong></p>
+<ul style="padding-left:18px;line-height:2;color:var(--text-secondary);">
+<li>白色粉末，<span class="c-orange">微溶</span>于水（溶解度随温度升高而<span class="c-red">减小</span>）。</li>
+<li>其水溶液为<span class="c-blue">石灰水</span>（Ca(OH)₂的饱和溶液，常用于检验CO₂）。</li>
+<li>CaO（生石灰）+ H₂O → Ca(OH)₂（<span class="c-red">大量放热</span>），此反应可用于制取Ca(OH)₂。</li>
+</ul>
+<p><span class="formula">Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O</span>（石灰水变浑浊——检验CO₂的经典方法）</p>
+</div>
+
+<div class="kp chemistry"><h3>五、酸与碱的通性总结</h3>
+<table class="chem-table">
+<tr><th style="width:20%;">类别</th><th style="width:40%;">酸（H⁺的性质）</th><th style="width:40%;">碱（OH⁻的性质）</th></tr>
+<tr><td><strong>与指示剂</strong></td><td>使石蕊变<span class="c-red">红</span>，酚酞不变色</td><td>使石蕊变<span class="c-blue">蓝</span>，使酚酞变<span class="c-pink">红</span></td></tr>
+<tr><td><strong>与活泼金属</strong></td><td>反应生成<span class="c-blue">盐和H₂</span></td><td>一般不反应（除Al、Zn等两性金属）</td></tr>
+<tr><td><strong>与金属氧化物</strong></td><td>反应生成<span class="c-green">盐和水</span></td><td>一般不反应</td></tr>
+<tr><td><strong>与非金属氧化物</strong></td><td>一般不反应（除特殊）</td><td>反应生成<span class="c-orange">盐和水</span></td></tr>
+<tr><td><strong>与酸/碱</strong></td><td>与碱发生<span class="c-purple">中和反应</span></td><td>与酸发生<span class="c-purple">中和反应</span></td></tr>
+<tr><td><strong>与某些盐</strong></td><td>反应生成<span class="c-teal">新酸和新盐</span></td><td>反应生成<span class="c-pink">新碱和新盐</span></td></tr>
+</table>
+</div>
+
+<div class="kp chemistry"><h3>六、中和反应</h3>
+<p><strong>定义</strong>：酸与碱作用生成盐和水的反应。</p>
+<p><strong>实质</strong>：<span class="formula">H⁺ + OH⁻ → H₂O</span></p>
+<p><span class="formula">NaOH + HCl → NaCl + H₂O</span></p>
+<p><span class="formula">Ca(OH)₂ + 2HCl → CaCl₂ + 2H₂O</span></p>
+<p><span class="formula">2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O</span></p>
+
+<div class="highlight-box">
+<strong>💡 中和反应的应用（更多实际例子）：</strong>
+<table class="chem-table" style="margin-top:8px;">
+<tr><th>应用场景</th><th>原理</th><th>具体物质</th></tr>
+<tr><td><span class="c-green">改良酸性土壤</span></td><td>中和土壤中的酸</td><td>用<span class="c-blue">熟石灰Ca(OH)₂</span>（比NaOH便宜且腐蚀性较小）</td></tr>
+<tr><td><span class="c-orange">处理工业酸性废水</span></td><td>中和废酸</td><td>加入<span class="c-blue">熟石灰</span>或石灰石</td></tr>
+<tr><td><span class="c-pink">治疗胃酸过多</span></td><td>中和胃酸（HCl）</td><td><span class="c-blue">Al(OH)₃</span>（氢氧化铝）、<span class="c-green">NaHCO₃</span>（小苏打）、<span class="c-purple">Mg(OH)₂</span></td></tr>
+<tr><td><span class="c-teal">被蚊虫叮咬止痒</span></td><td>中和蚁酸</td><td>涂抹<span class="c-blue">肥皂水</span>或<span class="c-green">氨水</span>（弱碱性）</td></tr>
+<tr><td><span class="c-red">被碱液灼伤</span></td><td>中和残留碱</td><td>用<span class="c-orange">硼酸溶液</span>冲洗</td></tr>
+<tr><td><span class="c-blue">洗发护发</span></td><td>调节pH</td><td>洗发水弱碱性去油、护发素弱酸性（中和残留碱）</td></tr>
+</table>
+</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 7.3 几种重要的盐 -->
+<!-- ============================================================ -->
+<h2 id="sec7-3">7.3 几种重要的盐</h2>
+
+<div class="kp chemistry"><h3>一、盐的分类</h3>
+<p><strong>按组成不同：</strong></p>
+<p><span class="c-blue">正盐</span>：酸和碱完全中和的产物，只含金属离子（或NH₄⁺）和酸根离子。如：<span class="c-blue">NaCl、Na₂CO₃、CuSO₄</span>。</p>
+<p><span class="c-orange">酸式盐</span>：电离出的阳离子除金属离子（或NH₄⁺）外还有H⁺。如：<span class="c-orange">NaHCO₃（碳酸氢钠）、NaHSO₄（硫酸氢钠）</span>。</p>
+<p><span class="c-purple">碱式盐</span>：电离出的阴离子除酸根离子外还有OH⁻。如：<span class="c-purple">Cu₂(OH)₂CO₃（碱式碳酸铜/铜绿）</span>。</p>
+</div>
+
+<div class="kp chemistry"><h3>二、常见盐的俗称和用途</h3>
+<table class="chem-table">
+<tr><th>化学式</th><th>俗称</th><th>颜色/状态</th><th>主要用途</th><th>备注</th></tr>
+<tr>
+<td><span class="c-blue">NaCl</span></td><td>食盐</td><td>白色晶体</td><td>调味品、防腐剂、生理盐水（0.9%）、化工原料（制Na₂CO₃、NaOH、Cl₂等）</td><td>溶解度随温度变化<span class="c-green">不大</span></td>
+</tr>
+<tr>
+<td><span class="c-orange">Na₂CO₃</span></td><td><span class="c-red">纯碱、苏打</span></td><td>白色粉末</td><td>玻璃、造纸、纺织、洗涤剂</td>
+<td><span class="c-red">纯碱不是碱，是盐！</span>水溶液呈碱性</td>
+</tr>
+<tr>
+<td><span class="c-purple">NaHCO₃</span></td><td><span class="c-blue">小苏打</span></td><td>白色细小晶体</td><td>发酵粉（焙制糕点）、治疗胃酸过多、干粉灭火器</td>
+<td>加热分解：<span class="formula">2NaHCO₃ →[加热] Na₂CO₃ + H₂O + CO₂↑</span></td>
+</tr>
+<tr>
+<td><span class="c-teal">CaCO₃</span></td><td>石灰石、大理石</td><td>白色固体</td><td>建筑材料、补钙剂、制生石灰和CO₂</td>
+<td><span class="formula">CaCO₃ →[高温] CaO + CO₂↑</span></td>
+</tr>
+<tr>
+<td><span class="c-pink">CuSO₄</span></td><td>蓝矾、胆矾（CuSO₄·5H₂O）</td><td><span class="c-blue">蓝色</span>晶体</td><td>配制波尔多液（农药）、电镀</td>
+<td>CuSO₄·5H₂O加热失水变<span class="c-orange">白色</span>（无水CuSO₄），可用于检验水</td>
+</tr>
+<tr>
+<td><span class="c-green">K₂SO₄</span></td><td>—</td><td>白色晶体</td><td><span class="c-green">钾肥</span></td><td>—</td>
+</tr>
+</table>
+</div>
+
+<div class="kp chemistry"><h3>三、复分解反应 —— 条件详解</h3>
+<p><strong>定义</strong>：两种化合物<span class="c-blue">相互交换成分</span>，生成另外两种化合物的反应。</p>
+<p><strong>通式：</strong><span class="formula">AB + CD → AD + CB</span></p>
+<p><strong>发生条件</strong>（满足其中<span class="c-red">至少一个</span>）：</p>
+<ol style="padding-left:20px;line-height:2.2;color:var(--text-secondary);">
+<li>生成物中有<span class="c-red">沉淀（↓）</span></li>
+<li>生成物中有<span class="c-blue">气体（↑）</span></li>
+<li>生成物中有<span class="c-green">水（H₂O）</span></li>
+</ol>
+<p style="margin-top:8px;">注意：反应物中的<span class="c-orange">碱和盐</span>必须<span class="c-red">可溶</span>（溶于水），酸则不一定。若反应物中碱或盐不可溶，反应不能发生。</p>
+
+<div class="highlight-box">
+<strong>📋 盐的溶解性口诀（完整版）：</strong><br>
+钾钠铵硝皆可溶（K⁺、Na⁺、NH₄⁺、NO₃⁻的盐全溶）<br>
+盐酸不溶银亚汞（AgCl↓、Hg₂Cl₂↓）<br>
+硫酸不溶钡和铅（BaSO₄↓、PbSO₄↓；CaSO₄、Ag₂SO₄微溶）<br>
+碳酸只溶钾钠铵（其他碳酸盐均不溶）<br>
+碱溶钾钠钡和铵（KOH、NaOH、Ba(OH)₂、NH₃·H₂O可溶；Ca(OH)₂微溶）
+</div>
+</div>
+
+<div class="kp chemistry"><h3>四、离子共存问题</h3>
+<p>在同一溶液中，离子间若能<span class="c-red">发生反应</span>（生成沉淀、气体或水），则不能大量共存。</p>
+
+<table class="chem-table">
+<tr><th>不能共存的离子对</th><th>原因</th><th>产物</th></tr>
+<tr><td><span class="c-red">H⁺</span> 与 <span class="c-blue">OH⁻</span></td><td>中和反应</td><td>H₂O</td></tr>
+<tr><td><span class="c-red">H⁺</span> 与 <span class="c-orange">CO₃²⁻</span></td><td>生成气体</td><td>CO₂↑ + H₂O</td></tr>
+<tr><td><span class="c-red">H⁺</span> 与 <span class="c-purple">HCO₃⁻</span></td><td>生成气体</td><td>CO₂↑ + H₂O</td></tr>
+<tr><td><span class="c-blue">OH⁻</span> 与 <span class="c-teal">NH₄⁺</span></td><td>生成气体</td><td>NH₃↑ + H₂O</td></tr>
+<tr><td><span class="c-blue">OH⁻</span> 与 <span class="c-pink">Cu²⁺</span></td><td>生成沉淀</td><td>Cu(OH)₂↓（蓝色）</td></tr>
+<tr><td><span class="c-blue">OH⁻</span> 与 <span class="c-orange">Fe³⁺</span></td><td>生成沉淀</td><td>Fe(OH)₃↓（红褐色）</td></tr>
+<tr><td><span class="c-blue">OH⁻</span> 与 <span class="c-green">Mg²⁺</span></td><td>生成沉淀</td><td>Mg(OH)₂↓（白色）</td></tr>
+<tr><td><span class="c-purple">Ag⁺</span> 与 <span class="c-teal">Cl⁻</span></td><td>生成沉淀</td><td>AgCl↓（白色，不溶于酸）</td></tr>
+<tr><td><span class="c-orange">Ba²⁺</span> 与 <span class="c-orange">SO₄²⁻</span></td><td>生成沉淀</td><td>BaSO₄↓（白色，不溶于酸）</td></tr>
+<tr><td><span class="c-orange">Ba²⁺</span> 与 <span class="c-orange">CO₃²⁻</span></td><td>生成沉淀</td><td>BaCO₃↓（白色，溶于酸）</td></tr>
+</table>
+
+<div class="info-box">
+<strong>💡 离子共存判断题的解题思路：</strong><br>
+① 先看题目是否有<span class="c-red">隐含条件</span>（如"无色溶液"——排除Cu²⁺蓝色、Fe³⁺黄色、Fe²⁺浅绿色、MnO₄⁻紫红色；"pH=1"——含大量H⁺；"pH=13"——含大量OH⁻）<br>
+② 再看离子间是否会发生反应（生成沉淀/气体/水）<br>
+③ 注意：<span class="c-red">"大量共存"</span>和<span class="c-blue">"能共存"</span>含义不同——"大量共存"要求更严格
+</div>
+</div>
+
+<div class="kp chemistry"><h3>五、粗盐提纯详细步骤</h3>
+<p>粗盐中含有<span class="c-red">不溶性杂质</span>（泥沙）和<span class="c-blue">可溶性杂质</span>（CaCl₂、MgCl₂、Na₂SO₄等）。</p>
+
+<table class="chem-table">
+<tr><th>步骤</th><th>操作</th><th>目的</th><th>注意事项</th></tr>
+<tr>
+<td><span class="c-blue">① 溶解</span></td>
+<td>加水，玻璃棒搅拌</td>
+<td>使NaCl溶解</td>
+<td>水量不宜过多（否则蒸发耗时长）</td>
+</tr>
+<tr>
+<td><span class="c-red">② 过滤</span></td>
+<td>滤纸过滤</td>
+<td>除去<span class="c-red">不溶性杂质</span>（泥沙）</td>
+<td>"一贴二低三靠"</td>
+</tr>
+<tr>
+<td><span class="c-purple">③ 除杂</span></td>
+<td>依次加入过量BaCl₂（除SO₄²⁻）→过量NaOH（除Mg²⁺）→过量Na₂CO₃（除Ca²⁺和Ba²⁺）→过滤→加HCl调至中性</td>
+<td>除去<span class="c-blue">可溶性杂质</span></td>
+<td>Na₂CO₃必须在<span class="c-red">BaCl₂之后</span>加入（才能除去过量的Ba²⁺）；最后加HCl除去过量的OH⁻和CO₃²⁻</td>
+</tr>
+<tr>
+<td><span class="c-orange">④ 蒸发</span></td>
+<td>加热蒸发，玻璃棒不断搅拌</td>
+<td>获得NaCl晶体</td>
+<td>出现<span class="c-red">较多固体</span>时停止加热，用余热蒸干</td>
+</tr>
+<tr>
+<td><span class="c-green">⑤ 计算产率</span></td>
+<td>称量纯净NaCl质量</td>
+<td>产率 = 纯净NaCl/粗盐质量 × 100%</td>
+<td>产率偏低原因：溶解不充分、过滤/蒸发时有损失</td>
+</tr>
+</table>
+</div>
+
+<div class="kp chemistry"><h3>六、化学肥料</h3>
+<p><strong>氮肥</strong>：促进<span class="c-green">茎叶生长</span>。代表物：尿素<span class="c-blue">CO(NH₂)₂</span>（含氮量最高）、NH₄NO₃、NH₄HCO₃。</p>
+<div class="danger-box">
+<strong>⚠️ 铵态氮肥不能与碱性物质混用！</strong>铵盐与碱反应会放出NH₃，使肥效降低：<br><span class="formula">NH₄Cl + NaOH → NaCl + NH₃↑ + H₂O</span>
+</div>
+<p><strong>磷肥</strong>：促进<span class="c-purple">根系发达</span>、籽粒饱满。代表物：Ca(H₂PO₄)₂（过磷酸钙）。</p>
+<p><strong>钾肥</strong>：增强<span class="c-orange">抗倒伏、抗病虫害</span>能力。代表物：KCl、K₂SO₄。</p>
+<p><strong>复合肥</strong>：含两种或以上营养元素。代表物：<span class="c-teal">KNO₃</span>（含K、N）、<span class="c-pink">NH₄H₂PO₄</span>（含N、P）。</p></div>
+
+<!-- ============================================================ -->
+<!-- 基础实验 -->
+<!-- ============================================================ -->
 <h2 id="experiments" style="margin:28px 0 16px;">🔬 基础实验</h2>
-<div class="card"><h3>基础实验7：溶液酸碱性的检验</h3><p style="color:var(--text-secondary);">用石蕊和酚酞检验稀盐酸、NaOH溶液、NaCl溶液的酸碱性。用pH试纸测定其pH值。</p></div>
-<div class="card"><h3>基础实验8：酸与碱的化学性质</h3><p style="color:var(--text-secondary);">酸：与石蕊反应、与活泼金属(Zn)反应、与铁锈(Fe₂O₃)反应。碱：与石蕊和酚酞反应、与CO₂反应（石灰水变浑浊）、与CuSO₄反应（蓝色沉淀Cu(OH)₂）。</p></div>
+<div class="card"><h3>基础实验7：溶液酸碱性的检验</h3>
+<p style="color:var(--text-secondary);">用<span class="c-blue">紫色石蕊溶液</span>和<span class="c-pink">无色酚酞溶液</span>分别检验稀盐酸、NaOH溶液、NaCl溶液的酸碱性。再用<span class="c-purple">pH试纸</span>分别测定三种溶液的pH值，并与标准比色卡对比读数。</p>
+<p style="color:var(--text-secondary);"><strong>实验结论：</strong>稀盐酸（酸性）使石蕊变<span class="c-red">红</span>，酚酞不变色，pH <span class="c-red">&lt; 7</span>；NaOH溶液（碱性）使石蕊变<span class="c-blue">蓝</span>，酚酞变<span class="c-pink">红</span>，pH <span class="c-blue">&gt; 7</span>；NaCl溶液（中性）石蕊仍为紫色，酚酞不变色，pH <span class="c-green">= 7</span>。</p></div>
 
+<div class="card"><h3>基础实验8：酸与碱的化学性质</h3>
+<p style="color:var(--text-secondary);"><strong>酸的性质实验：</strong></p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li>与石蕊反应：稀盐酸使紫色石蕊变<span class="c-red">红</span></li>
+<li>与活泼金属(Zn)反应：<span class="c-blue">Zn + 2HCl → ZnCl₂ + H₂↑</span>（产生气泡，Zn逐渐溶解）</li>
+<li>与铁锈(Fe₂O₃)反应：<span class="c-orange">Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O</span>（铁锈消失，溶液变<span class="c-orange">黄色</span>）</li>
+</ul>
+<p style="color:var(--text-secondary);"><strong>碱的性质实验：</strong></p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li>与石蕊和酚酞反应：NaOH溶液使石蕊变<span class="c-blue">蓝</span>，使酚酞变<span class="c-pink">红</span></li>
+<li>与CO₂反应：<span class="c-teal">Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O</span>（石灰水变<span class="c-blue">浑浊</span>）</li>
+<li>与CuSO₄反应：<span class="c-purple">2NaOH + CuSO₄ → Cu(OH)₂↓ + Na₂SO₄</span>（产生<span class="c-blue">蓝色沉淀</span>）</li>
+</ul></div>
+
+<!-- ============================================================ -->
+<!-- 章节练习题 -->
+<!-- ============================================================ -->
 <h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
+
 <div class="exercise"><div class="question"><span class="q-num">1</span>能使紫色石蕊溶液变红的是____。</div>
 <div class="options">
 <label><input type="radio" name="q1" value="A">A. 石灰水</label><label><input type="radio" name="q1" value="B">B. 稀盐酸</label>
 <label><input type="radio" name="q1" value="C">C. 食盐溶液</label><label><input type="radio" name="q1" value="D">D. 纯碱溶液</label></div>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1" data-correct="B">✅ B。酸使石蕊变红，碱使石蕊变蓝。稀盐酸是酸，石灰水和纯碱溶液是碱性的。</div></div>
+<div class="answer" id="answer-1" data-correct="B">✅ B。酸使石蕊变<span class="c-red">红</span>，碱使石蕊变<span class="c-blue">蓝</span>。稀盐酸是酸，石灰水（Ca(OH)₂）和纯碱溶液（Na₂CO₃）都是碱性的，食盐溶液是中性的。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">2</span>中和反应的实质是____。</div>
 <div class="options">
 <label><input type="radio" name="q2" value="A">A. 生成盐和水</label><label><input type="radio" name="q2" value="B">B. H⁺+OH⁻→H₂O</label>
 <label><input type="radio" name="q2" value="C">C. 酸和碱混合</label><label><input type="radio" name="q2" value="D">D. pH变为7</label></div>
 <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-<div class="answer" id="answer-2" data-correct="B">✅ B。中和反应实质是H⁺与OH⁻结合生成H₂O分子。</div></div>
+<div class="answer" id="answer-2" data-correct="B">✅ B。中和反应的<span class="c-red">实质</span>是<span class="c-blue">H⁺与OH⁻结合生成H₂O分子</span>。A是中和反应的定义（现象层面），不是实质。C过于笼统，D不一定成立（中和后溶液pH不一定恰好为7）。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">3</span>下列物质属于盐的是____。</div>
 <div class="options">
 <label><input type="radio" name="q3" value="A">A. NaOH</label><label><input type="radio" name="q3" value="B">B. H₂SO₄</label>
 <label><input type="radio" name="q3" value="C">C. Na₂CO₃</label><label><input type="radio" name="q3" value="D">D. CaO</label></div>
 <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-<div class="answer" id="answer-3" data-correct="C">✅ C。Na₂CO₃由金属离子和酸根离子构成，属于盐。NaOH是碱，H₂SO₄是酸，CaO是氧化物。</div></div>
+<div class="answer" id="answer-3" data-correct="C">✅ C。<span class="c-blue">Na₂CO₃</span>由金属离子（Na⁺）和酸根离子（CO₃²⁻）构成，属于<span class="c-green">盐</span>。NaOH是碱，H₂SO₄是酸，CaO是氧化物。注意：纯碱（Na₂CO₃）<span class="c-red">不是碱，是盐</span>！</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">4</span>稀释浓硫酸的正确操作是____。</div>
 <div class="options">
 <label><input type="radio" name="q4" value="A">A. 水倒入浓硫酸中</label><label><input type="radio" name="q4" value="B">B. 浓硫酸沿器壁慢慢注入水中并搅拌</label>
 <label><input type="radio" name="q4" value="C">C. 两者同时倒入</label><label><input type="radio" name="q4" value="D">D. 快速混合</label></div>
 <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
-<div class="answer" id="answer-4" data-correct="B">✅ B。浓硫酸稀释：酸入水，沿器壁，不断搅拌。水入酸会引起液滴飞溅！</div></div>
+<div class="answer" id="answer-4" data-correct="B">✅ B。浓硫酸稀释口诀：<span class="c-red">"酸入水，沿器壁，不断搅拌"</span>。水入酸会引起液滴飞溅，造成严重灼伤！因为浓硫酸密度大于水且稀释时放出大量热。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">5</span>下列物质中，不能与稀盐酸发生复分解反应的是____。</div>
 <div class="options">
 <label><input type="radio" name="q5" value="A">A. NaOH</label><label><input type="radio" name="q5" value="B">B. Na₂CO₃</label>
 <label><input type="radio" name="q5" value="C">C. NaCl</label><label><input type="radio" name="q5" value="D">D. AgNO₃</label></div>
 <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
-<div class="answer" id="answer-5" data-correct="C">✅ C。复分解反应需生成沉淀/气体/水。NaCl与HCl不满足条件。</div></div>
+<div class="answer" id="answer-5" data-correct="C">✅ C。复分解反应需生成<span class="c-red">沉淀/气体/水</span>。A（NaOH + HCl → NaCl + H₂O，生成水✓）；B（Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑，生成气体✓）；D（AgNO₃ + HCl → AgCl↓ + HNO₃，生成沉淀✓）；C交换后仍为NaCl和HCl，<span class="c-red">不满足条件</span>。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>用pH试纸测某溶液pH时，若先将试纸用水润湿，再测酸性溶液，则测得pH值____。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 偏大</label><label><input type="radio" name="q6" value="B">B. 偏小</label>
+<label><input type="radio" name="q6" value="C">C. 不变</label><label><input type="radio" name="q6" value="D">D. 无法确定</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="A">✅ A。试纸润湿相当于<span class="c-blue">稀释</span>待测液。测酸性溶液时，酸性减弱，pH值<span class="c-red">偏大</span>（向7靠近）。测碱性溶液则pH偏小。测中性溶液pH不变。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>下列各组离子中，能在水溶液中大量共存的是____。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. H⁺、OH⁻、Na⁺、Cl⁻</label><label><input type="radio" name="q7" value="B">B. Ba²⁺、SO₄²⁻、K⁺、NO₃⁻</label>
+<label><input type="radio" name="q7" value="C">C. Na⁺、K⁺、CO₃²⁻、Cl⁻</label><label><input type="radio" name="q7" value="D">D. Ag⁺、Cl⁻、Na⁺、NO₃⁻</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="C">✅ C。A中H⁺与OH⁻结合生成H₂O，不能共存；B中Ba²⁺与SO₄²⁻生成BaSO₄↓，不能共存；D中Ag⁺与Cl⁻生成AgCl↓，不能共存。C中所有离子互不反应，可以大量共存。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>关于NaOH的保存，下列说法正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 可用玻璃塞试剂瓶保存</label><label><input type="radio" name="q8" value="B">B. 可敞口放在空气中</label>
+<label><input type="radio" name="q8" value="C">C. 必须密封保存，用橡胶塞</label><label><input type="radio" name="q8" value="D">D. 可与CO₂气体一起存放</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="C">✅ C。NaOH必须<span class="c-red">密封保存</span>（防止潮解和与CO₂反应），且使用<span class="c-blue">橡胶塞</span>（不能用玻璃塞——NaOH会与玻璃中的SiO₂反应生成Na₂SiO₃，将瓶塞粘住）。敞口放置会与CO₂反应变质：2NaOH + CO₂ → Na₂CO₃ + H₂O。</div></div>
+
 </main></div>
 <script src="../assets/js/common.js"></script>
 </body>
