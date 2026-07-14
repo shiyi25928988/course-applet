@@ -318,6 +318,24 @@ table.chem-table tbody td {
 table.chem-table tbody tr:hover { background: var(--chemistry-light); }
 table.chem-table tbody tr:last-child td { border-bottom: none; }
 
+/* === Physics data table === */
+table.phy-table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: .9rem; background: var(--card-bg);
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow);
+}
+table.phy-table thead th {
+  background: var(--physics); color: #fff;
+  padding: 12px 14px; text-align: center; font-weight: 600;
+}
+table.phy-table tbody td {
+  padding: 10px 14px; text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+table.phy-table tbody tr:hover { background: var(--physics-light); }
+table.phy-table tbody tr:last-child td { border-bottom: none; }
+
 /* Responsive */
 @media (max-width:768px) {
   .layout { flex-direction:column; }
