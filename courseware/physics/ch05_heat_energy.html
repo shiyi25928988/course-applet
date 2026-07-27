@@ -3,6 +3,13 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>第五章 热与能 - 初中物理沪教版</title>
 <link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.c-red{color:#dc2626;font-weight:600;} .c-blue{color:#2563eb;font-weight:600;} .c-green{color:#059669;font-weight:600;} .c-orange{color:#d97706;font-weight:600;} .c-purple{color:#7c3aed;font-weight:600;} .c-pink{color:#db2777;font-weight:600;}
+.highlight-box{background:linear-gradient(135deg,#fef3c7,#fde68a);border-left:4px solid #f59e0b;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.danger-box{background:linear-gradient(135deg,#fef2f2,#fee2e2);border-left:4px solid #ef4444;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.info-box{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:4px solid #3b82f6;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0;} table.phy-table th{background:#eff6ff;padding:10px 12px;text-align:left;color:#1e40af;} table.phy-table td{padding:10px 12px;border-bottom:1px solid #e2e8f0;}
+</style>
 </head>
 <body>
 <div class="layout">
@@ -20,7 +27,7 @@
         <a href="#exercises">练习题</a>
       </div>
     </li>
-    
+
   </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
@@ -45,56 +52,147 @@
   <div class="page-title">第五章 热与能</div>
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-<li>理解温度的概念，掌握摄氏温标</li><li>理解热量和比热容的概念，会用 Q=cmΔt 计算</li>
-<li>理解内能的概念，知道改变内能的两种方式</li><li>了解热机的工作原理和能量转化</li></ul></div>
+<li>理解<span class="c-red">温度</span>的概念，掌握<span class="c-blue">摄氏温标</span>及温度计的使用</li>
+<li>理解<span class="c-orange">热量</span>和<span class="c-purple">比热容</span>的概念，会用 <span class="formula">Q=cmΔt</span> 计算</li>
+<li>理解<span class="c-green">内能</span>的概念，知道改变内能的两种方式</li>
+<li>了解<span class="c-pink">热机</span>的工作原理和能量转化，掌握热值 <span class="formula">q=Q/m</span></li>
+<li>理解<span class="c-red">能量守恒定律</span></li></ul></div>
 
 <h2 id="sec5-1">5.1 温度与温标</h2>
 <div class="kp"><h3>温度</h3>
-<p><strong>温度</strong>是表示物体<strong>冷热程度</strong>的物理量。测量工具：<strong>温度计</strong>。</p>
-<p><strong>摄氏温标（℃）</strong>：在标准大气压下，冰水混合物的温度为0℃，沸水的温度为100℃，之间分为100等份，每份为1℃。</p>
+<p><strong>温度</strong>是表示物体<span class="c-red">冷热程度</span>的物理量。测量工具：<strong>温度计</strong>。</p>
+<p><strong>摄氏温标（℃）</strong>的规定：在标准大气压下——</p>
+<ul style="padding-left:20px;line-height:1.9;color:var(--text-secondary);">
+<li>冰水混合物的温度为 <span class="c-blue">0℃</span></li>
+<li>沸水的温度为 <span class="c-orange">100℃</span></li>
+<li>0℃ 到 100℃ 之间分为 100 等份，每份为 1℃</li></ul>
 <p>热力学温标（开尔文温标K）：T = t + 273.15（粗略：T = t + 273）。</p>
-<p>温度计原理：常用液体温度计利用液体的<strong>热胀冷缩</strong>性质制成。</p></div>
+<p>温度计原理：常用液体温度计利用液体的<span class="c-green">热胀冷缩</span>性质制成。</p></div>
+
+<div class="info-box">
+<strong>📌 温度计的使用方法</strong>
+<ol style="padding-left:20px;margin:6px 0;">
+<li><span class="c-blue">测量前</span>：观察量程和分度值，认清零刻度位置</li>
+<li><span class="c-orange">测量时</span>：玻璃泡<span class="c-red">全部浸入</span>被测液体中，不要碰到容器底和容器壁</li>
+<li><span class="c-purple">读数时</span>：玻璃泡<span class="c-red">留在液体中</span>，视线与液柱上表面<span class="c-red">相平</span></li>
+<li><span class="c-green">记录时</span>：不要离开被测物体读数，记录数值并写上单位</li></ol>
+</div>
+
+<div class="kp"><h3>体温计</h3>
+<p><strong>体温计</strong>是特殊的水银温度计，量程 35℃~42℃，分度值 0.1℃。</p>
+<div class="highlight-box">
+<strong>💡 体温计的缩口结构</strong><br>
+体温计玻璃泡上方有一段<span class="c-red">细小的缩口</span>。当温度升高时水银膨胀通过缩口上升；温度降低时水银收缩，在缩口处<span class="c-purple">断开</span>，上方水银柱<span class="c-red">不能自动回落</span>。因此体温计可以<span class="c-green">离开人体读数</span>，使用前需<span class="c-orange">用力甩几下</span>使水银回落。
+</div></div>
 
 <h2 id="sec5-2">5.2 热量 比热容</h2>
 <div class="keypoints-grid">
 <div class="kp"><h3>热量</h3>
-<p><strong>热量</strong>：在热传递过程中，传递能量的多少。单位：<strong>焦耳（J）</strong>。</p>
-<p>热传递条件：物体间存在<strong>温度差</strong>。热量从高温物体传向低温物体。</p>
-<p>热传递方式：<strong>传导、对流、辐射</strong>。</p></div>
+<p><strong>热量</strong>：在热传递过程中，传递<span class="c-red">能量的多少</span>。符号 Q，单位：<strong>焦耳（J）</strong>。</p>
+<p>热传递条件：物体间存在<span class="c-blue">温度差</span>。热量从高温物体传向低温物体。</p>
+<p>热传递方向：高温 -> 低温，直到温度相等（热平衡）。</p>
+<p><strong>注意</strong>：热量是过程量，不能说"物体含有多少热量"，只能说"吸收/放出多少热量"。</p></div>
 <div class="kp"><h3>比热容</h3>
 <p><strong>比热容</strong>：单位质量的某种物质温度升高（或降低）1℃所吸收（或放出）的热量。符号：<strong>c</strong>。</p>
-<p>单位：J/(kg·℃)。</p>
+<p>单位：<span class="c-orange">J/(kg·℃)</span>。</p>
 <span class="formula">Q = cmΔt</span>
-<p>c<sub>水</sub> = 4.2×10³ J/(kg·℃)——是常见物质中最大的。</p>
-<p>应用：水作为冷却液、沿海地区昼夜温差小。</p></div>
+<p>比热容是物质的一种<span class="c-red">特性</span>，与物质种类、状态有关，与质量、温度变化无关。</p>
+<p>c<sub>水</sub> = 4.2×10³ J/(kg·℃) ——是常见物质中<span class="c-green">最大</span>的。</p>
+<p>c<sub>冰</sub> = 2.1×10³ J/(kg·℃)，c<sub>铝</sub> = 0.88×10³ J/(kg·℃)，c<sub>砂石</sub> ≈ 0.92×10³ J/(kg·℃)。</p>
+<div class="info-box">
+<strong>📌 计算示例</strong><br>
+将 2kg 的水从 20℃ 加热到 80℃，水吸收的热量：<br>
+<span class="formula">Q<sub>吸</sub> = cmΔt = 4.2×10³ × 2 × (80-20) = 5.04×10⁵ J</span><br>
+其中 Δt 是温度变化量（升高或降低的温度），不是初温也不是末温。
+</div></div>
+</div>
+
+<div class="info-box">
+<strong>📌 热传递的三种方式</strong>
+<table class="phy-table">
+<tr><th>方式</th><th>定义</th><th>发生条件</th><th>实例</th></tr>
+<tr><td><span class="c-red">传导</span></td><td>热量沿着物体从高温部分传向低温部分</td><td>物体各部分不发生相对移动</td><td>金属勺放在热汤里变热</td></tr>
+<tr><td><span class="c-blue">对流</span></td><td>靠液体或气体的流动来传递热量</td><td>只能在液体或气体中进行</td><td>烧水时水的循环流动、空调制冷</td></tr>
+<tr><td><span class="c-purple">辐射</span></td><td>热量由物体沿直线向外射出</td><td>不需要介质，可在真空中进行</td><td>太阳传热到地球、烤火取暖</td></tr>
+</table>
+</div>
+
+<div class="highlight-box">
+<strong>💡 水的比热容大的应用</strong><br>
+水的比热容 c<sub>水</sub> = 4.2×10³ J/(kg·℃) 是常见物质中最大的，这意味着水<span class="c-red">吸热或放热时温度变化小</span>。
+<ul style="padding-left:20px;margin:6px 0;">
+<li><span class="c-blue">冷却液</span>：汽车发动机用水作冷却液（吸收同样热量温度升高少）</li>
+<li><span class="c-orange">取暖</span>：北方暖气用水作传热介质（放热多而降温少）</li>
+<li><span class="c-green">调节气候</span>：沿海地区昼夜温差小（海水比热容大，吸放热多温度变化小）</li>
+<li><span class="c-purple">培育秧苗</span>：傍晚向秧田灌水防冻（夜间水温降低慢，保护秧苗）</li></ul>
 </div>
 
 <h2 id="sec5-3">5.3 内能</h2>
 <div class="kp"><h3>内能的概念</h3>
-<p>物体内部<strong>所有分子</strong>的动能和分子势能的总和叫做物体的<strong>内能</strong>。</p>
-<p><strong>一切物体在任何温度下都具有内能。</strong></p>
-<p>内能与温度的关系：同一物体，温度越高，内能越大。</p>
+<p>物体内部<span class="c-red">所有分子</span>的动能和分子势能的总和叫做物体的<strong>内能</strong>。</p>
+<div class="danger-box">
+<strong>⚠️ 重要结论</strong><br>
+① <span class="c-red">一切物体在任何温度下都具有内能</span>（包括0℃和很冷的物体）；<br>
+② 内能大小与<span class="c-blue">温度</span>、<span class="c-orange">质量</span>、<span class="c-purple">体积</span>、<span class="c-green">状态</span>有关；<br>
+③ 同一物体，温度越高，分子运动越剧烈，内能越大；<br>
+④ 内能与机械能是两种不同形式的能量，可以相互转化。
+</div>
 <p><strong>改变内能的两种方式：</strong></p>
-<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-<li><strong>做功</strong>——如搓手生热（机械能→内能）</li>
-<li><strong>热传递</strong>——如热水袋取暖（内能转移）</li></ul>
-<p>做功和热传递在改变物体内能上是<strong>等效</strong>的。</p></div>
+<table class="phy-table">
+<tr><th>方式</th><th>实质</th><th>能量变化</th><th>实例</th></tr>
+<tr><td><span class="c-red">做功</span></td><td>其他形式能转化为内能</td><td>机械能 ⇌ 内能</td><td>搓手生热、钻木取火、压缩气体升温、气体膨胀降温</td></tr>
+<tr><td><span class="c-blue">热传递</span></td><td>内能从高温物体转移到低温物体</td><td>内能的转移</td><td>热水袋取暖、烧水、冰块融化</td></tr>
+</table>
+<div class="highlight-box">
+<strong>💡 等效性</strong><br>
+做功和热传递在改变物体内能上是<span class="c-green">等效</span>的。即要使物体改变相同的内能，做功和热传递是等效的。<br>
+例如：使铁块温度升高10℃，可以用火烧（热传递），也可以用锤子反复敲击（做功）。
+</div></div>
 
-<h2 id="sec5-4">5.4 热机</h2>
+<h2 id="sec5-4">5.4 热机与能量守恒</h2>
 <div class="kp"><h3>热机</h3>
-<p><strong>热机</strong>：将<strong>内能</strong>转化为<strong>机械能</strong>的机器。</p>
-<p>内燃机工作循环（四个冲程）：</p>
-<ol style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-<li><strong>吸气冲程</strong>——吸入燃料和空气的混合物</li>
-<li><strong>压缩冲程</strong>——活塞压缩气体，温度升高（机械能→内能）</li>
-<li><strong>做功冲程</strong>——燃料燃烧，高温高压气体推动活塞（内能→机械能）</li>
-<li><strong>排气冲程</strong>——排出废气</li></ol>
-<p>四个冲程为一个工作循环，曲轴转两圈，<strong>做功一次</strong>。</p>
-<p><strong>热值（q）</strong>：1kg某种燃料完全燃烧放出的热量。Q = mq。</p></div>
+<p><strong>热机</strong>：将<span class="c-red">内能</span>转化为<span class="c-green">机械能</span>的机器。常见的有蒸汽机、内燃机（汽油机、柴油机）、汽轮机、喷气发动机。</p>
+<p><strong>汽油机（内燃机）的四个冲程</strong>（一个工作循环）：</p>
+<table class="phy-table">
+<tr><th>冲程</th><th>两气门</th><th>活塞运动</th><th>能量转化</th><th>说明</th></tr>
+<tr><td><span class="c-green">① 吸气冲程</span></td><td>进气门开、排气门关</td><td>向下</td><td>—</td><td>吸入汽油和空气的混合物</td></tr>
+<tr><td><span class="c-orange">② 压缩冲程</span></td><td>两门都关</td><td>向上</td><td>机械能 → 内能</td><td>压缩气体，温度升高、压强增大</td></tr>
+<tr><td><span class="c-red">③ 做功冲程</span></td><td>两门都关</td><td>向下</td><td>内能 → 机械能</td><td>火花塞点火，高温高压气体推动活塞，对外做功</td></tr>
+<tr><td><span class="c-purple">④ 排气冲程</span></td><td>进气门关、排气门开</td><td>向上</td><td>—</td><td>排出废气</td></tr>
+</table>
+<div class="info-box">
+<strong>📌 工作循环要点</strong>
+<ul style="padding-left:20px;margin:6px 0;">
+<li>四个冲程为一个工作循环，<span class="c-red">曲轴转两圈，活塞往复两次，做功一次</span></li>
+<li>只有<span class="c-red">做功冲程</span>对外做功，其他三个冲程靠飞轮惯性完成</li>
+<li>靠飞轮惯性完成的冲程：吸气、压缩、排气</li>
+<li>压缩冲程末和做功冲程初，火花塞点火（汽油机）</li></ul>
+</div>
+<p><strong>热值（q）</strong>：1kg某种燃料<span class="c-red">完全燃烧</span>放出的热量。单位：J/kg（或 J/m³ for 气体）。</p>
+<span class="formula">Q = mq （或 Q = Vq 对气体）</span>
+<p>热值是燃料的一种特性，与燃料种类有关，与质量、燃烧是否充分无关。</p></div>
+
+<div class="highlight-box">
+<strong>💡 能量守恒定律</strong><br>
+能量既不会凭空消灭，也不会凭空产生，它只会从一种形式<span class="c-red">转化</span>为另一种形式，或者从一个物体<span class="c-blue">转移</span>到另一个物体，而在转化和转移的过程中，能量的总量<span class="c-green">保持不变</span>。<br><br>
+能量守恒定律是自然界最普遍、最重要的基本定律之一。它是<span class="c-purple">所有自然现象都必须遵守的普遍规律</span>。
+<ul style="padding-left:20px;margin:6px 0;">
+<li>动能和势能的相互转化（机械能守恒）</li>
+<li>内能和机械能的相互转化（热机）</li>
+<li>电能和内能的转化（电热器）</li>
+<li>太阳能转化为化学能（光合作用）</li></ul>
+<div class="danger-box">
+<strong>⚠️ 能量守恒定律的理解要点</strong><br>
+① 能量守恒定律是自然界最<span class="c-red">普遍、最基本</span>的定律之一；<br>
+② 能量的"转化"是同一种能量变为另一种能量（如内能->机械能）；<br>
+③ 能量的"转移"是同种能量从一个物体传到另一个物体（如热传递）；<br>
+④ 机械能守恒是有条件的（只有重力/弹力做功），但<span class="c-green">能量守恒是无条件的</span>。
+</div>
+</div>
 
 <div class="anim-container"><h3 style="margin-bottom:12px;">🔥 四冲程内燃机动画</h3>
 <canvas id="engineCanvas" style="width:100%;max-width:680px;height:280px;"></canvas>
-<p style="font-size:.8rem;color:var(--text-secondary);margin-top:6px;">内燃机四个冲程循环演示</p></div>
+<p style="font-size:.8rem;color:var(--text-secondary);margin-top:6px;">内燃机四个冲程循环演示：吸气→压缩→做功→排气</p></div>
 
 <h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
 <div class="exercise"><div class="question"><span class="q-num">1</span>在标准大气压下，冰水混合物的温度是____。</div>
@@ -102,7 +200,7 @@
 <label><input type="radio" name="q1" value="A">A. -4℃</label><label><input type="radio" name="q1" value="B">B. 0℃</label>
 <label><input type="radio" name="q1" value="C">C. 4℃</label><label><input type="radio" name="q1" value="D">D. 100℃</label></div>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1" data-correct="B">✅ B。标准大气压下冰水混合物温度为0℃，沸水为100℃。</div></div>
+<div class="answer" id="answer-1" data-correct="B">✅ B。标准大气压下冰水混合物温度为0℃，沸水为100℃，之间100等份。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">2</span>热量计算公式 Q=cmΔt 中，c 表示____。</div>
 <div class="options">
@@ -118,12 +216,12 @@
 <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
 <div class="answer" id="answer-3" data-correct="B">✅ B。做功和热传递是改变内能的两种方式，它们在改变内能上是等效的。</div></div>
 
-<div class="exercise"><div class="question"><span class="q-num">4</span>内燃机的一个工作循环中，曲轴转____圈。</div>
+<div class="exercise"><div class="question"><span class="q-num">4</span>内燃机的一个工作循环中，曲轴转____圈，做功____次。</div>
 <div class="options">
-<label><input type="radio" name="q4" value="A">A. 1</label><label><input type="radio" name="q4" value="B">B. 2</label>
-<label><input type="radio" name="q4" value="C">C. 3</label><label><input type="radio" name="q4" value="D">D. 4</label></div>
+<label><input type="radio" name="q4" value="A">A. 1圈，1次</label><label><input type="radio" name="q4" value="B">B. 2圈，1次</label>
+<label><input type="radio" name="q4" value="C">C. 2圈，2次</label><label><input type="radio" name="q4" value="D">D. 4圈，1次</label></div>
 <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
-<div class="answer" id="answer-4" data-correct="B">✅ B。四冲程为一个循环，曲轴转两圈，做功一次。</div></div>
+<div class="answer" id="answer-4" data-correct="B">✅ B。四冲程为一个循环，曲轴转两圈，活塞往复两次，做功一次（只有做功冲程对外做功）。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">5</span>关于内能，下列说法正确的是____。</div>
 <div class="options">
@@ -132,7 +230,34 @@
 <label><input type="radio" name="q5" value="C">C. 温度高的物体内能一定大</label>
 <label><input type="radio" name="q5" value="D">D. 内能就是热量</label></div>
 <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
-<div class="answer" id="answer-5" data-correct="B">✅ B。一切物体都有内能。内能不仅与温度有关还与质量等有关；内能与热量是不同的物理量。</div></div>
+<div class="answer" id="answer-5" data-correct="B">✅ B。一切物体都有内能。内能不仅与温度有关还与质量等有关；内能与热量是不同的物理量（热量是过程量）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>下列现象中，利用热传递改变物体内能的是____。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 钻木取火</label>
+<label><input type="radio" name="q6" value="B">B. 用锯条锯木头，锯条发热</label>
+<label><input type="radio" name="q6" value="C">C. 冬天用热水袋取暖</label>
+<label><input type="radio" name="q6" value="D">D. 气体膨胀对外做功温度降低</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="C">✅ C。A、B、D都是通过做功改变内能（机械能转化为内能，或内能转化为机械能）；C热水袋通过热传递把内能转移到人体，属于热传递改变内能。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>沿海地区昼夜温差比内陆地区小，主要原因是____。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. 水的密度大</label>
+<label><input type="radio" name="q7" value="B">B. 水的比热容大</label>
+<label><input type="radio" name="q7" value="C">C. 海水的温度高</label>
+<label><input type="radio" name="q7" value="D">D. 沿海地区气压高</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="B">✅ B。水的比热容大（4.2×10³ J/(kg·℃)），吸收或放出同样多的热量时温度变化小，所以沿海地区昼夜温差小。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>关于热值，下列说法正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 燃料燃烧越充分，热值越大</label>
+<label><input type="radio" name="q8" value="B">B. 燃料的质量越大，热值越大</label>
+<label><input type="radio" name="q8" value="C">C. 热值是燃料的特性，与质量、燃烧是否充分无关</label>
+<label><input type="radio" name="q8" value="D">D. 没有燃烧的燃料热值为零</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="C">✅ C。热值是燃料的特性（q=Q/m，完全燃烧1kg燃料放出的热量），只与燃料种类有关，与质量、燃烧是否充分都无关。</div></div>
 </main></div>
 <script src="../assets/js/common.js"></script>
 <script>

@@ -3,6 +3,13 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>第八章 电能与磁 - 初中物理沪教版</title>
 <link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.c-red{color:#dc2626;font-weight:600;} .c-blue{color:#2563eb;font-weight:600;} .c-green{color:#059669;font-weight:600;} .c-orange{color:#d97706;font-weight:600;} .c-purple{color:#7c3aed;font-weight:600;} .c-pink{color:#db2777;font-weight:600;}
+.highlight-box{background:linear-gradient(135deg,#fef3c7,#fde68a);border-left:4px solid #f59e0b;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.danger-box{background:linear-gradient(135deg,#fef2f2,#fee2e2);border-left:4px solid #ef4444;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.info-box{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:4px solid #3b82f6;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0;} table.phy-table th{background:#eff6ff;padding:10px 12px;text-align:left;color:#1e40af;} table.phy-table td{padding:10px 12px;border-bottom:1px solid #e2e8f0;}
+</style>
 </head>
 <body>
 <div class="layout">
@@ -22,7 +29,7 @@
         <a href="#exercises">练习题</a>
       </div>
     </li>
-    
+
   </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
@@ -47,37 +54,66 @@
   <div class="page-title">第八章 电能与磁</div>
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-<li>掌握电功和电功率的概念及计算</li><li>理解焦耳定律（电流的热效应）</li>
-<li>了解电流的磁效应（奥斯特实验）</li>
-<li>了解电磁感应现象和发电机原理</li>
-<li>了解电能的输送和无线电通信</li></ul></div>
+<li>掌握<span class="c-blue">电功</span>和<span class="c-blue">电功率</span>的概念及计算公式</li>
+<li>理解<span class="c-red">焦耳定律</span>（电流的热效应）及其应用</li>
+<li>了解<span class="c-green">奥斯特实验</span>（电流的磁效应）和<span class="c-green">安培定则</span></li>
+<li>了解<span class="c-purple">电磁铁、电磁继电器、电动机</span>的工作原理</li>
+<li>了解<span class="c-orange">法拉第电磁感应</span>现象和发电机原理</li>
+<li>了解电能的输送和<span class="c-pink">电磁波</span>在无线电通信中的应用</li></ul></div>
+
+<div class="highlight-box">💡 <strong>本章核心思想：</strong>电与磁是相互联系的——<span class="c-blue">电流可以产生磁场（电生磁）</span>，<span class="c-red">变化的磁场可以产生电流（磁生电）</span>。电能与机械能可以通过电磁现象相互转化，这是现代电气文明的基础。</div>
 
 <h2 id="sec8-1">8.1 电功率</h2>
 <div class="keypoints-grid">
 <div class="kp"><h3>电功</h3>
-<p>电流做的功叫做<strong>电功</strong>。电流做功的过程是将电能转化为其他形式能的过程。</p>
+<p>电流做的功叫做<strong>电功</strong>。电流做功的过程是将<span class="c-blue">电能转化为其他形式能</span>的过程（如热能、光能、机械能）。</p>
 <span class="formula">W = UIt</span>
-<p>单位：<strong>焦耳（J）</strong>。常用单位：千瓦时（kW·h，度）。</p>
-<p>1 kW·h = 3.6×10⁶ J。</p></div>
+<p>其中 <span class="c-red">U</span> 为电压（V），<span class="c-red">I</span> 为电流（A），<span class="c-red">t</span> 为通电时间（s）。</p>
+<p>单位：<strong>焦耳（J）</strong>。生活中常用单位：千瓦时（kW·h，俗称"度"）。</p>
+<div class="info-box">📐 <strong>单位换算：</strong>1 kW·h = 1000 W × 3600 s = <span class="c-red">3.6×10⁶ J</span>。家庭电能表（千瓦时计）计量的是用电器消耗的电能。</div></div>
+
 <div class="kp"><h3>电功率</h3>
-<p><strong>电功率</strong>：电流在单位时间内所做的功，表示电流做功的快慢。</p>
+<p><strong>电功率</strong>：电流在单位时间内所做的功，表示<span class="c-blue">电流做功的快慢</span>。电功率越大，做功越快。</p>
 <span class="formula">P = W/t = UI</span>
-<p>单位：<strong>瓦特（W）</strong>，常用 kW。</p>
-<p>推导公式（纯电阻电路）：P = I²R = U²/R</p>
-<p><strong>额定功率</strong>：用电器在额定电压下工作时的功率。</p>
-<p><strong>实际功率</strong>：用电器在实际电压下工作时的功率。</p></div>
-<div class="kp"><h3>焦耳定律</h3>
-<p>电流通过导体产生的热量跟电流的<strong>平方</strong>成正比，跟导体的<strong>电阻</strong>成正比，跟<strong>通电时间</strong>成正比。</p>
-<span class="formula">Q = I²Rt</span>
-<p>应用：电热水器、电饭锅、电烙铁等。</p></div>
+<p>单位：<strong>瓦特（W）</strong>，常用 kW（千瓦）、mW（毫瓦）。1 kW = 1000 W。</p>
+<p>推导公式（<span class="c-orange">纯电阻电路</span>中）：P = I²R = U²/R</p>
+<p><strong>额定功率</strong>：用电器在<span class="c-red">额定电压</span>下工作时的功率（铭牌上标的功率）。</p>
+<p><strong>实际功率</strong>：用电器在<span class="c-red">实际电压</span>下工作时的功率。</p></div>
 </div>
 
+<div class="info-box">⚖️ <strong>额定功率 vs 实际功率</strong><br>
+• 当 U<sub>实</sub> = U<sub>额</sub> 时，P<sub>实</sub> = P<sub>额</sub>，用电器正常工作；<br>
+• 当 U<sub>实</sub> &gt; U<sub>额</sub> 时，P<sub>实</sub> &gt; P<sub>额</sub>，用电器<span class="c-red">易损坏</span>（如灯泡过亮烧断）；<br>
+• 当 U<sub>实</sub> &lt; U<sub>额</sub> 时，P<sub>实</sub> &lt; P<sub>额</sub>，用电器<span class="c-orange">不能正常工作</span>（如灯泡偏暗）。<br>
+• 灯泡的亮度由<span class="c-blue">实际功率</span>决定，实际功率越大，灯越亮。</div>
+
+<table class="phy-table">
+<tr><th>用电器</th><th>额定电压</th><th>额定功率（约）</th><th>能量转化</th></tr>
+<tr><td>家用电灯（LED）</td><td>220 V</td><td>5~20 W</td><td>电能→光能+内能</td></tr>
+<tr><td>电视机</td><td>220 V</td><td>100~200 W</td><td>电能→光能+声能+内能</td></tr>
+<tr><td>电饭锅</td><td>220 V</td><td>800~1200 W</td><td>电能→内能</td></tr>
+<tr><td>空调</td><td>220 V</td><td>1000~2000 W</td><td>电能→机械能+内能</td></tr>
+<tr><td>家用电热水器</td><td>220 V</td><td>1500~3000 W</td><td>电能→内能</td></tr>
+</table>
+
+<div class="kp"><h3>焦耳定律</h3>
+<p>电流通过导体产生的热量跟电流的<span class="c-red">平方</span>成正比，跟导体的<span class="c-red">电阻</span>成正比，跟<span class="c-red">通电时间</span>成正比。</p>
+<span class="formula">Q = I²Rt</span>
+<p>这是英国物理学家<span class="c-blue">焦耳</span>通过大量实验得出的规律。对于纯电阻电路，电能全部转化为热能，此时 W = Q = UIt = I²Rt。</p>
+<div class="highlight-box">🔥 <strong>电流热效应的应用与防止</strong><br>
+• <strong>应用：</strong>电热水器、电饭锅、电烙铁、电熨斗、电热毯等——利用电流热效应制热。<br>
+• <strong>防止：</strong>电视机散热孔、电脑风扇、电动机散热片——防止热量积聚损坏设备。</div></div>
+
 <h2 id="sec8-2">8.2 电流的磁场</h2>
-<div class="kp"><h3>电流的磁效应</h3>
-<p><strong>奥斯特实验</strong>：通电导线周围存在磁场，磁场方向与电流方向有关。这证明了<strong>电可以生磁</strong>。</p>
-<p><strong>通电螺线管</strong>的磁场与条形磁铁的磁场相似。右手螺旋定则（安培定则）：右手握住螺线管，四指弯曲方向为电流方向，拇指所指即为螺线管N极。</p>
-<p><strong>电磁铁</strong>：内部带有铁芯的通电螺线管。优点：磁性有无可控（通断电）、磁性强弱可调（改变电流）、极性可换（改变电流方向）。</p>
-<p><strong>电磁继电器</strong>：用低电压、弱电流控制高电压、强电流的自动开关。</p></div>
+<div class="kp"><h3>奥斯特实验（电流的磁效应）</h3>
+<p>1820年，丹麦物理学家<span class="c-blue">奥斯特</span>发现：通电导线下方的小磁针会发生偏转。这表明<strong>通电导线周围存在磁场</strong>，磁场方向与<span class="c-red">电流方向</span>有关。</p>
+<div class="info-box">🔬 <strong>奥斯特实验的意义：</strong>第一次证实了<span class="c-blue">电与磁之间的联系</span>——电可以生磁。这开启了电磁学的研究，为后来法拉第发现电磁感应（磁生电）奠定了基础。</div>
+<p>实验现象：当电流方向改变时，小磁针偏转方向也改变，说明磁场方向与电流方向有关。</p></div>
+
+<div class="kp"><h3>通电螺线管与安培定则</h3>
+<p><strong>通电螺线管</strong>的磁场与<span class="c-blue">条形磁铁</span>的磁场相似，外部磁感线从N极出来回到S极，内部从S极指向N极。</p>
+<p><strong>安培定则（右手螺旋定则）</strong>：用<span class="c-red">右手</span>握住螺线管，让四指弯曲方向与螺线管中电流方向一致，则<span class="c-red">拇指所指的方向</span>就是螺线管的N极。</p>
+<p>螺线管的磁极方向由<span class="c-orange">电流方向</span>决定；磁性强弱由<span class="c-orange">电流大小和线圈匝数</span>决定。</p></div>
 
 <div class="anim-container"><h3 style="margin-bottom:12px;">🧲 通电螺线管磁场</h3>
 <svg viewBox="0 0 680 200" style="width:100%;max-width:680px;">
@@ -99,25 +135,82 @@
   <text x="470" y="45" fill="#60a5fa" font-size="10">磁感线</text>
 </svg></div>
 
+<div class="kp"><h3>电磁铁</h3>
+<p><strong>电磁铁</strong>：内部带有<span class="c-red">铁芯</span>的通电螺线管。插入铁芯后，铁芯被磁化，磁场大大增强。</p>
+<p>电磁铁的磁性强弱影响因素：</p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li><span class="c-blue">电流大小</span>：匝数一定时，电流越大，磁性越强；</li>
+<li><span class="c-blue">线圈匝数</span>：电流一定时，匝数越多，磁性越强；</li>
+<li>有无铁芯：有铁芯时磁性显著增强。</li></ul>
+<div class="highlight-box">✅ <strong>电磁铁的三大优点：</strong><br>
+① <span class="c-green">磁性有无可控</span>——通断电控制；<br>
+② <span class="c-green">磁性强弱可调</span>——改变电流大小；<br>
+③ <span class="c-green">极性可换</span>——改变电流方向。</div></div>
+
+<div class="kp"><h3>电磁继电器</h3>
+<p><strong>电磁继电器</strong>：利用电磁铁控制工作电路通断的<span class="c-purple">自动开关</span>，相当于一个"用低电压、弱电流控制高电压、强电流"的开关。</p>
+<p>结构：电磁铁、衔铁、弹簧、触点。当控制电路通电时，电磁铁吸合衔铁，工作电路接通。</p>
+<div class="info-box">🛡️ <strong>电磁继电器的应用价值：</strong><br>
+• <strong>安全隔离：</strong>操作人员只需接触低压控制电路，避免接触高压危险电路；<br>
+• <strong>远程控制：</strong>可在远距离通过弱电流控制大功率设备；<br>
+• <strong>自动控制：</strong>配合温度、光敏、声控等传感器实现自动化（如恒温箱、自动报警装置）。</div></div>
+
+<div class="kp"><h3>电动机原理</h3>
+<p><strong>电动机</strong>原理：<span class="c-red">通电导体在磁场中受力</span>运动（电能→机械能）。磁场对电流有力的作用，力的方向与电流方向、磁场方向都有关。</p>
+<div class="highlight-box">⚙️ <strong>换向器的作用：</strong>直流电动机中，换向器（两个半圆铜环）能在线圈每转过<span class="c-red">平衡位置</span>时，自动改变线圈中的<span class="c-red">电流方向</span>，使线圈受力方向始终一致，从而保证线圈<span class="c-blue">持续转动</span>。没有换向器，线圈只能转到平衡位置就停下。</div>
+<p>应用：电风扇、洗衣机、电动车、电钻、工业机械等。</p></div>
+
 <h2 id="sec8-3">8.3 电能的获得和输送</h2>
-<div class="kp"><h3>电磁感应</h3>
-<p><strong>电磁感应</strong>：闭合电路的一部分导体在磁场中做<strong>切割磁感线</strong>运动时，导体中产生电流的现象。产生的电流叫<strong>感应电流</strong>。这是<strong>磁生电</strong>的现象。</p>
-<p>感应电流方向与<strong>导体运动方向</strong>和<strong>磁场方向</strong>有关。</p>
-<p><strong>发电机</strong>原理：<strong>电磁感应</strong>（机械能→电能）。</p>
-<p><strong>电动机</strong>原理：<strong>通电导体在磁场中受力</strong>（电能→机械能）。</p>
-<p><strong>交流电</strong>：方向和大小做周期性变化的电流。我国交流电频率为<strong>50 Hz</strong>，周期0.02秒。</p></div>
+<div class="kp"><h3>法拉第电磁感应</h3>
+<p>1831年，英国物理学家<span class="c-blue">法拉第</span>发现了<strong>电磁感应</strong>现象：<span class="c-red">闭合电路的一部分导体在磁场中做切割磁感线运动时，导体中就会产生感应电流</span>。这是"磁生电"的现象。</p>
+<p>感应电流方向与<span class="c-orange">导体运动方向</span>和<span class="c-orange">磁场方向</span>有关（两者任一改变，电流方向改变；两者同时改变，电流方向不变）。</p>
+<p>感应电流大小与磁场强弱、导体运动速度、切割磁感线的有效长度有关。</p>
+<div class="info-box">💡 <strong>法拉第电磁感应的伟大意义：</strong>实现了"磁生电"，使人类大规模获得电能成为可能，奠定了发电机的基础，开启了电气时代。</div></div>
+
+<div class="kp"><h3>发电机原理</h3>
+<p><strong>发电机</strong>原理：<span class="c-blue">电磁感应</span>（机械能→电能）。线圈在磁场中旋转，做切割磁感线运动，产生感应电流。</p>
+<p><strong>电动机</strong>原理：<span class="c-blue">通电导体在磁场中受力</span>（电能→机械能）。两者是<span class="c-red">可逆</span>的能量转化过程。</p>
+<table class="phy-table">
+<tr><th>对比项</th><th>发电机</th><th>电动机</th></tr>
+<tr><td>原理</td><td>电磁感应</td><td>通电导体在磁场中受力</td></tr>
+<tr><td>能量转化</td><td>机械能→电能</td><td>电能→机械能</td></tr>
+<tr><td>电路中作用</td><td>电源</td><td>用电器</td></tr>
+<tr><td>是否需要电源</td><td>不需要外部电源</td><td>需要外部电源</td></tr>
+</table>
+<p><strong>交流电</strong>：方向和大小做<span class="c-red">周期性变化</span>的电流。我国交流电频率为<strong>50 Hz</strong>，周期 T = 0.02 s，每秒方向改变 100 次。</p></div>
 
 <div class="kp"><h3>电能的输送</h3>
 <p>采用<strong>高压输电</strong>可以减少电能在输电线上的损失。</p>
-<p>原理：P = UI，输送功率一定时，电压越高，电流越小。输电线上损失功率 P<sub>损</sub> = I²R，电流越小，损失越小。</p>
-<p><strong>变压器</strong>：用于改变交流电的电压。升压变压器用于输电端，降压变压器用于用户端。</p></div>
+<div class="highlight-box">📐 <strong>高压输电原理：</strong><br>
+由 P = UI 可知，输送功率 P 一定时，<span class="c-red">电压越高，电流越小</span>。<br>
+输电线上损失功率 P<sub>损</sub> = I²R，电流减小为原来的 1/n，损失功率就减小为原来的 1/n²。<br>
+因此采用<span class="c-blue">高压输电</span>可大幅降低线路损耗。</div>
+<p><strong>变压器</strong>：用于改变交流电的电压（仅适用于交流电）。<span class="c-green">升压变压器</span>用于输电端（升压以减小电流），<span class="c-green">降压变压器</span>用于用户端（降压以安全使用）。</p>
+<div class="danger-box">⚠️ <strong>注意：</strong>变压器不能改变直流电的电压。家庭用户电压为 220 V，工业动力电压为 380 V。</div></div>
 
 <h2 id="sec8-4">8.4 无线电波和无线电通信</h2>
 <div class="kp"><h3>电磁波</h3>
-<p><strong>电磁波</strong>可以在真空中传播，传播速度等于光速 c = 3×10⁸ m/s。</p>
-<p>波长λ、频率f、波速c的关系：<span class="formula">c = λf</span></p>
-<p>电磁波谱（按频率从低到高）：无线电波、微波、红外线、可见光、紫外线、X射线、γ射线。</p>
-<p>应用：广播、电视、手机通信、Wi-Fi、雷达、微波炉。</p></div>
+<p><strong>电磁波</strong>是<span class="c-red">变化的电流</span>在空间中传播形成的。它可以在<span class="c-red">真空中传播</span>，<span class="c-red">不需要介质</span>（与声波不同！）。传播速度等于光速：</p>
+<span class="formula">c = 3×10⁸ m/s</span>
+<p>波长λ、频率f、波速c的关系：</p>
+<span class="formula">c = λf</span>
+<p>电磁波谱（按频率从低到高）：</p>
+<table class="phy-table">
+<tr><th>电磁波类型</th><th>频率范围</th><th>主要应用</th></tr>
+<tr><td>无线电波</td><td>&lt;3×10⁹ Hz</td><td>广播、电视、通信</td></tr>
+<tr><td>微波</td><td>3×10⁹~3×10¹¹ Hz</td><td>雷达、卫星通信、微波炉</td></tr>
+<tr><td>红外线</td><td>3×10¹¹~3×10¹⁴ Hz</td><td>遥控、夜视、加热</td></tr>
+<tr><td>可见光</td><td>3×10¹⁴~7.5×10¹⁴ Hz</td><td>照明、视觉</td></tr>
+<tr><td>紫外线</td><td>7.5×10¹⁴~3×10¹⁶ Hz</td><td>杀菌消毒、验钞</td></tr>
+<tr><td>X射线</td><td>3×10¹⁶~3×10¹⁹ Hz</td><td>医学透视、安检</td></tr>
+<tr><td>γ射线</td><td>&gt;3×10¹⁹ Hz</td><td>医学治疗、工业探伤</td></tr>
+</table>
+<div class="info-box">📡 <strong>电磁波的应用：</strong>广播、电视、手机通信、Wi-Fi、蓝牙、雷达、卫星导航、微波炉、医用X光等。电磁波频率越高，穿透能力越强，但能量也越大。</div></div>
+
+<div class="danger-box">⚠️ <strong>易错点辨析：</strong><br>
+• <strong>声波 vs 电磁波：</strong>声波传播<span class="c-red">需要介质</span>（真空不能传声），电磁波传播<span class="c-green">不需要介质</span>（可在真空中传播）。<br>
+• <strong>发电机 vs 电动机：</strong>发电机是"磁生电"（无电源），电动机是"电生力"（需电源）。<br>
+• <strong>奥斯特实验 vs 法拉第实验：</strong>奥斯特实验证明<span class="c-blue">电生磁</span>，法拉第实验证明<span class="c-red">磁生电</span>。</div>
 
 <h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
 <div class="exercise"><div class="question"><span class="q-num">1</span>电功率的计算公式是____。</div>
@@ -125,35 +218,56 @@
 <label><input type="radio" name="q1" value="A">A. P=Wt</label><label><input type="radio" name="q1" value="B">B. P=UI</label>
 <label><input type="radio" name="q1" value="C">C. P=U/t</label><label><input type="radio" name="q1" value="D">D. P=I/t</label></div>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1" data-correct="B">✅ B。P=W/t=UI，电功率等于电压乘以电流。</div></div>
+<div class="answer" id="answer-1" data-correct="B">✅ B。P=W/t=UI，电功率等于电压乘以电流。在纯电阻电路中还可推导为 P=I²R=U²/R。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">2</span>焦耳定律的表达式是____。</div>
 <div class="options">
 <label><input type="radio" name="q2" value="A">A. Q=IRt</label><label><input type="radio" name="q2" value="B">B. Q=I²Rt</label>
 <label><input type="radio" name="q2" value="C">C. Q=UIt</label><label><input type="radio" name="q2" value="D">D. Q=Pt</label></div>
 <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-<div class="answer" id="answer-2" data-correct="B">✅ B。焦耳定律Q=I²Rt，电流通过导体产生的热量与电流平方成正比。</div></div>
+<div class="answer" id="answer-2" data-correct="B">✅ B。焦耳定律Q=I²Rt，电流通过导体产生的热量与电流的平方成正比，与电阻成正比，与通电时间成正比。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">3</span>发电机的工作原理是____。</div>
 <div class="options">
 <label><input type="radio" name="q3" value="A">A. 电流的磁效应</label><label><input type="radio" name="q3" value="B">B. 电磁感应</label>
 <label><input type="radio" name="q3" value="C">C. 通电导体在磁场中受力</label><label><input type="radio" name="q3" value="D">D. 焦耳定律</label></div>
 <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-<div class="answer" id="answer-3" data-correct="B">✅ B。发电机原理是电磁感应（磁生电）。电动机原理是通电导体在磁场中受力（电生力）。</div></div>
+<div class="answer" id="answer-3" data-correct="B">✅ B。发电机原理是电磁感应（磁生电），机械能转化为电能。电动机原理是通电导体在磁场中受力（电生力），电能转化为机械能。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">4</span>1千瓦时（度）等于____焦耳。</div>
 <div class="options">
 <label><input type="radio" name="q4" value="A">A. 3.6×10³ J</label><label><input type="radio" name="q4" value="B">B. 3.6×10⁶ J</label>
 <label><input type="radio" name="q4" value="C">C. 3.6×10⁹ J</label><label><input type="radio" name="q4" value="D">D. 1000 J</label></div>
 <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
-<div class="answer" id="answer-4" data-correct="B">✅ B。1kW·h=1000W×3600s=3.6×10⁶J。</div></div>
+<div class="answer" id="answer-4" data-correct="B">✅ B。1 kW·h = 1000 W × 3600 s = 3.6×10⁶ J。家庭电能表就是以"度"（kW·h）为单位计量电能的。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">5</span>电磁波在真空中的传播速度是____。</div>
 <div class="options">
 <label><input type="radio" name="q5" value="A">A. 340 m/s</label><label><input type="radio" name="q5" value="B">B. 3×10⁶ m/s</label>
 <label><input type="radio" name="q5" value="C">C. 3×10⁸ m/s</label><label><input type="radio" name="q5" value="D">D. 3×10¹⁰ m/s</label></div>
 <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
-<div class="answer" id="answer-5" data-correct="C">✅ C。电磁波在真空中传播速度等于光速c=3×10⁸m/s。</div></div>
+<div class="answer" id="answer-5" data-correct="C">✅ C。电磁波在真空中传播速度等于光速 c = 3×10⁸ m/s，且不需要介质（与声波不同）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>关于通电螺线管的磁极方向，下列说法正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 只与电流大小有关</label><label><input type="radio" name="q6" value="B">B. 只与线圈匝数有关</label>
+<label><input type="radio" name="q6" value="C">C. 由电流方向决定，用安培定则判断</label><label><input type="radio" name="q6" value="D">D. 与电流方向无关</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="C">✅ C。通电螺线管的磁极方向由电流方向决定，用右手螺旋定则（安培定则）判断；磁性强弱由电流大小和线圈匝数共同决定。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>一盏标有"220V 60W"的白炽灯，正常工作时的电流约为____。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. 0.27 A</label><label><input type="radio" name="q7" value="B">B. 3.67 A</label>
+<label><input type="radio" name="q7" value="C">C. 0.5 A</label><label><input type="radio" name="q7" value="D">D. 2 A</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="A">✅ A。由 P = UI 得 I = P/U = 60W / 220V ≈ 0.27 A。注意正常工作时即额定电压下工作，功率等于额定功率。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>高压输电的目的是____。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 增大输电电流</label><label><input type="radio" name="q8" value="B">B. 减小输电线上的能量损失</label>
+<label><input type="radio" name="q8" value="C">C. 增大用户得到的功率</label><label><input type="radio" name="q8" value="D">D. 减小输电线的电阻</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="B">✅ B。高压输电时，由 P=UI 知输送功率一定时电压越高电流越小，而线损 P<sub>损</sub>=I²R 与电流平方成正比，故电流越小损失越小。</div></div>
 </main></div>
 <script src="../assets/js/common.js"></script>
 </body>

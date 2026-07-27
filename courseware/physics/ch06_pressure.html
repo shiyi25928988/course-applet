@@ -3,6 +3,13 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>第六章 压力与压强 - 初中物理沪教版</title>
 <link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.c-red{color:#dc2626;font-weight:600;} .c-blue{color:#2563eb;font-weight:600;} .c-green{color:#059669;font-weight:600;} .c-orange{color:#d97706;font-weight:600;} .c-purple{color:#7c3aed;font-weight:600;} .c-pink{color:#db2777;font-weight:600;}
+.highlight-box{background:linear-gradient(135deg,#fef3c7,#fde68a);border-left:4px solid #f59e0b;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.danger-box{background:linear-gradient(135deg,#fef2f2,#fee2e2);border-left:4px solid #ef4444;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.info-box{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:4px solid #3b82f6;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0;} table.phy-table th{background:#eff6ff;padding:10px 12px;text-align:left;color:#1e40af;} table.phy-table td{padding:10px 12px;border-bottom:1px solid #e2e8f0;}
+</style>
 </head>
 <body>
 <div class="layout">
@@ -21,7 +28,7 @@
       </div>
     </li>
     <li><a href="ch07_circuits.html"><span class="ch-num">7</span>电路</a></li>
-    
+
   </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
@@ -46,28 +53,63 @@
   <div class="page-title">第六章 压力与压强</div>
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-<li>理解密度的概念，能用ρ=m/V进行计算</li><li>掌握阿基米德原理，理解浮力的产生原因</li>
-<li>理解压强的概念，掌握p=F/S</li><li>掌握液体内部压强规律，p=ρgh</li><li>了解大气压强的存在和测量</li></ul></div>
+<li>理解<span class="c-blue">密度</span>的概念，能用 <span class="formula">ρ=m/V</span> 进行计算</li>
+<li>掌握<span class="c-purple">阿基米德原理</span>，理解浮力的产生原因和浮沉条件</li>
+<li>理解<span class="c-red">压强</span>的概念，掌握 <span class="formula">p=F/S</span></li>
+<li>掌握液体内部压强规律 <span class="formula">p=ρgh</span>，了解连通器原理</li>
+<li>了解<span class="c-orange">大气压强</span>的存在和测量，理解流体压强与流速关系</li></ul></div>
 
 <h2 id="sec6-1">6.1 密度</h2>
 <div class="kp"><h3>密度</h3>
-<p><strong>密度</strong>：某种物质单位体积的质量。密度是物质的一种<strong>特性</strong>，与质量和体积无关。</p>
+<p><strong>密度</strong>：某种物质<span class="c-red">单位体积的质量</span>。密度是物质的一种<strong>特性</strong>，与质量和体积无关（同种物质密度相同）。</p>
 <span class="formula">ρ = m / V</span>
-<p>单位：kg/m³（国际单位），g/cm³（常用单位）。换算：<strong>1 g/cm³ = 1000 kg/m³</strong>。</p>
-<p>ρ<sub>水</sub> = 1.0×10³ kg/m³ = 1.0 g/cm³。</p>
-<p>密度的应用：鉴别物质、计算物体质量或体积、判断物体是否空心。</p></div>
+<p>单位：<span class="c-blue">kg/m³</span>（国际单位），<span class="c-orange">g/cm³</span>（常用单位）。换算：<strong>1 g/cm³ = 1000 kg/m³</strong>。</p>
+<p>ρ<sub>水</sub> = 1.0×10³ kg/m³ = 1.0 g/cm³。ρ<sub>铁</sub> = 7.9×10³ kg/m³，ρ<sub>铝</sub> = 2.7×10³ kg/m³，ρ<sub>水银</sub> = 13.6×10³ kg/m³。</p>
+<div class="info-box">
+<strong>📌 密度的应用</strong>
+<ul style="padding-left:20px;margin:6px 0;">
+<li><span class="c-blue">鉴别物质</span>：测出密度与密度表对照，可判断物质种类</li>
+<li><span class="c-green">计算质量或体积</span>：m=ρV，V=m/ρ</li>
+<li><span class="c-purple">判断空心实心</span>：比较实际密度与该物质密度</li>
+<li><span class="c-orange">判断物体浮沉</span>：比较物体密度与液体密度</li></ul>
+</div>
+<div class="highlight-box">
+<strong>💡 注意事项</strong><br>
+① 同种物质状态改变时密度改变（如水和冰密度不同）；<br>
+② 不同物质密度一般不同，但也有特例（如冰和蜡密度都约0.9 g/cm³）；<br>
+③ 气体的密度受温度和压强影响很大。
+</div></div>
 
 <h2 id="sec6-2">6.2 阿基米德原理</h2>
 <div class="kp"><h3>浮力</h3>
-<p>浸在液体（或气体）中的物体受到<strong>竖直向上</strong>的托力叫做<strong>浮力</strong>。</p>
-<p>浮力产生的原因：液体对物体向上的压力大于向下的压力，产生压力差。</p>
-<p><strong>阿基米德原理：</strong>浸在液体中的物体受到的浮力等于物体<strong>排开</strong>的液体所受的<strong>重力</strong>。</p>
+<p>浸在液体（或气体）中的物体受到<span class="c-red">竖直向上</span>的托力叫做<strong>浮力</strong>。</p>
+<p><strong>浮力产生的原因</strong>：液体对物体向上的压力大于向下的压力，产生压力差，即 F<sub>浮</sub> = F<sub>向上</sub> - F<sub>向下</sub>。</p>
+<p><strong>阿基米德原理</strong>：浸在液体中的物体受到的浮力等于物体<span class="c-green">排开</span>的液体所受的<span class="c-orange">重力</span>。</p>
 <span class="formula">F<sub>浮</sub> = G<sub>排</sub> = ρ<sub>液</sub>gV<sub>排</sub></span>
-<p>物体的浮沉条件（浸没时）：</p>
-<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-<li>F<sub>浮</sub> &gt; G → 上浮（ρ<sub>液</sub> &gt; ρ<sub>物</sub>）</li>
-<li>F<sub>浮</sub> = G → 悬浮（ρ<sub>液</sub> = ρ<sub>物</sub>）</li>
-<li>F<sub>浮</sub> &lt; G → 下沉（ρ<sub>液</sub> &lt; ρ<sub>物</sub>）</li></ul></div>
+<div class="info-box">
+<strong>📌 公式说明</strong>
+<ul style="padding-left:20px;margin:6px 0;">
+<li>ρ<sub>液</sub>：液体的密度（kg/m³），<strong>不是</strong>物体的密度</li>
+<li>V<sub>排</sub>：物体排开液体的体积（m³），<strong>不是</strong>物体的体积</li>
+<li>g = 10 N/kg（或9.8 N/kg）</li>
+<li>完全浸没时 V<sub>排</sub> = V<sub>物</sub>；部分浸入时 V<sub>排</sub> &lt; V<sub>物</sub></li></ul>
+</div>
+<p><strong>物体的浮沉条件</strong>（浸没时）：</p>
+<table class="phy-table">
+<tr><th>条件（力）</th><th>条件（密度）</th><th>状态</th><th>最终状态</th></tr>
+<tr><td><span class="c-green">F<sub>浮</sub> &gt; G</span></td><td><span class="c-green">ρ<sub>液</sub> &gt; ρ<sub>物</sub></span></td><td>上浮</td><td>漂浮（F<sub>浮</sub>=G）</td></tr>
+<tr><td><span class="c-blue">F<sub>浮</sub> = G</span></td><td><span class="c-blue">ρ<sub>液</sub> = ρ<sub>物</sub></span></td><td>悬浮</td><td>可停留在任意深度</td></tr>
+<tr><td><span class="c-red">F<sub>浮</sub> &lt; G</span></td><td><span class="c-red">ρ<sub>液</sub> &lt; ρ<sub>物</sub></span></td><td>下沉</td><td>沉到底部</td></tr>
+<tr><td>F<sub>浮</sub> = G</td><td>ρ<sub>液</sub> &gt; ρ<sub>物</sub></td><td><span class="c-purple">漂浮</span></td><td>部分露出液面</td></tr>
+</table>
+<div class="highlight-box">
+<strong>💡 浮力的应用</strong>
+<ul style="padding-left:20px;margin:6px 0;">
+<li><span class="c-blue">轮船</span>：用密度大于水的钢铁制成空心，增大 V<sub>排</sub> 使 F<sub>浮</sub>=G；排水量 = 船自身质量 + 货物质量</li>
+<li><span class="c-orange">潜水艇</span>：靠水舱充水/排水改变<strong>自身重力</strong>实现下潜和上浮（F<sub>浮</sub>不变）</li>
+<li><span class="c-green">气球/飞艇</span>：充入密度小于空气的气体（氢气、氦气、热空气），F<sub>浮</sub> &gt; G 时上升</li>
+<li><span class="c-purple">密度计</span>：利用物体漂浮条件 F<sub>浮</sub>=G 测液体密度，密度越大浸入越浅</li></ul>
+</div></div>
 
 <div class="anim-container"><h3 style="margin-bottom:12px;">🛟 浮力演示</h3>
 <canvas id="buoyancyCanvas" style="width:100%;max-width:680px;height:250px;"></canvas>
@@ -78,29 +120,87 @@
 </div></div>
 
 <h2 id="sec6-3">6.3 压强</h2>
-<div class="kp"><h3>压强</h3>
+<div class="kp"><h3>压力与压强</h3>
+<p><strong>压力</strong>：<span class="c-red">垂直</span>作用在物体表面上的力。方向总是垂直于受力面。</p>
+<div class="danger-box">
+<strong>⚠️ 压力与重力的区别</strong><br>
+① 压力方向<span class="c-red">垂直于受力面</span>，重力方向<span class="c-blue">总是竖直向下</span>；<br>
+② 物体放在水平面上时，压力大小<span class="c-green">等于</span>重力（F=G=mg）；<br>
+③ 物体在斜面上时，压力<span class="c-red">小于</span>重力；<br>
+④ 压力可以由外力产生，与重力无关（如用手按图钉）。
+</div>
 <p><strong>压强</strong>：物体单位面积上受到的压力。压强表示<strong>压力的作用效果</strong>。</p>
 <span class="formula">p = F / S</span>
-<p>单位：<strong>帕斯卡（Pa）</strong>，1Pa = 1N/m²。</p>
-<p><strong>增大压强</strong>的方法：增大压力或减小受力面积（刀刃、图钉尖）。</p>
-<p><strong>减小压强</strong>的方法：减小压力或增大受力面积（书包宽带、履带）。</p></div>
+<p>单位：<strong>帕斯卡（Pa）</strong>，1Pa = 1N/m²。压强越大，压力的作用效果越明显。</p>
+<table class="phy-table">
+<tr><th>改变压强的方法</th><th>做法</th><th>实例</th></tr>
+<tr><td rowspan="2"><span class="c-green">增大压强</span></td><td>增大压力</td><td>用力按图钉、压路机加重</td></tr>
+<tr><td>减小受力面积</td><td>刀刃磨薄、图钉尖、锥子尖</td></tr>
+<tr><td rowspan="2"><span class="c-orange">减小压强</span></td><td>减小压力</td><td>限载标牌、减轻车重</td></tr>
+<tr><td>增大受力面积</td><td>书包宽带、坦克履带、雪地靴、铁轨枕木</td></tr>
+</table></div>
 
 <h2 id="sec6-4">6.4 液体内部的压强</h2>
 <div class="kp"><h3>液体压强</h3>
-<p>液体内部向<strong>各个方向</strong>都有压强，同一深度各方向压强相等。</p>
-<p>液体压强随<strong>深度</strong>增加而增大，还与液体<strong>密度</strong>有关。</p>
+<p>液体内部向<span class="c-red">各个方向</span>都有压强；同一深度，各方向压强<span class="c-green">相等</span>。</p>
+<p>液体压强随<span class="c-blue">深度</span>增加而增大，还与液体<span class="c-orange">密度</span>有关（深度相同时密度越大压强越大）。</p>
 <span class="formula">p = ρgh</span>
-<p><strong>连通器</strong>：上端开口、底部连通的容器。连通器中装同种液体且不流动时，各容器液面<strong>保持相平</strong>。</p>
-<p>应用：茶壶、锅炉水位计、船闸。</p>
-<p><strong>帕斯卡定律</strong>：加在密闭液体上的压强，能够大小不变地由液体向各个方向传递。应用：液压机。</p></div>
+<div class="info-box">
+<strong>📌 公式说明</strong>
+<ul style="padding-left:20px;margin:6px 0;">
+<li>ρ：液体的密度（kg/m³）</li>
+<li>g = 10 N/kg</li>
+<li>h：液体的深度（m），指从液面到所求点的<span class="c-red">竖直距离</span></li>
+<li>液体压强<span class="c-red">只与密度和深度有关</span>，与液体重力、容器形状、液体体积无关</li></ul>
+</div>
+<p><strong>连通器</strong>：上端开口、底部连通的容器。</p>
+<div class="highlight-box">
+<strong>💡 连通器原理</strong><br>
+连通器中装入<strong>同种液体</strong>且液体<strong>不流动</strong>时，各容器中的液面<strong>始终相平</strong>。<br>
+原理：在连通器底部取一液片，左右两管液体对液片压强相等，即 ρgh<sub>1</sub> = ρgh<sub>2</sub>，所以 h<sub>1</sub> = h<sub>2</sub>。
+</div>
+<p><strong>连通器应用</strong>：茶壶、锅炉水位计、船闸、过路涵洞、牲畜自动饮水器。</p>
+<p><strong>帕斯卡定律</strong>：加在密闭液体上的压强，能够<span class="c-purple">大小不变</span>地由液体向各个方向传递。应用：液压机、液压千斤顶、汽车刹车系统。</p></div>
 
 <h2 id="sec6-5">6.5 大气压强</h2>
 <div class="kp"><h3>大气压强</h3>
-<p>大气对浸在其中的物体产生的压强叫<strong>大气压强</strong>，简称大气压。</p>
-<p><strong>马德堡半球实验</strong>证明了大气压的存在且很大。</p>
-<p><strong>托里拆利实验</strong>测出了大气压的值：标准大气压 p₀ = 1.013×10⁵ Pa ≈ 760 mmHg。</p>
-<p>大气压随<strong>高度</strong>增加而减小。液体的沸点随气压减小而<strong>降低</strong>（高原煮饭不易熟）。</p>
-<p>应用：吸盘、吸管喝饮料、活塞式抽水机。</p></div>
+<p>大气对浸在其中的物体产生的压强叫<strong>大气压强</strong>，简称大气压。大气压产生的原因：空气受<span class="c-red">重力</span>作用且具有<span class="c-blue">流动性</span>。</p>
+<p><strong>马德堡半球实验</strong>（1654年，奥托·冯·格里克）：证明了大气压的存在且很大。</p>
+<p><strong>托里拆利实验</strong>（托里拆利）：测出了大气压的值。</p>
+<span class="formula">p₀ = 1.013×10⁵ Pa ≈ 760 mmHg</span>
+<div class="info-box">
+<strong>📌 托里拆利实验要点</strong>
+<ul style="padding-left:20px;margin:6px 0;">
+<li>玻璃管内水银柱上方是<span class="c-red">真空</span></li>
+<li>水银柱高度约 <span class="c-orange">760mm</span>，由外界大气压决定</li>
+<li>管子倾斜、上提下压（不离开水银槽）、管粗细变化，<span class="c-green">水银柱高度不变</span></li>
+<li>外界大气压变化时，水银柱高度才变化</li></ul>
+</div>
+<p><strong>大气压的变化</strong>：</p>
+<ul style="padding-left:20px;line-height:1.9;color:var(--text-secondary);">
+<li>大气压随<span class="c-red">高度</span>增加而减小（海拔越高，空气越稀薄）</li>
+<li>液体的沸点随气压减小而<span class="c-orange">降低</span>（高原煮饭不易熟，需用高压锅）</li>
+<li>高压锅原理：增大锅内气压，提高水的沸点</li></ul>
+<p><strong>应用</strong>：吸盘、吸管喝饮料、活塞式抽水机、离心式水泵。</p></div>
+
+<h2 id="sec6-6" style="margin-top:28px;">6.6 流体压强与流速</h2>
+<div class="kp"><h3>流体压强与流速的关系</h3>
+<p><strong>流体</strong>：气体和液体都没有一定的形状，且容易流动，统称为流体。</p>
+<div class="highlight-box">
+<strong>💡 伯努利原理</strong><br>
+在流体中，<span class="c-red">流速越大的位置，压强越小</span>；<span class="c-blue">流速越小的位置，压强越大</span>。<br>
+即：流速大 ⇨ 压强小；流速小 ⇨ 压强大。
+</div>
+<p><strong>飞机的升力</strong>：</p>
+<p>飞机机翼的形状是<span class="c-purple">上凸下平</span>的，气流经过机翼时，上方空气流速<span class="c-red">大</span>、压强<span class="c-red">小</span>，下方空气流速<span class="c-blue">小</span>、压强<span class="c-blue">大</span>，从而产生向上的压力差，即<strong>升力</strong>。当升力大于飞机重力时，飞机就能升空。</p>
+<div class="info-box">
+<strong>📌 流体压强与流速的应用与解释</strong>
+<ul style="padding-left:20px;margin:6px 0;">
+<li><span class="c-blue">火车站安全线</span>：火车高速驶过时，车旁空气流速大压强小，人会被"吸"向火车</li>
+<li><span class="c-green">两船不能并行</span>：两船中间水流速大压强小，两船相撞</li>
+<li><span class="c-orange">喷雾器</span>：吹气管口流速大压强小，液体被吸上喷出</li>
+<li><span class="c-purple">乒乓球弧圈球</span>：旋转的球带动空气，造成两侧压强差，产生弧线</li></ul>
+</div></div>
 
 <h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
 <div class="exercise"><div class="question"><span class="q-num">1</span>密度的计算公式是____。</div>
@@ -115,28 +215,55 @@
 <label><input type="radio" name="q2" value="A">A. F浮=ρ物gV物</label><label><input type="radio" name="q2" value="B">B. F浮=ρ液gV排</label>
 <label><input type="radio" name="q2" value="C">C. F浮=mg</label><label><input type="radio" name="q2" value="D">D. F浮=ρghS</label></div>
 <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-<div class="answer" id="answer-2" data-correct="B">✅ B。F浮=ρ液gV排=G排，浮力等于排开液体的重力。</div></div>
+<div class="answer" id="answer-2" data-correct="B">✅ B。F浮=ρ液gV排=G排，浮力等于物体排开液体所受的重力。注意是液体密度和排开体积。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">3</span>液体内部压强的计算公式是____。</div>
 <div class="options">
 <label><input type="radio" name="q3" value="A">A. p = F/S</label><label><input type="radio" name="q3" value="B">B. p = ρgh</label>
 <label><input type="radio" name="q3" value="C">C. p = mg</label><label><input type="radio" name="q3" value="D">D. p = ρgV</label></div>
 <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-<div class="answer" id="answer-3" data-correct="B">✅ B。液体压强p=ρgh，与液体密度和深度有关，与容器形状无关。</div></div>
+<div class="answer" id="answer-3" data-correct="B">✅ B。液体压强p=ρgh，只与液体密度和深度有关，与容器形状、液体体积无关。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">4</span>标准大气压的值约为____。</div>
 <div class="options">
 <label><input type="radio" name="q4" value="A">A. 1.013×10³ Pa</label><label><input type="radio" name="q4" value="B">B. 1.013×10⁵ Pa</label>
 <label><input type="radio" name="q4" value="C">C. 1.013×10⁷ Pa</label><label><input type="radio" name="q4" value="D">D. 760 Pa</label></div>
 <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
-<div class="answer" id="answer-4" data-correct="B">✅ B。标准大气压p₀≈1.013×10⁵Pa=760mmHg。</div></div>
+<div class="answer" id="answer-4" data-correct="B">✅ B。标准大气压p₀≈1.013×10⁵Pa=760mmHg，由托里拆利实验测出。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">5</span>当物体浸没在液体中，若ρ物&lt;ρ液，物体将____。</div>
 <div class="options">
 <label><input type="radio" name="q5" value="A">A. 下沉</label><label><input type="radio" name="q5" value="B">B. 悬浮</label>
 <label><input type="radio" name="q5" value="C">C. 上浮</label><label><input type="radio" name="q5" value="D">D. 无法判断</label></div>
 <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
-<div class="answer" id="answer-5" data-correct="C">✅ C。ρ物&lt;ρ液时，F浮&gt;G，物体上浮直至漂浮。</div></div>
+<div class="answer" id="answer-5" data-correct="C">✅ C。ρ物&lt;ρ液时，F浮&gt;G，物体上浮直至漂浮（漂浮时F浮=G）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>下列实例中，属于增大压强的是____。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 书包背带做得较宽</label>
+<label><input type="radio" name="q6" value="B">B. 坦克装有履带</label>
+<label><input type="radio" name="q6" value="C">C. 图钉的钉尖做得很尖</label>
+<label><input type="radio" name="q6" value="D">D. 铁轨铺在枕木上</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="C">✅ C。图钉尖做得很尖是通过减小受力面积来增大压强。A、B、D都是通过增大受力面积来减小压强。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>关于飞机升力的产生，下列说法正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. 机翼上方空气流速大，压强大</label>
+<label><input type="radio" name="q7" value="B">B. 机翼下方空气流速小，压强小</label>
+<label><input type="radio" name="q7" value="C">C. 机翼上方空气流速大压强小，下方流速小压强大，产生向上的升力</label>
+<label><input type="radio" name="q7" value="D">D. 飞机升力是由于发动机向下喷气产生的</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="C">✅ C。飞机机翼上凸下平，上方空气流速大压强小，下方空气流速小压强大，产生向上的压力差（升力）。这是伯努利原理的应用。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>关于连通器，下列说法正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 连通器中各容器液面一定相平</label>
+<label><input type="radio" name="q8" value="B">B. 连通器装入同种液体且不流动时，各容器液面相平</label>
+<label><input type="radio" name="q8" value="C">C. 连通器各容器液面高低与液体密度无关</label>
+<label><input type="radio" name="q8" value="D">D. 连通器底部不相通也可以</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="B">✅ B。连通器装入同种液体且不流动时，各容器液面才相平。若是不同液体，液面不一定相平（密度小的液面高）。</div></div>
 </main></div>
 <script src="../assets/js/common.js"></script>
 <script>

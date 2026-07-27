@@ -3,6 +3,13 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>第三章 运动和力 - 初中物理沪教版</title>
 <link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.c-red{color:#dc2626;font-weight:600;} .c-blue{color:#2563eb;font-weight:600;} .c-green{color:#059669;font-weight:600;} .c-orange{color:#d97706;font-weight:600;} .c-purple{color:#7c3aed;font-weight:600;} .c-pink{color:#db2777;font-weight:600;} .c-teal{color:#0d9488;font-weight:600;}
+.highlight-box{background:linear-gradient(135deg,#fef3c7,#fde68a);border-left:4px solid #f59e0b;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.danger-box{background:linear-gradient(135deg,#fef2f2,#fee2e2);border-left:4px solid #ef4444;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.info-box{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:4px solid #3b82f6;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0;} table.phy-table th{background:#eff6ff;padding:10px 12px;text-align:left;color:#1e40af;} table.phy-table td{padding:10px 12px;border-bottom:1px solid #e2e8f0;} table.phy-table tr:hover td{background:#f8fafc;}
+</style>
 </head>
 <body>
 <div class="layout">
@@ -20,7 +27,7 @@
       </div>
     </li>
     <li><a href="ch04_work_machines.html"><span class="ch-num">4</span>机械和功</a></li>
-    
+
   </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
@@ -45,91 +52,170 @@
   <div class="page-title">第三章 运动和力</div>
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-<li>理解参照物的概念，知道运动和静止的相对性</li>
-<li>掌握速度公式，能进行匀速直线运动的计算</li>
-<li>理解力的概念，会用力的图示表示力</li>
-<li>掌握二力平衡条件</li>
-<li>理解牛顿第一定律和惯性</li></ul></div>
+<li>理解<span class="c-blue">参照物</span>的概念，知道运动和静止的相对性</li>
+<li>掌握<span class="c-red">速度公式</span>及单位换算，能进行匀速直线运动的计算</li>
+<li>能解读<span class="c-purple">s-t 图像和 v-t 图像</span></li>
+<li>理解<span class="c-red">力的概念</span>及三要素，了解弹力与弹簧测力计原理</li>
+<li>掌握<span class="c-red">二力平衡</span>条件，区分平衡力与相互作用力</li>
+<li>理解<span class="c-orange">牛顿第一定律</span>和惯性，了解伽利略理想实验</li>
+<li>理解<span class="c-teal">摩擦力</span>的分类及增大、减小的方法</li></ul></div>
 
 <h2 id="sec3-1">3.1 机械运动</h2>
 <div class="kp"><h3>参照物与运动的相对性</h3>
-<p><strong>机械运动</strong>：一个物体相对于另一个物体<strong>位置的变化</strong>叫做机械运动，简称运动。</p>
-<p><strong>参照物</strong>：研究物体运动时，被选作<strong>标准</strong>的物体叫做参照物。同一物体选择不同参照物，运动状态可能不同——这就是<strong>运动和静止的相对性</strong>。</p>
-<p>实例：坐在行驶的汽车里，以地面为参照物是运动的，以汽车座椅为参照物是静止的。</p></div>
+<p><span class="c-red">机械运动</span>：一个物体相对于另一个物体<span class="c-red">位置的变化</span>叫做机械运动，简称运动。它是自然界最普遍的运动形式。</p>
+<p><span class="c-blue">参照物</span>：研究物体运动时，被选作<span class="c-red">标准</span>的物体叫做参照物。同一物体选择不同参照物，运动状态可能不同--这就是<span class="c-red">运动和静止的相对性</span>。</p>
+<p>实例：坐在行驶的汽车里，以<span class="c-green">地面</span>为参照物是运动的，以<span class="c-green">汽车座椅</span>为参照物是静止的。</p>
+<div class="info-box">📌 <strong>判断方法：</strong>看被研究物体相对于参照物<span class="c-red">位置是否改变</span>。位置变了→运动；位置没变→静止。参照物一旦选定，就假定它<span class="c-red">不动</span>。通常选地面或固定在地面上的物体为参照物。</div>
+<div class="highlight-box">💡 <strong>经典案例：</strong>"两岸猿声啼不住，轻舟已过万重山"--以<span class="c-red">山</span>为参照物，船是运动的；以<span class="c-red">船</span>为参照物，船上的乘客是静止的。</div></div>
 
 <h2 id="sec3-2">3.2 匀速直线运动</h2>
-<div class="kp"><h3>速度</h3>
-<p><strong>匀速直线运动</strong>：物体沿直线运动，在相等时间内通过的路程相等。</p>
-<p><strong>速度</strong>：表示物体运动快慢的物理量。物体在单位时间内通过的路程。</p>
+<div class="kp"><h3>速度与单位换算</h3>
+<p><span class="c-red">匀速直线运动</span>：物体沿直线运动，在相等时间内通过的路程相等。</p>
+<p><span class="c-blue">速度</span>：表示物体运动快慢的物理量。物体在单位时间内通过的路程。</p>
 <span class="formula">v = s / t （速度 = 路程 / 时间）</span>
-<p>单位：米/秒（m/s），常用单位 千米/时（km/h）。</p>
-<p>换算：<strong>1 m/s = 3.6 km/h</strong></p></div>
+<p>单位：<span class="c-red">米/秒（m/s）</span>，常用单位 <span class="c-red">千米/时（km/h）</span>。</p>
+<p>换算：<span class="c-red">1 m/s = 3.6 km/h</span>，即 <span class="c-red">1 km/h = 1/3.6 m/s ≈ 0.28 m/s</span></p>
+<div class="highlight-box">💡 <strong>换算推导：</strong>1 m/s = (1/1000 km) / (1/3600 h) = 3600/1000 km/h = <span class="c-red">3.6 km/h</span><br>
+<strong>速记：</strong>m/s 变 km/h <span class="c-red">×3.6</span>；km/h 变 m/s <span class="c-red">÷3.6</span>。<br>
+例：10 m/s = 36 km/h；72 km/h = 20 m/s。</div></div>
+
+<div class="kp"><h3>s-t 图像与 v-t 图像解读</h3>
+<table class="phy-table">
+  <thead><tr><th>图像类型</th><th>匀速直线运动</th><th>静止</th><th>匀加速（变速）</th></tr></thead>
+  <tbody>
+    <tr><td><span class="c-blue">s-t 图（路程-时间）</span></td><td><span class="c-red">过原点的倾斜直线</span>（斜率=速度）</td><td>平行于横轴的水平线</td><td>曲线（向上弯曲）</td></tr>
+    <tr><td><span class="c-blue">v-t 图（速度-时间）</span></td><td>平行于横轴的水平线（v=常量）</td><td>v=0（在横轴上）</td><td>过原点的倾斜直线</td></tr>
+  </tbody>
+</table>
+<div class="info-box">📌 <strong>读图技巧：</strong>① s-t 图中，<span class="c-red">直线斜率越大，速度越大</span>；<span class="c-red">水平线表示静止</span>。② v-t 图中，<span class="c-red">水平线表示匀速</span>，<span class="c-red">倾斜直线表示变速</span>（斜率表示加速度）。③ 图线<span class="c-red">越陡</span>，变化越快。</div></div>
 
 <div class="anim-container"><h3 style="margin-bottom:12px;">🏃 匀速直线运动 s-t / v-t 图</h3>
 <canvas id="stCanvas" style="width:100%;max-width:660px;height:250px;"></canvas></div>
 
 <h2 id="sec3-3">3.3 变速直线运动</h2>
 <div class="kp"><h3>平均速度</h3>
-<p><strong>变速直线运动</strong>：物体沿直线运动，在相等时间内通过的路程<strong>不相等</strong>。</p>
-<p><strong>平均速度</strong>：表示物体在某段路程（或某段时间）内运动的平均快慢程度。</p>
+<p><span class="c-red">变速直线运动</span>：物体沿直线运动，在相等时间内通过的路程<span class="c-red">不相等</span>。</p>
+<p><span class="c-blue">平均速度</span>：表示物体在某段路程（或某段时间）内运动的平均快慢程度。</p>
 <span class="formula">v<sub>平均</sub> = s<sub>总</sub> / t<sub>总</sub></span>
-<p>注意：平均速度不等于速度的平均值！必须用总路程除以总时间。</p></div>
+<div class="danger-box">⚠️ <strong>易错点：</strong>平均速度<span class="c-red">不等于速度的平均值</span>！必须用<span class="c-red">总路程除以总时间</span>，绝不能用 (v₁+v₂)/2 来计算（除非两段时间相等）。<br>
+<strong>例题：</strong>一辆车前半程以 20 m/s 行驶，后半程以 30 m/s 行驶，全程平均速度 ≠ (20+30)/2=25 m/s。<br>
+正确解法：设全程为 2s，则 t₁=s/20，t₂=s/30，v平均 = 2s / (s/20+s/30) = 2/(1/20+1/30) = <span class="c-red">24 m/s</span>。</div></div>
 
 <h2 id="sec3-4">3.4 力 力的图示</h2>
 <div class="keypoints-grid">
 <div class="kp"><h3>力的概念</h3>
-<p><strong>力</strong>是物体对物体的<strong>作用</strong>。力不能脱离物体而存在。</p>
+<p><span class="c-red">力</span>是物体对物体的<span class="c-red">作用</span>。力不能脱离物体而存在。施力物体和受力物体总是<span class="c-red">同时存在</span>的。</p>
 <p>力的作用效果：</p>
 <ul style="padding-left:16px;line-height:2;font-size:.9rem;color:var(--text-secondary);">
-<li><strong>改变物体的形状</strong>（形变）</li>
-<li><strong>改变物体的运动状态</strong>（速度大小或方向改变）</li>
+<li><span class="c-blue">改变物体的形状</span>（形变）：拉长弹簧、压扁皮球</li>
+<li><span class="c-blue">改变物体的运动状态</span>（速度大小或方向改变）：刹车减速、踢球改变方向</li>
 </ul>
-<p>力的单位：<strong>牛顿（N）</strong>。</p>
-<p>力的三要素：<strong>大小、方向、作用点</strong>。</p></div>
+<p>力的单位：<span class="c-red">牛顿（N）</span>。</p>
+<p><strong>力的三要素：</strong><span class="c-red">大小、方向、作用点</span>。三要素中任何一个改变，力的作用效果都会改变。</p></div>
 <div class="kp"><h3>力的图示与示意图</h3>
-<p><strong>力的图示</strong>：用一根带箭头的线段表示力——线段的起点表示作用点，长度表示力的大小，箭头表示方向。</p>
-<p>必须标明<strong>标度</strong>（单位长度表示多少牛）。</p>
-<p><strong>力的示意图</strong>：只需表示力的方向和作用点，不严格要求标度。</p></div>
+<p><span class="c-blue">力的图示</span>：用一根带箭头的线段表示力--线段的起点表示作用点，长度表示力的大小，箭头表示方向。必须标明<span class="c-red">标度</span>（单位长度表示多少牛）。</p>
+<p><span class="c-blue">力的示意图</span>：只需表示力的方向和作用点，<span class="c-red">不严格要求标度</span>。日常分析多用示意图。</p></div>
 <div class="kp"><h3>重力</h3>
-<p>由于地球的吸引而使物体受到的力叫做<strong>重力</strong>，方向<strong>竖直向下</strong>。</p>
+<p>由于地球的吸引而使物体受到的力叫做<span class="c-red">重力</span>，方向<span class="c-red">竖直向下</span>。</p>
 <span class="formula">G = mg</span>
-<p>g ≈ 9.8 N/kg（粗略计算可取 10 N/kg）</p>
-<p>重力在物体上的作用点叫<strong>重心</strong>。</p></div>
+<p>g ≈ <span class="c-red">9.8 N/kg</span>（粗略计算可取 10 N/kg）</p>
+<p>重力在物体上的作用点叫<span class="c-blue">重心</span>。形状规则、质量均匀的物体，重心在<span class="c-red">几何中心</span>。</p></div>
 </div>
 
+<div class="kp"><h3>弹力与弹簧测力计</h3>
+<p><span class="c-red">弹力</span>：物体发生弹性形变时，由于要恢复原状而对接触的物体产生的力。常见的拉力、压力、支持力都属于弹力。</p>
+<p><span class="c-purple">弹簧测力计</span>原理：在弹性限度内，弹簧的伸长量与所受拉力成<span class="c-red">正比</span>。</p>
+<span class="formula">F = k·Δx （拉力 = 劲度系数 × 伸长量）</span>
+<div class="highlight-box">💡 <strong>使用弹簧测力计的注意事项：</strong>① 使用前要<span class="c-red">校零</span>；② 拉力方向应与弹簧轴线方向<span class="c-red">一致</span>；③ 不能超过它的<span class="c-red">量程</span>（最大测量值）；④ 读数时视线要与刻度盘<span class="c-red">垂直</span>。</div></div>
+
 <div class="kp"><h3>合力与分力</h3>
-<p>如果一个力产生的效果跟几个力共同作用的效果相同，这个力就叫那几个力的<strong>合力</strong>。</p>
+<p>如果一个力产生的效果跟几个力共同作用的效果相同，这个力就叫那几个力的<span class="c-red">合力</span>。</p>
 <p><strong>同一直线上二力的合成：</strong></p>
 <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-<li>同向：F<sub>合</sub> = F₁ + F₂，方向与两个力相同</li>
-<li>反向：F<sub>合</sub> = |F₁ - F₂|，方向与较大的力相同</li>
+<li><span class="c-green">同向</span>：F<sub>合</sub> = F₁ + F₂，方向与两个力相同</li>
+<li><span class="c-green">反向</span>：F<sub>合</sub> = |F₁ - F₂|，方向与较大的力相同</li>
 </ul></div>
 
 <h2 id="sec3-5">3.5 二力平衡</h2>
 <div class="kp"><h3>二力平衡条件</h3>
-<p>物体在几个力作用下保持<strong>静止</strong>或<strong>匀速直线运动</strong>状态，就说这几个力平衡。</p>
+<p>物体在几个力作用下保持<span class="c-red">静止</span>或<span class="c-red">匀速直线运动</span>状态，就说这几个力平衡。</p>
 <p><strong>二力平衡的条件：</strong></p>
 <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-<li>作用在<strong>同一物体</strong>上</li>
-<li>大小<strong>相等</strong></li>
-<li>方向<strong>相反</strong></li>
-<li>作用在<strong>同一直线上</strong></li>
+<li>作用在<span class="c-red">同一物体</span>上</li>
+<li>大小<span class="c-red">相等</span></li>
+<li>方向<span class="c-red">相反</span></li>
+<li>作用在<span class="c-red">同一直线上</span></li>
 </ul>
-<p>概括为：同体、等大、反向、共线。</p></div>
+<p>概括为：<span class="c-red">同体、等大、反向、共线</span>。</p></div>
+
+<div class="kp"><h3>平衡力 vs 相互作用力</h3>
+<p>两者都满足"等大、反向、共线"，但<span class="c-red">本质不同</span>，是最易混淆的考点：</p>
+<table class="phy-table">
+  <thead><tr><th>对比项</th><th>平衡力（二力平衡）</th><th>相互作用力（作用力与反作用力）</th></tr></thead>
+  <tbody>
+    <tr><td>受力物体</td><td>作用在<span class="c-red">同一</span>物体上</td><td>分别作用在<span class="c-red">两个</span>物体上</td></tr>
+    <tr><td>大小方向</td><td>等大、反向、共线</td><td>等大、反向、共线</td></tr>
+    <tr><td>是否同时产生/消失</td><td><span class="c-orange">不一定</span>（一个消失另一个可能存在）</td><td><span class="c-red">同时产生、同时消失</span></td></tr>
+    <tr><td>力的性质</td><td>可以是不同性质的力</td><td><span class="c-red">一定是同种性质</span>的力</td></tr>
+    <tr><td>典型例子</td><td>桌面上静止的书：重力与支持力</td><td>书压桌子的力与桌子支持书的力</td></tr>
+  </tbody>
+</table>
+<div class="danger-box">⚠️ <strong>区分关键：</strong>看<span class="c-red">受力物体是否是同一个</span>！平衡力作用在<span class="c-red">同一物体</span>上（使物体保持平衡）；相互作用力作用在<span class="c-red">两个不同物体</span>上（施力物与受力物互换）。</div></div>
 
 <h2 id="sec3-6">3.6 惯性 牛顿第一定律</h2>
+<div class="kp"><h3>伽利略理想实验</h3>
+<p><span class="c-purple">伽利略</span>通过斜面实验发现：小球从同一高度滚下，在阻力越小的表面上滚得越远。他推理得出：如果表面<span class="c-red">绝对光滑（无摩擦）</span>，小球将<span class="c-red">永远运动下去</span>，速度保持不变。</p>
+<div class="info-box">📌 <strong>科学方法：</strong>伽利略实验采用了<span class="c-red">实验+科学推理</span>的方法。先在实验中观察，再在思维中推理出"无摩擦"的理想情况。这是物理学中重要的研究方法--<span class="c-red">理想实验法</span>。</div></div>
+
 <div class="kp"><h3>牛顿第一定律（惯性定律）</h3>
-<p><strong>一切物体在没有受到外力作用的时候，总保持静止状态或匀速直线运动状态。</strong></p>
-<p>注意：牛顿第一定律是在实验基础上通过推理得出的，不能直接用实验验证（因为找不到完全不受力的物体）。</p></div>
+<p><span class="c-red">一切物体在没有受到外力作用的时候，总保持静止状态或匀速直线运动状态。</span></p>
+<div class="danger-box">⚠️ <strong>注意：</strong>① 牛顿第一定律是在实验基础上通过<span class="c-red">推理</span>得出的，<span class="c-red">不能直接用实验验证</span>（因为找不到完全不受力的物体）。② 定律阐明了<span class="c-red">力不是维持物体运动的原因</span>，而是<span class="c-red">改变物体运动状态的原因</span>。</div></div>
 
 <div class="kp"><h3>惯性</h3>
-<p><strong>惯性</strong>：物体保持原来运动状态<strong>不变</strong>的性质。</p>
+<p><span class="c-red">惯性</span>：物体保持原来运动状态<span class="c-red">不变</span>的性质。</p>
 <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-<li><strong>一切物体在任何情况下都有惯性</strong></li>
-<li>惯性大小只与物体的<strong>质量</strong>有关：质量越大，惯性越大</li>
-<li>惯性不是力，不能说"受到惯性"或"惯性力"</li>
+<li><span class="c-red">一切物体在任何情况下都有惯性</span>（无论运动还是静止、受力还是不受力）</li>
+<li>惯性大小只与物体的<span class="c-red">质量</span>有关：质量越大，惯性越大</li>
+<li>惯性<span class="c-red">不是力</span>，不能说"受到惯性"或"惯性力"，应说"具有惯性"</li>
 </ul>
-<p>实例：刹车时乘客前倾、抖落衣服上的灰尘、跳远前助跑。</p></div>
+<table class="phy-table">
+  <thead><tr><th>利用惯性（有利）</th><th>防范惯性（有害）</th></tr></thead>
+  <tbody>
+    <tr><td>跳远运动员助跑后起跳</td><td>汽车乘客必须系安全带</td></tr>
+    <tr><td>抖落衣服上的灰尘</td><td>汽车限速、保持车距</td></tr>
+    <tr><td>锤头松了，撞击使其套紧</td><td>雨天减速慢行防侧滑</td></tr>
+    <tr><td>投掷标枪、掷铅球前助跑</td><td>易碎物品用泡沫包装</td></tr>
+    <tr><td>子弹脱膛后继续飞行</td><td>汽车头枕防止追尾伤颈椎</td></tr>
+  </tbody>
+</table>
+<div class="highlight-box">💡 <strong>解释惯性现象的步骤：</strong>① 先说明原来两物体处于什么状态；② 再说明哪个物体状态发生改变；③ 最后说明由于惯性，另一物体保持原状态不变，从而产生现象。例如刹车时人前倾：人车原向前运动→刹车时车减速→人由于惯性继续向前运动→所以人前倾。</div></div>
+
+<div class="kp"><h3>摩擦力</h3>
+<p><span class="c-red">摩擦力</span>：两个互相接触的物体，当它们要发生或已经发生相对运动时，在接触面上产生的阻碍相对运动的力。方向与相对运动方向<span class="c-red">相反</span>。</p>
+<table class="phy-table">
+  <thead><tr><th>分类</th><th>定义</th><th>实例</th></tr></thead>
+  <tbody>
+    <tr><td><span class="c-red">静摩擦力</span></td><td>两物体有相对运动趋势但未发生相对运动时的摩擦力</td><td>推而未动的箱子、人走路时鞋底与地面、手握瓶子不掉</td></tr>
+    <tr><td><span class="c-red">滑动摩擦力</span></td><td>两物体相对滑动时的摩擦力</td><td>滑冰、推箱子滑动、擦黑板</td></tr>
+    <tr><td><span class="c-red">滚动摩擦力</span></td><td>两物体相对滚动时的摩擦力（通常比滑动摩擦小得多）</td><td>车轮滚动、滚珠轴承、行李箱轮子</td></tr>
+  </tbody>
+</table>
+<p><strong>影响滑动摩擦力大小的因素：</strong></p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li><span class="c-red">压力大小</span>：压力越大，摩擦力越大</li>
+<li><span class="c-red">接触面粗糙程度</span>：接触面越粗糙，摩擦力越大</li>
+<li>与接触面积大小、运动速度大小<span class="c-orange">无关</span></li>
+</ul>
+<table class="phy-table">
+  <thead><tr><th>增大摩擦的方法</th><th>减小摩擦的方法</th></tr></thead>
+  <tbody>
+    <tr><td>增大压力（如刹车捏闸）</td><td>减小压力（如轻推物体）</td></tr>
+    <tr><td>增大粗糙程度（如鞋底花纹、轮胎花纹）</td><td>减小粗糙程度（如磨光表面、加润滑油）</td></tr>
+    <tr><td>变滚动为滑动（如刹车时车轮抱死）</td><td>变滑动为滚动（如用滚珠轴承、行李箱装轮）</td></tr>
+    <tr><td>-</td><td>用滚动代替滑动、加气垫、磁悬浮</td></tr>
+  </tbody>
+</table>
+<div class="highlight-box">💡 <strong>测量滑动摩擦力：</strong>用弹簧测力计<span class="c-red">水平匀速拉动</span>物体，此时摩擦力与拉力为一对平衡力，大小<span class="c-red">相等</span>。原理：二力平衡。</div></div>
 
 <h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
 <div class="exercise"><div class="question"><span class="q-num">1</span>速度是表示物体____的物理量。</div>
@@ -139,7 +225,7 @@
 <label><input type="radio" name="q1" value="C">C. 位置变化</label>
 <label><input type="radio" name="q1" value="D">D. 路程大小</label></div>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1" data-correct="A">✅ A。速度表示物体运动的快慢，v=s/t。</div></div>
+<div class="answer" id="answer-1" data-correct="A">✅ A。速度表示物体运动的快慢，v=s/t。方向由速度方向表示，但"速度"本身描述的是快慢。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">2</span>1 m/s 等于____ km/h。</div>
 <div class="options">
@@ -148,7 +234,7 @@
 <label><input type="radio" name="q2" value="C">C. 36</label>
 <label><input type="radio" name="q2" value="D">D. 0.28</label></div>
 <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-<div class="answer" id="answer-2" data-correct="B">✅ B。1m/s=3.6km/h。换算：1m/s=(1/1000km)/(1/3600h)=3.6km/h。</div></div>
+<div class="answer" id="answer-2" data-correct="B">✅ B。1m/s=3.6km/h。换算：1m/s=(1/1000km)/(1/3600h)=3.6km/h。0.28是反向换算1km/h≈0.28m/s。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">3</span>关于惯性，下列说法正确的是____。</div>
 <div class="options">
@@ -157,7 +243,7 @@
 <label><input type="radio" name="q3" value="C">C. 一切物体在任何情况下都有惯性</label>
 <label><input type="radio" name="q3" value="D">D. 物体不受力时惯性消失</label></div>
 <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-<div class="answer" id="answer-3" data-correct="C">✅ C。一切物体在任何状态下都有惯性，惯性大小只与质量有关。</div></div>
+<div class="answer" id="answer-3" data-correct="C">✅ C。一切物体在任何状态下都有惯性，惯性大小只与质量有关，与速度、受力与否无关。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">4</span>二力平衡的条件中，两个力必须____。</div>
 <div class="options">
@@ -166,7 +252,7 @@
 <label><input type="radio" name="q4" value="C">C. 同体、等大、反向、共线</label>
 <label><input type="radio" name="q4" value="D">D. 作用点可以不同</label></div>
 <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
-<div class="answer" id="answer-4" data-correct="C">✅ C。二力平衡四条件：同体、等大、反向、共线。</div></div>
+<div class="answer" id="answer-4" data-correct="C">✅ C。二力平衡四条件：同体、等大、反向、共线。注意作用在同一物体上，这是与相互作用力的关键区别。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">5</span>重力的大小G=mg中，g的数值约为____。</div>
 <div class="options">
@@ -184,7 +270,25 @@
 <label><input type="radio" name="q6" value="C">C. 静止状态或匀速直线运动状态</label>
 <label><input type="radio" name="q6" value="D">D. 加速运动状态</label></div>
 <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
-<div class="answer" id="answer-6" data-correct="C">✅ C。不受外力时物体保持静止或匀速直线运动状态，即保持原来的运动状态不变。</div></div>
+<div class="answer" id="answer-6" data-correct="C">✅ C。不受外力时物体保持静止或匀速直线运动状态，即保持原来的运动状态不变。原来静止就静止，原来运动就匀速运动。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>下列措施中，为了减小摩擦的是____。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. 鞋底做有凹凸不平的花纹</label>
+<label><input type="radio" name="q7" value="B">B. 自行车刹车时用力捏闸</label>
+<label><input type="radio" name="q7" value="C">C. 给自行车的链条加润滑油</label>
+<label><input type="radio" name="q7" value="D">D. 汽车轮胎上做有花纹</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="C">✅ C。加润滑油使接触面变光滑，减小摩擦。A、D是增大粗糙程度增大摩擦；B是增大压力增大摩擦。减小摩擦还有：变滑动为滚动、加气垫等。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>一本书静止放在水平桌面上，下列各对力中属于平衡力的是____。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 书对桌面的压力和桌面对书的支持力</label>
+<label><input type="radio" name="q8" value="B">B. 书受到的重力和桌面对书的支持力</label>
+<label><input type="radio" name="q8" value="C">C. 书受到的重力和书对桌面的压力</label>
+<label><input type="radio" name="q8" value="D">D. 书对桌面的压力和地面对桌子的支持力</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="B">✅ B。书受到的重力和桌面对书的支持力都作用在<span class="c-red">同一本书</span>上，等大反向共线，是平衡力。A是相互作用力（分别作用在书和桌子上）。C分别作用在书和桌子上且方向相同。D受力物体不同。</div></div>
 </main></div>
 <script src="../assets/js/common.js"></script>
 <script>

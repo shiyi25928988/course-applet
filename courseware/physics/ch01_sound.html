@@ -11,6 +11,11 @@
 .freq-demo { display:flex; gap:16px; flex-wrap:wrap; }
 .freq-demo .freq-box { flex:1; min-width:180px; padding:16px; background:var(--bg); border-radius:10px; text-align:center; }
 .freq-demo canvas { width:100%; height:120px; }
+.c-red{color:#dc2626;font-weight:600;} .c-blue{color:#2563eb;font-weight:600;} .c-green{color:#059669;font-weight:600;} .c-orange{color:#d97706;font-weight:600;} .c-purple{color:#7c3aed;font-weight:600;} .c-pink{color:#db2777;font-weight:600;} .c-teal{color:#0d9488;font-weight:600;}
+.highlight-box{background:linear-gradient(135deg,#fef3c7,#fde68a);border-left:4px solid #f59e0b;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.danger-box{background:linear-gradient(135deg,#fef2f2,#fee2e2);border-left:4px solid #ef4444;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.info-box{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:4px solid #3b82f6;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0;} table.phy-table th{background:#eff6ff;padding:10px 12px;text-align:left;color:#1e40af;} table.phy-table td{padding:10px 12px;border-bottom:1px solid #e2e8f0;} table.phy-table tr:hover td{background:#f8fafc;}
 </style>
 </head>
 <body>
@@ -22,6 +27,7 @@
       <div class="subsections">
         <a href="#sec1-1" data-section="s1">1.1 声波的产生和传播</a>
         <a href="#sec1-2" data-section="s2">1.2 声音的特征</a>
+        <a href="#sec1-3" data-section="s3">1.3 声音的利用</a>
         <a href="#exercises" data-section="ex">练习题</a>
       </div>
     </li>
@@ -29,7 +35,7 @@
     <li><a href="ch03_motion_force.html"><span class="ch-num">3</span>运动和力</a></li>
     <li><a href="ch04_work_machines.html"><span class="ch-num">4</span>机械和功</a></li>
     <li><a href="ch05_heat_energy.html"><span class="ch-num">5</span>热与能</a></li>
-    
+
   </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
@@ -55,11 +61,12 @@
   <div class="card">
     <div class="card-title"><span class="icon">🎯</span>学习目标</div>
     <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-      <li>知道声音是由物体振动产生的</li>
-      <li>理解声音传播需要介质，知道声音在不同介质中传播速度不同</li>
-      <li>理解乐音的三要素：音调、响度和音色</li>
-      <li>知道噪声的危害和控制方法</li>
-      <li>了解超声波和次声波的特点及应用</li>
+      <li>知道声音是由物体<span class="c-blue">振动</span>产生的，能识别生活中的声源</li>
+      <li>理解声音传播需要<span class="c-blue">介质</span>，掌握声音在不同介质中的传播速度</li>
+      <li>理解乐音的三要素：<span class="c-red">音调、响度和音色</span></li>
+      <li>掌握<span class="c-orange">回声</span>的计算方法及其在声呐中的应用</li>
+      <li>了解<span class="c-purple">超声波</span>和<span class="c-purple">次声波</span>的特点及应用</li>
+      <li>知道<span class="c-red">噪声</span>的危害和控制方法，了解分贝等级</li>
     </ul>
   </div>
 
@@ -67,17 +74,38 @@
   <h2 data-section="s1" id="sec1-1" style="margin:28px 0 16px;">1.1 声波的产生和传播</h2>
 
   <div class="kp">
-    <h3>声音的产生</h3>
-    <p>声音是由物体的<strong>振动</strong>产生的。一切正在发声的物体都在振动，振动停止，发声也停止。正在发声的物体叫做<strong>声源</strong>。</p>
-    <p>例如：人说话时声带振动；敲鼓时鼓面振动；弹琴时琴弦振动。</p>
+    <h3>声音的产生——声源</h3>
+    <p>声音是由物体的<span class="c-red">振动</span>产生的。一切正在发声的物体都在振动，<span class="c-red">振动停止，发声也停止</span>。正在发声的物体叫做<span class="c-blue">声源</span>。</p>
+    <p>声源可以是固体、液体或气体：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li><span class="c-green">固体声源</span>：人说话时声带振动、敲鼓时鼓面振动、弹琴时琴弦振动、尺子敲桌面振动</li>
+      <li><span class="c-green">液体声源</span>：流水声（水振动）、海浪声</li>
+      <li><span class="c-green">气体声源</span>：吹口哨（空气柱振动）、吹笛子、雷声</li>
+    </ul>
+    <div class="highlight-box">💡 <strong>易错提示：</strong>振动一定发声，但人耳不一定能听到（如蝙蝠发出的超声波）。发声一定在振动，但振动停止后声音仍可在介质中继续传播。</div>
   </div>
 
   <div class="kp">
-    <h3>声音的传播</h3>
-    <p>声音的传播需要<strong>介质</strong>。固体、液体、气体都可以传播声音。<strong>真空不能传声</strong>。</p>
-    <p>声音在介质中以<strong>声波</strong>的形式传播。声波是一种<strong>纵波</strong>，介质中质点的振动方向与波的传播方向相同。</p>
-    <p>声速：声音在不同介质中的传播速度不同。一般情况下，<strong>v<sub>固</sub> > v<sub>液</sub> > v<sub>气</sub></strong>。15℃时空气中的声速约为 <strong>340 m/s</strong>。</p>
+    <h3>声音的传播——介质与声波</h3>
+    <p>声音的传播需要<span class="c-red">介质</span>。固体、液体、气体都可以传播声音。<span class="c-red">真空不能传声</span>（如月球表面、宇宙真空中无法直接对话）。</p>
+    <p>声音在介质中以<span class="c-blue">声波</span>的形式传播。声波是一种<span class="c-blue">纵波</span>，介质中质点的振动方向与波的传播方向<span class="c-purple">相同</span>（疏密相间地向外传播）。</p>
+    <p>声速：声音在不同介质中的传播速度不同。一般情况下，<span class="c-red">v<sub>固</sub> &gt; v<sub>液</sub> &gt; v<sub>气</sub></span>。15℃时空气中的声速约为 <span class="c-red">340 m/s</span>。声速还与温度有关——温度越高，声速越大。</p>
     <span class="formula">v = s / t （声速 = 路程 / 时间）</span>
+  </div>
+
+  <div class="kp">
+    <h3>声音在不同介质中的传播速度</h3>
+    <table class="phy-table">
+      <thead><tr><th>介质</th><th>温度</th><th>声速 (m/s)</th><th>特点说明</th></tr></thead>
+      <tbody>
+        <tr><td><span class="c-blue">空气</span></td><td>15℃</td><td><span class="c-red">340</span></td><td>常用参考值，温度升高声速增大</td></tr>
+        <tr><td><span class="c-blue">水</span></td><td>25℃</td><td><span class="c-red">1500</span></td><td>约为空气中声速的4.4倍</td></tr>
+        <tr><td><span class="c-blue">钢铁</span></td><td>常温</td><td><span class="c-red">5200</span></td><td>固体传声最快，"贴耳听铁轨"</td></tr>
+        <tr><td>软木</td><td>常温</td><td>约500</td><td>多孔结构，隔音效果好</td></tr>
+        <tr><td>真空</td><td>-</td><td><span class="c-red">0</span></td><td>不能传声</td></tr>
+      </tbody>
+    </table>
+    <div class="info-box">📌 <strong>记忆口诀：</strong>固体传声最快，液体次之，气体最慢，真空不传声。"贴耳听铁轨"可提前判断火车到来——因为钢铁传声比空气快得多。</div>
   </div>
 
   <div class="anim-container">
@@ -86,8 +114,17 @@
       <canvas id="waveCanvas" class="wave-canvas"></canvas>
     </div>
     <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">
-      声源振动引起周围空气分子疏密相间地向外传播——形成声波（纵波）
+      声源振动引起周围空气分子疏密相间地向外传播--形成声波（纵波）
     </p>
+  </div>
+
+  <div class="kp">
+    <h3>回声与声呐应用</h3>
+    <p><span class="c-blue">回声</span>：声音在传播过程中遇到障碍物被反射回来，再次被耳朵听到的现象。人耳要能区分原声与回声，两者到达耳朵的时间差至少为 <span class="c-red">0.1 秒</span>，对应障碍物距离至少为 <span class="c-red">17 m</span>（声速按340 m/s计，往返路程s=vt/2）。</p>
+    <span class="formula">s = v·t / 2 （回声测距：s为距离，t为往返时间，v为声速）</span>
+    <div class="highlight-box">💡 <strong>声呐（SONAR）应用：</strong>船只利用声呐向海底发射超声波，接收回声信号，根据时间差计算海水深度或鱼群位置。计算公式：<span class="c-red">h = v·t/2</span>。同样原理也用于医学<span class="c-purple">B超</span>、汽车<span class="c-purple">倒车雷达</span>、蝙蝠的回声定位。</div>
+    <p><strong>例题：</strong>一艘船向海底发射声呐信号，4秒后收到回声。已知海水中声速为1500 m/s，求海底深度。</p>
+    <p>解：<span class="c-green">h = v·t/2 = 1500 × 4 / 2 = 3000 m</span></p>
   </div>
 
   <!-- 1.2 -->
@@ -95,32 +132,32 @@
 
   <div class="kp">
     <h3>乐音的三要素</h3>
-    <p>乐音的三个特征：<strong>音调、响度、音色</strong>。它们分别由不同的物理因素决定。</p>
+    <p>乐音的三个特征：<span class="c-red">音调、响度、音色</span>。它们分别由不同的物理因素决定，是描述声音最基本的三个维度。</p>
   </div>
 
   <div class="keypoints-grid">
     <div class="kp">
       <h3>🔺 音调</h3>
-      <p>音调指声音的<strong>高低</strong>。</p>
-      <p>决定因素：发声体振动的<strong>频率</strong>（每秒振动次数，单位：赫兹 Hz）。</p>
-      <p>频率越高，音调越高；频率越低，音调越低。</p>
-      <p>人耳能听到的频率范围：<strong>20 Hz ~ 20000 Hz</strong>。</p>
+      <p>音调指声音的<span class="c-blue">高低</span>。</p>
+      <p>决定因素：发声体振动的<span class="c-red">频率</span>（每秒振动次数，单位：赫兹 Hz）。</p>
+      <p>频率越高，音调<span class="c-red">越高</span>；频率越低，音调<span class="c-red">越低</span>。</p>
+      <p>人耳能听到的频率范围：<span class="c-red">20 Hz ~ 20000 Hz</span>。</p>
       <p>超声波：频率 &gt; 20000 Hz；次声波：频率 &lt; 20 Hz。</p>
     </div>
     <div class="kp">
       <h3>📢 响度</h3>
-      <p>响度指声音的<strong>强弱</strong>（大小）。</p>
-      <p>决定因素：发声体振动的<strong>振幅</strong>（偏离平衡位置的最大距离）。</p>
-      <p>振幅越大，响度越大。</p>
-      <p>响度还与<strong>距离声源的远近</strong>有关：距离越远，响度越小。</p>
-      <p>响度单位：<strong>分贝（dB）</strong>。</p>
+      <p>响度指声音的<span class="c-blue">强弱</span>（大小）。</p>
+      <p>决定因素：发声体振动的<span class="c-red">振幅</span>（偏离平衡位置的最大距离）。</p>
+      <p>振幅越大，响度<span class="c-red">越大</span>。</p>
+      <p>响度还与<span class="c-purple">距离声源的远近</span>有关：距离越远，响度越小。</p>
+      <p>响度单位：<span class="c-red">分贝（dB）</span>。</p>
     </div>
     <div class="kp">
       <h3>🎵 音色</h3>
-      <p>音色指声音的<strong>品质</strong>（特色）。</p>
-      <p>决定因素：发声体的<strong>材料、结构</strong>以及振动的<strong>波形</strong>。</p>
+      <p>音色指声音的<span class="c-blue">品质</span>（特色）。</p>
+      <p>决定因素：发声体的<span class="c-red">材料、结构</span>以及振动的<span class="c-red">波形</span>。</p>
       <p>不同乐器演奏同一音调，我们仍能分辨出来——就是因为音色不同。</p>
-      <p>应用：语音识别、乐器鉴定。</p>
+      <p>应用：语音识别、乐器鉴定、"闻其声知其人"。</p>
     </div>
   </div>
 
@@ -129,28 +166,97 @@
     <div class="freq-demo">
       <div class="freq-box">
         <canvas id="freqLow"></canvas>
-        <p style="font-weight:600;margin-top:6px;">低频率 → 低音调</p>
+        <p style="font-weight:600;margin-top:6px;">低频率 -> 低音调</p>
       </div>
       <div class="freq-box">
         <canvas id="freqMid"></canvas>
-        <p style="font-weight:600;margin-top:6px;">中频率 → 中音调</p>
+        <p style="font-weight:600;margin-top:6px;">中频率 -> 中音调</p>
       </div>
       <div class="freq-box">
         <canvas id="freqHigh"></canvas>
-        <p style="font-weight:600;margin-top:6px;">高频率 → 高音调</p>
+        <p style="font-weight:600;margin-top:6px;">高频率 -> 高音调</p>
       </div>
     </div>
   </div>
 
   <div class="kp">
-    <h3>噪声与控制</h3>
-    <p>噪声：从物理学角度，噪声是发声体做<strong>无规则振动</strong>时发出的声音。从环保角度，凡是<strong>妨碍人们正常休息、学习和工作</strong>的声音都属于噪声。</p>
-    <p>控制噪声的三种途径：</p>
+    <h3>三要素对比表</h3>
+    <table class="phy-table">
+      <thead><tr><th>特征</th><th>含义</th><th>决定因素</th><th>生活实例</th></tr></thead>
+      <tbody>
+        <tr><td><span class="c-red">音调</span></td><td>声音的高低</td><td>频率（Hz）</td><td>女高音/男低音、吹笛按不同孔</td></tr>
+        <tr><td><span class="c-orange">响度</span></td><td>声音的强弱</td><td>振幅 + 距离</td><td>大声说话/小声说话、调节音量</td></tr>
+        <tr><td><span class="c-purple">音色</span></td><td>声音的品质</td><td>材料、结构、波形</td><td>区分钢琴与小提琴</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="kp">
+    <h3>噪声的危害与控制</h3>
+    <p><span class="c-red">噪声</span>：从物理学角度，噪声是发声体做<span class="c-red">无规则振动</span>时发出的声音。从环保角度，凡是<span class="c-red">妨碍人们正常休息、学习和工作</span>的声音都属于噪声。</p>
+    <p><strong>噪声分贝等级表（dB）：</strong></p>
+    <table class="phy-table">
+      <thead><tr><th>分贝范围</th><th>等级</th><th>感受与影响</th></tr></thead>
+      <tbody>
+        <tr><td><span class="c-green">0 ~ 30 dB</span></td><td>安静</td><td>适合睡眠、阅读，如图书馆、卧室</td></tr>
+        <tr><td><span class="c-green">30 ~ 60 dB</span></td><td>正常</td><td>日常交谈、办公室环境</td></tr>
+        <tr><td><span class="c-orange">60 ~ 70 dB</span></td><td>吵闹</td><td>影响睡眠与学习，如繁忙街道</td></tr>
+        <tr><td><span class="c-orange">70 ~ 90 dB</span></td><td>很吵</td><td>长期暴露会损害听力</td></tr>
+        <tr><td><span class="c-red">90 dB 以上</span></td><td>有害</td><td>会损坏听力，如电锯、喷气式飞机附近</td></tr>
+        <tr><td><span class="c-red">150 dB 以上</span></td><td>致命</td><td>瞬时可使鼓膜破裂</td></tr>
+      </tbody>
+    </table>
+    <div class="danger-box">⚠️ <strong>噪声危害：</strong>长期处于高噪声环境中，会导致听力下降、神经衰弱、心血管疾病，甚至引发事故。为了保护听力，声音不能超过 <span class="c-red">90 dB</span>；为了保证休息和睡眠，声音不能超过 <span class="c-red">50 dB</span>。</div>
+    <p><strong>控制噪声的三种途径及案例：</strong></p>
+    <table class="phy-table">
+      <thead><tr><th>途径</th><th>原理</th><th>典型案例</th></tr></thead>
+      <tbody>
+        <tr><td><span class="c-red">在声源处减弱</span></td><td>减少噪声的产生</td><td>禁鸣喇叭、摩托车安装消音器、机器加隔音罩</td></tr>
+        <tr><td><span class="c-orange">在传播过程中减弱</span></td><td>阻断噪声传播</td><td>马路两旁植树造林、高速公路隔音墙、关闭门窗</td></tr>
+        <tr><td><span class="c-blue">在人耳处减弱</span></td><td>阻止噪声进入耳朵</td><td>戴耳塞、防噪声耳罩、棉花塞耳</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 1.3 -->
+  <h2 data-section="s3" id="sec1-3" style="margin:28px 0 16px;">1.3 声音的利用</h2>
+
+  <div class="kp">
+    <h3>声音可以传递信息</h3>
+    <p>人们通过声音<span class="c-blue">获取信息</span>是日常生活和科学技术中常见的应用：</p>
     <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-      <li><strong>在声源处减弱</strong>——如禁鸣喇叭、消音器</li>
-      <li><strong>在传播过程中减弱</strong>——如植树造林、隔音墙</li>
-      <li><strong>在人耳处减弱</strong>——如戴耳塞、防噪耳罩</li>
+      <li><span class="c-green">人与人交谈</span>——传递语言信息</li>
+      <li><span class="c-green">听诊器</span>——医生通过声音判断心肺状况</li>
+      <li><span class="c-green">声呐（SONAR）</span>——探测海底深度、鱼群位置、潜艇</li>
+      <li><span class="c-green">回声定位</span>——蝙蝠、海豚利用超声波导航和捕食</li>
+      <li><span class="c-green">B超（B型超声波）</span>——医学成像，观察内脏和胎儿</li>
+      <li><span class="c-green">倒车雷达</span>——汽车利用超声波探测障碍物距离</li>
     </ul>
+  </div>
+
+  <div class="kp">
+    <h3>声音可以传递能量</h3>
+    <p>声波不仅能够传递信息，还能传递<span class="c-red">能量</span>：</p>
+    <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+      <li><span class="c-purple">超声波清洗</span>——精密零件、眼镜的清洗，利用超声波能量去除污垢</li>
+      <li><span class="c-purple">超声波碎石</span>——医学上用超声波击碎体内结石，免于开刀</li>
+      <li><span class="c-purple">超声波焊接</span>——工业上焊接塑料</li>
+      <li><span class="c-purple">超声波驱鼠</span>——利用特定频率声波驱赶害虫</li>
+    </ul>
+    <div class="info-box">📌 <strong>判断技巧：</strong>"<span class="c-red">探测/诊断/定位</span>"类应用是传递信息；"<span class="c-red">清洗/碎石/焊接/去除</span>"类应用是传递能量。</div>
+  </div>
+
+  <div class="kp">
+    <h3>超声波与次声波应用对比</h3>
+    <table class="phy-table">
+      <thead><tr><th>分类</th><th>频率范围</th><th>特点</th><th>典型应用</th></tr></thead>
+      <tbody>
+        <tr><td><span class="c-purple">超声波</span></td><td>&gt; 20000 Hz</td><td>方向性好、穿透力强、易于集中能量</td><td>B超、声呐、倒车雷达、清洗、碎石、焊接</td></tr>
+        <tr><td><span class="c-teal">可听声</span></td><td>20 ~ 20000 Hz</td><td>人耳可闻</td><td>交谈、音乐、警报</td></tr>
+        <tr><td><span class="c-pink">次声波</span></td><td>&lt; 20 Hz</td><td>传播距离远、穿透力极强、破坏力大</td><td>预测地震海啸、监测核爆炸；对人体有害</td></tr>
+      </tbody>
+    </table>
+    <div class="danger-box">⚠️ <strong>次声波的危害：</strong>次声波可与人体器官产生<span class="c-red">共振</span>，引起头晕、恶心，强烈时甚至危及生命。地震、海啸、台风、火山爆发都会产生次声波，是大自然的"预警信号"。</div>
   </div>
 
   <!-- 练习题 -->
@@ -164,7 +270,7 @@
       <label><input type="radio" name="q1" value="D">D. 摩擦</label>
     </div>
     <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-    <div class="answer" id="answer-1" data-correct="A">✅ 正确答案：A。声音是由物体的振动产生的，一切发声体都在振动。</div>
+    <div class="answer" id="answer-1" data-correct="A">✅ 正确答案：A。声音是由物体的振动产生的，一切发声体都在振动，振动停止发声也停止。</div>
   </div>
 
   <div class="exercise"><div class="question"><span class="q-num">2</span>15℃时，声音在空气中的传播速度约为____。</div>
@@ -175,7 +281,7 @@
       <label><input type="radio" name="q2" value="D">D. 34 m/s</label>
     </div>
     <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-    <div class="answer" id="answer-2" data-correct="B">✅ 正确答案：B。15℃时声音在空气中的传播速度约为340m/s。</div>
+    <div class="answer" id="answer-2" data-correct="B">✅ 正确答案：B。15℃时声音在空气中的传播速度约为340m/s。注意：3×10⁸ m/s是光速，1500 m/s是水中声速。</div>
   </div>
 
   <div class="exercise"><div class="question"><span class="q-num">3</span>关于声音的传播，下列说法正确的是____。</div>
@@ -186,7 +292,7 @@
       <label><input type="radio" name="q3" value="D">D. 声音在固体中传播最慢</label>
     </div>
     <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-    <div class="answer" id="answer-3" data-correct="C">✅ 正确答案：C。声音传播需要介质，真空不能传声。一般v固>v液>v气。</div>
+    <div class="answer" id="answer-3" data-correct="C">✅ 正确答案：C。声音传播需要介质，真空不能传声。一般v固&gt;v液&gt;v气。</div>
   </div>
 
   <div class="exercise"><div class="question"><span class="q-num">4</span>男低音歌唱家发出的声音，其____较低。</div>
@@ -197,7 +303,7 @@
       <label><input type="radio" name="q4" value="D">D. 速度</label>
     </div>
     <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
-    <div class="answer" id="answer-4" data-correct="B">✅ 正确答案：B。音调由振动频率决定，男低音频率低，音调低。</div>
+    <div class="answer" id="answer-4" data-correct="B">✅ 正确答案：B。音调由振动频率决定，男低音频率低，音调低。响度取决于振幅，与"低音"无关。</div>
   </div>
 
   <div class="exercise"><div class="question"><span class="q-num">5</span>人耳能听到的声音频率范围是____。</div>
@@ -219,7 +325,29 @@
       <label><input type="radio" name="q6" value="D">D. 安装隔音玻璃</label>
     </div>
     <button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
-    <div class="answer" id="answer-6" data-correct="B">✅ 正确答案：B。消音器在声源处减弱噪声。植树属于传播过程中减弱，耳塞属于人耳处减弱。</div>
+    <div class="answer" id="answer-6" data-correct="B">✅ 正确答案：B。消音器在声源处减弱噪声。植树属于传播过程中减弱，耳塞属于人耳处减弱，隔音玻璃也是传播过程中减弱。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">7</span>一艘船用声呐向海底发射超声波，4秒后收到回声，海水中声速为1500 m/s，海底深度为____。</div>
+    <div class="options">
+      <label><input type="radio" name="q7" value="A">A. 1500 m</label>
+      <label><input type="radio" name="q7" value="B">B. 3000 m</label>
+      <label><input type="radio" name="q7" value="C">C. 6000 m</label>
+      <label><input type="radio" name="q7" value="D">D. 750 m</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+    <div class="answer" id="answer-7" data-correct="B">✅ 正确答案：B。回声测距公式h=v·t/2，注意时间是往返总时间需除以2：h=1500×4/2=3000 m。</div>
+  </div>
+
+  <div class="exercise"><div class="question"><span class="q-num">8</span>下列应用中，利用声音传递能量的是____。</div>
+    <div class="options">
+      <label><input type="radio" name="q8" value="A">A. 用B超检查身体</label>
+      <label><input type="radio" name="q8" value="B">B. 用声呐探测鱼群</label>
+      <label><input type="radio" name="q8" value="C">C. 用超声波清洗精密零件</label>
+      <label><input type="radio" name="q8" value="D">D. 蝙蝠利用回声定位捕食</label>
+    </div>
+    <button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+    <div class="answer" id="answer-8" data-correct="C">✅ 正确答案：C。超声波清洗是利用声波传递能量去除污垢。B超、声呐、回声定位都是传递信息。判断技巧："清洗/碎石/焊接"是传能，"探测/诊断/定位"是传信。</div>
   </div>
 </main>
 </div>

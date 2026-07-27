@@ -7,6 +7,11 @@
 .ray-diagram { width:100%; height:300px; }
 .lens-demo { display:flex; gap:20px; flex-wrap:wrap; }
 .lens-demo .lens-box { flex:1; min-width:280px; }
+.c-red{color:#dc2626;font-weight:600;} .c-blue{color:#2563eb;font-weight:600;} .c-green{color:#059669;font-weight:600;} .c-orange{color:#d97706;font-weight:600;} .c-purple{color:#7c3aed;font-weight:600;} .c-pink{color:#db2777;font-weight:600;} .c-teal{color:#0d9488;font-weight:600;}
+.highlight-box{background:linear-gradient(135deg,#fef3c7,#fde68a);border-left:4px solid #f59e0b;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.danger-box{background:linear-gradient(135deg,#fef2f2,#fee2e2);border-left:4px solid #ef4444;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.info-box{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:4px solid #3b82f6;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0;} table.phy-table th{background:#eff6ff;padding:10px 12px;text-align:left;color:#1e40af;} table.phy-table td{padding:10px 12px;border-bottom:1px solid #e2e8f0;} table.phy-table tr:hover td{background:#f8fafc;}
 </style>
 </head>
 <body>
@@ -25,7 +30,7 @@
       </div>
     </li>
     <li><a href="ch03_motion_force.html"><span class="ch-num">3</span>运动和力</a></li>
-    
+
   </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
@@ -50,28 +55,50 @@
   <div class="page-title">第二章 光</div>
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-<li>理解光的直线传播规律及其应用</li>
-<li>掌握光的反射定律，能画出反射光路图</li>
-<li>理解光的折射规律，了解折射现象</li>
-<li>掌握凸透镜成像规律及其应用</li>
-<li>知道光的色散现象，了解可见光谱</li>
+<li>理解光的<span class="c-blue">直线传播</span>规律及其应用，知道光源的分类</li>
+<li>掌握<span class="c-red">光的反射定律</span>，能画出反射光路图，区分镜面反射与漫反射</li>
+<li>掌握<span class="c-red">平面镜成像特点</span>，理解虚像的概念</li>
+<li>理解<span class="c-orange">光的折射规律</span>，了解折射现象</li>
+<li>掌握<span class="c-red">凸透镜成像规律</span>及其在照相机、投影仪、放大镜中的应用</li>
+<li>理解<span class="c-purple">近视眼与远视眼</span>的成因及矫正方法</li>
+<li>知道<span class="c-purple">光的色散</span>现象，了解红外线、紫外线及物体颜色原理</li>
 </ul></div>
 
 <h2 id="sec2-1" style="margin:28px 0 16px;">2.1 光的反射</h2>
-<div class="kp"><h3>光的直线传播</h3>
-<p>光在<strong>同种均匀介质</strong>中沿<strong>直线</strong>传播。光在真空中传播速度最快：<strong>c = 3×10⁸ m/s</strong>。</p>
-<p>实例：小孔成像、日食月食、影子的形成。</p>
+<div class="kp"><h3>光的直线传播与光源</h3>
+<p>光在<span class="c-red">同种均匀介质</span>中沿<span class="c-red">直线</span>传播。光在真空中传播速度最快：<span class="c-red">c = 3×10⁸ m/s</span>。</p>
+<p><span class="c-blue">光源</span>：能够自行发光的物体。按产生方式可分为两类：</p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li><span class="c-green">自然光源</span>：太阳、萤火虫、水母、闪电</li>
+<li><span class="c-green">人造光源</span>：电灯、蜡烛、火把、霓虹灯</li>
+</ul>
+<div class="info-box">📌 <strong>注意：</strong>月亮<span class="c-red">不是光源</span>（它反射太阳光）；镜子也不是光源（反射光线）。"明亮"的物体未必是光源，必须自身能发光才算。</div>
+<p>实例：<span class="c-purple">小孔成像</span>（倒立实像）、<span class="c-purple">日食月食</span>、<span class="c-purple">影子的形成</span>、激光准直、排队看齐。</p>
 <span class="formula">光速 c = 3×10⁸ m/s（真空中）</span></div>
 
 <div class="kp"><h3>光的反射定律</h3>
-<p>光射到物体表面时，一部分光被物体表面反射回去的现象叫做<strong>光的反射</strong>。</p>
-<p><strong>反射定律：</strong></p>
+<p>光射到物体表面时，一部分光被物体表面反射回去的现象叫做<span class="c-red">光的反射</span>。</p>
+<p><strong>反射定律（三句话）：</strong></p>
 <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-<li>反射光线、入射光线和法线在<strong>同一平面内</strong>（三线共面）</li>
-<li>反射光线和入射光线分居<strong>法线两侧</strong>（两线分居）</li>
-<li>反射角<strong>等于</strong>入射角：<strong>∠r = ∠i</strong>（两角相等）</li>
+<li>反射光线、入射光线和法线在<span class="c-red">同一平面内</span>（三线共面）</li>
+<li>反射光线和入射光线分居<span class="c-red">法线两侧</span>（两线分居）</li>
+<li>反射角<span class="c-red">等于</span>入射角：<span class="c-red">∠r = ∠i</span>（两角相等）</li>
 </ul>
-<p><strong>镜面反射</strong>与<strong>漫反射</strong>：都遵循反射定律。漫反射使我们能从不同方向看到物体。</p></div>
+<div class="highlight-box">💡 <strong>关键提示：</strong>反射时光路是<span class="c-red">可逆</span>的；入射角是入射光线与法线的夹角（不是与镜面的夹角）；反射角随入射角增大而增大，但永远相等。</div></div>
+
+<div class="kp"><h3>镜面反射 vs 漫反射</h3>
+<p>两种反射都<span class="c-red">遵循反射定律</span>，但反射面不同导致效果不同：</p>
+<table class="phy-table">
+  <thead><tr><th>对比项</th><th>镜面反射</th><th>漫反射</th></tr></thead>
+  <tbody>
+    <tr><td>反射面</td><td><span class="c-blue">光滑平整</span>的表面</td><td><span class="c-blue">凹凸不平</span>的表面</td></tr>
+    <tr><td>平行光反射后</td><td>仍为<span class="c-red">平行光</span>，朝同一方向</td><td>射向<span class="c-red">各个方向</span></td></tr>
+    <tr><td>是否遵循反射定律</td><td>遵循</td><td>遵循（每条光线都遵循）</td></tr>
+    <tr><td>视觉效果</td><td>仅在特定方向看到强光（刺眼）</td><td>能从<span class="c-green">各个方向</span>看到物体</td></tr>
+    <tr><td>典型例子</td><td>镜子、平静水面、抛光金属</td><td>黑板、纸张、墙壁、衣物</td></tr>
+  </tbody>
+</table>
+<div class="info-box">📌 <strong>为什么能从不同方向看到不发光的物体？</strong>因为物体表面凹凸不平，发生<span class="c-red">漫反射</span>，反射光线射向各个方向。这是我们能看清周围世界的基础。</div></div>
 
 <div class="anim-container"><h3 style="margin-bottom:16px;">🔦 光的反射演示</h3>
 <svg id="reflectSvg" viewBox="0 0 680 280" style="width:100%;max-width:680px;">
@@ -85,42 +112,77 @@
   <text x="310" y="265" fill="#475569" font-size="13">∠r = ∠i</text>
 </svg></div>
 
+<div class="kp"><h3>平面镜成像特点</h3>
+<p>平面镜成像是利用光的<span class="c-red">反射</span>形成的。成像特点可概括为"<span class="c-red">等大、等距、垂直、虚像</span>"：</p>
+<table class="phy-table">
+  <thead><tr><th>特点</th><th>说明</th></tr></thead>
+  <tbody>
+    <tr><td><span class="c-red">大小相等</span></td><td>像与物大小完全相同（等大）</td></tr>
+    <tr><td><span class="c-red">距离相等</span></td><td>像到镜面的距离 = 物到镜面的距离（等距）</td></tr>
+    <tr><td><span class="c-red">连线垂直</span></td><td>像和物的连线垂直于镜面（垂直）</td></tr>
+    <tr><td><span class="c-red">虚像</span></td><td>由反射光线的<span class="c-purple">反向延长线</span>会聚而成，不能用光屏承接</td></tr>
+    <tr><td>左右相反</td><td>像与物关于镜面对称，左右颠倒</td></tr>
+  </tbody>
+</table>
+<span class="formula">像距 v = 物距 u （平面镜成像）</span>
+<div class="highlight-box">💡 <strong>实像 vs 虚像：</strong><span class="c-green">实像</span>由实际光线会聚而成，能呈现在光屏上（如小孔成像、凸透镜实像）；<span class="c-purple">虚像</span>由光线反向延长线会聚而成，不能用光屏承接（如平面镜、放大镜成的像）。</div></div>
+
 <h2 id="sec2-2" style="margin:28px 0 16px;">2.2 光的折射</h2>
 <div class="kp"><h3>光的折射规律</h3>
-<p>光从一种介质<strong>斜射</strong>入另一种介质时，传播方向发生改变的现象叫做<strong>光的折射</strong>。</p>
+<p>光从一种介质<span class="c-red">斜射</span>入另一种介质时，传播方向发生改变的现象叫做<span class="c-red">光的折射</span>。</p>
 <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-<li>折射光线、入射光线和法线在同一平面内</li>
-<li>光从空气斜射入水（或玻璃）中时：折射角 <strong>&lt;</strong> 入射角（向法线偏折）</li>
-<li>光从水（或玻璃）斜射入空气中时：折射角 <strong>&gt;</strong> 入射角（远离法线偏折）</li>
-<li>垂直入射时：传播方向<strong>不变</strong></li>
+<li>折射光线、入射光线和法线在<span class="c-red">同一平面内</span></li>
+<li>光从空气斜射入水（或玻璃）中时：折射角 <span class="c-red">&lt;</span> 入射角（向法线偏折）</li>
+<li>光从水（或玻璃）斜射入空气中时：折射角 <span class="c-red">&gt;</span> 入射角（远离法线偏折）</li>
+<li>垂直入射时：传播方向<span class="c-red">不变</span>，折射角=入射角=0°</li>
+<li>光在折射时光路也是<span class="c-red">可逆</span>的</li>
 </ul>
-<p>实例：筷子在水中"弯折"、池水看起来变浅、海市蜃楼。</p></div>
+<p>实例：<span class="c-purple">筷子在水中"弯折"</span>、<span class="c-purple">池水看起来变浅</span>（实际更深）、<span class="c-purple">海市蜃楼</span>、从水中看岸上物体变高。</p>
+<div class="danger-box">⚠️ <strong>易错点：</strong>"池水变浅"是因为池底反射的光从水中射入空气时发生折射，折射角大于入射角，人眼逆着折射光线看去，看到的像比实际位置<span class="c-red">高</span>、<span class="c-red">浅</span>。因此看起来水浅的地方实际很深，<span class="c-red">千万不要贸然下水</span>！</div></div>
 
 <h2 id="sec2-3" style="margin:28px 0 16px;">2.3 透镜成像</h2>
 <div class="keypoints-grid">
 <div class="kp"><h3>凸透镜</h3>
-<p>中间厚、边缘薄的透镜。对光线有<strong>会聚</strong>作用（会聚透镜）。</p>
+<p>中间厚、边缘薄的透镜。对光线有<span class="c-red">会聚</span>作用（会聚透镜）。</p>
 <p><strong>三条特殊光线：</strong></p>
 <ul style="padding-left:16px;font-size:.9rem;color:var(--text-secondary);line-height:1.8;">
-<li>平行于主光轴 → 过焦点</li>
-<li>过光心 → 方向不变</li>
-<li>过焦点 → 平行射出</li>
+<li>平行于主光轴 -> 过焦点</li>
+<li>过光心 -> 方向不变</li>
+<li>过焦点 -> 平行射出</li>
 </ul>
 <span class="formula">1/f = 1/u + 1/v</span>
 <p style="font-size:.85rem;margin-top:4px;">f=焦距 u=物距 v=像距</p></div>
 <div class="kp"><h3>凸透镜成像规律</h3>
-<table style="width:100%;font-size:.82rem;border-collapse:collapse;">
-<tr style="background:var(--bg);"><th style="padding:6px 8px;text-align:left;">物距 u</th><th style="padding:6px 8px;text-align:left;">像的性质</th><th style="padding:6px 8px;text-align:left;">应用</th></tr>
-<tr><td style="padding:6px 8px;">u &gt; 2f</td><td style="padding:6px 8px;">倒立、缩小、实像</td><td style="padding:6px 8px;">照相机</td></tr>
-<tr><td style="padding:6px 8px;">u = 2f</td><td style="padding:6px 8px;">倒立、等大、实像</td><td style="padding:6px 8px;">—</td></tr>
-<tr><td style="padding:6px 8px;">f &lt; u &lt; 2f</td><td style="padding:6px 8px;">倒立、放大、实像</td><td style="padding:6px 8px;">投影仪</td></tr>
-<tr><td style="padding:6px 8px;">u = f</td><td style="padding:6px 8px;">不成像</td><td style="padding:6px 8px;">平行光源</td></tr>
-<tr><td style="padding:6px 8px;">u &lt; f</td><td style="padding:6px 8px;">正立、放大、虚像</td><td style="padding:6px 8px;">放大镜</td></tr>
+<table class="phy-table" style="font-size:.82rem;">
+<tr><th>物距 u</th><th>像的性质</th><th>应用</th></tr>
+<tr><td><span class="c-blue">u &gt; 2f</span></td><td>倒立、缩小、<span class="c-green">实像</span></td><td>照相机</td></tr>
+<tr><td><span class="c-blue">u = 2f</span></td><td>倒立、等大、<span class="c-green">实像</span></td><td>测焦距</td></tr>
+<tr><td><span class="c-blue">f &lt; u &lt; 2f</span></td><td>倒立、放大、<span class="c-green">实像</span></td><td>投影仪/幻灯机</td></tr>
+<tr><td><span class="c-orange">u = f</span></td><td>不成像</td><td>平行光源</td></tr>
+<tr><td><span class="c-red">u &lt; f</span></td><td>正立、放大、<span class="c-purple">虚像</span></td><td>放大镜</td></tr>
 </table></div>
 <div class="kp"><h3>凹透镜</h3>
-<p>中间薄、边缘厚的透镜。对光线有<strong>发散</strong>作用（发散透镜）。</p>
+<p>中间薄、边缘厚的透镜。对光线有<span class="c-red">发散</span>作用（发散透镜）。</p>
+<p>凹透镜永远成正立、缩小、<span class="c-purple">虚像</span>。</p>
 <p>应用：近视眼镜片。</p></div>
 </div>
+
+<div class="kp"><h3>凸透镜成像规律记忆口诀</h3>
+<div class="highlight-box">💡 <strong>核心规律：</strong><br>
+① <span class="c-red">u &gt; f</span> 成<span class="c-red">实像</span>（倒立）；<span class="c-red">u &lt; f</span> 成<span class="c-red">虚像</span>（正立）。一倍焦点分虚实！<br>
+② <span class="c-red">u &gt; 2f</span> 成缩小像；<span class="c-red">u &lt; 2f</span> 成放大像。二倍焦距分大小！<br>
+③ 物体靠近透镜（u减小），像远离透镜（v增大），像<span class="c-red">变大</span>。<br>
+④ 实像总是<span class="c-red">倒立</span>，虚像总是<span class="c-red">正立</span>。</div></div>
+
+<div class="kp"><h3>三种光学仪器的原理</h3>
+<table class="phy-table">
+  <thead><tr><th>仪器</th><th>成像条件</th><th>像的性质</th><th>调节方法</th></tr></thead>
+  <tbody>
+    <tr><td><span class="c-red">照相机</span></td><td>u &gt; 2f</td><td>倒立、缩小、实像</td><td>拍近景：镜头<span class="c-green">前伸</span>，像变大；拍远景：镜头<span class="c-green">后缩</span>，像变小</td></tr>
+    <tr><td><span class="c-red">投影仪/幻灯机</span></td><td>f &lt; u &lt; 2f</td><td>倒立、放大、实像</td><td>想使像变大：镜头<span class="c-green">靠近</span>胶片，屏幕<span class="c-green">远离</span></td></tr>
+    <tr><td><span class="c-red">放大镜</span></td><td>u &lt; f</td><td>正立、放大、虚像</td><td>想看清：放大镜<span class="c-green">远离</span>物体（仍在f内），像变大</td></tr>
+  </tbody>
+</table></div>
 
 <div class="anim-container"><h3 style="margin-bottom:16px;">🔍 凸透镜成像模拟</h3>
 <canvas id="lensCanvas" style="width:100%;max-width:680px;height:300px;"></canvas>
@@ -131,13 +193,45 @@
   <button onclick="setObjectPos(2.8)">u&gt;2f（照相机）</button>
 </div></div>
 
-<h2 id="sec2-4" style="margin:28px 0 16px;">2.4 光的色散</h2>
+<div class="kp"><h3>眼睛与视力矫正</h3>
+<p>人的眼睛相当于一个<span class="c-blue">凸透镜</span>，晶状体和角膜共同作用相当于镜头，视网膜相当于光屏。</p>
+<table class="phy-table">
+  <thead><tr><th>对比项</th><th>近视眼</th><th>远视眼（老花眼）</th></tr></thead>
+  <tbody>
+    <tr><td>成因</td><td>晶状体太<span class="c-red">厚</span>，折光能力太<span class="c-red">强</span>，像成在视网膜<span class="c-red">前</span></td><td>晶状体太<span class="c-red">薄</span>，折光能力太<span class="c-red">弱</span>，像成在视网膜<span class="c-red">后</span></td></tr>
+    <tr><td>看清范围</td><td>能看清近处，看不清远处</td><td>能看清远处，看不清近处</td></tr>
+    <tr><td>矫正镜片</td><td><span class="c-red">凹透镜</span>（发散光线）</td><td><span class="c-red">凸透镜</span>（会聚光线）</td></tr>
+    <tr><td>镜片作用</td><td>使像<span class="c-green">后移</span>到视网膜上</td><td>使像<span class="c-green">前移</span>到视网膜上</td></tr>
+  </tbody>
+</table>
+<div class="danger-box">⚠️ <strong>护眼提醒：</strong>近视的度数用<span class="c-red">"-"</span>表示（如-2.00D即200度近视），远视用<span class="c-red">"+"</span>表示。焦距越短，度数越深。预防近视需注意读写姿势、控制用眼时间、多做户外活动。</div></div>
+
+<h2 id="sec2-4" style="margin:28px 0 16px;">2.4 光的色散与颜色</h2>
 <div class="kp">
-<p>白光（太阳光）通过三棱镜后分解为<strong>红、橙、黄、绿、蓝、靛、紫</strong>七种色光的现象叫做<strong>光的色散</strong>。</p>
-<p>这说明白光是由<strong>各种色光混合</strong>而成的复色光。</p>
-<p><strong>光的三原色</strong>：红、绿、蓝（RGB）。三种颜色的光按不同比例混合可以得到各种颜色的光。</p>
-<p>应用：彩色电视机屏幕、电脑显示器。</p>
+<p>白光（太阳光）通过三棱镜后分解为<span class="c-red">红、橙、黄、绿、蓝、靛、紫</span>七种色光的现象叫做<span class="c-red">光的色散</span>。</p>
+<p>这说明白光是由<span class="c-red">各种色光混合</span>而成的复色光。色散现象由<span class="c-purple">牛顿</span>首先发现并研究。红光偏折最小，紫光偏折最大。</p>
+<p><strong>光的三原色：</strong><span class="c-red">红、绿、蓝（RGB）</span>。三种颜色的光按不同比例混合可以得到各种颜色的光。</p>
+<p>应用：彩色电视机屏幕、电脑显示器、手机屏幕。</p>
 </div>
+
+<div class="kp"><h3>物体的颜色</h3>
+<p>物体的颜色由它<span class="c-red">反射或透射</span>的色光决定：</p>
+<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
+<li><span class="c-green">不透明物体</span>的颜色由它<span class="c-red">反射</span>的色光决定。如红布反射红光，吸收其他色光；白纸反射所有色光；黑纸吸收所有色光。</li>
+<li><span class="c-green">透明物体</span>的颜色由它<span class="c-red">透过</span>的色光决定。如红玻璃只透过红光，蓝玻璃只透过蓝光。</li>
+</ul>
+<div class="info-box">📌 <strong>关键规律：</strong>什么颜色的物体就反射/透过什么颜色的光，<span class="c-red">吸收</span>其他颜色的光。白物体反射所有光，黑物体吸收所有光。戴蓝色眼镜看红布，红布看起来是<span class="c-red">黑色</span>的（红光被蓝玻璃吸收）。</div></div>
+
+<div class="kp"><h3>红外线与紫外线</h3>
+<p>在可见光谱之外，还存在人眼看不见的光：</p>
+<table class="phy-table">
+  <thead><tr><th>分类</th><th>位置</th><th>主要特性</th><th>典型应用</th></tr></thead>
+  <tbody>
+    <tr><td><span class="c-red">红外线</span></td><td>红光外侧</td><td><span class="c-red">热作用强</span>，穿透云雾能力强</td><td>红外线夜视仪、遥控器、红外测温、红外烤箱、浴霸</td></tr>
+    <tr><td><span class="c-purple">紫外线</span></td><td>紫光外侧</td><td><span class="c-red">化学作用强</span>，能使荧光物质发光，杀菌</td><td>验钞机（防伪）、紫外线消毒杀菌、荧光灯</td></tr>
+  </tbody>
+</table>
+<div class="danger-box">⚠️ <strong>注意：</strong>适量的紫外线有助于合成维生素D，促进钙的吸收；但<span class="c-red">过量紫外线</span>会伤害皮肤（晒伤、甚至皮肤癌）和眼睛。臭氧层能吸收大部分紫外线，保护地球生物。</div></div>
 
 <div class="anim-container"><h3 style="margin-bottom:16px;">🌈 光的色散示意</h3>
 <svg viewBox="0 0 680 200" style="width:100%;max-width:680px;">
@@ -168,7 +262,7 @@
 <label><input type="radio" name="q1" value="C">C. 3×10⁸ m/s</label>
 <label><input type="radio" name="q1" value="D">D. 无限大</label></div>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1" data-correct="C">✅ C。光在真空中的速度为3×10⁸ m/s。</div></div>
+<div class="answer" id="answer-1" data-correct="C">✅ C。光在真空中的速度为3×10⁸ m/s，是宇宙中最大的速度。340 m/s是空气中的声速。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">2</span>光的反射定律中，反射角____入射角。</div>
 <div class="options">
@@ -177,7 +271,7 @@
 <label><input type="radio" name="q2" value="C">C. 等于</label>
 <label><input type="radio" name="q2" value="D">D. 可能大于也可能小于</label></div>
 <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-<div class="answer" id="answer-2" data-correct="C">✅ C。反射角等于入射角，这是反射定律的核心内容。</div></div>
+<div class="answer" id="answer-2" data-correct="C">✅ C。反射角等于入射角，这是反射定律的核心内容。注意：入射角是入射光线与法线的夹角。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">3</span>当物体放在凸透镜的焦点以内（u&lt;f）时，所成的像是____。</div>
 <div class="options">
@@ -186,7 +280,7 @@
 <label><input type="radio" name="q3" value="C">C. 正立放大的虚像</label>
 <label><input type="radio" name="q3" value="D">D. 正立缩小的虚像</label></div>
 <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-<div class="answer" id="answer-3" data-correct="C">✅ C。u&lt;f时成正立、放大、虚像，应用为放大镜。</div></div>
+<div class="answer" id="answer-3" data-correct="C">✅ C。u&lt;f时成正立、放大、虚像，应用为放大镜。口诀：一倍焦距分虚实，u&lt;f成虚像（正立）。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">4</span>下列现象中，属于光的折射的是____。</div>
 <div class="options">
@@ -205,6 +299,33 @@
 <label><input type="radio" name="q5" value="D">D. 青、品红、黄</label></div>
 <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
 <div class="answer" id="answer-5" data-correct="B">✅ B。光的三原色是红(R)、绿(G)、蓝(B)。注意颜料三原色是青、品红、黄，两者不同。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>近视眼的原因是晶状体折光能力过强，像成在视网膜前方，应佩戴____矫正。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 凸透镜</label>
+<label><input type="radio" name="q6" value="B">B. 凹透镜</label>
+<label><input type="radio" name="q6" value="C">C. 平面镜</label>
+<label><input type="radio" name="q6" value="D">D. 凹面镜</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="B">✅ B。近视眼需用凹透镜（发散光线）矫正，使像后移到视网膜上。远视眼则用凸透镜矫正。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>下列关于平面镜成像的说法，正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. 平面镜成的像是实像</label>
+<label><input type="radio" name="q7" value="B">B. 像比物体小</label>
+<label><input type="radio" name="q7" value="C">C. 像到镜面的距离等于物到镜面的距离</label>
+<label><input type="radio" name="q7" value="D">D. 物体远离镜面，像变小</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="C">✅ C。平面镜成像特点：等大、等距、垂直、虚像。像是虚像（A错），像与物等大（B错），物体远离镜面像大小不变（D错），仅像距随之增大。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>戴蓝色眼镜看红布，红布看起来是____色的。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 红色</label>
+<label><input type="radio" name="q8" value="B">B. 蓝色</label>
+<label><input type="radio" name="q8" value="C">C. 黑色</label>
+<label><input type="radio" name="q8" value="D">D. 白色</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="C">✅ C。红布反射红光，但蓝色眼镜只透过蓝光，红光被吸收，所以红布看起来是黑色的。透明物体颜色由它透过的色光决定。</div></div>
 </main></div>
 <script src="../assets/js/common.js"></script>
 <script>

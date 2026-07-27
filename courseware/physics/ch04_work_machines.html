@@ -3,6 +3,13 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>第四章 机械和功 - 初中物理沪教版</title>
 <link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.c-red{color:#dc2626;font-weight:600;} .c-blue{color:#2563eb;font-weight:600;} .c-green{color:#059669;font-weight:600;} .c-orange{color:#d97706;font-weight:600;} .c-purple{color:#7c3aed;font-weight:600;} .c-pink{color:#db2777;font-weight:600;}
+.highlight-box{background:linear-gradient(135deg,#fef3c7,#fde68a);border-left:4px solid #f59e0b;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.danger-box{background:linear-gradient(135deg,#fef2f2,#fee2e2);border-left:4px solid #ef4444;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.info-box{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:4px solid #3b82f6;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0;} table.phy-table th{background:#eff6ff;padding:10px 12px;text-align:left;color:#1e40af;} table.phy-table td{padding:10px 12px;border-bottom:1px solid #e2e8f0;}
+</style>
 </head>
 <body>
 <div class="layout">
@@ -20,7 +27,7 @@
       </div>
     </li>
     <li><a href="ch05_heat_energy.html"><span class="ch-num">5</span>热与能</a></li>
-    
+
   </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
@@ -45,58 +52,127 @@
   <div class="page-title">第四章 机械和功</div>
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-<li>理解动能和势能的概念及其转化</li><li>掌握功的计算公式 W=Fs</li>
-<li>理解功率的概念</li><li>掌握杠杆、滑轮等简单机械的原理</li>
-<li>理解功的原理：使用任何机械都不省功</li></ul></div>
+<li>理解<span class="c-blue">动能</span>和<span class="c-purple">势能</span>的概念及其相互转化</li>
+<li>掌握功的计算公式 <span class="formula">W=Fs</span>，理解做功的两个必要因素</li>
+<li>掌握功率的概念及公式 <span class="formula">P=W/t=Fv</span></li>
+<li>掌握<span class="c-green">杠杆</span>、<span class="c-orange">滑轮</span>等简单机械的原理</li>
+<li>理解功的原理：使用任何机械都不省功；理解机械效率 <span class="formula">η=W有用/W总</span></li></ul></div>
 
 <h2 id="sec4-1">4.1 机械能</h2>
 <div class="keypoints-grid">
 <div class="kp"><h3>动能</h3>
-<p>物体由于<strong>运动</strong>而具有的能叫做<strong>动能</strong>。</p>
-<p>影响动能大小的因素：<strong>质量</strong>和<strong>速度</strong>。质量越大、速度越大，动能越大。</p>
-<span class="formula">E<sub>k</sub> = ½mv²</span></div>
-<div class="kp"><h3>势能</h3>
-<p><strong>重力势能</strong>：物体由于被<strong>举高</strong>而具有的能。影响因素：质量和高度。</p>
-<p><strong>弹性势能</strong>：物体由于发生<strong>弹性形变</strong>而具有的能。影响因素：形变程度。</p>
-<span class="formula">E<sub>p</sub> = mgh</span></div>
+<p>物体由于<span class="c-red">运动</span>而具有的能叫做<strong>动能</strong>。一切运动的物体都具有动能。</p>
+<p>影响动能大小的因素：<span class="c-blue">质量</span>和<span class="c-orange">速度</span>。</p>
+<ul style="padding-left:20px;line-height:1.9;color:var(--text-secondary);">
+<li>质量相同时，<strong>速度越大</strong>，动能越大</li>
+<li>速度相同时，<strong>质量越大</strong>，动能越大</li>
+<li>速度对动能的影响更大（与速度的平方成正比）</li></ul>
+<span class="formula">E<sub>k</sub> = ½mv²</span>
+<p>实例：运动的汽车、飞行的子弹、流动的水。</p></div>
+<div class="kp"><h3>重力势能</h3>
+<p><strong>重力势能</strong>：物体由于被<span class="c-purple">举高</span>而具有的能。</p>
+<p>影响因素：<span class="c-blue">质量</span>和<span class="c-green">高度</span>。</p>
+<ul style="padding-left:20px;line-height:1.9;color:var(--text-secondary);">
+<li>质量相同时，<strong>高度越大</strong>，重力势能越大</li>
+<li>高度相同时，<strong>质量越大</strong>，重力势能越大</li></ul>
+<span class="formula">E<sub>p</sub> = mgh</span>
+<p>实例：被举高的重锤、高山上的石头。</p></div>
+<div class="kp"><h3>弹性势能</h3>
+<p><strong>弹性势能</strong>：物体由于发生<span class="c-pink">弹性形变</span>而具有的能。</p>
+<p>影响因素：<strong>形变程度</strong>（弹性形变越大，弹性势能越大）和材料本身的性质。</p>
+<p>实例：拉长的弹簧、拉弯的弓、压缩的弹簧、撑杆跳的撑杆。</p></div>
 </div>
-<div class="kp"><h3>机械能守恒</h3>
-<p><strong>动能和势能统称为机械能。在只有动能和势能相互转化的过程中，机械能的总量保持不变。</strong></p>
-<p>实例：滚摆、单摆、自由落体（忽略空气阻力）。</p></div>
+
+<div class="info-box">
+<strong>📌 动能和势能的相互转化</strong><br>
+动能和势能可以相互转化。在只有重力或弹力做功的情况下（忽略摩擦和空气阻力），<span class="c-red">机械能的总量保持不变</span>，这就是<strong>机械能守恒</strong>。
+<ul style="padding-left:20px;margin:6px 0;">
+<li><strong>滚摆下落</strong>：重力势能 → 动能（加速下落）</li>
+<li><strong>滚摆上升</strong>：动能 → 重力势能（减速上升）</li>
+<li><strong>单摆运动</strong>：最高点势能最大，最低点动能最大</li>
+<li><strong>自由落体</strong>：重力势能不断转化为动能</li></ul>
+</div>
 
 <div class="anim-container"><h3 style="margin-bottom:12px;">🎢 动能与势能转化示意</h3>
 <canvas id="energyCanvas" style="width:100%;max-width:680px;height:220px;"></canvas></div>
 
 <h2 id="sec4-2">4.2 机械功</h2>
-<div class="kp"><h3>功</h3>
-<p>如果一个力作用在物体上，物体在这个力的方向上移动了一段距离，就说这个力对物体做了<strong>功</strong>。</p>
+<div class="kp"><h3>功的概念</h3>
+<p>如果一个力作用在物体上，物体在这个力的方向上移动了一段距离，就说这个力对物体做了<span class="c-red">功</span>。</p>
 <p><strong>做功的两个必要因素：</strong></p>
 <ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-<li>作用在物体上的<strong>力</strong></li><li>物体在力的方向上移动的<strong>距离</strong></li></ul>
+<li>作用在物体上的<span class="c-blue">力</span>（F）</li>
+<li>物体在<span class="c-orange">力的方向上</span>移动的距离（s）</li></ul>
 <span class="formula">W = Fs</span>
-<p>单位：<strong>焦耳（J）</strong>，1J = 1N·m。</p></div>
+<p>单位：<strong>焦耳（J）</strong>，1J = 1N·m。表示用1N的力使物体在力的方向上移动1m所做的功。</p></div>
+
+<div class="danger-box">
+<strong>⚠️ 三种不做功的情况</strong>
+<table class="phy-table">
+<tr><th>情况</th><th>说明</th><th>实例</th></tr>
+<tr><td><span class="c-red">有力无距离</span></td><td>有力作用在物体上，但物体没有移动</td><td>推车未推动、举重物停在空中</td></tr>
+<tr><td><span class="c-red">有距无力</span></td><td>物体移动了距离，但在此方向上没有力作用</td><td>踢出的足球在水平地面滑行（重力不做功）</td></tr>
+<tr><td><span class="c-red">力与距离垂直</span></td><td>力的方向与物体运动方向垂直</td><td>提水桶水平行走、圆周运动的向心力</td></tr>
+</table>
+</div>
+
+<div class="highlight-box">
+<strong>💡 功的实质</strong><br>
+做功的过程就是<span class="c-purple">能量转化</span>的过程。做了多少功，就有多少能量发生转化。功是能量转化的量度。
+</div>
 
 <div class="kp"><h3>功率</h3>
-<p><strong>功率</strong>：表示做功快慢的物理量。单位时间内所做的功。</p>
+<p><strong>功率</strong>：表示做功<span class="c-green">快慢</span>的物理量。单位时间内所做的功叫做功率。</p>
 <span class="formula">P = W / t</span>
-<p>单位：<strong>瓦特（W）</strong>，1W = 1J/s。常用单位：千瓦（kW）、兆瓦（MW）。</p>
-<p>推导公式：<strong>P = Fv</strong>（当力与运动方向相同时）。</p></div>
+<p>单位：<strong>瓦特（W）</strong>，1W = 1J/s。常用单位：千瓦（kW）、兆瓦（MW）。1kW = 1000W。</p>
+<div class="info-box">
+<strong>推导公式</strong>：当力与运动方向相同时，由 W=Fs 可得：<br>
+<span class="formula">P = W/t = Fs/t = Fv</span><br>
+其中 v 是物体运动的平均速度。该公式常用于汽车牵引力功率的计算。
+</div>
+<p>实例：人步行功率约70W，跑步约几百瓦；轿车发动机功率几十千瓦到上百千瓦。</p></div>
 
 <h2 id="sec4-3">4.3 简单机械</h2>
-<div class="keypoints-grid">
 <div class="kp"><h3>杠杆</h3>
-<p>在力的作用下能绕固定点转动的硬棒。</p>
-<p>五要素：<strong>支点、动力、阻力、动力臂、阻力臂</strong>。</p>
-<span class="formula">F₁L₁ = F₂L₂（杠杆平衡条件）</span>
-<p><strong>省力杠杆</strong>：L₁&gt;L₂，省力费距离（撬棒）</p>
-<p><strong>费力杠杆</strong>：L₁&lt;L₂，费力省距离（镊子）</p>
-<p><strong>等臂杠杆</strong>：L₁=L₂，不省不费（天平）</p></div>
+<p><strong>杠杆</strong>：在力的作用下能绕<span class="c-blue">固定点</span>转动的硬棒。杠杆可以是直的，也可以是弯的。</p>
+<p><strong>杠杆五要素：</strong></p>
+<table class="phy-table">
+<tr><th>要素</th><th>定义</th></tr>
+<tr><td><span class="c-red">支点（O）</span></td><td>杠杆绕着转动的固定点</td></tr>
+<tr><td><span class="c-orange">动力（F₁）</span></td><td>使杠杆转动的力</td></tr>
+<tr><td><span class="c-purple">阻力（F₂）</span></td><td>阻碍杠杆转动的力</td></tr>
+<tr><td><span class="c-green">动力臂（L₁）</span></td><td>支点到动力作用线的距离</td></tr>
+<tr><td><span class="c-pink">阻力臂（L₂）</span></td><td>支点到阻力作用线的距离</td></tr>
+</table>
+<p><strong>杠杆平衡条件（杠杆原理）：</strong>动力×动力臂 = 阻力×阻力臂</p>
+<span class="formula">F₁L₁ = F₂L₂</span>
+<p><strong>三类杠杆：</strong></p>
+<table class="phy-table">
+<tr><th>类型</th><th>力臂关系</th><th>力的大小</th><th>特点</th><th>实例</th></tr>
+<tr><td><span class="c-green">省力杠杆</span></td><td>L₁ &gt; L₂</td><td>F₁ &lt; F₂</td><td>省力费距离</td><td>撬棒、铡刀、瓶起子、手推车</td></tr>
+<tr><td><span class="c-red">费力杠杆</span></td><td>L₁ &lt; L₂</td><td>F₁ &gt; F₂</td><td>费力省距离</td><td>镊子、筷子、钓鱼竿、缝纫机踏板</td></tr>
+<tr><td><span class="c-blue">等臂杠杆</span></td><td>L₁ = L₂</td><td>F₁ = F₂</td><td>不省力不费力</td><td>天平、定滑轮</td></tr>
+</table></div>
+
 <div class="kp"><h3>滑轮</h3>
-<p><strong>定滑轮</strong>：轴固定不动。不省力，改变力的方向。F=G。</p>
-<p><strong>动滑轮</strong>：轴随物体移动。省一半力，不改变方向。F=G/2（不计摩擦和滑轮重）。</p>
-<p><strong>滑轮组</strong>：定滑轮和动滑轮组合。既可省力又可改变方向。</p>
-<span class="formula">F = G/n （n为承担物重的绳子段数）</span></div>
-</div>
+<p><strong>定滑轮</strong>：轴<span class="c-blue">固定不动</span>的滑轮。</p>
+<ul style="padding-left:20px;line-height:1.9;color:var(--text-secondary);">
+<li>实质：等臂杠杆</li>
+<li>特点：<span class="c-red">不省力</span>，但可以<span class="c-green">改变力的方向</span></li>
+<li>关系：F = G，s = h（拉力移动距离等于物体上升距离）</li></ul>
+<p><strong>动滑轮</strong>：轴<span class="c-orange">随物体一起移动</span>的滑轮。</p>
+<ul style="padding-left:20px;line-height:1.9;color:var(--text-secondary);">
+<li>实质：动力臂为阻力臂2倍的杠杆</li>
+<li>特点：<span class="c-green">省一半力</span>，但不能改变力的方向</li>
+<li>关系：F = G/2（不计摩擦和滑轮重），s = 2h</li></ul>
+<p><strong>滑轮组</strong>：定滑轮和动滑轮组合而成。</p>
+<ul style="padding-left:20px;line-height:1.9;color:var(--text-secondary);">
+<li>特点：既可以<span class="c-green">省力</span>，又可以<span class="c-green">改变力的方向</span></li>
+<li>关系：F = G/n，s = nh（n 为承担物重的绳子段数）</li></ul>
+<span class="formula">F = G/n （n为承担物重的绳子段数）</span>
+<div class="info-box">
+<strong>绳子段数 n 的判断方法</strong>：直接与动滑轮相连的绳子段数。注意：绳子最后从定滑轮引出时不计入 n，从动滑轮引出时计入 n。
+</div></div>
 
 <div class="anim-container"><h3 style="margin-bottom:12px;">⚖️ 杠杆演示</h3>
 <canvas id="leverCanvas" style="width:100%;max-width:680px;height:200px;"></canvas>
@@ -106,13 +182,28 @@
   <button onclick="updateLever(0.6)" style="background:#ef4444;">费力杠杆 L₁&lt;L₂</button>
 </div></div>
 
-<h2 id="sec4-4">4.4 功的原理</h2>
+<h2 id="sec4-4">4.4 功的原理与机械效率</h2>
 <div class="kp"><h3>功的原理</h3>
 <p><strong>使用任何机械都不省功。</strong>即使用机械时，人们所做的功，都不会少于直接用手所做的功。</p>
-<p>虽然不省功，但机械可以省力、省距离或改变力的方向，给人们带来方便。</p>
-<p><strong>机械效率：</strong></p>
+<div class="highlight-box">
+<strong>💡 功的原理的理解</strong><br>
+虽然不省功，但机械可以<span class="c-green">省力</span>、<span class="c-blue">省距离</span>或<span class="c-purple">改变力的方向</span>，给人们带来方便。<br>
+理想机械（无摩擦）：W<sub>机</sub> = W<sub>手</sub>（使用机械做的功 = 直接用手做的功）<br>
+实际机械（有摩擦）：W<sub>机</sub> &gt; W<sub>手</sub>（使用机械做的功 &gt; 直接用手做的功）
+</div></div>
+
+<div class="kp"><h3>机械效率</h3>
+<p>使用机械做功时，对人们有用的功叫做<span class="c-green">有用功</span>（W<sub>有用</sub>）；并非我们需要但又不得不做的功叫做<span class="c-red">额外功</span>（W<sub>额外</sub>）；有用功与额外功之和叫做<span class="c-blue">总功</span>（W<sub>总</sub>）。</p>
+<span class="formula">W<sub>总</sub> = W<sub>有用</sub> + W<sub>额外</sub></span>
+<p><strong>机械效率</strong>：有用功跟总功的比值。符号 η。</p>
 <span class="formula">η = W<sub>有用</sub> / W<sub>总</sub> × 100%</span>
-<p>由于额外功的存在，机械效率总小于 1（总小于 100%）。</p></div>
+<div class="danger-box">
+<strong>⚠️ 注意事项</strong><br>
+① 由于额外功的存在（机械自重、摩擦等），机械效率总<span class="c-red">小于1</span>（总小于100%）；<br>
+② 机械效率没有单位，是一个比值；<br>
+③ 提高机械效率的方法：减小摩擦、减轻机械自重、增加物重。
+</div>
+<p>常见机械效率：滑轮组约50%~70%，杠杆可达90%以上。</p></div>
 
 <h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
 <div class="exercise"><div class="question"><span class="q-num">1</span>做功的两个必要因素是____。</div>
@@ -122,7 +213,7 @@
 <label><input type="radio" name="q1" value="C">C. 力和时间</label>
 <label><input type="radio" name="q1" value="D">D. 功率和时间</label></div>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1" data-correct="B">✅ B。做功两个必要因素：作用在物体上的力，和物体在力的方向上移动的距离。</div></div>
+<div class="answer" id="answer-1" data-correct="B">✅ B。做功两个必要因素：作用在物体上的力，和物体在力的方向上移动的距离。两者缺一不可。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">2</span>功率是表示____的物理量。</div>
 <div class="options">
@@ -131,7 +222,7 @@
 <label><input type="radio" name="q2" value="C">C. 能量大小</label>
 <label><input type="radio" name="q2" value="D">D. 力的作用效果</label></div>
 <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-<div class="answer" id="answer-2" data-correct="B">✅ B。功率表示做功快慢，P=W/t。</div></div>
+<div class="answer" id="answer-2" data-correct="B">✅ B。功率表示做功快慢，P=W/t，单位瓦特（W）。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">3</span>杠杆平衡条件是____。</div>
 <div class="options">
@@ -140,7 +231,7 @@
 <label><input type="radio" name="q3" value="C">C. F₁/L₁=F₂/L₂</label>
 <label><input type="radio" name="q3" value="D">D. F₁+L₁=F₂+L₂</label></div>
 <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-<div class="answer" id="answer-3" data-correct="B">✅ B。杠杆平衡条件（杠杆原理）：动力×动力臂=阻力×阻力臂。</div></div>
+<div class="answer" id="answer-3" data-correct="B">✅ B。杠杆平衡条件（杠杆原理）：动力×动力臂=阻力×阻力臂，即F₁L₁=F₂L₂。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">4</span>关于功的原理，正确的说法是____。</div>
 <div class="options">
@@ -159,6 +250,33 @@
 <label><input type="radio" name="q5" value="D">D. 电能和动能</label></div>
 <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
 <div class="answer" id="answer-5" data-correct="B">✅ B。机械能包括动能和势能（重力势能和弹性势能）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>下列情况中，力对物体做了功的是____。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 举重运动员举着杠铃停留3秒</label>
+<label><input type="radio" name="q6" value="B">B. 人提着水桶在水平地面上匀速行走</label>
+<label><input type="radio" name="q6" value="C">C. 足球被踢出后在水平地面上滚动</label>
+<label><input type="radio" name="q6" value="D">D. 工人用力推车使车在推力方向上移动了5米</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="D">✅ D。A有力无距离（不做功）；B提力方向向上，水桶水平移动，力与距离垂直（不做功）；C足球踢出后脚不再对球施力（有距无力）；D力和距离同时满足且方向一致，做了功。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>用10N的水平拉力拉着重50N的物体在水平面上前进了4m，拉力做的功和重力做的功分别是____。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. 40J，200J</label>
+<label><input type="radio" name="q7" value="B">B. 40J，0J</label>
+<label><input type="radio" name="q7" value="C">C. 200J，0J</label>
+<label><input type="radio" name="q7" value="D">D. 0J，0J</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="B">✅ B。拉力做的功 W=Fs=10N×4m=40J；重力方向竖直向下，物体水平移动，重力与运动方向垂直，重力不做功，即0J。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>关于机械效率，下列说法正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 机械效率越高，做功越快</label>
+<label><input type="radio" name="q8" value="B">B. 有用功越多，机械效率越高</label>
+<label><input type="radio" name="q8" value="C">C. 使用滑轮组提升重物时，额外功越小，机械效率越高</label>
+<label><input type="radio" name="q8" value="D">D. 机械效率可以达到100%</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="C">✅ C。机械效率η=W有用/W总，额外功越小，W总越接近W有用，η越高。A混淆了功率与效率；B没考虑总功；D实际机械效率总小于100%。</div></div>
 </main></div>
 <script src="../assets/js/common.js"></script>
 <script>
@@ -196,7 +314,7 @@
     else{ctx.fillText('动能最大',bx-25,by-25);}
 
     ctx.fillStyle='#94a3b8';ctx.font='12px sans-serif';
-    ctx.fillText('势能→动能→势能',W/2-40,H-20);
+    ctx.fillText('势能->动能->势能',W/2-40,H-20);
     t++;requestAnimationFrame(draw);
   }
   draw();

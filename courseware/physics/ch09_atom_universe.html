@@ -3,6 +3,13 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>第九章 从原子到星系 - 初中物理沪教版</title>
 <link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.c-red{color:#dc2626;font-weight:600;} .c-blue{color:#2563eb;font-weight:600;} .c-green{color:#059669;font-weight:600;} .c-orange{color:#d97706;font-weight:600;} .c-purple{color:#7c3aed;font-weight:600;} .c-pink{color:#db2777;font-weight:600;}
+.highlight-box{background:linear-gradient(135deg,#fef3c7,#fde68a);border-left:4px solid #f59e0b;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.danger-box{background:linear-gradient(135deg,#fef2f2,#fee2e2);border-left:4px solid #ef4444;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+.info-box{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:4px solid #3b82f6;padding:14px 18px;border-radius:8px;margin:12px 0;font-size:.92rem;line-height:1.8;}
+table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0;} table.phy-table th{background:#eff6ff;padding:10px 12px;text-align:left;color:#1e40af;} table.phy-table td{padding:10px 12px;border-bottom:1px solid #e2e8f0;}
+</style>
 </head>
 <body>
 <div class="layout">
@@ -23,7 +30,7 @@
         <a href="#exercises">练习题</a>
       </div>
     </li>
-    
+
   </ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
       <a href="../index.html" class="back-home">🏠 返回首页</a>
     </div>
@@ -48,23 +55,32 @@
   <div class="page-title">第九章 从原子到星系</div>
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
-<li>了解原子的核式结构模型</li><li>了解太阳系的组成和行星运动</li>
-<li>了解宇宙的层次结构：银河系、星系团</li>
-<li>掌握能量转化与守恒定律</li></ul></div>
+<li>了解<span class="c-blue">原子模型发展史</span>（汤姆生→卢瑟福→玻尔）</li>
+<li>掌握<span class="c-red">原子的核式结构</span>及原子核的组成</li>
+<li>了解<span class="c-purple">核能</span>（裂变/聚变）和核电站的工作原理</li>
+<li>了解<span class="c-green">太阳系</span>的组成、八大行星及日心说</li>
+<li>了解<span class="c-orange">银河系、宇宙大爆炸</span>及光年等天文概念</li>
+<li>掌握<span class="c-pink">能量守恒定律</span>和能源的分类与利用</li></ul></div>
+
+<div class="highlight-box">🌌 <strong>本章核心思想：</strong>从微观的原子（~10⁻¹⁰ m）到宏观的宇宙（~10²⁶ m），跨越了约36个数量级。物质世界是有层次的：<span class="c-blue">原子→分子→物体→行星→恒星→星系→宇宙</span>。而贯穿其中的是<span class="c-red">能量守恒定律</span>--自然界最普遍的基本定律。</div>
 
 <h2 id="sec9-1">9.1 原子</h2>
-<div class="kp"><h3>原子的结构</h3>
-<p><strong>原子</strong>由<strong>原子核</strong>和<strong>核外电子</strong>组成。原子核带正电，位于原子中心，几乎集中了原子的全部质量。核外电子带负电，绕核高速运动。</p>
-<p>原子核由<strong>质子</strong>（带正电）和<strong>中子</strong>（不带电）组成。</p>
-<p><strong>卢瑟福α粒子散射实验</strong>证明了原子的核式结构。</p>
-<p>质子数（核电荷数）= 核外电子数 → 原子<strong>不显电性</strong>。</p>
-<p>元素由<strong>质子数</strong>决定。质子数相同、中子数不同的原子互称<strong>同位素</strong>。</p></div>
+<div class="kp"><h3>原子模型发展史</h3>
+<p>人类对原子结构的认识经历了一个不断修正、完善的过程：</p>
+<table class="phy-table">
+<tr><th>年代</th><th>科学家</th><th>模型名称</th><th>主要观点</th></tr>
+<tr><td>1897年</td><td><span class="c-blue">汤姆生</span></td><td>枣糕模型（葡萄干布丁）</td><td>原子是正电荷均匀分布的球体，电子像枣一样嵌在其中</td></tr>
+<tr><td>1911年</td><td><span class="c-red">卢瑟福</span></td><td>核式结构模型</td><td>原子中心有带正电的原子核，电子绕核旋转</td></tr>
+<tr><td>1913年</td><td><span class="c-purple">玻尔</span></td><td>量子化轨道模型</td><td>电子在特定轨道上运动，不连续吸收/释放能量</td></tr>
+</table>
+<div class="info-box">🔬 <strong>卢瑟福α粒子散射实验：</strong>用α粒子（带正电的氦核）轰击金箔，发现<span class="c-red">绝大多数α粒子直线穿过</span>，<span class="c-orange">少数发生偏转</span>，<span class="c-red">极少数被弹回</span>。这证明原子内大部分是空的，正电荷集中在很小的原子核上，从而否定了汤姆生的枣糕模型，建立了核式结构模型。</div></div>
 
-<div class="kp"><h3>放射性</h3>
-<p>某些元素的原子核能自发地放出射线，这种现象叫<strong>放射性</strong>。</p>
-<p>三种射线：<strong>α射线</strong>（氦核）、<strong>β射线</strong>（电子流）、<strong>γ射线</strong>（电磁波，穿透力最强）。</p>
-<p>应用：医学放疗、工业探伤、碳14测年。</p>
-<p><strong>核能</strong>：原子核发生变化时释放的能量。获取方式：<strong>核裂变</strong>（重核分裂）和<strong>核聚变</strong>（轻核结合）。</p></div>
+<div class="kp"><h3>原子的结构</h3>
+<p><strong>原子</strong>由<strong>原子核</strong>和<strong>核外电子</strong>组成。原子核带正电，位于原子中心，几乎集中了原子的<span class="c-red">全部质量</span>。核外电子带负电，绕核高速运动。</p>
+<p>原子核由<strong>质子</strong>（带正电）和<strong>中子</strong>（不带电）组成，二者质量近似相等。</p>
+<p>质子数（核电荷数）= 核外电子数 → 原子<strong>不显电性</strong>（对外呈中性）。</p>
+<p>元素由<strong>质子数</strong>决定。质子数相同、中子数不同的原子互称<strong>同位素</strong>（如氢的同位素：氕、氘、氚）。</p>
+<div class="highlight-box">📐 <strong>原子的尺度：</strong>原子直径约 10⁻¹⁰ m，原子核直径约 10⁻¹⁵ m。如果把原子比作一个体育场，原子核只相当于体育场中心的一颗<span class="c-red">玻璃球</span>，可见原子内部非常空旷。</div></div>
 
 <div class="anim-container"><h3 style="margin-bottom:12px;">⚛️ 原子结构示意</h3>
 <svg viewBox="0 0 680 260" style="width:100%;max-width:680px;">
@@ -86,36 +102,163 @@
   <text x="50" y="50" fill="#94a3b8" font-size="11">核外电子绕核高速运动</text>
 </svg></div>
 
+<div class="kp"><h3>放射性</h3>
+<p>某些元素的原子核能自发地放出射线，这种现象叫<strong>放射性</strong>。常见三种射线：</p>
+<table class="phy-table">
+<tr><th>射线</th><th>本质</th><th>带电性</th><th>穿透能力</th></tr>
+<tr><td><span class="c-orange">α射线</span></td><td>氦核（He²⁺）</td><td>带正电</td><td>最弱（一张纸可挡住）</td></tr>
+<tr><td><span class="c-blue">β射线</span></td><td>高速电子流</td><td>带负电</td><td>较强（需铝板挡住）</td></tr>
+<tr><td><span class="c-purple">γ射线</span></td><td>电磁波</td><td>不带电</td><td>最强（需铅板/混凝土挡住）</td></tr>
+</table>
+<div class="info-box">🏥 <strong>放射性的应用：</strong><br>
+• <strong>医学：</strong>γ刀治疗肿瘤（放疗）、X光透视、CT检查、PET扫描；<br>
+• <strong>工业：</strong>金属探伤、测厚仪、消除静电；<br>
+• <strong>农业：</strong>辐射育种、农产品保鲜；<br>
+• <strong>考古：</strong>碳14测年法测定古生物年代。</div>
+<div class="danger-box">⚠️ <strong>放射线的危害：</strong>过量照射会破坏人体细胞，导致放射病、基因突变、癌症等。从事放射工作的人员必须采取防护措施（如铅屏蔽、控制照射时间、增大距离）。</div></div>
+
+<div class="kp"><h3>核能</h3>
+<p><strong>核能</strong>：原子核发生<span class="c-red">变化</span>（裂变或聚变）时释放的巨大能量。1 kg 铀核裂变释放的能量相当于约 2500 t 标准煤完全燃烧释放的能量。</p>
+<p><strong>核裂变</strong>：<span class="c-blue">重核</span>（如铀-235、钚-239）分裂成两个较轻的原子核，同时释放中子和大量能量。若释放的中子继续引发其他重核裂变，称为<span class="c-red">链式反应</span>。</p>
+<p><strong>核聚变</strong>：<span class="c-purple">轻核</span>（如氢的同位素氘、氚）在超高温下结合成较重的原子核（氦），释放更大能量。太阳发光发热的原理就是核聚变。</p>
+<table class="phy-table">
+<tr><th>对比项</th><th>核裂变</th><th>核聚变</th></tr>
+<tr><td>反应物</td><td>重核（铀、钚）</td><td>轻核（氘、氚）</td></tr>
+<tr><td>反应条件</td><td>中子轰击</td><td>超高温（上亿度）</td></tr>
+<tr><td>能量释放</td><td>大</td><td>更大（单位质量）</td></tr>
+<tr><td>是否可控</td><td>可控（核电站）</td><td>目前不可控（氢弹）</td></tr>
+<tr><td>应用</td><td>原子弹、核电站</td><td>氢弹、太阳、受控聚变研究</td></tr>
+</table></div>
+
+<div class="kp"><h3>核电站</h3>
+<p><strong>核电站</strong>利用<span class="c-red">可控核裂变</span>释放的能量发电。能量转化过程：</p>
+<div class="highlight-box">🔄 <strong>核电站能量转化链：</strong><br>
+<span class="c-purple">核能</span> → 内能（反应堆加热水产生蒸汽） → <span class="c-blue">机械能</span>（蒸汽推动汽轮机转动） → <span class="c-green">电能</span>（发电机发电）</div>
+<p>核电站的优点：① <span class="c-green">耗料少</span>（少量核燃料即可产生大量电能）；② <span class="c-green">污染小</span>（不排放二氧化碳和烟尘）；③ <span class="c-green">运输方便</span>。</p>
+<div class="danger-box">⚠️ <strong>核电站的安全问题：</strong>核废料具有放射性，需深埋处理；反应堆需严密防护防止核泄漏（如切尔诺贝利、福岛核事故）。我国采用压水堆技术，安全性高。</div></div>
+
 <h2 id="sec9-2">9.2 地球 太阳系</h2>
 <div class="kp"><h3>太阳系</h3>
-<p><strong>太阳系</strong>由<strong>太阳</strong>和围绕它运行的<strong>八大行星</strong>以及卫星、小行星、彗星等组成。</p>
-<p>八大行星（由近到远）：<strong>水星、金星、地球、火星、木星、土星、天王星、海王星</strong>。</p>
-<p>太阳是太阳系的中心天体，是一颗<strong>恒星</strong>，通过核聚变产生能量。</p>
-<p>地球是太阳系中唯一已知存在生命的行星。月球是地球的<strong>天然卫星</strong>。</p>
-<p><strong>光年</strong>：光在一年中传播的距离，是天文学中的长度单位。1光年 ≈ 9.46×10¹² km。</p></div>
+<p><strong>太阳系</strong>由<strong>太阳</strong>和围绕它运行的<strong>八大行星</strong>以及卫星、小行星、彗星、流星体等组成。太阳是太阳系的中心天体，质量占太阳系总质量的 99.86%。</p>
+<p>八大行星（由近到远）：<span class="c-red">水星、金星、地球、火星、木星、土星、天王星、海王星</span>（口诀：<strong>水金地火木土天海</strong>）。</p>
+<table class="phy-table">
+<tr><th>行星</th><th>距太阳</th><th>特点</th><th>分类</th></tr>
+<tr><td>水星</td><td>最近</td><td>最小，无大气，昼夜温差大</td><td>类地行星</td></tr>
+<tr><td>金星</td><td>第二</td><td>最亮，大气浓密（CO₂），表面温度最高</td><td>类地行星</td></tr>
+<tr><td>地球</td><td>第三</td><td>有生命，有液态水，大气含氧</td><td>类地行星</td></tr>
+<tr><td>火星</td><td>第四</td><td>红色星球，有极冠，曾被认为可能有生命</td><td>类地行星</td></tr>
+<tr><td>木星</td><td>第五</td><td>最大，有大红斑（风暴），有光环</td><td>巨行星</td></tr>
+<tr><td>土星</td><td>第六</td><td>有最美丽的光环，密度最小</td><td>巨行星</td></tr>
+<tr><td>天王星</td><td>第七</td><td>自转轴几乎倒在公转轨道面上</td><td>远日行星</td></tr>
+<tr><td>海王星</td><td>最远</td><td>蓝色，大气有强风暴</td><td>远日行星</td></tr>
+</table>
+<p>太阳是一颗<strong>恒星</strong>，通过核聚变产生能量。地球是太阳系中唯一已知存在生命的行星。月球是地球的<strong>天然卫星</strong>。</p></div>
+
+<div class="kp"><h3>地心说与日心说</h3>
+<table class="phy-table">
+<tr><th>学说</th><th>代表人物</th><th>核心观点</th><th>地位</th></tr>
+<tr><td><span class="c-orange">地心说</span></td><td>托勒密（古希腊）</td><td>地球是宇宙中心，其他天体绕地球转</td><td>统治天文学约1400年，后被推翻</td></tr>
+<tr><td><span class="c-blue">日心说</span></td><td>哥白尼（波兰，1543年）</td><td>太阳是太阳系中心，行星绕太阳转</td><td>近代天文学开端，更符合观测</td></tr>
+</table>
+<div class="info-box">📜 <strong>历史意义：</strong>日心说推翻了长期统治的地心说，引发了天文学的革命。后来开普勒发现行星运动三大定律，牛顿用万有引力定律从理论上证明了日心说的正确性。</div></div>
+
+<div class="kp"><h3>日食和月食</h3>
+<p><strong>日食</strong>：当<span class="c-red">月球</span>运行到太阳和地球之间，三者近似成一直线时，月球挡住太阳射向地球的光。日食发生在<span class="c-blue">朔（农历初一）</span>。日食有日全食、日偏食、日环食。</p>
+<p><strong>月食</strong>：当<span class="c-red">地球</span>运行到太阳和月球之间，三者近似成一直线时，地球挡住太阳射向月球的光。月食发生在<span class="c-blue">望（农历十五、十六）</span>。月食有月全食、月偏食。</p>
+<div class="highlight-box">🌑 <strong>日食月食对比：</strong><br>
+• 日食：<span class="c-purple">月球</span>在中间，发生在白天，<span class="c-red">只能用特殊方法观察</span>（不可直视太阳）；<br>
+• 月食：<span class="c-purple">地球</span>在中间，发生在夜晚，肉眼可直接观察。<br>
+• 两者都是光的<span class="c-blue">直线传播</span>原理形成的。</div></div>
 
 <div class="anim-container"><h3 style="margin-bottom:12px;">🌍 太阳系示意</h3>
 <canvas id="solarCanvas" style="width:100%;max-width:680px;height:280px;"></canvas></div>
 
+<div class="kp"><h3>光年</h3>
+<p><strong>光年</strong>：光在真空中一年内传播的距离，是天文学中的<span class="c-red">长度单位</span>（注意：不是时间单位！）。</p>
+<span class="formula">1 光年 ≈ 9.46×10¹² km</span>
+<div class="info-box">💡 <strong>为什么用光年？</strong>宇宙尺度极大，用km等常规单位数字太长不方便。例如：离太阳最近的恒星（比邻星）距我们约 <span class="c-blue">4.2 光年</span>，意味着它发出的光要经过 4.2 年才能到达地球--我们看到的其实是它 4.2 年前的样子。望远镜就是"看历史"的工具。</div></div>
+
 <h2 id="sec9-3">9.3 恒星 银河系 宇宙</h2>
+<div class="kp"><h3>银河系</h3>
+<p><strong>银河系</strong>：太阳所在的星系，是一个巨大的<span class="c-blue">旋涡星系</span>，包含约<strong>2000亿~4000亿</strong>颗恒星。直径约<strong>10万光年</strong>。太阳位于银河系的一条旋臂（猎户臂）上，距银河系中心约 2.6万光年。</p>
+<p>从地球看银河，是一条横跨夜空的光带--这就是"银河"名称的由来。</p></div>
+
 <div class="kp"><h3>宇宙的层次结构</h3>
-<p><strong>银河系</strong>：太阳所在的星系，包含约<strong>2000亿~4000亿</strong>颗恒星。直径约<strong>10万光年</strong>。</p>
-<p>宇宙的层次：<strong>地月系 → 太阳系 → 银河系 → 本星系群 → 超星系团 → 宇宙</strong>。</p>
-<p>宇宙起源于约<strong>138亿年</strong>前的"大爆炸"。宇宙至今仍在膨胀。</p>
-<p>人类对宇宙的认识在不断深化：从地心说→日心说→银河系→宇宙大爆炸理论。</p></div>
+<div class="highlight-box">🌌 <strong>宇宙的层次（由小到大）：</strong><br>
+<span class="c-red">地月系</span>（地球-月球） → <span class="c-orange">太阳系</span>（太阳-行星） → <span class="c-purple">银河系</span>（太阳所在的星系） → <span class="c-blue">本星系群</span>（约50个星系） → <span class="c-green">超星系团</span> → <span class="c-pink">宇宙</span></div>
+<p>宇宙是<span class="c-red">无限的</span>，由各种天体组成，没有中心（或者说处处都是中心）。</p></div>
+
+<div class="kp"><h3>宇宙大爆炸</h3>
+<p>现代宇宙学认为，宇宙起源于约<strong>138亿年</strong>前的一次"大爆炸"（Big Bang）。从一个极高温、极高密的状态开始膨胀，逐渐形成基本粒子、原子、恒星、星系。</p>
+<div class="info-box">💥 <strong>大爆炸理论的证据：</strong><br>
+• <strong>星系红移：</strong>观测发现远方星系的光谱都向红端偏移，说明星系都在<span class="c-red">远离</span>我们--宇宙正在<span class="c-blue">膨胀</span>；<br>
+• <strong>宇宙微波背景辐射：</strong>大爆炸残留的"余热"，遍布整个宇宙；<br>
+• <strong>轻元素的丰度：</strong>宇宙中氢和氦的比例与大爆炸理论预言一致。</div>
+<p>宇宙至今仍在膨胀，且膨胀速度在加快（受暗能量影响）。</p></div>
+
+<div class="kp"><h3>人类对宇宙的认识历程</h3>
+<table class="phy-table">
+<tr><th>阶段</th><th>代表</th><th>认识</th></tr>
+<tr><td>古代</td><td>地心说</td><td>地球是宇宙中心</td></tr>
+<tr><td>16世纪</td><td>哥白尼日心说</td><td>太阳是太阳系中心</td></tr>
+<tr><td>20世纪初</td><td>哈勃</td><td>发现银河系外的星系，宇宙比想象大得多</td></tr>
+<tr><td>20世纪中叶</td><td>伽莫夫</td><td>提出宇宙大爆炸理论</td></tr>
+<tr><td>现代</td><td>航天探测</td><td>人造卫星、空间站、探测器（如旅行者号、詹姆斯·韦伯望远镜）</td></tr>
+</table></div>
 
 <h2 id="sec9-4">9.4 能量转化与守恒</h2>
 <div class="kp"><h3>能量的转化</h3>
-<p>各种形式的能量可以相互<strong>转化</strong>。例如：</p>
-<ul style="padding-left:20px;line-height:2;color:var(--text-secondary);">
-<li>太阳能电池：光能→电能</li><li>电动机：电能→机械能</li>
-<li>发电机：机械能→电能</li><li>光合作用：光能→化学能</li>
-<li>摩擦生热：机械能→内能</li><li>电灯：电能→光能和内能</li></ul></div>
+<p>各种形式的能量可以相互<strong>转化</strong>。能量转化是自然界最普遍的现象之一：</p>
+<table class="phy-table">
+<tr><th>装置/现象</th><th>能量转化</th></tr>
+<tr><td>太阳能电池</td><td>光能 → 电能</td></tr>
+<tr><td>电动机</td><td>电能 → 机械能</td></tr>
+<tr><td>发电机</td><td>机械能 → 电能</td></tr>
+<tr><td>光合作用</td><td>光能 → 化学能</td></tr>
+<tr><td>摩擦生热</td><td>机械能 → 内能</td></tr>
+<tr><td>电灯</td><td>电能 → 光能 + 内能</td></tr>
+<tr><td>干电池</td><td>化学能 → 电能</td></tr>
+<tr><td>火力发电</td><td>化学能 → 内能 → 机械能 → 电能</td></tr>
+<tr><td>核电站</td><td>核能 → 内能 → 机械能 → 电能</td></tr>
+<tr><td>太阳能热水器</td><td>光能 → 内能</td></tr>
+</table></div>
 
 <div class="kp"><h3>能量守恒定律</h3>
 <p><strong>能量既不会凭空产生，也不会凭空消失，它只能从一种形式转化为其他形式，或者从一个物体转移到其他物体，而在转化和转移的过程中，能量的总量保持不变。</strong></p>
-<p>这是自然界最普遍、最重要的基本定律之一。</p>
-<p>任何一部机器只能使能量从一种形式转化为另一种形式，而不能<strong>创造能量</strong>。因此，<strong>永动机是不可能制成的</strong>。</p></div>
+<div class="highlight-box">⚖️ <strong>能量守恒定律的要点：</strong><br>
+① 能量只能<span class="c-red">转化</span>或<span class="c-red">转移</span>，不能凭空产生或消失；<br>
+② 转化/转移过程中，<span class="c-blue">总量保持不变</span>；<br>
+③ 是自然界最普遍、最重要的基本定律之一，适用于<span class="c-purple">所有</span>自然现象。</div>
+<div class="danger-box">❌ <strong>永动机不可能：</strong>任何一部机器只能使能量从一种形式转化为另一种形式，而<span class="c-red">不能创造能量</span>。不消耗能量就能持续对外做功的"永动机"<span class="c-red">违反能量守恒定律</span>，是<span class="c-red">不可能制成</span>的。历史上所有永动机设计都以失败告终。</div></div>
+
+<div class="kp"><h3>能源的分类</h3>
+<table class="phy-table">
+<tr><th>分类方式</th><th>类型</th><th>特点</th><th>举例</th></tr>
+<tr><td rowspan="2">按是否可再生</td><td><span class="c-green">可再生能源</span></td><td>可在自然界中源源不断地得到</td><td>太阳能、风能、水能、地热能、潮汐能、生物质能</td></tr>
+<tr><td><span class="c-red">不可再生能源</span></td><td>短期内无法恢复</td><td>煤、石油、天然气、核能（铀矿）</td></tr>
+<tr><td rowspan="2">按使用历史</td><td>常规能源</td><td>已大规模使用多年</td><td>煤、石油、天然气、水能</td></tr>
+<tr><td><span class="c-purple">新能源</span></td><td>新近才开始利用</td><td>太阳能、风能、核能、氢能、地热能</td></tr>
+<tr><td rowspan="2">按是否污染</td><td>清洁能源</td><td>对环境基本无污染</td><td>太阳能、风能、水能、氢能</td></tr>
+<tr><td>非清洁能源</td><td>污染较大</td><td>煤、石油</td></tr>
+</table></div>
+
+<div class="kp"><h3>新能源的开发与利用</h3>
+<p>面对化石能源枯竭和环境污染问题，开发新能源已成为当务之急：</p>
+<div class="info-box">☀️ <strong>太阳能：</strong>取之不尽、用之不竭的清洁能源。利用方式：<br>
+• <strong>光热转换：</strong>太阳能热水器、太阳能灶；<br>
+• <strong>光电转换：</strong>太阳能电池（光伏发电）；<br>
+• 太阳能电池已广泛应用于卫星、路灯、计算器等。</div>
+<div class="info-box">💨 <strong>风能：</strong>利用风力发电，清洁可再生。我国风电装机容量居世界第一。缺点：受自然风影响，不稳定。</div>
+<div class="info-box">⚛️ <strong>核能：</strong>能量密度高，少量燃料即可产生大量电能，不排放温室气体。我国核电发展迅速（如大亚湾、秦山核电站）。缺点：核废料处理、安全风险。</div>
+<div class="info-box">🔋 <strong>氢能：</strong>氢气燃烧只生成水，<span class="c-green">零污染</span>，被誉为"最清洁的能源"。氢氧燃料电池已用于航天器和新能源汽车。难点：制氢、储氢成本高。</div>
+<div class="highlight-box">🌱 <strong>能源问题与可持续发展：</strong>化石能源的过度使用导致<span class="c-red">温室效应加剧、酸雨、雾霾</span>等环境问题。开发新能源、提高能源利用效率、倡导节能减排，是实现可持续发展的必由之路。</div></div>
+
+<div class="danger-box">⚠️ <strong>易错点辨析：</strong><br>
+• <strong>光年</strong>是<span class="c-red">长度</span>单位，不是时间单位；<br>
+• <strong>原子核</strong>由质子和中子组成，<span class="c-red">不包括电子</span>；<br>
+• <strong>核能</strong>属于<span class="c-red">不可再生能源</span>（铀矿有限），但属于<span class="c-green">新能源</span>；<br>
+• <strong>太阳</strong>发光发热是<span class="c-red">核聚变</span>，<strong>核电站</strong>是<span class="c-red">核裂变</span>；<br>
+• <strong>能量守恒</strong>≠ 机械能守恒，能量守恒是<span class="c-blue">最普遍</span>的定律，机械能守恒需满足特定条件。</div>
 
 <h2 id="exercises" style="margin:28px 0 16px;">📝 章节练习题</h2>
 <div class="exercise"><div class="question"><span class="q-num">1</span>原子由____和核外电子组成。</div>
@@ -123,35 +266,56 @@
 <label><input type="radio" name="q1" value="A">A. 分子</label><label><input type="radio" name="q1" value="B">B. 原子核</label>
 <label><input type="radio" name="q1" value="C">C. 中子</label><label><input type="radio" name="q1" value="D">D. 离子</label></div>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
-<div class="answer" id="answer-1" data-correct="B">✅ B。原子由原子核（含质子和中子）和核外电子组成。</div></div>
+<div class="answer" id="answer-1" data-correct="B">✅ B。原子由原子核（含质子和中子）和核外电子组成。原子核集中了原子的几乎全部质量。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">2</span>太阳系中距离太阳最近的行星是____。</div>
 <div class="options">
 <label><input type="radio" name="q2" value="A">A. 金星</label><label><input type="radio" name="q2" value="B">B. 地球</label>
 <label><input type="radio" name="q2" value="C">C. 水星</label><label><input type="radio" name="q2" value="D">D. 火星</label></div>
 <button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
-<div class="answer" id="answer-2" data-correct="C">✅ C。八大行星由近到远：水金地火木土天海。</div></div>
+<div class="answer" id="answer-2" data-correct="C">✅ C。八大行星由近到远：水金地火木土天海。水星距太阳最近，海王星最远。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">3</span>能量守恒定律指出，能量____。</div>
 <div class="options">
 <label><input type="radio" name="q3" value="A">A. 可以被创造</label><label><input type="radio" name="q3" value="B">B. 可以被消灭</label>
 <label><input type="radio" name="q3" value="C">C. 总量保持不变，只能转化或转移</label><label><input type="radio" name="q3" value="D">D. 只有动能守恒</label></div>
 <button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
-<div class="answer" id="answer-3" data-correct="C">✅ C。能量既不会创生也不会消灭，只会转化或转移，总量不变。</div></div>
+<div class="answer" id="answer-3" data-correct="C">✅ C。能量既不会凭空创生也不会凭空消灭，只会从一种形式转化为另一种形式，或从一个物体转移到另一个物体，总量保持不变。因此永动机不可能制成。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">4</span>光年是____的单位。</div>
 <div class="options">
 <label><input type="radio" name="q4" value="A">A. 时间</label><label><input type="radio" name="q4" value="B">B. 速度</label>
 <label><input type="radio" name="q4" value="C">C. 长度</label><label><input type="radio" name="q4" value="D">D. 质量</label></div>
 <button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
-<div class="answer" id="answer-4" data-correct="C">✅ C。光年是长度单位，表示光在一年中传播的距离，约9.46×10¹²km。</div></div>
+<div class="answer" id="answer-4" data-correct="C">✅ C。光年是长度单位，表示光在一年中传播的距离，约 9.46×10¹² km。常用于度量天体间的距离。</div></div>
 
 <div class="exercise"><div class="question"><span class="q-num">5</span>下列哪种装置能把电能转化为机械能？</div>
 <div class="options">
 <label><input type="radio" name="q5" value="A">A. 发电机</label><label><input type="radio" name="q5" value="B">B. 电动机</label>
 <label><input type="radio" name="q5" value="C">C. 太阳能电池</label><label><input type="radio" name="q5" value="D">D. 电炉</label></div>
 <button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
-<div class="answer" id="answer-5" data-correct="B">✅ B。电动机将电能转化为机械能。发电机相反，将机械能转化为电能。</div></div>
+<div class="answer" id="answer-5" data-correct="B">✅ B。电动机将电能转化为机械能。发电机将机械能转化为电能（相反）。太阳能电池将光能转化为电能。电炉将电能转化为内能。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>提出原子核式结构模型的科学家是____。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 汤姆生</label><label><input type="radio" name="q6" value="B">B. 卢瑟福</label>
+<label><input type="radio" name="q6" value="C">C. 玻尔</label><label><input type="radio" name="q6" value="D">D. 牛顿</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="B">✅ B。卢瑟福通过α粒子散射实验提出了原子的核式结构模型。汤姆生提出的是枣糕模型，玻尔提出了量子化轨道模型。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>关于核能的说法，正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. 核电站利用的是核聚变</label><label><input type="radio" name="q7" value="B">B. 太阳发光是核裂变</label>
+<label><input type="radio" name="q7" value="C">C. 核电站利用可控核裂变释放的能量</label><label><input type="radio" name="q7" value="D">D. 核能是可再生能源</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="C">✅ C。核电站利用可控核裂变（重核分裂）释放的能量发电。太阳发光是核聚变（轻核结合）。核能是不可再生能源（铀矿有限）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>下列能源中，属于可再生能源的是____。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 煤</label><label><input type="radio" name="q8" value="B">B. 石油</label>
+<label><input type="radio" name="q8" value="C">C. 天然气</label><label><input type="radio" name="q8" value="D">D. 太阳能</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="D">✅ D。太阳能是可再生能源，取之不尽用之不竭。煤、石油、天然气是化石能源，短期内无法恢复，属于不可再生能源。</div></div>
 </main></div>
 <script src="../assets/js/common.js"></script>
 <script>
