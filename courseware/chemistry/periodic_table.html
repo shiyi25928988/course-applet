@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>化学元素周期表 - 初中化学</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.pt-wrap{overflow-x:auto;padding-bottom:8px;}
+.periodic-table{display:grid;grid-template-columns:repeat(18,minmax(42px,1fr));gap:3px;min-width:820px;font-size:.72rem;}
+.el{position:relative;border-radius:5px;padding:4px 2px 3px;text-align:center;cursor:pointer;color:#fff;transition:transform .12s,box-shadow .12s;user-select:none;line-height:1.15;min-height:48px;display:flex;flex-direction:column;justify-content:center;}
+.el:hover{transform:scale(1.15);z-index:10;box-shadow:0 4px 14px rgba(0,0,0,.3);}
+.el .num{font-size:.6rem;opacity:.85;text-align:left;padding-left:2px;}
+.el .sym{font-size:1rem;font-weight:700;}
+.el .nm{font-size:.58rem;opacity:.9;margin-top:1px;}
+.el-spacer{}
+.cat-alkali{background:#ef4444;}
+.cat-alkaline{background:#f97316;}
+.cat-transition{background:#eab308;color:#1e293b;}
+.cat-post{background:#22c55e;color:#1e293b;}
+.cat-metalloid{background:#06b6d4;}
+.cat-nonmetal{background:#3b82f6;}
+.cat-halogen{background:#14b8a6;}
+.cat-noble{background:#a855f7;}
+.cat-lanth{background:#ec4899;}
+.cat-actin{background:#f43f5e;}
+.cat-unknown{background:#94a3b8;}
+.la-marker{background:#fce7f3;color:#9d174d;border:1px dashed #ec4899;}
+.ac-marker{background:#ffe4e6;color:#9f1239;border:1px dashed #f43f5e;}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0;font-size:.78rem;}
+.legend span{display:flex;align-items:center;gap:5px;color:var(--text-secondary);}
+.legend i{width:14px;height:14px;border-radius:3px;display:inline-block;}
+/* Modal */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000;align-items:center;justify-content:center;padding:20px;}
+.modal-overlay.show{display:flex;}
+.modal-card{background:#fff;border-radius:16px;max-width:520px;width:100%;padding:0;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.3);animation:pop .2s ease;}
+@keyframes pop{from{transform:scale(.9);opacity:0;}to{transform:scale(1);opacity:1;}}
+.modal-head{padding:20px 24px;color:#fff;display:flex;align-items:center;gap:16px;}
+.modal-head .big-sym{font-size:3rem;font-weight:800;line-height:1;}
+.modal-head .big-num{font-size:1rem;opacity:.9;}
+.modal-head .big-name{font-size:1.3rem;font-weight:600;}
+.modal-head .big-en{font-size:.85rem;opacity:.8;}
+.modal-close{margin-left:auto;background:rgba(255,255,255,.2);border:none;color:#fff;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1.2rem;}
+.modal-close:hover{background:rgba(255,255,255,.35);}
+.modal-body{padding:20px 24px;}
+.modal-body canvas{display:block;margin:0 auto;max-width:100%;}
+.info-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f1f5f9;font-size:.88rem;}
+.info-row span:first-child{color:var(--text-secondary);}
+.info-row span:last-child{font-weight:600;color:var(--text);}
+.el-desc{margin-top:12px;font-size:.85rem;color:var(--text-secondary);line-height:1.7;background:#f8fafc;padding:12px;border-radius:8px;}
+@media(max-width:768px){.periodic-table{font-size:.6rem;}.el{min-height:38px;}.el .sym{font-size:.8rem;}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"><h3>🧪 初中化学</h3><ul class="chapter-list">
+<li><a href="ch01_intro.html"><span class="ch-num">1</span>开启化学之门</a></li>
+<li><a href="ch02_substances.html"><span class="ch-num">2</span>身边的化学物质</a></li>
+<li><a href="ch03_matter.html"><span class="ch-num">3</span>物质构成的奥秘</a></li>
+<li><a href="ch04_reactions.html"><span class="ch-num">4</span>认识化学变化</a></li>
+<li><a href="ch05_metals.html"><span class="ch-num">5</span>金属的冶炼与利用</a></li>
+<li><a href="ch06_solutions.html"><span class="ch-num">6</span>溶解现象</a></li>
+<li><a href="ch07_acid_base.html"><span class="ch-num">7</span>酸、碱、盐</a></li>
+<li><a href="ch08_organic.html"><span class="ch-num">8</span>有机化合物</a></li>
+<li><a href="ch09_society.html"><span class="ch-num">9</span>化学与社会发展</a></li>
+<li><a href="ch10_equations.html"><span class="ch-num">10</span>⭐ 化学反应式大全</a></li>
+<li><a href="periodic_table.html" class="active"><span class="ch-num">⚛</span>元素周期表</a></li>
+</ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
+<a href="../index.html" class="back-home">🏠 返回首页</a>
+</div>
+<a href="index.html" class="back-subject">📂 化学目录</a>
+</aside>
+<main class="main">
+<div class="topbar">
+<div class="breadcrumb">
+<a href="../index.html">🏠 首页</a><span>›</span>
+<a href="index.html">📂 初中化学</a><span>›</span>
+<span>元素周期表</span>
+</div>
+<div class="spacer"></div>
+<div class="subject-switch">
+<a href="../math/index.html">数学</a>
+<a href="../physics/index.html">物理</a>
+<a href="index.html" class="active">化学</a>
+<a href="../chinese/index.html">语文</a>
+</div>
+</div>
+<div class="page-title">⚛ 化学元素周期表</div>
+
+<div class="card" style="margin-bottom:16px;">
+<div class="card-title"><span class="icon">📖</span>使用说明</div>
+<ul style="padding-left:20px;color:var(--text-secondary);line-height:2;font-size:.9rem;">
+<li>点击任意元素，查看<strong>元素详情</strong>与<strong>原子电子排布</strong>动画</li>
+<li>颜色区分元素类别：碱金属、碱土金属、过渡金属、非金属、卤素、稀有气体等</li>
+<li>共 <strong>118</strong> 种元素，7 个周期、16 个族</li>
+</ul>
+</div>
+
+<div class="legend">
+<span><i class="cat-alkali"></i>碱金属</span>
+<span><i class="cat-alkaline"></i>碱土金属</span>
+<span><i class="cat-transition"></i>过渡金属</span>
+<span><i class="cat-post"></i>主族金属</span>
+<span><i class="cat-metalloid"></i>准金属</span>
+<span><i class="cat-nonmetal"></i>非金属</span>
+<span><i class="cat-halogen"></i>卤素</span>
+<span><i class="cat-noble"></i>稀有气体</span>
+<span><i class="cat-lanth"></i>镧系</span>
+<span><i class="cat-actin"></i>锕系</span>
+</div>
+
+<div class="pt-wrap">
+<div class="periodic-table" id="pt"></div>
+</div>
+
+<p style="color:var(--text-secondary);font-size:.82rem;margin-top:12px;text-align:center;">* 镧系（57-71）与锕系（89-103）单独排列于下方</p>
+
+</main></div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
+<div class="modal-card">
+<div class="modal-head" id="modalHead">
+<div class="big-sym" id="mSym"></div>
+<div>
+<div class="big-num" id="mNum"></div>
+<div class="big-name" id="mName"></div>
+<div class="big-en" id="mEn"></div>
+</div>
+<button class="modal-close" onclick="closeModal()">✕</button>
+</div>
+<div class="modal-body">
+<canvas id="atomCanvas" width="440" height="280"></canvas>
+<div id="mInfo"></div>
+<div class="el-desc" id="mDesc"></div>
+</div>
+</div>
+</div>
+
+<script src="../assets/js/common.js"></script>
+<script>
+// ===== Element Data =====
+// [number, symbol, nameCN, nameEN, mass, category, [shells], period, group, desc]
+// category: alkali/alkaline/transition/post/metalloid/nonmetal/halogen/noble/lanth/actin/unknown
+const ELEMENTS = [
+[1,"H","氢","Hydrogen","1.008","nonmetal",[1],1,1,"最轻的元素，宇宙中含量最多。水的重要组成元素，未来清洁能源。"],
+[2,"He","氦","Helium","4.003","noble",[2],1,18,"稀有气体，密度仅次于氢，用于气球填充，化学性质极稳定。"],
+[3,"Li","锂","Lithium","6.941","alkali",[2,1],2,1,"最轻的金属，用于锂电池，治疗躁郁症。"],
+[4,"Be","铍","Beryllium","9.012","alkaline",[2,2],2,2,"轻而坚硬的金属，用于航空航天合金。"],
+[5,"B","硼","Boron","10.81","metalloid",[2,3],2,13,"准金属，用于硼砂、玻璃和半导体材料。"],
+[6,"C","碳","Carbon","12.01","nonmetal",[2,4],2,14,"构成生命的基本元素，有金刚石、石墨等多种同素异形体。"],
+[7,"N","氮","Nitrogen","14.01","nonmetal",[2,5],2,15,"空气中含量最多（78%），是蛋白质和核酸的组成元素。"],
+[8,"O","氧","Oxygen","16.00","nonmetal",[2,6],2,16,"生命必需元素，助燃，占空气21%，地壳含量最多。"],
+[9,"F","氟","Fluorine","19.00","halogen",[2,7],2,17,"最活泼的非金属，用于牙膏防龋齿和氟利昂制冷剂。"],
+[10,"Ne","氖","Neon","20.18","noble",[2,8],2,18,"稀有气体，通电发红光，用于霓虹灯。"],
+[11,"Na","钠","Sodium","22.99","alkali",[2,8,1],3,1,"活泼金属，与水剧烈反应。食盐(NaCl)的主要成分。"],
+[12,"Mg","镁","Magnesium","24.31","alkaline",[2,8,2],3,2,"银白色轻金属，燃烧发白光，叶绿素的重要成分。"],
+[13,"Al","铝","Aluminium","26.98","post",[2,8,3],3,13,"地壳中含量最多的金属，导电性好，用于制造飞机和易拉罐。"],
+[14,"Si","硅","Silicon","28.09","metalloid",[2,8,4],3,14,"半导体材料，芯片和太阳能电池的核心，地壳第二多元素。"],
+[15,"P","磷","Phosphorus","30.97","nonmetal",[2,8,5],3,15,"白磷和红磷是同素异形体，用于火柴和化肥，DNA的组成元素。"],
+[16,"S","硫","Sulfur","32.07","nonmetal",[2,8,6],3,16,"黄色固体，用于制硫酸，火山地区常见。蛋白质含硫元素。"],
+[17,"Cl","氯","Chlorine","35.45","halogen",[2,8,7],3,17,"黄绿色有毒气体，用于消毒和制盐酸，食盐中的阴离子。"],
+[18,"Ar","氩","Argon","39.95","noble",[2,8,8],3,18,"空气中含量最多的稀有气体，用作保护气（焊接）。"],
+[19,"K","钾","Potassium","39.10","alkali",[2,8,8,1],4,1,"极活泼金属，与水反应燃烧，化肥重要成分(NPK)。"],
+[20,"Ca","钙","Calcium","40.08","alkaline",[2,8,8,2],4,2,"骨骼和牙齿的主要成分，石灰石和大理石的主要元素。"],
+[21,"Sc","钪","Scandium","44.96","transition",[2,8,9,2],4,3,"稀有金属，用于高强度铝合金。"],
+[22,"Ti","钛","Titanium","47.87","transition",[2,8,10,2],4,4,"轻而坚硬，耐腐蚀，用于航空航天和人工关节。"],
+[23,"V","钒","Vanadium","50.94","transition",[2,8,11,2],4,5,"用于钢铁添加剂和催化剂。"],
+[24,"Cr","铬","Chromium","52.00","transition",[2,8,13,1],4,6,"硬而耐腐蚀，用于不锈钢和电镀。"],
+[25,"Mn","锰","Manganese","54.94","transition",[2,8,13,2],4,7,"用于钢铁脱氧和电池(干电池)。"],
+[26,"Fe","铁","Iron","55.85","transition",[2,8,14,2],4,8,"地核主要成分，最重要的金属，血红蛋白含铁。"],
+[27,"Co","钴","Cobalt","58.93","transition",[2,8,15,2],4,9,"磁性金属，维生素B12的组成元素，用于电池。"],
+[28,"Ni","镍","Nickel","58.69","transition",[2,8,16,2],4,10,"耐腐蚀，用于不锈钢和硬币，电池电极材料。"],
+[29,"Cu","铜","Copper","63.55","transition",[2,8,18,1],4,11,"优良导体，紫红色金属，用于导线和电路。"],
+[30,"Zn","锌","Zinc","65.38","transition",[2,8,18,2],4,12,"用于镀锌防锈和干电池负极，人体必需微量元素。"],
+[31,"Ga","镓","Gallium","69.72","post",[2,8,18,3],4,13,"熔点接近室温（手心可融化），用于半导体。"],
+[32,"Ge","锗","Germanium","72.63","metalloid",[2,8,18,4],4,14,"半导体材料，早期晶体管的原料。"],
+[33,"As","砷","Arsenic","74.92","metalloid",[2,8,18,5],4,15,"有毒，砒霜(As₂O₃)的成分，半导体掺杂剂。"],
+[34,"Se","硒","Selenium","78.97","nonmetal",[2,8,18,6],4,16,"用于光电池和玻璃脱色，人体必需微量元素。"],
+[35,"Br","溴","Bromine","79.90","halogen",[2,8,18,7],4,17,"常温下唯一的液态非金属，红棕色，用于阻燃剂。"],
+[36,"Kr","氪","Krypton","83.80","noble",[2,8,18,8],4,18,"稀有气体，用于高强度照明和激光。"],
+[37,"Rb","铷","Rubidium","85.47","alkali",[2,8,18,8,1],5,1,"极活泼金属，用于原子钟。"],
+[38,"Sr","锶","Strontium","87.62","alkaline",[2,8,18,8,2],5,2,"焰色红色，用于烟花。"],
+[39,"Y","钇","Yttrium","88.91","transition",[2,8,18,9,2],5,3,"用于红色荧光粉和超导体。"],
+[40,"Zr","锆","Zirconium","91.22","transition",[2,8,18,10,2],5,4,"耐腐蚀，用于核反应堆包壳材料。"],
+[41,"Nb","铌","Niobium","92.91","transition",[2,8,18,12,1],5,5,"用于超导磁体和特种钢。"],
+[42,"Mo","钼","Molybdenum","95.96","transition",[2,8,18,13,1],5,6,"高温合金和催化剂，固氮酶含钼。"],
+[43,"Tc","锝","Technetium","98","transition",[2,8,18,13,2],5,7,"人造元素，医学显像示踪剂。"],
+[44,"Ru","钌","Ruthenium","101.1","transition",[2,8,18,15,1],5,8,"用于电子触点和催化剂。"],
+[45,"Rh","铑","Rhodium","102.9","transition",[2,8,18,16,1],5,9,"贵金属，用于汽车尾气催化转化器。"],
+[46,"Pd","钯","Palladium","106.4","transition",[2,8,18,18],5,10,"吸氢能力强，用于催化剂和电子元件。"],
+[47,"Ag","银","Silver","107.9","transition",[2,8,18,18,1],5,11,"导电导热性最好的金属，用于首饰和电子。"],
+[48,"Cd","镉","Cadmium","112.4","transition",[2,8,18,18,2],5,12,"有毒，用于镍镉电池和颜料。"],
+[49,"In","铟","Indium","114.8","post",[2,8,18,18,3],5,13,"柔软金属，用于触摸屏ITO导电膜。"],
+[50,"Sn","锡","Tin","118.7","post",[2,8,18,18,4],5,14,"易延展，用于焊锡和马口铁镀层。"],
+[51,"Sb","锑","Antimony","121.8","metalloid",[2,8,18,18,5],5,15,"用于阻燃剂和铅蓄电池。"],
+[52,"Te","碲","Tellurium","127.6","metalloid",[2,8,18,18,6],5,16,"用于太阳能电池(CdTe)和合金。"],
+[53,"I","碘","Iodine","126.9","halogen",[2,8,18,18,7],5,17,"紫黑色固体易升华，甲状腺激素必需元素，用于消毒。"],
+[54,"Xe","氙","Xenon","131.3","noble",[2,8,18,18,8],5,18,"稀有气体，用于高强度灯和离子推进器。"],
+[55,"Cs","铯","Caesium","132.9","alkali",[2,8,18,18,8,1],6,1,"极活泼，金色金属，用于原子钟定义秒。"],
+[56,"Ba","钡","Barium","137.3","alkaline",[2,8,18,18,8,2],6,2,"焰色黄绿，硫酸钡用于医学造影（钡餐）。"],
+[57,"La","镧","Lanthanum","138.9","lanth",[2,8,18,18,9,2],6,3,"镧系第一元素，用于光学玻璃和电池。"],
+[58,"Ce","铈","Cerium","140.1","lanth",[2,8,18,19,9,2],6,0,"稀土元素，用于催化剂和打火石。"],
+[59,"Pr","镨","Praseodymium","140.9","lanth",[2,8,18,21,8,2],6,0,"用于高强度磁体和玻璃着色。"],
+[60,"Nd","钕","Neodymium","144.2","lanth",[2,8,18,22,8,2],6,0,"制造最强永磁体（钕铁硼磁铁）。"],
+[61,"Pm","钷","Promethium","145","lanth",[2,8,18,23,8,2],6,0,"放射性稀土元素，用于夜光涂层。"],
+[62,"Sm","钐","Samarium","150.4","lanth",[2,8,18,24,8,2],6,0,"用于钐钴永磁材料和激光。"],
+[63,"Eu","铕","Europium","152.0","lanth",[2,8,18,25,8,2],6,0,"用于荧光粉（红色和蓝色）和防伪标记。"],
+[64,"Gd","钆","Gadolinium","157.3","lanth",[2,8,18,25,9,2],6,0,"磁性最强，用于MRI造影剂。"],
+[65,"Tb","铽","Terbium","158.9","lanth",[2,8,18,27,8,2],6,0,"用于绿色荧光粉和磁光存储。"],
+[66,"Dy","镝","Dysprosium","162.5","lanth",[2,8,18,28,8,2],6,0,"用于高温永磁体和核反应堆控制棒。"],
+[67,"Ho","钬","Holmium","164.9","lanth",[2,8,18,29,8,2],6,0,"磁矩最大，用于激光医疗。"],
+[68,"Er","铒","Erbium","167.3","lanth",[2,8,18,30,8,2],6,0,"用于光纤放大器和粉红色玻璃。"],
+[69,"Tm","铥","Thulium","168.9","lanth",[2,8,18,31,8,2],6,0,"用于便携式X射线源。"],
+[70,"Yb","镱","Ytterbium","173.0","lanth",[2,8,18,32,8,2],6,0,"用于原子钟和激光。"],
+[71,"Lu","镥","Lutetium","175.0","lanth",[2,8,18,32,9,2],6,0,"最重的稀土元素，用于石油催化裂化。"],
+[72,"Hf","铪","Hafnium","178.5","transition",[2,8,18,32,10,2],6,4,"用于核反应堆控制棒（吸收中子）。"],
+[73,"Ta","钽","Tantalum","180.9","transition",[2,8,18,32,11,2],6,5,"耐腐蚀，用于电容器和医用合金。"],
+[74,"W","钨","Tungsten","183.8","transition",[2,8,18,32,12,2],6,6,"熔点最高(3422°C)，用于灯丝和硬质合金。"],
+[75,"Re","铼","Rhenium","186.2","transition",[2,8,18,32,13,2],6,7,"熔点极高，用于喷气发动机叶片。"],
+[76,"Os","锇","Osmium","190.2","transition",[2,8,18,32,14,2],6,8,"密度最大的天然元素，用于钢笔笔尖。"],
+[77,"Ir","铱","Iridium","192.2","transition",[2,8,18,32,15,2],6,9,"极耐腐蚀，陨石中富集（恐龙灭绝证据）。"],
+[78,"Pt","铂","Platinum","195.1","transition",[2,8,18,32,17,1],6,10,"贵金属，催化转化器和首饰，俗称白金。"],
+[79,"Au","金","Gold","197.0","transition",[2,8,18,32,18,1],6,11,"延展性极好，化学性质稳定，用于首饰和储备。"],
+[80,"Hg","汞","Mercury","200.6","transition",[2,8,18,32,18,2],6,12,"常温唯一液态金属，有毒，温度计和荧光灯。"],
+[81,"Tl","铊","Thallium","204.4","post",[2,8,18,32,18,3],6,13,"剧毒，用于红外光学和电子器件。"],
+[82,"Pb","铅","Lead","207.2","post",[2,8,18,32,18,4],6,14,"密度大，用于蓄电池和防辐射，有毒。"],
+[83,"Bi","铋","Bismuth","209.0","post",[2,8,18,32,18,5],6,15,"低熔点，用于胃药(次水杨酸铋)和合金。"],
+[84,"Po","钋","Polonium","209","post",[2,8,18,32,18,6],6,16,"强放射性，居里夫人发现，剧毒。"],
+[85,"At","砹","Astatine","210","halogen",[2,8,18,32,18,7],6,17,"地壳中最稀少的元素，强放射性。"],
+[86,"Rn","氡","Radon","222","noble",[2,8,18,32,18,8],6,18,"放射性稀有气体，地下室可能积聚，致癌。"],
+[87,"Fr","钫","Francium","223","alkali",[2,8,18,32,18,8,1],7,1,"最强碱性，极稀有且放射性极强。"],
+[88,"Ra","镭","Radium","226","alkaline",[2,8,18,32,18,8,2],7,2,"强放射性，居里夫人发现，曾用于夜光涂料。"],
+[89,"Ac","锕","Actinium","227","actin",[2,8,18,32,18,9,2],7,3,"锕系第一元素，强放射性，发淡蓝光。"],
+[90,"Th","钍","Thorium","232.0","actin",[2,8,18,32,18,10,2],7,0,"放射性，核燃料潜在来源。"],
+[91,"Pa","镤","Protactinium","231.0","actin",[2,8,18,32,20,9,2],7,0,"强放射性，极稀有。"],
+[92,"U","铀","Uranium","238.0","actin",[2,8,18,32,21,9,2],7,0,"核燃料，用于核电站和核武器，自然界存在。"],
+[93,"Np","镎","Neptunium","237","actin",[2,8,18,32,22,9,2],7,0,"第一种人造超铀元素。"],
+[94,"Pu","钚","Plutonium","244","actin",[2,8,18,32,24,8,2],7,0,"核武器和核电池材料，剧毒。"],
+[95,"Am","镅","Americium","243","actin",[2,8,18,32,25,8,2],7,0,"用于烟雾报警器。"],
+[96,"Cm","锔","Curium","247","actin",[2,8,18,32,25,9,2],7,0,"强放射性，用于火星探测器电源。"],
+[97,"Bk","锫","Berkelium","247","actin",[2,8,18,32,27,8,2],7,0,"人造元素，极微量。"],
+[98,"Cf","锎","Californium","251","actin",[2,8,18,32,28,8,2],7,0,"强中子源，用于核反应堆启动。"],
+[99,"Es","锿","Einsteinium","252","actin",[2,8,18,32,29,8,2],7,0,"氢弹爆炸中发现，以爱因斯坦命名。"],
+[100,"Fm","镄","Fermium","257","actin",[2,8,18,32,30,8,2],7,0,"以费米命名，无法宏观制造。"],
+[101,"Md","钔","Mendelevium","258","actin",[2,8,18,32,31,8,2],7,0,"以门捷列夫命名。"],
+[102,"No","锘","Nobelium","259","actin",[2,8,18,32,32,8,2],7,0,"以诺贝尔命名。"],
+[103,"Lr","铹","Lawrencium","266","actin",[2,8,18,32,32,8,3],7,0,"以劳伦斯命名，锕系最后元素。"],
+[104,"Rf","鑪","Rutherfordium","267","transition",[2,8,18,32,32,10,2],7,4,"人造超重元素，以卢瑟福命名。"],
+[105,"Db","𬭊","Dubnium","268","transition",[2,8,18,32,32,11,2],7,5,"人造元素，半衰期极短。"],
+[106,"Sg","𬭳","Seaborgium","269","transition",[2,8,18,32,32,12,2],7,6,"以西博格命名。"],
+[107,"Bh","𬭛","Bohrium","270","transition",[2,8,18,32,32,13,2],7,7,"以玻尔命名。"],
+[108,"Hs","𬭶","Hassium","269","transition",[2,8,18,32,32,14,2],7,8,"以德国黑森州命名。"],
+[109,"Mt","鿏","Meitnerium","278","unknown",[2,8,18,32,32,15,2],7,9,"以迈特纳命名。"],
+[110,"Ds","𫟼","Darmstadtium","281","unknown",[2,8,18,32,32,16,2],7,10,"以德国达姆施塔特命名。"],
+[111,"Rg","𬬭","Roentgenium","282","unknown",[2,8,18,32,32,17,2],7,11,"以伦琴命名。"],
+[112,"Cn","鎶","Copernicium","285","transition",[2,8,18,32,32,18,2],7,12,"以哥白尼命名，可能是液态金属。"],
+[113,"Nh","鉨","Nihonium","286","unknown",[2,8,18,32,32,18,3],7,13,"日本发现，首个亚洲命名元素。"],
+[114,"Fl","𫓧","Flerovium","289","unknown",[2,8,18,32,32,18,4],7,14,"以弗廖罗夫命名。"],
+[115,"Mc","镆","Moscovium","290","unknown",[2,8,18,32,32,18,5],7,15,"以莫斯科命名。"],
+[116,"Lv","𫟷","Livermorium","293","unknown",[2,8,18,32,32,18,6],7,16,"以利弗莫尔实验室命名。"],
+[117,"Ts","鿬","Tennessine","294","unknown",[2,8,18,32,32,18,7],7,17,"以美国田纳西州命名。"],
+[118,"Og","鿫","Oganesson","294","noble",[2,8,18,32,32,18,8],7,18,"以奥加涅相相命名，已知最重元素。"]
+];
+
+const CAT_COLORS = {
+  alkali:"#ef4444", alkaline:"#f97316", transition:"#eab308", post:"#22c55e",
+  metalloid:"#06b6d4", nonmetal:"#3b82f6", halogen:"#14b8a6", noble:"#a855f7",
+  lanth:"#ec4899", actin:"#f43f5e", unknown:"#94a3b8"
+};
+const CAT_NAMES = {
+  alkali:"碱金属", alkaline:"碱土金属", transition:"过渡金属", post:"主族金属",
+  metalloid:"准金属", nonmetal:"非金属", halogen:"卤素", noble:"稀有气体",
+  lanth:"镧系元素", actin:"锕系元素", unknown:"未知性质"
+};
+
+// ===== Render Periodic Table =====
+function renderTable(){
+  const pt = document.getElementById('pt');
+  // Build a 7x18 grid + 2 rows for lanthanides/actinides
+  const grid = Array.from({length:9},()=>Array(18).fill(null));
+  ELEMENTS.forEach(e=>{
+    const p=e[7], g=e[8];
+    if(p<=7 && g>=1 && g<=18){ grid[p-1][g-1]=e; }
+  });
+  // Lanthanides (57-71) in row 8, cols 3-17 (offset 2)
+  // Actinides (89-103) in row 9, cols 3-17
+  const lanth = ELEMENTS.filter(e=>e[5]==='lanth');
+  const actin = ELEMENTS.filter(e=>e[5]==='actin');
+  // Place markers in main table
+  grid[5][2] = 'LA_MARKER'; // La marker at period 6 group 3
+  grid[6][2] = 'AC_MARKER'; // Ac marker at period 7 group 3
+
+  let html = '';
+  for(let r=0;r<9;r++){
+    for(let c=0;c<18;c++){
+      const cell = grid[r][c];
+      if(cell===null){ html+='<div class="el-spacer"></div>'; continue; }
+      if(cell==='LA_MARKER'){
+        html+=`<div class="el la-marker" onclick="openModal(57)"><div class="num">57-71</div><div class="sym">La</div><div class="nm">镧系</div></div>`;
+        continue;
+      }
+      if(cell==='AC_MARKER'){
+        html+=`<div class="el ac-marker" onclick="openModal(89)"><div class="num">89-103</div><div class="sym">Ac</div><div class="nm">锕系</div></div>`;
+        continue;
+      }
+      const e=cell;
+      html+=`<div class="el cat-${e[5]}" onclick="openModal(${e[0]})"><div class="num">${e[0]}</div><div class="sym">${e[1]}</div><div class="nm">${e[2]}</div></div>`;
+    }
+  }
+  pt.innerHTML = html;
+}
+
+// ===== Modal =====
+let animId = null;
+function openModal(num){
+  const e = ELEMENTS.find(x=>x[0]===num);
+  if(!e) return;
+  const color = CAT_COLORS[e[5]];
+  document.getElementById('mSym').textContent = e[1];
+  document.getElementById('mNum').textContent = '原子序数 ' + e[0];
+  document.getElementById('mName').textContent = e[2];
+  document.getElementById('mEn').textContent = e[3] + ' · ' + e[4];
+  document.getElementById('modalHead').style.background = 'linear-gradient(135deg,'+color+','+shade(color)+')';
+
+  const shells = e[6];
+  const proton = e[0];
+  let neutron = Math.round(parseFloat(e[4])) - proton;
+  document.getElementById('mInfo').innerHTML =
+    `<div class="info-row"><span>原子序数</span><span>${e[0]}</span></div>`+
+    `<div class="info-row"><span>相对原子质量</span><span>${e[4]}</span></div>`+
+    `<div class="info-row"><span>元素类别</span><span>${CAT_NAMES[e[5]]}</span></div>`+
+    `<div class="info-row"><span>质子数 / 电子数</span><span>${proton} / ${proton}</span></div>`+
+    `<div class="info-row"><span>中子数（约）</span><span>${neutron}</span></div>`+
+    `<div class="info-row"><span>电子层排布</span><span>${shells.join(' · ')}</span></div>`+
+    `<div class="info-row"><span>所在周期 / 族</span><span>第${e[7]}周期 ${e[8]===0?'（镧系/锕系）':'第'+e[8]+'族'}</span></div>`;
+  document.getElementById('mDesc').textContent = e[9];
+
+  drawAtom(shells, e[1], color);
+  document.getElementById('modal').classList.add('show');
+}
+function closeModal(){
+  document.getElementById('modal').classList.remove('show');
+  if(animId){ cancelAnimationFrame(animId); animId=null; }
+}
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeModal(); });
+
+// ===== Draw Atom (animated electron shells) =====
+function drawAtom(shells, symbol, color){
+  const cv = document.getElementById('atomCanvas');
+  const ctx = cv.getContext('2d');
+  const W=cv.width, H=cv.height, cx=W/2, cy=H/2;
+  const maxR = Math.min(W,H)/2 - 24;
+  const shellR = shells.length ? maxR / (shells.length+0.5) : 0;
+
+  function shade(c){return c;}
+
+  let t=0;
+  function frame(){
+    ctx.clearRect(0,0,W,H);
+    // Draw shells (orbits)
+    shells.forEach((n,i)=>{
+      const r = shellR*(i+1);
+      ctx.strokeStyle='rgba(100,116,139,0.3)';
+      ctx.lineWidth=1;
+      ctx.beginPath(); ctx.arc(cx,cy,r,0,Math.PI*2); ctx.stroke();
+      // Shell label
+      ctx.fillStyle='#94a3b8'; ctx.font='10px sans-serif';
+      ctx.fillText(['K','L','M','N','O','P','Q'][i]||'', cx+r-4, cy-4);
+    });
+    // Draw nucleus
+    ctx.fillStyle=color;
+    ctx.beginPath(); ctx.arc(cx,cy,16,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle='#fff'; ctx.font='bold 13px sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText(symbol,cx,cy);
+    ctx.textAlign='start'; ctx.textBaseline='alphabetic';
+    // Draw electrons
+    shells.forEach((n,i)=>{
+      const r = shellR*(i+1);
+      const dir = (i%2===0)?1:-1; // alternating direction
+      for(let j=0;j<n;j++){
+        const angle = (j/n)*Math.PI*2 + t*0.015*dir*(1-i*0.1);
+        const x = cx + Math.cos(angle)*r;
+        const y = cy + Math.sin(angle)*r;
+        ctx.fillStyle='#3b82f6';
+        ctx.beginPath(); ctx.arc(x,y,4,0,Math.PI*2); ctx.fill();
+        ctx.strokeStyle='#fff'; ctx.lineWidth=1; ctx.stroke();
+      }
+    });
+    t++;
+    animId = requestAnimationFrame(frame);
+  }
+  frame();
+}
+
+// helper to darken color
+function shade(hex){
+  const c = hex.replace('#','');
+  const r=Math.max(0,parseInt(c.substr(0,2),16)-40);
+  const g=Math.max(0,parseInt(c.substr(2,2),16)-40);
+  const b=Math.max(0,parseInt(c.substr(4,2),16)-40);
+  return '#'+[r,g,b].map(x=>x.toString(16).padStart(2,'0')).join('');
+}
+
+renderTable();
+</script>
+</body>
+</html>
