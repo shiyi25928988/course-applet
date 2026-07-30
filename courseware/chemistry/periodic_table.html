@@ -281,16 +281,22 @@ function renderTable(){
     const p=e[7], g=e[8];
     if(p<=7 && g>=1 && g<=18){ grid[p-1][g-1]=e; }
   });
-  // Lanthanides (57-71) in row 8, cols 3-17 (offset 2)
-  // Actinides (89-103) in row 9, cols 3-17
-  const lanth = ELEMENTS.filter(e=>e[5]==='lanth');
-  const actin = ELEMENTS.filter(e=>e[5]==='actin');
-  // Place markers in main table
+  // Place markers in main table for La/Ac positions
   grid[5][2] = 'LA_MARKER'; // La marker at period 6 group 3
   grid[6][2] = 'AC_MARKER'; // Ac marker at period 7 group 3
+  // Place lanthanides (57-71) in row 8 (index 7), starting at column 2
+  const lanth = ELEMENTS.filter(e=>e[5]==='lanth');
+  lanth.forEach((e,i)=>{ if(i+2<18) grid[7][i+2]=e; });
+  // Place actinides (89-103) in row 9 (index 8), starting at column 2
+  const actin = ELEMENTS.filter(e=>e[5]==='actin');
+  actin.forEach((e,i)=>{ if(i+2<18) grid[8][i+2]=e; });
 
   let html = '';
   for(let r=0;r<9;r++){
+    // Add a visual gap before the f-block (lanthanides/actinides)
+    if(r===7){
+      html+='<div style="grid-column:1/-1;height:10px;"></div>';
+    }
     for(let c=0;c<18;c++){
       const cell = grid[r][c];
       if(cell===null){ html+='<div class="el-spacer"></div>'; continue; }
