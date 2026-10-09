@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>初中物理中考压轴题 · 高难度拔高训练</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<script src="../assets/js/common.js"></script>
+<style>
+.hero {background:linear-gradient(135deg,#0ea5e9,#0284c7);color:#fff;padding:24px;border-radius:12px;margin-bottom:24px}
+.question {background:#fff;border-radius:10px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.q-num {display:inline-block;background:#0ea5e9;color:#fff;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;font-weight:700;margin-right:10px}
+.q-title {display:inline-block;font-weight:600;color:#1e293b;font-size:1.05rem}
+.q-stars {color:#f59e0b;font-size:.9rem;margin-left:8px}
+.q-content {margin-top:16px;line-height:1.8;color:#374151}
+.answer-btn {margin-top:16px;padding:10px 20px;background:#0ea5e9;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.95rem}
+.answer {display:none;margin-top:16px;padding:16px;background:#e0f2fe;border-radius:8px;border-left:3px solid #0ea5e9}
+.answer.show {display:block}
+.answer-value {font-weight:600;color:#0369a1;margin-bottom:8px}
+.answer-solution {color:#0c4a6e;line-height:1.7}
+.sec-nav {display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.sec-nav a {padding:8px 16px;background:#e0f2fe;color:#0369a1;border-radius:20px;text-decoration:none;font-size:.9rem;font-weight:500}
+.sec-nav a:hover {background:#bae6fd}
+h2.sec {margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid #0ea5e9;color:#0369a1}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links"><a href="index.html">← 初中物理</a>&nbsp;|&nbsp;<a href="../exam_bank.html">← 题库中心</a></div>
+<div class="hero"><h1>🔥 中考压轴题 · 高难度拔高训练</h1><p>力学·电学·热学·声光综合压轴 · 每板块附"概念细化"知识卡 + 5 个交互动图 · 共 18 道高难度题目（★★★）</p>
+<p style="font-size:.85rem;opacity:.85;margin-top:8px;">适用对象：基础扎实、冲刺中考物理高分的初三学生。建议每题先独立完成，再看解析。</p></div>
+
+<div class="sec-nav">
+<a href="#sec-mechanics">🏋️ 力学压轴（1-6）</a>
+<a href="#sec-electricity">⚡ 电学压轴（7-12）</a>
+<a href="#sec-heat">🔥 热学·声光压轴（13-18）</a>
+</div>
+
+<h2 class="sec" id="sec-mechanics">🏋️ 力学压轴</h2>
+
+<h3 style="margin:24px 0 12px;">📐 力学概念细化（做题前先过一遍）</h3>
+<div class="keypoints-grid">
+  <div class="kp">
+    <h3>压力 ≠ 重力</h3>
+    <p>F压 = G 只在"<strong>水平面静止</strong> + 只受重力和支持力"时成立，斜面上不成立。</p>
+    <p>受力面积 S 取两物体的<strong>实际接触面</strong>：叠放时取较小者的上表面，而不是大物体的表面积。</p>
+    <p>叠放题逐层列式：上层压下层 F = G上；下层压地面 F = G上 + G下。</p>
+    <span class="formula">p = F/S （S 必须是真正受力的那块面积）</span>
+  </div>
+  <div class="kp">
+    <h3>求浮力的四把钥匙</h3>
+    <p>① 称重法：F浮 = G − F示；② 阿基米德：F浮 = ρ液gV排；</p>
+    <p>③ 平衡法：漂浮、悬浮时 F浮 = G；</p>
+    <p>④ <strong>沉底陷阱</strong>：沉底时容器底有支持力 N，F浮 = G − N &lt; G，此时绝不能再令 F浮 = G！</p>
+  </div>
+  <div class="kp">
+    <h3>液面变化只看 V排</h3>
+    <p>一切液面升降 = 排开液体总体积的变化：Δh = ΔV排 / S容（S 是容器截面积）。</p>
+    <p>漂浮时 V排 = m/ρ水；沉底浸没时 V排 = V物 = m/ρ物。</p>
+    <p>ρ物 &gt; ρ水的物体从漂浮改沉底 → V排 减小 → 液面下降。</p>
+    <span class="formula">漂浮 V排/V物 = ρ物/ρ液</span>
+  </div>
+  <div class="kp">
+    <h3>杠杆动态平衡</h3>
+    <p>F₁L₁ = F₂L₂；力臂是支点到力的作用线的<strong>垂直距离</strong>，不是到作用点的连线。</p>
+    <p>均匀棒的重力作用在中点；把支点选在未知力所在处，可以"消掉"那个未知力。</p>
+    <p>最小动力的方向：与杆垂直、力臂最长（等于杆长）。</p>
+  </div>
+  <div class="kp">
+    <h3>机械效率的本性</h3>
+    <p>η = W有/W总 = Gh/(Fs)，滑轮组中 s = nh（n 为承重绳段数）。</p>
+    <p>η 只看"额外功占多少"：<strong>物重越大 η 越大</strong>；动滑轮越重、摩擦越大 η 越小。</p>
+    <p>η 与绳的绕法、提升高度、提升速度<strong>无关</strong>；η 恒小于 1。</p>
+  </div>
+</div>
+
+<div class="anim-container">
+  <h3>🌊 动图1 · 木块载石块的液面变化（对应第 2 题）</h3>
+  <canvas id="cFloat" width="640" height="300" style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;"></canvas>
+  <div class="anim-controls">
+    <button onclick="floatToggle()">⇄ 取下石块放入水中 / 放回木块上</button>
+    <button class="reset" onclick="floatReset()">↺ 重置</button>
+  </div>
+  <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">观察要点：石块从木块上移到水底后，木块上浮（吃水变浅），液面整体下降——因为 V排 从 400cm³ 变为 340cm³。水面变化已放大显示。</p>
+</div>
+
+<div class="anim-container">
+  <h3>🔗 动图2 · 滑轮组 s = 3h（对应第 4 题）</h3>
+  <canvas id="cPulley" width="640" height="300" style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;"></canvas>
+  <div class="anim-controls">
+    <button onclick="pulleyPlay()">▶ 播放</button>
+    <button class="reset" onclick="pulleyReset()">↺ 重置</button>
+  </div>
+  <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">n = 3 段绳承重（含固定端）：重物上升 h，绳自由端就下降 3h。W有 = 240h J，W总 = 100×3h = 300h J，η = 240h/300h = 80%——h 在分子分母中约掉，所以效率与提升高度无关。</p>
+</div>
+
+<div class="question"><span class="q-num">1</span><span class="q-title">叠放正方体压强</span><span class="q-stars">★★★</span><div class="q-content">
+<p>实心正方体 A 的边长为 0.2m，密度为 2×10³kg/m³；实心正方体 B 的边长为 0.4m，密度为 0.5×10³kg/m³。将 A 叠放在水平桌面上的 B 的正中央。求：</p>
+<p>(1) A 对 B 的压强；</p>
+<p>(2) B 对桌面的压强。（g = 10N/kg）</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案与解析</button>
+<div class="answer" id="answer-1"><div class="answer-value">答案：(1) 4000Pa；(2) 3000Pa</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+<strong>为什么先算重力再算压强？</strong>因为固体传力"传力不传压"，叠放问题必须逐层算压力。<br>
+(1) V_A = 0.2³ = 8×10⁻³m³，m_A = ρV = 2000×8×10⁻³ = 16kg，G_A = 160N<br>
+A 对 B 的压力 F₁ = G_A = 160N，受力面积为两者中<strong>较小</strong>的接触面 S_A = 0.2×0.2 = 0.04m²<br>
+p₁ = F₁/S_A = 160/0.04 = 4000Pa<br>
+(2) V_B = 0.4³ = 0.064m³，m_B = 500×0.064 = 32kg，G_B = 320N<br>
+B 对桌面压力 F₂ = G_A + G_B = 480N，S_B = 0.16m²<br>
+p₂ = 480/0.16 = 3000Pa<br>
+<strong>易错点：</strong>(1) 中受力面积不能用大正方体的上表面积 0.16m²，压力只作用在 A 与 B 的实际接触面 0.04m² 上。</div></div></div>
+
+<div class="question"><span class="q-num">2</span><span class="q-title">木块载石块的液面变化</span><span class="q-stars">★★★</span><div class="q-content">
+<p>底面积为 100cm² 的柱形容器中盛有足量的水。质量为 300g 的木块上放一质量为 100g 的石块，整体漂浮在水面上。现将石块取下轻轻放入水中（石块密度为 2.5g/cm³，沉底，水未溢出）。求液面高度变化了多少？向哪个方向变化？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案与解析</button>
+<div class="answer" id="answer-2"><div class="answer-value">答案：液面下降 0.6cm</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+<strong>核心思路：液面变化只看"排开水的总体积"的变化。</strong><br>
+① 石块在木块上时，整体漂浮：F浮 = G总，V排₁ = (m木+m石)/ρ水 = 400g/1(g/cm³) = 400cm³<br>
+② 石块放入水中后：<br>
+&nbsp;&nbsp;木块单独漂浮：V排木 = m木/ρ水 = 300cm³<br>
+&nbsp;&nbsp;石块沉底（浸没）：V排石 = V石 = m石/ρ石 = 100/2.5 = 40cm³<br>
+&nbsp;&nbsp;V排₂ = 300 + 40 = 340cm³<br>
+③ ΔV排 = 400 - 340 = 60cm³ → 液面<strong>下降</strong>，Δh = ΔV排/S = 60/100 = 0.6cm<br>
+<strong>为什么石块落水后总排水量变小？</strong>漂浮时石块"靠浮力托起全部重力"，排开的水重等于 m石；沉底后水只托起它排开体积那么大（40cm³），其余靠容器底支持。差值 (100-40)cm³ 就是液面下降的原因。</div></div></div>
+
+<div class="question"><span class="q-num">3</span><span class="q-title">斜靠木棒的杠杆动态平衡</span><span class="q-stars">★★★</span><div class="q-content">
+<p>一根均匀木棒 AB 长 1m、重 30N，A 端支在地上，B 端用竖直细绳吊起，棒保持水平。求：</p>
+<p>(1) 细绳对 B 端的拉力；</p>
+<p>(2) 若在距 A 端 25cm 处挂一个 20N 的重物，绳的拉力变为多少？</p>
+<p>(3) 重物挂在距 A 端多远处，绳的拉力恰好为 18N？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案与解析</button>
+<div class="answer" id="answer-3"><div class="answer-value">答案：(1) 15N；(2) 20N；(3) 0.15m</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+<strong>为什么以 A 为支点列力矩平衡？</strong>A 处地面支持力未知，以它为转轴可消去未知量。<br>
+(1) 重心在棒中点（距 A 0.5m）：F×1 = 30×0.5 → F = 15N<br>
+(2) 20×0.25 + 30×0.5 = F×1 → 5 + 15 = F → F = 20N<br>
+(3) 20×d + 30×0.5 = 18×1 → 20d = 3 → d = 0.15m<br>
+<strong>检验：</strong>d=0.15m 在棒长范围内，合理。</div></div></div>
+
+<div class="question"><span class="q-num">4</span><span class="q-title">滑轮组机械效率随物重变化</span><span class="q-stars">★★★</span><div class="q-content">
+<p>用由 3 段绳子承担重物的滑轮组（不计绳重和摩擦）匀速提升重 240N 的物体，绳自由端拉力为 100N。求：</p>
+<p>(1) 动滑轮的总重；</p>
+<p>(2) 此时滑轮组的机械效率；</p>
+<p>(3) 若改提重 480N 的物体，拉力和机械效率变为多少？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案与解析</button>
+<div class="answer" id="answer-4"><div class="answer-value">答案：(1) 60N；(2) 80%；(3) 180N，约 88.9%</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+(1) 不计绳重和摩擦时 F = (G物 + G动)/n：100 = (240 + G动)/3 → G动 = 60N<br>
+(2) 设物体上升 h，绳端移动 s = 3h<br>
+η = W有/W总 = Gh/(F·3h) = 240/(100×3) = 240/300 = 80%<br>
+<strong>为什么 h 可以约掉？</strong>机械效率只与力和绳的段数有关，与提升高度无关。<br>
+(3) G动不变：F' = (480+60)/3 = 180N；η' = 480/(180×3) = 480/540 ≈ 88.9%<br>
+<strong>结论：</strong>同一滑轮组，提起的物重越大，有用功占比越大，机械效率越<strong>高</strong>——这是中考选择题高频考点。</div></div></div>
+
+<div class="question"><span class="q-num">5</span><span class="q-title">细线拴木块：剪断前后</span><span class="q-stars">★★★</span><div class="q-content">
+<p>体积为 500cm³、密度为 0.6×10³kg/m³ 的木块 A 用细线拴在容器底部，完全浸没在水中。求：</p>
+<p>(1) 细线对木块的拉力；</p>
+<p>(2) 剪断细线，木块静止后露出水面的体积。（ρ水 = 1.0×10³kg/m³，g = 10N/kg）</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案与解析</button>
+<div class="answer" id="answer-5"><div class="answer-value">答案：(1) 2N；(2) 200cm³</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+(1) G = ρ木gV = 600×10×5×10⁻⁴ = 3N；F浮 = ρ水gV排 = 1000×10×5×10⁻⁴ = 5N<br>
+浸没且被线拉住，三力平衡：F浮 = G + T → T = 5 - 3 = 2N<br>
+<strong>为什么 T = F浮 - G？</strong>线对木块的拉力向上（木块想上浮），两个向上的力与重力平衡。<br>
+(2) 剪断后 F浮 &gt; G → 上浮 → 最终漂浮。漂浮时 F浮' = G = 3N<br>
+V排' = F浮'/(ρ水g) = 3/10⁴ = 3×10⁻⁴m³ = 300cm³<br>
+V露 = 500 - 300 = 200cm³（即露出总体积的 2/5）<br>
+<strong>规律：</strong>漂浮时 V排/V物 = ρ物/ρ液。</div></div></div>
+
+<div class="question"><span class="q-num">6</span><span class="q-title">"图像题"：缓慢压入水中</span><span class="q-stars">★★★</span><div class="q-content">
+<p>（文字描述图像）用弹簧测力计悬挂一实心长方体金属块，缓慢竖直浸入水中。下表面刚接触水面时，测力计示数为 4N；随着浸入深度增大，示数均匀减小；当下表面距水面 5cm（即恰好完全浸没）后继续下移，示数保持 3N 不变。求：</p>
+<p>(1) 金属块完全浸没时受到的浮力；</p>
+<p>(2) 金属块的体积和底面积；</p>
+<p>(3) 金属块的密度。（ρ水 = 1.0×10³kg/m³，g = 10N/kg）</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案与解析</button>
+<div class="answer" id="answer-6"><div class="answer-value">答案：(1) 1N；(2) 100cm³，20cm²；(3) 4×10³kg/m³</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+(1) 未浸入时示数 = G = 4N；浸没后示数 = G - F浮 = 3N → F浮 = 1N<br>
+(2) V = V排 = F浮/(ρ水g) = 1/(10³×10) = 10⁻⁴m³ = 100cm³<br>
+恰好浸没时下表面深度 5cm 就是长方体的高 h = 5cm<br>
+S = V/h = 100/5 = 20cm²<br>
+(3) m = G/g = 0.4kg，ρ = m/V = 0.4/10⁻⁴ = 4×10³kg/m³<br>
+<strong>读图要领：</strong>"示数不变"的起点对应"恰好浸没"，那一时刻的深度就是物体的竖直高度——这是图像题中隐藏的几何条件。</div></div></div>
+
+<h2 class="sec" id="sec-electricity">⚡ 电学压轴</h2>
+
+<h3 style="margin:24px 0 12px;">📐 电学概念细化（做题前先过一遍）</h3>
+<div class="keypoints-grid">
+  <div class="kp">
+    <h3>第一步永远是认电路</h3>
+    <p>只有一条电流路径 = <strong>串联</strong>（电流相同、电压分）；出现分叉再汇合 = <strong>并联</strong>（电压相同、电流分）。</p>
+    <p>开关通断会改变结构：动手画出两种开关状态下的<strong>等效电路图</strong>，是解双开关压轴题最值钱的基本功。</p>
+  </div>
+  <div class="kp">
+    <h3>动态电路四步法</h3>
+    <p>① 认串并联结构 → ② 盯住<strong>不变量</strong>（电源 U、定值电阻 R）→ ③ 看变化量（滑片移动、开关通断）→ ④ 出结论：</p>
+    <p>串联：R₂ ↑ → I ↓ → 定值电阻分压 ↓，变阻器分压 ↑；</p>
+    <p>并联：各支路互不影响，干路 I = 各支路电流之和。</p>
+  </div>
+  <div class="kp">
+    <h3>三个功率公式怎么选</h3>
+    <p>P = UI 普适；同电流（串联）比功率用 <span class="formula">P = I²R</span>；同电压（并联）比功率用 <span class="formula">P = U²/R</span>。</p>
+    <p>灯的亮暗只由<strong>实际功率</strong>决定，和额定功率没有直接关系——AC 两选项陷阱都由此而来。</p>
+  </div>
+  <div class="kp">
+    <h3>额定值 vs 实际值</h3>
+    <p>R 是导体自身的属性，恒定不变（除非题目特别说明）。</p>
+    <p>实际功率随电压变化：P实 = (U实/U额)² × P额——电压降 10%，功率降约 19%。</p>
+    <p>"正常发光"三个字 = U、P、I 三个额定值同时锁定，全部变成已知量。</p>
+  </div>
+  <div class="kp">
+    <h3>电表的安全线</h3>
+    <p>电压表内阻极大、并联接入、读数不影响电路；电流表内阻≈0、必须串联，并联在电阻两端 = 短路。</p>
+    <p>中考常问"滑动变阻器的最小允许值"——由 I ≤ 电流表量程 或 U₁ ≤ 电压表量程 列不等式解出。</p>
+  </div>
+</div>
+
+<div class="anim-container">
+  <h3>🎚️ 动图3 · 串联动态电路（对应第 7 题）</h3>
+  <canvas id="cCircuit" width="640" height="260" style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;"></canvas>
+  <div style="margin-top:10px;font-size:.95rem;">
+    拖动滑片改变 R₂：<input type="range" id="rSlider" min="0" max="20" value="10" step="1" style="width:280px;vertical-align:middle;margin:0 8px;">
+    <strong id="rReadout" style="color:#0369a1;">R₂ = 10Ω</strong>
+  </div>
+  <div id="circuitReadout" style="margin-top:6px;font-size:.9rem;color:#475569;"></div>
+  <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">红点是定向移动的电流，速度代表电流大小；右侧电压条高度表示 U₁、U₂ 的大小（仅示意）。把 R₂ 滑到 0 和 20Ω，验证第 7 题的两个极端状态。</p>
+</div>
+
+<div class="question"><span class="q-num">7</span><span class="q-title">串联动态电路：电流与电压的范围</span><span class="q-stars">★★★</span><div class="q-content">
+<p>电源电压 6V 保持不变，定值电阻 R₁ = 10Ω 与滑动变阻器 R₂（最大阻值 20Ω）串联。电压表接在 R₁ 两端，电流表串联在电路中。求滑动变阻器滑片从一端滑到另一端的过程中：</p>
+<p>(1) 电流表示数的变化范围；</p>
+<p>(2) 电压表示数的变化范围。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案与解析</button>
+<div class="answer" id="answer-7"><div class="answer-value">答案：(1) 0.2A ~ 0.6A；(2) 2V ~ 6V</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+串联电路 I = U/(R₁+R₂)，R₂ 增大 → I 减小 → U₁ = IR₁ 减小（R₁ 两端电压）<br>
+① R₂ = 0 时（滑片在最左端）：I最大 = 6/10 = 0.6A，U₁最大 = 6V<br>
+② R₂ = 20Ω 时：I最小 = 6/(10+20) = 0.2A，U₁最小 = 0.2×10 = 2V<br>
+<strong>易错提醒：</strong>电流范围是 0.2~0.6A，不能颠倒；电压表测 R₁ 而不是电源，所以它跟随电流同向变化，而 R₂ 两端电压是反向变化（4V~0V）。</div></div></div>
+
+<div class="question"><span class="q-num">8</span><span class="q-title">并联动态电路：干路电流的范围</span><span class="q-stars">★★★</span><div class="q-content">
+<p>电源电压 6V 不变，R₁ = 12Ω 与滑动变阻器 R₂ 并联，R₂ 的可调范围为 6Ω~24Ω。电流表接在干路上。求电流表示数的变化范围。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案与解析</button>
+<div class="answer" id="answer-8"><div class="answer-value">答案：0.75A ~ 1.5A</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+并联各支路互不影响：I₁ = U/R₁ = 6/12 = 0.5A（恒定）<br>
+I₂ = U/R₂：<br>
+① R₂ = 24Ω 时：I₂最小 = 6/24 = 0.25A → 干路 I最小 = 0.5 + 0.25 = 0.75A<br>
+② R₂ = 6Ω 时：I₂最大 = 6/6 = 1A → 干路 I最大 = 0.5 + 1 = 1.5A<br>
+<strong>关键思想：</strong>并联中一条支路的电阻变化不影响另一条支路的电流——这与串联"牵一发而动全身"形成鲜明对比，是判断动态电路的第一步：先辨认串、并联。</div></div></div>
+
+<div class="question"><span class="q-num">9</span><span class="q-title">两灯串联谁更亮</span><span class="q-stars">★★★</span><div class="q-content">
+<p>灯 L₁ 标有"220V 25W"，灯 L₂ 标有"220V 100W"。将它们<strong>串联</strong>接入 220V 电路中（设灯丝电阻不变）。问：</p>
+<p>(1) 哪盏灯更亮？说明理由；</p>
+<p>(2) 两灯能否正常发光？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案与解析</button>
+<div class="answer" id="answer-9"><div class="answer-value">答案：(1) L₁（25W 灯）更亮；(2) 不能，两灯均变暗</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+(1) R₁ = U额²/P额₁ = 220²/25 = 1936Ω；R₂ = 220²/100 = 484Ω，R₁ &gt; R₂<br>
+串联电流处处相等，实际功率 P = I²R 与 R 成正比 → P₁实 &gt; P₂实 → <strong>L₁ 更亮</strong><br>
+(2) 串联分压：U₁:U₂ = R₁:R₂ = 4:1，U₁ = 176V、U₂ = 44V，都达不到 220V<br>
+且 R总 = 1936+484 = 2420Ω，I = 220/2420 ≈ 0.09A，两灯实际功率都远小于额定功率 → 都变暗，不能正常发光<br>
+<strong>陷阱：</strong>凭生活经验认为"100W 的灯更亮"是错的——亮暗看<strong>实际功率</strong>，串联时额定功率小的灯反而更亮；若改成并联，则 L₂ 更亮（P = U²/R，电压相同，R 小者功率大）。</div></div></div>
+
+<div class="question"><span class="q-num">10</span><span class="q-title">串联分压保护电阻</span><span class="q-stars">★★★</span><div class="q-content">
+<p>一盏标有"6V 3W"的小灯，要接到 9V 电源上正常发光，需串联一个电阻 R。求：</p>
+<p>(1) R 的阻值；</p>
+<p>(2) R 消耗的电功率和整个电路的效率（灯消耗功率占总功率的比例）。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案与解析</button>
+<div class="answer" id="answer-10"><div class="answer-value">答案：(1) 6Ω；(2) 1.5W，约 66.7%</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+灯正常发光 → 通过灯的电流为额定电流 I = P额/U额 = 3/6 = 0.5A<br>
+串联电路电流处处相等 → 通过 R 的电流也是 0.5A<br>
+U_R = U总 - U灯 = 9 - 6 = 3V<br>
+(1) R = U_R/I = 3/0.5 = 6Ω<br>
+(2) P_R = U_R·I = 3×0.5 = 1.5W；P总 = 3 + 1.5 = 4.5W，效率 = 3/4.5 ≈ 66.7%<br>
+<strong>思路梳理：</strong>"正常发光"三个字意味着灯两端电压就是 6V、功率就是 3W——把已知量全部钉死，剩下的只是串联分压。</div></div></div>
+
+<div class="question"><span class="q-num">11</span><span class="q-title">双开关电路综合</span><span class="q-stars">★★★</span><div class="q-content">
+<p>电源电压不变，R₁、R₂ 为定值电阻。只闭合开关 S 时，R₁ 与 R₂ 串联，电流表示数为 0.2A，R₁ 两端电压为 4V；再闭合开关 S₁ 后（R₂ 被短接），电流表示数变为 0.6A。求：</p>
+<p>(1) 电源电压和 R₁ 的阻值；</p>
+<p>(2) R₂ 的阻值；</p>
+<p>(3) 两种状态下 R₁ 消耗的电功率之比。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(11)">查看答案与解析</button>
+<div class="answer" id="answer-11"><div class="answer-value">答案：(1) 12V，20Ω；(2) 40Ω；(3) 9:1</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+(1) S₁ 闭合后 R₂ 被短路，电路中只有 R₁：U = I'R₁ = 0.6R₁<br>
+只闭合 S 时：U₁ = IR₁ = 0.2R₁ = 4V → R₁ = 20Ω，U = 0.6×20 = 12V<br>
+(2) 串联时总电阻 R = U/I = 12/0.2 = 60Ω → R₂ = 60 - 20 = 40Ω<br>
+(3) P = I²R，R₁ 不变：P₁'/P₁ = (I'/I)² = (0.6/0.2)² = 9，即 P₁' : P₁ = 9 : 1<br>
+<strong>解题顺序：</strong>双开关题先分别画出两种开关状态下的"等效电路图"，再各列一个方程联立求解——画等效图是这类压轴题最重要的基本功。</div></div></div>
+
+<div class="question"><span class="q-num">12</span><span class="q-title">电能表测电功率 + 实际电压问题</span><span class="q-stars">★★★</span><div class="q-content">
+<p>小明家的电能表标有"3000r/(kW·h)"。只让电热水壶工作，5 分钟内电能表转盘转了 150 转。求：</p>
+<p>(1) 电热水壶的实际电功率；</p>
+<p>(2) 若电热水壶的额定电压为 220V、额定功率为 600W（电阻不变），当时实际电压只有 200V，求它的实际功率（结果保留整数）。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(12)">查看答案与解析</button>
+<div class="answer" id="answer-12"><div class="answer-value">答案：(1) 600W；(2) 约 496W</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+(1) 消耗电能 W = 150/3000 = 0.05kW·h = 1.8×10⁵J<br>
+t = 5min = 300s → P = W/t = 1.8×10⁵/300 = 600W<br>
+<strong>为什么正好等于额定功率？</strong>说明当时电压正常，这也是自检答案合理性的手段。<br>
+(2) R = U额²/P额 = 220²/600 ≈ 80.7Ω（电阻由壶本身决定，不变）<br>
+P实 = U实²/R = 200²/80.7 ≈ 496W<br>
+另一种更快的算法：P实 = (U实/U额)² × P额 = (200/220)²×600 = 100/121×600 ≈ 496W<br>
+<strong>规律：</strong>电阻不变时，电功率与电压的平方成正比——电压降 10%，功率降约 19%。</div></div></div>
+
+<h2 class="sec" id="sec-heat">🔥 热学·声光压轴</h2>
+
+<h3 style="margin:24px 0 12px;">📐 热学·声光概念细化（做题前先过一遍）</h3>
+<div class="keypoints-grid">
+  <div class="kp">
+    <h3>热平衡方程的方向感</h3>
+    <p>Q放 = Q吸：高温物体写 (t高 − t)，低温物体写 (t − t低)，正负号写反必出错。</p>
+    <p>解出的 t 必在两初温<strong>之间</strong>，且偏向"m·c 大"的一边——算完先拿这两条检验。</p>
+  </div>
+  <div class="kp">
+    <h3>效率的分子分母要认主</h3>
+    <p>烧水：η = Q吸/Q放；热机：η = W有用/Q放。</p>
+    <p>分母永远是燃料<strong>完全燃烧</strong>放出的总热量 Q放 = mq（或 Vq），分子是"真正被利用的那部分"。</p>
+    <p>题给"效率 40%"，就是 Q吸（或 W有）= 0.4 × Q放。</p>
+  </div>
+  <div class="kp">
+    <h3>平面镜成像三件套</h3>
+    <p>等大、等距、虚像；光路可逆。</p>
+    <p>测视力本质：用镜子把短房间的光路"折"一遍——人到像的距离 = 人到镜 + 表到镜。</p>
+    <p>画图口诀：<strong>像与物关于镜面对称</strong>，先定像的位置，光路自动清晰。</p>
+  </div>
+  <div class="kp">
+    <h3>回声测距的两个方向</h3>
+    <p>声音走的是"鸣笛点 → 山崖 → 听到回声点"的<strong>折线</strong>：</p>
+    <p>迎面行驶 L = (s声 + s车)/2；远离行驶 L = (s声 − s车)/2。</p>
+    <p>先画出两个时刻的车、崖位置图再列式，比背公式更可靠。</p>
+  </div>
+</div>
+
+<div class="anim-container">
+  <h3>🪞 动图4 · 平面镜检查视力的光路（对应第 16 题）</h3>
+  <canvas id="cMirror" width="640" height="300" style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;"></canvas>
+  <div class="anim-controls">
+    <button onclick="mirrorToggle()">👁 显示 / 隐藏光路</button>
+  </div>
+  <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">红色虚线是真实光路：视力表 → 平面镜 → 反射进入人眼；沿反射线反向延长，交于镜后的"像"。人眼看到的是虚像，人到像 = 2m + 3m = 5m。</p>
+</div>
+
+<div class="anim-container">
+  <h3>🔊 动图5 · 行驶中的汽车回声测距（对应第 17 题）</h3>
+  <canvas id="cEcho" width="640" height="300" style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;"></canvas>
+  <div class="anim-controls">
+    <button onclick="echoPlay()">▶ 播放</button>
+    <button class="reset" onclick="echoReset()">↺ 重置</button>
+  </div>
+  <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">蓝色圆弧是声音去程，绿色圆弧是回声返程。关键：声音从鸣笛点出发到山崖反弹，返回时汽车已经前进——声音的终点不是鸣笛处！</p>
+</div>
+
+<div class="question"><span class="q-num">13</span><span class="q-title">热平衡方程：冷热水混合</span><span class="q-stars">★★★</span><div class="q-content">
+<p>将 3kg、80℃ 的热水与 2kg、10℃ 的冷水在绝热容器中混合，不计热量损失。求混合后的共同温度。（c水 = 4.2×10³J/(kg·℃)）</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(13)">查看答案与解析</button>
+<div class="answer" id="answer-13"><div class="answer-value">答案：52℃</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+热平衡：Q放 = Q吸<br>
+c水·m热·(t热 - t) = c水·m冷·(t - t冷)<br>
+3×(80 - t) = 2×(t - 10)（比热容约掉了，因为是同种物质）<br>
+240 - 3t = 2t - 20 → 260 = 5t → t = 52℃<br>
+<strong>检验：</strong>52℃ 介于 10℃ 与 80℃ 之间，且更靠近质量大的一侧（3kg 热水），合理。<br>
+<strong>易错点：</strong>等式左边用 (高温 - t)、右边用 (t - 低温)，方向写反就会解出荒谬结果；算完务必检验温度范围。</div></div></div>
+
+<div class="question"><span class="q-num">14</span><span class="q-title">燃气灶烧水的热效率</span><span class="q-stars">★★★</span><div class="q-content">
+<p>用天然气灶把 2kg、20℃ 的水加热到 70℃。[c水 = 4.2×10³J/(kg·℃)，天然气热值 q = 4.2×10⁷J/m³] 求：</p>
+<p>(1) 水吸收的热量；</p>
+<p>(2) 若该灶的效率为 40%，需要消耗多少立方米的天然气？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(14)">查看答案与解析</button>
+<div class="answer" id="answer-14"><div class="answer-value">答案：(1) 4.2×10⁵J；(2) 0.025m³</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+(1) Q吸 = c水mΔt = 4200×2×(70-20) = 4.2×10⁵J<br>
+(2) 效率 η = Q吸/Q放 → Q放 = Q吸/η = 4.2×10⁵/0.4 = 1.05×10⁶J<br>
+V = Q放/q = 1.05×10⁶/4.2×10⁷ = 0.025m³<br>
+<strong>为什么除以 0.4 而不是乘？</strong>水只吸收了燃气放出热量的 40%，放出的总热量必然比吸收的多，所以 Q放 = Q吸/η &gt; Q吸。用"结果应比 Q吸 大"来检验方向是否搞反。</div></div></div>
+
+<div class="question"><span class="q-num">15</span><span class="q-title">汽车发动机的热机效率</span><span class="q-stars">★★★</span><div class="q-content">
+<p>一辆汽车以额定功率 60kW 在平直公路上匀速行驶 1h，共消耗汽油 15kg。求这辆汽车发动机的效率。（汽油热值 q = 4.6×10⁷J/kg）</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(15)">查看答案与解析</button>
+<div class="answer" id="answer-15"><div class="answer-value">答案：约 31.3%</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+有用功（输出机械能）：W有 = Pt = 60×10³ × 3600 = 2.16×10⁸J<br>
+燃料完全燃烧放热：Q放 = mq = 15 × 4.6×10⁷ = 6.9×10⁸J<br>
+η = W有/Q放 = 2.16×10⁸/6.9×10⁸ ≈ 31.3%<br>
+<strong>理解效率分母分子：</strong>热机效率 = 做有用功的那部分能量 ÷ 燃料完全燃烧释放的总能量。本题耗油量与功率是独立给的两个条件，不能再用 P=Fv 反推——先分清哪些量是"有用"，哪些是"总账"。</div></div></div>
+
+<div class="question"><span class="q-num">16</span><span class="q-title">平面镜检查视力</span><span class="q-stars">★★★</span><div class="q-content">
+<p>检查视力时要求人与视力表的像相距 5m。现室内平面镜挂在墙上，视力表挂在人<strong>身后</strong>的墙上，视力表到平面镜的距离为 3m，人面向平面镜且距平面镜 2m。问人看到的视力表的像距人多远？是否符合 5m 的检查要求？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(16)">查看答案与解析</button>
+<div class="answer" id="answer-16"><div class="answer-value">答案：像距人 5m，符合要求</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+平面镜成像特点：像与物到镜面的距离相等。<br>
+视力表距镜 3m → 它的像在镜后 3m 处。<br>
+人在镜前 2m 处面向镜子 → 人到像的距离 = 2 + 3 = 5m ✓<br>
+<strong>应用原理：</strong>这就是小房间测视力的标准方案——用平面镜把 3m 深的房间"折"出 5m 的光路。画光路图（人—镜—像三点一线）是解此类题的关键，切勿把"人到视力表的实物距离"（仅 1m）当成检查距离。</div></div></div>
+
+<div class="question"><span class="q-num">17</span><span class="q-title">回声测距：运动着的汽车</span><span class="q-stars">★★★</span><div class="q-content">
+<p>汽车以 20m/s 的速度朝正前方的山崖匀速行驶，司机鸣笛后 2s 听到回声。已知声音在空气中传播速度为 340m/s。求鸣笛时汽车距山崖多远。</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(17)">查看答案与解析</button>
+<div class="answer" id="answer-17"><div class="answer-value">答案：360m</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+设鸣笛时车距崖 L。<br>
+2s 内：声音传播路程 s声 = 340×2 = 680m；汽车前进 s车 = 20×2 = 40m<br>
+声音走的路线是"鸣笛处 → 崖 → 听到回声处"：s声 = L + (L - s车)<br>
+680 = 2L - 40 → L = 360m<br>
+<strong>易错点：</strong>听到回声时车已前进 40m，声音的终点不是鸣笛处！画出"车—崖"两个时刻的位置示意图，一秒看穿。若车<strong>远离</strong>崖行驶，则 s声 = L + (L + s车)，结果不同——方向是这类题的隐藏变量。</div></div></div>
+
+<div class="question"><span class="q-num">18</span><span class="q-title">平面镜转角：让阳光水平照射</span><span class="q-stars">★★★</span><div class="q-content">
+<p>清晨，太阳光与水平地面成 30° 角射向地面。要用一块平面镜把太阳光反射后沿水平方向射出，平面镜镜面应与水平地面成多大的角度？</p>
+</div>
+<button class="answer-btn" onclick="showAnswer(18)">查看答案与解析</button>
+<div class="answer" id="answer-18"><div class="answer-value">答案：75°（或 105°，两种对称放置均可）</div>
+<div class="answer-solution"><strong>解析：</strong><br>
+入射光与水平面成 30°，反射光沿水平方向 → 入射光线与反射光线的夹角 θ = 180° - 30° = 150°<br>
+法线是入射光线与反射光线夹角的平分线 → 反射角 = 入射角 = 150°/2 = 75°<br>
+镜面与法线垂直 → 镜面与"入反射光线夹角的平分面"垂直，镜面与水平面的夹角 = 90° - ? 分两步算：<br>
+取反射光沿水平方向的情况：法线与水平面的夹角 = 90° - 75° = 15°，故镜面与水平面夹角 = 90° - 15° = <strong>75°</strong>（法线朝上倾斜）；若反射光改为沿另一侧水平方向射出，由对称性得镜面与水平面成 <strong>105°</strong>，即等效于 75° 的另一种摆放。<br>
+<strong>方法总结：</strong>这类题口诀是"光路转折角的一半是反射角，镜面与法线垂直"——先画出入射线和反射线，两条线的夹角折半得法线，再补镜面，角度自然出来。</div></div></div>
+
+<div style="text-align:center;margin-top:28px;">
+<a href="index.html" style="color:#0ea5e9;">← 返回初中物理目录</a>
+</div>
+</div>
+<script>
+(function(){
+'use strict';
+const anims=[],TAU=Math.PI*2;
+function fnt(g,s,b){ g.font=(b?'bold ':'')+s+'px "PingFang SC","Microsoft YaHei",sans-serif'; }
+
+/* ========== 动图1：木块载石块的液面变化 ========== */
+(function(){
+  const cv=document.getElementById('cFloat'); if(!cv)return;
+  const g=cv.getContext('2d');
+  let target=0,cur=0;
+  const baseY=150,DY=66;
+  const tank={x:170,w:330,top:60,floor:270};
+  const wood={w:150,h:64},subA=52,stoneX=tank.x+80;
+  window.floatToggle=function(){ target=1-target; };
+  window.floatReset=function(){ target=0; cur=0; };
+  anims.push(function(dt){
+    cur+=(target-cur)*Math.min(1,dt*3);
+    const v=cur,yW=baseY+DY*v,sub=subA-(subA*.25)*v;
+    g.clearRect(0,0,640,300);
+    fnt(g,12);
+    g.setLineDash([4,4]); g.strokeStyle='#0ea5e9';
+    g.beginPath(); g.moveTo(60,baseY); g.lineTo(tank.x-12,baseY); g.stroke();
+    g.beginPath(); g.moveTo(60,baseY+DY); g.lineTo(tank.x-12,baseY+DY); g.stroke();
+    g.setLineDash([]);
+    g.strokeStyle='#94a3b8';
+    g.beginPath(); g.moveTo(66,baseY); g.lineTo(66,baseY+DY); g.stroke();
+    g.fillStyle='#0369a1';
+    g.fillText('原液面',12,baseY-6); g.fillText('新液面',12,baseY+DY-6);
+    g.fillStyle='#94a3b8';
+    g.fillRect(tank.x-12,tank.top,12,tank.floor-tank.top);
+    g.fillRect(tank.x+tank.w,tank.top,12,tank.floor-tank.top);
+    g.fillRect(tank.x-12,tank.floor,tank.w+24,6);
+    g.fillStyle='rgba(59,130,246,.35)';
+    g.fillRect(tank.x,yW,tank.w,tank.floor-yW);
+    g.strokeStyle='#3b82f6';
+    g.beginPath(); g.moveTo(tank.x,yW); g.lineTo(tank.x+tank.w,yW); g.stroke();
+    if(v>0.02){ g.globalAlpha=Math.min(1,v*2.5); g.fillStyle='#6b7280';
+      g.beginPath(); g.arc(stoneX,tank.floor-20,20,0,TAU); g.fill(); g.globalAlpha=1; }
+    const woodBottom=yW+sub;
+    g.fillStyle='#d97706';
+    g.fillRect(tank.x+tank.w/2-wood.w/2,woodBottom-wood.h,wood.w,wood.h);
+    g.fillStyle='#92400e';
+    g.fillRect(tank.x+tank.w/2-wood.w/2,woodBottom-wood.h,wood.w,8);
+    if(v<0.98){ g.globalAlpha=Math.min(1,(1-v)*3); g.fillStyle='#6b7280';
+      g.beginPath(); g.arc(stoneX,woodBottom-wood.h-18,17,0,TAU); g.fill(); g.globalAlpha=1; }
+    const cy=woodBottom-wood.h/2;
+    g.strokeStyle='#16a34a'; g.lineWidth=2;
+    g.beginPath(); g.moveTo(tank.x+tank.w/2,cy+18); g.lineTo(tank.x+tank.w/2,cy-18); g.stroke(); g.lineWidth=1;
+    g.fillStyle='#16a34a'; g.fillText('F浮',tank.x+tank.w/2+10,cy+4);
+    fnt(g,13,true); g.fillStyle='#0f172a';
+    if(v<0.5) g.fillText('石块在木块上（整体漂浮）：V排 = (m木+m石)/ρ水 = 400cm³',60,36);
+    else g.fillText('石块沉底：V排 = 300(木) + 40(石) = 340cm³ → 液面下降 Δh = 60/S',90,36);
+  });
+})();
+
+/* ========== 动图2：滑轮组 s=3h ========== */
+(function(){
+  const cv=document.getElementById('cPulley'); if(!cv)return;
+  const g=cv.getContext('2d');
+  let playing=false,p=0;
+  window.pulleyPlay=function(){ if(p>=1)p=0; playing=true; };
+  window.pulleyReset=function(){ playing=false; p=0; };
+  const cx=230,ceilY=64,fixR=20,movR=20;
+  const yMov0=170,loadTop0=210,handX=520,yHand0=90,H=60;
+  anims.push(function(dt){
+    if(playing){ p+=dt*.28; if(p>=1){p=1;playing=false;} }
+    const h=H*p,yMov=yMov0-h,loadTop=loadTop0-h,yHand=yHand0+3*h;
+    g.clearRect(0,0,640,300);
+    fnt(g,13,true);
+    g.strokeStyle='#334155'; g.lineWidth=3;
+    g.beginPath(); g.moveTo(60,ceilY-10); g.lineTo(560,ceilY-10); g.stroke(); g.lineWidth=1;
+    g.strokeStyle='#64748b';
+    for(let x=70;x<550;x+=22){ g.beginPath(); g.moveTo(x,ceilY-10); g.lineTo(x+9,ceilY-20); g.stroke(); }
+    g.fillStyle='#0369a1'; g.fillText('n = 3 段绳承重（含固定端）',70,36);
+    g.strokeStyle='#0ea5e9';
+    g.beginPath(); g.moveTo(cx-20,ceilY-10); g.lineTo(cx-20,yMov); g.stroke();
+    g.beginPath(); g.moveTo(cx+20,yMov); g.lineTo(cx+20,ceilY+fixR); g.stroke();
+    g.beginPath(); g.moveTo(cx+20,ceilY+fixR); g.lineTo(handX,yHand); g.stroke();
+    g.fillStyle='#0ea5e9';
+    g.beginPath(); g.arc(cx,ceilY+fixR,fixR,0,TAU); g.fill();
+    g.fillStyle='#64748b';
+    g.beginPath(); g.arc(cx,yMov,movR,0,TAU); g.fill();
+    g.fillStyle='#fff'; fnt(g,11,true);
+    g.fillText('定',cx-7,ceilY+fixR+4); g.fillText('动',cx-7,yMov+4);
+    g.fillStyle='#f59e0b';
+    g.fillRect(cx-38,loadTop,76,46);
+    g.fillStyle='#b45309'; fnt(g,13,true);
+    g.fillText('G = 240N',cx-34,loadTop+28);
+    g.strokeStyle='#dc2626'; g.lineWidth=2;
+    g.beginPath(); g.moveTo(handX,yHand-46); g.lineTo(handX,yHand-12); g.stroke(); g.lineWidth=1;
+    g.fillStyle='#dc2626'; g.fillText('F = 100N',handX+8,yHand-26);
+    g.fillStyle='#0369a1'; fnt(g,13,true);
+    g.fillText('h = '+(2*p).toFixed(2)+' m（重物上升）',370,150);
+    g.fillText('s = 3h = '+(6*p).toFixed(2)+' m（绳端下降）',370,175);
+    g.fillStyle='#475569'; fnt(g,12);
+    g.fillText('W有 = 240h J    W总 = 100×3h = 300h J    η = 240h/300h = 80%（h 约掉，不变）',60,278);
+  });
+})();
+
+/* ========== 动图3：串联动态电路 ========== */
+(function(){
+  const cv=document.getElementById('cCircuit'); if(!cv)return;
+  const g=cv.getContext('2d');
+  const slider=document.getElementById('rSlider'),
+        ro=document.getElementById('rReadout'),
+        cout=document.getElementById('circuitReadout');
+  let R2=10,time=0;
+  if(slider) slider.addEventListener('input',function(){ R2=+slider.value; if(ro)ro.textContent='R₂ = '+R2+'Ω'; });
+  const A={x:80,y:80},B={x:560,y:80},C={x:560,y:210},D={x:80,y:210};
+  const L=2*((B.x-A.x)+(C.y-B.y)),N=16;
+  function pt(d){ d=((d%L)+L)%L; const w=B.x-A.x,h2=C.y-B.y;
+    if(d<w)return{x:A.x+d,y:A.y}; d-=w;
+    if(d<h2)return{x:B.x,y:A.y+d}; d-=h2;
+    if(d<w)return{x:B.x-d,y:C.y}; d-=w;
+    return{x:D.x,y:C.y-d}; }
+  anims.push(function(dt){
+    time+=dt;
+    const I=6/(10+R2),U1=I*10,U2=6-U1,P1=I*I*10;
+    g.clearRect(0,0,640,260);
+    g.strokeStyle='#475569'; g.lineWidth=2;
+    g.strokeRect(A.x,A.y,B.x-A.x,C.y-A.y);
+    g.lineWidth=1;
+    g.fillStyle='#334155'; g.fillRect(A.x-12,120,24,4); g.fillRect(A.x-6,142,12,4);
+    fnt(g,12); g.fillStyle='#334155';
+    g.fillText('+',A.x+14,126); g.fillText('−',A.x+14,148); g.fillText('U=6V',10,140);
+    g.fillStyle='#fff'; g.fillRect(190,68,90,24);
+    g.strokeStyle='#475569'; g.strokeRect(190,68,90,24);
+    g.fillStyle='rgba(245,158,11,'+(0.15+0.8*Math.min(1,P1/3.6)).toFixed(3)+')';
+    g.fillRect(191,69,88,22);
+    g.fillStyle='#0f172a'; fnt(g,12,true); g.fillText('R₁ = 10Ω',198,84);
+    g.fillStyle='#fff'; g.fillRect(400,68,110,24);
+    g.strokeStyle='#475569'; g.strokeRect(400,68,110,24);
+    g.fillStyle='#0f172a'; g.fillText('R₂ = '+R2+'Ω',406,84);
+    const ax=404+(R2/20)*102;
+    g.strokeStyle='#dc2626'; g.lineWidth=2;
+    g.beginPath(); g.moveTo(404,50); g.lineTo(ax,50); g.lineTo(ax,68); g.stroke(); g.lineWidth=1;
+    g.fillStyle='#dc2626'; fnt(g,11); g.fillText('滑片',398,44);
+    g.fillStyle='#fff'; g.beginPath(); g.arc(320,210,15,0,TAU); g.fill();
+    g.strokeStyle='#475569'; g.beginPath(); g.arc(320,210,15,0,TAU); g.stroke();
+    g.fillStyle='#0f172a'; fnt(g,13,true); g.fillText('A',315,215);
+    g.fillStyle='#dc2626';
+    for(let i=0;i<N;i++){ const pos=pt(time*I*800+i*L/N);
+      g.beginPath(); g.arc(pos.x,pos.y,3.2,0,TAU); g.fill(); }
+    const bx=594,bw=26;
+    fnt(g,12); g.fillStyle='#0369a1'; g.fillText('U₁',bx+7,62);
+    g.fillStyle='#b45309'; g.fillText('U₂',bx+7,132);
+    g.strokeStyle='#475569'; g.strokeRect(bx,72,bw,50); g.strokeRect(bx,142,bw,50);
+    g.fillStyle='#0ea5e9'; g.fillRect(bx,72+50-U1*50/6,bw,U1*50/6);
+    g.fillStyle='#f59e0b'; g.fillRect(bx,142+50-U2*50/6,bw,U2*50/6);
+    g.fillStyle='#475569'; fnt(g,10);
+    g.fillText(U1.toFixed(1)+'V',bx-2,188); g.fillText(U2.toFixed(1)+'V',bx-2,208);
+    if(cout) cout.textContent='电流表 I = '+I.toFixed(2)+'A（= 6 ÷ (10+R₂)）；电压表(测R₁) U₁ = '+U1.toFixed(1)+'V · R₂ 分得 U₂ = '+U2.toFixed(1)+'V · R₁ 发热辉光加深表示实际功率 P₁ = I²R₁ = '+P1.toFixed(1)+'W';
+  });
+})();
+
+/* ========== 动图4：平面镜测视力光路 ========== */
+(function(){
+  const cv=document.getElementById('cMirror'); if(!cv)return;
+  const g=cv.getContext('2d');
+  let show=true,off=0;
+  window.mirrorToggle=function(){ show=!show; };
+  const mX=300,eye={x:420,y:120},hit={x:300,y:128},img={x:114,y:140},chart={x:492,y:140};
+  anims.push(function(dt){
+    off-=dt*40;
+    g.clearRect(0,0,640,300);
+    fnt(g,12);
+    g.fillStyle='#94a3b8'; g.fillRect(chart.x,60,8,170);
+    g.strokeStyle='#cbd5e1'; g.beginPath(); g.moveTo(40,236); g.lineTo(620,236); g.stroke();
+    g.fillStyle='#0f172a'; fnt(g,18,true); g.fillText('E',chart.x+16,150);
+    fnt(g,12); g.fillStyle='#475569'; g.fillText('视力表',chart.x-4,186);
+    g.fillStyle='rgba(148,163,184,.15)'; g.fillRect(40,60,mX-46,170);
+    g.fillStyle='#0ea5e9'; g.fillRect(mX-4,60,8,170);
+    g.strokeStyle='#94a3b8';
+    for(let y=66;y<226;y+=12){ g.beginPath(); g.moveTo(mX-4,y); g.lineTo(mX-14,y+7); g.stroke(); }
+    g.fillStyle='#0369a1'; fnt(g,13,true); g.fillText('平面镜',mX-22,250);
+    g.setLineDash([5,4]); g.strokeStyle='#94a3b8';
+    g.strokeRect(img.x-14,118,28,44); g.setLineDash([]);
+    g.fillStyle='rgba(15,23,42,.45)'; fnt(g,18,true); g.fillText('E',img.x-6,148);
+    fnt(g,12); g.fillStyle='#64748b'; g.fillText('视力表的像（虚像）',img.x-52,186);
+    g.fillStyle='#0f172a';
+    g.beginPath(); g.arc(eye.x,eye.y-16,6,0,TAU); g.fill();
+    g.strokeStyle='#0f172a';
+    g.beginPath(); g.moveTo(eye.x,eye.y-10); g.lineTo(eye.x,eye.y+14); g.stroke();
+    g.beginPath(); g.moveTo(eye.x,eye.y+14); g.lineTo(eye.x-8,eye.y+34); g.stroke();
+    g.beginPath(); g.moveTo(eye.x,eye.y+14); g.lineTo(eye.x+8,eye.y+34); g.stroke();
+    g.fillStyle='#0f172a'; fnt(g,12); g.fillText('人（眼）',eye.x-24,eye.y+52);
+    if(show){
+      g.setLineDash([8,6]); g.lineDashOffset=off;
+      g.strokeStyle='#dc2626'; g.lineWidth=2;
+      g.beginPath(); g.moveTo(chart.x,chart.y); g.lineTo(hit.x,hit.y); g.lineTo(eye.x,eye.y); g.stroke();
+      g.lineWidth=1;
+      g.strokeStyle='#64748b';
+      g.beginPath(); g.moveTo(hit.x,hit.y); g.lineTo(img.x,img.y); g.stroke();
+      g.setLineDash([]); g.lineDashOffset=0;
+      g.fillStyle='#dc2626'; fnt(g,11); g.fillText('光路',352,106);
+    }
+    function brace(x1,x2,y,label,color){
+      g.strokeStyle='#64748b';
+      g.beginPath(); g.moveTo(x1,y-4); g.lineTo(x1,y+4); g.moveTo(x1,y); g.lineTo(x2,y); g.moveTo(x2,y-4); g.lineTo(x2,y+4); g.stroke();
+      g.fillStyle=color||'#0369a1'; fnt(g,12);
+      g.fillText(label,(x1+x2)/2-g.measureText(label).width/2,y-8);
+    }
+    brace(mX,chart.x+8,254,'3m');
+    brace(mX,eye.x,224,'2m');
+    brace(img.x,eye.x,286,'5m（人→像）＝检查距离 ✓','#dc2626');
+  });
+})();
+
+/* ========== 动图5：回声测距 ========== */
+(function(){
+  const cv=document.getElementById('cEcho'); if(!cv)return;
+  const g=cv.getContext('2d');
+  let t=0,playing=false;
+  window.echoPlay=function(){ if(t>=2.2)t=0; playing=true; };
+  window.echoReset=function(){ t=0; playing=false; };
+  const x0=80,cliffX=512,groundY=232,sndY=196,pxPerM=1.2,sf=1.059;
+  anims.push(function(dt){
+    if(playing){ t+=dt; if(t>2.2){t=2.2;playing=false;} }
+    const T=Math.min(t,2);
+    g.clearRect(0,0,640,300);
+    fnt(g,12);
+    g.strokeStyle='#334155'; g.lineWidth=2;
+    g.beginPath(); g.moveTo(40,groundY); g.lineTo(620,groundY); g.stroke(); g.lineWidth=1;
+    g.fillStyle='#94a3b8'; g.fillRect(cliffX,70,44,groundY-70);
+    g.strokeStyle='#64748b';
+    for(let y=80;y<groundY-6;y+=14){ g.beginPath(); g.moveTo(cliffX,y); g.lineTo(cliffX+44,y+5); g.stroke(); }
+    g.fillStyle='#334155'; fnt(g,13,true); g.fillText('山崖',cliffX+8,62);
+    const carX=x0+20*pxPerM*T;
+    g.fillStyle='#dc2626'; g.fillRect(carX-46,groundY-30,48,18);
+    g.fillStyle='#fca5a5'; g.fillRect(carX-36,groundY-27,14,8);
+    g.fillStyle='#0f172a';
+    g.beginPath(); g.arc(carX-34,groundY-9,6,0,TAU); g.fill();
+    g.beginPath(); g.arc(carX-12,groundY-9,6,0,TAU); g.fill();
+    g.fillStyle='#dc2626'; fnt(g,12,true); g.fillText('汽车 20m/s →',carX-44,groundY-38);
+    g.strokeStyle='#64748b';
+    g.beginPath(); g.moveTo(x0,92); g.lineTo(cliffX,92);
+    g.moveTo(x0,86); g.lineTo(x0,98); g.moveTo(cliffX,86); g.lineTo(cliffX,98); g.stroke();
+    g.fillStyle='#0369a1'; fnt(g,12); g.fillText('L = 鸣笛处到山崖 = ?m',210,84);
+    g.fillStyle='#0f172a'; g.beginPath(); g.arc(x0,sndY,3,0,TAU); g.fill();
+    g.fillText('鸣笛处',x0-18,sndY+16);
+    if(t<=0){
+      g.fillStyle='#475569'; fnt(g,13);
+      g.fillText('汽车匀速驶向山崖（20m/s），鸣笛 2s 后听到回声。点击 ▶ 播放。',100,124);
+    } else if(T<=sf){
+      g.save(); g.beginPath(); g.rect(0,50,cliffX,groundY-50); g.clip();
+      const r=340*pxPerM*T;
+      g.strokeStyle='rgba(59,130,246,.6)'; g.lineWidth=2;
+      g.beginPath(); g.arc(x0,sndY,r,0,TAU); g.stroke(); g.lineWidth=1;
+      g.restore();
+      g.fillStyle='#2563eb'; g.beginPath(); g.arc(Math.min(x0+r,cliffX),sndY,4,0,TAU); g.fill();
+      g.fillStyle='#1d4ed8'; fnt(g,12);
+      g.fillText('去程：s声 = 340 × '+T.toFixed(2) + ' = '+(340*T).toFixed(0)+'m',150,124);
+    } else {
+      g.save(); g.beginPath(); g.rect(0,50,cliffX,groundY-50); g.clip();
+      const rE=340*pxPerM*(T-sf);
+      g.strokeStyle='rgba(16,185,129,.6)'; g.lineWidth=2;
+      g.beginPath(); g.arc(cliffX,sndY,rE,0,TAU); g.stroke(); g.lineWidth=1;
+      g.restore();
+      g.fillStyle='#059669'; g.beginPath(); g.arc(Math.max(carX,cliffX-rE),sndY,4,0,TAU); g.fill();
+      g.fillStyle='#047857'; fnt(g,12);
+      g.fillText('回声返程：车已前进 s车 = 40m',150,124);
+    }
+    if(t>=2){
+      g.fillStyle='rgba(255,255,255,.92)'; g.fillRect(130,236,420,56);
+      g.strokeStyle='#dc2626'; g.strokeRect(130,236,420,56);
+      g.fillStyle='#dc2626'; fnt(g,13,true);
+      g.fillText('t = 2s 听到回声：s声 = 680m，s车 = 40m',142,260);
+      g.fillText('L = (s声 + s车)/2 = (680+40)/2 = 360m',142,280);
+    }
+  });
+})();
+
+let last=performance.now();
+function frame(now){
+  const dt=Math.min(0.05,(now-last)/1000); last=now;
+  for(let i=0;i<anims.length;i++) anims[i](dt);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
