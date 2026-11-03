@@ -21,9 +21,10 @@
     <li><a href="ch06_pressure.html"><span class="ch-num">6</span>压力与压强</a></li>
     <li><a href="ch07_circuits.html" class="active"><span class="ch-num">7</span>电路</a>
       <div class="subsections">
-        <a href="#sec7-1">7.1 电流 电压</a><a href="#sec7-2">7.2 欧姆定律</a>
-        <a href="#sec7-3">7.3 串联电路</a><a href="#sec7-4">7.4 并联电路</a>
-        <a href="#sec7-5">7.5 电路故障分析</a><a href="#exercises">练习题</a>
+        <a href="#sec7-1">7.1 电荷与摩擦起电</a><a href="#sec7-2">7.2 电流 电压</a>
+        <a href="#sec7-3">7.3 欧姆定律</a><a href="#sec7-4">7.4 串联电路</a>
+        <a href="#sec7-5">7.5 并联电路</a><a href="#sec7-6">7.6 电路故障分析</a>
+        <a href="#sec7-7">7.7 串并联识别</a><a href="#exercises">练习题</a>
       </div>
     </li>
 
@@ -52,6 +53,7 @@
 
 <div class="card"><div class="card-title"><span class="icon">&#x1F3AF;</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
+<li>知道<span class="c-red">摩擦起电</span>现象，理解<span class="c-orange">两种电荷</span>及其相互作用规律</li>
 <li>理解<span class="c-blue">电流</span>的形成原因及方向规定，掌握电流表的使用方法</li>
 <li>理解<span class="c-red">电压</span>的概念，记住常见电压值，掌握电压表的使用方法</li>
 <li>掌握<span class="c-purple">欧姆定律</span> I=U/R 及其推导与应用</li>
@@ -59,7 +61,29 @@
 <li>熟练掌握<span class="c-green">串联电路</span>和<span class="c-teal">并联电路</span>的特点及计算</li>
 <li>学会分析电路故障（断路与短路）</li></ul></div>
 
-<h2 id="sec7-1">7.1 电流 电压</h2>
+<h2 id="sec7-1">7.1 电荷与摩擦起电</h2>
+<div class="kp"><h3>摩擦起电</h3>
+<p>用<span class="c-red">摩擦的方法</span>使物体带电，叫做<span class="c-blue">摩擦起电</span>。带电体能<span class="c-orange">吸引轻小物体</span>（如碎纸屑、通草球）。</p>
+<div class="highlight-box">
+<strong>💡 微观解释</strong><br>
+原子由带正电的<span class="c-red">原子核</span>和带负电的<span class="c-green">电子</span>组成，通常正负电荷等量、原子呈中性。不同物质的原子核束缚电子的本领不同——互相摩擦时，束缚本领弱的原子<span class="c-purple">失去电子</span>带<span class="c-red">正电</span>，束缚本领强的原子<span class="c-purple">得到电子</span>带<span class="c-blue">负电</span>。<br>
+<strong>摩擦起电的实质不是"产生"电荷，而是电子从一个物体转移到另一个物体。</strong>
+</div></div>
+
+<div class="kp"><h3>两种电荷及其相互作用</h3>
+<table class="phy-table">
+<tr><th>电荷</th><th>规定</th><th>相互作用</th></tr>
+<tr><td><span class="c-red">正电荷</span></td><td>用丝绸摩擦过的<span class="c-red">玻璃棒</span>所带的电荷</td><td rowspan="2"><span class="c-green">同种电荷相互排斥</span>，<span class="c-orange">异种电荷相互吸引</span></td></tr>
+<tr><td><span class="c-blue">负电荷</span></td><td>用毛皮摩擦过的<span class="c-blue">橡胶棒</span>所带的电荷</td></tr>
+</table>
+<div class="danger-box">
+<strong>⚠️ 注意辨析</strong><br>
+① 带电体能吸引轻小物体，<span class="c-red">异种电荷也能吸引</span>——"吸引"不代表两者一定带异种电荷；<br>
+② <span class="c-blue">排斥</span>则可以确定两物体一定带<span class="c-green">同种电荷</span>；<br>
+③ 电荷量的单位是<span class="c-purple">库仑（C）</span>。验电器就是根据"同种电荷相互排斥"的原理工作的。
+</div></div>
+
+<h2 id="sec7-2">7.2 电流 电压</h2>
 
 <div class="keypoints-grid">
 <div class="kp"><h3>电流的形成</h3>
@@ -100,7 +124,7 @@
 &#x2022; 发生闪电时云层间电压可达<span class="c-red">几万伏至几十万伏</span>
 </div>
 
-<h2 id="sec7-2">7.2 欧姆定律 电阻</h2>
+<h2 id="sec7-3">7.3 欧姆定律 电阻</h2>
 
 <div class="keypoints-grid">
 <div class="kp"><h3>电阻的概念</h3>
@@ -141,7 +165,7 @@
 &#x2022; <span class="c-red">多次测量求平均值</span>可以减小实验误差（注意：测小灯泡电阻时不能求平均值，因为灯丝电阻随温度变化）。
 </div>
 
-<h2 id="sec7-3">7.3 串联电路</h2>
+<h2 id="sec7-4">7.4 串联电路</h2>
 
 <div class="kp"><h3>串联电路</h3>
 <p>串联电路——各元件<span class="c-red">逐个顺次</span>连接。电流只有<span class="c-blue">一条路径</span>，各用电器<span class="c-orange">相互影响</span>（一个断开，全部停止工作）。</p></div>
@@ -164,7 +188,7 @@
 &#x2022; 串联电路中，总电阻大于任何一个分电阻：<span class="c-orange">R > R₁, R > R₂</span>
 </div>
 
-<h2 id="sec7-4">7.4 并联电路</h2>
+<h2 id="sec7-5">7.5 并联电路</h2>
 
 <div class="kp"><h3>并联电路</h3>
 <p>并联电路——各元件<span class="c-red">并列</span>连接在电路中。电流有<span class="c-blue">多条路径</span>，各支路用电器<span class="c-green">独立工作</span>，互不影响。</p></div>
@@ -198,7 +222,7 @@
 <p style="font-size:.8rem;color:var(--text-secondary);">1/R总=1/R₁+1/R₂, U处处相等, I=I₁+I₂</p></div>
 </div></div>
 
-<h2 id="sec7-5">7.5 电路故障分析</h2>
+<h2 id="sec7-6">7.6 电路故障分析</h2>
 
 <div class="keypoints-grid">
 <div class="kp"><h3>断路（开路）</h3>
@@ -227,7 +251,7 @@
 &#x2022; <span class="c-red">严禁用导线直接连接电源两极</span>来检测（会造成电源短路）！
 </div>
 
-<h2 id="sec7-6">7.6 串并联电路识别方法</h2>
+<h2 id="sec7-7">7.7 串并联电路识别方法</h2>
 <div class="kp">
 <p><span class="c-red">① 定义法</span>：元件逐个顺次连接为串联；并列连接为并联。</p>
 <p><span class="c-red">② 电流路径法</span>：电流只有一条路径无分支为串联；有多条路径有分支为并联。</p>
@@ -292,6 +316,24 @@
 <label><input type="radio" name="q8" value="C">C. 电源电压为零</label><label><input type="radio" name="q8" value="D">D. 无法判断</label></div>
 <button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
 <div class="answer" id="answer-8" data-correct="A">&#x2705; A。用电器两端电压为零，可能是该用电器被短路（导线并联在两端），也可能是电路其他部分断路导致没有电流流过该用电器。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">9</span>用与丝绸摩擦过的玻璃棒去靠近悬挂的轻小泡沫小球，小球被吸引，则小球____。</div>
+<div class="options">
+<label><input type="radio" name="q9" value="A">A. 一定带正电</label>
+<label><input type="radio" name="q9" value="B">B. 一定带负电</label>
+<label><input type="radio" name="q9" value="C">C. 可能带负电，也可能不带电</label>
+<label><input type="radio" name="q9" value="D">D. 一定不带电</label></div>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+<div class="answer" id="answer-9" data-correct="C">&#x2705; C。玻璃棒带<span class="c-red">正电</span>。吸引有两种可能：① 异种电荷相互吸引（小球带负电）；② 带电体吸引轻小物体（小球不带电）。"吸引"不能确定带电，"<span class="c-green">排斥</span>"才能确定带同种电荷。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">10</span>毛皮摩擦过的橡胶棒带上负电，这是因为摩擦时橡胶棒____。</div>
+<div class="options">
+<label><input type="radio" name="q10" value="A">A. 得到了电子</label>
+<label><input type="radio" name="q10" value="B">B. 失去了电子</label>
+<label><input type="radio" name="q10" value="C">C. 产生了新的负电荷</label>
+<label><input type="radio" name="q10" value="D">D. 得到了质子</label></div>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+<div class="answer" id="answer-10" data-correct="A">&#x2705; A。橡胶棒的原子核束缚电子的本领比毛皮强，摩擦时从毛皮<span class="c-blue">得到电子</span>而带负电。电荷不会凭空产生，摩擦起电的实质是<span class="c-purple">电子的转移</span>。</div></div>
 
 </main></div>
 <script src="../assets/js/common.js"></script>

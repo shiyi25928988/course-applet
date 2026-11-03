@@ -4,13 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a **pure static HTML website** — a Chinese K-12 courseware library covering math, physics, chemistry, and Chinese for junior/senior high school, plus competition math (AMC, CPhO), IELTS, and CAIE A-Level. ~1,600 HTML files, no framework, no build tools, no package manager.
+This is a **pure static HTML website** — a Chinese K-12 courseware library covering math, physics, chemistry, and Chinese for junior/senior high school, plus competition math (AMC, CPhO), IELTS, and CAIE A-Level. ~1,100 HTML files, no framework, no build tools, no package manager.
 
 ## How to View / Run
 
 - **View locally:** Open `index.html` in any browser, or serve with any static file server (e.g., `python -m http.server` or `npx serve`).
-- **Check broken links:** `python check_links.py` or `python check_all_links.py` from the project root.
+- **Check broken links:** `python check_links.py` or `python check_all_links.py`, run from the `courseware/` directory (the scripts walk HTML files relative to their own location).
 - There are no build, lint, test, or type-check commands. No `package.json`, no `tsconfig`, no `Makefile`.
+- **Deploy:** Pushes to `main` auto-deploy to GitHub Pages via `.github/workflows/` (the whole repository is uploaded, so pages live under `/courseware/...`).
 
 ## Architecture
 
@@ -28,6 +29,8 @@ index.html                          # Homepage
 
 Some subjects have sub-topics (e.g., `math/algebra/`, `math/geometry/`) with their own `index.html` and chapter files.
 
+The homepage also links to `exam_bank.html` (题库中心) — a hub page aggregating practice/mock exams across subjects.
+
 ### Page layout pattern
 
 Most content pages use a two-column layout:
@@ -37,10 +40,8 @@ Most content pages use a two-column layout:
 
 ### Shared assets
 
-- **`assets/css/common.css`** — single global stylesheet (~280 lines). CSS custom properties on `:root` for theming (colors, shadows, radius). Responsive breakpoint at 768px. Defines the component classes below.
+- **`assets/css/common.css`** — single global stylesheet (~340 lines). CSS custom properties on `:root` for theming (colors, shadows, radius). Responsive breakpoint at 768px. Defines the component classes below.
 - **`assets/js/common.js`** — single global script (~60 lines). Three functions: `showAnswer(id)` (toggles answer visibility + checks correctness via `data-correct`), `switchTab(evt, tabGroup, tabContent)`, and `DOMContentLoaded` handlers for tab init and `IntersectionObserver` sidebar highlighting.
-- **`assets/svg/`** — empty directory, reserved for SVG assets.
-
 ### Content component classes (defined in common.css)
 
 | Class | Purpose |
@@ -72,6 +73,7 @@ The answer system is client-side only:
 ### Subject-specific patterns
 
 - **Math:** Sub-topics `algebra/` and `geometry/` with prefixed chapter files (`a##`, `g##`).
+- **Senior high** (`high_math/`, `high_physics/`, `high_chemistry/`, `high_chinese/`): physics chapters use `p{NN}_topic.html` with numbered tracks (p01–p06 mechanics, p11–p15 electromagnetism, p21–p23 thermal/optics/modern); chemistry uses `c{NN}_topic.html` (c01–c31, numbered by module); math has sub-topics `algebra/`, `functions/`, `geometry/`, `stats/`. Senior-high exams cover 2017–2026 and coexist with `exam_collection.html`, `mock_exam1.html`, `practice_chapter.html`, and `*_special.html` topic pages.
 - **Chinese:** Organized by grade (`grade7/`, `grade8/`, `grade9/`) and category (`classical/`, `poetry/`, `reading/`, `writing/`).
 - **CAIE A-Level:** Organized by subject (`math/`, `physics/`, etc.), with exam papers following the pattern `{subject}_{paper}_{series}_{year}.html` (May/June + Oct/Nov, 2022-2026).
 - **IELTS:** Contains `create_exams.py` and `generate_all_exams.py` — Python scripts that generate reading exam HTML files from `pdf_raw_text.txt` (~5MB source data).
@@ -91,6 +93,13 @@ Some chapter pages (e.g., `physics/ch01_sound.html`) embed inline `<canvas>` ele
 
 - `check_links.py` / `check_all_links.py` — Walk all HTML files, extract `href`/`src` links, and validate they point to existing files. Run from project root.
 - `ielts/create_exams.py` / `ielts/generate_all_exams.py` — Generate IELTS reading exam HTML files from metadata.
+
+## Content generation skills
+
+`courseware/.claude/skills/` contains project skills that encode the page-generation conventions — use them (via the Skill tool) when asked to add content, rather than inventing structure from scratch:
+
+- `create-chapter` — 章节 knowledge-page (knowledge cards, animations, exercises)
+- `create-exercises`, `create-exam`, `create-special-topic`, `create-subject-index`
 
 ## Common tasks
 

@@ -22,8 +22,9 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
     <li><a href="ch04_work_machines.html"><span class="ch-num">4</span>机械和功</a></li>
     <li><a href="ch05_heat_energy.html" class="active"><span class="ch-num">5</span>热与能</a>
       <div class="subsections">
-        <a href="#sec5-1">5.1 温度与温标</a><a href="#sec5-2">5.2 热量 比热容</a>
-        <a href="#sec5-3">5.3 内能</a><a href="#sec5-4">5.4 热机</a>
+        <a href="#sec5-1">5.1 温度与温标</a><a href="#sec5-2">5.2 物态变化</a>
+        <a href="#sec5-3">5.3 热量 比热容</a><a href="#sec5-4">5.4 内能</a>
+        <a href="#sec5-5">5.5 热机与能量守恒</a>
         <a href="#exercises">练习题</a>
       </div>
     </li>
@@ -53,7 +54,9 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
 <div class="card"><div class="card-title"><span class="icon">🎯</span>学习目标</div>
 <ul style="padding-left:20px;color:var(--text-secondary);line-height:2;">
 <li>理解<span class="c-red">温度</span>的概念，掌握<span class="c-blue">摄氏温标</span>及温度计的使用</li>
+<li>掌握<span class="c-orange">六种物态变化</span>的吸放热规律，会解读晶体熔化/沸腾曲线，理解蒸发与沸腾的区别</li>
 <li>理解<span class="c-orange">热量</span>和<span class="c-purple">比热容</span>的概念，会用 <span class="formula">Q=cmΔt</span> 计算</li>
+<li>了解<span class="c-blue">分子动理论</span>的基本观点（扩散现象、分子间作用力）</li>
 <li>理解<span class="c-green">内能</span>的概念，知道改变内能的两种方式</li>
 <li>了解<span class="c-pink">热机</span>的工作原理和能量转化，掌握热值 <span class="formula">q=Q/m</span></li>
 <li>理解<span class="c-red">能量守恒定律</span></li></ul></div>
@@ -85,7 +88,62 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
 体温计玻璃泡上方有一段<span class="c-red">细小的缩口</span>。当温度升高时水银膨胀通过缩口上升；温度降低时水银收缩，在缩口处<span class="c-purple">断开</span>，上方水银柱<span class="c-red">不能自动回落</span>。因此体温计可以<span class="c-green">离开人体读数</span>，使用前需<span class="c-orange">用力甩几下</span>使水银回落。
 </div></div>
 
-<h2 id="sec5-2">5.2 热量 比热容</h2>
+<h2 id="sec5-2">5.2 物态变化</h2>
+<div class="kp"><h3>六种物态变化</h3>
+<p>物质在<span class="c-red">固、液、气</span>三种状态间的变化叫做物态变化，判断吸热还是放热是解题关键。</p>
+<table class="phy-table">
+<tr><th>变化</th><th>方向</th><th>吸/放热</th><th>常见实例</th></tr>
+<tr><td><span class="c-red">熔化</span></td><td>固 → 液</td><td><span class="c-red">吸热</span></td><td>冰化成水、蜡烛流泪、巧克力变软</td></tr>
+<tr><td><span class="c-blue">凝固</span></td><td>液 → 固</td><td><span class="c-blue">放热</span></td><td>水结冰、钢水浇铸成型、蜡烛油凝固</td></tr>
+<tr><td><span class="c-orange">汽化</span></td><td>液 → 气</td><td><span class="c-orange">吸热</span></td><td>水烧开、湿衣服晾干、酒精擦皮肤变凉</td></tr>
+<tr><td><span class="c-green">液化</span></td><td>气 → 液</td><td><span class="c-green">放热</span></td><td>雾、露的形成、揭开锅盖出现的"白气"</td></tr>
+<tr><td><span class="c-purple">升华</span></td><td>固 → 气</td><td><span class="c-purple">吸热</span></td><td>樟脑丸变小、灯泡钨丝变细、冰冻的衣服变干</td></tr>
+<tr><td><span class="c-pink">凝华</span></td><td>气 → 固</td><td><span class="c-pink">放热</span></td><td>霜、雾凇、冰花的形成</td></tr>
+</table>
+<div class="highlight-box">
+<strong>💡 记忆技巧</strong><br>
+<span class="c-red">吸热</span>的过程：熔化、汽化、升华（都朝着"更自由"的方向变化）；<br>
+<span class="c-blue">放热</span>的过程：凝固、液化、凝华（都朝着"更束缚"的方向变化）。
+</div></div>
+
+<div class="kp"><h3>晶体与非晶体</h3>
+<table class="phy-table">
+<tr><th>对比项</th><th>晶体</th><th>非晶体</th></tr>
+<tr><td>熔化特点</td><td>吸热但<span class="c-red">温度保持不变</span>（有固定熔点）</td><td>吸热且温度<span class="c-blue">持续上升</span>（无固定熔点）</td></tr>
+<tr><td>常见物质</td><td>冰、海波、各种金属、食盐</td><td>蜡、玻璃、沥青、松香、橡胶</td></tr>
+<tr><td>凝固特点</td><td>放热温度不变，有固定<span class="c-orange">凝固点</span></td><td>放热温度持续下降</td></tr>
+</table>
+<p>同种晶体的<span class="c-red">熔点 = 凝固点</span>。标准大气压下冰的熔点为 <span class="c-blue">0℃</span>，水的沸点为 <span class="c-orange">100℃</span>。</p>
+<div class="info-box">
+<strong>📌 晶体熔化条件</strong><br>
+① 温度达到<span class="c-red">熔点</span>；② <span class="c-blue">继续吸热</span>。两个条件缺一不可——温度达到熔点但不再吸热，熔化就会停止。<br>
+同理，液体沸腾的条件：① 达到<span class="c-orange">沸点</span>；② 继续吸热。
+</div></div>
+
+<div class="kp"><h3>蒸发与沸腾（汽化的两种方式）</h3>
+<table class="phy-table">
+<tr><th>对比项</th><th>蒸发</th><th>沸腾</th></tr>
+<tr><td>发生温度</td><td><span class="c-red">任何温度</span>下都能发生</td><td>必须达到<span class="c-orange">沸点</span>（且继续吸热）</td></tr>
+<tr><td>发生部位</td><td>只在液体<span class="c-red">表面</span>进行</td><td>液体<span class="c-blue">内部和表面同时</span>进行</td></tr>
+<tr><td>剧烈程度</td><td>缓慢</td><td>剧烈（大量气泡上升、破裂）</td></tr>
+<tr><td>温度变化</td><td>有<span class="c-green">致冷作用</span>（蒸发吸热使液体及周围降温）</td><td>沸腾时温度<span class="c-purple">保持不变</span></td></tr>
+</table>
+<p>影响蒸发快慢的因素：① <span class="c-red">温度</span>越高蒸发越快；② <span class="c-blue">表面积</span>越大蒸发越快；③ 液面上方<span class="c-orange">空气流动</span>越快蒸发越快。</p></div>
+
+<div class="anim-container"><h3 style="margin-bottom:12px;">🧊 冰的熔化与沸腾温度曲线</h3>
+<canvas id="meltCanvas" style="width:100%;max-width:680px;height:300px;"></canvas>
+<p style="font-size:.8rem;color:var(--text-secondary);margin-top:6px;">加热冰块的温度—时间曲线：AB段冰升温 → BC段0℃熔化（温度不变）→ CD段水升温 → DE段100℃沸腾（温度不变）</p></div>
+
+<div class="info-box">
+<strong>📌 物态变化现象辨析</strong>
+<ul style="padding-left:20px;margin:6px 0;">
+<li>"<span class="c-red">白气</span>"不是水蒸气！是水蒸气<span class="c-blue">液化</span>成的小水滴（水蒸气本身看不见）</li>
+<li>冬天窗玻璃上的冰花在<span class="c-green">内侧</span>——室内水蒸气遇冷<span class="c-pink">凝华</span></li>
+<li>夏天冰镇饮料瓶外壁"出汗"——空气中的水蒸气<span class="c-green">液化</span></li>
+<li>樟脑丸变小、干冰制造云雾（干冰升华吸热使周围水蒸气液化）</li></ul>
+</div>
+
+<h2 id="sec5-3">5.3 热量 比热容</h2>
 <div class="keypoints-grid">
 <div class="kp"><h3>热量</h3>
 <p><strong>热量</strong>：在热传递过程中，传递<span class="c-red">能量的多少</span>。符号 Q，单位：<strong>焦耳（J）</strong>。</p>
@@ -127,7 +185,19 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
 <li><span class="c-purple">培育秧苗</span>：傍晚向秧田灌水防冻（夜间水温降低慢，保护秧苗）</li></ul>
 </div>
 
-<h2 id="sec5-3">5.3 内能</h2>
+<h2 id="sec5-4">5.4 内能</h2>
+<div class="kp"><h3>分子动理论初步</h3>
+<p>内能的微观基础是<span class="c-blue">分子动理论</span>，其基本观点：</p>
+<ul style="padding-left:20px;line-height:1.9;color:var(--text-secondary);">
+<li>物质由<span class="c-red">分子</span>（或原子）组成，分子间存在空隙</li>
+<li>分子在<span class="c-blue">永不停息地做无规则运动</span>——温度越高，运动越剧烈，所以又叫<span class="c-orange">热运动</span></li>
+<li>分子之间同时存在<span class="c-purple">引力和斥力</span></li></ul>
+<div class="info-box">
+<strong>📌 扩散现象</strong><br>
+不同的物质相互接触时，彼此进入对方的现象。<br>
+实例：在盛有冷水和热水的两个杯中分别滴入红墨水，<span class="c-red">热水杯扩散快</span>——说明温度越高，分子无规则运动越剧烈。<br>
+扩散现象不仅发生在气体、液体中，也能在固体间发生（如长期紧贴的金片和铅片互相渗入）。
+</div></div>
 <div class="kp"><h3>内能的概念</h3>
 <p>物体内部<span class="c-red">所有分子</span>的动能和分子势能的总和叫做物体的<strong>内能</strong>。</p>
 <div class="danger-box">
@@ -149,7 +219,7 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
 例如：使铁块温度升高10℃，可以用火烧（热传递），也可以用锤子反复敲击（做功）。
 </div></div>
 
-<h2 id="sec5-4">5.4 热机与能量守恒</h2>
+<h2 id="sec5-5">5.5 热机与能量守恒</h2>
 <div class="kp"><h3>热机</h3>
 <p><strong>热机</strong>：将<span class="c-red">内能</span>转化为<span class="c-green">机械能</span>的机器。常见的有蒸汽机、内燃机（汽油机、柴油机）、汽轮机、喷气发动机。</p>
 <p><strong>汽油机（内燃机）的四个冲程</strong>（一个工作循环）：</p>
@@ -258,6 +328,51 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
 <label><input type="radio" name="q8" value="D">D. 没有燃烧的燃料热值为零</label></div>
 <button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
 <div class="answer" id="answer-8" data-correct="C">✅ C。热值是燃料的特性（q=Q/m，完全燃烧1kg燃料放出的热量），只与燃料种类有关，与质量、燃烧是否充分都无关。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">9</span>晶体熔化过程中，正确的说法是____。</div>
+<div class="options">
+<label><input type="radio" name="q9" value="A">A. 吸收热量，温度不断升高</label>
+<label><input type="radio" name="q9" value="B">B. 吸收热量，温度保持不变</label>
+<label><input type="radio" name="q9" value="C">C. 放出热量，温度保持不变</label>
+<label><input type="radio" name="q9" value="D">D. 不吸热也不放热，温度不变</label></div>
+<button class="answer-btn" onclick="showAnswer(9)">查看答案</button>
+<div class="answer" id="answer-9" data-correct="B">✅ B。晶体熔化：<span class="c-red">吸热但温度保持不变</span>（等于熔点）；非晶体熔化才是吸热且持续升温。熔化必须同时满足"达到熔点"和"继续吸热"。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">10</span>下列现象中，属于升华的是____。</div>
+<div class="options">
+<label><input type="radio" name="q10" value="A">A. 夏天撕开冰棍冒"白气"</label>
+<label><input type="radio" name="q10" value="B">B. 樟脑丸放置一段时间变小</label>
+<label><input type="radio" name="q10" value="C">C. 湿衣服在太阳下变干</label>
+<label><input type="radio" name="q10" value="D">D. 深秋草地上出现霜</label></div>
+<button class="answer-btn" onclick="showAnswer(10)">查看答案</button>
+<div class="answer" id="answer-10" data-correct="B">✅ B。樟脑丸（固态）直接变成气体是<span class="c-purple">升华</span>。A是液化（水蒸气遇冷液化成小水滴）；C是汽化（蒸发）；D是凝华（水蒸气直接变固态）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">11</span>下列说法中，属于液化现象的是____。（多选判断式单选）</div>
+<div class="options">
+<label><input type="radio" name="q11" value="A">A. 清晨草叶上的露珠</label>
+<label><input type="radio" name="q11" value="B">B. 冬天室外冰冻的衣服变干</label>
+<label><input type="radio" name="q11" value="C">C. 戴眼镜的人从室外进入温暖的房间，镜片变模糊</label>
+<label><input type="radio" name="q11" value="D">D. 湿地上的水结成冰</label></div>
+<button class="answer-btn" onclick="showAnswer(11)">查看答案</button>
+<div class="answer" id="answer-11" data-correct="A">✅ A（若选多个，C也是液化）。露珠是空气中的水蒸气遇冷<span class="c-green">液化</span>成的小水珠；C镜片变模糊同样是液化。B是升华，D是凝固。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">12</span>蒸发和沸腾，下列说法正确的是____。</div>
+<div class="options">
+<label><input type="radio" name="q12" value="A">A. 蒸发在任何温度下都能发生，且是在液体表面和内部同时进行</label>
+<label><input type="radio" name="q12" value="B">B. 沸腾时液体温度不变，需继续吸热</label>
+<label><input type="radio" name="q12" value="C">C. 蒸发需要达到一定温度才能发生</label>
+<label><input type="radio" name="q12" value="D">D. 蒸发和沸腾都只在液体表面进行</label></div>
+<button class="answer-btn" onclick="showAnswer(12)">查看答案</button>
+<div class="answer" id="answer-12" data-correct="B">✅ B。沸腾时温度保持沸点不变但必须继续吸热；蒸发只在<span class="c-red">液体表面</span>进行，任何温度下都能发生。蒸发只在表面进行，沸腾是内部和表面同时进行。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">13</span>在热水和冷水中分别滴入一滴蓝墨水，热水先变色，这说明____。</div>
+<div class="options">
+<label><input type="radio" name="q13" value="A">A. 热水颜色深，所以先看得到变色</label>
+<label><input type="radio" name="q13" value="B">B. 温度越高，分子无规则运动越剧烈，扩散越快</label>
+<label><input type="radio" name="q13" value="C">C. 蓝墨水分子在热水中质量变小</label>
+<label><input type="radio" name="q13" value="D">D. 冷水分子之间没有空隙</label></div>
+<button class="answer-btn" onclick="showAnswer(13)">查看答案</button>
+<div class="answer" id="answer-13" data-correct="B">✅ B。这是扩散现象：温度越高，分子<span class="c-blue">无规则热运动</span>越剧烈，扩散越快。分子间总有空隙，分子运动速度与位置无关。</div></div>
 </main></div>
 <script src="../assets/js/common.js"></script>
 <script>
@@ -309,6 +424,75 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
     ctx.fillText(desc[phase%4],50,H-10);
 
     phase++;setTimeout(()=>requestAnimationFrame(draw),1500);
+  }
+  draw();
+})();
+
+(function(){
+  const c=document.getElementById('meltCanvas');
+  if(!c) return;
+  const ctx=c.getContext('2d');
+  c.width=680;c.height=300;
+  const W=680,H=300;
+  const x0=50,x1=620,ybase=255;
+  // 曲线（真实温度℃）：A(-20) →B(0) 熔化平台 →D(100) 沸腾平台 →E
+  const K=[[0,-5],[0.18,0],[0.42,0],[0.62,100],[0.88,100]];
+  const cx=t=>x0+t*(x1-x0);
+  const cy=T=>ybase-T*1.9;             // -20℃→293, 100℃→65
+  const Tof=p=>{
+    for(let i=0;i<K.length-1;i++){
+      if(p<=K[i+1][0]){
+        const a=K[i],b=K[i+1],u=(p-a[0])/(b[0]-a[0]);
+        return a[1]+(b[1]-a[1])*u;
+      }
+    }
+    return K[K.length-1][1];
+  };
+  let p=0;
+  function draw(){
+    ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+    // 坐标轴
+    ctx.strokeStyle='#64748b';ctx.lineWidth=2;
+    ctx.beginPath();ctx.moveTo(x0-10,40);ctx.lineTo(x0-10,ybase+14);ctx.lineTo(x1+16,ybase+14);ctx.stroke();
+    ctx.fillStyle='#cbd5e1';ctx.font='13px sans-serif';
+    ctx.fillText('时间 →',x1-36,ybase+32);
+    ctx.fillText('温度℃',6,52);
+    // 0℃ / 100℃ 参考虚线
+    ctx.setLineDash([5,5]);ctx.strokeStyle='#475569';
+    [[0],[100]].forEach(([T])=>{
+      ctx.beginPath();ctx.moveTo(x0-10,cy(T));ctx.lineTo(x1,cy(T));ctx.stroke();
+      ctx.fillStyle='#94a3b8';ctx.font='12px sans-serif';ctx.fillText(T+'℃',x1+2,cy(T)+4);
+    });
+    ctx.setLineDash([]);
+    // 已走过曲线
+    ctx.strokeStyle='#38bdf8';ctx.lineWidth=3;ctx.beginPath();
+    let started=false;
+    for(let i=0;i<K.length-1;i++){
+      const t1=Math.min(K[i][0],p),t2=Math.min(K[i+1][0],p);
+      if(t2>t1||(!started&&t1>0)){
+        if(!started){ctx.moveTo(cx(t1),cy(Tof(t1)));started=true;}
+        ctx.lineTo(cx(t2),cy(Tof(t2)));
+      }
+      if(t2<K[i+1][0])break;
+    }
+    ctx.stroke();
+    // 当前状态点与标签
+    const T=Tof(p);
+    let state,color;
+    if(p<0.18){state='AB 固态冰 · 吸热升温';color='#22d3ee';}
+    else if(p<0.42){state='BC 熔化 · 固液共存，0℃，吸热温度不变';color='#fbbf24';}
+    else if(p<0.62){state='CD 液态水 · 吸热升温';color='#38bdf8';}
+    else if(p<0.88){state='DE 沸腾 · 剧烈汽化，100℃，吸热温度不变';color='#fbbf24';}
+    else {state='水蒸气 · 继续升温';color='#f87171';}
+    ctx.fillStyle=color;ctx.beginPath();ctx.arc(cx(Math.min(p,K[K.length-1][0])),cy(T),6,0,Math.PI*2);ctx.fill();
+    ctx.strokeStyle=color;ctx.beginPath();ctx.arc(cx(Math.min(p,K[K.length-1][0])),cy(T),10,0,Math.PI*2);ctx.stroke();
+    ctx.fillStyle='#fff';ctx.font='bold 15px sans-serif';
+    ctx.fillText(state,x0,50);
+    ctx.fillStyle='#94a3b8';ctx.font='12px sans-serif';
+    ctx.fillText('结论：熔化和沸腾阶段都在吸热，但温度保持不变（图像呈水平段）',x0,H-10);
+    p+=0.004;
+    if(p>K[K.length-1][0]+0.03)p=0;
+    requestAnimationFrame(draw);
   }
   draw();
 })();
