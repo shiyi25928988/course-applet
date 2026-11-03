@@ -124,7 +124,7 @@
     ctx.beginPath();let started=false;
     for(let px=0;px<=W;px++){
       const x=(px-ox)/step,y=f(x),sy=oy-y*step;
-      if(sy>=-40&&sy<=H+40){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}
+      if(sy>=-40&&sy<=H+40){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}else{started=false;}
     }
     ctx.stroke();
   }

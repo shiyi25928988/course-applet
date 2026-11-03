@@ -132,7 +132,7 @@ function drawAxes(ctx,W,H,ox,oy){
     ctx.beginPath();let started=false;
     for(let px=0;px<=W;px++){
       const x=(px-ox)/40,sy=oy-k*x*40;
-      if(sy>=-20&&sy<=H+20){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}
+      if(sy>=-20&&sy<=H+20){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}else{started=false;}
     }
     ctx.stroke();
     ctx.fillStyle='#fff';ctx.font='15px sans-serif';
@@ -166,7 +166,7 @@ function drawAxes(ctx,W,H,ox,oy){
     ctx.beginPath();let started=false;
     for(let px=0;px<=W;px++){
       const x=(px-ox)/40,sy=oy-(k*x+b)*40;
-      if(sy>=-30&&sy<=H+30){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}
+      if(sy>=-30&&sy<=H+30){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}else{started=false;}
     }
     ctx.stroke();
     // y 截距点 (0,b)
@@ -209,7 +209,7 @@ function drawAxes(ctx,W,H,ox,oy){
       ctx.beginPath();let started=false;
       for(let xm=0.2;xm<=8.5;xm+=0.03){
         const x=s*xm,y=cur/x,px=ox+x*40,py=oy-y*40;
-        if(py>=-80&&py<=H+80){started?ctx.lineTo(px,py):(ctx.moveTo(px,py),started=true);}
+        if(py>=-80&&py<=H+80){started?ctx.lineTo(px,py):(ctx.moveTo(px,py),started=true);}else{started=false;}
       }
       ctx.stroke();
     });

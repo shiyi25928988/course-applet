@@ -129,21 +129,31 @@ function drawAxes(ctx,W,H,ox,oy){
   window.drawQuad=function(av,bv,cv){
     ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
     bgGrid(ctx,W,H,ox,oy,STEP);drawAxes(ctx,W,H,ox,oy);
-    ctx.strokeStyle=a>0?'#22c55e':'#ef4444';ctx.lineWidth=3;
+    ctx.strokeStyle=av>0?'#22c55e':'#ef4444';ctx.lineWidth=3;
     ctx.beginPath();let started=false;
     for(let px=0;px<=W;px++){
       const x=(px-ox)/STEP,y=av*x*x+bv*x+cv,sy=oy-y*STEP;
       if(sy>=-120&&sy<=H+120){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}
+      else{started=false;} // 出画即断开路径，回来时重新 moveTo，避免假直线段
     }
     ctx.stroke();
-    ctx.fillStyle='#fbbf24';ctx.beginPath();
-    ctx.arc(ox+(-bv/(2*av))*STEP,oy-((4*av*cv-bv*bv)/(4*av))*STEP,5,0,Math.PI*2);ctx.fill();
-    ctx.fillStyle='#fbbf24';ctx.font='12px sans-serif';
-    ctx.fillText('顶点('+fmt(-bv/(2*av))+','+fmt((4*av*cv-bv*bv)/(4*av))+')',ox+(-bv/(2*av))*STEP+8,oy-((4*av*cv-bv*bv)/(4*av))*STEP);
+    if(Math.abs(av)>=0.05){ // a≈0 时顶点趋向无穷，不标注
+      ctx.fillStyle='#fbbf24';ctx.beginPath();
+      ctx.arc(ox+(-bv/(2*av))*STEP,oy-((4*av*cv-bv*bv)/(4*av))*STEP,5,0,Math.PI*2);ctx.fill();
+      ctx.fillStyle='#fbbf24';ctx.font='12px sans-serif';
+      ctx.fillText('顶点('+fmt(-bv/(2*av))+','+fmt((4*av*cv-bv*bv)/(4*av))+')',ox+(-bv/(2*av))*STEP+8,oy-((4*av*cv-bv*bv)/(4*av))*STEP);
+    }
     ctx.fillStyle='#fff';ctx.font='15px sans-serif';
-    ctx.fillText('y = '+fmt(av)+'x² '+term(bv,'x')+' '+term(cv,''),18,26);
+    ctx.fillText('y = '+qstr(av,bv,cv),18,26);
   };
-  function term(v,tag){return v?(v>0?'+ '+fmt(v)+' '+tag:'− '+fmt(-v)+' '+tag):'';}
+  function qstr(a,b,c){
+    let s;
+    if(a===1)s='x²';else if(a===-1)s='−x²';else s=fmt(a)+'x²';
+    if(b===1)s+=' + x';else if(b===-1)s+=' − x';else if(b)s+=' '+term(b,'x');
+    if(c){s+=c>0?' + '+fmt(c):' − '+fmt(-c);}
+    return s.trim();
+  }
+  function term(v,tag){return v?(v>0?'+ '+fmt(v)+tag:'− '+fmt(-v)+tag):'';}
   function loop(){
     if(!playing)return;
     a+=0.03*dir;
@@ -180,6 +190,7 @@ function drawAxes(ctx,W,H,ox,oy){
     for(let px=0;px<=W;px++){
       const x=(px-ox)/STEP,y=(x-h)*(x-h)+k,sy=oy-y*STEP;
       if(sy>=-30&&sy<=H+30){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}
+      else{started=false;}
     }
     ctx.stroke();
     // 对称轴
@@ -229,6 +240,7 @@ function drawAxes(ctx,W,H,ox,oy){
     for(let px=0;px<=W;px++){
       const x=(px-ox)/STEP,y=A*x*x+B*x+cv,sy=oy-y*STEP;
       if(sy>=-60&&sy<=H+60){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}
+      else{started=false;}
     }
     ctx.stroke();
     if(d>=0){
