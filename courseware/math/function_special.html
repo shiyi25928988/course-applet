@@ -24,6 +24,15 @@
 <div class="back-links"><a href="index.html">← 初中数学</a>&nbsp;|&nbsp;<a href="../exam_bank.html">← 题库中心</a></div>
 <div class="hero"><h1>📈 初中数学函数专项突破</h1><p>一次函数 · 反比例函数 · 二次函数 · 函数图像与性质 · 函数综合应用 · 共 12 道精选题目</p></div>
 
+<div class="question" style="padding:16px 20px;">
+<span class="q-title" style="color:#5b21b6;">🎬 函数曲线动图速览</span>
+<div style="margin-top:12px;border-radius:10px;overflow:hidden;">
+<canvas id="curveShow" style="width:100%;max-width:660px;height:260px;display:block;margin:0 auto;"></canvas>
+</div>
+<div id="curveCap" style="text-align:center;margin-top:10px;font-size:.92rem;color:#4c1d95;font-weight:600;"></div>
+<div style="text-align:center;margin-top:8px;"><button class="answer-btn" onclick="nextCurve()" style="padding:8px 22px;">▶ 下一类函数</button></div>
+</div>
+
 <div class="question"><span class="q-num">1</span><span class="q-title">一次函数图像</span><div class="q-content"><p>一次函数 y=2x-3 的图像经过哪些象限？与坐标轴的交点坐标是什么？</p></div>
 <button class="answer-btn" onclick="showAnswer(1)">查看答案与解析</button>
 <div class="answer" id="answer-1"><div class="answer-value">答案：经过一、三、四象限；与x轴(1.5,0)，与y轴(0,-3)</div>
@@ -84,4 +93,80 @@
 <div class="answer" id="answer-12"><div class="answer-value">答案：(1)A(-1,0),B(3,0),C(0,3)；(2)6；(3)P(1,4)或P(1±√7,-3)</div>
 <div class="answer-solution"><strong>解析：</strong><br>(1)y=-(x²-2x-3)=-(x-3)(x+1)。A(-1,0),B(3,0),C(0,3)。<br>(2)AB=4，S△ABC=1/2×4×3=6。<br>(3)S△ABP=1/2×4×|yP|=2|yP|。令2|yP|=6→|yP|=3。yP=3时，-x²+2x+3=3→x=0或2。P(0,3)=C或(2,3)。yP=-3时，-x²+2x+3=-3→x²-2x-6=0→x=1±√7。P(1±√7,-3)。</div></div></div>
 
-</div></body></html>
+</div>
+<script>
+(function(){
+  const c=document.getElementById('curveShow');if(!c)return;
+  const ctx=c.getContext('2d');
+  c.width=660;c.height=260;
+  const W=660,H=260,ox=W/2,oy=H/2;
+  let phase=0,t=0;
+  const caps=[
+    '一次函数 y = kx + b：k 越大越陡，b 决定上下平移（直线过 (0,b)）',
+    '反比例函数 y = k/x：双曲线两支无限逼近坐标轴但永不相交，|xy| = |k| 恒定',
+    '二次函数 y = ax² + bx + c：c 变化时抛物线上下平移，与 x 轴交点随之变化'
+  ];
+  function grid(){
+    ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+    ctx.strokeStyle='#1e293b';ctx.lineWidth=.5;
+    for(let x=ox;x<W;x+=30){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
+    for(let x=ox;x>0;x-=30){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
+    for(let y=oy;y<H;y+=30){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
+    for(let y=oy;y>0;y-=30){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
+    ctx.strokeStyle='#64748b';ctx.lineWidth=2;
+    ctx.beginPath();ctx.moveTo(0,oy);ctx.lineTo(W,oy);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(ox,0);ctx.lineTo(ox,H);ctx.stroke();
+    ctx.fillStyle='#94a3b8';ctx.font='12px sans-serif';
+    ctx.fillText('O',ox-14,oy+14);ctx.fillText('x',W-12,oy-8);ctx.fillText('y',ox+8,12);
+  }
+  function plot(f,color,step){
+    ctx.strokeStyle=color;ctx.lineWidth=3;
+    ctx.beginPath();let started=false;
+    for(let px=0;px<=W;px++){
+      const x=(px-ox)/step,y=f(x),sy=oy-y*step;
+      if(sy>=-40&&sy<=H+40){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}
+    }
+    ctx.stroke();
+  }
+  function draw(){
+    grid();
+    const TT=100;
+    let u=(t%TT)/TT; // 0..1 相内进度
+    if(phase===0){
+      const p=u<0.5?u*2:(1-u)*2, b=p*4-2;    // b: -2 ↔ 2 往返
+      const k=1.2;
+      plot(x=>k*x+b,'#22c55e',30);
+      ctx.fillStyle='#38bdf8';ctx.beginPath();ctx.arc(ox,oy-b*30,5,0,Math.PI*2);ctx.fill();
+      ctx.fillStyle='#fff';ctx.font='15px sans-serif';
+      ctx.fillText('y = '+Math.round(k*10)/10+'x '+(b<0?'− '+Math.round(-b*10)/10:'+ '+Math.round(b*10)/10),20,26);
+    }else if(phase===1){
+      plot(x=>6/x,'#22c55e',34);plot(x=>-6/x,'#f87171',34);
+      const gx=1+u*5.5,gy=6/gx;
+      ctx.setLineDash([6,4]);ctx.strokeStyle='#fbbf24';ctx.lineWidth=1.5;
+      ctx.beginPath();ctx.moveTo(ox,oy-gy*34);ctx.lineTo(ox+gx*34,oy-gy*34);ctx.lineTo(ox+gx*34,oy);ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle='#f472b6';ctx.beginPath();ctx.arc(ox+gx*34,oy-gy*34,5,0,Math.PI*2);ctx.fill();
+      ctx.fillStyle='#fff';ctx.font='15px sans-serif';
+      ctx.fillText('y = 6/x    面积 |xy| = 6',20,26);
+    }else{
+      const p=u<0.5?u*2:(1-u)*2, cv=p*6-3;    // c: -3 ↔ 3 往返
+      plot(x=>x*x-2*x+cv,'#22c55e',26);
+      const d=4-4*cv;
+      if(d>=0){
+        ctx.fillStyle='#f87171';
+        const x1=(2+Math.sqrt(d))/2,x2=(2-Math.sqrt(d))/2;
+        [x1,x2].forEach(x=>{ctx.beginPath();ctx.arc(ox+x*26,oy,5,0,Math.PI*2);ctx.fill();});
+      }
+      ctx.fillStyle='#fff';ctx.font='15px sans-serif';
+      ctx.fillText('y = x²−2x '+(cv<0?'− '+Math.round(-cv*10)/10:'+ '+Math.round(cv*10)/10),20,26);
+      ctx.fillStyle=d>0?'#f87171':(Math.abs(d)<0.02?'#fbbf24':'#94a3b8');
+      ctx.fillText('Δ = '+Math.round(d*10)/10,W-140,26);
+    }
+    document.getElementById('curveCap').textContent='▶ 当前：'+caps[phase];
+  }
+  window.nextCurve=function(){phase=(phase+1)%3;t=0;};
+  function tick(){t++;draw();requestAnimationFrame(tick);}
+  draw();requestAnimationFrame(tick);
+})();
+</script>
+</body></html>

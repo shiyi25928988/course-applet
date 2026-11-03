@@ -11,9 +11,22 @@
     </div>
 </aside>
 <main class="main">
-<div c</ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
-      <a href="index.html" class="back-subject">📂 代数目录</a>
-    </div>"page-title">第7章 二次函数 y = ax² + bx + c</div>
+<div class="topbar">
+  <div class="breadcrumb">
+    <a href="../../index.html">🏠 首页</a><span>›</span>
+    <a href="../index.html">📂 初中数学</a><span>›</span>
+    <a href="index.html">📊 代数</a><span>›</span>
+    <span>第7章 二次函数</span>
+  </div>
+  <div class="spacer"></div>
+  <div class="subject-switch">
+    <a href="../../chinese/index.html">语文</a>
+    <a href="../index.html" class="active">数学</a>
+    <a href="../../physics/index.html">物理</a>
+    <a href="../../chemistry/index.html">化学</a>
+  </div>
+</div>
+<div class="page-title">第7章 二次函数 y = ax² + bx + c</div>
 
 <h2 id="sec1">7.1 定义与图像</h2>
 <div class="kp"><h3>二次函数图像——抛物线</h3>
@@ -25,11 +38,13 @@
 <div class="anim-container"><h3 style="margin:12px 0;">📈 二次函数图像</h3>
 <canvas id="quadCanvas" style="width:100%;max-width:680px;height:280px;"></canvas>
 <div class="anim-controls">
-<button onclick="drawQuad(1,0,0)" style="background:#7c3aed;">y=x²</button>
-<button onclick="drawQuad(1,-2,1)">y=x²-2x+1</button>
-<button onclick="drawQuad(-1,2,0)">y=-x²+2x</button>
-<button onclick="drawQuad(2,4,-6)">y=2x²+4x-6</button>
-</div></div>
+<button onclick="stopQuad();drawQuad(1,0,0)" style="background:#7c3aed;">y=x²</button>
+<button onclick="stopQuad();drawQuad(1,-2,1)">y=x²-2x+1</button>
+<button onclick="stopQuad();drawQuad(-1,2,0)">y=-x²+2x</button>
+<button onclick="stopQuad();drawQuad(2,4,-6)">y=2x²+4x-6</button>
+<button onclick="playQuad(this)" style="background:#2563eb;">▶ 连续演示 a 变化</button>
+</div>
+<p style="font-size:.8rem;color:var(--text-secondary);margin:6px 0 0;">动画中 a 从正变负：抛物线由开口向上翻转向下；|a| 越大开口越窄，越接近 0 越宽。</p></div>
 
 <h2 id="sec2">7.2 三种表达形式</h2>
 <div class="keypoints-grid">
@@ -38,6 +53,18 @@
 <div class="kp"><h3>交点式（两根式）</h3><span class="formula">y = a(x-x₁)(x-x₂)</span><p>已知与x轴两交点用。</p></div>
 </div>
 
+<div class="anim-container"><h3 style="margin:12px 0;">🧪 顶点式 y = (x − h)² + k 平移动画</h3>
+<canvas id="vertexCanvas" style="width:100%;max-width:680px;height:300px;"></canvas>
+<div class="anim-controls" style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+<span style="font-size:.85rem;color:#475569;">h =
+<input type="range" id="hVert" min="-4" max="4" step="0.5" value="2" oninput="drawVert()" style="vertical-align:middle;"></span>
+<span style="font-size:.85rem;color:#475569;">k =
+<input type="range" id="kVert" min="-4" max="4" step="0.5" value="0" oninput="drawVert()" style="vertical-align:middle;"></span>
+<button onclick="playVert('h',this)">▶ 演示左右平移</button>
+<button onclick="playVert('k',this)" style="background:#7c3aed;">▶ 演示上下平移</button>
+</div>
+<p style="font-size:.8rem;color:var(--text-secondary);margin-top:6px;">h 变化 → 整条抛物线<span style="color:#38bdf8;">左右平移</span>（左加右减）；k 变化 → <span style="color:#a78bfa;">上下平移</span>（上加下减）。黄色虚线为对称轴 x = h，橙点为顶点 (h, k)。</p></div>
+
 <h2 id="sec3">7.3 与方程、不等式的关系</h2>
 <div class="kp">
 <p>ax²+bx+c=0 的根 = 抛物线与x轴交点的横坐标。</p>
@@ -45,6 +72,16 @@
 <p>ax²+bx+c>0→抛物线在x轴上方的部分。</p>
 <p><strong>平移规律</strong>：y=a(x-h)²+k，|a|越大抛物线越窄。</p>
 </div>
+
+<div class="anim-container"><h3 style="margin:12px 0;">🧪 判别式 Δ 与 x 轴交点动画</h3>
+<canvas id="discrCanvas" style="width:100%;max-width:680px;height:300px;"></canvas>
+<div class="anim-controls" style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+<button onclick="playDiscr(this)" style="background:#2563eb;">▶ 连续演示 Δ 变化</button>
+<button onclick="setDiscr(-3)">y=x²-2x-3（Δ>0）</button>
+<button onclick="setDiscr(1)" style="background:#7c3aed;">y=x²-2x+1（Δ=0）</button>
+<button onclick="setDiscr(2)">y=x²-2x+2（Δ<0）</button>
+</div>
+<p style="font-size:.8rem;color:var(--text-secondary);margin-top:6px;">固定 a=1、b=-2，让截距 c 连续变化：观察抛物线与 x 轴从<span style="color:#f87171;">两个交点</span> → <span style="color:#fbbf24;">相切</span> → <span style="color:#94a3b8;">分离（无交点）</span>的连续过程。红点为交点，即对应方程 ax²+bx+c=0 的根。</p></div>
 
 <h2 id="exercises" style="margin:28px 0 16px;">📝 练习题</h2>
 <div class="exercise"><div class="question"><span class="q-num">1</span>抛物线 y=x²-2x+3 的顶点坐标是____。</div>
@@ -66,33 +103,165 @@
 </main></div>
 <script src="../../assets/js/common.js"></script>
 <script>
+function fmt(v){return Math.round(v*10)/10;}
+function bgGrid(ctx,W,H,ox,oy,step){
+  ctx.strokeStyle='#1e293b';ctx.lineWidth=.5;
+  for(let x=ox;x<W;x+=step){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
+  for(let x=ox;x>0;x-=step){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
+  for(let y=oy;y<H;y+=step){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
+  for(let y=oy;y>0;y-=step){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
+}
+function drawAxes(ctx,W,H,ox,oy){
+  ctx.strokeStyle='#64748b';ctx.lineWidth=2;
+  ctx.beginPath();ctx.moveTo(0,oy);ctx.lineTo(W,oy);ctx.stroke();
+  ctx.beginPath();ctx.moveTo(ox,0);ctx.lineTo(ox,H);ctx.stroke();
+  ctx.fillStyle='#94a3b8';ctx.font='12px sans-serif';
+  ctx.fillText('O',ox-15,oy+15);ctx.fillText('x',W-12,oy-8);ctx.fillText('y',ox+8,12);
+}
+
+/* ---------- 7.1 抛物线 y=ax²+bx+c ---------- */
 (function(){
   const c=document.getElementById('quadCanvas');if(!c)return;
   const ctx=c.getContext('2d');c.width=680;c.height=280;
-  const W=680,H=280,ox=W/2,oy=H/2+50;
-  window.drawQuad=function(a,b,cval){
+  const W=680,H=280,ox=W/2,oy=H/2+30;
+  const STEP=30;
+  let playing=false,dir=1,a=1;
+  window.drawQuad=function(av,bv,cv){
     ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
-    ctx.strokeStyle='#1e293b';ctx.lineWidth=.5;
-    for(let x=ox;x<W;x+=40){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
-    for(let x=ox;x>0;x-=40){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
-    for(let y=oy;y<H;y+=40){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
-    for(let y=oy;y>0;y-=40){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
-    ctx.strokeStyle='#64748b';ctx.lineWidth=2;
-    ctx.beginPath();ctx.moveTo(0,oy);ctx.lineTo(W,oy);ctx.stroke();
-    ctx.beginPath();ctx.moveTo(ox,0);ctx.lineTo(ox,H);ctx.stroke();
-    ctx.strokeStyle=a>0?'#22c55e':'#ef4444';ctx.lineWidth=2;
-    ctx.beginPath();
-    for(let px=0;px<W;px++){
-      const x=(px-ox)/30,y=a*x*x+b*x+cval;
-      const sy=oy-y*30;
-      if(sy>=-100&&sy<=H+100){px===0?ctx.moveTo(px,sy):ctx.lineTo(px,sy);}
+    bgGrid(ctx,W,H,ox,oy,STEP);drawAxes(ctx,W,H,ox,oy);
+    ctx.strokeStyle=a>0?'#22c55e':'#ef4444';ctx.lineWidth=3;
+    ctx.beginPath();let started=false;
+    for(let px=0;px<=W;px++){
+      const x=(px-ox)/STEP,y=av*x*x+bv*x+cv,sy=oy-y*STEP;
+      if(sy>=-120&&sy<=H+120){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}
     }
     ctx.stroke();
-    ctx.fillStyle='#fff';ctx.font='13px sans-serif';
-    const vx=-b/(2*a),vy=a*vx*vx+b*vx+cval;
-    ctx.fillText('顶点('+vx.toFixed(1)+','+vy.toFixed(1)+')',ox+vx*30-30,oy-vy*30-10);
+    ctx.fillStyle='#fbbf24';ctx.beginPath();
+    ctx.arc(ox+(-bv/(2*av))*STEP,oy-((4*av*cv-bv*bv)/(4*av))*STEP,5,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#fbbf24';ctx.font='12px sans-serif';
+    ctx.fillText('顶点('+fmt(-bv/(2*av))+','+fmt((4*av*cv-bv*bv)/(4*av))+')',ox+(-bv/(2*av))*STEP+8,oy-((4*av*cv-bv*bv)/(4*av))*STEP);
+    ctx.fillStyle='#fff';ctx.font='15px sans-serif';
+    ctx.fillText('y = '+fmt(av)+'x² '+term(bv,'x')+' '+term(cv,''),18,26);
+  };
+  function term(v,tag){return v?(v>0?'+ '+fmt(v)+' '+tag:'− '+fmt(-v)+' '+tag):'';}
+  function loop(){
+    if(!playing)return;
+    a+=0.03*dir;
+    if(a>=2.5){a=2.5;dir=-1;}
+    if(a<=-2.5){a=-2.5;dir=1;}
+    drawQuad(a,0,0);
+    requestAnimationFrame(loop);
+  }
+  window.playQuad=function(btn){
+    if(playing){playing=false;btn.textContent='▶ 连续演示 a 变化';return;}
+    playing=true;btn.textContent='⏸ 暂停';loop();
+  };
+  window.stopQuad=function(){
+    if(!playing)return;
+    playing=false;
+    const b=document.querySelector('.anim-controls [onclick*="playQuad"]');
+    if(b)b.textContent='▶ 连续演示 a 变化';
   };
   drawQuad(1,0,0);
+})();
+
+/* ---------- 7.2 顶点式平移动画 ---------- */
+(function(){
+  const c=document.getElementById('vertexCanvas');if(!c)return;
+  const ctx=c.getContext('2d');c.width=680;c.height=300;
+  const W=680,H=300,ox=W/2,oy=H/2;
+  const STEP=40;
+  window.drawVert=function(){
+    const h=+document.getElementById('hVert').value,k=+document.getElementById('kVert').value;
+    ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+    bgGrid(ctx,W,H,ox,oy,STEP);drawAxes(ctx,W,H,ox,oy);
+    ctx.strokeStyle='#e2e8f0';ctx.lineWidth=3;
+    ctx.beginPath();let started=false;
+    for(let px=0;px<=W;px++){
+      const x=(px-ox)/STEP,y=(x-h)*(x-h)+k,sy=oy-y*STEP;
+      if(sy>=-30&&sy<=H+30){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}
+    }
+    ctx.stroke();
+    // 对称轴
+    ctx.setLineDash([6,4]);ctx.strokeStyle='#fbbf24';ctx.lineWidth=1.5;
+    ctx.beginPath();ctx.moveTo(ox+h*STEP,10);ctx.lineTo(ox+h*STEP,H-10);ctx.stroke();
+    ctx.setLineDash([]);
+    // 顶点
+    const vx=ox+h*STEP,vy=oy-k*STEP;
+    ctx.fillStyle='#f97316';ctx.beginPath();ctx.arc(vx,vy,6,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#f97316';ctx.font='12px sans-serif';
+    ctx.fillText('顶点('+fmt(h)+','+fmt(k)+')',vx+8,vy-8);
+    ctx.fillStyle='#fff';ctx.font='15px sans-serif';
+    const hs=h<0?'(x+ '+fmt(-h)+')²':'(x− '+fmt(h)+')²';
+    const ks=k<0?' − '+fmt(-k):' + '+fmt(k);
+    ctx.fillText('y = '+hs+ks+'   对称轴 x = '+fmt(h),18,26);
+  };
+  const timers={};
+  window.playVert=function(param,btn){
+    if(timers[param]){clearInterval(timers[param]);delete timers[param];
+      btn.textContent='▶ 演示'+(param==='h'?'左右平移':'上下平移');return;}
+    btn.textContent='⏸ 暂停';
+    const el=document.getElementById(param==='h'?'hVert':'kVert');
+    let v=+el.value,dir=1;
+    timers[param]=setInterval(()=>{
+      v+=0.03*dir;
+      if(v>=4){v=4;dir=-1;}
+      if(v<=-4){v=-4;dir=1;}
+      el.value=v;drawVert();
+    },16);
+  };
+  drawVert();
+})();
+
+/* ---------- 7.3 判别式 Δ 动画 ---------- */
+(function(){
+  const c=document.getElementById('discrCanvas');if(!c)return;
+  const ctx=c.getContext('2d');c.width=680;c.height=300;
+  const W=680,H=300,ox=W*0.45,oy=H/2;
+  const STEP=30,A=1,B=-2;
+  let playing=false,dir=-1,cv0=0;
+  function draw(cv){
+    const d=B*B-4*A*cv;
+    ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+    bgGrid(ctx,W,H,ox,oy,STEP);drawAxes(ctx,W,H,ox,oy);
+    ctx.strokeStyle=A>0?'#22c55e':'#ef4444';ctx.lineWidth=3;
+    ctx.beginPath();let started=false;
+    for(let px=0;px<=W;px++){
+      const x=(px-ox)/STEP,y=A*x*x+B*x+cv,sy=oy-y*STEP;
+      if(sy>=-60&&sy<=H+60){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}
+    }
+    ctx.stroke();
+    if(d>=0){
+      const x1=(-B+Math.sqrt(d))/(2*A),x2=(-B-Math.sqrt(d))/(2*A);
+      ctx.fillStyle='#f87171';
+      [x1,x2].forEach(x=>{
+        ctx.beginPath();ctx.arc(ox+x*STEP,oy,6,0,Math.PI*2);ctx.fill();
+      });
+      ctx.strokeStyle='#f87171';ctx.lineWidth=1.5;
+      ctx.font='12px sans-serif';
+      ctx.fillText('x = '+fmt(x1),ox+x1*STEP-20,oy+22);
+      if(d>0)ctx.fillText('x = '+fmt(x2),ox+x2*STEP-20,oy+22);
+    }
+    ctx.fillStyle='#fff';ctx.font='15px sans-serif';
+    ctx.fillText('y = x²−2x '+term2(cv),18,26);
+    ctx.fillStyle=d>0?'#f87171':(d===0?'#fbbf24':'#94a3b8');
+    ctx.fillText('Δ = '+fmt(d)+'：'+(d>0?'两个交点':(d===0?'相切（一个）':'无交点')),W-215,26);
+  }
+  function term2(v){return v<0?'− '+fmt(-v):'+ '+fmt(v);}
+  function loop(){
+    if(!playing)return;
+    cv0+=0.025*dir;
+    if(cv0>=2.5){cv0=2.5;dir=-1;}
+    if(cv0<=-3.5){cv0=-3.5;dir=1;}
+    draw(cv0);
+    requestAnimationFrame(loop);
+  }
+  window.playDiscr=function(btn){
+    if(playing){playing=false;btn.textContent='▶ 连续演示 Δ 变化';return;}
+    playing=true;btn.textContent='⏸ 暂停';loop();
+  };
+  window.setDiscr=function(v){playing=false;const b=document.querySelector('.anim-controls [onclick^="playDiscr"]');if(b)b.textContent='▶ 连续演示 Δ 变化';draw(v);};
+  draw(1);
 })();
 </script>
 </body>

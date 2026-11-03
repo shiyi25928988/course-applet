@@ -11,9 +11,22 @@
     </div>
 </aside>
 <main class="main">
-<div c</ul><div style="padding:16px 0;margin-top:8px;border-top:1px solid var(--border);">
-      <a href="index.html" class="back-subject">📂 代数目录</a>
-    </div>"page-title">第6章 一次函数与反比例函数</div>
+<div class="topbar">
+  <div class="breadcrumb">
+    <a href="../../index.html">🏠 首页</a><span>›</span>
+    <a href="../index.html">📂 初中数学</a><span>›</span>
+    <a href="index.html">📊 代数</a><span>›</span>
+    <span>第6章 一次函数与反比例函数</span>
+  </div>
+  <div class="spacer"></div>
+  <div class="subject-switch">
+    <a href="../../chinese/index.html">语文</a>
+    <a href="../index.html" class="active">数学</a>
+    <a href="../../physics/index.html">物理</a>
+    <a href="../../chemistry/index.html">化学</a>
+  </div>
+</div>
+<div class="page-title">第6章 一次函数与反比例函数</div>
 
 <h2 id="sec1">6.1 正比例函数 y = kx (k≠0)</h2>
 <div class="kp"><h3>图像与性质</h3>
@@ -29,7 +42,9 @@
 <button onclick="drawProp(0.5)">k=0.5</button>
 <button onclick="drawProp(-1)">k=-1</button>
 <button onclick="drawProp(-3)">k=-3</button>
-</div></div>
+<button onclick="playProp(this)" style="background:#2563eb;">▶ 连续演示 k 变化</button>
+</div>
+<p style="font-size:.8rem;color:var(--text-secondary);margin:6px 0 0;">k>0 直线经过一、三象限；k<0 经过二、四象限。连续动画中观察 k 由正变负时直线的旋转过程。</p></div>
 
 <h2 id="sec2">6.2 一次函数 y = kx + b (k≠0)</h2>
 <div class="keypoints-grid">
@@ -38,6 +53,18 @@
 <div class="kp"><h3>与方程不等式关系</h3><p>kx+b=0→直线与x轴交点。</p><p>kx+b>0→直线上方区域。</p><p>两直线交点→解方程组。</p></div>
 </div>
 
+<div class="anim-container"><h3 style="margin:12px 0;">🧪 一次函数 y = kx + b 探索</h3>
+<canvas id="linearCanvas" style="width:100%;max-width:680px;height:300px;"></canvas>
+<div class="anim-controls" style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+<span style="font-size:.85rem;color:#475569;">k =
+<input type="range" id="kLin" min="-4" max="4" step="0.5" value="2" oninput="drawLin()" style="vertical-align:middle;"></span>
+<span style="font-size:.85rem;color:#475569;">b =
+<input type="range" id="bLin" min="-4" max="4" step="0.5" value="-3" oninput="drawLin()" style="vertical-align:middle;"></span>
+<button onclick="playLin('b',this)">▶ 演示 b 平移</button>
+<button onclick="playLin('k',this)" style="background:#7c3aed;">▶ 演示 k 旋转</button>
+</div>
+<p style="font-size:.8rem;color:var(--text-secondary);margin-top:6px;">拖动滑块或播放动画：b 变化 → 直线整体<span style="color:#38bdf8;">上下平移</span>；k 变化 → 直线绕 (0,b) 点<span style="color:#a78bfa;">旋转</span>，k 的正负决定增减性。蓝点标出 y 轴截距 (0, b)。</p></div>
+
 <h2 id="sec3">6.3 反比例函数 y = k/x (k≠0)</h2>
 <div class="kp"><h3>图像：双曲线（两支）</h3>
 <p>k>0：图像在一、三象限，每个象限内y随x增大而<strong>减小</strong>。</p>
@@ -45,6 +72,15 @@
 <p>|k|越大，曲线离原点越远。</p>
 <p>双曲线无限接近坐标轴但<strong>永不相交</strong>（x≠0, y≠0）。</p>
 <p><strong>|k| = |xy| = 矩形面积</strong>（过曲线上一点作坐标轴垂线构成的矩形面积）。</p></div>
+
+<div class="anim-container"><h3 style="margin:12px 0;">🌀 反比例函数双曲线（动点面积演示）</h3>
+<canvas id="inverseCanvas" style="width:100%;max-width:680px;height:300px;"></canvas>
+<div class="anim-controls">
+<button onclick="drawInv(6)">k=6</button>
+<button onclick="drawInv(-6)" style="background:#7c3aed;">k=-6</button>
+<button onclick="toggleInv(this)" style="background:#2563eb;">⏸ 暂停动点</button>
+</div>
+<p style="font-size:.8rem;color:var(--text-secondary);margin-top:6px;">动点 P 沿双曲线移动，过 P 作两坐标轴的垂线：所围黄色虚线矩形面积<span style="color:#fbbf24;">恒等于 |k|</span>，与 P 的位置无关——这正是"k 的几何意义"。双曲线无限逼近坐标轴但永不相交。</p></div>
 
 <h2 id="exercises" style="margin:28px 0 16px;">📝 练习题</h2>
 <div class="exercise"><div class="question"><span class="q-num">1</span>一次函数 y=2x-3 的图像不经过第____象限。</div>
@@ -66,37 +102,141 @@
 </main></div>
 <script src="../../assets/js/common.js"></script>
 <script>
+function fmt(v){return Math.round(v*10)/10;}
+function bgGrid(ctx,W,H,ox,oy,step){
+  ctx.strokeStyle='#1e293b';ctx.lineWidth=.5;
+  for(let x=ox;x<W;x+=step){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
+  for(let x=ox;x>0;x-=step){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
+  for(let y=oy;y<H;y+=step){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
+  for(let y=oy;y>0;y-=step){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
+}
+function drawAxes(ctx,W,H,ox,oy){
+  ctx.strokeStyle='#64748b';ctx.lineWidth=2;
+  ctx.beginPath();ctx.moveTo(0,oy);ctx.lineTo(W,oy);ctx.stroke();
+  ctx.beginPath();ctx.moveTo(ox,0);ctx.lineTo(ox,H);ctx.stroke();
+  ctx.fillStyle='#94a3b8';ctx.font='12px sans-serif';
+  ctx.fillText('O',ox-15,oy+15);ctx.fillText('x',W-12,oy-8);ctx.fillText('y',ox+8,12);
+}
+
+/* ---------- 6.1 正比例函数 ---------- */
 (function(){
   const c=document.getElementById('propCanvas');if(!c)return;
   const ctx=c.getContext('2d');c.width=680;c.height=280;
   const W=680,H=280,ox=W/2,oy=H/2;
+  let playing=false,dir=1,curK=1;
   window.drawProp=function(k){
+    curK=k;
     ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
-    // Grid
-    ctx.strokeStyle='#1e293b';ctx.lineWidth=.5;
-    for(let x=ox;x<W;x+=40){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
-    for(let x=ox;x>0;x-=40){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
-    for(let y=oy;y<H;y+=40){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
-    for(let y=oy;y>0;y-=40){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
-    // Axes
-    ctx.strokeStyle='#64748b';ctx.lineWidth=2;
-    ctx.beginPath();ctx.moveTo(0,oy);ctx.lineTo(W,oy);ctx.stroke();
-    ctx.beginPath();ctx.moveTo(ox,0);ctx.lineTo(ox,H);ctx.stroke();
-    ctx.fillStyle='#94a3b8';ctx.font='12px sans-serif';
-    ctx.fillText('O',ox-15,oy+15);ctx.fillText('x',W-15,oy-8);ctx.fillText('y',ox+8,12);
-    // Line
+    bgGrid(ctx,W,H,ox,oy,40);drawAxes(ctx,W,H,ox,oy);
     ctx.strokeStyle=k>0?'#22c55e':'#ef4444';ctx.lineWidth=3;
-    ctx.beginPath();
-    for(let px=0;px<W;px++){
-      const x=(px-ox)/40,y=k*x;
-      const sy=oy-y*40;
-      if(sy>=0&&sy<=H){px===0?ctx.moveTo(px,sy):ctx.lineTo(px,sy);}
+    ctx.beginPath();let started=false;
+    for(let px=0;px<=W;px++){
+      const x=(px-ox)/40,sy=oy-k*x*40;
+      if(sy>=-20&&sy<=H+20){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}
     }
     ctx.stroke();
-    ctx.fillStyle='#fff';ctx.font='14px sans-serif';
-    ctx.fillText('y='+k+'x',W-120,oy-k*60>0?oy-k*60-10:oy-k*60+20);
+    ctx.fillStyle='#fff';ctx.font='15px sans-serif';
+    ctx.fillText('y = '+fmt(k)+'x  (k='+(k>0?'正，增函数':'负，减函数')+')',18,26);
+  };
+  function loop(){
+    if(!playing)return;
+    curK+=0.04*dir;
+    if(curK>=3){curK=3;dir=-1;}
+    if(curK<=-3){curK=-3;dir=1;}
+    drawProp(curK);
+    requestAnimationFrame(loop);
+  }
+  window.playProp=function(btn){
+    if(playing){playing=false;btn.textContent='▶ 连续演示 k 变化';return;}
+    playing=true;btn.textContent='⏸ 暂停';loop();
   };
   drawProp(1);
+})();
+
+/* ---------- 6.2 一次函数 k,b 探索 ---------- */
+(function(){
+  const c=document.getElementById('linearCanvas');if(!c)return;
+  const ctx=c.getContext('2d');c.width=680;c.height=300;
+  const W=680,H=300,ox=W/2,oy=H/2;
+  window.drawLin=function(){
+    const k=+document.getElementById('kLin').value,b=+document.getElementById('bLin').value;
+    ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+    bgGrid(ctx,W,H,ox,oy,40);drawAxes(ctx,W,H,ox,oy);
+    ctx.strokeStyle=k>0?'#22c55e':'#ef4444';ctx.lineWidth=3;
+    ctx.beginPath();let started=false;
+    for(let px=0;px<=W;px++){
+      const x=(px-ox)/40,sy=oy-(k*x+b)*40;
+      if(sy>=-30&&sy<=H+30){started?ctx.lineTo(px,sy):(ctx.moveTo(px,sy),started=true);}
+    }
+    ctx.stroke();
+    // y 截距点 (0,b)
+    ctx.fillStyle='#38bdf8';ctx.beginPath();ctx.arc(ox,oy-b*40,6,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#38bdf8';ctx.font='12px sans-serif';
+    ctx.fillText('(0,'+fmt(b)+')',ox+10,oy-b*40-8);
+    ctx.fillStyle='#fff';ctx.font='15px sans-serif';
+    const bs=b<0?'− '+fmt(-b):'+ '+fmt(b);
+    ctx.fillText('y = '+fmt(k)+'x '+bs+'   （k 越大越陡；b 是 y 轴截距）',18,26);
+  };
+  const timers={};
+  window.playLin=function(param,btn){
+    if(timers[param]){clearInterval(timers[param]);delete timers[param];
+      btn.textContent='▶ 演示 '+(param==='b'?'b 平移':'k 旋转');return;}
+    btn.textContent='⏸ 暂停';
+    const el=document.getElementById(param==='b'?'bLin':'kLin');
+    let v=+el.value,dir=1;
+    timers[param]=setInterval(()=>{
+      v+=0.03*dir;
+      if(v>=4){v=4;dir=-1;}
+      if(v<=-4){v=-4;dir=1;}
+      el.value=v;drawLin();
+    },16);
+  };
+  drawLin();
+})();
+
+/* ---------- 6.3 反比例函数动点面积 ---------- */
+(function(){
+  const c=document.getElementById('inverseCanvas');if(!c)return;
+  const ctx=c.getContext('2d');c.width=680;c.height=300;
+  const W=680,H=300,ox=W/2,oy=H/2;
+  let cur=6,gx=2.6,gdir=1,running=true;
+  function draw(){
+    ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+    bgGrid(ctx,W,H,ox,oy,40);drawAxes(ctx,W,H,ox,oy);
+    // 双曲线两支
+    [1,-1].forEach(s=>{
+      ctx.strokeStyle=cur>0?'#22c55e':'#ef4444';ctx.lineWidth=3;
+      ctx.beginPath();let started=false;
+      for(let xm=0.2;xm<=8.5;xm+=0.03){
+        const x=s*xm,y=cur/x,px=ox+x*40,py=oy-y*40;
+        if(py>=-80&&py<=H+80){started?ctx.lineTo(px,py):(ctx.moveTo(px,py),started=true);}
+      }
+      ctx.stroke();
+    });
+    // 动点 P(正半轴支)
+    const xm=gx,ym=cur/gx,px=ox+xm*40,py=oy-ym*40;
+    ctx.setLineDash([6,4]);ctx.strokeStyle='#fbbf24';ctx.lineWidth=1.5;
+    ctx.beginPath();ctx.moveTo(ox,py);ctx.lineTo(px,py);ctx.lineTo(px,oy);ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle='#f472b6';ctx.beginPath();ctx.arc(px,py,6,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#fbbf24';ctx.font='13px sans-serif';
+    ctx.fillText('|xy| = |k| = '+Math.abs(cur),Math.min(px+10,W-140),Math.max(py+(cur>0?20:-12),22));
+    ctx.fillStyle='#fff';ctx.font='15px sans-serif';
+    ctx.fillText('y = '+fmt(cur)+'/x   （P('+fmt(xm)+','+fmt(ym)+')）',18,26);
+  }
+  function tick(){
+    if(running){
+      gx+=0.02*gdir;
+      if(gx>=7.5){gx=7.5;gdir=-1;}
+      if(gx<=0.7){gx=0.7;gdir=1;}
+      draw();
+    }
+    requestAnimationFrame(tick);
+  }
+  window.drawInv=function(k){cur=k;draw();};
+  window.toggleInv=function(btn){running=!running;btn.textContent=running?'⏸ 暂停动点':'▶ 继续动点';};
+  draw();
+  requestAnimationFrame(tick);
 })();
 </script>
 </body>
