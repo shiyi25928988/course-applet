@@ -3,72 +3,392 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>第一章 集合与逻辑 · 高中数学</title>
+<title>第一章 集合与逻辑 · 高中数学 · 深度讲解</title>
 <link rel="stylesheet" href="../../assets/css/common.css">
 <style>
 .content-card { background:#fff; border-radius:14px; padding:28px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,.06); }
 .section-title { color:#7c3aed; font-size:1.3rem; margin-bottom:16px; padding-bottom:12px; border-bottom:2px solid #f5f3ff; }
-.knowledge-box { background:#faf5ff; border-left:4px solid #7c3aed; padding:16px 20px; margin:16px 0; border-radius:0 8px 8px 0; }
-.formula { background:#1e293b; color:#e2e8f0; padding:12px 20px; border-radius:8px; font-family:monospace; font-size:1.1rem; text-align:center; margin:12px 0; }
+.sub-title { color:#6d28d9; font-size:1.05rem; margin:18px 0 10px; }
+.knowledge-box { background:#faf5ff; border-left:4px solid #7c3aed; padding:16px 20px; margin:16px 0; border-radius:0 8px 8px 0; line-height:1.9; }
+.trap-box { background:#fef2f2; border-left:4px solid #ef4444; padding:14px 18px; margin:14px 0; border-radius:0 8px 8px 0; line-height:1.9; }
+.tip-box { background:#eff6ff; border-left:4px solid #3b82f6; padding:14px 18px; margin:14px 0; border-radius:0 8px 8px 0; line-height:1.9; }
+.formula { background:#1e293b; color:#e2e8f0; padding:12px 20px; border-radius:8px; font-family:monospace; font-size:1.05rem; text-align:center; margin:12px 0; line-height:1.9; }
 .back-btn { display:inline-block; padding:8px 20px; background:#e2e8f0; color:#475569; border-radius:8px; text-decoration:none; margin-bottom:20px; }
 .back-btn:hover { background:#cbd5e1; }
+table.m-table { width:100%; border-collapse:collapse; font-size:.9rem; margin:10px 0; }
+table.m-table th { background:#f5f3ff; padding:10px 12px; text-align:center; color:#5b21b6; }
+table.m-table td { padding:10px 12px; border-bottom:1px solid #ececf3; }
+table.m-table td:first-child { text-align:center; font-weight:700; color:#7c3aed; }
+.example { background:#fff; border:1px solid #e9d5ff; border-radius:10px; padding:16px 20px; margin:14px 0; line-height:1.9; }
+.example h4 { color:#7c3aed; margin-bottom:8px; }
+.example .steps { color:#475569; }
+.example .ans { color:#059669; font-weight:600; }
+.anim-box { text-align:center; }
+.anim-controls button { padding:8px 18px; margin:4px; border:none; border-radius:8px; background:#ede9fe; color:#6d28d9; font-weight:600; cursor:pointer; }
+.anim-controls button.on { background:#7c3aed; color:#fff; }
 </style>
 </head>
 <body>
-<div class="layout" style="max-width:900px; margin:0 auto; padding:20px;">
+<div class="layout" style="max-width:920px; margin:0 auto; padding:20px;">
 <a href="../index.html" class="back-btn">← 返回高中数学</a>
 
 <div class="content-card">
 <h1 style="color:#7c3aed; margin-bottom:20px;">第一章 集合与逻辑</h1>
 
-<h3 class="section-title">1.1 集合的概念与运算</h3>
 <div class="knowledge-box">
-<strong>集合的特性：</strong>确定性、互异性、无序性
-</div>
-<div class="knowledge-box">
-<strong>集合的表示法：</strong>列举法、描述法、图示法（Venn图）
-<br>
-<br>常见数集：N（自然数集）、N*或N₊（正整数集）、Z（整数集）、Q（有理数集）、R（实数集）
-</div>
-<div class="knowledge-box">
-<strong>集合与元素的关系：</strong>
-<br>属于：a ∈ A
-<br>不属于：a ∉ A
-</div>
-<div class="knowledge-box">
-<strong>集合间的基本关系：</strong>
-<br>子集：A ⊆ B 或 B ⊇ A
-<br>真子集：A ⫋ B
-<br>空集：∅，空集是任何集合的子集
-<br>若集合A有n个元素，则子集个数2ⁿ，真子集个数2ⁿ - 1
+<strong>🎯 学习目标：</strong>
+<br>① 深刻理解集合三大特性，会用"互异性"解参数题
+<br>② 熟练进行交、并、补运算，会用 Venn 图把问题"翻译"成图形
+<br>③ 掌握 4 组等价关系（A ⊆ B ⇔ A∩B=A ⇔ A∪B=B ⇔ ∁ᴜB ⊆ ∁ᴜA）
+<br>④ 会判断充分/必要/充要条件，掌握"条件集合化"的解题套路
+<br>⑤ 正确写出含量词命题的否定（区分"否命题"与"命题的否定"）
 </div>
 
-<h3 class="section-title">1.2 集合的基本运算</h3>
+<h3 class="section-title">1.1 集合的概念</h3>
+<div class="knowledge-box">
+<strong>三大特性（每个都要会"用"而不只是"背"）：</strong>
+<br>① <strong>确定性：</strong>给定一个集合，任何元素"属于/不属于"有且只有一个答案。"个子高的同学"不是集合，"身高&gt;180cm 的同学"才是。
+<br>② <strong>互异性：</strong>同一集合中元素互不相同——<strong>解出参数后必须回代检验</strong>。
+<br>③ <strong>无序性：</strong>{1,2,3} 与 {3,2,1} 是同一个集合。
+</div>
+<div class="knowledge-box">
+<strong>集合的表示法：</strong>
+<br>① 列举法：{1, 2, 3}；② 描述法：{x | x² − 3x + 2 = 0}；③ 图示法（Venn 图 / 数轴）；④ 区间法：[1, 5)、(−∞, +∞)
+<br><br><strong>常见数集字母：</strong>
+<table class="m-table">
+<tr><th style="width:15%;">记号</th><th>含义</th><th style="width:30%;">易错点</th></tr>
+<tr><td>ℕ</td><td>自然数集（含 0）</td><td>0 ∈ ℕ</td></tr>
+<tr><td>ℕ* 或 ℕ₊</td><td>正整数集</td><td>0 ∉ ℕ*</td></tr>
+<tr><td>ℤ</td><td>整数集</td><td>−2 ∈ ℤ</td></tr>
+<tr><td>ℚ</td><td>有理数集</td><td>½ ∈ ℚ，π ∉ ℚ</td></tr>
+<tr><td>ℝ</td><td>实数集</td><td>√2 ∈ ℝ</td></tr>
+</table>
+</div>
+<div class="trap-box">
+<strong>⚠ 描述法的"代表元"辨析（高频考点）：</strong>
+<table class="m-table">
+<tr><th style="width:40%;">集合</th><th>本质</th></tr>
+<tr><td>A = {x | y = x²}</td><td><strong>数集</strong>＝全体实数 x 的函数取值范围 = ℝ</td></tr>
+<tr><td>B = {y | y = x², x∈ℝ}</td><td><strong>数集</strong>＝函数值域 = [0, +∞)<br>（注意 A 与 B 不同！）</td></tr>
+<tr><td>C = {(x, y) | y = x²}</td><td><strong>点集</strong>＝抛物线上的所有点</td></tr>
+</table>
+代表元是什么元素（x、y 还是点 (x,y)），集合就是"什么集合"。
+</div>
+
+<h3 class="section-title">1.2 集合间的基本关系</h3>
+<div class="knowledge-box">
+<strong>关系与记号：</strong>
+<br>子集 A ⊆ B：A 的元素全部在 B 中（含相等）；真子集 A ⫋ B：A ⊆ B 且 A ≠ B
+<br>相等 A = B ⇔ A ⊆ B 且 B ⊆ A
+<br><strong>空集 ∅ 是任何集合的子集，是非空集合的真子集</strong>（解题先想"有没有可能是空集"）
+<br><br><strong>元素个数公式：</strong>若 A 中有 n 个元素，则 ——
+<div class="formula">子集 2ⁿ 个 ； 真子集 2ⁿ−1 个 ； 非空真子集 2ⁿ−2 个</div>
+例：A = {1, 2, 3}，n = 3 → 子集 8 个，真子集 7 个，非空真子集 6 个。
+</div>
+
+<h3 class="section-title">1.3 集合的运算 + 德摩根律</h3>
 <div class="formula">
-并集：A ∪ B = {x | x ∈ A 或 x ∈ B}
-<br>交集：A ∩ B = {x | x ∈ A 且 x ∈ B}
-<br>补集：∁<sub>U</sub>A = {x | x ∈ U 且 x ∉ A}
+交集 A ∩ B = {x | x ∈ A 且 x ∈ B}　　并集 A ∪ B = {x | x ∈ A 或 x ∈ B}<br>
+补集 ∁ᴜA = {x | x ∈ U 且 x ∉ A}　　德摩根律：∁ᴜ(A∪B) = ∁ᴜA ∩ ∁ᴜB，∁ᴜ(A∩B) = ∁ᴜA ∪ ∁ᴜB
 </div>
-<div class="knowledge-box">
-<strong>运算性质：</strong>
-<br>A ∩ A = A，A ∩ ∅ = ∅
-<br>A ∪ A = A，A ∪ ∅ = A
-<br>A ∩ ∁<sub>U</sub>A = ∅，A ∪ ∁<sub>U</sub>A = U
-<br>∁<sub>U</sub>(∁<sub>U</sub>A) = A
+<div class="tip-box">
+<strong>💡 三组最重要的等价关系（高考选择题秒杀用）：</strong>
+<table class="m-table">
+<tr><th>数学命题</th><th>等价的集合说法</th></tr>
+<tr><td>A ∩ B = A</td><td>A ⊆ B</td></tr>
+<tr><td>A ∪ B = B</td><td>A ⊆ B</td></tr>
+<tr><td>A ∩ B = ∅</td><td>A、B 无公共元素（可解端点问题）</td></tr>
+</table>
+<strong>口诀："交半取小、并半取大"（对连续型集合在数轴上）。</strong>
 </div>
 
-<h3 class="section-title">1.3 常用逻辑用语</h3>
+<div class="content-card anim-box" style="padding:20px;">
+<h3 class="section-title" style="margin-bottom:10px;">🎬 Venn 图运算动画（点击切换模式）</h3>
+<canvas id="vennCanvas" style="width:100%;max-width:640px;height:300px;"></canvas>
+<div class="anim-controls">
+<button id="btNone" class="on" onclick="setMode('none')">仅标记</button>
+<button id="btInter" onclick="setMode('inter')">A ∩ B</button>
+<button id="btUnion" onclick="setMode('union')">A ∪ B</button>
+<button id="btComp" onclick="setMode('comp')">∁ᴜA</button>
+<button id="btSub" onclick="setMode('sub')">A ⊆ B</button>
+</div>
+<p id="vennCap" style="font-size:.88rem;color:#475569;margin-top:8px;"></p>
+</div>
+
+<h3 class="section-title">1.4 常用逻辑用语</h3>
 <div class="knowledge-box">
-<strong>充分条件与必要条件：</strong>
-<br>若 p ⇒ q，则p是q的充分条件，q是p的必要条件
-<br>若 p ⇔ q，则p是q的充要条件
+<strong>充分 / 必要条件的判断：</strong>
+<br>p ⇒ q（由 p 能推出 q）：p 是 q 的<strong>充分</strong>条件，q 是 p 的<strong>必要</strong>条件
+<br>p ⇔ q：充要条件
+<br><br><strong>记忆口诀："箭头指着谁，谁就是必要；箭头的出发点就是充分。"</strong>
+<br><br><strong>条件集合化（秒杀技巧）：</strong>
+<p>设 p、q 对应的数集分别为 P、Q：</p>
+<table class="m-table">
+<tr><th>关系</th><th>集合解释</th></tr>
+<tr><td>p 是 q 的充分不必要条件</td><td>P ⫋ Q（P 是 Q 的真子集）</td></tr>
+<tr><td>p 是 q 的必要不充分条件</td><td>Q ⫋ P</td></tr>
+<tr><td>p 是 q 的充要条件</td><td>P = Q</td></tr>
+<tr><td>p 既不充分也不必要</td><td>P、Q 互不包含</td></tr>
+</table>
+"小范围推出大范围"——记住它，参数取值范围的反向问题（"求 r 使它是充分不必要条件"）就变成子集求参数。
 </div>
-<div class="knowledge-box">
-<strong>全称量词与存在量词：</strong>
-<br>全称命题：∀x ∈ M，p(x)，否定：∃x ∈ M，¬p(x)
-<br>特称命题：∃x ∈ M，p(x)，否定：∀x ∈ M，¬p(x)
+<div class="trap-box">
+<strong>⚠ "命题的否定" ≠ "否命题"：</strong>
+<br>设原命题"若 p，则 q"：
+<br>① <strong>否命题</strong>（既否条件又否结论）：若 ¬p，则 ¬q
+<br>② <strong>命题的否定</strong>（只否整个命题）：¬(若 p 则 q) ⇔ 若 p，则 ¬q
+<br><strong>量词否定的翻转规则：</strong>∀ ↔ ∃，结论同时取反。
+<div class="formula">¬(∀x∈M, p(x)) = ∃x∈M, ¬p(x)　　¬(∃x∈M, p(x)) = ∀x∈M, ¬p(x)</div>
+</div>
+
+<h3 class="section-title">1.5 典型例题精讲</h3>
+
+<div class="example">
+<h4>例 1【空集陷阱】 ★★★</h4>
+<p>设 A = {x | x² − 3x + 2 = 0}，B = {x | ax − 1 = 0}。若 B ⊆ A，求实数 a 的值。</p>
+<div class="steps">
+<br>A = {1, 2}。B 可能为空集吗？——<strong>第一步必须先讨论它是否为空集！</strong>
+<br>① a = 0 时，ax − 1 = 0 无解，B = ∅ ⊆ A ✓
+<br>② a ≠ 0 时，B = {1/a}。要 1/a ∈ {1, 2} → a = 1 或 a = ½
+<br>综上：<span class="ans">a = 0 或 a = 1 或 a = ½</span>
+</div>
+<div class="trap-box" style="margin-bottom:0;">
+<strong>⚠ 易错：</strong>漏掉 a = 0（B = ∅ 这一支）——B 中方程"是不是一次方程"取决于 a，B 可能是空集。
 </div>
 </div>
+
+<div class="example">
+<h4>例 2【互异性检验】 ★★★</h4>
+<p>已知 A = {1, 3, x}，B = {1, x²}，且 B ⊆ A。求 x。</p>
+<div class="steps">
+<br>B ⊆ A → x² ∈ {1, 3, x}，分类：
+<br>① x² = 1 → x = ±1。x = 1 时 A = {1, 3, 1} ✗（违反互异性）；x = −1 时 A = {1, 3, −1} ✓，B = {1} ✓
+<br>② x² = 3 → x = ±√3 ✓（A = {1, 3, ±√3}，B = {1, 3}）
+<br>③ x² = x → x = 0（x = 1 舍，同上违反互异性）
+<br>综上：<span class="ans">x = −1 或 x = 0 或 x = ±√3</span>
 </div>
+<div class="tip-box" style="margin-bottom:0;">
+<strong>💡 方法总结：</strong>含参数集合问题"三步曲"——解参数 → 代入检验互异性 → 写答案。
+</div>
+</div>
+
+<div class="example">
+<h4>例 3【条件集合化】 ★★★</h4>
+<p>"x &gt; 1" 是 "x &gt; 2" 的什么条件？</p>
+<div class="steps">
+<br>联想到集合：P = (1, +∞)，Q = (2, +∞)。显然 Q ⫋ P（小范围推大范围：x &gt; 2 一定满足 x &gt; 1，反之不然）。
+<br>所以"∀x：p⇒q 成立"的方向要看小推向大：<strong>P ⫋ Q → p 是 q 的必要不充分条件</strong>。
+<br><span class="ans">"x &gt; 1" 是 "x &gt; 2" 的必要不充分条件</span>
+</div>
+<div class="tip-box" style="margin-bottom:0;">
+<strong>💡 记忆：</strong>谁的"许可范围"更大，谁就更"必要"。口袋里装 100 元（p，宽）是"能买 50 元书"（q，严）的必要不充分条件——钱多不一定买，但买书一定要钱够。
+</div>
+</div>
+
+<div class="example">
+<h4>例 4【点集运算】 ★★</h4>
+<p>设 A = {(x, y) | y = x²}，B = {(x, y) | y = x}。求 A ∩ B。</p>
+<div class="steps">
+<br>点集交点 = 两条曲线的公共点：联立 y = x² 与 y = x → x² = x → x = 0 或 x = 1。
+<br><span class="ans">A ∩ B = {(0, 0), (1, 1)}</span>
+<br>注意结果仍为<strong>点集</strong>（写成 (x,y) 坐标，而不是数）。
+</div>
+</div>
+
+<div class="example">
+<h4>例 5【量词否定改写】 ★★★</h4>
+<p>写出下列命题的否定：</p>
+<div class="steps">
+<br>① p：∀x ∈ ℝ，x² + 2x + 1 ≥ 0
+<br>¬p：<span class="ans">∃x ∈ ℝ，x² + 2x + 1 &lt; 0</span>（全称 → 存在，≥ 取反为 &lt;）
+<br>② 若 q："∃x ∈ ℝ，x² − 6 = 0"（存在性命题），则
+<br>¬q：<span class="ans">∀x ∈ ℝ，x² − 6 ≠ 0</span>（存在 → 全称，等式取反为不等）
+</div>
+<div class="trap-box" style="margin-bottom:0;">
+<strong>⚠ 易错：</strong>否定"≥"时必须同时翻转量词；只翻量词或只翻结论都不完整。
+</div>
+</div>
+
+<h3 class="section-title">📝 章节练习题</h3>
+<div class="exercise"><div class="question"><span class="q-num">1</span>集合 {y | y = x², x ∈ {−1, 0, 1}} 等于____。</div>
+<div class="options">
+<label><input type="radio" name="q1" value="A">A. {−1, 0, 1}</label>
+<label><input type="radio" name="q1" value="B">B. {0, 1}</label>
+<label><input type="radio" name="q1" value="C">C. {1}</label>
+<label><input type="radio" name="q1" value="D">D. {(−1,1),(0,0),(1,1)}</label></div>
+<button class="answer-btn" onclick="showAnswer(1)">查看答案</button>
+<div class="answer" id="answer-1" data-correct="B">✅ B。代表元是 y（数），x 取遍 {−1,0,1} 时 y = x² 只能取 0 和 1，所以集合 = {0, 1}。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">2</span>满足 {1, 2} ⊆ A ⫋ {1, 2, 3} 的集合 A 的个数为____。</div>
+<div class="options">
+<label><input type="radio" name="q2" value="A">A. 1</label>
+<label><input type="radio" name="q2" value="B">B. 2</label>
+<label><input type="radio" name="q2" value="C">C. 3</label>
+<label><input type="radio" name="q2" value="D">D. 4</label></div>
+<button class="answer-btn" onclick="showAnswer(2)">查看答案</button>
+<div class="answer" id="answer-2" data-correct="A">✅ A。A 必须包含 {1,2}，又必须是 {1,2,3} 的真子集（不能等于它），只有 A = {1, 2} 一个。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">3</span>设 A = {x | 1 ≤ x ≤ 3}，B = {x | x ≤ a}。若 A ∪ B = B，则 a 的取值范围是____。</div>
+<div class="options">
+<label><input type="radio" name="q3" value="A">A. a ≥ 3</label>
+<label><input type="radio" name="q3" value="B">B. a &gt; 3</label>
+<label><input type="radio" name="q3" value="C">C. a ≤ 3</label>
+<label><input type="radio" name="q3" value="D">D. a &lt; 3</label></div>
+<button class="answer-btn" onclick="showAnswer(3)">查看答案</button>
+<div class="answer" id="answer-3" data-correct="A">✅ A。A ∪ B = B ⇔ A ⊆ B，数轴上 [1,3] 要落在 (−∞,a] 内，右端点须 a ≥ 3（等号成立：(−∞,3] ⊇ [1,3] ✓）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">4</span>已知 U = {1, 2, 3, 4, 5}，A = {1, 2}，B = {2, 3}，则 ∁ᴜ(A ∪ B) = ____。</div>
+<div class="options">
+<label><input type="radio" name="q4" value="A">A. {4, 5}</label>
+<label><input type="radio" name="q4" value="B">B. {1, 3}</label>
+<label><input type="radio" name="q4" value="C">C. {2}</label>
+<label><input type="radio" name="q4" value="D">D. {3, 4}</label></div>
+<button class="answer-btn" onclick="showAnswer(4)">查看答案</button>
+<div class="answer" id="answer-4" data-correct="A">✅ A。A ∪ B = {1, 2, 3}，在 U 中取补得 {4, 5}。也可用德摩根律：∁ᴜA ∩ ∁ᴜB = {3,4,5} ∩ {1,4,5} = {4,5}。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">5</span>"x &gt; 2" 是 "x² &gt; 4" 的____条件。</div>
+<div class="options">
+<label><input type="radio" name="q5" value="A">A. 充分不必要</label>
+<label><input type="radio" name="q5" value="B">B. 必要不充分</label>
+<label><input type="radio" name="q5" value="C">C. 充要</label>
+<label><input type="radio" name="q5" value="D">D. 既不充分也不必要</label></div>
+<button class="answer-btn" onclick="showAnswer(5)">查看答案</button>
+<div class="answer" id="answer-5" data-correct="A">✅ A。x &gt; 2 ⇒ x² &gt; 4 成立；x² &gt; 4 ⇔ x &lt; −2 或 x &gt; 2，推不出 x &gt; 2（还有 x &lt; −2）。（2,+∞) ⫋ (−∞,−2)∪(2,+∞)，真子集 → 充分不必要。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">6</span>命题 p："存在 x ∈ ℝ，x² &lt; 0"的否定是____。</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A">A. 不存在 x ∈ ℝ，x² &lt; 0</label>
+<label><input type="radio" name="q6" value="B">B. 对任意的 x ∈ ℝ，x² ≥ 0</label>
+<label><input type="radio" name="q6" value="C">C. 对任意的 x ∈ ℝ，x² &lt; 0</label>
+<label><input type="radio" name="q6" value="D">D. 存在 x ∈ ℝ，x² ≥ 0</label></div>
+<button class="answer-btn" onclick="showAnswer(6)">查看答案</button>
+<div class="answer" id="answer-6" data-correct="B">✅ B。量词翻转 ∃→∀ 且结论取反 &lt; → ≥，规范写法："对任意的 x ∈ ℝ，x² ≥ 0"。A 只是口语版（C 只翻结论、D 只翻量词，都不完整）。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">7</span>"A = B" 是 "A ∩ B = A" 的____条件。</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A">A. 充分不必要</label>
+<label><input type="radio" name="q7" value="B">B. 必要不充分</label>
+<label><input type="radio" name="q7" value="C">C. 充要</label>
+<label><input type="radio" name="q7" value="D">D. 既不充分也不必要</label></div>
+<button class="answer-btn" onclick="showAnswer(7)">查看答案</button>
+<div class="answer" id="answer-7" data-correct="B">✅ B。A = B ⇒ A ∩ B = A ✓；但 A ∩ B = A 只能得 A ⊆ B（如 A={1}, B={1,2}），推不出 A = B。所以是必要不充分条件。</div></div>
+
+<div class="exercise"><div class="question"><span class="q-num">8</span>已知集合 A、B 非空。则"A ∩ B = A" 是 "A ⊆ B" 的____条件。</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A">A. 充分不必要</label>
+<label><input type="radio" name="q8" value="B">B. 必要不充分</label>
+<label><input type="radio" name="q8" value="C">C. 充要</label>
+<label><input type="radio" name="q8" value="D">D. 既不充分也不必要</label></div>
+<button class="answer-btn" onclick="showAnswer(8)">查看答案</button>
+<div class="answer" id="answer-8" data-correct="C">✅ C。正向：A ∩ B = A ⇒ A 的元素全在 B 中 ⇒ A ⊆ B；反向：A ⊆ B ⇒ A ∩ B = A。两个方向都成立 → 充要条件（这正是 1.3 节三组等价关系的第一条）。</div></div>
+
+</div>
+
+<script src="../../assets/js/common.js"></script>
+<script>
+(function(){
+  const c=document.getElementById('vennCanvas');if(!c)return;
+  const ctx=c.getContext('2d');
+  c.width=640;c.height=300;
+  const W=640,H=300;
+  let mode='none';
+  let prog=1;   // 动画进度 0→1
+  const caps={
+    none:'全集 U 内两个集合：A（左，紫）与 B（右，蓝）。先记住两组圆的相对位置。',
+    inter:'A ∩ B（交集）：只有两个圆重叠的"梭形"区域同时属于 A 和 B。口诀：交取公共。',
+    union:'A ∪ B（并集）：两个圆的所有区域合并（重叠部分只算一次）。口诀：并取全体。',
+    comp:'∁ᴜA（补集）：全集 U 内、A 以外的区域。注意 A 自身被"挖掉"。',
+    sub:'A ⊆ B（子集）：A 整个缩进 B 内部，A 的元素全在 B 里。A = B 时取到等号（两圆重合）。'
+  };
+  function draw(t){
+    ctx.clearRect(0,0,W,H);
+    const sub=mode==='sub';
+    // 全集
+    ctx.fillStyle='#f8fafc';ctx.fillRect(0,0,W,H);
+    ctx.strokeStyle='#94a3b8';ctx.lineWidth=2;
+    ctx.strokeRect(6,6,W-12,H-12);
+    ctx.fillStyle='#64748b';ctx.font='13px sans-serif';
+    ctx.fillText('U',W-28,26);
+    if(sub){
+      // A 缩进 B 内
+      const cx=320,cy=160;
+      // B
+      ctx.beginPath();ctx.arc(cx,cy,120,0,Math.PI*2);
+      ctx.fillStyle='rgba(37,99,235,.18)';ctx.fill();
+      ctx.strokeStyle='#2563eb';ctx.lineWidth=3;ctx.stroke();
+      // A
+      const r=60*Math.min(1,t);
+      ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);
+      ctx.fillStyle='rgba(124,58,237,.35)';ctx.fill();
+      ctx.strokeStyle='#7c3aed';ctx.lineWidth=3;ctx.stroke();
+      ctx.fillStyle='#1d4ed8';ctx.font='bold 15px sans-serif';ctx.fillText('B',cx+120-16,cy-124+22);
+      ctx.fillStyle='#7c3aed';ctx.fillText('A',cx-8,cy-2);
+      ctx.fillStyle='#92400e';ctx.font='13px sans-serif';
+      ctx.fillText('A 的元素全部落进 B：A ⊆ B',220,52);
+    }else{
+      const ax=250,bx=395,cy=160,r=95;
+      // 高亮区域
+      if(mode==='comp'){
+        ctx.fillStyle='rgba(245,158,11,.25)';
+        ctx.fillRect(7,7,W-14,H-14);
+      }
+      if(mode==='inter'&&t>0){
+        ctx.save();ctx.beginPath();ctx.globalAlpha=Math.min(1,t);
+        ctx.arc(ax,cy,r,0,Math.PI*2);ctx.clip();
+        ctx.beginPath();ctx.arc(bx,cy,r,0,Math.PI*2);
+        ctx.fillStyle='rgba(16,185,129,.4)';ctx.fill();
+        ctx.restore();
+      }
+      if(mode==='union'&&t>0){
+        ctx.globalAlpha=Math.min(1,t);
+        ctx.beginPath();ctx.arc(ax,cy,r,0,Math.PI*2);
+        ctx.fillStyle='rgba(124,58,237,.25)';ctx.fill();
+        ctx.beginPath();ctx.arc(bx,cy,r,0,Math.PI*2);
+        ctx.fillStyle='rgba(37,99,235,.25)';ctx.fill();
+        ctx.save();ctx.beginPath();ctx.arc(ax,cy,r,0,Math.PI*2);ctx.clip();
+        ctx.beginPath();ctx.arc(bx,cy,r,0,Math.PI*2);
+        ctx.fillStyle='rgba(16,185,129,.3)';ctx.fill();ctx.restore();
+        ctx.globalAlpha=1;
+      }
+      // 圆 A / B 轮廓
+      ctx.globalAlpha=Math.min(1,sub?1:t);
+      ctx.beginPath();ctx.arc(ax,cy,r,0,Math.PI*2);
+      if(mode==='comp'){ctx.fillStyle='#f8fafc';ctx.fill();}
+      else{ctx.fillStyle='rgba(124,58,237,.2)';ctx.fill();}
+      ctx.strokeStyle='#7c3aed';ctx.lineWidth=3;ctx.stroke();
+      ctx.beginPath();ctx.arc(bx,cy,r,0,Math.PI*2);
+      ctx.fillStyle='rgba(37,99,235,.15)';ctx.fill();
+      ctx.strokeStyle='#2563eb';ctx.stroke();
+      ctx.globalAlpha=1;
+      ctx.fillStyle='#7c3aed';ctx.font='bold 16px sans-serif';ctx.fillText('A',ax-70,cy-4);
+      ctx.fillStyle='#1d4ed8';ctx.fillText('B',bx+58,cy-4);
+      // 说明注记
+      ctx.fillStyle='#475569';ctx.font='13px sans-serif';
+      const notes={
+        none:'两个圆的公共部分（梭形）就是 A∩B 的候选区域',
+        inter:'绿色重叠区 = A∩B（既是 A 的又是 B 的）',
+        union:'紫+蓝 = A∪B，绿色区只算一次（属于 A 又属于 B）',
+        comp:'橙色区域减去 A = ∁ᴜA；注意 A 内部是空白'
+      };
+      ctx.fillText(notes[mode]||'',160,56);
+    }
+    document.getElementById('vennCap').textContent=caps[mode];
+  }
+  window.setMode=function(m){
+    mode=m;prog=0;
+    ['None','Inter','Union','Comp','Sub'].forEach(k=>{
+      const b=document.getElementById('bt'+k);
+      if(b)b.classList.toggle('on',k.toLowerCase()===m);
+    });
+  };
+  setMode('none');
+  // 动画循环：切换模式后进度 0→1，高亮区域淡入
+  (function tick(){
+    if(prog<1)prog=Math.min(1,prog+0.03);
+    draw(prog);
+    requestAnimationFrame(tick);
+  })();
+})();
+</script>
 </body>
 </html>
