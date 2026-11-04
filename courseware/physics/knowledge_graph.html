@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>初中物理知识图谱 · 原型</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<style>
+.container{max-width:1060px;margin:0 auto;padding:24px 16px;}
+.back-links{margin-bottom:16px;display:flex;gap:12px;flex-wrap:wrap;}
+.back-links a{display:inline-flex;align-items:center;padding:9px 16px;border-radius:8px;
+  background:linear-gradient(135deg,#0369a1,#2563eb);color:#fff !important;text-decoration:none;
+  font-size:.85rem;font-weight:500;box-shadow:0 2px 8px rgba(37,99,235,.2);}
+.kg-hero{background:linear-gradient(135deg,#075985,#0ea5e9);color:#fff;border-radius:16px;padding:26px 24px;margin-bottom:20px;}
+.kg-hero h1{font-size:1.55rem;margin-bottom:6px;}
+.kg-hero p{opacity:.92;font-size:.92rem;line-height:1.7;}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:#475569;margin:10px 0 14px;}
+.legend span{display:inline-flex;align-items:center;gap:6px;}
+.sw{display:inline-block;width:26px;height:3px;border-radius:2px;}
+.kg-wrap{background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.07);padding:10px;overflow:auto;}
+#kgSvg{display:block;}
+.kg-tip{font-size:.82rem;color:#64748b;margin-top:10px;line-height:1.8;}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back-links">
+  <a href="index.html">← 返回初中物理</a>
+  <a href="../index.html">← 返回首页</a>
+</div>
+
+<div class="kg-hero">
+  <h1>🧠 初中物理知识图谱（原型）</h1>
+  <p>按教材章节从左到右分层布局。节点 = 教材小节，点击可直达对应章节页的讲解锚点；箭头 = 知识依赖（先学什么才能学什么）。</p>
+</div>
+
+<div class="legend">
+  <span><span class="sw" style="background:#334155;"></span>基础衔接（同章顺序）</span>
+  <span><span class="sw" style="background:#0d9488;"></span><b style="color:#0d9488;">关键跃迁</b>（核心公式依赖）</span>
+  <span><span class="sw" style="background:#94a3b8;background-image:repeating-linear-gradient(90deg,#94a3b8 0 4px,transparent 4px 7px);"></span>应用拓展</span>
+</div>
+
+<div class="kg-wrap">
+  <svg id="kgSvg" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+<p class="kg-tip">💡 鼠标悬停节点 → 高亮相关依赖线；点击节点 → 打开对应章节讲解。<b>原型阶段数据暂内嵌于本页，定稿后将迁移到 assets/data/ 并扩展数学、化学两科。</b></p>
+</div>
+
+<script>
+// ================= 数据（原型内嵌） =================
+const CHAPTERS=[
+ {id:'ch1',name:'第1章 声',pub:'八上',file:'ch01_sound.html',color:'#7c3aed'},
+ {id:'ch2',name:'第2章 光',pub:'八上',file:'ch02_light.html',color:'#a855f7'},
+ {id:'ch3',name:'第3章 运动和力',pub:'八下',file:'ch03_motion_force.html',color:'#d97706'},
+ {id:'ch4',name:'第4章 机械和功',pub:'八下',file:'ch04_work_machines.html',color:'#ea580c'},
+ {id:'ch5',name:'第5章 热与能',pub:'八下',file:'ch05_heat_energy.html',color:'#dc2626'},
+ {id:'ch6',name:'第6章 压力与压强',pub:'九上',file:'ch06_pressure.html',color:'#0d9488'},
+ {id:'ch7',name:'第7章 电路',pub:'九上',file:'ch07_circuits.html',color:'#2563eb'},
+ {id:'ch8',name:'第8章 电与磁',pub:'九上',file:'ch08_electricity_magnetism.html',color:'#1d4ed8'},
+ {id:'ch9',name:'第9章 原子与宇宙',pub:'九下',file:'ch09_atom_universe.html',color:'#0369a1'},
+];
+const NODES=[
+ {id:'n11',ch:'ch1',label:'1.1 声波的产生和传播'},
+ {id:'n12',ch:'ch1',label:'1.2 声音的特征'},
+ {id:'n21',ch:'ch2',label:'2.1 光的反射·平面镜'},
+ {id:'n22',ch:'ch2',label:'2.2 光的折射'},
+ {id:'n23',ch:'ch2',label:'2.3 透镜成像'},
+ {id:'n31',ch:'ch3',label:'3.1 机械运动'},
+ {id:'n32',ch:'ch3',label:'3.2 匀速直线运动'},
+ {id:'n33',ch:'ch3',label:'3.3 平均速度'},
+ {id:'n34',ch:'ch3',label:'3.4 力·力的图示'},
+ {id:'n41',ch:'ch4',label:'4.1 机械能'},
+ {id:'n42',ch:'ch4',label:'4.2 机械功与功率'},
+ {id:'n43',ch:'ch4',label:'4.3 简单机械'},
+ {id:'n44',ch:'ch4',label:'4.4 机械效率'},
+ {id:'n51',ch:'ch5',label:'5.1 温度与温标'},
+ {id:'n52',ch:'ch5',label:'5.2 物态变化'},
+ {id:'n53',ch:'ch5',label:'5.3 热量与比热容'},
+ {id:'n54',ch:'ch5',label:'5.4 内能'},
+ {id:'n55',ch:'ch5',label:'5.5 热机'},
+ {id:'n61',ch:'ch6',label:'6.1 密度'},
+ {id:'n62',ch:'ch6',label:'6.2 阿基米德·浮力'},
+ {id:'n63',ch:'ch6',label:'6.3 压强'},
+ {id:'n64',ch:'ch6',label:'6.4 液体压强'},
+ {id:'n65',ch:'ch6',label:'6.5 大气压强'},
+ {id:'n66',ch:'ch6',label:'6.6 流体压强与流速'},
+ {id:'n71',ch:'ch7',label:'7.1 电荷与摩擦起电'},
+ {id:'n72',ch:'ch7',label:'7.2 电流与电压'},
+ {id:'n73',ch:'ch7',label:'7.3 欧姆定律'},
+ {id:'n74',ch:'ch7',label:'7.4 串联电路'},
+ {id:'n75',ch:'ch7',label:'7.5 并联电路'},
+ {id:'n76',ch:'ch7',label:'7.6 电路故障'},
+ {id:'n77',ch:'ch7',label:'7.7 串并联识别'},
+ {id:'n81',ch:'ch8',label:'8.1 电功率·焦耳定律'},
+ {id:'n82',ch:'ch8',label:'8.2 电流的磁场'},
+ {id:'n83',ch:'ch8',label:'8.3 电能的输送'},
+ {id:'n91',ch:'ch9',label:'9.1 原子·核能'},
+ {id:'n92',ch:'ch9',label:'9.2 地球与太阳系'},
+];
+// sec 锚点：节点 → 章节页锚点
+const SECMAP={'n11':'#sec1-1','n12':'#sec1-2','n21':'#sec2-1','n22':'#sec2-2','n23':'#sec2-3','n31':'#sec3-1','n32':'#sec3-2','n33':'#sec3-3','n34':'#sec3-4','n41':'#sec4-1','n42':'#sec4-2','n43':'#sec4-3','n44':'#sec4-4','n51':'#sec5-1','n52':'#sec5-2','n53':'#sec5-3','n54':'#sec5-4','n55':'#sec5-5','n61':'#sec6-1','n62':'#sec6-2','n63':'#sec6-3','n64':'#sec6-4','n65':'#sec6-5','n66':'#sec6-6','n71':'#sec7-1','n72':'#sec7-2','n73':'#sec7-3','n74':'#sec7-4','n75':'#sec7-5','n76':'#sec7-6','n77':'#sec7-7','n81':'#sec8-1','n82':'#sec8-2','n83':'#sec8-3','n91':'#sec9-1','n92':'#sec9-2'};
+const EDGES=[
+ {f:'n11',t:'n12',k:'base'},
+ {f:'n31',t:'n32',k:'base'},{f:'n32',t:'n33',k:'base'},
+ {f:'n34',t:'n43',k:'adv'},
+ {f:'n34',t:'n63',k:'adv'},
+ {f:'n41',t:'n42',k:'key'},{f:'n42',t:'n43',k:'base'},{f:'n43',t:'n44',k:'base'},
+ {f:'n41',t:'n54',k:'adv'},
+ {f:'n51',t:'n52',k:'base'},
+ {f:'n53',t:'n54',k:'base'},{f:'n54',t:'n55',k:'key'},
+ {f:'n61',t:'n62',k:'key'},
+ {f:'n63',t:'n64',k:'base'},{f:'n64',t:'n65',k:'base'},{f:'n65',t:'n66',k:'adv'},
+ {f:'n71',t:'n72',k:'base'},
+ {f:'n72',t:'n73',k:'key'},{f:'n73',t:'n74',k:'base'},{f:'n74',t:'n75',k:'base'},
+ {f:'n75',t:'n76',k:'adv'},{f:'n75',t:'n77',k:'adv'},
+ {f:'n73',t:'n81',k:'key'},
+ {f:'n81',t:'n82',k:'base'},{f:'n82',t:'n83',k:'key'},
+];
+const styles={base:{c:'#334155',w:1.6,dash:'',label:'基础衔接'},key:{c:'#0d9488',w:3,dash:'',label:'关键跃迁'},adv:{c:'#94a3b8',w:1.6,dash:'6 4',label:'应用拓展'}};
+
+// ================= 布局与渲染 =================
+const NS='http://www.w3.org/2000/svg';
+const COLW=118,GAPY=52,MARGIN=70,HEADH=64;
+const chIdx=Object.fromEntries(CHAPTERS.map((ch,i)=>[ch.id,i]));
+const nodesByCh={};
+NODES.forEach(n=>{(nodesByCh[n.ch]=nodesByCh[n.ch]||[]).push(n);});
+let maxRows=0;Object.values(nodesByCh).forEach(a=>{maxRows=Math.max(maxRows,a.length);});
+const W=MARGIN*2+(CHAPTERS.length-1)*COLW, H=HEADH+maxRows*GAPY+40;
+
+const svg=document.getElementById('kgSvg');
+svg.setAttribute('width',W);svg.setAttribute('height',H);svg.setAttribute('viewBox','0 0 '+W+' '+H);
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);(parent||svg).appendChild(e);return e;}
+
+// 章列头
+CHAPTERS.forEach((ch,i)=>{
+  const x=MARGIN+i*COLW;
+  const g=el('g',{});
+  el('rect',{x:x-50,y:8,width:100,height:27,rx:8,fill:ch.color},g);
+  el('text',{x:x,y:26,'text-anchor':'middle',fill:'#fff','font-size':'.72rem','font-weight':'bold','font-family':'sans-serif'},g).textContent=ch.name.replace('第','').replace(' ','');
+  el('text',{x:x,y:50,'text-anchor':'middle',fill:'#94a3b8','font-size':'.7rem','font-family':'sans-serif'},g).textContent=ch.pub;
+  // 纵向分隔
+  el('line',{x1:x,y1:56,x2:x,y2:H-30,stroke:'#f1f5f9','stroke-width':1});
+});
+
+// 节点位置
+const pos={};
+for(const chId in nodesByCh){
+  const list=nodesByCh[chId];const i=chIdx[chId];
+  const total=list.length*GAPY;
+  list.forEach((n,ri)=>{
+    pos[n.id]={x:MARGIN+i*COLW,y:HEADH+22+ri*GAPY+(maxRows*GAPY-total)/2};
+  });
+}
+
+const defs=el('defs',{});
+const mk=el('marker',{id:'arrow',viewBox:'0 0 10 10',refX:'9',refY:'5',markerWidth:'7',markerHeight:'7',orient:'auto'},defs);
+el('path',{d:'M0,0 L10,5 L0,10 z',fill:'#64748b'},mk);
+
+// 边
+const edgeG=el('g',{});
+EDGES.forEach(e=>{
+  const a=pos[e.f],b=pos[e.t],st=styles[e.k];
+  const x1=a.x+52,y1=a.y,x2=b.x-52,y2=b.y;
+  const mid=(y1+y2)/2;
+  el('path',{d:`M${x1},${y1} C${(x1+x2)/2},${y1} ${(x1+x2)/2},${y2} ${x2},${y2}`,fill:'none',
+    stroke:st.c,'stroke-width':st.w,'stroke-dasharray':st.dash||'none',
+    'marker-end':'url(#arrow)','class':'kg-edge','data-f':e.f,'data-t':e.t,'data-w':st.w},edgeG);
+});
+
+// 节点
+const nodeG=el('g',{});
+NODES.forEach(n=>{
+  const q=pos[n.id];const ch=CHAPTERS[chIdx[n.ch]];
+  const g=el('g',{transform:`translate(${q.x-52},${q.y-16})`,class:'kg-node','data-id':n.id,cursor:'pointer'},nodeG);
+  el('rect',{width:104,height:32,rx:9,fill:'#fff',stroke:ch.color,'stroke-width':'1.6'},g);
+  el('text',{x:52,y:14,'text-anchor':'middle','font-size':'.72rem','font-weight':'600',fill:'#1e293b','font-family':'sans-serif'},g).textContent=n.label.slice(0,4);
+  el('text',{x:52,y:26,'text-anchor':'middle','font-size':'.7rem',fill:'#475569','font-family':'sans-serif'},g).textContent=n.label.slice(4);
+  const file=CHAPTERS[chIdx[n.ch]].file;
+  el('title',{},g).textContent=n.label+'（点击进入讲解）';
+  g.addEventListener('click',()=>{window.location.href=file+(SECMAP[n.id]||'');});
+  g.addEventListener('mouseenter',()=>highlight(n.id));
+  g.addEventListener('mouseleave',()=>highlight(null));
+});
+function highlight(id){
+  document.querySelectorAll('.kg-edge').forEach(path=>{
+    const on=!id||path.dataset.f===id||path.dataset.t===id;
+    path.style.opacity=id?(on?'.95':'.12'):.85;
+    path.setAttribute('stroke-width',on&&id?'4':path.dataset.w);
+  });
+}
+</script>
+</body>
+</html>
