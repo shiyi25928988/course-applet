@@ -163,6 +163,15 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
 </div></div>
 </div>
 
+<div class="anim-container" style="margin-top:10px;"><h3 style="margin-bottom:10px;">🧮 水吸热计算器（拖动质量与升温，Q 实时算）</h3>
+<div style="font-size:.9rem;color:#cbd5e1;line-height:2.2;">
+水的质量 m = <input type="range" id="qmRange" min="0.1" max="5" step="0.1" value="2" oninput="calcQ()" style="vertical-align:middle;width:180px;"> <b id="qmLab">2.0</b> kg<br>
+升温 Δt = <input type="range" id="qtRange" min="1" max="100" step="1" value="60" oninput="calcQ()" style="vertical-align:middle;width:180px;"> <b id="qtLab">60</b> ℃<br>
+<span style="font-size:1.05rem;">Q = c·m·Δt = 4.2×10³ × <b id="qmEcho">2.0</b> × <b id="qtEcho">60</b> = <b id="qVal" style="color:#fbbf24;">5.04×10⁵ J</b>（<span id="qBig"></span>）</span>
+</div>
+<p style="font-size:.8rem;color:var(--text-secondary);margin-top:4px;">1.05×10⁵ J 大约能把 1kg 水从常温加热到沸腾的四分之一 —— 拖大 Δt 感受"升温越多，吸热越多"。</p></div>
+
+
 <div class="info-box">
 <strong>📌 热传递的三种方式</strong>
 <table class="phy-table">
@@ -172,6 +181,16 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
 <tr><td><span class="c-purple">辐射</span></td><td>热量由物体沿直线向外射出</td><td>不需要介质，可在真空中进行</td><td>太阳传热到地球、烤火取暖</td></tr>
 </table>
 </div>
+
+<div class="anim-container"><h3 style="margin-bottom:12px;">♨️ 热传递三方式演示（点击切换）</h3>
+<canvas id="heatCanvas" style="width:100%;max-width:660px;height:250px;"></canvas>
+<div class="anim-controls">
+<button onclick="setHeat('cond')" style="background:#f97316;">传导（金属勺）</button>
+<button onclick="setHeat('conv')" style="background:#0ea5e9;">对流（烧水）</button>
+<button onclick="setHeat('rad')" style="background:#7c3aed;">辐射（篝火）</button>
+</div>
+<p id="heatCap" style="font-size:.85rem;color:#cbd5e1;margin-top:8px;"></p></div>
+
 
 <div class="highlight-box">
 <strong>💡 水的比热容大的应用</strong><br>
@@ -196,6 +215,18 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
 实例：在盛有冷水和热水的两个杯中分别滴入红墨水，<span class="c-red">热水杯扩散快</span>——说明温度越高，分子无规则运动越剧烈。<br>
 扩散现象不仅发生在气体、液体中，也能在固体间发生（如长期紧贴的金片和铅片互相渗入）。
 </div></div>
+
+<div class="anim-container"><h3 style="margin-bottom:12px;">🔬 分子动理论演示（温度调速度 / 抽隔板看扩散）</h3>
+<canvas id="molCanvas" style="width:100%;max-width:660px;height:260px;"></canvas>
+<div class="anim-controls" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-size:.85rem;color:#cbd5e1;">
+<button onclick="setMol('thermo')" style="background:#7c3aed;">热运动模式</button>
+<button onclick="setMol('diff')" style="background:#0d9488;">扩散模式</button>
+<span id="molThermoCtl">温度 = <input type="range" id="molT" min="0" max="100" step="1" value="60" oninput="molTemp(this.value)" style="vertical-align:middle;width:170px;"> <b id="molTLab">60</b> ℃</span>
+<button id="molBarrier" onclick="molOpen()" style="display:none;background:#22c55e;color:#fff;">⇄ 抽去隔板</button>
+<button id="molReset" onclick="molReset()" style="display:none;">↻ 重置</button>
+</div>
+<p id="molCap" style="font-size:.85rem;color:#cbd5e1;margin-top:8px;"></p></div>
+
 <div class="kp"><h3>内能的概念</h3>
 <p>物体内部<span class="c-red">所有分子</span>的动能和分子势能的总和叫做物体的<strong>内能</strong>。</p>
 <div class="danger-box">
@@ -494,6 +525,221 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
   }
   draw();
 })();
+
+/* ---------- 热传递三方式 ---------- */
+(function(){
+  const c=document.getElementById('heatCanvas');if(!c)return;
+  const ctx=c.getContext('2d');
+  const W=c.width=c.parentElement.clientWidth-20,H=c.height=250;
+  let mode='cond',t=0,last=performance.now();
+  window.setHeat=function(m){mode=m;cap();};
+  function cap(){
+    const el=document.getElementById('heatCap');if(!el)return;
+    el.innerHTML={
+      cond:'<b style="color:#f97316;">传导</b>：热沿着物体从高温部分传向低温部分，物体本身不移动——金属是热的良导体（勺柄也会变热）',
+      conv:'<b style="color:#0ea5e9;">对流</b>：靠液体/气体的<b>流动</b>传热——底部受热的水变热膨胀上升，冷水下沉补充，形成循环（只能在流体中发生）',
+      rad:'<b style="color:#a78bfa;">辐射</b>：沿直线向外射出，<b>不需要任何介质</b>，真空也能传——太阳的热就是这样穿过太空来到地球'
+    }[mode];
+  }
+  function flame(x,y,s){
+    ctx.fillStyle='rgba(249,115,22,'+(0.7+0.3*Math.sin(t*9))+')';
+    ctx.beginPath();ctx.moveTo(x-7*s,y);ctx.quadraticCurveTo(x,y-26*s,x+7*s,y);ctx.closePath();ctx.fill();
+    ctx.fillStyle='rgba(251,191,36,.9)';
+    ctx.beginPath();ctx.moveTo(x-3.5*s,y);ctx.quadraticCurveTo(x,y-15*s,x+3.5*s,y);ctx.closePath();ctx.fill();
+  }
+  function draw(){
+    ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+    if(mode==='cond'){
+      // 金属勺斜插火焰
+      const sx=W*0.30,sy=H-46,ex=W*0.86,ey=H*0.30;
+      ctx.strokeStyle='#64748b';ctx.lineWidth=16;ctx.lineCap='round';
+      ctx.beginPath();ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stroke();
+      // 热端渐变
+      for(let i=0;i<=24;i++){
+        const p=i/24,h=Math.exp(-p*2.2)*(0.75+0.25*Math.sin(t*6+p*4));
+        ctx.strokeStyle='rgba('+(239+16*h|0)+','+(83+120*(1-h)|0)+','+(60+120*(1-h)|0)+','+(0.55*h+0.08)+')';
+        ctx.lineWidth=14;
+        const x1=sx+(ex-sx)*(i/24),y1=sy+(ey-sy)*(i/24);
+        const x2=sx+(ex-sx)*((i+1)/24),y2=sy+(ey-sy)*((i+1)/24);
+        ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();
+      }
+      // 勺内粒子：越靠近火焰振动越剧烈
+      for(let i=0;i<20;i++){
+        const p=i/19,h=Math.exp(-(p)*2.2);
+        const x=sx+(ex-sx)*p,y=sy+(ey-sy)*p;
+        const vx=Math.sin(t*14+i*2.7)*5*h,vy=Math.cos(t*11+i*1.9)*5*h;
+        ctx.fillStyle='rgba(251,191,36,'+(0.35+0.6*h)+')';
+        ctx.beginPath();ctx.arc(x+vx,y+vy,2.2,0,7);ctx.fill();
+      }
+      flame(sx,sy+16,1.5);
+      ctx.fillStyle='#e2e8f0';ctx.font='12px sans-serif';
+      ctx.fillText('固体传热：热端 → 冷端，粒子振动传递能量',W*0.34,34);
+    }else if(mode==='conv'){
+      // 烧杯+水+循环粒子
+      const px=W*0.32,pw=W*0.42,pt=54,pb=H-40;
+      ctx.strokeStyle='#cbd5e1';ctx.lineWidth=3;
+      ctx.beginPath();ctx.moveTo(px,pt);ctx.lineTo(px,pb);ctx.lineTo(px+pw,pb);ctx.lineTo(px+pw,pt);ctx.stroke();
+      ctx.fillStyle='rgba(59,130,246,.18)';ctx.fillRect(px,pt,pw,pb-pt);
+      // 两个循环涡（右升左降）
+      for(let i=0;i<26;i++){
+        const ph=(t*0.9+i/26)%1;
+        const side=i%2;
+        let x,y;
+        if(side===0){ // 靠火焰侧上升（红）
+          x=px+pw*0.68-18*Math.sin(ph*Math.PI);
+          y=pb-8-ph*(pb-pt-16);
+          ctx.fillStyle='rgba(248,113,113,.9)';
+        }else{ // 另一侧下降（蓝）
+          x=px+pw*0.30+16*Math.sin(ph*Math.PI);
+          y=pt+8+ph*(pb-pt-16);
+          ctx.fillStyle='rgba(96,165,250,.9)';
+        }
+        ctx.beginPath();ctx.arc(x,y,3.4,0,7);ctx.fill();
+      }
+      // 循环箭头
+      ctx.strokeStyle='#7dd3fc';ctx.lineWidth=2;
+      ctx.beginPath();ctx.arc(px+pw/2,pt+(pb-pt)/2,pw*0.24,-Math.PI*0.5,-Math.PI*0.1);ctx.stroke();
+      ctx.beginPath();ctx.arc(px+pw/2,pt+(pb-pt)/2,pw*0.24,Math.PI*0.5,Math.PI*0.9);ctx.stroke();
+      ctx.fillStyle='#f87171';ctx.font='11px sans-serif';
+      ctx.fillText('热水 ↑',px+pw*0.66,pt+20);
+      ctx.fillStyle='#93c5fd';
+      ctx.fillText('冷水 ↓',px+pw*0.14,pb-14);
+      flame(px+pw*0.62,pb+10,1.4);
+      ctx.fillStyle='#e2e8f0';ctx.font='12px sans-serif';
+      ctx.fillText('流体传热：受热上升、遇冷下沉，形成对流循环',W*0.36,34);
+    }else{
+      // 篝火 + 各向射线
+      const fx=W*0.30,fy=H-50;
+      flame(fx,fy,2.2);
+      flame(fx-16,fy+6,1.2);flame(fx+16,fy+6,1.2);
+      for(let i=0;i<8;i++){
+        const ang=-Math.PI*0.15-i*(Math.PI*0.7/7);
+        const pul=0.5+0.5*Math.sin(t*4+i);
+        const x1=fx+Math.cos(ang)*34,y1=fy+Math.sin(ang)*34;
+        const x2=fx+Math.cos(ang)*(95+14*pul),y2=fy+Math.sin(ang)*(95+14*pul);
+        ctx.strokeStyle='rgba(167,139,250,'+(0.5+0.4*pul)+')';ctx.lineWidth=2.4;
+        ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();
+        ctx.fillStyle='rgba(167,139,250,'+(0.6+0.4*pul)+')';
+        ctx.beginPath();ctx.arc(x2,y2,3.2,0,7);ctx.fill();
+      }
+      // 被烤的手
+      ctx.fillStyle='#fcd34d';ctx.font='22px sans-serif';
+      ctx.fillText('✋',W*0.78,H*0.55);
+      ctx.fillStyle='#e2e8f0';ctx.font='12px sans-serif';
+      ctx.fillText('沿直线辐射，不需要任何介质（真空可传）',W*0.38,34);
+    }
+  }
+  requestAnimationFrame(function loop(now){
+    const dt=Math.min(0.05,(now-last)/1000);last=now;t+=dt;
+    draw();requestAnimationFrame(loop);
+  });
+})();
+
+/* ---------- 水吸热计算器 ---------- */
+function calcQ(){
+  const m=+document.getElementById('qmRange').value;
+  const dt=+document.getElementById('qtRange').value;
+  document.getElementById('qmLab').textContent=m.toFixed(1);
+  document.getElementById('qtLab').textContent=dt;
+  document.getElementById('qmEcho').textContent=m.toFixed(1);
+  document.getElementById('qtEcho').textContent=dt;
+  const Q=4200*m*dt;
+  const exp=Math.floor(Math.log10(Q));
+  document.getElementById('qVal').textContent=(Q/Math.pow(10,exp)).toFixed(2)+'×10'+(exp>1?'^'+exp:'')+' J';
+  document.getElementById('qBig').textContent='约 '+(Q/10000).toFixed(1)+' 万焦耳';
+}
+window.calcQ=calcQ;
+
+/* ---------- 分子热运动 / 扩散 ---------- */
+(function(){
+  const c=document.getElementById('molCanvas');if(!c)return;
+  const ctx=c.getContext('2d');
+  const W=c.width=c.parentElement.clientWidth-20,H=c.height=260;
+  const BX=W*0.16,BY=44,BW=W*0.68,BH=H-88;
+  let mode='thermo',temp=60,opened=false,t=0;
+  const N=34;
+  const ps=[];
+  function resetDiff(){
+    for(let i=0;i<N;i++){
+      const left=i<N/2;
+      ps[i]={x:left?BX+6+Math.random()*(BW/2-12):BX+BW/2+6+Math.random()*(BW/2-12),
+             y:BY+6+Math.random()*(BH-12),
+             vx:(Math.random()-0.5)*70,vy:(Math.random()-0.5)*70,
+             col:left?'#f87171':'#60a5fa'};
+    }
+  }
+  resetDiff();
+  window.setMol=function(m){
+    mode=m;
+    document.getElementById('molThermoCtl').style.display=m==='thermo'?'inline':'none';
+    document.getElementById('molBarrier').style.display=m==='diff'?'inline':'none';
+    document.getElementById('molReset').style.display=m==='diff'?'inline':'none';
+    if(m==='diff'){opened=false;resetDiff();}
+    cap();
+  };
+  window.molTemp=function(v){temp=+v;document.getElementById('molTLab').textContent=v;};
+  window.molOpen=function(){opened=true;cap();};
+  window.molReset=function(){opened=false;resetDiff();cap();};
+  function cap(){
+    const el=document.getElementById('molCap');if(!el)return;
+    el.innerHTML=mode==='thermo'
+      ?'拖动温度滑块：<b style="color:'+(temp>60?'#f87171':temp>30?'#fbbf24':'#60a5fa')+'">'+temp+'℃</b> —— 温度越高，分子无规则运动越<b>剧烈</b>（速度越快）。绝对零度附近才近乎"静止"。'
+      :(opened?'隔板抽去后：红色分子向右、蓝色分子向左，最终<b>均匀混合</b> —— 这就是扩散现象。它证明分子在<b>不停息地做无规则运动</b>。'
+              :'两种颜色的分子被隔板分开（左红右蓝）。点"<b style="color:#22c55e;">⇄ 抽去隔板</b>"，看它们自发混合。');
+  }
+  function draw(){
+    ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+    ctx.strokeStyle='#94a3b8';ctx.lineWidth=2;
+    ctx.strokeRect(BX,BY,BW,BH);
+    // 隔板
+    if(mode==='diff'&&!opened){
+      ctx.strokeStyle='#f59e0b';ctx.lineWidth=3;
+      ctx.beginPath();ctx.moveTo(BX+BW/2,BY);ctx.lineTo(BX+BW/2,BY+BH);ctx.stroke();
+      ctx.fillStyle='#f59e0b';ctx.font='10px sans-serif';
+      ctx.fillText('隔板',BX+BW/2-12,BY-6);
+    }
+    // 粒子
+    for(const p of ps){
+      p.x+=p.vx/60;p.y+=p.vy/60;
+      let xmin=BX+4,xmax=BX+BW-4;
+      if(mode==='diff'&&!opened){
+        if(p.col==='#f87171')xmax=BX+BW/2-4;
+        else xmin=BX+BW/2+4;
+      }
+      if(p.x<xmin){p.x=xmin;p.vx=Math.abs(p.vx);}
+      if(p.x>xmax){p.x=xmax;p.vx=-Math.abs(p.vx);}
+      if(p.y<BY+4){p.y=BY+4;p.vy=Math.abs(p.vy);}
+      if(p.y>BY+BH-4){p.y=BY+BH-4;p.vy=-Math.abs(p.vy);}
+      let col=p.col,r=3.2;
+      if(mode==='thermo'){
+        const k=temp/100;
+        col='rgb('+Math.round(96+159*k)+','+Math.round(165-60*k)+','+Math.round(250-190*k)+')';
+        const sp=26+95*k;
+        // 每帧微调方向（无规则）
+        p.vx+= (Math.random()-0.5)*sp*0.5; p.vy+=(Math.random()-0.5)*sp*0.5;
+        const v=Math.hypot(p.vx,p.vy),mx=sp;
+        if(v>mx){p.vx*=mx/v;p.vy*=mx/v;}
+        r=2.6+0.8*k;
+      }
+      ctx.fillStyle=col;
+      ctx.beginPath();ctx.arc(p.x,p.y,r,0,7);ctx.fill();
+    }
+    // 说明文字
+    ctx.fillStyle='#94a3b8';ctx.font='11px sans-serif';
+    if(mode==='thermo'){
+      const k=temp/100;
+      ctx.fillText('平均速率 ≈ '+(26+95*k).toFixed(0)+'（演示单位）',BX,34);
+      ctx.fillText('← 粒子速度与颜色随温度变化',BX+BW,34);
+    }else{
+      ctx.fillText(opened?'已抽去隔板 —— 观察双色混合':'隔板未抽去',BX,34);
+    }
+  }
+  requestAnimationFrame(function loop(now){
+    t+=1/60;draw();requestAnimationFrame(loop);
+  });
+  cap();
+})();
+
 </script>
 </body>
 </html>
