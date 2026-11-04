@@ -183,14 +183,22 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
   </tbody>
 </table></div>
 
-<div class="anim-container"><h3 style="margin-bottom:16px;">🔍 凸透镜成像模拟</h3>
-<canvas id="lensCanvas" style="width:100%;max-width:680px;height:300px;"></canvas>
-<div class="anim-controls">
-  <button onclick="setObjectPos(0.4)" style="background:#f59e0b;">u&lt;f（放大镜）</button>
-  <button onclick="setObjectPos(1.3)">f&lt;u&lt;2f（投影仪）</button>
-  <button onclick="setObjectPos(2.0)">u=2f（等大）</button>
-  <button onclick="setObjectPos(2.8)">u&gt;2f（照相机）</button>
-</div></div>
+<div class="anim-container"><h3 style="margin-bottom:16px;">🔬 凸透镜成像实验室（拖动物体 / 拖动滑块 / 播放动画）</h3>
+<canvas id="lensCanvas" style="width:100%;max-width:680px;height:340px;touch-action:none;cursor:grab;"></canvas>
+<div class="anim-controls" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+  <button onclick="setObjectPos(0.55)" style="background:#f59e0b;">u&lt;f 放大镜</button>
+  <button onclick="setObjectPos(1.3)">f&lt;u&lt;2f 投影仪</button>
+  <button onclick="setObjectPos(2.0)">u=2f 等大</button>
+  <button onclick="setObjectPos(3.0)" style="background:#0ea5e9;">u&gt;2f 照相机</button>
+  <button onclick="togglePlay(this)" style="background:#22c55e;color:#fff;">▶ 自动演示</button>
+</div>
+<div style="margin-top:10px;font-size:.85rem;color:#cbd5e1;">
+物距 u =
+<input type="range" id="uRange" min="0.3" max="4" step="0.01" value="2.0" oninput="UFromSlider(this.value)" style="vertical-align:middle;width:220px;"> × f
+<span id="uBadge" style="margin-left:8px;"></span>
+</div>
+<p style="font-size:.8rem;color:var(--text-secondary);margin-top:6px;">🖱️ 用鼠标（或手指）<b>左右拖动物体箭头 U</b>，观察三条特殊光线如何"编织"出像：像的位置、大小、倒正在<u>实时</u>变化。试试把物体拖过焦点 F —— 实像会瞬间"翻转"并飞出光屏变成虚像！</p>
+</div>
 
 <div class="kp"><h3>眼睛与视力矫正</h3>
 <p>人的眼睛相当于一个<span class="c-blue">凸透镜</span>，晶状体和角膜共同作用相当于镜头，视网膜相当于光屏。</p>
@@ -328,82 +336,257 @@ table.phy-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 
 </main></div>
 <script src="../assets/js/common.js"></script>
 <script>
-// 凸透镜成像模拟
+// 凸透镜成像实验室
 (function(){
   const canvas=document.getElementById('lensCanvas');
   if(!canvas) return;
   const ctx=canvas.getContext('2d');
-  const W=680,H=300,f=80,center=W/2;
-  let objPos=1.3*f; // default: between f and 2f
+  const W=680,H=340,F=70;           // f=95px（比例尺）
+  const C=W/2, CY=H/2-12;           // 光心与光轴高度
+  const OH=52;                      // 物高（px）
+  const R_MIN=F*0.3, R_MAX=W/2-30;  // 物距范围（px）
+  let u=F*2.0;                      // 当前物距（单位 px，>=F*0.3）
+  let playing=false,dragging=false;
 
+  const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+
+  // ---------- 画布元素 ----------
+  function band(x1,x2,color){
+    ctx.fillStyle=color;
+    ctx.fillRect(x1,H-9,x2-x1,9);
+  }
+  function arrow(x,y1,y2,color,width,alpha){
+    ctx.save();ctx.globalAlpha=alpha==null?1:alpha;
+    ctx.strokeStyle=color;ctx.fillStyle=color;ctx.lineWidth=width||3;ctx.lineCap='round';
+    ctx.beginPath();ctx.moveTo(x,y1);ctx.lineTo(x,y2);ctx.stroke();
+    const dir=y2<y1?-1:1,ah=7;
+    ctx.beginPath();ctx.moveTo(x,y2);ctx.lineTo(x-4,y2-dir*ah);ctx.lineTo(x+4,y2-dir*ah);ctx.closePath();ctx.fill();
+    ctx.restore();
+  }
+  function ray(x1,y1,x2,y2,color,width,dash,alpha){
+    ctx.save();ctx.globalAlpha=alpha==null?1:alpha;
+    ctx.strokeStyle=color;ctx.lineWidth=width||2;ctx.setLineDash(dash||[]);
+    ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();ctx.restore();
+  }
   function draw(){
     canvas.width=W; canvas.height=H;
-    ctx.fillStyle='#1e293b'; ctx.fillRect(0,0,W,H);
+    ctx.fillStyle='#0f172a'; ctx.fillRect(0,0,W,H);
 
-    // Optical axis
-    ctx.strokeStyle='#475569'; ctx.lineWidth=1; ctx.setLineDash([8,4]);
-    ctx.beginPath(); ctx.moveTo(0,H/2); ctx.lineTo(W,H/2); ctx.stroke();
-    ctx.setLineDash([]);
+    // ---- 分区色带（光轴下方）----
+    band(C-4*F,C-2*F,'rgba(14,165,233,.35)');   // u>2f 照相机
+    band(C-2*F,C-F,'rgba(245,158,11,.4)');      // f<u<2f 投影仪
+    band(C-F,C-2,'rgba(236,72,153,.4)');        // u<f 放大镜
+    ctx.fillStyle='#94a3b8';ctx.font='10px sans-serif';
+    ctx.fillText('照相机区',C-4*F-2,H-14);
+    ctx.fillText('投影仪区',C-2*F-2,H-14);
+    ctx.fillText('放大镜区',C-F-30,H-14);
 
-    // Lens
-    ctx.strokeStyle='#60a5fa'; ctx.lineWidth=4;
-    ctx.beginPath(); ctx.moveTo(center,H*0.15); ctx.quadraticCurveTo(center+20,H/2,center,H*0.85); ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(center,H*0.15); ctx.quadraticCurveTo(center-20,H/2,center,H*0.85); ctx.stroke();
+    // ---- 光轴 ----
+    ctx.strokeStyle='#475569';ctx.lineWidth=1;ctx.setLineDash([8,4]);
+    ctx.beginPath();ctx.moveTo(0,CY);ctx.lineTo(W,CY);ctx.stroke();ctx.setLineDash([]);
 
-    // Focal points
+    // ---- 透镜 ----
+    const LH=H*0.78;
+    ctx.save();
+    ctx.fillStyle='rgba(96,165,250,.14)';
+    ctx.beginPath();ctx.moveTo(C,CY-LH/2);
+    ctx.quadraticCurveTo(C+16,CY,C,CY+LH/2);
+    ctx.quadraticCurveTo(C-16,CY,C,CY-LH/2);ctx.closePath();ctx.fill();
+    ctx.strokeStyle='#60a5fa';ctx.lineWidth=3.5;
+    ctx.beginPath();ctx.moveTo(C,CY-LH/2);ctx.quadraticCurveTo(C+16,CY,C,CY+LH/2);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(C,CY-LH/2);ctx.quadraticCurveTo(C-16,CY,C,CY+LH/2);ctx.stroke();
+    ctx.restore();
+    ctx.fillStyle='#cbd5e1';ctx.font='12px sans-serif';
+    ctx.fillText('O',C-3,CY+16);
+
+    // ---- 焦点标记 ----
     ctx.fillStyle='#fbbf24';
-    [center-f,center+f].forEach(x=>{ctx.beginPath();ctx.arc(x,H/2,4,0,Math.PI*2);ctx.fill();});
-    ctx.fillStyle='#fbbf24'; ctx.font='12px sans-serif';
-    ctx.fillText('F',center-f-10,H/2-8); ctx.fillText("F'",center+f-10,H/2-8);
-    ctx.fillText('2F',center-2*f-14,H/2-8); ctx.fillText("2F'",center+2*f-14,H/2-8);
-    [center-2*f,center+2*f].forEach(x=>{ctx.beginPath();ctx.arc(x,H/2,3,0,Math.PI*2);ctx.fill();});
+    [C-F,C+F,C-2*F,C+2*F].forEach(x=>{
+      ctx.fillStyle='#fbbf24';
+      ctx.beginPath();ctx.arc(x,CY,x===C-F||x===C+F?4.5:3,0,Math.PI*2);ctx.fill();
+    });
+    ctx.fillStyle='#fbbf24';ctx.font='11px sans-serif';
+    ctx.fillText('F',C-F-4,CY-10);
+    ctx.fillText("F'",C+F-4,CY-10);
+    ctx.fillStyle='#e2a832';
+    ctx.fillText('2F',C-2*F-7,CY-10);ctx.fillText("2F'",C+2*F-7,CY-10);
 
-    // Object
-    const ox=center-objPos,oh=50;
-    ctx.strokeStyle='#ef4444'; ctx.lineWidth=3;
-    ctx.beginPath(); ctx.moveTo(ox,H/2-oh); ctx.lineTo(ox,H/2); ctx.stroke();
-    ctx.fillStyle='#ef4444';
-    ctx.beginPath(); ctx.arc(ox,H/2-oh,3,0,Math.PI*2); ctx.fill();
-    ctx.fillStyle='#fff'; ctx.font='13px sans-serif';
-    ctx.fillText('物体',ox-18,H/2-oh-8);
+    // ---- 物体 U ----
+    const ox=C-u;
+    arrow(ox,CY,CY-OH,'#ef4444',3.2);
+    ctx.fillStyle='#fca5a5';ctx.font='12px sans-serif';
+    ctx.fillText('物体 U',ox-22,CY-OH-8);
+    ctx.fillStyle='#f87171';ctx.font='10px sans-serif';
+    ctx.fillText('↔可拖动',ox-20,CY-OH-22);
 
-    // Image calculation: 1/f = 1/u + 1/v => v = uf/(u-f)
-    const u=objPos;
-    if(Math.abs(u-f)<2){ctx.fillStyle='#94a3b8';ctx.font='14px sans-serif';ctx.fillText('不成像（u≈f）',center+30,H*0.6);}
-    else {
-      const v=(u*f)/(u-f);
-      const ix=center+v, m=-v/u;
-      const ih=Math.abs(oh*m);
-      if(v>0){ // real image
-        const iy=v>0?(ih>120?H/2-120:H/2-ih):H/2;
-        ctx.strokeStyle='#22c55e'; ctx.lineWidth=3;
-        ctx.beginPath();
-        if(m<0){ctx.moveTo(ix,iy+ih);ctx.lineTo(ix,iy);}
-        else{ctx.moveTo(ix,iy);ctx.lineTo(ix,iy+ih);}
-        ctx.stroke();
-        const arrowY=m<0?iy:iy+ih;
-        ctx.fillStyle='#22c55e';
-        ctx.beginPath(); ctx.arc(ix,arrowY,3,0,Math.PI*2); ctx.fill();
-        ctx.fillStyle='#fff'; ctx.fillText('实像',ix-18,arrowY-8);
-      } else { // virtual image
-        const iy=H/2-ih;
-        ctx.strokeStyle='#22c55e'; ctx.lineWidth=3; ctx.setLineDash([5,3]);
-        ctx.beginPath(); ctx.moveTo(ix,H/2-ih); ctx.lineTo(ix,H/2); ctx.stroke();
-        ctx.setLineDash([]);
-        ctx.fillStyle='#22c55e';
-        ctx.beginPath();ctx.arc(ix,H/2-ih,3,0,Math.PI*2);ctx.fill();
-        ctx.fillStyle='#fff'; ctx.fillText('虚像',ix-18,H/2-ih-8);
+    // ---- 成像计算 ----
+    const du=u-F;
+    const nearF=Math.abs(du)<1.2;
+    let v=null,m=null,ix=0,iyTip=0,inverted=false,virtual=false,clamped=false;
+
+    if(!nearF){
+      v=(u*F)/du;
+      m=-v/u;
+      inverted=m<0;
+      ix=C+v;
+      let ih=Math.abs(m)*OH;
+      virtual=v<=0;
+      // 画布限高
+      const maxIH=H*0.42;
+      if(ih>maxIH){clamped=true;ih=maxIH;}
+      iyTip=inverted?CY+ih:CY-ih;
+      // ---- 三条光线 ----
+      const ty=CY-OH;
+      // 光线1：平行主轴 → 折向 F'
+      ray(ox,ty,C,ty,'#93c5fd',2);
+      const bend=(v>0&&!virtual)?clamp(ix-C,10,W-C-6):(W-C-6);
+      // 出射方向：过 F' 的直线（实像时射到像位置）
+      const dx2=bend,dy2=(CY-ty)*(bend/F);
+      ray(C,ty,C+bend,ty+dy2,'#93c5fd',2);
+      if(!virtual)ray(C+bend,ty+dy2,W,ty+dy2+(CY-ty)*(W-C-bend)/F,'#93c5fd',2,null,.35);
+      else{ // 虚像：反向延长线汇到像点
+        ray(C+bend,ty+dy2,ix,iyTip,'#93c5fd',1.5,[4,4],.5);
       }
+      // 光线2：过光心直线
+      const k2=(CY-ty)/(C-ox);       // 过光心不变向
+      ray(ox,ty,W,ty+k2*(W-ox),'#facc15',2);
+      if(!virtual){ /* 已经穿过像点 */ }
+      else{ // 反向延长汇到像点（在左侧）
+        ray(C,ty,ix,iyTip,'#facc15',1.5,[4,4],.5);
+      }
+      // 光线3：过焦点 F → 出射平行主轴（u>f 才有物理路径）
+      if(du>0){
+        const t0=(C-ox)/((C-F)-ox);      // 直线 T→F 在透镜处的参数
+        const yl=ty+(CY-ty)*t0;
+        ray(ox,ty,C,yl,'#86efac',2);
+        ray(C,yl,clamp(ix, C+6,W-6),yl,'#86efac',2);      // 平行主轴直到像平面
+        if(!virtual)ray(C+ (ix-C),yl,W,yl,'#86efac',2,null,.35);
+      }
+
+      // ---- 光屏（承接实像）----
+      if(v>0){
+        const sx=C+v;
+        if(sx<W-14){
+          ctx.save();
+          ctx.fillStyle='rgba(226,232,240,.12)';
+          ctx.fillRect(sx-3,CY-H*0.42,6,H*0.84);
+          ctx.strokeStyle='#94a3b8';ctx.lineWidth=2;
+          ctx.beginPath();ctx.moveTo(sx,CY-H*0.42);ctx.lineTo(sx,CY+H*0.42);ctx.stroke();
+          // 屏上像的小阴影
+          ctx.fillStyle='rgba(34,197,94,.25)';
+          ctx.fillRect(sx-3,Math.min(iyTip,CY),6,Math.abs(iyTip-CY));
+          ctx.restore();
+          ctx.fillStyle='#cbd5e1';ctx.font='10px sans-serif';
+          ctx.fillText('光屏',sx+6,CY-H*0.42+10);
+        }else{
+          ctx.fillStyle='#f87171';ctx.font='10px sans-serif';
+          ctx.fillText('像已越出屏幕 →',W-120,CY-H*0.42+10);
+        }
+      }else{
+        ctx.fillStyle='#94a3b8';ctx.font='11px sans-serif';
+        ctx.fillText('虚像不能用光屏承接（反向延长线相交而成）',C+30,CY-H*0.3);
+      }
+
+      // ---- 像 U' ----
+      const col=virtual?'#34d399':'#22c55e';
+      arrow(ix,CY,iyTip,col,3,virtual?.55:1);
+      if(virtual){ctx.save();ctx.strokeStyle=col;ctx.setLineDash([5,4]);ctx.globalAlpha=.7;ctx.lineWidth=2.4;
+        ctx.beginPath();ctx.moveTo(ix,CY);ctx.lineTo(ix,iyTip);ctx.stroke();ctx.restore();}
+      ctx.fillStyle=col;ctx.font='12px sans-serif';ctx.globalAlpha=virtual?.8:1;
+      ctx.fillText(virtual?'虚像 U′':'实像 U′',ix-20,iyTip+(inverted?14:-8));
+      ctx.globalAlpha=1;
+    } else {
+      // u ≈ f：不成像
+      ctx.fillStyle='#fbbf24';ctx.font='bold 13px sans-serif';
+      ctx.fillText('★ u = f：折射光线平行射出，不成像（既不会聚也不发散）',C-140,CY-64);
+      // 画出不平行光线1示意
+      ray(ox,CY-OH,C,CY-OH,'#93c5fd',2);
+      ray(C,CY-OH,W,CY-OH,'#93c5fd',2);
+      ray(ox,CY-OH,W,CY-OH+(CY-(CY-OH))*(W-ox)/(C-ox),'#facc15',2);
     }
-    ctx.fillStyle='#94a3b8'; ctx.font='13px sans-serif';
-    ctx.fillText('u='+u.toFixed(0)+' px  f='+f+' px',20,H-20);
+
+    // ---- 状态面板 ----
+    const uf=u/F;
+    let state,scol;
+    if(nearF){state='不成像';scol='#fbbf24';}
+    else{
+      const mm=Math.abs(m);
+      state=(inverted?'倒立':'正立')+' · '+(mm>1.02?'放大':(mm<0.98?'缩小':'等大'))+' · '+(virtual?'虚像':'实像')+
+        '　　应用：'+(virtual?'放大镜':(inverted?(mm>1.02?'投影仪':'等大·测焦距'):'照相机'));
+      scol=virtual?'#34d399':'#22c55e';
+    }
+    ctx.fillStyle='#111827';ctx.fillRect(0,0,W,26);
+    ctx.fillStyle='#e2e8f0';ctx.font='bold 13px monospace';
+    ctx.fillText('u = '+uf.toFixed(2)+'f',10,18);
+    if(v!==null&&!nearF){
+      ctx.fillText('v = '+Math.abs(v/F).toFixed(2)+'f'+(virtual?'（虚侧）':''),110,18);
+      ctx.fillText('|放大率| = '+Math.abs(m).toFixed(2),210,18);
+    }
+    ctx.fillStyle=scol;ctx.font='bold 13px sans-serif';
+    ctx.fillText(state+(nearF?'':'　　'+(clamped?'（像过高：已按比例截断）':'')),nearF?300:(v!==null?420:300),18);
+
+    // ---- 拖动提示光标 ----
+    if(dragging){ctx.fillStyle='rgba(252,165,165,.08)';ctx.fillRect(0,0,C, H);}
   }
 
-  window.setObjectPos=function(uTimesF){
-    objPos=uTimesF*f;
+  // ---------- 交互 ----------
+  function canvasX(e){
+    const r=canvas.getBoundingClientRect();
+    return (e.clientX-r.left)*(canvas.width/r.width);
+  }
+  canvas.addEventListener('pointerdown',e=>{
+    const x=canvasX(e);
+    if(x<C-8){dragging=true;setPlay(false);canvas.setPointerCapture(e.pointerId);setU(C-x);}
+    canvas.style.cursor='grabbing';
+  });
+  canvas.addEventListener('pointermove',e=>{
+    if(dragging)setU(clamp(canvasX(e)-C,R_MIN,R_MAX));
+  });
+  canvas.addEventListener('pointerup',()=>{dragging=false;canvas.style.cursor='grab';});
+  function setU(nu){
+    u=clamp(nu,R_MIN,R_MAX);
+    syncSlider();
     draw();
+  }
+  function syncSlider(){
+    const r=document.getElementById('uRange');
+    if(r)r.value=(u/F).toFixed(2);
+    const b=document.getElementById('uBadge');
+    if(b){
+      if(Math.abs(u-F)<1.2)b.innerHTML='<b style="color:#fbbf24;">u ≈ f 不成像！</b>';
+      else if(u>2*F)b.innerHTML='<b style="color:#0ea5e9;">倒立缩小实像 · 照相机</b>';
+      else if(u>F)b.innerHTML='<b style="color:#f59e0b;">倒立放大实像 · 投影仪</b>';
+      else b.innerHTML='<b style="color:#f472b6;">正立放大虚像 · 放大镜</b>';
+    }
+  }
+
+  // 对外接口
+  window.setObjectPos=function(uTimesF){setPlay(false);setU(uTimesF*F);};
+  window.UFromSlider=function(val){setPlay(false);setU(+val*F);};
+  window.togglePlay=function(btn){
+    playing=!playing;
+    btn.textContent=playing?'⏸ 暂停演示':'▶ 自动演示';
   };
-  draw();
+  function setPlay(on){
+    if(playing===on)return;
+    playing=on;
+    const b=document.querySelector('[onclick*="togglePlay"]');
+    if(b)b.textContent=on?'⏸ 暂停演示':'▶ 自动演示';
+  }
+  // 自动演示：u 从 4f 缓慢滑到 0.55f 再回摆
+  let dir=-1;
+  (function tick(){
+    if(playing){
+      u+=dir*1.05;
+      if(u<=F*0.55){u=F*0.55;dir=1;}
+      if(u>=R_MAX){u=R_MAX;dir=-1;}
+      syncSlider();
+      draw();
+    }
+    requestAnimationFrame(tick);
+  })();
+
+  setU(F*2.0);
 })();
 </script>
 </body>
